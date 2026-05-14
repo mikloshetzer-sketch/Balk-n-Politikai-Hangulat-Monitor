@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Balkán Politikai Hangulat Monitor</title>
 
   <style>
-
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -17,7 +17,7 @@
     header {
       background: #111827;
       color: white;
-      padding: 28px 20px;
+      padding: 30px 20px;
       text-align: center;
     }
 
@@ -32,7 +32,7 @@
     }
 
     main {
-      max-width: 1200px;
+      max-width: 1250px;
       margin: 24px auto;
       padding: 0 16px;
     }
@@ -52,8 +52,8 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 18px;
     }
 
     .country-card {
@@ -61,24 +61,7 @@
       border-radius: 14px;
       padding: 18px;
       box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-      border-left: 6px solid #6b7280;
-      transition: 0.2s ease;
-    }
-
-    .country-card:hover {
-      transform: translateY(-3px);
-    }
-
-    .country-card h3 {
-      margin-top: 0;
-      margin-bottom: 8px;
-      font-size: 20px;
-    }
-
-    .score {
-      font-size: 34px;
-      font-weight: bold;
-      margin: 10px 0;
+      border-left: 7px solid #6b7280;
     }
 
     .positive {
@@ -93,6 +76,61 @@
       border-left-color: #dc2626;
     }
 
+    .country-card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 21px;
+    }
+
+    .score {
+      font-size: 34px;
+      font-weight: bold;
+      margin: 8px 0;
+    }
+
+    .meta {
+      color: #6b7280;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .topic {
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 12px;
+    }
+
+    .article-list {
+      margin-top: 12px;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 10px;
+    }
+
+    .article-list h4 {
+      margin: 0 0 8px 0;
+      font-size: 15px;
+    }
+
+    .article-list ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    .article-list li {
+      margin-bottom: 8px;
+      line-height: 1.35;
+      font-size: 14px;
+    }
+
+    .article-list a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+
+    .article-list a:hover {
+      text-decoration: underline;
+    }
+
     .small {
       color: #6b7280;
       font-size: 14px;
@@ -104,39 +142,31 @@
       font-size: 13px;
       padding: 30px 10px;
     }
-
   </style>
-
 </head>
 
 <body>
 
 <header>
   <h1>Balkán Politikai Hangulat Monitor</h1>
-
-  <p>
-    Nyílt forrású hírek alapján készülő napi politikai hangulatfigyelő rendszer
-  </p>
+  <p>Nyílt forrású hírek alapján készülő napi politikai hangulatfigyelő rendszer</p>
 </header>
 
 <main>
 
   <section class="status-box">
-
     <h2>Aktuális helyzetkép</h2>
 
     <p>
       Ez a dashboard a balkáni országok politikai hangulatát követi.
-      Az első verzió híralapú megközelítést használ.
-      A rendszer célja nem közvélemény-kutatás,
-      hanem a médiában megjelenő politikai feszültségek,
-      stabilitási jelek és fő témák követése.
+      Az index híralapú megközelítést használ.
+      Nem közvélemény-kutatás, hanem a médiában megjelenő politikai feszültségek,
+      stabilitási jelek és fő témák gyors áttekintése.
     </p>
 
-    <p class="small" id="updatedAt">
-      Frissítés: betöltés...
-    </p>
-
+    <p class="small" id="updatedAt">Frissítés: betöltés...</p>
+    <p class="small" id="sourceInfo">Forrás: betöltés...</p>
+    <p class="small" id="methodNote"></p>
   </section>
 
   <section class="grid" id="countryGrid"></section>
@@ -148,62 +178,102 @@
 </footer>
 
 <script>
-
 async function loadData() {
-
   try {
-
     const response = await fetch('./data/latest.json');
-
     const data = await response.json();
 
     const grid = document.getElementById('countryGrid');
-
     const updatedAt = document.getElementById('updatedAt');
+    const sourceInfo = document.getElementById('sourceInfo');
+    const methodNote = document.getElementById('methodNote');
 
     grid.innerHTML = '';
 
-    updatedAt.innerHTML =
-      `Frissítés: ${data.updated_at}`;
+    updatedAt.textContent = `Frissítés: ${data.updated_at}`;
+    sourceInfo.textContent = `Forrás: ${data.source || 'nincs megadva'}`;
+    methodNote.textContent = data.method_note || '';
 
     data.countries.forEach(country => {
-
       const card = document.createElement('div');
 
-      card.className =
-        `country-card ${country.status}`;
+      card.className = `country-card ${country.status}`;
+
+      const articlesHtml = buildArticlesHtml(country.top_articles || []);
 
       card.innerHTML = `
         <h3>${country.name}</h3>
 
-        <div class="score">
-          ${country.score}
-        </div>
+        <div class="score">${country.score}</div>
 
         <p>
           Politikai hangulat:
-          ${getStatusText(country.status)}
+          <strong>${getStatusText(country.status)}</strong>
         </p>
 
-        <p class="small">
+        <p class="meta">
+          Talált cikkek száma: ${country.article_count || 0}
+        </p>
+
+        <p class="topic">
           Fő téma: ${country.main_topic}
         </p>
+
+        ${articlesHtml}
       `;
 
       grid.appendChild(card);
-
     });
 
   } catch (error) {
-
     console.error(error);
 
+    const grid = document.getElementById('countryGrid');
+
+    grid.innerHTML = `
+      <div class="country-card negative">
+        <h3>Adatbetöltési hiba</h3>
+        <p>Nem sikerült betölteni a latest.json fájlt.</p>
+      </div>
+    `;
+  }
+}
+
+function buildArticlesHtml(articles) {
+  if (!articles.length) {
+    return `
+      <div class="article-list">
+        <h4>Kiemelt cikkek</h4>
+        <p class="small">Nincs megjeleníthető cikk.</p>
+      </div>
+    `;
   }
 
+  const items = articles.map(article => {
+    const title = article.title || 'Cím nélkül';
+    const url = article.url || '#';
+    const source = article.source || 'ismeretlen forrás';
+
+    return `
+      <li>
+        <a href="${url}" target="_blank" rel="noopener noreferrer">
+          ${title}
+        </a>
+        <br>
+        <span class="small">${source}</span>
+      </li>
+    `;
+  }).join('');
+
+  return `
+    <div class="article-list">
+      <h4>Kiemelt cikkek</h4>
+      <ul>${items}</ul>
+    </div>
+  `;
 }
 
 function getStatusText(status) {
-
   if (status === 'positive') {
     return 'pozitív';
   }
@@ -213,11 +283,9 @@ function getStatusText(status) {
   }
 
   return 'semleges';
-
 }
 
 loadData();
-
 </script>
 
 </body>
