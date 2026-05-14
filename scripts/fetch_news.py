@@ -6,40 +6,41 @@ from datetime import datetime, timezone
 COUNTRIES = [
     {
         "name": "Szerbia",
-        "query": 'Serbia OR Serbian OR Belgrade OR Vucic'
+        "query": "Serbia"
     },
     {
         "name": "Bosznia-Hercegovina",
-        "query": '"Bosnia and Herzegovina" OR Bosnia OR Sarajevo OR Dodik'
+        "query": "Bosnia"
     },
     {
         "name": "Koszovó",
-        "query": 'Kosovo OR Pristina OR Kurti'
+        "query": "Kosovo"
     },
     {
         "name": "Montenegró",
-        "query": 'Montenegro OR Podgorica'
+        "query": "Montenegro"
     },
     {
         "name": "Észak-Macedónia",
-        "query": '"North Macedonia" OR Skopje'
+        "query": "North Macedonia"
     },
     {
         "name": "Albánia",
-        "query": 'Albania OR Tirana OR Rama'
+        "query": "Albania"
     }
 ]
 
 NEGATIVE_WORDS = [
     "protest", "crisis", "corruption", "violence", "conflict",
     "tension", "sanction", "arrest", "attack", "war",
-    "unrest", "fraud", "dispute", "scandal", "threat"
+    "unrest", "fraud", "dispute", "scandal", "threat",
+    "election dispute", "nationalist", "instability"
 ]
 
 POSITIVE_WORDS = [
     "agreement", "reform", "growth", "cooperation", "investment",
     "stability", "dialogue", "progress", "eu accession",
-    "development", "support", "partnership"
+    "development", "support", "partnership", "integration"
 ]
 
 
@@ -50,14 +51,17 @@ def fetch_gdelt_articles(query):
         "query": query,
         "mode": "artlist",
         "format": "json",
-        "maxrecords": 25,
-        "sort": "datedesc"
+        "maxrecords": 50,
+        "sort": "datedesc",
+        "timespan": "7d"
     }
 
     url = base_url + "?" + urllib.parse.urlencode(params)
 
+    print("Lekérdezés:", url)
+
     try:
-        with urllib.request.urlopen(url, timeout=20) as response:
+        with urllib.request.urlopen(url, timeout=30) as response:
             raw_data = response.read().decode("utf-8")
             data = json.loads(raw_data)
             return data.get("articles", [])
@@ -74,22 +78,22 @@ def score_articles(articles):
 
     for article in articles:
         title = article.get("title", "").lower()
+        seendate = article.get("seendate", "")
+        source = article.get("sourceCountry", "")
+
+        text = f"{title} {seendate} {source}".lower()
 
         for word in NEGATIVE_WORDS:
-            if word in title:
+            if word in text:
                 score -= 4
                 topics[word] = topics.get(word, 0) + 1
 
         for word in POSITIVE_WORDS:
-            if word in title:
+            if word in text:
                 score += 3
                 topics[word] = topics.get(word, 0) + 1
 
-    if score > 30:
-        score = 30
-
-    if score < -30:
-        score = -30
+    score = max(min(score, 30), -30)
 
     return score, topics
 
@@ -124,6 +128,8 @@ def main():
         print(f"Adatgyűjtés: {country['name']}")
 
         articles = fetch_gdelt_articles(country["query"])
+
+        print(f"Talált cikkek száma: {len(articles)}")
 
         score, topics = score_articles(articles)
 
