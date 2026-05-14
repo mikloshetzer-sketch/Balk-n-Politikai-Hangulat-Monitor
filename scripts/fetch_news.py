@@ -35,8 +35,7 @@ COUNTRIES = [
         "name": "Montenegró",
         "queries": [
             "Montenegro politics",
-            "Podgorica government",
-            "Montenegro EU accession"
+            "Podgorica government"
         ],
         "keywords": ["montenegro", "podgorica"]
     },
@@ -44,8 +43,7 @@ COUNTRIES = [
         "name": "Észak-Macedónia",
         "queries": [
             "North Macedonia politics",
-            "Skopje government",
-            "North Macedonia election"
+            "Skopje government"
         ],
         "keywords": ["north macedonia", "macedonia", "skopje"]
     },
@@ -61,22 +59,56 @@ COUNTRIES = [
 ]
 
 NEGATIVE_WORDS = [
-    "protest", "protests", "crisis", "corruption", "violence",
-    "conflict", "tension", "tensions", "sanction", "sanctions",
-    "arrest", "attack", "war", "unrest", "fraud", "dispute",
-    "scandal", "threat", "instability", "clash", "clashes",
-    "riot", "boycott", "polarization", "opposition accuses",
-    "kriza", "protesti", "korupcija", "nasilje", "sukob",
-    "hapšenje", "napad", "skandal", "tenzije"
+    "protest",
+    "protests",
+    "crisis",
+    "corruption",
+    "violence",
+    "conflict",
+    "tension",
+    "tensions",
+    "sanction",
+    "sanctions",
+    "arrest",
+    "attack",
+    "war",
+    "unrest",
+    "fraud",
+    "dispute",
+    "scandal",
+    "threat",
+    "instability",
+    "clash",
+    "clashes",
+    "riot",
+    "boycott",
+    "polarization",
+    "accuses",
+    "genocide",
+    "propaganda"
 ]
 
 POSITIVE_WORDS = [
-    "agreement", "reform", "growth", "cooperation", "investment",
-    "stability", "dialogue", "progress", "eu accession",
-    "development", "support", "partnership", "integration",
-    "talks", "deal", "funding", "membership", "negotiations",
-    "sporazum", "reforma", "saradnja", "investicija",
-    "stabilnost", "napredak", "podrška", "partnerstvo"
+    "agreement",
+    "reform",
+    "growth",
+    "cooperation",
+    "investment",
+    "stability",
+    "dialogue",
+    "progress",
+    "development",
+    "support",
+    "partnership",
+    "integration",
+    "talks",
+    "deal",
+    "funding",
+    "membership",
+    "negotiations",
+    "future",
+    "economic growth",
+    "eu accession"
 ]
 
 
@@ -94,17 +126,17 @@ def fetch_gdelt_articles(query):
 
     url = base_url + "?" + urllib.parse.urlencode(params)
 
-    print("Lekérdezés:", url)
-
     try:
         with urllib.request.urlopen(url, timeout=30) as response:
             raw_data = response.read().decode("utf-8")
             data = json.loads(raw_data)
+
             return data.get("articles", [])
 
     except Exception as error:
         print(f"Hiba a GDELT lekérésnél: {query}")
         print(error)
+
         return []
 
 
@@ -142,31 +174,52 @@ def collect_articles(country):
                 continue
 
             seen_urls.add(url)
+
             all_articles.append(article)
 
     return all_articles[:50]
 
 
-def score_articles(articles):
-    score = 0
-    topics = {}
+def analyze_articles(articles):
+    negative_hits = 0
+    positive_hits = 0
+
+    negative_topics = {}
+    positive_topics = {}
 
     for article in articles:
         title = article.get("title", "").lower()
 
+        article_negative = False
+        article_positive = False
+
         for word in NEGATIVE_WORDS:
             if word in title:
-                score -= 4
-                topics[word] = topics.get(word, 0) + 1
+                article_negative = True
+                negative_topics[word] = negative_topics.get(word, 0) + 1
 
         for word in POSITIVE_WORDS:
             if word in title:
-                score += 3
-                topics[word] = topics.get(word, 0) + 1
+                article_positive = True
+                positive_topics[word] = positive_topics.get(word, 0) + 1
+
+        if article_negative:
+            negative_hits += 1
+
+        if article_positive:
+            positive_hits += 1
+
+    score = (positive_hits * 4) - (negative_hits * 4)
 
     score = max(min(score, 30), -30)
 
-    return score, topics
+    return {
+        "score": score,
+        "negative_hits": negative_hits,
+        "positive_hits": positive_hits,
+        "negative_topics": negative_topics,
+        "positive_topics": positive_topics
+    }
 
 
 def get_status(score):
@@ -179,10 +232,21 @@ def get_status(score):
     return "neutral"
 
 
-def get_main_topic(topics, articles):
-    if topics:
+def get_main_topic(analysis, articles):
+    negative_topics = analysis["negative_topics"]
+    positive_topics = analysis["positive_topics"]
+
+    combined = {}
+
+    for key, value in negative_topics.items():
+        combined[key] = combined.get(key, 0) + value
+
+    for key, value in positive_topics.items():
+        combined[key] = combined.get(key, 0) + value
+
+    if combined:
         sorted_topics = sorted(
-            topics.items(),
+            combined.items(),
             key=lambda item: item[1],
             reverse=True
         )
@@ -190,10 +254,7 @@ def get_main_topic(topics, articles):
         return sorted_topics[0][0]
 
     if articles:
-        title = articles[0].get("title", "")
-
-        if title:
-            return title[:100]
+        return articles[0].get("title", "")[:100]
 
     return "nincs kiemelkedő téma"
 
@@ -222,14 +283,16 @@ def main():
 
         print(f"Szűrt cikkek száma: {len(articles)}")
 
-        score, topics = score_articles(articles)
+        analysis = analyze_articles(articles)
 
         countries_output.append({
             "name": country["name"],
-            "score": score,
-            "status": get_status(score),
-            "main_topic": get_main_topic(topics, articles),
+            "score": analysis["score"],
+            "status": get_status(analysis["score"]),
+            "main_topic": get_main_topic(analysis, articles),
             "article_count": len(articles),
+            "negative_hits": analysis["negative_hits"],
+            "positive_hits": analysis["positive_hits"],
             "top_articles": get_top_articles(articles)
         })
 
