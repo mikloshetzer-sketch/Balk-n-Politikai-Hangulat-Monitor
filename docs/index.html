@@ -37,12 +37,16 @@
       padding: 0 16px;
     }
 
-    .status-box {
+    .status-box,
+    .country-card {
       background: white;
       border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    .status-box {
       padding: 20px;
       margin-bottom: 20px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
     }
 
     .status-box h2 {
@@ -57,10 +61,7 @@
     }
 
     .country-card {
-      background: white;
-      border-radius: 14px;
       padding: 18px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
       border-left: 7px solid #6b7280;
     }
 
@@ -83,15 +84,30 @@
     }
 
     .score {
-      font-size: 34px;
+      font-size: 36px;
       font-weight: bold;
       margin: 8px 0;
     }
 
-    .meta {
+    .meta,
+    .small {
       color: #6b7280;
       font-size: 14px;
-      margin-bottom: 8px;
+    }
+
+    .hit-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 10px 0;
+    }
+
+    .hit-pill {
+      background: #f3f4f6;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 13px;
+      color: #374151;
     }
 
     .topic {
@@ -100,15 +116,30 @@
       margin-bottom: 12px;
     }
 
+    .trend-box {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .trend-box h4,
+    .article-list h4 {
+      margin: 0 0 8px 0;
+      font-size: 15px;
+    }
+
+    canvas {
+      width: 100%;
+      height: 80px;
+      background: #f9fafb;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+    }
+
     .article-list {
       margin-top: 12px;
       border-top: 1px solid #e5e7eb;
       padding-top: 10px;
-    }
-
-    .article-list h4 {
-      margin: 0 0 8px 0;
-      font-size: 15px;
     }
 
     .article-list ul {
@@ -129,11 +160,6 @@
 
     .article-list a:hover {
       text-decoration: underline;
-    }
-
-    .small {
-      color: #6b7280;
-      font-size: 14px;
     }
 
     footer {
@@ -180,8 +206,11 @@
 <script>
 async function loadData() {
   try {
-    const response = await fetch('./data/latest.json');
-    const data = await response.json();
+    const latestResponse = await fetch('./data/latest.json');
+    const historyResponse = await fetch('./data/history.json');
+
+    const latestData = await latestResponse.json();
+    const historyData = await historyResponse.json();
 
     const grid = document.getElementById('countryGrid');
     const updatedAt = document.getElementById('updatedAt');
@@ -190,16 +219,15 @@ async function loadData() {
 
     grid.innerHTML = '';
 
-    updatedAt.textContent = `Frissítés: ${data.updated_at}`;
-    sourceInfo.textContent = `Forrás: ${data.source || 'nincs megadva'}`;
-    methodNote.textContent = data.method_note || '';
+    updatedAt.textContent = `Frissítés: ${latestData.updated_at}`;
+    sourceInfo.textContent = `Forrás: ${latestData.source || 'nincs megadva'}`;
+    methodNote.textContent = latestData.method_note || '';
 
-    data.countries.forEach(country => {
+    latestData.countries.forEach(country => {
       const card = document.createElement('div');
+      const canvasId = `trend-${slugify(country.name)}`;
 
       card.className = `country-card ${country.status}`;
-
-      const articlesHtml = buildArticlesHtml(country.top_articles || []);
 
       card.innerHTML = `
         <h3>${country.name}</h3>
@@ -211,18 +239,28 @@ async function loadData() {
           <strong>${getStatusText(country.status)}</strong>
         </p>
 
-        <p class="meta">
-          Talált cikkek száma: ${country.article_count || 0}
-        </p>
+        <div class="hit-row">
+          <span class="hit-pill">Cikkek: ${country.article_count || 0}</span>
+          <span class="hit-pill">Negatív jelek: ${country.negative_hits || 0}</span>
+          <span class="hit-pill">Pozitív jelek: ${country.positive_hits || 0}</span>
+        </div>
 
         <p class="topic">
           Fő téma: ${country.main_topic}
         </p>
 
-        ${articlesHtml}
+        <div class="trend-box">
+          <h4>Trend</h4>
+          <canvas id="${canvasId}" width="320" height="80"></canvas>
+          <p class="small">${getTrendText(country.name, historyData)}</p>
+        </div>
+
+        ${buildArticlesHtml(country.top_articles || [])}
       `;
 
       grid.appendChild(card);
+
+      drawTrend(canvasId, country.name, historyData);
     });
 
   } catch (error) {
@@ -233,10 +271,111 @@ async function loadData() {
     grid.innerHTML = `
       <div class="country-card negative">
         <h3>Adatbetöltési hiba</h3>
-        <p>Nem sikerült betölteni a latest.json fájlt.</p>
+        <p>Nem sikerült betölteni a latest.json vagy history.json fájlt.</p>
       </div>
     `;
   }
+}
+
+function getCountryHistory(countryName, historyData) {
+  const rows = [];
+
+  const records = historyData.records || [];
+
+  records.forEach(record => {
+    const country = record.countries.find(item => item.name === countryName);
+
+    if (country) {
+      rows.push({
+        date: record.date,
+        score: country.score
+      });
+    }
+  });
+
+  return rows.slice(-30);
+}
+
+function drawTrend(canvasId, countryName, historyData) {
+  const canvas = document.getElementById(canvasId);
+
+  if (!canvas) {
+    return;
+  }
+
+  const ctx = canvas.getContext('2d');
+  const rows = getCountryHistory(countryName, historyData);
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  ctx.strokeStyle = '#d1d5db';
+  ctx.lineWidth = 1;
+
+  ctx.beginPath();
+  ctx.moveTo(0, 40);
+  ctx.lineTo(canvas.width, 40);
+  ctx.stroke();
+
+  if (rows.length < 2) {
+    ctx.fillStyle = '#6b7280';
+    ctx.font = '13px Arial';
+    ctx.fillText('Kevés adat a trendhez', 12, 45);
+    return;
+  }
+
+  const minScore = -30;
+  const maxScore = 30;
+
+  const points = rows.map((row, index) => {
+    const x = (index / (rows.length - 1)) * canvas.width;
+    const normalized = (row.score - minScore) / (maxScore - minScore);
+    const y = canvas.height - (normalized * canvas.height);
+
+    return { x, y, score: row.score };
+  });
+
+  ctx.strokeStyle = '#2563eb';
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+
+  points.forEach((point, index) => {
+    if (index === 0) {
+      ctx.moveTo(point.x, point.y);
+    } else {
+      ctx.lineTo(point.x, point.y);
+    }
+  });
+
+  ctx.stroke();
+
+  points.forEach(point => {
+    ctx.beginPath();
+    ctx.arc(point.x, point.y, 3, 0, Math.PI * 2);
+    ctx.fillStyle = '#111827';
+    ctx.fill();
+  });
+}
+
+function getTrendText(countryName, historyData) {
+  const rows = getCountryHistory(countryName, historyData);
+
+  if (rows.length < 2) {
+    return 'A trendhez legalább két napi adat kell.';
+  }
+
+  const first = rows[0].score;
+  const last = rows[rows.length - 1].score;
+  const change = last - first;
+
+  if (change > 3) {
+    return `Javuló trend az elmúlt ${rows.length} mérési pont alapján.`;
+  }
+
+  if (change < -3) {
+    return `Romló trend az elmúlt ${rows.length} mérési pont alapján.`;
+  }
+
+  return `Stabil trend az elmúlt ${rows.length} mérési pont alapján.`;
 }
 
 function buildArticlesHtml(articles) {
@@ -283,6 +422,15 @@ function getStatusText(status) {
   }
 
   return 'semleges';
+}
+
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
 }
 
 loadData();
