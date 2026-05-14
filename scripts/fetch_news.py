@@ -7,47 +7,56 @@ COUNTRIES = [
     {
         "name": "Szerbia",
         "queries": [
-            "Serbia",
-            "Belgrade",
-            "Vucic"
-        ]
+            "Serbia politics",
+            "Belgrade government",
+            "Vucic protest"
+        ],
+        "keywords": ["serbia", "serbian", "belgrade", "vucic"]
     },
     {
         "name": "Bosznia-Hercegovina",
         "queries": [
-            "Bosnia",
-            "Sarajevo",
-            "Republika Srpska"
-        ]
+            "Bosnia politics",
+            "Sarajevo government",
+            "Republika Srpska Dodik"
+        ],
+        "keywords": ["bosnia", "sarajevo", "dodik", "republika srpska", "bih"]
     },
     {
         "name": "Koszovó",
         "queries": [
-            "Kosovo",
-            "Pristina",
-            "Mitrovica"
-        ]
+            "Kosovo politics",
+            "Pristina government",
+            "Kosovo Serbia tensions"
+        ],
+        "keywords": ["kosovo", "pristina", "kurti", "mitrovica"]
     },
     {
         "name": "Montenegró",
         "queries": [
-            "Montenegro",
-            "Podgorica"
-        ]
+            "Montenegro politics",
+            "Podgorica government",
+            "Montenegro EU accession"
+        ],
+        "keywords": ["montenegro", "podgorica"]
     },
     {
         "name": "Észak-Macedónia",
         "queries": [
-            "North Macedonia",
-            "Skopje"
-        ]
+            "North Macedonia politics",
+            "Skopje government",
+            "North Macedonia election"
+        ],
+        "keywords": ["north macedonia", "macedonia", "skopje"]
     },
     {
         "name": "Albánia",
         "queries": [
-            "Albania",
-            "Tirana"
-        ]
+            "Albania politics",
+            "Tirana government",
+            "Edi Rama opposition"
+        ],
+        "keywords": ["albania", "albanian", "tirana", "rama"]
     }
 ]
 
@@ -55,17 +64,19 @@ NEGATIVE_WORDS = [
     "protest", "protests", "crisis", "corruption", "violence",
     "conflict", "tension", "tensions", "sanction", "sanctions",
     "arrest", "attack", "war", "unrest", "fraud", "dispute",
-    "scandal", "threat", "instability", "nationalist",
-    "clash", "clashes", "riot", "boycott", "polarization",
-    "political crisis", "election dispute"
+    "scandal", "threat", "instability", "clash", "clashes",
+    "riot", "boycott", "polarization", "opposition accuses",
+    "kriza", "protesti", "korupcija", "nasilje", "sukob",
+    "hapšenje", "napad", "skandal", "tenzije"
 ]
 
 POSITIVE_WORDS = [
     "agreement", "reform", "growth", "cooperation", "investment",
     "stability", "dialogue", "progress", "eu accession",
     "development", "support", "partnership", "integration",
-    "talks", "deal", "funding", "membership", "opening",
-    "negotiations"
+    "talks", "deal", "funding", "membership", "negotiations",
+    "sporazum", "reforma", "saradnja", "investicija",
+    "stabilnost", "napredak", "podrška", "partnerstvo"
 ]
 
 
@@ -76,9 +87,9 @@ def fetch_gdelt_articles(query):
         "query": query,
         "mode": "artlist",
         "format": "json",
-        "maxrecords": 25,
+        "maxrecords": 50,
         "sort": "datedesc",
-        "timespan": "1week"
+        "timespan": "7d"
     }
 
     url = base_url + "?" + urllib.parse.urlencode(params)
@@ -97,19 +108,41 @@ def fetch_gdelt_articles(query):
         return []
 
 
-def collect_articles(queries):
+def is_relevant(article, keywords):
+    title = article.get("title", "").lower()
+    url = article.get("url", "").lower()
+    domain = article.get("domain", "").lower()
+
+    text = f"{title} {url} {domain}"
+
+    for keyword in keywords:
+        if keyword.lower() in text:
+            return True
+
+    return False
+
+
+def collect_articles(country):
     all_articles = []
     seen_urls = set()
 
-    for query in queries:
+    for query in country["queries"]:
         articles = fetch_gdelt_articles(query)
 
         for article in articles:
             url = article.get("url", "")
 
-            if url and url not in seen_urls:
-                seen_urls.add(url)
-                all_articles.append(article)
+            if not url:
+                continue
+
+            if url in seen_urls:
+                continue
+
+            if not is_relevant(article, country["keywords"]):
+                continue
+
+            seen_urls.add(url)
+            all_articles.append(article)
 
     return all_articles[:50]
 
@@ -120,18 +153,14 @@ def score_articles(articles):
 
     for article in articles:
         title = article.get("title", "").lower()
-        domain = article.get("domain", "").lower()
-        source_country = article.get("sourceCountry", "").lower()
-
-        text = f"{title} {domain} {source_country}"
 
         for word in NEGATIVE_WORDS:
-            if word in text:
+            if word in title:
                 score -= 4
                 topics[word] = topics.get(word, 0) + 1
 
         for word in POSITIVE_WORDS:
-            if word in text:
+            if word in title:
                 score += 3
                 topics[word] = topics.get(word, 0) + 1
 
@@ -161,10 +190,10 @@ def get_main_topic(topics, articles):
         return sorted_topics[0][0]
 
     if articles:
-        first_title = articles[0].get("title", "")
+        title = articles[0].get("title", "")
 
-        if first_title:
-            return first_title[:90]
+        if title:
+            return title[:100]
 
     return "nincs kiemelkedő téma"
 
@@ -189,9 +218,9 @@ def main():
     for country in COUNTRIES:
         print(f"Adatgyűjtés: {country['name']}")
 
-        articles = collect_articles(country["queries"])
+        articles = collect_articles(country)
 
-        print(f"Talált cikkek száma: {len(articles)}")
+        print(f"Szűrt cikkek száma: {len(articles)}")
 
         score, topics = score_articles(articles)
 
