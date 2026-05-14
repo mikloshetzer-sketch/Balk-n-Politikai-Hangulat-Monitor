@@ -1,7 +1,11 @@
 import json
+import os
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
+
+HISTORY_PATH = "docs/data/history.json"
+LATEST_PATH = "docs/data/latest.json"
 
 COUNTRIES = [
     {
@@ -59,55 +63,19 @@ COUNTRIES = [
 ]
 
 NEGATIVE_WORDS = [
-    "protest",
-    "protests",
-    "crisis",
-    "corruption",
-    "violence",
-    "conflict",
-    "tension",
-    "tensions",
-    "sanction",
-    "sanctions",
-    "arrest",
-    "attack",
-    "war",
-    "unrest",
-    "fraud",
-    "dispute",
-    "scandal",
-    "threat",
-    "instability",
-    "clash",
-    "clashes",
-    "riot",
-    "boycott",
-    "polarization",
-    "accuses",
-    "genocide",
+    "protest", "protests", "crisis", "corruption", "violence",
+    "conflict", "tension", "tensions", "sanction", "sanctions",
+    "arrest", "attack", "war", "unrest", "fraud", "dispute",
+    "scandal", "threat", "instability", "clash", "clashes",
+    "riot", "boycott", "polarization", "accuses", "genocide",
     "propaganda"
 ]
 
 POSITIVE_WORDS = [
-    "agreement",
-    "reform",
-    "growth",
-    "cooperation",
-    "investment",
-    "stability",
-    "dialogue",
-    "progress",
-    "development",
-    "support",
-    "partnership",
-    "integration",
-    "talks",
-    "deal",
-    "funding",
-    "membership",
-    "negotiations",
-    "future",
-    "economic growth",
+    "agreement", "reform", "growth", "cooperation", "investment",
+    "stability", "dialogue", "progress", "development", "support",
+    "partnership", "integration", "talks", "deal", "funding",
+    "membership", "negotiations", "future", "economic growth",
     "eu accession"
 ]
 
@@ -130,13 +98,11 @@ def fetch_gdelt_articles(query):
         with urllib.request.urlopen(url, timeout=30) as response:
             raw_data = response.read().decode("utf-8")
             data = json.loads(raw_data)
-
             return data.get("articles", [])
 
     except Exception as error:
         print(f"Hiba a GDELT lekérésnél: {query}")
         print(error)
-
         return []
 
 
@@ -174,7 +140,6 @@ def collect_articles(country):
                 continue
 
             seen_urls.add(url)
-
             all_articles.append(article)
 
     return all_articles[:50]
@@ -183,7 +148,6 @@ def collect_articles(country):
 def analyze_articles(articles):
     negative_hits = 0
     positive_hits = 0
-
     negative_topics = {}
     positive_topics = {}
 
@@ -210,7 +174,6 @@ def analyze_articles(articles):
             positive_hits += 1
 
     score = (positive_hits * 4) - (negative_hits * 4)
-
     score = max(min(score, 30), -30)
 
     return {
@@ -233,15 +196,12 @@ def get_status(score):
 
 
 def get_main_topic(analysis, articles):
-    negative_topics = analysis["negative_topics"]
-    positive_topics = analysis["positive_topics"]
-
     combined = {}
 
-    for key, value in negative_topics.items():
+    for key, value in analysis["negative_topics"].items():
         combined[key] = combined.get(key, 0) + value
 
-    for key, value in positive_topics.items():
+    for key, value in analysis["positive_topics"].items():
         combined[key] = combined.get(key, 0) + value
 
     if combined:
@@ -250,7 +210,6 @@ def get_main_topic(analysis, articles):
             key=lambda item: item[1],
             reverse=True
         )
-
         return sorted_topics[0][0]
 
     if articles:
@@ -271,6 +230,53 @@ def get_top_articles(articles):
         })
 
     return top_articles
+
+
+def load_history():
+    if not os.path.exists(HISTORY_PATH):
+        return {
+            "updated_at": "",
+            "records": []
+        }
+
+    with open(HISTORY_PATH, "r", encoding="utf-8") as file:
+        return json.load(file)
+
+
+def save_history(latest_data):
+    history = load_history()
+
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    daily_record = {
+        "date": today,
+        "countries": []
+    }
+
+    for country in latest_data["countries"]:
+        daily_record["countries"].append({
+            "name": country["name"],
+            "score": country["score"],
+            "status": country["status"],
+            "article_count": country["article_count"],
+            "negative_hits": country["negative_hits"],
+            "positive_hits": country["positive_hits"],
+            "main_topic": country["main_topic"]
+        })
+
+    history["records"] = [
+        record for record in history.get("records", [])
+        if record.get("date") != today
+    ]
+
+    history["records"].append(daily_record)
+
+    history["records"] = history["records"][-90:]
+
+    history["updated_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+    with open(HISTORY_PATH, "w", encoding="utf-8") as file:
+        json.dump(history, file, ensure_ascii=False, indent=2)
 
 
 def main():
@@ -296,17 +302,19 @@ def main():
             "top_articles": get_top_articles(articles)
         })
 
-    output = {
+    latest_data = {
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "source": "GDELT",
         "method_note": "Kulcsszavas, híralapú politikai hangulatindex. Nem közvélemény-kutatás.",
         "countries": countries_output
     }
 
-    with open("docs/data/latest.json", "w", encoding="utf-8") as file:
-        json.dump(output, file, ensure_ascii=False, indent=2)
+    with open(LATEST_PATH, "w", encoding="utf-8") as file:
+        json.dump(latest_data, file, ensure_ascii=False, indent=2)
 
-    print("latest.json sikeresen frissítve")
+    save_history(latest_data)
+
+    print("latest.json és history.json sikeresen frissítve")
 
 
 if __name__ == "__main__":
