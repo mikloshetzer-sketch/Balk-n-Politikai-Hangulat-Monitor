@@ -10,83 +10,72 @@ HISTORY_PATH = "docs/data/history.json"
 LATEST_PATH = "docs/data/latest.json"
 
 RSS_FEEDS = [
-    {
-        "name": "Balkan Insight",
-        "url": "https://balkaninsight.com/feed/"
-    },
-    {
-        "name": "RFE/RL Balkans",
-        "url": "https://www.rferl.org/api/zrqiteuuir"
-    },
-    {
-        "name": "B92 English",
-        "url": "https://www.b92.net/rss/b92/english"
-    }
+    {"name": "Balkan Insight", "url": "https://balkaninsight.com/feed/"},
+    {"name": "RFE/RL Balkans", "url": "https://www.rferl.org/api/zrqiteuuir"},
+    {"name": "B92 English", "url": "https://www.b92.net/rss/b92/english"},
+
+    {"name": "N1 Serbia", "url": "https://n1info.rs/feed/"},
+    {"name": "Danas Serbia", "url": "https://www.danas.rs/feed/"},
+    {"name": "Nova Serbia", "url": "https://nova.rs/feed/"},
+
+    {"name": "Klix Bosnia", "url": "https://www.klix.ba/rss"},
+    {"name": "Avaz Bosnia", "url": "https://avaz.ba/rss"},
+
+    {"name": "Vijesti Montenegro", "url": "https://www.vijesti.me/rss"},
+    {"name": "CDM Montenegro", "url": "https://www.cdm.me/feed/"},
+
+    {"name": "Gazeta Express Kosovo", "url": "https://www.gazetaexpress.com/feed/"},
+    {"name": "Koha Kosovo", "url": "https://www.koha.net/rss"},
+
+    {"name": "Exit News Albania", "url": "https://exit.al/en/feed/"},
+    {"name": "Albanian Daily News", "url": "https://albaniandailynews.com/rss"},
+
+    {"name": "Macedonia Kurir", "url": "https://kurir.mk/feed/"},
+    {"name": "SDK Macedonia", "url": "https://sdk.mk/index.php/feed/"}
 ]
 
 COUNTRIES = [
     {
         "name": "Szerbia",
-        "queries": [
-            "Serbia politics",
-            "Belgrade government",
-            "Vucic protest"
-        ],
-        "keywords": ["serbia", "serbian", "belgrade", "vucic", "srbija", "beograd"]
+        "queries": ["Serbia politics", "Belgrade government", "Vucic protest"],
+        "keywords": ["serbia", "serbian", "belgrade", "vucic", "srbija", "beograd", "vučić"]
     },
     {
         "name": "Bosznia-Hercegovina",
-        "queries": [
-            "Bosnia politics",
-            "Sarajevo government",
-            "Republika Srpska Dodik"
-        ],
+        "queries": ["Bosnia politics", "Sarajevo government", "Republika Srpska Dodik"],
         "keywords": ["bosnia", "sarajevo", "dodik", "republika srpska", "bih", "bosnia and herzegovina"]
     },
     {
         "name": "Koszovó",
-        "queries": [
-            "Kosovo politics",
-            "Pristina government",
-            "Kosovo Serbia tensions"
-        ],
+        "queries": ["Kosovo politics", "Pristina government", "Kosovo Serbia tensions"],
         "keywords": ["kosovo", "pristina", "kurti", "mitrovica", "kosova"]
     },
     {
         "name": "Montenegró",
-        "queries": [
-            "Montenegro politics",
-            "Podgorica government"
-        ],
-        "keywords": ["montenegro", "podgorica", "crna gora"]
+        "queries": ["Montenegro politics", "Podgorica government"],
+        "keywords": ["montenegro", "podgorica", "crna gora", "crnoj gori"]
     },
     {
         "name": "Észak-Macedónia",
-        "queries": [
-            "North Macedonia politics",
-            "Skopje government"
-        ],
-        "keywords": ["north macedonia", "macedonia", "skopje"]
+        "queries": ["North Macedonia politics", "Skopje government"],
+        "keywords": ["north macedonia", "macedonia", "skopje", "makedonija", "скопје", "македонија"]
     },
     {
         "name": "Albánia",
-        "queries": [
-            "Albania politics",
-            "Tirana government",
-            "Edi Rama opposition"
-        ],
+        "queries": ["Albania politics", "Tirana government", "Edi Rama opposition"],
         "keywords": ["albania", "albanian", "tirana", "rama", "shqiperi", "shqipëria"]
     }
 ]
 
 NEGATIVE_WORDS = [
-    "protest", "protests", "crisis", "corruption", "violence",
-    "conflict", "tension", "tensions", "sanction", "sanctions",
-    "arrest", "attack", "war", "unrest", "fraud", "dispute",
-    "scandal", "threat", "instability", "clash", "clashes",
-    "riot", "boycott", "polarization", "accuses", "genocide",
-    "propaganda", "blocked", "deadlock", "resignation",
-    "investigation", "charges", "convicted"
+    "protest", "protests", "crisis", "corruption", "violence", "conflict",
+    "tension", "tensions", "sanction", "sanctions", "arrest", "attack",
+    "war", "unrest", "fraud", "dispute", "scandal", "threat",
+    "instability", "clash", "clashes", "riot", "boycott", "polarization",
+    "accuses", "genocide", "propaganda", "blocked", "deadlock",
+    "resignation", "investigation", "charges", "convicted",
+    "kriza", "protest", "protesti", "korupcija", "nasilje", "sukob",
+    "hapšenje", "napad", "skandal", "tenzije", "blokada"
 ]
 
 POSITIVE_WORDS = [
@@ -94,7 +83,9 @@ POSITIVE_WORDS = [
     "stability", "dialogue", "progress", "development", "support",
     "partnership", "integration", "talks", "deal", "funding",
     "membership", "negotiations", "future", "economic growth",
-    "eu accession", "opens talks", "approved", "aid package"
+    "eu accession", "opens talks", "approved", "aid package",
+    "sporazum", "reforma", "saradnja", "investicija", "stabilnost",
+    "napredak", "podrška", "partnerstvo"
 ]
 
 
@@ -112,9 +103,7 @@ def clean_text(text):
 def fetch_url(url):
     request = urllib.request.Request(
         url,
-        headers={
-            "User-Agent": "Mozilla/5.0"
-        }
+        headers={"User-Agent": "Mozilla/5.0"}
     )
 
     with urllib.request.urlopen(request, timeout=30) as response:
@@ -147,6 +136,7 @@ def fetch_gdelt_articles(query):
                 "url": item.get("url", ""),
                 "source": item.get("domain", "GDELT"),
                 "seen_date": item.get("seendate", ""),
+                "description": "",
                 "origin": "GDELT"
             })
 
@@ -155,7 +145,6 @@ def fetch_gdelt_articles(query):
     except Exception as error:
         print(f"Hiba a GDELT lekérésnél: {query}")
         print(error)
-
         return []
 
 
@@ -187,7 +176,7 @@ def fetch_rss_articles(feed):
         print(f"RSS találatok: {feed['name']} - {len(articles)}")
 
     except Exception as error:
-        print(f"Hiba az RSS lekérésnél: {feed['name']}")
+        print(f"RSS hiba vagy nem elérhető feed: {feed['name']}")
         print(error)
 
     return articles
@@ -254,7 +243,7 @@ def collect_articles(country, rss_articles):
         seen_urls.add(url)
         all_articles.append(article)
 
-    return all_articles[:60]
+    return all_articles[:80]
 
 
 def analyze_articles(articles):
@@ -324,7 +313,6 @@ def get_main_topic(analysis, articles):
             key=lambda item: item[1],
             reverse=True
         )
-
         return sorted_topics[0][0]
 
     if articles:
@@ -387,7 +375,6 @@ def save_history(latest_data):
 
     history["records"].append(daily_record)
     history["records"] = history["records"][-90:]
-
     history["updated_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     with open(HISTORY_PATH, "w", encoding="utf-8") as file:
@@ -422,7 +409,7 @@ def main():
 
     latest_data = {
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "source": "GDELT + RSS",
+        "source": "GDELT + regional RSS",
         "method_note": "Kulcsszavas, híralapú politikai hangulatindex. Nem közvélemény-kutatás.",
         "countries": countries_output
     }
