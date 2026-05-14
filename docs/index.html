@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balkán Politikai Hangulat Monitor</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      color: #111827;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 28px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #d1d5db;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+
+    .status-box {
+      background: white;
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    .status-box h2 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .country-card {
+      background: white;
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      border-left: 6px solid #6b7280;
+    }
+
+    .country-card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    .score {
+      font-size: 34px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .positive {
+      border-left-color: #16a34a;
+    }
+
+    .neutral {
+      border-left-color: #f59e0b;
+    }
+
+    .negative {
+      border-left-color: #dc2626;
+    }
+
+    .small {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      color: #6b7280;
+      font-size: 13px;
+      padding: 30px 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Balkán Politikai Hangulat Monitor</h1>
+  <p>Nyílt forrású hírek alapján készülő napi politikai hangulatfigyelő rendszer</p>
+</header>
+
+<main>
+
+  <section class="status-box">
+    <h2>Aktuális helyzetkép</h2>
+    <p>
+      Ez a dashboard a balkáni országok politikai hangulatát követi.
+      Az első verzió híralapú megközelítést használ majd.
+      A rendszer célja nem közvélemény-kutatás, hanem a médiában megjelenő politikai feszültségek,
+      stabilitási jelek és fő témák követése.
+    </p>
+    <p class="small">
+      Frissítés: automatikus adat nélkül, tesztverzió.
+    </p>
+  </section>
+
+  <section class="grid">
+
+    <div class="country-card neutral">
+      <h3>Szerbia</h3>
+      <div class="score">0</div>
+      <p>Politikai hangulat: semleges</p>
+      <p class="small">Fő téma: még nincs adat</p>
+    </div>
+
+    <div class="country-card neutral">
+      <h3>Bosznia-Hercegovina</h3>
+      <div class="score">0</div>
+      <p>Politikai hangulat: semleges</p>
+      <p class="small">Fő téma: még nincs adat</p>
+    </div>
+
+    <div class="country-card neutral">
+      <h3>Koszovó</h3>
+      <div class="score">0</div>
+      <p>Politikai hangulat: semleges</p>
+      <p class="small">Fő téma: még nincs adat</p>
+    </div>
+
+    <div class="country-card neutral">
+      <h3>Montenegró</h3>
+      <div class="score">0</div>
+      <p>Politikai hangulat: semleges</p>
+      <p class="small">Fő téma: még nincs adat</p>
+    </div>
+
+    <div class="country-card neutral">
+      <h3>Észak-Macedónia</h3>
+      <div class="score">0</div>
+      <p>Politikai hangulat: semleges</p>
+      <p class="small">Fő téma: még nincs adat</p>
+    </div>
+
+    <div class="country-card neutral">
+      <h3>Albánia</h3>
+      <div class="score">0</div>
+      <p>Politikai hangulat: semleges</p>
+      <p class="small">Fő téma: még nincs adat</p>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  Balkán Politikai Hangulat Monitor – GitHub Pages tesztverzió
+</footer>
+
+</body>
+</html>
