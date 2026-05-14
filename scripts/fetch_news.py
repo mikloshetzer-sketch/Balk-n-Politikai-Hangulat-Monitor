@@ -6,41 +6,66 @@ from datetime import datetime, timezone
 COUNTRIES = [
     {
         "name": "Szerbia",
-        "query": "Serbia"
+        "queries": [
+            "Serbia",
+            "Belgrade",
+            "Vucic"
+        ]
     },
     {
         "name": "Bosznia-Hercegovina",
-        "query": "Bosnia"
+        "queries": [
+            "Bosnia",
+            "Sarajevo",
+            "Republika Srpska"
+        ]
     },
     {
         "name": "Koszovó",
-        "query": "Kosovo"
+        "queries": [
+            "Kosovo",
+            "Pristina",
+            "Mitrovica"
+        ]
     },
     {
         "name": "Montenegró",
-        "query": "Montenegro"
+        "queries": [
+            "Montenegro",
+            "Podgorica"
+        ]
     },
     {
         "name": "Észak-Macedónia",
-        "query": "North Macedonia"
+        "queries": [
+            "North Macedonia",
+            "Skopje"
+        ]
     },
     {
         "name": "Albánia",
-        "query": "Albania"
+        "queries": [
+            "Albania",
+            "Tirana"
+        ]
     }
 ]
 
 NEGATIVE_WORDS = [
-    "protest", "crisis", "corruption", "violence", "conflict",
-    "tension", "sanction", "arrest", "attack", "war",
-    "unrest", "fraud", "dispute", "scandal", "threat",
-    "election dispute", "nationalist", "instability"
+    "protest", "protests", "crisis", "corruption", "violence",
+    "conflict", "tension", "tensions", "sanction", "sanctions",
+    "arrest", "attack", "war", "unrest", "fraud", "dispute",
+    "scandal", "threat", "instability", "nationalist",
+    "clash", "clashes", "riot", "boycott", "polarization",
+    "political crisis", "election dispute"
 ]
 
 POSITIVE_WORDS = [
     "agreement", "reform", "growth", "cooperation", "investment",
     "stability", "dialogue", "progress", "eu accession",
-    "development", "support", "partnership", "integration"
+    "development", "support", "partnership", "integration",
+    "talks", "deal", "funding", "membership", "opening",
+    "negotiations"
 ]
 
 
@@ -51,9 +76,9 @@ def fetch_gdelt_articles(query):
         "query": query,
         "mode": "artlist",
         "format": "json",
-        "maxrecords": 50,
+        "maxrecords": 25,
         "sort": "datedesc",
-        "timespan": "7d"
+        "timespan": "1week"
     }
 
     url = base_url + "?" + urllib.parse.urlencode(params)
@@ -72,16 +97,33 @@ def fetch_gdelt_articles(query):
         return []
 
 
+def collect_articles(queries):
+    all_articles = []
+    seen_urls = set()
+
+    for query in queries:
+        articles = fetch_gdelt_articles(query)
+
+        for article in articles:
+            url = article.get("url", "")
+
+            if url and url not in seen_urls:
+                seen_urls.add(url)
+                all_articles.append(article)
+
+    return all_articles[:50]
+
+
 def score_articles(articles):
     score = 0
     topics = {}
 
     for article in articles:
         title = article.get("title", "").lower()
-        seendate = article.get("seendate", "")
-        source = article.get("sourceCountry", "")
+        domain = article.get("domain", "").lower()
+        source_country = article.get("sourceCountry", "").lower()
 
-        text = f"{title} {seendate} {source}".lower()
+        text = f"{title} {domain} {source_country}"
 
         for word in NEGATIVE_WORDS:
             if word in text:
@@ -108,17 +150,37 @@ def get_status(score):
     return "neutral"
 
 
-def get_main_topic(topics):
-    if not topics:
-        return "nincs kiemelkedő téma"
+def get_main_topic(topics, articles):
+    if topics:
+        sorted_topics = sorted(
+            topics.items(),
+            key=lambda item: item[1],
+            reverse=True
+        )
 
-    sorted_topics = sorted(
-        topics.items(),
-        key=lambda item: item[1],
-        reverse=True
-    )
+        return sorted_topics[0][0]
 
-    return sorted_topics[0][0]
+    if articles:
+        first_title = articles[0].get("title", "")
+
+        if first_title:
+            return first_title[:90]
+
+    return "nincs kiemelkedő téma"
+
+
+def get_top_articles(articles):
+    top_articles = []
+
+    for article in articles[:5]:
+        top_articles.append({
+            "title": article.get("title", ""),
+            "url": article.get("url", ""),
+            "source": article.get("domain", ""),
+            "seen_date": article.get("seendate", "")
+        })
+
+    return top_articles
 
 
 def main():
@@ -127,7 +189,7 @@ def main():
     for country in COUNTRIES:
         print(f"Adatgyűjtés: {country['name']}")
 
-        articles = fetch_gdelt_articles(country["query"])
+        articles = collect_articles(country["queries"])
 
         print(f"Talált cikkek száma: {len(articles)}")
 
@@ -137,13 +199,15 @@ def main():
             "name": country["name"],
             "score": score,
             "status": get_status(score),
-            "main_topic": get_main_topic(topics),
-            "article_count": len(articles)
+            "main_topic": get_main_topic(topics, articles),
+            "article_count": len(articles),
+            "top_articles": get_top_articles(articles)
         })
 
     output = {
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "source": "GDELT",
+        "method_note": "Kulcsszavas, híralapú politikai hangulatindex. Nem közvélemény-kutatás.",
         "countries": countries_output
     }
 
