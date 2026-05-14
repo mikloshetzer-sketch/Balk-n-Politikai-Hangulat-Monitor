@@ -1,11 +1,28 @@
 import json
 import os
+import re
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
 HISTORY_PATH = "docs/data/history.json"
 LATEST_PATH = "docs/data/latest.json"
+
+RSS_FEEDS = [
+    {
+        "name": "Balkan Insight",
+        "url": "https://balkaninsight.com/feed/"
+    },
+    {
+        "name": "RFE/RL Balkans",
+        "url": "https://www.rferl.org/api/zrqiteuuir"
+    },
+    {
+        "name": "B92 English",
+        "url": "https://www.b92.net/rss/b92/english"
+    }
+]
 
 COUNTRIES = [
     {
@@ -15,7 +32,7 @@ COUNTRIES = [
             "Belgrade government",
             "Vucic protest"
         ],
-        "keywords": ["serbia", "serbian", "belgrade", "vucic"]
+        "keywords": ["serbia", "serbian", "belgrade", "vucic", "srbija", "beograd"]
     },
     {
         "name": "Bosznia-Hercegovina",
@@ -24,7 +41,7 @@ COUNTRIES = [
             "Sarajevo government",
             "Republika Srpska Dodik"
         ],
-        "keywords": ["bosnia", "sarajevo", "dodik", "republika srpska", "bih"]
+        "keywords": ["bosnia", "sarajevo", "dodik", "republika srpska", "bih", "bosnia and herzegovina"]
     },
     {
         "name": "Koszovó",
@@ -33,7 +50,7 @@ COUNTRIES = [
             "Pristina government",
             "Kosovo Serbia tensions"
         ],
-        "keywords": ["kosovo", "pristina", "kurti", "mitrovica"]
+        "keywords": ["kosovo", "pristina", "kurti", "mitrovica", "kosova"]
     },
     {
         "name": "Montenegró",
@@ -41,7 +58,7 @@ COUNTRIES = [
             "Montenegro politics",
             "Podgorica government"
         ],
-        "keywords": ["montenegro", "podgorica"]
+        "keywords": ["montenegro", "podgorica", "crna gora"]
     },
     {
         "name": "Észak-Macedónia",
@@ -58,7 +75,7 @@ COUNTRIES = [
             "Tirana government",
             "Edi Rama opposition"
         ],
-        "keywords": ["albania", "albanian", "tirana", "rama"]
+        "keywords": ["albania", "albanian", "tirana", "rama", "shqiperi", "shqipëria"]
     }
 ]
 
@@ -68,7 +85,8 @@ NEGATIVE_WORDS = [
     "arrest", "attack", "war", "unrest", "fraud", "dispute",
     "scandal", "threat", "instability", "clash", "clashes",
     "riot", "boycott", "polarization", "accuses", "genocide",
-    "propaganda"
+    "propaganda", "blocked", "deadlock", "resignation",
+    "investigation", "charges", "convicted"
 ]
 
 POSITIVE_WORDS = [
@@ -76,8 +94,31 @@ POSITIVE_WORDS = [
     "stability", "dialogue", "progress", "development", "support",
     "partnership", "integration", "talks", "deal", "funding",
     "membership", "negotiations", "future", "economic growth",
-    "eu accession"
+    "eu accession", "opens talks", "approved", "aid package"
 ]
+
+
+def clean_text(text):
+    if not text:
+        return ""
+
+    text = re.sub(r"<[^>]+>", "", text)
+    text = text.replace("\n", " ")
+    text = text.replace("\r", " ")
+
+    return " ".join(text.split())
+
+
+def fetch_url(url):
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "Mozilla/5.0"
+        }
+    )
+
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return response.read()
 
 
 def fetch_gdelt_articles(query):
@@ -95,23 +136,79 @@ def fetch_gdelt_articles(query):
     url = base_url + "?" + urllib.parse.urlencode(params)
 
     try:
-        with urllib.request.urlopen(url, timeout=30) as response:
-            raw_data = response.read().decode("utf-8")
-            data = json.loads(raw_data)
-            return data.get("articles", [])
+        raw_data = fetch_url(url).decode("utf-8")
+        data = json.loads(raw_data)
+
+        articles = []
+
+        for item in data.get("articles", []):
+            articles.append({
+                "title": clean_text(item.get("title", "")),
+                "url": item.get("url", ""),
+                "source": item.get("domain", "GDELT"),
+                "seen_date": item.get("seendate", ""),
+                "origin": "GDELT"
+            })
+
+        return articles
 
     except Exception as error:
         print(f"Hiba a GDELT lekérésnél: {query}")
         print(error)
+
         return []
+
+
+def fetch_rss_articles(feed):
+    articles = []
+
+    try:
+        raw_xml = fetch_url(feed["url"])
+        root = ET.fromstring(raw_xml)
+
+        for item in root.findall(".//item"):
+            title = clean_text(item.findtext("title", ""))
+            link = clean_text(item.findtext("link", ""))
+            pub_date = clean_text(item.findtext("pubDate", ""))
+            description = clean_text(item.findtext("description", ""))
+
+            if not title or not link:
+                continue
+
+            articles.append({
+                "title": title,
+                "url": link,
+                "source": feed["name"],
+                "seen_date": pub_date,
+                "description": description,
+                "origin": "RSS"
+            })
+
+        print(f"RSS találatok: {feed['name']} - {len(articles)}")
+
+    except Exception as error:
+        print(f"Hiba az RSS lekérésnél: {feed['name']}")
+        print(error)
+
+    return articles
+
+
+def fetch_all_rss_articles():
+    all_articles = []
+
+    for feed in RSS_FEEDS:
+        all_articles.extend(fetch_rss_articles(feed))
+
+    return all_articles
 
 
 def is_relevant(article, keywords):
     title = article.get("title", "").lower()
     url = article.get("url", "").lower()
-    domain = article.get("domain", "").lower()
+    source = article.get("source", "").lower()
+    description = article.get("description", "").lower()
 
-    text = f"{title} {url} {domain}"
+    text = f"{title} {url} {source} {description}"
 
     for keyword in keywords:
         if keyword.lower() in text:
@@ -120,14 +217,14 @@ def is_relevant(article, keywords):
     return False
 
 
-def collect_articles(country):
+def collect_articles(country, rss_articles):
     all_articles = []
     seen_urls = set()
 
     for query in country["queries"]:
-        articles = fetch_gdelt_articles(query)
+        gdelt_articles = fetch_gdelt_articles(query)
 
-        for article in articles:
+        for article in gdelt_articles:
             url = article.get("url", "")
 
             if not url:
@@ -142,7 +239,22 @@ def collect_articles(country):
             seen_urls.add(url)
             all_articles.append(article)
 
-    return all_articles[:50]
+    for article in rss_articles:
+        url = article.get("url", "")
+
+        if not url:
+            continue
+
+        if url in seen_urls:
+            continue
+
+        if not is_relevant(article, country["keywords"]):
+            continue
+
+        seen_urls.add(url)
+        all_articles.append(article)
+
+    return all_articles[:60]
 
 
 def analyze_articles(articles):
@@ -153,17 +265,19 @@ def analyze_articles(articles):
 
     for article in articles:
         title = article.get("title", "").lower()
+        description = article.get("description", "").lower()
+        text = f"{title} {description}"
 
         article_negative = False
         article_positive = False
 
         for word in NEGATIVE_WORDS:
-            if word in title:
+            if word in text:
                 article_negative = True
                 negative_topics[word] = negative_topics.get(word, 0) + 1
 
         for word in POSITIVE_WORDS:
-            if word in title:
+            if word in text:
                 article_positive = True
                 positive_topics[word] = positive_topics.get(word, 0) + 1
 
@@ -210,6 +324,7 @@ def get_main_topic(analysis, articles):
             key=lambda item: item[1],
             reverse=True
         )
+
         return sorted_topics[0][0]
 
     if articles:
@@ -225,8 +340,9 @@ def get_top_articles(articles):
         top_articles.append({
             "title": article.get("title", ""),
             "url": article.get("url", ""),
-            "source": article.get("domain", ""),
-            "seen_date": article.get("seendate", "")
+            "source": article.get("source", ""),
+            "seen_date": article.get("seen_date", ""),
+            "origin": article.get("origin", "")
         })
 
     return top_articles
@@ -270,7 +386,6 @@ def save_history(latest_data):
     ]
 
     history["records"].append(daily_record)
-
     history["records"] = history["records"][-90:]
 
     history["updated_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
@@ -282,10 +397,13 @@ def save_history(latest_data):
 def main():
     countries_output = []
 
+    print("RSS-források lekérése...")
+    rss_articles = fetch_all_rss_articles()
+
     for country in COUNTRIES:
         print(f"Adatgyűjtés: {country['name']}")
 
-        articles = collect_articles(country)
+        articles = collect_articles(country, rss_articles)
 
         print(f"Szűrt cikkek száma: {len(articles)}")
 
@@ -304,7 +422,7 @@ def main():
 
     latest_data = {
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "source": "GDELT",
+        "source": "GDELT + RSS",
         "method_note": "Kulcsszavas, híralapú politikai hangulatindex. Nem közvélemény-kutatás.",
         "countries": countries_output
     }
