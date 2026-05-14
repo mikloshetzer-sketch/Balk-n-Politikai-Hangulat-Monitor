@@ -36,6 +36,7 @@ jobs:
           git config user.email "github-actions@github.com"
 
           git add docs/data/latest.json
+          git add docs/data/history.json
 
           git commit -m "Automatikus adatfrissítés" || echo "Nincs változás"
 
