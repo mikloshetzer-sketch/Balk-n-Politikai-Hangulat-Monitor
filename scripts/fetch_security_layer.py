@@ -1,10 +1,11 @@
 import json
 import os
-import re
 import urllib.request
 from datetime import datetime, timezone
 
 BASE_URL = "https://mikloshetzer-sketch.github.io/balkan-security-map"
+
+LATEST_PATH = "docs/data/latest.json"
 
 OUTPUT_EVENTS = "docs/data/security_events.json"
 OUTPUT_RISK = "docs/data/security_risk.json"
@@ -19,25 +20,12 @@ COUNTRIES = [
 ]
 
 COUNTRY_ALIASES = {
-    "Szerbia": [
-        "serbia", "szerbia", "srbija", "belgrade", "beograd"
-    ],
-    "Bosznia-Hercegovina": [
-        "bosnia", "bosnia and herzegovina", "bih", "sarajevo",
-        "republika srpska", "bosnia-herzegovina"
-    ],
-    "Koszovó": [
-        "kosovo", "kosova", "pristina", "prishtina", "mitrovica"
-    ],
-    "Montenegró": [
-        "montenegro", "crna gora", "podgorica"
-    ],
-    "Észak-Macedónia": [
-        "north macedonia", "macedonia", "skopje", "makedonija"
-    ],
-    "Albánia": [
-        "albania", "albanian", "tirana", "shqiperi", "shqipëria"
-    ]
+    "Szerbia": ["serbia", "szerbia", "srbija", "belgrade", "beograd"],
+    "Bosznia-Hercegovina": ["bosnia", "bosnia and herzegovina", "bih", "sarajevo", "republika srpska"],
+    "Koszovó": ["kosovo", "kosova", "pristina", "prishtina", "mitrovica"],
+    "Montenegró": ["montenegro", "crna gora", "podgorica"],
+    "Észak-Macedónia": ["north macedonia", "macedonia", "skopje", "makedonija"],
+    "Albánia": ["albania", "albanian", "tirana", "shqiperi", "shqipëria"]
 }
 
 CANDIDATE_FILES = [
@@ -63,7 +51,8 @@ POLITICAL_SECURITY_KEYWORDS = [
     "cyber", "hack", "malware", "ddos", "threat", "security",
     "terror", "extremist", "military", "troops", "weapon",
     "sanction", "secession", "dodik", "republika srpska",
-    "mitrovica", "kosovo serbia", "serbia kosovo"
+    "mitrovica", "kosovo serbia", "serbia kosovo", "ohr",
+    "high representative", "christian schmidt"
 ]
 
 NATURAL_ALERT_KEYWORDS = [
@@ -84,9 +73,32 @@ NOISE_KEYWORDS = [
     "trend"
 ]
 
+SECURITY_TOPIC_WEIGHTS = {
+    "Biztonságpolitikai kockázatok és erőszak": 35,
+    "Koszovó–Szerbia feszültség": 30,
+    "Boszniai intézményi válság és OHR-vita": 28,
+    "Belpolitikai tüntetések és társadalmi nyomás": 24,
+    "Korrupció, jogállamiság és igazságszolgáltatás": 16,
+    "Kormányzati stabilitás és választási dinamika": 12,
+    "Nemzetközi kapcsolatok és nagyhatalmi befolyás": 10,
+    "EU-integráció és csatlakozási folyamat": 6,
+    "Gazdaság, energia és beruházások": 4,
+    "Montenegró EU-csatlakozási előrehaladása": 4,
+    "Albán digitalizáció és kiberbiztonság": 12,
+    "Bolgár–macedón identitásvita": 10
+}
+
 
 def now_utc():
     return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+
+def load_local_json(path):
+    if not os.path.exists(path):
+        return None
+
+    with open(path, "r", encoding="utf-8") as file:
+        return json.load(file)
 
 
 def fetch_json(url):
@@ -115,6 +127,10 @@ def text_blob(item):
         return " ".join(text_blob(value) for value in item).lower()
 
     return str(item).lower()
+
+
+def has_any_keyword(text, keywords):
+    return any(keyword.lower() in text for keyword in keywords)
 
 
 def detect_country(item):
@@ -220,10 +236,6 @@ def event_score(item):
     return 0
 
 
-def has_any_keyword(text, keywords):
-    return any(keyword.lower() in text for keyword in keywords)
-
-
 def is_noise_item(item):
     text = text_blob(item)
 
@@ -259,7 +271,7 @@ def classify_event_type(item):
     if any(word in text for word in ["attack", "clash", "violence", "armed", "shooting", "explosion"]):
         return "security_incident"
 
-    if any(word in text for word in ["secession", "dodik", "republika srpska", "ohr"]):
+    if any(word in text for word in ["secession", "dodik", "republika srpska", "ohr", "christian schmidt"]):
         return "institutional_security_risk"
 
     if any(word in text for word in ["police", "arrest", "detained"]):
@@ -318,7 +330,6 @@ def build_events(all_remote_items):
         url = event_url(item)
         source = event_source(item)
         score = event_score(item)
-        blob = text_blob(item)
 
         event_id = f"{country}|{title}|{url}"
 
@@ -352,7 +363,8 @@ def build_events(all_remote_items):
             "date": event_date(item),
             "event_type": event_type,
             "score": calculated_score,
-            "level": risk_level_from_score(calculated_score)
+            "level": risk_level_from_score(calculated_score),
+            "security_source": "event_layer"
         }
 
         lat = item.get("lat")
@@ -367,7 +379,69 @@ def build_events(all_remote_items):
     return events[:300]
 
 
-def build_country_risk(events):
+def get_latest_country(latest_data, country_name):
+    if not latest_data:
+        return None
+
+    for country in latest_data.get("countries", []):
+        if country.get("name") == country_name:
+            return country
+
+    return None
+
+
+def score_from_news_topics(country):
+    if not country:
+        return 0, "nincs adat", []
+
+    topic_scores = country.get("topic_scores", {}) or {}
+
+    security_score = 0
+    contributing_topics = []
+
+    for topic, topic_value in topic_scores.items():
+        if topic not in SECURITY_TOPIC_WEIGHTS:
+            continue
+
+        try:
+            topic_numeric_value = float(topic_value)
+        except Exception:
+            topic_numeric_value = 0
+
+        weighted_value = min(
+            SECURITY_TOPIC_WEIGHTS[topic],
+            topic_numeric_value
+        )
+
+        security_score += weighted_value
+
+        contributing_topics.append({
+            "topic": topic,
+            "topic_score": topic_numeric_value,
+            "security_weight": SECURITY_TOPIC_WEIGHTS[topic],
+            "used_value": weighted_value
+        })
+
+    negative_hits = country.get("negative_hits", 0) or 0
+
+    try:
+        negative_hits = float(negative_hits)
+    except Exception:
+        negative_hits = 0
+
+    security_score += min(20, negative_hits * 1.5)
+
+    security_score = min(100, round(security_score, 1))
+
+    if contributing_topics:
+        main_security_topic = contributing_topics[0]["topic"]
+    else:
+        main_security_topic = "nincs adat"
+
+    return security_score, main_security_topic, contributing_topics[:5]
+
+
+def build_country_risk(events, latest_data):
     countries = []
 
     for country in COUNTRIES:
@@ -389,19 +463,37 @@ def build_country_risk(events):
         else:
             main_type = "nincs adat"
 
-        total_score = sum(float(event.get("score", 0) or 0) for event in country_events)
+        event_total_score = sum(float(event.get("score", 0) or 0) for event in country_events)
 
-        calculated_score = min(
+        event_based_score = min(
             100,
-            round(total_score + event_count * 5, 1)
+            round(event_total_score + event_count * 5, 1)
         )
+
+        latest_country = get_latest_country(latest_data, country)
+        news_score, news_topic, contributing_topics = score_from_news_topics(latest_country)
+
+        if event_count > 0:
+            final_score = max(event_based_score, news_score)
+            security_source = "event_layer"
+            main_event_type = main_type
+        elif news_score > 0:
+            final_score = news_score
+            security_source = "news_derived"
+            main_event_type = news_topic
+        else:
+            final_score = 0
+            security_source = "none"
+            main_event_type = "nincs adat"
 
         countries.append({
             "name": country,
-            "security_score": calculated_score,
-            "security_level": risk_level_from_score(calculated_score),
+            "security_score": final_score,
+            "security_level": risk_level_from_score(final_score),
+            "security_source": security_source,
             "event_count": event_count,
-            "main_event_type": main_type,
+            "main_event_type": main_event_type,
+            "news_security_topics": contributing_topics,
             "top_events": country_events[:5]
         })
 
@@ -410,6 +502,8 @@ def build_country_risk(events):
 
 def main():
     os.makedirs("docs/data", exist_ok=True)
+
+    latest_data = load_local_json(LATEST_PATH)
 
     all_items = []
     successful_sources = []
@@ -425,7 +519,7 @@ def main():
         all_items.extend(flatten_items(data))
 
     events = build_events(all_items)
-    country_risk = build_country_risk(events)
+    country_risk = build_country_risk(events, latest_data)
 
     security_events_output = {
         "updated_at": now_utc(),
@@ -438,9 +532,10 @@ def main():
 
     security_risk_output = {
         "updated_at": now_utc(),
-        "source": "balkan-security-map",
+        "source": "balkan-security-map + news-derived signal",
         "method_note": (
-            "Politikai-biztonsági réteg a balkan-security-map publikált JSON adatai alapján. "
+            "Politikai-biztonsági réteg. Elsődleges forrás a balkan-security-map publikált JSON eseményrétege. "
+            "Ha nincs konkrét esemény, a rendszer a latest.json domináns narratíváiból számol news-derived biztonsági jelet. "
             "A technikai hotspot_cell, rács- és természeti riasztási elemek kiszűrve. "
             "Nem hivatalos kockázati minősítés."
         ),
@@ -460,7 +555,7 @@ def main():
         print("Figyelem: nem sikerült publikált JSON-forrást találni a balkan-security-map repóból.")
 
     if len(events) == 0:
-        print("Figyelem: a szigorú szűrés után nem maradt politikai-biztonsági esemény.")
+        print("Figyelem: konkrét politikai-biztonsági esemény nem maradt. A kockázati értékek news-derived alapon készültek.")
 
 
 if __name__ == "__main__":
