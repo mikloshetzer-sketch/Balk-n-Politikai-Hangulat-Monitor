@@ -73,7 +73,8 @@ def fetch_url(url):
     request = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "Mozilla/5.0 (compatible; BalkanPoliticalSocialMonitor/1.0)"
+            "User-Agent": "Mozilla/5.0 (compatible; BalkanPoliticalSocialMonitor/1.0)",
+            "Accept": "application/json"
         }
     )
 
@@ -93,14 +94,17 @@ def fetch_reddit_posts(query):
         params = {
             "q": query,
             "sort": "new",
-            "t": "day",
-            "limit": 25
+            "t": "week",
+            "limit": 25,
+            "type": "link"
         }
 
         url = "https://www.reddit.com/search.json?" + urllib.parse.urlencode(params)
         data = fetch_json(url)
 
         children = data.get("data", {}).get("children", [])
+
+        print(f"Reddit találatok - {query}: {len(children)}")
 
         for child in children:
             item = child.get("data", {})
@@ -141,7 +145,11 @@ def fetch_bluesky_posts(query):
         url = "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?" + urllib.parse.urlencode(params)
         data = fetch_json(url)
 
-        for item in data.get("posts", []):
+        items = data.get("posts", [])
+
+        print(f"Bluesky találatok - {query}: {len(items)}")
+
+        for item in items:
             record = item.get("record", {})
             author = item.get("author", {})
 
@@ -152,11 +160,9 @@ def fetch_bluesky_posts(query):
             if not text:
                 continue
 
-            post_url = uri
-
             posts.append({
                 "title": text[:180],
-                "url": post_url,
+                "url": uri,
                 "source": f"Bluesky/{handle}",
                 "seen_date": record.get("createdAt", ""),
                 "origin": "Bluesky",
@@ -185,7 +191,11 @@ def fetch_mastodon_posts(query):
             url = instance + "/api/v2/search?" + urllib.parse.urlencode(params)
             data = fetch_json(url)
 
-            for item in data.get("statuses", []):
+            items = data.get("statuses", [])
+
+            print(f"Mastodon találatok - {instance} / {query}: {len(items)}")
+
+            for item in items:
                 content = clean_text(item.get("content", ""))
                 status_url = item.get("url", "")
 
@@ -296,11 +306,12 @@ def main():
     countries_output = []
 
     for country in COUNTRIES:
+        print("")
         print(f"Social adatgyűjtés: {country['name']}")
 
         posts = collect_social_posts(country)
 
-        print(f"Social találatok száma: {len(posts)}")
+        print(f"Összes social találat: {len(posts)}")
 
         analysis = analyze_social_posts(posts)
 
