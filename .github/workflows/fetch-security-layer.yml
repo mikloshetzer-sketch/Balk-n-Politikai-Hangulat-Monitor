@@ -1,0 +1,38 @@
+name: Fetch Security Layer
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "20 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-security-layer:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository letöltése
+        uses: actions/checkout@v4
+
+      - name: Python telepítése
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Biztonsági réteg lekérése
+        run: python scripts/fetch_security_layer.py
+
+      - name: Változások commitolása
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add docs/data/security_events.json
+          git add docs/data/security_risk.json
+
+          git commit -m "Biztonsági réteg frissítése" || echo "Nincs változás"
+
+          git push
