@@ -178,6 +178,10 @@
       color: #d97706;
     }
 
+    .security-score {
+      color: #b91c1c;
+    }
+
     .metric-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -222,6 +226,7 @@
     }
 
     .social-box,
+    .security-box,
     .chart-box,
     .topic-box,
     .news-section {
@@ -236,7 +241,13 @@
       background: #f9fafb;
     }
 
+    .security-box {
+      background: #fff7ed;
+      border-color: #fdba74;
+    }
+
     .social-box h3,
+    .security-box h3,
     .chart-box h3,
     .topic-box h3,
     .news-section h3 {
@@ -306,7 +317,7 @@
 
 <header>
   <h1>Balkán Politikai Hangulat Monitor</h1>
-  <p>Hírindex, social media index, domináns narratívák és országriportok</p>
+  <p>Hírindex, social media index, security risk és domináns narratívák</p>
 </header>
 
 <main>
@@ -351,11 +362,13 @@ async function loadData() {
     const historyResponse = await fetch('./data/history.json');
     const socialResponse = await fetch('./data/social_latest.json');
     const reportsResponse = await fetch('./data/reports_index.json');
+    const securityResponse = await fetch('./data/security_risk.json');
 
     const latestData = await latestResponse.json();
     const historyData = await historyResponse.json();
     const socialData = await socialResponse.json();
     const reportsData = await reportsResponse.json();
+    const securityData = await securityResponse.json();
 
     document.getElementById('updatedAt').textContent =
       latestData.updated_at || 'nincs adat';
@@ -376,7 +389,10 @@ async function loadData() {
 
     latestData.countries.forEach(country => {
       const socialSignal = getSocialSignal(country.name, socialData);
+      const securitySignal = getSecuritySignal(country.name, securityData);
+
       const reportUrl = getReportUrl(country.name, reportsData);
+
       const trendChartId = `trend-${slugify(country.name)}`;
       const topicChartId = `topics-${slugify(country.name)}`;
 
@@ -401,13 +417,17 @@ async function loadData() {
           <div class="score-row">
             <div class="score-box">
               <div class="score-label">Hírindex</div>
-              <div class="score-value ${getTextClass(country.status)}">${country.score}</div>
+              <div class="score-value ${getTextClass(country.status)}">
+                ${country.score}
+              </div>
               <div class="small">${getStatusText(country.status)}</div>
             </div>
 
             <div class="score-box">
               <div class="score-label">Social media index</div>
-              <div class="score-value social-score">${socialSignal.score || 0}</div>
+              <div class="score-value social-score">
+                ${socialSignal.score || 0}
+              </div>
               <div class="small">${getSocialLevelText(socialSignal.level)}</div>
             </div>
           </div>
@@ -423,11 +443,44 @@ async function loadData() {
             Fő hír téma: <strong>${country.main_topic || 'nincs adat'}</strong>
           </div>
 
+          <div class="security-box">
+            <h3>Biztonsági réteg</h3>
+
+            <div class="metric-grid">
+              <div class="metric">
+                Security risk
+                <strong>${securitySignal.security_score || 0}</strong>
+              </div>
+
+              <div class="metric">
+                Szint
+                <strong>${securitySignal.security_level || 'none'}</strong>
+              </div>
+
+              <div class="metric">
+                Események
+                <strong>${securitySignal.event_count || 0}</strong>
+              </div>
+
+              <div class="metric">
+                Forrás
+                <strong>${securitySignal.security_source || 'none'}</strong>
+              </div>
+            </div>
+
+            <div class="topic-line">
+              Fő biztonsági narratíva:
+              <strong>${securitySignal.main_event_type || 'nincs adat'}</strong>
+            </div>
+          </div>
+
           <div class="topic-box">
             <h3>Domináns narratívák</h3>
+
             <div class="chart-desc">
               A témacsoportok relatív súlya az aktuális híranyag alapján.
             </div>
+
             <div class="topic-chart-wrap">
               <canvas id="${topicChartId}"></canvas>
             </div>
@@ -435,24 +488,44 @@ async function loadData() {
 
           <div class="social-box">
             <h3>Social signal</h3>
+
             <div class="metric-grid">
-              <div class="metric">Említések<strong>${socialSignal.mentions || 0}</strong></div>
-              <div class="metric">Negatív<strong>${socialSignal.negative_hits || 0}</strong></div>
-              <div class="metric">Pozitív<strong>${socialSignal.positive_hits || 0}</strong></div>
-              <div class="metric">Index<strong>${socialSignal.score || 0}</strong></div>
+              <div class="metric">
+                Említések
+                <strong>${socialSignal.mentions || 0}</strong>
+              </div>
+
+              <div class="metric">
+                Negatív
+                <strong>${socialSignal.negative_hits || 0}</strong>
+              </div>
+
+              <div class="metric">
+                Pozitív
+                <strong>${socialSignal.positive_hits || 0}</strong>
+              </div>
+
+              <div class="metric">
+                Index
+                <strong>${socialSignal.score || 0}</strong>
+              </div>
             </div>
+
             <div class="topic-line">
               Reddit: ${getSourceCount(socialSignal, 'reddit')} |
               Mastodon: ${getSourceCount(socialSignal, 'mastodon')} |
-              Fő social téma: <strong>${socialSignal.main_topic || 'nincs adat'}</strong>
+              Fő social téma:
+              <strong>${socialSignal.main_topic || 'nincs adat'}</strong>
             </div>
           </div>
 
           <div class="chart-box">
             <h3>Mini kombinált trenddiagram</h3>
+
             <div class="chart-desc">
               Kék vonal: hírindex. Világoskék oszlop: social media index.
             </div>
+
             <div class="chart-wrap">
               <canvas id="${trendChartId}"></canvas>
             </div>
@@ -466,7 +539,13 @@ async function loadData() {
       grid.appendChild(card);
 
       createTopicChart(topicChartId, country.topic_scores || {});
-      createMiniComboChart(trendChartId, country.name, historyData, socialSignal, country.score);
+      createMiniComboChart(
+        trendChartId,
+        country.name,
+        historyData,
+        socialSignal,
+        country.score
+      );
     });
 
   } catch (error) {
@@ -483,16 +562,45 @@ async function loadData() {
   }
 }
 
+function getSecuritySignal(countryName, securityData) {
+  const fallback = {
+    security_score: 0,
+    security_level: 'none',
+    security_source: 'none',
+    event_count: 0,
+    main_event_type: 'nincs adat'
+  };
+
+  if (!securityData || !securityData.countries) {
+    return fallback;
+  }
+
+  const row = securityData.countries.find(
+    item => item.name === countryName
+  );
+
+  if (!row) {
+    return fallback;
+  }
+
+  return row;
+}
+
 function buildRegionalButton(reportsData) {
   const wrap = document.getElementById('regionalButtonWrap');
 
   if (!reportsData || !reportsData.regional_overview) {
-    wrap.innerHTML = `<span class="small">Régiós helyzetkép még nem érhető el.</span>`;
+    wrap.innerHTML =
+      `<span class="small">Régiós helyzetkép még nem érhető el.</span>`;
+
     return;
   }
 
   wrap.innerHTML = `
-    <a class="regional-button" href="${reportsData.regional_overview}" target="_blank" rel="noopener noreferrer">
+    <a class="regional-button"
+       href="${reportsData.regional_overview}"
+       target="_blank"
+       rel="noopener noreferrer">
       Mai Balkán helyzetkép megnyitása
     </a>
   `;
@@ -501,12 +609,17 @@ function buildRegionalButton(reportsData) {
 function buildReportButton(reportUrl) {
   if (!reportUrl) {
     return `
-      <span class="small">Riport még nem érhető el</span>
+      <span class="small">
+        Riport még nem érhető el
+      </span>
     `;
   }
 
   return `
-    <a class="report-button" href="${reportUrl}" target="_blank" rel="noopener noreferrer">
+    <a class="report-button"
+       href="${reportUrl}"
+       target="_blank"
+       rel="noopener noreferrer">
       Szöveges helyzetkép megnyitása
     </a>
   `;
@@ -517,7 +630,9 @@ function getReportUrl(countryName, reportsData) {
     return null;
   }
 
-  const row = reportsData.reports.find(item => item.name === countryName);
+  const row = reportsData.reports.find(
+    item => item.name === countryName
+  );
 
   if (!row || !row.url) {
     return null;
@@ -528,6 +643,7 @@ function getReportUrl(countryName, reportsData) {
 
 function createTopicChart(canvasId, topicScores) {
   const canvas = document.getElementById(canvasId);
+
   if (!canvas) return;
 
   if (chartStore[canvasId]) {
@@ -596,7 +712,13 @@ function createTopicChart(canvasId, topicScores) {
   });
 }
 
-function createMiniComboChart(canvasId, countryName, historyData, socialSignal, currentNewsScore) {
+function createMiniComboChart(
+  canvasId,
+  countryName,
+  historyData,
+  socialSignal,
+  currentNewsScore
+) {
   const canvas = document.getElementById(canvasId);
 
   if (!canvas) return;
@@ -605,19 +727,37 @@ function createMiniComboChart(canvasId, countryName, historyData, socialSignal, 
     chartStore[canvasId].destroy();
   }
 
-  const historyRows = getCountryHistory(countryName, historyData);
+  const historyRows = getCountryHistory(
+    countryName,
+    historyData
+  );
 
-  let labels = historyRows.map(row => shortDate(row.date));
-  let newsIndex = historyRows.map(row => row.score);
-  let socialIndex = historyRows.map(row => row.social_score || 0);
+  let labels = historyRows.map(
+    row => shortDate(row.date)
+  );
+
+  let newsIndex = historyRows.map(
+    row => row.score
+  );
+
+  let socialIndex = historyRows.map(
+    row => row.social_score || 0
+  );
 
   if (labels.length === 0) {
     labels = ['Ma'];
+
     newsIndex = [currentNewsScore || 0];
+
     socialIndex = [socialSignal.score || 0];
   } else {
-    newsIndex[newsIndex.length - 1] = currentNewsScore || newsIndex[newsIndex.length - 1] || 0;
-    socialIndex[socialIndex.length - 1] = socialSignal.score || 0;
+    newsIndex[newsIndex.length - 1] =
+      currentNewsScore ||
+      newsIndex[newsIndex.length - 1] ||
+      0;
+
+    socialIndex[socialIndex.length - 1] =
+      socialSignal.score || 0;
   }
 
   chartStore[canvasId] = new Chart(canvas, {
@@ -723,7 +863,9 @@ function getCountryHistory(countryName, historyData) {
   const records = historyData.records || [];
 
   records.forEach(record => {
-    const country = record.countries.find(item => item.name === countryName);
+    const country = record.countries.find(
+      item => item.name === countryName
+    );
 
     if (country) {
       rows.push({
@@ -748,17 +890,29 @@ function getSocialSignal(countryName, socialData) {
     main_topic: 'nincs adat'
   };
 
-  if (!socialData || !socialData.countries) return fallback;
+  if (!socialData || !socialData.countries) {
+    return fallback;
+  }
 
-  const row = socialData.countries.find(item => item.name === countryName);
+  const row = socialData.countries.find(
+    item => item.name === countryName
+  );
 
-  if (!row || !row.social_signal) return fallback;
+  if (!row || !row.social_signal) {
+    return fallback;
+  }
 
   return row.social_signal;
 }
 
-function getSourceCount(socialSignal, sourceName) {
-  if (!socialSignal || !socialSignal.source_counts) return 0;
+function getSourceCount(
+  socialSignal,
+  sourceName
+) {
+  if (!socialSignal || !socialSignal.source_counts) {
+    return 0;
+  }
+
   return socialSignal.source_counts[sourceName] || 0;
 }
 
@@ -767,7 +921,9 @@ function buildArticlesHtml(articles) {
     return `
       <div class="news-section">
         <h3>Kiemelt cikkek</h3>
-        <p class="small">Nincs megjeleníthető cikk.</p>
+        <p class="small">
+          Nincs megjeleníthető cikk.
+        </p>
       </div>
     `;
   }
@@ -779,7 +935,11 @@ function buildArticlesHtml(articles) {
 
     return `
       <li>
-        <a href="${url}" target="_blank" rel="noopener noreferrer">${title}</a>
+        <a href="${url}"
+           target="_blank"
+           rel="noopener noreferrer">
+          ${title}
+        </a>
         <br>
         <span class="small">${source}</span>
       </li>
@@ -820,8 +980,13 @@ function getTextClass(status) {
 
 function shortDate(dateString) {
   if (!dateString) return '';
+
   const parts = dateString.split('-');
-  if (parts.length !== 3) return dateString;
+
+  if (parts.length !== 3) {
+    return dateString;
+  }
+
   return `${parts[1]}.${parts[2]}`;
 }
 
