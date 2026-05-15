@@ -1,9 +1,12 @@
 import json
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+import email.utils
 import feedparser
 
 SOCIAL_LATEST_PATH = "docs/data/social_latest.json"
+
+MAX_AGE_DAYS = 7
 
 COUNTRIES = [
     {
@@ -33,7 +36,6 @@ COUNTRIES = [
 ]
 
 FEEDS = [
-    # Mastodon hashtag RSS
     ("mastodon", "https://mastodon.social/tags/balkan.rss", "balkan"),
     ("mastodon", "https://mastodon.social/tags/balkans.rss", "balkans"),
     ("mastodon", "https://mastodon.social/tags/serbia.rss", "serbia"),
@@ -43,7 +45,6 @@ FEEDS = [
     ("mastodon", "https://mastodon.social/tags/albania.rss", "albania"),
     ("mastodon", "https://mastodon.social/tags/macedonia.rss", "macedonia"),
 
-    # Reddit subreddit RSS
     ("reddit", "https://www.reddit.com/r/serbia/.rss", "serbia"),
     ("reddit", "https://www.reddit.com/r/kosovo/.rss", "kosovo"),
     ("reddit", "https://www.reddit.com/r/bih/.rss", "bih"),
@@ -55,12 +56,31 @@ FEEDS = [
     ("reddit", "https://www.reddit.com/r/geopolitics/.rss", "geopolitics")
 ]
 
+POLITICAL_WORDS = [
+    "politics", "political", "government", "president", "prime minister",
+    "minister", "parliament", "opposition", "election", "elections",
+    "vote", "party", "coalition", "law", "court", "police",
+    "protest", "protests", "democracy", "rule of law", "corruption",
+    "eu", "european union", "nato", "accession", "enlargement",
+    "dialogue", "border", "security", "sanctions", "violence",
+    "crisis", "conflict", "tension", "war", "ethnic", "minority",
+    "dodik", "vucic", "vučić", "kurti", "rama", "ohr", "kfor"
+]
+
+NOISE_WORDS = [
+    "eurovision", "song", "music", "festival", "photo", "photography",
+    "travel", "tourism", "beach", "trip", "landscape", "hotel",
+    "monastery", "church", "food", "recipe", "football", "basketball",
+    "gaming", "movie", "film", "concert", "holiday", "vacation",
+    "infrared", "blackwhite", "blackandwhite", "river", "mountain"
+]
+
 NEGATIVE_WORDS = [
     "protest", "crisis", "corruption", "violence", "conflict",
     "tension", "sanction", "arrest", "attack", "war", "unrest",
     "fraud", "dispute", "scandal", "threat", "instability",
     "clash", "riot", "boycott", "polarization", "separatism",
-    "nationalism", "blocked", "deadlock"
+    "nationalism", "blocked", "deadlock", "police violence"
 ]
 
 POSITIVE_WORDS = [
@@ -76,6 +96,8 @@ def strip_html(text):
         return ""
 
     text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"&nbsp;", " ", text)
+    text = re.sub(r"&amp;", "&", text)
     text = re.sub(r"\s+", " ", text)
 
     return text.strip()
@@ -88,6 +110,45 @@ def norm(text):
 def parse_feed(url):
     feedparser.USER_AGENT = "Balkan-Political-Social-Monitor/1.0"
     return feedparser.parse(url)
+
+
+def parse_date(value):
+    if not value:
+        return None
+
+    try:
+        parsed = email.utils.parsedate_to_datetime(value)
+
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+
+        return parsed.astimezone(timezone.utc)
+
+    except Exception:
+        return None
+
+
+def is_recent(published):
+    parsed = parse_date(published)
+
+    if not parsed:
+        return False
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
+
+    return parsed >= cutoff
+
+
+def has_any(text_lc, words):
+    return any(word in text_lc for word in words)
+
+
+def is_political(text_lc):
+    return has_any(text_lc, POLITICAL_WORDS)
+
+
+def is_noise(text_lc):
+    return has_any(text_lc, NOISE_WORDS)
 
 
 def match_country(text_lc):
@@ -110,7 +171,6 @@ def collect_posts():
         print(f"Feed lekérése: {source_type} / {tag}")
 
         feed = parse_feed(url)
-
         entries = getattr(feed, "entries", [])
 
         print(f"Találatok: {len(entries)}")
@@ -121,16 +181,25 @@ def collect_posts():
             summary = getattr(entry, "summary", "") or getattr(entry, "description", "") or ""
             published = getattr(entry, "published", "") or getattr(entry, "updated", "") or ""
 
+            if not is_recent(published):
+                continue
+
             text = f"{title} {summary}"
             text_plain = strip_html(text)
             text_lc = text_plain.lower()
+
+            if is_noise(text_lc) and not is_political(text_lc):
+                continue
+
+            if not is_political(text_lc):
+                continue
 
             countries = match_country(text_lc)
 
             if not countries:
                 continue
 
-            key = link or text_plain[:120]
+            key = link or text_plain[:160]
 
             if key in seen:
                 continue
@@ -139,7 +208,7 @@ def collect_posts():
 
             all_posts.append({
                 "title": strip_html(title)[:180],
-                "text": strip_html(summary)[:300],
+                "text": strip_html(summary)[:320],
                 "url": link,
                 "source": source_type,
                 "tag": tag,
@@ -159,12 +228,10 @@ def analyze_country(country_name, posts):
     mentions = len(related)
     negative_hits = 0
     positive_hits = 0
-
     source_counts = {
         "reddit": 0,
         "mastodon": 0
     }
-
     tag_counts = {}
 
     for post in related:
@@ -178,13 +245,13 @@ def analyze_country(country_name, posts):
         if tag:
             tag_counts[tag] = tag_counts.get(tag, 0) + 1
 
-        if any(word in text for word in NEGATIVE_WORDS):
+        if has_any(text, NEGATIVE_WORDS):
             negative_hits += 1
 
-        if any(word in text for word in POSITIVE_WORDS):
+        if has_any(text, POSITIVE_WORDS):
             positive_hits += 1
 
-    raw_score = mentions + (negative_hits * 3) + (positive_hits * 2)
+    raw_score = (mentions * 2) + (negative_hits * 3) + (positive_hits * 2)
     score = min(raw_score, 30)
 
     if score >= 20:
@@ -213,11 +280,11 @@ def analyze_country(country_name, posts):
 
 
 def main():
-    print("Social RSS-források lekérése...")
+    print("Social RSS-források lekérése politikai szűréssel...")
 
     posts = collect_posts()
 
-    print(f"Összes szűrt social találat: {len(posts)}")
+    print(f"Összes politikailag releváns social találat: {len(posts)}")
 
     countries_output = []
 
@@ -232,7 +299,7 @@ def main():
     output = {
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "source": "Reddit RSS + Mastodon hashtag RSS",
-        "method_note": "A social signal külön jelző. Nem közvélemény-kutatás, és nem része a fő hírindexnek.",
+        "method_note": "A social signal külön jelző. Csak 7 napon belüli, politikailag releváns találatokat számol. Nem közvélemény-kutatás, és nem része a fő hírindexnek.",
         "countries": countries_output
     }
 
