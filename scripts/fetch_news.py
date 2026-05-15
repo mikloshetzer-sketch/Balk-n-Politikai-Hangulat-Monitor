@@ -88,6 +88,89 @@ POSITIVE_WORDS = [
     "napredak", "podrška", "partnerstvo"
 ]
 
+TOPIC_RULES = [
+    {
+        "label": "Belpolitikai tüntetések és társadalmi nyomás",
+        "keywords": [
+            "protest", "protests", "demonstration", "students", "student protest",
+            "police violence", "riot", "unrest", "blocked", "boycott"
+        ],
+        "weight": 5
+    },
+    {
+        "label": "EU-integráció és csatlakozási folyamat",
+        "keywords": [
+            "eu accession", "eu membership", "european union", "enlargement",
+            "accession talks", "negotiations", "brussels", "rule of law",
+            "joining the eu", "integration"
+        ],
+        "weight": 4
+    },
+    {
+        "label": "Koszovó–Szerbia feszültség",
+        "keywords": [
+            "kosovo serbia", "serbia kosovo", "kurti", "vucic", "vučić",
+            "mitrovica", "pristina", "prishtina", "serb list",
+            "dialogue", "border", "kfor"
+        ],
+        "weight": 5
+    },
+    {
+        "label": "Boszniai intézményi válság és OHR-vita",
+        "keywords": [
+            "dodik", "republika srpska", "ohr", "high representative",
+            "christian schmidt", "state collapse", "dayton",
+            "bosnian state", "secession", "constitutional crisis"
+        ],
+        "weight": 5
+    },
+    {
+        "label": "Korrupció, jogállamiság és igazságszolgáltatás",
+        "keywords": [
+            "corruption", "rule of law", "court", "special court", "charges",
+            "investigation", "fraud", "convicted", "trial", "justice",
+            "prosecution", "rights violations"
+        ],
+        "weight": 4
+    },
+    {
+        "label": "Biztonságpolitikai kockázatok és erőszak",
+        "keywords": [
+            "violence", "attack", "assault", "clash", "clashes", "security",
+            "threat", "war", "conflict", "tension", "tensions",
+            "nationalism", "ethnic", "minority"
+        ],
+        "weight": 4
+    },
+    {
+        "label": "Kormányzati stabilitás és választási dinamika",
+        "keywords": [
+            "government", "prime minister", "president", "parliament",
+            "opposition", "election", "elections", "party", "coalition",
+            "mayor", "cabinet", "resignation"
+        ],
+        "weight": 3
+    },
+    {
+        "label": "Gazdaság, energia és beruházások",
+        "keywords": [
+            "investment", "economic growth", "growth", "energy", "nis",
+            "mol", "infrastructure", "digital connectivity", "funding",
+            "development", "trade"
+        ],
+        "weight": 3
+    },
+    {
+        "label": "Nemzetközi kapcsolatok és nagyhatalmi befolyás",
+        "keywords": [
+            "nato", "russia", "china", "united states", "usa", "turkey",
+            "un", "united nations", "sanctions", "foreign policy",
+            "diplomacy"
+        ],
+        "weight": 3
+    }
+]
+
 
 def clean_text(text):
     if not text:
@@ -96,6 +179,8 @@ def clean_text(text):
     text = re.sub(r"<[^>]+>", "", text)
     text = text.replace("\n", " ")
     text = text.replace("\r", " ")
+    text = text.replace("&nbsp;", " ")
+    text = text.replace("&amp;", "&")
 
     return " ".join(text.split())
 
@@ -246,6 +331,37 @@ def collect_articles(country, rss_articles):
     return all_articles[:80]
 
 
+def classify_topics(articles):
+    topic_scores = {}
+
+    for article in articles:
+        title = article.get("title", "").lower()
+        description = article.get("description", "").lower()
+        source = article.get("source", "").lower()
+
+        text = f"{title} {description} {source}"
+
+        for rule in TOPIC_RULES:
+            label = rule["label"]
+            weight = rule.get("weight", 1)
+
+            for keyword in rule["keywords"]:
+                if keyword.lower() in text:
+                    topic_scores[label] = topic_scores.get(label, 0) + weight
+                    break
+
+    sorted_topics = sorted(
+        topic_scores.items(),
+        key=lambda item: item[1],
+        reverse=True
+    )
+
+    return {
+        "main_topic": sorted_topics[0][0] if sorted_topics else "nincs kiemelkedő téma",
+        "topic_scores": dict(sorted_topics[:5])
+    }
+
+
 def analyze_articles(articles):
     negative_hits = 0
     positive_hits = 0
@@ -298,29 +414,6 @@ def get_status(score):
     return "neutral"
 
 
-def get_main_topic(analysis, articles):
-    combined = {}
-
-    for key, value in analysis["negative_topics"].items():
-        combined[key] = combined.get(key, 0) + value
-
-    for key, value in analysis["positive_topics"].items():
-        combined[key] = combined.get(key, 0) + value
-
-    if combined:
-        sorted_topics = sorted(
-            combined.items(),
-            key=lambda item: item[1],
-            reverse=True
-        )
-        return sorted_topics[0][0]
-
-    if articles:
-        return articles[0].get("title", "")[:100]
-
-    return "nincs kiemelkedő téma"
-
-
 def get_top_articles(articles):
     top_articles = []
 
@@ -365,7 +458,8 @@ def save_history(latest_data):
             "article_count": country["article_count"],
             "negative_hits": country["negative_hits"],
             "positive_hits": country["positive_hits"],
-            "main_topic": country["main_topic"]
+            "main_topic": country["main_topic"],
+            "topic_scores": country.get("topic_scores", {})
         })
 
     history["records"] = [
@@ -395,12 +489,14 @@ def main():
         print(f"Szűrt cikkek száma: {len(articles)}")
 
         analysis = analyze_articles(articles)
+        topic_result = classify_topics(articles)
 
         countries_output.append({
             "name": country["name"],
             "score": analysis["score"],
             "status": get_status(analysis["score"]),
-            "main_topic": get_main_topic(analysis, articles),
+            "main_topic": topic_result["main_topic"],
+            "topic_scores": topic_result["topic_scores"],
             "article_count": len(articles),
             "negative_hits": analysis["negative_hits"],
             "positive_hits": analysis["positive_hits"],
@@ -410,7 +506,7 @@ def main():
     latest_data = {
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "source": "GDELT + regional RSS",
-        "method_note": "Kulcsszavas, híralapú politikai hangulatindex. Nem közvélemény-kutatás.",
+        "method_note": "Kulcsszavas, híralapú politikai hangulatindex narratív témacsoportokkal. Nem közvélemény-kutatás.",
         "countries": countries_output
     }
 
