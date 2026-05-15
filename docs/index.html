@@ -65,6 +65,22 @@
       margin-bottom: 4px;
     }
 
+    .regional-button {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 11px 15px;
+      border-radius: 12px;
+      background: #111827;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .regional-button:hover {
+      background: #374151;
+    }
+
     .small {
       color: #6b7280;
       font-size: 13px;
@@ -314,6 +330,8 @@
     </div>
 
     <p class="small" id="methodNote" style="margin-top:12px;"></p>
+
+    <div id="regionalButtonWrap"></div>
   </section>
 
   <section class="dashboard-grid" id="countryGrid"></section>
@@ -350,6 +368,8 @@ async function loadData() {
 
     document.getElementById('methodNote').textContent =
       latestData.method_note || '';
+
+    buildRegionalButton(reportsData);
 
     const grid = document.getElementById('countryGrid');
     grid.innerHTML = '';
@@ -461,6 +481,21 @@ async function loadData() {
       </div>
     `;
   }
+}
+
+function buildRegionalButton(reportsData) {
+  const wrap = document.getElementById('regionalButtonWrap');
+
+  if (!reportsData || !reportsData.regional_overview) {
+    wrap.innerHTML = `<span class="small">Régiós helyzetkép még nem érhető el.</span>`;
+    return;
+  }
+
+  wrap.innerHTML = `
+    <a class="regional-button" href="${reportsData.regional_overview}" target="_blank" rel="noopener noreferrer">
+      Mai Balkán helyzetkép megnyitása
+    </a>
+  `;
 }
 
 function buildReportButton(reportUrl) {
