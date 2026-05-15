@@ -65,7 +65,10 @@ POLITICAL_WORDS = [
     "crisis", "conflict", "tension", "war", "ethnic", "minority",
     "dodik", "vucic", "vučić", "kurti", "rama", "ohr", "kfor",
     "schmidt", "high representative", "special court", "serbia-eu",
-    "kosovo-serbia", "balkan insight", "politico", "bbc", "united nations"
+    "kosovo-serbia", "balkan insight", "politico", "bbc", "united nations",
+    "state collapse", "peace envoy", "ruling party", "police violence",
+    "minister of energy", "digital connectivity", "serbia-nato",
+    "eu membership"
 ]
 
 NOISE_WORDS = [
@@ -73,10 +76,14 @@ NOISE_WORDS = [
     "festival", "photo", "photography", "foto", "travel", "tourism",
     "beach", "trip", "roadtrip", "landscape", "hotel", "monastery",
     "church", "food", "recipe", "football", "basketball", "gaming",
-    "movie", "film", "concert", "holiday", "vacation", "infrared",
-    "blackwhite", "blackandwhite", "river", "mountain", "dua lipa",
-    "samsung", "doctorwho", "tardis", "ancient macedonia", "alexanderthegreat",
-    "hellenistic", "history"
+    "movie", "film", "cinema", "concert", "holiday", "vacation",
+    "infrared", "blackwhite", "blackandwhite", "river", "mountain",
+    "dua lipa", "samsung", "doctorwho", "tardis", "ancient macedonia",
+    "alexanderthegreat", "hellenistic", "history", "earthquake",
+    "earth quake", "tërmet", "earthquake report", "travelphoto",
+    "book", "books", "novel", "literature", "culture", "art",
+    "gallery", "museum", "weather", "sports", "ukraine",
+    "latin americans", "google gemini", "cybersecurity review"
 ]
 
 NEGATIVE_WORDS = [
