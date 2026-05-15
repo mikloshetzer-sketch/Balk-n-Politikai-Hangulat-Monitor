@@ -26,6 +26,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Python csomagok telepítése
+        run: pip install feedparser
+
       - name: Hírmonitor script futtatása
         run: python scripts/fetch_news.py
 
