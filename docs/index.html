@@ -370,12 +370,14 @@ async function loadData() {
     const socialResponse = await fetch('./data/social_latest.json');
     const reportsResponse = await fetch('./data/reports_index.json');
     const securityResponse = await fetch('./data/security_risk.json');
+    const securityHistoryResponse = await fetch('./data/security_history.json');
 
     const latestData = await latestResponse.json();
     const historyData = await historyResponse.json();
     const socialData = await socialResponse.json();
     const reportsData = await reportsResponse.json();
     const securityData = await securityResponse.json();
+    const securityHistoryData = await securityHistoryResponse.json();
 
     document.getElementById('updatedAt').textContent =
       latestData.updated_at || 'nincs adat';
@@ -401,6 +403,7 @@ async function loadData() {
       const reportUrl = getReportUrl(country.name, reportsData);
 
       const trendChartId = `trend-${slugify(country.name)}`;
+      const securityTrendChartId = `security-trend-${slugify(country.name)}`;
       const topicChartId = `topics-${slugify(country.name)}`;
 
       const card = document.createElement('div');
@@ -481,6 +484,18 @@ async function loadData() {
             </div>
           </div>
 
+          <div class="chart-box">
+            <h3>Security trend</h3>
+
+            <div class="chart-desc">
+              Narancs vonal: security risk az elmúlt napokban.
+            </div>
+
+            <div class="chart-wrap">
+              <canvas id="${securityTrendChartId}"></canvas>
+            </div>
+          </div>
+
           <div class="topic-box">
             <h3>Domináns narratívák</h3>
 
@@ -552,6 +567,13 @@ async function loadData() {
         historyData,
         socialSignal,
         country.score
+      );
+
+      createSecurityTrendChart(
+        securityTrendChartId,
+        country.name,
+        securityHistoryData,
+        securitySignal
       );
     });
 
@@ -863,6 +885,132 @@ function createMiniComboChart(
       }
     }
   });
+}
+
+function createSecurityTrendChart(
+  canvasId,
+  countryName,
+  securityHistoryData,
+  currentSecuritySignal
+) {
+  const canvas = document.getElementById(canvasId);
+
+  if (!canvas) return;
+
+  if (chartStore[canvasId]) {
+    chartStore[canvasId].destroy();
+  }
+
+  const historyRows = getSecurityHistory(
+    countryName,
+    securityHistoryData
+  );
+
+  let labels = historyRows.map(
+    row => shortDate(row.date)
+  );
+
+  let securityIndex = historyRows.map(
+    row => row.security_score || 0
+  );
+
+  if (labels.length === 0) {
+    labels = ['Ma'];
+    securityIndex = [currentSecuritySignal.security_score || 0];
+  } else {
+    securityIndex[securityIndex.length - 1] =
+      currentSecuritySignal.security_score ||
+      securityIndex[securityIndex.length - 1] ||
+      0;
+  }
+
+  chartStore[canvasId] = new Chart(canvas, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          label: 'Security risk',
+          data: securityIndex,
+          tension: 0.35,
+          borderWidth: 2,
+          pointRadius: 2,
+          pointHoverRadius: 4,
+          borderColor: '#ea580c',
+          backgroundColor: '#ea580c'
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: {
+        mode: 'index',
+        intersect: false
+      },
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: {
+            boxWidth: 10,
+            font: { size: 10 }
+          }
+        },
+        tooltip: {
+          backgroundColor: '#111827',
+          padding: 9
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          suggestedMax: 60,
+          ticks: {
+            font: { size: 10 }
+          },
+          title: {
+            display: true,
+            text: 'Security',
+            font: { size: 10 }
+          },
+          grid: {
+            color: 'rgba(0,0,0,0.06)'
+          }
+        },
+        x: {
+          ticks: {
+            font: { size: 10 },
+            maxRotation: 0
+          },
+          grid: {
+            display: false
+          }
+        }
+      }
+    }
+  });
+}
+
+function getSecurityHistory(countryName, securityHistoryData) {
+  const rows = [];
+  const records = securityHistoryData.records || [];
+
+  records.forEach(record => {
+    const country = record.countries.find(
+      item => item.name === countryName
+    );
+
+    if (country) {
+      rows.push({
+        date: record.date,
+        security_score: country.security_score || 0,
+        security_level: country.security_level || 'none',
+        main_event_type: country.main_event_type || 'nincs adat'
+      });
+    }
+  });
+
+  return rows.slice(-7);
 }
 
 function getCountryHistory(countryName, historyData) {
