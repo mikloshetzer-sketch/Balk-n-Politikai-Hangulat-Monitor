@@ -67,40 +67,40 @@ TOPIC_KEYWORDS = {
 
 TOPIC_EXPLANATIONS = {
     "Belpolitikai tüntetések és társadalmi nyomás":
-        "Ez a téma utcai tiltakozásokra, társadalmi elégedetlenségre, rendőri fellépésre vagy belpolitikai nyomásra utal.",
+        "A politikai hangulatot ebben az esetben belső társadalmi feszültség, tiltakozás, rendőri fellépés vagy kormányellenes nyomás formálja.",
 
     "EU-integráció és csatlakozási folyamat":
-        "Ez a narratíva az EU-csatlakozás, a reformfeltételek, a brüsszeli kapcsolatok és a bővítési folyamat körül szerveződik.",
+        "A diskurzus középpontjában az EU-csatlakozás, a reformfeltételek, a brüsszeli kapcsolatok és a bővítési folyamat áll.",
 
     "Koszovó–Szerbia feszültség":
-        "Ez a téma a szerb–koszovói viszonyt, a státuszkérdést, a határbiztonságot és a Kurti–Vučić tengely körüli politikai feszültségeket fogja össze.",
+        "A térség egyik legfontosabb konfliktusos tengelye jelenik meg: a szerb–koszovói viszony, a státuszkérdés, a határbiztonság és a politikai párbeszéd.",
 
     "Boszniai intézményi válság és OHR-vita":
-        "Ez a blokk Bosznia-Hercegovina intézményi törékenységét, az OHR szerepét, Christian Schmidt pozícióját és a Republika Srpska körüli vitákat jelzi.",
+        "Ez a téma Bosznia-Hercegovina intézményi törékenységét, az OHR szerepét, Christian Schmidt pozícióját és a Republika Srpska körüli vitákat jelzi.",
 
     "Korrupció, jogállamiság és igazságszolgáltatás":
-        "Ez a narratíva bírósági ügyekre, korrupciós vádakra, jogállamisági vitákra és intézményi elszámoltathatóságra utal.",
+        "A hangulatot jogállamisági ügyek, bírósági eljárások, korrupciós vádak vagy intézményi elszámoltathatósági kérdések befolyásolják.",
 
     "Biztonságpolitikai kockázatok és erőszak":
-        "Ez a téma erőszakos incidenseket, biztonsági fenyegetéseket, fegyveres vagy etnikai feszültségeket és instabilitási jeleket fog össze.",
+        "A hírekben erőszakos incidensek, fenyegetések, fegyveres vagy etnikai feszültségek, illetve instabilitási kockázatok jelennek meg.",
 
     "Kormányzati stabilitás és választási dinamika":
-        "Ez a blokk a kormányzati működést, választási folyamatokat, pártpolitikai versenyt és vezetői döntéseket követi.",
+        "A politikai hangulatot a kormányzati működés, pártpolitikai verseny, választási dinamika vagy vezetői döntések alakítják.",
 
     "Gazdaság, energia és beruházások":
-        "Ez a narratíva a gazdasági döntéseket, energiaügyeket, beruházásokat és stratégiai vállalati folyamatokat fogja össze.",
+        "A napirendet gazdasági, energetikai és beruházási ügyek határozzák meg. Ezek stabilizáló témák is lehetnek, de stratégiai vállalatok vagy energiaügyek esetén politikai kockázatot is hordozhatnak.",
 
     "Nemzetközi kapcsolatok és nagyhatalmi befolyás":
-        "Ez a téma az ország külső kapcsolatait, NATO-, EU-, USA-, orosz, kínai vagy török kapcsolódásait és diplomáciai mozgásterét mutatja.",
+        "Az ország politikai mozgásterét külső szereplők, NATO-, EU-, USA-, orosz, kínai vagy török kapcsolódások alakítják.",
 
     "Montenegró EU-csatlakozási előrehaladása":
-        "Ez Montenegró EU-tagsági folyamatára, tárgyalási fejezeteire és a csatlakozási perspektíva aktuális politikai hatására utal.",
+        "Montenegró esetében az EU-tagsági folyamat, a tárgyalási fejezetek és a csatlakozási perspektíva adja a fő politikai keretet.",
 
     "Albán digitalizáció és kiberbiztonság":
-        "Ez Albánia digitális átalakulásával, kiberbiztonsági kapacitásaival és állami modernizációs lépéseivel kapcsolatos híreket gyűjti össze.",
+        "Albánia esetében a digitális állam, a kiberbiztonság és az állami modernizáció jelenik meg hangsúlyos témaként.",
 
     "Bolgár–macedón identitásvita":
-        "Ez Észak-Macedónia külpolitikai és identitáspolitikai vitáit jelöli, különösen a bolgár–macedón történelmi és nyelvi kérdések körül."
+        "Észak-Macedónia politikai környezetét ebben a témában a bolgár–macedón történelmi, nyelvi és identitáspolitikai viták alakítják."
 }
 
 
@@ -184,6 +184,18 @@ def get_score_direction(score):
     return "kifejezetten pozitív"
 
 
+def get_risk_sentence(score, negative_hits, positive_hits):
+    if score <= -15:
+        return "A jelenlegi mintázat rövid távon fokozott politikai kockázatot jelez."
+    if score < 0:
+        return "A helyzet nem válságszerű, de a negatív hírelemek erősebben húzzák lefelé a hangulatot."
+    if score == 0:
+        return "A hangulat kiegyensúlyozott, nincs egyértelmű pozitív vagy negatív irány."
+    if positive_hits > negative_hits:
+        return "A pozitív hírelemek jelenleg részben ellensúlyozzák a kockázati témákat."
+    return "A pozitív index ellenére érdemes figyelni, hogy a háttérben maradtak-e kockázati témák."
+
+
 def article_text(article):
     title = article.get("title", "")
     source = article.get("source", "")
@@ -214,7 +226,8 @@ def extract_named_clues(articles):
         "Marta Kos", "Rama", "Mickoski", "Osmani", "Bolton",
         "Macut", "MOL", "NIS", "OHR", "KFOR", "NATO", "EU",
         "UN", "Republika Srpska", "Podgorica", "Pristina",
-        "Belgrade", "Sarajevo", "Sofia", "Tirana"
+        "Belgrade", "Sarajevo", "Sofia", "Tirana", "Bulgaria",
+        "Serbia", "Kosovo", "Montenegro", "Albania"
     ]
 
     found = []
@@ -230,6 +243,51 @@ def get_top_topics(topic_scores, limit=4):
     return list(topic_scores.items())[:limit]
 
 
+def build_topic_sentence(topic):
+    topic_map = {
+        "Belpolitikai tüntetések és társadalmi nyomás":
+            "A belpolitikai nyomás azt jelzi, hogy a kormányzati szereplőknek nemcsak intézményi, hanem utcai vagy társadalmi reakciókkal is számolniuk kell.",
+
+        "EU-integráció és csatlakozási folyamat":
+            "Az EU-integrációs téma stabilizáló hatású lehet, de csak akkor, ha reformlépések és politikai kompromisszumok is társulnak hozzá.",
+
+        "Koszovó–Szerbia feszültség":
+            "A Koszovó–Szerbia ügy gyorsan biztonsági és diplomáciai dimenziót kap, ezért a régió egészének politikai hangulatát is befolyásolja.",
+
+        "Boszniai intézményi válság és OHR-vita":
+            "A boszniai intézményi vita azért érzékeny, mert egyszerre érinti az állami működést, a nemzetközi felügyeletet és a szerb entitás mozgásterét.",
+
+        "Korrupció, jogállamiság és igazságszolgáltatás":
+            "A jogállamisági ügyek hosszabb távon az EU-kapcsolatokra és a befektetői bizalomra is hatással lehetnek.",
+
+        "Biztonságpolitikai kockázatok és erőszak":
+            "A biztonsági jellegű hírek gyorsan rontják a politikai hangulatot, mert a stabilitás és a kiszámíthatóság kérdését érintik.",
+
+        "Kormányzati stabilitás és választási dinamika":
+            "A választási és kormányzati témák azt mutatják, hogy a politikai verseny vagy az intézményi működés került a figyelem középpontjába.",
+
+        "Gazdaság, energia és beruházások":
+            "A gazdasági és energetikai ügyek egyszerre mutathatnak fejlődést és sérülékenységet, főleg ha stratégiai ágazatokról van szó.",
+
+        "Nemzetközi kapcsolatok és nagyhatalmi befolyás":
+            "A külső szereplők jelenléte azt jelzi, hogy az ország mozgástere nemcsak belpolitikai, hanem geopolitikai tényezőktől is függ.",
+
+        "Montenegró EU-csatlakozási előrehaladása":
+            "Montenegró esetében az EU-pálya a politikai stabilitás egyik fő mércéje.",
+
+        "Albán digitalizáció és kiberbiztonság":
+            "A digitalizációs és kiberbiztonsági témák azt mutatják, hogy az állami modernizáció stratégiai politikai kérdéssé vált.",
+
+        "Bolgár–macedón identitásvita":
+            "Az identitásvita azért érzékeny, mert egyszerre érinti az EU-csatlakozást, a történelmi emlékezetet és a belpolitikai legitimációt."
+    }
+
+    return topic_map.get(
+        topic,
+        "A téma azért fontos, mert visszatérően megjelenik az aktuális híranyagban."
+    )
+
+
 def build_executive_summary(country, social_signal):
     name = country.get("name", "")
     score = country.get("score", 0)
@@ -239,72 +297,92 @@ def build_executive_summary(country, social_signal):
     article_count = country.get("article_count", 0)
     negative_hits = country.get("negative_hits", 0)
     positive_hits = country.get("positive_hits", 0)
+    top_articles = country.get("top_articles", [])
 
     social_score = social_signal.get("score", 0)
-    social_level = social_signal.get("level", "low")
     social_mentions = social_signal.get("mentions", 0)
     social_topic = social_signal.get("main_topic", "nincs adat")
 
     top_topics = get_top_topics(topic_scores, 4)
     topic_names = [topic for topic, _ in top_topics]
 
-    if topic_names:
-        topic_sentence = ", ".join(topic_names[:3])
+    key_people = extract_named_clues(top_articles)
+
+    if key_people:
+        people_sentence = "A cikkekben kiemelten megjelenő szereplők és intézmények: " + ", ".join(key_people) + "."
     else:
-        topic_sentence = "nincs egyértelműen azonosítható domináns téma"
+        people_sentence = "A cikkcímek alapján nem emelkedik ki egyetlen domináns szereplő."
+
+    if topic_names:
+        topic_sentence = ", ".join(topic_names[:4])
+    else:
+        topic_sentence = "nincs egyértelműen kiemelkedő téma"
 
     if negative_hits > positive_hits:
         balance_sentence = (
-            f"A negatív hírelemek száma magasabb ({negative_hits}), mint a pozitívaké ({positive_hits}), "
-            "ezért a hangulat inkább kockázati irányba tolódik."
+            f"A negatív hírjelek száma ({negative_hits}) meghaladja a pozitív jelzésekét ({positive_hits}), "
+            "ezért a politikai hangulat inkább kockázati irányba mozdul."
         )
     elif positive_hits > negative_hits:
         balance_sentence = (
-            f"A pozitív hírelemek száma magasabb ({positive_hits}), mint a negatívaké ({negative_hits}), "
-            "ez mérséklő vagy stabilizáló hatású lehet."
+            f"A pozitív hírjelek száma ({positive_hits}) meghaladja a negatív jelzésekét ({negative_hits}), "
+            "ami mérsékelheti a politikai kockázatokat."
         )
     else:
         balance_sentence = (
-            f"A pozitív és negatív hírjelek kiegyenlítettek ({positive_hits}–{negative_hits}), "
-            "ezért a fő különbséget inkább a témák jellege adja."
+            f"A negatív és pozitív hírjelek kiegyenlítettek ({negative_hits}–{positive_hits}), "
+            "ezért a hangulatot főként a domináns témák jellege határozza meg."
         )
 
     if social_score >= 20:
         social_sentence = (
-            f"A social media aktivitás magas, {social_mentions} releváns említéssel. "
-            f"A fő social téma: {social_topic}."
+            f"A közösségi média jel erős: {social_mentions} releváns említés jelent meg, "
+            f"a fő social téma pedig {social_topic}."
         )
     elif social_score >= 8:
         social_sentence = (
-            f"A social media aktivitás közepes, {social_mentions} releváns említéssel. "
-            f"A fő social téma: {social_topic}."
+            f"A közösségi média aktivitás közepes: {social_mentions} releváns említés jelent meg. "
+            f"A social térben leginkább a(z) {social_topic} téma látszik."
         )
     else:
         social_sentence = (
-            f"A social media aktivitás alacsony, {social_mentions} releváns említéssel. "
-            "Ez azt jelzi, hogy a híralapú narratíva erősebb, mint a közösségi média jel."
+            f"A közösségi média aktivitás alacsony: {social_mentions} releváns említés látható. "
+            "Ez arra utal, hogy a mostani helyzetképet elsősorban a hírforrások alakítják."
         )
+
+    main_topic_sentence = build_topic_sentence(main_topic)
+    risk_sentence = get_risk_sentence(score, negative_hits, positive_hits)
 
     return f"""
       <div class="executive-summary">
         <h2>Vezetői összefoglaló</h2>
 
         <p>
-          <strong>{escape_html(name)}</strong> aktuális híralapú hangulatindexe
-          <strong>{score}</strong>, ami <strong>{escape_html(get_score_direction(score))}</strong>
-          helyzetképet jelez. A dashboard szerinti státusz:
+          <strong>{escape_html(name)}</strong> aktuális politikai hangulata
+          <strong>{escape_html(get_score_direction(score))}</strong>. A híralapú index értéke
+          <strong>{score}</strong>, a dashboard szerinti státusz pedig
           <strong>{escape_html(get_status_text(status))}</strong>.
         </p>
 
         <p>
-          A hírmintában jelenleg a legfontosabb narratíva:
-          <strong>{escape_html(main_topic)}</strong>. A négy legerősebb témacsoport:
-          <strong>{escape_html(topic_sentence)}</strong>.
+          A legfontosabb ügy jelenleg:
+          <strong>{escape_html(main_topic)}</strong>. Ez nem önálló elszigetelt téma,
+          hanem több hírben visszatérő mintázat. {escape_html(main_topic_sentence)}
         </p>
 
         <p>
-          A vizsgált híranyagban <strong>{article_count}</strong> releváns cikk szerepel.
+          A négy legerősebb témacsoport: <strong>{escape_html(topic_sentence)}</strong>.
+          Ezek együtt adják meg, hogy az országban a politikai hangulatot inkább belpolitikai,
+          gazdasági, biztonsági vagy külpolitikai kérdések mozgatják-e.
+        </p>
+
+        <p>
+          A rendszer <strong>{article_count}</strong> releváns cikket azonosított.
           {escape_html(balance_sentence)}
+        </p>
+
+        <p>
+          {escape_html(people_sentence)}
         </p>
 
         <p>
@@ -312,9 +390,7 @@ def build_executive_summary(country, social_signal):
         </p>
 
         <p>
-          Összességében az ország politikai hangulatát jelenleg nem egyetlen esemény,
-          hanem több, egymással összefüggő narratíva alakítja. A részletes blokkokban
-          ezekhez konkrét cikkek, szereplők, intézmények vagy döntések is kapcsolódnak.
+          <strong>Rövid következtetés:</strong> {escape_html(risk_sentence)}
         </p>
       </div>
     """
@@ -345,7 +421,7 @@ def build_source_list(articles):
 def build_topic_paragraph(topic, score, country_name, matched_articles):
     explanation = TOPIC_EXPLANATIONS.get(
         topic,
-        "Ez a téma az aktuális hírmintában visszatérő politikai narratívát jelöl."
+        "Ez a téma az aktuális híranyagban visszatérő politikai mintázatot jelöl."
     )
 
     clues = extract_named_clues(matched_articles)
@@ -360,13 +436,15 @@ def build_topic_paragraph(topic, score, country_name, matched_articles):
         lead_title = escape_html(lead_article.get("title", "Cím nélkül"))
         lead_source = escape_html(lead_article.get("source", "ismeretlen forrás"))
         lead_sentence = (
-            f"A legerősebb kapcsolódó jelzés a következő cikkből érkezik: "
+            f"A téma legerősebb kapcsolódása a következő cikkben jelenik meg: "
             f"<strong>{lead_title}</strong> ({lead_source})."
         )
     else:
         lead_sentence = (
-            "A témához nem kapcsolódik külön kiemelt cikk, de a kulcsszavas mintázat alapján megjelent a híranyagban."
+            "A témához nem kapcsolódik külön kiemelt cikk, de a kulcsszavas mintázat alapján jelen van a híranyagban."
         )
+
+    topic_context = build_topic_sentence(topic)
 
     return f"""
       <div class="topic-block">
@@ -378,10 +456,15 @@ def build_topic_paragraph(topic, score, country_name, matched_articles):
         </p>
 
         <p>
-          <strong>Mi mozgatja most a hangulatot?</strong>
+          <strong>Konkrét jelzés:</strong>
           {lead_sentence}
-          A narratíva az aktuális adatok alapján azért fontos {escape_html(country_name)} esetében,
-          mert több hírben is ugyanahhoz a politikai mintázathoz kapcsolódó jelzések jelennek meg.
+        </p>
+
+        <p>
+          <strong>Elemző értelmezés:</strong>
+          {escape_html(topic_context)}
+          Ez azért fontos {escape_html(country_name)} esetében, mert a visszatérő témák nemcsak
+          egy-egy hírt jelentenek, hanem a politikai környezet általános hangulatát is formálják.
         </p>
 
         <p>
@@ -607,9 +690,9 @@ def build_report_html(country, social_signal, updated_at):
 
     <h2>Domináns narratívák részletesen</h2>
     <p>
-      Az alábbi négy blokk azt mutatja, hogy az aktuális hírminta alapján mely témák alakítják
-      leginkább az ország politikai hangulatát. Minden témánál konkrét cikkek, események,
-      szereplők vagy intézmények is megjelennek, ha ezek a címekből azonosíthatók.
+      Az alábbi négy blokk azt mutatja, hogy az aktuális híranyag alapján mely ügyek alakítják
+      leginkább az ország politikai hangulatát. A szöveg a cikkcímekből, témasúlyokból,
+      azonosított szereplőkből és social jelzésekből épül fel.
     </p>
 
     {topic_blocks}
