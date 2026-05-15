@@ -6,55 +6,45 @@ from datetime import datetime, timezone
 
 SOCIAL_LATEST_PATH = "docs/data/social_latest.json"
 
-MASTODON_INSTANCES = [
-    "https://mastodon.social",
-    "https://mstdn.social",
-    "https://fosstodon.org"
-]
-
 COUNTRIES = [
     {
         "name": "Szerbia",
-        "social_queries": ["Serbia", "Srbija", "Vucic", "Vučić", "Belgrade", "Beograd", "#Serbia"]
+        "social_queries": ["Serbia", "Vucic", "Belgrade"]
     },
     {
         "name": "Bosznia-Hercegovina",
-        "social_queries": ["Bosnia", "BiH", "Sarajevo", "Dodik", "Republika Srpska", "#Bosnia"]
+        "social_queries": ["Bosnia", "Dodik", "Sarajevo"]
     },
     {
         "name": "Koszovó",
-        "social_queries": ["Kosovo", "Kosova", "Pristina", "Prishtina", "Kurti", "#Kosovo"]
+        "social_queries": ["Kosovo", "Kurti", "Pristina"]
     },
     {
         "name": "Montenegró",
-        "social_queries": ["Montenegro", "Crna Gora", "Podgorica", "#Montenegro"]
+        "social_queries": ["Montenegro", "Podgorica"]
     },
     {
         "name": "Észak-Macedónia",
-        "social_queries": ["North Macedonia", "Macedonia", "Skopje", "Makedonija", "#Macedonia"]
+        "social_queries": ["North Macedonia", "Skopje"]
     },
     {
         "name": "Albánia",
-        "social_queries": ["Albania", "Albanian", "Tirana", "Edi Rama", "Shqiperia", "Shqipëria", "#Albania"]
+        "social_queries": ["Albania", "Tirana", "Edi Rama"]
     }
 ]
 
 NEGATIVE_WORDS = [
-    "protest", "protests", "crisis", "corruption", "violence",
-    "conflict", "tension", "tensions", "sanction", "sanctions",
-    "arrest", "attack", "war", "unrest", "fraud", "dispute",
-    "scandal", "threat", "instability", "clash", "clashes",
-    "riot", "boycott", "polarization", "accuses", "genocide",
-    "propaganda", "blocked", "deadlock", "resignation",
-    "investigation", "charges", "convicted"
+    "protest", "crisis", "corruption", "violence", "conflict",
+    "tension", "sanction", "arrest", "attack", "war", "unrest",
+    "fraud", "dispute", "scandal", "threat", "instability",
+    "clash", "riot", "boycott", "polarization"
 ]
 
 POSITIVE_WORDS = [
     "agreement", "reform", "growth", "cooperation", "investment",
     "stability", "dialogue", "progress", "development", "support",
     "partnership", "integration", "talks", "deal", "funding",
-    "membership", "negotiations", "future", "economic growth",
-    "eu accession", "approved"
+    "membership", "negotiations"
 ]
 
 
@@ -78,7 +68,7 @@ def fetch_url(url):
         }
     )
 
-    with urllib.request.urlopen(request, timeout=30) as response:
+    with urllib.request.urlopen(request, timeout=8) as response:
         return response.read()
 
 
@@ -94,8 +84,8 @@ def fetch_reddit_posts(query):
         params = {
             "q": query,
             "sort": "new",
-            "t": "week",
-            "limit": 25,
+            "t": "day",
+            "limit": 10,
             "type": "link"
         }
 
@@ -138,7 +128,7 @@ def fetch_bluesky_posts(query):
     try:
         params = {
             "q": query,
-            "limit": 25,
+            "limit": 10,
             "sort": "latest"
         }
 
@@ -176,48 +166,6 @@ def fetch_bluesky_posts(query):
     return posts
 
 
-def fetch_mastodon_posts(query):
-    posts = []
-
-    for instance in MASTODON_INSTANCES:
-        try:
-            params = {
-                "q": query,
-                "type": "statuses",
-                "limit": 25,
-                "resolve": "false"
-            }
-
-            url = instance + "/api/v2/search?" + urllib.parse.urlencode(params)
-            data = fetch_json(url)
-
-            items = data.get("statuses", [])
-
-            print(f"Mastodon találatok - {instance} / {query}: {len(items)}")
-
-            for item in items:
-                content = clean_text(item.get("content", ""))
-                status_url = item.get("url", "")
-
-                if not content:
-                    continue
-
-                posts.append({
-                    "title": content[:180],
-                    "url": status_url,
-                    "source": f"Mastodon/{instance.replace('https://', '')}",
-                    "seen_date": item.get("created_at", ""),
-                    "origin": "Mastodon",
-                    "query": query
-                })
-
-        except Exception as error:
-            print(f"Mastodon hiba: {instance} / {query}")
-            print(error)
-
-    return posts
-
-
 def collect_social_posts(country):
     all_posts = []
     seen = set()
@@ -227,7 +175,6 @@ def collect_social_posts(country):
 
         source_posts.extend(fetch_reddit_posts(query))
         source_posts.extend(fetch_bluesky_posts(query))
-        source_posts.extend(fetch_mastodon_posts(query))
 
         for post in source_posts:
             key = post.get("url") or post.get("title")
@@ -241,7 +188,7 @@ def collect_social_posts(country):
             seen.add(key)
             all_posts.append(post)
 
-    return all_posts[:120]
+    return all_posts[:50]
 
 
 def analyze_social_posts(posts):
@@ -251,8 +198,7 @@ def analyze_social_posts(posts):
 
     source_counts = {
         "Reddit": 0,
-        "Bluesky": 0,
-        "Mastodon": 0
+        "Bluesky": 0
     }
 
     query_counts = {}
@@ -322,8 +268,8 @@ def main():
 
     output = {
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "source": "Reddit + Bluesky + Mastodon",
-        "method_note": "A social signal külön jelző. Nem közvélemény-kutatás, és nem része a fő hírindexnek.",
+        "source": "Reddit + Bluesky",
+        "method_note": "A social signal külön jelző. Nem közvélemény-kutatás, és nem része a fő hírindexnek. A Mastodon ideiglenesen kikapcsolva a futási idő csökkentése miatt.",
         "countries": countries_output
     }
 
