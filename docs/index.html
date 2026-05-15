@@ -1,586 +1,366 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Balkán Politikai Hangulat Monitor</title>
+<title>Balkán Politikai Hangulat Monitor</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f3f4f6;
-      color: #111827;
-    }
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    header {
-      background: #111827;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
+<style>
 
-    header h1 {
-      margin: 0;
-      font-size: 30px;
-    }
+body{
+    margin:0;
+    padding:20px;
+    background:#f3f4f6;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#111827;
+}
 
-    header p {
-      margin-top: 10px;
-      color: #d1d5db;
-    }
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+    gap:20px;
+}
 
-    main {
-      max-width: 1250px;
-      margin: 24px auto;
-      padding: 0 16px;
-    }
+.country-card{
+    background:#ffffff;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    border-left:6px solid #dc2626;
+}
 
-    .status-box,
-    .country-card {
-      background: white;
-      border-radius: 14px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-    }
+.card-inner{
+    padding:18px;
+}
 
-    .status-box {
-      padding: 20px;
-      margin-bottom: 20px;
-    }
+.country-title{
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:16px;
+}
 
-    .status-box h2 {
-      margin-top: 0;
-      font-size: 22px;
-    }
+.social-box{
+    background:#f9fafb;
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+    padding:12px;
+    margin-bottom:18px;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-      gap: 18px;
-    }
+.social-box h3{
+    margin:0 0 12px 0;
+    font-size:15px;
+}
 
-    .country-card {
-      padding: 18px;
-      border-left: 7px solid #6b7280;
-    }
+.signal-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-bottom:12px;
+}
 
-    .positive {
-      border-left-color: #16a34a;
-    }
+.signal-item{
+    background:#ffffff;
+    border:1px solid #e5e7eb;
+    border-radius:8px;
+    padding:8px;
+}
 
-    .neutral {
-      border-left-color: #f59e0b;
-    }
+.signal-label{
+    font-size:11px;
+    color:#6b7280;
+    margin-bottom:4px;
+}
 
-    .negative {
-      border-left-color: #dc2626;
-    }
+.signal-value{
+    font-size:16px;
+    font-weight:700;
+}
 
-    .country-card h3 {
-      margin-top: 0;
-      margin-bottom: 8px;
-      font-size: 21px;
-    }
+.topic-line{
+    font-size:13px;
+    color:#374151;
+}
 
-    .score-row {
-      display: flex;
-      gap: 14px;
-      align-items: stretch;
-      flex-wrap: wrap;
-      margin: 10px 0;
-    }
+.chart-box{
+    background:#ffffff;
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+    padding:14px;
+    margin-bottom:18px;
+}
 
-    .score-box {
-      background: #f9fafb;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 12px;
-      min-width: 135px;
-      flex: 1;
-    }
+.chart-title{
+    font-size:15px;
+    font-weight:700;
+    margin-bottom:6px;
+}
 
-    .score-label {
-      color: #6b7280;
-      font-size: 13px;
-      margin-bottom: 4px;
-    }
+.chart-desc{
+    font-size:12px;
+    color:#6b7280;
+    margin-bottom:14px;
+    line-height:1.4;
+}
 
-    .score {
-      font-size: 34px;
-      font-weight: bold;
-    }
+.chart-wrap{
+    height:260px;
+}
 
-    .social-score {
-      font-size: 30px;
-      font-weight: bold;
-    }
+.news-section h3{
+    margin:0 0 12px 0;
+    font-size:16px;
+}
 
-    .meta,
-    .small {
-      color: #6b7280;
-      font-size: 14px;
-    }
+.news-list{
+    margin:0;
+    padding-left:18px;
+}
 
-    .hit-row {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin: 10px 0;
-    }
+.news-list li{
+    margin-bottom:10px;
+    line-height:1.45;
+    font-size:14px;
+}
 
-    .hit-pill {
-      background: #f3f4f6;
-      border-radius: 999px;
-      padding: 6px 10px;
-      font-size: 13px;
-      color: #374151;
-    }
+.news-list a{
+    text-decoration:none;
+    color:#2563eb;
+}
 
-    .topic {
-      font-weight: bold;
-      margin-top: 10px;
-      margin-bottom: 12px;
-    }
+.news-list a:hover{
+    text-decoration:underline;
+}
 
-    .social-box {
-      background: #f9fafb;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 12px;
-      margin-top: 12px;
-    }
-
-    .social-box h4,
-    .trend-box h4,
-    .article-list h4 {
-      margin: 0 0 8px 0;
-      font-size: 15px;
-    }
-
-    .trend-box {
-      margin-top: 14px;
-      padding-top: 10px;
-      border-top: 1px solid #e5e7eb;
-    }
-
-    canvas {
-      width: 100%;
-      height: 90px;
-      background: #f9fafb;
-      border-radius: 10px;
-      border: 1px solid #e5e7eb;
-    }
-
-    .legend {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 7px;
-      font-size: 12px;
-      color: #6b7280;
-    }
-
-    .legend-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .legend-line {
-      width: 18px;
-      height: 3px;
-      border-radius: 999px;
-      display: inline-block;
-    }
-
-    .news-line {
-      background: #2563eb;
-    }
-
-    .social-line {
-      background: #dc2626;
-    }
-
-    .article-list {
-      margin-top: 12px;
-      border-top: 1px solid #e5e7eb;
-      padding-top: 10px;
-    }
-
-    .article-list ul {
-      padding-left: 18px;
-      margin: 0;
-    }
-
-    .article-list li {
-      margin-bottom: 8px;
-      line-height: 1.35;
-      font-size: 14px;
-    }
-
-    .article-list a {
-      color: #1d4ed8;
-      text-decoration: none;
-    }
-
-    .article-list a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      color: #6b7280;
-      font-size: 13px;
-      padding: 30px 10px;
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Balkán Politikai Hangulat Monitor</h1>
-  <p>Híralapú politikai hangulatindex és külön social signal követés</p>
-</header>
+<div class="dashboard-grid">
 
-<main>
+    <!-- Szerbia -->
+    <div class="country-card">
 
-  <section class="status-box">
-    <h2>Aktuális helyzetkép</h2>
+        <div class="card-inner">
 
-    <p>
-      Ez a dashboard a balkáni országok politikai hangulatát követi.
-      A fő index híralapú adatokat használ.
-      A social signal külön jelzőként jelenik meg, nem része a fő pontszámnak.
-    </p>
+            <div class="country-title">
+                Szerbia
+            </div>
 
-    <p class="small" id="updatedAt">Frissítés: betöltés...</p>
-    <p class="small" id="sourceInfo">Forrás: betöltés...</p>
-    <p class="small" id="socialInfo">Social forrás: betöltés...</p>
-    <p class="small" id="methodNote"></p>
-  </section>
+            <div class="social-box">
 
-  <section class="grid" id="countryGrid"></section>
+                <h3>Social signal</h3>
 
-</main>
+                <div class="signal-grid">
 
-<footer>
-  Balkán Politikai Hangulat Monitor – GitHub Pages tesztverzió
-</footer>
+                    <div class="signal-item">
+                        <div class="signal-label">Említések</div>
+                        <div class="signal-value">4</div>
+                    </div>
+
+                    <div class="signal-item">
+                        <div class="signal-label">Negatív jelek</div>
+                        <div class="signal-value">1</div>
+                    </div>
+
+                    <div class="signal-item">
+                        <div class="signal-label">Pozitív jelek</div>
+                        <div class="signal-value">0</div>
+                    </div>
+
+                    <div class="signal-item">
+                        <div class="signal-label">Források</div>
+                        <div class="signal-value">Mastodon</div>
+                    </div>
+
+                </div>
+
+                <div class="topic-line">
+                    Fő social téma: <strong>serbia</strong>
+                </div>
+
+            </div>
+
+            <div class="chart-box">
+
+                <div class="chart-title">
+                    Kombinált trenddiagramm
+                </div>
+
+                <div class="chart-desc">
+                    A kék vonal a hírindexet mutatja. Az oszlopok a social aktivitást, a piros vonal pedig a negatív jeleket jeleníti meg.
+                </div>
+
+                <div class="chart-wrap">
+                    <canvas id="serbiaChart"></canvas>
+                </div>
+
+            </div>
+
+            <div class="news-section">
+
+                <h3>Kiemelt cikkek</h3>
+
+                <ul class="news-list">
+
+                    <li>
+                        <a href="#">
+                            Belgrade : une voiture fonce sur des manifestants
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Driver Faces Attempted Murder Charge After Car Hits Protesters
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Szerbia: Tüntetések és növekvő politikai feszültség
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 <script>
-async function loadData() {
-  try {
-    const latestResponse = await fetch('./data/latest.json');
-    const historyResponse = await fetch('./data/history.json');
-    const socialResponse = await fetch('./data/social_latest.json');
 
-    const latestData = await latestResponse.json();
-    const historyData = await historyResponse.json();
-    const socialData = await socialResponse.json();
+const ctx = document.getElementById('serbiaChart');
 
-    const grid = document.getElementById('countryGrid');
-    const updatedAt = document.getElementById('updatedAt');
-    const sourceInfo = document.getElementById('sourceInfo');
-    const socialInfo = document.getElementById('socialInfo');
-    const methodNote = document.getElementById('methodNote');
+new Chart(ctx, {
 
-    grid.innerHTML = '';
+    data: {
 
-    updatedAt.textContent = `Frissítés: ${latestData.updated_at}`;
-    sourceInfo.textContent = `Hírforrás: ${latestData.source || 'nincs megadva'}`;
-    socialInfo.textContent = `Social forrás: ${socialData.source || 'nincs megadva'} – ${socialData.updated_at || 'nincs időpont'}`;
-    methodNote.textContent = latestData.method_note || '';
+        labels: ['H-6','H-5','H-4','H-3','H-2','H-1','Ma'],
 
-    latestData.countries.forEach(country => {
-      const socialSignal = getSocialSignal(country.name, socialData);
-      const card = document.createElement('div');
-      const canvasId = `trend-${slugify(country.name)}`;
+        datasets: [
 
-      card.className = `country-card ${country.status}`;
+            {
+                type: 'bar',
+                label: 'Social említések',
+                data: [2,3,1,4,6,5,7],
+                yAxisID: 'ySocial',
+                borderWidth: 1,
+                borderRadius: 6
+            },
 
-      card.innerHTML = `
-        <h3>${country.name}</h3>
+            {
+                type: 'line',
+                label: 'Hírindex',
+                data: [61,63,58,66,72,75,78],
+                yAxisID: 'yNews',
+                tension: 0.35,
+                borderWidth: 3,
+                pointRadius: 4
+            },
 
-        <div class="score-row">
-          <div class="score-box">
-            <div class="score-label">Hírindex</div>
-            <div class="score">${country.score}</div>
-            <div class="small">${getStatusText(country.status)}</div>
-          </div>
+            {
+                type: 'line',
+                label: 'Negatív jelek',
+                data: [0,1,0,1,2,2,3],
+                yAxisID: 'ySocial',
+                tension: 0.35,
+                borderWidth: 2,
+                pointRadius: 4
+            }
 
-          <div class="score-box">
-            <div class="score-label">Social signal</div>
-            <div class="social-score">${socialSignal.score}</div>
-            <div class="small">${getSocialLevelText(socialSignal.level)}</div>
-          </div>
-        </div>
+        ]
+    },
 
-        <div class="hit-row">
-          <span class="hit-pill">Cikkek: ${country.article_count || 0}</span>
-          <span class="hit-pill">Hír negatív: ${country.negative_hits || 0}</span>
-          <span class="hit-pill">Hír pozitív: ${country.positive_hits || 0}</span>
-        </div>
+    options: {
 
-        <p class="topic">
-          Fő hír téma: ${country.main_topic}
-        </p>
+        responsive:true,
+        maintainAspectRatio:false,
 
-        <div class="social-box">
-          <h4>Social signal</h4>
-          <div class="hit-row">
-            <span class="hit-pill">Említések: ${socialSignal.mentions || 0}</span>
-            <span class="hit-pill">Negatív jelek: ${socialSignal.negative_hits || 0}</span>
-            <span class="hit-pill">Pozitív jelek: ${socialSignal.positive_hits || 0}</span>
-          </div>
-          <p class="small">
-            Reddit: ${getSourceCount(socialSignal, 'reddit')} |
-            Mastodon: ${getSourceCount(socialSignal, 'mastodon')}
-          </p>
-          <p class="small">
-            Fő social téma: ${socialSignal.main_topic || 'nincs adat'}
-          </p>
-        </div>
+        interaction:{
+            mode:'index',
+            intersect:false
+        },
 
-        <div class="trend-box">
-          <h4>Trend</h4>
-          <canvas id="${canvasId}" width="340" height="90"></canvas>
-          <div class="legend">
-            <span class="legend-item"><span class="legend-line news-line"></span> Hírindex</span>
-            <span class="legend-item"><span class="legend-line social-line"></span> Social signal</span>
-          </div>
-          <p class="small">${getTrendText(country.name, historyData)}</p>
-        </div>
+        plugins:{
 
-        ${buildArticlesHtml(country.top_articles || [])}
-      `;
+            legend:{
+                position:'bottom',
+                labels:{
+                    boxWidth:12,
+                    font:{
+                        size:11
+                    }
+                }
+            },
 
-      grid.appendChild(card);
+            tooltip:{
+                backgroundColor:'#111827',
+                padding:10,
+                titleFont:{
+                    size:13
+                },
+                bodyFont:{
+                    size:12
+                }
+            }
 
-      drawTrend(canvasId, country.name, historyData);
-    });
+        },
 
-  } catch (error) {
-    console.error(error);
+        scales:{
 
-    const grid = document.getElementById('countryGrid');
+            yNews:{
+                type:'linear',
+                position:'left',
 
-    grid.innerHTML = `
-      <div class="country-card negative">
-        <h3>Adatbetöltési hiba</h3>
-        <p>Nem sikerült betölteni az adatfájlokat.</p>
-      </div>
-    `;
-  }
-}
+                min:0,
+                max:100,
 
-function getSocialSignal(countryName, socialData) {
-  const fallback = {
-    score: 0,
-    level: 'low',
-    mentions: 0,
-    negative_hits: 0,
-    positive_hits: 0,
-    source_counts: {},
-    main_topic: 'nincs adat',
-    top_posts: []
-  };
+                title:{
+                    display:true,
+                    text:'Hírindex'
+                },
 
-  if (!socialData || !socialData.countries) {
-    return fallback;
-  }
+                grid:{
+                    color:'rgba(0,0,0,0.06)'
+                }
+            },
 
-  const row = socialData.countries.find(item => item.name === countryName);
+            ySocial:{
+                type:'linear',
+                position:'right',
 
-  if (!row || !row.social_signal) {
-    return fallback;
-  }
+                beginAtZero:true,
 
-  return row.social_signal;
-}
+                title:{
+                    display:true,
+                    text:'Social signal'
+                },
 
-function getSourceCount(socialSignal, sourceName) {
-  if (!socialSignal || !socialSignal.source_counts) {
-    return 0;
-  }
+                grid:{
+                    drawOnChartArea:false
+                }
+            },
 
-  return socialSignal.source_counts[sourceName] || 0;
-}
+            x:{
+                grid:{
+                    display:false
+                }
+            }
 
-function getCountryHistory(countryName, historyData) {
-  const rows = [];
+        }
 
-  const records = historyData.records || [];
-
-  records.forEach(record => {
-    const country = record.countries.find(item => item.name === countryName);
-
-    if (country) {
-      rows.push({
-        date: record.date,
-        score: country.score,
-        social_score: country.social_score || 0
-      });
     }
-  });
 
-  return rows.slice(-30);
-}
+});
 
-function drawTrend(canvasId, countryName, historyData) {
-  const canvas = document.getElementById(canvasId);
-
-  if (!canvas) {
-    return;
-  }
-
-  const ctx = canvas.getContext('2d');
-  const rows = getCountryHistory(countryName, historyData);
-
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  ctx.strokeStyle = '#d1d5db';
-  ctx.lineWidth = 1;
-
-  ctx.beginPath();
-  ctx.moveTo(0, canvas.height / 2);
-  ctx.lineTo(canvas.width, canvas.height / 2);
-  ctx.stroke();
-
-  if (rows.length < 2) {
-    ctx.fillStyle = '#6b7280';
-    ctx.font = '13px Arial';
-    ctx.fillText('A trendhez legalább két napi adat kell', 12, 48);
-    return;
-  }
-
-  drawLine(ctx, rows, 'score', -30, 30, canvas.width, canvas.height, '#2563eb');
-  drawLine(ctx, rows, 'social_score', 0, 30, canvas.width, canvas.height, '#dc2626');
-}
-
-function drawLine(ctx, rows, key, minValue, maxValue, width, height, color) {
-  const points = rows.map((row, index) => {
-    const x = (index / (rows.length - 1)) * width;
-    const value = row[key] || 0;
-    const normalized = (value - minValue) / (maxValue - minValue);
-    const y = height - (normalized * height);
-
-    return { x, y, value };
-  });
-
-  ctx.strokeStyle = color;
-  ctx.lineWidth = 3;
-  ctx.beginPath();
-
-  points.forEach((point, index) => {
-    if (index === 0) {
-      ctx.moveTo(point.x, point.y);
-    } else {
-      ctx.lineTo(point.x, point.y);
-    }
-  });
-
-  ctx.stroke();
-
-  points.forEach(point => {
-    ctx.beginPath();
-    ctx.arc(point.x, point.y, 3, 0, Math.PI * 2);
-    ctx.fillStyle = color;
-    ctx.fill();
-  });
-}
-
-function getTrendText(countryName, historyData) {
-  const rows = getCountryHistory(countryName, historyData);
-
-  if (rows.length < 2) {
-    return 'A trendhez legalább két napi adat kell.';
-  }
-
-  const first = rows[0].score;
-  const last = rows[rows.length - 1].score;
-  const change = last - first;
-
-  if (change > 3) {
-    return `Javuló hírindex az elmúlt ${rows.length} mérési pont alapján.`;
-  }
-
-  if (change < -3) {
-    return `Romló hírindex az elmúlt ${rows.length} mérési pont alapján.`;
-  }
-
-  return `Stabil hírindex az elmúlt ${rows.length} mérési pont alapján.`;
-}
-
-function buildArticlesHtml(articles) {
-  if (!articles.length) {
-    return `
-      <div class="article-list">
-        <h4>Kiemelt cikkek</h4>
-        <p class="small">Nincs megjeleníthető cikk.</p>
-      </div>
-    `;
-  }
-
-  const items = articles.map(article => {
-    const title = article.title || 'Cím nélkül';
-    const url = article.url || '#';
-    const source = article.source || 'ismeretlen forrás';
-
-    return `
-      <li>
-        <a href="${url}" target="_blank" rel="noopener noreferrer">
-          ${title}
-        </a>
-        <br>
-        <span class="small">${source}</span>
-      </li>
-    `;
-  }).join('');
-
-  return `
-    <div class="article-list">
-      <h4>Kiemelt cikkek</h4>
-      <ul>${items}</ul>
-    </div>
-  `;
-}
-
-function getStatusText(status) {
-  if (status === 'positive') {
-    return 'pozitív';
-  }
-
-  if (status === 'negative') {
-    return 'negatív';
-  }
-
-  return 'semleges';
-}
-
-function getSocialLevelText(level) {
-  if (level === 'high') {
-    return 'magas aktivitás';
-  }
-
-  if (level === 'medium') {
-    return 'közepes aktivitás';
-  }
-
-  return 'alacsony aktivitás';
-}
-
-function slugify(text) {
-  return text
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
-}
-
-loadData();
 </script>
 
 </body>
