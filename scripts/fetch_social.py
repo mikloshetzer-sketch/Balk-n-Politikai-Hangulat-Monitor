@@ -15,33 +15,27 @@ MASTODON_INSTANCES = [
 COUNTRIES = [
     {
         "name": "Szerbia",
-        "keywords": ["serbia", "serbian", "belgrade", "vucic", "srbija", "beograd", "vučić"],
-        "social_queries": ["Serbia", "Vucic", "Belgrade"]
+        "social_queries": ["Serbia", "Srbija", "Vucic", "Vučić", "Belgrade", "Beograd", "#Serbia"]
     },
     {
         "name": "Bosznia-Hercegovina",
-        "keywords": ["bosnia", "sarajevo", "dodik", "republika srpska", "bih", "bosnia and herzegovina"],
-        "social_queries": ["Bosnia", "Dodik", "Republika Srpska"]
+        "social_queries": ["Bosnia", "BiH", "Sarajevo", "Dodik", "Republika Srpska", "#Bosnia"]
     },
     {
         "name": "Koszovó",
-        "keywords": ["kosovo", "pristina", "kurti", "mitrovica", "kosova"],
-        "social_queries": ["Kosovo", "Kurti", "Pristina"]
+        "social_queries": ["Kosovo", "Kosova", "Pristina", "Prishtina", "Kurti", "#Kosovo"]
     },
     {
         "name": "Montenegró",
-        "keywords": ["montenegro", "podgorica", "crna gora", "crnoj gori"],
-        "social_queries": ["Montenegro", "Podgorica"]
+        "social_queries": ["Montenegro", "Crna Gora", "Podgorica", "#Montenegro"]
     },
     {
         "name": "Észak-Macedónia",
-        "keywords": ["north macedonia", "macedonia", "skopje", "makedonija", "скопје", "македонија"],
-        "social_queries": ["North Macedonia", "Skopje", "Macedonia"]
+        "social_queries": ["North Macedonia", "Macedonia", "Skopje", "Makedonija", "#Macedonia"]
     },
     {
         "name": "Albánia",
-        "keywords": ["albania", "albanian", "tirana", "rama", "shqiperi", "shqipëria"],
-        "social_queries": ["Albania", "Tirana", "Edi Rama"]
+        "social_queries": ["Albania", "Albanian", "Tirana", "Edi Rama", "Shqiperia", "Shqipëria", "#Albania"]
     }
 ]
 
@@ -92,20 +86,6 @@ def fetch_json(url):
     return json.loads(raw_data)
 
 
-def is_relevant(item, keywords):
-    title = item.get("title", "").lower()
-    url = item.get("url", "").lower()
-    source = item.get("source", "").lower()
-
-    text = f"{title} {url} {source}"
-
-    for keyword in keywords:
-        if keyword.lower() in text:
-            return True
-
-    return False
-
-
 def fetch_reddit_posts(query):
     posts = []
 
@@ -114,7 +94,7 @@ def fetch_reddit_posts(query):
             "q": query,
             "sort": "new",
             "t": "day",
-            "limit": 20
+            "limit": 25
         }
 
         url = "https://www.reddit.com/search.json?" + urllib.parse.urlencode(params)
@@ -129,7 +109,7 @@ def fetch_reddit_posts(query):
             permalink = item.get("permalink", "")
             created = item.get("created_utc", "")
 
-            if not title:
+            if not title or not permalink:
                 continue
 
             posts.append({
@@ -137,7 +117,8 @@ def fetch_reddit_posts(query):
                 "url": "https://www.reddit.com" + permalink,
                 "source": "Reddit",
                 "seen_date": str(created),
-                "origin": "Reddit"
+                "origin": "Reddit",
+                "query": query
             })
 
     except Exception as error:
@@ -153,7 +134,7 @@ def fetch_bluesky_posts(query):
     try:
         params = {
             "q": query,
-            "limit": 20,
+            "limit": 25,
             "sort": "latest"
         }
 
@@ -165,18 +146,21 @@ def fetch_bluesky_posts(query):
             author = item.get("author", {})
 
             text = clean_text(record.get("text", ""))
-            uri = item.get("uri", "")
             handle = author.get("handle", "")
+            uri = item.get("uri", "")
 
             if not text:
                 continue
 
+            post_url = uri
+
             posts.append({
                 "title": text[:180],
-                "url": uri,
+                "url": post_url,
                 "source": f"Bluesky/{handle}",
                 "seen_date": record.get("createdAt", ""),
-                "origin": "Bluesky"
+                "origin": "Bluesky",
+                "query": query
             })
 
     except Exception as error:
@@ -194,7 +178,7 @@ def fetch_mastodon_posts(query):
             params = {
                 "q": query,
                 "type": "statuses",
-                "limit": 20,
+                "limit": 25,
                 "resolve": "false"
             }
 
@@ -213,7 +197,8 @@ def fetch_mastodon_posts(query):
                     "url": status_url,
                     "source": f"Mastodon/{instance.replace('https://', '')}",
                     "seen_date": item.get("created_at", ""),
-                    "origin": "Mastodon"
+                    "origin": "Mastodon",
+                    "query": query
                 })
 
         except Exception as error:
@@ -243,13 +228,10 @@ def collect_social_posts(country):
             if key in seen:
                 continue
 
-            if not is_relevant(post, country["keywords"]):
-                continue
-
             seen.add(key)
             all_posts.append(post)
 
-    return all_posts[:80]
+    return all_posts[:120]
 
 
 def analyze_social_posts(posts):
@@ -263,12 +245,18 @@ def analyze_social_posts(posts):
         "Mastodon": 0
     }
 
+    query_counts = {}
+
     for post in posts:
         text = post.get("title", "").lower()
         origin = post.get("origin", "")
+        query = post.get("query", "")
 
         if origin in source_counts:
             source_counts[origin] += 1
+
+        if query:
+            query_counts[query] = query_counts.get(query, 0) + 1
 
         if any(word in text for word in NEGATIVE_WORDS):
             negative_hits += 1
@@ -288,8 +276,8 @@ def analyze_social_posts(posts):
 
     main_topic = "nincs adat"
 
-    if posts:
-        main_topic = posts[0].get("title", "")[:120]
+    if query_counts:
+        main_topic = max(query_counts, key=query_counts.get)
 
     return {
         "score": score,
@@ -298,6 +286,7 @@ def analyze_social_posts(posts):
         "negative_hits": negative_hits,
         "positive_hits": positive_hits,
         "source_counts": source_counts,
+        "query_counts": query_counts,
         "main_topic": main_topic,
         "top_posts": posts[:5]
     }
