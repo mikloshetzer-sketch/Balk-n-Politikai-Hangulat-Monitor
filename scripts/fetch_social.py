@@ -1,218 +1,182 @@
 import json
 import re
-import urllib.parse
-import urllib.request
 from datetime import datetime, timezone
+import feedparser
 
 SOCIAL_LATEST_PATH = "docs/data/social_latest.json"
 
 COUNTRIES = [
     {
         "name": "Szerbia",
-        "social_queries": ["Serbia", "Vucic", "Belgrade"]
+        "keywords": ["serbia", "serbian", "srbija", "vucic", "vučić", "belgrade", "beograd"]
     },
     {
         "name": "Bosznia-Hercegovina",
-        "social_queries": ["Bosnia", "Dodik", "Sarajevo"]
+        "keywords": ["bosnia", "bih", "sarajevo", "dodik", "republika srpska"]
     },
     {
         "name": "Koszovó",
-        "social_queries": ["Kosovo", "Kurti", "Pristina"]
+        "keywords": ["kosovo", "kosova", "pristina", "prishtina", "kurti", "mitrovica"]
     },
     {
         "name": "Montenegró",
-        "social_queries": ["Montenegro", "Podgorica"]
+        "keywords": ["montenegro", "crna gora", "podgorica"]
     },
     {
         "name": "Észak-Macedónia",
-        "social_queries": ["North Macedonia", "Skopje"]
+        "keywords": ["north macedonia", "macedonia", "makedonija", "skopje"]
     },
     {
         "name": "Albánia",
-        "social_queries": ["Albania", "Tirana", "Edi Rama"]
+        "keywords": ["albania", "albanian", "shqiperi", "shqipëria", "tirana", "edi rama"]
     }
+]
+
+FEEDS = [
+    # Mastodon hashtag RSS
+    ("mastodon", "https://mastodon.social/tags/balkan.rss", "balkan"),
+    ("mastodon", "https://mastodon.social/tags/balkans.rss", "balkans"),
+    ("mastodon", "https://mastodon.social/tags/serbia.rss", "serbia"),
+    ("mastodon", "https://mastodon.social/tags/kosovo.rss", "kosovo"),
+    ("mastodon", "https://mastodon.social/tags/bosnia.rss", "bosnia"),
+    ("mastodon", "https://mastodon.social/tags/montenegro.rss", "montenegro"),
+    ("mastodon", "https://mastodon.social/tags/albania.rss", "albania"),
+    ("mastodon", "https://mastodon.social/tags/macedonia.rss", "macedonia"),
+
+    # Reddit subreddit RSS
+    ("reddit", "https://www.reddit.com/r/serbia/.rss", "serbia"),
+    ("reddit", "https://www.reddit.com/r/kosovo/.rss", "kosovo"),
+    ("reddit", "https://www.reddit.com/r/bih/.rss", "bih"),
+    ("reddit", "https://www.reddit.com/r/montenegro/.rss", "montenegro"),
+    ("reddit", "https://www.reddit.com/r/albania/.rss", "albania"),
+    ("reddit", "https://www.reddit.com/r/mkd/.rss", "mkd"),
+    ("reddit", "https://www.reddit.com/r/AskBalkans/.rss", "askbalkans"),
+    ("reddit", "https://www.reddit.com/r/europe/.rss", "europe"),
+    ("reddit", "https://www.reddit.com/r/geopolitics/.rss", "geopolitics")
 ]
 
 NEGATIVE_WORDS = [
     "protest", "crisis", "corruption", "violence", "conflict",
     "tension", "sanction", "arrest", "attack", "war", "unrest",
     "fraud", "dispute", "scandal", "threat", "instability",
-    "clash", "riot", "boycott", "polarization"
+    "clash", "riot", "boycott", "polarization", "separatism",
+    "nationalism", "blocked", "deadlock"
 ]
 
 POSITIVE_WORDS = [
     "agreement", "reform", "growth", "cooperation", "investment",
     "stability", "dialogue", "progress", "development", "support",
     "partnership", "integration", "talks", "deal", "funding",
-    "membership", "negotiations"
+    "membership", "negotiations", "eu accession"
 ]
 
 
-def clean_text(text):
+def strip_html(text):
     if not text:
         return ""
 
-    text = re.sub(r"<[^>]+>", "", text)
-    text = text.replace("\n", " ")
-    text = text.replace("\r", " ")
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"\s+", " ", text)
 
-    return " ".join(text.split())
-
-
-def fetch_url(url):
-    request = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": "Mozilla/5.0 (compatible; BalkanPoliticalSocialMonitor/1.0)",
-            "Accept": "application/json"
-        }
-    )
-
-    with urllib.request.urlopen(request, timeout=8) as response:
-        return response.read()
+    return text.strip()
 
 
-def fetch_json(url):
-    raw_data = fetch_url(url).decode("utf-8")
-    return json.loads(raw_data)
+def norm(text):
+    return strip_html(text).lower()
 
 
-def fetch_reddit_posts(query):
-    posts = []
-
-    try:
-        params = {
-            "q": query,
-            "sort": "new",
-            "t": "day",
-            "limit": 10,
-            "type": "link"
-        }
-
-        url = "https://www.reddit.com/search.json?" + urllib.parse.urlencode(params)
-        data = fetch_json(url)
-
-        children = data.get("data", {}).get("children", [])
-
-        print(f"Reddit találatok - {query}: {len(children)}")
-
-        for child in children:
-            item = child.get("data", {})
-
-            title = clean_text(item.get("title", ""))
-            permalink = item.get("permalink", "")
-            created = item.get("created_utc", "")
-
-            if not title or not permalink:
-                continue
-
-            posts.append({
-                "title": title,
-                "url": "https://www.reddit.com" + permalink,
-                "source": "Reddit",
-                "seen_date": str(created),
-                "origin": "Reddit",
-                "query": query
-            })
-
-    except Exception as error:
-        print(f"Reddit hiba: {query}")
-        print(error)
-
-    return posts
+def parse_feed(url):
+    feedparser.USER_AGENT = "Balkan-Political-Social-Monitor/1.0"
+    return feedparser.parse(url)
 
 
-def fetch_bluesky_posts(query):
-    posts = []
+def match_country(text_lc):
+    matched = []
 
-    try:
-        params = {
-            "q": query,
-            "limit": 10,
-            "sort": "latest"
-        }
+    for country in COUNTRIES:
+        for keyword in country["keywords"]:
+            if keyword.lower() in text_lc:
+                matched.append(country["name"])
+                break
 
-        url = "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?" + urllib.parse.urlencode(params)
-        data = fetch_json(url)
-
-        items = data.get("posts", [])
-
-        print(f"Bluesky találatok - {query}: {len(items)}")
-
-        for item in items:
-            record = item.get("record", {})
-            author = item.get("author", {})
-
-            text = clean_text(record.get("text", ""))
-            handle = author.get("handle", "")
-            uri = item.get("uri", "")
-
-            if not text:
-                continue
-
-            posts.append({
-                "title": text[:180],
-                "url": uri,
-                "source": f"Bluesky/{handle}",
-                "seen_date": record.get("createdAt", ""),
-                "origin": "Bluesky",
-                "query": query
-            })
-
-    except Exception as error:
-        print(f"Bluesky hiba: {query}")
-        print(error)
-
-    return posts
+    return matched
 
 
-def collect_social_posts(country):
+def collect_posts():
     all_posts = []
     seen = set()
 
-    for query in country["social_queries"]:
-        source_posts = []
+    for source_type, url, tag in FEEDS:
+        print(f"Feed lekérése: {source_type} / {tag}")
 
-        source_posts.extend(fetch_reddit_posts(query))
-        source_posts.extend(fetch_bluesky_posts(query))
+        feed = parse_feed(url)
 
-        for post in source_posts:
-            key = post.get("url") or post.get("title")
+        entries = getattr(feed, "entries", [])
 
-            if not key:
+        print(f"Találatok: {len(entries)}")
+
+        for entry in entries:
+            title = getattr(entry, "title", "") or ""
+            link = getattr(entry, "link", "") or ""
+            summary = getattr(entry, "summary", "") or getattr(entry, "description", "") or ""
+            published = getattr(entry, "published", "") or getattr(entry, "updated", "") or ""
+
+            text = f"{title} {summary}"
+            text_plain = strip_html(text)
+            text_lc = text_plain.lower()
+
+            countries = match_country(text_lc)
+
+            if not countries:
                 continue
+
+            key = link or text_plain[:120]
 
             if key in seen:
                 continue
 
             seen.add(key)
-            all_posts.append(post)
 
-    return all_posts[:50]
+            all_posts.append({
+                "title": strip_html(title)[:180],
+                "text": strip_html(summary)[:300],
+                "url": link,
+                "source": source_type,
+                "tag": tag,
+                "seen_date": published,
+                "matched_countries": countries
+            })
+
+    return all_posts
 
 
-def analyze_social_posts(posts):
-    mentions = len(posts)
+def analyze_country(country_name, posts):
+    related = [
+        post for post in posts
+        if country_name in post["matched_countries"]
+    ]
+
+    mentions = len(related)
     negative_hits = 0
     positive_hits = 0
 
     source_counts = {
-        "Reddit": 0,
-        "Bluesky": 0
+        "reddit": 0,
+        "mastodon": 0
     }
 
-    query_counts = {}
+    tag_counts = {}
 
-    for post in posts:
-        text = post.get("title", "").lower()
-        origin = post.get("origin", "")
-        query = post.get("query", "")
+    for post in related:
+        text = f"{post.get('title', '')} {post.get('text', '')}".lower()
+        source = post.get("source", "")
+        tag = post.get("tag", "")
 
-        if origin in source_counts:
-            source_counts[origin] += 1
+        if source in source_counts:
+            source_counts[source] += 1
 
-        if query:
-            query_counts[query] = query_counts.get(query, 0) + 1
+        if tag:
+            tag_counts[tag] = tag_counts.get(tag, 0) + 1
 
         if any(word in text for word in NEGATIVE_WORDS):
             negative_hits += 1
@@ -232,8 +196,8 @@ def analyze_social_posts(posts):
 
     main_topic = "nincs adat"
 
-    if query_counts:
-        main_topic = max(query_counts, key=query_counts.get)
+    if tag_counts:
+        main_topic = max(tag_counts, key=tag_counts.get)
 
     return {
         "score": score,
@@ -242,24 +206,23 @@ def analyze_social_posts(posts):
         "negative_hits": negative_hits,
         "positive_hits": positive_hits,
         "source_counts": source_counts,
-        "query_counts": query_counts,
+        "tag_counts": tag_counts,
         "main_topic": main_topic,
-        "top_posts": posts[:5]
+        "top_posts": related[:5]
     }
 
 
 def main():
+    print("Social RSS-források lekérése...")
+
+    posts = collect_posts()
+
+    print(f"Összes szűrt social találat: {len(posts)}")
+
     countries_output = []
 
     for country in COUNTRIES:
-        print("")
-        print(f"Social adatgyűjtés: {country['name']}")
-
-        posts = collect_social_posts(country)
-
-        print(f"Összes social találat: {len(posts)}")
-
-        analysis = analyze_social_posts(posts)
+        analysis = analyze_country(country["name"], posts)
 
         countries_output.append({
             "name": country["name"],
@@ -268,8 +231,8 @@ def main():
 
     output = {
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "source": "Reddit + Bluesky",
-        "method_note": "A social signal külön jelző. Nem közvélemény-kutatás, és nem része a fő hírindexnek. A Mastodon ideiglenesen kikapcsolva a futási idő csökkentése miatt.",
+        "source": "Reddit RSS + Mastodon hashtag RSS",
+        "method_note": "A social signal külön jelző. Nem közvélemény-kutatás, és nem része a fő hírindexnek.",
         "countries": countries_output
     }
 
