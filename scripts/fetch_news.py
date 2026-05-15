@@ -37,137 +37,302 @@ RSS_FEEDS = [
 COUNTRIES = [
     {
         "name": "Szerbia",
-        "queries": ["Serbia politics", "Belgrade government", "Vucic protest"],
-        "keywords": ["serbia", "serbian", "belgrade", "vucic", "srbija", "beograd", "vučić"]
+        "queries": [
+            "Serbia politics",
+            "Belgrade government",
+            "Vucic protest"
+        ],
+        "keywords": [
+            "serbia", "serbian", "belgrade",
+            "vucic", "srbija", "beograd", "vučić"
+        ]
     },
     {
         "name": "Bosznia-Hercegovina",
-        "queries": ["Bosnia politics", "Sarajevo government", "Republika Srpska Dodik"],
-        "keywords": ["bosnia", "sarajevo", "dodik", "republika srpska", "bih", "bosnia and herzegovina"]
+        "queries": [
+            "Bosnia politics",
+            "Sarajevo government",
+            "Republika Srpska Dodik"
+        ],
+        "keywords": [
+            "bosnia", "sarajevo", "dodik",
+            "republika srpska", "bih",
+            "bosnia and herzegovina"
+        ]
     },
     {
         "name": "Koszovó",
-        "queries": ["Kosovo politics", "Pristina government", "Kosovo Serbia tensions"],
-        "keywords": ["kosovo", "pristina", "kurti", "mitrovica", "kosova"]
+        "queries": [
+            "Kosovo politics",
+            "Pristina government",
+            "Kosovo Serbia tensions"
+        ],
+        "keywords": [
+            "kosovo", "pristina",
+            "kurti", "mitrovica", "kosova"
+        ]
     },
     {
         "name": "Montenegró",
-        "queries": ["Montenegro politics", "Podgorica government"],
-        "keywords": ["montenegro", "podgorica", "crna gora", "crnoj gori"]
+        "queries": [
+            "Montenegro politics",
+            "Podgorica government"
+        ],
+        "keywords": [
+            "montenegro", "podgorica",
+            "crna gora", "crnoj gori"
+        ]
     },
     {
         "name": "Észak-Macedónia",
-        "queries": ["North Macedonia politics", "Skopje government"],
-        "keywords": ["north macedonia", "macedonia", "skopje", "makedonija", "скопје", "македонија"]
+        "queries": [
+            "North Macedonia politics",
+            "Skopje government"
+        ],
+        "keywords": [
+            "north macedonia", "macedonia",
+            "skopje", "makedonija",
+            "скопје", "македонија"
+        ]
     },
     {
         "name": "Albánia",
-        "queries": ["Albania politics", "Tirana government", "Edi Rama opposition"],
-        "keywords": ["albania", "albanian", "tirana", "rama", "shqiperi", "shqipëria"]
+        "queries": [
+            "Albania politics",
+            "Tirana government",
+            "Edi Rama opposition"
+        ],
+        "keywords": [
+            "albania", "albanian",
+            "tirana", "rama",
+            "shqiperi", "shqipëria"
+        ]
     }
 ]
 
 NEGATIVE_WORDS = [
-    "protest", "protests", "crisis", "corruption", "violence", "conflict",
-    "tension", "tensions", "sanction", "sanctions", "arrest", "attack",
-    "war", "unrest", "fraud", "dispute", "scandal", "threat",
-    "instability", "clash", "clashes", "riot", "boycott", "polarization",
-    "accuses", "genocide", "propaganda", "blocked", "deadlock",
-    "resignation", "investigation", "charges", "convicted",
-    "kriza", "protest", "protesti", "korupcija", "nasilje", "sukob",
-    "hapšenje", "napad", "skandal", "tenzije", "blokada"
+    "protest", "protests", "crisis",
+    "corruption", "violence", "conflict",
+    "tension", "tensions", "sanction",
+    "sanctions", "arrest", "attack",
+    "war", "unrest", "fraud",
+    "dispute", "scandal", "threat",
+    "instability", "clash", "clashes",
+    "riot", "boycott", "polarization",
+    "accuses", "genocide", "propaganda",
+    "blocked", "deadlock", "resignation",
+    "investigation", "charges",
+    "convicted", "kriza", "protesti",
+    "korupcija", "nasilje", "sukob",
+    "hapšenje", "napad", "skandal",
+    "tenzije", "blokada"
 ]
 
 POSITIVE_WORDS = [
-    "agreement", "reform", "growth", "cooperation", "investment",
-    "stability", "dialogue", "progress", "development", "support",
-    "partnership", "integration", "talks", "deal", "funding",
-    "membership", "negotiations", "future", "economic growth",
-    "eu accession", "opens talks", "approved", "aid package",
-    "sporazum", "reforma", "saradnja", "investicija", "stabilnost",
-    "napredak", "podrška", "partnerstvo"
+    "agreement", "reform", "growth",
+    "cooperation", "investment",
+    "stability", "dialogue",
+    "progress", "development",
+    "support", "partnership",
+    "integration", "talks", "deal",
+    "funding", "membership",
+    "negotiations", "future",
+    "economic growth", "eu accession",
+    "opens talks", "approved",
+    "aid package", "sporazum",
+    "reforma", "saradnja",
+    "investicija", "stabilnost",
+    "napredak", "podrška",
+    "partnerstvo"
 ]
 
 TOPIC_RULES = [
     {
         "label": "Belpolitikai tüntetések és társadalmi nyomás",
         "keywords": [
-            "protest", "protests", "demonstration", "students", "student protest",
-            "police violence", "riot", "unrest", "blocked", "boycott"
+            "protest", "protests",
+            "demonstration", "students",
+            "student protest",
+            "police violence",
+            "riot", "unrest",
+            "blocked", "boycott"
         ],
         "weight": 5
     },
+
     {
         "label": "EU-integráció és csatlakozási folyamat",
         "keywords": [
-            "eu accession", "eu membership", "european union", "enlargement",
-            "accession talks", "negotiations", "brussels", "rule of law",
-            "joining the eu", "integration"
+            "eu accession", "eu membership",
+            "european union", "enlargement",
+            "accession talks",
+            "negotiations", "brussels",
+            "rule of law",
+            "joining the eu",
+            "integration",
+            "eu integration"
         ],
-        "weight": 4
+        "weight": 5
     },
+
     {
         "label": "Koszovó–Szerbia feszültség",
         "keywords": [
-            "kosovo serbia", "serbia kosovo", "kurti", "vucic", "vučić",
-            "mitrovica", "pristina", "prishtina", "serb list",
-            "dialogue", "border", "kfor"
+            "kosovo serbia",
+            "serbia kosovo",
+            "kurti", "vucic",
+            "vučić", "mitrovica",
+            "pristina", "prishtina",
+            "serb list", "kfor",
+            "border tensions",
+            "territorial exchange",
+            "kosovo dialogue"
         ],
-        "weight": 5
+        "weight": 7
     },
+
     {
         "label": "Boszniai intézményi válság és OHR-vita",
         "keywords": [
-            "dodik", "republika srpska", "ohr", "high representative",
-            "christian schmidt", "state collapse", "dayton",
-            "bosnian state", "secession", "constitutional crisis"
+            "dodik",
+            "republika srpska",
+            "ohr",
+            "high representative",
+            "christian schmidt",
+            "state collapse",
+            "dayton",
+            "bosnian state",
+            "secession",
+            "constitutional crisis",
+            "bosnia envoy",
+            "peace envoy"
         ],
-        "weight": 5
+        "weight": 8
     },
+
     {
         "label": "Korrupció, jogállamiság és igazságszolgáltatás",
         "keywords": [
-            "corruption", "rule of law", "court", "special court", "charges",
-            "investigation", "fraud", "convicted", "trial", "justice",
-            "prosecution", "rights violations"
+            "corruption", "rule of law",
+            "court", "special court",
+            "charges", "investigation",
+            "fraud", "convicted",
+            "trial", "justice",
+            "prosecution",
+            "rights violations"
         ],
-        "weight": 4
+        "weight": 5
     },
+
     {
         "label": "Biztonságpolitikai kockázatok és erőszak",
         "keywords": [
-            "violence", "attack", "assault", "clash", "clashes", "security",
-            "threat", "war", "conflict", "tension", "tensions",
-            "nationalism", "ethnic", "minority"
+            "violence", "attack",
+            "assault", "clash",
+            "clashes", "security",
+            "threat", "war",
+            "conflict", "tension",
+            "tensions", "nationalism",
+            "ethnic", "minority",
+            "armed", "weapon",
+            "military"
         ],
-        "weight": 4
+        "weight": 5
     },
+
     {
         "label": "Kormányzati stabilitás és választási dinamika",
         "keywords": [
-            "government", "prime minister", "president", "parliament",
-            "opposition", "election", "elections", "party", "coalition",
-            "mayor", "cabinet", "resignation"
+            "government",
+            "prime minister",
+            "president",
+            "parliament",
+            "opposition",
+            "election",
+            "elections",
+            "party",
+            "coalition",
+            "mayor",
+            "cabinet",
+            "resignation",
+            "ruling party"
         ],
-        "weight": 3
+        "weight": 4
     },
+
     {
         "label": "Gazdaság, energia és beruházások",
         "keywords": [
-            "investment", "economic growth", "growth", "energy", "nis",
-            "mol", "infrastructure", "digital connectivity", "funding",
-            "development", "trade"
+            "investment",
+            "economic growth",
+            "growth",
+            "energy",
+            "nis",
+            "mol",
+            "infrastructure",
+            "digital connectivity",
+            "funding",
+            "development",
+            "trade",
+            "business summit",
+            "foreign direct investment"
         ],
-        "weight": 3
+        "weight": 4
     },
+
     {
         "label": "Nemzetközi kapcsolatok és nagyhatalmi befolyás",
         "keywords": [
-            "nato", "russia", "china", "united states", "usa", "turkey",
-            "un", "united nations", "sanctions", "foreign policy",
+            "nato", "russia",
+            "china", "united states",
+            "usa", "turkey",
+            "un", "united nations",
+            "sanctions",
+            "foreign policy",
             "diplomacy"
         ],
         "weight": 3
+    },
+
+    {
+        "label": "Montenegró EU-csatlakozási előrehaladása",
+        "keywords": [
+            "montenegro eu",
+            "podgorica eu",
+            "joining the eu",
+            "eu accession",
+            "negotiation chapters",
+            "montenegro membership"
+        ],
+        "weight": 7
+    },
+
+    {
+        "label": "Albán digitalizáció és kiberbiztonság",
+        "keywords": [
+            "cybersecurity",
+            "digital transformation",
+            "digital government",
+            "electronic governance",
+            "digitalisation",
+            "cyber attack",
+            "digital infrastructure"
+        ],
+        "weight": 6
+    },
+
+    {
+        "label": "Bolgár–macedón identitásvita",
+        "keywords": [
+            "bulgaria",
+            "sofia",
+            "macedonian identity",
+            "historical dispute",
+            "language dispute",
+            "bulgarian veto",
+            "north macedonia eu"
+        ],
+        "weight": 7
     }
 ]
 
@@ -188,7 +353,9 @@ def clean_text(text):
 def fetch_url(url):
     request = urllib.request.Request(
         url,
-        headers={"User-Agent": "Mozilla/5.0"}
+        headers={
+            "User-Agent": "Mozilla/5.0"
+        }
     )
 
     with urllib.request.urlopen(request, timeout=30) as response:
@@ -230,6 +397,7 @@ def fetch_gdelt_articles(query):
     except Exception as error:
         print(f"Hiba a GDELT lekérésnél: {query}")
         print(error)
+
         return []
 
 
@@ -261,7 +429,7 @@ def fetch_rss_articles(feed):
         print(f"RSS találatok: {feed['name']} - {len(articles)}")
 
     except Exception as error:
-        print(f"RSS hiba vagy nem elérhető feed: {feed['name']}")
+        print(f"RSS hiba: {feed['name']}")
         print(error)
 
     return articles
@@ -357,7 +525,11 @@ def classify_topics(articles):
     )
 
     return {
-        "main_topic": sorted_topics[0][0] if sorted_topics else "nincs kiemelkedő téma",
+        "main_topic": (
+            sorted_topics[0][0]
+            if sorted_topics
+            else "nincs kiemelkedő téma"
+        ),
         "topic_scores": dict(sorted_topics[:5])
     }
 
@@ -365,31 +537,17 @@ def classify_topics(articles):
 def analyze_articles(articles):
     negative_hits = 0
     positive_hits = 0
-    negative_topics = {}
-    positive_topics = {}
 
     for article in articles:
         title = article.get("title", "").lower()
         description = article.get("description", "").lower()
+
         text = f"{title} {description}"
 
-        article_negative = False
-        article_positive = False
-
-        for word in NEGATIVE_WORDS:
-            if word in text:
-                article_negative = True
-                negative_topics[word] = negative_topics.get(word, 0) + 1
-
-        for word in POSITIVE_WORDS:
-            if word in text:
-                article_positive = True
-                positive_topics[word] = positive_topics.get(word, 0) + 1
-
-        if article_negative:
+        if any(word in text for word in NEGATIVE_WORDS):
             negative_hits += 1
 
-        if article_positive:
+        if any(word in text for word in POSITIVE_WORDS):
             positive_hits += 1
 
     score = (positive_hits * 4) - (negative_hits * 4)
@@ -398,9 +556,7 @@ def analyze_articles(articles):
     return {
         "score": score,
         "negative_hits": negative_hits,
-        "positive_hits": positive_hits,
-        "negative_topics": negative_topics,
-        "positive_topics": positive_topics
+        "positive_hits": positive_hits
     }
 
 
@@ -469,6 +625,7 @@ def save_history(latest_data):
 
     history["records"].append(daily_record)
     history["records"] = history["records"][-90:]
+
     history["updated_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     with open(HISTORY_PATH, "w", encoding="utf-8") as file:
