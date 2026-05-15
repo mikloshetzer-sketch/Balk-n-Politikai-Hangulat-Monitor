@@ -455,6 +455,21 @@ def score_from_news_topics(country):
 def build_country_risk(events, latest_data):
     countries = []
 
+    SECURITY_PRIORITY = [
+        "Biztonságpolitikai kockázatok és erőszak",
+        "Koszovó–Szerbia feszültség",
+        "Boszniai intézményi válság és OHR-vita",
+        "Belpolitikai tüntetések és társadalmi nyomás",
+        "Korrupció, jogállamiság és igazságszolgáltatás",
+        "Kormányzati stabilitás és választási dinamika",
+        "Nemzetközi kapcsolatok és nagyhatalmi befolyás",
+        "Bolgár–macedón identitásvita",
+        "Albán digitalizáció és kiberbiztonság",
+        "Montenegró EU-csatlakozási előrehaladása",
+        "EU-integráció és csatlakozási folyamat",
+        "Gazdaság, energia és beruházások"
+    ]
+
     for country in COUNTRIES:
         country_events = [
             event for event in events
@@ -474,7 +489,10 @@ def build_country_risk(events, latest_data):
         else:
             main_type = "nincs adat"
 
-        event_total_score = sum(float(event.get("score", 0) or 0) for event in country_events)
+        event_total_score = sum(
+            float(event.get("score", 0) or 0)
+            for event in country_events
+        )
 
         event_based_score = min(
             100,
@@ -482,16 +500,40 @@ def build_country_risk(events, latest_data):
         )
 
         latest_country = get_latest_country(latest_data, country)
-        news_score, news_topic, contributing_topics = score_from_news_topics(latest_country)
+
+        news_score, news_topic, contributing_topics = score_from_news_topics(
+            latest_country
+        )
 
         if event_count > 0:
-            final_score = max(event_based_score, news_score)
+            final_score = round(
+                (event_based_score * 0.7) + (news_score * 0.3),
+                1
+            )
+
             security_source = "event_layer"
             main_event_type = main_type
+
         elif news_score > 0:
-            final_score = news_score
+            final_score = round(news_score * 0.55, 1)
+
             security_source = "news_derived"
-            main_event_type = news_topic
+
+            topic_names = [
+                topic["topic"]
+                for topic in contributing_topics
+            ]
+
+            main_event_type = "nincs adat"
+
+            for preferred_topic in SECURITY_PRIORITY:
+                if preferred_topic in topic_names:
+                    main_event_type = preferred_topic
+                    break
+
+            if main_event_type == "nincs adat" and topic_names:
+                main_event_type = topic_names[0]
+
         else:
             final_score = 0
             security_source = "none"
@@ -509,7 +551,6 @@ def build_country_risk(events, latest_data):
         })
 
     return countries
-
 
 def main():
     os.makedirs("docs/data", exist_ok=True)
