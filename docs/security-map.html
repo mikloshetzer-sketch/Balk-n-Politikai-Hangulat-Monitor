@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Balkán Security Risk Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+
+    header {
+      padding: 18px 22px;
+      background: #020617;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      font-size: 14px;
+      margin-top: 6px;
+    }
+
+    #map {
+      height: calc(100vh - 82px);
+      width: 100%;
+    }
+
+    .legend {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(15, 23, 42, 0.92);
+      color: white;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 13px;
+      z-index: 999;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    }
+
+    .legend-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 5px 0;
+    }
+
+    .swatch {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+    }
+
+    .popup-title {
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    .popup-line {
+      font-size: 13px;
+      margin: 3px 0;
+    }
+
+    a {
+      color: #93c5fd;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Balkán Security Risk Map</h1>
+  <div class="subtitle">
+    Híralapú és eseményalapú biztonsági kockázati réteg
+  </div>
+</header>
+
+<div id="map"></div>
+
+<div class="legend">
+  <strong>Security risk</strong>
+  <div class="legend-row"><span class="swatch" style="background:#166534"></span> low</div>
+  <div class="legend-row"><span class="swatch" style="background:#ca8a04"></span> medium</div>
+  <div class="legend-row"><span class="swatch" style="background:#ea580c"></span> high</div>
+  <div class="legend-row"><span class="swatch" style="background:#dc2626"></span> critical</div>
+  <div class="legend-row"><span class="swatch" style="background:#64748b"></span> none</div>
+</div>
+
+<script>
+const COUNTRY_POINTS = [
+  { name: "Szerbia", lat: 44.0165, lng: 21.0059 },
+  { name: "Bosznia-Hercegovina", lat: 43.9159, lng: 17.6791 },
+  { name: "Koszovó", lat: 42.6026, lng: 20.9030 },
+  { name: "Montenegró", lat: 42.7087, lng: 19.3744 },
+  { name: "Észak-Macedónia", lat: 41.6086, lng: 21.7453 },
+  { name: "Albánia", lat: 41.1533, lng: 20.1683 }
+];
+
+const map = L.map("map").setView([43.1, 20.2], 6);
+
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: "&copy; OpenStreetMap"
+}).addTo(map);
+
+function colorByLevel(level) {
+  if (level === "critical") return "#dc2626";
+  if (level === "high") return "#ea580c";
+  if (level === "medium") return "#ca8a04";
+  if (level === "low") return "#166534";
+  return "#64748b";
+}
+
+function radiusByScore(score) {
+  const value = Number(score || 0);
+  return 18000 + value * 900;
+}
+
+async function loadSecurityMap() {
+  const response = await fetch("./data/security_risk.json");
+  const data = await response.json();
+
+  COUNTRY_POINTS.forEach(point => {
+    const row = data.countries.find(item => item.name === point.name);
+
+    if (!row) return;
+
+    const color = colorByLevel(row.security_level);
+
+    const circle = L.circle([point.lat, point.lng], {
+      radius: radiusByScore(row.security_score),
+      color: color,
+      fillColor: color,
+      fillOpacity: 0.42,
+      weight: 2
+    }).addTo(map);
+
+    circle.bindPopup(`
+      <div class="popup-title">${row.name}</div>
+      <div class="popup-line">Security score: <strong>${row.security_score}</strong></div>
+      <div class="popup-line">Szint: <strong>${row.security_level}</strong></div>
+      <div class="popup-line">Forrás: <strong>${row.security_source}</strong></div>
+      <div class="popup-line">Fő biztonsági narratíva: <strong>${row.main_event_type}</strong></div>
+      <div class="popup-line">Eseményszám: <strong>${row.event_count}</strong></div>
+    `);
+  });
+}
+
+loadSecurityMap();
+</script>
+
+</body>
+</html>
