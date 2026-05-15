@@ -189,6 +189,22 @@
       margin-bottom: 10px;
     }
 
+    .report-button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 9px 12px;
+      border-radius: 10px;
+      background: #111827;
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .report-button:hover {
+      background: #374151;
+    }
+
     .social-box,
     .chart-box,
     .topic-box,
@@ -274,7 +290,7 @@
 
 <header>
   <h1>Balkán Politikai Hangulat Monitor</h1>
-  <p>Hírindex, social media index és domináns narratívák országonként</p>
+  <p>Hírindex, social media index, domináns narratívák és országriportok</p>
 </header>
 
 <main>
@@ -316,10 +332,12 @@ async function loadData() {
     const latestResponse = await fetch('./data/latest.json');
     const historyResponse = await fetch('./data/history.json');
     const socialResponse = await fetch('./data/social_latest.json');
+    const reportsResponse = await fetch('./data/reports_index.json');
 
     const latestData = await latestResponse.json();
     const historyData = await historyResponse.json();
     const socialData = await socialResponse.json();
+    const reportsData = await reportsResponse.json();
 
     document.getElementById('updatedAt').textContent =
       latestData.updated_at || 'nincs adat';
@@ -338,6 +356,7 @@ async function loadData() {
 
     latestData.countries.forEach(country => {
       const socialSignal = getSocialSignal(country.name, socialData);
+      const reportUrl = getReportUrl(country.name, reportsData);
       const trendChartId = `trend-${slugify(country.name)}`;
       const topicChartId = `topics-${slugify(country.name)}`;
 
@@ -348,7 +367,11 @@ async function loadData() {
         <div class="card-inner">
 
           <div class="country-header">
-            <div class="country-title">${country.name}</div>
+            <div>
+              <div class="country-title">${country.name}</div>
+              ${buildReportButton(reportUrl)}
+            </div>
+
             <div class="status-badge ${getBadgeClass(country.status)}">
               <strong>${country.score}</strong><br>
               ${getStatusText(country.status)}
@@ -438,6 +461,34 @@ async function loadData() {
       </div>
     `;
   }
+}
+
+function buildReportButton(reportUrl) {
+  if (!reportUrl) {
+    return `
+      <span class="small">Riport még nem érhető el</span>
+    `;
+  }
+
+  return `
+    <a class="report-button" href="${reportUrl}" target="_blank" rel="noopener noreferrer">
+      Szöveges helyzetkép megnyitása
+    </a>
+  `;
+}
+
+function getReportUrl(countryName, reportsData) {
+  if (!reportsData || !reportsData.reports) {
+    return null;
+  }
+
+  const row = reportsData.reports.find(item => item.name === countryName);
+
+  if (!row || !row.url) {
+    return null;
+  }
+
+  return row.url;
 }
 
 function createTopicChart(canvasId, topicScores) {
