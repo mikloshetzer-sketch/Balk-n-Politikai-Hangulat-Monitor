@@ -19,7 +19,7 @@
     header {
       background: #111827;
       color: white;
-      padding: 30px 20px;
+      padding: 26px 20px;
       text-align: center;
     }
 
@@ -29,38 +29,51 @@
     }
 
     header p {
-      margin-top: 10px;
+      margin-top: 8px;
       color: #d1d5db;
     }
 
     main {
-      max-width: 1300px;
-      margin: 24px auto;
+      max-width: 1450px;
+      margin: 22px auto;
       padding: 0 16px;
     }
 
     .status-box {
       background: white;
       border-radius: 14px;
-      padding: 20px;
-      margin-bottom: 22px;
+      padding: 18px;
+      margin-bottom: 20px;
       box-shadow: 0 4px 14px rgba(0,0,0,0.08);
     }
 
-    .status-box h2 {
-      margin-top: 0;
-      font-size: 22px;
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+    }
+
+    .status-item {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 12px;
+      background: #f9fafb;
+    }
+
+    .status-item strong {
+      display: block;
+      margin-bottom: 4px;
     }
 
     .small {
       color: #6b7280;
-      font-size: 14px;
+      font-size: 13px;
     }
 
     .dashboard-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-      gap: 22px;
+      gap: 18px;
     }
 
     .country-card {
@@ -71,33 +84,56 @@
       overflow: hidden;
     }
 
-    .positive {
-      border-left-color: #16a34a;
-    }
-
-    .neutral {
-      border-left-color: #f59e0b;
-    }
-
-    .negative {
-      border-left-color: #dc2626;
-    }
+    .positive { border-left-color: #16a34a; }
+    .neutral { border-left-color: #f59e0b; }
+    .negative { border-left-color: #dc2626; }
 
     .card-inner {
-      padding: 18px;
+      padding: 16px;
+    }
+
+    .country-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-start;
+      margin-bottom: 12px;
     }
 
     .country-title {
       font-size: 22px;
       font-weight: 700;
-      margin-bottom: 14px;
+    }
+
+    .status-badge {
+      border-radius: 10px;
+      padding: 8px 10px;
+      background: #f3f4f6;
+      font-size: 13px;
+      text-align: center;
+      min-width: 70px;
+    }
+
+    .status-badge.positive-badge {
+      background: #ecfdf5;
+      color: #047857;
+    }
+
+    .status-badge.negative-badge {
+      background: #fef2f2;
+      color: #b91c1c;
+    }
+
+    .status-badge.neutral-badge {
+      background: #f9fafb;
+      color: #374151;
     }
 
     .score-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 12px;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     .score-box {
@@ -114,41 +150,53 @@
     }
 
     .score-value {
-      font-size: 32px;
+      font-size: 30px;
       font-weight: 700;
     }
 
-    .signal-grid {
+    .news-score.positive-text { color: #16a34a; }
+    .news-score.negative-text { color: #dc2626; }
+    .news-score.neutral-text { color: #111827; }
+
+    .social-score {
+      color: #d97706;
+    }
+
+    .metric-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 8px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
-    .signal-pill {
+    .metric {
       background: #f3f4f6;
-      border-radius: 999px;
-      padding: 7px 9px;
+      border-radius: 10px;
+      padding: 8px;
       font-size: 12px;
-      color: #374151;
     }
 
-    .topic-line,
-    .source-line {
+    .metric strong {
+      display: block;
+      font-size: 16px;
+      margin-top: 3px;
+    }
+
+    .topic-line {
       font-size: 13px;
       color: #4b5563;
-      margin-top: 8px;
       line-height: 1.4;
+      margin-bottom: 10px;
     }
 
     .social-box,
     .chart-box,
     .news-section {
-      background: #ffffff;
       border: 1px solid #e5e7eb;
       border-radius: 12px;
-      padding: 14px;
-      margin-top: 14px;
+      padding: 12px;
+      margin-top: 12px;
+      background: #ffffff;
     }
 
     .social-box {
@@ -158,19 +206,19 @@
     .social-box h3,
     .chart-box h3,
     .news-section h3 {
-      margin: 0 0 10px 0;
+      margin: 0 0 8px 0;
       font-size: 15px;
     }
 
     .chart-desc {
       font-size: 12px;
       color: #6b7280;
-      margin-bottom: 12px;
-      line-height: 1.4;
+      margin-bottom: 8px;
+      line-height: 1.35;
     }
 
     .chart-wrap {
-      height: 250px;
+      height: 155px;
     }
 
     .news-list {
@@ -179,9 +227,9 @@
     }
 
     .news-list li {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
       font-size: 13px;
-      line-height: 1.4;
+      line-height: 1.35;
     }
 
     .news-list a {
@@ -197,7 +245,21 @@
       text-align: center;
       color: #6b7280;
       font-size: 13px;
-      padding: 30px 10px;
+      padding: 28px 10px;
+    }
+
+    @media (max-width: 600px) {
+      .score-row {
+        grid-template-columns: 1fr;
+      }
+
+      .metric-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -206,22 +268,30 @@
 
 <header>
   <h1>Balkán Politikai Hangulat Monitor</h1>
-  <p>Hírindex, social signal és negatív említések kombinált áttekintése</p>
+  <p>Hírindex és social media index kombinált országmonitor</p>
 </header>
 
 <main>
 
   <section class="status-box">
-    <h2>Aktuális helyzetkép</h2>
-    <p>
-      A fő hírindex híralapú forrásokból készül. A social signal külön jelző,
-      amely Reddit RSS és Mastodon hashtag RSS alapján mutat aktivitást.
-    </p>
+    <div class="status-grid">
+      <div class="status-item">
+        <strong>Frissítés</strong>
+        <span class="small" id="updatedAt">Betöltés...</span>
+      </div>
 
-    <p class="small" id="updatedAt">Frissítés: betöltés...</p>
-    <p class="small" id="sourceInfo">Hírforrás: betöltés...</p>
-    <p class="small" id="socialInfo">Social forrás: betöltés...</p>
-    <p class="small" id="methodNote"></p>
+      <div class="status-item">
+        <strong>Hírforrás</strong>
+        <span class="small" id="sourceInfo">Betöltés...</span>
+      </div>
+
+      <div class="status-item">
+        <strong>Social forrás</strong>
+        <span class="small" id="socialInfo">Betöltés...</span>
+      </div>
+    </div>
+
+    <p class="small" id="methodNote" style="margin-top:12px;"></p>
   </section>
 
   <section class="dashboard-grid" id="countryGrid"></section>
@@ -246,16 +316,16 @@ async function loadData() {
     const socialData = await socialResponse.json();
 
     document.getElementById('updatedAt').textContent =
-      `Frissítés: ${latestData.updated_at}`;
+      latestData.updated_at || 'nincs adat';
 
     document.getElementById('sourceInfo').textContent =
-      `Hírforrás: ${latestData.source || 'nincs megadva'}`;
+      latestData.source || 'nincs megadva';
 
     document.getElementById('socialInfo').textContent =
-      `Social forrás: ${socialData.source || 'nincs megadva'} – ${socialData.updated_at || 'nincs időpont'}`;
+      `${socialData.source || 'nincs megadva'} – ${socialData.updated_at || 'nincs időpont'}`;
 
     document.getElementById('methodNote').textContent =
-      latestData.method_note || '';
+      socialData.method_note || latestData.method_note || '';
 
     const grid = document.getElementById('countryGrid');
     grid.innerHTML = '';
@@ -270,26 +340,37 @@ async function loadData() {
       card.innerHTML = `
         <div class="card-inner">
 
-          <div class="country-title">${country.name}</div>
+          <div class="country-header">
+            <div class="country-title">${country.name}</div>
+            <div class="status-badge ${getBadgeClass(country.status)}">
+              <strong>${country.score}</strong><br>
+              ${getStatusText(country.status)}
+            </div>
+          </div>
 
           <div class="score-row">
             <div class="score-box">
               <div class="score-label">Hírindex</div>
-              <div class="score-value">${country.score}</div>
+              <div class="score-value news-score ${getTextClass(country.status)}">
+                ${country.score}
+              </div>
               <div class="small">${getStatusText(country.status)}</div>
             </div>
 
             <div class="score-box">
-              <div class="score-label">Social signal</div>
-              <div class="score-value">${socialSignal.score || 0}</div>
+              <div class="score-label">Social media index</div>
+              <div class="score-value social-score">
+                ${socialSignal.score || 0}
+              </div>
               <div class="small">${getSocialLevelText(socialSignal.level)}</div>
             </div>
           </div>
 
-          <div class="signal-grid">
-            <div class="signal-pill">Cikkek: <strong>${country.article_count || 0}</strong></div>
-            <div class="signal-pill">Hír negatív: <strong>${country.negative_hits || 0}</strong></div>
-            <div class="signal-pill">Hír pozitív: <strong>${country.positive_hits || 0}</strong></div>
+          <div class="metric-grid">
+            <div class="metric">Cikkek<strong>${country.article_count || 0}</strong></div>
+            <div class="metric">Hír negatív<strong>${country.negative_hits || 0}</strong></div>
+            <div class="metric">Hír pozitív<strong>${country.positive_hits || 0}</strong></div>
+            <div class="metric">Social említés<strong>${socialSignal.mentions || 0}</strong></div>
           </div>
 
           <div class="topic-line">
@@ -298,28 +379,23 @@ async function loadData() {
 
           <div class="social-box">
             <h3>Social signal</h3>
-
-            <div class="signal-grid">
-              <div class="signal-pill">Említések: <strong>${socialSignal.mentions || 0}</strong></div>
-              <div class="signal-pill">Negatív: <strong>${socialSignal.negative_hits || 0}</strong></div>
-              <div class="signal-pill">Pozitív: <strong>${socialSignal.positive_hits || 0}</strong></div>
+            <div class="metric-grid">
+              <div class="metric">Említések<strong>${socialSignal.mentions || 0}</strong></div>
+              <div class="metric">Negatív<strong>${socialSignal.negative_hits || 0}</strong></div>
+              <div class="metric">Pozitív<strong>${socialSignal.positive_hits || 0}</strong></div>
+              <div class="metric">Index<strong>${socialSignal.score || 0}</strong></div>
             </div>
-
-            <div class="source-line">
-              Reddit: ${getSourceCount(socialSignal, 'reddit')} |
-              Mastodon: ${getSourceCount(socialSignal, 'mastodon')}
-            </div>
-
             <div class="topic-line">
+              Reddit: ${getSourceCount(socialSignal, 'reddit')} |
+              Mastodon: ${getSourceCount(socialSignal, 'mastodon')} |
               Fő social téma: <strong>${socialSignal.main_topic || 'nincs adat'}</strong>
             </div>
           </div>
 
           <div class="chart-box">
-            <h3>Kombinált trenddiagram</h3>
+            <h3>Mini kombinált trenddiagram</h3>
             <div class="chart-desc">
-              A vonal a hírindexet, az oszlopok a social aktivitást,
-              a piros vonal a social negatív jeleket mutatja.
+              Kék vonal: hírindex. Világoskék oszlop: social media index.
             </div>
             <div class="chart-wrap">
               <canvas id="${chartId}"></canvas>
@@ -332,8 +408,7 @@ async function loadData() {
       `;
 
       grid.appendChild(card);
-
-      createComboChart(chartId, country.name, historyData, socialSignal);
+      createMiniComboChart(chartId, country.name, historyData, socialSignal, country.score);
     });
 
   } catch (error) {
@@ -343,49 +418,35 @@ async function loadData() {
       <div class="country-card negative">
         <div class="card-inner">
           <div class="country-title">Adatbetöltési hiba</div>
-          <p>Nem sikerült betölteni a latest.json, history.json vagy social_latest.json fájlt.</p>
+          <p>Nem sikerült betölteni az adatfájlokat.</p>
         </div>
       </div>
     `;
   }
 }
 
-function createComboChart(canvasId, countryName, historyData, socialSignal) {
+function createMiniComboChart(canvasId, countryName, historyData, socialSignal, currentNewsScore) {
   const canvas = document.getElementById(canvasId);
 
-  if (!canvas) {
-    return;
-  }
+  if (!canvas) return;
 
   if (chartStore[canvasId]) {
     chartStore[canvasId].destroy();
   }
 
   const historyRows = getCountryHistory(countryName, historyData);
-  const labels = historyRows.map(row => row.date);
+
+  let labels = historyRows.map(row => shortDate(row.date));
+  let newsIndex = historyRows.map(row => row.score);
+  let socialIndex = historyRows.map(row => row.social_score || 0);
 
   if (labels.length === 0) {
-    labels.push('Ma');
-  }
-
-  const newsIndex = historyRows.map(row => row.score);
-  const socialMentions = historyRows.map(row => row.social_mentions || 0);
-  const socialNegative = historyRows.map(row => row.social_negative_hits || 0);
-
-  if (newsIndex.length === 0) {
-    newsIndex.push(0);
-  }
-
-  if (socialMentions.length === 0) {
-    socialMentions.push(socialSignal.mentions || 0);
+    labels = ['Ma'];
+    newsIndex = [currentNewsScore || 0];
+    socialIndex = [socialSignal.score || 0];
   } else {
-    socialMentions[socialMentions.length - 1] = socialSignal.mentions || 0;
-  }
-
-  if (socialNegative.length === 0) {
-    socialNegative.push(socialSignal.negative_hits || 0);
-  } else {
-    socialNegative[socialNegative.length - 1] = socialSignal.negative_hits || 0;
+    newsIndex[newsIndex.length - 1] = currentNewsScore || newsIndex[newsIndex.length - 1] || 0;
+    socialIndex[socialIndex.length - 1] = socialSignal.score || 0;
   }
 
   chartStore[canvasId] = new Chart(canvas, {
@@ -394,11 +455,14 @@ function createComboChart(canvasId, countryName, historyData, socialSignal) {
       datasets: [
         {
           type: 'bar',
-          label: 'Social említések',
-          data: socialMentions,
+          label: 'Social media index',
+          data: socialIndex,
           yAxisID: 'ySocial',
-          borderWidth: 1,
-          borderRadius: 6
+          barThickness: 12,
+          maxBarThickness: 14,
+          borderWidth: 0,
+          borderRadius: 5,
+          backgroundColor: 'rgba(147, 197, 253, 0.75)'
         },
         {
           type: 'line',
@@ -406,17 +470,11 @@ function createComboChart(canvasId, countryName, historyData, socialSignal) {
           data: newsIndex,
           yAxisID: 'yNews',
           tension: 0.35,
-          borderWidth: 3,
-          pointRadius: 3
-        },
-        {
-          type: 'line',
-          label: 'Social negatív jelek',
-          data: socialNegative,
-          yAxisID: 'ySocial',
-          tension: 0.35,
           borderWidth: 2,
-          pointRadius: 3
+          pointRadius: 2,
+          pointHoverRadius: 4,
+          borderColor: '#2563eb',
+          backgroundColor: '#2563eb'
         }
       ]
     },
@@ -431,15 +489,15 @@ function createComboChart(canvasId, countryName, historyData, socialSignal) {
         legend: {
           position: 'bottom',
           labels: {
-            boxWidth: 12,
+            boxWidth: 10,
             font: {
-              size: 11
+              size: 10
             }
           }
         },
         tooltip: {
           backgroundColor: '#111827',
-          padding: 10
+          padding: 9
         }
       },
       scales: {
@@ -448,9 +506,13 @@ function createComboChart(canvasId, countryName, historyData, socialSignal) {
           position: 'left',
           min: -30,
           max: 30,
+          ticks: {
+            font: { size: 10 }
+          },
           title: {
             display: true,
-            text: 'Hírindex'
+            text: 'Hírindex',
+            font: { size: 10 }
           },
           grid: {
             color: 'rgba(0,0,0,0.06)'
@@ -460,15 +522,24 @@ function createComboChart(canvasId, countryName, historyData, socialSignal) {
           type: 'linear',
           position: 'right',
           beginAtZero: true,
+          suggestedMax: 30,
+          ticks: {
+            font: { size: 10 }
+          },
           title: {
             display: true,
-            text: 'Social signal'
+            text: 'Social',
+            font: { size: 10 }
           },
           grid: {
             drawOnChartArea: false
           }
         },
         x: {
+          ticks: {
+            font: { size: 10 },
+            maxRotation: 0
+          },
           grid: {
             display: false
           }
@@ -489,8 +560,7 @@ function getCountryHistory(countryName, historyData) {
       rows.push({
         date: record.date,
         score: country.score || 0,
-        social_mentions: country.social_mentions || 0,
-        social_negative_hits: country.social_negative_hits || 0
+        social_score: country.social_score || 0
       });
     }
   });
@@ -509,24 +579,17 @@ function getSocialSignal(countryName, socialData) {
     main_topic: 'nincs adat'
   };
 
-  if (!socialData || !socialData.countries) {
-    return fallback;
-  }
+  if (!socialData || !socialData.countries) return fallback;
 
   const row = socialData.countries.find(item => item.name === countryName);
 
-  if (!row || !row.social_signal) {
-    return fallback;
-  }
+  if (!row || !row.social_signal) return fallback;
 
   return row.social_signal;
 }
 
 function getSourceCount(socialSignal, sourceName) {
-  if (!socialSignal || !socialSignal.source_counts) {
-    return 0;
-  }
-
+  if (!socialSignal || !socialSignal.source_counts) return 0;
   return socialSignal.source_counts[sourceName] || 0;
 }
 
@@ -563,27 +626,34 @@ function buildArticlesHtml(articles) {
 }
 
 function getStatusText(status) {
-  if (status === 'positive') {
-    return 'pozitív';
-  }
-
-  if (status === 'negative') {
-    return 'negatív';
-  }
-
+  if (status === 'positive') return 'pozitív';
+  if (status === 'negative') return 'negatív';
   return 'semleges';
 }
 
 function getSocialLevelText(level) {
-  if (level === 'high') {
-    return 'magas aktivitás';
-  }
-
-  if (level === 'medium') {
-    return 'közepes aktivitás';
-  }
-
+  if (level === 'high') return 'magas aktivitás';
+  if (level === 'medium') return 'közepes aktivitás';
   return 'alacsony aktivitás';
+}
+
+function getBadgeClass(status) {
+  if (status === 'positive') return 'positive-badge';
+  if (status === 'negative') return 'negative-badge';
+  return 'neutral-badge';
+}
+
+function getTextClass(status) {
+  if (status === 'positive') return 'positive-text';
+  if (status === 'negative') return 'negative-text';
+  return 'neutral-text';
+}
+
+function shortDate(dateString) {
+  if (!dateString) return '';
+  const parts = dateString.split('-');
+  if (parts.length !== 3) return dateString;
+  return `${parts[1]}.${parts[2]}`;
 }
 
 function slugify(text) {
