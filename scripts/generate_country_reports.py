@@ -9,6 +9,101 @@ REPORTS_DIR = "docs/reports"
 REPORTS_INDEX_PATH = "docs/data/reports_index.json"
 
 
+TOPIC_KEYWORDS = {
+    "Belpolitikai tüntetések és társadalmi nyomás": [
+        "protest", "protests", "student", "students", "police", "violence",
+        "riot", "unrest", "blocked", "boycott", "demonstration"
+    ],
+    "EU-integráció és csatlakozási folyamat": [
+        "eu", "european union", "accession", "membership", "enlargement",
+        "brussels", "negotiations", "integration", "marta kos"
+    ],
+    "Koszovó–Szerbia feszültség": [
+        "kosovo", "serbia", "kurti", "vucic", "vučić", "mitrovica",
+        "pristina", "prishtina", "serb", "kfor", "border", "territory"
+    ],
+    "Boszniai intézményi válság és OHR-vita": [
+        "dodik", "republika srpska", "ohr", "high representative",
+        "christian schmidt", "dayton", "bosnia envoy", "peace envoy",
+        "state collapse"
+    ],
+    "Korrupció, jogállamiság és igazságszolgáltatás": [
+        "corruption", "court", "special court", "charges", "investigation",
+        "fraud", "trial", "justice", "rights", "prosecution"
+    ],
+    "Biztonságpolitikai kockázatok és erőszak": [
+        "violence", "attack", "assault", "clash", "security", "threat",
+        "war", "conflict", "tension", "armed", "weapon", "military"
+    ],
+    "Kormányzati stabilitás és választási dinamika": [
+        "government", "prime minister", "president", "parliament",
+        "opposition", "election", "party", "coalition", "mayor",
+        "cabinet", "resignation", "ruling party"
+    ],
+    "Gazdaság, energia és beruházások": [
+        "investment", "growth", "energy", "nis", "mol", "infrastructure",
+        "funding", "development", "trade", "business", "summit",
+        "foreign direct investment"
+    ],
+    "Nemzetközi kapcsolatok és nagyhatalmi befolyás": [
+        "nato", "russia", "china", "united states", "usa", "turkey",
+        "un", "united nations", "sanctions", "foreign policy",
+        "diplomacy"
+    ],
+    "Montenegró EU-csatlakozási előrehaladása": [
+        "montenegro", "podgorica", "eu", "accession", "membership",
+        "negotiation", "chapters", "joining"
+    ],
+    "Albán digitalizáció és kiberbiztonság": [
+        "cybersecurity", "digital", "digital transformation", "electronic",
+        "e-governance", "cyber", "infrastructure"
+    ],
+    "Bolgár–macedón identitásvita": [
+        "bulgaria", "sofia", "macedonian", "identity", "historical",
+        "language", "veto"
+    ]
+}
+
+
+TOPIC_EXPLANATIONS = {
+    "Belpolitikai tüntetések és társadalmi nyomás":
+        "Ez a téma azt mutatja, hogy az adott ország politikai hangulatát utcai tiltakozások, társadalmi elégedetlenség, rendőri fellépés vagy belpolitikai nyomás alakítja.",
+
+    "EU-integráció és csatlakozási folyamat":
+        "Ez a narratíva az EU-csatlakozás, a reformfeltételek, a brüsszeli kapcsolatok és a bővítési folyamat körül szerveződik.",
+
+    "Koszovó–Szerbia feszültség":
+        "Ez a téma a szerb–koszovói viszonyt, a határ- és státuszkérdéseket, valamint a Kurti–Vučić tengely körüli politikai feszültségeket fogja össze.",
+
+    "Boszniai intézményi válság és OHR-vita":
+        "Ez a blokk Bosznia-Hercegovina intézményi törékenységét, az OHR szerepét, Christian Schmidt pozícióját és a Republika Srpska körüli vitákat jelzi.",
+
+    "Korrupció, jogállamiság és igazságszolgáltatás":
+        "Ez a narratíva bírósági ügyekre, korrupciós vádakra, jogállamisági vitákra és intézményi elszámoltathatóságra utal.",
+
+    "Biztonságpolitikai kockázatok és erőszak":
+        "Ez a téma erőszakos incidenseket, biztonsági fenyegetéseket, fegyveres vagy etnikai feszültségeket és instabilitási jeleket fog össze.",
+
+    "Kormányzati stabilitás és választási dinamika":
+        "Ez a blokk a kormányzati működést, választási folyamatokat, pártpolitikai versenyt és vezetői döntéseket követi.",
+
+    "Gazdaság, energia és beruházások":
+        "Ez a narratíva a gazdasági döntéseket, energiaügyeket, beruházásokat és stratégiai vállalati folyamatokat fogja össze.",
+
+    "Nemzetközi kapcsolatok és nagyhatalmi befolyás":
+        "Ez a téma az ország külső kapcsolatait, NATO-, EU-, USA-, orosz, kínai vagy török kapcsolódásait és diplomáciai mozgásterét mutatja.",
+
+    "Montenegró EU-csatlakozási előrehaladása":
+        "Ez Montenegró EU-tagsági folyamatára, tárgyalási fejezeteire és a csatlakozási perspektíva aktuális politikai hatására utal.",
+
+    "Albán digitalizáció és kiberbiztonság":
+        "Ez Albánia digitális átalakulásával, kiberbiztonsági kapacitásaival és állami modernizációs lépéseivel kapcsolatos híreket gyűjti össze.",
+
+    "Bolgár–macedón identitásvita":
+        "Ez Észak-Macedónia külpolitikai és identitáspolitikai vitáit jelöli, különösen a bolgár–macedón történelmi és nyelvi kérdések körül."
+}
+
+
 def slugify(text):
     text = text.lower()
     replacements = {
@@ -24,6 +119,20 @@ def slugify(text):
     text = re.sub(r"-+", "-", text)
 
     return text.strip("-")
+
+
+def escape_html(text):
+    if text is None:
+        return ""
+
+    text = str(text)
+    return (
+        text.replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+        .replace("'", "&#039;")
+    )
 
 
 def load_json(path):
@@ -63,25 +172,142 @@ def get_social_level_text(level):
     return "alacsony"
 
 
-def build_topic_paragraphs(topic_scores):
+def article_text(article):
+    title = article.get("title", "")
+    source = article.get("source", "")
+    return f"{title} {source}".lower()
+
+
+def match_articles_to_topic(topic, articles):
+    keywords = TOPIC_KEYWORDS.get(topic, [])
+    matched = []
+
+    for article in articles:
+        text = article_text(article)
+
+        if any(keyword.lower() in text for keyword in keywords):
+            matched.append(article)
+
+    if matched:
+        return matched[:3]
+
+    return articles[:2]
+
+
+def extract_named_clues(articles):
+    text = " ".join(article.get("title", "") for article in articles)
+
+    known_names = [
+        "Vučić", "Vucic", "Kurti", "Dodik", "Christian Schmidt",
+        "Marta Kos", "Rama", "Mickoski", "Osmani", "Bolton",
+        "Macut", "MOL", "NIS", "OHR", "KFOR", "NATO", "EU",
+        "UN", "Republika Srpska", "Podgorica", "Pristina",
+        "Belgrade", "Sarajevo", "Sofia", "Tirana"
+    ]
+
+    found = []
+
+    for name in known_names:
+        if name.lower() in text.lower() and name not in found:
+            found.append(name)
+
+    return found[:6]
+
+
+def build_source_list(articles):
+    if not articles:
+        return "<p class=\"meta\">Nincs közvetlenül illesztett forráscikk ehhez a narratívához.</p>"
+
+    items = []
+
+    for article in articles:
+        title = escape_html(article.get("title", "Cím nélkül"))
+        url = escape_html(article.get("url", "#"))
+        source = escape_html(article.get("source", "ismeretlen forrás"))
+
+        items.append(f"""
+          <li>
+            <a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a>
+            <br>
+            <span>{source}</span>
+          </li>
+        """)
+
+    return f"<ul>{''.join(items)}</ul>"
+
+
+def build_topic_paragraph(topic, score, country_name, matched_articles):
+    explanation = TOPIC_EXPLANATIONS.get(
+        topic,
+        "Ez a téma az aktuális hírmintában visszatérő politikai narratívát jelöl."
+    )
+
+    clues = extract_named_clues(matched_articles)
+
+    if clues:
+        clues_text = ", ".join(escape_html(item) for item in clues)
+    else:
+        clues_text = "a kiemelt cikkek címei alapján nem azonosítható egyetlen domináns szereplő"
+
+    if matched_articles:
+        lead_article = matched_articles[0]
+        lead_title = escape_html(lead_article.get("title", "Cím nélkül"))
+        lead_source = escape_html(lead_article.get("source", "ismeretlen forrás"))
+        lead_sentence = (
+            f"A legerősebb kapcsolódó jelzés a következő cikkből érkezik: "
+            f"<strong>{lead_title}</strong> ({lead_source})."
+        )
+    else:
+        lead_sentence = (
+            "A témához nem kapcsolódik külön kiemelt cikk, de a kulcsszavas mintázat alapján megjelent a híranyagban."
+        )
+
+    return f"""
+      <div class="topic-block">
+        <h3>{escape_html(topic)}</h3>
+
+        <p>
+          <strong>Aktuális súly:</strong> {score}.
+          {escape_html(explanation)}
+        </p>
+
+        <p>
+          <strong>Mi mozgatja most a hangulatot?</strong>
+          {lead_sentence}
+          A narratíva az aktuális adatok alapján azért fontos {escape_html(country_name)} esetében,
+          mert több hírben is ugyanahhoz a politikai mintázathoz kapcsolódó jelzések jelennek meg.
+        </p>
+
+        <p>
+          <strong>Azonosított szereplők / intézmények / helyek:</strong>
+          {clues_text}.
+        </p>
+
+        <div class="source-list">
+          <strong>Kapcsolódó források:</strong>
+          {build_source_list(matched_articles)}
+        </div>
+      </div>
+    """
+
+
+def build_topic_blocks(country):
+    topic_scores = country.get("topic_scores", {})
+    top_articles = country.get("top_articles", [])
+    country_name = country.get("name", "")
+
     if not topic_scores:
         return "<p>Nincs elég adat a domináns narratívák részletes értékeléséhez.</p>"
 
-    paragraphs = []
+    blocks = []
 
-    for index, (topic, score) in enumerate(list(topic_scores.items())[:4], start=1):
-        paragraphs.append(f"""
-        <div class="topic-block">
-          <h3>{index}. {topic}</h3>
-          <p>
-            Ez a narratíva jelenleg <strong>{score}</strong> súlyponttal szerepel az ország híralapú mintájában.
-            A magasabb érték azt jelzi, hogy a témához kapcsolódó kulcsszavak több releváns cikkben is megjelentek.
-            Ez nem közvélemény-kutatási adat, hanem nyílt forrású hírfigyelésből képzett jelzés.
-          </p>
-        </div>
-        """)
+    for topic, score in list(topic_scores.items())[:4]:
+        matched_articles = match_articles_to_topic(topic, top_articles)
+        blocks.append(
+            build_topic_paragraph(topic, score, country_name, matched_articles)
+        )
 
-    return "\n".join(paragraphs)
+    return "\n".join(blocks)
 
 
 def build_articles_list(articles):
@@ -91,9 +317,9 @@ def build_articles_list(articles):
     items = []
 
     for article in articles[:5]:
-        title = article.get("title", "Cím nélkül")
-        url = article.get("url", "#")
-        source = article.get("source", "ismeretlen forrás")
+        title = escape_html(article.get("title", "Cím nélkül"))
+        url = escape_html(article.get("url", "#"))
+        source = escape_html(article.get("source", "ismeretlen forrás"))
 
         items.append(f"""
         <li>
@@ -111,7 +337,6 @@ def build_report_html(country, social_signal, updated_at):
     score = country.get("score", 0)
     status = country.get("status", "neutral")
     main_topic = country.get("main_topic", "nincs adat")
-    topic_scores = country.get("topic_scores", {})
     article_count = country.get("article_count", 0)
     negative_hits = country.get("negative_hits", 0)
     positive_hits = country.get("positive_hits", 0)
@@ -125,14 +350,14 @@ def build_report_html(country, social_signal, updated_at):
     social_topic = social_signal.get("main_topic", "nincs adat")
     source_counts = social_signal.get("source_counts", {})
 
-    topic_blocks = build_topic_paragraphs(topic_scores)
+    topic_blocks = build_topic_blocks(country)
     articles_html = build_articles_list(top_articles)
 
     return f"""<!DOCTYPE html>
 <html lang="hu">
 <head>
   <meta charset="UTF-8">
-  <title>{name} – szöveges helyzetkép</title>
+  <title>{escape_html(name)} – szöveges helyzetkép</title>
   <style>
     body {{
       margin: 0;
@@ -143,7 +368,7 @@ def build_report_html(country, social_signal, updated_at):
     }}
 
     main {{
-      max-width: 920px;
+      max-width: 980px;
       margin: 30px auto;
       padding: 0 16px;
     }}
@@ -161,9 +386,13 @@ def build_report_html(country, social_signal, updated_at):
     }}
 
     h2 {{
-      margin-top: 28px;
+      margin-top: 30px;
       border-bottom: 1px solid #e5e7eb;
       padding-bottom: 6px;
+    }}
+
+    h3 {{
+      margin-top: 0;
     }}
 
     .meta {{
@@ -194,9 +423,15 @@ def build_report_html(country, social_signal, updated_at):
     .topic-block {{
       background: #f9fafb;
       border-left: 5px solid #2563eb;
-      padding: 14px;
+      padding: 16px;
       border-radius: 10px;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
+    }}
+
+    .source-list {{
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid #e5e7eb;
     }}
 
     ul {{
@@ -231,13 +466,13 @@ def build_report_html(country, social_signal, updated_at):
   <a class="back" href="../index.html">← Vissza a dashboardra</a>
 
   <div class="card">
-    <h1>{name} – szöveges helyzetkép</h1>
-    <p class="meta">Frissítve: {updated_at}</p>
+    <h1>{escape_html(name)} – szöveges helyzetkép</h1>
+    <p class="meta">Frissítve: {escape_html(updated_at)}</p>
 
     <p>
       Az aktuális híralapú hangulatindex <strong>{score}</strong>, amelynek státusza:
       <strong>{get_status_text(status)}</strong>. A fő hírnarratíva jelenleg:
-      <strong>{main_topic}</strong>.
+      <strong>{escape_html(main_topic)}</strong>.
     </p>
 
     <div class="summary-grid">
@@ -247,10 +482,11 @@ def build_report_html(country, social_signal, updated_at):
       <div class="box">Pozitív hírjelek<strong>{positive_hits}</strong></div>
     </div>
 
-    <h2>Domináns narratívák</h2>
+    <h2>Domináns narratívák részletesen</h2>
     <p>
-      Az alábbi négy téma mutatja, hogy az aktuális hírminta alapján mely ügyek alakítják
-      leginkább az ország politikai hangulatát.
+      Az alábbi négy blokk azt mutatja, hogy az aktuális hírminta alapján mely témák alakítják
+      leginkább az ország politikai hangulatát. Minden témánál konkrét cikkek, események,
+      szereplők vagy intézmények is megjelennek, ha ezek a címekből azonosíthatók.
     </p>
 
     {topic_blocks}
@@ -266,7 +502,7 @@ def build_report_html(country, social_signal, updated_at):
       <div class="box">Social említések<strong>{social_mentions}</strong></div>
       <div class="box">Social negatív jelek<strong>{social_negative}</strong></div>
       <div class="box">Social pozitív jelek<strong>{social_positive}</strong></div>
-      <div class="box">Fő social téma<strong>{social_topic}</strong></div>
+      <div class="box">Fő social téma<strong>{escape_html(social_topic)}</strong></div>
     </div>
 
     <p class="meta">
@@ -281,6 +517,7 @@ def build_report_html(country, social_signal, updated_at):
     <p>
       Ez a szöveges helyzetkép automatikusan készül a dashboard aktuális JSON-adatfájljaiból.
       A narratívák kulcsszavas, híralapú csoportosításon alapulnak.
+      Az események, szereplők és döntések az elérhető cikkcímek és forrásmezők alapján kerülnek azonosításra.
       Az eredmény nem közvélemény-kutatás, hanem nyílt forrású politikai hangulatjelzés.
     </p>
   </div>
