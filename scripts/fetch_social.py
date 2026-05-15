@@ -5,7 +5,6 @@ import email.utils
 import feedparser
 
 SOCIAL_LATEST_PATH = "docs/data/social_latest.json"
-
 MAX_AGE_DAYS = 7
 
 COUNTRIES = [
@@ -15,7 +14,7 @@ COUNTRIES = [
     },
     {
         "name": "Bosznia-Hercegovina",
-        "keywords": ["bosnia", "bih", "sarajevo", "dodik", "republika srpska"]
+        "keywords": ["bosnia", "bih", "sarajevo", "dodik", "republika srpska", "bosnia and herzegovina"]
     },
     {
         "name": "Koszovó",
@@ -64,15 +63,20 @@ POLITICAL_WORDS = [
     "eu", "european union", "nato", "accession", "enlargement",
     "dialogue", "border", "security", "sanctions", "violence",
     "crisis", "conflict", "tension", "war", "ethnic", "minority",
-    "dodik", "vucic", "vučić", "kurti", "rama", "ohr", "kfor"
+    "dodik", "vucic", "vučić", "kurti", "rama", "ohr", "kfor",
+    "schmidt", "high representative", "special court", "serbia-eu",
+    "kosovo-serbia", "balkan insight", "politico", "bbc", "united nations"
 ]
 
 NOISE_WORDS = [
-    "eurovision", "song", "music", "festival", "photo", "photography",
-    "travel", "tourism", "beach", "trip", "landscape", "hotel",
-    "monastery", "church", "food", "recipe", "football", "basketball",
-    "gaming", "movie", "film", "concert", "holiday", "vacation",
-    "infrared", "blackwhite", "blackandwhite", "river", "mountain"
+    "eurovision", "esc2026", "esc", "song contest", "song", "music",
+    "festival", "photo", "photography", "foto", "travel", "tourism",
+    "beach", "trip", "roadtrip", "landscape", "hotel", "monastery",
+    "church", "food", "recipe", "football", "basketball", "gaming",
+    "movie", "film", "concert", "holiday", "vacation", "infrared",
+    "blackwhite", "blackandwhite", "river", "mountain", "dua lipa",
+    "samsung", "doctorwho", "tardis", "ancient macedonia", "alexanderthegreat",
+    "hellenistic", "history"
 ]
 
 NEGATIVE_WORDS = [
@@ -80,14 +84,15 @@ NEGATIVE_WORDS = [
     "tension", "sanction", "arrest", "attack", "war", "unrest",
     "fraud", "dispute", "scandal", "threat", "instability",
     "clash", "riot", "boycott", "polarization", "separatism",
-    "nationalism", "blocked", "deadlock", "police violence"
+    "nationalism", "blocked", "deadlock", "police violence",
+    "assault", "collapse", "resignation", "punitive"
 ]
 
 POSITIVE_WORDS = [
     "agreement", "reform", "growth", "cooperation", "investment",
     "stability", "dialogue", "progress", "development", "support",
     "partnership", "integration", "talks", "deal", "funding",
-    "membership", "negotiations", "eu accession"
+    "membership", "negotiations", "eu accession", "joining the eu"
 ]
 
 
@@ -96,15 +101,11 @@ def strip_html(text):
         return ""
 
     text = re.sub(r"<[^>]+>", " ", text)
-    text = re.sub(r"&nbsp;", " ", text)
-    text = re.sub(r"&amp;", "&", text)
+    text = text.replace("&nbsp;", " ")
+    text = text.replace("&amp;", "&")
     text = re.sub(r"\s+", " ", text)
 
     return text.strip()
-
-
-def norm(text):
-    return strip_html(text).lower()
 
 
 def parse_feed(url):
@@ -143,12 +144,12 @@ def has_any(text_lc, words):
     return any(word in text_lc for word in words)
 
 
-def is_political(text_lc):
-    return has_any(text_lc, POLITICAL_WORDS)
-
-
 def is_noise(text_lc):
     return has_any(text_lc, NOISE_WORDS)
+
+
+def is_political(text_lc):
+    return has_any(text_lc, POLITICAL_WORDS)
 
 
 def match_country(text_lc):
@@ -188,7 +189,7 @@ def collect_posts():
             text_plain = strip_html(text)
             text_lc = text_plain.lower()
 
-            if is_noise(text_lc) and not is_political(text_lc):
+            if is_noise(text_lc):
                 continue
 
             if not is_political(text_lc):
@@ -228,10 +229,12 @@ def analyze_country(country_name, posts):
     mentions = len(related)
     negative_hits = 0
     positive_hits = 0
+
     source_counts = {
         "reddit": 0,
         "mastodon": 0
     }
+
     tag_counts = {}
 
     for post in related:
@@ -251,7 +254,7 @@ def analyze_country(country_name, posts):
         if has_any(text, POSITIVE_WORDS):
             positive_hits += 1
 
-    raw_score = (mentions * 2) + (negative_hits * 3) + (positive_hits * 2)
+    raw_score = mentions + (negative_hits * 3) + (positive_hits * 2)
     score = min(raw_score, 30)
 
     if score >= 20:
@@ -280,7 +283,7 @@ def analyze_country(country_name, posts):
 
 
 def main():
-    print("Social RSS-források lekérése politikai szűréssel...")
+    print("Social RSS-források lekérése erős politikai szűréssel...")
 
     posts = collect_posts()
 
@@ -299,7 +302,7 @@ def main():
     output = {
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "source": "Reddit RSS + Mastodon hashtag RSS",
-        "method_note": "A social signal külön jelző. Csak 7 napon belüli, politikailag releváns találatokat számol. Nem közvélemény-kutatás, és nem része a fő hírindexnek.",
+        "method_note": "A social signal külön jelző. Csak 7 napon belüli, politikailag releváns és zajszűrt találatokat számol. Nem közvélemény-kutatás, és nem része a fő hírindexnek.",
         "countries": countries_output
     }
 
