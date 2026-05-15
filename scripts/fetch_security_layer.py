@@ -19,28 +19,69 @@ COUNTRIES = [
 ]
 
 COUNTRY_ALIASES = {
-    "Szerbia": ["serbia", "szerbia", "srbija", "belgrade", "beograd"],
-    "Bosznia-Hercegovina": ["bosnia", "bosnia and herzegovina", "bih", "sarajevo", "republika srpska"],
-    "Koszovó": ["kosovo", "kosova", "pristina", "prishtina", "mitrovica"],
-    "Montenegró": ["montenegro", "crna gora", "podgorica"],
-    "Észak-Macedónia": ["north macedonia", "macedonia", "skopje", "makedonija"],
-    "Albánia": ["albania", "albanian", "tirana", "shqiperi", "shqipëria"]
+    "Szerbia": [
+        "serbia", "szerbia", "srbija", "belgrade", "beograd"
+    ],
+    "Bosznia-Hercegovina": [
+        "bosnia", "bosnia and herzegovina", "bih", "sarajevo",
+        "republika srpska", "bosnia-herzegovina"
+    ],
+    "Koszovó": [
+        "kosovo", "kosova", "pristina", "prishtina", "mitrovica"
+    ],
+    "Montenegró": [
+        "montenegro", "crna gora", "podgorica"
+    ],
+    "Észak-Macedónia": [
+        "north macedonia", "macedonia", "skopje", "makedonija"
+    ],
+    "Albánia": [
+        "albania", "albanian", "tirana", "shqiperi", "shqipëria"
+    ]
 }
 
 CANDIDATE_FILES = [
     "data/security_events.json",
-    "data/security_risk.json",
-    "data/risk.json",
-    "data/latest.json",
-    "data/snapshot.json",
-    "data/balkan_risk.json",
-    "data/hotspots.json",
+    "data/events.json",
     "data/stories.json",
     "data/gdelt_events.json",
     "data/rss_signals.json",
     "data/gdacs_alerts.json",
     "data/usgs_alerts.json",
-    "data/events.json"
+    "data/latest.json",
+    "data/snapshot.json",
+    "data/balkan_risk.json",
+    "data/hotspots.json",
+    "data/security_risk.json",
+    "data/risk.json"
+]
+
+POLITICAL_SECURITY_KEYWORDS = [
+    "protest", "demonstration", "riot", "unrest", "clash", "attack",
+    "violence", "armed", "shooting", "explosion", "border", "kfor",
+    "police", "arrest", "detained", "ethnic", "nationalist",
+    "cyber", "hack", "malware", "ddos", "threat", "security",
+    "terror", "extremist", "military", "troops", "weapon",
+    "sanction", "secession", "dodik", "republika srpska",
+    "mitrovica", "kosovo serbia", "serbia kosovo"
+]
+
+NATURAL_ALERT_KEYWORDS = [
+    "earthquake", "quake", "usgs", "gdacs", "flood", "storm",
+    "wildfire", "weather", "rain", "landslide"
+]
+
+NOISE_KEYWORDS = [
+    "hotspot_cell",
+    "municipality of",
+    "county",
+    "gdelt':",
+    "{'gdelt'",
+    "cell",
+    "grid",
+    "risk snapshot",
+    "rss_count",
+    "trend"
 ]
 
 
@@ -87,26 +128,142 @@ def detect_country(item):
     return None
 
 
-def normalize_event_type(text):
-    text = (text or "").lower()
+def flatten_items(data):
+    items = []
+
+    if isinstance(data, list):
+        for value in data:
+            items.extend(flatten_items(value))
+
+    elif isinstance(data, dict):
+        if looks_like_possible_event(data):
+            items.append(data)
+
+        for value in data.values():
+            if isinstance(value, (list, dict)):
+                items.extend(flatten_items(value))
+
+    return items
+
+
+def looks_like_possible_event(item):
+    if not isinstance(item, dict):
+        return False
+
+    keys = set(item.keys())
+
+    event_like_keys = {
+        "title", "headline", "summary", "text", "description",
+        "country", "url", "source", "type", "category",
+        "event_type", "published", "published_at", "date",
+        "severity", "score", "risk"
+    }
+
+    return bool(keys.intersection(event_like_keys))
+
+
+def event_title(item):
+    for key in ["title", "headline", "summary", "text", "description", "name"]:
+        value = item.get(key)
+
+        if value:
+            title = str(value).strip()
+
+            if len(title) >= 8:
+                return title
+
+    return ""
+
+
+def event_url(item):
+    for key in ["url", "link", "source_url"]:
+        value = item.get(key)
+
+        if value:
+            return str(value)
+
+    return ""
+
+
+def event_source(item):
+    for key in ["source", "domain", "provider", "origin"]:
+        value = item.get(key)
+
+        if value:
+            return str(value)
+
+    return "balkan-security-map"
+
+
+def event_date(item):
+    for key in ["date", "published_at", "published", "seen_date", "updated_at", "time"]:
+        value = item.get(key)
+
+        if value:
+            return str(value)
+
+    return now_utc()
+
+
+def event_score(item):
+    for key in ["score", "risk", "risk_score", "severity"]:
+        value = item.get(key)
+
+        if isinstance(value, (int, float)):
+            return float(value)
+
+        try:
+            return float(value)
+        except Exception:
+            pass
+
+    return 0
+
+
+def has_any_keyword(text, keywords):
+    return any(keyword.lower() in text for keyword in keywords)
+
+
+def is_noise_item(item):
+    text = text_blob(item)
+
+    if has_any_keyword(text, NOISE_KEYWORDS):
+        return True
+
+    title = event_title(item)
+
+    if not title:
+        return True
+
+    if title.lower() in ["biztonsági jelzés", "security signal", "hotspot"]:
+        return True
+
+    return False
+
+
+def classify_event_type(item):
+    text = text_blob(item)
+
+    if has_any_keyword(text, NATURAL_ALERT_KEYWORDS):
+        return "natural_alert"
+
+    if any(word in text for word in ["cyber", "hack", "malware", "ddos"]):
+        return "cyber"
 
     if any(word in text for word in ["protest", "demonstration", "riot", "unrest"]):
         return "protest"
 
-    if any(word in text for word in ["attack", "clash", "violence", "armed", "shooting"]):
+    if any(word in text for word in ["border", "kfor", "mitrovica", "kosovo serbia", "serbia kosovo"]):
+        return "border_tension"
+
+    if any(word in text for word in ["attack", "clash", "violence", "armed", "shooting", "explosion"]):
         return "security_incident"
 
-    if any(word in text for word in ["earthquake", "quake", "usgs"]):
-        return "earthquake"
+    if any(word in text for word in ["secession", "dodik", "republika srpska", "ohr"]):
+        return "institutional_security_risk"
 
-    if any(word in text for word in ["gdacs", "alert", "flood", "storm", "wildfire"]):
-        return "alert"
-
-    if any(word in text for word in ["cyber", "hack", "malware"]):
-        return "cyber"
-
-    if any(word in text for word in ["border", "kfor", "kosovo", "serbia"]):
-        return "border_tension"
+    if any(word in text for word in ["police", "arrest", "detained"]):
+        return "public_order"
 
     return "general_security_signal"
 
@@ -132,87 +289,16 @@ def risk_level_from_score(score):
     return "none"
 
 
-def flatten_items(data):
-    items = []
+def is_political_security_event(item):
+    text = text_blob(item)
 
-    if isinstance(data, list):
-        for value in data:
-            items.extend(flatten_items(value))
-
-    elif isinstance(data, dict):
-        if looks_like_event(data):
-            items.append(data)
-
-        for value in data.values():
-            if isinstance(value, (list, dict)):
-                items.extend(flatten_items(value))
-
-    return items
-
-
-def looks_like_event(item):
-    if not isinstance(item, dict):
+    if is_noise_item(item):
         return False
 
-    keys = set(item.keys())
+    if has_any_keyword(text, NATURAL_ALERT_KEYWORDS):
+        return False
 
-    event_like_keys = {
-        "title", "headline", "summary", "text", "description",
-        "country", "lat", "lng", "lon", "url", "source",
-        "type", "category", "risk", "score", "level"
-    }
-
-    return bool(keys.intersection(event_like_keys))
-
-
-def event_title(item):
-    for key in ["title", "headline", "summary", "text", "description", "name"]:
-        value = item.get(key)
-        if value:
-            return str(value).strip()
-
-    return "Biztonsági jelzés"
-
-
-def event_url(item):
-    for key in ["url", "link", "source_url"]:
-        value = item.get(key)
-        if value:
-            return str(value)
-
-    return ""
-
-
-def event_source(item):
-    for key in ["source", "domain", "provider", "origin"]:
-        value = item.get(key)
-        if value:
-            return str(value)
-
-    return "balkan-security-map"
-
-
-def event_date(item):
-    for key in ["date", "published_at", "published", "seen_date", "updated_at", "time"]:
-        value = item.get(key)
-        if value:
-            return str(value)
-
-    return now_utc()
-
-
-def event_score(item):
-    for key in ["score", "risk", "risk_score", "severity"]:
-        value = item.get(key)
-        if isinstance(value, (int, float)):
-            return value
-
-        try:
-            return float(value)
-        except Exception:
-            pass
-
-    return 0
+    return has_any_keyword(text, POLITICAL_SECURITY_KEYWORDS)
 
 
 def build_events(all_remote_items):
@@ -220,6 +306,9 @@ def build_events(all_remote_items):
     seen = set()
 
     for item in all_remote_items:
+        if not is_political_security_event(item):
+            continue
+
         country = detect_country(item)
 
         if not country:
@@ -238,16 +327,32 @@ def build_events(all_remote_items):
 
         seen.add(event_id)
 
+        event_type = classify_event_type(item)
+
+        if event_type == "natural_alert":
+            continue
+
+        calculated_score = score
+
+        if calculated_score <= 0:
+            if event_type in ["security_incident", "border_tension"]:
+                calculated_score = 35
+            elif event_type in ["protest", "public_order"]:
+                calculated_score = 25
+            elif event_type in ["cyber", "institutional_security_risk"]:
+                calculated_score = 30
+            else:
+                calculated_score = 15
+
         event = {
             "country": country,
             "title": title,
             "url": url,
             "source": source,
             "date": event_date(item),
-            "event_type": normalize_event_type(blob),
-            "score": score,
-            "level": risk_level_from_score(score),
-            "raw_hint": blob[:500]
+            "event_type": event_type,
+            "score": calculated_score,
+            "level": risk_level_from_score(calculated_score)
         }
 
         lat = item.get("lat")
@@ -271,7 +376,6 @@ def build_country_risk(events):
             if event.get("country") == country
         ]
 
-        total_score = sum(float(event.get("score", 0) or 0) for event in country_events)
         event_count = len(country_events)
 
         type_counter = {}
@@ -285,7 +389,12 @@ def build_country_risk(events):
         else:
             main_type = "nincs adat"
 
-        calculated_score = min(100, round(total_score + event_count * 8, 1))
+        total_score = sum(float(event.get("score", 0) or 0) for event in country_events)
+
+        calculated_score = min(
+            100,
+            round(total_score + event_count * 5, 1)
+        )
 
         countries.append({
             "name": country,
@@ -330,7 +439,11 @@ def main():
     security_risk_output = {
         "updated_at": now_utc(),
         "source": "balkan-security-map",
-        "method_note": "Biztonsági réteg a balkan-security-map publikált JSON adatai alapján. Nem hivatalos kockázati minősítés.",
+        "method_note": (
+            "Politikai-biztonsági réteg a balkan-security-map publikált JSON adatai alapján. "
+            "A technikai hotspot_cell, rács- és természeti riasztási elemek kiszűrve. "
+            "Nem hivatalos kockázati minősítés."
+        ),
         "countries": country_risk
     }
 
@@ -345,6 +458,9 @@ def main():
 
     if not successful_sources:
         print("Figyelem: nem sikerült publikált JSON-forrást találni a balkan-security-map repóból.")
+
+    if len(events) == 0:
+        print("Figyelem: a szigorú szűrés után nem maradt politikai-biztonsági esemény.")
 
 
 if __name__ == "__main__":
