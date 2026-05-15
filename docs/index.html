@@ -56,7 +56,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
       gap: 18px;
     }
 
@@ -83,10 +83,37 @@
       font-size: 21px;
     }
 
+    .score-row {
+      display: flex;
+      gap: 14px;
+      align-items: stretch;
+      flex-wrap: wrap;
+      margin: 10px 0;
+    }
+
+    .score-box {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 12px;
+      min-width: 135px;
+      flex: 1;
+    }
+
+    .score-label {
+      color: #6b7280;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
     .score {
-      font-size: 36px;
+      font-size: 34px;
       font-weight: bold;
-      margin: 8px 0;
+    }
+
+    .social-score {
+      font-size: 30px;
+      font-weight: bold;
     }
 
     .meta,
@@ -116,24 +143,63 @@
       margin-bottom: 12px;
     }
 
-    .trend-box {
-      margin-top: 14px;
-      padding-top: 10px;
-      border-top: 1px solid #e5e7eb;
+    .social-box {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 12px;
+      margin-top: 12px;
     }
 
+    .social-box h4,
     .trend-box h4,
     .article-list h4 {
       margin: 0 0 8px 0;
       font-size: 15px;
     }
 
+    .trend-box {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 1px solid #e5e7eb;
+    }
+
     canvas {
       width: 100%;
-      height: 80px;
+      height: 90px;
       background: #f9fafb;
       border-radius: 10px;
       border: 1px solid #e5e7eb;
+    }
+
+    .legend {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 7px;
+      font-size: 12px;
+      color: #6b7280;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .legend-line {
+      width: 18px;
+      height: 3px;
+      border-radius: 999px;
+      display: inline-block;
+    }
+
+    .news-line {
+      background: #2563eb;
+    }
+
+    .social-line {
+      background: #dc2626;
     }
 
     .article-list {
@@ -175,7 +241,7 @@
 
 <header>
   <h1>Balkán Politikai Hangulat Monitor</h1>
-  <p>Nyílt forrású hírek alapján készülő napi politikai hangulatfigyelő rendszer</p>
+  <p>Híralapú politikai hangulatindex és külön social signal követés</p>
 </header>
 
 <main>
@@ -185,13 +251,13 @@
 
     <p>
       Ez a dashboard a balkáni országok politikai hangulatát követi.
-      Az index híralapú megközelítést használ.
-      Nem közvélemény-kutatás, hanem a médiában megjelenő politikai feszültségek,
-      stabilitási jelek és fő témák gyors áttekintése.
+      A fő index híralapú adatokat használ.
+      A social signal külön jelzőként jelenik meg, nem része a fő pontszámnak.
     </p>
 
     <p class="small" id="updatedAt">Frissítés: betöltés...</p>
     <p class="small" id="sourceInfo">Forrás: betöltés...</p>
+    <p class="small" id="socialInfo">Social forrás: betöltés...</p>
     <p class="small" id="methodNote"></p>
   </section>
 
@@ -208,22 +274,27 @@ async function loadData() {
   try {
     const latestResponse = await fetch('./data/latest.json');
     const historyResponse = await fetch('./data/history.json');
+    const socialResponse = await fetch('./data/social_latest.json');
 
     const latestData = await latestResponse.json();
     const historyData = await historyResponse.json();
+    const socialData = await socialResponse.json();
 
     const grid = document.getElementById('countryGrid');
     const updatedAt = document.getElementById('updatedAt');
     const sourceInfo = document.getElementById('sourceInfo');
+    const socialInfo = document.getElementById('socialInfo');
     const methodNote = document.getElementById('methodNote');
 
     grid.innerHTML = '';
 
     updatedAt.textContent = `Frissítés: ${latestData.updated_at}`;
-    sourceInfo.textContent = `Forrás: ${latestData.source || 'nincs megadva'}`;
+    sourceInfo.textContent = `Hírforrás: ${latestData.source || 'nincs megadva'}`;
+    socialInfo.textContent = `Social forrás: ${socialData.source || 'nincs megadva'} – ${socialData.updated_at || 'nincs időpont'}`;
     methodNote.textContent = latestData.method_note || '';
 
     latestData.countries.forEach(country => {
+      const socialSignal = getSocialSignal(country.name, socialData);
       const card = document.createElement('div');
       const canvasId = `trend-${slugify(country.name)}`;
 
@@ -232,26 +303,53 @@ async function loadData() {
       card.innerHTML = `
         <h3>${country.name}</h3>
 
-        <div class="score">${country.score}</div>
+        <div class="score-row">
+          <div class="score-box">
+            <div class="score-label">Hírindex</div>
+            <div class="score">${country.score}</div>
+            <div class="small">${getStatusText(country.status)}</div>
+          </div>
 
-        <p>
-          Politikai hangulat:
-          <strong>${getStatusText(country.status)}</strong>
-        </p>
+          <div class="score-box">
+            <div class="score-label">Social signal</div>
+            <div class="social-score">${socialSignal.score}</div>
+            <div class="small">${getSocialLevelText(socialSignal.level)}</div>
+          </div>
+        </div>
 
         <div class="hit-row">
           <span class="hit-pill">Cikkek: ${country.article_count || 0}</span>
-          <span class="hit-pill">Negatív jelek: ${country.negative_hits || 0}</span>
-          <span class="hit-pill">Pozitív jelek: ${country.positive_hits || 0}</span>
+          <span class="hit-pill">Hír negatív: ${country.negative_hits || 0}</span>
+          <span class="hit-pill">Hír pozitív: ${country.positive_hits || 0}</span>
         </div>
 
         <p class="topic">
-          Fő téma: ${country.main_topic}
+          Fő hír téma: ${country.main_topic}
         </p>
+
+        <div class="social-box">
+          <h4>Social signal</h4>
+          <div class="hit-row">
+            <span class="hit-pill">Említések: ${socialSignal.mentions || 0}</span>
+            <span class="hit-pill">Negatív jelek: ${socialSignal.negative_hits || 0}</span>
+            <span class="hit-pill">Pozitív jelek: ${socialSignal.positive_hits || 0}</span>
+          </div>
+          <p class="small">
+            Reddit: ${getSourceCount(socialSignal, 'reddit')} |
+            Mastodon: ${getSourceCount(socialSignal, 'mastodon')}
+          </p>
+          <p class="small">
+            Fő social téma: ${socialSignal.main_topic || 'nincs adat'}
+          </p>
+        </div>
 
         <div class="trend-box">
           <h4>Trend</h4>
-          <canvas id="${canvasId}" width="320" height="80"></canvas>
+          <canvas id="${canvasId}" width="340" height="90"></canvas>
+          <div class="legend">
+            <span class="legend-item"><span class="legend-line news-line"></span> Hírindex</span>
+            <span class="legend-item"><span class="legend-line social-line"></span> Social signal</span>
+          </div>
           <p class="small">${getTrendText(country.name, historyData)}</p>
         </div>
 
@@ -271,10 +369,43 @@ async function loadData() {
     grid.innerHTML = `
       <div class="country-card negative">
         <h3>Adatbetöltési hiba</h3>
-        <p>Nem sikerült betölteni a latest.json vagy history.json fájlt.</p>
+        <p>Nem sikerült betölteni az adatfájlokat.</p>
       </div>
     `;
   }
+}
+
+function getSocialSignal(countryName, socialData) {
+  const fallback = {
+    score: 0,
+    level: 'low',
+    mentions: 0,
+    negative_hits: 0,
+    positive_hits: 0,
+    source_counts: {},
+    main_topic: 'nincs adat',
+    top_posts: []
+  };
+
+  if (!socialData || !socialData.countries) {
+    return fallback;
+  }
+
+  const row = socialData.countries.find(item => item.name === countryName);
+
+  if (!row || !row.social_signal) {
+    return fallback;
+  }
+
+  return row.social_signal;
+}
+
+function getSourceCount(socialSignal, sourceName) {
+  if (!socialSignal || !socialSignal.source_counts) {
+    return 0;
+  }
+
+  return socialSignal.source_counts[sourceName] || 0;
 }
 
 function getCountryHistory(countryName, historyData) {
@@ -288,7 +419,8 @@ function getCountryHistory(countryName, historyData) {
     if (country) {
       rows.push({
         date: record.date,
-        score: country.score
+        score: country.score,
+        social_score: country.social_score || 0
       });
     }
   });
@@ -312,29 +444,32 @@ function drawTrend(canvasId, countryName, historyData) {
   ctx.lineWidth = 1;
 
   ctx.beginPath();
-  ctx.moveTo(0, 40);
-  ctx.lineTo(canvas.width, 40);
+  ctx.moveTo(0, canvas.height / 2);
+  ctx.lineTo(canvas.width, canvas.height / 2);
   ctx.stroke();
 
   if (rows.length < 2) {
     ctx.fillStyle = '#6b7280';
     ctx.font = '13px Arial';
-    ctx.fillText('Kevés adat a trendhez', 12, 45);
+    ctx.fillText('A trendhez legalább két napi adat kell', 12, 48);
     return;
   }
 
-  const minScore = -30;
-  const maxScore = 30;
+  drawLine(ctx, rows, 'score', -30, 30, canvas.width, canvas.height, '#2563eb');
+  drawLine(ctx, rows, 'social_score', 0, 30, canvas.width, canvas.height, '#dc2626');
+}
 
+function drawLine(ctx, rows, key, minValue, maxValue, width, height, color) {
   const points = rows.map((row, index) => {
-    const x = (index / (rows.length - 1)) * canvas.width;
-    const normalized = (row.score - minScore) / (maxScore - minScore);
-    const y = canvas.height - (normalized * canvas.height);
+    const x = (index / (rows.length - 1)) * width;
+    const value = row[key] || 0;
+    const normalized = (value - minValue) / (maxValue - minValue);
+    const y = height - (normalized * height);
 
-    return { x, y, score: row.score };
+    return { x, y, value };
   });
 
-  ctx.strokeStyle = '#2563eb';
+  ctx.strokeStyle = color;
   ctx.lineWidth = 3;
   ctx.beginPath();
 
@@ -351,7 +486,7 @@ function drawTrend(canvasId, countryName, historyData) {
   points.forEach(point => {
     ctx.beginPath();
     ctx.arc(point.x, point.y, 3, 0, Math.PI * 2);
-    ctx.fillStyle = '#111827';
+    ctx.fillStyle = color;
     ctx.fill();
   });
 }
@@ -368,14 +503,14 @@ function getTrendText(countryName, historyData) {
   const change = last - first;
 
   if (change > 3) {
-    return `Javuló trend az elmúlt ${rows.length} mérési pont alapján.`;
+    return `Javuló hírindex az elmúlt ${rows.length} mérési pont alapján.`;
   }
 
   if (change < -3) {
-    return `Romló trend az elmúlt ${rows.length} mérési pont alapján.`;
+    return `Romló hírindex az elmúlt ${rows.length} mérési pont alapján.`;
   }
 
-  return `Stabil trend az elmúlt ${rows.length} mérési pont alapján.`;
+  return `Stabil hírindex az elmúlt ${rows.length} mérési pont alapján.`;
 }
 
 function buildArticlesHtml(articles) {
@@ -422,6 +557,18 @@ function getStatusText(status) {
   }
 
   return 'semleges';
+}
+
+function getSocialLevelText(level) {
+  if (level === 'high') {
+    return 'magas aktivitás';
+  }
+
+  if (level === 'medium') {
+    return 'közepes aktivitás';
+  }
+
+  return 'alacsony aktivitás';
 }
 
 function slugify(text) {
