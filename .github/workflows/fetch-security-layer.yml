@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Repository letöltése
         uses: actions/checkout@v4
 
@@ -25,6 +26,9 @@ jobs:
       - name: Biztonsági réteg lekérése
         run: python scripts/fetch_security_layer.py
 
+      - name: Security history frissítése
+        run: python scripts/update_security_history.py
+
       - name: Változások commitolása
         run: |
           git config user.name "github-actions"
@@ -32,7 +36,8 @@ jobs:
 
           git add docs/data/security_events.json
           git add docs/data/security_risk.json
+          git add docs/data/security_history.json
 
-          git commit -m "Biztonsági réteg frissítése" || echo "Nincs változás"
+          git commit -m "Security layer frissítése" || echo "Nincs változás"
 
           git push
