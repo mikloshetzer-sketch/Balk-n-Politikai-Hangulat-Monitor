@@ -74,18 +74,29 @@ NOISE_KEYWORDS = [
 ]
 
 SECURITY_TOPIC_WEIGHTS = {
-    "Biztonságpolitikai kockázatok és erőszak": 35,
-    "Koszovó–Szerbia feszültség": 30,
-    "Boszniai intézményi válság és OHR-vita": 28,
-    "Belpolitikai tüntetések és társadalmi nyomás": 24,
-    "Korrupció, jogállamiság és igazságszolgáltatás": 16,
-    "Kormányzati stabilitás és választási dinamika": 12,
-    "Nemzetközi kapcsolatok és nagyhatalmi befolyás": 10,
-    "EU-integráció és csatlakozási folyamat": 6,
-    "Gazdaság, energia és beruházások": 4,
-    "Montenegró EU-csatlakozási előrehaladása": 4,
-    "Albán digitalizáció és kiberbiztonság": 12,
-    "Bolgár–macedón identitásvita": 10
+    "Biztonságpolitikai kockázatok és erőszak": 18,
+
+    "Koszovó–Szerbia feszültség": 16,
+
+    "Boszniai intézményi válság és OHR-vita": 15,
+
+    "Belpolitikai tüntetések és társadalmi nyomás": 12,
+
+    "Korrupció, jogállamiság és igazságszolgáltatás": 8,
+
+    "Kormányzati stabilitás és választási dinamika": 6,
+
+    "Nemzetközi kapcsolatok és nagyhatalmi befolyás": 5,
+
+    "EU-integráció és csatlakozási folyamat": 2,
+
+    "Gazdaság, energia és beruházások": 1,
+
+    "Montenegró EU-csatlakozási előrehaladása": 2,
+
+    "Albán digitalizáció és kiberbiztonság": 6,
+
+    "Bolgár–macedón identitásvita": 7
 }
 
 
