@@ -67,13 +67,13 @@ TOPIC_KEYWORDS = {
 
 TOPIC_EXPLANATIONS = {
     "Belpolitikai tüntetések és társadalmi nyomás":
-        "Ez a téma azt mutatja, hogy az adott ország politikai hangulatát utcai tiltakozások, társadalmi elégedetlenség, rendőri fellépés vagy belpolitikai nyomás alakítja.",
+        "Ez a téma utcai tiltakozásokra, társadalmi elégedetlenségre, rendőri fellépésre vagy belpolitikai nyomásra utal.",
 
     "EU-integráció és csatlakozási folyamat":
         "Ez a narratíva az EU-csatlakozás, a reformfeltételek, a brüsszeli kapcsolatok és a bővítési folyamat körül szerveződik.",
 
     "Koszovó–Szerbia feszültség":
-        "Ez a téma a szerb–koszovói viszonyt, a határ- és státuszkérdéseket, valamint a Kurti–Vučić tengely körüli politikai feszültségeket fogja össze.",
+        "Ez a téma a szerb–koszovói viszonyt, a státuszkérdést, a határbiztonságot és a Kurti–Vučić tengely körüli politikai feszültségeket fogja össze.",
 
     "Boszniai intézményi válság és OHR-vita":
         "Ez a blokk Bosznia-Hercegovina intézményi törékenységét, az OHR szerepét, Christian Schmidt pozícióját és a Republika Srpska körüli vitákat jelzi.",
@@ -172,6 +172,18 @@ def get_social_level_text(level):
     return "alacsony"
 
 
+def get_score_direction(score):
+    if score <= -15:
+        return "kifejezetten negatív"
+    if score < 0:
+        return "mérsékelten negatív"
+    if score == 0:
+        return "semleges"
+    if score < 15:
+        return "mérsékelten pozitív"
+    return "kifejezetten pozitív"
+
+
 def article_text(article):
     title = article.get("title", "")
     source = article.get("source", "")
@@ -212,6 +224,100 @@ def extract_named_clues(articles):
             found.append(name)
 
     return found[:6]
+
+
+def get_top_topics(topic_scores, limit=4):
+    return list(topic_scores.items())[:limit]
+
+
+def build_executive_summary(country, social_signal):
+    name = country.get("name", "")
+    score = country.get("score", 0)
+    status = country.get("status", "neutral")
+    topic_scores = country.get("topic_scores", {})
+    main_topic = country.get("main_topic", "nincs adat")
+    article_count = country.get("article_count", 0)
+    negative_hits = country.get("negative_hits", 0)
+    positive_hits = country.get("positive_hits", 0)
+
+    social_score = social_signal.get("score", 0)
+    social_level = social_signal.get("level", "low")
+    social_mentions = social_signal.get("mentions", 0)
+    social_topic = social_signal.get("main_topic", "nincs adat")
+
+    top_topics = get_top_topics(topic_scores, 4)
+    topic_names = [topic for topic, _ in top_topics]
+
+    if topic_names:
+        topic_sentence = ", ".join(topic_names[:3])
+    else:
+        topic_sentence = "nincs egyértelműen azonosítható domináns téma"
+
+    if negative_hits > positive_hits:
+        balance_sentence = (
+            f"A negatív hírelemek száma magasabb ({negative_hits}), mint a pozitívaké ({positive_hits}), "
+            "ezért a hangulat inkább kockázati irányba tolódik."
+        )
+    elif positive_hits > negative_hits:
+        balance_sentence = (
+            f"A pozitív hírelemek száma magasabb ({positive_hits}), mint a negatívaké ({negative_hits}), "
+            "ez mérséklő vagy stabilizáló hatású lehet."
+        )
+    else:
+        balance_sentence = (
+            f"A pozitív és negatív hírjelek kiegyenlítettek ({positive_hits}–{negative_hits}), "
+            "ezért a fő különbséget inkább a témák jellege adja."
+        )
+
+    if social_score >= 20:
+        social_sentence = (
+            f"A social media aktivitás magas, {social_mentions} releváns említéssel. "
+            f"A fő social téma: {social_topic}."
+        )
+    elif social_score >= 8:
+        social_sentence = (
+            f"A social media aktivitás közepes, {social_mentions} releváns említéssel. "
+            f"A fő social téma: {social_topic}."
+        )
+    else:
+        social_sentence = (
+            f"A social media aktivitás alacsony, {social_mentions} releváns említéssel. "
+            "Ez azt jelzi, hogy a híralapú narratíva erősebb, mint a közösségi média jel."
+        )
+
+    return f"""
+      <div class="executive-summary">
+        <h2>Vezetői összefoglaló</h2>
+
+        <p>
+          <strong>{escape_html(name)}</strong> aktuális híralapú hangulatindexe
+          <strong>{score}</strong>, ami <strong>{escape_html(get_score_direction(score))}</strong>
+          helyzetképet jelez. A dashboard szerinti státusz:
+          <strong>{escape_html(get_status_text(status))}</strong>.
+        </p>
+
+        <p>
+          A hírmintában jelenleg a legfontosabb narratíva:
+          <strong>{escape_html(main_topic)}</strong>. A négy legerősebb témacsoport:
+          <strong>{escape_html(topic_sentence)}</strong>.
+        </p>
+
+        <p>
+          A vizsgált híranyagban <strong>{article_count}</strong> releváns cikk szerepel.
+          {escape_html(balance_sentence)}
+        </p>
+
+        <p>
+          {escape_html(social_sentence)}
+        </p>
+
+        <p>
+          Összességében az ország politikai hangulatát jelenleg nem egyetlen esemény,
+          hanem több, egymással összefüggő narratíva alakítja. A részletes blokkokban
+          ezekhez konkrét cikkek, szereplők, intézmények vagy döntések is kapcsolódnak.
+        </p>
+      </div>
+    """
 
 
 def build_source_list(articles):
@@ -350,6 +456,7 @@ def build_report_html(country, social_signal, updated_at):
     social_topic = social_signal.get("main_topic", "nincs adat")
     source_counts = social_signal.get("source_counts", {})
 
+    executive_summary = build_executive_summary(country, social_signal)
     topic_blocks = build_topic_blocks(country)
     articles_html = build_articles_list(top_articles)
 
@@ -420,6 +527,20 @@ def build_report_html(country, social_signal, updated_at):
       margin-top: 4px;
     }}
 
+    .executive-summary {{
+      background: #eff6ff;
+      border-left: 5px solid #2563eb;
+      padding: 16px;
+      border-radius: 12px;
+      margin: 22px 0;
+    }}
+
+    .executive-summary h2 {{
+      margin-top: 0;
+      border-bottom: none;
+      padding-bottom: 0;
+    }}
+
     .topic-block {{
       background: #f9fafb;
       border-left: 5px solid #2563eb;
@@ -481,6 +602,8 @@ def build_report_html(country, social_signal, updated_at):
       <div class="box">Negatív hírjelek<strong>{negative_hits}</strong></div>
       <div class="box">Pozitív hírjelek<strong>{positive_hits}</strong></div>
     </div>
+
+    {executive_summary}
 
     <h2>Domináns narratívák részletesen</h2>
     <p>
