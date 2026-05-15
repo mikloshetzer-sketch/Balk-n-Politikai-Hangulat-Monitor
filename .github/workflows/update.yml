@@ -26,8 +26,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Script futtatása
+      - name: Hírmonitor script futtatása
         run: python scripts/fetch_news.py
+
+      - name: Social monitor script futtatása
+        run: python scripts/fetch_social.py
 
       - name: Változások commitolása
         run: |
@@ -37,6 +40,7 @@ jobs:
 
           git add docs/data/latest.json
           git add docs/data/history.json
+          git add docs/data/social_latest.json
 
           git commit -m "Automatikus adatfrissítés" || echo "Nincs változás"
 
