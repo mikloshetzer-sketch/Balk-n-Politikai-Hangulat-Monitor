@@ -114,17 +114,17 @@
       min-width: 70px;
     }
 
-    .status-badge.positive-badge {
+    .positive-badge {
       background: #ecfdf5;
       color: #047857;
     }
 
-    .status-badge.negative-badge {
+    .negative-badge {
       background: #fef2f2;
       color: #b91c1c;
     }
 
-    .status-badge.neutral-badge {
+    .neutral-badge {
       background: #f9fafb;
       color: #374151;
     }
@@ -154,9 +154,9 @@
       font-weight: 700;
     }
 
-    .news-score.positive-text { color: #16a34a; }
-    .news-score.negative-text { color: #dc2626; }
-    .news-score.neutral-text { color: #111827; }
+    .positive-text { color: #16a34a; }
+    .negative-text { color: #dc2626; }
+    .neutral-text { color: #111827; }
 
     .social-score {
       color: #d97706;
@@ -191,6 +191,7 @@
 
     .social-box,
     .chart-box,
+    .topic-box,
     .news-section {
       border: 1px solid #e5e7eb;
       border-radius: 12px;
@@ -205,6 +206,7 @@
 
     .social-box h3,
     .chart-box h3,
+    .topic-box h3,
     .news-section h3 {
       margin: 0 0 8px 0;
       font-size: 15px;
@@ -218,6 +220,10 @@
     }
 
     .chart-wrap {
+      height: 150px;
+    }
+
+    .topic-chart-wrap {
       height: 155px;
     }
 
@@ -268,7 +274,7 @@
 
 <header>
   <h1>Balkán Politikai Hangulat Monitor</h1>
-  <p>Hírindex és social media index kombinált országmonitor</p>
+  <p>Hírindex, social media index és domináns narratívák országonként</p>
 </header>
 
 <main>
@@ -325,14 +331,15 @@ async function loadData() {
       `${socialData.source || 'nincs megadva'} – ${socialData.updated_at || 'nincs időpont'}`;
 
     document.getElementById('methodNote').textContent =
-      socialData.method_note || latestData.method_note || '';
+      latestData.method_note || '';
 
     const grid = document.getElementById('countryGrid');
     grid.innerHTML = '';
 
     latestData.countries.forEach(country => {
       const socialSignal = getSocialSignal(country.name, socialData);
-      const chartId = `chart-${slugify(country.name)}`;
+      const trendChartId = `trend-${slugify(country.name)}`;
+      const topicChartId = `topics-${slugify(country.name)}`;
 
       const card = document.createElement('div');
       card.className = `country-card ${country.status}`;
@@ -351,17 +358,13 @@ async function loadData() {
           <div class="score-row">
             <div class="score-box">
               <div class="score-label">Hírindex</div>
-              <div class="score-value news-score ${getTextClass(country.status)}">
-                ${country.score}
-              </div>
+              <div class="score-value ${getTextClass(country.status)}">${country.score}</div>
               <div class="small">${getStatusText(country.status)}</div>
             </div>
 
             <div class="score-box">
               <div class="score-label">Social media index</div>
-              <div class="score-value social-score">
-                ${socialSignal.score || 0}
-              </div>
+              <div class="score-value social-score">${socialSignal.score || 0}</div>
               <div class="small">${getSocialLevelText(socialSignal.level)}</div>
             </div>
           </div>
@@ -375,6 +378,16 @@ async function loadData() {
 
           <div class="topic-line">
             Fő hír téma: <strong>${country.main_topic || 'nincs adat'}</strong>
+          </div>
+
+          <div class="topic-box">
+            <h3>Domináns narratívák</h3>
+            <div class="chart-desc">
+              A témacsoportok relatív súlya az aktuális híranyag alapján.
+            </div>
+            <div class="topic-chart-wrap">
+              <canvas id="${topicChartId}"></canvas>
+            </div>
           </div>
 
           <div class="social-box">
@@ -398,7 +411,7 @@ async function loadData() {
               Kék vonal: hírindex. Világoskék oszlop: social media index.
             </div>
             <div class="chart-wrap">
-              <canvas id="${chartId}"></canvas>
+              <canvas id="${trendChartId}"></canvas>
             </div>
           </div>
 
@@ -408,7 +421,9 @@ async function loadData() {
       `;
 
       grid.appendChild(card);
-      createMiniComboChart(chartId, country.name, historyData, socialSignal, country.score);
+
+      createTopicChart(topicChartId, country.topic_scores || {});
+      createMiniComboChart(trendChartId, country.name, historyData, socialSignal, country.score);
     });
 
   } catch (error) {
@@ -423,6 +438,76 @@ async function loadData() {
       </div>
     `;
   }
+}
+
+function createTopicChart(canvasId, topicScores) {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+
+  if (chartStore[canvasId]) {
+    chartStore[canvasId].destroy();
+  }
+
+  const entries = Object.entries(topicScores || {}).slice(0, 4);
+
+  const labels = entries.length
+    ? entries.map(item => shortenTopic(item[0]))
+    : ['Nincs adat'];
+
+  const values = entries.length
+    ? entries.map(item => item[1])
+    : [0];
+
+  chartStore[canvasId] = new Chart(canvas, {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          label: 'Téma súly',
+          data: values,
+          borderWidth: 0,
+          borderRadius: 6,
+          barThickness: 13,
+          maxBarThickness: 15,
+          backgroundColor: 'rgba(37, 99, 235, 0.72)'
+        }
+      ]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: false
+        },
+        tooltip: {
+          backgroundColor: '#111827',
+          padding: 9
+        }
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          ticks: {
+            font: { size: 10 }
+          },
+          grid: {
+            color: 'rgba(0,0,0,0.06)'
+          }
+        },
+        y: {
+          ticks: {
+            font: { size: 10 }
+          },
+          grid: {
+            display: false
+          }
+        }
+      }
+    }
+  });
 }
 
 function createMiniComboChart(canvasId, countryName, historyData, socialSignal, currentNewsScore) {
@@ -490,9 +575,7 @@ function createMiniComboChart(canvasId, countryName, historyData, socialSignal, 
           position: 'bottom',
           labels: {
             boxWidth: 10,
-            font: {
-              size: 10
-            }
+            font: { size: 10 }
           }
         },
         tooltip: {
@@ -654,6 +737,25 @@ function shortDate(dateString) {
   const parts = dateString.split('-');
   if (parts.length !== 3) return dateString;
   return `${parts[1]}.${parts[2]}`;
+}
+
+function shortenTopic(topic) {
+  const replacements = {
+    'Belpolitikai tüntetések és társadalmi nyomás': 'Tüntetések',
+    'EU-integráció és csatlakozási folyamat': 'EU-integráció',
+    'Koszovó–Szerbia feszültség': 'Koszovó–Szerbia',
+    'Boszniai intézményi válság és OHR-vita': 'Bosznia/OHR',
+    'Korrupció, jogállamiság és igazságszolgáltatás': 'Jogállamiság',
+    'Biztonságpolitikai kockázatok és erőszak': 'Biztonsági kockázat',
+    'Kormányzati stabilitás és választási dinamika': 'Kormányzás/választás',
+    'Gazdaság, energia és beruházások': 'Gazdaság/energia',
+    'Nemzetközi kapcsolatok és nagyhatalmi befolyás': 'Külső befolyás',
+    'Montenegró EU-csatlakozási előrehaladása': 'Montenegró EU',
+    'Albán digitalizáció és kiberbiztonság': 'Albán digitalizáció',
+    'Bolgár–macedón identitásvita': 'Macedón identitásvita'
+  };
+
+  return replacements[topic] || topic;
 }
 
 function slugify(text) {
