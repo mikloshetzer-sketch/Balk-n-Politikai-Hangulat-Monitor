@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Balkán Country Comparison Dashboard</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      background: #f3f4f6;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111827;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 26px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #d1d5db;
+    }
+
+    main {
+      max-width: 1500px;
+      margin: 22px auto;
+      padding: 0 16px;
+    }
+
+    .top-box {
+      background: white;
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    .button-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 15px;
+      border-radius: 12px;
+      background: #111827;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: #374151;
+    }
+
+    .small {
+      color: #6b7280;
+      font-size: 13px;
+    }
+
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+      gap: 18px;
+    }
+
+    .chart-card {
+      background: white;
+      border-radius: 14px;
+      padding: 16px;
+      box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+    }
+
+    .chart-card h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .chart-desc {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .chart-wrap {
+      height: 320px;
+    }
+
+    .ranking-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .ranking-box {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 12px;
+    }
+
+    .ranking-box strong {
+      display: block;
+      font-size: 22px;
+      margin-top: 6px;
+    }
+
+    footer {
+      text-align: center;
+      color: #6b7280;
+      font-size: 13px;
+      padding: 28px 10px;
+    }
+
+    @media (max-width: 700px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .chart-wrap {
+        height: 260px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Balkán Country Comparison Dashboard</h1>
+  <p>Makrogazdasági, politikai, social és security összehasonlító nézet</p>
+</header>
+
+<main>
+
+  <section class="top-box">
+
+    <strong>Regionális összehasonlító nézet</strong>
+
+    <p class="small" id="updatedAt">
+      Betöltés...
+    </p>
+
+    <p class="small" id="methodNote"></p>
+
+    <div class="button-row">
+      <a class="button" href="./index.html">
+        Politikai Hangulatmonitor
+      </a>
+
+      <a class="button" href="./country-profiles.html">
+        Országprofil Dashboard
+      </a>
+
+      <a class="button" href="./security-map.html">
+        Security Risk Map
+      </a>
+    </div>
+
+    <div class="ranking-grid" id="rankingGrid"></div>
+
+  </section>
+
+  <section class="dashboard-grid">
+
+    <div class="chart-card">
+      <h2>GDP / fő összehasonlítás</h2>
+      <div class="chart-desc">
+        GDP/fő USD-ben.
+      </div>
+      <div class="chart-wrap">
+        <canvas id="gdpChart"></canvas>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <h2>Infláció összehasonlítás</h2>
+      <div class="chart-desc">
+        Éves inflációs ráta.
+      </div>
+      <div class="chart-wrap">
+        <canvas id="inflationChart"></canvas>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <h2>Átlagbér összehasonlítás</h2>
+      <div class="chart-desc">
+        Nettó átlagbér EUR-ban.
+      </div>
+      <div class="chart-wrap">
+        <canvas id="salaryChart"></canvas>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <h2>Security risk összehasonlítás</h2>
+      <div class="chart-desc">
+        Security risk score országonként.
+      </div>
+      <div class="chart-wrap">
+        <canvas id="securityChart"></canvas>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <h2>Social signal összehasonlítás</h2>
+      <div class="chart-desc">
+        Social media aktivitási index.
+      </div>
+      <div class="chart-wrap">
+        <canvas id="socialChart"></canvas>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <h2>Jegybanki kamatok</h2>
+      <div class="chart-desc">
+        Aktuális monetáris politika.
+      </div>
+      <div class="chart-wrap">
+        <canvas id="interestChart"></canvas>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  Balkán Country Comparison Dashboard – GitHub Pages
+</footer>
+
+<script>
+let chartStore = {};
+
+async function loadComparison() {
+  try {
+    const response = await fetch('./data/comparison_snapshot.json');
+    const data = await response.json();
+
+    document.getElementById('updatedAt').textContent =
+      `Frissítés: ${data.updated_at || 'nincs adat'}`;
+
+    document.getElementById('methodNote').textContent =
+      data.method_note || '';
+
+    const countries = data.countries || [];
+
+    buildRankings(countries);
+
+    createBarChart(
+      'gdpChart',
+      countries,
+      'gdp_per_capita_usd',
+      'GDP/fő (USD)',
+      '$'
+    );
+
+    createBarChart(
+      'inflationChart',
+      countries,
+      'inflation_percent',
+      'Infláció (%)',
+      '%'
+    );
+
+    createBarChart(
+      'salaryChart',
+      countries,
+      'average_net_salary_eur',
+      'Nettó bér (EUR)',
+      '€'
+    );
+
+    createBarChart(
+      'securityChart',
+      countries,
+      'security_score',
+      'Security risk',
+      ''
+    );
+
+    createBarChart(
+      'socialChart',
+      countries,
+      'social_score',
+      'Social signal',
+      ''
+    );
+
+    createBarChart(
+      'interestChart',
+      countries,
+      'policy_rate',
+      'Jegybanki kamat (%)',
+      '%'
+    );
+
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+function buildRankings(countries) {
+  const grid = document.getElementById('rankingGrid');
+
+  const topGDP = [...countries].sort(
+    (a, b) => (b.gdp_per_capita_usd || 0) - (a.gdp_per_capita_usd || 0)
+  )[0];
+
+  const topSecurity = [...countries].sort(
+    (a, b) => (b.security_score || 0) - (a.security_score || 0)
+  )[0];
+
+  const topSocial = [...countries].sort(
+    (a, b) => (b.social_score || 0) - (a.social_score || 0)
+  )[0];
+
+  const topInflation = [...countries].sort(
+    (a, b) => (b.inflation_percent || 0) - (a.inflation_percent || 0)
+  )[0];
+
+  grid.innerHTML = `
+    <div class="ranking-box">
+      Legmagasabb GDP/fő
+      <strong>${topGDP?.name || 'n/a'}</strong>
+      ${formatNumber(topGDP?.gdp_per_capita_usd)} USD
+    </div>
+
+    <div class="ranking-box">
+      Legmagasabb security risk
+      <strong>${topSecurity?.name || 'n/a'}</strong>
+      ${topSecurity?.security_score || 0}
+    </div>
+
+    <div class="ranking-box">
+      Legaktívabb social signal
+      <strong>${topSocial?.name || 'n/a'}</strong>
+      ${topSocial?.social_score || 0}
+    </div>
+
+    <div class="ranking-box">
+      Legmagasabb infláció
+      <strong>${topInflation?.name || 'n/a'}</strong>
+      ${topInflation?.inflation_percent || 0}%
+    </div>
+  `;
+}
+
+function createBarChart(canvasId, countries, valueKey, label, suffix) {
+  const canvas = document.getElementById(canvasId);
+
+  if (!canvas) return;
+
+  if (chartStore[canvasId]) {
+    chartStore[canvasId].destroy();
+  }
+
+  chartStore[canvasId] = new Chart(canvas, {
+    type: 'bar',
+
+    data: {
+      labels: countries.map(c => c.name),
+
+      datasets: [{
+        label: label,
+        data: countries.map(c => c[valueKey] || 0),
+        borderWidth: 0,
+        borderRadius: 6,
+        barThickness: 28
+      }]
+    },
+
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+
+      plugins: {
+        legend: {
+          display: false
+        },
+
+        tooltip: {
+          backgroundColor: '#111827',
+          padding: 9,
+
+          callbacks: {
+            label: function(context) {
+              return `${context.raw}${suffix}`;
+            }
+          }
+        }
+      },
+
+      scales: {
+        y: {
+          beginAtZero: true,
+
+          ticks: {
+            font: {
+              size: 10
+            }
+          },
+
+          grid: {
+            color: 'rgba(0,0,0,0.06)'
+          }
+        },
+
+        x: {
+          ticks: {
+            font: {
+              size: 10
+            }
+          },
+
+          grid: {
+            display: false
+          }
+        }
+      }
+    }
+  });
+}
+
+function formatNumber(value) {
+  if (value === undefined || value === null) {
+    return 'n/a';
+  }
+
+  return Number(value).toLocaleString('hu-HU');
+}
+
+loadComparison();
+</script>
+
+</body>
+</html>
