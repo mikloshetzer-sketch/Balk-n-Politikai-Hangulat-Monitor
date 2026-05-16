@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Balkán Országprofil Dashboard</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      background: #f3f4f6;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111827;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 26px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #d1d5db;
+    }
+
+    main {
+      max-width: 1450px;
+      margin: 22px auto;
+      padding: 0 16px;
+    }
+
+    .top-box {
+      background: white;
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    .button-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 15px;
+      border-radius: 12px;
+      background: #111827;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: #374151;
+    }
+
+    .small {
+      color: #6b7280;
+      font-size: 13px;
+    }
+
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+      gap: 18px;
+    }
+
+    .country-card {
+      background: white;
+      border-radius: 14px;
+      border-left: 7px solid #2563eb;
+      box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+      overflow: hidden;
+    }
+
+    .card-inner {
+      padding: 16px;
+    }
+
+    .country-title {
+      font-size: 23px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 12px;
+    }
+
+    .section-box {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 12px;
+      margin-top: 12px;
+      background: #ffffff;
+    }
+
+    .section-box h3 {
+      margin: 0 0 9px 0;
+      font-size: 15px;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .metric {
+      background: #f3f4f6;
+      border-radius: 10px;
+      padding: 8px;
+      font-size: 12px;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 16px;
+      margin-top: 3px;
+    }
+
+    .leader-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .leader-box {
+      background: #f9fafb;
+      border-radius: 10px;
+      padding: 9px;
+      font-size: 13px;
+    }
+
+    .leader-box strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 14px;
+    }
+
+    .chart-wrap {
+      height: 210px;
+    }
+
+    .mini-chart-wrap {
+      height: 160px;
+    }
+
+    footer {
+      text-align: center;
+      color: #6b7280;
+      font-size: 13px;
+      padding: 28px 10px;
+    }
+
+    @media (max-width: 600px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .metric-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .leader-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Balkán Országprofil Dashboard</h1>
+  <p>Politikai vezetés, társadalmi szerkezet, parlamenti arányok és gazdasági mutatók</p>
+</header>
+
+<main>
+
+  <section class="top-box">
+    <strong>Országprofil nézet</strong>
+    <p class="small" id="updatedAt">Betöltés...</p>
+
+    <div class="button-row">
+      <a class="button" href="./index.html">Vissza a politikai hangulatmonitorhoz</a>
+      <a class="button" href="./security-map.html">Security Risk Map</a>
+    </div>
+  </section>
+
+  <section class="dashboard-grid" id="profileGrid"></section>
+
+</main>
+
+<footer>
+  Balkán Országprofil Dashboard – GitHub Pages
+</footer>
+
+<script>
+let chartStore = {};
+
+async function loadProfiles() {
+  try {
+    const response = await fetch('./data/country_profiles.json');
+    const data = await response.json();
+
+    document.getElementById('updatedAt').textContent =
+      `Utolsó strukturális frissítés: ${data.updated_at || 'nincs adat'}`;
+
+    const grid = document.getElementById('profileGrid');
+    grid.innerHTML = '';
+
+    data.countries.forEach(country => {
+      const slug = slugify(country.name);
+
+      const parliamentChartId = `parliament-${slug}`;
+      const religionChartId = `religion-${slug}`;
+      const tradeChartId = `trade-${slug}`;
+      const economyChartId = `economy-${slug}`;
+
+      const economy = country.economy || {};
+      const bank = country.central_bank || {};
+      const leadership = country.leadership || {};
+
+      const card = document.createElement('div');
+      card.className = 'country-card';
+
+      card.innerHTML = `
+        <div class="card-inner">
+
+          <div class="country-title">${country.name}</div>
+          <div class="subtitle">
+            Főváros: ${country.capital || 'nincs adat'} |
+            Államforma: ${country.government_type || 'nincs adat'} |
+            Valuta: ${country.currency || 'nincs adat'}
+          </div>
+
+          <div class="section-box">
+            <h3>Politikai vezetés</h3>
+            <div class="leader-grid">
+              <div class="leader-box">
+                Államfő
+                <strong>${leadership.president || 'nincs adat'}</strong>
+              </div>
+              <div class="leader-box">
+                Kormányfő
+                <strong>${leadership.prime_minister || 'nincs adat'}</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-box">
+            <h3>Társadalmi alapadatok</h3>
+            <div class="metric-grid">
+              <div class="metric">Lakosság<strong>${formatNumber(country.population)}</strong></div>
+              <div class="metric">Medián életkor<strong>${country.median_age || 'n/a'}</strong></div>
+              <div class="metric">Valuta<strong>${country.currency || 'n/a'}</strong></div>
+            </div>
+          </div>
+
+          <div class="section-box">
+            <h3>Parlamenti arányok</h3>
+            <div class="chart-wrap">
+              <canvas id="${parliamentChartId}"></canvas>
+            </div>
+          </div>
+
+          <div class="section-box">
+            <h3>Vallási megoszlás</h3>
+            <div class="chart-wrap">
+              <canvas id="${religionChartId}"></canvas>
+            </div>
+          </div>
+
+          <div class="section-box">
+            <h3>Gazdasági mutatók</h3>
+            <div class="metric-grid">
+              <div class="metric">GDP<strong>${economy.gdp_billion_usd || 0} mrd USD</strong></div>
+              <div class="metric">GDP/fő<strong>${formatNumber(economy.gdp_per_capita_usd)} USD</strong></div>
+              <div class="metric">Nettó bér<strong>${economy.average_net_salary_eur || 0} EUR</strong></div>
+              <div class="metric">Infláció<strong>${economy.inflation_percent || 0}%</strong></div>
+              <div class="metric">Munkanélküliség<strong>${economy.unemployment_percent || 0}%</strong></div>
+              <div class="metric">Jegybanki kamat<strong>${bank.interest_rate || 0}%</strong></div>
+            </div>
+          </div>
+
+          <div class="section-box">
+            <h3>Export, import, kereskedelmi mérleg</h3>
+            <div class="mini-chart-wrap">
+              <canvas id="${tradeChartId}"></canvas>
+            </div>
+          </div>
+
+          <div class="section-box">
+            <h3>Gazdasági összevető mini chart</h3>
+            <div class="mini-chart-wrap">
+              <canvas id="${economyChartId}"></canvas>
+            </div>
+          </div>
+
+        </div>
+      `;
+
+      grid.appendChild(card);
+
+      createPieChart(
+        parliamentChartId,
+        country.parliament?.parties || [],
+        'seats',
+        'name',
+        'Mandátum'
+      );
+
+      createPieChart(
+        religionChartId,
+        country.religion || [],
+        'percent',
+        'group',
+        'Arány'
+      );
+
+      createTradeChart(tradeChartId, economy);
+      createEconomyChart(economyChartId, economy, bank);
+    });
+
+  } catch (error) {
+    console.error(error);
+
+    document.getElementById('profileGrid').innerHTML = `
+      <div class="country-card">
+        <div class="card-inner">
+          <div class="country-title">Adatbetöltési hiba</div>
+          <p>Nem sikerült betölteni a country_profiles.json fájlt.</p>
+        </div>
+      </div>
+    `;
+  }
+}
+
+function createPieChart(canvasId, rows, valueKey, labelKey, label) {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+
+  if (chartStore[canvasId]) {
+    chartStore[canvasId].destroy();
+  }
+
+  chartStore[canvasId] = new Chart(canvas, {
+    type: 'doughnut',
+    data: {
+      labels: rows.map(item => item[labelKey]),
+      datasets: [{
+        label: label,
+        data: rows.map(item => item[valueKey]),
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: {
+            boxWidth: 11,
+            font: { size: 10 }
+          }
+        },
+        tooltip: {
+          backgroundColor: '#111827',
+          padding: 9
+        }
+      }
+    }
+  });
+}
+
+function createTradeChart(canvasId, economy) {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+
+  if (chartStore[canvasId]) {
+    chartStore[canvasId].destroy();
+  }
+
+  chartStore[canvasId] = new Chart(canvas, {
+    type: 'bar',
+    data: {
+      labels: ['Export', 'Import', 'Mérleg'],
+      datasets: [{
+        label: 'mrd USD',
+        data: [
+          economy.exports_billion_usd || 0,
+          economy.imports_billion_usd || 0,
+          economy.trade_balance_billion_usd || 0
+        ],
+        borderWidth: 0,
+        borderRadius: 6,
+        barThickness: 22
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: false
+        },
+        tooltip: {
+          backgroundColor: '#111827',
+          padding: 9
+        }
+      },
+      scales: {
+        y: {
+          ticks: { font: { size: 10 } },
+          grid: { color: 'rgba(0,0,0,0.06)' }
+        },
+        x: {
+          ticks: { font: { size: 10 } },
+          grid: { display: false }
+        }
+      }
+    }
+  });
+}
+
+function createEconomyChart(canvasId, economy, bank) {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+
+  if (chartStore[canvasId]) {
+    chartStore[canvasId].destroy();
+  }
+
+  chartStore[canvasId] = new Chart(canvas, {
+    type: 'bar',
+    data: {
+      labels: ['Infláció', 'Munkanélk.', 'Kamat'],
+      datasets: [{
+        label: '%',
+        data: [
+          economy.inflation_percent || 0,
+          economy.unemployment_percent || 0,
+          bank.interest_rate || 0
+        ],
+        borderWidth: 0,
+        borderRadius: 6,
+        barThickness: 22
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: false
+        },
+        tooltip: {
+          backgroundColor: '#111827',
+          padding: 9
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: { font: { size: 10 } },
+          grid: { color: 'rgba(0,0,0,0.06)' }
+        },
+        x: {
+          ticks: { font: { size: 10 } },
+          grid: { display: false }
+        }
+      }
+    }
+  });
+}
+
+function formatNumber(value) {
+  if (value === undefined || value === null) {
+    return 'n/a';
+  }
+
+  return Number(value).toLocaleString('hu-HU');
+}
+
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+}
+
+loadProfiles();
+</script>
+
+</body>
+</html>
