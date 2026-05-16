@@ -1,0 +1,45 @@
+name: Build Comparison Data
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "45 15 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build-comparison-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository letöltése
+        uses: actions/checkout@v4
+
+      - name: Python telepítése
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: FX history frissítése
+        run: python scripts/update_fx_history.py
+
+      - name: Kamat history frissítése
+        run: python scripts/update_interest_rate_history.py
+
+      - name: Comparison snapshot építése
+        run: python scripts/build_comparison_snapshot.py
+
+      - name: Változások commitolása
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add docs/data/fx_history.json
+          git add docs/data/interest_rate_history.json
+          git add docs/data/comparison_snapshot.json
+
+          git commit -m "Comparison és makro history adatok frissítése" || echo "Nincs változás"
+
+          git push
