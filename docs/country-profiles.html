@@ -226,6 +226,7 @@
     <div class="button-row">
       <a class="button" href="./index.html">Vissza a politikai hangulatmonitorhoz</a>
       <a class="button" href="./security-map.html">Security Risk Map</a>
+      <a class="button" href="./country-comparison.html">Country Comparison</a>
     </div>
   </section>
 
@@ -244,14 +245,31 @@ async function loadProfiles() {
   try {
     const baseResponse = await fetch('./data/country_profiles.json');
     const liveResponse = await fetch('./data/country_profiles_live.json');
+    const fxHistoryResponse = await fetch('./data/fx_history.json');
+    const interestHistoryResponse = await fetch('./data/interest_rate_history.json');
 
     const data = await baseResponse.json();
+
     let liveData = null;
+    let fxHistoryData = null;
+    let interestHistoryData = null;
 
     try {
       liveData = await liveResponse.json();
     } catch (liveError) {
       console.warn('country_profiles_live.json nem tölthető be', liveError);
+    }
+
+    try {
+      fxHistoryData = await fxHistoryResponse.json();
+    } catch (fxError) {
+      console.warn('fx_history.json nem tölthető be', fxError);
+    }
+
+    try {
+      interestHistoryData = await interestHistoryResponse.json();
+    } catch (interestError) {
+      console.warn('interest_rate_history.json nem tölthető be', interestError);
     }
 
     document.getElementById('updatedAt').textContent =
@@ -276,6 +294,8 @@ async function loadProfiles() {
       const religionChartId = `religion-${slug}`;
       const tradeChartId = `trade-${slug}`;
       const economyChartId = `economy-${slug}`;
+      const fxTrendChartId = `fx-trend-${slug}`;
+      const interestTrendChartId = `interest-trend-${slug}`;
 
       const economy = country.economy || {};
       const baseBank = country.central_bank || {};
@@ -325,6 +345,22 @@ async function loadProfiles() {
               Jegybank: ${escapeHtml(liveBank.name || baseBank.source || 'nincs adat')}<br>
               Monetáris megjegyzés: ${escapeHtml(liveBank.note || baseBank.note || 'nincs külön megjegyzés')}
             </p>
+          </div>
+
+          <div class="section-box">
+            <h3>FX trend</h3>
+            <p class="small">EUR-alapú devizaárfolyam az utolsó mentett napok alapján.</p>
+            <div class="mini-chart-wrap">
+              <canvas id="${fxTrendChartId}"></canvas>
+            </div>
+          </div>
+
+          <div class="section-box">
+            <h3>Jegybanki kamat trend</h3>
+            <p class="small">Policy rate / jegybanki kamat idősor, ahol értelmezhető.</p>
+            <div class="mini-chart-wrap">
+              <canvas id="${interestTrendChartId}"></canvas>
+            </div>
           </div>
 
           <div class="section-box">
@@ -438,6 +474,8 @@ async function loadProfiles() {
 
       createTradeChart(tradeChartId, economy);
       createEconomyChart(economyChartId, economy, { interest_rate: displayedRate });
+      createFxTrendChart(fxTrendChartId, country, fxHistoryData, fx);
+      createInterestTrendChart(interestTrendChartId, country.name, interestHistoryData, displayedRate);
     });
 
   } catch (error) {
@@ -447,7 +485,7 @@ async function loadProfiles() {
       <div class="country-card">
         <div class="card-inner">
           <div class="country-title">Adatbetöltési hiba</div>
-          <p>Nem sikerült betölteni a country_profiles.json vagy country_profiles_live.json fájlt.</p>
+          <p>Nem sikerült betölteni az országprofil vagy history adatfájlokat.</p>
         </div>
       </div>
     `;
@@ -456,13 +494,11 @@ async function loadProfiles() {
 
 function getLiveCountry(countryName, liveData) {
   if (!liveData || !liveData.countries) return null;
-
   return liveData.countries.find(item => item.name === countryName) || null;
 }
 
 function buildNoDataNote(rows, text) {
   if (rows && rows.length) return '';
-
   return `<p class="small">${escapeHtml(text)}</p>`;
 }
 
@@ -520,7 +556,6 @@ function buildSourcesHtml(country, globalSources, live) {
 
 function createPieChart(canvasId, rows, valueKey, labelKey, label) {
   const canvas = document.getElementById(canvasId);
-
   if (!canvas) return;
 
   if (chartStore[canvasId]) {
@@ -563,7 +598,6 @@ function createPieChart(canvasId, rows, valueKey, labelKey, label) {
 
 function createTradeChart(canvasId, economy) {
   const canvas = document.getElementById(canvasId);
-
   if (!canvas) return;
 
   if (chartStore[canvasId]) {
@@ -609,7 +643,6 @@ function createTradeChart(canvasId, economy) {
 
 function createEconomyChart(canvasId, economy, bank) {
   const canvas = document.getElementById(canvasId);
-
   if (!canvas) return;
 
   if (chartStore[canvasId]) {
@@ -654,21 +687,181 @@ function createEconomyChart(canvasId, economy, bank) {
   });
 }
 
+function createFxTrendChart(canvasId, country, fxHistoryData, currentFx) {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+
+  if (chartStore[canvasId]) {
+    chartStore[canvasId].destroy();
+  }
+
+  const currency = country.currency;
+  const records = fxHistoryData?.records || [];
+
+  let rows = records.map(record => {
+    const rateRow = record.rates?.[currency];
+
+    if (!rateRow || rateRow.rate === null || rateRow.rate === undefined) {
+      return null;
+    }
+
+    return {
+      date: record.date,
+      value: rateRow.rate
+    };
+  }).filter(Boolean).slice(-30);
+
+  if (!rows.length && currentFx?.rate) {
+    rows = [{
+      date: currentFx.date || 'Ma',
+      value: currentFx.rate
+    }];
+  }
+
+  const labels = rows.length ? rows.map(row => shortDate(row.date)) : ['Nincs adat'];
+  const values = rows.length ? rows.map(row => row.value) : [0];
+
+  chartStore[canvasId] = new Chart(canvas, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: `EUR/${currency}`,
+        data: values,
+        tension: 0.35,
+        borderWidth: 2,
+        pointRadius: 2,
+        pointHoverRadius: 4,
+        borderColor: '#2563eb',
+        backgroundColor: '#2563eb'
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: {
+            boxWidth: 10,
+            font: { size: 10 }
+          }
+        },
+        tooltip: {
+          backgroundColor: '#111827',
+          padding: 9
+        }
+      },
+      scales: {
+        y: {
+          ticks: { font: { size: 10 } },
+          grid: { color: 'rgba(0,0,0,0.06)' }
+        },
+        x: {
+          ticks: { font: { size: 10 }, maxRotation: 0 },
+          grid: { display: false }
+        }
+      }
+    }
+  });
+}
+
+function createInterestTrendChart(canvasId, countryName, interestHistoryData, currentRate) {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+
+  if (chartStore[canvasId]) {
+    chartStore[canvasId].destroy();
+  }
+
+  const records = interestHistoryData?.records || [];
+
+  let rows = records.map(record => {
+    const country = (record.countries || []).find(item => item.name === countryName);
+
+    if (!country || country.policy_rate === null || country.policy_rate === undefined) {
+      return null;
+    }
+
+    return {
+      date: record.date,
+      value: country.policy_rate
+    };
+  }).filter(Boolean).slice(-30);
+
+  if (!rows.length && currentRate !== null && currentRate !== undefined) {
+    rows = [{
+      date: 'Ma',
+      value: currentRate
+    }];
+  }
+
+  const labels = rows.length ? rows.map(row => shortDate(row.date)) : ['Nincs adat'];
+  const values = rows.length ? rows.map(row => row.value) : [0];
+
+  chartStore[canvasId] = new Chart(canvas, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Jegybanki kamat',
+        data: values,
+        tension: 0.35,
+        borderWidth: 2,
+        pointRadius: 2,
+        pointHoverRadius: 4,
+        borderColor: '#ea580c',
+        backgroundColor: '#ea580c'
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: {
+            boxWidth: 10,
+            font: { size: 10 }
+          }
+        },
+        tooltip: {
+          backgroundColor: '#111827',
+          padding: 9,
+          callbacks: {
+            label: function(context) {
+              return `${context.raw}%`;
+            }
+          }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: { font: { size: 10 } },
+          grid: { color: 'rgba(0,0,0,0.06)' }
+        },
+        x: {
+          ticks: { font: { size: 10 }, maxRotation: 0 },
+          grid: { display: false }
+        }
+      }
+    }
+  });
+}
+
 function formatNumber(value) {
   if (value === undefined || value === null) return 'n/a';
-
   return Number(value).toLocaleString('hu-HU');
 }
 
 function formatPercent(value) {
   if (value === undefined || value === null || value === '') return 'n/a';
-
   return `${Number(value).toLocaleString('hu-HU')}%`;
 }
 
 function formatFxRate(value, quote) {
   if (value === undefined || value === null || value === '') return 'n/a';
-
   return `1 EUR = ${Number(value).toLocaleString('hu-HU')} ${quote || ''}`;
 }
 
@@ -681,6 +874,18 @@ function escapeHtml(value) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
+}
+
+function shortDate(dateString) {
+  if (!dateString) return '';
+
+  const parts = String(dateString).split('-');
+
+  if (parts.length !== 3) {
+    return dateString;
+  }
+
+  return `${parts[1]}.${parts[2]}`;
 }
 
 function slugify(text) {
@@ -697,4 +902,3 @@ loadProfiles();
 
 </body>
 </html>
-
