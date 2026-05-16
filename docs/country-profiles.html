@@ -102,6 +102,7 @@
       font-size: 13px;
       color: #6b7280;
       margin-bottom: 12px;
+      line-height: 1.45;
     }
 
     .section-box {
@@ -115,6 +116,15 @@
     .section-box h3 {
       margin: 0 0 9px 0;
       font-size: 15px;
+    }
+
+    .live-box {
+      background: #eff6ff;
+      border-color: #93c5fd;
+    }
+
+    .source-box {
+      background: #f9fafb;
     }
 
     .metric-grid {
@@ -163,6 +173,18 @@
       height: 160px;
     }
 
+    .source-list {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 13px;
+      color: #374151;
+      line-height: 1.45;
+    }
+
+    .source-list li {
+      margin-bottom: 7px;
+    }
+
     footer {
       text-align: center;
       color: #6b7280;
@@ -190,7 +212,7 @@
 
 <header>
   <h1>Balkán Országprofil Dashboard</h1>
-  <p>Politikai vezetés, társadalmi szerkezet, parlamenti arányok és gazdasági mutatók</p>
+  <p>Politikai vezetés, társadalmi szerkezet, parlamenti arányok, live árfolyamok és gazdasági mutatók</p>
 </header>
 
 <main>
@@ -198,6 +220,8 @@
   <section class="top-box">
     <strong>Országprofil nézet</strong>
     <p class="small" id="updatedAt">Betöltés...</p>
+    <p class="small" id="liveUpdatedAt"></p>
+    <p class="small" id="qualityNote"></p>
 
     <div class="button-row">
       <a class="button" href="./index.html">Vissza a politikai hangulatmonitorhoz</a>
@@ -218,11 +242,28 @@ let chartStore = {};
 
 async function loadProfiles() {
   try {
-    const response = await fetch('./data/country_profiles.json');
-    const data = await response.json();
+    const baseResponse = await fetch('./data/country_profiles.json');
+    const liveResponse = await fetch('./data/country_profiles_live.json');
+
+    const data = await baseResponse.json();
+    let liveData = null;
+
+    try {
+      liveData = await liveResponse.json();
+    } catch (liveError) {
+      console.warn('country_profiles_live.json nem tölthető be', liveError);
+    }
 
     document.getElementById('updatedAt').textContent =
       `Utolsó strukturális frissítés: ${data.updated_at || 'nincs adat'}`;
+
+    document.getElementById('qualityNote').textContent =
+      data.data_quality_note || 'A strukturális adatok alapadatként kezelendők, rendszeres forrásellenőrzéssel.';
+
+    document.getElementById('liveUpdatedAt').textContent =
+      liveData
+        ? `Live makroadatok frissítése: ${liveData.updated_at || 'nincs adat'} | FX forrás: ${liveData.fx_source?.name || 'nincs adat'} (${liveData.fx_source?.date || 'nincs dátum'})`
+        : 'Live makroadatok: nem érhetők el.';
 
     const grid = document.getElementById('profileGrid');
     grid.innerHTML = '';
@@ -232,12 +273,18 @@ async function loadProfiles() {
 
       const parliamentChartId = `parliament-${slug}`;
       const religionChartId = `religion-${slug}`;
+      const ethnicityChartId = `ethnicity-${slug}`;
       const tradeChartId = `trade-${slug}`;
       const economyChartId = `economy-${slug}`;
 
       const economy = country.economy || {};
-      const bank = country.central_bank || {};
+      const baseBank = country.central_bank || {};
       const leadership = country.leadership || {};
+      const live = getLiveCountry(country.name, liveData);
+      const liveBank = live?.central_bank || {};
+      const fx = live?.fx || {};
+
+      const displayedRate = liveBank.policy_rate ?? baseBank.interest_rate ?? null;
 
       const card = document.createElement('div');
       card.className = 'country-card';
@@ -245,11 +292,34 @@ async function loadProfiles() {
       card.innerHTML = `
         <div class="card-inner">
 
-          <div class="country-title">${country.name}</div>
+          <div class="country-title">${escapeHtml(country.name)}</div>
           <div class="subtitle">
-            Főváros: ${country.capital || 'nincs adat'} |
-            Államforma: ${country.government_type || 'nincs adat'} |
-            Valuta: ${country.currency || 'nincs adat'}
+            Főváros: ${escapeHtml(country.capital || 'nincs adat')} |
+            Államforma: ${escapeHtml(country.government_type || 'nincs adat')} |
+            Valuta: ${escapeHtml(country.currency || 'nincs adat')}
+          </div>
+
+          <div class="section-box live-box">
+            <h3>Live makroadatok</h3>
+            <div class="metric-grid">
+              <div class="metric">
+                EUR árfolyam
+                <strong>${formatFxRate(fx.rate, fx.quote || country.currency)}</strong>
+              </div>
+              <div class="metric">
+                FX dátum
+                <strong>${fx.date || 'n/a'}</strong>
+              </div>
+              <div class="metric">
+                Jegybanki kamat
+                <strong>${formatPercent(displayedRate)}</strong>
+              </div>
+            </div>
+            <p class="small" style="margin-bottom:0;">
+              FX megjegyzés: ${escapeHtml(fx.note || 'nincs megjegyzés')}<br>
+              Jegybank: ${escapeHtml(liveBank.name || baseBank.source || 'nincs adat')}<br>
+              Monetáris megjegyzés: ${escapeHtml(liveBank.note || baseBank.note || 'nincs külön megjegyzés')}
+            </p>
           </div>
 
           <div class="section-box">
@@ -257,11 +327,11 @@ async function loadProfiles() {
             <div class="leader-grid">
               <div class="leader-box">
                 Államfő
-                <strong>${leadership.president || 'nincs adat'}</strong>
+                <strong>${escapeHtml(leadership.president || 'nincs adat')}</strong>
               </div>
               <div class="leader-box">
                 Kormányfő
-                <strong>${leadership.prime_minister || 'nincs adat'}</strong>
+                <strong>${escapeHtml(leadership.prime_minister || 'nincs adat')}</strong>
               </div>
             </div>
           </div>
@@ -271,7 +341,7 @@ async function loadProfiles() {
             <div class="metric-grid">
               <div class="metric">Lakosság<strong>${formatNumber(country.population)}</strong></div>
               <div class="metric">Medián életkor<strong>${country.median_age || 'n/a'}</strong></div>
-              <div class="metric">Valuta<strong>${country.currency || 'n/a'}</strong></div>
+              <div class="metric">Valuta<strong>${escapeHtml(country.currency || 'n/a')}</strong></div>
             </div>
           </div>
 
@@ -280,6 +350,14 @@ async function loadProfiles() {
             <div class="chart-wrap">
               <canvas id="${parliamentChartId}"></canvas>
             </div>
+          </div>
+
+          <div class="section-box">
+            <h3>Etnikai / kisebbségi megoszlás</h3>
+            <div class="chart-wrap">
+              <canvas id="${ethnicityChartId}"></canvas>
+            </div>
+            ${buildNoDataNote(country.ethnicity, 'Etnikai/kisebbségi adat még nincs rögzítve a country_profiles.json fájlban.')}
           </div>
 
           <div class="section-box">
@@ -297,7 +375,7 @@ async function loadProfiles() {
               <div class="metric">Nettó bér<strong>${economy.average_net_salary_eur || 0} EUR</strong></div>
               <div class="metric">Infláció<strong>${economy.inflation_percent || 0}%</strong></div>
               <div class="metric">Munkanélküliség<strong>${economy.unemployment_percent || 0}%</strong></div>
-              <div class="metric">Jegybanki kamat<strong>${bank.interest_rate || 0}%</strong></div>
+              <div class="metric">Jegybanki kamat<strong>${formatPercent(displayedRate)}</strong></div>
             </div>
           </div>
 
@@ -315,6 +393,11 @@ async function loadProfiles() {
             </div>
           </div>
 
+          <div class="section-box source-box">
+            <h3>Források és adatminőség</h3>
+            ${buildSourcesHtml(country, data.global_sources || [], live)}
+          </div>
+
         </div>
       `;
 
@@ -329,6 +412,14 @@ async function loadProfiles() {
       );
 
       createPieChart(
+        ethnicityChartId,
+        country.ethnicity || [],
+        'percent',
+        'group',
+        'Arány'
+      );
+
+      createPieChart(
         religionChartId,
         country.religion || [],
         'percent',
@@ -337,7 +428,7 @@ async function loadProfiles() {
       );
 
       createTradeChart(tradeChartId, economy);
-      createEconomyChart(economyChartId, economy, bank);
+      createEconomyChart(economyChartId, economy, { interest_rate: displayedRate });
     });
 
   } catch (error) {
@@ -347,11 +438,57 @@ async function loadProfiles() {
       <div class="country-card">
         <div class="card-inner">
           <div class="country-title">Adatbetöltési hiba</div>
-          <p>Nem sikerült betölteni a country_profiles.json fájlt.</p>
+          <p>Nem sikerült betölteni a country_profiles.json vagy country_profiles_live.json fájlt.</p>
         </div>
       </div>
     `;
   }
+}
+
+function getLiveCountry(countryName, liveData) {
+  if (!liveData || !liveData.countries) return null;
+  return liveData.countries.find(item => item.name === countryName) || null;
+}
+
+function buildNoDataNote(rows, text) {
+  if (rows && rows.length) return '';
+  return `<p class="small">${escapeHtml(text)}</p>`;
+}
+
+function buildSourcesHtml(country, globalSources, live) {
+  const countrySources = country.sources || [];
+
+  let html = '';
+
+  if (country.data_quality) {
+    html += `<p class="small"><strong>Adatminőség:</strong> ${escapeHtml(country.data_quality)}</p>`;
+  }
+
+  if (countrySources.length) {
+    html += '<ul class="source-list">';
+    countrySources.forEach(source => {
+      const fields = source.fields ? source.fields.join(', ') : 'általános országprofil-adat';
+      html += `<li><strong>${escapeHtml(source.name)}</strong> – ${escapeHtml(fields)}</li>`;
+    });
+    html += '</ul>';
+  } else if (globalSources.length) {
+    html += '<ul class="source-list">';
+    globalSources.forEach(source => {
+      html += `<li><strong>${escapeHtml(source.name)}</strong> – ${escapeHtml(source.use || '')}</li>`;
+    });
+    html += '</ul>';
+  } else {
+    html += '<p class="small">Forrásblokk még nincs kitöltve a country_profiles.json fájlban.</p>';
+  }
+
+  if (live) {
+    html += `<p class="small" style="margin-top:10px;">
+      Live FX/kamat kiegészítő: ${escapeHtml(live.fx?.source || 'ECB / jegybanki forrás')}.
+      Árfolyam dátuma: ${escapeHtml(live.fx?.date || 'nincs adat')}.
+    </p>`;
+  }
+
+  return html;
 }
 
 function createPieChart(canvasId, rows, valueKey, labelKey, label) {
@@ -362,13 +499,15 @@ function createPieChart(canvasId, rows, valueKey, labelKey, label) {
     chartStore[canvasId].destroy();
   }
 
+  const safeRows = rows && rows.length ? rows : [{ [labelKey]: 'Nincs adat', [valueKey]: 1 }];
+
   chartStore[canvasId] = new Chart(canvas, {
     type: 'doughnut',
     data: {
-      labels: rows.map(item => item[labelKey]),
+      labels: safeRows.map(item => item[labelKey]),
       datasets: [{
         label: label,
-        data: rows.map(item => item[valueKey]),
+        data: safeRows.map(item => item[valueKey]),
         borderWidth: 1
       }]
     },
@@ -420,13 +559,8 @@ function createTradeChart(canvasId, economy) {
       responsive: true,
       maintainAspectRatio: false,
       plugins: {
-        legend: {
-          display: false
-        },
-        tooltip: {
-          backgroundColor: '#111827',
-          padding: 9
-        }
+        legend: { display: false },
+        tooltip: { backgroundColor: '#111827', padding: 9 }
       },
       scales: {
         y: {
@@ -470,13 +604,8 @@ function createEconomyChart(canvasId, economy, bank) {
       responsive: true,
       maintainAspectRatio: false,
       plugins: {
-        legend: {
-          display: false
-        },
-        tooltip: {
-          backgroundColor: '#111827',
-          padding: 9
-        }
+        legend: { display: false },
+        tooltip: { backgroundColor: '#111827', padding: 9 }
       },
       scales: {
         y: {
@@ -494,11 +623,28 @@ function createEconomyChart(canvasId, economy, bank) {
 }
 
 function formatNumber(value) {
-  if (value === undefined || value === null) {
-    return 'n/a';
-  }
-
+  if (value === undefined || value === null) return 'n/a';
   return Number(value).toLocaleString('hu-HU');
+}
+
+function formatPercent(value) {
+  if (value === undefined || value === null || value === '') return 'n/a';
+  return `${Number(value).toLocaleString('hu-HU')}%`;
+}
+
+function formatFxRate(value, quote) {
+  if (value === undefined || value === null || value === '') return 'n/a';
+  return `1 EUR = ${Number(value).toLocaleString('hu-HU')} ${quote || ''}`;
+}
+
+function escapeHtml(value) {
+  if (value === undefined || value === null) return '';
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
 }
 
 function slugify(text) {
@@ -515,3 +661,4 @@ loadProfiles();
 
 </body>
 </html>
+
