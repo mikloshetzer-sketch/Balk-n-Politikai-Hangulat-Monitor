@@ -272,8 +272,8 @@ async function loadProfiles() {
       const slug = slugify(country.name);
 
       const parliamentChartId = `parliament-${slug}`;
-      const religionChartId = `religion-${slug}`;
       const ethnicityChartId = `ethnicity-${slug}`;
+      const religionChartId = `religion-${slug}`;
       const tradeChartId = `trade-${slug}`;
       const economyChartId = `economy-${slug}`;
 
@@ -293,6 +293,7 @@ async function loadProfiles() {
         <div class="card-inner">
 
           <div class="country-title">${escapeHtml(country.name)}</div>
+
           <div class="subtitle">
             Főváros: ${escapeHtml(country.capital || 'nincs adat')} |
             Államforma: ${escapeHtml(country.government_type || 'nincs adat')} |
@@ -301,20 +302,24 @@ async function loadProfiles() {
 
           <div class="section-box live-box">
             <h3>Live makroadatok</h3>
+
             <div class="metric-grid">
               <div class="metric">
                 EUR árfolyam
                 <strong>${formatFxRate(fx.rate, fx.quote || country.currency)}</strong>
               </div>
+
               <div class="metric">
                 FX dátum
                 <strong>${fx.date || 'n/a'}</strong>
               </div>
+
               <div class="metric">
                 Jegybanki kamat
                 <strong>${formatPercent(displayedRate)}</strong>
               </div>
             </div>
+
             <p class="small" style="margin-bottom:0;">
               FX megjegyzés: ${escapeHtml(fx.note || 'nincs megjegyzés')}<br>
               Jegybank: ${escapeHtml(liveBank.name || baseBank.source || 'nincs adat')}<br>
@@ -324,11 +329,13 @@ async function loadProfiles() {
 
           <div class="section-box">
             <h3>Politikai vezetés</h3>
+
             <div class="leader-grid">
               <div class="leader-box">
                 Államfő
                 <strong>${escapeHtml(leadership.president || 'nincs adat')}</strong>
               </div>
+
               <div class="leader-box">
                 Kormányfő
                 <strong>${escapeHtml(leadership.prime_minister || 'nincs adat')}</strong>
@@ -338,6 +345,7 @@ async function loadProfiles() {
 
           <div class="section-box">
             <h3>Társadalmi alapadatok</h3>
+
             <div class="metric-grid">
               <div class="metric">Lakosság<strong>${formatNumber(country.population)}</strong></div>
               <div class="metric">Medián életkor<strong>${country.median_age || 'n/a'}</strong></div>
@@ -369,6 +377,7 @@ async function loadProfiles() {
 
           <div class="section-box">
             <h3>Gazdasági mutatók</h3>
+
             <div class="metric-grid">
               <div class="metric">GDP<strong>${economy.gdp_billion_usd || 0} mrd USD</strong></div>
               <div class="metric">GDP/fő<strong>${formatNumber(economy.gdp_per_capita_usd)} USD</strong></div>
@@ -447,17 +456,18 @@ async function loadProfiles() {
 
 function getLiveCountry(countryName, liveData) {
   if (!liveData || !liveData.countries) return null;
+
   return liveData.countries.find(item => item.name === countryName) || null;
 }
 
 function buildNoDataNote(rows, text) {
   if (rows && rows.length) return '';
+
   return `<p class="small">${escapeHtml(text)}</p>`;
 }
 
 function buildSourcesHtml(country, globalSources, live) {
   const countrySources = country.sources || [];
-
   let html = '';
 
   if (country.data_quality) {
@@ -466,26 +476,43 @@ function buildSourcesHtml(country, globalSources, live) {
 
   if (countrySources.length) {
     html += '<ul class="source-list">';
+
     countrySources.forEach(source => {
       const fields = source.fields ? source.fields.join(', ') : 'általános országprofil-adat';
-      html += `<li><strong>${escapeHtml(source.name)}</strong> – ${escapeHtml(fields)}</li>`;
+
+      html += `
+        <li>
+          <strong>${escapeHtml(source.name)}</strong> – ${escapeHtml(fields)}
+        </li>
+      `;
     });
+
     html += '</ul>';
   } else if (globalSources.length) {
     html += '<ul class="source-list">';
+
     globalSources.forEach(source => {
-      html += `<li><strong>${escapeHtml(source.name)}</strong> – ${escapeHtml(source.use || '')}</li>`;
+      html += `
+        <li>
+          <strong>${escapeHtml(source.name)}</strong> – ${escapeHtml(source.use || '')}
+        </li>
+      `;
     });
+
     html += '</ul>';
   } else {
     html += '<p class="small">Forrásblokk még nincs kitöltve a country_profiles.json fájlban.</p>';
   }
 
   if (live) {
-    html += `<p class="small" style="margin-top:10px;">
-      Live FX/kamat kiegészítő: ${escapeHtml(live.fx?.source || 'ECB / jegybanki forrás')}.
-      Árfolyam dátuma: ${escapeHtml(live.fx?.date || 'nincs adat')}.
-    </p>`;
+    html += `
+      <p class="small" style="margin-top:10px;">
+        Live FX/kamat kiegészítő:
+        ${escapeHtml(live.fx?.source || 'ECB / jegybanki forrás')}.
+        Árfolyam dátuma:
+        ${escapeHtml(live.fx?.date || 'nincs adat')}.
+      </p>
+    `;
   }
 
   return html;
@@ -493,13 +520,16 @@ function buildSourcesHtml(country, globalSources, live) {
 
 function createPieChart(canvasId, rows, valueKey, labelKey, label) {
   const canvas = document.getElementById(canvasId);
+
   if (!canvas) return;
 
   if (chartStore[canvasId]) {
     chartStore[canvasId].destroy();
   }
 
-  const safeRows = rows && rows.length ? rows : [{ [labelKey]: 'Nincs adat', [valueKey]: 1 }];
+  const safeRows = rows && rows.length
+    ? rows
+    : [{ [labelKey]: 'Nincs adat', [valueKey]: 1 }];
 
   chartStore[canvasId] = new Chart(canvas, {
     type: 'doughnut',
@@ -533,6 +563,7 @@ function createPieChart(canvasId, rows, valueKey, labelKey, label) {
 
 function createTradeChart(canvasId, economy) {
   const canvas = document.getElementById(canvasId);
+
   if (!canvas) return;
 
   if (chartStore[canvasId]) {
@@ -578,6 +609,7 @@ function createTradeChart(canvasId, economy) {
 
 function createEconomyChart(canvasId, economy, bank) {
   const canvas = document.getElementById(canvasId);
+
   if (!canvas) return;
 
   if (chartStore[canvasId]) {
@@ -624,21 +656,25 @@ function createEconomyChart(canvasId, economy, bank) {
 
 function formatNumber(value) {
   if (value === undefined || value === null) return 'n/a';
+
   return Number(value).toLocaleString('hu-HU');
 }
 
 function formatPercent(value) {
   if (value === undefined || value === null || value === '') return 'n/a';
+
   return `${Number(value).toLocaleString('hu-HU')}%`;
 }
 
 function formatFxRate(value, quote) {
   if (value === undefined || value === null || value === '') return 'n/a';
+
   return `1 EUR = ${Number(value).toLocaleString('hu-HU')} ${quote || ''}`;
 }
 
 function escapeHtml(value) {
   if (value === undefined || value === null) return '';
+
   return String(value)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
