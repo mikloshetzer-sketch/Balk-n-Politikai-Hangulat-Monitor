@@ -1,7 +1,6 @@
 name: Update Balkan Political Monitor
 
 on:
-
   workflow_dispatch:
 
   schedule:
@@ -11,13 +10,10 @@ permissions:
   contents: write
 
 jobs:
-
   update-data:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Repository letöltése
         uses: actions/checkout@v4
 
@@ -35,15 +31,18 @@ jobs:
       - name: Social monitor script futtatása
         run: python scripts/fetch_social.py
 
+      - name: Social history frissítése
+        run: python scripts/update_social_history.py
+
       - name: Változások commitolása
         run: |
-
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
           git add docs/data/latest.json
           git add docs/data/history.json
           git add docs/data/social_latest.json
+          git add docs/data/social_history.json
 
           git commit -m "Automatikus adatfrissítés" || echo "Nincs változás"
 
