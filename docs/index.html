@@ -368,6 +368,7 @@ async function loadData() {
     const latestResponse = await fetch('./data/latest.json');
     const historyResponse = await fetch('./data/history.json');
     const socialResponse = await fetch('./data/social_latest.json');
+    const socialHistoryResponse = await fetch('./data/social_history.json');
     const reportsResponse = await fetch('./data/reports_index.json');
     const securityResponse = await fetch('./data/security_risk.json');
     const securityHistoryResponse = await fetch('./data/security_history.json');
@@ -375,6 +376,7 @@ async function loadData() {
     const latestData = await latestResponse.json();
     const historyData = await historyResponse.json();
     const socialData = await socialResponse.json();
+    const socialHistoryData = await socialHistoryResponse.json();
     const reportsData = await reportsResponse.json();
     const securityData = await securityResponse.json();
     const securityHistoryData = await securityHistoryResponse.json();
@@ -565,6 +567,7 @@ async function loadData() {
         trendChartId,
         country.name,
         historyData,
+        socialHistoryData,
         socialSignal,
         country.score
       );
@@ -745,6 +748,7 @@ function createMiniComboChart(
   canvasId,
   countryName,
   historyData,
+  socialHistoryData,
   socialSignal,
   currentNewsScore
 ) {
@@ -761,16 +765,31 @@ function createMiniComboChart(
     historyData
   );
 
-  let labels = historyRows.map(
-    row => shortDate(row.date)
+  const socialHistoryRows = getSocialHistory(
+    countryName,
+    socialHistoryData
   );
 
-  let newsIndex = historyRows.map(
-    row => row.score
+  const socialByDate = {};
+
+  socialHistoryRows.forEach(row => {
+    socialByDate[row.date] = row.social_score || 0;
+  });
+
+  let rawDates = historyRows.length
+    ? historyRows.map(row => row.date)
+    : socialHistoryRows.map(row => row.date);
+
+  let labels = rawDates.map(
+    date => shortDate(date)
   );
 
-  let socialIndex = historyRows.map(
-    row => row.social_score || 0
+  let newsIndex = historyRows.length
+    ? historyRows.map(row => row.score)
+    : rawDates.map(() => null);
+
+  let socialIndex = rawDates.map(
+    date => socialByDate[date] || 0
   );
 
   if (labels.length === 0) {
@@ -1006,6 +1025,30 @@ function getSecurityHistory(countryName, securityHistoryData) {
         security_score: country.security_score || 0,
         security_level: country.security_level || 'none',
         main_event_type: country.main_event_type || 'nincs adat'
+      });
+    }
+  });
+
+  return rows.slice(-7);
+}
+
+
+function getSocialHistory(countryName, socialHistoryData) {
+  const rows = [];
+  const records = socialHistoryData.records || [];
+
+  records.forEach(record => {
+    const country = record.countries.find(
+      item => item.name === countryName
+    );
+
+    if (country) {
+      rows.push({
+        date: record.date,
+        social_score: country.social_score || 0,
+        social_level: country.social_level || 'low',
+        mentions: country.mentions || 0,
+        main_topic: country.main_topic || 'nincs adat'
       });
     }
   });
