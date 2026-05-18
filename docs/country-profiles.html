@@ -72,6 +72,7 @@
     .small {
       color: #6b7280;
       font-size: 13px;
+      line-height: 1.45;
     }
 
     .dashboard-grid {
@@ -127,6 +128,11 @@
       background: #f9fafb;
     }
 
+    .trade-structure-box {
+      background: #f8fafc;
+      border-color: #cbd5e1;
+    }
+
     .metric-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -171,6 +177,10 @@
 
     .mini-chart-wrap {
       height: 160px;
+    }
+
+    .trade-chart-wrap {
+      height: 210px;
     }
 
     .source-list {
@@ -247,12 +257,14 @@ async function loadProfiles() {
     const liveResponse = await fetch('./data/country_profiles_live.json');
     const fxHistoryResponse = await fetch('./data/fx_history.json');
     const interestHistoryResponse = await fetch('./data/interest_rate_history.json');
+    const tradeStructureResponse = await fetch('./data/trade_structure.json');
 
     const data = await baseResponse.json();
 
     let liveData = null;
     let fxHistoryData = null;
     let interestHistoryData = null;
+    let tradeStructureData = null;
 
     try {
       liveData = await liveResponse.json();
@@ -270,6 +282,12 @@ async function loadProfiles() {
       interestHistoryData = await interestHistoryResponse.json();
     } catch (interestError) {
       console.warn('interest_rate_history.json nem tölthető be', interestError);
+    }
+
+    try {
+      tradeStructureData = await tradeStructureResponse.json();
+    } catch (tradeError) {
+      console.warn('trade_structure.json nem tölthető be', tradeError);
     }
 
     document.getElementById('updatedAt').textContent =
@@ -296,6 +314,8 @@ async function loadProfiles() {
       const economyChartId = `economy-${slug}`;
       const fxTrendChartId = `fx-trend-${slug}`;
       const interestTrendChartId = `interest-trend-${slug}`;
+      const exportStructureChartId = `export-structure-${slug}`;
+      const importStructureChartId = `import-structure-${slug}`;
 
       const economy = country.economy || {};
       const baseBank = country.central_bank || {};
@@ -303,6 +323,7 @@ async function loadProfiles() {
       const live = getLiveCountry(country.name, liveData);
       const liveBank = live?.central_bank || {};
       const fx = live?.fx || {};
+      const tradeStructure = getTradeStructure(country.name, tradeStructureData);
 
       const displayedRate = liveBank.policy_rate ?? baseBank.interest_rate ?? null;
 
@@ -431,6 +452,38 @@ async function loadProfiles() {
             </div>
           </div>
 
+          <div class="section-box trade-structure-box">
+            <h3>Fő export- és importtermékek</h3>
+
+            <p class="small">
+              ${escapeHtml(tradeStructure?.summary || 'Nincs részletes kereskedelmi termékszerkezeti adat.')}
+            </p>
+
+            <div style="margin-top:14px;">
+              <h3 style="margin-bottom:8px;">Fő exporttermékek</h3>
+              <div class="trade-chart-wrap">
+                <canvas id="${exportStructureChartId}"></canvas>
+              </div>
+            </div>
+
+            <div style="margin-top:16px;">
+              <h3 style="margin-bottom:8px;">Fő importtermékek</h3>
+              <div class="trade-chart-wrap">
+                <canvas id="${importStructureChartId}"></canvas>
+              </div>
+            </div>
+
+            <p class="small" style="margin-top:10px;">
+              <strong>Stratégiai sérülékenység:</strong>
+              ${escapeHtml(tradeStructure?.strategic_vulnerability || 'nincs adat')}
+            </p>
+
+            <p class="small">
+              <strong>Forrás és adatminőség:</strong>
+              ${buildTradeSourceText(tradeStructureData)}
+            </p>
+          </div>
+
           <div class="section-box">
             <h3>Gazdasági összevető mini chart</h3>
             <div class="mini-chart-wrap">
@@ -473,6 +526,19 @@ async function loadProfiles() {
       );
 
       createTradeChart(tradeChartId, economy);
+
+      createHorizontalTradeChart(
+        exportStructureChartId,
+        tradeStructure?.exports || [],
+        'Export relatív súly'
+      );
+
+      createHorizontalTradeChart(
+        importStructureChartId,
+        tradeStructure?.imports || [],
+        'Import relatív súly'
+      );
+
       createEconomyChart(economyChartId, economy, { interest_rate: displayedRate });
       createFxTrendChart(fxTrendChartId, country, fxHistoryData, fx);
       createInterestTrendChart(interestTrendChartId, country.name, interestHistoryData, displayedRate);
@@ -497,9 +563,28 @@ function getLiveCountry(countryName, liveData) {
   return liveData.countries.find(item => item.name === countryName) || null;
 }
 
+function getTradeStructure(countryName, tradeStructureData) {
+  if (!tradeStructureData || !tradeStructureData.countries) return null;
+  return tradeStructureData.countries.find(item => item.name === countryName) || null;
+}
+
 function buildNoDataNote(rows, text) {
   if (rows && rows.length) return '';
   return `<p class="small">${escapeHtml(text)}</p>`;
+}
+
+function buildTradeSourceText(tradeStructureData) {
+  if (!tradeStructureData) {
+    return 'A trade_structure.json nem érhető el. Az export/import termékszerkezeti adatok nem töltődtek be.';
+  }
+
+  const sources = tradeStructureData.sources || [];
+
+  const sourceNames = sources.length
+    ? sources.map(source => source.name).join(', ')
+    : 'OEC, World Bank WITS, EU trade factsheets';
+
+  return `${escapeHtml(sourceNames)}. A value mezők relatív vizualizációs súlyok, nem hivatalos százalékos arányok.`;
 }
 
 function buildSourcesHtml(country, globalSources, live) {
@@ -633,6 +718,62 @@ function createTradeChart(canvasId, economy) {
           grid: { color: 'rgba(0,0,0,0.06)' }
         },
         x: {
+          ticks: { font: { size: 10 } },
+          grid: { display: false }
+        }
+      }
+    }
+  });
+}
+
+function createHorizontalTradeChart(canvasId, rows, label) {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+
+  if (chartStore[canvasId]) {
+    chartStore[canvasId].destroy();
+  }
+
+  const safeRows = rows && rows.length
+    ? rows
+    : [{ product: 'Nincs adat', value: 0 }];
+
+  chartStore[canvasId] = new Chart(canvas, {
+    type: 'bar',
+    data: {
+      labels: safeRows.map(item => item.product),
+      datasets: [{
+        label: label,
+        data: safeRows.map(item => item.value || 0),
+        borderWidth: 0,
+        borderRadius: 6,
+        barThickness: 16
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#111827',
+          padding: 9,
+          callbacks: {
+            label: function(context) {
+              return `Relatív súly: ${context.raw}`;
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          suggestedMax: 35,
+          ticks: { font: { size: 10 } },
+          grid: { color: 'rgba(0,0,0,0.06)' }
+        },
+        y: {
           ticks: { font: { size: 10 } },
           grid: { display: false }
         }
