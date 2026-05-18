@@ -3,26 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Balkán NGO Támogatási Monitor</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <style>
     :root {
       --bg: #f3f4f6;
       --header: #111827;
       --card: #ffffff;
-      --muted: #6b7280;
       --text: #111827;
+      --muted: #6b7280;
       --border: #e5e7eb;
       --blue: #2563eb;
       --red: #ef4444;
       --orange: #f97316;
       --green: #16a34a;
+      --purple: #7c3aed;
       --soft-blue: #eff6ff;
       --soft-orange: #fff7ed;
       --soft-red: #fef2f2;
       --soft-green: #f0fdf4;
       --soft-purple: #f5f3ff;
-      --purple-border: #ddd6fe;
     }
 
     * {
@@ -31,85 +34,86 @@
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
       background: var(--bg);
+      font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
     }
 
     header {
       background: var(--header);
-      color: #fff;
-      padding: 24px 20px 34px;
+      color: white;
+      padding: 26px 20px 34px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 28px;
-      font-weight: 800;
+      font-size: 30px;
     }
 
     header p {
-      margin: 8px 0 0;
-      font-size: 14px;
+      margin-top: 8px;
       color: #d1d5db;
+      font-size: 14px;
     }
 
     main {
-      max-width: 1220px;
+      max-width: 1450px;
       margin: -22px auto 40px;
-      padding: 0 18px;
+      padding: 0 16px;
+    }
+
+    .top-panel,
+    .analytics-panel,
+    .country-card {
+      background: white;
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      border: 1px solid var(--border);
     }
 
     .top-panel {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 18px;
-      margin-bottom: 16px;
-      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+      margin-bottom: 18px;
     }
 
     .meta-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
       margin-bottom: 14px;
     }
 
     .meta-box {
-      background: #f9fafb;
       border: 1px solid var(--border);
-      border-radius: 10px;
+      border-radius: 12px;
       padding: 12px;
-      min-height: 72px;
+      background: #f9fafb;
     }
 
     .meta-box h3 {
       margin: 0 0 6px;
       font-size: 13px;
-      color: #111827;
     }
 
     .meta-box p {
       margin: 0;
       font-size: 12px;
-      line-height: 1.45;
       color: var(--muted);
+      line-height: 1.45;
     }
 
     .button-row {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-top: 10px;
     }
 
     .btn {
       display: inline-block;
       text-decoration: none;
       background: #0f172a;
-      color: #fff;
+      color: white;
       border-radius: 8px;
       padding: 9px 12px;
       font-size: 12px;
@@ -120,6 +124,86 @@
       background: #1e293b;
     }
 
+    .analytics-panel {
+      margin-bottom: 18px;
+    }
+
+    .analytics-panel h2 {
+      margin: 0 0 12px;
+      font-size: 20px;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .summary-card {
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 13px;
+      background: #f9fafb;
+    }
+
+    .summary-card.blue {
+      background: var(--soft-blue);
+      border-color: #bfdbfe;
+    }
+
+    .summary-card.orange {
+      background: var(--soft-orange);
+      border-color: #fed7aa;
+    }
+
+    .summary-card.purple {
+      background: var(--soft-purple);
+      border-color: #ddd6fe;
+    }
+
+    .summary-card.red {
+      background: var(--soft-red);
+      border-color: #fecaca;
+    }
+
+    .summary-label {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 5px;
+    }
+
+    .summary-value {
+      font-size: 26px;
+      font-weight: 800;
+    }
+
+    .summary-sub {
+      font-size: 12px;
+      color: #4b5563;
+      margin-top: 4px;
+      line-height: 1.35;
+    }
+
+    .chart-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 14px;
+    }
+
+    .chart-box {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #ffffff;
+      padding: 14px;
+      min-height: 300px;
+    }
+
+    .chart-box h3 {
+      margin: 0 0 10px;
+      font-size: 14px;
+    }
+
     .country-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -127,12 +211,7 @@
     }
 
     .country-card {
-      background: var(--card);
-      border-radius: 12px;
-      border: 1px solid var(--border);
       border-left: 5px solid var(--blue);
-      padding: 14px;
-      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.07);
     }
 
     .country-card.risk-low {
@@ -162,8 +241,8 @@
 
     .country-title p {
       margin: 3px 0 0;
-      font-size: 11px;
       color: var(--muted);
+      font-size: 11px;
     }
 
     .risk-badge {
@@ -216,13 +295,12 @@
 
     .section.purple {
       background: var(--soft-purple);
-      border-color: var(--purple-border);
+      border-color: #ddd6fe;
     }
 
     .section h3 {
       margin: 0 0 8px;
       font-size: 13px;
-      color: #111827;
     }
 
     .metric-row {
@@ -247,7 +325,6 @@
     .metric .value {
       font-size: 17px;
       font-weight: 800;
-      color: #111827;
     }
 
     .metric .sub {
@@ -282,7 +359,7 @@
     }
 
     .bar-fill.non-western {
-      background: #7c3aed;
+      background: var(--purple);
     }
 
     .tag-row {
@@ -350,10 +427,6 @@
       text-decoration: none;
     }
 
-    .source-list a:hover {
-      text-decoration: underline;
-    }
-
     .loading {
       background: white;
       border: 1px solid var(--border);
@@ -370,10 +443,13 @@
       padding: 24px;
     }
 
-    @media (max-width: 1000px) {
-      .country-grid,
-      .meta-grid {
+    @media (max-width: 1100px) {
+      .country-grid {
         grid-template-columns: 1fr 1fr;
+      }
+
+      .chart-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -383,7 +459,6 @@
       }
 
       .country-grid,
-      .meta-grid,
       .metric-row {
         grid-template-columns: 1fr;
       }
@@ -426,6 +501,48 @@
       </div>
     </section>
 
+    <section class="analytics-panel">
+      <h2>Regionális NGO-finanszírozási kitettség</h2>
+
+      <div class="summary-grid">
+        <div class="summary-card blue">
+          <div class="summary-label">Átlagos EU-donorarány</div>
+          <div class="summary-value" id="avgEu">–</div>
+          <div class="summary-sub">Az EU továbbra is a legfontosabb civil és reformfinanszírozó.</div>
+        </div>
+
+        <div class="summary-card orange">
+          <div class="summary-label">Átlagos USA-donorarány</div>
+          <div class="summary-value" id="avgUsa">–</div>
+          <div class="summary-sub">A média, jogállamiság és demokrácia területén marad jelentős.</div>
+        </div>
+
+        <div class="summary-card purple">
+          <div class="summary-label">Nem nyugati jelenlét</div>
+          <div class="summary-value" id="avgNonWestern">–</div>
+          <div class="summary-sub">Orosz, kínai, török és öböl-állami csatornák összesített súlya.</div>
+        </div>
+
+        <div class="summary-card red">
+          <div class="summary-label">Regionális kitettségi score</div>
+          <div class="summary-value" id="avgRisk">–</div>
+          <div class="summary-sub">Becsült politikai és donorfüggőségi kockázat 0–100 skálán.</div>
+        </div>
+      </div>
+
+      <div class="chart-grid">
+        <div class="chart-box">
+          <h3>Donorarány trend 2024–2026</h3>
+          <canvas id="donorTrendChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+          <h3>Országonkénti kitettségi score</h3>
+          <canvas id="riskChart"></canvas>
+        </div>
+      </div>
+    </section>
+
     <section id="cards" class="country-grid">
       <div class="loading">NGO támogatási adatok betöltése...</div>
     </section>
@@ -436,14 +553,11 @@
   </footer>
 
   <script>
-    const DATA_URL = "data/ngo_funding.json";
+    const FUNDING_URL = "data/ngo_funding.json";
+    const HISTORY_URL = "data/ngo_history.json";
 
-    function riskClass(level) {
-      const value = String(level || "").toLowerCase();
-      if (value.includes("alacsony")) return "low";
-      if (value.includes("magas")) return "high";
-      return "medium";
-    }
+    let donorTrendChart = null;
+    let riskChart = null;
 
     function escapeHtml(value) {
       return String(value ?? "")
@@ -452,6 +566,13 @@
         .replaceAll(">", "&gt;")
         .replaceAll('"', "&quot;")
         .replaceAll("'", "&#039;");
+    }
+
+    function riskClass(level) {
+      const value = String(level || "").toLowerCase();
+      if (value.includes("alacsony")) return "low";
+      if (value.includes("magas")) return "high";
+      return "medium";
     }
 
     function isNonWesternDonor(name) {
@@ -524,8 +645,15 @@
       `;
     }
 
-    function renderCard(country) {
+    function latestHistoryForCountry(historyData, countryName) {
+      const item = historyData.countries.find(c => c.country === countryName);
+      if (!item || !item.history || !item.history.length) return null;
+      return item.history[item.history.length - 1];
+    }
+
+    function renderCard(country, historyData) {
       const rClass = riskClass(country.political_sensitivity);
+      const latest = latestHistoryForCountry(historyData, country.country);
 
       return `
         <article class="country-card risk-${rClass}">
@@ -558,6 +686,7 @@
                 <div class="sub">0–100 skála</div>
               </div>
             </div>
+
             <p class="analysis-text" style="margin-top:8px;">Fő szektorok:</p>
             ${renderTags(country.main_ngo_types)}
           </section>
@@ -575,6 +704,27 @@
           <section class="section purple">
             <h3>Nem nyugati befolyási csatornák</h3>
             ${renderInfluence(country.non_western_influence)}
+          </section>
+
+          <section class="section red">
+            <h3>Kitettségi score</h3>
+            <div class="metric-row">
+              <div class="metric">
+                <div class="label">EU</div>
+                <div class="value">${latest ? latest.eu + "%" : "–"}</div>
+                <div class="sub">aktuális trendadat</div>
+              </div>
+              <div class="metric">
+                <div class="label">Nem nyugati</div>
+                <div class="value">${latest ? latest.non_western + "%" : "–"}</div>
+                <div class="sub">összesített jelenlét</div>
+              </div>
+              <div class="metric">
+                <div class="label">Risk score</div>
+                <div class="value">${latest ? latest.risk_score : "–"}</div>
+                <div class="sub">0–100 skála</div>
+              </div>
+            </div>
           </section>
 
           <section class="section">
@@ -595,28 +745,185 @@
       `;
     }
 
+    function average(values) {
+      if (!values.length) return 0;
+      return values.reduce((sum, value) => sum + value, 0) / values.length;
+    }
+
+    function buildSummary(historyData) {
+      const latestRows = historyData.countries
+        .map(c => c.history[c.history.length - 1])
+        .filter(Boolean);
+
+      const avgEu = average(latestRows.map(r => r.eu));
+      const avgUsa = average(latestRows.map(r => r.usa));
+      const avgNonWestern = average(latestRows.map(r => r.non_western));
+      const avgRisk = average(latestRows.map(r => r.risk_score));
+
+      document.getElementById("avgEu").textContent = avgEu.toFixed(1) + "%";
+      document.getElementById("avgUsa").textContent = avgUsa.toFixed(1) + "%";
+      document.getElementById("avgNonWestern").textContent = avgNonWestern.toFixed(1) + "%";
+      document.getElementById("avgRisk").textContent = avgRisk.toFixed(1);
+    }
+
+    function buildTrendChart(historyData) {
+      const years = historyData.countries[0].history.map(row => row.year);
+
+      const euByYear = years.map(year => {
+        const values = historyData.countries.map(c => {
+          const row = c.history.find(h => h.year === year);
+          return row ? row.eu : 0;
+        });
+        return average(values);
+      });
+
+      const usaByYear = years.map(year => {
+        const values = historyData.countries.map(c => {
+          const row = c.history.find(h => h.year === year);
+          return row ? row.usa : 0;
+        });
+        return average(values);
+      });
+
+      const nonWesternByYear = years.map(year => {
+        const values = historyData.countries.map(c => {
+          const row = c.history.find(h => h.year === year);
+          return row ? row.non_western : 0;
+        });
+        return average(values);
+      });
+
+      const ctx = document.getElementById("donorTrendChart");
+
+      if (donorTrendChart) donorTrendChart.destroy();
+
+      donorTrendChart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: years,
+          datasets: [
+            {
+              label: "EU átlag",
+              data: euByYear,
+              borderWidth: 3,
+              tension: 0.25
+            },
+            {
+              label: "USA átlag",
+              data: usaByYear,
+              borderWidth: 3,
+              tension: 0.25
+            },
+            {
+              label: "Nem nyugati átlag",
+              data: nonWesternByYear,
+              borderWidth: 3,
+              tension: 0.25
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: "bottom"
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 55,
+              ticks: {
+                callback: value => value + "%"
+              }
+            }
+          }
+        }
+      });
+    }
+
+    function buildRiskChart(historyData) {
+      const countries = historyData.countries.map(c => c.country);
+      const scores = historyData.countries.map(c => {
+        const latest = c.history[c.history.length - 1];
+        return latest ? latest.risk_score : 0;
+      });
+
+      const ctx = document.getElementById("riskChart");
+
+      if (riskChart) riskChart.destroy();
+
+      riskChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: countries,
+          datasets: [
+            {
+              label: "Risk score",
+              data: scores,
+              borderWidth: 1
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100
+            },
+            x: {
+              ticks: {
+                maxRotation: 45,
+                minRotation: 0
+              }
+            }
+          }
+        }
+      });
+    }
+
+    async function loadJson(url) {
+      const response = await fetch(url, { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error("Nem sikerült betölteni: " + url);
+      }
+      return response.json();
+    }
+
     async function loadData() {
       const cards = document.getElementById("cards");
 
       try {
-        const response = await fetch(DATA_URL, { cache: "no-store" });
-
-        if (!response.ok) {
-          throw new Error("Nem sikerült betölteni az adatfájlt: " + DATA_URL);
-        }
-
-        const data = await response.json();
+        const [fundingData, historyData] = await Promise.all([
+          loadJson(FUNDING_URL),
+          loadJson(HISTORY_URL)
+        ]);
 
         document.getElementById("sourceMeta").textContent =
-          data.meta?.source_note || "OECD CRS, IATI, EU, USAID, UNDP és nyilvános donoradatok.";
+          fundingData.meta?.source_note || "OECD CRS, IATI, EU, USAID, UNDP és nyilvános donoradatok.";
 
         document.getElementById("updatedMeta").textContent =
-          data.meta?.updated_at || "Nincs frissítési dátum.";
+          fundingData.meta?.updated_at || historyData.updated_at || "Nincs frissítési dátum.";
 
         document.getElementById("methodMeta").textContent =
-          data.meta?.methodology || "Az index becsült NGO-aktivitást, donorarányokat, támogatási típusokat és politikai érzékenységet kombinál.";
+          fundingData.meta?.methodology || "Az index becsült NGO-aktivitást, donorarányokat, támogatási típusokat és politikai érzékenységet kombinál.";
 
-        cards.innerHTML = data.countries.map(renderCard).join("");
+        buildSummary(historyData);
+        buildTrendChart(historyData);
+        buildRiskChart(historyData);
+
+        cards.innerHTML = fundingData.countries
+          .map(country => renderCard(country, historyData))
+          .join("");
+
       } catch (error) {
         cards.innerHTML = `
           <div class="loading">
