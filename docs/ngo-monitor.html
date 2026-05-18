@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balkán NGO Támogatási Monitor</title>
+
+  <style>
+    :root {
+      --bg: #f3f4f6;
+      --header: #111827;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --text: #111827;
+      --border: #e5e7eb;
+      --blue: #2563eb;
+      --red: #ef4444;
+      --orange: #f97316;
+      --green: #16a34a;
+      --yellow: #eab308;
+      --soft-blue: #eff6ff;
+      --soft-orange: #fff7ed;
+      --soft-red: #fef2f2;
+      --soft-green: #f0fdf4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--header);
+      color: #fff;
+      padding: 24px 20px 34px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      font-size: 14px;
+      color: #d1d5db;
+    }
+
+    main {
+      max-width: 1220px;
+      margin: -22px auto 40px;
+      padding: 0 18px;
+    }
+
+    .top-panel {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .meta-box {
+      background: #f9fafb;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px;
+      min-height: 72px;
+    }
+
+    .meta-box h3 {
+      margin: 0 0 6px;
+      font-size: 13px;
+      color: #111827;
+    }
+
+    .meta-box p {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.45;
+      color: var(--muted);
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: #0f172a;
+      color: #fff;
+      border-radius: 8px;
+      padding: 9px 12px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .btn:hover {
+      background: #1e293b;
+    }
+
+    .country-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .country-card {
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--blue);
+      padding: 14px;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.07);
+    }
+
+    .country-card.risk-low {
+      border-left-color: var(--green);
+    }
+
+    .country-card.risk-medium {
+      border-left-color: var(--orange);
+    }
+
+    .country-card.risk-high {
+      border-left-color: var(--red);
+    }
+
+    .country-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: flex-start;
+      margin-bottom: 8px;
+    }
+
+    .country-title h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .country-title p {
+      margin: 3px 0 0;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .risk-badge {
+      border-radius: 999px;
+      padding: 5px 8px;
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+      background: var(--soft-orange);
+      color: #9a3412;
+    }
+
+    .risk-badge.low {
+      background: var(--soft-green);
+      color: #166534;
+    }
+
+    .risk-badge.medium {
+      background: var(--soft-orange);
+      color: #9a3412;
+    }
+
+    .risk-badge.high {
+      background: var(--soft-red);
+      color: #991b1b;
+    }
+
+    .section {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 10px;
+      background: #ffffff;
+    }
+
+    .section.blue {
+      background: var(--soft-blue);
+      border-color: #bfdbfe;
+    }
+
+    .section.orange {
+      background: var(--soft-orange);
+      border-color: #fed7aa;
+    }
+
+    .section.red {
+      background: var(--soft-red);
+      border-color: #fecaca;
+    }
+
+    .section h3 {
+      margin: 0 0 8px;
+      font-size: 13px;
+      color: #111827;
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+    }
+
+    .metric {
+      background: rgba(255,255,255,0.75);
+      border-radius: 8px;
+      padding: 8px;
+      border: 1px solid rgba(229,231,235,0.85);
+    }
+
+    .metric .label {
+      font-size: 10px;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+
+    .metric .value {
+      font-size: 17px;
+      font-weight: 800;
+      color: #111827;
+    }
+
+    .metric .sub {
+      font-size: 10px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .bar-row {
+      margin: 7px 0;
+    }
+
+    .bar-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      margin-bottom: 3px;
+      color: #374151;
+    }
+
+    .bar-track {
+      height: 8px;
+      background: #e5e7eb;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 8px;
+      background: var(--blue);
+      border-radius: 999px;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .tag {
+      font-size: 11px;
+      background: #f3f4f6;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 5px 7px;
+      color: #374151;
+    }
+
+    .analysis-text {
+      font-size: 12px;
+      line-height: 1.5;
+      color: #374151;
+      margin: 0;
+    }
+
+    .source-list {
+      margin: 6px 0 0;
+      padding-left: 16px;
+      font-size: 11px;
+      color: #4b5563;
+      line-height: 1.45;
+    }
+
+    .source-list a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+
+    .source-list a:hover {
+      text-decoration: underline;
+    }
+
+    .loading {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      padding: 24px;
+    }
+
+    @media (max-width: 1000px) {
+      .country-grid,
+      .meta-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 22px;
+      }
+
+      .country-grid,
+      .meta-grid,
+      .metric-row {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        margin-top: -16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Balkán NGO Támogatási Monitor</h1>
+    <p>Civil szervezetek, donorországok, támogatási mintázatok és külső befolyási kockázatok</p>
+  </header>
+
+  <main>
+    <section class="top-panel">
+      <div class="meta-grid">
+        <div class="meta-box">
+          <h3>Adatforrás</h3>
+          <p id="sourceMeta">Betöltés...</p>
+        </div>
+        <div class="meta-box">
+          <h3>Utolsó frissítés</h3>
+          <p id="updatedMeta">Betöltés...</p>
+        </div>
+        <div class="meta-box">
+          <h3>Módszertan</h3>
+          <p id="methodMeta">Betöltés...</p>
+        </div>
+      </div>
+
+      <div class="button-row">
+        <a class="btn" href="index.html">Vissza a politikai hangulatmonitorhoz</a>
+        <a class="btn" href="country-profiles.html">Országprofil Dashboard</a>
+        <a class="btn" href="security-map.html">Security Risk Map</a>
+        <a class="btn" href="country-comparison.html">Country Comparison</a>
+      </div>
+    </section>
+
+    <section id="cards" class="country-grid">
+      <div class="loading">NGO támogatási adatok betöltése...</div>
+    </section>
+  </main>
+
+  <footer>
+    Balkán NGO Támogatási Monitor – GitHub Pages
+  </footer>
+
+  <script>
+    const DATA_URL = "data/ngo_funding.json";
+
+    function riskClass(level) {
+      const value = String(level || "").toLowerCase();
+      if (value.includes("alacsony")) return "low";
+      if (value.includes("magas")) return "high";
+      return "medium";
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function renderBars(items) {
+      return items.map(item => `
+        <div class="bar-row">
+          <div class="bar-label">
+            <span>${escapeHtml(item.name)}</span>
+            <strong>${escapeHtml(item.value)}%</strong>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:${Number(item.value) || 0}%"></div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderTags(items) {
+      return `
+        <div class="tag-row">
+          ${(items || []).map(item => `<span class="tag">${escapeHtml(item)}</span>`).join("")}
+        </div>
+      `;
+    }
+
+    function renderSources(sources) {
+      if (!sources || !sources.length) return "";
+      return `
+        <ol class="source-list">
+          ${sources.map(src => `
+            <li>
+              <a href="${escapeHtml(src.url)}" target="_blank" rel="noopener noreferrer">
+                ${escapeHtml(src.label)}
+              </a>
+            </li>
+          `).join("")}
+        </ol>
+      `;
+    }
+
+    function renderCard(country) {
+      const rClass = riskClass(country.political_sensitivity);
+
+      return `
+        <article class="country-card risk-${rClass}">
+          <div class="country-title">
+            <div>
+              <h2>${escapeHtml(country.country)}</h2>
+              <p>${escapeHtml(country.region_note || "")}</p>
+            </div>
+            <span class="risk-badge ${rClass}">
+              ${escapeHtml(country.political_sensitivity)}
+            </span>
+          </div>
+
+          <section class="section blue">
+            <h3>NGO aktivitási réteg</h3>
+            <div class="metric-row">
+              <div class="metric">
+                <div class="label">NGO aktivitási index</div>
+                <div class="value">${escapeHtml(country.ngo_activity_index)}</div>
+                <div class="sub">0–100 skála</div>
+              </div>
+              <div class="metric">
+                <div class="label">Becsült aktív NGO</div>
+                <div class="value">${escapeHtml(country.estimated_active_ngos)}</div>
+                <div class="sub">nyilvántartás + becslés</div>
+              </div>
+              <div class="metric">
+                <div class="label">Átláthatóság</div>
+                <div class="value">${escapeHtml(country.transparency_score)}</div>
+                <div class="sub">0–100 skála</div>
+              </div>
+            </div>
+            <p class="analysis-text" style="margin-top:8px;">
+              Fő szektorok:
+            </p>
+            ${renderTags(country.main_ngo_types)}
+          </section>
+
+          <section class="section orange">
+            <h3>Donor dominancia</h3>
+            ${renderBars(country.donor_share)}
+            <p class="analysis-text">
+              <strong>Domináns támogató:</strong> ${escapeHtml(country.dominant_donor)}
+              <br>
+              <strong>Koncentrációs kockázat:</strong> ${escapeHtml(country.donor_concentration_risk)}
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>Támogatási típusok</h3>
+            ${renderBars(country.support_type_share)}
+          </section>
+
+          <section class="section red">
+            <h3>Politikai érzékenység</h3>
+            <p class="analysis-text">${escapeHtml(country.assessment)}</p>
+          </section>
+
+          <section class="section">
+            <h3>Források</h3>
+            ${renderSources(country.sources)}
+          </section>
+        </article>
+      `;
+    }
+
+    async function loadData() {
+      const cards = document.getElementById("cards");
+
+      try {
+        const response = await fetch(DATA_URL, { cache: "no-store" });
+
+        if (!response.ok) {
+          throw new Error("Nem sikerült betölteni az adatfájlt: " + DATA_URL);
+        }
+
+        const data = await response.json();
+
+        document.getElementById("sourceMeta").textContent = data.meta?.source_note || "OECD CRS, IATI, EU, USAID, UNDP és nyilvános donoradatok.";
+        document.getElementById("updatedMeta").textContent = data.meta?.updated_at || "Nincs frissítési dátum.";
+        document.getElementById("methodMeta").textContent = data.meta?.methodology || "Az index becsült NGO-aktivitást, donorarányokat, támogatási típusokat és politikai érzékenységet kombinál.";
+
+        cards.innerHTML = data.countries.map(renderCard).join("");
+      } catch (error) {
+        cards.innerHTML = `
+          <div class="loading">
+            Hiba történt az NGO-adatok betöltésekor.<br>
+            <small>${escapeHtml(error.message)}</small>
+          </div>
+        `;
+      }
+    }
+
+    loadData();
+  </script>
+</body>
+</html>
