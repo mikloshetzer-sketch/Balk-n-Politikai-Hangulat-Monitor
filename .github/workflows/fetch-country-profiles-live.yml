@@ -30,7 +30,10 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add docs/data/country_profiles_live.json
+          git add \
+            docs/data/country_profiles_live.json \
+            docs/data/fx_history.json \
+            docs/data/interest_rate_history.json
 
           git commit -m "Országprofil live makroadatok frissítése" || echo "Nincs változás"
 
