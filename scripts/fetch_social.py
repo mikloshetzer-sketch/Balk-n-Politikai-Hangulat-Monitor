@@ -89,8 +89,25 @@ POLITICAL_WORDS = [
     "minister of energy", "digital connectivity", "serbia-nato",
     "eu membership", "foreign agent", "constitutional court",
     "secession", "separatist", "referendum", "embassy", "diplomat",
-    "geopolitical", "geopolitics", "rule-of-law", "rule of law",
-    "organized crime", "media freedom", "press freedom", "judiciary"
+    "geopolitical", "geopolitics", "rule-of-law", "organized crime",
+    "media freedom", "press freedom", "judiciary", "constitutional",
+    "sovereignty", "international envoy", "special envoy", "stability pact",
+    "normalization", "bilateral relations", "recognition", "peacekeeping",
+    "migration policy", "asylum policy", "eu integration"
+]
+
+
+STRONG_POLITICAL_WORDS = [
+    "government", "president", "prime minister", "minister", "parliament",
+    "opposition", "election", "elections", "vote", "party", "coalition",
+    "court", "police", "protest", "protests", "democracy", "corruption",
+    "european union", "nato", "accession", "enlargement", "dialogue",
+    "border", "security", "sanctions", "violence", "crisis", "conflict",
+    "tension", "war", "minority", "ohr", "kfor", "high representative",
+    "state collapse", "peace envoy", "ruling party", "police violence",
+    "eu membership", "foreign agent", "constitutional court", "secession",
+    "separatist", "referendum", "organized crime", "media freedom",
+    "press freedom", "judiciary", "normalization", "recognition"
 ]
 
 
@@ -105,10 +122,45 @@ NOISE_WORDS = [
     "alexanderthegreat", "hellenistic", "history", "earthquake",
     "earth quake", "tërmet", "earthquake report", "travelphoto",
     "book", "books", "novel", "literature", "culture", "art",
-    "gallery", "museum", "weather", "sports", "ukraine",
-    "latin americans", "google gemini", "cybersecurity review",
-    "crypto", "bitcoin", "airdrop", "giveaway", "onlyfans", "porn",
-    "casino", "betting", "slot", "trading signal", "nft", "meme coin"
+    "gallery", "museum", "weather", "sports", "latin americans",
+    "google gemini", "cybersecurity review", "crypto", "bitcoin",
+    "airdrop", "giveaway", "onlyfans", "porn", "casino", "betting",
+    "slot", "trading signal", "nft", "meme coin", "superhero",
+    "superheroes", "fictional universe", "paranormal", "cheap way",
+    "train from", "bus from", "flight", "airport", "discord channel",
+    "weekly free-for-all", "casual conversations", "childhood memory",
+    "babysitter", "restaurant", "dating", "moving to", "language help",
+    "translation help", "visa question", "tourist", "itinerary"
+]
+
+
+LOW_QUALITY_PATTERNS = [
+    "weekly free-for-all",
+    "casual conversations",
+    "what would be",
+    "what do you think",
+    "how do i get",
+    "cheap way",
+    "brussels to",
+    "travel to",
+    "moving to",
+    "visiting",
+    "tourist",
+    "superheroes",
+    "fictional universe",
+    "childhood memory",
+    "normal childhood",
+    "discord channel",
+    "where can i buy",
+    "restaurant",
+    "hotel",
+    "airport",
+    "train station",
+    "bus ticket",
+    "song",
+    "movie",
+    "football",
+    "basketball"
 ]
 
 
@@ -119,7 +171,9 @@ NEGATIVE_WORDS = [
     "clash", "riot", "boycott", "polarization", "separatism",
     "nationalism", "blocked", "deadlock", "police violence",
     "assault", "collapse", "resignation", "punitive", "detention",
-    "crackdown", "authoritarian", "ethnic tension", "border incident"
+    "crackdown", "authoritarian", "ethnic tension", "border incident",
+    "indictment", "illegal", "suspect", "abuse", "pressure",
+    "intimidation", "violent", "destabilization"
 ]
 
 
@@ -128,7 +182,32 @@ POSITIVE_WORDS = [
     "stability", "dialogue", "progress", "development", "support",
     "partnership", "integration", "talks", "deal", "funding",
     "membership", "negotiations", "eu accession", "joining the eu",
-    "stabilization", "peace process", "reconciliation"
+    "stabilization", "peace process", "reconciliation", "intergovernmental conference"
+]
+
+
+TRUSTED_SOURCE_HINTS = [
+    "balkaninsight.com",
+    "balkan insight",
+    "euractiv",
+    "politico",
+    "reuters",
+    "apnews",
+    "associated press",
+    "bbc",
+    "dw.com",
+    "rferl",
+    "rfe/rl",
+    "aljazeera",
+    "euronews",
+    "consilium.europa.eu",
+    "eucouncil",
+    "european commission",
+    "eu commission",
+    "nato",
+    "osce",
+    "united nations",
+    "un "
 ]
 
 
@@ -156,7 +235,7 @@ def normalize_text(text):
 
 
 def parse_feed(url):
-    feedparser.USER_AGENT = "Balkan-Political-Social-Monitor/1.1"
+    feedparser.USER_AGENT = "Balkan-Political-Social-Monitor/1.2"
     return feedparser.parse(url)
 
 
@@ -216,8 +295,12 @@ def is_noise(text_lc):
     return has_any(text_lc, NOISE_WORDS)
 
 
-def is_political(text_lc):
-    return has_any(text_lc, POLITICAL_WORDS)
+def is_low_quality(text_lc):
+    return has_any(text_lc, LOW_QUALITY_PATTERNS)
+
+
+def is_trusted_source(text_lc):
+    return has_any(text_lc, TRUSTED_SOURCE_HINTS)
 
 
 def match_country(text_lc):
@@ -232,24 +315,59 @@ def match_country(text_lc):
     return matched
 
 
-def passes_quality_filter(text_lc, countries):
+def quality_score(text_lc, source_type):
+    score = 0
+
+    political_hits = count_hits(text_lc, POLITICAL_WORDS)
+    strong_hits = count_hits(text_lc, STRONG_POLITICAL_WORDS)
+    negative_hits = count_hits(text_lc, NEGATIVE_WORDS)
+    positive_hits = count_hits(text_lc, POSITIVE_WORDS)
+
+    score += political_hits
+    score += strong_hits * 2
+    score += negative_hits
+    score += positive_hits
+
+    if is_trusted_source(text_lc):
+        score += 3
+
+    if source_type == "reddit":
+        score -= 1
+
+    if source_type == "mastodon":
+        score -= 0
+
+    if is_noise(text_lc):
+        score -= 6
+
+    if is_low_quality(text_lc):
+        score -= 8
+
+    return score
+
+
+def passes_quality_filter(text_lc, countries, source_type):
     if not countries:
         return False
 
     if is_noise(text_lc):
         return False
 
-    political_hits = count_hits(text_lc, POLITICAL_WORDS)
-    negative_hits = count_hits(text_lc, NEGATIVE_WORDS)
-    positive_hits = count_hits(text_lc, POSITIVE_WORDS)
+    if is_low_quality(text_lc):
+        return False
 
-    if political_hits >= 1:
-        return True
+    q_score = quality_score(text_lc, source_type)
 
-    if negative_hits >= 1 or positive_hits >= 1:
-        return True
+    if source_type == "reddit":
+        return q_score >= 4
 
-    return False
+    if source_type == "mastodon":
+        return q_score >= 3
+
+    if source_type == "x":
+        return q_score >= 4
+
+    return q_score >= 4
 
 
 def collect_rss_posts():
@@ -277,13 +395,13 @@ def collect_rss_posts():
             if not is_recent(published):
                 continue
 
-            text = f"{title} {summary}"
+            text = f"{title} {summary} {link}"
             text_plain = normalize_text(text)
             text_lc = text_plain.lower()
 
             countries = match_country(text_lc)
 
-            if not passes_quality_filter(text_lc, countries):
+            if not passes_quality_filter(text_lc, countries, source_type):
                 continue
 
             key = link or text_plain[:160]
@@ -302,7 +420,9 @@ def collect_rss_posts():
                 "seen_date": published,
                 "matched_countries": countries,
                 "engagement": 0,
-                "quality": "rss_filtered"
+                "quality": "rss_filtered",
+                "quality_score": quality_score(text_lc, source_type),
+                "trusted_source_hint": is_trusted_source(text_lc)
             })
 
     return all_posts
@@ -318,10 +438,7 @@ def build_x_query(country):
         "OR democracy OR \"rule of law\")"
     )
 
-    return (
-        f"{base} {political_context} "
-        "-is:retweet -is:reply lang:en"
-    )
+    return f"{base} {political_context} -is:retweet -is:reply lang:en"
 
 
 def collect_x_posts():
@@ -335,7 +452,7 @@ def collect_x_posts():
 
     headers = {
         "Authorization": f"Bearer {X_BEARER_TOKEN}",
-        "User-Agent": "Balkan-Political-Social-Monitor/1.1"
+        "User-Agent": "Balkan-Political-Social-Monitor/1.2"
     }
 
     all_posts = []
@@ -347,8 +464,7 @@ def collect_x_posts():
         params = {
             "query": query,
             "max_results": X_MAX_RESULTS_PER_QUERY,
-            "tweet.fields": "created_at,lang,public_metrics",
-            "expansions": "author_id"
+            "tweet.fields": "created_at,lang,public_metrics"
         }
 
         print(f"X lekérés: {country['name']}")
@@ -360,6 +476,15 @@ def collect_x_posts():
                 params=params,
                 timeout=30
             )
+
+            if response.status_code == 402:
+                print("X API kredit elfogyott. X lekérés megszakítva, RSS források ettől még működnek.")
+                errors.append({
+                    "country": country["name"],
+                    "status_code": response.status_code,
+                    "message": response.text[:300]
+                })
+                break
 
             if response.status_code == 429:
                 print("X API rate limit. X lekérés megszakítva, RSS források ettől még működnek.")
@@ -398,7 +523,7 @@ def collect_x_posts():
                 if country["name"] not in countries:
                     countries.append(country["name"])
 
-                if not passes_quality_filter(text_lc, countries):
+                if not passes_quality_filter(text_lc, countries, "x"):
                     continue
 
                 metrics = tweet.get("public_metrics", {}) or {}
@@ -424,7 +549,9 @@ def collect_x_posts():
                         "replies": replies,
                         "quotes": quotes
                     },
-                    "quality": "x_api_filtered"
+                    "quality": "x_api_filtered",
+                    "quality_score": quality_score(text_lc, "x"),
+                    "trusted_source_hint": is_trusted_source(text_lc)
                 })
 
             time.sleep(X_SLEEP_SECONDS)
@@ -477,6 +604,8 @@ def analyze_country(country_name, posts):
     negative_hits = 0
     positive_hits = 0
     engagement_total = 0
+    trusted_hits = 0
+    quality_total = 0
 
     source_counts = {
         "reddit": 0,
@@ -491,6 +620,10 @@ def analyze_country(country_name, posts):
         source = post.get("source", "")
         tag = post.get("tag", "")
         engagement_total += int(post.get("engagement", 0) or 0)
+        quality_total += int(post.get("quality_score", 0) or 0)
+
+        if post.get("trusted_source_hint"):
+            trusted_hits += 1
 
         if source in source_counts:
             source_counts[source] += 1
@@ -507,8 +640,10 @@ def analyze_country(country_name, posts):
             positive_hits += 1
 
     engagement_bonus = min(engagement_total // 20, 5)
+    trusted_bonus = min(trusted_hits * 2, 6)
+    quality_bonus = min(quality_total // 8, 6)
 
-    raw_score = mentions + (negative_hits * 3) + (positive_hits * 2) + engagement_bonus
+    raw_score = mentions + (negative_hits * 3) + (positive_hits * 2) + engagement_bonus + trusted_bonus + quality_bonus
     score = min(raw_score, 30)
 
     if score >= 20:
@@ -525,7 +660,10 @@ def analyze_country(country_name, posts):
 
     related_sorted = sorted(
         related,
-        key=lambda item: int(item.get("engagement", 0) or 0),
+        key=lambda item: (
+            int(item.get("quality_score", 0) or 0),
+            int(item.get("engagement", 0) or 0)
+        ),
         reverse=True
     )
 
@@ -535,7 +673,9 @@ def analyze_country(country_name, posts):
         "mentions": mentions,
         "negative_hits": negative_hits,
         "positive_hits": positive_hits,
+        "trusted_hits": trusted_hits,
         "engagement_total": engagement_total,
+        "quality_total": quality_total,
         "source_counts": source_counts,
         "tag_counts": tag_counts,
         "main_topic": main_topic,
@@ -544,7 +684,7 @@ def analyze_country(country_name, posts):
 
 
 def main():
-    print("Social források lekérése erős politikai szűréssel...")
+    print("Social források lekérése erősebb politikai és minőségi szűréssel...")
 
     rss_posts = collect_rss_posts()
     print(f"RSS alapú politikailag releváns social találat: {len(rss_posts)}")
@@ -567,11 +707,14 @@ def main():
 
     output = {
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "source": "Reddit RSS + Mastodon hashtag RSS + X API",
+        "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
         "method_note": (
-            "A social signal külön jelző. Csak 7 napon belüli, politikailag releváns "
-            "és zajszűrt találatokat számol. Nem közvélemény-kutatás, és nem része "
-            "a fő hírindexnek. Az X API opcionális: ha nem érhető el vagy hibát ad, "
+            "A social signal külön jelző. Csak 7 napon belüli, politikailag releváns, "
+            "ország szerint illesztett és erősen zajszűrt találatokat számol. "
+            "Nem közvélemény-kutatás, és nem része a fő hírindexnek. "
+            "A rendszer külön minőségi pontszámot használ, hogy kiszűrje a casual, "
+            "utazási, sport-, kulturális, fantasy, földrengés- és spamjellegű találatokat. "
+            "Az X API opcionális: ha nem érhető el, nincs kredit vagy hibát ad, "
             "a Reddit és Mastodon RSS-források továbbra is frissülnek."
         ),
         "x_status": x_status,
