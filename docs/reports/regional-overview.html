@@ -10,11 +10,11 @@
       font-family: Arial, Helvetica, sans-serif;
       background: #f3f4f6;
       color: #111827;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     main {
-      max-width: 980px;
+      max-width: 1040px;
       margin: 30px auto;
       padding: 0 16px;
     }
@@ -22,23 +22,23 @@
     .card {
       background: white;
       border-radius: 16px;
-      padding: 24px;
+      padding: 26px;
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
     }
 
     h1 {
       margin-top: 0;
-      font-size: 30px;
+      font-size: 31px;
     }
 
     h2 {
       margin-top: 30px;
       border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 6px;
+      padding-bottom: 7px;
     }
 
     h3 {
-      margin-top: 0;
+      margin-top: 18px;
     }
 
     .meta {
@@ -48,9 +48,9 @@
 
     .summary-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
       gap: 12px;
-      margin: 20px 0;
+      margin: 18px 0;
     }
 
     .box {
@@ -62,36 +62,54 @@
 
     .box strong {
       display: block;
-      font-size: 22px;
-      margin-top: 4px;
+      font-size: 24px;
+      margin-top: 5px;
     }
 
     .executive-summary {
       background: #eff6ff;
       border-left: 5px solid #2563eb;
-      padding: 16px;
+      padding: 17px;
       border-radius: 12px;
       margin: 22px 0;
     }
 
-    .executive-summary h2 {
-      margin-top: 0;
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    .topic-block {
+    .analysis-block {
       background: #f9fafb;
       border-left: 5px solid #2563eb;
-      padding: 16px;
-      border-radius: 10px;
-      margin-bottom: 16px;
+      padding: 17px;
+      border-radius: 12px;
+      margin: 20px 0;
     }
 
-    .source-list {
+    .warning {
+      background: #fff7ed;
+      border-left-color: #ea580c;
+    }
+
+    .social-block {
+      background: #f8fafc;
+      border-left: 5px solid #d97706;
+      padding: 17px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
       margin-top: 12px;
-      padding-top: 10px;
-      border-top: 1px solid #e5e7eb;
+      font-size: 14px;
+    }
+
+    th, td {
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background: #f3f4f6;
     }
 
     ul {
@@ -132,227 +150,134 @@
 
 <body>
 <main>
-  <a class="back" href="../index.html">
-    ← Vissza a dashboardra
-  </a>
+  <a class="back" href="../index.html">← Vissza a dashboardra</a>
 
   <div class="card">
     <h1>Mai Balkán helyzetkép</h1>
-
-    <p class="meta">
-      Frissítve:
-      2026-05-27 12:29 UTC
-    </p>
+    <p class="meta">Frissítve: 2026-05-27 12:34 UTC</p>
 
     
           <div class="executive-summary">
             <h2>Régiós vezetői összefoglaló</h2>
-
             <p>
-              A mai Balkán-helyzetkép alapján
-              a legnegatívabb híralapú index
+              A mai Balkán-helyzetképben a legerősebb social risk jel
               <strong>Szerbia</strong>
               esetében látható
-              (-30).
+              (60 pont, 13 említés).
             </p>
-
             <p>
-              A legkedvezőbb hangulatot
-              <strong>Albánia</strong>
-              mutatja
-              (4).
+              A legtöbb hír <strong>Szerbia</strong>
+              körül jelent meg. A legnegatívabb híralapú index
+              <strong>Szerbia</strong>,
+              a legkedvezőbb híralapú index pedig
+              <strong>Albánia</strong> esetében látszik.
             </p>
-
             <p>
-              A legtöbb releváns hír
-              <strong>Szerbia</strong>
-              körül jelent meg
-              (80 cikk).
-            </p>
-
-            <p>
-              A legerősebb social media jel
-              <strong>Szerbia</strong>
-              esetében látható
-              (60 social index,
-              13 említés).
-            </p>
-
-            <p>
-              Régiós szinten a leggyakrabban
-              visszatérő fő narratíva:
-              <strong>Koszovó–Szerbia feszültség</strong>.
-            </p>
-
-            <p>
-              <strong>Rövid következtetés:</strong>
-              a térségben jelenleg egyszerre vannak jelen
-              intézményi,
-              geopolitikai,
-              biztonsági
-              és gazdasági narratívák,
-              ezért a politikai hangulat országonként jelentősen eltér.
+              A térség egészében a fő figyelmeztető jel az, hogy a social térben megjelenő
+              biztonsági, etnikai, intézményi vagy EU-integrációs narratívák gyorsabban mozdulhatnak,
+              mint a hagyományos hírindex.
             </p>
           </div>
 
           <h2>Országonkénti gyors helyzetkép</h2>
-
           
               <div class="country-row">
                 <h3>Szerbia</h3>
-
                 <p>
-                  Hírindex:
-                  <strong>-30</strong>,
-                  státusz:
-                  <strong>negatív</strong>.
-                  Fő téma:
-                  <strong>Koszovó–Szerbia feszültség</strong>.
+                  Hírindex: <strong>-30</strong> |
+                  státusz: <strong>negatív</strong> |
+                  fő hír téma: <strong>Koszovó–Szerbia feszültség</strong>
                 </p>
-
                 <p>
-                  Social media index:
-                  <strong>60</strong>,
-                  releváns említések:
-                  <strong>13</strong>.
-                </p>
-
-                <p>
-                  A jelenlegi mintázat alapján az ország politikai környezete rövid távon is instabilitási jeleket mutat.
+                  Social risk index: <strong>60</strong> |
+                  említések: <strong>13</strong> |
+                  fő social téma:
+                  <strong>kormányzati / politikai válság</strong>
                 </p>
               </div>
             
               <div class="country-row">
                 <h3>Bosznia-Hercegovina</h3>
-
                 <p>
-                  Hírindex:
-                  <strong>-24</strong>,
-                  státusz:
-                  <strong>negatív</strong>.
-                  Fő téma:
-                  <strong>Boszniai intézményi válság és OHR-vita</strong>.
+                  Hírindex: <strong>-24</strong> |
+                  státusz: <strong>negatív</strong> |
+                  fő hír téma: <strong>Boszniai intézményi válság és OHR-vita</strong>
                 </p>
-
                 <p>
-                  Social media index:
-                  <strong>0</strong>,
-                  releváns említések:
-                  <strong>0</strong>.
-                </p>
-
-                <p>
-                  A jelenlegi mintázat alapján az ország politikai környezete rövid távon is instabilitási jeleket mutat.
+                  Social risk index: <strong>0</strong> |
+                  említések: <strong>0</strong> |
+                  fő social téma:
+                  <strong>nincs adat</strong>
                 </p>
               </div>
             
               <div class="country-row">
                 <h3>Koszovó</h3>
-
                 <p>
-                  Hírindex:
-                  <strong>-30</strong>,
-                  státusz:
-                  <strong>negatív</strong>.
-                  Fő téma:
-                  <strong>Koszovó–Szerbia feszültség</strong>.
+                  Hírindex: <strong>-30</strong> |
+                  státusz: <strong>negatív</strong> |
+                  fő hír téma: <strong>Koszovó–Szerbia feszültség</strong>
                 </p>
-
                 <p>
-                  Social media index:
-                  <strong>42</strong>,
-                  releváns említések:
-                  <strong>5</strong>.
-                </p>
-
-                <p>
-                  A jelenlegi mintázat alapján az ország politikai környezete rövid távon is instabilitási jeleket mutat.
+                  Social risk index: <strong>42</strong> |
+                  említések: <strong>5</strong> |
+                  fő social téma:
+                  <strong>etnikai / identitási feszültség</strong>
                 </p>
               </div>
             
               <div class="country-row">
                 <h3>Montenegró</h3>
-
                 <p>
-                  Hírindex:
-                  <strong>-8</strong>,
-                  státusz:
-                  <strong>negatív</strong>.
-                  Fő téma:
-                  <strong>Nemzetközi kapcsolatok és nagyhatalmi befolyás</strong>.
+                  Hírindex: <strong>-8</strong> |
+                  státusz: <strong>negatív</strong> |
+                  fő hír téma: <strong>Nemzetközi kapcsolatok és nagyhatalmi befolyás</strong>
                 </p>
-
                 <p>
-                  Social media index:
-                  <strong>14</strong>,
-                  releváns említések:
-                  <strong>2</strong>.
-                </p>
-
-                <p>
-                  A politikai hangulat továbbra is inkább negatív irányba húz, különösen a konfliktusos vagy intézményi témák miatt.
+                  Social risk index: <strong>14</strong> |
+                  említések: <strong>2</strong> |
+                  fő social téma:
+                  <strong>korrupció / jogállamiság</strong>
                 </p>
               </div>
             
               <div class="country-row">
                 <h3>Észak-Macedónia</h3>
-
                 <p>
-                  Hírindex:
-                  <strong>-8</strong>,
-                  státusz:
-                  <strong>negatív</strong>.
-                  Fő téma:
-                  <strong>Belpolitikai tüntetések és társadalmi nyomás</strong>.
+                  Hírindex: <strong>-8</strong> |
+                  státusz: <strong>negatív</strong> |
+                  fő hír téma: <strong>Belpolitikai tüntetések és társadalmi nyomás</strong>
                 </p>
-
                 <p>
-                  Social media index:
-                  <strong>60</strong>,
-                  releváns említések:
-                  <strong>7</strong>.
-                </p>
-
-                <p>
-                  A politikai hangulat továbbra is inkább negatív irányba húz, különösen a konfliktusos vagy intézményi témák miatt.
+                  Social risk index: <strong>60</strong> |
+                  említések: <strong>7</strong> |
+                  fő social téma:
+                  <strong>etnikai / identitási feszültség</strong>
                 </p>
               </div>
             
               <div class="country-row">
                 <h3>Albánia</h3>
-
                 <p>
-                  Hírindex:
-                  <strong>4</strong>,
-                  státusz:
-                  <strong>semleges</strong>.
-                  Fő téma:
-                  <strong>Gazdaság, energia és beruházások</strong>.
+                  Hírindex: <strong>4</strong> |
+                  státusz: <strong>semleges</strong> |
+                  fő hír téma: <strong>Gazdaság, energia és beruházások</strong>
                 </p>
-
                 <p>
-                  Social media index:
-                  <strong>60</strong>,
-                  releváns említések:
-                  <strong>16</strong>.
-                </p>
-
-                <p>
-                  A politikai környezet vegyes képet mutat, nincs egyetlen domináns pozitív vagy negatív irány.
+                  Social risk index: <strong>60</strong> |
+                  említések: <strong>16</strong> |
+                  fő social téma:
+                  <strong>kormányzati / politikai válság</strong>
                 </p>
               </div>
             
         
 
     <h2>Módszertani megjegyzés</h2>
-
     <p>
-      Ez a régiós helyzetkép automatikusan készül
-      az országonkénti hírindex,
-      social signal
-      és domináns narratívák alapján.
-      Nem közvélemény-kutatás,
-      hanem nyílt forrású politikai hangulatjelzés.
+      A régiós riport automatikusan készül az országonkénti hírindex,
+      social risk index és domináns narratívák alapján. Nem közvélemény-kutatás,
+      hanem nyílt forrású politikai és geopolitikai hangulatjelzés.
     </p>
   </div>
 </main>

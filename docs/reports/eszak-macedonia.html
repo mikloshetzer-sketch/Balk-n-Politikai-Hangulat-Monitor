@@ -2,7 +2,7 @@
 <html lang="hu">
 <head>
   <meta charset="UTF-8">
-  <title>Észak-Macedónia – szöveges helyzetkép</title>
+  <title>Észak-Macedónia – elemző helyzetkép</title>
   
   <style>
     body {
@@ -10,11 +10,11 @@
       font-family: Arial, Helvetica, sans-serif;
       background: #f3f4f6;
       color: #111827;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     main {
-      max-width: 980px;
+      max-width: 1040px;
       margin: 30px auto;
       padding: 0 16px;
     }
@@ -22,23 +22,23 @@
     .card {
       background: white;
       border-radius: 16px;
-      padding: 24px;
+      padding: 26px;
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
     }
 
     h1 {
       margin-top: 0;
-      font-size: 30px;
+      font-size: 31px;
     }
 
     h2 {
       margin-top: 30px;
       border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 6px;
+      padding-bottom: 7px;
     }
 
     h3 {
-      margin-top: 0;
+      margin-top: 18px;
     }
 
     .meta {
@@ -48,9 +48,9 @@
 
     .summary-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
       gap: 12px;
-      margin: 20px 0;
+      margin: 18px 0;
     }
 
     .box {
@@ -62,36 +62,54 @@
 
     .box strong {
       display: block;
-      font-size: 22px;
-      margin-top: 4px;
+      font-size: 24px;
+      margin-top: 5px;
     }
 
     .executive-summary {
       background: #eff6ff;
       border-left: 5px solid #2563eb;
-      padding: 16px;
+      padding: 17px;
       border-radius: 12px;
       margin: 22px 0;
     }
 
-    .executive-summary h2 {
-      margin-top: 0;
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    .topic-block {
+    .analysis-block {
       background: #f9fafb;
       border-left: 5px solid #2563eb;
-      padding: 16px;
-      border-radius: 10px;
-      margin-bottom: 16px;
+      padding: 17px;
+      border-radius: 12px;
+      margin: 20px 0;
     }
 
-    .source-list {
+    .warning {
+      background: #fff7ed;
+      border-left-color: #ea580c;
+    }
+
+    .social-block {
+      background: #f8fafc;
+      border-left: 5px solid #d97706;
+      padding: 17px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
       margin-top: 12px;
-      padding-top: 10px;
-      border-top: 1px solid #e5e7eb;
+      font-size: 14px;
+    }
+
+    th, td {
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background: #f3f4f6;
     }
 
     ul {
@@ -135,14 +153,25 @@
   <a class="back" href="../index.html">← Vissza a dashboardra</a>
 
   <div class="card">
-    <h1>Észak-Macedónia – szöveges helyzetkép</h1>
-    <p class="meta">Frissítve: 2026-05-27 12:29 UTC</p>
+    <h1>Észak-Macedónia – elemző helyzetkép</h1>
+    <p class="meta">Frissítve: 2026-05-27 12:34 UTC</p>
 
-    <p>
-      Az aktuális híralapú hangulatindex <strong>-8</strong>, amelynek státusza:
-      <strong>negatív</strong>. A fő hírnarratíva jelenleg:
-      <strong>Belpolitikai tüntetések és társadalmi nyomás</strong>.
-    </p>
+    <div class="executive-summary">
+      <h2>Vezetői összefoglaló</h2>
+      <p>
+        <strong>Észak-Macedónia</strong> aktuális helyzetképe a híralapú index,
+        a social risk index és a domináns narratívák együttes értelmezésén alapul.
+        A híralapú index <strong>-8</strong>, státusza
+        <strong>negatív</strong>.
+        A fő hírnarratíva: <strong>Belpolitikai tüntetések és társadalmi nyomás</strong>.
+      </p>
+      <p>
+        A social risk index <strong>60</strong> pont a 0–60-as skálán,
+        ami <strong>magas kockázati jel</strong>.
+        A domináns social kategória:
+        <strong>etnikai / identitási feszültség</strong>.
+      </p>
+    </div>
 
     <div class="summary-grid">
       <div class="box">Hírindex<strong>-8</strong></div>
@@ -152,271 +181,192 @@
     </div>
 
     
-      <div class="executive-summary">
-        <h2>Vezetői összefoglaló</h2>
+      <section class="analysis-block">
+        <h2>Elemző helyzetértékelés</h2>
 
         <p>
-          <strong>Észak-Macedónia</strong> aktuális politikai hangulata
-          <strong>mérsékelten negatív</strong>. A híralapú index értéke
-          <strong>-8</strong>, a dashboard szerinti státusz pedig
-          <strong>negatív</strong>.
+          <strong>Észak-Macedónia</strong> esetében a híralapú index jelenleg
+          <strong>-8</strong>. A rendszer <strong>12</strong> releváns cikket azonosított.
+          A negatív hírjelek száma <strong>3</strong>, a pozitív hírjelek száma
+          <strong>1</strong>. A híralapú index mérsékelten negatív. A kockázati témák erősebbek, mint a stabilizáló jelek.
         </p>
 
         <p>
-          A legfontosabb ügy jelenleg:
-          <strong>Belpolitikai tüntetések és társadalmi nyomás</strong>. Ez nem elszigetelt téma,
-          hanem több hírben visszatérő mintázat. A belpolitikai nyomás azt jelzi, hogy a kormányzati szereplőknek nemcsak intézményi, hanem utcai vagy társadalmi reakciókkal is számolniuk kell.
+          A fő hírnarratíva jelenleg: <strong>Belpolitikai tüntetések és társadalmi nyomás</strong>.
+          Ez azt jelenti, hogy az ország körüli napirendet nem egyetlen elszigetelt esemény,
+          hanem visszatérő politikai vagy geopolitikai mintázat alakítja.
         </p>
 
         <p>
-          A négy legerősebb témacsoport: <strong>Belpolitikai tüntetések és társadalmi nyomás, Nemzetközi kapcsolatok és nagyhatalmi befolyás, EU-integráció és csatlakozási folyamat, Biztonságpolitikai kockázatok és erőszak</strong>.
-          Ezek együtt mutatják, hogy az országban a politikai hangulatot belpolitikai,
-          gazdasági, biztonsági vagy külpolitikai kérdések mozgatják-e.
+          A social media réteg már nem egyszerű aktivitási mutatóként jelenik meg, hanem
+          <strong>0–60-as kockázati indexként</strong>. A jelenlegi social risk érték:
+          <strong>60</strong>, amelynek értelmezése:
+          <strong>magas kockázati jel</strong>.
+          A social térben erős kockázati mintázat látszik. Ez nem önmagában válságot jelent, de azt mutatja, hogy a politikai vagy biztonsági témák nagy intenzitással vannak jelen.
         </p>
 
         <p>
-          A rendszer <strong>12</strong> releváns cikket azonosított.
-          A negatív hírjelek száma (3) meghaladja a pozitív jelzésekét (1), ezért a politikai hangulat inkább kockázati irányba mozdul.
+          A social térben <strong>7</strong> releváns említés jelent meg.
+          Ezek közül <strong>4</strong> negatív és <strong>2</strong>
+          pozitív jellegű. A domináns social kategória:
+          <strong>etnikai / identitási feszültség</strong>.
         </p>
-
-        <p>A cikkekben kiemelten megjelenő szereplők és intézmények: NIS, EU.</p>
-
-        <p>A közösségi média jel erős: 7 releváns említés jelent meg, a fő social téma pedig ethnic_tension.</p>
 
         <p>
-          <strong>Rövid következtetés:</strong> A politikai hangulat továbbra is inkább negatív irányba húz, különösen a konfliktusos vagy intézményi témák miatt.
+          A megbízható források száma <strong>1</strong>, az összesített geopolitikai pontszám
+          <strong>121</strong>. Ez segít elkülöníteni a valóban releváns politikai jeleket
+          a puszta közösségi média zajtól.
         </p>
+      </section>
+    
+
+    <section class="social-block">
+      <h2>Social media és X-alapú kockázati jel</h2>
+
+      <div class="summary-grid">
+        <div class="box">Social risk index<strong>60</strong></div>
+        <div class="box">Említések<strong>7</strong></div>
+        <div class="box">Negatív social jelek<strong>4</strong></div>
+        <div class="box">Pozitív social jelek<strong>2</strong></div>
+      </div>
+
+      
+      <div class="summary-grid">
+        <div class="box">X<strong>6</strong></div>
+        <div class="box">Reddit<strong>0</strong></div>
+        <div class="box">Mastodon<strong>1</strong></div>
       </div>
     
 
-    <h2>Domináns narratívák részletesen</h2>
-    <p>
-      Az alábbi négy blokk azt mutatja, hogy az aktuális híranyag alapján mely ügyek alakítják
-      leginkább az ország politikai hangulatát.
-    </p>
+      <p>
+        A social jel nem közvélemény-kutatás. Arra szolgál, hogy jelezze,
+        milyen intenzitással jelennek meg politikai, biztonsági vagy geopolitikai témák
+        a közösségi média és RSS-alapú social forrásokban.
+      </p>
 
+      <h3>Social kategóriák</h3>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Kategória</th>
+            <th>Találat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>etnikai / identitási feszültség</td>
+            <td><strong>2</strong></td>
+          </tr>
+        
+          <tr>
+            <td>kormányzati / politikai válság</td>
+            <td><strong>2</strong></td>
+          </tr>
+        
+          <tr>
+            <td>külső befolyás</td>
+            <td><strong>1</strong></td>
+          </tr>
+        
+          <tr>
+            <td>biztonsági kockázat</td>
+            <td><strong>1</strong></td>
+          </tr>
+        
+          <tr>
+            <td>tiltakozás</td>
+            <td><strong>1</strong></td>
+          </tr>
+        </tbody>
+      </table>
     
-      <div class="topic-block">
-        <h3>Belpolitikai tüntetések és társadalmi nyomás</h3>
 
-        <p>
-          <strong>Aktuális súly:</strong> 10.
-          A politikai hangulatot belső társadalmi feszültség, tiltakozás, rendőri fellépés vagy kormányellenes nyomás formálja.
-        </p>
-
-        <p>
-          <strong>Konkrét jelzés:</strong>
-          A téma legerősebb kapcsolódása a következő cikkben jelenik meg: <strong>North Macedonia Prime Minister Ready to Pay the Price for Blocked EU Integration</strong> (bgnes.com).
-        </p>
-
-        <p>
-          <strong>Elemző értelmezés:</strong>
-          A belpolitikai nyomás azt jelzi, hogy a kormányzati szereplőknek nemcsak intézményi, hanem utcai vagy társadalmi reakciókkal is számolniuk kell.
-          Ez azért fontos Észak-Macedónia esetében, mert a visszatérő témák nemcsak
-          egy-egy hírt jelentenek, hanem a politikai környezet általános hangulatát is formálják.
-        </p>
-
-        <p>
-          <strong>Azonosított szereplők / intézmények / helyek:</strong>
-          NIS, EU.
-        </p>
-
-        <div class="source-list">
-          <strong>Kapcsolódó források:</strong>
-          <ul>
+      <h3>Kiemelt social találatok</h3>
+      <ul>
           <li>
-            <a href="http://www.bgnes.com/politics/north-macedonia-s-prime-minister-ready-to-pay-the-price-for-blocked-eu-integration" target="_blank" rel="noopener noreferrer">North Macedonia Prime Minister Ready to Pay the Price for Blocked EU Integration</a>
+            <a href="https://x.com/i/web/status/2059598888118472924" target="_blank" rel="noopener noreferrer">🚨North Macedonia in NATO = The Trojan Horse! North Macedonia is no different from Serbia. Both are Russian-Chinese proxies. With a Deputy PM tied to Serbian BIA intelligence, leaks</a>
             <br>
-            <span>bgnes.com</span>
-          </li>
-        </ul>
-        </div>
-      </div>
-    
-
-      <div class="topic-block">
-        <h3>Nemzetközi kapcsolatok és nagyhatalmi befolyás</h3>
-
-        <p>
-          <strong>Aktuális súly:</strong> 9.
-          Az ország politikai mozgásterét külső szereplők, NATO-, EU-, USA-, orosz, kínai vagy török kapcsolódások alakítják.
-        </p>
-
-        <p>
-          <strong>Konkrét jelzés:</strong>
-          A téma legerősebb kapcsolódása a következő cikkben jelenik meg: <strong>ХОСЕ КАРЕРАС ЌЕ ПЕЕ СО МАКЕДОНСКИТЕ МУЗИЧКИ ЅВЕЗДИ НА 1 СЕПТЕМВРИ ВО СКОПЈЕ ВО ЧЕСТ НА 35 ГОДИНИ НЕЗАВИСНОСТ</strong> (time.mk).
-        </p>
-
-        <p>
-          <strong>Elemző értelmezés:</strong>
-          A külső szereplők jelenléte azt jelzi, hogy az ország mozgástere nemcsak belpolitikai, hanem geopolitikai tényezőktől is függ.
-          Ez azért fontos Észak-Macedónia esetében, mert a visszatérő témák nemcsak
-          egy-egy hírt jelentenek, hanem a politikai környezet általános hangulatát is formálják.
-        </p>
-
-        <p>
-          <strong>Azonosított szereplők / intézmények / helyek:</strong>
-          a kiemelt cikkek címei alapján nem azonosítható egyetlen domináns szereplő.
-        </p>
-
-        <div class="source-list">
-          <strong>Kapcsolódó források:</strong>
-          <ul>
-          <li>
-            <a href="https://time.mk/c/5bb3111507/hose-kareras-ke-pee-so-makedonskite-muzicki-zvezdi-na-1-septemvri-vo-skopje-vo-cest-na-35-godini-nezavisnost.html" target="_blank" rel="noopener noreferrer">ХОСЕ КАРЕРАС ЌЕ ПЕЕ СО МАКЕДОНСКИТЕ МУЗИЧКИ ЅВЕЗДИ НА 1 СЕПТЕМВРИ ВО СКОПЈЕ ВО ЧЕСТ НА 35 ГОДИНИ НЕЗАВИСНОСТ</a>
-            <br>
-            <span>time.mk</span>
+            <span>x | kategória: biztonsági kockázat | geopolitikai pont: 30</span>
           </li>
         
           <li>
-            <a href="https://republika.mk/vesti/makedonija/priznanie-za-plenkovik-i-miczkoski-od-stopanskata-komora-za-pridones-za-regionalnata-biznis-integraczija/" target="_blank" rel="noopener noreferrer">Признание за Пленковиќ и Мицкоски од Стопанската комора за придонес за регионалната бизнис интеграција</a>
+            <a href="https://x.com/i/web/status/2059327142203138401" target="_blank" rel="noopener noreferrer">During his visit to North Macedonia on Tuesday Croatian Prime Minister Plenković reiterated his belief that North Macedonia&#039;s European membership has been unfairly blocked for more</a>
             <br>
-            <span>republika.mk</span>
-          </li>
-        </ul>
-        </div>
-      </div>
-    
-
-      <div class="topic-block">
-        <h3>EU-integráció és csatlakozási folyamat</h3>
-
-        <p>
-          <strong>Aktuális súly:</strong> 5.
-          A diskurzus középpontjában az EU-csatlakozás, a reformfeltételek, a brüsszeli kapcsolatok és a bővítési folyamat áll.
-        </p>
-
-        <p>
-          <strong>Konkrét jelzés:</strong>
-          A téma legerősebb kapcsolódása a következő cikkben jelenik meg: <strong>North Macedonia Prime Minister Ready to Pay the Price for Blocked EU Integration</strong> (bgnes.com).
-        </p>
-
-        <p>
-          <strong>Elemző értelmezés:</strong>
-          Az EU-integrációs téma stabilizáló hatású lehet, de csak akkor, ha reformlépések és politikai kompromisszumok is társulnak hozzá.
-          Ez azért fontos Észak-Macedónia esetében, mert a visszatérő témák nemcsak
-          egy-egy hírt jelentenek, hanem a politikai környezet általános hangulatát is formálják.
-        </p>
-
-        <p>
-          <strong>Azonosított szereplők / intézmények / helyek:</strong>
-          NIS, EU.
-        </p>
-
-        <div class="source-list">
-          <strong>Kapcsolódó források:</strong>
-          <ul>
-          <li>
-            <a href="http://www.bgnes.com/politics/north-macedonia-s-prime-minister-ready-to-pay-the-price-for-blocked-eu-integration" target="_blank" rel="noopener noreferrer">North Macedonia Prime Minister Ready to Pay the Price for Blocked EU Integration</a>
-            <br>
-            <span>bgnes.com</span>
-          </li>
-        </ul>
-        </div>
-      </div>
-    
-
-      <div class="topic-block">
-        <h3>Biztonságpolitikai kockázatok és erőszak</h3>
-
-        <p>
-          <strong>Aktuális súly:</strong> 5.
-          A hírekben erőszakos incidensek, fenyegetések, fegyveres vagy etnikai feszültségek, illetve instabilitási kockázatok jelennek meg.
-        </p>
-
-        <p>
-          <strong>Konkrét jelzés:</strong>
-          A téma legerősebb kapcsolódása a következő cikkben jelenik meg: <strong>ХОСЕ КАРЕРАС ЌЕ ПЕЕ СО МАКЕДОНСКИТЕ МУЗИЧКИ ЅВЕЗДИ НА 1 СЕПТЕМВРИ ВО СКОПЈЕ ВО ЧЕСТ НА 35 ГОДИНИ НЕЗАВИСНОСТ</strong> (time.mk).
-        </p>
-
-        <p>
-          <strong>Elemző értelmezés:</strong>
-          A biztonsági jellegű hírek gyorsan rontják a politikai hangulatot, mert a stabilitás és a kiszámíthatóság kérdését érintik.
-          Ez azért fontos Észak-Macedónia esetében, mert a visszatérő témák nemcsak
-          egy-egy hírt jelentenek, hanem a politikai környezet általános hangulatát is formálják.
-        </p>
-
-        <p>
-          <strong>Azonosított szereplők / intézmények / helyek:</strong>
-          a kiemelt cikkek címei alapján nem azonosítható egyetlen domináns szereplő.
-        </p>
-
-        <div class="source-list">
-          <strong>Kapcsolódó források:</strong>
-          <ul>
-          <li>
-            <a href="https://time.mk/c/5bb3111507/hose-kareras-ke-pee-so-makedonskite-muzicki-zvezdi-na-1-septemvri-vo-skopje-vo-cest-na-35-godini-nezavisnost.html" target="_blank" rel="noopener noreferrer">ХОСЕ КАРЕРАС ЌЕ ПЕЕ СО МАКЕДОНСКИТЕ МУЗИЧКИ ЅВЕЗДИ НА 1 СЕПТЕМВРИ ВО СКОПЈЕ ВО ЧЕСТ НА 35 ГОДИНИ НЕЗАВИСНОСТ</a>
-            <br>
-            <span>time.mk</span>
+            <span>x | kategória: kormányzati / politikai válság | geopolitikai pont: 28</span>
           </li>
         
           <li>
-            <a href="https://republika.mk/vesti/makedonija/priznanie-za-plenkovik-i-miczkoski-od-stopanskata-komora-za-pridones-za-regionalnata-biznis-integraczija/" target="_blank" rel="noopener noreferrer">Признание за Пленковиќ и Мицкоски од Стопанската комора за придонес за регионалната бизнис интеграција</a>
+            <a href="https://x.com/i/web/status/2059333262900683108" target="_blank" rel="noopener noreferrer">After Skopje and Tirana, Next Protest for the Albanian Language to Be Held in Prishtina AlbanianLanguage Prishtina Skopje Tirana NorthMacedonia</a>
             <br>
-            <span>republika.mk</span>
+            <span>x | kategória: etnikai / identitási feszültség | geopolitikai pont: 21</span>
+          </li>
+        
+          <li>
+            <a href="https://x.com/i/web/status/2059315758941773938" target="_blank" rel="noopener noreferrer">Today, Mickoski said North Macedonia won’t include Bulgarians in the constitution and is ready to ‘pay the price’. That’s a political choice. But don’t pretend Bulgaria is the obst</a>
+            <br>
+            <span>x | kategória: etnikai / identitási feszültség | geopolitikai pont: 13</span>
+          </li>
+        
+          <li>
+            <a href="https://x.com/i/web/status/2059312702766395450" target="_blank" rel="noopener noreferrer">“Albanians Stand with Skopje!” Protest in Tirana in Support of Albanian Students in North Macedonia</a>
+            <br>
+            <span>x | kategória: tiltakozás | geopolitikai pont: 12</span>
           </li>
         </ul>
-        </div>
-      </div>
+    </section>
+
     
+      <section class="analysis-block warning">
+        <h2>Kockázati forgatókönyv</h2>
+        <p>Észak-Macedónia esetében a fő hírtéma jelenleg: Belpolitikai tüntetések és társadalmi nyomás. A social térben a domináns kategória: etnikai / identitási feszültség. A következő napok fő kockázata az, hogy a politikai vita tovább keményedik, és a social térben látható narratívák visszahatnak a hírnapirendre.</p>
 
-    <h2>Social signal</h2>
-    <p>
-      A social media index külön jelző. Nem része a fő hírindexnek.
-      Jelenlegi értéke <strong>60</strong>, aktivitási szintje:
-      <strong>magas</strong>.
-    </p>
-
-    <div class="summary-grid">
-      <div class="box">Social említések<strong>7</strong></div>
-      <div class="box">Social negatív jelek<strong>4</strong></div>
-      <div class="box">Social pozitív jelek<strong>2</strong></div>
-      <div class="box">Fő social téma<strong>ethnic_tension</strong></div>
-    </div>
-
-    <p class="meta">
-      Reddit: 0 |
-      Mastodon: 1
-    </p>
+        <h3>Mit érdemes figyelni?</h3>
+        <ul>
+          <li>a(z) Belpolitikai tüntetések és társadalmi nyomás témához kapcsolódó új hírforrások megjelenése</li><li>a social térben a(z) etnikai / identitási feszültség kategória erősödése</li><li>a negatív és pozitív jelzések arányának változása</li><li>a megbízható forrásokból származó megerősítések száma</li>
+        </ul>
+      </section>
+    
 
     <h2>Kiemelt forráscikkek</h2>
     <ul>
-        <li>
-          <a href="https://time.mk/c/5bb3111507/hose-kareras-ke-pee-so-makedonskite-muzicki-zvezdi-na-1-septemvri-vo-skopje-vo-cest-na-35-godini-nezavisnost.html" target="_blank" rel="noopener noreferrer">ХОСЕ КАРЕРАС ЌЕ ПЕЕ СО МАКЕДОНСКИТЕ МУЗИЧКИ ЅВЕЗДИ НА 1 СЕПТЕМВРИ ВО СКОПЈЕ ВО ЧЕСТ НА 35 ГОДИНИ НЕЗАВИСНОСТ</a>
-          <br>
-          <span>time.mk</span>
-        </li>
+          <li>
+            <a href="https://time.mk/c/5bb3111507/hose-kareras-ke-pee-so-makedonskite-muzicki-zvezdi-na-1-septemvri-vo-skopje-vo-cest-na-35-godini-nezavisnost.html" target="_blank" rel="noopener noreferrer">ХОСЕ КАРЕРАС ЌЕ ПЕЕ СО МАКЕДОНСКИТЕ МУЗИЧКИ ЅВЕЗДИ НА 1 СЕПТЕМВРИ ВО СКОПЈЕ ВО ЧЕСТ НА 35 ГОДИНИ НЕЗАВИСНОСТ</a>
+            <br>
+            <span>time.mk</span>
+          </li>
         
-        <li>
-          <a href="https://republika.mk/vesti/makedonija/priznanie-za-plenkovik-i-miczkoski-od-stopanskata-komora-za-pridones-za-regionalnata-biznis-integraczija/" target="_blank" rel="noopener noreferrer">Признание за Пленковиќ и Мицкоски од Стопанската комора за придонес за регионалната бизнис интеграција</a>
-          <br>
-          <span>republika.mk</span>
-        </li>
+          <li>
+            <a href="https://republika.mk/vesti/makedonija/priznanie-za-plenkovik-i-miczkoski-od-stopanskata-komora-za-pridones-za-regionalnata-biznis-integraczija/" target="_blank" rel="noopener noreferrer">Признание за Пленковиќ и Мицкоски од Стопанската комора за придонес за регионалната бизнис интеграција</a>
+            <br>
+            <span>republika.mk</span>
+          </li>
         
-        <li>
-          <a href="http://www.bgnes.com/politics/north-macedonia-s-prime-minister-ready-to-pay-the-price-for-blocked-eu-integration" target="_blank" rel="noopener noreferrer">North Macedonia Prime Minister Ready to Pay the Price for Blocked EU Integration</a>
-          <br>
-          <span>bgnes.com</span>
-        </li>
+          <li>
+            <a href="http://www.bgnes.com/politics/north-macedonia-s-prime-minister-ready-to-pay-the-price-for-blocked-eu-integration" target="_blank" rel="noopener noreferrer">North Macedonia Prime Minister Ready to Pay the Price for Blocked EU Integration</a>
+            <br>
+            <span>bgnes.com</span>
+          </li>
         
-        <li>
-          <a href="https://republika.mk/vesti/makedonija/pochina-martin-trenevski-novinar-i-poraneshen-minister-i-diplomat/" target="_blank" rel="noopener noreferrer">Почина Мартин Треневски , новинар и поранешен министер и дипломат</a>
-          <br>
-          <span>republika.mk</span>
-        </li>
+          <li>
+            <a href="https://republika.mk/vesti/makedonija/pochina-martin-trenevski-novinar-i-poraneshen-minister-i-diplomat/" target="_blank" rel="noopener noreferrer">Почина Мартин Треневски , новинар и поранешен министер и дипломат</a>
+            <br>
+            <span>republika.mk</span>
+          </li>
         
-        <li>
-          <a href="https://plusinfo.mk/pochina-novinarot-i-ambasador-martin-trenevski-beshe-minister-za-informacii-vo-prvata-vlada-na-makedoni-a/" target="_blank" rel="noopener noreferrer">ПОЧИНА НОВИНАРОТ И АМБАСАДОР МАРТИН ТРЕНЕВСКИ Беше министер за информации во првата влада на Македонија</a>
-          <br>
-          <span>plusinfo.mk</span>
-        </li>
+          <li>
+            <a href="https://plusinfo.mk/pochina-novinarot-i-ambasador-martin-trenevski-beshe-minister-za-informacii-vo-prvata-vlada-na-makedoni-a/" target="_blank" rel="noopener noreferrer">ПОЧИНА НОВИНАРОТ И АМБАСАДОР МАРТИН ТРЕНЕВСКИ Беше министер за информации во првата влада на Македонија</a>
+            <br>
+            <span>plusinfo.mk</span>
+          </li>
         </ul>
 
     <h2>Módszertani megjegyzés</h2>
     <p>
-      Ez a szöveges helyzetkép automatikusan készül a dashboard aktuális JSON-adatfájljaiból.
-      A narratívák kulcsszavas, híralapú csoportosításon alapulnak.
-      Az eredmény nem közvélemény-kutatás, hanem nyílt forrású politikai hangulatjelzés.
+      Ez a jelentés automatikusan készül a dashboard aktuális JSON-adatfájljaiból.
+      A híralapú index, a social risk index, a kategóriabontás és a forráslisták
+      nyílt forrású monitoringot támogatnak. Az eredmény nem közvélemény-kutatás,
+      nem hivatalos kockázati minősítés, hanem elemző célú OSINT-jelzőrendszer.
     </p>
   </div>
 </main>

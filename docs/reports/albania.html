@@ -2,7 +2,7 @@
 <html lang="hu">
 <head>
   <meta charset="UTF-8">
-  <title>Albánia – szöveges helyzetkép</title>
+  <title>Albánia – elemző helyzetkép</title>
   
   <style>
     body {
@@ -10,11 +10,11 @@
       font-family: Arial, Helvetica, sans-serif;
       background: #f3f4f6;
       color: #111827;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     main {
-      max-width: 980px;
+      max-width: 1040px;
       margin: 30px auto;
       padding: 0 16px;
     }
@@ -22,23 +22,23 @@
     .card {
       background: white;
       border-radius: 16px;
-      padding: 24px;
+      padding: 26px;
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
     }
 
     h1 {
       margin-top: 0;
-      font-size: 30px;
+      font-size: 31px;
     }
 
     h2 {
       margin-top: 30px;
       border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 6px;
+      padding-bottom: 7px;
     }
 
     h3 {
-      margin-top: 0;
+      margin-top: 18px;
     }
 
     .meta {
@@ -48,9 +48,9 @@
 
     .summary-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
       gap: 12px;
-      margin: 20px 0;
+      margin: 18px 0;
     }
 
     .box {
@@ -62,36 +62,54 @@
 
     .box strong {
       display: block;
-      font-size: 22px;
-      margin-top: 4px;
+      font-size: 24px;
+      margin-top: 5px;
     }
 
     .executive-summary {
       background: #eff6ff;
       border-left: 5px solid #2563eb;
-      padding: 16px;
+      padding: 17px;
       border-radius: 12px;
       margin: 22px 0;
     }
 
-    .executive-summary h2 {
-      margin-top: 0;
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    .topic-block {
+    .analysis-block {
       background: #f9fafb;
       border-left: 5px solid #2563eb;
-      padding: 16px;
-      border-radius: 10px;
-      margin-bottom: 16px;
+      padding: 17px;
+      border-radius: 12px;
+      margin: 20px 0;
     }
 
-    .source-list {
+    .warning {
+      background: #fff7ed;
+      border-left-color: #ea580c;
+    }
+
+    .social-block {
+      background: #f8fafc;
+      border-left: 5px solid #d97706;
+      padding: 17px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
       margin-top: 12px;
-      padding-top: 10px;
-      border-top: 1px solid #e5e7eb;
+      font-size: 14px;
+    }
+
+    th, td {
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background: #f3f4f6;
     }
 
     ul {
@@ -135,14 +153,25 @@
   <a class="back" href="../index.html">← Vissza a dashboardra</a>
 
   <div class="card">
-    <h1>Albánia – szöveges helyzetkép</h1>
-    <p class="meta">Frissítve: 2026-05-27 12:29 UTC</p>
+    <h1>Albánia – elemző helyzetkép</h1>
+    <p class="meta">Frissítve: 2026-05-27 12:34 UTC</p>
 
-    <p>
-      Az aktuális híralapú hangulatindex <strong>4</strong>, amelynek státusza:
-      <strong>semleges</strong>. A fő hírnarratíva jelenleg:
-      <strong>Gazdaság, energia és beruházások</strong>.
-    </p>
+    <div class="executive-summary">
+      <h2>Vezetői összefoglaló</h2>
+      <p>
+        <strong>Albánia</strong> aktuális helyzetképe a híralapú index,
+        a social risk index és a domináns narratívák együttes értelmezésén alapul.
+        A híralapú index <strong>4</strong>, státusza
+        <strong>semleges</strong>.
+        A fő hírnarratíva: <strong>Gazdaság, energia és beruházások</strong>.
+      </p>
+      <p>
+        A social risk index <strong>60</strong> pont a 0–60-as skálán,
+        ami <strong>magas kockázati jel</strong>.
+        A domináns social kategória:
+        <strong>kormányzati / politikai válság</strong>.
+      </p>
+    </div>
 
     <div class="summary-grid">
       <div class="box">Hírindex<strong>4</strong></div>
@@ -152,78 +181,176 @@
     </div>
 
     
-      <div class="executive-summary">
-        <h2>Vezetői összefoglaló</h2>
+      <section class="analysis-block">
+        <h2>Elemző helyzetértékelés</h2>
 
         <p>
-          <strong>Albánia</strong> aktuális politikai hangulata
-          <strong>mérsékelten pozitív</strong>. A híralapú index értéke
-          <strong>4</strong>, a dashboard szerinti státusz pedig
-          <strong>semleges</strong>.
+          <strong>Albánia</strong> esetében a híralapú index jelenleg
+          <strong>4</strong>. A rendszer <strong>56</strong> releváns cikket azonosított.
+          A negatív hírjelek száma <strong>6</strong>, a pozitív hírjelek száma
+          <strong>7</strong>. A híralapú index pozitívabb, és a stabilizáló vagy reformjellegű narratívák erősebben vannak jelen.
         </p>
 
         <p>
-          A legfontosabb ügy jelenleg:
-          <strong>Gazdaság, energia és beruházások</strong>. Ez nem elszigetelt téma,
-          hanem több hírben visszatérő mintázat. A gazdasági és energetikai ügyek egyszerre mutathatnak fejlődést és sérülékenységet, főleg ha stratégiai ágazatokról van szó.
+          A fő hírnarratíva jelenleg: <strong>Gazdaság, energia és beruházások</strong>.
+          Ez azt jelenti, hogy az ország körüli napirendet nem egyetlen elszigetelt esemény,
+          hanem visszatérő politikai vagy geopolitikai mintázat alakítja.
         </p>
 
         <p>
-          A négy legerősebb témacsoport: <strong>Gazdaság, energia és beruházások, Nemzetközi kapcsolatok és nagyhatalmi befolyás, Belpolitikai tüntetések és társadalmi nyomás, EU-integráció és csatlakozási folyamat</strong>.
-          Ezek együtt mutatják, hogy az országban a politikai hangulatot belpolitikai,
-          gazdasági, biztonsági vagy külpolitikai kérdések mozgatják-e.
+          A social media réteg már nem egyszerű aktivitási mutatóként jelenik meg, hanem
+          <strong>0–60-as kockázati indexként</strong>. A jelenlegi social risk érték:
+          <strong>60</strong>, amelynek értelmezése:
+          <strong>magas kockázati jel</strong>.
+          A social térben erős kockázati mintázat látszik. Ez nem önmagában válságot jelent, de azt mutatja, hogy a politikai vagy biztonsági témák nagy intenzitással vannak jelen.
         </p>
 
         <p>
-          A rendszer <strong>56</strong> releváns cikket azonosított.
-          A pozitív hírjelek száma (7) meghaladja a negatív jelzésekét (6), ami mérsékelheti a politikai kockázatokat.
+          A social térben <strong>16</strong> releváns említés jelent meg.
+          Ezek közül <strong>5</strong> negatív és <strong>4</strong>
+          pozitív jellegű. A domináns social kategória:
+          <strong>kormányzati / politikai válság</strong>.
         </p>
-
-        <p>A cikkekben kiemelten megjelenő szereplők és intézmények: Marta Kos, Rama, NIS, EU, UN.</p>
-
-        <p>A közösségi média jel erős: 16 releváns említés jelent meg, a fő social téma pedig government_crisis.</p>
 
         <p>
-          <strong>Rövid következtetés:</strong> A politikai környezet vegyes képet mutat, nincs egyetlen domináns pozitív vagy negatív irány.
+          A megbízható források száma <strong>5</strong>, az összesített geopolitikai pontszám
+          <strong>311</strong>. Ez segít elkülöníteni a valóban releváns politikai jeleket
+          a puszta közösségi média zajtól.
         </p>
+      </section>
+    
+
+    <section class="social-block">
+      <h2>Social media és X-alapú kockázati jel</h2>
+
+      <div class="summary-grid">
+        <div class="box">Social risk index<strong>60</strong></div>
+        <div class="box">Említések<strong>16</strong></div>
+        <div class="box">Negatív social jelek<strong>5</strong></div>
+        <div class="box">Pozitív social jelek<strong>4</strong></div>
+      </div>
+
+      
+      <div class="summary-grid">
+        <div class="box">X<strong>8</strong></div>
+        <div class="box">Reddit<strong>1</strong></div>
+        <div class="box">Mastodon<strong>7</strong></div>
       </div>
     
 
-    <h2>Domináns narratívák részletesen</h2>
-    <p>
-      Az alábbi négy blokk azt mutatja, hogy az aktuális híranyag alapján mely ügyek alakítják
-      leginkább az ország politikai hangulatát.
-    </p>
+      <p>
+        A social jel nem közvélemény-kutatás. Arra szolgál, hogy jelezze,
+        milyen intenzitással jelennek meg politikai, biztonsági vagy geopolitikai témák
+        a közösségi média és RSS-alapú social forrásokban.
+      </p>
+
+      <h3>Social kategóriák</h3>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Kategória</th>
+            <th>Találat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>kormányzati / politikai válság</td>
+            <td><strong>7</strong></td>
+          </tr>
+        
+          <tr>
+            <td>EU-integráció</td>
+            <td><strong>2</strong></td>
+          </tr>
+        
+          <tr>
+            <td>biztonsági kockázat</td>
+            <td><strong>2</strong></td>
+          </tr>
+        
+          <tr>
+            <td>gazdaság / infrastruktúra</td>
+            <td><strong>1</strong></td>
+          </tr>
+        
+          <tr>
+            <td>külső befolyás</td>
+            <td><strong>1</strong></td>
+          </tr>
+        
+          <tr>
+            <td>korrupció / jogállamiság</td>
+            <td><strong>1</strong></td>
+          </tr>
+        
+          <tr>
+            <td>etnikai / identitási feszültség</td>
+            <td><strong>1</strong></td>
+          </tr>
+        
+          <tr>
+            <td>tiltakozás</td>
+            <td><strong>1</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    
+
+      <h3>Kiemelt social találatok</h3>
+      <ul>
+          <li>
+            <a href="https://x.com/i/web/status/2059555692785078486" target="_blank" rel="noopener noreferrer">Albania is catching up with Montenegro. The EU has set conditions (otherwise known as benchmarking). The problematic areas are the judiciary and anti-corruption. What can be done b</a>
+            <br>
+            <span>x | kategória: kormányzati / politikai válság | geopolitikai pont: 44</span>
+          </li>
+        
+          <li>
+            <a href="https://x.com/i/web/status/2059595556104646917" target="_blank" rel="noopener noreferrer">An important message from Deputy Minister of Defence of Bosnia and Herzegovina Slaven Galić from Tirana on the role of NATO, the European Union and the transatlantic partnership in</a>
+            <br>
+            <span>x | kategória: biztonsági kockázat | geopolitikai pont: 38</span>
+          </li>
+        
+          <li>
+            <a href="https://mas.to/@meganL/116635533935626854" target="_blank" rel="noopener noreferrer">Intergovernmental Conference Albania-EU, Government: We Enter a New Phase of Negotiations &quot;On May 26, the 8th Intergovernmental Conference between Albania and the European Union will be held in Brussels. The Committee of Permanent Representatives of the Member States of the European Union (COREPER) approved this Friday the holding of the 8th Albania-European</a>
+            <br>
+            <span>mastodon | kategória: EU-integráció | geopolitikai pont: 29</span>
+          </li>
+        
+          <li>
+            <a href="https://respublicae.eu/@EUCouncilTVNews/116642146836651239" target="_blank" rel="noopener noreferrer">Doorstep by @ediramaal, Prime Minister of # Albania , at the # EUAlbania Intergovernmental Conference taking place on 26 May 2026 in # Brussels . https:// newsroom.consilium.europa.eu/e vents/20260526-eu-albania-intergovernmental-conference-may-2026/154095-doorstep-rama-albania-20260526 --- https:// nitter.net/EUCouncilTVNews/sta tus/2059325947514396950#m</a>
+            <br>
+            <span>mastodon | kategória: kormányzati / politikai válság | geopolitikai pont: 25</span>
+          </li>
+        
+          <li>
+            <a href="https://respublicae.eu/@EUCouncilTVNews/116642146805902577" target="_blank" rel="noopener noreferrer">Arrival of @ediramaal, Prime Minister of # Albania , at the # EUAlbania Intergovernmental Conference taking place on 26 May 2026 in # Brussels . https:// newsroom.consilium.europa.eu/e vents/20260526-eu-albania-intergovernmental-conference-may-2026/154039-arrival-of-prime-minister-of-albania-20260526 --- https:// nitter.net/EUCouncilTVNews/sta tus/2059325688</a>
+            <br>
+            <span>mastodon | kategória: kormányzati / politikai válság | geopolitikai pont: 25</span>
+          </li>
+        </ul>
+    </section>
 
     
-      <div class="topic-block">
-        <h3>Gazdaság, energia és beruházások</h3>
+      <section class="analysis-block warning">
+        <h2>Kockázati forgatókönyv</h2>
+        <p>Albánia esetében a fő hírtéma jelenleg: Gazdaság, energia és beruházások. A social térben a domináns kategória: kormányzati / politikai válság. A következő napok fő kockázata az, hogy a politikai vita tovább keményedik, és a social térben látható narratívák visszahatnak a hírnapirendre.</p>
 
-        <p>
-          <strong>Aktuális súly:</strong> 56.
-          A napirendet gazdasági, energetikai és beruházási ügyek határozzák meg. Ezek stabilizáló témák is lehetnek, de stratégiai vállalatok vagy energiaügyek esetén politikai kockázatot is hordozhatnak.
-        </p>
+        <h3>Mit érdemes figyelni?</h3>
+        <ul>
+          <li>a(z) Gazdaság, energia és beruházások témához kapcsolódó új hírforrások megjelenése</li><li>a social térben a(z) kormányzati / politikai válság kategória erősödése</li><li>a negatív és pozitív jelzések arányának változása</li><li>a megbízható forrásokból származó megerősítések száma</li>
+        </ul>
+      </section>
+    
 
-        <p>
-          <strong>Konkrét jelzés:</strong>
-          A téma legerősebb kapcsolódása a következő cikkben jelenik meg: <strong>Përpara nisjes së Konferencës në Bruksel , Rama : Ky është një moment shumë i rëndësishëm në rrugëtimin tonë drejt anëtarësimit</strong> (rtsh.al).
-        </p>
-
-        <p>
-          <strong>Elemző értelmezés:</strong>
-          A gazdasági és energetikai ügyek egyszerre mutathatnak fejlődést és sérülékenységet, főleg ha stratégiai ágazatokról van szó.
-          Ez azért fontos Albánia esetében, mert a visszatérő témák nemcsak
-          egy-egy hírt jelentenek, hanem a politikai környezet általános hangulatát is formálják.
-        </p>
-
-        <p>
-          <strong>Azonosított szereplők / intézmények / helyek:</strong>
-          Rama, NIS.
-        </p>
-
-        <div class="source-list">
-          <strong>Kapcsolódó források:</strong>
-          <ul>
+    <h2>Kiemelt forráscikkek</h2>
+    <ul>
+          <li>
+            <a href="https://www.zeri.info/aktuale/624218/ambasadori-gjerman-shqiperia-pjese-e-familjes-europiane-reformat-kusht-per-anetaresimin-ne-be/" target="_blank" rel="noopener noreferrer">Ambasadori gjerman : Shqipëria pjesë e familjes europiane , reformat kusht për anëtarësimin në BE</a>
+            <br>
+            <span>zeri.info</span>
+          </li>
+        
           <li>
             <a href="https://rtsh.al/perpara-nisjes-se-konferences-ne-bruksel-rama-ky-eshte-nje-moment-shume-i-rendesishem-ne-rrugetimin-tone-drejt-anetaresimit/" target="_blank" rel="noopener noreferrer">Përpara nisjes së Konferencës në Bruksel , Rama : Ky është një moment shumë i rëndësishëm në rrugëtimin tonë drejt anëtarësimit</a>
             <br>
@@ -235,125 +362,11 @@
             <br>
             <span>top-channel.tv</span>
           </li>
-        </ul>
-        </div>
-      </div>
-    
-
-      <div class="topic-block">
-        <h3>Nemzetközi kapcsolatok és nagyhatalmi befolyás</h3>
-
-        <p>
-          <strong>Aktuális súly:</strong> 54.
-          Az ország politikai mozgásterét külső szereplők, NATO-, EU-, USA-, orosz, kínai vagy török kapcsolódások alakítják.
-        </p>
-
-        <p>
-          <strong>Konkrét jelzés:</strong>
-          A téma legerősebb kapcsolódása a következő cikkben jelenik meg: <strong>Heqja e imunitetit të jetë në përputhje me Venecian !- Konferenca Shqipëri - BE , ambasadori gjerman : Lufta ndaj korrupsionit , kusht i panegociueshëm</strong> (panorama.com.al).
-        </p>
-
-        <p>
-          <strong>Elemző értelmezés:</strong>
-          A külső szereplők jelenléte azt jelzi, hogy az ország mozgástere nemcsak belpolitikai, hanem geopolitikai tényezőktől is függ.
-          Ez azért fontos Albánia esetében, mert a visszatérő témák nemcsak
-          egy-egy hírt jelentenek, hanem a politikai környezet általános hangulatát is formálják.
-        </p>
-
-        <p>
-          <strong>Azonosított szereplők / intézmények / helyek:</strong>
-          UN.
-        </p>
-
-        <div class="source-list">
-          <strong>Kapcsolódó források:</strong>
-          <ul>
+        
           <li>
             <a href="https://www.panorama.com.al/heqja-e-imunitetit-te-jete-ne-perputhje-me-venecian-konferenca-shqiperi-be-ambasadori-gjerman-lufta-ndaj-korrupsionit-kusht-i-panegociueshem/" target="_blank" rel="noopener noreferrer">Heqja e imunitetit të jetë në përputhje me Venecian !- Konferenca Shqipëri - BE , ambasadori gjerman : Lufta ndaj korrupsionit , kusht i panegociueshëm</a>
             <br>
             <span>panorama.com.al</span>
-          </li>
-        </ul>
-        </div>
-      </div>
-    
-
-      <div class="topic-block">
-        <h3>Belpolitikai tüntetések és társadalmi nyomás</h3>
-
-        <p>
-          <strong>Aktuális súly:</strong> 20.
-          A politikai hangulatot belső társadalmi feszültség, tiltakozás, rendőri fellépés vagy kormányellenes nyomás formálja.
-        </p>
-
-        <p>
-          <strong>Konkrét jelzés:</strong>
-          A téma legerősebb kapcsolódása a következő cikkben jelenik meg: <strong>Ambasadori gjerman : Shqipëria pjesë e familjes europiane , reformat kusht për anëtarësimin në BE</strong> (zeri.info).
-        </p>
-
-        <p>
-          <strong>Elemző értelmezés:</strong>
-          A belpolitikai nyomás azt jelzi, hogy a kormányzati szereplőknek nemcsak intézményi, hanem utcai vagy társadalmi reakciókkal is számolniuk kell.
-          Ez azért fontos Albánia esetében, mert a visszatérő témák nemcsak
-          egy-egy hírt jelentenek, hanem a politikai környezet általános hangulatát is formálják.
-        </p>
-
-        <p>
-          <strong>Azonosított szereplők / intézmények / helyek:</strong>
-          Rama, NIS, EU.
-        </p>
-
-        <div class="source-list">
-          <strong>Kapcsolódó források:</strong>
-          <ul>
-          <li>
-            <a href="https://www.zeri.info/aktuale/624218/ambasadori-gjerman-shqiperia-pjese-e-familjes-europiane-reformat-kusht-per-anetaresimin-ne-be/" target="_blank" rel="noopener noreferrer">Ambasadori gjerman : Shqipëria pjesë e familjes europiane , reformat kusht për anëtarësimin në BE</a>
-            <br>
-            <span>zeri.info</span>
-          </li>
-        
-          <li>
-            <a href="https://rtsh.al/perpara-nisjes-se-konferences-ne-bruksel-rama-ky-eshte-nje-moment-shume-i-rendesishem-ne-rrugetimin-tone-drejt-anetaresimit/" target="_blank" rel="noopener noreferrer">Përpara nisjes së Konferencës në Bruksel , Rama : Ky është një moment shumë i rëndësishëm në rrugëtimin tonë drejt anëtarësimit</a>
-            <br>
-            <span>rtsh.al</span>
-          </li>
-        </ul>
-        </div>
-      </div>
-    
-
-      <div class="topic-block">
-        <h3>EU-integráció és csatlakozási folyamat</h3>
-
-        <p>
-          <strong>Aktuális súly:</strong> 20.
-          A diskurzus középpontjában az EU-csatlakozás, a reformfeltételek, a brüsszeli kapcsolatok és a bővítési folyamat áll.
-        </p>
-
-        <p>
-          <strong>Konkrét jelzés:</strong>
-          A téma legerősebb kapcsolódása a következő cikkben jelenik meg: <strong>Ambasadori gjerman : Shqipëria pjesë e familjes europiane , reformat kusht për anëtarësimin në BE</strong> (zeri.info).
-        </p>
-
-        <p>
-          <strong>Elemző értelmezés:</strong>
-          Az EU-integrációs téma stabilizáló hatású lehet, de csak akkor, ha reformlépések és politikai kompromisszumok is társulnak hozzá.
-          Ez azért fontos Albánia esetében, mert a visszatérő témák nemcsak
-          egy-egy hírt jelentenek, hanem a politikai környezet általános hangulatát is formálják.
-        </p>
-
-        <p>
-          <strong>Azonosított szereplők / intézmények / helyek:</strong>
-          Marta Kos, EU.
-        </p>
-
-        <div class="source-list">
-          <strong>Kapcsolódó források:</strong>
-          <ul>
-          <li>
-            <a href="https://www.zeri.info/aktuale/624218/ambasadori-gjerman-shqiperia-pjese-e-familjes-europiane-reformat-kusht-per-anetaresimin-ne-be/" target="_blank" rel="noopener noreferrer">Ambasadori gjerman : Shqipëria pjesë e familjes europiane , reformat kusht për anëtarësimin në BE</a>
-            <br>
-            <span>zeri.info</span>
           </li>
         
           <li>
@@ -362,67 +375,13 @@
             <span>balkanweb.com</span>
           </li>
         </ul>
-        </div>
-      </div>
-    
-
-    <h2>Social signal</h2>
-    <p>
-      A social media index külön jelző. Nem része a fő hírindexnek.
-      Jelenlegi értéke <strong>60</strong>, aktivitási szintje:
-      <strong>magas</strong>.
-    </p>
-
-    <div class="summary-grid">
-      <div class="box">Social említések<strong>16</strong></div>
-      <div class="box">Social negatív jelek<strong>5</strong></div>
-      <div class="box">Social pozitív jelek<strong>4</strong></div>
-      <div class="box">Fő social téma<strong>government_crisis</strong></div>
-    </div>
-
-    <p class="meta">
-      Reddit: 1 |
-      Mastodon: 7
-    </p>
-
-    <h2>Kiemelt forráscikkek</h2>
-    <ul>
-        <li>
-          <a href="https://www.zeri.info/aktuale/624218/ambasadori-gjerman-shqiperia-pjese-e-familjes-europiane-reformat-kusht-per-anetaresimin-ne-be/" target="_blank" rel="noopener noreferrer">Ambasadori gjerman : Shqipëria pjesë e familjes europiane , reformat kusht për anëtarësimin në BE</a>
-          <br>
-          <span>zeri.info</span>
-        </li>
-        
-        <li>
-          <a href="https://rtsh.al/perpara-nisjes-se-konferences-ne-bruksel-rama-ky-eshte-nje-moment-shume-i-rendesishem-ne-rrugetimin-tone-drejt-anetaresimit/" target="_blank" rel="noopener noreferrer">Përpara nisjes së Konferencës në Bruksel , Rama : Ky është një moment shumë i rëndësishëm në rrugëtimin tonë drejt anëtarësimit</a>
-          <br>
-          <span>rtsh.al</span>
-        </li>
-        
-        <li>
-          <a href="https://top-channel.tv/2026/05/26/live-konferenca-nderqeveritare-ne-bruksel-shqiperia-nis-mbylljen-e-kapitujve-per-anetaresimin-ne-be-rama-kemi-thyer-rekord-kos-perdoreni-energjine-pozitive0/" target="_blank" rel="noopener noreferrer">LIVE / Konferenca Ndërqeveritare në Bruksel , Shqipëria nis mbylljen e kapitujve për anëtarësimin në BE . Rama : Kemi thyer rekord . Kos : Përdoreni energjinë pozitive</a>
-          <br>
-          <span>top-channel.tv</span>
-        </li>
-        
-        <li>
-          <a href="https://www.panorama.com.al/heqja-e-imunitetit-te-jete-ne-perputhje-me-venecian-konferenca-shqiperi-be-ambasadori-gjerman-lufta-ndaj-korrupsionit-kusht-i-panegociueshem/" target="_blank" rel="noopener noreferrer">Heqja e imunitetit të jetë në përputhje me Venecian !- Konferenca Shqipëri - BE , ambasadori gjerman : Lufta ndaj korrupsionit , kusht i panegociueshëm</a>
-          <br>
-          <span>panorama.com.al</span>
-        </li>
-        
-        <li>
-          <a href="https://www.balkanweb.com/piketat-mbyllese-per-te-cilat-be-ra-sot-dakord-nje-sinjal-i-qarte-marta-kos-shqiperia-hap-te-madh-drejt-anetaresimit/" target="_blank" rel="noopener noreferrer">Piketat mbyllëse për të cilat BE ra sot dakord , një sinjal i qartë / Marta Kos : Shqipëria hap të madh drejt anëtarësimit – Balkanweb . com – News24</a>
-          <br>
-          <span>balkanweb.com</span>
-        </li>
-        </ul>
 
     <h2>Módszertani megjegyzés</h2>
     <p>
-      Ez a szöveges helyzetkép automatikusan készül a dashboard aktuális JSON-adatfájljaiból.
-      A narratívák kulcsszavas, híralapú csoportosításon alapulnak.
-      Az eredmény nem közvélemény-kutatás, hanem nyílt forrású politikai hangulatjelzés.
+      Ez a jelentés automatikusan készül a dashboard aktuális JSON-adatfájljaiból.
+      A híralapú index, a social risk index, a kategóriabontás és a forráslisták
+      nyílt forrású monitoringot támogatnak. Az eredmény nem közvélemény-kutatás,
+      nem hivatalos kockázati minősítés, hanem elemző célú OSINT-jelzőrendszer.
     </p>
   </div>
 </main>
