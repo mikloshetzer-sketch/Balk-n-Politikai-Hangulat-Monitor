@@ -1,42 +1,63 @@
 {
-  "updated_at": "2026-05-27 09:56 UTC",
+  "updated_at": "2026-05-27 10:13 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön jelző. Csak 7 napon belüli, politikailag releváns, ország szerint illesztett és erősen zajszűrt találatokat számol. Nem közvélemény-kutatás, és nem része a fő hírindexnek. A rendszer külön minőségi pontszámot használ, hogy kiszűrje a casual, utazási, sport-, kulturális, fantasy, földrengés- és spamjellegű találatokat. Az X API opcionális: ha nem érhető el, nincs kredit vagy hibát ad, a Reddit és Mastodon RSS-források továbbra is frissülnek.",
   "x_status": {
     "enabled": true,
-    "status": "partial_error",
-    "errors": [
-      {
-        "country": "Szerbia",
-        "status_code": 402,
-        "message": "{\"account_id\":2059509150040694788,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2059509150040694788] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/problems/credits\"}"
-      }
-    ],
-    "collected": 0
+    "status": "ok",
+    "errors": [],
+    "collected": 30
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 10,
-        "level": "medium",
-        "mentions": 3,
-        "negative_hits": 1,
-        "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "quality_total": 18,
+        "score": 30,
+        "level": "high",
+        "mentions": 16,
+        "negative_hits": 3,
+        "positive_hits": 5,
+        "trusted_hits": 3,
+        "engagement_total": 818,
+        "quality_total": 86,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 0
+          "x": 13
         },
         "tag_counts": {
           "balkans": 2,
-          "serbia": 1
+          "serbia": 1,
+          "Szerbia": 7,
+          "Bosznia-Hercegovina": 2,
+          "Koszovó": 1,
+          "Montenegró": 2,
+          "Észak-Macedónia": 1
         },
-        "main_topic": "balkans",
+        "main_topic": "Szerbia",
         "top_posts": [
+          {
+            "title": "Sorensen discusses Belgrade–Pristina dialogue with Hoxha: Both sides need normalization in order to advance toward the EU",
+            "text": "Sorensen discusses Belgrade–Pristina dialogue with Hoxha: Both sides need normalization in order to advance toward the EU",
+            "url": "https://x.com/i/web/status/2059532529636393054",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-05-27T07:09:53.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 12,
+            "trusted_source_hint": false
+          },
           {
             "title": "",
             "text": "Agenzia Nova: Serbia-Nato: conclusa prima esercitazione militare congiunta, obiettivo rafforzare interoperabilita' e stabilita' nei Balcani (5) 22 mag 18:46 - (Agenzia Nova) - Un ultimo elemento emerso nel corso dell'esercitazione e' stato quello delle relazioni umane. Uno dei militari... (Beb) Serbia-NATO: First joint",
@@ -68,18 +89,46 @@
             "trusted_source_hint": false
           },
           {
-            "title": "",
-            "text": "Serbia Says Farewell to Democracy Campaigner and Former Dissident Dragoljub Micunovic https:// fed.brid.gy/r/https://balkanin sight.com/2026/05/26/serbia-says-farewell-to-democracy-campaigner-and-former-dissident-dragoljub-micunovic/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/05/26/serbia-says-farewell-to-democracy-campaigner-and-former-dissident-dragoljub-micunovic/bi/",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Tue, 26 May 2026 13:37:29 +0000",
+            "title": "🌍 UPSC IR PYQ | NATO Members 🇪🇺 Which countries from the list are NATO members? ✅ Correct Answer: B — Only four ✔ Bulgaria ✔ Croatia ✔ Sweden ✔ North Macedonia ❌ Austria & Serbia a",
+            "text": "🌍 UPSC IR PYQ | NATO Members 🇪🇺 Which countries from the list are NATO members? ✅ Correct Answer: B — Only four ✔ Bulgaria ✔ Croatia ✔ Sweden ✔ North Macedonia ❌ Austria & Serbia are not NATO members. UPSC NATO InternationalRelations CurrentAffairs UPSCPrelims IAS",
+            "url": "https://x.com/i/web/status/2059508394663526762",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-05-27T05:33:59.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Észak-Macedónia"
+            ],
+            "engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 6,
+            "trusted_source_hint": true
+          },
+          {
+            "title": "Serbian trainees showcase robotics skills learned in China, presenting to President Vucic. Training in Jiaxing highlights international skill transfer, robotics operation expertise",
+            "text": "Serbian trainees showcase robotics skills learned in China, presenting to President Vucic. Training in Jiaxing highlights international skill transfer, robotics operation expertise, and potential job growth across Europe as Serbia strengthens tech collab…",
+            "url": "https://x.com/i/web/status/2059576971487519036",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-05-27T10:06:29.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "engagement": 0,
-            "quality": "rss_filtered",
-            "quality_score": 3,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 6,
             "trusted_source_hint": false
           }
         ]
@@ -88,23 +137,24 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 6,
-        "level": "low",
-        "mentions": 1,
-        "negative_hits": 1,
-        "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "quality_total": 7,
+        "score": 27,
+        "level": "high",
+        "mentions": 5,
+        "negative_hits": 2,
+        "positive_hits": 2,
+        "trusted_hits": 2,
+        "engagement_total": 564,
+        "quality_total": 27,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 0
+          "x": 4
         },
         "tag_counts": {
-          "bosnia": 1
+          "bosnia": 1,
+          "Bosznia-Hercegovina": 4
         },
-        "main_topic": "bosnia",
+        "main_topic": "Bosznia-Hercegovina",
         "top_posts": [
           {
             "title": "",
@@ -120,6 +170,95 @@
             "quality": "rss_filtered",
             "quality_score": 7,
             "trusted_source_hint": true
+          },
+          {
+            "title": "Today, the Parliament of Republika Srpska 🇷🇸 unanimously adopted a declaration calling for the immediate closure of the so-called Office of the High Representative in Bosnia and He",
+            "text": "Today, the Parliament of Republika Srpska 🇷🇸 unanimously adopted a declaration calling for the immediate closure of the so-called Office of the High Representative in Bosnia and Herzegovina 🇧🇦",
+            "url": "https://x.com/i/web/status/2059303559779299761",
+            "source": "x",
+            "tag": "Bosznia-Hercegovina",
+            "seen_date": "2026-05-26T16:00:03.000Z",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "engagement": 181,
+            "metrics": {
+              "likes": 163,
+              "reposts": 15,
+              "replies": 2,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 6,
+            "trusted_source_hint": false
+          },
+          {
+            "title": "BREAKING🚨SLOVAK PM ROBERT FICO DESTROYS EU HYPOCRISY: “PROTECTING CORRUPT UKRAINE IS A SLAP IN THE FACE TO THE BALKANS!” UKRAINE GETS FAST-TRACK TO EU DESPITE MASSIVE CORRUPTION WH",
+            "text": "BREAKING🚨SLOVAK PM ROBERT FICO DESTROYS EU HYPOCRISY: “PROTECTING CORRUPT UKRAINE IS A SLAP IN THE FACE TO THE BALKANS!” UKRAINE GETS FAST-TRACK TO EU DESPITE MASSIVE CORRUPTION WHILE SERBIA, MONTENEGRO, ALBANIA, BOSNIA & NORTH MACEDONIA WAIT FOR YEARS UNDER STRICT RULES 🇸🇰",
+            "url": "https://x.com/i/web/status/2059286818814624174",
+            "source": "x",
+            "tag": "Bosznia-Hercegovina",
+            "seen_date": "2026-05-26T14:53:31.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina",
+              "Montenegró",
+              "Észak-Macedónia",
+              "Albánia"
+            ],
+            "engagement": 379,
+            "metrics": {
+              "likes": 268,
+              "reposts": 80,
+              "replies": 27,
+              "quotes": 4
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 5,
+            "trusted_source_hint": false
+          },
+          {
+            "title": "Supported by Serbia, Russia and China, Serb entity in Bosnia calls UN top body to close EU-backed office",
+            "text": "Supported by Serbia, Russia and China, Serb entity in Bosnia calls UN top body to close EU-backed office",
+            "url": "https://x.com/i/web/status/2059273712491254029",
+            "source": "x",
+            "tag": "Bosznia-Hercegovina",
+            "seen_date": "2026-05-26T14:01:27.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina"
+            ],
+            "engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 5,
+            "trusted_source_hint": true
+          },
+          {
+            "title": "Police agencies in BiH discussed ways to improve sustainable SALW destruction procedures and harmonize practices with relevant standards, through the first working-consultative mee",
+            "text": "Police agencies in BiH discussed ways to improve sustainable SALW destruction procedures and harmonize practices with relevant standards, through the first working-consultative meeting supported by LEAD. Implemented by UNDPBiH with support from 🇩🇪🇳🇱🇸🇪🇫🇷🇬🇧🇳🇴 and 🇪🇺 via MPTF.",
+            "url": "https://x.com/i/web/status/2059273356071862360",
+            "source": "x",
+            "tag": "Bosznia-Hercegovina",
+            "seen_date": "2026-05-26T14:00:02.000Z",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "engagement": 3,
+            "metrics": {
+              "likes": 2,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 4,
+            "trusted_source_hint": false
           }
         ]
       }
@@ -127,45 +266,160 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 0,
-        "level": "low",
-        "mentions": 0,
-        "negative_hits": 0,
-        "positive_hits": 0,
+        "score": 17,
+        "level": "medium",
+        "mentions": 4,
+        "negative_hits": 2,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "quality_total": 0,
+        "engagement_total": 14,
+        "quality_total": 25,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 0
+          "x": 4
         },
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "tag_counts": {
+          "Koszovó": 3,
+          "Észak-Macedónia": 1
+        },
+        "main_topic": "Koszovó",
+        "top_posts": [
+          {
+            "title": "Sorensen discusses Belgrade–Pristina dialogue with Hoxha: Both sides need normalization in order to advance toward the EU",
+            "text": "Sorensen discusses Belgrade–Pristina dialogue with Hoxha: Both sides need normalization in order to advance toward the EU",
+            "url": "https://x.com/i/web/status/2059532529636393054",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-05-27T07:09:53.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 12,
+            "trusted_source_hint": false
+          },
+          {
+            "title": "What helps protect democracy in the digital age? 👀 In Kosovo, nearly 25,000 people joined EU-supported media literacy activities to learn how to spot false content and protect thei",
+            "text": "What helps protect democracy in the digital age? 👀 In Kosovo, nearly 25,000 people joined EU-supported media literacy activities to learn how to spot false content and protect their data. 💙 Read the full story 👉 EUwithYOU WeBalkans",
+            "url": "https://x.com/i/web/status/2059560718437892403",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-05-27T09:01:54.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 5,
+            "trusted_source_hint": false
+          },
+          {
+            "title": "After Skopje and Tirana, Next Protest for the Albanian Language to Be Held in Prishtina AlbanianLanguage Prishtina Skopje Tirana NorthMacedonia",
+            "text": "After Skopje and Tirana, Next Protest for the Albanian Language to Be Held in Prishtina AlbanianLanguage Prishtina Skopje Tirana NorthMacedonia",
+            "url": "https://x.com/i/web/status/2059333262900683108",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-05-26T17:58:05.000Z",
+            "matched_countries": [
+              "Koszovó",
+              "Észak-Macedónia",
+              "Albánia"
+            ],
+            "engagement": 14,
+            "metrics": {
+              "likes": 9,
+              "reposts": 0,
+              "replies": 2,
+              "quotes": 3
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 4,
+            "trusted_source_hint": false
+          },
+          {
+            "title": "U.S. Congressmen Visit Kosovo Presidency, Meet Acting President Haxhiu Kosovo USA Congress KeithSelf SuhasSubramanyam AlbulenaHaxhiu",
+            "text": "U.S. Congressmen Visit Kosovo Presidency, Meet Acting President Haxhiu Kosovo USA Congress KeithSelf SuhasSubramanyam AlbulenaHaxhiu",
+            "url": "https://x.com/i/web/status/2059573174174445644",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-05-27T09:51:24.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 4,
+            "trusted_source_hint": false
+          }
+        ]
       }
     },
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 6,
-        "level": "low",
-        "mentions": 2,
-        "negative_hits": 0,
+        "score": 30,
+        "level": "high",
+        "mentions": 9,
+        "negative_hits": 2,
         "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "quality_total": 16,
+        "trusted_hits": 2,
+        "engagement_total": 876,
+        "quality_total": 58,
         "source_counts": {
           "reddit": 1,
           "mastodon": 1,
-          "x": 0
+          "x": 7
         },
         "tag_counts": {
-          "montenegro": 2
+          "montenegro": 2,
+          "Bosznia-Hercegovina": 1,
+          "Montenegró": 6
         },
-        "main_topic": "montenegro",
+        "main_topic": "Montenegró",
         "top_posts": [
+          {
+            "title": "Albania is catching up with Montenegro. The EU has set conditions (otherwise known as benchmarking). The problematic areas are the judiciary and anti-corruption. What can be done b",
+            "text": "Albania is catching up with Montenegro. The EU has set conditions (otherwise known as benchmarking). The problematic areas are the judiciary and anti-corruption. What can be done better to counter corruption than before, when Prime Minister Edi Rama has been running the",
+            "url": "https://x.com/i/web/status/2059555692785078486",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-05-27T08:41:56.000Z",
+            "matched_countries": [
+              "Montenegró",
+              "Albánia"
+            ],
+            "engagement": 3,
+            "metrics": {
+              "likes": 3,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 15,
+            "trusted_source_hint": false
+          },
           {
             "title": "Zašto mislim da Milo Đukanović treba da postane svetac",
             "text": "Kroz istoriju mnogi sveci su bili vladari i političke figure koje su imale “višu misiju” za svoj narod i državu. Ako to gledamo na taj način, Milo Đukanović ima ozbiljne argumente za kanonizaciju. Čovjek je praktično obnovio crnogorsku državnost. Da nije bilo njega i referenduma 2006, vrlo je moguće da danas ne bi ni p",
@@ -182,18 +436,72 @@
             "trusted_source_hint": true
           },
           {
-            "title": "",
-            "text": "EU could deny new member states veto rights as bloc pushes for enlargement https://www. theguardian.com/world/2026/may /26/eu-could-deny-new-member-states-veto-rights-as-bloc-pushes-for-enlargement # EuropeanUnion # Europe # WorldNews # Moldova # Montenegro # Ukraine # Albania # EuropeanCommission",
-            "url": "https://halo.nu/@theguardian_world_news/116640435716525777",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Tue, 26 May 2026 10:36:44 +0000",
+            "title": "Ako vec nece Vlada, ja cu , you should take into consideration to stop this tyranny. Montenegro is a member of NATO, and you should do your job!",
+            "text": "Ako vec nece Vlada, ja cu , you should take into consideration to stop this tyranny. Montenegro is a member of NATO, and you should do your job!",
+            "url": "https://x.com/i/web/status/2059341429906854197",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-05-26T18:30:32.000Z",
             "matched_countries": [
-              "Montenegró",
-              "Albánia"
+              "Montenegró"
             ],
             "engagement": 0,
-            "quality": "rss_filtered",
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 6,
+            "trusted_source_hint": true
+          },
+          {
+            "title": "BREAKING🚨SLOVAK PM ROBERT FICO DESTROYS EU HYPOCRISY: “PROTECTING CORRUPT UKRAINE IS A SLAP IN THE FACE TO THE BALKANS!” UKRAINE GETS FAST-TRACK TO EU DESPITE MASSIVE CORRUPTION WH",
+            "text": "BREAKING🚨SLOVAK PM ROBERT FICO DESTROYS EU HYPOCRISY: “PROTECTING CORRUPT UKRAINE IS A SLAP IN THE FACE TO THE BALKANS!” UKRAINE GETS FAST-TRACK TO EU DESPITE MASSIVE CORRUPTION WHILE SERBIA, MONTENEGRO, ALBANIA, BOSNIA & NORTH MACEDONIA WAIT FOR YEARS UNDER STRICT RULES 🇸🇰",
+            "url": "https://x.com/i/web/status/2059286818814624174",
+            "source": "x",
+            "tag": "Bosznia-Hercegovina",
+            "seen_date": "2026-05-26T14:53:31.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina",
+              "Montenegró",
+              "Észak-Macedónia",
+              "Albánia"
+            ],
+            "engagement": 379,
+            "metrics": {
+              "likes": 268,
+              "reposts": 80,
+              "replies": 27,
+              "quotes": 4
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 5,
+            "trusted_source_hint": false
+          },
+          {
+            "title": "What makes this even more outrageous is that the EU has spent decades humiliating countries in the Balkans with endless accession requirements, delays, lectures, and bureaucratic t",
+            "text": "What makes this even more outrageous is that the EU has spent decades humiliating countries in the Balkans with endless accession requirements, delays, lectures, and bureaucratic torture. Serbia, Montenegro, North Macedonia, Albania, all sat there jumping through hoops for years",
+            "url": "https://x.com/i/web/status/2059397274535395386",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-05-26T22:12:26.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Montenegró",
+              "Észak-Macedónia",
+              "Albánia"
+            ],
+            "engagement": 430,
+            "metrics": {
+              "likes": 313,
+              "reposts": 104,
+              "replies": 10,
+              "quotes": 3
+            },
+            "quality": "x_api_filtered",
             "quality_score": 4,
             "trusted_source_hint": false
           }
@@ -203,47 +511,188 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 0,
-        "level": "low",
-        "mentions": 0,
-        "negative_hits": 0,
-        "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 0,
-        "quality_total": 0,
+        "score": 30,
+        "level": "high",
+        "mentions": 9,
+        "negative_hits": 5,
+        "positive_hits": 3,
+        "trusted_hits": 1,
+        "engagement_total": 1470,
+        "quality_total": 54,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 0
+          "x": 9
         },
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "tag_counts": {
+          "Bosznia-Hercegovina": 1,
+          "Montenegró": 1,
+          "Észak-Macedónia": 7
+        },
+        "main_topic": "Észak-Macedónia",
+        "top_posts": [
+          {
+            "title": "Today, Mickoski said North Macedonia won’t include Bulgarians in the constitution and is ready to ‘pay the price’. That’s a political choice. But don’t pretend Bulgaria is the obst",
+            "text": "Today, Mickoski said North Macedonia won’t include Bulgarians in the constitution and is ready to ‘pay the price’. That’s a political choice. But don’t pretend Bulgaria is the obstacle when this was Skopje’s EU-agreed commitment for moving forward on accession.",
+            "url": "https://x.com/i/web/status/2059315758941773938",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-05-26T16:48:31.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "engagement": 617,
+            "metrics": {
+              "likes": 488,
+              "reposts": 36,
+              "replies": 75,
+              "quotes": 18
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 9,
+            "trusted_source_hint": false
+          },
+          {
+            "title": "During his visit to North Macedonia on Tuesday Croatian Prime Minister Plenković reiterated his belief that North Macedonia's European membership has been unfairly blocked for more",
+            "text": "During his visit to North Macedonia on Tuesday Croatian Prime Minister Plenković reiterated his belief that North Macedonia's European membership has been unfairly blocked for more than twenty years.",
+            "url": "https://x.com/i/web/status/2059327142203138401",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-05-26T17:33:45.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "engagement": 3,
+            "metrics": {
+              "likes": 2,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 9,
+            "trusted_source_hint": false
+          },
+          {
+            "title": "Macedonia 🇲🇰 & 🇭🇷 Croatia today have signed the Strategic Cooperation Agreement. Main goals: strengthening economic & trade cooperation, mutual projects in infrastructure, transpor",
+            "text": "Macedonia 🇲🇰 & 🇭🇷 Croatia today have signed the Strategic Cooperation Agreement. Main goals: strengthening economic & trade cooperation, mutual projects in infrastructure, transport, energy, cybersecurity, defence, border security & migration management.",
+            "url": "https://x.com/i/web/status/2059364184102510763",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-05-26T20:00:57.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "engagement": 22,
+            "metrics": {
+              "likes": 21,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 8,
+            "trusted_source_hint": false
+          },
+          {
+            "title": "🌍 UPSC IR PYQ | NATO Members 🇪🇺 Which countries from the list are NATO members? ✅ Correct Answer: B — Only four ✔ Bulgaria ✔ Croatia ✔ Sweden ✔ North Macedonia ❌ Austria & Serbia a",
+            "text": "🌍 UPSC IR PYQ | NATO Members 🇪🇺 Which countries from the list are NATO members? ✅ Correct Answer: B — Only four ✔ Bulgaria ✔ Croatia ✔ Sweden ✔ North Macedonia ❌ Austria & Serbia are not NATO members. UPSC NATO InternationalRelations CurrentAffairs UPSCPrelims IAS",
+            "url": "https://x.com/i/web/status/2059508394663526762",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-05-27T05:33:59.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Észak-Macedónia"
+            ],
+            "engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 6,
+            "trusted_source_hint": true
+          },
+          {
+            "title": "BREAKING🚨SLOVAK PM ROBERT FICO DESTROYS EU HYPOCRISY: “PROTECTING CORRUPT UKRAINE IS A SLAP IN THE FACE TO THE BALKANS!” UKRAINE GETS FAST-TRACK TO EU DESPITE MASSIVE CORRUPTION WH",
+            "text": "BREAKING🚨SLOVAK PM ROBERT FICO DESTROYS EU HYPOCRISY: “PROTECTING CORRUPT UKRAINE IS A SLAP IN THE FACE TO THE BALKANS!” UKRAINE GETS FAST-TRACK TO EU DESPITE MASSIVE CORRUPTION WHILE SERBIA, MONTENEGRO, ALBANIA, BOSNIA & NORTH MACEDONIA WAIT FOR YEARS UNDER STRICT RULES 🇸🇰",
+            "url": "https://x.com/i/web/status/2059286818814624174",
+            "source": "x",
+            "tag": "Bosznia-Hercegovina",
+            "seen_date": "2026-05-26T14:53:31.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina",
+              "Montenegró",
+              "Észak-Macedónia",
+              "Albánia"
+            ],
+            "engagement": 379,
+            "metrics": {
+              "likes": 268,
+              "reposts": 80,
+              "replies": 27,
+              "quotes": 4
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 5,
+            "trusted_source_hint": false
+          }
+        ]
       }
     },
     {
       "name": "Albánia",
       "social_signal": {
-        "score": 27,
+        "score": 30,
         "level": "high",
-        "mentions": 6,
-        "negative_hits": 1,
-        "positive_hits": 3,
+        "mentions": 12,
+        "negative_hits": 5,
+        "positive_hits": 5,
         "trusted_hits": 4,
-        "engagement_total": 0,
-        "quality_total": 53,
+        "engagement_total": 829,
+        "quality_total": 96,
         "source_counts": {
           "reddit": 1,
           "mastodon": 5,
-          "x": 0
+          "x": 6
         },
         "tag_counts": {
           "balkans": 1,
           "montenegro": 1,
-          "albania": 4
+          "albania": 4,
+          "Bosznia-Hercegovina": 1,
+          "Montenegró": 2,
+          "Észak-Macedónia": 2,
+          "Albánia": 1
         },
         "main_topic": "albania",
         "top_posts": [
+          {
+            "title": "Albania is catching up with Montenegro. The EU has set conditions (otherwise known as benchmarking). The problematic areas are the judiciary and anti-corruption. What can be done b",
+            "text": "Albania is catching up with Montenegro. The EU has set conditions (otherwise known as benchmarking). The problematic areas are the judiciary and anti-corruption. What can be done better to counter corruption than before, when Prime Minister Edi Rama has been running the",
+            "url": "https://x.com/i/web/status/2059555692785078486",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-05-27T08:41:56.000Z",
+            "matched_countries": [
+              "Montenegró",
+              "Albánia"
+            ],
+            "engagement": 3,
+            "metrics": {
+              "likes": 3,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 15,
+            "trusted_source_hint": false
+          },
           {
             "title": "",
             "text": "Doorstep by @ediramaal, Prime Minister of # Albania , at the # EUAlbania Intergovernmental Conference taking place on 26 May 2026 in # Brussels . https:// newsroom.consilium.europa.eu/e vents/20260526-eu-albania-intergovernmental-conference-may-2026/154095-doorstep-rama-albania-20260526 --- https:// nitter.net/EUCounci",
@@ -290,35 +739,25 @@
             "trusted_source_hint": true
           },
           {
-            "title": "",
-            "text": "EU could deny new member states veto rights as bloc pushes for enlargement https://www. theguardian.com/world/2026/may /26/eu-could-deny-new-member-states-veto-rights-as-bloc-pushes-for-enlargement # EuropeanUnion # Europe # WorldNews # Moldova # Montenegro # Ukraine # Albania # EuropeanCommission",
-            "url": "https://halo.nu/@theguardian_world_news/116640435716525777",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Tue, 26 May 2026 10:36:44 +0000",
+            "title": "Albania advances in the EU accession process. Work begins on closing the cluster chapters. : We will be 🇪🇺 members within this decade. : We support the 🇦🇱 vision for closing the ne",
+            "text": "Albania advances in the EU accession process. Work begins on closing the cluster chapters. : We will be 🇪🇺 members within this decade. : We support the 🇦🇱 vision for closing the negotiations by 2027. Albania EU enlargement",
+            "url": "https://x.com/i/web/status/2059569989393211398",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-05-27T09:38:45.000Z",
             "matched_countries": [
-              "Montenegró",
               "Albánia"
             ],
-            "engagement": 0,
-            "quality": "rss_filtered",
-            "quality_score": 4,
+            "engagement": 3,
+            "metrics": {
+              "likes": 2,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered",
+            "quality_score": 10,
             "trusted_source_hint": false
-          },
-          {
-            "title": "",
-            "text": "📰 Giorgia Meloni ha fatto scuola con l’Albania: anche l’Olanda ora cerca un Paese per il suo hub migranti #️⃣ # ESTERI # Albania # EUtopia # GiorgiaMeloni # GovernoMeloni # Immigrazione # Olanda # Unioneeuropea # OpenOnline # TheLabSocial # News # Notizie # Italia 🔗 https://www. open.online/2026/05/26/olanda- centri-ri",
-            "url": "https://social.thelab.uno/@openonline/116642639739785278",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Tue, 26 May 2026 19:57:15 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "engagement": 0,
-            "quality": "rss_filtered",
-            "quality_score": 4,
-            "trusted_source_hint": true
           }
         ]
       }
