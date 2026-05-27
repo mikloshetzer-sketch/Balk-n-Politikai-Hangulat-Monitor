@@ -81,6 +81,14 @@
       background: #374151;
     }
 
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-top: 10px;
+    }
+
     .small {
       color: #6b7280;
       font-size: 13px;
@@ -255,6 +263,56 @@
       font-size: 15px;
     }
 
+    .social-source-line {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #334155;
+      line-height: 1.45;
+    }
+
+    .social-topic-panel {
+      margin-top: 10px;
+      padding: 10px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+    }
+
+    .social-topic-line {
+      font-size: 13px;
+      color: #334155;
+      line-height: 1.55;
+    }
+
+    .category-breakdown {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .category-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 13px;
+      padding: 4px 0;
+      color: #334155;
+      border-bottom: 1px dashed #edf2f7;
+    }
+
+    .category-row:last-child {
+      border-bottom: none;
+    }
+
+    .category-row strong {
+      color: #0f172a;
+    }
+
+    .social-muted {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
     .chart-desc {
       font-size: 12px;
       color: #6b7280;
@@ -342,32 +400,30 @@
 
     <p class="small" id="methodNote" style="margin-top:12px;"></p>
 
-   <div class="button-row">
+    <div class="button-row">
+      <div id="regionalButtonWrap"></div>
 
-  <div id="regionalButtonWrap"></div>
+      <a class="regional-button"
+         href="./security-map.html"
+         target="_blank"
+         rel="noopener noreferrer">
+        Security Risk Map megnyitása
+      </a>
 
-  <a class="regional-button"
-     href="./security-map.html"
-     target="_blank"
-     rel="noopener noreferrer">
-    Security Risk Map megnyitása
-  </a>
+      <a class="regional-button"
+         href="./country-profiles.html"
+         target="_blank"
+         rel="noopener noreferrer">
+        Országprofil Dashboard megnyitása
+      </a>
 
-  <a class="regional-button"
-     href="./country-profiles.html"
-     target="_blank"
-     rel="noopener noreferrer">
-    Országprofil Dashboard megnyitása
-  </a>
-
-  <a class="regional-button"
-     href="./ngo-monitor.html"
-     target="_blank"
-     rel="noopener noreferrer">
-    NGO Támogatási Monitor megnyitása
-</a>
-
-</div>
+      <a class="regional-button"
+         href="./ngo-monitor.html"
+         target="_blank"
+         rel="noopener noreferrer">
+        NGO Támogatási Monitor megnyitása
+      </a>
+    </div>
   </section>
 
   <section class="dashboard-grid" id="countryGrid"></section>
@@ -553,11 +609,29 @@ async function loadData() {
               </div>
             </div>
 
-            <div class="topic-line">
-              Reddit: ${getSourceCount(socialSignal, 'reddit')} |
-              Mastodon: ${getSourceCount(socialSignal, 'mastodon')} |
-              Fő social téma:
-              <strong>${socialSignal.main_topic || 'nincs adat'}</strong>
+            <div class="social-source-line">
+              X: <strong>${getSourceCount(socialSignal, 'x')}</strong> |
+              Reddit: <strong>${getSourceCount(socialSignal, 'reddit')}</strong> |
+              Mastodon: <strong>${getSourceCount(socialSignal, 'mastodon')}</strong>
+            </div>
+
+            <div class="social-topic-panel">
+              <div class="social-topic-line">
+                Fő geopolitikai téma:
+                <strong>${formatTopic(socialSignal.main_topic || 'nincs adat')}</strong>
+              </div>
+
+              <div class="social-topic-line">
+                Megbízható források:
+                <strong>${socialSignal.trusted_hits || 0}</strong>
+                |
+                Geopolitikai pontszám:
+                <strong>${socialSignal.geopolitical_total || 0}</strong>
+              </div>
+
+              <div class="category-breakdown">
+                ${renderCategoryBreakdown(socialSignal.category_counts || {})}
+              </div>
             </div>
           </div>
 
@@ -1050,7 +1124,6 @@ function getSecurityHistory(countryName, securityHistoryData) {
   return rows.slice(-7);
 }
 
-
 function getSocialHistory(countryName, socialHistoryData) {
   const rows = [];
   const records = socialHistoryData.records || [];
@@ -1102,7 +1175,10 @@ function getSocialSignal(countryName, socialData) {
     mentions: 0,
     negative_hits: 0,
     positive_hits: 0,
+    trusted_hits: 0,
+    geopolitical_total: 0,
     source_counts: {},
+    category_counts: {},
     main_topic: 'nincs adat'
   };
 
@@ -1118,7 +1194,10 @@ function getSocialSignal(countryName, socialData) {
     return fallback;
   }
 
-  return row.social_signal;
+  return {
+    ...fallback,
+    ...row.social_signal
+  };
 }
 
 function getSourceCount(
@@ -1130,6 +1209,41 @@ function getSourceCount(
   }
 
   return socialSignal.source_counts[sourceName] || 0;
+}
+
+function renderCategoryBreakdown(categoryCounts) {
+  const entries = Object.entries(categoryCounts || {})
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 5);
+
+  if (!entries.length) {
+    return `<div class="social-muted">Nincs kategóriaadat.</div>`;
+  }
+
+  return entries.map(([key, value]) => `
+    <div class="category-row">
+      <span>${formatTopic(key)}</span>
+      <strong>${value}</strong>
+    </div>
+  `).join('');
+}
+
+function formatTopic(topic) {
+  const labels = {
+    government_crisis: 'Kormányzati / politikai válság',
+    security: 'Biztonság',
+    eu_integration: 'EU-integráció',
+    ethnic_tension: 'Etnikai / identitási feszültség',
+    protest: 'Tiltakozás',
+    corruption_rule_of_law: 'Korrupció / jogállamiság',
+    foreign_influence: 'Külső befolyás',
+    migration: 'Migráció',
+    economic_infrastructure: 'Gazdaság / infrastruktúra',
+    uncategorized: 'Nem kategorizált',
+    'nincs adat': 'nincs adat'
+  };
+
+  return labels[topic] || topic || 'nincs adat';
 }
 
 function buildArticlesHtml(articles) {
