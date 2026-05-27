@@ -10,135 +10,26 @@ REPORTS_INDEX_PATH = "docs/data/reports_index.json"
 REGIONAL_REPORT_FILENAME = "regional-overview.html"
 
 
-TOPIC_KEYWORDS = {
-    "Belpolitikai tüntetések és társadalmi nyomás": [
-        "protest", "protests", "student", "students", "police", "violence",
-        "riot", "unrest", "blocked", "boycott", "demonstration"
-    ],
-    "EU-integráció és csatlakozási folyamat": [
-        "eu", "european union", "accession", "membership", "enlargement",
-        "brussels", "negotiations", "integration", "marta kos"
-    ],
-    "Koszovó–Szerbia feszültség": [
-        "kosovo", "serbia", "kurti", "vucic", "vučić", "mitrovica",
-        "pristina", "prishtina", "serb", "kfor", "border", "territory"
-    ],
-    "Boszniai intézményi válság és OHR-vita": [
-        "dodik", "republika srpska", "ohr", "high representative",
-        "christian schmidt", "dayton", "bosnia envoy", "peace envoy",
-        "state collapse"
-    ],
-    "Korrupció, jogállamiság és igazságszolgáltatás": [
-        "corruption", "court", "special court", "charges", "investigation",
-        "fraud", "trial", "justice", "rights", "prosecution"
-    ],
-    "Biztonságpolitikai kockázatok és erőszak": [
-        "violence", "attack", "assault", "clash", "security", "threat",
-        "war", "conflict", "tension", "armed", "weapon", "military"
-    ],
-    "Kormányzati stabilitás és választási dinamika": [
-        "government", "prime minister", "president", "parliament",
-        "opposition", "election", "party", "coalition", "mayor",
-        "cabinet", "resignation", "ruling party"
-    ],
-    "Gazdaság, energia és beruházások": [
-        "investment", "growth", "energy", "nis", "mol", "infrastructure",
-        "funding", "development", "trade", "business", "summit",
-        "foreign direct investment"
-    ],
-    "Nemzetközi kapcsolatok és nagyhatalmi befolyás": [
-        "nato", "russia", "china", "united states", "usa", "turkey",
-        "un", "united nations", "sanctions", "foreign policy",
-        "diplomacy"
-    ],
-    "Montenegró EU-csatlakozási előrehaladása": [
-        "montenegro", "podgorica", "eu", "accession", "membership",
-        "negotiation", "chapters", "joining"
-    ],
-    "Albán digitalizáció és kiberbiztonság": [
-        "cybersecurity", "digital", "digital transformation", "electronic",
-        "e-governance", "cyber", "infrastructure"
-    ],
-    "Bolgár–macedón identitásvita": [
-        "bulgaria", "sofia", "macedonian", "identity", "historical",
-        "language", "veto"
-    ]
-}
-
-
-TOPIC_EXPLANATIONS = {
-    "Belpolitikai tüntetések és társadalmi nyomás":
-        "A politikai hangulatot belső társadalmi feszültség, tiltakozás, rendőri fellépés vagy kormányellenes nyomás formálja.",
-
-    "EU-integráció és csatlakozási folyamat":
-        "A diskurzus középpontjában az EU-csatlakozás, a reformfeltételek, a brüsszeli kapcsolatok és a bővítési folyamat áll.",
-
-    "Koszovó–Szerbia feszültség":
-        "A térség egyik legfontosabb konfliktusos tengelye jelenik meg: a szerb–koszovói viszony, a státuszkérdés, a határbiztonság és a politikai párbeszéd.",
-
-    "Boszniai intézményi válság és OHR-vita":
-        "Ez Bosznia-Hercegovina intézményi törékenységét, az OHR szerepét, Christian Schmidt pozícióját és a Republika Srpska körüli vitákat jelzi.",
-
-    "Korrupció, jogállamiság és igazságszolgáltatás":
-        "A hangulatot jogállamisági ügyek, bírósági eljárások, korrupciós vádak vagy intézményi elszámoltathatósági kérdések befolyásolják.",
-
-    "Biztonságpolitikai kockázatok és erőszak":
-        "A hírekben erőszakos incidensek, fenyegetések, fegyveres vagy etnikai feszültségek, illetve instabilitási kockázatok jelennek meg.",
-
-    "Kormányzati stabilitás és választási dinamika":
-        "A politikai hangulatot a kormányzati működés, pártpolitikai verseny, választási dinamika vagy vezetői döntések alakítják.",
-
-    "Gazdaság, energia és beruházások":
-        "A napirendet gazdasági, energetikai és beruházási ügyek határozzák meg. Ezek stabilizáló témák is lehetnek, de stratégiai vállalatok vagy energiaügyek esetén politikai kockázatot is hordozhatnak.",
-
-    "Nemzetközi kapcsolatok és nagyhatalmi befolyás":
-        "Az ország politikai mozgásterét külső szereplők, NATO-, EU-, USA-, orosz, kínai vagy török kapcsolódások alakítják.",
-
-    "Montenegró EU-csatlakozási előrehaladása":
-        "Montenegró esetében az EU-tagsági folyamat, a tárgyalási fejezetek és a csatlakozási perspektíva adja a fő politikai keretet.",
-
-    "Albán digitalizáció és kiberbiztonság":
-        "Albánia esetében a digitális állam, a kiberbiztonság és az állami modernizáció jelenik meg hangsúlyos témaként.",
-
-    "Bolgár–macedón identitásvita":
-        "Észak-Macedónia politikai környezetét a bolgár–macedón történelmi, nyelvi és identitáspolitikai viták alakítják."
-}
-
-
 def slugify(text):
     text = text.lower()
-
     replacements = {
-        "á": "a",
-        "é": "e",
-        "í": "i",
-        "ó": "o",
-        "ö": "o",
-        "ő": "o",
-        "ú": "u",
-        "ü": "u",
-        "ű": "u",
-        "–": "-",
-        " ": "-"
+        "á": "a", "é": "e", "í": "i", "ó": "o", "ö": "o",
+        "ő": "o", "ú": "u", "ü": "u", "ű": "u",
+        "–": "-", " ": "-"
     }
-
     for old, new in replacements.items():
         text = text.replace(old, new)
-
     text = re.sub(r"[^a-z0-9\-]", "", text)
     text = re.sub(r"-+", "-", text)
-
     return text.strip("-")
 
 
 def escape_html(text):
     if text is None:
         return ""
-
-    text = str(text)
-
     return (
-        text.replace("&", "&amp;")
+        str(text)
+        .replace("&", "&amp;")
         .replace("<", "&lt;")
         .replace(">", "&gt;")
         .replace('"', "&quot;")
@@ -152,290 +43,208 @@ def load_json(path):
 
 
 def get_social_signal(country_name, social_data):
-    for item in social_data.get("countries", []):
-        if item.get("name") == country_name:
-            return item.get("social_signal", {})
-
-    return {
+    fallback = {
         "score": 0,
         "level": "low",
+        "scale": "0-60 risk index",
         "mentions": 0,
         "negative_hits": 0,
         "positive_hits": 0,
+        "trusted_hits": 0,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 0,
+        "geopolitical_total": 0,
         "main_topic": "nincs adat",
-        "source_counts": {}
+        "source_counts": {},
+        "category_counts": {},
+        "top_posts": []
     }
+
+    for item in social_data.get("countries", []):
+        if item.get("name") == country_name:
+            signal = item.get("social_signal", {})
+            return {**fallback, **signal}
+
+    return fallback
 
 
 def get_status_text(status):
     if status == "positive":
         return "pozitív"
-
     if status == "negative":
         return "negatív"
-
     return "semleges"
-
-
-def get_score_direction(score):
-    if score <= -15:
-        return "kifejezetten negatív"
-
-    if score < 0:
-        return "mérsékelten negatív"
-
-    if score == 0:
-        return "semleges"
-
-    if score < 15:
-        return "mérsékelten pozitív"
-
-    return "kifejezetten pozitív"
 
 
 def get_social_level_text(level):
     if level == "high":
-        return "magas"
-
+        return "magas kockázati jel"
     if level == "medium":
-        return "közepes"
+        return "közepes kockázati jel"
+    return "alacsony kockázati jel"
 
-    return "alacsony"
+
+def format_social_topic(topic):
+    labels = {
+        "government_crisis": "kormányzati / politikai válság",
+        "security": "biztonsági kockázat",
+        "eu_integration": "EU-integráció",
+        "ethnic_tension": "etnikai / identitási feszültség",
+        "protest": "tiltakozás",
+        "corruption_rule_of_law": "korrupció / jogállamiság",
+        "foreign_influence": "külső befolyás",
+        "migration": "migráció",
+        "economic_infrastructure": "gazdaság / infrastruktúra",
+        "uncategorized": "nem kategorizált",
+        "nincs adat": "nincs adat"
+    }
+    return labels.get(topic, topic or "nincs adat")
 
 
-def build_risk_sentence(score, negative_hits=0, positive_hits=0):
-    if score <= -20:
+def risk_interpretation(score):
+    if score >= 45:
         return (
-            "A jelenlegi mintázat alapján az ország politikai környezete "
-            "rövid távon is instabilitási jeleket mutat."
+            "A social térben erős kockázati mintázat látszik. Ez nem önmagában válságot jelent, "
+            "de azt mutatja, hogy a politikai vagy biztonsági témák nagy intenzitással vannak jelen."
         )
-
-    if score <= -8:
+    if score >= 30:
         return (
-            "A politikai hangulat továbbra is inkább negatív irányba húz, "
-            "különösen a konfliktusos vagy intézményi témák miatt."
+            "A social jelzés érdemi kockázatot mutat. A figyelem nemcsak általános aktivitásból, "
+            "hanem konfliktusos vagy intézményi témákból is épül."
         )
-
-    if score < 8:
+    if score >= 15:
         return (
-            "A politikai környezet vegyes képet mutat, nincs egyetlen domináns "
-            "pozitív vagy negatív irány."
+            "A social aktivitás mérsékelt kockázati szintet jelez. A témák jelen vannak, "
+            "de nem dominálják teljesen a politikai teret."
         )
+    return (
+        "A social tér alapján alacsony kockázati jel látható. A helyzetképet inkább a híralapú "
+        "források és nem a közösségi média aktivitása formálja."
+    )
 
+
+def news_interpretation(score, negative_hits, positive_hits):
+    if score <= -15:
+        return "A híralapú index erősen negatív irányt mutat, ami politikai nyomásra vagy konfliktusos napirendre utal."
+    if score < 0:
+        return "A híralapú index mérsékelten negatív. A kockázati témák erősebbek, mint a stabilizáló jelek."
+    if score == 0:
+        return "A híralapú index semleges. A pozitív és negatív jelek nem adnak egyértelmű irányt."
     if positive_hits > negative_hits:
-        return (
-            "A jelenlegi hírminta inkább stabilizáló vagy pozitív narratívákat jelez."
+        return "A híralapú index pozitívabb, és a stabilizáló vagy reformjellegű narratívák erősebben vannak jelen."
+    return "A híralapú index pozitív, de a háttérben továbbra is lehetnek kockázati témák."
+
+
+def build_scenario(country, social_signal):
+    name = country.get("name", "")
+    main_topic = country.get("main_topic", "nincs adat")
+    social_topic = social_signal.get("main_topic", "nincs adat")
+    social_score = social_signal.get("score", 0)
+    negative_hits = country.get("negative_hits", 0)
+
+    if social_score >= 40 or negative_hits >= 6:
+        risk = (
+            "A következő napok fő kockázata az, hogy a politikai vita tovább keményedik, "
+            "és a social térben látható narratívák visszahatnak a hírnapirendre."
+        )
+    elif social_score >= 20:
+        risk = (
+            "A legvalószínűbb rövid távú forgatókönyv a fokozott figyelem, de nem feltétlenül "
+            "azonnali eszkaláció. A kockázat akkor nőhet, ha új biztonsági, etnikai vagy intézményi esemény jelenik meg."
+        )
+    else:
+        risk = (
+            "Rövid távon nem látszik erős social alapú eszkalációs jel. A helyzetet inkább a hivatalos "
+            "politikai és diplomáciai események mozgathatják."
         )
 
     return (
-        "A pozitív index ellenére érdemes figyelni, hogy a háttérben "
-        "maradtak-e kockázati témák."
+        f"{name} esetében a fő hírtéma jelenleg: {main_topic}. "
+        f"A social térben a domináns kategória: {format_social_topic(social_topic)}. "
+        f"{risk}"
     )
 
 
-def article_text(article):
-    title = article.get("title", "")
-    source = article.get("source", "")
-    return f"{title} {source}".lower()
+def build_watchlist(country, social_signal):
+    topic = social_signal.get("main_topic", "nincs adat")
+    main_topic = country.get("main_topic", "nincs adat")
 
-
-def match_articles_to_topic(topic, articles):
-    keywords = TOPIC_KEYWORDS.get(topic, [])
-    matched = []
-
-    for article in articles:
-        text = article_text(article)
-
-        if any(keyword.lower() in text for keyword in keywords):
-            matched.append(article)
-
-    if matched:
-        return matched[:3]
-
-    return articles[:2]
-
-
-def extract_named_clues(articles):
-    text = " ".join(article.get("title", "") for article in articles)
-
-    known_names = [
-        "Vučić", "Vucic", "Kurti", "Dodik", "Christian Schmidt",
-        "Marta Kos", "Rama", "Mickoski", "Osmani", "Bolton",
-        "Macut", "MOL", "NIS", "OHR", "KFOR", "NATO", "EU",
-        "UN", "Republika Srpska", "Podgorica", "Pristina",
-        "Belgrade", "Sarajevo", "Sofia", "Tirana", "Bulgaria",
-        "Serbia", "Kosovo", "Montenegro", "Albania"
+    items = [
+        f"a(z) {main_topic} témához kapcsolódó új hírforrások megjelenése",
+        f"a social térben a(z) {format_social_topic(topic)} kategória erősödése",
+        "a negatív és pozitív jelzések arányának változása",
+        "a megbízható forrásokból származó megerősítések száma"
     ]
 
-    found = []
-
-    for name in known_names:
-        if name.lower() in text.lower() and name not in found:
-            found.append(name)
-
-    return found[:6]
+    return "".join(f"<li>{escape_html(item)}</li>" for item in items)
 
 
-def get_top_topics(topic_scores, limit=4):
-    return list(topic_scores.items())[:limit]
+def build_category_table(category_counts):
+    if not category_counts:
+        return "<p class='meta'>Nincs kategóriaadat.</p>"
 
-
-def build_topic_sentence(topic):
-    topic_map = {
-        "Belpolitikai tüntetések és társadalmi nyomás":
-            "A belpolitikai nyomás azt jelzi, hogy a kormányzati szereplőknek nemcsak intézményi, hanem utcai vagy társadalmi reakciókkal is számolniuk kell.",
-
-        "EU-integráció és csatlakozási folyamat":
-            "Az EU-integrációs téma stabilizáló hatású lehet, de csak akkor, ha reformlépések és politikai kompromisszumok is társulnak hozzá.",
-
-        "Koszovó–Szerbia feszültség":
-            "A Koszovó–Szerbia ügy gyorsan biztonsági és diplomáciai dimenziót kap, ezért a régió egészének politikai hangulatát is befolyásolja.",
-
-        "Boszniai intézményi válság és OHR-vita":
-            "A boszniai intézményi vita érzékeny, mert egyszerre érinti az állami működést, a nemzetközi felügyeletet és a szerb entitás mozgásterét.",
-
-        "Korrupció, jogállamiság és igazságszolgáltatás":
-            "A jogállamisági ügyek hosszabb távon az EU-kapcsolatokra és a befektetői bizalomra is hatással lehetnek.",
-
-        "Biztonságpolitikai kockázatok és erőszak":
-            "A biztonsági jellegű hírek gyorsan rontják a politikai hangulatot, mert a stabilitás és a kiszámíthatóság kérdését érintik.",
-
-        "Kormányzati stabilitás és választási dinamika":
-            "A választási és kormányzati témák azt mutatják, hogy a politikai verseny vagy az intézményi működés került a figyelem középpontjába.",
-
-        "Gazdaság, energia és beruházások":
-            "A gazdasági és energetikai ügyek egyszerre mutathatnak fejlődést és sérülékenységet, főleg ha stratégiai ágazatokról van szó.",
-
-        "Nemzetközi kapcsolatok és nagyhatalmi befolyás":
-            "A külső szereplők jelenléte azt jelzi, hogy az ország mozgástere nemcsak belpolitikai, hanem geopolitikai tényezőktől is függ.",
-
-        "Montenegró EU-csatlakozási előrehaladása":
-            "Montenegró esetében az EU-pálya a politikai stabilitás egyik fő mércéje.",
-
-        "Albán digitalizáció és kiberbiztonság":
-            "A digitalizációs és kiberbiztonsági témák azt mutatják, hogy az állami modernizáció stratégiai politikai kérdéssé vált.",
-
-        "Bolgár–macedón identitásvita":
-            "Az identitásvita azért érzékeny, mert egyszerre érinti az EU-csatlakozást, a történelmi emlékezetet és a belpolitikai legitimációt."
-    }
-
-    return topic_map.get(
-        topic,
-        "A téma visszatérően megjelenik az aktuális híranyagban."
-    )
-
-
-def build_executive_summary(country, social_signal):
-    name = country.get("name", "")
-    score = country.get("score", 0)
-    status = country.get("status", "neutral")
-    topic_scores = country.get("topic_scores", {})
-    main_topic = country.get("main_topic", "nincs adat")
-    article_count = country.get("article_count", 0)
-    negative_hits = country.get("negative_hits", 0)
-    positive_hits = country.get("positive_hits", 0)
-    top_articles = country.get("top_articles", [])
-
-    social_score = social_signal.get("score", 0)
-    social_mentions = social_signal.get("mentions", 0)
-    social_topic = social_signal.get("main_topic", "nincs adat")
-
-    top_topics = get_top_topics(topic_scores, 4)
-    topic_names = [topic for topic, _ in top_topics]
-    key_people = extract_named_clues(top_articles)
-
-    if key_people:
-        people_sentence = (
-            "A cikkekben kiemelten megjelenő szereplők és intézmények: "
-            + ", ".join(key_people)
-            + "."
-        )
-    else:
-        people_sentence = "A cikkcímek alapján nem emelkedik ki egyetlen domináns szereplő."
-
-    topic_sentence = ", ".join(topic_names[:4]) if topic_names else "nincs egyértelműen kiemelkedő téma"
-
-    if negative_hits > positive_hits:
-        balance_sentence = (
-            f"A negatív hírjelek száma ({negative_hits}) meghaladja a pozitív jelzésekét ({positive_hits}), "
-            "ezért a politikai hangulat inkább kockázati irányba mozdul."
-        )
-    elif positive_hits > negative_hits:
-        balance_sentence = (
-            f"A pozitív hírjelek száma ({positive_hits}) meghaladja a negatív jelzésekét ({negative_hits}), "
-            "ami mérsékelheti a politikai kockázatokat."
-        )
-    else:
-        balance_sentence = (
-            f"A negatív és pozitív hírjelek kiegyenlítettek ({negative_hits}–{positive_hits}), "
-            "ezért a hangulatot főként a domináns témák jellege határozza meg."
-        )
-
-    if social_score >= 20:
-        social_sentence = (
-            f"A közösségi média jel erős: {social_mentions} releváns említés jelent meg, "
-            f"a fő social téma pedig {social_topic}."
-        )
-    elif social_score >= 8:
-        social_sentence = (
-            f"A közösségi média aktivitás közepes: {social_mentions} releváns említés jelent meg. "
-            f"A social térben leginkább a(z) {social_topic} téma látszik."
-        )
-    else:
-        social_sentence = (
-            f"A közösségi média aktivitás alacsony: {social_mentions} releváns említés látható. "
-            "Ez arra utal, hogy a mostani helyzetképet elsősorban a hírforrások alakítják."
-        )
-
-    main_topic_sentence = build_topic_sentence(main_topic)
-    risk_sentence = build_risk_sentence(score, negative_hits, positive_hits)
+    rows = []
+    for key, value in sorted(category_counts.items(), key=lambda item: item[1], reverse=True):
+        rows.append(f"""
+          <tr>
+            <td>{escape_html(format_social_topic(key))}</td>
+            <td><strong>{value}</strong></td>
+          </tr>
+        """)
 
     return f"""
-      <div class="executive-summary">
-        <h2>Vezetői összefoglaló</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Kategória</th>
+            <th>Találat</th>
+          </tr>
+        </thead>
+        <tbody>{''.join(rows)}</tbody>
+      </table>
+    """
 
-        <p>
-          <strong>{escape_html(name)}</strong> aktuális politikai hangulata
-          <strong>{escape_html(get_score_direction(score))}</strong>. A híralapú index értéke
-          <strong>{score}</strong>, a dashboard szerinti státusz pedig
-          <strong>{escape_html(get_status_text(status))}</strong>.
-        </p>
 
-        <p>
-          A legfontosabb ügy jelenleg:
-          <strong>{escape_html(main_topic)}</strong>. Ez nem elszigetelt téma,
-          hanem több hírben visszatérő mintázat. {escape_html(main_topic_sentence)}
-        </p>
-
-        <p>
-          A négy legerősebb témacsoport: <strong>{escape_html(topic_sentence)}</strong>.
-          Ezek együtt mutatják, hogy az országban a politikai hangulatot belpolitikai,
-          gazdasági, biztonsági vagy külpolitikai kérdések mozgatják-e.
-        </p>
-
-        <p>
-          A rendszer <strong>{article_count}</strong> releváns cikket azonosított.
-          {escape_html(balance_sentence)}
-        </p>
-
-        <p>{escape_html(people_sentence)}</p>
-
-        <p>{escape_html(social_sentence)}</p>
-
-        <p>
-          <strong>Rövid következtetés:</strong> {escape_html(risk_sentence)}
-        </p>
+def build_social_sources(source_counts):
+    return f"""
+      <div class="summary-grid">
+        <div class="box">X<strong>{source_counts.get("x", 0)}</strong></div>
+        <div class="box">Reddit<strong>{source_counts.get("reddit", 0)}</strong></div>
+        <div class="box">Mastodon<strong>{source_counts.get("mastodon", 0)}</strong></div>
       </div>
     """
 
 
-def build_source_list(articles):
-    if not articles:
-        return "<p class=\"meta\">Nincs közvetlenül illesztett forráscikk ehhez a narratívához.</p>"
+def build_top_posts(posts):
+    if not posts:
+        return "<p class='meta'>Nincs megjeleníthető social találat.</p>"
 
     items = []
+    for post in posts[:5]:
+        title = escape_html(post.get("title") or post.get("text") or "Cím nélkül")
+        url = escape_html(post.get("url", "#"))
+        source = escape_html(post.get("source", "ismeretlen"))
+        category = escape_html(format_social_topic(post.get("event_category", "nincs adat")))
+        score = escape_html(post.get("geopolitical_score", 0))
 
-    for article in articles:
+        items.append(f"""
+          <li>
+            <a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a>
+            <br>
+            <span>{source} | kategória: {category} | geopolitikai pont: {score}</span>
+          </li>
+        """)
+
+    return f"<ul>{''.join(items)}</ul>"
+
+
+def build_articles_list(articles):
+    if not articles:
+        return "<p>Nincs megjeleníthető kiemelt cikk.</p>"
+
+    items = []
+    for article in articles[:6]:
         title = escape_html(article.get("title", "Cím nélkül"))
         url = escape_html(article.get("url", "#"))
         source = escape_html(article.get("source", "ismeretlen forrás"))
@@ -451,103 +260,75 @@ def build_source_list(articles):
     return f"<ul>{''.join(items)}</ul>"
 
 
-def build_topic_paragraph(topic, score, country_name, matched_articles):
-    explanation = TOPIC_EXPLANATIONS.get(
-        topic,
-        "Ez a téma az aktuális híranyagban visszatérő politikai mintázatot jelöl."
-    )
+def build_deep_analysis(country, social_signal):
+    name = country.get("name", "")
+    score = country.get("score", 0)
+    article_count = country.get("article_count", 0)
+    negative_hits = country.get("negative_hits", 0)
+    positive_hits = country.get("positive_hits", 0)
+    main_topic = country.get("main_topic", "nincs adat")
 
-    clues = extract_named_clues(matched_articles)
-
-    if clues:
-        clues_text = ", ".join(escape_html(item) for item in clues)
-    else:
-        clues_text = "a kiemelt cikkek címei alapján nem azonosítható egyetlen domináns szereplő"
-
-    if matched_articles:
-        lead_article = matched_articles[0]
-        lead_title = escape_html(lead_article.get("title", "Cím nélkül"))
-        lead_source = escape_html(lead_article.get("source", "ismeretlen forrás"))
-        lead_sentence = (
-            f"A téma legerősebb kapcsolódása a következő cikkben jelenik meg: "
-            f"<strong>{lead_title}</strong> ({lead_source})."
-        )
-    else:
-        lead_sentence = "A témához nem kapcsolódik külön kiemelt cikk, de a mintázat alapján jelen van a híranyagban."
-
-    topic_context = build_topic_sentence(topic)
+    social_score = social_signal.get("score", 0)
+    social_mentions = social_signal.get("mentions", 0)
+    social_negative = social_signal.get("negative_hits", 0)
+    social_positive = social_signal.get("positive_hits", 0)
+    social_topic = social_signal.get("main_topic", "nincs adat")
+    trusted_hits = social_signal.get("trusted_hits", 0)
+    geopolitical_total = social_signal.get("geopolitical_total", 0)
 
     return f"""
-      <div class="topic-block">
-        <h3>{escape_html(topic)}</h3>
+      <section class="analysis-block">
+        <h2>Elemző helyzetértékelés</h2>
 
         <p>
-          <strong>Aktuális súly:</strong> {score}.
-          {escape_html(explanation)}
+          <strong>{escape_html(name)}</strong> esetében a híralapú index jelenleg
+          <strong>{score}</strong>. A rendszer <strong>{article_count}</strong> releváns cikket azonosított.
+          A negatív hírjelek száma <strong>{negative_hits}</strong>, a pozitív hírjelek száma
+          <strong>{positive_hits}</strong>. {escape_html(news_interpretation(score, negative_hits, positive_hits))}
         </p>
 
         <p>
-          <strong>Konkrét jelzés:</strong>
-          {lead_sentence}
+          A fő hírnarratíva jelenleg: <strong>{escape_html(main_topic)}</strong>.
+          Ez azt jelenti, hogy az ország körüli napirendet nem egyetlen elszigetelt esemény,
+          hanem visszatérő politikai vagy geopolitikai mintázat alakítja.
         </p>
 
         <p>
-          <strong>Elemző értelmezés:</strong>
-          {escape_html(topic_context)}
-          Ez azért fontos {escape_html(country_name)} esetében, mert a visszatérő témák nemcsak
-          egy-egy hírt jelentenek, hanem a politikai környezet általános hangulatát is formálják.
+          A social media réteg már nem egyszerű aktivitási mutatóként jelenik meg, hanem
+          <strong>0–60-as kockázati indexként</strong>. A jelenlegi social risk érték:
+          <strong>{social_score}</strong>, amelynek értelmezése:
+          <strong>{escape_html(get_social_level_text(social_signal.get("level", "low")))}</strong>.
+          {escape_html(risk_interpretation(social_score))}
         </p>
 
         <p>
-          <strong>Azonosított szereplők / intézmények / helyek:</strong>
-          {clues_text}.
+          A social térben <strong>{social_mentions}</strong> releváns említés jelent meg.
+          Ezek közül <strong>{social_negative}</strong> negatív és <strong>{social_positive}</strong>
+          pozitív jellegű. A domináns social kategória:
+          <strong>{escape_html(format_social_topic(social_topic))}</strong>.
         </p>
 
-        <div class="source-list">
-          <strong>Kapcsolódó források:</strong>
-          {build_source_list(matched_articles)}
-        </div>
-      </div>
+        <p>
+          A megbízható források száma <strong>{trusted_hits}</strong>, az összesített geopolitikai pontszám
+          <strong>{geopolitical_total}</strong>. Ez segít elkülöníteni a valóban releváns politikai jeleket
+          a puszta közösségi média zajtól.
+        </p>
+      </section>
     """
 
 
-def build_topic_blocks(country):
-    topic_scores = country.get("topic_scores", {})
-    top_articles = country.get("top_articles", [])
-    country_name = country.get("name", "")
+def build_scenario_block(country, social_signal):
+    return f"""
+      <section class="analysis-block warning">
+        <h2>Kockázati forgatókönyv</h2>
+        <p>{escape_html(build_scenario(country, social_signal))}</p>
 
-    if not topic_scores:
-        return "<p>Nincs elég adat a domináns narratívák részletes értékeléséhez.</p>"
-
-    blocks = []
-
-    for topic, score in list(topic_scores.items())[:4]:
-        matched_articles = match_articles_to_topic(topic, top_articles)
-        blocks.append(build_topic_paragraph(topic, score, country_name, matched_articles))
-
-    return "\n".join(blocks)
-
-
-def build_articles_list(articles):
-    if not articles:
-        return "<p>Nincs megjeleníthető kiemelt cikk.</p>"
-
-    items = []
-
-    for article in articles[:5]:
-        title = escape_html(article.get("title", "Cím nélkül"))
-        url = escape_html(article.get("url", "#"))
-        source = escape_html(article.get("source", "ismeretlen forrás"))
-
-        items.append(f"""
-        <li>
-          <a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a>
-          <br>
-          <span>{source}</span>
-        </li>
-        """)
-
-    return f"<ul>{''.join(items)}</ul>"
+        <h3>Mit érdemes figyelni?</h3>
+        <ul>
+          {build_watchlist(country, social_signal)}
+        </ul>
+      </section>
+    """
 
 
 def page_styles():
@@ -558,11 +339,11 @@ def page_styles():
       font-family: Arial, Helvetica, sans-serif;
       background: #f3f4f6;
       color: #111827;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     main {
-      max-width: 980px;
+      max-width: 1040px;
       margin: 30px auto;
       padding: 0 16px;
     }
@@ -570,23 +351,23 @@ def page_styles():
     .card {
       background: white;
       border-radius: 16px;
-      padding: 24px;
+      padding: 26px;
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
     }
 
     h1 {
       margin-top: 0;
-      font-size: 30px;
+      font-size: 31px;
     }
 
     h2 {
       margin-top: 30px;
       border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 6px;
+      padding-bottom: 7px;
     }
 
     h3 {
-      margin-top: 0;
+      margin-top: 18px;
     }
 
     .meta {
@@ -596,9 +377,9 @@ def page_styles():
 
     .summary-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
       gap: 12px;
-      margin: 20px 0;
+      margin: 18px 0;
     }
 
     .box {
@@ -610,36 +391,54 @@ def page_styles():
 
     .box strong {
       display: block;
-      font-size: 22px;
-      margin-top: 4px;
+      font-size: 24px;
+      margin-top: 5px;
     }
 
     .executive-summary {
       background: #eff6ff;
       border-left: 5px solid #2563eb;
-      padding: 16px;
+      padding: 17px;
       border-radius: 12px;
       margin: 22px 0;
     }
 
-    .executive-summary h2 {
-      margin-top: 0;
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    .topic-block {
+    .analysis-block {
       background: #f9fafb;
       border-left: 5px solid #2563eb;
-      padding: 16px;
-      border-radius: 10px;
-      margin-bottom: 16px;
+      padding: 17px;
+      border-radius: 12px;
+      margin: 20px 0;
     }
 
-    .source-list {
+    .warning {
+      background: #fff7ed;
+      border-left-color: #ea580c;
+    }
+
+    .social-block {
+      background: #f8fafc;
+      border-left: 5px solid #d97706;
+      padding: 17px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
       margin-top: 12px;
-      padding-top: 10px;
-      border-top: 1px solid #e5e7eb;
+      font-size: 14px;
+    }
+
+    th, td {
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background: #f3f4f6;
     }
 
     ul {
@@ -695,16 +494,14 @@ def build_report_html(country, social_signal, updated_at):
     social_positive = social_signal.get("positive_hits", 0)
     social_topic = social_signal.get("main_topic", "nincs adat")
     source_counts = social_signal.get("source_counts", {})
-
-    executive_summary = build_executive_summary(country, social_signal)
-    topic_blocks = build_topic_blocks(country)
-    articles_html = build_articles_list(top_articles)
+    category_counts = social_signal.get("category_counts", {})
+    top_posts = social_signal.get("top_posts", [])
 
     return f"""<!DOCTYPE html>
 <html lang="hu">
 <head>
   <meta charset="UTF-8">
-  <title>{escape_html(name)} – szöveges helyzetkép</title>
+  <title>{escape_html(name)} – elemző helyzetkép</title>
   {page_styles()}
 </head>
 
@@ -713,14 +510,25 @@ def build_report_html(country, social_signal, updated_at):
   <a class="back" href="../index.html">← Vissza a dashboardra</a>
 
   <div class="card">
-    <h1>{escape_html(name)} – szöveges helyzetkép</h1>
+    <h1>{escape_html(name)} – elemző helyzetkép</h1>
     <p class="meta">Frissítve: {escape_html(updated_at)}</p>
 
-    <p>
-      Az aktuális híralapú hangulatindex <strong>{score}</strong>, amelynek státusza:
-      <strong>{get_status_text(status)}</strong>. A fő hírnarratíva jelenleg:
-      <strong>{escape_html(main_topic)}</strong>.
-    </p>
+    <div class="executive-summary">
+      <h2>Vezetői összefoglaló</h2>
+      <p>
+        <strong>{escape_html(name)}</strong> aktuális helyzetképe a híralapú index,
+        a social risk index és a domináns narratívák együttes értelmezésén alapul.
+        A híralapú index <strong>{score}</strong>, státusza
+        <strong>{escape_html(get_status_text(status))}</strong>.
+        A fő hírnarratíva: <strong>{escape_html(main_topic)}</strong>.
+      </p>
+      <p>
+        A social risk index <strong>{social_score}</strong> pont a 0–60-as skálán,
+        ami <strong>{escape_html(get_social_level_text(social_level))}</strong>.
+        A domináns social kategória:
+        <strong>{escape_html(format_social_topic(social_topic))}</strong>.
+      </p>
+    </div>
 
     <div class="summary-grid">
       <div class="box">Hírindex<strong>{score}</strong></div>
@@ -729,43 +537,44 @@ def build_report_html(country, social_signal, updated_at):
       <div class="box">Pozitív hírjelek<strong>{positive_hits}</strong></div>
     </div>
 
-    {executive_summary}
+    {build_deep_analysis(country, social_signal)}
 
-    <h2>Domináns narratívák részletesen</h2>
-    <p>
-      Az alábbi négy blokk azt mutatja, hogy az aktuális híranyag alapján mely ügyek alakítják
-      leginkább az ország politikai hangulatát.
-    </p>
+    <section class="social-block">
+      <h2>Social media és X-alapú kockázati jel</h2>
 
-    {topic_blocks}
+      <div class="summary-grid">
+        <div class="box">Social risk index<strong>{social_score}</strong></div>
+        <div class="box">Említések<strong>{social_mentions}</strong></div>
+        <div class="box">Negatív social jelek<strong>{social_negative}</strong></div>
+        <div class="box">Pozitív social jelek<strong>{social_positive}</strong></div>
+      </div>
 
-    <h2>Social signal</h2>
-    <p>
-      A social media index külön jelző. Nem része a fő hírindexnek.
-      Jelenlegi értéke <strong>{social_score}</strong>, aktivitási szintje:
-      <strong>{get_social_level_text(social_level)}</strong>.
-    </p>
+      {build_social_sources(source_counts)}
 
-    <div class="summary-grid">
-      <div class="box">Social említések<strong>{social_mentions}</strong></div>
-      <div class="box">Social negatív jelek<strong>{social_negative}</strong></div>
-      <div class="box">Social pozitív jelek<strong>{social_positive}</strong></div>
-      <div class="box">Fő social téma<strong>{escape_html(social_topic)}</strong></div>
-    </div>
+      <p>
+        A social jel nem közvélemény-kutatás. Arra szolgál, hogy jelezze,
+        milyen intenzitással jelennek meg politikai, biztonsági vagy geopolitikai témák
+        a közösségi média és RSS-alapú social forrásokban.
+      </p>
 
-    <p class="meta">
-      Reddit: {source_counts.get("reddit", 0)} |
-      Mastodon: {source_counts.get("mastodon", 0)}
-    </p>
+      <h3>Social kategóriák</h3>
+      {build_category_table(category_counts)}
+
+      <h3>Kiemelt social találatok</h3>
+      {build_top_posts(top_posts)}
+    </section>
+
+    {build_scenario_block(country, social_signal)}
 
     <h2>Kiemelt forráscikkek</h2>
-    {articles_html}
+    {build_articles_list(top_articles)}
 
     <h2>Módszertani megjegyzés</h2>
     <p>
-      Ez a szöveges helyzetkép automatikusan készül a dashboard aktuális JSON-adatfájljaiból.
-      A narratívák kulcsszavas, híralapú csoportosításon alapulnak.
-      Az eredmény nem közvélemény-kutatás, hanem nyílt forrású politikai hangulatjelzés.
+      Ez a jelentés automatikusan készül a dashboard aktuális JSON-adatfájljaiból.
+      A híralapú index, a social risk index, a kategóriabontás és a forráslisták
+      nyílt forrású monitoringot támogatnak. Az eredmény nem közvélemény-kutatás,
+      nem hivatalos kockázati minősítés, hanem elemző célú OSINT-jelzőrendszer.
     </p>
   </div>
 </main>
@@ -780,15 +589,9 @@ def build_regional_overview(latest_data, social_data, updated_at):
     if not countries:
         body = "<p>Nincs elérhető országadat.</p>"
     else:
-        most_negative = min(countries, key=lambda item: item.get("score", 0))
-        most_positive = max(countries, key=lambda item: item.get("score", 0))
-        most_articles = max(countries, key=lambda item: item.get("article_count", 0))
-
         social_rows = []
-
         for country in countries:
             social = get_social_signal(country.get("name", ""), social_data)
-
             social_rows.append({
                 "name": country.get("name", ""),
                 "score": social.get("score", 0),
@@ -797,48 +600,26 @@ def build_regional_overview(latest_data, social_data, updated_at):
             })
 
         strongest_social = max(social_rows, key=lambda item: item.get("score", 0))
+        most_articles = max(countries, key=lambda item: item.get("article_count", 0))
+        most_negative = min(countries, key=lambda item: item.get("score", 0))
+        most_positive = max(countries, key=lambda item: item.get("score", 0))
 
-        topic_counter = {}
-
-        for country in countries:
-            main_topic = country.get("main_topic", "nincs adat")
-            topic_counter[main_topic] = topic_counter.get(main_topic, 0) + 1
-
-        dominant_regional_topic = max(topic_counter, key=topic_counter.get)
-
-        country_blocks = []
-
+        rows = []
         for country in countries:
             social = get_social_signal(country.get("name", ""), social_data)
-
-            country_blocks.append(f"""
+            rows.append(f"""
               <div class="country-row">
                 <h3>{escape_html(country.get("name", ""))}</h3>
-
                 <p>
-                  Hírindex:
-                  <strong>{country.get("score", 0)}</strong>,
-                  státusz:
-                  <strong>{get_status_text(country.get("status", "neutral"))}</strong>.
-                  Fő téma:
-                  <strong>{escape_html(country.get("main_topic", "nincs adat"))}</strong>.
+                  Hírindex: <strong>{country.get("score", 0)}</strong> |
+                  státusz: <strong>{escape_html(get_status_text(country.get("status", "neutral")))}</strong> |
+                  fő hír téma: <strong>{escape_html(country.get("main_topic", "nincs adat"))}</strong>
                 </p>
-
                 <p>
-                  Social media index:
-                  <strong>{social.get("score", 0)}</strong>,
-                  releváns említések:
-                  <strong>{social.get("mentions", 0)}</strong>.
-                </p>
-
-                <p>
-                  {escape_html(
-                    build_risk_sentence(
-                      country.get("score", 0),
-                      country.get("negative_hits", 0),
-                      country.get("positive_hits", 0)
-                    )
-                  )}
+                  Social risk index: <strong>{social.get("score", 0)}</strong> |
+                  említések: <strong>{social.get("mentions", 0)}</strong> |
+                  fő social téma:
+                  <strong>{escape_html(format_social_topic(social.get("main_topic", "nincs adat")))}</strong>
                 </p>
               </div>
             """)
@@ -846,57 +627,28 @@ def build_regional_overview(latest_data, social_data, updated_at):
         body = f"""
           <div class="executive-summary">
             <h2>Régiós vezetői összefoglaló</h2>
-
             <p>
-              A mai Balkán-helyzetkép alapján
-              a legnegatívabb híralapú index
-              <strong>{escape_html(most_negative.get("name", ""))}</strong>
-              esetében látható
-              ({most_negative.get("score", 0)}).
-            </p>
-
-            <p>
-              A legkedvezőbb hangulatot
-              <strong>{escape_html(most_positive.get("name", ""))}</strong>
-              mutatja
-              ({most_positive.get("score", 0)}).
-            </p>
-
-            <p>
-              A legtöbb releváns hír
-              <strong>{escape_html(most_articles.get("name", ""))}</strong>
-              körül jelent meg
-              ({most_articles.get("article_count", 0)} cikk).
-            </p>
-
-            <p>
-              A legerősebb social media jel
+              A mai Balkán-helyzetképben a legerősebb social risk jel
               <strong>{escape_html(strongest_social.get("name", ""))}</strong>
               esetében látható
-              ({strongest_social.get("score", 0)} social index,
-              {strongest_social.get("mentions", 0)} említés).
+              ({strongest_social.get("score", 0)} pont, {strongest_social.get("mentions", 0)} említés).
             </p>
-
             <p>
-              Régiós szinten a leggyakrabban
-              visszatérő fő narratíva:
-              <strong>{escape_html(dominant_regional_topic)}</strong>.
+              A legtöbb hír <strong>{escape_html(most_articles.get("name", ""))}</strong>
+              körül jelent meg. A legnegatívabb híralapú index
+              <strong>{escape_html(most_negative.get("name", ""))}</strong>,
+              a legkedvezőbb híralapú index pedig
+              <strong>{escape_html(most_positive.get("name", ""))}</strong> esetében látszik.
             </p>
-
             <p>
-              <strong>Rövid következtetés:</strong>
-              a térségben jelenleg egyszerre vannak jelen
-              intézményi,
-              geopolitikai,
-              biztonsági
-              és gazdasági narratívák,
-              ezért a politikai hangulat országonként jelentősen eltér.
+              A térség egészében a fő figyelmeztető jel az, hogy a social térben megjelenő
+              biztonsági, etnikai, intézményi vagy EU-integrációs narratívák gyorsabban mozdulhatnak,
+              mint a hagyományos hírindex.
             </p>
           </div>
 
           <h2>Országonkénti gyors helyzetkép</h2>
-
-          {''.join(country_blocks)}
+          {''.join(rows)}
         """
 
     return f"""<!DOCTYPE html>
@@ -909,29 +661,19 @@ def build_regional_overview(latest_data, social_data, updated_at):
 
 <body>
 <main>
-  <a class="back" href="../index.html">
-    ← Vissza a dashboardra
-  </a>
+  <a class="back" href="../index.html">← Vissza a dashboardra</a>
 
   <div class="card">
     <h1>Mai Balkán helyzetkép</h1>
-
-    <p class="meta">
-      Frissítve:
-      {escape_html(updated_at)}
-    </p>
+    <p class="meta">Frissítve: {escape_html(updated_at)}</p>
 
     {body}
 
     <h2>Módszertani megjegyzés</h2>
-
     <p>
-      Ez a régiós helyzetkép automatikusan készül
-      az országonkénti hírindex,
-      social signal
-      és domináns narratívák alapján.
-      Nem közvélemény-kutatás,
-      hanem nyílt forrású politikai hangulatjelzés.
+      A régiós riport automatikusan készül az országonkénti hírindex,
+      social risk index és domináns narratívák alapján. Nem közvélemény-kutatás,
+      hanem nyílt forrású politikai és geopolitikai hangulatjelzés.
     </p>
   </div>
 </main>
@@ -958,11 +700,9 @@ def main():
         country_name = country.get("name", "")
         slug = slugify(country_name)
         filename = f"{slug}.html"
-
         output_path = os.path.join(REPORTS_DIR, filename)
 
         social_signal = get_social_signal(country_name, social_data)
-
         html = build_report_html(country, social_signal, updated_at)
 
         with open(output_path, "w", encoding="utf-8") as file:
