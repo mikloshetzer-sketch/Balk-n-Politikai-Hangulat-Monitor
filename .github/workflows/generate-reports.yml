@@ -24,6 +24,7 @@ jobs:
 
       - name: Python csomagok telepítése
         run: |
+          python -m pip install --upgrade pip
           pip install feedparser
           pip install requests
 
@@ -38,11 +39,11 @@ jobs:
       - name: Social history frissítése
         run: python scripts/update_social_history.py
 
-      - name: AI riport generálása
+      - name: Országjelentések és AI elemzések generálása
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
-        run: python scripts/generate_ai_reports.py
+        run: python scripts/generate_country_reports.py
 
       - name: Változások commitolása
         run: |
@@ -53,8 +54,9 @@ jobs:
           git add docs/data/history.json
           git add docs/data/social_latest.json
           git add docs/data/social_history.json
+          git add docs/data/reports_index.json
           git add docs/reports/
 
-          git commit -m "Automatikus adatfrissítés és AI riport" || echo "Nincs változás"
+          git commit -m "Automatikus adatfrissítés, social risk és AI országjelentések" || echo "Nincs változás"
 
           git push
