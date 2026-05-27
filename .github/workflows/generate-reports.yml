@@ -1,26 +1,19 @@
-name: Generate Country Reports
+name: Update Balkan Political Monitor
 
 on:
-
   workflow_dispatch:
 
-  workflow_run:
-    workflows:
-      - Update Balkan Political Monitor
-    types:
-      - completed
+  schedule:
+    - cron: "0 */6 * * *"
 
 permissions:
   contents: write
 
 jobs:
-
-  generate-reports:
-
+  update-data:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Repository letöltése
         uses: actions/checkout@v4
 
@@ -29,18 +22,39 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Országriportok generálása
-        run: python scripts/generate_country_reports.py
+      - name: Python csomagok telepítése
+        run: |
+          pip install feedparser
+          pip install requests
+
+      - name: Hírmonitor script futtatása
+        run: python scripts/fetch_news.py
+
+      - name: Social monitor script futtatása
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+        run: python scripts/fetch_social.py
+
+      - name: Social history frissítése
+        run: python scripts/update_social_history.py
+
+      - name: AI riport generálása
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+        run: python scripts/generate_ai_reports.py
 
       - name: Változások commitolása
         run: |
-
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
+          git add docs/data/latest.json
+          git add docs/data/history.json
+          git add docs/data/social_latest.json
+          git add docs/data/social_history.json
           git add docs/reports/
-          git add docs/data/reports_index.json
 
-          git commit -m "Automatikus országriport generálás" || echo "Nincs változás"
+          git commit -m "Automatikus adatfrissítés és AI riport" || echo "Nincs változás"
 
           git push
