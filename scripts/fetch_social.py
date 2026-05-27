@@ -125,15 +125,28 @@ EVENT_CATEGORIES = {
 
 
 CATEGORY_WEIGHTS = {
-    "eu_integration": 8,
+    "ethnic_tension": 10,
     "security": 9,
     "government_crisis": 9,
     "protest": 8,
     "corruption_rule_of_law": 8,
-    "ethnic_tension": 10,
     "foreign_influence": 8,
+    "eu_integration": 6,
     "migration": 6,
-    "economic_infrastructure": 5
+    "economic_infrastructure": 4
+}
+
+
+RISK_CATEGORY_WEIGHTS = {
+    "ethnic_tension": 5,
+    "security": 4,
+    "government_crisis": 4,
+    "protest": 4,
+    "corruption_rule_of_law": 3,
+    "foreign_influence": 3,
+    "migration": 2,
+    "eu_integration": 1,
+    "economic_infrastructure": 1
 }
 
 
@@ -144,7 +157,8 @@ NEGATIVE_WORDS = [
     "polarization", "separatism", "nationalism", "blocked", "deadlock",
     "police violence", "collapse", "resignation", "detention",
     "crackdown", "authoritarian", "ethnic tension", "border incident",
-    "indictment", "abuse", "pressure", "intimidation", "destabilization"
+    "indictment", "abuse", "pressure", "intimidation", "destabilization",
+    "proxy", "occupation", "apartheid", "humiliating", "tyranny"
 ]
 
 
@@ -170,7 +184,9 @@ NOISE_WORDS = [
     "airport", "discord channel", "weekly free-for-all",
     "casual conversations", "childhood memory", "restaurant",
     "dating", "moving to", "visa question", "tourist", "itinerary",
-    "upsc", "prelims", "ias", "exam", "quiz", "trivia"
+    "upsc", "prelims", "ias", "exam", "quiz", "trivia",
+    "amazon", "amazondeals", "fashion", "womenfashion", "ethnicwear",
+    "buy here", "off on amazon", "discount", "sale", "coupon"
 ]
 
 
@@ -182,7 +198,7 @@ LOW_QUALITY_PATTERNS = [
     "discord channel", "where can i buy", "restaurant", "hotel",
     "airport", "train station", "bus ticket", "song", "movie",
     "football", "basketball", "correct answer", "upsc", "prelims",
-    "currentaffairs", "ias"
+    "currentaffairs", "ias", "amazonfinds", "buy here"
 ]
 
 
@@ -218,7 +234,7 @@ def normalize_text(text):
 
 
 def parse_feed(url):
-    feedparser.USER_AGENT = "Balkan-Political-Social-Monitor/1.3"
+    feedparser.USER_AGENT = "Balkan-Political-Social-Monitor/1.4"
     return feedparser.parse(url)
 
 
@@ -307,6 +323,7 @@ def geopolitical_score(text_lc):
         return 0
 
     score = 0
+
     for item in categories:
         score += item["weight"] * item["hits"]
 
@@ -314,16 +331,16 @@ def geopolitical_score(text_lc):
         score += 4
 
     if has_any(text_lc, NEGATIVE_WORDS):
-        score += 2
+        score += 3
 
     if has_any(text_lc, POSITIVE_WORDS):
         score += 1
 
     if is_noise(text_lc):
-        score -= 10
+        score -= 12
 
     if is_low_quality(text_lc):
-        score -= 12
+        score -= 14
 
     return max(score, 0)
 
@@ -361,23 +378,22 @@ def filtered_country_matches(text_lc, source_type):
         return [], {}
 
     top_confidence = matches[0]["confidence"]
-
     accepted = []
 
     for item in matches:
         name = item["name"]
         confidence = item["confidence"]
 
-        if confidence >= 3:
-            accepted.append(name)
-            continue
-
-        if confidence >= 2 and confidence >= top_confidence - 1:
-            accepted.append(name)
-            continue
-
-        if source_type != "x" and confidence >= 1 and top_confidence <= 2:
-            accepted.append(name)
+        if source_type == "x":
+            if confidence >= 3:
+                accepted.append(name)
+            elif confidence >= 2 and confidence >= top_confidence:
+                accepted.append(name)
+        else:
+            if confidence >= 2:
+                accepted.append(name)
+            elif confidence >= 1 and top_confidence <= 2:
+                accepted.append(name)
 
     if len(accepted) > 3:
         accepted = accepted[:3]
@@ -432,10 +448,10 @@ def passes_quality_filter(text_lc, countries, source_type):
     q_score = quality_score(text_lc, source_type)
 
     if source_type == "x":
-        return g_score >= 8 and q_score >= 8
+        return g_score >= 9 and q_score >= 9
 
     if source_type == "reddit":
-        return g_score >= 8 and q_score >= 7
+        return g_score >= 9 and q_score >= 8
 
     if source_type == "mastodon":
         return g_score >= 6 and q_score >= 6
@@ -535,7 +551,8 @@ def build_x_query(country):
 
     exclusions = (
         "-is:retweet -is:reply "
-        "-upsc -exam -quiz -football -basketball -travel -tourism -crypto -casino"
+        "-upsc -exam -quiz -football -basketball -travel -tourism -crypto "
+        "-casino -amazon -fashion -discount -sale -coupon"
     )
 
     return f"{base} {political_context} {exclusions} lang:en"
@@ -552,7 +569,7 @@ def collect_x_posts():
 
     headers = {
         "Authorization": f"Bearer {X_BEARER_TOKEN}",
-        "User-Agent": "Balkan-Political-Social-Monitor/1.3"
+        "User-Agent": "Balkan-Political-Social-Monitor/1.4"
     }
 
     all_posts = []
@@ -622,7 +639,7 @@ def collect_x_posts():
 
                 if country["name"] not in countries:
                     own_conf = confidence_map.get(country["name"], 0)
-                    if own_conf >= 2:
+                    if own_conf >= 3:
                         countries.append(country["name"])
 
                 if not passes_quality_filter(text_lc, countries, "x"):
@@ -697,6 +714,51 @@ def deduplicate_posts(posts):
     return deduped
 
 
+def calculate_risk_score(
+    mentions,
+    negative_hits,
+    positive_hits,
+    trusted_hits,
+    engagement_total,
+    quality_total,
+    geopolitical_total,
+    category_counts
+):
+    engagement_bonus = min(engagement_total // 40, 3)
+    trusted_bonus = min(trusted_hits, 4)
+    quality_bonus = min(quality_total // 25, 5)
+    geopolitical_bonus = min(geopolitical_total // 30, 6)
+
+    risk_category_bonus = 0
+
+    for category, count in category_counts.items():
+        weight = RISK_CATEGORY_WEIGHTS.get(category, 1)
+        risk_category_bonus += count * weight
+
+    positive_balance_penalty = min(positive_hits * 2, 10)
+
+    raw_score = (
+        mentions
+        + negative_hits * 4
+        + risk_category_bonus
+        + engagement_bonus
+        + trusted_bonus
+        + quality_bonus
+        + geopolitical_bonus
+        - positive_balance_penalty
+    )
+
+    return max(0, min(raw_score, 60))
+
+
+def classify_risk_level(score):
+    if score >= 40:
+        return "high"
+    if score >= 20:
+        return "medium"
+    return "low"
+
+
 def analyze_country(country_name, posts):
     related = [
         post for post in posts
@@ -749,29 +811,18 @@ def analyze_country(country_name, posts):
         if has_any(text, POSITIVE_WORDS):
             positive_hits += 1
 
-    engagement_bonus = min(engagement_total // 30, 4)
-    trusted_bonus = min(trusted_hits * 2, 6)
-    quality_bonus = min(quality_total // 12, 7)
-    geopolitical_bonus = min(geopolitical_total // 18, 8)
-
-    raw_score = (
-        mentions
-        + negative_hits * 2
-        + positive_hits
-        + engagement_bonus
-        + trusted_bonus
-        + quality_bonus
-        + geopolitical_bonus
+    score = calculate_risk_score(
+        mentions=mentions,
+        negative_hits=negative_hits,
+        positive_hits=positive_hits,
+        trusted_hits=trusted_hits,
+        engagement_total=engagement_total,
+        quality_total=quality_total,
+        geopolitical_total=geopolitical_total,
+        category_counts=category_counts
     )
 
-    score = min(raw_score, 30)
-
-    if score >= 20:
-        level = "high"
-    elif score >= 8:
-        level = "medium"
-    else:
-        level = "low"
+    level = classify_risk_level(score)
 
     main_topic = "nincs adat"
     if category_counts:
@@ -790,6 +841,7 @@ def analyze_country(country_name, posts):
     return {
         "score": score,
         "level": level,
+        "scale": "0-60 risk index",
         "mentions": mentions,
         "negative_hits": negative_hits,
         "positive_hits": positive_hits,
@@ -807,7 +859,7 @@ def analyze_country(country_name, posts):
 
 
 def main():
-    print("Social források lekérése geopolitikai pontossági szűréssel...")
+    print("Social források lekérése érzékenyebb geopolitikai risk indexszel...")
 
     rss_posts = collect_rss_posts()
     print(f"RSS alapú geopolitikailag releváns social találat: {len(rss_posts)}")
@@ -830,12 +882,13 @@ def main():
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
         "method_note": (
-            "A social signal külön geopolitikai jelző. A rendszer 7 napon belüli, "
+            "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, "
             "ország szerint illesztett, kategorizált és zajszűrt posztokat számol. "
             "Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. "
-            "Az új verzió country confidence, event category, geopolitical score, "
-            "source reliability és engagement cap logikát használ, hogy az általános "
-            "Balkán-posztok ne torzítsák túl az országonkénti értékeket."
+            "Az új social score 0-60 skálájú risk index. A negatív, biztonsági, "
+            "etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső "
+            "befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési "
+            "jelek csökkentik a kockázati pontszámot."
         ),
         "x_status": x_status,
         "countries": countries_output
