@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import requests
 from datetime import datetime, timezone
 
 LATEST_PATH = "docs/data/latest.json"
@@ -8,6 +9,9 @@ SOCIAL_PATH = "docs/data/social_latest.json"
 REPORTS_DIR = "docs/reports"
 REPORTS_INDEX_PATH = "docs/data/reports_index.json"
 REGIONAL_REPORT_FILENAME = "regional-overview.html"
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4.1-mini").strip()
 
 
 def slugify(text):
@@ -17,8 +21,10 @@ def slugify(text):
         "ő": "o", "ú": "u", "ü": "u", "ű": "u",
         "–": "-", " ": "-"
     }
+
     for old, new in replacements.items():
         text = text.replace(old, new)
+
     text = re.sub(r"[^a-z0-9\-]", "", text)
     text = re.sub(r"-+", "-", text)
     return text.strip("-")
@@ -27,6 +33,7 @@ def slugify(text):
 def escape_html(text):
     if text is None:
         return ""
+
     return (
         str(text)
         .replace("&", "&amp;")
@@ -102,28 +109,6 @@ def format_social_topic(topic):
     return labels.get(topic, topic or "nincs adat")
 
 
-def risk_interpretation(score):
-    if score >= 45:
-        return (
-            "A social térben erős kockázati mintázat látszik. Ez nem önmagában válságot jelent, "
-            "de azt mutatja, hogy a politikai vagy biztonsági témák nagy intenzitással vannak jelen."
-        )
-    if score >= 30:
-        return (
-            "A social jelzés érdemi kockázatot mutat. A figyelem nemcsak általános aktivitásból, "
-            "hanem konfliktusos vagy intézményi témákból is épül."
-        )
-    if score >= 15:
-        return (
-            "A social aktivitás mérsékelt kockázati szintet jelez. A témák jelen vannak, "
-            "de nem dominálják teljesen a politikai teret."
-        )
-    return (
-        "A social tér alapján alacsony kockázati jel látható. A helyzetképet inkább a híralapú "
-        "források és nem a közösségi média aktivitása formálja."
-    )
-
-
 def news_interpretation(score, negative_hits, positive_hits):
     if score <= -15:
         return "A híralapú index erősen negatív irányt mutat, ami politikai nyomásra vagy konfliktusos napirendre utal."
@@ -136,48 +121,147 @@ def news_interpretation(score, negative_hits, positive_hits):
     return "A híralapú index pozitív, de a háttérben továbbra is lehetnek kockázati témák."
 
 
-def build_scenario(country, social_signal):
-    name = country.get("name", "")
-    main_topic = country.get("main_topic", "nincs adat")
-    social_topic = social_signal.get("main_topic", "nincs adat")
-    social_score = social_signal.get("score", 0)
-    negative_hits = country.get("negative_hits", 0)
+def risk_interpretation(score):
+    if score >= 45:
+        return "A social térben erős kockázati mintázat látszik. Ez nem önmagában válságot jelent, de fokozott figyelmet indokol."
+    if score >= 30:
+        return "A social jelzés érdemi kockázatot mutat. A figyelem konfliktusos vagy intézményi témákból is épül."
+    if score >= 15:
+        return "A social aktivitás mérsékelt kockázati szintet jelez. A témák jelen vannak, de nem dominálják teljesen a politikai teret."
+    return "A social tér alapján alacsony kockázati jel látható."
 
-    if social_score >= 40 or negative_hits >= 6:
-        risk = (
-            "A következő napok fő kockázata az, hogy a politikai vita tovább keményedik, "
-            "és a social térben látható narratívák visszahatnak a hírnapirendre."
+
+def build_ai_payload(country, social_signal):
+    return {
+        "country": country.get("name", ""),
+        "news_index": country.get("score", 0),
+        "news_status": country.get("status", "neutral"),
+        "article_count": country.get("article_count", 0),
+        "negative_news_hits": country.get("negative_hits", 0),
+        "positive_news_hits": country.get("positive_hits", 0),
+        "main_news_topic": country.get("main_topic", "nincs adat"),
+        "topic_scores": country.get("topic_scores", {}),
+        "top_articles": [
+            {
+                "title": item.get("title", ""),
+                "source": item.get("source", ""),
+                "url": item.get("url", "")
+            }
+            for item in country.get("top_articles", [])[:6]
+        ],
+        "social_risk_index": social_signal.get("score", 0),
+        "social_scale": social_signal.get("scale", "0-60 risk index"),
+        "social_level": social_signal.get("level", "low"),
+        "social_mentions": social_signal.get("mentions", 0),
+        "social_negative_hits": social_signal.get("negative_hits", 0),
+        "social_positive_hits": social_signal.get("positive_hits", 0),
+        "social_main_topic": social_signal.get("main_topic", "nincs adat"),
+        "source_counts": social_signal.get("source_counts", {}),
+        "category_counts": social_signal.get("category_counts", {}),
+        "trusted_hits": social_signal.get("trusted_hits", 0),
+        "geopolitical_total": social_signal.get("geopolitical_total", 0),
+        "top_social_posts": [
+            {
+                "title": item.get("title", ""),
+                "text": item.get("text", ""),
+                "source": item.get("source", ""),
+                "event_category": item.get("event_category", ""),
+                "geopolitical_score": item.get("geopolitical_score", 0),
+                "url": item.get("url", "")
+            }
+            for item in social_signal.get("top_posts", [])[:5]
+        ]
+    }
+
+
+def generate_ai_analysis(country, social_signal):
+    if not OPENAI_API_KEY:
+        return ""
+
+    payload = build_ai_payload(country, social_signal)
+
+    prompt = f"""
+Készíts magyar nyelvű, professzionális geopolitikai elemzést az alábbi JSON-adatok alapján.
+
+Fontos szabályok:
+- Ne találj ki új tényeket.
+- Csak az átadott adatokból dolgozz.
+- Ne állítsd, hogy ez közvélemény-kutatás.
+- Jelezd, hogy ez OSINT-alapú automatikus monitoring.
+- Legyen elemző, összefüggő, szakmai szöveg.
+- Ne legyen túl felsorolásos.
+- Használj rövidebb, jól olvasható mondatokat.
+- Terjedelem: kb. 700–1000 szó.
+
+Kötelező szerkezet:
+1. Stratégiai összkép
+2. Politikai és intézményi dinamika
+3. Social/X jelzések értelmezése
+4. Geopolitikai és biztonsági kockázatok
+5. EU-integráció / külső befolyás
+6. Rövid távú forgatókönyv
+7. Mit érdemes figyelni?
+
+Adatok:
+{json.dumps(payload, ensure_ascii=False, indent=2)}
+"""
+
+    try:
+        response = requests.post(
+            "https://api.openai.com/v1/responses",
+            headers={
+                "Authorization": f"Bearer {OPENAI_API_KEY}",
+                "Content-Type": "application/json"
+            },
+            json={
+                "model": OPENAI_MODEL,
+                "input": prompt,
+                "max_output_tokens": 2600
+            },
+            timeout=90
         )
-    elif social_score >= 20:
-        risk = (
-            "A legvalószínűbb rövid távú forgatókönyv a fokozott figyelem, de nem feltétlenül "
-            "azonnali eszkaláció. A kockázat akkor nőhet, ha új biztonsági, etnikai vagy intézményi esemény jelenik meg."
-        )
-    else:
-        risk = (
-            "Rövid távon nem látszik erős social alapú eszkalációs jel. A helyzetet inkább a hivatalos "
-            "politikai és diplomáciai események mozgathatják."
-        )
 
-    return (
-        f"{name} esetében a fő hírtéma jelenleg: {main_topic}. "
-        f"A social térben a domináns kategória: {format_social_topic(social_topic)}. "
-        f"{risk}"
-    )
+        if response.status_code != 200:
+            print(f"OpenAI hiba: {response.status_code} / {response.text[:300]}")
+            return ""
+
+        data = response.json()
+        text = data.get("output_text", "").strip()
+
+        if text:
+            return text
+
+        parts = []
+
+        for item in data.get("output", []):
+            for content in item.get("content", []):
+                if content.get("type") == "output_text":
+                    parts.append(content.get("text", ""))
+
+        return "\n".join(parts).strip()
+
+    except Exception as exc:
+        print(f"AI elemzés hiba: {exc}")
+        return ""
 
 
-def build_watchlist(country, social_signal):
-    topic = social_signal.get("main_topic", "nincs adat")
-    main_topic = country.get("main_topic", "nincs adat")
+def ai_text_to_html(text):
+    if not text:
+        return ""
 
-    items = [
-        f"a(z) {main_topic} témához kapcsolódó új hírforrások megjelenése",
-        f"a social térben a(z) {format_social_topic(topic)} kategória erősödése",
-        "a negatív és pozitív jelzések arányának változása",
-        "a megbízható forrásokból származó megerősítések száma"
-    ]
+    paragraphs = [p.strip() for p in text.split("\n") if p.strip()]
+    html_parts = []
 
-    return "".join(f"<li>{escape_html(item)}</li>" for item in items)
+    for paragraph in paragraphs:
+        if paragraph.startswith("#"):
+            clean = paragraph.replace("#", "").strip()
+            html_parts.append(f"<h3>{escape_html(clean)}</h3>")
+        elif re.match(r"^[0-9]+\.", paragraph):
+            html_parts.append(f"<h3>{escape_html(paragraph)}</h3>")
+        else:
+            html_parts.append(f"<p>{escape_html(paragraph)}</p>")
+
+    return "\n".join(html_parts)
 
 
 def build_category_table(category_counts):
@@ -185,6 +269,7 @@ def build_category_table(category_counts):
         return "<p class='meta'>Nincs kategóriaadat.</p>"
 
     rows = []
+
     for key, value in sorted(category_counts.items(), key=lambda item: item[1], reverse=True):
         rows.append(f"""
           <tr>
@@ -221,6 +306,7 @@ def build_top_posts(posts):
         return "<p class='meta'>Nincs megjeleníthető social találat.</p>"
 
     items = []
+
     for post in posts[:5]:
         title = escape_html(post.get("title") or post.get("text") or "Cím nélkül")
         url = escape_html(post.get("url", "#"))
@@ -244,6 +330,7 @@ def build_articles_list(articles):
         return "<p>Nincs megjeleníthető kiemelt cikk.</p>"
 
     items = []
+
     for article in articles[:6]:
         title = escape_html(article.get("title", "Cím nélkül"))
         url = escape_html(article.get("url", "#"))
@@ -260,7 +347,7 @@ def build_articles_list(articles):
     return f"<ul>{''.join(items)}</ul>"
 
 
-def build_deep_analysis(country, social_signal):
+def build_rule_based_analysis(country, social_signal):
     name = country.get("name", "")
     score = country.get("score", 0)
     article_count = country.get("article_count", 0)
@@ -278,7 +365,7 @@ def build_deep_analysis(country, social_signal):
 
     return f"""
       <section class="analysis-block">
-        <h2>Elemző helyzetértékelés</h2>
+        <h2>Szabályalapú elemző helyzetértékelés</h2>
 
         <p>
           <strong>{escape_html(name)}</strong> esetében a híralapú index jelenleg
@@ -294,8 +381,8 @@ def build_deep_analysis(country, social_signal):
         </p>
 
         <p>
-          A social media réteg már nem egyszerű aktivitási mutatóként jelenik meg, hanem
-          <strong>0–60-as kockázati indexként</strong>. A jelenlegi social risk érték:
+          A social media réteg <strong>0–60-as kockázati indexként</strong> jelenik meg.
+          A jelenlegi social risk érték:
           <strong>{social_score}</strong>, amelynek értelmezése:
           <strong>{escape_html(get_social_level_text(social_signal.get("level", "low")))}</strong>.
           {escape_html(risk_interpretation(social_score))}
@@ -315,6 +402,49 @@ def build_deep_analysis(country, social_signal):
         </p>
       </section>
     """
+
+
+def build_scenario(country, social_signal):
+    name = country.get("name", "")
+    main_topic = country.get("main_topic", "nincs adat")
+    social_topic = social_signal.get("main_topic", "nincs adat")
+    social_score = social_signal.get("score", 0)
+    negative_hits = country.get("negative_hits", 0)
+
+    if social_score >= 40 or negative_hits >= 6:
+        risk = (
+            "A következő napok fő kockázata az, hogy a politikai vita tovább keményedik, "
+            "és a social térben látható narratívák visszahatnak a hírnapirendre."
+        )
+    elif social_score >= 20:
+        risk = (
+            "A legvalószínűbb rövid távú forgatókönyv a fokozott figyelem, de nem feltétlenül "
+            "azonnali eszkaláció."
+        )
+    else:
+        risk = (
+            "Rövid távon nem látszik erős social alapú eszkalációs jel."
+        )
+
+    return (
+        f"{name} esetében a fő hírtéma jelenleg: {main_topic}. "
+        f"A social térben a domináns kategória: {format_social_topic(social_topic)}. "
+        f"{risk}"
+    )
+
+
+def build_watchlist(country, social_signal):
+    topic = social_signal.get("main_topic", "nincs adat")
+    main_topic = country.get("main_topic", "nincs adat")
+
+    items = [
+        f"a(z) {main_topic} témához kapcsolódó új hírforrások megjelenése",
+        f"a social térben a(z) {format_social_topic(topic)} kategória erősödése",
+        "a negatív és pozitív jelzések arányának változása",
+        "a megbízható forrásokból származó megerősítések száma"
+    ]
+
+    return "".join(f"<li>{escape_html(item)}</li>" for item in items)
 
 
 def build_scenario_block(country, social_signal):
@@ -411,6 +541,11 @@ def page_styles():
       margin: 20px 0;
     }
 
+    .ai-block {
+      background: #f0fdf4;
+      border-left-color: #16a34a;
+    }
+
     .warning {
       background: #fff7ed;
       border-left-color: #ea580c;
@@ -497,6 +632,9 @@ def build_report_html(country, social_signal, updated_at):
     category_counts = social_signal.get("category_counts", {})
     top_posts = social_signal.get("top_posts", [])
 
+    ai_analysis = generate_ai_analysis(country, social_signal)
+    ai_analysis_html = ai_text_to_html(ai_analysis)
+
     return f"""<!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -537,7 +675,16 @@ def build_report_html(country, social_signal, updated_at):
       <div class="box">Pozitív hírjelek<strong>{positive_hits}</strong></div>
     </div>
 
-    {build_deep_analysis(country, social_signal)}
+    <section class="analysis-block ai-block">
+      <h2>AI-alapú mélyelemzés</h2>
+      <p class="meta">
+        Automatikus OSINT-elemzés az aktuális hírindex, social risk index és kiemelt források alapján.
+        Kézi ellenőrzés javasolt.
+      </p>
+      {ai_analysis_html if ai_analysis_html else "<p class='meta'>AI-elemzés nem készült. A riport szabályalapú módban futott.</p>"}
+    </section>
+
+    {build_rule_based_analysis(country, social_signal)}
 
     <section class="social-block">
       <h2>Social media és X-alapú kockázati jel</h2>
@@ -590,6 +737,7 @@ def build_regional_overview(latest_data, social_data, updated_at):
         body = "<p>Nincs elérhető országadat.</p>"
     else:
         social_rows = []
+
         for country in countries:
             social = get_social_signal(country.get("name", ""), social_data)
             social_rows.append({
@@ -605,8 +753,10 @@ def build_regional_overview(latest_data, social_data, updated_at):
         most_positive = max(countries, key=lambda item: item.get("score", 0))
 
         rows = []
+
         for country in countries:
             social = get_social_signal(country.get("name", ""), social_data)
+
             rows.append(f"""
               <div class="country-row">
                 <h3>{escape_html(country.get("name", ""))}</h3>
