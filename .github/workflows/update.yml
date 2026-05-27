@@ -23,13 +23,15 @@ jobs:
           python-version: "3.11"
 
       - name: Python csomagok telepítése
-        run: pip install feedparser
+        run: pip install feedparser requests
 
       - name: Hírmonitor script futtatása
         run: python scripts/fetch_news.py
 
       - name: Social monitor script futtatása
         run: python scripts/fetch_social.py
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
 
       - name: Social history frissítése
         run: python scripts/update_social_history.py
