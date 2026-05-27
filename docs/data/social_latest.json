@@ -1,24 +1,65 @@
 {
-  "updated_at": "2026-05-27 04:45 UTC",
-  "source": "Reddit RSS + Mastodon hashtag RSS",
-  "method_note": "A social signal külön jelző. Csak 7 napon belüli, politikailag releváns és zajszűrt találatokat számol. Nem közvélemény-kutatás, és nem része a fő hírindexnek.",
+  "updated_at": "2026-05-27 09:18 UTC",
+  "source": "Reddit RSS + Mastodon hashtag RSS + X API",
+  "method_note": "A social signal külön jelző. Csak 7 napon belüli, politikailag releváns és zajszűrt találatokat számol. Nem közvélemény-kutatás, és nem része a fő hírindexnek. Az X API opcionális: ha nem érhető el vagy hibát ad, a Reddit és Mastodon RSS-források továbbra is frissülnek.",
+  "x_status": {
+    "enabled": true,
+    "status": "partial_error",
+    "errors": [
+      {
+        "country": "Szerbia",
+        "status_code": 402,
+        "message": "{\"account_id\":2059509150040694788,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2059509150040694788] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/problems/credits\"}"
+      },
+      {
+        "country": "Bosznia-Hercegovina",
+        "status_code": 402,
+        "message": "{\"account_id\":2059509150040694788,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2059509150040694788] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/problems/credits\"}"
+      },
+      {
+        "country": "Koszovó",
+        "status_code": 402,
+        "message": "{\"account_id\":2059509150040694788,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2059509150040694788] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/problems/credits\"}"
+      },
+      {
+        "country": "Montenegró",
+        "status_code": 402,
+        "message": "{\"account_id\":2059509150040694788,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2059509150040694788] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/problems/credits\"}"
+      },
+      {
+        "country": "Észak-Macedónia",
+        "status_code": 402,
+        "message": "{\"account_id\":2059509150040694788,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2059509150040694788] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/problems/credits\"}"
+      },
+      {
+        "country": "Albánia",
+        "status_code": 402,
+        "message": "{\"account_id\":2059509150040694788,\"title\":\"CreditsDepleted\",\"detail\":\"Your enrolled account [2059509150040694788] does not have any credits to fulfill this request.\",\"type\":\"https://api.twitter.com/2/problems/credits\"}"
+      }
+    ],
+    "collected": 0
+  },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 15,
-        "level": "medium",
-        "mentions": 6,
-        "negative_hits": 3,
+        "score": 24,
+        "level": "high",
+        "mentions": 12,
+        "negative_hits": 4,
         "positive_hits": 0,
+        "engagement_total": 0,
         "source_counts": {
-          "reddit": 0,
-          "mastodon": 6
+          "reddit": 7,
+          "mastodon": 5,
+          "x": 0
         },
         "tag_counts": {
           "balkans": 2,
-          "serbia": 3,
-          "montenegro": 1
+          "serbia": 7,
+          "montenegro": 1,
+          "askbalkans": 1,
+          "europe": 1
         },
         "main_topic": "serbia",
         "top_posts": [
@@ -31,7 +72,9 @@
             "seen_date": "Mon, 25 May 2026 05:51:05 +0000",
             "matched_countries": [
               "Szerbia"
-            ]
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -42,7 +85,23 @@
             "seen_date": "Fri, 22 May 2026 17:20:12 +0000",
             "matched_countries": [
               "Szerbia"
-            ]
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Sole Bidder: SUVs in Kosovo Attack Lead to String of Suspect Serbian Tenders https:// fed.brid.gy/r/https://balkanin sight.com/2026/05/27/sole-bidder-suvs-in-kosovo-attack-lead-to-string-of-suspect-serbian-tenders/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/05/27/sole-bidder-suvs-in-kosovo-attack-lead-to-string-of-suspect-serbian-tenders/bi/",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 27 May 2026 06:03:59 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -53,29 +112,23 @@
             "seen_date": "Tue, 26 May 2026 13:37:29 +0000",
             "matched_countries": [
               "Szerbia"
-            ]
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
-            "text": "🚨 WARNELY SAFETY ALERT Belgrade, Serbia · Civil unrest Clashes erupt in Belgrade after mass protest Violent clashes between protesters and police in Belgrade following protests for early elections. https:// warnely.com/news/clashes-erupt -in-belgrade-after-mass-protest-bbdc0245-db05-4823-8f4d-0266ea0a44b4 # WarnelyAler",
-            "url": "https://mastodon.social/@warnely/116635499282793531",
+            "text": "Il 21 maggio 2006 il # Montenegro si staccava dalla # Serbia . E ora punta ad essere nel duemila28 il 28esimo membro della # EU - Osservatorio Balcani Caucaso Transeuropa https://www. balcanicaucaso.org/il-21-maggi o-2006-il-montenegro-si-staccava-dalla-serbia/ @ cultura # 28by28",
+            "url": "https://mastodon.uno/@fucinafibonacci/116613296099131178",
             "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Mon, 25 May 2026 13:41:20 +0000",
+            "tag": "montenegro",
+            "seen_date": "Thu, 21 May 2026 15:34:47 +0000",
             "matched_countries": [
-              "Szerbia"
-            ]
-          },
-          {
-            "title": "",
-            "text": "For almost a year and half, one of the largest student movements in Europe has been transforming # Serbia The protests, which have drawn hundreds of thousands of people, are not just a form of # resistance against # authoritarianism . Through collaboration with other groups, such as # environmental organizations and lo",
-            "url": "https://mstdn.social/@berlinergazette/116634575284586400",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Mon, 25 May 2026 09:46:21 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ]
+              "Szerbia",
+              "Montenegró"
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -83,17 +136,20 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 5,
-        "level": "low",
-        "mentions": 2,
-        "negative_hits": 1,
+        "score": 9,
+        "level": "medium",
+        "mentions": 3,
+        "negative_hits": 2,
         "positive_hits": 0,
+        "engagement_total": 0,
         "source_counts": {
-          "reddit": 0,
-          "mastodon": 2
+          "reddit": 1,
+          "mastodon": 2,
+          "x": 0
         },
         "tag_counts": {
-          "bosnia": 2
+          "bosnia": 2,
+          "askbalkans": 1
         },
         "main_topic": "bosnia",
         "top_posts": [
@@ -106,7 +162,9 @@
             "seen_date": "Fri, 22 May 2026 09:36:56 +0000",
             "matched_countries": [
               "Bosznia-Hercegovina"
-            ]
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -117,7 +175,22 @@
             "seen_date": "Fri, 22 May 2026 04:52:33 +0000",
             "matched_countries": [
               "Bosznia-Hercegovina"
-            ]
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Is this a normal childhood memory in the balkans",
+            "text": "Basically, when I was a kid, I had a babysitter that was from the balkans, specifically Bosnia and he was very adamant that he was Bosnian . One time when I was a kid like literally five or six or something, and there was nothing to do in the house. He held me over a trashcan by my ankles and threatened to throw me in.",
+            "url": "https://www.reddit.com/r/AskBalkans/comments/1to41e0/is_this_a_normal_childhood_memory_in_the_balkans/",
+            "source": "reddit",
+            "tag": "askbalkans",
+            "seen_date": "2026-05-26T11:24:37+00:00",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -125,18 +198,90 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 0,
-        "level": "low",
-        "mentions": 0,
-        "negative_hits": 0,
+        "score": 11,
+        "level": "medium",
+        "mentions": 5,
+        "negative_hits": 2,
         "positive_hits": 0,
+        "engagement_total": 0,
         "source_counts": {
-          "reddit": 0,
-          "mastodon": 0
+          "reddit": 4,
+          "mastodon": 1,
+          "x": 0
         },
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "tag_counts": {
+          "serbia": 1,
+          "kosovo": 4
+        },
+        "main_topic": "kosovo",
+        "top_posts": [
+          {
+            "title": "",
+            "text": "Sole Bidder: SUVs in Kosovo Attack Lead to String of Suspect Serbian Tenders https:// fed.brid.gy/r/https://balkanin sight.com/2026/05/27/sole-bidder-suvs-in-kosovo-attack-lead-to-string-of-suspect-serbian-tenders/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/05/27/sole-bidder-suvs-in-kosovo-attack-lead-to-string-of-suspect-serbian-tenders/bi/",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 27 May 2026 06:03:59 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "r/Kosovo’s Weekly Monday Free-for-All, Casual Conversations & Introductions",
+            "text": "Welcome to r/Kosovo ’s weekly free for all / casual conversations thread. Let's keep this simple: upvote the good, downvote the bad, report the people who break the rules. Past Events of r/Kosovo : Ask Me Anything Cultural Exchange Community Exchange You may also join the official r/Kosovo discord channel by clicking h",
+            "url": "https://www.reddit.com/r/kosovo/comments/1tn04n6/rkosovos_weekly_monday_freeforall_casual/",
+            "source": "reddit",
+            "tag": "kosovo",
+            "seen_date": "2026-05-25T06:00:18+00:00",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "🇽🇰 Taksapaguesit e Kosoves do te financojne biletat e aeroplanit per diasporen.",
+            "text": "Nese objektivi eshte zhvillimi afatgjate ekonomik, atehere prioritizimi i pagesave afatshkurta ne vend te infrastruktures strategjike eshte perdorim joefektiv i kapitalit publik. Problemi kryesor nuk eshte mungesa e parave, por mungesa e prioriteteve afatgjata. Ne fund shtetet zhvillohen me infrastrukture dhe investime",
+            "url": "https://www.reddit.com/r/kosovo/comments/1tovw28/taksapaguesit_e_kosoves_do_te_financojne_biletat/",
+            "source": "reddit",
+            "tag": "kosovo",
+            "seen_date": "2026-05-27T05:20:49+00:00",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "What would be Kosovo's superheroes?",
+            "text": "I'm building a fictional universe where there is a secret global organization handling paranormal threats. Every country has a base with a small team of powered agents (superheroes). I want YOUR help building your country's team! Agents are a mix of real historical figures and folklore/mythology characters, all reimagi",
+            "url": "https://www.reddit.com/r/kosovo/comments/1tocv6x/what_would_be_kosovos_superheroes/",
+            "source": "reddit",
+            "tag": "kosovo",
+            "seen_date": "2026-05-26T16:54:23+00:00",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Brussels to Pristina",
+            "text": "Im trying to find a cheap way to go to Pristina from Brussels. I thought maybe I could get a train or take the train from Brussels to a nearby European country and then go to Pristina like that. Is there maybe a known countries that I can go to so that I can go from that country to the city Pristina in a cheap way? If ",
+            "url": "https://www.reddit.com/r/kosovo/comments/1to9nes/brussels_to_pristina/",
+            "source": "reddit",
+            "tag": "kosovo",
+            "seen_date": "2026-05-26T15:03:54+00:00",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
+          }
+        ]
       }
     },
     {
@@ -147,9 +292,11 @@
         "mentions": 2,
         "negative_hits": 0,
         "positive_hits": 0,
+        "engagement_total": 0,
         "source_counts": {
-          "reddit": 0,
-          "mastodon": 2
+          "reddit": 1,
+          "mastodon": 1,
+          "x": 0
         },
         "tag_counts": {
           "montenegro": 2
@@ -166,18 +313,22 @@
             "matched_countries": [
               "Szerbia",
               "Montenegró"
-            ]
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Agenzia Nova: Montenegro: Djukanovic, forze filoeuropee vicine a ritorno al governo 20 mag 10:53 - (Agenzia Nova) - Le forze filoeuropee del Montenegro sono vicine ad assumersi nuovamente la responsabilita' di governare il... (Seb) Montenegro: Djukanovic, pro-European forces close to returning to government May 20 10:5",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/116606082543725061",
-            "source": "mastodon",
+            "title": "Zašto mislim da Milo Đukanović treba da postane svetac",
+            "text": "Kroz istoriju mnogi sveci su bili vladari i političke figure koje su imale “višu misiju” za svoj narod i državu. Ako to gledamo na taj način, Milo Đukanović ima ozbiljne argumente za kanonizaciju. Čovjek je praktično obnovio crnogorsku državnost. Da nije bilo njega i referenduma 2006, vrlo je moguće da danas ne bi ni p",
+            "url": "https://www.reddit.com/r/montenegro/comments/1toc5x8/zašto_mislim_da_milo_đukanović_treba_da_postane/",
+            "source": "reddit",
             "tag": "montenegro",
-            "seen_date": "Wed, 20 May 2026 09:00:16 +0000",
+            "seen_date": "2026-05-26T16:30:11+00:00",
             "matched_countries": [
               "Montenegró"
-            ]
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -185,37 +336,57 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 0,
+        "score": 1,
         "level": "low",
-        "mentions": 0,
+        "mentions": 1,
         "negative_hits": 0,
         "positive_hits": 0,
+        "engagement_total": 0,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 0
+          "mastodon": 1,
+          "x": 0
         },
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "tag_counts": {
+          "macedonia": 1
+        },
+        "main_topic": "macedonia",
+        "top_posts": [
+          {
+            "title": "",
+            "text": "North # Macedonia has decided to open an # embassy in the capital of # Lithuania , # Vilnius . The embassy will represent Macedonia's interests across the three # Baltic States. https:// viabaltica.fi/lithuania-macedo nia-to-open-embassy-in-vilnius/",
+            "url": "https://mstdn.social/@viabaltica/116608868630110426",
+            "source": "mastodon",
+            "tag": "macedonia",
+            "seen_date": "Wed, 20 May 2026 20:48:49 +0000",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
+          }
+        ]
       }
     },
     {
       "name": "Albánia",
       "social_signal": {
-        "score": 8,
+        "score": 10,
         "level": "medium",
-        "mentions": 6,
+        "mentions": 8,
         "negative_hits": 0,
         "positive_hits": 1,
+        "engagement_total": 0,
         "source_counts": {
-          "reddit": 0,
-          "mastodon": 6
+          "reddit": 2,
+          "mastodon": 6,
+          "x": 0
         },
         "tag_counts": {
           "balkans": 3,
-          "albania": 3
+          "albania": 5
         },
-        "main_topic": "balkans",
+        "main_topic": "albania",
         "top_posts": [
           {
             "title": "",
@@ -226,7 +397,9 @@
             "seen_date": "Mon, 25 May 2026 15:13:15 +0000",
             "matched_countries": [
               "Albánia"
-            ]
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -237,7 +410,9 @@
             "seen_date": "Mon, 25 May 2026 15:05:01 +0000",
             "matched_countries": [
               "Albánia"
-            ]
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -248,7 +423,9 @@
             "seen_date": "Mon, 25 May 2026 13:50:09 +0000",
             "matched_countries": [
               "Albánia"
-            ]
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -259,7 +436,9 @@
             "seen_date": "Tue, 26 May 2026 19:57:15 +0000",
             "matched_countries": [
               "Albánia"
-            ]
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -270,7 +449,9 @@
             "seen_date": "Tue, 26 May 2026 17:51:54 +0000",
             "matched_countries": [
               "Albánia"
-            ]
+            ],
+            "engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
