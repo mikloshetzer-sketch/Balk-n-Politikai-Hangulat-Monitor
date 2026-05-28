@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-28 04:23 UTC",
+  "updated_at": "2026-05-28 09:51 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"errors\":[{\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption OR EU OR NATO OR security OR crisis OR tension OR parliament OR president OR minister OR opposition OR police OR sanctions O"
       }
     ],
-    "collected": 22
+    "collected": 23
   },
   "countries": [
     {
@@ -21,31 +21,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 18,
-        "negative_hits": 9,
-        "positive_hits": 5,
-        "trusted_hits": 2,
-        "engagement_total": 119,
-        "raw_engagement_total": 119,
-        "quality_total": 401,
-        "geopolitical_total": 368,
+        "mentions": 14,
+        "negative_hits": 5,
+        "positive_hits": 4,
+        "trusted_hits": 1,
+        "engagement_total": 14,
+        "raw_engagement_total": 14,
+        "quality_total": 301,
+        "geopolitical_total": 275,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 13
+          "x": 9
         },
         "category_counts": {
           "government_crisis": 8,
-          "security": 8,
-          "corruption_rule_of_law": 1,
-          "foreign_influence": 1
+          "security": 5,
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "balkans": 3,
           "serbia": 2,
-          "Szerbia": 9,
-          "Koszovó": 2,
-          "Montenegró": 2
+          "Szerbia": 8,
+          "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -157,33 +155,38 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Tensions are escalating in Belgrade with calls for early elections and unrest in the streets. Reports indicate a significant police and gendarmerie presence, with anti-riot control",
-            "text": "Tensions are escalating in Belgrade with calls for early elections and unrest in the streets. Reports indicate a significant police and gendarmerie presence, with anti-riot control measures deployed. Belgrade Serbia",
-            "url": "https://x.com/i/web/status/2059836634229559729",
+            "title": "As Serbian President Aleksandar Vucic visits China, officials are also highlighting the impact of China–Serbia cooperation on the ground. Zarko Micin, the mayor of Serbia's second ",
+            "text": "As Serbian President Aleksandar Vucic visits China, officials are also highlighting the impact of China–Serbia cooperation on the ground. Zarko Micin, the mayor of Serbia's second largest city Novi Sad, outlined how Chinese-built infrastructure projects, including a high-speed",
+            "url": "https://x.com/i/web/status/2059926904338366591",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-05-28T03:18:18.000Z",
+            "seen_date": "2026-05-28T09:17:00.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 9
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               },
               {
-                "category": "protest",
-                "hits": 2,
+                "category": "foreign_influence",
+                "hits": 1,
                 "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
+            "geopolitical_score": 22,
+            "quality_score": 23,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -197,49 +200,40 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Serbian President Aleksandar Vucic on May 26 described China as a \"gravity center of stability\" in global affairs, contrasting its consistent foreign policy with what he called the",
-            "text": "Serbian President Aleksandar Vucic on May 26 described China as a \"gravity center of stability\" in global affairs, contrasting its consistent foreign policy with what he called the unpredictable behavior of other major powers. China Serbia AleksandarVucic",
-            "url": "https://x.com/i/web/status/2059834817005736079",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-05-28T03:11:04.000Z",
+            "title": "",
+            "text": "Montenegro at 20: EU ambitions and Serbian ties. Twenty years after seceding from the state union with Serbia, Montenegro is seen as a Western Balkan frontrunner for EU membership but remains marked by corruption, unresolved divisions and Serbia’s political influence. https:// mediafaro.org/article/20260520 -montenegro-at-20-eu-ambitions-and-serbian-ties?mf_",
+            "url": "https://mastodon.mediafaro.org/@mf_analysis/116612197721261982",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Thu, 21 May 2026 10:55:27 +0000",
             "matched_countries": [
-              "Szerbia"
+              "Szerbia",
+              "Montenegró"
             ],
             "country_confidence": {
-              "Szerbia": 9
+              "Szerbia": 2,
+              "Montenegró": 1
             },
-            "event_category": "security",
+            "event_category": "corruption_rule_of_law",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
+                "category": "corruption_rule_of_law",
                 "hits": 1,
                 "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
               }
             ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
-            "source_reliability": 2,
+            "geopolitical_score": 18,
+            "quality_score": 21,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 3,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -247,72 +241,34 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 22,
+        "score": 20,
         "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 3,
         "negative_hits": 1,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 41,
-        "raw_engagement_total": 41,
-        "quality_total": 47,
-        "geopolitical_total": 45,
+        "trusted_hits": 0,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 31,
+        "geopolitical_total": 32,
         "source_counts": {
           "reddit": 2,
           "mastodon": 0,
           "x": 1
         },
         "category_counts": {
-          "security": 2,
-          "ethnic_tension": 1
+          "security": 1,
+          "ethnic_tension": 1,
+          "government_crisis": 1
         },
         "tag_counts": {
           "bih": 1,
           "askbalkans": 1,
-          "Koszovó": 1
+          "Észak-Macedónia": 1
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "NATO Deputy Assistant Secretary General for Partnerships paid his first official visit to the Western Balkans, with discussions in Sarajevo, Belgrade & Pristina He also attended th",
-            "text": "NATO Deputy Assistant Secretary General for Partnerships paid his first official visit to the Western Balkans, with discussions in Sarajevo, Belgrade & Pristina He also attended the first NATO-Serbia joint military exercise, saying that the exercise was a real",
-            "url": "https://x.com/i/web/status/2059694461085466856",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-05-27T17:53:21.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Szerbia": 5,
-              "Bosznia-Hercegovina": 4,
-              "Koszovó": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 23,
-            "quality_score": 27,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 41,
-            "raw_engagement": 41,
-            "metrics": {
-              "likes": 30,
-              "reposts": 9,
-              "replies": 2,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "Yugoslav nationalism?",
             "text": "We all know of nationalism... Slovene, Croatian, Bosnian, Macedonian, Albanian nationalism and so on. However, is it possible to have Yugoslav nationalism? Tito's Yugoslavia spent decades fighting nationalism within the republics and ethnic groups, but some historians and political advisors in the west saw Yugoslav nationalism as a real thing. So, to the peo",
@@ -345,6 +301,44 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "American Congressman Keith Self: The Ohrid Agreement Must Be Implemented and the Rights of Albanians Protected American Congressman Keith Self held separate meetings today on North",
+            "text": "American Congressman Keith Self: The Ohrid Agreement Must Be Implemented and the Rights of Albanians Protected American Congressman Keith Self held separate meetings today on North Macedonia with representatives of the Albanian Student Movement and with Albanian opposition",
+            "url": "https://x.com/i/web/status/2059913957289103421",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-05-28T08:25:33.000Z",
+            "matched_countries": [
+              "Észak-Macedónia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Bosznia-Hercegovina": 3,
+              "Albánia": 2
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 4,
+            "raw_engagement": 4,
+            "metrics": {
+              "likes": 4,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "Pomoć sa rješavanjem ovisnosti?",
@@ -381,113 +375,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 34,
-        "level": "medium",
+        "score": 17,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 2,
         "negative_hits": 2,
-        "positive_hits": 2,
-        "trusted_hits": 2,
-        "engagement_total": 48,
-        "raw_engagement_total": 48,
-        "quality_total": 98,
-        "geopolitical_total": 85,
+        "positive_hits": 0,
+        "trusted_hits": 0,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 27,
+        "geopolitical_total": 21,
         "source_counts": {
-          "reddit": 1,
+          "reddit": 0,
           "mastodon": 2,
-          "x": 2
+          "x": 0
         },
         "category_counts": {
-          "security": 3,
-          "migration": 1,
-          "foreign_influence": 1
+          "security": 1,
+          "migration": 1
         },
         "tag_counts": {
           "serbia": 1,
-          "kosovo": 2,
-          "Koszovó": 2
+          "kosovo": 1
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "Two Years Since Upgraded NATO Assembly Status: Driton Hyseni Praises Kosovo’s Enhanced Euro-Atlantic Integration Kosovo NATO NATOAssembly DritonHyseni Vetevendosje ParliamentaryDip",
-            "text": "Two Years Since Upgraded NATO Assembly Status: Driton Hyseni Praises Kosovo’s Enhanced Euro-Atlantic Integration Kosovo NATO NATOAssembly DritonHyseni Vetevendosje ParliamentaryDiplomacy EuroAtlantic Pristina BalkanSecurity InternationalRelations",
-            "url": "https://x.com/i/web/status/2059713862228660683",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-05-27T19:10:27.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 32,
-            "quality_score": 36,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 7,
-            "raw_engagement": 7,
-            "metrics": {
-              "likes": 5,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "NATO Deputy Assistant Secretary General for Partnerships paid his first official visit to the Western Balkans, with discussions in Sarajevo, Belgrade & Pristina He also attended th",
-            "text": "NATO Deputy Assistant Secretary General for Partnerships paid his first official visit to the Western Balkans, with discussions in Sarajevo, Belgrade & Pristina He also attended the first NATO-Serbia joint military exercise, saying that the exercise was a real",
-            "url": "https://x.com/i/web/status/2059694461085466856",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-05-27T17:53:21.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Szerbia": 5,
-              "Bosznia-Hercegovina": 4,
-              "Koszovó": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 23,
-            "quality_score": 27,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 41,
-            "raw_engagement": 41,
-            "metrics": {
-              "likes": 30,
-              "reposts": 9,
-              "replies": 2,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Sole Bidder: SUVs in Kosovo Attack Lead to String of Suspect Serbian Tenders https:// fed.brid.gy/r/https://balkanin sight.com/2026/05/27/sole-bidder-suvs-in-kosovo-attack-lead-to-string-of-suspect-serbian-tenders/bi/",
@@ -547,35 +460,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Advice needed: staying in Kosovo after 90 days",
-            "text": "Hi! So, here’s the situation. My boyfriend applied this month for an internship in Prishtina (as well as in many other countries, so it’s not like we specifically planned to go to Prishtina, although I have to say we were really hoping for Kosovo), and yesterday he received a positive response. His internship starts in a month, we are excited and I really wa",
-            "url": "https://www.reddit.com/r/kosovo/comments/1to2pds/advice_needed_staying_in_kosovo_after_90_days/",
-            "source": "reddit",
-            "tag": "kosovo",
-            "seen_date": "2026-05-26T10:19:04+00:00",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 8,
-            "source_reliability": 1,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -583,34 +467,77 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 30,
+        "score": 38,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 3,
+        "mentions": 6,
+        "negative_hits": 2,
         "positive_hits": 3,
-        "trusted_hits": 1,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 95,
-        "geopolitical_total": 83,
+        "trusted_hits": 2,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 149,
+        "geopolitical_total": 129,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 3,
+          "mastodon": 5,
           "x": 1
         },
         "category_counts": {
+          "security": 1,
           "corruption_rule_of_law": 1,
+          "eu_integration": 1,
           "foreign_influence": 1,
           "government_crisis": 2
         },
         "tag_counts": {
-          "balkans": 1,
-          "montenegro": 2,
+          "balkans": 2,
+          "montenegro": 3,
           "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Il Fatto Quotidiano: L’assistente personale di Matthew Perry condannato a 3 anni e 5 mesi di carcere per il suo ruolo nella morte per overdose della star di “Friends” Kenneth Iwamasa, 60 anni, è stato condannato mercoledì 27 maggio da un tribunale federale di Los Angeles a tre anni e cinque mesi di reclusione per il suo ruolo nella morte per overdose di Matt",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/116651322167328793",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Thu, 28 May 2026 08:45:18 +0000",
+            "matched_countries": [
+              "Montenegró",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Montenegró": 1,
+              "Albánia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 37,
+            "quality_score": 42,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "EU Sanctions Slash Russian Investments in Montenegro https:// fed.brid.gy/r/https://balkanin sight.com/2026/05/27/eu-sanctions-slash-russian-investments-in-montenegro/bi/",
@@ -682,41 +609,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "BREAKING French President Emmanuel Macron met with Montenegrin Prime Minister Milojko Spajić in Paris. Macron said France stands alongside the people of Montenegro in supporting th",
-            "text": "BREAKING French President Emmanuel Macron met with Montenegrin Prime Minister Milojko Spajić in Paris. Macron said France stands alongside the people of Montenegro in supporting their path toward European integration.",
-            "url": "https://x.com/i/web/status/2059693811299729486",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-05-27T17:50:46.000Z",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 23,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 5,
-            "raw_engagement": 5,
-            "metrics": {
-              "likes": 5,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Montenegro at 20: EU ambitions and Serbian ties. Twenty years after seceding from the state union with Serbia, Montenegro is seen as a Western Balkan frontrunner for EU membership but remains marked by corruption, unresolved divisions and Serbia’s political influence. https:// mediafaro.org/article/20260520 -montenegro-at-20-eu-ambitions-and-serbian-ties?mf_",
             "url": "https://mastodon.mediafaro.org/@mf_analysis/116612197721261982",
@@ -751,6 +643,35 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "EU enlargement: Is the bloc ready to welcome new members? Brussels says the EU must grow, but resistance within the bloc remains strong, with some arguing that it must reform before enlarging. Montenegro remains the only country with a realistic chance of joining soon. https:// mediafaro.org/article/20260527 -eu-enlargement-is-the-bloc-ready-to-welcome-new-m",
+            "url": "https://mastodon.mediafaro.org/@mf_analysis/116651405231293866",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Thu, 28 May 2026 09:06:26 +0000",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 1
+            },
+            "event_category": "eu_integration",
+            "event_categories": [
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 19,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -758,74 +679,69 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 40,
+        "score": 55,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 6,
-        "negative_hits": 1,
-        "positive_hits": 2,
-        "trusted_hits": 1,
-        "engagement_total": 109,
-        "raw_engagement_total": 109,
-        "quality_total": 95,
-        "geopolitical_total": 88,
+        "mentions": 8,
+        "negative_hits": 3,
+        "positive_hits": 4,
+        "trusted_hits": 0,
+        "engagement_total": 97,
+        "raw_engagement_total": 97,
+        "quality_total": 105,
+        "geopolitical_total": 99,
         "source_counts": {
           "reddit": 1,
           "mastodon": 0,
-          "x": 5
+          "x": 7
         },
         "category_counts": {
           "ethnic_tension": 2,
-          "government_crisis": 3,
-          "security": 1
+          "government_crisis": 6
         },
         "tag_counts": {
           "askbalkans": 1,
-          "Észak-Macedónia": 5
+          "Koszovó": 1,
+          "Észak-Macedónia": 6
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "🚨North Macedonia in NATO = The Trojan Horse! North Macedonia is no different from Serbia. Both are Russian-Chinese proxies. With a Deputy PM tied to Serbian BIA intelligence, leaks",
-            "text": "🚨North Macedonia in NATO = The Trojan Horse! North Macedonia is no different from Serbia. Both are Russian-Chinese proxies. With a Deputy PM tied to Serbian BIA intelligence, leaks from the President’s office, and open alignment with Putin & Xi. TrojanHorse NATO",
-            "url": "https://x.com/i/web/status/2059598888118472924",
+            "title": "FT Reports EU looking at changing accession rules to let Ukraine and Molodova join. Still waiting for 25 years are small ex Yugoslavia nations like North Macedonia, Kosovo etc bloc",
+            "text": "FT Reports EU looking at changing accession rules to let Ukraine and Molodova join. Still waiting for 25 years are small ex Yugoslavia nations like North Macedonia, Kosovo etc blocked from EU membership to transform their economies offer hope to citizens",
+            "url": "https://x.com/i/web/status/2059886576411226200",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-05-27T11:33:35.000Z",
+            "tag": "Koszovó",
+            "seen_date": "2026-05-28T06:36:45.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
               "Észak-Macedónia": 5,
-              "Szerbia": 2
+              "Koszovó": 1
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
               {
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               },
               {
-                "category": "foreign_influence",
+                "category": "eu_integration",
                 "hits": 1,
-                "weight": 8
+                "weight": 6
               }
             ],
-            "geopolitical_score": 30,
-            "quality_score": 34,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 19,
-            "raw_engagement": 19,
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 15,
-              "reposts": 4,
+              "likes": 0,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
@@ -866,6 +782,41 @@
             "metrics": {
               "likes": 0,
               "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇲🇰🇪🇺 North Macedonia EU Deadlock Deepens as Hardens Stance, Opposition Demands Referendum",
+            "text": "🇲🇰🇪🇺 North Macedonia EU Deadlock Deepens as Hardens Stance, Opposition Demands Referendum",
+            "url": "https://x.com/i/web/status/2059922952645152851",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-05-28T09:01:18.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 13,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
@@ -929,48 +880,13 @@
             "quality_score": 12,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 83,
-            "raw_engagement": 83,
+            "engagement": 84,
+            "raw_engagement": 84,
             "metrics": {
-              "likes": 66,
+              "likes": 67,
               "reposts": 2,
               "replies": 10,
               "quotes": 5
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "North Macedonia opposition party calls for referendum on EU pathway condition imposed by Bulgaria",
-            "text": "North Macedonia opposition party calls for referendum on EU pathway condition imposed by Bulgaria",
-            "url": "https://x.com/i/web/status/2059634704341418018",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-05-27T13:55:54.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 6,
-            "raw_engagement": 6,
-            "metrics": {
-              "likes": 3,
-              "reposts": 2,
-              "replies": 0,
-              "quotes": 1
             },
             "quality": "x_api_filtered"
           }
@@ -980,77 +896,80 @@
     {
       "name": "Albánia",
       "social_signal": {
-        "score": 57,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 2,
-        "positive_hits": 1,
-        "trusted_hits": 5,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 199,
-        "geopolitical_total": 169,
+        "mentions": 12,
+        "negative_hits": 3,
+        "positive_hits": 2,
+        "trusted_hits": 7,
+        "engagement_total": 21,
+        "raw_engagement_total": 21,
+        "quality_total": 252,
+        "geopolitical_total": 213,
         "source_counts": {
-          "reddit": 1,
-          "mastodon": 6,
-          "x": 2
+          "reddit": 2,
+          "mastodon": 7,
+          "x": 3
         },
         "category_counts": {
+          "security": 2,
           "economic_infrastructure": 1,
           "eu_integration": 2,
-          "government_crisis": 3,
+          "government_crisis": 5,
           "ethnic_tension": 1,
-          "security": 2
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
-          "balkans": 2,
+          "balkans": 3,
           "montenegro": 1,
-          "albania": 3,
+          "albania": 4,
           "askbalkans": 1,
+          "Koszovó": 1,
           "Albánia": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "Attended the Tirana Security Forum with parliamentarians and representatives from the region and NATO allies. Always a pleasure to meet the amazing SG , a valued friend of 🇦🇱 and t",
-            "text": "Attended the Tirana Security Forum with parliamentarians and representatives from the region and NATO allies. Always a pleasure to meet the amazing SG , a valued friend of 🇦🇱 and the DP. In a changing world order, Albania must become a trusted partner: free",
-            "url": "https://x.com/i/web/status/2059723067975450794",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-05-27T19:47:01.000Z",
+            "title": "",
+            "text": "Il Fatto Quotidiano: L’assistente personale di Matthew Perry condannato a 3 anni e 5 mesi di carcere per il suo ruolo nella morte per overdose della star di “Friends” Kenneth Iwamasa, 60 anni, è stato condannato mercoledì 27 maggio da un tribunale federale di Los Angeles a tre anni e cinque mesi di reclusione per il suo ruolo nella morte per overdose di Matt",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/116651322167328793",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Thu, 28 May 2026 08:45:18 +0000",
             "matched_countries": [
+              "Montenegró",
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 5
+              "Montenegró": 1,
+              "Albánia": 1
             },
             "event_category": "security",
             "event_categories": [
               {
                 "category": "security",
-                "hits": 2,
+                "hits": 1,
                 "weight": 9
               },
               {
-                "category": "government_crisis",
+                "category": "foreign_influence",
                 "hits": 1,
-                "weight": 9
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
               }
             ],
-            "geopolitical_score": 31,
-            "quality_score": 35,
+            "geopolitical_score": 37,
+            "quality_score": 42,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 4,
-            "raw_engagement": 4,
-            "metrics": {
-              "likes": 3,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
