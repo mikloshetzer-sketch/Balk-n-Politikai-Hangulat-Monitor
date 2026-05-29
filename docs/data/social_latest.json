@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-29 04:29 UTC",
+  "updated_at": "2026-05-29 09:41 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"errors\":[{\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption OR EU OR NATO OR security OR crisis OR tension OR parliament OR president OR minister OR opposition OR police OR sanctions O"
       }
     ],
-    "collected": 16
+    "collected": 20
   },
   "countries": [
     {
@@ -21,31 +21,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
+        "mentions": 15,
         "negative_hits": 8,
-        "positive_hits": 3,
-        "trusted_hits": 1,
-        "engagement_total": 15,
-        "raw_engagement_total": 15,
-        "quality_total": 364,
-        "geopolitical_total": 340,
+        "positive_hits": 2,
+        "trusted_hits": 3,
+        "engagement_total": 8,
+        "raw_engagement_total": 8,
+        "quality_total": 373,
+        "geopolitical_total": 342,
         "source_counts": {
           "reddit": 1,
           "mastodon": 5,
-          "x": 8
+          "x": 9
         },
         "category_counts": {
-          "government_crisis": 8,
-          "security": 3,
-          "protest": 2,
-          "ethnic_tension": 1
+          "government_crisis": 7,
+          "security": 6,
+          "foreign_influence": 1,
+          "protest": 1
         },
         "tag_counts": {
           "balkans": 2,
           "serbia": 3,
           "askbalkans": 1,
           "Szerbia": 7,
-          "Koszovó": 1
+          "Koszovó": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -128,45 +128,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Leaked Documents Reveal #Russia ‘Cognitive Strikes’ Against the West — Including Islamophobic ‘Pig Head’ Attacks in Paris In September 2025, nine mosques and cultural centers in and around #Paris were targeted with a grotesque Islamophobic stunt: Bloody severed pig heads, each marked with the word “Macron” in blue ink, were left outside their front doors. A ",
-            "url": "https://agora.echelon.pl/objects/df86ef61-1881-40b0-a9ba-31098394f4b0",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Wed, 27 May 2026 05:55:32 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 36,
-            "quality_score": 39,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
             "title": "Does Vucic still have any support left in Serbia?",
             "text": "Vucic won the 2022 election with 60 percent of the votes. However for like the last one and a half year there have been anti-corruption protests in the country. And there will be elections in 2027. So my question is does Vucic still have enough support left to win the election? Or will he end up like Orban? &#32; submitted by &#32; /u/Excellent-Red_8647 [lin",
             "url": "https://www.reddit.com/r/AskBalkans/comments/1tq1e18/does_vucic_still_have_any_support_left_in_serbia/",
@@ -233,6 +194,42 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Three years after the 29 May terrorist attack against NATO soldiers in the north of Kosova: An operation organized by Milan Radoičić’s criminal network and supported by the regime ",
+            "text": "Three years after the 29 May terrorist attack against NATO soldiers in the north of Kosova: An operation organized by Milan Radoičić’s criminal network and supported by the regime of Aleksandar Vučić",
+            "url": "https://x.com/i/web/status/2060278612029251968",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-05-29T08:34:33.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 30,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -240,130 +237,53 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 12,
+        "score": 9,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 0,
-        "positive_hits": 2,
+        "mentions": 1,
+        "negative_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 31,
-        "raw_engagement_total": 31,
-        "quality_total": 30,
-        "geopolitical_total": 29,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 10,
+        "geopolitical_total": 11,
         "source_counts": {
           "reddit": 1,
           "mastodon": 0,
-          "x": 2
+          "x": 0
         },
         "category_counts": {
-          "security": 1,
-          "government_crisis": 2
+          "protest": 1
         },
         "tag_counts": {
-          "bih": 1,
-          "Észak-Macedónia": 2
+          "bih": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "protest",
         "top_posts": [
           {
-            "title": "American Congressman Keith Self: The Ohrid Agreement Must Be Implemented and the Rights of Albanians Protected American Congressman Keith Self held separate meetings today on North",
-            "text": "American Congressman Keith Self: The Ohrid Agreement Must Be Implemented and the Rights of Albanians Protected American Congressman Keith Self held separate meetings today on North Macedonia with representatives of the Albanian Student Movement and with Albanian opposition",
-            "url": "https://x.com/i/web/status/2059913957289103421",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-05-28T08:25:33.000Z",
-            "matched_countries": [
-              "Észak-Macedónia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Bosznia-Hercegovina": 3,
-              "Albánia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 31,
-            "raw_engagement": 31,
-            "metrics": {
-              "likes": 28,
-              "reposts": 3,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Strong message today from young political representatives in North Macedonia: dialogue, respect and democratic maturity still matter. The Declaration on European Values is an impor",
-            "text": "Strong message today from young political representatives in North Macedonia: dialogue, respect and democratic maturity still matter. The Declaration on European Values is an important signal for the country’s European future. Thanks to the OHRID Institute for the initiative.",
-            "url": "https://x.com/i/web/status/2059941467473207533",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-05-28T10:14:52.000Z",
-            "matched_countries": [
-              "Észak-Macedónia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Bosznia-Hercegovina": 3
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Pomoć sa rješavanjem ovisnosti?",
-            "text": "Zadnjih 7-8 godina imam problema sa ovisnošću o po*nicima, dakle svaki dan bih govorila da neću više i bez iznimke posrtala. Željela bih da blokiram takav sadržaj što bolje mogu, pa ako neko ima neke savjete/prijedloge molim vas pišite. Od uređaja koristim iphone i macbook, dakle ako znate neke cake sa nekim bloker aplikacijama, bilo čime, bila bih vam mnogo",
-            "url": "https://www.reddit.com/r/bih/comments/1tpf1is/pomoć_sa_rješavanjem_ovisnosti/",
+            "title": "Zašto SDA napada Sabinu Čudić",
+            "text": "SDA nije krenula na Sabina Ćudić zato što je rekla nešto netačno. Krenula je jer više nema puno prostora da pobijedi na rezultatima, pa se priča opet vraća na galamu, patriotizam i etikete. A hajmo pogledati šta se stvarno desilo u Kantonu Sarajevo od 2018. Broj djece u subvencioniranim vrtićima skočio je sa 248 na 1.274. Budžet za porodice s djecom porastao",
+            "url": "https://www.reddit.com/r/bih/comments/1tqw9n3/zašto_sda_napada_sabinu_čudić/",
             "source": "reddit",
             "tag": "bih",
-            "seen_date": "2026-05-27T18:57:20+00:00",
+            "seen_date": "2026-05-29T09:17:14+00:00",
             "matched_countries": [
               "Bosznia-Hercegovina"
             ],
             "country_confidence": {
-              "Bosznia-Hercegovina": 1
+              "Bosznia-Hercegovina": 5
             },
-            "event_category": "security",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "security",
+                "category": "protest",
                 "hits": 1,
-                "weight": 9
+                "weight": 8
               }
             ],
-            "geopolitical_score": 9,
-            "quality_score": 8,
+            "geopolitical_score": 11,
+            "quality_score": 10,
             "source_reliability": 1,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -376,69 +296,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 37,
-        "level": "medium",
+        "score": 17,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 3,
-        "positive_hits": 1,
+        "mentions": 2,
+        "negative_hits": 2,
+        "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 133,
-        "raw_engagement_total": 433,
-        "quality_total": 79,
-        "geopolitical_total": 71,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 27,
+        "geopolitical_total": 21,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 2
+          "x": 0
         },
         "category_counts": {
-          "security": 2,
-          "migration": 1,
-          "ethnic_tension": 1
+          "security": 1,
+          "migration": 1
         },
         "tag_counts": {
           "serbia": 1,
-          "kosovo": 1,
-          "Koszovó": 2
+          "kosovo": 1
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "PM Kurti: 🇽🇰 Kosovo to build a total defense system modeled on Finland, the Baltic states and Poland. The system would enable all citizens to respond to armed attacks or natural di",
-            "text": "PM Kurti: 🇽🇰 Kosovo to build a total defense system modeled on Finland, the Baltic states and Poland. The system would enable all citizens to respond to armed attacks or natural disasters and join reserve forces. Young people would also receive security education.",
-            "url": "https://x.com/i/web/status/2060039017828069765",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-05-28T16:42:30.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 4,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 39,
-            "quality_score": 40,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 120,
-            "raw_engagement": 420,
-            "metrics": {
-              "likes": 368,
-              "reposts": 36,
-              "replies": 11,
-              "quotes": 5
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Sole Bidder: SUVs in Kosovo Attack Lead to String of Suspect Serbian Tenders https:// fed.brid.gy/r/https://balkanin sight.com/2026/05/27/sole-bidder-suvs-in-kosovo-attack-lead-to-string-of-suspect-serbian-tenders/bi/",
@@ -469,43 +352,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Pleased to meet 🇬🇧 Special Envoy Dame Karen Pierce. We spoke about the Belgrade-Pristina Dialogue, the importance of sustained engagement, and our common EU-UK goal of advancing no",
-            "text": "Pleased to meet 🇬🇧 Special Envoy Dame Karen Pierce. We spoke about the Belgrade-Pristina Dialogue, the importance of sustained engagement, and our common EU-UK goal of advancing normalisation.",
-            "url": "https://x.com/i/web/status/2060061462157029421",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-05-28T18:11:41.000Z",
-            "matched_countries": [
-              "Koszovó",
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Koszovó": 7,
-              "Szerbia": 4
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 12,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 13,
-            "raw_engagement": 13,
-            "metrics": {
-              "likes": 7,
-              "reposts": 6,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -745,66 +591,60 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 32,
-        "level": "medium",
+        "score": 18,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 2,
-        "positive_hits": 3,
+        "mentions": 3,
+        "negative_hits": 0,
+        "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 33,
-        "raw_engagement_total": 33,
-        "quality_total": 72,
-        "geopolitical_total": 67,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 46,
+        "geopolitical_total": 43,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 5
+          "x": 3
         },
         "category_counts": {
-          "ethnic_tension": 1,
-          "government_crisis": 4
+          "government_crisis": 2,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 5
+          "Észak-Macedónia": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "FT Reports EU looking at changing accession rules to let Ukraine and Molodova join. Still waiting for 25 years are small ex Yugoslavia nations like North Macedonia, Kosovo etc bloc",
-            "text": "FT Reports EU looking at changing accession rules to let Ukraine and Molodova join. Still waiting for 25 years are small ex Yugoslavia nations like North Macedonia, Kosovo etc blocked from EU membership to transform their economies offer hope to citizens",
-            "url": "https://x.com/i/web/status/2059886576411226200",
+            "title": "🌎 🗞️ Constitutional news you may have missed this week from ConstitutionNet 📌 Nepal – A draft regulation easing constitutional amendment requirements triggers controversy: 📌 North ",
+            "text": "🌎 🗞️ Constitutional news you may have missed this week from ConstitutionNet 📌 Nepal – A draft regulation easing constitutional amendment requirements triggers controversy: 📌 North Macedonia – Parliament urged to hold referendum on constitutional",
+            "url": "https://x.com/i/web/status/2060260032512499838",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-05-28T06:36:45.000Z",
+            "seen_date": "2026-05-29T07:20:44.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Koszovó": 1
+              "Észak-Macedónia": 5
             },
             "event_category": "government_crisis",
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 1,
+                "hits": 2,
                 "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
+            "geopolitical_score": 18,
+            "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 0,
+              "likes": 2,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -852,17 +692,17 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "🇲🇰🇪🇺 North Macedonia EU Deadlock Deepens as Hardens Stance, Opposition Demands Referendum",
-            "text": "🇲🇰🇪🇺 North Macedonia EU Deadlock Deepens as Hardens Stance, Opposition Demands Referendum",
-            "url": "https://x.com/i/web/status/2059922952645152851",
+            "title": "Skopje Cultural Diplomacy Forum took place at the Foreign Office and the Parliament of North Macedonia 🇲🇰 Our discussion on the role of democratic institutions in cultural diplomac",
+            "text": "Skopje Cultural Diplomacy Forum took place at the Foreign Office and the Parliament of North Macedonia 🇲🇰 Our discussion on the role of democratic institutions in cultural diplomacy was chaired by the Speaker of the House H.E. Afrim Gashi himself.",
+            "url": "https://x.com/i/web/status/2060243619131302181",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-05-28T09:01:18.000Z",
+            "seen_date": "2026-05-29T06:15:30.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5
+              "Észak-Macedónia": 9
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -872,89 +712,14 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
+            "geopolitical_score": 9,
+            "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 2,
             "raw_engagement": 2,
             "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "American Congressman Keith Self: The Ohrid Agreement Must Be Implemented and the Rights of Albanians Protected American Congressman Keith Self held separate meetings today on North",
-            "text": "American Congressman Keith Self: The Ohrid Agreement Must Be Implemented and the Rights of Albanians Protected American Congressman Keith Self held separate meetings today on North Macedonia with representatives of the Albanian Student Movement and with Albanian opposition",
-            "url": "https://x.com/i/web/status/2059913957289103421",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-05-28T08:25:33.000Z",
-            "matched_countries": [
-              "Észak-Macedónia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Bosznia-Hercegovina": 3,
-              "Albánia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 31,
-            "raw_engagement": 31,
-            "metrics": {
-              "likes": 28,
-              "reposts": 3,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Strong message today from young political representatives in North Macedonia: dialogue, respect and democratic maturity still matter. The Declaration on European Values is an impor",
-            "text": "Strong message today from young political representatives in North Macedonia: dialogue, respect and democratic maturity still matter. The Declaration on European Values is an important signal for the country’s European future. Thanks to the OHRID Institute for the initiative.",
-            "url": "https://x.com/i/web/status/2059941467473207533",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-05-28T10:14:52.000Z",
-            "matched_countries": [
-              "Észak-Macedónia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Bosznia-Hercegovina": 3
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
+              "likes": 2,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -970,21 +735,21 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
+        "mentions": 13,
         "negative_hits": 3,
-        "positive_hits": 1,
-        "trusted_hits": 6,
-        "engagement_total": 27,
-        "raw_engagement_total": 27,
-        "quality_total": 255,
-        "geopolitical_total": 216,
+        "positive_hits": 3,
+        "trusted_hits": 7,
+        "engagement_total": 70,
+        "raw_engagement_total": 70,
+        "quality_total": 308,
+        "geopolitical_total": 264,
         "source_counts": {
           "reddit": 1,
           "mastodon": 8,
-          "x": 2
+          "x": 4
         },
         "category_counts": {
-          "security": 3,
+          "security": 5,
           "economic_infrastructure": 1,
           "eu_integration": 2,
           "government_crisis": 3,
@@ -995,8 +760,9 @@
           "balkans": 3,
           "montenegro": 1,
           "albania": 5,
+          "Koszovó": 1,
           "Montenegró": 1,
-          "Albánia": 1
+          "Albánia": 2
         },
         "main_topic": "security",
         "top_posts": [
@@ -1139,40 +905,44 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "EU could deny new member states veto rights as bloc pushes for enlargement https://www. theguardian.com/world/2026/may /26/eu-could-deny-new-member-states-veto-rights-as-bloc-pushes-for-enlargement # EuropeanUnion # Europe # WorldNews # Moldova # Montenegro # Ukraine # Albania # EuropeanCommission",
-            "url": "https://halo.nu/@theguardian_world_news/116640435716525777",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Tue, 26 May 2026 10:36:44 +0000",
+            "title": "OSCE parliamentarians underline importance of transatlantic partnership at high-level Security Forum in Tirana ➡️",
+            "text": "OSCE parliamentarians underline importance of transatlantic partnership at high-level Security Forum in Tirana ➡️",
+            "url": "https://x.com/i/web/status/2060289124272136515",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-05-29T09:16:20.000Z",
             "matched_countries": [
-              "Montenegró",
               "Albánia"
             ],
             "country_confidence": {
-              "Montenegró": 1,
-              "Albánia": 1
+              "Albánia": 4
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
               },
               {
-                "category": "eu_integration",
+                "category": "government_crisis",
                 "hits": 1,
-                "weight": 6
+                "weight": 9
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 24,
+            "geopolitical_score": 23,
+            "quality_score": 27,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
