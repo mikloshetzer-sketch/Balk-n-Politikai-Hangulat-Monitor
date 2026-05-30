@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-30 08:21 UTC",
+  "updated_at": "2026-05-30 08:39 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"errors\":[{\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption OR EU OR NATO OR security OR crisis OR tension OR parliament OR president OR minister OR opposition OR police OR sanctions O"
       }
     ],
-    "collected": 18
+    "collected": 17
   },
   "countries": [
     {
@@ -21,31 +21,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
+        "mentions": 13,
         "negative_hits": 7,
-        "positive_hits": 5,
+        "positive_hits": 3,
         "trusted_hits": 3,
-        "engagement_total": 107,
-        "raw_engagement_total": 107,
-        "quality_total": 358,
-        "geopolitical_total": 328,
+        "engagement_total": 123,
+        "raw_engagement_total": 148,
+        "quality_total": 299,
+        "geopolitical_total": 271,
         "source_counts": {
           "reddit": 1,
           "mastodon": 5,
-          "x": 9
+          "x": 7
         },
         "category_counts": {
           "government_crisis": 7,
-          "security": 6,
-          "foreign_influence": 2
+          "security": 5,
+          "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 3,
           "kosovo": 1,
           "europe": 1,
-          "Szerbia": 6,
-          "Koszovó": 2,
+          "Szerbia": 5,
+          "Koszovó": 1,
           "Albánia": 1
         },
         "main_topic": "government_crisis",
@@ -159,68 +159,54 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Three years ago today, NATO and Kosovo special police clashed with Serbs in Zvečan. The impetus was the Kosovo Albanian take over of the municipal offices. But the flash point came",
-            "text": "Three years ago today, NATO and Kosovo special police clashed with Serbs in Zvečan. The impetus was the Kosovo Albanian take over of the municipal offices. But the flash point came when NATO forces tried to clear a road of Serbian protesters. That was the mistake.",
-            "url": "https://x.com/i/web/status/2060443766771618282",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-05-29T19:30:49.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 33,
-            "quality_score": 37,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Serbian President Aleksandar Vucic on May 26 hailed China as an increasingly important anchor of global stability, saying its consistent policies, responsible leadership, and commi",
-            "text": "Serbian President Aleksandar Vucic on May 26 hailed China as an increasingly important anchor of global stability, saying its consistent policies, responsible leadership, and commitment to peace and development offer certainty in an increasingly volatile world. China",
-            "url": "https://x.com/i/web/status/2060625608275800360",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-05-30T07:33:24.000Z",
+            "title": "",
+            "text": "🟢 Political Statement | 4/10 🇷🇸 Vucic hints at resignation due to term end Serbian President Aleksandar Vucic stated during his visit to China that he might resign due to the approaching end of his presidential term. # OSINT # NewsGroup # Serbia # Politics # Balkans",
+            "url": "https://social.vir.group/@analytics/116633650178604739",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Mon, 25 May 2026 05:51:05 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
               "Szerbia": 9
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 1,
+                "category": "government_crisis",
+                "hits": 2,
                 "weight": 9
               },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 32,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Serbian President Aleksandar Vucic said on May 26 he looks forward to seeing the production of robots jointly made by China and Serbia in the near future as the two countries enter",
+            "text": "Serbian President Aleksandar Vucic said on May 26 he looks forward to seeing the production of robots jointly made by China and Serbia in the near future as the two countries enter a new stage of cooperation in high-tech and innovation. China SerbianPresident",
+            "url": "https://x.com/i/web/status/2060629766533992549",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-05-30T07:49:55.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
               {
                 "category": "government_crisis",
                 "hits": 1,
@@ -230,22 +216,17 @@
                 "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 31,
-            "quality_score": 32,
+            "geopolitical_score": 21,
+            "quality_score": 22,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 3,
-              "reposts": 0,
+              "likes": 1,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -257,58 +238,127 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 0,
+        "score": 9,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 0,
-        "negative_hits": 0,
+        "mentions": 1,
+        "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 0,
-        "geopolitical_total": 0,
+        "quality_total": 10,
+        "geopolitical_total": 11,
         "source_counts": {
-          "reddit": 0,
+          "reddit": 1,
           "mastodon": 0,
           "x": 0
         },
-        "category_counts": {},
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "category_counts": {
+          "protest": 1
+        },
+        "tag_counts": {
+          "serbia": 1
+        },
+        "main_topic": "protest",
+        "top_posts": [
+          {
+            "title": "Šta je na kraju bilo sa zvučnim topom?",
+            "text": "Ja mislim da se dobro sećam kako je to teklo prošle godine. Možda me i sećanje vara, molio bih vas da me ispravite ako grešim: jer se duboko nadam da me vara sećanje jer je istina onda (tragi)komična. Dakle, da rezimiramo.. održao se protest 15og, bujice ljudi, hiljade i hiljade što mladih, što starih, neki su vodili malu decu i kućne ljubimce; pored svega t",
+            "url": "https://www.reddit.com/r/serbia/comments/1tru68j/šta_je_na_kraju_bilo_sa_zvučnim_topom/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-05-30T08:30:03+00:00",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 10,
+            "source_reliability": 1,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          }
+        ]
       }
     },
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 39,
-        "level": "medium",
+        "score": 47,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 6,
         "negative_hits": 3,
         "positive_hits": 2,
-        "trusted_hits": 0,
-        "engagement_total": 139,
-        "raw_engagement_total": 161,
-        "quality_total": 77,
-        "geopolitical_total": 70,
+        "trusted_hits": 1,
+        "engagement_total": 143,
+        "raw_engagement_total": 172,
+        "quality_total": 112,
+        "geopolitical_total": 101,
         "source_counts": {
           "reddit": 1,
           "mastodon": 2,
-          "x": 2
+          "x": 3
         },
         "category_counts": {
-          "security": 2,
+          "security": 3,
           "migration": 1,
           "government_crisis": 2
         },
         "tag_counts": {
           "kosovo": 3,
-          "Koszovó": 2
+          "Koszovó": 3
         },
         "main_topic": "security",
         "top_posts": [
+          {
+            "title": "Soldiers assigned to Regional Command-East (RC-E), part of the NATO-led KFOR mission, engaged with national security undergraduate students at the University of Business and Techno",
+            "text": "Soldiers assigned to Regional Command-East (RC-E), part of the NATO-led KFOR mission, engaged with national security undergraduate students at the University of Business and Technology in Pristina. TogetherStrongerForPeace",
+            "url": "https://x.com/i/web/status/2060638572777033907",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-05-30T08:24:55.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 31,
+            "quality_score": 35,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 2,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "Thank you for your congratulations, Prime Minister Albin Kurti. Slovenia and Kosovo enjoy excellent bilateral relations. We will continue to support Kosovo's European perspective, ",
             "text": "Thank you for your congratulations, Prime Minister Albin Kurti. Slovenia and Kosovo enjoy excellent bilateral relations. We will continue to support Kosovo's European perspective, economic development, and efforts toward regional peace and stability. 🇸🇮🇽🇰",
@@ -345,11 +395,11 @@
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 120,
-            "raw_engagement": 142,
+            "raw_engagement": 149,
             "metrics": {
-              "likes": 116,
-              "reposts": 24,
-              "replies": 1,
+              "likes": 121,
+              "reposts": 25,
+              "replies": 2,
               "quotes": 1
             },
             "quality": "x_api_filtered"
@@ -384,10 +434,10 @@
             "quality_score": 15,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 19,
-            "raw_engagement": 19,
+            "engagement": 21,
+            "raw_engagement": 21,
             "metrics": {
-              "likes": 18,
+              "likes": 20,
               "reposts": 0,
               "replies": 0,
               "quotes": 1
@@ -449,35 +499,6 @@
             "geopolitical_score": 9,
             "quality_score": 12,
             "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "Vjosa e vitit 2026 tu i tregu Vjoses se 2019",
-            "text": "- \"Dëgjo, në fillim LDK të tradhton keq dhe e bëjnë Hotin kryeministër.\" - \"Ti kandidon me Albin Kurtin, fitoni bindshëm dhe ai të bën Presidente!\" - \"Por në 2026, Kurti nuk të mbështet më për mandat të dytë.\" - \"Nga inati, ti nis një kampanjë të madhe shantazhimi dhe sulmesh kundër Albinit për t'u hakmarrë...\" - \"Por e di çfarë? Ajo kampanjë të dështon tota",
-            "url": "https://www.reddit.com/r/kosovo/comments/1trsanp/vjosa_e_vitit_2026_tu_i_tregu_vjoses_se_2019/",
-            "source": "reddit",
-            "tag": "kosovo",
-            "seen_date": "2026-05-30T06:43:47+00:00",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 8,
-            "source_reliability": 1,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
@@ -795,21 +816,21 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 4,
+        "mentions": 12,
+        "negative_hits": 2,
         "positive_hits": 2,
-        "trusted_hits": 7,
-        "engagement_total": 166,
-        "raw_engagement_total": 189,
-        "quality_total": 339,
-        "geopolitical_total": 291,
+        "trusted_hits": 5,
+        "engagement_total": 60,
+        "raw_engagement_total": 60,
+        "quality_total": 282,
+        "geopolitical_total": 242,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
-          "x": 5
+          "x": 3
         },
         "category_counts": {
-          "security": 4,
+          "security": 2,
           "economic_infrastructure": 1,
           "eu_integration": 2,
           "government_crisis": 6,
@@ -819,7 +840,6 @@
           "balkans": 3,
           "montenegro": 1,
           "albania": 5,
-          "Koszovó": 2,
           "Albánia": 3
         },
         "main_topic": "government_crisis",
@@ -864,49 +884,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Three years ago today, NATO and Kosovo special police clashed with Serbs in Zvečan. The impetus was the Kosovo Albanian take over of the municipal offices. But the flash point came",
-            "text": "Three years ago today, NATO and Kosovo special police clashed with Serbs in Zvečan. The impetus was the Kosovo Albanian take over of the municipal offices. But the flash point came when NATO forces tried to clear a road of Serbian protesters. That was the mistake.",
-            "url": "https://x.com/i/web/status/2060443766771618282",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-05-29T19:30:49.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 33,
-            "quality_score": 37,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -1004,6 +981,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "📍Rome - Pleased to meet with Hon. , Vice-President of the Defense Committee of the Chamber of Deputies of the Italian Republic as well as President of the Balkans Committee of the ",
+            "text": "📍Rome - Pleased to meet with Hon. , Vice-President of the Defense Committee of the Chamber of Deputies of the Italian Republic as well as President of the Balkans Committee of the Parliamentary Assembly of the , a friend of Albania and the Albanian people, and",
+            "url": "https://x.com/i/web/status/2060627462631944258",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-05-30T07:40:46.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 2
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 28,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 56,
+            "raw_engagement": 56,
+            "metrics": {
+              "likes": 27,
+              "reposts": 29,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
