@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-30 02:16 UTC",
+  "updated_at": "2026-05-30 04:14 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"errors\":[{\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption OR EU OR NATO OR security OR crisis OR tension OR parliament OR president OR minister OR opposition OR police OR sanctions O"
       }
     ],
-    "collected": 15
+    "collected": 13
   },
   "countries": [
     {
@@ -23,12 +23,12 @@
         "scale": "0-60 risk index",
         "mentions": 14,
         "negative_hits": 9,
-        "positive_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 5,
-        "engagement_total": 205,
-        "raw_engagement_total": 400,
-        "quality_total": 418,
-        "geopolitical_total": 381,
+        "engagement_total": 89,
+        "raw_engagement_total": 89,
+        "quality_total": 384,
+        "geopolitical_total": 347,
         "source_counts": {
           "reddit": 1,
           "mastodon": 6,
@@ -36,9 +36,9 @@
         },
         "category_counts": {
           "government_crisis": 4,
-          "security": 7,
+          "security": 8,
           "foreign_influence": 1,
-          "protest": 2
+          "protest": 1
         },
         "tag_counts": {
           "balkans": 1,
@@ -46,52 +46,10 @@
           "europe": 1,
           "Szerbia": 4,
           "Koszovó": 1,
-          "Montenegró": 1,
-          "Albánia": 1
+          "Albánia": 2
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "❗🇷🇸🪖 NATO announced that they have and the Serbian Armed Forces have concluded their first joint military exercise, a two‑week drill involving approximately 600 troops from Serbia,",
-            "text": "❗🇷🇸🪖 NATO announced that they have and the Serbian Armed Forces have concluded their first joint military exercise, a two‑week drill involving approximately 600 troops from Serbia, Italy, Romania, Turkey, France, Germany, Montenegro, the United Kingdom and the United States.",
-            "url": "https://x.com/i/web/status/2060345920332468585",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-05-29T13:02:01.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Montenegró": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 56,
-            "quality_score": 60,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 120,
-            "raw_engagement": 315,
-            "metrics": {
-              "likes": 268,
-              "reposts": 29,
-              "replies": 16,
-              "quotes": 2
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Thousands of people led by university students have rallied in #Serbia to protest the government and call for early elections. A rail station disaster in November '24, killed 16 people & sparked anticorruption protests, forcing then-Prime Minister Milos Vucevic to resign. Tens of thousands rally in Ser...",
@@ -243,6 +201,49 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "Three years ago today, NATO and Kosovo special police clashed with Serbs in Zvečan. The impetus was the Kosovo Albanian take over of the municipal offices. But the flash point came",
+            "text": "Three years ago today, NATO and Kosovo special police clashed with Serbs in Zvečan. The impetus was the Kosovo Albanian take over of the municipal offices. But the flash point came when NATO forces tried to clear a road of Serbian protesters. That was the mistake.",
+            "url": "https://x.com/i/web/status/2060443766771618282",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-05-29T19:30:49.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Albánia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 33,
+            "quality_score": 37,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -282,8 +283,8 @@
         "negative_hits": 3,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 91,
-        "raw_engagement_total": 91,
+        "engagement_total": 102,
+        "raw_engagement_total": 102,
         "quality_total": 69,
         "geopolitical_total": 61,
         "source_counts": {
@@ -338,13 +339,13 @@
             "quality_score": 27,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 76,
-            "raw_engagement": 76,
+            "engagement": 86,
+            "raw_engagement": 86,
             "metrics": {
-              "likes": 59,
+              "likes": 71,
               "reposts": 15,
-              "replies": 1,
-              "quotes": 1
+              "replies": 0,
+              "quotes": 0
             },
             "quality": "x_api_filtered"
           },
@@ -378,10 +379,10 @@
             "quality_score": 15,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 15,
-            "raw_engagement": 15,
+            "engagement": 16,
+            "raw_engagement": 16,
             "metrics": {
-              "likes": 14,
+              "likes": 15,
               "reposts": 0,
               "replies": 0,
               "quotes": 1
@@ -664,8 +665,8 @@
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
+        "engagement_total": 8,
+        "raw_engagement_total": 8,
         "quality_total": 19,
         "geopolitical_total": 18,
         "source_counts": {
@@ -706,11 +707,11 @@
             "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 6,
-            "raw_engagement": 6,
+            "engagement": 8,
+            "raw_engagement": 8,
             "metrics": {
-              "likes": 5,
-              "reposts": 1,
+              "likes": 6,
+              "reposts": 2,
               "replies": 0,
               "quotes": 0
             },
@@ -725,33 +726,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 5,
+        "mentions": 12,
+        "negative_hits": 4,
         "positive_hits": 2,
-        "trusted_hits": 8,
-        "engagement_total": 95,
-        "raw_engagement_total": 95,
-        "quality_total": 323,
-        "geopolitical_total": 273,
+        "trusted_hits": 7,
+        "engagement_total": 99,
+        "raw_engagement_total": 99,
+        "quality_total": 284,
+        "geopolitical_total": 238,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
-          "x": 4
+          "x": 3
         },
         "category_counts": {
           "security": 3,
           "economic_infrastructure": 1,
           "eu_integration": 2,
           "government_crisis": 5,
-          "foreign_influence": 1,
-          "ethnic_tension": 1
+          "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 3,
           "montenegro": 1,
           "albania": 5,
           "Koszovó": 2,
-          "Albánia": 2
+          "Albánia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -795,51 +795,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "WB6 Former British Prime Minister - Tony Blair is widely regarded as one of the most popular and revered Western politicians in Tirana. His status as a hero stems from his role in ",
-            "text": "WB6 Former British Prime Minister - Tony Blair is widely regarded as one of the most popular and revered Western politicians in Tirana. His status as a hero stems from his role in advocating for the 1999 NATO bombing that ended Slobodan Milošević's crackdown on ethnic Albanians",
-            "url": "https://x.com/i/web/status/2060469810983543047",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-05-29T21:14:19.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 6
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 35,
-            "quality_score": 39,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "Three years ago today, NATO and Kosovo special police clashed with Serbs in Zvečan. The impetus was the Kosovo Albanian take over of the municipal offices. But the flash point came",
@@ -920,6 +875,40 @@
             "source": "mastodon",
             "tag": "albania",
             "seen_date": "Tue, 26 May 2026 17:51:54 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 25,
+            "quality_score": 30,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Arrival of @ediramaal, Prime Minister of # Albania , at the # EUAlbania Intergovernmental Conference taking place on 26 May 2026 in # Brussels . https:// newsroom.consilium.europa.eu/e vents/20260526-eu-albania-intergovernmental-conference-may-2026/154039-arrival-of-prime-minister-of-albania-20260526 --- https:// nitter.net/EUCouncilTVNews/sta tus/2059325688",
+            "url": "https://respublicae.eu/@EUCouncilTVNews/116642146805902577",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Tue, 26 May 2026 17:51:53 +0000",
             "matched_countries": [
               "Albánia"
             ],
