@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-31 19:38 UTC",
+  "updated_at": "2026-06-01 02:49 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"errors\":[{\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption OR EU OR NATO OR security OR crisis OR tension OR parliament OR president OR minister OR opposition OR police OR sanctions O"
       }
     ],
-    "collected": 26
+    "collected": 20
   },
   "countries": [
     {
@@ -21,30 +21,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 3,
-        "positive_hits": 2,
+        "mentions": 15,
+        "negative_hits": 4,
+        "positive_hits": 1,
         "trusted_hits": 4,
-        "engagement_total": 19,
-        "raw_engagement_total": 19,
-        "quality_total": 277,
-        "geopolitical_total": 242,
+        "engagement_total": 22,
+        "raw_engagement_total": 22,
+        "quality_total": 322,
+        "geopolitical_total": 287,
         "source_counts": {
-          "reddit": 0,
+          "reddit": 1,
           "mastodon": 6,
           "x": 8
         },
         "category_counts": {
           "foreign_influence": 3,
-          "government_crisis": 7,
-          "security": 4
+          "government_crisis": 8,
+          "security": 3,
+          "protest": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 4,
+          "serbia": 5,
           "kosovo": 1,
-          "Szerbia": 6,
-          "Koszovó": 1,
+          "Szerbia": 7,
           "Montenegró": 1
         },
         "main_topic": "government_crisis",
@@ -147,83 +147,78 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "From Sarajevo to Belgrade, from Bosnian media to Serbian tabloids — my voice for NATO, EU integration, Kosovo, Bosnia and European Serbia has become impossible to ignore. Since 202",
-            "text": "From Sarajevo to Belgrade, from Bosnian media to Serbian tabloids — my voice for NATO, EU integration, Kosovo, Bosnia and European Serbia has become impossible to ignore. Since 2022, Serbian nationalist media call me: “NATO lobbyist” “Anti-Serb” “Kosovo lobbyist” Why? Because",
-            "url": "https://x.com/i/web/status/2061059591832477926",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-05-31T12:17:53.000Z",
+            "title": "Student Protests & Architecture of Control in Serbia",
+            "text": "Zabrana N1, Nove S, United Medije, u praksi cenzura svih medija poput Musolinijeve Italije za vreme WWII, kad su Italijani slusali zabranjeni radio BBC-a, analogno Vucivevom rezimu, osvrt na potpunu medijsku cenzuru i studentske proteste. &#32; submitted by &#32; /u/WolfAuthor [link] &#32; [comments]",
+            "url": "https://www.reddit.com/r/serbia/comments/1tt6pnv/student_protests_architecture_of_control_in_serbia/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-05-31T20:36:59+00:00",
             "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
+              "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 6,
-              "Bosznia-Hercegovina": 5,
-              "Koszovó": 1
+              "Szerbia": 1
             },
-            "event_category": "security",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
               },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 24,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 12,
-            "raw_engagement": 12,
-            "metrics": {
-              "likes": 7,
-              "reposts": 2,
-              "replies": 3,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Why $1bn in Balkans energy contracts are going to an obscure company connected to Donald Trump. AAFS Infrastructure and Energy is close to securing a concession to build and operate a pipeline across the Balkans to allow fossil gas shipped from the US to replace supplies that come from Russia. https:// mediafaro.org/article/20260530 -why-1bn-in-balkans-energ",
-            "url": "https://mastodon.mediafaro.org/@mf_analysis/116663905713760057",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sat, 30 May 2026 14:05:28 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Szerbia": 1,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
               {
                 "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 2,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "geopolitical_score": 31,
+            "quality_score": 34,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Xiplomacy: Forging \"ironclad friendships\" in an uncertain world The overlapping visits last week of Pakistani Prime Minister ShehbazSharif and Serbian President AleksandarVucic to ",
+            "text": "Xiplomacy: Forging \"ironclad friendships\" in an uncertain world The overlapping visits last week of Pakistani Prime Minister ShehbazSharif and Serbian President AleksandarVucic to China shone a spotlight on a phrase frequently used to describe Beijing's relations with both",
+            "url": "https://x.com/i/web/status/2061260466727625084",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-06-01T01:36:06.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 27,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -231,34 +226,33 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 45,
+        "score": 40,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
+        "mentions": 6,
         "negative_hits": 2,
-        "positive_hits": 2,
-        "trusted_hits": 4,
-        "engagement_total": 26,
-        "raw_engagement_total": 26,
-        "quality_total": 141,
-        "geopolitical_total": 115,
+        "positive_hits": 1,
+        "trusted_hits": 3,
+        "engagement_total": 14,
+        "raw_engagement_total": 14,
+        "quality_total": 117,
+        "geopolitical_total": 95,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "corruption_rule_of_law": 1,
           "foreign_influence": 2,
           "economic_infrastructure": 1,
           "protest": 1,
-          "security": 2
+          "security": 1
         },
         "tag_counts": {
           "balkans": 3,
           "serbia": 1,
           "kosovo": 1,
-          "Koszovó": 1,
           "Montenegró": 1
         },
         "main_topic": "foreign_influence",
@@ -296,49 +290,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "From Sarajevo to Belgrade, from Bosnian media to Serbian tabloids — my voice for NATO, EU integration, Kosovo, Bosnia and European Serbia has become impossible to ignore. Since 202",
-            "text": "From Sarajevo to Belgrade, from Bosnian media to Serbian tabloids — my voice for NATO, EU integration, Kosovo, Bosnia and European Serbia has become impossible to ignore. Since 2022, Serbian nationalist media call me: “NATO lobbyist” “Anti-Serb” “Kosovo lobbyist” Why? Because",
-            "url": "https://x.com/i/web/status/2061059591832477926",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-05-31T12:17:53.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Szerbia": 6,
-              "Bosznia-Hercegovina": 5,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 24,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 12,
-            "raw_engagement": 12,
-            "metrics": {
-              "likes": 7,
-              "reposts": 2,
-              "replies": 3,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -447,6 +398,47 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "A strategic breakthrough for Bosnia and Herzegovina and the entire Adriatic region. I strongly endorse the Adriatic-Ionian Motorway project from Stolac to Trebinje and the Monteneg",
+            "text": "A strategic breakthrough for Bosnia and Herzegovina and the entire Adriatic region. I strongly endorse the Adriatic-Ionian Motorway project from Stolac to Trebinje and the Montenegro border. 103 km of new infrastructure means: 🇧🇦 stronger Herzegovina 🇲🇪 better regional",
+            "url": "https://x.com/i/web/status/2060774096838045727",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-05-30T17:23:26.000Z",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 2,
+              "Montenegró": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 14,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 14,
+            "raw_engagement": 14,
+            "metrics": {
+              "likes": 13,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -454,41 +446,42 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 52,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 4,
-        "positive_hits": 2,
-        "trusted_hits": 0,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 116,
-        "geopolitical_total": 105,
+        "mentions": 8,
+        "negative_hits": 5,
+        "positive_hits": 1,
+        "trusted_hits": 2,
+        "engagement_total": 13,
+        "raw_engagement_total": 13,
+        "quality_total": 162,
+        "geopolitical_total": 144,
         "source_counts": {
           "reddit": 1,
           "mastodon": 3,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
           "protest": 1,
-          "security": 1,
+          "security": 3,
           "migration": 1,
-          "government_crisis": 4
+          "government_crisis": 2,
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "kosovo": 4,
-          "Koszovó": 3
+          "Koszovó": 4
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
-            "title": "🇦🇱🇽🇰| Albania’s Foreign Minister Ferit Hoxha together with Kosova’s Deputy Prime Minister and Foreign Minister Glauk Konjufca in Prishtina. DPM/FM Konjufca congratulated his Albani",
-            "text": "🇦🇱🇽🇰| Albania’s Foreign Minister Ferit Hoxha together with Kosova’s Deputy Prime Minister and Foreign Minister Glauk Konjufca in Prishtina. DPM/FM Konjufca congratulated his Albanian counterpart on Albania’s rapid progress in the EU accession process, describing it as an",
-            "url": "https://x.com/i/web/status/2061072236576903259",
+            "title": "KFOR Commander Meets Albanian Foreign Minister Ferit Hoxha, Security in Kosovo and NATO’s Role in Focus KFOR NATO Kosovo Albania FeritHoxha OzkanUlutas Pristina WesternBalkans Regi",
+            "text": "KFOR Commander Meets Albanian Foreign Minister Ferit Hoxha, Security in Kosovo and NATO’s Role in Focus KFOR NATO Kosovo Albania FeritHoxha OzkanUlutas Pristina WesternBalkans RegionalSecurity Peacekeeping NATOMission KosovoPolice EULEX Security Stability",
+            "url": "https://x.com/i/web/status/2061198979988066329",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-05-31T13:08:08.000Z",
+            "seen_date": "2026-05-31T21:31:46.000Z",
             "matched_countries": [
               "Koszovó"
             ],
@@ -496,71 +489,25 @@
               "Koszovó": 5,
               "Albánia": 2
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 1,
+                "category": "security",
+                "hits": 6,
                 "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
               }
             ],
-            "geopolitical_score": 22,
-            "quality_score": 23,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 6,
-            "raw_engagement": 6,
-            "metrics": {
-              "likes": 6,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🇦🇱🇽🇰| Albania’s Foreign Minister Ferit Hoxha together with Kosova's Deputy Prime Minister and Foreign Minister Glauk Konjufca in Prishtina. DPM/FM Konjufca congratulated his Albani",
-            "text": "🇦🇱🇽🇰| Albania’s Foreign Minister Ferit Hoxha together with Kosova's Deputy Prime Minister and Foreign Minister Glauk Konjufca in Prishtina. DPM/FM Konjufca congratulated his Albanian counterpart on Albania's rapid progress in the EU accession process, describing it as an",
-            "url": "https://x.com/i/web/status/2061072130251325944",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-05-31T13:07:43.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5,
-              "Albánia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 23,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "geopolitical_score": 59,
+            "quality_score": 63,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
               "likes": 0,
               "reposts": 0,
               "replies": 0,
-              "quotes": 0
+              "quotes": 1
             },
             "quality": "x_api_filtered"
           },
@@ -599,6 +546,42 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Albania's Foreign Minister Hoxha repeated in Pristina: 'whoever touches Kosovo, touches Albania.' Meanwhile, his counterpart Konjufca asked for backing to accelerate Kosovo's NATO ",
+            "text": "Albania's Foreign Minister Hoxha repeated in Pristina: 'whoever touches Kosovo, touches Albania.' Meanwhile, his counterpart Konjufca asked for backing to accelerate Kosovo's NATO accession. 🇦🇱🇽🇰",
+            "url": "https://x.com/i/web/status/2061173161371066728",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-05-31T19:49:11.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
+              "Albánia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 17,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 10,
+            "raw_engagement": 10,
+            "metrics": {
+              "likes": 6,
+              "reposts": 1,
+              "replies": 3,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -656,11 +639,11 @@
             "quality_score": 13,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 1,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -876,31 +859,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 37,
+        "score": 26,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 3,
+        "mentions": 4,
+        "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 45,
-        "raw_engagement_total": 45,
-        "quality_total": 75,
-        "geopolitical_total": 70,
+        "engagement_total": 46,
+        "raw_engagement_total": 46,
+        "quality_total": 55,
+        "geopolitical_total": 51,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 5
+          "x": 4
         },
         "category_counts": {
           "foreign_influence": 1,
-          "protest": 1,
           "government_crisis": 1,
           "security": 1,
           "eu_integration": 1
         },
         "tag_counts": {
-          "Montenegró": 2,
+          "Montenegró": 1,
           "Észak-Macedónia": 3
         },
         "main_topic": "foreign_influence",
@@ -930,56 +912,13 @@
             "quality_score": 23,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 34,
-            "raw_engagement": 34,
+            "engagement": 35,
+            "raw_engagement": 35,
             "metrics": {
-              "likes": 16,
+              "likes": 17,
               "reposts": 3,
               "replies": 12,
               "quotes": 3
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Excellent piece by Gurakuç Kuçi on Serbia's psychopolitical encirclement of Kosovo (via Montenegro 🇲🇪 and North Macedonia 🇲🇰) I detect more genuine patriotism in him than in the en",
-            "text": "Excellent piece by Gurakuç Kuçi on Serbia's psychopolitical encirclement of Kosovo (via Montenegro 🇲🇪 and North Macedonia 🇲🇰) I detect more genuine patriotism in him than in the entire Serbian ruling elite combined. :) 1/ Naming corruption isn't betrayal. It's the",
-            "url": "https://x.com/i/web/status/2060693911136330143",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-05-30T12:04:48.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Szerbia": 2,
-              "Koszovó": 1,
-              "Montenegró": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
             },
             "quality": "x_api_filtered"
           },
@@ -1101,32 +1040,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
+        "mentions": 9,
         "negative_hits": 5,
-        "positive_hits": 2,
+        "positive_hits": 3,
         "trusted_hits": 2,
-        "engagement_total": 59,
-        "raw_engagement_total": 59,
-        "quality_total": 188,
-        "geopolitical_total": 166,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 183,
+        "geopolitical_total": 158,
         "source_counts": {
           "reddit": 1,
-          "mastodon": 5,
-          "x": 4
+          "mastodon": 7,
+          "x": 1
         },
         "category_counts": {
-          "security": 4,
+          "security": 1,
           "government_crisis": 3,
+          "protest": 3,
           "foreign_influence": 1,
-          "protest": 2
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 1,
           "montenegro": 1,
-          "albania": 4,
-          "Albánia": 4
+          "albania": 6,
+          "Albánia": 1
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -1170,44 +1110,82 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Protests against Jared Kushner’s south Albania project have moved to Tirana, with no clashes reported this time. A few individuals violent yesterday are being prosecuted, and a pol",
-            "text": "Protests against Jared Kushner’s south Albania project have moved to Tirana, with no clashes reported this time. A few individuals violent yesterday are being prosecuted, and a police chief has been suspended. PM Rama says he will speak on the Zvernec issue tomorrow.",
-            "url": "https://x.com/i/web/status/2061155100102389890",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-05-31T18:37:24.000Z",
+            "title": "",
+            "text": "Nb @jkass99 Protest in Albania against work on luxury development linked to Ivanka Trump and Jared Kushner www.youtube.com/watch?v=CyeT... #Albania #USpol #Corruption #Environment Protest in Albania against wor...",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:j4a3kqiiuzzbmnta6n4onycz/post/3mn6fhlnevk2c",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Sun, 31 May 2026 20:23:50 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 5
+              "Albánia": 1
             },
-            "event_category": "security",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "security",
+                "category": "protest",
                 "hits": 1,
-                "weight": 9
+                "weight": 8
               },
               {
-                "category": "protest",
-                "hits": 2,
+                "category": "corruption_rule_of_law",
+                "hits": 1,
                 "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
-            "source_reliability": 2,
+            "geopolitical_score": 24,
+            "quality_score": 27,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 2,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Protest in Albania against work on luxury development linked to Ivanka Trump and Jared Kushner https://www. youtube.com/watch?v=CyeT2hC1cjA # Albania # USpol # Corruption # Environment",
+            "url": "https://mas.to/@meganL/116671016249665632",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Sun, 31 May 2026 20:13:46 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 1
             },
-            "quality": "x_api_filtered"
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 24,
+            "quality_score": 27,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -1244,46 +1222,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "“People gathered in downtown Tirana to protest against Jared Kushner’s proposed development project in Zvernec, a lagoon in a nature-protected area along the Albanian coastline.”",
-            "text": "“People gathered in downtown Tirana to protest against Jared Kushner’s proposed development project in Zvernec, a lagoon in a nature-protected area along the Albanian coastline.”",
-            "url": "https://x.com/i/web/status/2061147600267428081",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-05-31T18:07:36.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 6
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 16,
-            "quality_score": 17,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 3,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
