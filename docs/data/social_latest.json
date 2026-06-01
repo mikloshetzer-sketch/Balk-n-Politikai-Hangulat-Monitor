@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-01 17:59 UTC",
+  "updated_at": "2026-06-01 21:24 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"errors\":[{\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption OR EU OR NATO OR security OR crisis OR tension OR parliament OR president OR minister OR opposition OR police OR sanctions O"
       }
     ],
-    "collected": 17
+    "collected": 24
   },
   "countries": [
     {
@@ -21,24 +21,24 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 5,
+        "mentions": 18,
+        "negative_hits": 7,
         "positive_hits": 4,
-        "trusted_hits": 2,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 213,
-        "geopolitical_total": 187,
+        "trusted_hits": 3,
+        "engagement_total": 153,
+        "raw_engagement_total": 153,
+        "quality_total": 359,
+        "geopolitical_total": 322,
         "source_counts": {
           "reddit": 1,
           "mastodon": 6,
-          "x": 4
+          "x": 11
         },
         "category_counts": {
-          "foreign_influence": 4,
-          "government_crisis": 2,
+          "foreign_influence": 5,
+          "government_crisis": 7,
           "ethnic_tension": 1,
-          "security": 3,
+          "security": 4,
           "protest": 1
         },
         "tag_counts": {
@@ -46,11 +46,56 @@
           "serbia": 4,
           "kosovo": 1,
           "europe": 1,
-          "Szerbia": 2,
-          "Koszovó": 2
+          "Szerbia": 7,
+          "Koszovó": 3,
+          "Albánia": 1
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "Europe still has not received an answer from Serbia, the Russian Trojan Horse, why is Srbija arming itself for war on the EU - NATO borders ? 🇪🇺 The military alliance between Slove",
+            "text": "Europe still has not received an answer from Serbia, the Russian Trojan Horse, why is Srbija arming itself for war on the EU - NATO borders ? 🇪🇺 The military alliance between Slovenia, Croatia, Albania, Kosovo, Bulgaria, Montenegro, Macedonia must be deepened. 🇸🇮🇭🇷🇦🇱🇽🇰🇧🇬🇲🇪🇲🇰",
+            "url": "https://x.com/i/web/status/2061513752076238865",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-06-01T18:22:34.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5,
+              "Koszovó": 1,
+              "Montenegró": 1,
+              "Észak-Macedónia": 1,
+              "Albánia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 42,
+            "quality_score": 46,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 16,
+            "raw_engagement": 16,
+            "metrics": {
+              "likes": 12,
+              "reposts": 0,
+              "replies": 4,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "On this Europe Day, Serbia is still moving away from Europe The internal political and social dynamics of Serbia, dictated by both dominant political tribes, keep it moving further away from membership in the European Union, and tightly in the grip of authoritarianism, superstition, revanchism, and nationalism, closely aligned to Russia and China. https:// s",
@@ -122,6 +167,46 @@
             "quality": "x_api_filtered"
           },
           {
+            "title": "NATO is seeking to change the government in Serbia & install a puppet president who will advocate NATO’s interests, Serbia’s chairman of the Supervisory Board of state gas company ",
+            "text": "NATO is seeking to change the government in Serbia & install a puppet president who will advocate NATO’s interests, Serbia’s chairman of the Supervisory Board of state gas company Srbijagas Aleksandar Vulin told TASS ahead of the St. Petersburg International Economic Forum.",
+            "url": "https://x.com/i/web/status/2061536368925294974",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-06-01T19:52:26.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 13,
+            "raw_engagement": 13,
+            "metrics": {
+              "likes": 9,
+              "reposts": 2,
+              "replies": 2,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "⚡ # Serbia 🇷🇸 plans to introduce visas for # Russians 🇷🇺 by the end of this year. The authorities are considering the restriction as part of efforts to join the # EU 🇪🇺, the parliament said. [Sofa Intelligence Legion] Follow for the latest developments",
             "url": "https://mastodon.social/@thepathtopeace/116674330929297598",
@@ -159,82 +244,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Serbian President Aleksandar Vucic claims satellite data showed Pakistan had the upper hand from day one of the conflict. The graphic points radar analysis, and impact on S-400 + R",
-            "text": "Serbian President Aleksandar Vucic claims satellite data showed Pakistan had the upper hand from day one of the conflict. The graphic points radar analysis, and impact on S-400 + Rafale systems as key factors in a \"Regional Defense Strategy shift SerbiaConfirmsIndianShame",
-            "url": "https://x.com/i/web/status/2061482461444386993",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-06-01T16:18:13.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Why $1bn in Balkans energy contracts are going to an obscure company connected to Donald Trump. AAFS Infrastructure and Energy is close to securing a concession to build and operate a pipeline across the Balkans to allow fossil gas shipped from the US to replace supplies that come from Russia. https:// mediafaro.org/article/20260530 -why-1bn-in-balkans-energ",
-            "url": "https://mastodon.mediafaro.org/@mf_analysis/116663905713760057",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sat, 30 May 2026 14:05:28 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Szerbia": 1,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 2,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -242,34 +251,33 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 44,
-        "level": "high",
+        "score": 37,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 5,
         "negative_hits": 3,
         "positive_hits": 1,
-        "trusted_hits": 3,
+        "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 113,
-        "geopolitical_total": 93,
+        "quality_total": 92,
+        "geopolitical_total": 77,
         "source_counts": {
           "reddit": 1,
-          "mastodon": 5,
+          "mastodon": 4,
           "x": 0
         },
         "category_counts": {
           "corruption_rule_of_law": 1,
-          "foreign_influence": 2,
+          "foreign_influence": 1,
           "economic_infrastructure": 1,
           "protest": 2
         },
         "tag_counts": {
           "balkans": 3,
-          "serbia": 1,
           "kosovo": 2
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "protest",
         "top_posts": [
           {
             "title": "",
@@ -379,42 +387,6 @@
           },
           {
             "title": "",
-            "text": "Why $1bn in Balkans energy contracts are going to an obscure company connected to Donald Trump https://www. theguardian.com/world/2026/may /30/why-1bn-in-balkans-energy-contracts-are-going-to-an-obscure-company-connected-to-donald-trump # BosniaAndHerzegovina # DonaldTrump # Energy # Russia # UsNews # Europe # EuropeanUnion # DonaldTrumpJr # UsPolitics # Gas",
-            "url": "https://halo.nu/@theguardian_us_news/116663457527745710",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sat, 30 May 2026 12:11:29 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Szerbia": 1,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 16,
-            "quality_score": 21,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "Why $1bn in # Balkans energy contracts are going to an obscure company connected to Donald # Trump 🖊️ Tom Burgis and Sarajevo Guardian investigation shows how # US presidency blurs line between policy and enrichment of American ruling family and those around it https://www. theguardian.com/world/2026/may /30/why-1bn-in-balkans-energy-contracts-are-going-to-a",
             "url": "https://mastodon.ie/@EugeneMcParland/116663556835336630",
             "source": "mastodon",
@@ -441,6 +413,35 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Kur po i shoh protestat në Serbi",
+            "text": "Po e vrej që është një rini serbe e lodhur nga korrupcioni , nepotizmi , mashtrimet , përfitimet e padrejta dhe e vrej që me një kohë na e kemi pas një sistem të qeverisjes ku ka vepru po në të njejtën mnyrë. ( normal sa i përket korrupcionit dhe vjedhjes , padrejtësive ) Në atë kohë unë jamë ndje i pa shpresë për këtë vend, si dikush që nuk ka të njofshëm ,",
+            "url": "https://www.reddit.com/r/kosovo/comments/1ttqqjl/kur_po_i_shoh_protestat_në_serbi/",
+            "source": "reddit",
+            "tag": "kosovo",
+            "seen_date": "2026-06-01T12:30:04+00:00",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 10,
+            "source_reliability": 1,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -448,17 +449,17 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 41,
-        "level": "high",
+        "score": 38,
+        "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 5,
         "negative_hits": 3,
         "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 22,
-        "raw_engagement_total": 22,
-        "quality_total": 85,
-        "geopolitical_total": 71,
+        "trusted_hits": 0,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 69,
+        "geopolitical_total": 58,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
@@ -466,51 +467,16 @@
         },
         "category_counts": {
           "protest": 1,
-          "security": 2,
+          "security": 1,
           "migration": 1,
-          "government_crisis": 1
+          "government_crisis": 2
         },
         "tag_counts": {
           "kosovo": 3,
           "Koszovó": 2
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "Soldiers assigned to Regional Command-East (RC-E), part of the NATO-led KFOR mission, together with KFOR’s CIMIC team and Task Force Medical personnel, engaged with students during",
-            "text": "Soldiers assigned to Regional Command-East (RC-E), part of the NATO-led KFOR mission, together with KFOR’s CIMIC team and Task Force Medical personnel, engaged with students during a medical outreach event at Dardania School in Pristina, Kosovo. TogetherStrongerForPeace",
-            "url": "https://x.com/i/web/status/2061419169245982908",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-06-01T12:06:43.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 26,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 22,
-            "raw_engagement": 22,
-            "metrics": {
-              "likes": 17,
-              "reposts": 4,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Worth mentioning that this fucking asshole hasn't read up on # US history when it comes to starting conflict: - # GulfWar (1990–1991) - # Somalia (1992–1993) - # Bosnia (1994–1995) - # Kosovo (1998–1999) - Afghanistan War (2001–2021) - # Iraq War (2003–2011) - # Libya (2011) - # Iran 2026 - Ongoing operations in the \"War on Terror\" (including drone strikes a",
@@ -608,6 +574,41 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "People really underestimate how bad her recent actions came across... Especially idiotic stuff like \"I witnessed Kurti doing shady things\" But she didn't act...because she... Liked",
+            "text": "People really underestimate how bad her recent actions came across... Especially idiotic stuff like \"I witnessed Kurti doing shady things\" But she didn't act...because she... Liked being president?????",
+            "url": "https://x.com/i/web/status/2061545046252331396",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-06-01T20:26:55.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "Chargé d’affaires Anu Prattipati visited northern Kosovo today, where she met with Kosovan Serb mayors and opposition councilors to discuss the current political situation and chal",
             "text": "Chargé d’affaires Anu Prattipati visited northern Kosovo today, where she met with Kosovan Serb mayors and opposition councilors to discuss the current political situation and challenges facing their communities. In Zvecan, the Chargé met with Mayor Milovic to discuss local",
             "url": "https://x.com/i/web/status/2061436329687236666",
@@ -648,32 +649,30 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 40,
-        "level": "high",
+        "score": 30,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
-        "negative_hits": 3,
+        "mentions": 5,
+        "negative_hits": 2,
         "positive_hits": 3,
         "trusted_hits": 2,
-        "engagement_total": 13,
-        "raw_engagement_total": 13,
-        "quality_total": 142,
-        "geopolitical_total": 124,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 129,
+        "geopolitical_total": 112,
         "source_counts": {
           "reddit": 1,
           "mastodon": 4,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "security": 2,
           "eu_integration": 2,
-          "foreign_influence": 1,
-          "government_crisis": 1
+          "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "montenegro": 4,
-          "Montenegró": 1
+          "montenegro": 4
         },
         "main_topic": "security",
         "top_posts": [
@@ -845,28 +844,27 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 22,
+        "score": 32,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
+        "mentions": 4,
+        "negative_hits": 2,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 51,
-        "geopolitical_total": 48,
+        "engagement_total": 9,
+        "raw_engagement_total": 9,
+        "quality_total": 64,
+        "geopolitical_total": 60,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
-          "government_crisis": 2,
-          "security": 1
+          "government_crisis": 4
         },
         "tag_counts": {
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -930,10 +928,10 @@
             "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 5,
-            "raw_engagement": 5,
+            "engagement": 6,
+            "raw_engagement": 6,
             "metrics": {
-              "likes": 5,
+              "likes": 6,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -941,22 +939,57 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Queues form on NorthMacedonia border following biometricentry-exit rollout Long traffic queues have formed at Greece’s border with North Macedonia following the introduction of the",
-            "text": "Queues form on NorthMacedonia border following biometricentry-exit rollout Long traffic queues have formed at Greece’s border with North Macedonia following the introduction of the EuropeanUnion’s new digital biometric border screening system, causing significant delays",
-            "url": "https://x.com/i/web/status/2061378535101489257",
+            "title": "Mickoski on Fetai’s Resignation: Government Reshuffle Expected in June NorthMacedonia HristijanMickoski ArbenFetai GovernmentReshuffle",
+            "text": "Mickoski on Fetai’s Resignation: Government Reshuffle Expected in June NorthMacedonia HristijanMickoski ArbenFetai GovernmentReshuffle",
+            "url": "https://x.com/i/web/status/2061546245823352947",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-06-01T09:25:15.000Z",
+            "seen_date": "2026-06-01T20:31:41.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
               "Észak-Macedónia": 5
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 13,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇹🇷💥 𝗖𝗔𝗡 𝗨𝗭𝗨𝗡 (𝟮𝟬) vs North Macedonia: • 1 GOAL • 1 ASSIST • 86% Pass Accuracy • 6 Passes Into Final Third • 4/7 Ground Duels Won • 4 Ball Recoveries • 1 Hit Woodwork • 3 Tackles • ",
+            "text": "🇹🇷💥 𝗖𝗔𝗡 𝗨𝗭𝗨𝗡 (𝟮𝟬) vs North Macedonia: • 1 GOAL • 1 ASSIST • 86% Pass Accuracy • 6 Passes Into Final Third • 4/7 Ground Duels Won • 4 Ball Recoveries • 1 Hit Woodwork • 3 Tackles • 2 Touches In Opposition Box 𝗨𝗡𝗗𝗘𝗥𝗥𝗔𝗧𝗘𝗗 💎",
+            "url": "https://x.com/i/web/status/2061526111176319242",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-06-01T19:11:40.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               }
@@ -965,10 +998,10 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 0,
+              "likes": 1,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -984,83 +1017,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
-        "negative_hits": 13,
-        "positive_hits": 5,
-        "trusted_hits": 1,
+        "mentions": 14,
+        "negative_hits": 10,
+        "positive_hits": 6,
+        "trusted_hits": 2,
         "engagement_total": 9,
         "raw_engagement_total": 9,
-        "quality_total": 354,
-        "geopolitical_total": 332,
+        "quality_total": 301,
+        "geopolitical_total": 272,
         "source_counts": {
-          "reddit": 4,
-          "mastodon": 6,
-          "x": 6
+          "reddit": 2,
+          "mastodon": 7,
+          "x": 5
         },
         "category_counts": {
-          "corruption_rule_of_law": 2,
-          "security": 2,
-          "protest": 7,
+          "corruption_rule_of_law": 1,
+          "security": 3,
+          "protest": 5,
           "government_crisis": 5
         },
         "tag_counts": {
           "balkans": 2,
-          "albania": 6,
+          "albania": 5,
           "askbalkans": 2,
-          "Albánia": 6
+          "Albánia": 5
         },
         "main_topic": "protest",
         "top_posts": [
-          {
-            "title": "Albanian anti-corruption prosecutors are investigating a luxury resort project linked to U.S. President Donald Trump’s son-in-law, Jared Kushner, as protests from citizens and envi",
-            "text": "Albanian anti-corruption prosecutors are investigating a luxury resort project linked to U.S. President Donald Trump’s son-in-law, Jared Kushner, as protests from citizens and environmental organizations over the development persist.",
-            "url": "https://x.com/i/web/status/2061498371408642393",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-06-01T17:21:27.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 49,
-            "quality_score": 50,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Il Fatto Quotidiano: L’assistente personale di Matthew Perry condannato a 3 anni e 5 mesi di carcere per il suo ruolo nella morte per overdose della star di “Friends” Kenneth Iwamasa, 60 anni, è stato condannato mercoledì 27 maggio da un tribunale federale di Los Angeles a tre anni e cinque mesi di reclusione per il suo ruolo nella morte per overdose di Matt",
@@ -1103,17 +1086,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Albanian Prime Minister Edi Rama defended plans for a €4 billion ($4.7 billion) luxury resort promoted by Jared Kushner after protests erupted over preliminary work in a protected ",
-            "text": "Albanian Prime Minister Edi Rama defended plans for a €4 billion ($4.7 billion) luxury resort promoted by Jared Kushner after protests erupted over preliminary work in a protected area on the Adriatic coast.",
-            "url": "https://x.com/i/web/status/2061499588788240660",
+            "title": "“Tomorrow Again at 6:00 PM in Front of the Prime Minister’s Office” – After More Than Two Hours of Protest and Thousands in Attendance, Rally Ends on the Boulevard; Citizens Vow to",
+            "text": "“Tomorrow Again at 6:00 PM in Front of the Prime Minister’s Office” – After More Than Two Hours of Protest and Thousands in Attendance, Rally Ends on the Boulevard; Citizens Vow to Continue Resistance Zvërnec Albania Tirana Protest EdiRama Environment",
+            "url": "https://x.com/i/web/status/2061544262810955915",
             "source": "x",
             "tag": "Albánia",
-            "seen_date": "2026-06-01T17:26:17.000Z",
+            "seen_date": "2026-06-01T20:23:48.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 6
+              "Albánia": 5
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -1126,10 +1109,15 @@
                 "category": "protest",
                 "hits": 2,
                 "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
+            "geopolitical_score": 36,
+            "quality_score": 37,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 1,
@@ -1139,46 +1127,6 @@
               "reposts": 0,
               "replies": 0,
               "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Live 🚨 A protest is taking place in Tirana against the project backed by Jared Kushner in the south of 🇦🇱. Thousands of citizens have taken to the streets, despite PM Rama's attemp",
-            "text": "Live 🚨 A protest is taking place in Tirana against the project backed by Jared Kushner in the south of 🇦🇱. Thousands of citizens have taken to the streets, despite PM Rama's attempts this morning to quiet the noise. This is one of the largest protests in recent years Zvernec",
-            "url": "https://x.com/i/web/status/2061501593896235106",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-06-01T17:34:15.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 4
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 7,
-            "raw_engagement": 7,
-            "metrics": {
-              "likes": 5,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 1
             },
             "quality": "x_api_filtered"
           },
@@ -1220,6 +1168,85 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Protest in Albania against work on luxury development linked to Ivanka Trump and Jared Kushner https://www. youtube.com/watch?v=CyeT2hC1cjA # Albania # USpol # Corruption # Environment",
+            "url": "https://mas.to/@meganL/116671016249665632",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Sun, 31 May 2026 20:13:46 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 24,
+            "quality_score": 27,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "BREAKING Tirana today massive protests against EdiRama Government and a corrupt investment in Zvernec Vlora JaredKushner DonaldTrump Meanwhile Albania SPAK has initiated ex officio",
+            "text": "BREAKING Tirana today massive protests against EdiRama Government and a corrupt investment in Zvernec Vlora JaredKushner DonaldTrump Meanwhile Albania SPAK has initiated ex officio investigation",
+            "url": "https://x.com/i/web/status/2061539086574223750",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-06-01T20:03:14.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 24,
+            "quality_score": 25,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
