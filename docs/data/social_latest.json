@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02 10:52 UTC",
+  "updated_at": "2026-06-02 16:07 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"errors\":[{\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption OR EU OR NATO OR security OR crisis OR tension OR parliament OR president OR minister OR opposition OR police OR sanctions O"
       }
     ],
-    "collected": 28
+    "collected": 20
   },
   "countries": [
     {
@@ -21,37 +21,34 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 19,
-        "negative_hits": 7,
-        "positive_hits": 5,
-        "trusted_hits": 2,
-        "engagement_total": 64,
-        "raw_engagement_total": 64,
-        "quality_total": 315,
-        "geopolitical_total": 280,
+        "mentions": 14,
+        "negative_hits": 5,
+        "positive_hits": 4,
+        "trusted_hits": 0,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 256,
+        "geopolitical_total": 228,
         "source_counts": {
-          "reddit": 2,
-          "mastodon": 7,
-          "x": 10
+          "reddit": 1,
+          "mastodon": 8,
+          "x": 5
         },
         "category_counts": {
-          "foreign_influence": 5,
-          "government_crisis": 5,
+          "government_crisis": 6,
+          "foreign_influence": 4,
           "ethnic_tension": 1,
-          "security": 5,
-          "protest": 2,
-          "eu_integration": 1
+          "security": 2,
+          "protest": 1
         },
         "tag_counts": {
-          "balkans": 1,
-          "serbia": 5,
+          "balkans": 2,
+          "serbia": 6,
           "kosovo": 1,
-          "albania": 1,
-          "europe": 1,
-          "Szerbia": 7,
-          "Koszovó": 3
+          "Szerbia": 4,
+          "Koszovó": 1
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -88,40 +85,81 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "On June 2nd, 1968, peaceful student protests began Belgrade and spread all over Yugoslavia, criticizing the failed economic reforms of the communist Yugoslavian government. Police ",
-            "text": "On June 2nd, 1968, peaceful student protests began Belgrade and spread all over Yugoslavia, criticizing the failed economic reforms of the communist Yugoslavian government. Police were dispatched and violently dispersed them with tear gas and batons, injuring hundreds of",
-            "url": "https://x.com/i/web/status/2061760989670887879",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-06-02T10:45:00.000Z",
+            "title": "",
+            "text": "Serbia will not impose visas on Russians, says president https://www.politico.eu/article/serbia-aleksandar-vucic-russia-visa-free-travel/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication #WarinUkraine #Enlargement #EUfunding #Politics #Balkans #Kremlin #Visas",
+            "url": "https://social.espeweb.net/objects/ef490247-df21-43a0-b610-1a0a9e9d7b81",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Tue, 02 Jun 2026 11:26:31 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 31,
+            "quality_score": 34,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Kosovo votes June 7 for the third time in 16 months. Türkiye commands KFOR, backs Kosovo's security force and holds a military channel with Belgrade. The result changes none of tha",
+            "text": "Kosovo votes June 7 for the third time in 16 months. Türkiye commands KFOR, backs Kosovo's security force and holds a military channel with Belgrade. The result changes none of that architecture only who Ankara works with in Pristina. ↳Bosphorus News",
+            "url": "https://x.com/i/web/status/2061787418198716847",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-06-02T12:30:01.000Z",
+            "matched_countries": [
+              "Koszovó",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
               "Szerbia": 4
             },
             "event_category": "security",
             "event_categories": [
               {
                 "category": "security",
-                "hits": 1,
+                "hits": 3,
                 "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
               }
             ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
+            "geopolitical_score": 27,
+            "quality_score": 28,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 3,
+            "raw_engagement": 3,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 2,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -201,42 +239,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "The Serbian students’ memorandum on Kosovo should not affect how the EU frames the democratic protests \"Some things have to be tolerated for the sake of victory,\" explains ( and )",
-            "text": "The Serbian students’ memorandum on Kosovo should not affect how the EU frames the democratic protests \"Some things have to be tolerated for the sake of victory,\" explains ( and )",
-            "url": "https://x.com/i/web/status/2061726482402058451",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-06-02T08:27:53.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -244,35 +246,33 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 49,
-        "level": "high",
+        "score": 28,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 3,
+        "mentions": 4,
+        "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 35,
-        "raw_engagement_total": 35,
-        "quality_total": 120,
-        "geopolitical_total": 103,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 82,
+        "geopolitical_total": 66,
         "source_counts": {
-          "reddit": 1,
+          "reddit": 0,
           "mastodon": 4,
-          "x": 2
+          "x": 0
         },
         "category_counts": {
           "corruption_rule_of_law": 1,
           "foreign_influence": 1,
           "economic_infrastructure": 1,
-          "protest": 2,
-          "government_crisis": 2
+          "protest": 1
         },
         "tag_counts": {
           "balkans": 3,
-          "kosovo": 2,
-          "Montenegró": 2
+          "kosovo": 1
         },
-        "main_topic": "protest",
+        "main_topic": "corruption_rule_of_law",
         "top_posts": [
           {
             "title": "",
@@ -381,48 +381,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "BREAKING U.S. President Donald Trump has nominated retired Brigadier General Ronald Johnson as the new United States Ambassador to Bosnia and Herzegovina, Michael Young as Ambassad",
-            "text": "BREAKING U.S. President Donald Trump has nominated retired Brigadier General Ronald Johnson as the new United States Ambassador to Bosnia and Herzegovina, Michael Young as Ambassador to Serbia, and Peter McCoy as Ambassador to Montenegro.",
-            "url": "https://x.com/i/web/status/2061718868054229458",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-06-02T07:57:37.000Z",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 2,
-              "Szerbia": 1,
-              "Montenegró": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 18,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 27,
-            "raw_engagement": 27,
-            "metrics": {
-              "likes": 17,
-              "reposts": 8,
-              "replies": 1,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Why $1bn in # Balkans energy contracts are going to an obscure company connected to Donald # Trump 🖊️ Tom Burgis and Sarajevo Guardian investigation shows how # US presidency blurs line between policy and enrichment of American ruling family and those around it https://www. theguardian.com/world/2026/may /30/why-1bn-in-balkans-energy-contracts-are-going-to-a",
             "url": "https://mastodon.ie/@EugeneMcParland/116663556835336630",
@@ -457,31 +415,71 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 26,
-        "level": "medium",
+        "score": 60,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 2,
-        "positive_hits": 0,
+        "mentions": 8,
+        "negative_hits": 4,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 50,
-        "geopolitical_total": 45,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 149,
+        "geopolitical_total": 139,
         "source_counts": {
           "reddit": 1,
           "mastodon": 2,
-          "x": 0
+          "x": 5
         },
         "category_counts": {
           "protest": 2,
-          "security": 1
+          "security": 3,
+          "government_crisis": 2,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "kosovo": 3
+          "kosovo": 3,
+          "Koszovó": 5
         },
-        "main_topic": "protest",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "Kosovo votes June 7 for the third time in 16 months. Türkiye commands KFOR, backs Kosovo's security force and holds a military channel with Belgrade. The result changes none of tha",
+            "text": "Kosovo votes June 7 for the third time in 16 months. Türkiye commands KFOR, backs Kosovo's security force and holds a military channel with Belgrade. The result changes none of that architecture only who Ankara works with in Pristina. ↳Bosphorus News",
+            "url": "https://x.com/i/web/status/2061787418198716847",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-06-02T12:30:01.000Z",
+            "matched_countries": [
+              "Koszovó",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
+              "Szerbia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 28,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 2,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Worth mentioning that this fucking asshole hasn't read up on # US history when it comes to starting conflict: - # GulfWar (1990–1991) - # Somalia (1992–1993) - # Bosnia (1994–1995) - # Kosovo (1998–1999) - Afghanistan War (2001–2021) - # Iraq War (2003–2011) - # Libya (2011) - # Iran 2026 - Ongoing operations in the \"War on Terror\" (including drone strikes a",
@@ -519,19 +517,98 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Sole Bidder: SUVs in Kosovo Attack Lead to String of Suspect Serbian Tenders https:// fed.brid.gy/r/https://balkanin sight.com/2026/05/27/sole-bidder-suvs-in-kosovo-attack-lead-to-string-of-suspect-serbian-tenders/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/05/27/sole-bidder-suvs-in-kosovo-attack-lead-to-string-of-suspect-serbian-tenders/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 27 May 2026 06:03:59 +0000",
+            "title": "Association of Journalists of Kosovo Calls on EU Council President Antonio Costa to Address Press Freedom Pressures with PM Kurti AGK AntonioCosta AlbinKurti PressFreedom KosovoEle",
+            "text": "Association of Journalists of Kosovo Calls on EU Council President Antonio Costa to Address Press Freedom Pressures with PM Kurti AGK AntonioCosta AlbinKurti PressFreedom KosovoElections2026 EUEngagement MediaWatchdog",
+            "url": "https://x.com/i/web/status/2061832608170832357",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-06-02T15:29:35.000Z",
             "matched_countries": [
-              "Szerbia",
               "Koszovó"
             ],
             "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 21,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Kosovo's third election in 15 months, held on Sunday, reflects a political divide between former allies PM Albin Kurti and ex-President Vjosa Osmani. The deadlock hampers EU integr",
+            "text": "Kosovo's third election in 15 months, held on Sunday, reflects a political divide between former allies PM Albin Kurti and ex-President Vjosa Osmani. The deadlock hampers EU integration efforts and dialogue with Serbia.",
+            "url": "https://x.com/i/web/status/2061810628873146469",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-06-02T14:02:15.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
+              "Szerbia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Agreement Reached, Security Workers’ Strike at the University of Prishtina Ends Kosovo UniversityOfPrishtina UP WorkersRights",
+            "text": "Agreement Reached, Security Workers’ Strike at the University of Prishtina Ends Kosovo UniversityOfPrishtina UP WorkersRights",
+            "url": "https://x.com/i/web/status/2061781434898026546",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-06-02T12:06:14.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
             },
             "event_category": "security",
             "event_categories": [
@@ -539,49 +616,26 @@
                 "category": "security",
                 "hits": 1,
                 "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 15,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "Needs help about obtain Visa",
-            "text": "Hello guys i'm a random dude from south korea. here for operate import used vehicle business and my kosova partner already established legal LLC firm which is already operating. i didn't expect to be stay here longer but now end it up to digging information of getting visa. \" type D \" was it i think.. but there's literally zero information of steps and even ",
-            "url": "https://www.reddit.com/r/kosovo/comments/1tumfgt/needs_help_about_obtain_visa/",
-            "source": "reddit",
-            "tag": "kosovo",
-            "seen_date": "2026-06-02T10:05:28+00:00",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
+              },
               {
                 "category": "protest",
                 "hits": 1,
                 "weight": 8
-              },
-              {
-                "category": "migration",
-                "hits": 1,
-                "weight": 6
               }
             ],
-            "geopolitical_score": 14,
-            "quality_score": 13,
-            "source_reliability": 1,
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -589,32 +643,32 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 30,
+        "score": 23,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 4,
         "negative_hits": 2,
         "positive_hits": 3,
-        "trusted_hits": 2,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 129,
-        "geopolitical_total": 112,
+        "quality_total": 113,
+        "geopolitical_total": 99,
         "source_counts": {
-          "reddit": 1,
+          "reddit": 0,
           "mastodon": 4,
           "x": 0
         },
         "category_counts": {
-          "security": 2,
+          "security": 1,
           "eu_integration": 2,
           "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "montenegro": 4
+          "montenegro": 3
         },
-        "main_topic": "security",
+        "main_topic": "eu_integration",
         "top_posts": [
           {
             "title": "",
@@ -748,35 +802,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Crnogorski \"bulevar\"",
-            "text": "Drugarice i drugovi, Vama i široj javnosti je poznato da je Crna Gora kolijevka inovativnog saobraćajnog rješenja koje se zove \"međugradski bulevar\" - autentični crnogorski izum, i dalje endemski (svi \"međugradski bulevari\" na svijetu nalaze se u Crnoj Gori). Sam naziv ovog hrabrog koncepta ruši stereotipe i konvencije - nikada u istoriji čovječanstva saobra",
-            "url": "https://www.reddit.com/r/montenegro/comments/1ts1wnd/crnogorski_bulevar/",
-            "source": "reddit",
-            "tag": "montenegro",
-            "seen_date": "2026-05-30T14:46:34+00:00",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 16,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -784,39 +809,120 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 49,
+        "score": 50,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 1,
-        "positive_hits": 2,
-        "trusted_hits": 0,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 110,
-        "geopolitical_total": 101,
+        "mentions": 7,
+        "negative_hits": 4,
+        "positive_hits": 4,
+        "trusted_hits": 1,
+        "engagement_total": 32,
+        "raw_engagement_total": 32,
+        "quality_total": 130,
+        "geopolitical_total": 120,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 9
+          "x": 7
         },
         "category_counts": {
-          "government_crisis": 6,
           "eu_integration": 1,
-          "security": 2
+          "government_crisis": 3,
+          "security": 3
         },
         "tag_counts": {
-          "Észak-Macedónia": 9
+          "Montenegró": 1,
+          "Észak-Macedónia": 6
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "Welcome to Skopje, President Antonio Costa ( ). Our citizens are finished with 'momentum' rhetoric. The question for this visit is simple: What is in the bag? Action is the only cu",
-            "text": "Welcome to Skopje, President Antonio Costa ( ). Our citizens are finished with 'momentum' rhetoric. The question for this visit is simple: What is in the bag? Action is the only currency we accept. EUEnlargement Skopje Macedonia",
-            "url": "https://x.com/i/web/status/2061662018440962134",
+            "title": "I was pleased to welcome President Gordana Siljanovska-Davkova of North Macedonia to Bratislava. 🇸🇰🇲🇰 Slovakia and North Macedonia are friends, NATO allies and partners with strong",
+            "text": "I was pleased to welcome President Gordana Siljanovska-Davkova of North Macedonia to Bratislava. 🇸🇰🇲🇰 Slovakia and North Macedonia are friends, NATO allies and partners with strong human ties. We share an interest in a stable and secure Western Balkans. Slovakia supports North",
+            "url": "https://x.com/i/web/status/2061793419589025996",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-06-02T04:11:43.000Z",
+            "seen_date": "2026-06-02T12:53:52.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 23,
+            "quality_score": 27,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 5,
+            "raw_engagement": 5,
+            "metrics": {
+              "likes": 5,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Honored to welcome the President of North Macedonia today. We discussed strengthening bilateral relations, regional stability, and our shared European future. I greatly value the c",
+            "text": "Honored to welcome the President of North Macedonia today. We discussed strengthening bilateral relations, regional stability, and our shared European future. I greatly value the constructive and friendly exchange, and I look forward to continued cooperation between our countries",
+            "url": "https://x.com/i/web/status/2061792949025792430",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-06-02T12:51:59.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 23,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Welcome to North Macedonia 🇲🇰 President Costa . Your visit comes at an important moment of North Macedonia’s path towards the European Union and sends a strong signal of the 🇪🇺 EU’",
+            "text": "Welcome to North Macedonia 🇲🇰 President Costa . Your visit comes at an important moment of North Macedonia’s path towards the European Union and sends a strong signal of the 🇪🇺 EU’s continued commitment to the country and the region.",
+            "url": "https://x.com/i/web/status/2061835171821682977",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-06-02T15:39:46.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -836,72 +942,34 @@
                 "weight": 6
               }
             ],
-            "geopolitical_score": 15,
-            "quality_score": 16,
+            "geopolitical_score": 18,
+            "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 6,
+            "raw_engagement": 6,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Queues form on North Macedonia border following biometric entry-exit rollout Long traffic queues have formed at Greece’s border with North Macedonia following the introduction of t",
-            "text": "Queues form on North Macedonia border following biometric entry-exit rollout Long traffic queues have formed at Greece’s border with North Macedonia following the introduction of the European Union’s new digital biometric border screening system, causing significant delays for",
-            "url": "https://x.com/i/web/status/2061572113207550236",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-06-01T22:14:28.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 15,
-            "quality_score": 16,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 3,
+              "reposts": 3,
               "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "🇪🇺 Antonio Costa visits Skopje ahead of the EU–Western Balkans Summit in Tivat as North Macedonia reiterates its stance on EU accession and relations with Bulgaria. 🔗 AntonioCosta ",
-            "text": "🇪🇺 Antonio Costa visits Skopje ahead of the EU–Western Balkans Summit in Tivat as North Macedonia reiterates its stance on EU accession and relations with Bulgaria. 🔗 AntonioCosta NorthMacedonia EUEnlargement WesternBalkans EU IBNA",
-            "url": "https://x.com/i/web/status/2061751060646023464",
+            "title": "Delighted to participate in the Egmont Institute roundtable on “EU Enlargement: Albania’s View,” featuring Minister 's reflections on Albania’s impressive progress toward EU member",
+            "text": "Delighted to participate in the Egmont Institute roundtable on “EU Enlargement: Albania’s View,” featuring Minister 's reflections on Albania’s impressive progress toward EU membership. Valuable exchanges with colleagues from Belgium, North Macedonia and Montenegro, as",
+            "url": "https://x.com/i/web/status/2061815731449221520",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-06-02T10:05:32.000Z",
+            "tag": "Montenegró",
+            "seen_date": "2026-06-02T14:22:31.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 9
+              "Észak-Macedónia": 5,
+              "Montenegró": 1,
+              "Albánia": 1
             },
             "event_category": "eu_integration",
             "event_categories": [
@@ -911,32 +979,32 @@
                 "weight": 6
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
+            "geopolitical_score": 16,
+            "quality_score": 17,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 10,
+            "raw_engagement": 10,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
+              "likes": 7,
+              "reposts": 3,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "Mickoski on Fetai’s Resignation: Government Reshuffle Expected in June NorthMacedonia HristijanMickoski ArbenFetai GovernmentReshuffle",
-            "text": "Mickoski on Fetai’s Resignation: Government Reshuffle Expected in June NorthMacedonia HristijanMickoski ArbenFetai GovernmentReshuffle",
-            "url": "https://x.com/i/web/status/2061546245823352947",
+            "title": "🇲🇰🇪🇺 Welcome to Skopje to the President of the European Council, António Costa. 🔹 An important opportunity to discuss our European perspective and the progress of the reform agenda",
+            "text": "🇲🇰🇪🇺 Welcome to Skopje to the President of the European Council, António Costa. 🔹 An important opportunity to discuss our European perspective and the progress of the reform agenda. 🔹 Exchanged views on the next steps in the EU integration process and the challenges that lie",
+            "url": "https://x.com/i/web/status/2061831750188187663",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-06-01T20:31:41.000Z",
+            "seen_date": "2026-06-02T15:26:10.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5
+              "Észak-Macedónia": 4
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -944,54 +1012,24 @@
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "The Federal National Council participated in the 14th Plenary Session of the International Parliament for Tolerance and Peace in North Macedonia, reaffirming the UAE’s commitment t",
-            "text": "The Federal National Council participated in the 14th Plenary Session of the International Parliament for Tolerance and Peace in North Macedonia, reaffirming the UAE’s commitment to dialogue, coexistence, respect for sovereignty, and international efforts that promote peace and",
-            "url": "https://x.com/i/web/status/2061739886797807793",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-06-02T09:21:08.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
+              },
               {
-                "category": "government_crisis",
+                "category": "eu_integration",
                 "hits": 1,
-                "weight": 9
+                "weight": 6
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
+            "geopolitical_score": 16,
+            "quality_score": 17,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 7,
+            "raw_engagement": 7,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 5,
+              "reposts": 1,
               "replies": 0,
-              "quotes": 0
+              "quotes": 1
             },
             "quality": "x_api_filtered"
           }
@@ -1004,32 +1042,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 19,
-        "negative_hits": 15,
-        "positive_hits": 6,
-        "trusted_hits": 3,
-        "engagement_total": 78,
-        "raw_engagement_total": 78,
-        "quality_total": 375,
-        "geopolitical_total": 337,
+        "mentions": 20,
+        "negative_hits": 13,
+        "positive_hits": 5,
+        "trusted_hits": 5,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 433,
+        "geopolitical_total": 391,
         "source_counts": {
-          "reddit": 4,
-          "mastodon": 9,
-          "x": 6
+          "reddit": 6,
+          "mastodon": 11,
+          "x": 3
         },
         "category_counts": {
-          "corruption_rule_of_law": 3,
-          "security": 5,
+          "corruption_rule_of_law": 1,
+          "security": 4,
+          "government_crisis": 6,
           "protest": 8,
-          "government_crisis": 2,
-          "eu_integration": 1
+          "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 2,
-          "albania": 9,
-          "askbalkans": 2,
-          "Koszovó": 1,
-          "Albánia": 5
+          "albania": 12,
+          "askbalkans": 3,
+          "Albánia": 3
         },
         "main_topic": "protest",
         "top_posts": [
@@ -1114,6 +1151,51 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Thousands of people took to the streets of Albania’s capital Tirana on Tuesday in the second day of protests against a luxury resort project linked to US President Donald Trump's s",
+            "text": "Thousands of people took to the streets of Albania’s capital Tirana on Tuesday in the second day of protests against a luxury resort project linked to US President Donald Trump's son-in-law, Jared Kushner.",
+            "url": "https://x.com/i/web/status/2061828240608465000",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-06-02T15:12:14.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 36,
+            "quality_score": 37,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Nb @jkass99 Protest in Albania against work on luxury development linked to Ivanka Trump and Jared Kushner www.youtube.com/watch?v=CyeT... #Albania #USpol #Corruption #Environment Protest in Albania against wor...",
             "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:j4a3kqiiuzzbmnta6n4onycz/post/3mn6fhlnevk2c",
@@ -1185,40 +1267,6 @@
             ],
             "geopolitical_score": 24,
             "quality_score": 27,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "The above link showed protest near where the land being built on is. This link shows a large protest in the capital yesterday. https://www. youtube.com/watch?v=PlhITbfWMVk # Albania # USpol # Corruption # Environment",
-            "url": "https://mas.to/@meganL/116679862473338783",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Tue, 02 Jun 2026 09:43:29 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
