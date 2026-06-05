@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-05 14:29 UTC",
+  "updated_at": "2026-06-05 15:26 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"errors\":[{\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption OR EU OR NATO OR security OR crisis OR tension OR parliament OR president OR minister OR opposition OR police OR sanctions O"
       }
     ],
-    "collected": 14
+    "collected": 13
   },
   "countries": [
     {
@@ -21,33 +21,34 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
+        "mentions": 15,
         "negative_hits": 6,
-        "positive_hits": 4,
-        "trusted_hits": 1,
+        "positive_hits": 5,
+        "trusted_hits": 3,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 245,
-        "geopolitical_total": 207,
+        "quality_total": 265,
+        "geopolitical_total": 223,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 11,
-          "x": 3
+          "mastodon": 10,
+          "x": 5
         },
         "category_counts": {
           "corruption_rule_of_law": 1,
           "security": 4,
           "government_crisis": 3,
-          "foreign_influence": 2,
+          "foreign_influence": 1,
+          "eu_integration": 3,
           "protest": 2,
-          "eu_integration": 2
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 5,
           "serbia": 3,
           "kosovo": 1,
-          "montenegro": 2,
-          "Szerbia": 2,
+          "montenegro": 1,
+          "Szerbia": 4,
           "Koszovó": 1
         },
         "main_topic": "security",
@@ -210,34 +211,44 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Another international incident by Aleksandar Vučić. He sent a plane full of crimnals, 90 of them, to be his personal guard in #Tivat #Montenegro . All of them have a criminal dossier in the police, some of them for most violent crimes even against students in the past year!",
-            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:sjx3hptnopiz7mtzaexuhgpr/post/3mnfoc66voc2r",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Wed, 03 Jun 2026 17:50:30 +0000",
+            "title": "Peskov: Serbia and Russia Share Special Historical, Ethnic and Religious Ties SerbiaRussiaRelations DmitryPeskov Kremlin AleksandarVucic",
+            "text": "Peskov: Serbia and Russia Share Special Historical, Ethnic and Religious Ties SerbiaRussiaRelations DmitryPeskov Kremlin AleksandarVucic",
+            "url": "https://x.com/i/web/status/2062911474532560987",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-06-05T14:56:37.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 4,
-              "Montenegró": 1
+              "Szerbia": 5
             },
-            "event_category": "security",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
               }
             ],
             "geopolitical_score": 18,
-            "quality_score": 21,
-            "source_reliability": 3,
+            "quality_score": 19,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -245,32 +256,32 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 32,
+        "score": 35,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 7,
         "negative_hits": 2,
         "positive_hits": 3,
-        "trusted_hits": 3,
+        "trusted_hits": 4,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 127,
-        "geopolitical_total": 103,
+        "quality_total": 142,
+        "geopolitical_total": 113,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 6,
+          "mastodon": 7,
           "x": 0
         },
         "category_counts": {
           "corruption_rule_of_law": 1,
           "foreign_influence": 1,
           "economic_infrastructure": 1,
-          "eu_integration": 2,
+          "eu_integration": 3,
           "protest": 1
         },
         "tag_counts": {
           "balkans": 3,
-          "serbia": 1,
+          "serbia": 2,
           "kosovo": 2
         },
         "main_topic": "eu_integration",
@@ -464,31 +475,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 49,
+        "score": 51,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 4,
-        "positive_hits": 3,
-        "trusted_hits": 1,
-        "engagement_total": 13,
-        "raw_engagement_total": 13,
-        "quality_total": 135,
-        "geopolitical_total": 122,
+        "mentions": 9,
+        "negative_hits": 3,
+        "positive_hits": 4,
+        "trusted_hits": 2,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 162,
+        "geopolitical_total": 143,
         "source_counts": {
           "reddit": 1,
-          "mastodon": 3,
-          "x": 3
+          "mastodon": 4,
+          "x": 4
         },
         "category_counts": {
-          "eu_integration": 2,
+          "eu_integration": 3,
           "protest": 2,
-          "security": 3
+          "security": 4
         },
         "tag_counts": {
-          "serbia": 1,
+          "serbia": 2,
           "kosovo": 3,
-          "Koszovó": 3
+          "Koszovó": 4
         },
         "main_topic": "security",
         "top_posts": [
@@ -527,10 +538,10 @@
             "quality_score": 23,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 4,
+            "raw_engagement": 4,
             "metrics": {
-              "likes": 0,
+              "likes": 4,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -910,25 +921,24 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 27,
-        "negative_hits": 23,
-        "positive_hits": 5,
+        "mentions": 24,
+        "negative_hits": 22,
+        "positive_hits": 2,
         "trusted_hits": 2,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 474,
-        "geopolitical_total": 445,
+        "engagement_total": 25,
+        "raw_engagement_total": 25,
+        "quality_total": 445,
+        "geopolitical_total": 419,
         "source_counts": {
           "reddit": 10,
           "mastodon": 9,
-          "x": 8
+          "x": 5
         },
         "category_counts": {
           "corruption_rule_of_law": 4,
-          "protest": 12,
+          "protest": 13,
           "security": 2,
-          "government_crisis": 8,
-          "ethnic_tension": 1
+          "government_crisis": 5
         },
         "tag_counts": {
           "balkans": 1,
@@ -936,9 +946,9 @@
           "albania": 10,
           "kosovo": 5,
           "askbalkans": 2,
-          "Szerbia": 1,
-          "Montenegró": 1,
-          "Albánia": 6
+          "Szerbia": 2,
+          "Koszovó": 1,
+          "Albánia": 2
         },
         "main_topic": "protest",
         "top_posts": [
@@ -1026,46 +1036,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇦🇱🇺🇸 Albania's Prime Minister Edi Rama on protests over the Kushner resort deal: “There are no demands to be discussed because there is not yet a project approved. This is being pr",
-            "text": "🇦🇱🇺🇸 Albania's Prime Minister Edi Rama on protests over the Kushner resort deal: “There are no demands to be discussed because there is not yet a project approved. This is being presented in the overall social media through a hybrid war against Albania. False narratives, like",
-            "url": "https://x.com/i/web/status/2062904068326957201",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-06-05T14:27:11.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Ivanka # Trump and Jared # Kushner 's $1.4 billion # Albania project sparks mass protests and # corruption probe. https://www. wionews.com/world/ivanka-trump -jared-kushner-albania-project-protests-corruption-investigation-1780649023401",
             "url": "https://mastodon.social/@AlexandraB/116697303604853706",
@@ -1132,6 +1102,47 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "🚨🇦🇱BREAKING: Prime Minister of Albania, Edi Rama has directly accused Serbia of inciting the massive protests in Tirana over the controversial Trump–Kushner resort project. More to",
+            "text": "🚨🇦🇱BREAKING: Prime Minister of Albania, Edi Rama has directly accused Serbia of inciting the massive protests in Tirana over the controversial Trump–Kushner resort project. More to follow. albania protest rama",
+            "url": "https://x.com/i/web/status/2062908057248498003",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-06-05T14:43:02.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 9,
+              "Szerbia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 22,
+            "raw_engagement": 22,
+            "metrics": {
+              "likes": 17,
+              "reposts": 3,
+              "replies": 2,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
