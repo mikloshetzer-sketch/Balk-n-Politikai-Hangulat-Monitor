@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15 21:16 UTC",
+  "updated_at": "2026-06-16 02:53 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -18,29 +18,31 @@
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 10,
-        "level": "low",
+        "score": 24,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 1,
-        "negative_hits": 1,
+        "mentions": 3,
+        "negative_hits": 2,
         "positive_hits": 0,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 26,
-        "geopolitical_total": 21,
+        "quality_total": 48,
+        "geopolitical_total": 41,
         "source_counts": {
-          "reddit": 0,
-          "mastodon": 1,
+          "reddit": 1,
+          "mastodon": 2,
           "x": 0
         },
         "category_counts": {
-          "foreign_influence": 1
+          "corruption_rule_of_law": 1,
+          "foreign_influence": 1,
+          "protest": 1
         },
         "tag_counts": {
-          "serbia": 1
+          "serbia": 3
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "corruption_rule_of_law",
         "top_posts": [
           {
             "title": "",
@@ -72,6 +74,66 @@
             "quality_score": 26,
             "source_reliability": 5,
             "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Austrijska nacionalna agencija: Vučić preko zakona o obrazovanju želi da slomi univerzitete i studentski protest",
+            "text": "Predsednik Srbije Aleksandar Vučić želi da promeni zakon o visokoškolskom obrazovanju što je najava ofanzive protiv studentskog pokreta, a glavni cilj je da se slomi podrška koju državni univerziteti pružaju borbi studenata za vladavinu prava, piše danas austrijska nacionalna agencija APA. Agencija piše da je Vučić optužio demonstrante da \"predvode obojenu r",
+            "url": "https://www.reddit.com/r/serbia/comments/1u6u5so/austrijska_nacionalna_agencija_vučić_preko_zakona/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-06-15T21:34:56+00:00",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 12
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 11,
+            "source_reliability": 1,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Kosovo Court Jails Man for Spying for Serbian Intelligence https:// fed.brid.gy/r/https://balkanin sight.com/2026/06/15/kosovo-court-jails-man-for-spying-for-serbian-intelligence/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/06/15/kosovo-court-jails-man-for-spying-for-serbian-intelligence/bi/",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Mon, 15 Jun 2026 16:27:31 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 8,
+            "quality_score": 11,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -141,27 +203,29 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 29,
-        "level": "medium",
+        "score": 41,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 6,
         "negative_hits": 0,
         "positive_hits": 0,
-        "trusted_hits": 4,
+        "trusted_hits": 5,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 98,
-        "geopolitical_total": 78,
+        "quality_total": 135,
+        "geopolitical_total": 107,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
+          "mastodon": 6,
           "x": 0
         },
         "category_counts": {
-          "security": 4
+          "corruption_rule_of_law": 1,
+          "security": 5
         },
         "tag_counts": {
-          "kosovo": 4
+          "serbia": 1,
+          "kosovo": 5
         },
         "main_topic": "security",
         "top_posts": [
@@ -217,6 +281,40 @@
             ],
             "geopolitical_score": 22,
             "quality_score": 27,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Kosovo Court Detains Five Serbs for Massacre That Catalysed NATO Intervention https:// fed.brid.gy/r/https://balkanin sight.com/2026/06/15/kosovo-court-detains-five-serbs-for-massacre-that-catalysed-nato-intervention/btj/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/06/15/kosovo-court-detains-five-serbs-for-massacre-that-catalysed-nato-intervention/btj/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Mon, 15 Jun 2026 15:07:11 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 26,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -458,31 +556,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
+        "mentions": 13,
         "negative_hits": 8,
-        "positive_hits": 4,
-        "trusted_hits": 4,
+        "positive_hits": 2,
+        "trusted_hits": 5,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 347,
-        "geopolitical_total": 297,
+        "quality_total": 338,
+        "geopolitical_total": 289,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 14,
+          "mastodon": 13,
           "x": 0
         },
         "category_counts": {
-          "protest": 6,
+          "protest": 5,
           "foreign_influence": 1,
-          "security": 2,
+          "security": 3,
           "migration": 1,
           "government_crisis": 2,
-          "corruption_rule_of_law": 2
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "balkans": 2,
           "montenegro": 3,
-          "albania": 9
+          "albania": 8
         },
         "main_topic": "protest",
         "top_posts": [
@@ -534,22 +632,27 @@
           },
           {
             "title": "",
-            "text": "RE: https:// journa.host/@ScottLucas/116753 033401651635 31-minute discussion Years of dissatisfaction in # Albania over corruption & abuse of power How $1.4bn # IvankaTrump - # JaredKushner purchase of Sazan Island, threatening eco-system with development of high-end condominiums, set off protests Linking Albania w Trump family effect on US foreign policy",
-            "url": "https://journa.host/@ScottLucas/116753041102014594",
+            "text": "Albania fights on! Epstein Class tool Edi Rama tries to flip the script as he betrays country in service of Kushners -- now labeling as fascists the ctizens protesting the rape of their own country. # albania # epsteinclass # ukraine # hungary # poland # spain # france # oligarchy # corruption # UN # world # Israel # russia # war # justice # law # crime # ne",
+            "url": "https://mstdn.social/@PDMU_2Alt/116756821899990386",
             "source": "mastodon",
             "tag": "albania",
-            "seen_date": "Mon, 15 Jun 2026 07:53:46 +0000",
+            "seen_date": "Mon, 15 Jun 2026 23:55:16 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 1
+              "Albánia": 5
             },
-            "event_category": "protest",
+            "event_category": "security",
             "event_categories": [
               {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
                 "category": "protest",
-                "hits": 2,
+                "hits": 1,
                 "weight": 8
               },
               {
@@ -558,15 +661,15 @@
                 "weight": 8
               },
               {
-                "category": "economic_infrastructure",
+                "category": "foreign_influence",
                 "hits": 1,
-                "weight": 4
+                "weight": 8
               }
             ],
-            "geopolitical_score": 32,
-            "quality_score": 35,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "geopolitical_score": 40,
+            "quality_score": 45,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
