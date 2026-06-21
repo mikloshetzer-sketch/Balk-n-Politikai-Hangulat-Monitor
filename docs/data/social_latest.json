@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21 10:04 UTC",
+  "updated_at": "2026-06-21 13:52 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -580,31 +580,70 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 13,
+        "mentions": 16,
+        "negative_hits": 16,
         "positive_hits": 2,
-        "trusted_hits": 0,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 338,
-        "geopolitical_total": 299,
+        "quality_total": 446,
+        "geopolitical_total": 396,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 13,
+          "mastodon": 16,
           "x": 0
         },
         "category_counts": {
+          "security": 2,
           "protest": 8,
           "corruption_rule_of_law": 3,
-          "government_crisis": 1,
-          "security": 1
+          "government_crisis": 3
         },
         "tag_counts": {
-          "balkans": 10,
-          "albania": 3
+          "balkans": 11,
+          "albania": 5
         },
         "main_topic": "protest",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Thousands in Albania protest Jared Kushner-backed resort plan Thousands of protesters marched in Tirana to demand a change in Albania’s government and voice their opposition to the resort that Jared Kushner wants to build in a protected wetland area. # News # Reuters # Newsfeed # albania # wetland # jaredkushner # resort # protest 👉 Subscribe: Keep up with t",
+            "url": "https://mastodon.social/@fllics/116787997130157793",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Sun, 21 Jun 2026 12:03:33 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 40,
+            "quality_score": 45,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "20th night of anti-corruption protests in Tirana, Albania catalyzed by private goons working for Kusher-linked development https://www. youtube.com/watch?v=HoG7BuBBxh4 # Albania # Corruption # Balkans # Europe # EU # FlamingoRevolution # Democracy",
@@ -638,6 +677,50 @@
             ],
             "geopolitical_score": 40,
             "quality_score": 43,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "They spent the night in front of the Prime Minister's Office, police demand the protesters leave \"The main protest in Tirana starts at 6pm every night (so those who work day jobs can attend). This hardy group tried to set up overnight outside the prime minister's office with chairs and patio umbrellas. The police didn't like that.\" The auto-translate is bad.",
+            "url": "https://mas.to/@meganL/116787943571535026",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sun, 21 Jun 2026 11:49:56 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 37,
+            "quality_score": 40,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -716,74 +799,6 @@
             ],
             "geopolitical_score": 36,
             "quality_score": 39,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "The livecast started more than an hour later tonight. But people are still out protesting. Tonight is the 19th day/night of protests in Tirana, Albania https://www. youtube.com/watch?v=7qY8tX7_VpM # Albania # USpol # Corruption # Balkans # Europe # EU # FlamingoRevolution",
-            "url": "https://mas.to/@meganL/116772378365710564",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Thu, 18 Jun 2026 17:51:29 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "18th day/night of protests in Tirana, Albania. https://www. youtube.com/watch?v=E23xdewo2hI # Albania # USpol # Corruption # Balkans # USpol # Europe # FlamingoRevolution",
-            "url": "https://mas.to/@meganL/116767045819382062",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 17 Jun 2026 19:15:21 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
