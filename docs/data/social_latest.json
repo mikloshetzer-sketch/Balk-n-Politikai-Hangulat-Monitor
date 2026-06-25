@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24 20:01 UTC",
+  "updated_at": "2026-06-25 02:33 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -18,29 +18,32 @@
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 10,
-        "level": "low",
+        "score": 37,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 1,
-        "negative_hits": 1,
+        "mentions": 4,
+        "negative_hits": 3,
         "positive_hits": 0,
-        "trusted_hits": 0,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 28,
-        "geopolitical_total": 25,
+        "quality_total": 76,
+        "geopolitical_total": 68,
         "source_counts": {
-          "reddit": 0,
-          "mastodon": 1,
+          "reddit": 2,
+          "mastodon": 2,
           "x": 0
         },
         "category_counts": {
-          "security": 1
+          "government_crisis": 1,
+          "security": 1,
+          "protest": 1,
+          "foreign_influence": 1
         },
         "tag_counts": {
-          "serbia": 1
+          "serbia": 4
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -78,6 +81,94 @@
             "geopolitical_score": 25,
             "quality_score": 28,
             "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "European Commission survey: 40% of Serbian citizens believe the country will never join EU",
+            "text": "In terms of trust in specific countries and international institutions, 40 percent of respondents trust the EU, 58 percent trust the Russian Federation, and 56 percent trust China. &#32; submitted by &#32; /u/Efficient-Meet-777 [link] &#32; [comments]",
+            "url": "https://www.reddit.com/r/serbia/comments/1uetxub/european_commission_survey_40_of_serbian_citizens/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-06-24T23:45:57+00:00",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 23,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "This is the girl who survived the canopy collapse in Novi Sad. Other 16 people weren't that \"lucky\", as she only lost her legs 😭 This is she, as she passed the test for drivers license. 💪 No one is still being persecuted for that mass murder and we all know who's fault is that. #Serbia",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:sjx3hptnopiz7mtzaexuhgpr/post/3mp2uvixje22u",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 24 Jun 2026 21:39:47 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Budi se bebo novi video Medenog : Ćaćilend, droga, puške, snajperi,RPG, Marko Kričak - pičak",
+            "text": "Transkript: ## Transkript * **0:00 - 0:22** Par dana posle 15-omartovskih protesta pozvao me je Mare da se nađemo na Makiškom putu. Još jednom mi je zahvalio, rekao mi je da je zvučni top odradio svoje, da ga je majstor malo više pojačao nego što treba, ali da je na kraju ispalo bolje nego da smo morali da bijemo tu decu. * **0:22 - 0:48** Ponudio mi je nova",
+            "url": "https://www.reddit.com/r/serbia/comments/1uescdv/budi_se_bebo_novi_video_medenog_ćaćilend_droga/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-06-24T22:38:24+00:00",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 8,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 10,
+            "source_reliability": 1,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
@@ -332,28 +423,28 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
+        "mentions": 16,
         "negative_hits": 12,
         "positive_hits": 1,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 382,
-        "geopolitical_total": 327,
+        "quality_total": 376,
+        "geopolitical_total": 324,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 17,
+          "mastodon": 16,
           "x": 0
         },
         "category_counts": {
+          "protest": 9,
           "foreign_influence": 2,
-          "protest": 10,
           "corruption_rule_of_law": 2,
           "security": 3
         },
         "tag_counts": {
-          "balkans": 6,
-          "albania": 11
+          "balkans": 7,
+          "albania": 9
         },
         "main_topic": "protest",
         "top_posts": [
@@ -437,7 +528,41 @@
           },
           {
             "title": "",
-            "text": "The 25th day/night of protests in Tirana, Albania. There's a thunderstorm right now and protestors are still out there meeting up. https://www. youtube.com/watch?v=KYS-Ln89w-c Albania # Corruption # Balkans # Europe # Democracy # Resistance",
+            "text": "Albania’s flamingo protests: Will protests stop Trump’s family luxury resort plan? • FRANCE 24 https://www. youtube.com/watch?v=vKKolg5RaVw # Albania # Corruption # Balkans # Europe # Democracy # Resistance # USpol",
+            "url": "https://mas.to/@meganL/116806923728688608",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Wed, 24 Jun 2026 20:16:50 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "The 25th day/night of protests in Tirana, Albania. There's a thunderstorm right now and protestors are still out there meeting up. https://www. youtube.com/watch?v=KYS-Ln89w-c # Albania # Corruption # Balkans # Europe # Democracy # Resistance",
             "url": "https://mas.to/@meganL/116806202234915983",
             "source": "mastodon",
             "tag": "balkans",
@@ -499,40 +624,6 @@
             "quality_score": 30,
             "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Flamingo Revolution. Albania: sono i fenicotteri a chiamare alla rivolta Nessuno avrebbe immaginato che due luoghi fino a pochi mesi fa quasi sconosciuti al grande pubblico europeo — l'isola di Sazan e la laguna di Narta https:// umanitanova.org/flamingo-revol ution-albania-sono-i-fenicotteri-a-chiamare-alla-rivolta/ #2026 # Analisi # Articoli # DalMondo # I",
-            "url": "https://mastodon.bida.im/@uenne/116804267242946115",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Wed, 24 Jun 2026 09:01:15 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 24,
-            "quality_score": 29,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
