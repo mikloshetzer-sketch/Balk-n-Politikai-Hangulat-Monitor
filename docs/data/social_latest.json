@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-30 09:58 UTC",
+  "updated_at": "2026-06-30 14:01 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -24,11 +24,11 @@
         "mentions": 10,
         "negative_hits": 8,
         "positive_hits": 1,
-        "trusted_hits": 1,
+        "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 256,
-        "geopolitical_total": 226,
+        "quality_total": 248,
+        "geopolitical_total": 222,
         "source_counts": {
           "reddit": 1,
           "mastodon": 9,
@@ -225,27 +225,29 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 14,
-        "level": "low",
+        "score": 24,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
-        "negative_hits": 1,
+        "mentions": 3,
+        "negative_hits": 2,
         "positive_hits": 0,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 31,
-        "geopolitical_total": 23,
+        "quality_total": 41,
+        "geopolitical_total": 34,
         "source_counts": {
-          "reddit": 0,
+          "reddit": 1,
           "mastodon": 2,
           "x": 0
         },
         "category_counts": {
-          "foreign_influence": 2
+          "foreign_influence": 2,
+          "protest": 1
         },
         "tag_counts": {
-          "bosnia": 2
+          "bosnia": 2,
+          "serbia": 1
         },
         "main_topic": "foreign_influence",
         "top_posts": [
@@ -302,6 +304,35 @@
             "geopolitical_score": 8,
             "quality_score": 11,
             "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Ovako Dodikova stranka vidi proteste u Srbiji",
+            "text": "&#32; submitted by &#32; /u/No_Future_9454 [link] &#32; [comments]",
+            "url": "https://www.reddit.com/r/serbia/comments/1ujpkhi/ovako_dodikova_stranka_vidi_proteste_u_srbiji/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-06-30T13:40:39+00:00",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 4
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 10,
+            "source_reliability": 1,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
@@ -428,31 +459,31 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 20,
-        "negative_hits": 18,
+        "negative_hits": 17,
         "positive_hits": 2,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 567,
-        "geopolitical_total": 507,
+        "quality_total": 549,
+        "geopolitical_total": 489,
         "source_counts": {
           "reddit": 0,
           "mastodon": 20,
           "x": 0
         },
         "category_counts": {
-          "protest": 10,
+          "protest": 9,
           "corruption_rule_of_law": 3,
-          "government_crisis": 3,
+          "government_crisis": 4,
           "foreign_influence": 2,
           "security": 1,
           "eu_integration": 1
         },
         "tag_counts": {
-          "balkans": 12,
+          "balkans": 11,
           "kosovo": 1,
           "montenegro": 1,
-          "albania": 6
+          "albania": 7
         },
         "main_topic": "protest",
         "top_posts": [
