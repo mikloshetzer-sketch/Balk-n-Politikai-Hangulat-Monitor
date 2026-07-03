@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03 04:04 UTC",
+  "updated_at": "2026-07-03 08:53 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -8,33 +8,8 @@
     "errors": [
       {
         "country": "Szerbia",
-        "status_code": 503,
-        "message": "{\"detail\":\"Service Unavailable\",\"status\":503,\"title\":\"Service Unavailable\",\"type\":\"about:blank\"}"
-      },
-      {
-        "country": "Bosznia-Hercegovina",
-        "status_code": 503,
-        "message": "{\"detail\":\"Service Unavailable\",\"status\":503,\"title\":\"Service Unavailable\",\"type\":\"about:blank\"}"
-      },
-      {
-        "country": "Koszovó",
-        "status_code": 503,
-        "message": "{\"detail\":\"Service Unavailable\",\"status\":503,\"title\":\"Service Unavailable\",\"type\":\"about:blank\"}"
-      },
-      {
-        "country": "Montenegró",
-        "status_code": 503,
-        "message": "{\"detail\":\"Service Unavailable\",\"status\":503,\"title\":\"Service Unavailable\",\"type\":\"about:blank\"}"
-      },
-      {
-        "country": "Észak-Macedónia",
-        "status_code": 503,
-        "message": "{\"detail\":\"Service Unavailable\",\"status\":503,\"title\":\"Service Unavailable\",\"type\":\"about:blank\"}"
-      },
-      {
-        "country": "Albánia",
-        "status_code": 503,
-        "message": "{\"detail\":\"Service Unavailable\",\"status\":503,\"title\":\"Service Unavailable\",\"type\":\"about:blank\"}"
+        "status_code": 402,
+        "message": "{\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}"
       }
     ],
     "collected": 0
@@ -43,7 +18,7 @@
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 37,
+        "score": 34,
         "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 5,
@@ -52,53 +27,25 @@
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 83,
-        "geopolitical_total": 68,
+        "quality_total": 73,
+        "geopolitical_total": 58,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
           "x": 0
         },
         "category_counts": {
+          "foreign_influence": 1,
           "economic_infrastructure": 1,
-          "government_crisis": 2,
+          "government_crisis": 1,
           "security": 2
         },
         "tag_counts": {
           "serbia": 4,
           "kosovo": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
-          {
-            "title": "",
-            "text": "What are the Secrets Behind Serbian President Vucic’s Resignation Pledge? https:// fed.brid.gy/r/https://balkanin sight.com/2026/06/30/what-are-the-secrets-behind-serbian-president-vucics-resignation-pledge/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/06/30/what-are-the-secrets-behind-serbian-president-vucics-resignation-pledge/bi/",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Tue, 30 Jun 2026 05:46:03 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 24,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Serbian Opposition Leader Grilled by Police Over Sound Cannon Allegations https:// fed.brid.gy/r/https://balkanin sight.com/2026/07/01/serbian-opposition-leader-grilled-by-police-over-sound-cannon-allegations/bi/",
@@ -159,6 +106,35 @@
             ],
             "geopolitical_score": 12,
             "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "According to this research, #Serbia ranks just below the Russian Mordor when it comes to electoral violence. And when it happens, those we look upon as beacons of democracy, like the EU for instance, accept the election results and dictatorial regime. www.kofiannanfoundation.org/elections-de...",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:sjx3hptnopiz7mtzaexuhgpr/post/3mppyqzmnzs2c",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 03 Jul 2026 07:14:46 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 14,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -596,12 +572,12 @@
         "scale": "0-60 risk index",
         "mentions": 25,
         "negative_hits": 22,
-        "positive_hits": 6,
-        "trusted_hits": 5,
+        "positive_hits": 5,
+        "trusted_hits": 4,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 701,
-        "geopolitical_total": 616,
+        "quality_total": 705,
+        "geopolitical_total": 622,
         "source_counts": {
           "reddit": 0,
           "mastodon": 25,
@@ -610,9 +586,9 @@
         "category_counts": {
           "government_crisis": 4,
           "protest": 6,
-          "security": 10,
+          "security": 11,
           "corruption_rule_of_law": 1,
-          "eu_integration": 4
+          "eu_integration": 3
         },
         "tag_counts": {
           "balkan": 1,
