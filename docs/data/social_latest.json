@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14 18:11 UTC",
+  "updated_at": "2026-07-14 19:07 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 19
   },
   "countries": [
     {
@@ -21,32 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
-        "negative_hits": 3,
-        "positive_hits": 1,
-        "trusted_hits": 3,
-        "engagement_total": 69,
-        "raw_engagement_total": 69,
-        "quality_total": 191,
-        "geopolitical_total": 156,
+        "mentions": 14,
+        "negative_hits": 5,
+        "positive_hits": 0,
+        "trusted_hits": 2,
+        "engagement_total": 44,
+        "raw_engagement_total": 44,
+        "quality_total": 207,
+        "geopolitical_total": 173,
         "source_counts": {
           "reddit": 1,
           "mastodon": 8,
-          "x": 3
+          "x": 5
         },
         "category_counts": {
-          "ethnic_tension": 3,
+          "ethnic_tension": 6,
           "corruption_rule_of_law": 2,
           "security": 2,
           "foreign_influence": 1,
-          "eu_integration": 2,
-          "protest": 1,
-          "government_crisis": 1
+          "eu_integration": 1,
+          "government_crisis": 1,
+          "protest": 1
         },
         "tag_counts": {
           "serbia": 8,
           "bosnia": 1,
-          "Szerbia": 3
+          "Szerbia": 3,
+          "Koszovó": 2
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -121,41 +122,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "After 24 years of teaching, Professor Vladimir Mihić has been forced out of the University of Novi Sad. His public support for student protests and criticism of Serbia's government",
-            "text": "After 24 years of teaching, Professor Vladimir Mihić has been forced out of the University of Novi Sad. His public support for student protests and criticism of Serbia's government became grounds to block his academic career. Vučić is destroying Serbia's universities! EU",
-            "url": "https://x.com/i/web/status/2077091093728931874",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-14T18:01:21.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Countries Which Have At Some Point Claimed To Be Rome’s Successor [mapping / Third Rome] -- https:// brilliantmaps.com/third-rome/ &lt;-- shared technical / history article -- https:// en.wikipedia.org/wiki/Successi on_of_the_Roman_Empire &lt;-- shared Third Rome wiki page -- “The [first] map… shows which countries have claimed to be the successor to the Rom",
             "url": "https://techhub.social/@GregCocks/116916137746109939",
@@ -212,6 +178,44 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Her public statement deserves condemnation. But let us not forget that Albanians ethnically cleansed ~200,000 Serbs and other non-Albanians from Kosovo post-1999 via violence, orga",
+            "text": "Her public statement deserves condemnation. But let us not forget that Albanians ethnically cleansed ~200,000 Serbs and other non-Albanians from Kosovo post-1999 via violence, organ harvesting, displacement & destruction of Serbian homes and churches.. Ethnic cleansing is evil",
+            "url": "https://x.com/i/web/status/2077106300606181882",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-14T19:01:47.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Albánia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 14,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 3,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -219,31 +223,30 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 25,
-        "level": "medium",
+        "score": 18,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 3,
         "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 22,
-        "raw_engagement_total": 22,
-        "quality_total": 55,
-        "geopolitical_total": 45,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 44,
+        "geopolitical_total": 35,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
-          "ethnic_tension": 2,
+          "ethnic_tension": 1,
           "eu_integration": 1,
           "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "serbia": 1,
-          "bosnia": 2,
-          "Észak-Macedónia": 1
+          "bosnia": 2
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -282,47 +285,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "This is how Serbs justified 200 years of genocide,expulsion and ethnic cleansing of Bosniaks and Albanians from Serbia,Montenegro,Bosnia and Herzegovina,Kosovo,North Albania and Ma",
-            "text": "This is how Serbs justified 200 years of genocide,expulsion and ethnic cleansing of Bosniaks and Albanians from Serbia,Montenegro,Bosnia and Herzegovina,Kosovo,North Albania and Macedonia.",
-            "url": "https://x.com/i/web/status/2076985500401901794",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-14T11:01:46.000Z",
-            "matched_countries": [
-              "Bosznia-Hercegovina",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 2,
-              "Albánia": 2,
-              "Szerbia": 1,
-              "Koszovó": 1,
-              "Montenegró": 1,
-              "Észak-Macedónia": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 22,
-            "raw_engagement": 22,
-            "metrics": {
-              "likes": 21,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -390,17 +352,17 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 26,
+        "score": 24,
         "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 4,
         "negative_hits": 0,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 52,
-        "geopolitical_total": 42,
+        "engagement_total": 6,
+        "raw_engagement_total": 6,
+        "quality_total": 62,
+        "geopolitical_total": 52,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
@@ -408,16 +370,52 @@
         },
         "category_counts": {
           "ethnic_tension": 2,
-          "security": 2
+          "security": 1,
+          "government_crisis": 1
         },
         "tag_counts": {
           "serbia": 1,
           "kosovo": 1,
-          "Szerbia": 1,
-          "Koszovó": 1
+          "Koszovó": 1,
+          "Albánia": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
+          {
+            "title": "Kosovo’s Kurti is preaching compromise in the search for a deal on the country’s next president, but his task is complicated by the turmoil inside the opposition LDK. Read more:",
+            "text": "Kosovo’s Kurti is preaching compromise in the search for a deal on the country’s next president, but his task is complicated by the turmoil inside the opposition LDK. Read more:",
+            "url": "https://x.com/i/web/status/2077105095691616643",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-07-14T18:57:00.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Agenzia Nova: Kosovo: Zejnullah Gashi nominato Procuratore generale dello Stato 13 lug 10:40 - (Agenzia Nova) - Il Consiglio della Procura del Kosovo (Kpk) ha nominato Zejnullah Gashi nuovo Procuratore generale dello Stato... (Alt) Kosovo: Zejnullah Gashi appointed State Attorney General July 13 10:40 – (Agenzia Nova) – The Council of the Prosecutor’s Office",
@@ -483,7 +481,7 @@
             "text": "That's why \"Kosovo is serbia\" is a fascist genocidal slogan because that has always been serbia's goal, the genocide/\"ethnic cleansing\" of the Albanian population of Kosova. An Albanian-free Kosova",
             "url": "https://x.com/i/web/status/2077092577673662507",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Albánia",
             "seen_date": "2026-07-14T18:07:15.000Z",
             "matched_countries": [
               "Koszovó",
@@ -506,45 +504,10 @@
             "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 6,
+            "raw_engagement": 6,
             "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Study the elegant tailoring of this blue georgette mirror work sharara suit featuring a straight fit kurti, square neckline, scattered mirror work, wide tiered sharara, delicate bo",
-            "text": "Study the elegant tailoring of this blue georgette mirror work sharara suit featuring a straight fit kurti, square neckline, scattered mirror work, wide tiered sharara, delicate border finish, and sheer dupatta with mirror border for balanced craftsmanship, graceful movement.",
-            "url": "https://x.com/i/web/status/2077068344684122463",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-07-14T16:30:58.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
+              "likes": 6,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -658,8 +621,8 @@
         "negative_hits": 0,
         "positive_hits": 4,
         "trusted_hits": 1,
-        "engagement_total": 15,
-        "raw_engagement_total": 15,
+        "engagement_total": 25,
+        "raw_engagement_total": 25,
         "quality_total": 62,
         "geopolitical_total": 54,
         "source_counts": {
@@ -736,10 +699,10 @@
             "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 9,
-            "raw_engagement": 9,
+            "engagement": 11,
+            "raw_engagement": 11,
             "metrics": {
-              "likes": 8,
+              "likes": 10,
               "reposts": 1,
               "replies": 0,
               "quotes": 0
@@ -779,13 +742,13 @@
             "quality_score": 12,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
+            "engagement": 11,
+            "raw_engagement": 11,
             "metrics": {
-              "likes": 3,
-              "reposts": 0,
+              "likes": 7,
+              "reposts": 2,
               "replies": 0,
-              "quotes": 0
+              "quotes": 2
             },
             "quality": "x_api_filtered"
           },
@@ -833,35 +796,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 22,
-        "negative_hits": 16,
-        "positive_hits": 5,
-        "trusted_hits": 1,
-        "engagement_total": 24,
-        "raw_engagement_total": 24,
-        "quality_total": 507,
-        "geopolitical_total": 449,
+        "mentions": 23,
+        "negative_hits": 20,
+        "positive_hits": 6,
+        "trusted_hits": 2,
+        "engagement_total": 17,
+        "raw_engagement_total": 17,
+        "quality_total": 579,
+        "geopolitical_total": 517,
         "source_counts": {
           "reddit": 0,
           "mastodon": 17,
-          "x": 5
+          "x": 6
         },
         "category_counts": {
-          "protest": 7,
           "corruption_rule_of_law": 8,
+          "protest": 9,
           "security": 2,
           "government_crisis": 2,
-          "ethnic_tension": 3
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "balkans": 13,
           "albania": 4,
-          "Szerbia": 2,
-          "Koszovó": 1,
-          "Észak-Macedónia": 1,
-          "Albánia": 1
+          "Szerbia": 3,
+          "Albánia": 3
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "protest",
         "top_posts": [
           {
             "title": "",
