@@ -100,6 +100,76 @@ SECURITY_TOPIC_WEIGHTS = {
 }
 
 
+# A dinamikus fő probléma kiválasztásánál használt általános biztonsági szorzók.
+# Ezek nem írják felül az aktuális témapontszámot, csak mérsékelten korrigálják azt.
+GENERAL_TOPIC_MULTIPLIERS = {
+    "Biztonságpolitikai kockázatok és erőszak": 1.30,
+    "Koszovó–Szerbia feszültség": 1.25,
+    "Boszniai intézményi válság és OHR-vita": 1.25,
+    "Belpolitikai tüntetések és társadalmi nyomás": 1.15,
+    "Korrupció, jogállamiság és igazságszolgáltatás": 1.05,
+    "Kormányzati stabilitás és választási dinamika": 1.10,
+    "Nemzetközi kapcsolatok és nagyhatalmi befolyás": 1.00,
+    "EU-integráció és csatlakozási folyamat": 0.85,
+    "Gazdaság, energia és beruházások": 0.80,
+    "Montenegró EU-csatlakozási előrehaladása": 0.85,
+    "Albán digitalizáció és kiberbiztonság": 1.10,
+    "Bolgár–macedón identitásvita": 1.10
+}
+
+
+# Ország-specifikus relevanciaszorzók. A nem felsorolt témák 1.00 értéket kapnak.
+COUNTRY_TOPIC_MULTIPLIERS = {
+    "Szerbia": {
+        "Koszovó–Szerbia feszültség": 1.20,
+        "Belpolitikai tüntetések és társadalmi nyomás": 1.25,
+        "Kormányzati stabilitás és választási dinamika": 1.20,
+        "Nemzetközi kapcsolatok és nagyhatalmi befolyás": 1.10
+    },
+    "Bosznia-Hercegovina": {
+        "Boszniai intézményi válság és OHR-vita": 1.35,
+        "Biztonságpolitikai kockázatok és erőszak": 1.15,
+        "Kormányzati stabilitás és választási dinamika": 1.20,
+        "Nemzetközi kapcsolatok és nagyhatalmi befolyás": 1.10
+    },
+    "Koszovó": {
+        "Koszovó–Szerbia feszültség": 1.35,
+        "Biztonságpolitikai kockázatok és erőszak": 1.20,
+        "Kormányzati stabilitás és választási dinamika": 1.10,
+        "Nemzetközi kapcsolatok és nagyhatalmi befolyás": 1.10
+    },
+    "Montenegró": {
+        "Kormányzati stabilitás és választási dinamika": 1.25,
+        "Nemzetközi kapcsolatok és nagyhatalmi befolyás": 1.15,
+        "Belpolitikai tüntetések és társadalmi nyomás": 1.10,
+        "Montenegró EU-csatlakozási előrehaladása": 1.05
+    },
+    "Észak-Macedónia": {
+        "Bolgár–macedón identitásvita": 1.30,
+        "Kormányzati stabilitás és választási dinamika": 1.20,
+        "Belpolitikai tüntetések és társadalmi nyomás": 1.10,
+        "EU-integráció és csatlakozási folyamat": 1.05
+    },
+    "Albánia": {
+        "Korrupció, jogállamiság és igazságszolgáltatás": 1.30,
+        "Kormányzati stabilitás és választási dinamika": 1.15,
+        "Albán digitalizáció és kiberbiztonság": 1.20,
+        "Belpolitikai tüntetések és társadalmi nyomás": 1.10
+    }
+}
+
+
+# Tartós, strukturális biztonsági kockázatok országonként.
+STRUCTURAL_SECURITY_RISKS = {
+    "Szerbia": "Koszovó–Szerbia feszültség",
+    "Bosznia-Hercegovina": "Boszniai intézményi válság és OHR-vita",
+    "Koszovó": "Koszovó–Szerbia feszültség",
+    "Montenegró": "Kormányzati stabilitás és külső politikai befolyás",
+    "Észak-Macedónia": "Bolgár–macedón identitásvita és belpolitikai stabilitás",
+    "Albánia": "Korrupció, jogállamiság és szervezett bűnözési kockázatok"
+}
+
+
 def now_utc():
     return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
@@ -401,7 +471,14 @@ def get_latest_country(latest_data, country_name):
     return None
 
 
-def score_from_news_topics(country):
+def topic_relevance_score(country_name, topic, topic_score):
+    general_multiplier = GENERAL_TOPIC_MULTIPLIERS.get(topic, 1.0)
+    country_multiplier = COUNTRY_TOPIC_MULTIPLIERS.get(country_name, {}).get(topic, 1.0)
+
+    return round(topic_score * general_multiplier * country_multiplier, 2)
+
+
+def score_from_news_topics(country, country_name):
     if not country:
         return 0, "nincs adat", []
 
@@ -426,11 +503,22 @@ def score_from_news_topics(country):
 
         security_score += weighted_value
 
+        general_multiplier = GENERAL_TOPIC_MULTIPLIERS.get(topic, 1.0)
+        country_multiplier = COUNTRY_TOPIC_MULTIPLIERS.get(country_name, {}).get(topic, 1.0)
+        relevance_score = topic_relevance_score(
+            country_name,
+            topic,
+            topic_numeric_value
+        )
+
         contributing_topics.append({
             "topic": topic,
             "topic_score": topic_numeric_value,
             "security_weight": SECURITY_TOPIC_WEIGHTS[topic],
-            "used_value": weighted_value
+            "used_value": weighted_value,
+            "general_multiplier": general_multiplier,
+            "country_multiplier": country_multiplier,
+            "relevance_score": relevance_score
         })
 
     negative_hits = country.get("negative_hits", 0) or 0
@@ -441,34 +529,22 @@ def score_from_news_topics(country):
         negative_hits = 0
 
     security_score += min(20, negative_hits * 1.5)
-
     security_score = min(100, round(security_score, 1))
 
+    contributing_topics.sort(
+        key=lambda item: (item["relevance_score"], item["topic_score"]),
+        reverse=True
+    )
+
     if contributing_topics:
-        main_security_topic = contributing_topics[0]["topic"]
+        dominant_current_issue = contributing_topics[0]["topic"]
     else:
-        main_security_topic = "nincs adat"
+        dominant_current_issue = "nincs adat"
 
-    return security_score, main_security_topic, contributing_topics[:5]
-
+    return security_score, dominant_current_issue, contributing_topics[:5]
 
 def build_country_risk(events, latest_data):
     countries = []
-
-    SECURITY_PRIORITY = [
-        "Biztonságpolitikai kockázatok és erőszak",
-        "Koszovó–Szerbia feszültség",
-        "Boszniai intézményi válság és OHR-vita",
-        "Belpolitikai tüntetések és társadalmi nyomás",
-        "Korrupció, jogállamiság és igazságszolgáltatás",
-        "Kormányzati stabilitás és választási dinamika",
-        "Nemzetközi kapcsolatok és nagyhatalmi befolyás",
-        "Bolgár–macedón identitásvita",
-        "Albán digitalizáció és kiberbiztonság",
-        "Montenegró EU-csatlakozási előrehaladása",
-        "EU-integráció és csatlakozási folyamat",
-        "Gazdaság, energia és beruházások"
-    ]
 
     for country in COUNTRIES:
         country_events = [
@@ -477,7 +553,6 @@ def build_country_risk(events, latest_data):
         ]
 
         event_count = len(country_events)
-
         type_counter = {}
 
         for event in country_events:
@@ -485,9 +560,9 @@ def build_country_risk(events, latest_data):
             type_counter[event_type] = type_counter.get(event_type, 0) + 1
 
         if type_counter:
-            main_type = max(type_counter, key=type_counter.get)
+            main_detected_event_type = max(type_counter, key=type_counter.get)
         else:
-            main_type = "nincs adat"
+            main_detected_event_type = "nincs adat"
 
         event_total_score = sum(
             float(event.get("score", 0) or 0)
@@ -501,8 +576,14 @@ def build_country_risk(events, latest_data):
 
         latest_country = get_latest_country(latest_data, country)
 
-        news_score, news_topic, contributing_topics = score_from_news_topics(
-            latest_country
+        news_score, dominant_current_issue, contributing_topics = score_from_news_topics(
+            latest_country,
+            country
+        )
+
+        structural_security_risk = STRUCTURAL_SECURITY_RISKS.get(
+            country,
+            "nincs adat"
         )
 
         if event_count > 0:
@@ -510,34 +591,22 @@ def build_country_risk(events, latest_data):
                 (event_based_score * 0.7) + (news_score * 0.3),
                 1
             )
-
-            security_source = "event_layer"
-            main_event_type = main_type
+            security_source = "event_layer + news_derived"
 
         elif news_score > 0:
             final_score = round(news_score * 0.55, 1)
-
             security_source = "news_derived"
-
-            topic_names = [
-                topic["topic"]
-                for topic in contributing_topics
-            ]
-
-            main_event_type = "nincs adat"
-
-            for preferred_topic in SECURITY_PRIORITY:
-                if preferred_topic in topic_names:
-                    main_event_type = preferred_topic
-                    break
-
-            if main_event_type == "nincs adat" and topic_names:
-                main_event_type = topic_names[0]
 
         else:
             final_score = 0
             security_source = "none"
-            main_event_type = "nincs adat"
+
+        # Kompatibilitási mező: mostantól az aktuálisan domináns problémát mutatja.
+        # Ha nincs híralapú téma, visszaesik a konkrét eseménytípusra.
+        if dominant_current_issue != "nincs adat":
+            main_event_type = dominant_current_issue
+        else:
+            main_event_type = main_detected_event_type
 
         countries.append({
             "name": country,
@@ -546,6 +615,9 @@ def build_country_risk(events, latest_data):
             "security_source": security_source,
             "event_count": event_count,
             "main_event_type": main_event_type,
+            "dominant_current_issue": dominant_current_issue,
+            "structural_security_risk": structural_security_risk,
+            "main_detected_event_type": main_detected_event_type,
             "news_security_topics": contributing_topics,
             "top_events": country_events[:5]
         })
@@ -587,7 +659,8 @@ def main():
         "source": "balkan-security-map + news-derived signal",
         "method_note": (
             "Politikai-biztonsági réteg. Elsődleges forrás a balkan-security-map publikált JSON eseményrétege. "
-            "Ha nincs konkrét esemény, a rendszer a latest.json domináns narratíváiból számol news-derived biztonsági jelet. "
+            "A domináns aktuális probléma a latest.json témapontszáma, az általános biztonsági súly és az ország-specifikus relevancia alapján készül. "
+            "A strukturális biztonsági kockázat külön mezőben jelenik meg. "
             "A technikai hotspot_cell, rács- és természeti riasztási elemek kiszűrve. "
             "Nem hivatalos kockázati minősítés."
         ),
