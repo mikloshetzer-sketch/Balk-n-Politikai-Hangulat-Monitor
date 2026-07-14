@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14 19:07 UTC",
+  "updated_at": "2026-07-14 19:41 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 19
+    "collected": 15
   },
   "countries": [
     {
@@ -21,33 +21,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 5,
+        "mentions": 11,
+        "negative_hits": 3,
         "positive_hits": 0,
         "trusted_hits": 2,
-        "engagement_total": 44,
-        "raw_engagement_total": 44,
-        "quality_total": 207,
-        "geopolitical_total": 173,
+        "engagement_total": 12,
+        "raw_engagement_total": 12,
+        "quality_total": 177,
+        "geopolitical_total": 146,
         "source_counts": {
           "reddit": 1,
           "mastodon": 8,
-          "x": 5
+          "x": 2
         },
         "category_counts": {
-          "ethnic_tension": 6,
+          "ethnic_tension": 5,
           "corruption_rule_of_law": 2,
           "security": 2,
           "foreign_influence": 1,
-          "eu_integration": 1,
-          "government_crisis": 1,
-          "protest": 1
+          "eu_integration": 1
         },
         "tag_counts": {
           "serbia": 8,
           "bosnia": 1,
-          "Szerbia": 3,
-          "Koszovó": 2
+          "Szerbia": 2
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -151,6 +148,46 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "An EU enlargement candidate minister calling for ethnic cleansing in 2026 is abhorrent. Even more absurd, she cites the “Panda” café murders, despite Vučić himself admitting they w",
+            "text": "An EU enlargement candidate minister calling for ethnic cleansing in 2026 is abhorrent. Even more absurd, she cites the “Panda” café murders, despite Vučić himself admitting they were not committed by the KLA, but were the result of a Serbian intelligence false-flag operation.",
+            "url": "https://x.com/i/web/status/2077112603159970000",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-14T19:26:50.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 17,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 2,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "Vučić u Parizu kao totalni autsajder: Još jedan diplomatski promašaj predsednika Srbije",
             "text": "Bio je u Parizu, razgovarao sa svetskim liderima i isticao da predstavlja jedinu zemlju koja nije ni u Evropskoj uniji ni u NATO, ali na zajedničkoj fotografiji sa skupa povodom obeležavanja Dana Bastilje, nije ni predsednik Srbije Aleksandar Vučić. Vučića nema ni na snimcima na Instagramu francuskog predsednika Emanuela Makrona. &#32; submitted by &#32; /u/",
             "url": "https://www.reddit.com/r/serbia/comments/1uwc8yu/vučić_u_parizu_kao_totalni_autsajder_još_jedan/",
@@ -178,44 +215,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Her public statement deserves condemnation. But let us not forget that Albanians ethnically cleansed ~200,000 Serbs and other non-Albanians from Kosovo post-1999 via violence, orga",
-            "text": "Her public statement deserves condemnation. But let us not forget that Albanians ethnically cleansed ~200,000 Serbs and other non-Albanians from Kosovo post-1999 via violence, organ harvesting, displacement & destruction of Serbian homes and churches.. Ethnic cleansing is evil",
-            "url": "https://x.com/i/web/status/2077106300606181882",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-14T19:01:47.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 3,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -352,32 +351,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 24,
-        "level": "medium",
+        "score": 18,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 3,
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 62,
-        "geopolitical_total": 52,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 51,
+        "geopolitical_total": 42,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
-          "ethnic_tension": 2,
+          "ethnic_tension": 1,
           "security": 1,
           "government_crisis": 1
         },
         "tag_counts": {
           "serbia": 1,
           "kosovo": 1,
-          "Koszovó": 1,
-          "Albánia": 1
+          "Koszovó": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -475,44 +473,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "That's why \"Kosovo is serbia\" is a fascist genocidal slogan because that has always been serbia's goal, the genocide/\"ethnic cleansing\" of the Albanian population of Kosova. An Alb",
-            "text": "That's why \"Kosovo is serbia\" is a fascist genocidal slogan because that has always been serbia's goal, the genocide/\"ethnic cleansing\" of the Albanian population of Kosova. An Albanian-free Kosova",
-            "url": "https://x.com/i/web/status/2077092577673662507",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-07-14T18:07:15.000Z",
-            "matched_countries": [
-              "Koszovó",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Koszovó": 2,
-              "Albánia": 2,
-              "Szerbia": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 6,
-            "raw_engagement": 6,
-            "metrics": {
-              "likes": 6,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -621,8 +581,8 @@
         "negative_hits": 0,
         "positive_hits": 4,
         "trusted_hits": 1,
-        "engagement_total": 25,
-        "raw_engagement_total": 25,
+        "engagement_total": 24,
+        "raw_engagement_total": 24,
         "quality_total": 62,
         "geopolitical_total": 54,
         "source_counts": {
@@ -742,13 +702,13 @@
             "quality_score": 12,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 11,
-            "raw_engagement": 11,
+            "engagement": 10,
+            "raw_engagement": 10,
             "metrics": {
               "likes": 7,
-              "reposts": 2,
-              "replies": 0,
-              "quotes": 2
+              "reposts": 1,
+              "replies": 1,
+              "quotes": 1
             },
             "quality": "x_api_filtered"
           },
@@ -796,33 +756,34 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 23,
-        "negative_hits": 20,
+        "mentions": 22,
+        "negative_hits": 19,
         "positive_hits": 6,
         "trusted_hits": 2,
-        "engagement_total": 17,
-        "raw_engagement_total": 17,
-        "quality_total": 579,
-        "geopolitical_total": 517,
+        "engagement_total": 11,
+        "raw_engagement_total": 11,
+        "quality_total": 561,
+        "geopolitical_total": 500,
         "source_counts": {
           "reddit": 0,
           "mastodon": 17,
-          "x": 6
+          "x": 5
         },
         "category_counts": {
           "corruption_rule_of_law": 8,
-          "protest": 9,
+          "protest": 8,
           "security": 2,
           "government_crisis": 2,
-          "ethnic_tension": 2
+          "eu_integration": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 13,
           "albania": 4,
-          "Szerbia": 3,
-          "Albánia": 3
+          "Szerbia": 4,
+          "Albánia": 1
         },
-        "main_topic": "protest",
+        "main_topic": "corruption_rule_of_law",
         "top_posts": [
           {
             "title": "",
