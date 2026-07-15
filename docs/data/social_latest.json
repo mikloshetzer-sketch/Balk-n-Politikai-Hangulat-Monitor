@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-15 14:04 UTC",
+  "updated_at": "2026-07-15 18:59 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 22
+    "collected": 11
   },
   "countries": [
     {
@@ -21,35 +21,201 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
-        "negative_hits": 1,
+        "mentions": 13,
+        "negative_hits": 4,
         "positive_hits": 2,
-        "trusted_hits": 2,
-        "engagement_total": 27,
-        "raw_engagement_total": 27,
-        "quality_total": 175,
-        "geopolitical_total": 146,
+        "trusted_hits": 4,
+        "engagement_total": 10,
+        "raw_engagement_total": 10,
+        "quality_total": 277,
+        "geopolitical_total": 241,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 6,
+          "mastodon": 7,
           "x": 6
         },
         "category_counts": {
-          "government_crisis": 3,
-          "ethnic_tension": 5,
-          "corruption_rule_of_law": 2,
-          "eu_integration": 1,
-          "security": 1
+          "government_crisis": 6,
+          "security": 3,
+          "ethnic_tension": 2,
+          "corruption_rule_of_law": 1,
+          "eu_integration": 1
         },
         "tag_counts": {
-          "serbia": 4,
+          "serbia": 5,
           "bosnia": 1,
           "montenegro": 1,
           "Szerbia": 5,
-          "Észak-Macedónia": 1
+          "Montenegró": 1
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "",
+            "text": "🇷🇸 # Serbia will send # Ukraine more humanitarian aid but did not sign up to a regional call for continued security support for the country and more pressure on # Russia , President ​Aleksandar Vucic said on Wednesday in Kyiv. https://www. reuters.com/world/europe/serbi a-pledges-aid-ukraine-ducks-call-more-pressure-russia-2026-07-15/",
+            "url": "https://mastodon.social/@rvps2001/116925318903672175",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 15 Jul 2026 18:06:17 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 34,
+            "quality_score": 39,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "https:// t.me/warriorsukrainian/111235 🇷🇸🇲🇩🇺🇦🇪🇺🇷🇴High-ranking officials and leaders of European states are arriving in Kyiv. Among them are the President of Romania, the President of Moldova, the President of Serbia, the President of the European Commission, and other representatives of foreign delegations (VIDEO) # Ukraine # Press # Media # News # Headlines",
+            "url": "https://mastodon.online/@SocraticEthics/116924526188464085",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 15 Jul 2026 14:44:41 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 30,
+            "quality_score": 35,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "🇷🇸 Serbia will send Ukraine more humanitarian aid but did not sign up to a regional call for continued security support for the country and more pressure on Russia, President ​Alek",
+            "text": "🇷🇸 Serbia will send Ukraine more humanitarian aid but did not sign up to a regional call for continued security support for the country and more pressure on Russia, President ​Aleksandar Vucic said on Wednesday in Kyiv.",
+            "url": "https://x.com/i/web/status/2077454839416561959",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-15T18:06:45.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 30,
+            "quality_score": 31,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "https:// youtu.be/OZWhXf6bJoE ⚡️🇺🇦President Zelensky’s Opening Speech At the 5th “Ukraine - Southeast Europe” Summit | In English W/ Ukrainian Subtitles (President of Ukraine Official VIDEO) # Ukraine # Press # Media # News # Romania # Brussels # Croatia # Skovenia # Serbia # Moldova # Greece # Albania # Macedonia # Bulgaria # Headlines # russiaUkraineWar # ",
+            "url": "https://mastodon.online/@SocraticEthics/116925436791108448",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 15 Jul 2026 18:36:16 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Észak-Macedónia",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1,
+              "Észak-Macedónia": 1,
+              "Albánia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 29,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "European Commission President Ursula von der Leyen and leaders from Romania, Moldova, Serbia, and Croatia arrived in Kyiv on July 15 for the \"Ukraine – Southeast Europe\" summit. https:// suspilne.media/1355402-lideri- es-rumunii-moldovi-ta-insi-priihali-v-kiiv-na-samit-ukraina-pivdenno-shidna-evropa/ # Ukraine # Russia # EU # Kyiv # Romania # Moldova # Serbi",
@@ -83,149 +249,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "BREAKING Serbian President Aleksandar Vucic has arrived in Kyiv for the Southeast Europe–Ukraine Summit, attended by European Commission President von der Leyen and leaders from Al",
-            "text": "BREAKING Serbian President Aleksandar Vucic has arrived in Kyiv for the Southeast Europe–Ukraine Summit, attended by European Commission President von der Leyen and leaders from Albania, Moldova, Romania, Croatia, Slovenia, N. Macedonia, Bulgaria, Montenegro, Turkey, and Greece.",
-            "url": "https://x.com/i/web/status/2077334805805506715",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-15T10:09:47.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9,
-              "Montenegró": 1,
-              "Észak-Macedónia": 1,
-              "Albánia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 25,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 5,
-            "raw_engagement": 5,
-            "metrics": {
-              "likes": 4,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "The EU may hope that Minister Snežana Paunović was speaking only for herself when making remarks that have been condemned as echoing ethnic cleansing rhetoric. But Serbian Deputy P",
-            "text": "The EU may hope that Minister Snežana Paunović was speaking only for herself when making remarks that have been condemned as echoing ethnic cleansing rhetoric. But Serbian Deputy Prime Minister and SPS leader Ivica Dačić publicly defended her statement. Hope is not a policy. It’s",
-            "url": "https://x.com/i/web/status/2077393652964339978",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-15T14:03:37.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Online Discussion #Media #Freedom in #Serbia under #Pressure Speakers #IgorBožić , Former News Director of N1, Serbia / 2026 Laureate of the SOG Solidarity Award #DinkoGruhonjić , Journalist / Professor of Journalism, University of Novi Sad, Serbia 👇",
-            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:h266nk2pqqvlvd5au2lfuxbv/post/3mqluso2ndk2k",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Tue, 14 Jul 2026 09:18:39 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 14,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "EU Condemns Serbian Minister for Backing ‘Ethnic Cleansing’ of Kosovo https:// fed.brid.gy/r/https://balkanin sight.com/2026/07/14/eu-condemns-serbian-minister-for-backing-ethnic-cleansing-of-kosovo/btj/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/07/14/eu-condemns-serbian-minister-for-backing-ethnic-cleansing-of-kosovo/btj/",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Tue, 14 Jul 2026 14:44:07 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 13,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -233,28 +256,30 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 6,
+        "score": 16,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
-        "negative_hits": 0,
+        "mentions": 3,
+        "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 20,
-        "geopolitical_total": 14,
+        "quality_total": 30,
+        "geopolitical_total": 25,
         "source_counts": {
-          "reddit": 0,
+          "reddit": 1,
           "mastodon": 2,
           "x": 0
         },
         "category_counts": {
           "eu_integration": 1,
-          "corruption_rule_of_law": 1
+          "corruption_rule_of_law": 1,
+          "protest": 1
         },
         "tag_counts": {
-          "bosnia": 2
+          "bosnia": 2,
+          "serbia": 1
         },
         "main_topic": "eu_integration",
         "top_posts": [
@@ -284,6 +309,35 @@
             "geopolitical_score": 8,
             "quality_score": 11,
             "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Vozač BMW vozio trostruko više od dozvoljenog, pa usmrtio mlade verenike Jovanu i Filipa: Nastavlja se suđenje za nesreću kod Požarevca - Naslovi.net",
+            "text": "Lik je pijan i drogiran vozio 150 i udario ih od pozadi i ubio ih. Dvoje dobrih, pametnih i uzornih mladih ljudi iz Kostolca. I ne mogu da ga osude 2 godine ja ovo sto čitam, ovu odbranu i ovo odugovlacenje ne mogu da svarim da se to dešava. Toliko sam revolitran time sto porodica mora da protestuje ispred suda i ceka pravdu, bogati mogu da rade sta hoce pa ",
+            "url": "https://www.reddit.com/r/serbia/comments/1ux8ags/vozač_bmw_vozio_trostruko_više_od_dozvoljenog_pa/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-07-15T14:59:11+00:00",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 10,
+            "source_reliability": 1,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
@@ -324,12 +378,12 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 26,
+        "score": 29,
         "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 4,
         "negative_hits": 1,
-        "positive_hits": 2,
+        "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
@@ -341,17 +395,17 @@
           "x": 1
         },
         "category_counts": {
-          "ethnic_tension": 1,
+          "ethnic_tension": 2,
           "security": 1,
-          "government_crisis": 2
+          "government_crisis": 1
         },
         "tag_counts": {
           "serbia": 1,
           "kosovo": 1,
           "albania": 1,
-          "Szerbia": 1
+          "Koszovó": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "ethnic_tension",
         "top_posts": [
           {
             "title": "",
@@ -450,26 +504,24 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Prime Minister Rama has doubled down, stating that Serbia bears clear responsibility for the stalemate in the Prishtina-Belgrade dialogue. He argues that the dialogue is failing to",
-            "text": "Prime Minister Rama has doubled down, stating that Serbia bears clear responsibility for the stalemate in the Prishtina-Belgrade dialogue. He argues that the dialogue is failing to progress because Serbia refuses to accept Kosova as an irreversible reality.",
-            "url": "https://x.com/i/web/status/2077391569766818245",
+            "title": "Women's Mustard Embroidered Kurta Pant Dupatta Set | Festive & Ethnic Wear | Latest Designer Kurti 2026",
+            "text": "Women's Mustard Embroidered Kurta Pant Dupatta Set | Festive & Ethnic Wear | Latest Designer Kurti 2026",
+            "url": "https://x.com/i/web/status/2077463922123460660",
             "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-15T13:55:20.000Z",
+            "tag": "Koszovó",
+            "seen_date": "2026-07-15T18:42:51.000Z",
             "matched_countries": [
-              "Szerbia",
               "Koszovó"
             ],
             "country_confidence": {
-              "Szerbia": 5,
-              "Koszovó": 5
+              "Koszovó": 4
             },
-            "event_category": "government_crisis",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "ethnic_tension",
                 "hits": 1,
-                "weight": 9
+                "weight": 10
               }
             ],
             "geopolitical_score": 10,
@@ -586,84 +638,46 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 18,
+        "score": 10,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 0,
-        "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 69,
-        "geopolitical_total": 59,
+        "mentions": 1,
+        "negative_hits": 1,
+        "positive_hits": 0,
+        "trusted_hits": 0,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 29,
+        "geopolitical_total": 26,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 2
+          "x": 0
         },
         "category_counts": {
-          "government_crisis": 2,
-          "security": 1
+          "government_crisis": 1
         },
         "tag_counts": {
-          "balkans": 1,
-          "Észak-Macedónia": 2
+          "serbia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "* Any camps under USA over NATO and allies,e.g. in Skopje&Asia Minor, & under RF, as also, * other weaponry&equipment, of the two Superpowers there& * elsewhere,of secondary statio",
-            "text": "* Any camps under USA over NATO and allies,e.g. in Skopje&Asia Minor, & under RF, as also, * other weaponry&equipment, of the two Superpowers there& * elsewhere,of secondary stations&pools of such materials, can belong to feasible Common Armed Forces / CAF Network under ARHA.",
-            "url": "https://x.com/i/web/status/2077334449214083221",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-15T10:08:22.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 30,
-            "quality_score": 34,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
-            "text": "EU Presses North Macedonia to Alter Constitution to Aid Membership Bid &gt; “We want the same for North Macedonia, but the adoption of the agreed constitutional amendments remains the necessary next step for formally launching [the next phase],” Kos said. # Balkans # EU # NorthMacedonia https:// balkaninsight.com/2026/07/08/e u-presses-north-macedonia-to-alt",
-            "url": "https://kafeneio.social/@foufoutos/116888836541404236",
+            "text": "https:// youtu.be/OZWhXf6bJoE ⚡️🇺🇦President Zelensky’s Opening Speech At the 5th “Ukraine - Southeast Europe” Summit | In English W/ Ukrainian Subtitles (President of Ukraine Official VIDEO) # Ukraine # Press # Media # News # Romania # Brussels # Croatia # Skovenia # Serbia # Moldova # Greece # Albania # Macedonia # Bulgaria # Headlines # russiaUkraineWar # ",
+            "url": "https://mastodon.online/@SocraticEthics/116925436791108448",
             "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Thu, 09 Jul 2026 07:28:20 +0000",
+            "tag": "serbia",
+            "seen_date": "Wed, 15 Jul 2026 18:36:16 +0000",
             "matched_countries": [
-              "Észak-Macedónia"
+              "Szerbia",
+              "Észak-Macedónia",
+              "Albánia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5
+              "Szerbia": 1,
+              "Észak-Macedónia": 1,
+              "Albánia": 1
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -671,6 +685,11 @@
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
               },
               {
                 "category": "eu_integration",
@@ -678,48 +697,13 @@
                 "weight": 6
               }
             ],
-            "geopolitical_score": 20,
-            "quality_score": 25,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "International Balkan University welcomed representatives of the Institute of Internal Auditors of North Macedonia (IIA North Macedonia) for the official signing of a Memorandum of ",
-            "text": "International Balkan University welcomed representatives of the Institute of Internal Auditors of North Macedonia (IIA North Macedonia) for the official signing of a Memorandum of Understanding (MoU) between our Rector, Prof. Dr. Lütfi Sunar, and the President of the Board of",
-            "url": "https://x.com/i/web/status/2077310301448372680",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-15T08:32:25.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
+            "geopolitical_score": 26,
+            "quality_score": 29,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -730,31 +714,34 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 20,
-        "negative_hits": 17,
-        "positive_hits": 5,
-        "trusted_hits": 0,
-        "engagement_total": 20,
-        "raw_engagement_total": 20,
-        "quality_total": 506,
-        "geopolitical_total": 450,
+        "mentions": 25,
+        "negative_hits": 20,
+        "positive_hits": 6,
+        "trusted_hits": 2,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 642,
+        "geopolitical_total": 567,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 18,
+          "mastodon": 23,
           "x": 2
         },
         "category_counts": {
-          "corruption_rule_of_law": 7,
-          "protest": 8,
-          "security": 2,
-          "government_crisis": 1,
+          "protest": 10,
+          "corruption_rule_of_law": 6,
+          "security": 3,
+          "government_crisis": 3,
+          "eu_integration": 1,
           "foreign_influence": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
-          "balkans": 14,
-          "albania": 4,
-          "Szerbia": 2
+          "balkans": 15,
+          "serbia": 1,
+          "albania": 7,
+          "Koszovó": 1,
+          "Albánia": 1
         },
         "main_topic": "protest",
         "top_posts": [
@@ -843,6 +830,40 @@
           },
           {
             "title": "",
+            "text": "Day 46 of anti-corruption protests in Tirana, Albania https://www. youtube.com/watch?v=S7m2IKaASO0 # Albania # USpol # Corruption # Balkans # Europe # FlamingoRevolution # Environment",
+            "url": "https://mas.to/@meganL/116925172686959884",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Wed, 15 Jul 2026 17:29:06 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 35,
+            "quality_score": 38,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "Day 44 of anti-corruption protests in Tirana, Albania Live cast as of time of my posting it. https://www. youtube.com/watch?v=3DMGX-TU5P8 # Albania # USpol # Corruption # Balkans # Europe # FlamingoRevolution # Environment",
             "url": "https://mas.to/@meganL/116913815313906318",
             "source": "mastodon",
@@ -882,40 +903,6 @@
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Sun, 12 Jul 2026 18:14:55 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 35,
-            "quality_score": 38,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 42 of anti-corruption protests in Tirana, Albania Dita e 42-të e protestës qytetare/ Kërkojnë dorëheqjen e Ramës https://www. youtube.com/watch?v=6jdjSVV0YWo # Albania # USpol # Corruption # Balkans # Europe # FlamingoRevolution # Environment",
-            "url": "https://mas.to/@meganL/116902449001926191",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sat, 11 Jul 2026 17:10:10 +0000",
             "matched_countries": [
               "Albánia"
             ],
