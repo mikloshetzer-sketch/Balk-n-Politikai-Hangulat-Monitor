@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14 19:41 UTC",
+  "updated_at": "2026-07-15 01:31 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 15
+    "collected": 21
   },
   "countries": [
     {
@@ -21,30 +21,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 3,
+        "mentions": 16,
+        "negative_hits": 5,
         "positive_hits": 0,
         "trusted_hits": 2,
-        "engagement_total": 12,
-        "raw_engagement_total": 12,
-        "quality_total": 177,
-        "geopolitical_total": 146,
+        "engagement_total": 64,
+        "raw_engagement_total": 64,
+        "quality_total": 247,
+        "geopolitical_total": 211,
         "source_counts": {
           "reddit": 1,
           "mastodon": 8,
-          "x": 2
+          "x": 7
         },
         "category_counts": {
-          "ethnic_tension": 5,
+          "ethnic_tension": 9,
           "corruption_rule_of_law": 2,
           "security": 2,
           "foreign_influence": 1,
-          "eu_integration": 1
+          "eu_integration": 1,
+          "government_crisis": 1
         },
         "tag_counts": {
           "serbia": 8,
           "bosnia": 1,
-          "Szerbia": 2
+          "Szerbia": 5,
+          "Észak-Macedónia": 2
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -119,6 +121,88 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "The statement by Serbian Government Minister Snežana Paunović that “if she were Slobodan Milošević, she would have ethnically cleansed Kosovo” is unacceptable, threatening, and a g",
+            "text": "The statement by Serbian Government Minister Snežana Paunović that “if she were Slobodan Milošević, she would have ethnically cleansed Kosovo” is unacceptable, threatening, and a grave insult to the thousands of victims of the war in Kosovo. Ethnic cleansing is a crime against",
+            "url": "https://x.com/i/web/status/2077159961314926896",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-07-14T22:35:01.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 22,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 34,
+            "raw_engagement": 34,
+            "metrics": {
+              "likes": 27,
+              "reposts": 3,
+              "replies": 3,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "This scandalous comment from a Serbian Government Minister is a slap in the face to the victims of Serbian ethnic cleansing in Kosovo. Such comments are unacceptable and demonstrat",
+            "text": "This scandalous comment from a Serbian Government Minister is a slap in the face to the victims of Serbian ethnic cleansing in Kosovo. Such comments are unacceptable and demonstrate a serious lack of interest from Serbia in achieving tolerance, accountability and lasting peace.",
+            "url": "https://x.com/i/web/status/2077180199439864291",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-14T23:55:26.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 22,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Countries Which Have At Some Point Claimed To Be Rome’s Successor [mapping / Third Rome] -- https:// brilliantmaps.com/third-rome/ &lt;-- shared technical / history article -- https:// en.wikipedia.org/wiki/Successi on_of_the_Roman_Empire &lt;-- shared Third Rome wiki page -- “The [first] map… shows which countries have claimed to be the successor to the Rom",
             "url": "https://techhub.social/@GregCocks/116916137746109939",
@@ -143,75 +227,6 @@
             "quality_score": 19,
             "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "An EU enlargement candidate minister calling for ethnic cleansing in 2026 is abhorrent. Even more absurd, she cites the “Panda” café murders, despite Vučić himself admitting they w",
-            "text": "An EU enlargement candidate minister calling for ethnic cleansing in 2026 is abhorrent. Even more absurd, she cites the “Panda” café murders, despite Vučić himself admitting they were not committed by the KLA, but were the result of a Serbian intelligence false-flag operation.",
-            "url": "https://x.com/i/web/status/2077112603159970000",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-14T19:26:50.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 6
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 16,
-            "quality_score": 17,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 2,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Vučić u Parizu kao totalni autsajder: Još jedan diplomatski promašaj predsednika Srbije",
-            "text": "Bio je u Parizu, razgovarao sa svetskim liderima i isticao da predstavlja jedinu zemlju koja nije ni u Evropskoj uniji ni u NATO, ali na zajedničkoj fotografiji sa skupa povodom obeležavanja Dana Bastilje, nije ni predsednik Srbije Aleksandar Vučić. Vučića nema ni na snimcima na Instagramu francuskog predsednika Emanuela Makrona. &#32; submitted by &#32; /u/",
-            "url": "https://www.reddit.com/r/serbia/comments/1uwc8yu/vučić_u_parizu_kao_totalni_autsajder_još_jedan/",
-            "source": "reddit",
-            "tag": "serbia",
-            "seen_date": "2026-07-14T15:40:11+00:00",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 16,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -351,69 +366,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 18,
+        "score": 13,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 2,
         "negative_hits": 0,
-        "positive_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 51,
-        "geopolitical_total": 42,
+        "quality_total": 31,
+        "geopolitical_total": 23,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "ethnic_tension": 1,
-          "security": 1,
-          "government_crisis": 1
+          "security": 1
         },
         "tag_counts": {
           "serbia": 1,
-          "kosovo": 1,
-          "Koszovó": 1
+          "kosovo": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
-          {
-            "title": "Kosovo’s Kurti is preaching compromise in the search for a deal on the country’s next president, but his task is complicated by the turmoil inside the opposition LDK. Read more:",
-            "text": "Kosovo’s Kurti is preaching compromise in the search for a deal on the country’s next president, but his task is complicated by the turmoil inside the opposition LDK. Read more:",
-            "url": "https://x.com/i/web/status/2077105095691616643",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-07-14T18:57:00.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Agenzia Nova: Kosovo: Zejnullah Gashi nominato Procuratore generale dello Stato 13 lug 10:40 - (Agenzia Nova) - Il Consiglio della Procura del Kosovo (Kpk) ha nominato Zejnullah Gashi nuovo Procuratore generale dello Stato... (Alt) Kosovo: Zejnullah Gashi appointed State Attorney General July 13 10:40 – (Agenzia Nova) – The Council of the Prosecutor’s Office",
@@ -480,28 +458,30 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 13,
+        "score": 14,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 3,
         "negative_hits": 1,
-        "positive_hits": 1,
+        "positive_hits": 2,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 43,
-        "geopolitical_total": 37,
+        "quality_total": 63,
+        "geopolitical_total": 56,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "security": 1,
-          "foreign_influence": 1
+          "foreign_influence": 1,
+          "eu_integration": 1
         },
         "tag_counts": {
-          "montenegro": 2
+          "montenegro": 2,
+          "Montenegró": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -540,6 +520,41 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Montenegro’s EU bid is moving fast: Brussels says Podgorica has now closed 16 of 33 accession chapters, with more reforms needed before membership talks can be wrapped up. Monteneg",
+            "text": "Montenegro’s EU bid is moving fast: Brussels says Podgorica has now closed 16 of 33 accession chapters, with more reforms needed before membership talks can be wrapped up. Montenegro EUenlargement EUaccession Brussels WesternBalkans",
+            "url": "https://x.com/i/web/status/2077175609248157971",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-07-14T23:37:11.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 5
+            },
+            "event_category": "eu_integration",
+            "event_categories": [
+              {
+                "category": "eu_integration",
+                "hits": 3,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Agenzia Nova: Montenegro-Usa: Rubio, impegnati a rafforzare partnership tra i due Paesi 13 lug 15:12 - (Agenzia Nova) - Gli Stati Uniti restano impegnati a rafforzare la partnership e ad approfondire le relazioni con il Montenegro.... (Seb) Montenegro-USA: Rubio, working to strengthen ties between the two countries July 13, 3:12 PM – (Agenzia Nova) – The Uni",
             "url": "https://mastodon.ozioso.online/@ItalianNews/116912948569804185",
@@ -574,29 +589,31 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 10,
+        "score": 15,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 0,
-        "positive_hits": 4,
+        "mentions": 3,
+        "negative_hits": 1,
+        "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 24,
-        "raw_engagement_total": 24,
-        "quality_total": 62,
-        "geopolitical_total": 54,
+        "engagement_total": 23,
+        "raw_engagement_total": 23,
+        "quality_total": 51,
+        "geopolitical_total": 44,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
-          "government_crisis": 2,
-          "eu_integration": 2
+          "government_crisis": 1,
+          "foreign_influence": 1,
+          "eu_integration": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "Észak-Macedónia": 3
+          "Montenegró": 1,
+          "Észak-Macedónia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -659,90 +676,50 @@
             "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 11,
-            "raw_engagement": 11,
+            "engagement": 22,
+            "raw_engagement": 22,
             "metrics": {
-              "likes": 10,
-              "reposts": 1,
+              "likes": 20,
+              "reposts": 2,
               "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "Director of the Directorate-General for Enlargement of the EC Gert Jan Koopman stated the expected implementation of the reforms under the Growth Plan for the WB is around 80% for ",
-            "text": "Director of the Directorate-General for Enlargement of the EC Gert Jan Koopman stated the expected implementation of the reforms under the Growth Plan for the WB is around 80% for Albania and Montenegro, 50% for North Macedonia and 35% for Serbia.",
-            "url": "https://x.com/i/web/status/2077035487466750074",
+            "title": "ALIGNMENT OF THIRD COUNTRIES WITH EU SANCTIONS RE UKRAINE On 14 July, the EU advised that Albania, Bosnia and Herzegovina, Iceland, Liechtenstein, Moldova, Montenegro, North Macedo",
+            "text": "ALIGNMENT OF THIRD COUNTRIES WITH EU SANCTIONS RE UKRAINE On 14 July, the EU advised that Albania, Bosnia and Herzegovina, Iceland, Liechtenstein, Moldova, Montenegro, North Macedonia, Norway and Ukraine had aligned with the latest Council Decision",
+            "url": "https://x.com/i/web/status/2077143745158365401",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-14T14:20:24.000Z",
+            "tag": "Montenegró",
+            "seen_date": "2026-07-14T21:30:34.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
               "Észak-Macedónia": 5,
-              "Szerbia": 1,
+              "Bosznia-Hercegovina": 2,
               "Montenegró": 1,
               "Albánia": 1
             },
-            "event_category": "eu_integration",
+            "event_category": "foreign_influence",
             "event_categories": [
               {
-                "category": "eu_integration",
+                "category": "foreign_influence",
                 "hits": 1,
-                "weight": 6
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
+                "weight": 8
               }
             ],
             "geopolitical_score": 11,
             "quality_score": 12,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 10,
-            "raw_engagement": 10,
-            "metrics": {
-              "likes": 7,
-              "reposts": 1,
-              "replies": 1,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Ambassador Matthew Lawson met today with Parliament Speaker to reaffirm the strong partnership between the UK and North Macedonia. 🇬🇧🇲🇰 Through our programme support the UK has wor",
-            "text": "Ambassador Matthew Lawson met today with Parliament Speaker to reaffirm the strong partnership between the UK and North Macedonia. 🇬🇧🇲🇰 Through our programme support the UK has worked with the for years to strengthen parliamentary democracy. Together,",
-            "url": "https://x.com/i/web/status/2077052845405122627",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-14T15:29:22.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
               "likes": 1,
-              "reposts": 1,
-              "replies": 1,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -756,32 +733,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 22,
-        "negative_hits": 19,
-        "positive_hits": 6,
-        "trusted_hits": 2,
-        "engagement_total": 11,
-        "raw_engagement_total": 11,
-        "quality_total": 561,
-        "geopolitical_total": 500,
+        "mentions": 21,
+        "negative_hits": 18,
+        "positive_hits": 4,
+        "trusted_hits": 1,
+        "engagement_total": 241,
+        "raw_engagement_total": 426,
+        "quality_total": 520,
+        "geopolitical_total": 464,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 17,
+          "mastodon": 16,
           "x": 5
         },
         "category_counts": {
           "corruption_rule_of_law": 8,
-          "protest": 8,
+          "protest": 7,
           "security": 2,
-          "government_crisis": 2,
-          "eu_integration": 1,
-          "ethnic_tension": 1
+          "government_crisis": 1,
+          "ethnic_tension": 2,
+          "eu_integration": 1
         },
         "tag_counts": {
           "balkans": 13,
-          "albania": 4,
-          "Szerbia": 4,
-          "Albánia": 1
+          "albania": 3,
+          "Szerbia": 2,
+          "Montenegró": 1,
+          "Albánia": 2
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
