@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-16 03:29 UTC",
+  "updated_at": "2026-07-16 08:00 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 7
+    "collected": 12
   },
   "countries": [
     {
@@ -21,34 +21,37 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 5,
-        "positive_hits": 3,
-        "trusted_hits": 5,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 239,
-        "geopolitical_total": 203,
+        "mentions": 16,
+        "negative_hits": 7,
+        "positive_hits": 5,
+        "trusted_hits": 4,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 347,
+        "geopolitical_total": 305,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 8,
-          "x": 1
+          "mastodon": 9,
+          "x": 7
         },
         "category_counts": {
-          "security": 3,
-          "government_crisis": 3,
-          "ethnic_tension": 1,
+          "government_crisis": 6,
+          "security": 5,
+          "ethnic_tension": 3,
           "corruption_rule_of_law": 1,
           "eu_integration": 1
         },
         "tag_counts": {
-          "serbia": 5,
+          "serbia": 6,
           "kosovo": 1,
           "bosnia": 1,
           "montenegro": 1,
-          "Szerbia": 1
+          "Szerbia": 2,
+          "Koszovó": 2,
+          "Montenegró": 1,
+          "Albánia": 2
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -127,51 +130,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "🚨 🇷🇸🇺🇦🇷🇺 Serbia will send Ukraine more humanitarian aid but did not sign up to a regional call for continued security support for the country and more pressure on Russia, President",
-            "text": "🚨 🇷🇸🇺🇦🇷🇺 Serbia will send Ukraine more humanitarian aid but did not sign up to a regional call for continued security support for the country and more pressure on Russia, President ​Aleksandar Vucic said. — Reuters",
-            "url": "https://x.com/i/web/status/2077529857995534352",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-15T23:04:51.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 34,
-            "quality_score": 38,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -254,6 +212,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Five arrests for smuggling migrants across the Bulgarian-Serbian green border - Serbian authorities raided five locations: a High Value Target and two police officers among the arr",
+            "text": "Five arrests for smuggling migrants across the Bulgarian-Serbian green border - Serbian authorities raided five locations: a High Value Target and two police officers among the arrestees | Europol",
+            "url": "https://x.com/i/web/status/2077661157297410444",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-16T07:46:35.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "migration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 28,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -383,33 +381,34 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 33,
+        "score": 39,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 5,
         "negative_hits": 2,
-        "positive_hits": 1,
-        "trusted_hits": 1,
+        "positive_hits": 2,
+        "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 92,
-        "geopolitical_total": 80,
+        "quality_total": 123,
+        "geopolitical_total": 107,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "ethnic_tension": 1,
-          "security": 1,
+          "security": 2,
           "government_crisis": 2
         },
         "tag_counts": {
           "kosovo": 2,
           "albania": 1,
-          "Koszovó": 1
+          "Koszovó": 1,
+          "Albánia": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -448,11 +447,51 @@
             "quality": "rss_filtered"
           },
           {
+            "title": ". Commander Maj. Gen. Ozkan Ulutaş met with OSCE Secretary General Feridun H. Sinirlioğlu in Pristina to discuss the security situation in 🇽🇰 , regional developments, and continued",
+            "text": ". Commander Maj. Gen. Ozkan Ulutaş met with OSCE Secretary General Feridun H. Sinirlioğlu in Pristina to discuss the security situation in 🇽🇰 , regional developments, and continued cooperation. KFOR reaffirmed its commitment to a safe and secure environment for all.",
+            "url": "https://x.com/i/web/status/2077663259172180405",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-07-16T07:54:56.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 31,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "Prime Minister Albin Kurti visited Tetovo while there was a rally of pro greater Albania march. With flags of a Greater Albania. Funny your side is demanding a condemnation of such",
             "text": "Prime Minister Albin Kurti visited Tetovo while there was a rally of pro greater Albania march. With flags of a Greater Albania. Funny your side is demanding a condemnation of such rhetoric yet normalizes nationalism of another. While expecting that the whole west accepts it.",
             "url": "https://x.com/i/web/status/2077584131743953194",
             "source": "x",
-            "tag": "Koszovó",
+            "tag": "Albánia",
             "seen_date": "2026-07-16T02:40:31.000Z",
             "matched_countries": [
               "Koszovó"
@@ -648,28 +687,29 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 17,
-        "level": "low",
+        "score": 23,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 3,
         "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 58,
-        "geopolitical_total": 52,
+        "quality_total": 68,
+        "geopolitical_total": 61,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 2
+          "government_crisis": 3
         },
         "tag_counts": {
           "serbia": 1,
-          "albania": 1
+          "albania": 1,
+          "Észak-Macedónia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -756,6 +796,41 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Concluding a successful EuropeanPeaceFacility project with the Army of North Macedonia 🇲🇰, ITF joined the presentation of advanced medical equipment, provided by the EU through ITF",
+            "text": "Concluding a successful EuropeanPeaceFacility project with the Army of North Macedonia 🇲🇰, ITF joined the presentation of advanced medical equipment, provided by the EU through ITF, to H.E. Dr. Hristijan Mickoski, Prime Minister of North Macedonia, H.E. Michalis Rokas, EU",
+            "url": "https://x.com/i/web/status/2077661403255640118",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-07-16T07:47:34.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -766,34 +841,34 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 28,
-        "negative_hits": 19,
-        "positive_hits": 6,
-        "trusted_hits": 3,
-        "engagement_total": 11,
-        "raw_engagement_total": 11,
-        "quality_total": 677,
-        "geopolitical_total": 594,
+        "mentions": 29,
+        "negative_hits": 21,
+        "positive_hits": 7,
+        "trusted_hits": 2,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 699,
+        "geopolitical_total": 618,
         "source_counts": {
           "reddit": 0,
           "mastodon": 24,
-          "x": 4
+          "x": 5
         },
         "category_counts": {
           "protest": 11,
           "corruption_rule_of_law": 6,
-          "government_crisis": 4,
-          "security": 2,
-          "eu_integration": 2,
+          "government_crisis": 5,
+          "security": 4,
+          "eu_integration": 1,
           "foreign_influence": 1,
-          "ethnic_tension": 2
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 14,
           "serbia": 1,
           "albania": 9,
-          "Koszovó": 2,
-          "Albánia": 2
+          "Koszovó": 1,
+          "Albánia": 4
         },
         "main_topic": "protest",
         "top_posts": [
