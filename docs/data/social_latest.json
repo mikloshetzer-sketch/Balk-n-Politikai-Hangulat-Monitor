@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17 08:25 UTC",
+  "updated_at": "2026-07-17 13:11 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 16
+    "collected": 23
   },
   "countries": [
     {
@@ -21,48 +21,50 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 5,
-        "positive_hits": 1,
+        "mentions": 13,
+        "negative_hits": 3,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 176,
-        "geopolitical_total": 152,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 207,
+        "geopolitical_total": 180,
         "source_counts": {
-          "reddit": 0,
-          "mastodon": 7,
-          "x": 3
+          "reddit": 1,
+          "mastodon": 8,
+          "x": 4
         },
         "category_counts": {
-          "security": 1,
-          "ethnic_tension": 4,
-          "government_crisis": 3,
+          "government_crisis": 4,
+          "security": 2,
+          "ethnic_tension": 3,
           "corruption_rule_of_law": 1,
-          "eu_integration": 1
+          "eu_integration": 1,
+          "protest": 1,
+          "foreign_influence": 1
         },
         "tag_counts": {
-          "serbia": 3,
+          "serbia": 5,
           "kosovo": 1,
           "bosnia": 1,
           "montenegro": 1,
           "albania": 1,
-          "Koszovó": 3
+          "Szerbia": 4
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "Inviting Vučić was a strategic mistake. Ukraine deserves unwavering support from every country that claims to stand with freedom. If a leader attends the Ukraine Summit but refuses",
-            "text": "Inviting Vučić was a strategic mistake. Ukraine deserves unwavering support from every country that claims to stand with freedom. If a leader attends the Ukraine Summit but refuses to sign the joint declaration and rejects sanctions against Russia, the message of unity is",
-            "url": "https://x.com/i/web/status/2078015531429359949",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-07-17T07:14:45.000Z",
+            "title": "",
+            "text": "The scariest part, per the think tank's own Srđan Cvijić, isn't the stolen documents — it's that \"Moscow and the Vučić regime often chase the same enemies.\" Serbia's been gripped by protests since the Novi Sad canopy collapse killed 16 people in Nov. 2024. With elections looming, Cvijić expects escalation — Vučić, unlike Orbán, isn't expected to concede if h",
+            "url": "https://mastodon.social/@AutokratDaily/116934845396385331",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 17 Jul 2026 10:28:59 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 4
+              "Szerbia": 5
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -72,24 +74,18 @@
                 "weight": 9
               },
               {
-                "category": "foreign_influence",
+                "category": "protest",
                 "hits": 2,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
+            "geopolitical_score": 28,
+            "quality_score": 31,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 5,
-            "raw_engagement": 5,
-            "metrics": {
-              "likes": 3,
-              "reposts": 1,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -170,11 +166,11 @@
           },
           {
             "title": "",
-            "text": "How do I explain that Vučić's MP was in tent with criminals, in a camp with criminals, in front of the National Assembly, on a hunger strike, opposing a mother which was also on a hunger strike seeking justice because she lost a son in Novi Sad canopy collapse? bsky.app/profile/256b... #Serbia RE: https://bsky.app/profile/did:plc:sjx3hptnopiz7mtzaexuhgpr/pos",
-            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:sjx3hptnopiz7mtzaexuhgpr/post/3mqqmbbllvk23",
+            "text": "A Russian espionage operation spent nearly a year inside a Belgrade think tank's systems before being caught — entry gained by impersonating the husband of exiled Belarusian opposition leader Svetlana Tikhanovskaya on Signal. Once in: full server access, then a month of surveillance, 28,000+ individual email accesses. Two coordinated Russian intelligence gro",
+            "url": "https://mastodon.social/@AutokratDaily/116934843153589037",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Thu, 16 Jul 2026 06:29:04 +0000",
+            "seen_date": "Fri, 17 Jul 2026 10:28:25 +0000",
             "matched_countries": [
               "Szerbia"
             ],
@@ -189,13 +185,13 @@
                 "weight": 9
               },
               {
-                "category": "protest",
+                "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 20,
-            "quality_score": 23,
+            "geopolitical_score": 17,
+            "quality_score": 20,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -203,17 +199,19 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Criminal Complaint to Be Filed Against Serbian Minister Over Ethnic Cleansing Remarks, International Arrest Warrant Requested Kosovo Serbia SnezhanaPaunovic SpecialProsecution Inte",
-            "text": "Criminal Complaint to Be Filed Against Serbian Minister Over Ethnic Cleansing Remarks, International Arrest Warrant Requested Kosovo Serbia SnezhanaPaunovic SpecialProsecution Interpol GentGjini",
-            "url": "https://x.com/i/web/status/2078012957535928799",
+            "title": "Such remarks of candidate country ministers cannot be ignored: On 11 July Serbian Minister Paunovic said in a televised interview that, had she been in Milosevic’s position in 1998",
+            "text": "Such remarks of candidate country ministers cannot be ignored: On 11 July Serbian Minister Paunovic said in a televised interview that, had she been in Milosevic’s position in 1998, she “would have ethnically cleansed Kosova of Albanians”. I expect her to be released from office!",
+            "url": "https://x.com/i/web/status/2078101696874508562",
             "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-07-17T07:04:31.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-17T12:57:08.000Z",
             "matched_countries": [
-              "Szerbia"
+              "Szerbia",
+              "Albánia"
             ],
             "country_confidence": {
               "Szerbia": 2,
+              "Albánia": 2,
               "Koszovó": 1
             },
             "event_category": "ethnic_tension",
@@ -222,10 +220,15 @@
                 "category": "ethnic_tension",
                 "hits": 1,
                 "weight": 10
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
+            "geopolitical_score": 16,
+            "quality_score": 17,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -244,31 +247,61 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 6,
+        "score": 13,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 3,
         "negative_hits": 0,
         "positive_hits": 0,
-        "trusted_hits": 0,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 20,
-        "geopolitical_total": 14,
+        "quality_total": 38,
+        "geopolitical_total": 27,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
+          "mastodon": 3,
           "x": 0
         },
         "category_counts": {
+          "security": 1,
           "eu_integration": 1,
           "corruption_rule_of_law": 1
         },
         "tag_counts": {
-          "bosnia": 2
+          "bosnia": 3
         },
-        "main_topic": "eu_integration",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Agenzia Nova: Bosnia: Crnadak (Pdp), presto nomina nuovo Alto rappresentante, nome non e' tra candidati finora noti 17 lug 11:01 - (Agenzia Nova) - Presto verra' nominato un nuovo Alto rappresentante in Bosnia Erzegovina e il suo nome non figura tra quelli... (Seb) Bosnia: Črnaдак (PDP), soon new High Representative will be appointed, name is not among the k",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/116934536001765976",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Fri, 17 Jul 2026 09:10:18 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 18,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "From 2016. \"Supreme Court rules against exposing Israel’s role in Bosnian genocide Citing potential damage to Israel’s foreign relations, the Supreme Court rejects a petition calling to reveal details of the government’s arms exports to the Serbian army during the Bosnian genocide.\" https://www. 972mag.com/israels-involvement -in-bosnian-genocide-to-remain-u",
@@ -335,30 +368,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 24,
+        "score": 29,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 5,
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 57,
-        "geopolitical_total": 43,
+        "quality_total": 73,
+        "geopolitical_total": 58,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "ethnic_tension": 2,
-          "government_crisis": 1,
+          "government_crisis": 2,
           "security": 1
         },
         "tag_counts": {
           "serbia": 1,
-          "kosovo": 3
+          "kosovo": 3,
+          "Koszovó": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -390,6 +424,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Two weeks after the start of the Irish Presidency of the Council of the European Union, acting Prime Minister Albin Kurti held a meeting with Ragnar Almqvist, Ireland’s non-residen",
+            "text": "Two weeks after the start of the Irish Presidency of the Council of the European Union, acting Prime Minister Albin Kurti held a meeting with Ragnar Almqvist, Ireland’s non-resident ambassador to Kosovo.",
+            "url": "https://x.com/i/web/status/2078069720457069006",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-07-17T10:50:04.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 15,
+            "quality_score": 16,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -616,28 +690,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 60,
+        "score": 56,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
+        "mentions": 9,
         "negative_hits": 1,
-        "positive_hits": 2,
-        "trusted_hits": 0,
-        "engagement_total": 19,
-        "raw_engagement_total": 19,
-        "quality_total": 150,
-        "geopolitical_total": 135,
+        "positive_hits": 1,
+        "trusted_hits": 1,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
+        "quality_total": 141,
+        "geopolitical_total": 125,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 9
+          "x": 7
         },
         "category_counts": {
-          "government_crisis": 11
+          "government_crisis": 8,
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "albania": 2,
-          "Észak-Macedónia": 9
+          "Szerbia": 2,
+          "Észak-Macedónia": 5
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -726,17 +802,20 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "President Droupadi Murmu will undertake State Visits to Moldova, North Macedonia and Romania from July 19–25. The tour aims to deepen diplomatic, economic and strategic ties, boost",
-            "text": "President Droupadi Murmu will undertake State Visits to Moldova, North Macedonia and Romania from July 19–25. The tour aims to deepen diplomatic, economic and strategic ties, boost business cooperation and strengthen India's engagement with Eastern Europe. Strategy Geopolitics",
-            "url": "https://x.com/i/web/status/2077995460493754405",
+            "title": "⭐️ EU enlargement now moves at different speeds: Montenegro leads, Albania advances, Serbia remains behind, while North Macedonia depends on constitutional reform. Available in EN🇬",
+            "text": "⭐️ EU enlargement now moves at different speeds: Montenegro leads, Albania advances, Serbia remains behind, while North Macedonia depends on constitutional reform. Available in EN🇬🇧 SR🇷🇸 HR🇭🇷 BS🇧🇦 ME🇲🇪 SQ🇦🇱 UA🇺🇦",
+            "url": "https://x.com/i/web/status/2078093306249040024",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-17T05:54:59.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-17T12:23:47.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5
+              "Észak-Macedónia": 5,
+              "Szerbia": 1,
+              "Montenegró": 1,
+              "Albánia": 1
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -744,45 +823,15 @@
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 15,
-            "raw_engagement": 15,
-            "metrics": {
-              "likes": 8,
-              "reposts": 5,
-              "replies": 2,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🇨🇿🤝🇲🇰 Ambassador Jaroslav Ludva paid a farewell visit to Her Excellency Dr. Gordana Siljanovska-Davkova, President of the Republic of North Macedonia. The meeting reaffirmed the st",
-            "text": "🇨🇿🤝🇲🇰 Ambassador Jaroslav Ludva paid a farewell visit to Her Excellency Dr. Gordana Siljanovska-Davkova, President of the Republic of North Macedonia. The meeting reaffirmed the strong friendship and excellent cooperation between the Czechia and North Macedonia.",
-            "url": "https://x.com/i/web/status/2078025120879173731",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-17T07:52:51.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
+              },
               {
-                "category": "government_crisis",
+                "category": "eu_integration",
                 "hits": 1,
-                "weight": 9
+                "weight": 6
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
+            "geopolitical_score": 16,
+            "quality_score": 17,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -796,12 +845,50 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Indian President Murmu to pay a state visit to Moldova, North Macedonia & Romania The State Visit by President reflects the importance India attaches to strengthening its bilateral",
-            "text": "Indian President Murmu to pay a state visit to Moldova, North Macedonia & Romania The State Visit by President reflects the importance India attaches to strengthening its bilateral ties alongwith India’s engagement with Eastern European region — MEA",
-            "url": "https://x.com/i/web/status/2077995976137339351",
+            "title": "EU Commission outlines improvements and shortcomings in rule of law in Albania, Montenegro, North Macedonia, and Serbia",
+            "text": "EU Commission outlines improvements and shortcomings in rule of law in Albania, Montenegro, North Macedonia, and Serbia",
+            "url": "https://x.com/i/web/status/2078101679321276492",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-17T12:57:04.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Szerbia": 1,
+              "Montenegró": 1,
+              "Albánia": 1
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 16,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇮🇳🌍 Diplomatic Milestone! President of India Droupadi Murmu will undertake state visits to Moldova, North Macedonia, and Romania from July 19–25, according to the Ministry of Exter",
+            "text": "🇮🇳🌍 Diplomatic Milestone! President of India Droupadi Murmu will undertake state visits to Moldova, North Macedonia, and Romania from July 19–25, according to the Ministry of External Affairs. 🤝 Notably, this will be the first-ever bilateral visit by an Indian President to",
+            "url": "https://x.com/i/web/status/2078101622635528318",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-17T05:57:02.000Z",
+            "seen_date": "2026-07-17T12:56:50.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -820,11 +907,11 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 2,
-              "reposts": 2,
+              "likes": 1,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -839,33 +926,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 25,
-        "negative_hits": 19,
+        "mentions": 23,
+        "negative_hits": 16,
         "positive_hits": 4,
-        "trusted_hits": 2,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 636,
-        "geopolitical_total": 561,
+        "trusted_hits": 1,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 560,
+        "geopolitical_total": 495,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 23,
-          "x": 2
+          "mastodon": 20,
+          "x": 3
         },
         "category_counts": {
-          "protest": 9,
           "corruption_rule_of_law": 7,
-          "government_crisis": 3,
+          "protest": 9,
+          "government_crisis": 4,
           "economic_infrastructure": 1,
-          "security": 2,
-          "eu_integration": 1,
           "ethnic_tension": 1,
-          "migration": 1
+          "security": 1
         },
         "tag_counts": {
           "balkans": 15,
-          "albania": 8,
-          "Koszovó": 1,
+          "albania": 5,
+          "Szerbia": 2,
           "Albánia": 1
         },
         "main_topic": "protest",
