@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17 18:57 UTC",
+  "updated_at": "2026-07-17 19:25 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 19
+    "collected": 17
   },
   "countries": [
     {
@@ -21,34 +21,35 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 6,
+        "mentions": 11,
+        "negative_hits": 5,
         "positive_hits": 1,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 278,
-        "geopolitical_total": 242,
+        "quality_total": 242,
+        "geopolitical_total": 212,
         "source_counts": {
           "reddit": 1,
-          "mastodon": 10,
+          "mastodon": 8,
           "x": 2
         },
         "category_counts": {
-          "security": 4,
+          "security": 3,
           "government_crisis": 3,
-          "ethnic_tension": 3,
+          "ethnic_tension": 2,
           "corruption_rule_of_law": 1,
           "eu_integration": 1,
           "protest": 1
         },
         "tag_counts": {
-          "serbia": 7,
+          "serbia": 5,
           "kosovo": 1,
           "bosnia": 1,
           "montenegro": 1,
           "albania": 1,
-          "Szerbia": 2
+          "Szerbia": 1,
+          "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -101,7 +102,7 @@
             "text": "Kosovo Police Reject Serbian Orthodox Church Claims, Deny Systematic Pressure on Serb Community Kosovo KosovoPolice SerbianOrthodoxChurch RaskaPrizren Gazimestan2026 Vidovdan CulturalHeritage BalkanSecurity MultiEthnicPolicing",
             "url": "https://x.com/i/web/status/2078173534279369015",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Koszovó",
             "seen_date": "2026-07-17T17:42:35.000Z",
             "matched_countries": [
               "Szerbia"
@@ -381,31 +382,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 57,
+        "score": 44,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
+        "mentions": 6,
         "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 2,
         "raw_engagement_total": 2,
-        "quality_total": 124,
-        "geopolitical_total": 104,
+        "quality_total": 100,
+        "geopolitical_total": 84,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 5,
-          "x": 3
+          "mastodon": 4,
+          "x": 2
         },
         "category_counts": {
           "government_crisis": 3,
-          "ethnic_tension": 3,
+          "ethnic_tension": 1,
           "security": 2
         },
         "tag_counts": {
-          "serbia": 2,
+          "serbia": 1,
           "kosovo": 3,
-          "Koszovó": 3
+          "Koszovó": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -544,25 +545,23 @@
           },
           {
             "title": "",
-            "text": "Agenzia Nova: Serbia: ministra Paunovic, frase pulizia etnica in Kosovo estrapolata dal contesto, mi scuso 16 lug 14:52 - (Agenzia Nova) - La ministra dell'Amministrazione statale e dell'Autogoverno locale della Serbia, Snezana Paunovic, ha dichiarato... (Seb) Serbia: Minister Paunović, “ethnic cleaning” phrase extracted out of context, I apologize. 16 Jun 1",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/116929778237009687",
+            "text": "Kosovo Coalition Talks Suspended as Turmoil Grips Opposition Party https:// fed.brid.gy/r/https://balkanin sight.com/2026/07/16/kosovo-coalition-talks-suspended-as-turmoil-grips-opposition-party/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/07/16/kosovo-coalition-talks-suspended-as-turmoil-grips-opposition-party/bi/",
             "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Thu, 16 Jul 2026 13:00:21 +0000",
+            "tag": "kosovo",
+            "seen_date": "Thu, 16 Jul 2026 10:02:58 +0000",
             "matched_countries": [
-              "Szerbia",
               "Koszovó"
             ],
             "country_confidence": {
-              "Szerbia": 2,
               "Koszovó": 1
             },
-            "event_category": "ethnic_tension",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "ethnic_tension",
+                "category": "government_crisis",
                 "hits": 1,
-                "weight": 10
+                "weight": 9
               }
             ],
             "geopolitical_score": 10,
@@ -714,8 +713,8 @@
         "negative_hits": 1,
         "positive_hits": 2,
         "trusted_hits": 2,
-        "engagement_total": 28,
-        "raw_engagement_total": 28,
+        "engagement_total": 31,
+        "raw_engagement_total": 31,
         "quality_total": 145,
         "geopolitical_total": 127,
         "source_counts": {
@@ -946,28 +945,28 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 25,
-        "negative_hits": 17,
+        "mentions": 24,
+        "negative_hits": 16,
         "positive_hits": 3,
         "trusted_hits": 2,
-        "engagement_total": 14,
-        "raw_engagement_total": 14,
-        "quality_total": 625,
-        "geopolitical_total": 555,
+        "engagement_total": 29,
+        "raw_engagement_total": 29,
+        "quality_total": 587,
+        "geopolitical_total": 520,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 20,
+          "mastodon": 19,
           "x": 5
         },
         "category_counts": {
           "corruption_rule_of_law": 7,
-          "protest": 9,
+          "protest": 8,
           "government_crisis": 6,
           "economic_infrastructure": 1,
           "ethnic_tension": 2
         },
         "tag_counts": {
-          "balkans": 15,
+          "balkans": 14,
           "albania": 5,
           "Koszovó": 1,
           "Albánia": 4
