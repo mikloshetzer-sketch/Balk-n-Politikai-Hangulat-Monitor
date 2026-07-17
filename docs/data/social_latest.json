@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17 13:59 UTC",
+  "updated_at": "2026-07-17 18:57 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 20
+    "collected": 19
   },
   "countries": [
     {
@@ -21,38 +21,122 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
+        "mentions": 13,
         "negative_hits": 6,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 10,
-        "raw_engagement_total": 10,
-        "quality_total": 262,
-        "geopolitical_total": 229,
+        "trusted_hits": 2,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 278,
+        "geopolitical_total": 242,
         "source_counts": {
           "reddit": 1,
-          "mastodon": 8,
-          "x": 7
+          "mastodon": 10,
+          "x": 2
         },
         "category_counts": {
-          "government_crisis": 3,
           "security": 4,
-          "ethnic_tension": 5,
-          "corruption_rule_of_law": 2,
+          "government_crisis": 3,
+          "ethnic_tension": 3,
+          "corruption_rule_of_law": 1,
           "eu_integration": 1,
           "protest": 1
         },
         "tag_counts": {
-          "serbia": 5,
+          "serbia": 7,
           "kosovo": 1,
           "bosnia": 1,
           "montenegro": 1,
           "albania": 1,
-          "Szerbia": 5,
-          "Koszovó": 2
+          "Szerbia": 2
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "",
+            "text": "USA # EpsteinClass love language: \"A biography of Hillary Clinton, written by Gail Sheehy and published in late 1999, stated that Mrs. Clinton had refused to talk to the president for eight months after the Monica Lewinsky scandal broke. She resumed talking to her husband only when she phoned him and urged him in the strongest terms to begin bombing Serbia; ",
+            "url": "https://mstdn.social/@rezad/116935967683179942",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 17 Jul 2026 15:14:24 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 41,
+            "quality_score": 46,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Kosovo Police Reject Serbian Orthodox Church Claims, Deny Systematic Pressure on Serb Community Kosovo KosovoPolice SerbianOrthodoxChurch RaskaPrizren Gazimestan2026 Vidovdan Cultu",
+            "text": "Kosovo Police Reject Serbian Orthodox Church Claims, Deny Systematic Pressure on Serb Community Kosovo KosovoPolice SerbianOrthodoxChurch RaskaPrizren Gazimestan2026 Vidovdan CulturalHeritage BalkanSecurity MultiEthnicPolicing",
+            "url": "https://x.com/i/web/status/2078173534279369015",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-17T17:42:35.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 31,
+            "quality_score": 32,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "The scariest part, per the think tank's own Srđan Cvijić, isn't the stolen documents — it's that \"Moscow and the Vučić regime often chase the same enemies.\" Serbia's been gripped by protests since the Novi Sad canopy collapse killed 16 people in Nov. 2024. With elections looming, Cvijić expects escalation — Vučić, unlike Orbán, isn't expected to concede if h",
@@ -131,28 +215,33 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "European Commission’s 2026 Rule of Law Report: Serbia Faces Severe Political Pressure, Obstructed Media, and Stalled Debate EuropeanCommission RuleOfLaw Serbia Belgrade MartaKos EU",
-            "text": "European Commission’s 2026 Rule of Law Report: Serbia Faces Severe Political Pressure, Obstructed Media, and Stalled Debate EuropeanCommission RuleOfLaw Serbia Belgrade MartaKos EUAccession MediaFreedom AntiCorruption Balkans",
-            "url": "https://x.com/i/web/status/2078109610813034608",
+            "title": "Note on parallels between US-Iran conflict now and NATO-Serbia conflict in 1999: Serbia took 78 days of NATO bombing without capitulating. The war ended due to declining internal s",
+            "text": "Note on parallels between US-Iran conflict now and NATO-Serbia conflict in 1999: Serbia took 78 days of NATO bombing without capitulating. The war ended due to declining internal support from both elites and the Serbian public, plus international pressure from Russia.",
+            "url": "https://x.com/i/web/status/2078187511982313709",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-07-17T13:28:35.000Z",
+            "seen_date": "2026-07-17T18:38:08.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 2
             },
-            "event_category": "corruption_rule_of_law",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 23,
-            "quality_score": 27,
+            "geopolitical_score": 25,
+            "quality_score": 29,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -164,74 +253,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Index and partners publish a report on the deteriorating situation for media freedom and safety of journalists in #Serbia . We call on the authorities to end the targeting of journalists and stop all verbal, physical & legal attacks against the press⬇️ www.indexoncensorship.org/2026/07/serb... Serbia: A dangerous spiral of ...",
-            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:3h6cxabooaow3ty3ibx67goh/post/3mqrjnivcdk2m",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Thu, 16 Jul 2026 15:14:53 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 23,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "A Russian espionage operation spent nearly a year inside a Belgrade think tank's systems before being caught — entry gained by impersonating the husband of exiled Belarusian opposition leader Svetlana Tikhanovskaya on Signal. Once in: full server access, then a month of surveillance, 28,000+ individual email accesses. Two coordinated Russian intelligence gro",
-            "url": "https://mastodon.social/@AutokratDaily/116934843153589037",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Fri, 17 Jul 2026 10:28:25 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 20,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -360,34 +381,74 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 29,
-        "level": "medium",
+        "score": 57,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 0,
+        "mentions": 8,
+        "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 73,
-        "geopolitical_total": 58,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 124,
+        "geopolitical_total": 104,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
-          "x": 1
+          "mastodon": 5,
+          "x": 3
         },
         "category_counts": {
-          "ethnic_tension": 2,
-          "government_crisis": 2,
-          "security": 1
+          "government_crisis": 3,
+          "ethnic_tension": 3,
+          "security": 2
         },
         "tag_counts": {
-          "serbia": 1,
+          "serbia": 2,
           "kosovo": 3,
-          "Koszovó": 1
+          "Koszovó": 3
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "Kosovo Police Record 51 Weapons Seizure Cases in North During First Half of 2026 Kosova KosovoPolice ZubinPotok Zveçan WeaponsSeizure VetonElshani Kallxo BalkanSecurity",
+            "text": "Kosovo Police Record 51 Weapons Seizure Cases in North During First Half of 2026 Kosova KosovoPolice ZubinPotok Zveçan WeaponsSeizure VetonElshani Kallxo BalkanSecurity",
+            "url": "https://x.com/i/web/status/2078179519798604189",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-07-17T18:06:22.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 28,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Agenzia Nova: Kosovo: Zejnullah Gashi nominato Procuratore generale dello Stato 13 lug 10:40 - (Agenzia Nova) - Il Consiglio della Procura del Kosovo (Kpk) ha nominato Zejnullah Gashi nuovo Procuratore generale dello Stato... (Alt) Kosovo: Zejnullah Gashi appointed State Attorney General July 13 10:40 – (Agenzia Nova) – The Council of the Prosecutor’s Office",
@@ -418,17 +479,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Two weeks after the start of the Irish Presidency of the Council of the European Union, acting Prime Minister Albin Kurti held a meeting with Ragnar Almqvist, Ireland’s non-residen",
-            "text": "Two weeks after the start of the Irish Presidency of the Council of the European Union, acting Prime Minister Albin Kurti held a meeting with Ragnar Almqvist, Ireland’s non-resident ambassador to Kosovo.",
-            "url": "https://x.com/i/web/status/2078069720457069006",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-07-17T10:50:04.000Z",
+            "title": "",
+            "text": "After 2022 Mass Resignations, Some Kosovo Serbs Seek Return to Judicial Posts https:// fed.brid.gy/r/https://balkanin sight.com/2026/07/17/after-2022-mass-resignations-some-kosovo-serbs-seek-return-to-judicial-posts/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/07/17/after-2022-mass-resignations-some-kosovo-serbs-seek-return-to-judicial-posts/bi/",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 17 Jul 2026 16:50:17 +0000",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 5
+              "Koszovó": 1
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -436,22 +497,46 @@
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
               }
             ],
-            "geopolitical_score": 15,
-            "quality_score": 16,
-            "source_reliability": 2,
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "No New Institutions in July: Kosovo Assembly Constitutive Session Set for Early August Amid Deepening Coalition Crisis Kosovo Pristina AlbulenaHaxhiu AlbinKurti LumirAbdixhiku Bedr",
+            "text": "No New Institutions in July: Kosovo Assembly Constitutive Session Set for Early August Amid Deepening Coalition Crisis Kosovo Pristina AlbulenaHaxhiu AlbinKurti LumirAbdixhiku BedriHamza LutfiHaziri AssemblyOfKosovo LDK LVV PDK ConstitutionalDeadlock BalkanPolitics",
+            "url": "https://x.com/i/web/status/2078167884736393384",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-07-17T17:20:08.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 13,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 1,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -464,66 +549,6 @@
             "source": "mastodon",
             "tag": "serbia",
             "seen_date": "Thu, 16 Jul 2026 13:00:21 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 13,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Kosovo Coalition Talks Suspended as Turmoil Grips Opposition Party https:// fed.brid.gy/r/https://balkanin sight.com/2026/07/16/kosovo-coalition-talks-suspended-as-turmoil-grips-opposition-party/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/07/16/kosovo-coalition-talks-suspended-as-turmoil-grips-opposition-party/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Thu, 16 Jul 2026 10:02:58 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 13,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "EU Condemns Serbian Minister for Backing ‘Ethnic Cleansing’ of Kosovo https:// fed.brid.gy/r/https://balkanin sight.com/2026/07/14/eu-condemns-serbian-minister-for-backing-ethnic-cleansing-of-kosovo/btj/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/07/14/eu-condemns-serbian-minister-for-backing-ethnic-cleansing-of-kosovo/btj/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Tue, 14 Jul 2026 14:44:07 +0000",
             "matched_countries": [
               "Szerbia",
               "Koszovó"
@@ -682,30 +707,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 50,
+        "score": 48,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 8,
         "negative_hits": 1,
-        "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 131,
-        "geopolitical_total": 116,
+        "positive_hits": 2,
+        "trusted_hits": 2,
+        "engagement_total": 28,
+        "raw_engagement_total": 28,
+        "quality_total": 145,
+        "geopolitical_total": 127,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
           "x": 6
         },
         "category_counts": {
-          "government_crisis": 7,
-          "corruption_rule_of_law": 1
+          "government_crisis": 5,
+          "corruption_rule_of_law": 3
         },
         "tag_counts": {
           "albania": 2,
-          "Montenegró": 2,
-          "Észak-Macedónia": 4
+          "Montenegró": 4,
+          "Észak-Macedónia": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -826,12 +851,50 @@
             "quality_score": 17,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 0,
+              "likes": 2,
               "reposts": 0,
               "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Today, the European Commission published its annual Rule of Law Report, assessing the state of the rule of law across all EU Member States, as well as four candidate countries: Alb",
+            "text": "Today, the European Commission published its annual Rule of Law Report, assessing the state of the rule of law across all EU Member States, as well as four candidate countries: Albania, Montenegro, North Macedonia and Serbia. Read here the full report on Albania:",
+            "url": "https://x.com/i/web/status/2078142913758851274",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-07-17T15:40:55.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Szerbia": 1,
+              "Montenegró": 1,
+              "Albánia": 1
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 16,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 6,
+            "raw_engagement": 6,
+            "metrics": {
+              "likes": 3,
+              "reposts": 2,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -873,41 +936,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "🇮🇳🌍 Diplomatic Milestone! President of India Droupadi Murmu will undertake state visits to Moldova, North Macedonia, and Romania from July 19–25, according to the Ministry of Exter",
-            "text": "🇮🇳🌍 Diplomatic Milestone! President of India Droupadi Murmu will undertake state visits to Moldova, North Macedonia, and Romania from July 19–25, according to the Ministry of External Affairs. 🤝 Notably, this will be the first-ever bilateral visit by an Indian President to",
-            "url": "https://x.com/i/web/status/2078101622635528318",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-17T12:56:50.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -920,12 +948,12 @@
         "scale": "0-60 risk index",
         "mentions": 25,
         "negative_hits": 17,
-        "positive_hits": 4,
-        "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 600,
-        "geopolitical_total": 533,
+        "positive_hits": 3,
+        "trusted_hits": 2,
+        "engagement_total": 14,
+        "raw_engagement_total": 14,
+        "quality_total": 625,
+        "geopolitical_total": 555,
         "source_counts": {
           "reddit": 0,
           "mastodon": 20,
@@ -933,18 +961,16 @@
         },
         "category_counts": {
           "corruption_rule_of_law": 7,
-          "protest": 10,
-          "government_crisis": 3,
+          "protest": 9,
+          "government_crisis": 6,
           "economic_infrastructure": 1,
-          "ethnic_tension": 3,
-          "security": 1
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "balkans": 15,
           "albania": 5,
-          "Szerbia": 2,
-          "Koszovó": 2,
-          "Albánia": 1
+          "Koszovó": 1,
+          "Albánia": 4
         },
         "main_topic": "protest",
         "top_posts": [
@@ -991,6 +1017,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Leading US publication WIRED has published an article about the protests that have been taking place in Tirana for 48 days, with citizens demanding the government’s removal and Pri",
+            "text": "Leading US publication WIRED has published an article about the protests that have been taking place in Tirana for 48 days, with citizens demanding the government’s removal and Prime Minister Edi Rama’s resignation.",
+            "url": "https://x.com/i/web/status/2078190517125292493",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-07-17T18:50:04.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 8
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 37,
+            "quality_score": 38,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -1067,40 +1133,6 @@
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Sun, 12 Jul 2026 18:14:55 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 35,
-            "quality_score": 38,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 42 of anti-corruption protests in Tirana, Albania Dita e 42-të e protestës qytetare/ Kërkojnë dorëheqjen e Ramës https://www. youtube.com/watch?v=6jdjSVV0YWo # Albania # USpol # Corruption # Balkans # Europe # FlamingoRevolution # Environment",
-            "url": "https://mas.to/@meganL/116902449001926191",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sat, 11 Jul 2026 17:10:10 +0000",
             "matched_countries": [
               "Albánia"
             ],
