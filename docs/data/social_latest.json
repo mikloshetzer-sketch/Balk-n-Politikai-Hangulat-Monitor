@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-18 03:21 UTC",
+  "updated_at": "2026-07-18 07:32 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 19
   },
   "countries": [
     {
@@ -21,22 +21,22 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
+        "mentions": 16,
         "negative_hits": 4,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 227,
-        "geopolitical_total": 198,
+        "engagement_total": 6,
+        "raw_engagement_total": 6,
+        "quality_total": 275,
+        "geopolitical_total": 243,
         "source_counts": {
           "reddit": 1,
           "mastodon": 8,
-          "x": 4
+          "x": 7
         },
         "category_counts": {
-          "security": 3,
-          "government_crisis": 3,
+          "security": 2,
+          "government_crisis": 7,
           "ethnic_tension": 4,
           "corruption_rule_of_law": 1,
           "eu_integration": 1,
@@ -48,10 +48,10 @@
           "bosnia": 1,
           "montenegro": 1,
           "macedonia": 1,
-          "Szerbia": 2,
+          "Szerbia": 5,
           "Koszovó": 2
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -175,6 +175,41 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Who will be the next Prime Minister of Serbia in upcoming elections? Serbian PM Milos Vucevic's position is fragile as President Vucic may resign within months, opening the door fo",
+            "text": "Who will be the next Prime Minister of Serbia in upcoming elections? Serbian PM Milos Vucevic's position is fragile as President Vucic may resign within months, opening the door for Ana Brnabic or opposition leader to Serbia Politics Elections Poly…",
+            "url": "https://x.com/i/web/status/2078370465899241502",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-18T06:45:07.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 28,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "A Russian espionage operation spent nearly a year inside a Belgrade think tank's systems before being caught — entry gained by impersonating the husband of exiled Belarusian opposition leader Svetlana Tikhanovskaya on Signal. Once in: full server access, then a month of surveillance, 28,000+ individual email accesses. Two coordinated Russian intelligence gro",
             "url": "https://mastodon.social/@AutokratDaily/116934843153589037",
@@ -207,41 +242,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Don Don Group: A disaster for the people of the Balkans. A huge region could be left without bread. The problem: a cyberattack. Hackers infiltrated the systems of the largest produ",
-            "text": "Don Don Group: A disaster for the people of the Balkans. A huge region could be left without bread. The problem: a cyberattack. Hackers infiltrated the systems of the largest producer of rolls, bread, and cookies in Ljubljana, Zagreb, and Belgrade. The company’s entire digital",
-            "url": "https://x.com/i/web/status/2078272035067920577",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-18T00:14:00.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -370,62 +370,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 27,
+        "score": 20,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 3,
         "negative_hits": 1,
         "positive_hits": 1,
-        "trusted_hits": 1,
+        "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 59,
-        "geopolitical_total": 45,
+        "quality_total": 41,
+        "geopolitical_total": 32,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
+          "mastodon": 3,
           "x": 0
         },
         "category_counts": {
           "government_crisis": 2,
-          "ethnic_tension": 1,
-          "security": 1
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "serbia": 1,
-          "kosovo": 3
+          "kosovo": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "",
-            "text": "Agenzia Nova: Kosovo: Zejnullah Gashi nominato Procuratore generale dello Stato 13 lug 10:40 - (Agenzia Nova) - Il Consiglio della Procura del Kosovo (Kpk) ha nominato Zejnullah Gashi nuovo Procuratore generale dello Stato... (Alt) Kosovo: Zejnullah Gashi appointed State Attorney General July 13 10:40 – (Agenzia Nova) – The Council of the Prosecutor’s Office",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/116911887254929039",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Mon, 13 Jul 2026 09:10:26 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 18,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "After 2022 Mass Resignations, Some Kosovo Serbs Seek Return to Judicial Posts https:// fed.brid.gy/r/https://balkanin sight.com/2026/07/17/after-2022-mass-resignations-some-kosovo-serbs-seek-return-to-judicial-posts/bi/",
@@ -652,30 +622,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
+        "mentions": 11,
         "negative_hits": 2,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 160,
-        "raw_engagement_total": 285,
-        "quality_total": 154,
-        "geopolitical_total": 138,
+        "engagement_total": 179,
+        "raw_engagement_total": 351,
+        "quality_total": 170,
+        "geopolitical_total": 152,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 7
+          "x": 9
         },
         "category_counts": {
-          "government_crisis": 4,
+          "government_crisis": 6,
           "security": 3,
           "corruption_rule_of_law": 2
         },
         "tag_counts": {
-          "albania": 1,
-          "macedonia": 1,
+          "macedonia": 2,
           "Koszovó": 1,
           "Montenegró": 2,
-          "Észak-Macedónia": 4
+          "Észak-Macedónia": 6
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -684,7 +653,7 @@
             "text": "⚡️🇺🇦Ten countries adopt Kyiv Declaration at Ukraine–Southeast Europe Summit (more) https://www. ukrinform.net/rubric-polytics/ 4144679-ten-countries-adopt-kyiv-declaration-at-ukrainesoutheast-europe-summit.html # Ukraine # Romania # Moldova # Albania # Slovakia # Slovenia # Macedonia # Brussels # PACE # CoE # Greece # Croatia # Bulgaria # Press # Media # New",
             "url": "https://mastodon.online/@SocraticEthics/116925564654659264",
             "source": "mastodon",
-            "tag": "albania",
+            "tag": "macedonia",
             "seen_date": "Wed, 15 Jul 2026 19:08:47 +0000",
             "matched_countries": [
               "Észak-Macedónia",
@@ -831,10 +800,10 @@
             "quality_score": 16,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 7,
-            "raw_engagement": 7,
+            "engagement": 10,
+            "raw_engagement": 10,
             "metrics": {
-              "likes": 3,
+              "likes": 6,
               "reposts": 2,
               "replies": 2,
               "quotes": 0
@@ -874,10 +843,10 @@
             "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 22,
-            "raw_engagement": 22,
+            "engagement": 26,
+            "raw_engagement": 26,
             "metrics": {
-              "likes": 11,
+              "likes": 15,
               "reposts": 6,
               "replies": 5,
               "quotes": 0
@@ -893,30 +862,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 20,
+        "mentions": 19,
         "negative_hits": 14,
         "positive_hits": 4,
         "trusted_hits": 1,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 507,
-        "geopolitical_total": 449,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 497,
+        "geopolitical_total": 440,
         "source_counts": {
           "reddit": 0,
           "mastodon": 18,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "corruption_rule_of_law": 7,
           "protest": 7,
-          "government_crisis": 5,
+          "government_crisis": 4,
           "economic_infrastructure": 1
         },
         "tag_counts": {
           "balkans": 14,
-          "albania": 3,
-          "macedonia": 1,
-          "Albánia": 2
+          "albania": 2,
+          "macedonia": 2,
+          "Albánia": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
