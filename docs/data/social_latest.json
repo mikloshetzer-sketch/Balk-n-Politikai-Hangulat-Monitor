@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-18 08:08 UTC",
+  "updated_at": "2026-07-18 12:57 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 19
+    "collected": 24
   },
   "countries": [
     {
@@ -21,26 +21,26 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
-        "negative_hits": 5,
-        "positive_hits": 0,
+        "mentions": 16,
+        "negative_hits": 7,
+        "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 274,
-        "geopolitical_total": 243,
+        "engagement_total": 6,
+        "raw_engagement_total": 6,
+        "quality_total": 312,
+        "geopolitical_total": 280,
         "source_counts": {
           "reddit": 1,
           "mastodon": 8,
-          "x": 6
+          "x": 7
         },
         "category_counts": {
-          "security": 2,
-          "government_crisis": 6,
-          "ethnic_tension": 4,
+          "security": 5,
+          "government_crisis": 3,
+          "ethnic_tension": 3,
           "corruption_rule_of_law": 1,
           "eu_integration": 1,
-          "protest": 1
+          "protest": 3
         },
         "tag_counts": {
           "serbia": 5,
@@ -48,10 +48,9 @@
           "bosnia": 1,
           "montenegro": 1,
           "macedonia": 1,
-          "Szerbia": 5,
-          "Koszovó": 1
+          "Szerbia": 7
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -93,6 +92,45 @@
             "quality_score": 46,
             "source_reliability": 5,
             "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "🟢 Diplomacy | 5/10 🇷🇸 🇺🇸 Serbia signs energy memorandum with the US A Serbian-American Memorandum of Understanding on energy infrastructure and regional security will be signed in Washington today, paving the way for new US investments in Serbian energy. # OSINT # NewsGroup # Diplomacy # Energy # Serbia # USA",
+            "url": "https://social.vir.group/@analytics/116940185612810930",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sat, 18 Jul 2026 09:07:05 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 3,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 30,
+            "quality_score": 33,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -175,71 +213,33 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Who will be the next Prime Minister of Serbia in upcoming elections? Serbian PM Milos Vucevic's position is fragile as President Vucic may resign within months, opening the door fo",
-            "text": "Who will be the next Prime Minister of Serbia in upcoming elections? Serbian PM Milos Vucevic's position is fragile as President Vucic may resign within months, opening the door for Ana Brnabic or opposition leader to Serbia Politics Elections Poly…",
-            "url": "https://x.com/i/web/status/2078370465899241502",
+            "title": "📝”Washington Memorandum”📝 - Serbia's Energy Pivot - Today in Washington, a Serbian-American Memorandum of Understanding on Energy Infrastructure and Regional Security will be signe",
+            "text": "📝”Washington Memorandum”📝 - Serbia's Energy Pivot - Today in Washington, a Serbian-American Memorandum of Understanding on Energy Infrastructure and Regional Security will be signed, which should pave the way for new American investments in Serbian energy. The signing of the",
+            "url": "https://x.com/i/web/status/2078462649470259620",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-07-18T06:45:07.000Z",
+            "seen_date": "2026-07-18T12:51:26.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 6
+              "Szerbia": 2
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 3,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "EU blasts Serbian minister over ethniccleansing remarks on Kosovo The European Union has strongly condemned remarks by Serbian Public Administration Minister SnezanaPaunovic sugges",
-            "text": "EU blasts Serbian minister over ethniccleansing remarks on Kosovo The European Union has strongly condemned remarks by Serbian Public Administration Minister SnezanaPaunovic suggesting she would have expelled Kosovo Albanians during the 1998-1999 Kosovo war, warning there",
-            "url": "https://x.com/i/web/status/2078390208404271341",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-18T08:03:34.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
+                "category": "security",
                 "hits": 1,
-                "weight": 10
+                "weight": 9
               },
               {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
+                "category": "economic_infrastructure",
+                "hits": 3,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
+            "geopolitical_score": 22,
+            "quality_score": 23,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -632,28 +632,26 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 11,
-        "negative_hits": 2,
-        "positive_hits": 1,
+        "negative_hits": 1,
+        "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 154,
-        "raw_engagement_total": 327,
-        "quality_total": 166,
-        "geopolitical_total": 148,
+        "engagement_total": 37,
+        "raw_engagement_total": 37,
+        "quality_total": 165,
+        "geopolitical_total": 147,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
           "x": 9
         },
         "category_counts": {
-          "government_crisis": 7,
-          "security": 3,
+          "government_crisis": 10,
           "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "macedonia": 2,
-          "Koszovó": 1,
           "Montenegró": 1,
-          "Észak-Macedónia": 7
+          "Észak-Macedónia": 8
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -742,41 +740,36 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🔴 Landau meets North Macedonia FM to deepen energy, infrastructure, security ties Deputy Secretary of State Christopher Landau met July 17, 2026 in Washington with North Macedonia ",
-            "text": "🔴 Landau meets North Macedonia FM to deepen energy, infrastructure, security ties Deputy Secretary of State Christopher Landau met July 17, 2026 in Washington with North Macedonia Foreign Minister Timčo Mucunski. Topics included advancing partnership on energy, infrastructure,",
-            "url": "https://x.com/i/web/status/2078290744205365302",
+            "title": "WATCH | President Droupadi Murmu's three-nation visit will elevate India's ties with Moldova, North Macedonia and Romania, while opening new avenues for cooperation and strengtheni",
+            "text": "WATCH | President Droupadi Murmu's three-nation visit will elevate India's ties with Moldova, North Macedonia and Romania, while opening new avenues for cooperation and strengthening parliamentary exchanges, Ambassador Dr. Manoj Kumar Mohapatra said. Follow the complete story",
+            "url": "https://x.com/i/web/status/2078436406578545082",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-18T01:28:20.000Z",
+            "seen_date": "2026-07-18T11:07:09.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
               "Észak-Macedónia": 5
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
+                "category": "government_crisis",
                 "hits": 2,
-                "weight": 4
+                "weight": 9
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
+            "geopolitical_score": 19,
+            "quality_score": 20,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 3,
+            "raw_engagement": 3,
             "metrics": {
-              "likes": 0,
+              "likes": 2,
               "reposts": 0,
-              "replies": 0,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -809,48 +802,48 @@
             "quality_score": 16,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 10,
-            "raw_engagement": 10,
+            "engagement": 12,
+            "raw_engagement": 12,
             "metrics": {
-              "likes": 6,
-              "reposts": 2,
+              "likes": 7,
+              "reposts": 3,
               "replies": 2,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "I really enjoy my interactions with Foreign Minister of North Macedonia. Our two countries are very closely aligned on a wide range of political, economic, and security issues and ",
-            "text": "I really enjoy my interactions with Foreign Minister of North Macedonia. Our two countries are very closely aligned on a wide range of political, economic, and security issues and the two of us always have very candid and rewarding discussions. It was a real",
-            "url": "https://x.com/i/web/status/2078255087110000740",
+            "title": "WATCH | President Droupadi Murmu will embark on a visit to Romania, Moldova, and North Macedonia from July 19, aimed at strengthening India's ties with Eastern Europe. Ahead of the",
+            "text": "WATCH | President Droupadi Murmu will embark on a visit to Romania, Moldova, and North Macedonia from July 19, aimed at strengthening India's ties with Eastern Europe. Ahead of the visit, India's Ambassador to Romania, Manoj Kumar Mohapatra, highlighted growing cooperation in",
+            "url": "https://x.com/i/web/status/2078438401511170315",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-17T23:06:39.000Z",
+            "seen_date": "2026-07-18T11:15:05.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
               "Észak-Macedónia": 5
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
+            "geopolitical_score": 10,
+            "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 120,
-            "raw_engagement": 293,
+            "engagement": 4,
+            "raw_engagement": 4,
             "metrics": {
-              "likes": 240,
-              "reposts": 41,
-              "replies": 11,
-              "quotes": 1
+              "likes": 3,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
             },
             "quality": "x_api_filtered"
           }
@@ -863,32 +856,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 20,
-        "negative_hits": 15,
-        "positive_hits": 4,
+        "mentions": 26,
+        "negative_hits": 19,
+        "positive_hits": 5,
         "trusted_hits": 1,
-        "engagement_total": 8,
-        "raw_engagement_total": 8,
-        "quality_total": 524,
-        "geopolitical_total": 466,
+        "engagement_total": 42,
+        "raw_engagement_total": 42,
+        "quality_total": 642,
+        "geopolitical_total": 576,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 18,
-          "x": 2
+          "mastodon": 19,
+          "x": 7
         },
         "category_counts": {
-          "corruption_rule_of_law": 8,
-          "protest": 7,
-          "government_crisis": 3,
+          "corruption_rule_of_law": 9,
+          "protest": 8,
+          "government_crisis": 4,
           "economic_infrastructure": 1,
-          "ethnic_tension": 1
+          "ethnic_tension": 3,
+          "security": 1
         },
         "tag_counts": {
           "balkans": 14,
-          "albania": 2,
+          "albania": 3,
           "macedonia": 2,
-          "Szerbia": 1,
-          "Albánia": 1
+          "Szerbia": 2,
+          "Albánia": 5
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -1039,43 +1033,44 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Even with my very bad command of Albanian, I can tell this guy is a helluva orator. The translation app seems to confirm that. Not only is his cadence good, but he is very good at crafting a call to the people that is more than just impromptu and heartfelt (although those are not bad things). He calls out the corruption of governments by both major parties o",
-            "url": "https://mas.to/@meganL/116931174686976589",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Thu, 16 Jul 2026 18:55:29 +0000",
+            "title": "45 days of anti-corruption protests in Tirana. Smearing and ignoring protesters is not a solution; it only gives them more reason to continue.",
+            "text": "45 days of anti-corruption protests in Tirana. Smearing and ignoring protesters is not a solution; it only gives them more reason to continue.",
+            "url": "https://x.com/i/web/status/2078410568956850378",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-07-18T09:24:29.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 2
+              "Albánia": 4
             },
-            "event_category": "government_crisis",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
                 "category": "protest",
-                "hits": 1,
+                "hits": 2,
                 "weight": 8
               },
               {
                 "category": "corruption_rule_of_law",
-                "hits": 1,
+                "hits": 2,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 31,
-            "source_reliability": 3,
+            "geopolitical_score": 35,
+            "quality_score": 36,
+            "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
