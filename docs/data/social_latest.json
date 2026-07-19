@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19 03:42 UTC",
+  "updated_at": "2026-07-19 08:05 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 16
+    "collected": 18
   },
   "countries": [
     {
@@ -23,125 +23,37 @@
         "scale": "0-60 risk index",
         "mentions": 10,
         "negative_hits": 3,
-        "positive_hits": 2,
-        "trusted_hits": 2,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 229,
-        "geopolitical_total": 200,
+        "positive_hits": 1,
+        "trusted_hits": 1,
+        "engagement_total": 42,
+        "raw_engagement_total": 42,
+        "quality_total": 161,
+        "geopolitical_total": 138,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 7,
-          "x": 3
+          "mastodon": 5,
+          "x": 5
         },
         "category_counts": {
-          "security": 4,
-          "ethnic_tension": 1,
+          "security": 1,
+          "ethnic_tension": 5,
           "corruption_rule_of_law": 1,
           "eu_integration": 1,
-          "government_crisis": 2,
+          "government_crisis": 1,
           "foreign_influence": 1
         },
         "tag_counts": {
-          "serbia": 3,
+          "serbia": 1,
           "kosovo": 1,
           "bosnia": 1,
           "montenegro": 1,
           "macedonia": 1,
-          "Szerbia": 2,
-          "Koszovó": 1
+          "Szerbia": 3,
+          "Koszovó": 1,
+          "Montenegró": 1
         },
-        "main_topic": "security",
+        "main_topic": "ethnic_tension",
         "top_posts": [
-          {
-            "title": "",
-            "text": "USA # EpsteinClass love language: \"A biography of Hillary Clinton, written by Gail Sheehy and published in late 1999, stated that Mrs. Clinton had refused to talk to the president for eight months after the Monica Lewinsky scandal broke. She resumed talking to her husband only when she phoned him and urged him in the strongest terms to begin bombing Serbia; ",
-            "url": "https://mstdn.social/@rezad/116935967683179942",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Fri, 17 Jul 2026 15:14:24 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 41,
-            "quality_score": 46,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "9/13: Serbian President Aleksandar Vucic is escalating his crackdown on protests that have shaken his populist rule in recent months. What began as a small, student-led campaign ag",
-            "text": "9/13: Serbian President Aleksandar Vucic is escalating his crackdown on protests that have shaken his populist rule in recent months. What began as a small, student-led campaign against corruption has snowballed into one of the most turbulent protest waves",
-            "url": "https://x.com/i/web/status/2078607737177461128",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-18T22:27:57.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 36,
-            "quality_score": 37,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "🟢 Diplomacy | 5/10 🇷🇸 🇺🇸 Serbia signs energy memorandum with the US A Serbian-American Memorandum of Understanding on energy infrastructure and regional security will be signed in Washington today, paving the way for new US investments in Serbian energy. # OSINT # NewsGroup # Diplomacy # Energy # Serbia # USA",
@@ -225,33 +137,100 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "📝”Washington Memorandum”📝 - Serbia's Energy Pivot - Today in Washington, a Serbian-American Memorandum of Understanding on Energy Infrastructure and Regional Security will be signe",
-            "text": "📝”Washington Memorandum”📝 - Serbia's Energy Pivot - Today in Washington, a Serbian-American Memorandum of Understanding on Energy Infrastructure and Regional Security will be signed, which should pave the way for new American investments in Serbian energy. The signing of the",
-            "url": "https://x.com/i/web/status/2078597291204604234",
+            "title": "The worst part is, Germany and France, but also the EU Commission, playing the same indentical game with Russia and Vucic's Serbia they played with Orban's Hungary. What the hell a",
+            "text": "The worst part is, Germany and France, but also the EU Commission, playing the same indentical game with Russia and Vucic's Serbia they played with Orban's Hungary. What the hell are we doing ?! 🇪🇺 Serbia Srbija Picula Montenegro Kosovo Hungary",
+            "url": "https://x.com/i/web/status/2078568698571276511",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-07-18T19:52:50.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9,
+              "Koszovó": 1,
+              "Montenegró": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 16,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Trying to bring in the 🇺🇸 US a false narrative about some ‘Muslims’ in 🇪🇺 Europe who are persecuting ‘Christians’ because their religion is totally unrealistic and has a hidden age",
+            "text": "Trying to bring in the 🇺🇸 US a false narrative about some ‘Muslims’ in 🇪🇺 Europe who are persecuting ‘Christians’ because their religion is totally unrealistic and has a hidden agenda inside. In reality during the Serbian ethnic wars in the Balkans, we saw the Serbian army",
+            "url": "https://x.com/i/web/status/2078737013331624069",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-07-18T21:46:27.000Z",
+            "seen_date": "2026-07-19T07:01:39.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
               "Szerbia": 2
             },
-            "event_category": "security",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "security",
+                "category": "ethnic_tension",
                 "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 3,
-                "weight": 4
+                "weight": 10
               }
             ],
-            "geopolitical_score": 22,
-            "quality_score": 23,
+            "geopolitical_score": 13,
+            "quality_score": 14,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Trying to bring in the US a false narrative about some ‘Muslims’ in Europe persecuting ‘Christians’ because their religion is totally unrealistic and has a hidden agenda inside. In",
+            "text": "Trying to bring in the US a false narrative about some ‘Muslims’ in Europe persecuting ‘Christians’ because their religion is totally unrealistic and has a hidden agenda inside. In reality during the Serbian ethnic wars in the Balkans, we saw the Serbian army massacre people",
+            "url": "https://x.com/i/web/status/2078736832624255426",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-19T07:00:56.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -422,75 +401,38 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 33,
+        "score": 27,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 4,
         "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 71,
-        "geopolitical_total": 60,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 52,
+        "geopolitical_total": 42,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 3,
+          "government_crisis": 2,
           "ethnic_tension": 2
         },
         "tag_counts": {
-          "serbia": 1,
-          "kosovo": 2,
-          "Szerbia": 1,
+          "kosovo": 3,
           "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "Democratic Republic of 🇽🇰Kosovo is already a reality Kosovo functions with a democratically elected parliament and president. Its capital and largest city is Prishtina, and the nat",
-            "text": "Democratic Republic of 🇽🇰Kosovo is already a reality Kosovo functions with a democratically elected parliament and president. Its capital and largest city is Prishtina, and the national currency is the €💶Euro",
-            "url": "https://x.com/i/web/status/2078622545247343089",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-07-18T23:26:48.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "After 2022 Mass Resignations, Some Kosovo Serbs Seek Return to Judicial Posts https:// fed.brid.gy/r/https://balkanin sight.com/2026/07/17/after-2022-mass-resignations-some-kosovo-serbs-seek-return-to-judicial-posts/bi/",
             "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/07/17/after-2022-mass-resignations-some-kosovo-serbs-seek-return-to-judicial-posts/bi/",
             "source": "mastodon",
-            "tag": "serbia",
+            "tag": "kosovo",
             "seen_date": "Fri, 17 Jul 2026 16:50:17 +0000",
             "matched_countries": [
               "Koszovó"
@@ -575,18 +517,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "and i think anyone trying to kill my grandparents is crazy then i become king of serbia, and we all know im ordering the recapture of kosovo MITROVICA what they gonna do call me a ",
-            "text": "and i think anyone trying to kill my grandparents is crazy then i become king of serbia, and we all know im ordering the recapture of kosovo MITROVICA what they gonna do call me a genocidal ethnic cleanser? whats new? lol",
-            "url": "https://x.com/i/web/status/2078639050374730233",
+            "title": "Wishlink post Url All Product Urls VredeVogel Kurta Set with Dupatta | Viscose Roman Silk Embroidered Kurta Set for Women | Women's Ethnic Casual Kurti Set |Kurta Pant Festive Suit",
+            "text": "Wishlink post Url All Product Urls VredeVogel Kurta Set with Dupatta | Viscose Roman Silk Embroidered Kurta Set for Women | Women's Ethnic Casual Kurti Set |Kurta Pant Festive Suit (White_2X-Large) Amayra Women's Pure Cotton",
+            "url": "https://x.com/i/web/status/2078691161678680247",
             "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-19T00:32:23.000Z",
+            "tag": "Koszovó",
+            "seen_date": "2026-07-19T03:59:27.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 5,
-              "Szerbia": 1
+              "Koszovó": 4
             },
             "event_category": "ethnic_tension",
             "event_categories": [
@@ -744,28 +685,29 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 46,
+        "score": 47,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
+        "mentions": 8,
         "negative_hits": 1,
-        "positive_hits": 0,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 8,
-        "raw_engagement_total": 8,
-        "quality_total": 114,
-        "geopolitical_total": 103,
+        "engagement_total": 6,
+        "raw_engagement_total": 6,
+        "quality_total": 120,
+        "geopolitical_total": 108,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 5
+          "x": 6
         },
         "category_counts": {
-          "government_crisis": 7
+          "government_crisis": 7,
+          "security": 1
         },
         "tag_counts": {
           "macedonia": 2,
-          "Észak-Macedónia": 5
+          "Észak-Macedónia": 6
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -854,12 +796,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "“Mircea Eliade, Mother Teresa and a Kapurthala link”. The Tribune, 18.7.2026. President Murmu’s visit to Moldova, North Macedonia & Romania signals a broader, engagement by India w",
-            "text": "“Mircea Eliade, Mother Teresa and a Kapurthala link”. The Tribune, 18.7.2026. President Murmu’s visit to Moldova, North Macedonia & Romania signals a broader, engagement by India with Europe, beyond Brussels, Berlin, Paris and London.",
-            "url": "https://x.com/i/web/status/2078647622559277242",
+            "title": "JUST IN: 🇮🇳🇲🇩🇷🇴 President Droupadi Murmu has departed for state visits to Moldova, North Macedonia, and Romania. The visit aims to deepen India's diplomatic ties and expand coopera",
+            "text": "JUST IN: 🇮🇳🇲🇩🇷🇴 President Droupadi Murmu has departed for state visits to Moldova, North Macedonia, and Romania. The visit aims to deepen India's diplomatic ties and expand cooperation with key partners in Eastern Europe.",
+            "url": "https://x.com/i/web/status/2078732591667314726",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-19T01:06:27.000Z",
+            "seen_date": "2026-07-19T06:44:05.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -872,15 +814,10 @@
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
               }
             ],
-            "geopolitical_score": 15,
-            "quality_score": 16,
+            "geopolitical_score": 10,
+            "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 1,
@@ -894,12 +831,12 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "President DroupadiMurmu will embark on a week-long state visits to Moldova, North Macedonia, and Romania beginning today.",
-            "text": "President DroupadiMurmu will embark on a week-long state visits to Moldova, North Macedonia, and Romania beginning today.",
-            "url": "https://x.com/i/web/status/2078680302894072200",
+            "title": "President Droupadi Murmu has embarked on a landmark three-nation State visit to Moldova, North Macedonia and Romania, aimed at deepening India's engagement with Eastern Europe and ",
+            "text": "President Droupadi Murmu has embarked on a landmark three-nation State visit to Moldova, North Macedonia and Romania, aimed at deepening India's engagement with Eastern Europe and strengthening political, economic and strategic cooperation",
+            "url": "https://x.com/i/web/status/2078729046234370393",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-19T03:16:18.000Z",
+            "seen_date": "2026-07-19T06:30:00.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -914,37 +851,37 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
+            "geopolitical_score": 10,
+            "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 3,
-              "reposts": 1,
+              "likes": 0,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "President DroupadiMurmu will embark on a week-long state visits to Moldova, North Macedonia, and Romania beginning today. The visit to Romania will be the first state visit by an I",
-            "text": "President DroupadiMurmu will embark on a week-long state visits to Moldova, North Macedonia, and Romania beginning today. The visit to Romania will be the first state visit by an Indian president in over 3 decades. The previous such visit to Romania was in 1994.",
-            "url": "https://x.com/i/web/status/2078679731202093139",
+            "title": "Crossing the international border between North Macedonia 🇲🇰 (foreground) and Greece 🇬🇷 (background). 📸: 2026. NorthMacedonia СевернаМакедонија ΒόρειαΜακεδονία Macedonia Македонија",
+            "text": "Crossing the international border between North Macedonia 🇲🇰 (foreground) and Greece 🇬🇷 (background). 📸: 2026. NorthMacedonia СевернаМакедонија ΒόρειαΜακεδονία Macedonia Македонија Μακεδονία Greece Ελλαδα Грција",
+            "url": "https://x.com/i/web/status/2078737099461701847",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-19T03:14:02.000Z",
+            "seen_date": "2026-07-19T07:02:00.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
               "Észak-Macedónia": 5
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
               }
@@ -953,10 +890,10 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 3,
+            "raw_engagement": 3,
             "metrics": {
-              "likes": 2,
+              "likes": 3,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -972,28 +909,28 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 21,
+        "mentions": 20,
         "negative_hits": 17,
-        "positive_hits": 4,
+        "positive_hits": 2,
         "trusted_hits": 1,
         "engagement_total": 3,
         "raw_engagement_total": 3,
-        "quality_total": 553,
-        "geopolitical_total": 494,
+        "quality_total": 568,
+        "geopolitical_total": 512,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 18,
+          "mastodon": 17,
           "x": 3
         },
         "category_counts": {
-          "corruption_rule_of_law": 9,
+          "corruption_rule_of_law": 7,
           "protest": 7,
-          "government_crisis": 4,
-          "economic_infrastructure": 1
+          "government_crisis": 5,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 14,
-          "albania": 2,
+          "albania": 1,
           "macedonia": 2,
           "Albánia": 3
         },
@@ -1146,17 +1083,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Il Fatto Quotidiano: “Mi preoccupa che il governo elimini le tutele ambientali senza consultazione pubblica, ma mi incoraggia vedere le persone in piazza ogni sera”: Dua Lipa contro il resort del genero di Trump in Albania Due Lipa scende in campo per sostenere una delle più grandi proteste degli ultimi anni scoppiate in Albania: la “rivoluzione dei fenicott",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/116940395147822028",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Sat, 18 Jul 2026 10:00:22 +0000",
+            "title": "🇦🇱|Albanian Citizens begin march after speeches on the streets of Tirana, on the 49th day of protest. Current Main Demands: •- Immediate resignation of the government •- Fresh and ",
+            "text": "🇦🇱|Albanian Citizens begin march after speeches on the streets of Tirana, on the 49th day of protest. Current Main Demands: •- Immediate resignation of the government •- Fresh and transparent elections •- End to corruption and oligarch control •- Justice for past abuses of",
+            "url": "https://x.com/i/web/status/2078722155169341449",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-07-19T06:02:37.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 5
+              "Albánia": 6
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -1169,15 +1106,26 @@
                 "category": "protest",
                 "hits": 2,
                 "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 29,
-            "quality_score": 32,
-            "source_reliability": 3,
+            "geopolitical_score": 36,
+            "quality_score": 37,
+            "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 2,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
