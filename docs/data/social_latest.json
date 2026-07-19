@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19 08:05 UTC",
+  "updated_at": "2026-07-19 12:59 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 18
+    "collected": 20
   },
   "countries": [
     {
@@ -21,38 +21,39 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 3,
+        "mentions": 12,
+        "negative_hits": 2,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 42,
-        "raw_engagement_total": 42,
-        "quality_total": 161,
-        "geopolitical_total": 138,
+        "trusted_hits": 3,
+        "engagement_total": 95,
+        "raw_engagement_total": 95,
+        "quality_total": 205,
+        "geopolitical_total": 175,
         "source_counts": {
-          "reddit": 0,
+          "reddit": 1,
           "mastodon": 5,
-          "x": 5
+          "x": 6
         },
         "category_counts": {
-          "security": 1,
-          "ethnic_tension": 5,
+          "security": 5,
+          "ethnic_tension": 3,
           "corruption_rule_of_law": 1,
           "eu_integration": 1,
           "government_crisis": 1,
           "foreign_influence": 1
         },
         "tag_counts": {
-          "serbia": 1,
+          "serbia": 2,
           "kosovo": 1,
           "bosnia": 1,
           "montenegro": 1,
           "macedonia": 1,
           "Szerbia": 3,
           "Koszovó": 1,
-          "Montenegró": 1
+          "Montenegró": 1,
+          "Albánia": 1
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -92,6 +93,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "On 15 March 2025, during a mass protest in Belgrade, there were credible allegations that a sonic weapon or similar acoustic device was used against demonstrators, causing shock, p",
+            "text": "On 15 March 2025, during a mass protest in Belgrade, there were credible allegations that a sonic weapon or similar acoustic device was used against demonstrators, causing shock, panic, nausea and other symptoms. It was an appalling incident, yet those responsible have still not",
+            "url": "https://x.com/i/web/status/2078790384491393204",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-19T10:33:44.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 51,
+            "raw_engagement": 51,
+            "metrics": {
+              "likes": 31,
+              "reposts": 8,
+              "replies": 10,
+              "quotes": 2
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -137,30 +178,29 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "The worst part is, Germany and France, but also the EU Commission, playing the same indentical game with Russia and Vucic's Serbia they played with Orban's Hungary. What the hell a",
-            "text": "The worst part is, Germany and France, but also the EU Commission, playing the same indentical game with Russia and Vucic's Serbia they played with Orban's Hungary. What the hell are we doing ?! 🇪🇺 Serbia Srbija Picula Montenegro Kosovo Hungary",
-            "url": "https://x.com/i/web/status/2078568698571276511",
+            "title": "The man who betrayed the Serbian Holy Land!He betrayed the citizens of the Serbia and Montenegro who was defending country from illegal NATO aggression!The man who stay in the powe",
+            "text": "The man who betrayed the Serbian Holy Land!He betrayed the citizens of the Serbia and Montenegro who was defending country from illegal NATO aggression!The man who stay in the power buy stealing votes and blackmailing voters!",
+            "url": "https://x.com/i/web/status/2078826663928840291",
             "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-07-18T19:52:50.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-19T12:57:54.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 9,
-              "Koszovó": 1,
+              "Szerbia": 2,
               "Montenegró": 1
             },
-            "event_category": "foreign_influence",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "foreign_influence",
+                "category": "security",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 16,
+            "geopolitical_score": 13,
+            "quality_score": 17,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -174,74 +214,33 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Trying to bring in the 🇺🇸 US a false narrative about some ‘Muslims’ in 🇪🇺 Europe who are persecuting ‘Christians’ because their religion is totally unrealistic and has a hidden age",
-            "text": "Trying to bring in the 🇺🇸 US a false narrative about some ‘Muslims’ in 🇪🇺 Europe who are persecuting ‘Christians’ because their religion is totally unrealistic and has a hidden agenda inside. In reality during the Serbian ethnic wars in the Balkans, we saw the Serbian army",
-            "url": "https://x.com/i/web/status/2078737013331624069",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-19T07:01:39.000Z",
+            "title": "Izveštavanje o napadu na kule bliznakinje u časopisu Dosije X i upoređivanje sa NATO agresijom",
+            "text": "Časopis Dosije X izdanje 13. Septembar 2001. &#32; submitted by &#32; /u/SerbianSteve [link] &#32; [comments]",
+            "url": "https://www.reddit.com/r/serbia/comments/1v0oruk/izveštavanje_o_napadu_na_kule_bliznakinje_u/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-07-19T12:02:24+00:00",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
               "Szerbia": 2
             },
-            "event_category": "ethnic_tension",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "ethnic_tension",
+                "category": "security",
                 "hits": 1,
-                "weight": 10
+                "weight": 9
               }
             ],
             "geopolitical_score": 13,
-            "quality_score": 14,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
+            "quality_score": 16,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Trying to bring in the US a false narrative about some ‘Muslims’ in Europe persecuting ‘Christians’ because their religion is totally unrealistic and has a hidden agenda inside. In",
-            "text": "Trying to bring in the US a false narrative about some ‘Muslims’ in Europe persecuting ‘Christians’ because their religion is totally unrealistic and has a hidden agenda inside. In reality during the Serbian ethnic wars in the Balkans, we saw the Serbian army massacre people",
-            "url": "https://x.com/i/web/status/2078736832624255426",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-19T07:00:56.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -249,31 +248,29 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 20,
-        "level": "medium",
+        "score": 13,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 3,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 47,
-        "geopolitical_total": 37,
+        "quality_total": 38,
+        "geopolitical_total": 27,
         "source_counts": {
-          "reddit": 1,
+          "reddit": 0,
           "mastodon": 3,
           "x": 0
         },
         "category_counts": {
           "security": 1,
           "eu_integration": 1,
-          "corruption_rule_of_law": 1,
-          "ethnic_tension": 1
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
-          "bosnia": 3,
-          "serbia": 1
+          "bosnia": 3
         },
         "main_topic": "security",
         "top_posts": [
@@ -338,35 +335,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Jedna fotka s OK festa",
-            "text": "Tjentište, Republika Srpska &#32; submitted by &#32; /u/Poskokosh [link] &#32; [comments]",
-            "url": "https://www.reddit.com/r/serbia/comments/1v03jby/jedna_fotka_s_ok_festa/",
-            "source": "reddit",
-            "tag": "serbia",
-            "seen_date": "2026-07-18T18:31:35+00:00",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 4
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 9,
-            "source_reliability": 1,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
             "title": "",
             "text": "2026 : EU + genocide denial :blobcathyper: \"A reminder that it is official policy of the European Union to deny a genocide that is still being carried out and that everyone has been watching take place in real time, in intimate detail, via the internet.\" https:// xcancel.com/ClareDalyIRL/statu s/2076365029490966878#m # gaza # genocide # EU # bosnia # palesti",
             "url": "https://todon.eu/@regendans/116912886578641673",
@@ -401,29 +369,28 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 27,
+        "score": 20,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 3,
         "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 52,
-        "geopolitical_total": 42,
+        "quality_total": 41,
+        "geopolitical_total": 32,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "government_crisis": 2,
-          "ethnic_tension": 2
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "kosovo": 3,
-          "Koszovó": 1
+          "kosovo": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -515,41 +482,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Wishlink post Url All Product Urls VredeVogel Kurta Set with Dupatta | Viscose Roman Silk Embroidered Kurta Set for Women | Women's Ethnic Casual Kurti Set |Kurta Pant Festive Suit",
-            "text": "Wishlink post Url All Product Urls VredeVogel Kurta Set with Dupatta | Viscose Roman Silk Embroidered Kurta Set for Women | Women's Ethnic Casual Kurti Set |Kurta Pant Festive Suit (White_2X-Large) Amayra Women's Pure Cotton",
-            "url": "https://x.com/i/web/status/2078691161678680247",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-07-19T03:59:27.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -685,29 +617,28 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 47,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
+        "mentions": 11,
         "negative_hits": 1,
-        "positive_hits": 2,
+        "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 120,
-        "geopolitical_total": 108,
+        "engagement_total": 16,
+        "raw_engagement_total": 16,
+        "quality_total": 152,
+        "geopolitical_total": 137,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 6
+          "x": 9
         },
         "category_counts": {
-          "government_crisis": 7,
-          "security": 1
+          "government_crisis": 11
         },
         "tag_counts": {
           "macedonia": 2,
-          "Észak-Macedónia": 6
+          "Észak-Macedónia": 9
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -796,12 +727,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "JUST IN: 🇮🇳🇲🇩🇷🇴 President Droupadi Murmu has departed for state visits to Moldova, North Macedonia, and Romania. The visit aims to deepen India's diplomatic ties and expand coopera",
-            "text": "JUST IN: 🇮🇳🇲🇩🇷🇴 President Droupadi Murmu has departed for state visits to Moldova, North Macedonia, and Romania. The visit aims to deepen India's diplomatic ties and expand cooperation with key partners in Eastern Europe.",
-            "url": "https://x.com/i/web/status/2078732591667314726",
+            "title": "President Droupadi Murmu on Sunday (July 19, 2026) embarked on state visits to Moldova, North Macedonia, and Romania to further relations with the three countries in a range of sec",
+            "text": "President Droupadi Murmu on Sunday (July 19, 2026) embarked on state visits to Moldova, North Macedonia, and Romania to further relations with the three countries in a range of sectors, including trade and technology, and to boost people-to-people ties.",
+            "url": "https://x.com/i/web/status/2078774346513023357",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-19T06:44:05.000Z",
+            "seen_date": "2026-07-19T09:30:00.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -814,16 +745,21 @@
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
+            "geopolitical_score": 13,
+            "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 4,
+            "raw_engagement": 4,
             "metrics": {
-              "likes": 1,
+              "likes": 4,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -831,12 +767,12 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "President Droupadi Murmu has embarked on a landmark three-nation State visit to Moldova, North Macedonia and Romania, aimed at deepening India's engagement with Eastern Europe and ",
-            "text": "President Droupadi Murmu has embarked on a landmark three-nation State visit to Moldova, North Macedonia and Romania, aimed at deepening India's engagement with Eastern Europe and strengthening political, economic and strategic cooperation",
-            "url": "https://x.com/i/web/status/2078729046234370393",
+            "title": "President Murmu Begins Landmark Three-Nation Diplomatic Tour of Europe 🇮🇳 President Murmu has embarked on an important visit to Moldova, North Macedonia and Romania, aimed at stren",
+            "text": "President Murmu Begins Landmark Three-Nation Diplomatic Tour of Europe 🇮🇳 President Murmu has embarked on an important visit to Moldova, North Macedonia and Romania, aimed at strengthening India’s diplomatic and economic engagement with Southeastern and Eastern Europe. &gt;",
+            "url": "https://x.com/i/web/status/2078804347270631894",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-19T06:30:00.000Z",
+            "seen_date": "2026-07-19T11:29:13.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -847,41 +783,6 @@
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Crossing the international border between North Macedonia 🇲🇰 (foreground) and Greece 🇬🇷 (background). 📸: 2026. NorthMacedonia СевернаМакедонија ΒόρειαΜακεδονία Macedonia Македонија",
-            "text": "Crossing the international border between North Macedonia 🇲🇰 (foreground) and Greece 🇬🇷 (background). 📸: 2026. NorthMacedonia СевернаМакедонија ΒόρειαΜακεδονία Macedonia Македонија Μακεδονία Greece Ελλαδα Грција",
-            "url": "https://x.com/i/web/status/2078737099461701847",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-19T07:02:00.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
                 "hits": 1,
                 "weight": 9
               }
@@ -890,10 +791,45 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
+            "engagement": 7,
+            "raw_engagement": 7,
             "metrics": {
-              "likes": 3,
+              "likes": 6,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "WATCH | President Droupadi Murmu is set to embark on a historic two-day visit to North Macedonia, marking an important milestone in strengthening India’s diplomatic ties with the c",
+            "text": "WATCH | President Droupadi Murmu is set to embark on a historic two-day visit to North Macedonia, marking an important milestone in strengthening India’s diplomatic ties with the country. DDNews correspondent Jayanti Jha spoke with India’s Ambassador to North Macedonia, Arun",
+            "url": "https://x.com/i/web/status/2078819337302135250",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-07-19T12:28:47.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 2,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -909,29 +845,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 20,
-        "negative_hits": 17,
+        "mentions": 21,
+        "negative_hits": 15,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 568,
-        "geopolitical_total": 512,
+        "engagement_total": 50,
+        "raw_engagement_total": 50,
+        "quality_total": 566,
+        "geopolitical_total": 509,
         "source_counts": {
           "reddit": 0,
           "mastodon": 17,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
           "corruption_rule_of_law": 7,
-          "protest": 7,
+          "protest": 6,
           "government_crisis": 5,
-          "ethnic_tension": 1
+          "ethnic_tension": 2,
+          "security": 1
         },
         "tag_counts": {
           "balkans": 14,
           "albania": 1,
           "macedonia": 2,
+          "Koszovó": 1,
           "Albánia": 3
         },
         "main_topic": "corruption_rule_of_law",
@@ -1083,17 +1021,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇦🇱|Albanian Citizens begin march after speeches on the streets of Tirana, on the 49th day of protest. Current Main Demands: •- Immediate resignation of the government •- Fresh and ",
-            "text": "🇦🇱|Albanian Citizens begin march after speeches on the streets of Tirana, on the 49th day of protest. Current Main Demands: •- Immediate resignation of the government •- Fresh and transparent elections •- End to corruption and oligarch control •- Justice for past abuses of",
-            "url": "https://x.com/i/web/status/2078722155169341449",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-07-19T06:02:37.000Z",
+            "title": "",
+            "text": "Il Fatto Quotidiano: “Mi preoccupa che il governo elimini le tutele ambientali senza consultazione pubblica, ma mi incoraggia vedere le persone in piazza ogni sera”: Dua Lipa contro il resort del genero di Trump in Albania Due Lipa scende in campo per sostenere una delle più grandi proteste degli ultimi anni scoppiate in Albania: la “rivoluzione dei fenicott",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/116940395147822028",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Sat, 18 Jul 2026 10:00:22 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 6
+              "Albánia": 5
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -1106,26 +1044,15 @@
                 "category": "protest",
                 "hits": 2,
                 "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
               }
             ],
-            "geopolitical_score": 36,
-            "quality_score": 37,
-            "source_reliability": 2,
+            "geopolitical_score": 29,
+            "quality_score": 32,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 2,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
