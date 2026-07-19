@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19 12:59 UTC",
+  "updated_at": "2026-07-19 13:45 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 20
+    "collected": 22
   },
   "countries": [
     {
@@ -21,25 +21,25 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
+        "mentions": 13,
         "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 3,
-        "engagement_total": 95,
-        "raw_engagement_total": 95,
-        "quality_total": 205,
-        "geopolitical_total": 175,
+        "engagement_total": 8,
+        "raw_engagement_total": 8,
+        "quality_total": 232,
+        "geopolitical_total": 201,
         "source_counts": {
           "reddit": 1,
           "mastodon": 5,
-          "x": 6
+          "x": 7
         },
         "category_counts": {
-          "security": 5,
-          "ethnic_tension": 3,
+          "security": 6,
+          "ethnic_tension": 2,
           "corruption_rule_of_law": 1,
           "eu_integration": 1,
-          "government_crisis": 1,
+          "government_crisis": 2,
           "foreign_influence": 1
         },
         "tag_counts": {
@@ -48,10 +48,9 @@
           "bosnia": 1,
           "montenegro": 1,
           "macedonia": 1,
-          "Szerbia": 3,
-          "Koszovó": 1,
-          "Montenegró": 1,
-          "Albánia": 1
+          "Szerbia": 4,
+          "Koszovó": 2,
+          "Montenegró": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -95,27 +94,27 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "On 15 March 2025, during a mass protest in Belgrade, there were credible allegations that a sonic weapon or similar acoustic device was used against demonstrators, causing shock, p",
-            "text": "On 15 March 2025, during a mass protest in Belgrade, there were credible allegations that a sonic weapon or similar acoustic device was used against demonstrators, causing shock, panic, nausea and other symptoms. It was an appalling incident, yet those responsible have still not",
-            "url": "https://x.com/i/web/status/2078790384491393204",
+            "title": "Serbian President Aleksandar Vučić said he has no plans to impose sanctions on Russia and remains committed to maintaining friendly ties with Moscow, despite EU pressure - reports.",
+            "text": "Serbian President Aleksandar Vučić said he has no plans to impose sanctions on Russia and remains committed to maintaining friendly ties with Moscow, despite EU pressure - reports.",
+            "url": "https://x.com/i/web/status/2078837083041378361",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-07-19T10:33:44.000Z",
+            "seen_date": "2026-07-19T13:39:18.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 4
+              "Szerbia": 9
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               },
               {
-                "category": "protest",
+                "category": "foreign_influence",
                 "hits": 2,
                 "weight": 8
               }
@@ -124,13 +123,13 @@
             "quality_score": 29,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 51,
-            "raw_engagement": 51,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 31,
-              "reposts": 8,
-              "replies": 10,
-              "quotes": 2
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
             },
             "quality": "x_api_filtered"
           },
@@ -178,6 +177,46 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "The man who gathered armed criminals in front of the Serbian Parliament Building called ‘cacilend’!The man who shot his own people in the back with sonic weapons!The man who organi",
+            "text": "The man who gathered armed criminals in front of the Serbian Parliament Building called ‘cacilend’!The man who shot his own people in the back with sonic weapons!The man who organized masked criminals to beat up the Serbian children together with police!",
+            "url": "https://x.com/i/web/status/2078827482577256464",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-19T13:01:09.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 28,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "The man who betrayed the Serbian Holy Land!He betrayed the citizens of the Serbia and Montenegro who was defending country from illegal NATO aggression!The man who stay in the powe",
             "text": "The man who betrayed the Serbian Holy Land!He betrayed the citizens of the Serbia and Montenegro who was defending country from illegal NATO aggression!The man who stay in the power buy stealing votes and blackmailing voters!",
             "url": "https://x.com/i/web/status/2078826663928840291",
@@ -212,35 +251,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "Izveštavanje o napadu na kule bliznakinje u časopisu Dosije X i upoređivanje sa NATO agresijom",
-            "text": "Časopis Dosije X izdanje 13. Septembar 2001. &#32; submitted by &#32; /u/SerbianSteve [link] &#32; [comments]",
-            "url": "https://www.reddit.com/r/serbia/comments/1v0oruk/izveštavanje_o_napadu_na_kule_bliznakinje_u/",
-            "source": "reddit",
-            "tag": "serbia",
-            "seen_date": "2026-07-19T12:02:24+00:00",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 16,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -622,12 +632,12 @@
         "scale": "0-60 risk index",
         "mentions": 11,
         "negative_hits": 1,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 16,
-        "raw_engagement_total": 16,
-        "quality_total": 152,
-        "geopolitical_total": 137,
+        "engagement_total": 20,
+        "raw_engagement_total": 20,
+        "quality_total": 153,
+        "geopolitical_total": 138,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
@@ -727,12 +737,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "President Droupadi Murmu on Sunday (July 19, 2026) embarked on state visits to Moldova, North Macedonia, and Romania to further relations with the three countries in a range of sec",
-            "text": "President Droupadi Murmu on Sunday (July 19, 2026) embarked on state visits to Moldova, North Macedonia, and Romania to further relations with the three countries in a range of sectors, including trade and technology, and to boost people-to-people ties.",
-            "url": "https://x.com/i/web/status/2078774346513023357",
+            "title": "President Droupadi Murmu Sunday embarked on a landmark three-nation European tour covering Moldova, North Macedonia, and Romania to strengthen India's bilateral cooperation in trad",
+            "text": "President Droupadi Murmu Sunday embarked on a landmark three-nation European tour covering Moldova, North Macedonia, and Romania to strengthen India's bilateral cooperation in trade, technology, agriculture, healthcare, and cultural exchanges. PresidentDroupadiMurmu EuropeTour",
+            "url": "https://x.com/i/web/status/2078832151102148616",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-19T09:30:00.000Z",
+            "seen_date": "2026-07-19T13:19:42.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -752,50 +762,15 @@
                 "weight": 4
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
+            "geopolitical_score": 14,
+            "quality_score": 15,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 4,
+              "likes": 0,
               "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "President Murmu Begins Landmark Three-Nation Diplomatic Tour of Europe 🇮🇳 President Murmu has embarked on an important visit to Moldova, North Macedonia and Romania, aimed at stren",
-            "text": "President Murmu Begins Landmark Three-Nation Diplomatic Tour of Europe 🇮🇳 President Murmu has embarked on an important visit to Moldova, North Macedonia and Romania, aimed at strengthening India’s diplomatic and economic engagement with Southeastern and Eastern Europe. &gt;",
-            "url": "https://x.com/i/web/status/2078804347270631894",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-19T11:29:13.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 7,
-            "raw_engagement": 7,
-            "metrics": {
-              "likes": 6,
-              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -826,11 +801,46 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 9,
+            "raw_engagement": 9,
             "metrics": {
-              "likes": 2,
-              "reposts": 0,
+              "likes": 8,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "President Murmu Begins Landmark Three-Nation Diplomatic Tour of Europe 🇮🇳 President Murmu has embarked on an important visit to Moldova, North Macedonia and Romania, aimed at stren",
+            "text": "President Murmu Begins Landmark Three-Nation Diplomatic Tour of Europe 🇮🇳 President Murmu has embarked on an important visit to Moldova, North Macedonia and Romania, aimed at strengthening India’s diplomatic and economic engagement with Southeastern and Eastern Europe. &gt;",
+            "url": "https://x.com/i/web/status/2078804347270631894",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-07-19T11:29:13.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 8,
+            "raw_engagement": 8,
+            "metrics": {
+              "likes": 7,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -845,23 +855,23 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 21,
-        "negative_hits": 15,
+        "mentions": 22,
+        "negative_hits": 16,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 50,
-        "raw_engagement_total": 50,
-        "quality_total": 566,
-        "geopolitical_total": 509,
+        "engagement_total": 21,
+        "raw_engagement_total": 21,
+        "quality_total": 588,
+        "geopolitical_total": 530,
         "source_counts": {
           "reddit": 0,
           "mastodon": 17,
-          "x": 4
+          "x": 5
         },
         "category_counts": {
           "corruption_rule_of_law": 7,
           "protest": 6,
-          "government_crisis": 5,
+          "government_crisis": 6,
           "ethnic_tension": 2,
           "security": 1
         },
@@ -870,7 +880,7 @@
           "albania": 1,
           "macedonia": 2,
           "Koszovó": 1,
-          "Albánia": 3
+          "Albánia": 4
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
