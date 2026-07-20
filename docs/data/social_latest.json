@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19 19:20 UTC",
+  "updated_at": "2026-07-20 02:10 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 23
+    "collected": 26
   },
   "countries": [
     {
@@ -22,83 +22,38 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 12,
-        "negative_hits": 2,
-        "positive_hits": 3,
+        "negative_hits": 3,
+        "positive_hits": 1,
         "trusted_hits": 4,
-        "engagement_total": 18,
-        "raw_engagement_total": 18,
-        "quality_total": 242,
-        "geopolitical_total": 210,
+        "engagement_total": 121,
+        "raw_engagement_total": 733,
+        "quality_total": 212,
+        "geopolitical_total": 179,
         "source_counts": {
-          "reddit": 2,
+          "reddit": 1,
           "mastodon": 5,
-          "x": 5
+          "x": 6
         },
         "category_counts": {
           "security": 4,
-          "ethnic_tension": 1,
+          "ethnic_tension": 3,
           "corruption_rule_of_law": 1,
           "eu_integration": 1,
-          "government_crisis": 4,
+          "government_crisis": 1,
+          "protest": 1,
           "foreign_influence": 1
         },
         "tag_counts": {
-          "serbia": 3,
+          "serbia": 2,
           "kosovo": 1,
           "bosnia": 1,
           "montenegro": 1,
           "macedonia": 1,
-          "Szerbia": 2,
-          "Montenegró": 2,
-          "Albánia": 1
+          "Szerbia": 4,
+          "Montenegró": 2
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "Serbian President Aleksandar Vucic says Belgrade won't impose sanctions on Russia, even if the decision damages its chances of joining the European Union. “You can ask me whatever ",
-            "text": "Serbian President Aleksandar Vucic says Belgrade won't impose sanctions on Russia, even if the decision damages its chances of joining the European Union. “You can ask me whatever you want. My policy is no sanctions and that we want to maintain friendly relations with Russia,”",
-            "url": "https://x.com/i/web/status/2078921634556379276",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-19T19:15:16.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 13
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 35,
-            "quality_score": 36,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "🟢 Diplomacy | 5/10 🇷🇸 🇺🇸 Serbia signs energy memorandum with the US A Serbian-American Memorandum of Understanding on energy infrastructure and regional security will be signed in Washington today, paving the way for new US investments in Serbian energy. # OSINT # NewsGroup # Diplomacy # Energy # Serbia # USA",
@@ -182,67 +137,32 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "A century of unyielding loyalty to the USA cannot be shaken. President Woodrow Wilson saved the Albanian nation from erasure, and our gratitude is written in history! No mercenary ",
-            "text": "A century of unyielding loyalty to the USA cannot be shaken. President Woodrow Wilson saved the Albanian nation from erasure, and our gratitude is written in history! No mercenary voice or puppet pushing cheap serbian-russian propaganda will ever change the fact that Albanians",
-            "url": "https://x.com/i/web/status/2078873831351914802",
+            "title": "EU blasts Serbian minister over ethnic cleansing remarks on Kosovo The European Union has strongly condemned remarks by Serbian Public Administration Minister Snezana Paunovic sugg",
+            "text": "EU blasts Serbian minister over ethnic cleansing remarks on Kosovo The European Union has strongly condemned remarks by Serbian Public Administration Minister Snezana Paunovic suggesting she would have expelled Kosovo Albanians during the 1998-1999 Kosovo war, warning there is",
+            "url": "https://x.com/i/web/status/2078987951628046615",
             "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-07-19T16:05:19.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-19T23:38:48.000Z",
             "matched_countries": [
               "Szerbia",
               "Albánia"
             ],
             "country_confidence": {
               "Szerbia": 2,
-              "Albánia": 2
+              "Albánia": 2,
+              "Koszovó": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "ethnic_tension",
                 "hits": 1,
-                "weight": 9
+                "weight": 10
               },
               {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 25,
-            "quality_score": 26,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 16,
-            "raw_engagement": 16,
-            "metrics": {
-              "likes": 12,
-              "reposts": 0,
-              "replies": 3,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "President Izetbegovic, in his book, The Islamic Declaration,” strongly supported the creation of a fundamentalist Islamic state [in Bosnia]. This is what the Serbian people were fa",
-            "text": "President Izetbegovic, in his book, The Islamic Declaration,” strongly supported the creation of a fundamentalist Islamic state [in Bosnia]. This is what the Serbian people were facing. A Bosnian version of Hamas orchestrated by the U.S. Germany, UK, Iran",
-            "url": "https://x.com/i/web/status/2078915933863866854",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-19T18:52:37.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
               }
             ],
             "geopolitical_score": 19,
@@ -256,6 +176,81 @@
               "reposts": 0,
               "replies": 0,
               "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "The Wikimedia Foundation reversed bans on Serbian Wikipedia administrator Bojan Cvjetković and another user, a rare reversal months after sanctions targeted seven users in March. 🔥",
+            "text": "The Wikimedia Foundation reversed bans on Serbian Wikipedia administrator Bojan Cvjetković and another user, a rare reversal months after sanctions targeted seven users in March. 🔥 NewsFireGR News... Read here 👇👇",
+            "url": "https://x.com/i/web/status/2078943147296456799",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-19T20:40:45.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Feeling quite jealous of a member of my family who has spent the last three hours stuck in standstill traffic at Serbian/Bulgarian border control and has therefore mercifully misse",
+            "text": "Feeling quite jealous of a member of my family who has spent the last three hours stuck in standstill traffic at Serbian/Bulgarian border control and has therefore mercifully missed watching the World Cup half time show and BBC promo. Some people have all the luck, don't they?🤞",
+            "url": "https://x.com/i/web/status/2078940439873261829",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-19T20:30:00.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 17,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 120,
+            "raw_engagement": 732,
+            "metrics": {
+              "likes": 647,
+              "reposts": 16,
+              "replies": 66,
+              "quotes": 3
             },
             "quality": "x_api_filtered"
           }
@@ -386,30 +381,29 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 35,
+        "score": 27,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 2,
+        "mentions": 4,
+        "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 35,
-        "raw_engagement_total": 35,
-        "quality_total": 64,
-        "geopolitical_total": 53,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 52,
+        "geopolitical_total": 42,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "government_crisis": 2,
-          "ethnic_tension": 2,
-          "foreign_influence": 1
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "kosovo": 3,
-          "Koszovó": 2
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -501,43 +495,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "BOSNIA and KOSOVO matter! That’s the point! Serbia’s evil actions between 1992 in Bosnia and the end of the Kosovo conflict resulted in the loss of tens of thousands of Bosniak and",
-            "text": "BOSNIA and KOSOVO matter! That’s the point! Serbia’s evil actions between 1992 in Bosnia and the end of the Kosovo conflict resulted in the loss of tens of thousands of Bosniak and Kosovar lives. For those who buried fathers, brothers, sons, husbands, wives, and children, the",
-            "url": "https://x.com/i/web/status/2078860931615093025",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-07-19T15:14:04.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 2,
-              "Szerbia": 1,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 12,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 34,
-            "raw_engagement": 34,
-            "metrics": {
-              "likes": 24,
-              "reposts": 4,
-              "replies": 6,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "ANNI Designer Women Printed Anarkali Kurta Palazzo Dupatta Set | Viscose Blend Ethnic Outfit | Flared Kurti with Bottom Wear Product purchase link👇",
@@ -708,30 +665,29 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 58,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
+        "mentions": 10,
         "negative_hits": 1,
-        "positive_hits": 4,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 44,
-        "raw_engagement_total": 44,
+        "engagement_total": 34,
+        "raw_engagement_total": 34,
         "quality_total": 155,
-        "geopolitical_total": 140,
+        "geopolitical_total": 141,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 9
+          "x": 8
         },
         "category_counts": {
           "government_crisis": 9,
-          "eu_integration": 1,
-          "security": 1
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "macedonia": 2,
-          "Észak-Macedónia": 9
+          "Észak-Macedónia": 8
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -820,48 +776,47 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Four years since the opening of negotiations for Albania and Macedonia's 🇦🇱 🇲🇰 EU membership 🇪🇺 Albania received candidate status in 2014 and since 2018 has had a recommendation to",
-            "text": "Four years since the opening of negotiations for Albania and Macedonia's 🇦🇱 🇲🇰 EU membership 🇪🇺 Albania received candidate status in 2014 and since 2018 has had a recommendation to start negotiations, but it was put in the same package as North Macedonia and had to wait for 🇲🇰",
-            "url": "https://x.com/i/web/status/2078856229854879982",
+            "title": "Macedonian communities from Australia, Canada, and North America stood together in Skopje, calling for recognition, memory, and justice for the Macedonian refugee children and the ",
+            "text": "Macedonian communities from Australia, Canada, and North America stood together in Skopje, calling for recognition, memory, and justice for the Macedonian refugee children and the Macedonian minority in Greece.",
+            "url": "https://x.com/i/web/status/2078979824001880267",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-19T14:55:23.000Z",
+            "seen_date": "2026-07-19T23:06:30.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Albánia": 1
+              "Észak-Macedónia": 5
             },
-            "event_category": "eu_integration",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "eu_integration",
+                "category": "ethnic_tension",
                 "hits": 2,
-                "weight": 6
+                "weight": 10
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
+            "geopolitical_score": 20,
+            "quality_score": 21,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 16,
-            "raw_engagement": 16,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 13,
+              "likes": 0,
               "reposts": 0,
-              "replies": 3,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "JUST IN: 🇮🇳🇲🇩🇷🇴 President Droupadi Murmu has departed for state visits to Moldova, North Macedonia, and Romania. The visit aims to deepen India's diplomatic ties and expand coopera",
-            "text": "JUST IN: 🇮🇳🇲🇩🇷🇴 President Droupadi Murmu has departed for state visits to Moldova, North Macedonia, and Romania. The visit aims to deepen India's diplomatic ties and expand cooperation with key partners in Eastern Europe.",
-            "url": "https://x.com/i/web/status/2078846234685837340",
+            "title": "President Murmu's European Tour: President Droupadi Murmu embarked on a historic three-nation state visit to Moldova, North Macedonia, and Romania to strengthen diplomatic, trade, ",
+            "text": "President Murmu's European Tour: President Droupadi Murmu embarked on a historic three-nation state visit to Moldova, North Macedonia, and Romania to strengthen diplomatic, trade, and technology relations.",
+            "url": "https://x.com/i/web/status/2078941360577708345",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-19T14:15:40.000Z",
+            "seen_date": "2026-07-19T20:33:39.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -874,16 +829,21 @@
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
+            "geopolitical_score": 13,
+            "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 7,
-            "raw_engagement": 7,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 7,
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -915,11 +875,11 @@
             "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 5,
-            "raw_engagement": 5,
+            "engagement": 9,
+            "raw_engagement": 9,
             "metrics": {
-              "likes": 2,
-              "reposts": 2,
+              "likes": 5,
+              "reposts": 3,
               "replies": 1,
               "quotes": 0
             },
@@ -934,35 +894,34 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 24,
+        "mentions": 21,
         "negative_hits": 16,
-        "positive_hits": 3,
+        "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 40,
-        "raw_engagement_total": 40,
-        "quality_total": 638,
-        "geopolitical_total": 578,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 587,
+        "geopolitical_total": 530,
         "source_counts": {
           "reddit": 0,
           "mastodon": 17,
-          "x": 7
+          "x": 4
         },
         "category_counts": {
-          "protest": 7,
+          "protest": 6,
           "corruption_rule_of_law": 7,
-          "government_crisis": 7,
-          "ethnic_tension": 1,
-          "security": 2
+          "government_crisis": 4,
+          "security": 1,
+          "ethnic_tension": 3
         },
         "tag_counts": {
           "balkans": 14,
           "albania": 1,
           "macedonia": 2,
-          "Szerbia": 1,
-          "Koszovó": 1,
-          "Albánia": 5
+          "Szerbia": 3,
+          "Koszovó": 1
         },
-        "main_topic": "protest",
+        "main_topic": "corruption_rule_of_law",
         "top_posts": [
           {
             "title": "",
@@ -1048,46 +1007,54 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "An armed conflict began in the Republic of Macedonia in 2001 when the ethnic Albanian National Liberation Army (NLA) insurgent group, formed from veterans of the Kosovo War and ins",
+            "text": "An armed conflict began in the Republic of Macedonia in 2001 when the ethnic Albanian National Liberation Army (NLA) insurgent group, formed from veterans of the Kosovo War and insurgency in the Preševo Valley, attacked Macedonian security forces at the end of January 2001",
+            "url": "https://x.com/i/web/status/2078931795710538067",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-07-19T19:55:39.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 2,
+              "Koszovó": 1,
+              "Észak-Macedónia": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 40,
+            "quality_score": 41,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 3,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Day 46 of anti-corruption protests in Tirana, Albania https://www. youtube.com/watch?v=S7m2IKaASO0 # Albania # USpol # Corruption # Balkans # Europe # FlamingoRevolution # Environment",
             "url": "https://mas.to/@meganL/116925172686959884",
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Wed, 15 Jul 2026 17:29:06 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 35,
-            "quality_score": 38,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 44 of anti-corruption protests in Tirana, Albania Live cast as of time of my posting it. https://www. youtube.com/watch?v=3DMGX-TU5P8 # Albania # USpol # Corruption # Balkans # Europe # FlamingoRevolution # Environment",
-            "url": "https://mas.to/@meganL/116913815313906318",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Mon, 13 Jul 2026 17:20:46 +0000",
             "matched_countries": [
               "Albánia"
             ],
