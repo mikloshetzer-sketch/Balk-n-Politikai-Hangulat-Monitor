@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-20 13:53 UTC",
+  "updated_at": "2026-07-20 14:29 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 15
   },
   "countries": [
     {
@@ -22,13 +22,13 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 9,
-        "negative_hits": 2,
+        "negative_hits": 3,
         "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 11,
-        "raw_engagement_total": 11,
-        "quality_total": 179,
-        "geopolitical_total": 159,
+        "engagement_total": 6,
+        "raw_engagement_total": 6,
+        "quality_total": 180,
+        "geopolitical_total": 160,
         "source_counts": {
           "reddit": 1,
           "mastodon": 3,
@@ -37,13 +37,15 @@
         "category_counts": {
           "security": 3,
           "ethnic_tension": 3,
-          "government_crisis": 3
+          "government_crisis": 2,
+          "foreign_influence": 1
         },
         "tag_counts": {
           "serbia": 2,
           "kosovo": 1,
           "macedonia": 1,
-          "Szerbia": 4,
+          "Szerbia": 3,
+          "Koszovó": 1,
           "Montenegró": 1
         },
         "main_topic": "security",
@@ -118,10 +120,10 @@
             "quality_score": 30,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 3,
+            "raw_engagement": 3,
             "metrics": {
-              "likes": 2,
+              "likes": 3,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -172,35 +174,35 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "vučić says he won't campaign as president. he'll campaign \"as a citizen, in his own car.\" a man who has run serbia for twelve years wants you to picture him as just some guy. drivi",
-            "text": "vučić says he won't campaign as president. he'll campaign \"as a citizen, in his own car.\" a man who has run serbia for twelve years wants you to picture him as just some guy. driving himself. one of the people. he's resigning on purpose, so he can run for prime minister",
-            "url": "https://x.com/i/web/status/2079176678367019033",
+            "title": "The Kremlin loves this narrative because it creates the illusion that Serbia is \"defying\" the West while doing business with Moscow. In reality, had the EU really demanded that Ser",
+            "text": "The Kremlin loves this narrative because it creates the illusion that Serbia is \"defying\" the West while doing business with Moscow. In reality, had the EU really demanded that Serbia impose sanctions on Russia, Vucic would have done so long ago.",
+            "url": "https://x.com/i/web/status/2079206053191823444",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-07-20T12:08:44.000Z",
+            "seen_date": "2026-07-20T14:05:27.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
               "Szerbia": 5
             },
-            "event_category": "government_crisis",
+            "event_category": "foreign_influence",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "foreign_influence",
                 "hits": 2,
-                "weight": 9
+                "weight": 8
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
+            "geopolitical_score": 19,
+            "quality_score": 20,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 6,
-            "raw_engagement": 6,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 4,
-              "reposts": 2,
+              "likes": 0,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
@@ -468,30 +470,31 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 15,
-        "level": "low",
+        "score": 21,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 3,
         "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 40,
-        "geopolitical_total": 34,
+        "quality_total": 62,
+        "geopolitical_total": 53,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
+          "mastodon": 3,
           "x": 0
         },
         "category_counts": {
+          "government_crisis": 1,
           "foreign_influence": 1,
           "security": 1
         },
         "tag_counts": {
-          "montenegro": 2
+          "montenegro": 3
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -521,6 +524,35 @@
             ],
             "geopolitical_score": 20,
             "quality_score": 23,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "RaiNews: Giorgia Meloni con il premier portoghese Montenegro: \"Rilanciamo la nostra cooperazione bilaterale\" Da 12 anni, ricorda la presidente del Consiglio, un capo del governo di Lisbona non veniva in Italia. Nel video l'intervento integrale della premier a Palazzo Chigi Giorgia Meloni with the Portuguese Prime Minister Montenegro: “Let’s relaunch our bila",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/116952663866277463",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Mon, 20 Jul 2026 14:00:28 +0000",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 22,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -574,8 +606,8 @@
         "negative_hits": 3,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 56,
-        "raw_engagement_total": 56,
+        "engagement_total": 64,
+        "raw_engagement_total": 64,
         "quality_total": 116,
         "geopolitical_total": 105,
         "source_counts": {
@@ -703,11 +735,11 @@
             "quality_score": 13,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 55,
-            "raw_engagement": 55,
+            "engagement": 63,
+            "raw_engagement": 63,
             "metrics": {
-              "likes": 47,
-              "reposts": 7,
+              "likes": 54,
+              "reposts": 8,
               "replies": 1,
               "quotes": 0
             },
@@ -797,32 +829,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 23,
-        "negative_hits": 18,
+        "mentions": 22,
+        "negative_hits": 17,
         "positive_hits": 3,
         "trusted_hits": 2,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 626,
-        "geopolitical_total": 559,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 616,
+        "geopolitical_total": 550,
         "source_counts": {
           "reddit": 0,
           "mastodon": 20,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
           "protest": 8,
           "corruption_rule_of_law": 7,
           "government_crisis": 6,
-          "ethnic_tension": 1,
-          "eu_integration": 1
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 14,
           "albania": 4,
           "macedonia": 2,
           "Szerbia": 1,
-          "Albánia": 2
+          "Albánia": 1
         },
         "main_topic": "protest",
         "top_posts": [
