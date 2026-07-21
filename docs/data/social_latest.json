@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-21 14:15 UTC",
+  "updated_at": "2026-07-21 19:08 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 15
+    "collected": 24
   },
   "countries": [
     {
@@ -21,124 +21,34 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 4,
-        "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 185,
-        "geopolitical_total": 171,
+        "mentions": 11,
+        "negative_hits": 7,
+        "positive_hits": 0,
+        "trusted_hits": 4,
+        "engagement_total": 17,
+        "raw_engagement_total": 17,
+        "quality_total": 226,
+        "geopolitical_total": 198,
         "source_counts": {
           "reddit": 1,
-          "mastodon": 2,
-          "x": 5
+          "mastodon": 3,
+          "x": 7
         },
         "category_counts": {
-          "security": 5,
-          "government_crisis": 2,
+          "security": 8,
+          "government_crisis": 1,
+          "protest": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
-          "serbia": 2,
+          "serbia": 3,
           "macedonia": 1,
-          "Szerbia": 5
+          "Szerbia": 5,
+          "Koszovó": 1,
+          "Albánia": 1
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "Defense Lawyer Says Interpol Rejected Serbia’s Request for Notices Against Exiled Student Activists Serbia Interpol StudentProtests NoviSad STAV PSG RuleOfLaw HumanRights SerbianPo",
-            "text": "Defense Lawyer Says Interpol Rejected Serbia’s Request for Notices Against Exiled Student Activists Serbia Interpol StudentProtests NoviSad STAV PSG RuleOfLaw HumanRights SerbianPolitics WesternBalkans Judiciary PoliticalPrisoners",
-            "url": "https://x.com/i/web/status/2079568100920361265",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-21T14:04:06.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 36,
-            "quality_score": 37,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🇦🇱🇽🇰| Albania’s Defense Minister Ermal Nufi harshly criticizes Serbian Minister Paunovic for glorifying ethnic cleansing against Kosova Albanians: „I consider this statement scanda",
-            "text": "🇦🇱🇽🇰| Albania’s Defense Minister Ermal Nufi harshly criticizes Serbian Minister Paunovic for glorifying ethnic cleansing against Kosova Albanians: „I consider this statement scandalous and unacceptable. Any rhetoric of this kind is unacceptable and reprehensible. Any support",
-            "url": "https://x.com/i/web/status/2079543740201410910",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-21T12:27:18.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 31,
-            "quality_score": 32,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Agenzia Nova: Serbia-Croazia: rimosso blocco valico Nestin, trovata soluzione temporanea per residenti 21 lug 08:15 - (Agenzia Nova) - Dopo sette giorni di proteste e' stato rimosso il blocco al valico di frontiera di Neštin tra Serbia e Croazia.... (Seb) Serbia-Croatia: Block at Nestin border crossing removed, temporary solution found for residents. July 21",
@@ -217,6 +127,40 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "",
+            "text": "Radioactivity can still be measured in # Serbia 's SW region from US/UK bombing in 1999 Iran experiences severe droughts this part of the year in large parts of the country, and attacks on desalination and water management infrastructure is beyond war crime. One thing it does not do is affect the lives of those managing government and military. The attack is",
+            "url": "https://kolektiva.social/@iriyan/116959098845039761",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Tue, 21 Jul 2026 17:16:58 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 25,
+            "quality_score": 28,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
             "title": "Toni Bler, savetnik Srbije - 2015.",
             "text": "Ironija SNS vlasti je da je Vučić u početku svoje političke karijere gledao na bivšeg britanskog premijera Tonija Blera kao državnog neprijatelja broj jedan, jer je bio među ljudima koji su odobrili i podržavali NATO bombardovanje nad SR Jugoslavijom, 2015. godine otkriveno je da je Vučić dok je bio na poziciji predsednika Vlade zaposlio firmu Blera \"Tony Bl",
             "url": "https://www.reddit.com/r/serbia/comments/1v2gvhg/toni_bler_savetnik_srbije_2015/",
@@ -249,6 +193,49 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "EU concerned about Haxhiu's decree on the resignations of Serbian judicial personnel, but the EU has never been concerned or declared about the Serbian minister who prefer to have ",
+            "text": "EU concerned about Haxhiu's decree on the resignations of Serbian judicial personnel, but the EU has never been concerned or declared about the Serbian minister who prefer to have carry out Milosevic's work of ethnic cleansing of Albanians in Kosovo! Very disappointing!!",
+            "url": "https://x.com/i/web/status/2079612398369931706",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-07-21T17:00:07.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Albánia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 23,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -324,12 +311,12 @@
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 88,
-        "geopolitical_total": 70,
+        "quality_total": 99,
+        "geopolitical_total": 79,
         "source_counts": {
-          "reddit": 1,
+          "reddit": 0,
           "mastodon": 5,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "corruption_rule_of_law": 2,
@@ -338,10 +325,47 @@
           "security": 1
         },
         "tag_counts": {
-          "kosovo": 6
+          "kosovo": 5,
+          "Koszovó": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
+          {
+            "title": "Bulgarian Analyst: Kosovo’s Stability Is Essential for Balkan Security Kosovo Bulgaria Albania WesternBalkans EUIntegration BalkanSecurity EuropeanUnion Pristina Sofia RegionalCoop",
+            "text": "Bulgarian Analyst: Kosovo’s Stability Is Essential for Balkan Security Kosovo Bulgaria Albania WesternBalkans EUIntegration BalkanSecurity EuropeanUnion Pristina Sofia RegionalCooperation Democracy Geopolitics",
+            "url": "https://x.com/i/web/status/2079626431206707528",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-07-21T17:55:53.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
+              "Albánia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "RT by @ EULEXkosovo : # Kosovo : @ EUCouncil has appointed Mr. Antero Lopes 🇵🇹 as the new Head of Mission of EULEX Kosovo. Starting on 10 August 2026, he will lead the EU mission supporting Kosovar rule of law institutions until 14 June 2027. More ⬇️ https:// link.europa.eu/b8ntBb # Kosovo : @ EUCouncil has appointed Mr. Antero Lopes 🇵🇹 as the new Head of Mi",
@@ -457,35 +481,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "RT by @ EUKosovo : Met with LDK Chairman @LumirAbdixhiku and AAK Chairman @Ardiangjini I encourage PM @albinkurti to show statesmanship to build a functioning coalition & secure the election of the President. # Kosovo needs stable institutions to advance on 🇪🇺 path. @eu_enlargement_ @ europarl_en --- https:// nitter.net/RihoTerras/status/2 074521999620153595",
-            "url": "https://respublicae.eu/@EUKosovo/116953104903112112",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Mon, 20 Jul 2026 15:52:37 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -587,31 +582,111 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 49,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 1,
-        "positive_hits": 2,
+        "mentions": 12,
+        "negative_hits": 2,
+        "positive_hits": 5,
         "trusted_hits": 0,
-        "engagement_total": 25,
-        "raw_engagement_total": 25,
-        "quality_total": 146,
-        "geopolitical_total": 134,
+        "engagement_total": 124,
+        "raw_engagement_total": 171,
+        "quality_total": 229,
+        "geopolitical_total": 213,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 6
+          "x": 10
         },
         "category_counts": {
-          "government_crisis": 8
+          "government_crisis": 12
         },
         "tag_counts": {
           "macedonia": 2,
-          "Észak-Macedónia": 6
+          "Észak-Macedónia": 10
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "DDPulse | Top Headlines President Droupadi Murmu calls for stronger bilateral ties, trade, and economic cooperation during North Macedonia visit. Union Minister says the government",
+            "text": "DDPulse | Top Headlines President Droupadi Murmu calls for stronger bilateral ties, trade, and economic cooperation during North Macedonia visit. Union Minister says the government is ready for a Parliament debate on NEET, accuses Opposition of shifting",
+            "url": "https://x.com/i/web/status/2079619562509918327",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-07-21T17:28:35.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 32,
+            "quality_score": 33,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Headlines: DD India Newshour 🔶 PM Modi reassures students 🔶 President addresses North Macedonia Assembly 🔶 India protests death of 4 Indian soldiers 🔶 West Asia crisis deepens 🔶 Sp",
+            "text": "Headlines: DD India Newshour 🔶 PM Modi reassures students 🔶 President addresses North Macedonia Assembly 🔶 India protests death of 4 Indian soldiers 🔶 West Asia crisis deepens 🔶 Spain battles massive wildfires WATCH 🔗",
+            "url": "https://x.com/i/web/status/2079629538687074778",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-07-21T18:08:14.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "⚡️🇺🇦Ten countries adopt Kyiv Declaration at Ukraine–Southeast Europe Summit (more) https://www. ukrinform.net/rubric-polytics/ 4144679-ten-countries-adopt-kyiv-declaration-at-ukrainesoutheast-europe-summit.html # Ukraine # Romania # Moldova # Albania # Slovakia # Slovenia # Macedonia # Brussels # PACE # CoE # Greece # Croatia # Bulgaria # Press # Media # New",
@@ -697,47 +772,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Prime Minister Hristijan Mickoski of North Macedonia hosted a luncheon in honour of President Droupadi Murmu at Skopje. Several members of the Cabinet and parliamentarians of North",
-            "text": "Prime Minister Hristijan Mickoski of North Macedonia hosted a luncheon in honour of President Droupadi Murmu at Skopje. Several members of the Cabinet and parliamentarians of North Macedonia were also present on the occasion. During their conversation, the two leaders",
-            "url": "https://x.com/i/web/status/2079570480005271999",
+            "title": "WATCH | President Droupadi Murmu’s state visit to North Macedonia marks a new chapter in India-North Macedonia relations, with both nations agreeing to expand cooperation in trade,",
+            "text": "WATCH | President Droupadi Murmu’s state visit to North Macedonia marks a new chapter in India-North Macedonia relations, with both nations agreeing to expand cooperation in trade, investment, healthcare, technology, culture, and renewable energy. The visit reinforces shared",
+            "url": "https://x.com/i/web/status/2079633631056953634",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-21T14:13:33.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 13
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 3,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Breaking: I hope India will set up an embassy in North Macedonia, says the country's President alongside Indian President Murmu",
-            "text": "Breaking: I hope India will set up an embassy in North Macedonia, says the country's President alongside Indian President Murmu",
-            "url": "https://x.com/i/web/status/2079569518142046351",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-21T14:09:44.000Z",
+            "seen_date": "2026-07-21T18:24:30.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -752,56 +792,21 @@
                 "weight": 9
               },
               {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
+                "category": "economic_infrastructure",
+                "hits": 3,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 17,
-            "quality_score": 18,
+            "geopolitical_score": 22,
+            "quality_score": 23,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 22,
-            "raw_engagement": 22,
-            "metrics": {
-              "likes": 20,
-              "reposts": 0,
-              "replies": 2,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "India to double Indian Technical and Economic Cooperation training slots for North Macedonia: President Murmu News in Nagamese:",
-            "text": "India to double Indian Technical and Economic Cooperation training slots for North Macedonia: President Murmu News in Nagamese:",
-            "url": "https://x.com/i/web/status/2079570389869715629",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-21T14:13:12.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
               "likes": 0,
               "reposts": 0,
-              "replies": 0,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -815,79 +820,37 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 23,
-        "negative_hits": 19,
-        "positive_hits": 3,
-        "trusted_hits": 3,
-        "engagement_total": 121,
-        "raw_engagement_total": 207,
-        "quality_total": 643,
-        "geopolitical_total": 572,
+        "mentions": 26,
+        "negative_hits": 20,
+        "positive_hits": 2,
+        "trusted_hits": 5,
+        "engagement_total": 17,
+        "raw_engagement_total": 17,
+        "quality_total": 677,
+        "geopolitical_total": 599,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 21,
-          "x": 2
+          "mastodon": 20,
+          "x": 6
         },
         "category_counts": {
-          "corruption_rule_of_law": 7,
-          "protest": 10,
-          "government_crisis": 4,
+          "corruption_rule_of_law": 8,
+          "protest": 7,
+          "government_crisis": 5,
           "foreign_influence": 1,
-          "ethnic_tension": 1
+          "security": 2,
+          "ethnic_tension": 3
         },
         "tag_counts": {
           "balkans": 14,
-          "albania": 5,
+          "albania": 4,
           "macedonia": 2,
           "Szerbia": 1,
-          "Albánia": 1
+          "Koszovó": 3,
+          "Albánia": 2
         },
-        "main_topic": "protest",
+        "main_topic": "corruption_rule_of_law",
         "top_posts": [
-          {
-            "title": "",
-            "text": "Protests / Marta Kos to Rama: Repeal the amendments to the law on protected areas Protestat/ Marta Kos- Ramës: Shfuqizoni ndryshimet e ligjit për zonat e mbrojtura In Brussels, in a meeting on Albania's integration process into the EU, the Commissioner for Enlargement Marta Kos said that Albania must repeal the 2024 changes to their law on protected areas (t",
-            "url": "https://mas.to/@meganL/116922933133560379",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 15 Jul 2026 07:59:33 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 44,
-            "quality_score": 47,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Day 50 of anti-corruption protests in Tirana, Albania You have to admire how Albanians have gotten out on the streets in their hundreds and sometimes in the thousands for 50 days straight now. I've never witnessed anything that coalesced like this each day that lasted as long (that is, it's not an encampment or sit-in). Looks like a light turnout tonight, bu",
@@ -996,32 +959,29 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇦🇱🇽🇰| Albania’s Defense Minister Ermal Nufi harshly criticizes Serbian Minister Paunovic for glorifying ethnic cleansing against Kosova Albanians: „I consider this statement scanda",
-            "text": "🇦🇱🇽🇰| Albania’s Defense Minister Ermal Nufi harshly criticizes Serbian Minister Paunovic for glorifying ethnic cleansing against Kosova Albanians: „I consider this statement scandalous and unacceptable. Any rhetoric of this kind is unacceptable and reprehensible. Any support",
-            "url": "https://x.com/i/web/status/2079543740201410910",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-21T12:27:18.000Z",
+            "title": "",
+            "text": "Even with my very bad command of Albanian, I can tell this guy is a helluva orator. The translation app seems to confirm that. Not only is his cadence good, but he is very good at crafting a call to the people that is more than just impromptu and heartfelt (although those are not bad things). He calls out the corruption of governments by both major parties o",
+            "url": "https://mas.to/@meganL/116931174686976589",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Thu, 16 Jul 2026 18:55:29 +0000",
             "matched_countries": [
-              "Szerbia",
               "Albánia"
             ],
             "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2,
-              "Koszovó": 1
+              "Albánia": 2
             },
-            "event_category": "ethnic_tension",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
               },
               {
                 "category": "corruption_rule_of_law",
@@ -1029,19 +989,47 @@
                 "weight": 8
               }
             ],
-            "geopolitical_score": 31,
-            "quality_score": 32,
-            "source_reliability": 2,
+            "geopolitical_score": 28,
+            "quality_score": 31,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Albania: 51mo giorno di proteste a Tirana contro progetto di Zvernec e governo Rama - video 2 20 lug 12:06 - (Agenzia Nova) - I manifestanti lanciano uova contro le auto di alcuni parlamentari al loro arrivo al Parlamento di Tirana. (Alt) Albania: 51st day of protests in Tirana against the Zvernec project and the Rama government – video 2 July ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/116951798174042143",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Mon, 20 Jul 2026 10:20:18 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
             },
-            "quality": "x_api_filtered"
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 31,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
