@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-21 03:35 UTC",
+  "updated_at": "2026-07-21 08:12 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,53 +12,53 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 14
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 35,
-        "level": "medium",
+        "score": 60,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 2,
-        "positive_hits": 1,
+        "mentions": 6,
+        "negative_hits": 6,
+        "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 101,
-        "geopolitical_total": 90,
+        "engagement_total": 25,
+        "raw_engagement_total": 25,
+        "quality_total": 145,
+        "geopolitical_total": 132,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 2
+          "x": 4
         },
         "category_counts": {
-          "security": 2,
+          "security": 4,
           "government_crisis": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "serbia": 1,
           "macedonia": 1,
-          "Koszovó": 1,
+          "Szerbia": 3,
           "Montenegró": 1
         },
         "main_topic": "security",
         "top_posts": [
           {
             "title": "",
-            "text": "🟢 Diplomacy | 5/10 🇷🇸 🇺🇸 Serbia signs energy memorandum with the US A Serbian-American Memorandum of Understanding on energy infrastructure and regional security will be signed in Washington today, paving the way for new US investments in Serbian energy. # OSINT # NewsGroup # Diplomacy # Energy # Serbia # USA",
-            "url": "https://social.vir.group/@analytics/116940185612810930",
+            "text": "Agenzia Nova: Serbia-Croazia: rimosso blocco valico Nestin, trovata soluzione temporanea per residenti 21 lug 08:15 - (Agenzia Nova) - Dopo sette giorni di proteste e' stato rimosso il blocco al valico di frontiera di Neštin tra Serbia e Croazia.... (Seb) Serbia-Croatia: Block at Nestin border crossing removed, temporary solution found for residents. July 21",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/116956634510341769",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Sat, 18 Jul 2026 09:07:05 +0000",
+            "seen_date": "Tue, 21 Jul 2026 06:50:15 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2
+              "Szerbia": 1
             },
             "event_category": "security",
             "event_categories": [
@@ -68,18 +68,13 @@
                 "weight": 9
               },
               {
-                "category": "foreign_influence",
-                "hits": 1,
+                "category": "protest",
+                "hits": 2,
                 "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 3,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 30,
-            "quality_score": 33,
+            "geopolitical_score": 28,
+            "quality_score": 31,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -173,18 +168,17 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "The Serbian Orthodox Church played an instrumental role in legitimizing the genocide and ethnic cleansing by Serbia in Bosnia and Kosovo in the ‘90s. They never apologized for it. ",
-            "text": "The Serbian Orthodox Church played an instrumental role in legitimizing the genocide and ethnic cleansing by Serbia in Bosnia and Kosovo in the ‘90s. They never apologized for it. And their propaganda machine is beating the same drum today.",
-            "url": "https://x.com/i/web/status/2079298279188099511",
+            "title": "This is what silent occupation and real ethnic cleansing looks like. Serb % in Kosovo & Metohija 1455 (early Ottoman): 95.9% Today: ~5% Centuries of Ottoman rule + expulsions destr",
+            "text": "This is what silent occupation and real ethnic cleansing looks like. Serb % in Kosovo & Metohija 1455 (early Ottoman): 95.9% Today: ~5% Centuries of Ottoman rule + expulsions destroyed ~150 Serbian Orthodox churches. The 2004 pogrom displaced thousands more Serbs (with dozens",
+            "url": "https://x.com/i/web/status/2079442055206490224",
             "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-07-20T20:11:55.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-21T05:43:14.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
               "Szerbia": 2,
-              "Bosznia-Hercegovina": 1,
               "Koszovó": 1
             },
             "event_category": "ethnic_tension",
@@ -193,10 +187,51 @@
                 "category": "ethnic_tension",
                 "hits": 1,
                 "weight": 10
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
+            "geopolitical_score": 21,
+            "quality_score": 22,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 25,
+            "raw_engagement": 25,
+            "metrics": {
+              "likes": 17,
+              "reposts": 7,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Serbian National Arrested at Vërmicë Border Crossing for Allegedly Offering a Bribe to Officials KosovoPolice Vermice BorderCrossing Serbia Bribery",
+            "text": "Serbian National Arrested at Vërmicë Border Crossing for Allegedly Offering a Bribe to Officials KosovoPolice Vermice BorderCrossing Serbia Bribery",
+            "url": "https://x.com/i/web/status/2079471479842807884",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-21T07:40:10.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 22,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -274,31 +309,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 28,
+        "score": 25,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 5,
         "negative_hits": 1,
-        "positive_hits": 4,
+        "positive_hits": 3,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 92,
-        "geopolitical_total": 70,
+        "quality_total": 79,
+        "geopolitical_total": 60,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 6,
+          "mastodon": 5,
           "x": 0
         },
         "category_counts": {
           "corruption_rule_of_law": 2,
-          "government_crisis": 3,
+          "government_crisis": 2,
           "eu_integration": 1
         },
         "tag_counts": {
-          "kosovo": 6
+          "kosovo": 5
         },
-        "main_topic": "government_crisis",
+        "main_topic": "corruption_rule_of_law",
         "top_posts": [
           {
             "title": "",
@@ -418,11 +453,11 @@
           },
           {
             "title": "",
-            "text": "Kosovo Coalition Talks Suspended as Turmoil Grips Opposition Party https:// fed.brid.gy/r/https://balkanin sight.com/2026/07/16/kosovo-coalition-talks-suspended-as-turmoil-grips-opposition-party/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/07/16/kosovo-coalition-talks-suspended-as-turmoil-grips-opposition-party/bi/",
+            "text": "RT by @ EUKosovo : Met with LDK Chairman @LumirAbdixhiku and AAK Chairman @Ardiangjini I encourage PM @albinkurti to show statesmanship to build a functioning coalition & secure the election of the President. # Kosovo needs stable institutions to advance on 🇪🇺 path. @eu_enlargement_ @ europarl_en --- https:// nitter.net/RihoTerras/status/2 074521999620153595",
+            "url": "https://respublicae.eu/@EUKosovo/116953104903112112",
             "source": "mastodon",
             "tag": "kosovo",
-            "seen_date": "Thu, 16 Jul 2026 10:02:58 +0000",
+            "seen_date": "Mon, 20 Jul 2026 15:52:37 +0000",
             "matched_countries": [
               "Koszovó"
             ],
@@ -437,8 +472,8 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 13,
+            "geopolitical_score": 9,
+            "quality_score": 12,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -580,17 +615,17 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 51,
-        "level": "high",
+        "score": 38,
+        "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 7,
-        "negative_hits": 2,
-        "positive_hits": 1,
+        "negative_hits": 1,
+        "positive_hits": 4,
         "trusted_hits": 0,
-        "engagement_total": 121,
-        "raw_engagement_total": 501,
-        "quality_total": 112,
-        "geopolitical_total": 101,
+        "engagement_total": 12,
+        "raw_engagement_total": 12,
+        "quality_total": 120,
+        "geopolitical_total": 109,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
@@ -690,12 +725,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "President Murmu arrives in North Macedonia on second-leg of her 3-nation visit · President Droupadi Murmu was accorded a warm welcome as she arrived in North Macedonia on the secon",
-            "text": "President Murmu arrives in North Macedonia on second-leg of her 3-nation visit · President Droupadi Murmu was accorded a warm welcome as she arrived in North Macedonia on the second leg of her three-nation visit on Tuesday (Indian time), after successfully concluding her visit",
-            "url": "https://x.com/i/web/status/2079408030119325733",
+            "title": "WATCH | President DroupadiMurmu has arrived in North Macedonia the 2nd leg of her three-nation State visit and the first-ever visit by an Indian President to the country. The visit",
+            "text": "WATCH | President DroupadiMurmu has arrived in North Macedonia the 2nd leg of her three-nation State visit and the first-ever visit by an Indian President to the country. The visit aims to deepen India–North Macedonia ties in trade, investment, technology, education and",
+            "url": "https://x.com/i/web/status/2079445695178899814",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-21T03:28:02.000Z",
+            "seen_date": "2026-07-21T05:57:42.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -708,29 +743,34 @@
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 2,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
+            "geopolitical_score": 18,
+            "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 5,
+            "raw_engagement": 5,
             "metrics": {
-              "likes": 1,
-              "reposts": 0,
+              "likes": 4,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "President Droupadi Murmu reached North Macedonia on the second leg of her 3 nation state visit. This is the first ever visit by an Indian President to North Macedonia. PresidentMur",
-            "text": "President Droupadi Murmu reached North Macedonia on the second leg of her 3 nation state visit. This is the first ever visit by an Indian President to North Macedonia. PresidentMurmu will hold bilateral talks with her Macedonian counterpart Gordana Siljanovska-Davkova.",
-            "url": "https://x.com/i/web/status/2079405236087832602",
+            "title": "WATCH | On the second leg of her three-nation state visit, President DroupadiMurmu has reached North Macedonia. This is the first-ever visit by an Indian President to North Macedon",
+            "text": "WATCH | On the second leg of her three-nation state visit, President DroupadiMurmu has reached North Macedonia. This is the first-ever visit by an Indian President to North Macedonia. President Murmu will hold bilateral talks with her Macedonian counterpart Gordana",
+            "url": "https://x.com/i/web/status/2079444900266029416",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-21T03:16:56.000Z",
+            "seen_date": "2026-07-21T05:54:33.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -749,28 +789,28 @@
             "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 6,
+            "raw_engagement": 6,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 2,
+              "reposts": 3,
               "replies": 0,
-              "quotes": 0
+              "quotes": 1
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "Indian President on 2nd leg of 3 nation visit, reaches North Macedonia",
-            "text": "Indian President on 2nd leg of 3 nation visit, reaches North Macedonia",
-            "url": "https://x.com/i/web/status/2079395306945630489",
+            "title": "A new chapter begins in 🇮🇳🇲🇰 relations. President Droupadi Murmu's arrival in Skopje for the first-ever State Visit by an Indian President reflects the growing trust and momentum b",
+            "text": "A new chapter begins in 🇮🇳🇲🇰 relations. President Droupadi Murmu's arrival in Skopje for the first-ever State Visit by an Indian President reflects the growing trust and momentum between India and North Macedonia. The visit promises to expand cooperation and",
+            "url": "https://x.com/i/web/status/2079451436778410027",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-21T02:37:29.000Z",
+            "seen_date": "2026-07-21T06:20:31.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5
+              "Észak-Macedónia": 9
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -780,16 +820,16 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
+            "geopolitical_score": 10,
+            "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 120,
-            "raw_engagement": 500,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 475,
-              "reposts": 22,
-              "replies": 3,
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -803,32 +843,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 26,
-        "negative_hits": 20,
+        "mentions": 23,
+        "negative_hits": 18,
         "positive_hits": 2,
         "trusted_hits": 3,
-        "engagement_total": 13,
-        "raw_engagement_total": 13,
-        "quality_total": 687,
-        "geopolitical_total": 613,
+        "engagement_total": 7,
+        "raw_engagement_total": 7,
+        "quality_total": 649,
+        "geopolitical_total": 578,
         "source_counts": {
           "reddit": 0,
           "mastodon": 21,
-          "x": 5
+          "x": 2
         },
         "category_counts": {
           "corruption_rule_of_law": 7,
           "protest": 9,
-          "government_crisis": 7,
+          "government_crisis": 5,
           "foreign_influence": 1,
-          "ethnic_tension": 2
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 14,
           "albania": 5,
           "macedonia": 2,
-          "Szerbia": 2,
-          "Albánia": 3
+          "Koszovó": 1,
+          "Albánia": 1
         },
         "main_topic": "protest",
         "top_posts": [
@@ -916,53 +956,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Beyond her scandalous statement about the ethnic cleansing of Albanians, SnezanaPaunović also made another deeply concerning remark during the same interview. She spoke about the e",
-            "text": "Beyond her scandalous statement about the ethnic cleansing of Albanians, SnezanaPaunović also made another deeply concerning remark during the same interview. She spoke about the eventual departure of KFOR from Kosovo, implying that Serbia is waiting for the moment to attack",
-            "url": "https://x.com/i/web/status/2079329120081567992",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-20T22:14:28.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 2,
-              "Szerbia": 1,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 39,
-            "quality_score": 40,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 13,
-            "raw_engagement": 13,
-            "metrics": {
-              "likes": 12,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Day 46 of anti-corruption protests in Tirana, Albania https://www. youtube.com/watch?v=S7m2IKaASO0 # Albania # USpol # Corruption # Balkans # Europe # FlamingoRevolution # Environment",
             "url": "https://mas.to/@meganL/116925172686959884",
@@ -995,6 +988,51 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Al Jazeera has once again reported on the protests taking place in Albania against Prime Minister Edi Rama’s government, noting that Albanian citizens have been protesting against ",
+            "text": "Al Jazeera has once again reported on the protests taking place in Albania against Prime Minister Edi Rama’s government, noting that Albanian citizens have been protesting against corruption and misgovernment for seven weeks.",
+            "url": "https://x.com/i/web/status/2079468589506056296",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-07-21T07:28:41.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 6
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 36,
+            "quality_score": 37,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
