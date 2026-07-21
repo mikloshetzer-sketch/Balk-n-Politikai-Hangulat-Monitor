@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-21 08:44 UTC",
+  "updated_at": "2026-07-21 13:22 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -18,37 +18,82 @@
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 60,
+        "score": 46,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 6,
-        "negative_hits": 6,
-        "positive_hits": 0,
+        "mentions": 5,
+        "negative_hits": 3,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 33,
-        "raw_engagement_total": 33,
-        "quality_total": 135,
-        "geopolitical_total": 122,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 129,
+        "geopolitical_total": 118,
         "source_counts": {
-          "reddit": 0,
+          "reddit": 1,
           "mastodon": 2,
-          "x": 4
+          "x": 2
         },
         "category_counts": {
-          "security": 3,
+          "security": 2,
           "government_crisis": 1,
-          "corruption_rule_of_law": 1,
-          "ethnic_tension": 1
+          "ethnic_tension": 2
         },
         "tag_counts": {
-          "serbia": 1,
+          "serbia": 2,
           "macedonia": 1,
-          "Szerbia": 2,
-          "Koszovó": 1,
-          "Montenegró": 1
+          "Szerbia": 2
         },
         "main_topic": "security",
         "top_posts": [
+          {
+            "title": "🇦🇱🇽🇰| Albania’s Defense Minister Ermal Nufi harshly criticizes Serbian Minister Paunovic for glorifying ethnic cleansing against Kosova Albanians: „I consider this statement scanda",
+            "text": "🇦🇱🇽🇰| Albania’s Defense Minister Ermal Nufi harshly criticizes Serbian Minister Paunovic for glorifying ethnic cleansing against Kosova Albanians: „I consider this statement scandalous and unacceptable. Any rhetoric of this kind is unacceptable and reprehensible. Any support",
+            "url": "https://x.com/i/web/status/2079543740201410910",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-21T12:27:18.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Albánia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 31,
+            "quality_score": 32,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Agenzia Nova: Serbia-Croazia: rimosso blocco valico Nestin, trovata soluzione temporanea per residenti 21 lug 08:15 - (Agenzia Nova) - Dopo sette giorni di proteste e' stato rimosso il blocco al valico di frontiera di Neštin tra Serbia e Croazia.... (Seb) Serbia-Croatia: Block at Nestin border crossing removed, temporary solution found for residents. July 21",
@@ -127,20 +172,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "The collective army of Russian, Belorussian, Ukrainian, Greece, Serbian , Croatia, Bosnia g Herzegovina, Montenegro, Slovenia and Macedonia are by DNA warriors..! Their United army",
-            "text": "The collective army of Russian, Belorussian, Ukrainian, Greece, Serbian , Croatia, Bosnia g Herzegovina, Montenegro, Slovenia and Macedonia are by DNA warriors..! Their United army will eradicate the Nato from the EU.",
-            "url": "https://x.com/i/web/status/2079260007401738486",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-07-20T17:39:51.000Z",
+            "title": "Toni Bler, savetnik Srbije - 2015.",
+            "text": "Ironija SNS vlasti je da je Vučić u početku svoje političke karijere gledao na bivšeg britanskog premijera Tonija Blera kao državnog neprijatelja broj jedan, jer je bio među ljudima koji su odobrili i podržavali NATO bombardovanje nad SR Jugoslavijom, 2015. godine otkriveno je da je Vučić dok je bio na poziciji predsednika Vlade zaposlio firmu Blera \"Tony Bl",
+            "url": "https://www.reddit.com/r/serbia/comments/1v2gvhg/toni_bler_savetnik_srbije_2015/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-07-21T12:22:04+00:00",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2,
-              "Bosznia-Hercegovina": 1,
-              "Montenegró": 1,
-              "Észak-Macedónia": 1
+              "Szerbia": 9
             },
             "event_category": "security",
             "event_categories": [
@@ -150,32 +192,26 @@
                 "weight": 9
               },
               {
-                "category": "foreign_influence",
+                "category": "government_crisis",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
               }
             ],
-            "geopolitical_score": 24,
-            "quality_score": 28,
+            "geopolitical_score": 23,
+            "quality_score": 26,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           },
           {
-            "title": "This is what silent occupation and real ethnic cleansing looks like. Serb % in Kosovo & Metohija 1455 (early Ottoman): 95.9% Today: ~5% Centuries of Ottoman rule + expulsions destr",
-            "text": "This is what silent occupation and real ethnic cleansing looks like. Serb % in Kosovo & Metohija 1455 (early Ottoman): 95.9% Today: ~5% Centuries of Ottoman rule + expulsions destroyed ~150 Serbian Orthodox churches. The 2004 pogrom displaced thousands more Serbs (with dozens",
-            "url": "https://x.com/i/web/status/2079442055206490224",
+            "title": "Serbian Minister Backs ‘Ethnic Cleansing’ of Kosovo Serbia",
+            "text": "Serbian Minister Backs ‘Ethnic Cleansing’ of Kosovo Serbia",
+            "url": "https://x.com/i/web/status/2079511597307822461",
             "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-07-21T05:43:14.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-21T10:19:34.000Z",
             "matched_countries": [
               "Szerbia"
             ],
@@ -189,57 +225,16 @@
                 "category": "ethnic_tension",
                 "hits": 1,
                 "weight": 10
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
               }
             ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
+            "geopolitical_score": 10,
+            "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 32,
-            "raw_engagement": 32,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 23,
-              "reposts": 8,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Former Bosnian Serb leader Radovan Karadzic, one of the world’s top war crimes fugitives, was arrested in a Belgrade suburb by Serbian security forces.",
-            "text": "Former Bosnian Serb leader Radovan Karadzic, one of the world’s top war crimes fugitives, was arrested in a Belgrade suburb by Serbian security forces.",
-            "url": "https://x.com/i/web/status/2079479335371571421",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-21T08:11:23.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 6,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -488,66 +483,31 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 21,
-        "level": "medium",
+        "score": 11,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
+        "mentions": 2,
+        "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 62,
-        "geopolitical_total": 53,
+        "quality_total": 39,
+        "geopolitical_total": 33,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 3,
+          "mastodon": 2,
           "x": 0
         },
         "category_counts": {
           "government_crisis": 1,
-          "foreign_influence": 1,
-          "security": 1
+          "foreign_influence": 1
         },
         "tag_counts": {
-          "montenegro": 3
+          "montenegro": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "",
-            "text": "# Montenegro Harcèlement et attaques répétées contre l'avocat Veselin Radulovic, qui critique l'action des autorités https:// defendlawyers.wordpress.com/20 26/07/07/montenegro-protest-against-repeated-attacks-on-lawyer-veselin-radulovic-who-criticizes-the-authorities/",
-            "url": "https://mastodon.social/@patrhenry/116918098543471350",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Tue, 14 Jul 2026 11:30:03 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 23,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "RaiNews: Giorgia Meloni con il premier portoghese Montenegro: \"Rilanciamo la nostra cooperazione bilaterale\" Da 12 anni, ricorda la presidente del Consiglio, un capo del governo di Lisbona non veniva in Italia. Nel video l'intervento integrale della premier a Palazzo Chigi Giorgia Meloni with the Portuguese Prime Minister Montenegro: “Let’s relaunch our bila",
@@ -617,28 +577,28 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 44,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
+        "mentions": 12,
         "negative_hits": 1,
-        "positive_hits": 4,
+        "positive_hits": 3,
         "trusted_hits": 0,
-        "engagement_total": 15,
-        "raw_engagement_total": 15,
-        "quality_total": 130,
-        "geopolitical_total": 118,
+        "engagement_total": 64,
+        "raw_engagement_total": 64,
+        "quality_total": 161,
+        "geopolitical_total": 145,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 6
+          "x": 10
         },
         "category_counts": {
-          "government_crisis": 8
+          "government_crisis": 12
         },
         "tag_counts": {
           "macedonia": 2,
-          "Észak-Macedónia": 6
+          "Észak-Macedónia": 10
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -727,92 +687,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "WATCH | President DroupadiMurmu has arrived in North Macedonia the 2nd leg of her three-nation State visit and the first-ever visit by an Indian President to the country. The visit",
-            "text": "WATCH | President DroupadiMurmu has arrived in North Macedonia the 2nd leg of her three-nation State visit and the first-ever visit by an Indian President to the country. The visit aims to deepen India–North Macedonia ties in trade, investment, technology, education and",
-            "url": "https://x.com/i/web/status/2079445695178899814",
+            "title": "President Droupadi Murmu received a ceremonial welcome in North Macedonia during her first State Visit, with both nations reaffirming their commitment to stronger bilateral coopera",
+            "text": "President Droupadi Murmu received a ceremonial welcome in North Macedonia during her first State Visit, with both nations reaffirming their commitment to stronger bilateral cooperation,shared democratic values, and closer global engagement. DroupadiMurmu India NorthMacedonia",
+            "url": "https://x.com/i/web/status/2079552462676193371",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-21T05:57:42.000Z",
+            "seen_date": "2026-07-21T13:01:57.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
               "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 2,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 6,
-            "raw_engagement": 6,
-            "metrics": {
-              "likes": 5,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "WATCH | On the second leg of her three-nation state visit, President DroupadiMurmu has reached North Macedonia. This is the first-ever visit by an Indian President to North Macedon",
-            "text": "WATCH | On the second leg of her three-nation state visit, President DroupadiMurmu has reached North Macedonia. This is the first-ever visit by an Indian President to North Macedonia. President Murmu will hold bilateral talks with her Macedonian counterpart Gordana",
-            "url": "https://x.com/i/web/status/2079444900266029416",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-21T05:54:33.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 8,
-            "raw_engagement": 8,
-            "metrics": {
-              "likes": 3,
-              "reposts": 4,
-              "replies": 0,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "A new chapter begins in 🇮🇳🇲🇰 relations. President Droupadi Murmu's arrival in Skopje for the first-ever State Visit by an Indian President reflects the growing trust and momentum b",
-            "text": "A new chapter begins in 🇮🇳🇲🇰 relations. President Droupadi Murmu's arrival in Skopje for the first-ever State Visit by an Indian President reflects the growing trust and momentum between India and North Macedonia. The visit promises to expand cooperation and",
-            "url": "https://x.com/i/web/status/2079451436778410027",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-21T06:20:31.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 9
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -835,6 +720,76 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇮🇳🇲🇰 President Droupadi Murmu received a ceremonial welcome in Skopje during her first State Visit to North Macedonia. She held talks with President Gordana Siljanovska-Davkova to ",
+            "text": "🇮🇳🇲🇰 President Droupadi Murmu received a ceremonial welcome in Skopje during her first State Visit to North Macedonia. She held talks with President Gordana Siljanovska-Davkova to strengthen bilateral ties and cooperation. IndiaNorthMacedonia Diplomacy IndiaRising",
+            "url": "https://x.com/i/web/status/2079556107874521550",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-07-21T13:16:27.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "India To Double Indian Technical And Economic Cooperation Training Slots For North Macedonia: President Droupadi Murmu President Murmu’s visit is the first-ever visit by an Indian ",
+            "text": "India To Double Indian Technical And Economic Cooperation Training Slots For North Macedonia: President Droupadi Murmu President Murmu’s visit is the first-ever visit by an Indian President to North Macedonia, marking an important milestone in India-North Macedonia relations.",
+            "url": "https://x.com/i/web/status/2079555536283197750",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-07-21T13:14:10.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -846,13 +801,13 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 24,
-        "negative_hits": 19,
-        "positive_hits": 2,
+        "negative_hits": 20,
+        "positive_hits": 3,
         "trusted_hits": 3,
-        "engagement_total": 10,
-        "raw_engagement_total": 10,
-        "quality_total": 661,
-        "geopolitical_total": 589,
+        "engagement_total": 120,
+        "raw_engagement_total": 156,
+        "quality_total": 671,
+        "geopolitical_total": 599,
         "source_counts": {
           "reddit": 0,
           "mastodon": 21,
@@ -860,8 +815,8 @@
         },
         "category_counts": {
           "corruption_rule_of_law": 8,
-          "protest": 9,
-          "government_crisis": 5,
+          "protest": 10,
+          "government_crisis": 4,
           "foreign_influence": 1,
           "ethnic_tension": 1
         },
@@ -870,8 +825,7 @@
           "albania": 5,
           "macedonia": 2,
           "Szerbia": 1,
-          "Koszovó": 1,
-          "Albánia": 1
+          "Albánia": 2
         },
         "main_topic": "protest",
         "top_posts": [
@@ -993,51 +947,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Al Jazeera has once again reported on the protests taking place in Albania against Prime Minister Edi Rama’s government, noting that Albanian citizens have been protesting against ",
-            "text": "Al Jazeera has once again reported on the protests taking place in Albania against Prime Minister Edi Rama’s government, noting that Albanian citizens have been protesting against corruption and misgovernment for seven weeks.",
-            "url": "https://x.com/i/web/status/2079468589506056296",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-07-21T07:28:41.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 6
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 36,
-            "quality_score": 37,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Land seized. Protected wetland bulldozed for billionaires. 35 days of mass protests. In an EU candidate country. EU response? Von der Leyen: silent. Kallas: silent. Kos: \"the government reassured me, all's fine.\" Why the silence, EU Commission?🦩 # Albania # FlamingoRevolution --- https:// nitter.net/BotengaM/status/207 4030944030278137#m",
             "url": "https://respublicae.eu/@botengam/116952210929009000",
@@ -1070,6 +979,54 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "🇦🇱🇽🇰| Albania’s Defense Minister Ermal Nufi harshly criticizes Serbian Minister Paunovic for glorifying ethnic cleansing against Kosova Albanians: „I consider this statement scanda",
+            "text": "🇦🇱🇽🇰| Albania’s Defense Minister Ermal Nufi harshly criticizes Serbian Minister Paunovic for glorifying ethnic cleansing against Kosova Albanians: „I consider this statement scandalous and unacceptable. Any rhetoric of this kind is unacceptable and reprehensible. Any support",
+            "url": "https://x.com/i/web/status/2079543740201410910",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-21T12:27:18.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Albánia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 31,
+            "quality_score": 32,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
