@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22 19:02 UTC",
+  "updated_at": "2026-07-22 19:41 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 21
+    "collected": 23
   },
   "countries": [
     {
@@ -21,75 +21,41 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
+        "mentions": 12,
         "negative_hits": 4,
-        "positive_hits": 4,
-        "trusted_hits": 1,
-        "engagement_total": 53,
-        "raw_engagement_total": 53,
-        "quality_total": 198,
-        "geopolitical_total": 183,
+        "positive_hits": 3,
+        "trusted_hits": 0,
+        "engagement_total": 65,
+        "raw_engagement_total": 65,
+        "quality_total": 184,
+        "geopolitical_total": 170,
         "source_counts": {
           "reddit": 1,
           "mastodon": 2,
-          "x": 7
+          "x": 9
         },
         "category_counts": {
-          "government_crisis": 2,
+          "government_crisis": 1,
           "security": 5,
           "protest": 1,
-          "ethnic_tension": 1,
+          "ethnic_tension": 4,
           "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "serbia": 3,
-          "Szerbia": 5,
+          "Szerbia": 6,
           "Koszovó": 1,
-          "Montenegró": 1
+          "Montenegró": 1,
+          "Albánia": 1
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "Serbian ruling SNS coalition (155/250 parliamentary majority) on Monday will vote NO CONFIDENCE to its own Government! Another farce by autocrat Vucic: as his presidential mandate ",
-            "text": "Serbian ruling SNS coalition (155/250 parliamentary majority) on Monday will vote NO CONFIDENCE to its own Government! Another farce by autocrat Vucic: as his presidential mandate expires, he makes himself Prime Minister [again]. MPs are slaves, only 1 real opposition:",
-            "url": "https://x.com/i/web/status/2079995188689142079",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-22T18:21:12.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 6
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 4,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 36,
-            "quality_score": 37,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 3,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "Albanian terrorists on Kosovo using so called police (terrorists) to bulldoze Serb people homes while kicking them out of the homes and their land. Muslims terrorizing occupied Chr",
             "text": "Albanian terrorists on Kosovo using so called police (terrorists) to bulldoze Serb people homes while kicking them out of the homes and their land. Muslims terrorizing occupied Christian people on Kosovo. Serbian President needs to send military and free our land.",
             "url": "https://x.com/i/web/status/2079970537497854330",
             "source": "x",
-            "tag": "Koszovó",
+            "tag": "Albánia",
             "seen_date": "2026-07-22T16:43:14.000Z",
             "matched_countries": [
               "Szerbia"
@@ -161,17 +127,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "There is an interisting story about how Trump supporters obtained the IP addresses of the Dominion servers in Belgrade and launched a cyber attack on them just before the 2024 elec",
-            "text": "There is an interisting story about how Trump supporters obtained the IP addresses of the Dominion servers in Belgrade and launched a cyber attack on them just before the 2024 election. This disabled one of the fraud methods the Democrats have been using for years.",
-            "url": "https://x.com/i/web/status/2079990066810945911",
+            "title": "Over the past days, many Serbian civil society representatives have been subjected to smear campaigns and personal attacks. A strong civil society and engaged citizens are an asset",
+            "text": "Over the past days, many Serbian civil society representatives have been subjected to smear campaigns and personal attacks. A strong civil society and engaged citizens are an asset to every democracy and essential to a successful enlargement process. They deserve respect and",
+            "url": "https://x.com/i/web/status/2080007827721228769",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-07-22T18:00:50.000Z",
+            "seen_date": "2026-07-22T19:11:25.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 4
+              "Szerbia": 2
             },
             "event_category": "security",
             "event_categories": [
@@ -181,22 +147,22 @@
                 "weight": 9
               },
               {
-                "category": "corruption_rule_of_law",
+                "category": "eu_integration",
                 "hits": 1,
-                "weight": 8
+                "weight": 6
               }
             ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
+            "geopolitical_score": 18,
+            "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 24,
+            "raw_engagement": 24,
             "metrics": {
-              "likes": 1,
-              "reposts": 0,
+              "likes": 17,
+              "reposts": 5,
               "replies": 0,
-              "quotes": 0
+              "quotes": 2
             },
             "quality": "x_api_filtered"
           },
@@ -240,6 +206,35 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Serbia: Vucic incontra delegazione Bers, focus su cooperazione e progetti strategici 22 lug 14:34 - (Agenzia Nova) - Il presidente serbo Aleksandar Vucic ha incontrato una delegazione della Banca europea per la ricostruzione... (Seb) Serbia: Vucic meets Bers delegation, focusing on cooperation and strategic projects July 22 14:34 – (Agenzia Nov",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/116963673535692111",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 22 Jul 2026 12:40:22 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 13,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -662,79 +657,37 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 17,
+        "score": 10,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 2,
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 57,
-        "geopolitical_total": 49,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 28,
+        "geopolitical_total": 23,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 1,
+          "mastodon": 0,
           "x": 2
         },
         "category_counts": {
-          "government_crisis": 3
+          "government_crisis": 2
         },
         "tag_counts": {
-          "macedonia": 1,
           "Észak-Macedónia": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "",
-            "text": "⚡️🇺🇦Ten countries adopt Kyiv Declaration at Ukraine–Southeast Europe Summit (more) https://www. ukrinform.net/rubric-polytics/ 4144679-ten-countries-adopt-kyiv-declaration-at-ukrainesoutheast-europe-summit.html # Ukraine # Romania # Moldova # Albania # Slovakia # Slovenia # Macedonia # Brussels # PACE # CoE # Greece # Croatia # Bulgaria # Press # Media # New",
-            "url": "https://mastodon.online/@SocraticEthics/116925564654659264",
-            "source": "mastodon",
-            "tag": "macedonia",
-            "seen_date": "Wed, 15 Jul 2026 19:08:47 +0000",
-            "matched_countries": [
-              "Észak-Macedónia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 1,
-              "Albánia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 26,
-            "quality_score": 29,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
             "title": "India major global player, need for reform of United Nations: North Macedonia hails President Murmu's historic visit via NaMo App",
             "text": "India major global player, need for reform of United Nations: North Macedonia hails President Murmu's historic visit via NaMo App",
-            "url": "https://x.com/i/web/status/2080000365463031852",
+            "url": "https://x.com/i/web/status/2080013263526559992",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-22T18:41:46.000Z",
+            "seen_date": "2026-07-22T19:33:01.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -753,10 +706,10 @@
             "quality_score": 18,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 0,
+              "likes": 1,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -788,10 +741,10 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 0,
+              "likes": 1,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -811,27 +764,27 @@
         "negative_hits": 11,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 9,
-        "raw_engagement_total": 9,
-        "quality_total": 461,
-        "geopolitical_total": 409,
+        "engagement_total": 23,
+        "raw_engagement_total": 23,
+        "quality_total": 443,
+        "geopolitical_total": 393,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 16,
-          "x": 2
+          "mastodon": 15,
+          "x": 3
         },
         "category_counts": {
           "protest": 5,
           "corruption_rule_of_law": 7,
-          "government_crisis": 3,
+          "government_crisis": 2,
           "security": 1,
           "foreign_influence": 1,
-          "ethnic_tension": 1
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "balkans": 12,
           "albania": 3,
-          "macedonia": 1,
+          "Szerbia": 1,
           "Koszovó": 1,
           "Albánia": 1
         },
