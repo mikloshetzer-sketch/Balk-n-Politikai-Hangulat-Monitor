@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22 08:13 UTC",
+  "updated_at": "2026-07-22 08:43 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 19
+    "collected": 21
   },
   "countries": [
     {
@@ -21,29 +21,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 6,
-        "positive_hits": 2,
+        "mentions": 10,
+        "negative_hits": 5,
+        "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 249,
-        "geopolitical_total": 230,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
+        "quality_total": 236,
+        "geopolitical_total": 218,
         "source_counts": {
           "reddit": 3,
           "mastodon": 3,
-          "x": 5
+          "x": 4
         },
         "category_counts": {
           "security": 5,
           "government_crisis": 2,
-          "protest": 2,
+          "protest": 1,
           "ethnic_tension": 2
         },
         "tag_counts": {
           "serbia": 5,
           "macedonia": 1,
-          "Szerbia": 5
+          "Szerbia": 4
         },
         "main_topic": "security",
         "top_posts": [
@@ -72,11 +72,11 @@
             "quality_score": 37,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 5,
+            "raw_engagement": 5,
             "metrics": {
-              "likes": 1,
-              "reposts": 0,
+              "likes": 3,
+              "reposts": 1,
               "replies": 1,
               "quotes": 0
             },
@@ -292,34 +292,71 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 35,
-        "level": "medium",
+        "score": 42,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 7,
         "negative_hits": 2,
         "positive_hits": 3,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 95,
-        "geopolitical_total": 73,
+        "quality_total": 114,
+        "geopolitical_total": 91,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "ethnic_tension": 1,
           "corruption_rule_of_law": 2,
           "government_crisis": 2,
-          "eu_integration": 1
+          "eu_integration": 1,
+          "security": 1
         },
         "tag_counts": {
           "serbia": 1,
-          "kosovo": 5
+          "kosovo": 5,
+          "Koszovó": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
+          {
+            "title": "Kosovo Police Seize 12 Firearms, Including Three Kalashnikovs, in Nationwide Operations Kosovo KosovoPolice Firearms IllegalWeapons Security Pristina Prizren Podujevë Deçan Malishe",
+            "text": "Kosovo Police Seize 12 Firearms, Including Three Kalashnikovs, in Nationwide Operations Kosovo KosovoPolice Firearms IllegalWeapons Security Pristina Prizren Podujevë Deçan Malishevë AK47 PublicSafety",
+            "url": "https://x.com/i/web/status/2079842476936790319",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-07-22T08:14:22.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "RT by @ EULEXkosovo : # Kosovo : @ EUCouncil has appointed Mr. Antero Lopes 🇵🇹 as the new Head of Mission of EULEX Kosovo. Starting on 10 August 2026, he will lead the EU mission supporting Kosovar rule of law institutions until 14 June 2027. More ⬇️ https:// link.europa.eu/b8ntBb # Kosovo : @ EUCouncil has appointed Mr. Antero Lopes 🇵🇹 as the new Head of Mi",
@@ -430,35 +467,6 @@
             ],
             "geopolitical_score": 13,
             "quality_score": 16,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "After 2022 Mass Resignations, Some Kosovo Serbs Seek Return to Judicial Posts https:// fed.brid.gy/r/https://balkanin sight.com/2026/07/17/after-2022-mass-resignations-some-kosovo-serbs-seek-return-to-judicial-posts/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/07/17/after-2022-mass-resignations-some-kosovo-serbs-seek-return-to-judicial-posts/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Fri, 17 Jul 2026 16:50:17 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 15,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -606,28 +614,28 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 47,
-        "level": "high",
+        "score": 36,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 8,
+        "mentions": 6,
         "negative_hits": 1,
         "positive_hits": 3,
         "trusted_hits": 1,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 128,
-        "geopolitical_total": 113,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 116,
+        "geopolitical_total": 103,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 6
+          "x": 4
         },
         "category_counts": {
-          "government_crisis": 8
+          "government_crisis": 6
         },
         "tag_counts": {
           "macedonia": 2,
-          "Észak-Macedónia": 6
+          "Észak-Macedónia": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -716,12 +724,52 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "India major global player, need for reform of United Nations: North Macedonia hails President Murmu's historic visit via NaMo App",
-            "text": "India major global player, need for reform of United Nations: North Macedonia hails President Murmu's historic visit via NaMo App",
-            "url": "https://x.com/i/web/status/2079841771555807581",
+            "title": "The event, attended by the President of both nations, showcased the excellent friendly relations between India and North Macedonia. The leaders' speeches emphasized cooperation and",
+            "text": "The event, attended by the President of both nations, showcased the excellent friendly relations between India and North Macedonia. The leaders' speeches emphasized cooperation and solidarity across all sectors, including trade, education, and business development.",
+            "url": "https://x.com/i/web/status/2079846712072679599",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-22T08:11:34.000Z",
+            "seen_date": "2026-07-22T08:31:12.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 2,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "India major global player, need for reform of United Nations: North Macedonia hails President Murmu's historic visit via NaMo App",
+            "text": "India major global player, need for reform of United Nations: North Macedonia hails President Murmu's historic visit via NaMo App",
+            "url": "https://x.com/i/web/status/2079849753215414464",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-07-22T08:43:17.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -745,41 +793,6 @@
             "metrics": {
               "likes": 0,
               "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "WATCH | In an exclusive interview with DD India, North Macedonia President Gordana Siljanovska-Davkova hailed President DroupadiMurmu's historic visit as a milestone in bilateral t",
-            "text": "WATCH | In an exclusive interview with DD India, North Macedonia President Gordana Siljanovska-Davkova hailed President DroupadiMurmu's historic visit as a milestone in bilateral ties. She highlighted opportunities for cooperation in AI, digitalisation, education, science,",
-            "url": "https://x.com/i/web/status/2079830051122770193",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-22T07:25:00.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
-            "metrics": {
-              "likes": 3,
-              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -810,10 +823,10 @@
             "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 0,
+              "likes": 1,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -829,30 +842,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 21,
-        "negative_hits": 16,
+        "mentions": 22,
+        "negative_hits": 17,
         "positive_hits": 1,
         "trusted_hits": 3,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 569,
-        "geopolitical_total": 504,
+        "quality_total": 599,
+        "geopolitical_total": 533,
         "source_counts": {
           "reddit": 0,
           "mastodon": 19,
-          "x": 2
+          "x": 3
         },
         "category_counts": {
           "corruption_rule_of_law": 7,
           "protest": 7,
           "government_crisis": 6,
-          "foreign_influence": 1
+          "foreign_influence": 1,
+          "security": 1
         },
         "tag_counts": {
           "balkans": 13,
           "albania": 4,
           "macedonia": 2,
-          "Albánia": 2
+          "Albánia": 3
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
