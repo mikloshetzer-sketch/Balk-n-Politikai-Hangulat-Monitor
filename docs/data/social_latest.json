@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-21 19:46 UTC",
+  "updated_at": "2026-07-22 01:53 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 21
+    "collected": 16
   },
   "countries": [
     {
@@ -21,33 +21,82 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 6,
-        "positive_hits": 0,
-        "trusted_hits": 3,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 196,
-        "geopolitical_total": 173,
+        "mentions": 10,
+        "negative_hits": 7,
+        "positive_hits": 1,
+        "trusted_hits": 2,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 219,
+        "geopolitical_total": 201,
         "source_counts": {
-          "reddit": 1,
+          "reddit": 3,
           "mastodon": 3,
-          "x": 5
+          "x": 4
         },
         "category_counts": {
-          "security": 6,
-          "government_crisis": 1,
-          "protest": 1,
-          "ethnic_tension": 1
+          "security": 5,
+          "government_crisis": 4,
+          "protest": 1
         },
         "tag_counts": {
-          "serbia": 3,
+          "serbia": 5,
           "macedonia": 1,
-          "Szerbia": 4,
+          "Szerbia": 3,
           "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
+          {
+            "title": "BELGRADE, July 20. /TASS/. There is no threat to the security of the European Union from Russia , but some forces are trying to stoke a conflict with the RF, Croatian President Mil",
+            "text": "BELGRADE, July 20. /TASS/. There is no threat to the security of the European Union from Russia , but some forces are trying to stoke a conflict with the RF, Croatian President Milanovic has stated.",
+            "url": "https://x.com/i/web/status/2079728053773602988",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-22T00:39:42.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 35,
+            "quality_score": 36,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Agenzia Nova: Serbia-Croazia: rimosso blocco valico Nestin, trovata soluzione temporanea per residenti 21 lug 08:15 - (Agenzia Nova) - Dopo sette giorni di proteste e' stato rimosso il blocco al valico di frontiera di Neštin tra Serbia e Croazia.... (Seb) Serbia-Croatia: Block at Nestin border crossing removed, temporary solution found for residents. July 21",
@@ -192,49 +241,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "EU concerned about Haxhiu's decree on the resignations of Serbian judicial personnel, but the EU has never been concerned or declared about the Serbian minister who prefer to have ",
-            "text": "EU concerned about Haxhiu's decree on the resignations of Serbian judicial personnel, but the EU has never been concerned or declared about the Serbian minister who prefer to have carry out Milosevic's work of ethnic cleansing of Albanians in Kosovo! Very disappointing!!",
-            "url": "https://x.com/i/web/status/2079612398369931706",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-07-21T17:00:07.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 23,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -301,70 +307,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 28,
+        "score": 25,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 5,
         "negative_hits": 1,
-        "positive_hits": 4,
+        "positive_hits": 3,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 99,
-        "geopolitical_total": 79,
+        "quality_total": 79,
+        "geopolitical_total": 60,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "corruption_rule_of_law": 2,
           "government_crisis": 2,
-          "eu_integration": 1,
-          "security": 1
+          "eu_integration": 1
         },
         "tag_counts": {
-          "kosovo": 5,
-          "Koszovó": 1
+          "kosovo": 5
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
-          {
-            "title": "Bulgarian Analyst: Kosovo’s Stability Is Essential for Balkan Security Kosovo Bulgaria Albania WesternBalkans EUIntegration BalkanSecurity EuropeanUnion Pristina Sofia RegionalCoop",
-            "text": "Bulgarian Analyst: Kosovo’s Stability Is Essential for Balkan Security Kosovo Bulgaria Albania WesternBalkans EUIntegration BalkanSecurity EuropeanUnion Pristina Sofia RegionalCooperation Democracy Geopolitics",
-            "url": "https://x.com/i/web/status/2079626431206707528",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-07-21T17:55:53.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5,
-              "Albánia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "RT by @ EULEXkosovo : # Kosovo : @ EUCouncil has appointed Mr. Antero Lopes 🇵🇹 as the new Head of Mission of EULEX Kosovo. Starting on 10 August 2026, he will lead the EU mission supporting Kosovar rule of law institutions until 14 June 2027. More ⬇️ https:// link.europa.eu/b8ntBb # Kosovo : @ EUCouncil has appointed Mr. Antero Lopes 🇵🇹 as the new Head of Mi",
@@ -480,6 +448,35 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "RT by @ EUKosovo : Met with LDK Chairman @LumirAbdixhiku and AAK Chairman @Ardiangjini I encourage PM @albinkurti to show statesmanship to build a functioning coalition & secure the election of the President. # Kosovo needs stable institutions to advance on 🇪🇺 path. @eu_enlargement_ @ europarl_en --- https:// nitter.net/RihoTerras/status/2 074521999620153595",
+            "url": "https://respublicae.eu/@EUKosovo/116953104903112112",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Mon, 20 Jul 2026 15:52:37 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 12,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -487,28 +484,29 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 11,
+        "score": 15,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 3,
         "negative_hits": 0,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 39,
-        "geopolitical_total": 33,
+        "quality_total": 54,
+        "geopolitical_total": 47,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 1,
+          "government_crisis": 2,
           "foreign_influence": 1
         },
         "tag_counts": {
-          "montenegro": 2
+          "montenegro": 2,
+          "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -574,6 +572,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Egypt🇪🇬 and Montenegro have signed a memorandum of understanding to strengthen cooperation in maritime transport and port management during Montenegrin President Jakov Milatović's ",
+            "text": "Egypt🇪🇬 and Montenegro have signed a memorandum of understanding to strengthen cooperation in maritime transport and port management during Montenegrin President Jakov Milatović's official visit to Cairo. The agreement aims to enhance collaboration in the maritime sector and",
+            "url": "https://x.com/i/web/status/2079716158958133757",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-07-21T23:52:26.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 14,
+            "quality_score": 15,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -584,68 +622,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 2,
-        "positive_hits": 3,
+        "mentions": 10,
+        "negative_hits": 1,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 9,
-        "raw_engagement_total": 9,
-        "quality_total": 200,
-        "geopolitical_total": 185,
+        "engagement_total": 26,
+        "raw_engagement_total": 26,
+        "quality_total": 179,
+        "geopolitical_total": 165,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 9
+          "x": 8
         },
         "category_counts": {
-          "government_crisis": 11
+          "government_crisis": 9,
+          "security": 1
         },
         "tag_counts": {
           "macedonia": 2,
-          "Észak-Macedónia": 9
+          "Észak-Macedónia": 8
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "Headlines: DD India Newshour 🔶 PM Modi reassures students 🔶 President addresses North Macedonia Assembly 🔶 India protests death of 4 Indian soldiers 🔶 West Asia crisis deepens 🔶 Sp",
-            "text": "Headlines: DD India Newshour 🔶 PM Modi reassures students 🔶 President addresses North Macedonia Assembly 🔶 India protests death of 4 Indian soldiers 🔶 West Asia crisis deepens 🔶 Spain battles massive wildfires WATCH 🔗",
-            "url": "https://x.com/i/web/status/2079629538687074778",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-21T18:08:14.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "⚡️🇺🇦Ten countries adopt Kyiv Declaration at Ukraine–Southeast Europe Summit (more) https://www. ukrinform.net/rubric-polytics/ 4144679-ten-countries-adopt-kyiv-declaration-at-ukrainesoutheast-europe-summit.html # Ukraine # Romania # Moldova # Albania # Slovakia # Slovenia # Macedonia # Brussels # PACE # CoE # Greece # Croatia # Bulgaria # Press # Media # New",
@@ -731,52 +730,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "WATCH | President Droupadi Murmu’s state visit to North Macedonia marks a new chapter in India-North Macedonia relations, with both nations agreeing to expand cooperation in trade,",
-            "text": "WATCH | President Droupadi Murmu’s state visit to North Macedonia marks a new chapter in India-North Macedonia relations, with both nations agreeing to expand cooperation in trade, investment, healthcare, technology, culture, and renewable energy. The visit reinforces shared",
-            "url": "https://x.com/i/web/status/2079633631056953634",
+            "title": "President Murmu in Skopje: India sees Southeast Europe as growth hub President Droupadi Murmu addressed North Macedonia's parliament on 21 July, calling Southeast Europe a 'dynamic",
+            "text": "President Murmu in Skopje: India sees Southeast Europe as growth hub President Droupadi Murmu addressed North Macedonia's parliament on 21 July, calling Southeast Europe a 'dynamic theatre of growth' and pledging to deepen India-North Macedonia trade an…",
+            "url": "https://x.com/i/web/status/2079664018474811412",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-21T18:24:30.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 3,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 23,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "WATCH | President Droupadi Murmu addressed the Parliament of North Macedonia in Skopje, highlighting the growing India-North Macedonia partnership, shared democratic values, women’",
-            "text": "WATCH | President Droupadi Murmu addressed the Parliament of North Macedonia in Skopje, highlighting the growing India-North Macedonia partnership, shared democratic values, women’s participation in democracy, and opportunities for deeper economic and strategic cooperation",
-            "url": "https://x.com/i/web/status/2079632759350571299",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-21T18:21:02.000Z",
+            "seen_date": "2026-07-21T20:25:14.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -788,6 +747,51 @@
               {
                 "category": "government_crisis",
                 "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 2,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 28,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "President Droupadi Murmu held talks in Skopje with North Macedonian leaders on expanding cooperation across key sectors. The visit underscored closer India-Europe engagement and No",
+            "text": "President Droupadi Murmu held talks in Skopje with North Macedonian leaders on expanding cooperation across key sectors. The visit underscored closer India-Europe engagement and North Macedonia's support on security and UN reforms. Read More: Skopje",
+            "url": "https://x.com/i/web/status/2079744866008064500",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-07-22T01:46:30.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 9
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
                 "weight": 9
               }
             ],
@@ -804,6 +808,41 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "Hon'ble President Droupadi Murmu met North Macedonia's Parliament Speaker Afrim Gashi and addressed the National Assembly during her state visit. She reaffirmed India's commitment ",
+            "text": "Hon'ble President Droupadi Murmu met North Macedonia's Parliament Speaker Afrim Gashi and addressed the National Assembly during her state visit. She reaffirmed India's commitment to stronger ties with North Macedonia, highlighting the shared civilizational bond between the two",
+            "url": "https://x.com/i/web/status/2079666885558423672",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-07-21T20:36:38.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 1,
+              "reposts": 2,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -814,34 +853,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 26,
-        "negative_hits": 21,
-        "positive_hits": 2,
-        "trusted_hits": 5,
-        "engagement_total": 11,
-        "raw_engagement_total": 11,
-        "quality_total": 702,
-        "geopolitical_total": 624,
+        "mentions": 21,
+        "negative_hits": 16,
+        "positive_hits": 1,
+        "trusted_hits": 3,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 563,
+        "geopolitical_total": 496,
         "source_counts": {
           "reddit": 0,
           "mastodon": 20,
-          "x": 6
+          "x": 1
         },
         "category_counts": {
           "corruption_rule_of_law": 8,
-          "protest": 8,
-          "government_crisis": 5,
+          "protest": 7,
+          "government_crisis": 4,
           "foreign_influence": 1,
-          "security": 2,
-          "ethnic_tension": 2
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 14,
           "albania": 4,
           "macedonia": 2,
-          "Szerbia": 1,
-          "Koszovó": 2,
-          "Albánia": 3
+          "Koszovó": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
