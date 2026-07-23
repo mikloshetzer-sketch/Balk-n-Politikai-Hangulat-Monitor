@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-23 13:29 UTC",
+  "updated_at": "2026-07-23 14:27 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 16
+    "collected": 20
   },
   "countries": [
     {
@@ -21,32 +21,119 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 4,
-        "positive_hits": 3,
+        "mentions": 9,
+        "negative_hits": 5,
+        "positive_hits": 4,
         "trusted_hits": 0,
-        "engagement_total": 14,
-        "raw_engagement_total": 14,
-        "quality_total": 129,
-        "geopolitical_total": 115,
+        "engagement_total": 18,
+        "raw_engagement_total": 18,
+        "quality_total": 175,
+        "geopolitical_total": 160,
         "source_counts": {
           "reddit": 1,
           "mastodon": 4,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
           "ethnic_tension": 4,
-          "government_crisis": 2,
-          "protest": 2
+          "government_crisis": 3,
+          "protest": 1,
+          "security": 1
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 4,
-          "Szerbia": 2,
+          "Szerbia": 3,
           "Koszovó": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
+          {
+            "title": "Two people arrested on the Serbia-Hungary border are under criminal investigation, Serbian prosecutors say, after reports linked them to Russian intelligence. German media report t",
+            "text": "Two people arrested on the Serbia-Hungary border are under criminal investigation, Serbian prosecutors say, after reports linked them to Russian intelligence. German media report that they were carrying explosives and may have been planning an attack in Germany as \"disposable\"",
+            "url": "https://x.com/i/web/status/2080287804223840316",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-23T13:43:57.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 15,
+            "raw_engagement": 15,
+            "metrics": {
+              "likes": 9,
+              "reposts": 6,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Kosovo Prepares New Recruitment Process for Serbian Prosecutors Four Years After Collective Resignations Kosovo JusticeSystem SerbianCommunity KosovoSerbs Judiciary RuleOfLaw Europ",
+            "text": "Kosovo Prepares New Recruitment Process for Serbian Prosecutors Four Years After Collective Resignations Kosovo JusticeSystem SerbianCommunity KosovoSerbs Judiciary RuleOfLaw EuropeanUnion BrusselsAgreement AlbulenaHaxhiu WesternBalkans",
+            "url": "https://x.com/i/web/status/2080294797038829893",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-23T14:11:44.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 28,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "As a reminder, Marta Kos and Ursula fon Der Leyen are still supporting this regime, and never miss a chance to praise them. Vućić's SNS party is STILL a member of EPP bloc in European Parliament. We, free people of #Serbia , demand personal sanctions for Vučić and his regime!",
@@ -159,72 +246,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "One of the terrible crimes of Kosovo war was murder of Serbian teenagers in Panda cafe in Peja. More witnesses now appearing in Serbia telling the truth that Serbian government exe",
-            "text": "One of the terrible crimes of Kosovo war was murder of Serbian teenagers in Panda cafe in Peja. More witnesses now appearing in Serbia telling the truth that Serbian government executed the poor kids, in an attempt to blame KLA and inflame ethnic tensions:",
-            "url": "https://x.com/i/web/status/2080247587777507592",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-07-23T11:04:08.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 2,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Situation in #Serbia is deteriorating fast, a thread 🧵 - Minister in Vučić's regime, Snežana Paunović, regrets that ethnic cleansing and mass deportation of civilians in #Kosovo was not finished in 1998. Vučić still keeps her on her job in Serbian government. nova.rs/vesti/politi...",
-            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:sjx3hptnopiz7mtzaexuhgpr/post/3mrcdruvq2k2w",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Thu, 23 Jul 2026 07:45:13 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 6,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 13,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -332,8 +353,8 @@
         "negative_hits": 2,
         "positive_hits": 4,
         "trusted_hits": 2,
-        "engagement_total": 86,
-        "raw_engagement_total": 86,
+        "engagement_total": 87,
+        "raw_engagement_total": 87,
         "quality_total": 137,
         "geopolitical_total": 111,
         "source_counts": {
@@ -623,7 +644,7 @@
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 122,
-        "raw_engagement_total": 669,
+        "raw_engagement_total": 848,
         "quality_total": 55,
         "geopolitical_total": 50,
         "source_counts": {
@@ -740,11 +761,11 @@
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 120,
-            "raw_engagement": 667,
+            "raw_engagement": 846,
             "metrics": {
-              "likes": 538,
-              "reposts": 84,
-              "replies": 44,
+              "likes": 694,
+              "reposts": 101,
+              "replies": 50,
               "quotes": 1
             },
             "quality": "x_api_filtered"
@@ -828,89 +849,35 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 24,
-        "negative_hits": 20,
-        "positive_hits": 2,
+        "mentions": 25,
+        "negative_hits": 19,
+        "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 9,
-        "raw_engagement_total": 9,
-        "quality_total": 757,
-        "geopolitical_total": 693,
+        "engagement_total": 15,
+        "raw_engagement_total": 15,
+        "quality_total": 718,
+        "geopolitical_total": 653,
         "source_counts": {
           "reddit": 0,
           "mastodon": 18,
-          "x": 6
+          "x": 7
         },
         "category_counts": {
-          "ethnic_tension": 1,
+          "ethnic_tension": 2,
           "eu_integration": 2,
-          "protest": 5,
+          "protest": 6,
           "government_crisis": 3,
-          "security": 8,
+          "security": 7,
           "corruption_rule_of_law": 5
         },
         "tag_counts": {
           "balkans": 13,
           "albania": 5,
+          "Koszovó": 1,
           "Albánia": 6
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "Tensions erupted in Albania as anti-government protesters clashed with riot police outside parliament in Tirana. Police used tear gas and water cannons after demonstrators tried to",
-            "text": "Tensions erupted in Albania as anti-government protesters clashed with riot police outside parliament in Tirana. Police used tear gas and water cannons after demonstrators tried to remove barricades during weeks of protests over alleged corruption linked to coastal development",
-            "url": "https://x.com/i/web/status/2080270069255332200",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-07-23T12:33:28.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 58,
-            "quality_score": 59,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Day 54 of anti-corruption protest in Tirana, Albania I'm not sure what happened, but it seems like police have ramped up their response again. Protests mostly have been happening in the evenings, but there have been day events when protestors have had to support protestors cops brutalized and snatched away, and also when there are particular Parliamentary ev",
@@ -1039,10 +1006,10 @@
             "quality_score": 46,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 9,
-            "raw_engagement": 9,
+            "engagement": 12,
+            "raw_engagement": 12,
             "metrics": {
-              "likes": 5,
+              "likes": 8,
               "reposts": 3,
               "replies": 0,
               "quotes": 1
@@ -1082,6 +1049,40 @@
             ],
             "geopolitical_score": 43,
             "quality_score": 46,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "🚨 WARNELY SAFETY ALERT Tirana, Albania · Civil unrest Clashes with police during protest in Tirana Protesters clashed with Albanian police using water cannons and tear gas in Tirana. https://www. warnely.com/news/clashes-with- police-during-protest-in-tirana-b911d235-0ead-473e-a582-72d42ce6a1de?utm_source=mastodon&utm_medium=social&utm_campaign=incident # Wa",
+            "url": "https://mastodon.social/@warnely/116969161954932290",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Thu, 23 Jul 2026 11:56:09 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 6
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 37,
+            "quality_score": 40,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
