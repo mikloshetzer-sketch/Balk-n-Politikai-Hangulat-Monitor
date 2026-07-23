@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22 19:41 UTC",
+  "updated_at": "2026-07-23 01:59 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 23
+    "collected": 18
   },
   "countries": [
     {
@@ -21,71 +21,67 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
-        "negative_hits": 4,
+        "mentions": 8,
+        "negative_hits": 5,
         "positive_hits": 3,
         "trusted_hits": 0,
-        "engagement_total": 65,
-        "raw_engagement_total": 65,
-        "quality_total": 184,
-        "geopolitical_total": 170,
+        "engagement_total": 74,
+        "raw_engagement_total": 74,
+        "quality_total": 153,
+        "geopolitical_total": 143,
         "source_counts": {
           "reddit": 1,
           "mastodon": 2,
-          "x": 9
+          "x": 5
         },
         "category_counts": {
-          "government_crisis": 1,
-          "security": 5,
+          "government_crisis": 2,
+          "security": 3,
           "protest": 1,
-          "ethnic_tension": 4,
-          "corruption_rule_of_law": 1
+          "ethnic_tension": 1,
+          "eu_integration": 1
         },
         "tag_counts": {
           "serbia": 3,
-          "Szerbia": 6,
-          "Koszovó": 1,
-          "Montenegró": 1,
-          "Albánia": 1
+          "Szerbia": 4,
+          "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
           {
-            "title": "Albanian terrorists on Kosovo using so called police (terrorists) to bulldoze Serb people homes while kicking them out of the homes and their land. Muslims terrorizing occupied Chr",
-            "text": "Albanian terrorists on Kosovo using so called police (terrorists) to bulldoze Serb people homes while kicking them out of the homes and their land. Muslims terrorizing occupied Christian people on Kosovo. Serbian President needs to send military and free our land.",
-            "url": "https://x.com/i/web/status/2079970537497854330",
+            "title": "President Aleksandar Vučić pledged early elections in 2026, under pressure from mass protests, but set no date for dissolving parliament or resigning, amid speculation he could ret",
+            "text": "President Aleksandar Vučić pledged early elections in 2026, under pressure from mass protests, but set no date for dissolving parliament or resigning, amid speculation he could return as prime minister, Rasa Nedeljkov, , tells",
+            "url": "https://x.com/i/web/status/2080080539613032628",
             "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-07-22T16:43:14.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-23T00:00:21.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5,
-              "Albánia": 2,
-              "Koszovó": 1
+              "Szerbia": 4
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 2,
+                "category": "government_crisis",
+                "hits": 3,
                 "weight": 9
               },
               {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
+            "geopolitical_score": 46,
+            "quality_score": 47,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 0,
+              "likes": 1,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -127,80 +123,40 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Over the past days, many Serbian civil society representatives have been subjected to smear campaigns and personal attacks. A strong civil society and engaged citizens are an asset",
-            "text": "Over the past days, many Serbian civil society representatives have been subjected to smear campaigns and personal attacks. A strong civil society and engaged citizens are an asset to every democracy and essential to a successful enlargement process. They deserve respect and",
-            "url": "https://x.com/i/web/status/2080007827721228769",
+            "title": "The EU questions Kosovo’s decision on Serbian judges’ resignations, calling it a breach of rule-of-law standards. Institutions urged to uphold justice and ethnic inclusion.",
+            "text": "The EU questions Kosovo’s decision on Serbian judges’ resignations, calling it a breach of rule-of-law standards. Institutions urged to uphold justice and ethnic inclusion.",
+            "url": "https://x.com/i/web/status/2080108180437106936",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-07-22T19:11:25.000Z",
+            "seen_date": "2026-07-23T01:50:11.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2
+              "Szerbia": 2,
+              "Koszovó": 1
             },
-            "event_category": "security",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "security",
+                "category": "ethnic_tension",
                 "hits": 1,
-                "weight": 9
+                "weight": 10
               },
               {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 24,
-            "raw_engagement": 24,
-            "metrics": {
-              "likes": 17,
-              "reposts": 5,
-              "replies": 0,
-              "quotes": 2
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Right now, I think that the most important factor for stability in the Balkans is the front in Ukraine. As long as Russia does not occupy Odesa, Vučić and his government have littl",
-            "text": "Right now, I think that the most important factor for stability in the Balkans is the front in Ukraine. As long as Russia does not occupy Odesa, Vučić and his government have little leverage to destabilize the Balkans. Efforts involving Serb-majority municipalities in Montenegro",
-            "url": "https://x.com/i/web/status/2079905562670604694",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-07-22T12:25:03.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4,
-              "Montenegró": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
+            "geopolitical_score": 22,
+            "quality_score": 23,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 1,
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -235,6 +191,35 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Evropske demokrate pitaju Vučića da li je ometao signal zato što se plaši broja ljudi na protestu",
+            "text": "&#32; submitted by &#32; /u/DealwithSrle [link] &#32; [comments]",
+            "url": "https://www.reddit.com/r/serbia/comments/1v3o7eb/evropske_demokrate_pitaju_vučića_da_li_je_ometao/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-07-22T18:12:43+00:00",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 11,
+            "source_reliability": 1,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -242,28 +227,27 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 12,
+        "score": 6,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 1,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 14,
-        "raw_engagement_total": 14,
-        "quality_total": 28,
-        "geopolitical_total": 22,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 18,
+        "geopolitical_total": 13,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
-          "security": 2
+          "security": 1
         },
         "tag_counts": {
-          "bosnia": 1,
-          "Montenegró": 1
+          "bosnia": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -295,42 +279,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "👉 Maglić Mountain is the highest peak in Bosnia and Herzegovina, rising to 2,386 meters (7,828 ft). It lies on the border with Montenegro, within Sutjeska National Park, one of the",
-            "text": "👉 Maglić Mountain is the highest peak in Bosnia and Herzegovina, rising to 2,386 meters (7,828 ft). It lies on the border with Montenegro, within Sutjeska National Park, one of the oldest and most beautiful national parks in the country. 📷jabihdaputujem",
-            "url": "https://x.com/i/web/status/2079907773479837748",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-07-22T12:33:50.000Z",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 3,
-              "Montenegró": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 14,
-            "raw_engagement": 14,
-            "metrics": {
-              "likes": 12,
-              "reposts": 2,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -338,31 +286,33 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 41,
+        "score": 52,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 2,
+        "mentions": 8,
+        "negative_hits": 3,
         "positive_hits": 4,
         "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 117,
-        "geopolitical_total": 92,
+        "engagement_total": 43,
+        "raw_engagement_total": 43,
+        "quality_total": 130,
+        "geopolitical_total": 104,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "ethnic_tension": 2,
           "corruption_rule_of_law": 2,
           "government_crisis": 2,
-          "eu_integration": 1
+          "eu_integration": 1,
+          "security": 1
         },
         "tag_counts": {
           "serbia": 1,
-          "kosovo": 6
+          "kosovo": 6,
+          "Koszovó": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -529,8 +479,8 @@
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
         "quality_total": 53,
         "geopolitical_total": 46,
         "source_counts": {
@@ -641,10 +591,10 @@
             "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 5,
+            "raw_engagement": 5,
             "metrics": {
-              "likes": 1,
+              "likes": 4,
               "reposts": 1,
               "replies": 0,
               "quotes": 0
@@ -657,37 +607,38 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 10,
+        "score": 16,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 3,
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 28,
-        "geopolitical_total": 23,
+        "engagement_total": 24,
+        "raw_engagement_total": 24,
+        "quality_total": 38,
+        "geopolitical_total": 32,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 2
+          "x": 3
         },
         "category_counts": {
+          "security": 1,
           "government_crisis": 2
         },
         "tag_counts": {
-          "Észak-Macedónia": 2
+          "Észak-Macedónia": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "India major global player, need for reform of United Nations: North Macedonia hails President Murmu's historic visit via NaMo App",
             "text": "India major global player, need for reform of United Nations: North Macedonia hails President Murmu's historic visit via NaMo App",
-            "url": "https://x.com/i/web/status/2080013263526559992",
+            "url": "https://x.com/i/web/status/2080015751780732988",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-22T19:33:01.000Z",
+            "seen_date": "2026-07-22T19:42:54.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -706,12 +657,47 @@
             "quality_score": 18,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 1,
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇲🇰 North Macedonia has declared 30-day state of emergency in Gostivar after contaminated drinking water sickens more than 3,000 people. Tests found fecal contamination in the town'",
+            "text": "🇲🇰 North Macedonia has declared 30-day state of emergency in Gostivar after contaminated drinking water sickens more than 3,000 people. Tests found fecal contamination in the town's water supply. Police have detained the head of Gostivar's public water utility and two other",
+            "url": "https://x.com/i/web/status/2080050711648252079",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-07-22T22:01:49.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 23,
+            "raw_engagement": 23,
+            "metrics": {
+              "likes": 18,
+              "reposts": 2,
+              "replies": 3,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -761,13 +747,13 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 18,
-        "negative_hits": 11,
-        "positive_hits": 2,
+        "negative_hits": 12,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 23,
-        "raw_engagement_total": 23,
-        "quality_total": 443,
-        "geopolitical_total": 393,
+        "engagement_total": 7,
+        "raw_engagement_total": 7,
+        "quality_total": 441,
+        "geopolitical_total": 391,
         "source_counts": {
           "reddit": 0,
           "mastodon": 15,
@@ -779,14 +765,14 @@
           "government_crisis": 2,
           "security": 1,
           "foreign_influence": 1,
-          "ethnic_tension": 2
+          "eu_integration": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 12,
           "albania": 3,
           "Szerbia": 1,
-          "Koszovó": 1,
-          "Albánia": 1
+          "Albánia": 2
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
