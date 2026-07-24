@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24 19:17 UTC",
+  "updated_at": "2026-07-24 19:44 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 22
+    "collected": 24
   },
   "countries": [
     {
@@ -21,30 +21,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
-        "negative_hits": 5,
-        "positive_hits": 2,
+        "mentions": 14,
+        "negative_hits": 6,
+        "positive_hits": 3,
         "trusted_hits": 1,
-        "engagement_total": 89,
-        "raw_engagement_total": 89,
-        "quality_total": 197,
-        "geopolitical_total": 172,
+        "engagement_total": 106,
+        "raw_engagement_total": 106,
+        "quality_total": 229,
+        "geopolitical_total": 202,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 7
+          "x": 9
         },
         "category_counts": {
           "ethnic_tension": 4,
-          "security": 2,
+          "security": 3,
           "protest": 2,
           "government_crisis": 3,
-          "foreign_influence": 1
+          "foreign_influence": 2
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 4,
-          "Szerbia": 2,
+          "Szerbia": 4,
           "Koszovó": 3,
           "Montenegró": 1,
           "Észak-Macedónia": 1
@@ -128,6 +128,41 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Serbian Activist Reports Death and Rape Threats, Incident Reported to Police Serbia SNS HumanRights PoliticalViolence SremskiKarlovci CivilSociety WesternBalkans FoNet Activists",
+            "text": "Serbian Activist Reports Death and Rape Threats, Incident Reported to Police Serbia SNS HumanRights PoliticalViolence SremskiKarlovci CivilSociety WesternBalkans FoNet Activists",
+            "url": "https://x.com/i/web/status/2080739598154543612",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-07-24T19:39:13.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 22,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "\"If I had been in Milošević’s position in 1998, I would have carried out the ethnic cleansing of Kosovo” - this was the statement made by the Serbian Minister of State Administration\" \"The remarks prompted strong criticism from many Albanian citizens and from parts of the Serbian opposition, with calls for her dismissal. Kosovo subsequently declared the mini",
             "url": "https://mas.to/@meganL/116968517125132785",
@@ -195,47 +230,12 @@
             "quality_score": 18,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 14,
+            "raw_engagement": 14,
             "metrics": {
-              "likes": 2,
-              "reposts": 0,
+              "likes": 11,
+              "reposts": 3,
               "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🇺🇸I commend , Co-Chair of the , and his 41 colleagues for their leadership in protecting democracy and exposing the true face of Serbia. Belgrade is lying to the West. Serbia has a",
-            "text": "🇺🇸I commend , Co-Chair of the , and his 41 colleagues for their leadership in protecting democracy and exposing the true face of Serbia. Belgrade is lying to the West. Serbia has always been closely aligned with Russia, China, and Iran—enemies of the",
-            "url": "https://x.com/i/web/status/2080685205271056396",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-07-24T16:03:04.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 16,
-            "quality_score": 17,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 16,
-            "raw_engagement": 16,
-            "metrics": {
-              "likes": 8,
-              "reposts": 2,
-              "replies": 6,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -246,69 +246,32 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 17,
+        "score": 12,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 2,
-        "positive_hits": 3,
+        "mentions": 2,
+        "negative_hits": 1,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 12,
-        "raw_engagement_total": 12,
-        "quality_total": 63,
-        "geopolitical_total": 58,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 34,
+        "geopolitical_total": 30,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "security": 1,
-          "eu_integration": 1,
           "protest": 1
         },
         "tag_counts": {
           "bosnia": 1,
-          "Montenegró": 1,
           "Észak-Macedónia": 1
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "Thank you to and for an engaging conversation on Bosnia and Herzegovina’s 🇧🇦 path towards the EU 🇪🇺. We discussed the steps for the next major milestone on the EU accession process",
-            "text": "Thank you to and for an engaging conversation on Bosnia and Herzegovina’s 🇧🇦 path towards the EU 🇪🇺. We discussed the steps for the next major milestone on the EU accession process - the Intergovernmental Conference to launch accession negotiations. We",
-            "url": "https://x.com/i/web/status/2080606563471966215",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-07-24T10:50:35.000Z",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 2
-            },
-            "event_category": "eu_integration",
-            "event_categories": [
-              {
-                "category": "eu_integration",
-                "hits": 4,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 10,
-            "raw_engagement": 10,
-            "metrics": {
-              "likes": 6,
-              "reposts": 1,
-              "replies": 1,
-              "quotes": 2
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Agenzia Nova: Bosnia-Turchia: firmato accordo per donazione dieci dispositivi antidrone turchi 23 lug 14:46 - (Agenzia Nova) - La Bosnia Erzegovina ha firmato un accordo per ricevere in donazione militare diecidispositivi anti-drone Kangal/Adl... (Seb) Bosnia-Turkey: agreement signed for donation of ten Turkish anti-drone devices July 23, 14:46 - (Agenzia No",
@@ -414,8 +377,7 @@
         "tag_counts": {
           "balkans": 1,
           "kosovo": 6,
-          "Szerbia": 1,
-          "Koszovó": 2
+          "Koszovó": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -910,32 +872,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 26,
-        "negative_hits": 21,
+        "mentions": 28,
+        "negative_hits": 23,
         "positive_hits": 3,
         "trusted_hits": 4,
-        "engagement_total": 52,
-        "raw_engagement_total": 52,
-        "quality_total": 741,
-        "geopolitical_total": 665,
+        "engagement_total": 58,
+        "raw_engagement_total": 58,
+        "quality_total": 809,
+        "geopolitical_total": 731,
         "source_counts": {
           "reddit": 0,
           "mastodon": 21,
-          "x": 5
+          "x": 7
         },
         "category_counts": {
           "corruption_rule_of_law": 5,
-          "protest": 10,
-          "security": 5,
+          "protest": 9,
+          "security": 7,
           "ethnic_tension": 2,
           "eu_integration": 2,
-          "government_crisis": 2
+          "government_crisis": 3
         },
         "tag_counts": {
           "balkans": 13,
           "albania": 8,
           "Koszovó": 1,
-          "Albánia": 4
+          "Albánia": 6
         },
         "main_topic": "protest",
         "top_posts": [
