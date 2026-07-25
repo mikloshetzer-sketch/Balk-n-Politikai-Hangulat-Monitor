@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24 19:44 UTC",
+  "updated_at": "2026-07-25 01:54 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 24
+    "collected": 16
   },
   "countries": [
     {
@@ -21,78 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 6,
-        "positive_hits": 3,
+        "mentions": 8,
+        "negative_hits": 5,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 106,
-        "raw_engagement_total": 106,
-        "quality_total": 229,
-        "geopolitical_total": 202,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 137,
+        "geopolitical_total": 118,
         "source_counts": {
-          "reddit": 0,
+          "reddit": 1,
           "mastodon": 5,
-          "x": 9
+          "x": 2
         },
         "category_counts": {
-          "ethnic_tension": 4,
+          "ethnic_tension": 2,
           "security": 3,
-          "protest": 2,
-          "government_crisis": 3,
-          "foreign_influence": 2
+          "protest": 1,
+          "government_crisis": 2
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 4,
-          "Szerbia": 4,
-          "Koszovó": 3,
-          "Montenegró": 1,
-          "Észak-Macedónia": 1
+          "serbia": 5,
+          "Szerbia": 1,
+          "Koszovó": 1
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "security",
         "top_posts": [
-          {
-            "title": "Montenegro Municipal Declarations on Kosovo Part of “Serbian World” Strategy, Fetoshi Says Montenegro Kosovo SerbianWorld ArbenFetoshi MilanKnezevic WesternBalkans HybridThreats Eu",
-            "text": "Montenegro Municipal Declarations on Kosovo Part of “Serbian World” Strategy, Fetoshi Says Montenegro Kosovo SerbianWorld ArbenFetoshi MilanKnezevic WesternBalkans HybridThreats EuroAtlantic NATO EuropeanUnion",
-            "url": "https://x.com/i/web/status/2080676671770730901",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-07-24T15:29:10.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1,
-              "Montenegró": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 25,
-            "quality_score": 29,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "As a reminder, Marta Kos and Ursula fon Der Leyen are still supporting this regime, and never miss a chance to praise them. Vućić's SNS party is STILL a member of EPP bloc in European Parliament. We, free people of #Serbia , demand personal sanctions for Vučić and his regime!",
@@ -126,41 +81,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Serbian Activist Reports Death and Rape Threats, Incident Reported to Police Serbia SNS HumanRights PoliticalViolence SremskiKarlovci CivilSociety WesternBalkans FoNet Activists",
-            "text": "Serbian Activist Reports Death and Rape Threats, Incident Reported to Police Serbia SNS HumanRights PoliticalViolence SremskiKarlovci CivilSociety WesternBalkans FoNet Activists",
-            "url": "https://x.com/i/web/status/2080739598154543612",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-24T19:39:13.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -201,44 +121,103 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "BREAKING \"As of tonight, U.S. tariffs on Serbia are 0%,\" Serbian President Aleksandar Vucic said, confirming earlier reports that the United States will remove its 35% tariffs on S",
-            "text": "BREAKING \"As of tonight, U.S. tariffs on Serbia are 0%,\" Serbian President Aleksandar Vucic said, confirming earlier reports that the United States will remove its 35% tariffs on Serbian goods.",
-            "url": "https://x.com/i/web/status/2080732415996121315",
+            "title": "Kosovo was the first major test of the \"win by air power alone\" thesis. Analysts noted that even after 78 days of NATO bombing, the Serbian ground army emerged largely intact, and ",
+            "text": "Kosovo was the first major test of the \"win by air power alone\" thesis. Analysts noted that even after 78 days of NATO bombing, the Serbian ground army emerged largely intact, and it was the credible threat of a ground invasion plus diplomatic pressure that forced the settlement.",
+            "url": "https://x.com/i/web/status/2080750735038304485",
             "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-24T19:10:40.000Z",
+            "tag": "Koszovó",
+            "seen_date": "2026-07-24T20:23:28.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 9
+              "Szerbia": 2,
+              "Koszovó": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
               }
             ],
-            "geopolitical_score": 17,
-            "quality_score": 18,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 14,
-            "raw_engagement": 14,
+            "geopolitical_score": 16,
+            "quality_score": 20,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 11,
-              "reposts": 3,
+              "likes": 2,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "Šta se krije iza namere MUP da proda LRAD: Bivši inspektor policije upozorava na veliku opasnost",
+            "text": "MUP se godinama zalagao da se uređaj LRAD, poznat kao „zvučni top“, uvrsti među sredstva prinude koja policija može da koristi, ali ta izmena Zakona o policiji nikada nije usvojena. Ipak, uređaji su nabavljeni, a tužilaštvo i dalje istražuje da li je jedan od njih upotrebljen tokom velikog protesta u Beogradu 15. marta, kada je došlo do zvučnog incidenta. Do",
+            "url": "https://www.reddit.com/r/serbia/comments/1v5oxo1/šta_se_krije_iza_namere_mup_da_proda_lrad_bivši/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-07-24T21:38:56+00:00",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 19,
+            "source_reliability": 1,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "👀 Wow, breaking news: file extensions can coincidentally match country codes! 🌍 Apparently, someone discovered that \".rs\" is both Serbia's code and Rust's file extension. Truly groundbreaking stuff, folks! 🎉 If only there was a way to use this vital information to save the world... or at least a few bytes. 🙃 https://www. bruh.ltd/blog/programming-lang uage-f",
+            "url": "https://mastodon.social/@ngate/116975073029356944",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 24 Jul 2026 12:59:24 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -246,29 +225,27 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 12,
+        "score": 3,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
-        "negative_hits": 1,
-        "positive_hits": 2,
+        "mentions": 1,
+        "negative_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 34,
-        "geopolitical_total": 30,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 21,
+        "geopolitical_total": 18,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
-          "security": 1,
-          "protest": 1
+          "security": 1
         },
         "tag_counts": {
-          "bosnia": 1,
-          "Észak-Macedónia": 1
+          "bosnia": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -305,46 +282,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "India's 😂'cockroach'🪳 protesters hold talks with government as stalemate continues Eindhoven Utrecht Groningen Maastricht Ghent Salzburg Linz Wroclaw Split Rijeka Sarajevo Belgrade",
-            "text": "India's 😂'cockroach'🪳 protesters hold talks with government as stalemate continues Eindhoven Utrecht Groningen Maastricht Ghent Salzburg Linz Wroclaw Split Rijeka Sarajevo Belgrade Skopje Tirana Sofia Bucharest Vilnius india",
-            "url": "https://x.com/i/web/status/2080612281612640408",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-24T11:13:18.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina",
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4,
-              "Bosznia-Hercegovina": 4,
-              "Észak-Macedónia": 4,
-              "Albánia": 4
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -355,39 +292,74 @@
         "score": 58,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 2,
-        "positive_hits": 7,
+        "mentions": 9,
+        "negative_hits": 3,
+        "positive_hits": 4,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 190,
-        "geopolitical_total": 162,
+        "quality_total": 168,
+        "geopolitical_total": 141,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
           "ethnic_tension": 3,
           "corruption_rule_of_law": 2,
-          "government_crisis": 4,
+          "government_crisis": 3,
           "eu_integration": 1
         },
         "tag_counts": {
           "balkans": 1,
           "kosovo": 6,
-          "Koszovó": 3
+          "Koszovó": 2
         },
-        "main_topic": "government_crisis",
+        "main_topic": "ethnic_tension",
         "top_posts": [
           {
-            "title": "Kosovo Sets Constitutive Parliament Session for August 6 as Parties Face Deadline to Elect President Kosovo KosovoPolitics AlbinKurti AlbulenaHaxhiu KosovoAssembly PresidentialElec",
-            "text": "Kosovo Sets Constitutive Parliament Session for August 6 as Parties Face Deadline to Elect President Kosovo KosovoPolitics AlbinKurti AlbulenaHaxhiu KosovoAssembly PresidentialElection LVV PDK LDK ConstitutionalCrisis EuroAtlanticIntegration",
-            "url": "https://x.com/i/web/status/2080715337440346381",
+            "title": "Outgoing Prime Minister Albin Kurti described the resignation of former Serb prosecutors and judges from judicial institutions as a coordinated and politically motivated move.",
+            "text": "Outgoing Prime Minister Albin Kurti described the resignation of former Serb prosecutors and judges from judicial institutions as a coordinated and politically motivated move.",
+            "url": "https://x.com/i/web/status/2080828745020002516",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-07-24T18:02:48.000Z",
+            "seen_date": "2026-07-25T01:33:27.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 22,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "During the meeting of the Government of Kosovo, acting Prime Minister Albin Kurti commented on the resignations of prosecutors and judges from the Serb community, describing them a",
+            "text": "During the meeting of the Government of Kosovo, acting Prime Minister Albin Kurti commented on the resignations of prosecutors and judges from the Serb community, describing them as a well-thought-out and politically motivated action.",
+            "url": "https://x.com/i/web/status/2080798452594737603",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-07-24T23:33:05.000Z",
             "matched_countries": [
               "Koszovó"
             ],
@@ -398,12 +370,12 @@
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 3,
+                "hits": 2,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 31,
-            "quality_score": 32,
+            "geopolitical_score": 21,
+            "quality_score": 22,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -495,35 +467,6 @@
             "source": "mastodon",
             "tag": "kosovo",
             "seen_date": "Mon, 20 Jul 2026 21:10:45 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 2
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 18,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "# Kosovo : @ EUCouncil has appointed Mr. Antero Lopes 🇵🇹 as the new Head of Mission of EULEX Kosovo. Starting on 10 August 2026, he will lead the EU mission supporting Kosovar rule of law institutions until 14 June 2027. More ⬇️ link.europa.eu/b8ntBb Link EULEX: Council appoints Head of EU rule of law mission in Kosovo* The Council appointed Mr. Antero Lopes",
-            "url": "https://respublicae.eu/@EUCouncilPress/116954321101445931",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Mon, 20 Jul 2026 21:01:55 +0000",
             "matched_countries": [
               "Koszovó"
             ],
@@ -652,32 +595,147 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 28,
-        "level": "medium",
+        "score": 44,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 7,
         "negative_hits": 1,
         "positive_hits": 2,
-        "trusted_hits": 0,
-        "engagement_total": 7,
-        "raw_engagement_total": 7,
-        "quality_total": 58,
-        "geopolitical_total": 53,
+        "trusted_hits": 1,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
+        "quality_total": 104,
+        "geopolitical_total": 94,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 5
+          "x": 7
         },
         "category_counts": {
           "government_crisis": 3,
-          "security": 1,
-          "protest": 1
+          "security": 3,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 5
+          "Észak-Macedónia": 7
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "The official name of the country is \"North Macedonia\", not \"Macedonia\" 🇲🇰 Prespa Agreement (2018) Constitutional Amendments (2019) UN Recognition (2019) The EU institutions also of",
+            "text": "The official name of the country is \"North Macedonia\", not \"Macedonia\" 🇲🇰 Prespa Agreement (2018) Constitutional Amendments (2019) UN Recognition (2019) The EU institutions also officially use the name North Macedonia But on X it's Macedonia 😎",
+            "url": "https://x.com/i/web/status/2080749240158941312",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-07-24T20:17:31.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 21,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Greek customs officers announce a strike at border crossings with North Macedonia. Read more here...",
+            "text": "Greek customs officers announce a strike at border crossings with North Macedonia. Read more here...",
+            "url": "https://x.com/i/web/status/2080755922163384572",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-07-24T20:44:05.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 18,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Well, if X says \"Macedonia\" instead of the official name \"North Macedonia,\" then congratulations - apparently a social media display name now outranks the UN, NATO, the EU, constit",
+            "text": "Well, if X says \"Macedonia\" instead of the official name \"North Macedonia,\" then congratulations - apparently a social media display name now outranks the UN, NATO, the EU, constitutions, and international treaties.😎",
+            "url": "https://x.com/i/web/status/2080749925608898931",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-07-24T20:20:15.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 17,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "President Droupadi Murmu's three-nation Europe tour strengthened India's partnerships with Moldova, North Macedonia, and Romania, advancing cooperation in trade, innovation, educat",
             "text": "President Droupadi Murmu's three-nation Europe tour strengthened India's partnerships with Moldova, North Macedonia, and Romania, advancing cooperation in trade, innovation, education, and strategic engagement. PresidentMurmu IndiaEU IndiaRomania Diplomacy",
@@ -719,138 +777,28 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "India's 😂'cockroach'🪳 protesters hold talks with government as stalemate continues Eindhoven Utrecht Groningen Maastricht Ghent Salzburg Linz Wroclaw Split Rijeka Sarajevo Belgrade",
-            "text": "India's 😂'cockroach'🪳 protesters hold talks with government as stalemate continues Eindhoven Utrecht Groningen Maastricht Ghent Salzburg Linz Wroclaw Split Rijeka Sarajevo Belgrade Skopje Tirana Sofia Bucharest Vilnius india",
-            "url": "https://x.com/i/web/status/2080612281612640408",
+            "title": "After the continuous rise in fuel prices, Prime Minister Hristijan Mickoski has warned that the Government will take action with a new package of measures.",
+            "text": "After the continuous rise in fuel prices, Prime Minister Hristijan Mickoski has warned that the Government will take action with a new package of measures.",
+            "url": "https://x.com/i/web/status/2080813606506045622",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-24T11:13:18.000Z",
+            "seen_date": "2026-07-25T00:33:18.000Z",
             "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina",
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Szerbia": 4,
-              "Bosznia-Hercegovina": 4,
-              "Észak-Macedónia": 4,
-              "Albánia": 4
+              "Észak-Macedónia": 4
             },
-            "event_category": "protest",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "protest",
+                "category": "government_crisis",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
               }
             ],
             "geopolitical_score": 12,
             "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Here is a shorter, professional LinkedIn version while retaining the personal and historical significance: A Memorable Night in Skopje — In the Footsteps of Mother Teresa 🇮🇳🇲🇰 Duri",
-            "text": "Here is a shorter, professional LinkedIn version while retaining the personal and historical significance: A Memorable Night in Skopje — In the Footsteps of Mother Teresa 🇮🇳🇲🇰 During my visit to North Macedonia as part of the business delegation accompanying Hon’ble President",
-            "url": "https://x.com/i/web/status/2080579644533657748",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-24T09:03:37.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 3,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "The vital index in Macedonia was 78.1 last year but that figure varied significantly, being highest in the Skopje region (385.6 in Studeničani and 375 in Aračinovo) and lowest in t",
-            "text": "The vital index in Macedonia was 78.1 last year but that figure varied significantly, being highest in the Skopje region (385.6 in Studeničani and 375 in Aračinovo) and lowest in the eastern part of the country, close to the Bulgarian border",
-            "url": "https://x.com/i/web/status/2080644542856876252",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-24T13:21:30.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "The President of India, Smt Droupadi Murmu, along with President Gordana Siljanovska-Davkova of North Macedonia, unveiled a bust of Mahatma Gandhi 𓀘 at the Museum of the City of Sk",
-            "text": "The President of India, Smt Droupadi Murmu, along with President Gordana Siljanovska-Davkova of North Macedonia, unveiled a bust of Mahatma Gandhi 𓀘 at the Museum of the City of Skopje on 22 July 2026. macedonia Gandhi MahatmaGandhi 𓀘 𓀘 𓀘",
-            "url": "https://x.com/i/web/status/2080727361000296789",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-07-24T18:50:35.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -872,32 +820,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 28,
-        "negative_hits": 23,
+        "mentions": 25,
+        "negative_hits": 19,
         "positive_hits": 3,
         "trusted_hits": 4,
-        "engagement_total": 58,
-        "raw_engagement_total": 58,
-        "quality_total": 809,
-        "geopolitical_total": 731,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 687,
+        "geopolitical_total": 610,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 21,
-          "x": 7
+          "mastodon": 22,
+          "x": 3
         },
         "category_counts": {
           "corruption_rule_of_law": 5,
           "protest": 9,
-          "security": 7,
-          "ethnic_tension": 2,
+          "security": 6,
+          "ethnic_tension": 1,
           "eu_integration": 2,
-          "government_crisis": 3
+          "government_crisis": 2
         },
         "tag_counts": {
           "balkans": 13,
-          "albania": 8,
-          "Koszovó": 1,
-          "Albánia": 6
+          "albania": 9,
+          "Albánia": 3
         },
         "main_topic": "protest",
         "top_posts": [
