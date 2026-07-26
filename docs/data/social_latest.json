@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-26 01:57 UTC",
+  "updated_at": "2026-07-26 03:47 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -7,120 +7,46 @@
     "status": "partial_error",
     "errors": [
       {
-        "country": "Bosznia-Hercegovina",
+        "country": "Szerbia",
         "status_code": 402,
         "message": "{\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}"
       }
     ],
-    "collected": 4
+    "collected": 0
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 60,
+        "score": 55,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 7,
+        "mentions": 7,
+        "negative_hits": 3,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 106,
-        "raw_engagement_total": 106,
-        "quality_total": 203,
-        "geopolitical_total": 180,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 119,
+        "geopolitical_total": 100,
         "source_counts": {
           "reddit": 1,
           "mastodon": 6,
-          "x": 4
+          "x": 0
         },
         "category_counts": {
           "foreign_influence": 2,
           "ethnic_tension": 2,
-          "security": 4,
-          "protest": 1,
-          "government_crisis": 2
+          "security": 2,
+          "protest": 1
         },
         "tag_counts": {
           "balkans": 2,
           "serbia": 4,
-          "kosovo": 1,
-          "Szerbia": 4
+          "kosovo": 1
         },
-        "main_topic": "security",
+        "main_topic": "foreign_influence",
         "top_posts": [
-          {
-            "title": "After Kosovo Police arrested a Turkish citizen suspected of involvement in war crimes linked to the Krusha massacre, videos have surfaced showing him alongside Serbian paramilitary",
-            "text": "After Kosovo Police arrested a Turkish citizen suspected of involvement in war crimes linked to the Krusha massacre, videos have surfaced showing him alongside Serbian paramilitary forces during the Kosovo War.🇽🇰",
-            "url": "https://x.com/i/web/status/2081122281934225447",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-25T20:59:52.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 105,
-            "raw_engagement": 105,
-            "metrics": {
-              "likes": 86,
-              "reposts": 9,
-              "replies": 8,
-              "quotes": 2
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "After Kosovo Police arrested a Turkish citizen suspected of involvement in war crimes linked to the Krusha massacre, videos have surfaced allegedly showing him alongside Serbian pa",
-            "text": "After Kosovo Police arrested a Turkish citizen suspected of involvement in war crimes linked to the Krusha massacre, videos have surfaced allegedly showing him alongside Serbian paramilitary forces during the Kosovo War.🇽🇰",
-            "url": "https://x.com/i/web/status/2081121900453835151",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-25T20:58:21.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "\"If I had been in Milošević’s position in 1998, I would have carried out the ethnic cleansing of Kosovo” - this was the statement made by the Serbian Minister of State Administration\" \"The remarks prompted strong criticism from many Albanian citizens and from parts of the Serbian opposition, with calls for her dismissal. Kosovo subsequently declared the mini",
@@ -160,46 +86,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "This is a transparent leader with very serious data on his mind... DIE WELTWOCHE's interview should be watched: “Europe is marching into a war it’s not equipped to handle”: Preside",
-            "text": "This is a transparent leader with very serious data on his mind... DIE WELTWOCHE's interview should be watched: “Europe is marching into a war it’s not equipped to handle”: President Vucic is deeply concerned",
-            "url": "https://x.com/i/web/status/2081119629792190570",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-25T20:49:19.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "So why exactly are the Chinese building in Europe? And is the EU paying for it? https://www. rferl.org/a/china-balkans-loan -infrastructure/33812817.html 'fatal accidents, illegal labor practices, and zero transparency' # Europe # EU # China # Serbia # Balkans",
             "url": "https://troet.cafe/@AnnasTochter/116980524748861660",
@@ -232,6 +118,105 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Šta se krije iza namere MUP da proda LRAD: Bivši inspektor policije upozorava na veliku opasnost",
+            "text": "MUP se godinama zalagao da se uređaj LRAD, poznat kao „zvučni top“, uvrsti među sredstva prinude koja policija može da koristi, ali ta izmena Zakona o policiji nikada nije usvojena. Ipak, uređaji su nabavljeni, a tužilaštvo i dalje istražuje da li je jedan od njih upotrebljen tokom velikog protesta u Beogradu 15. marta, kada je došlo do zvučnog incidenta. Do",
+            "url": "https://www.reddit.com/r/serbia/comments/1v5oxo1/šta_se_krije_iza_namere_mup_da_proda_lrad_bivši/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-07-24T21:38:56+00:00",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 19,
+            "source_reliability": 1,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Fatal Accidents, Hidden Contracts: Chinese Building Projects In Serbia And Bosnia https:// fed.brid.gy/r/https://www.rfer l.org/a/china-balkans-loan-infrastructure/33812817.html",
+            "url": "https://fed.brid.gy/r/https://www.rferl.org/a/china-balkans-loan-infrastructure/33812817.html",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sat, 25 Jul 2026 11:11:55 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Szerbia": 1,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "👀 Wow, breaking news: file extensions can coincidentally match country codes! 🌍 Apparently, someone discovered that \".rs\" is both Serbia's code and Rust's file extension. Truly groundbreaking stuff, folks! 🎉 If only there was a way to use this vital information to save the world... or at least a few bytes. 🙃 https://www. bruh.ltd/blog/programming-lang uage-f",
+            "url": "https://mastodon.social/@ngate/116975073029356944",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 24 Jul 2026 12:59:24 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -239,31 +224,29 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 19,
+        "score": 9,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
+        "mentions": 2,
+        "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 55,
-        "geopolitical_total": 48,
+        "quality_total": 36,
+        "geopolitical_total": 30,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "foreign_influence": 1,
-          "security": 1,
-          "government_crisis": 1
+          "security": 1
         },
         "tag_counts": {
           "serbia": 1,
-          "bosnia": 1,
-          "Szerbia": 1
+          "bosnia": 1
         },
         "main_topic": "foreign_influence",
         "top_posts": [
@@ -300,48 +283,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "10 European cities most at risk of becoming ghost towns Migration has failed to solve Europes demographic crisis: Polish president Warsaw Dublin Athens Sofia Bern Oslo Helsinki Buc",
-            "text": "10 European cities most at risk of becoming ghost towns Migration has failed to solve Europes demographic crisis: Polish president Warsaw Dublin Athens Sofia Bern Oslo Helsinki Bucharest Budapest Sarajevo Belgrade",
-            "url": "https://x.com/i/web/status/2081118760585281650",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-07-25T20:45:52.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Szerbia": 4,
-              "Bosznia-Hercegovina": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "migration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
