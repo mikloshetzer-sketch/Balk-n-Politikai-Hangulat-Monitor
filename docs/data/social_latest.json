@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27 19:50 UTC",
+  "updated_at": "2026-07-28 01:48 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -18,101 +18,418 @@
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 0,
-        "level": "low",
+        "score": 23,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 0,
+        "mentions": 4,
         "negative_hits": 0,
         "positive_hits": 0,
-        "trusted_hits": 0,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 0,
-        "geopolitical_total": 0,
+        "quality_total": 61,
+        "geopolitical_total": 47,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 0,
+          "mastodon": 4,
           "x": 0
         },
-        "category_counts": {},
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "category_counts": {
+          "foreign_influence": 2,
+          "government_crisis": 1,
+          "ethnic_tension": 1
+        },
+        "tag_counts": {
+          "balkans": 1,
+          "serbia": 2,
+          "kosovo": 1
+        },
+        "main_topic": "foreign_influence",
+        "top_posts": [
+          {
+            "title": "",
+            "text": "So why exactly are the Chinese building in Europe? And is the EU paying for it? https://www. rferl.org/a/china-balkans-loan -infrastructure/33812817.html 'fatal accidents, illegal labor practices, and zero transparency' # Europe # EU # China # Serbia # Balkans",
+            "url": "https://troet.cafe/@AnnasTochter/116980524748861660",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sat, 25 Jul 2026 12:05:51 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 21,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Fatal Accidents, Hidden Contracts: Chinese Building Projects In Serbia And Bosnia https:// fed.brid.gy/r/https://www.rfer l.org/a/china-balkans-loan-infrastructure/33812817.html",
+            "url": "https://fed.brid.gy/r/https://www.rferl.org/a/china-balkans-loan-infrastructure/33812817.html",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sat, 25 Jul 2026 11:11:55 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Szerbia": 1,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Situation in #Serbia is deteriorating fast, a thread 🧵 - Minister in Vučić's regime, Snežana Paunović, regrets that ethnic cleansing and mass deportation of civilians in #Kosovo was not finished in 1998. Vučić still keeps her on her job in Serbian government. nova.rs/vesti/politi...",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:sjx3hptnopiz7mtzaexuhgpr/post/3mrcdruvq2k2w",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Thu, 23 Jul 2026 07:45:13 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6,
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 13,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Serbia: Vucic, presidenziali tra dicembre e febbraio in base alle legislative 26 lug 15:18 - (Agenzia Nova) - Le elezioni presidenziali in Serbia potrebbero svolgersi tra la fine di dicembre e l'inizio di febbraio, a... (Seb) Serbia: Vucic, presidential elections between December and February according to legislation July 26 15:18 – (Agenzia No",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/116986518748920452",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sun, 26 Jul 2026 13:30:12 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 12,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          }
+        ]
       }
     },
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 0,
+        "score": 9,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 0,
+        "mentions": 2,
         "negative_hits": 0,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 0,
-        "geopolitical_total": 0,
+        "quality_total": 36,
+        "geopolitical_total": 30,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 0,
+          "mastodon": 2,
           "x": 0
         },
-        "category_counts": {},
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "category_counts": {
+          "foreign_influence": 1,
+          "security": 1
+        },
+        "tag_counts": {
+          "serbia": 1,
+          "bosnia": 1
+        },
+        "main_topic": "foreign_influence",
+        "top_posts": [
+          {
+            "title": "",
+            "text": "Agenzia Nova: Bosnia-Turchia: firmato accordo per donazione dieci dispositivi antidrone turchi 23 lug 14:46 - (Agenzia Nova) - La Bosnia Erzegovina ha firmato un accordo per ricevere in donazione militare diecidispositivi anti-drone Kangal/Adl... (Seb) Bosnia-Turkey: agreement signed for donation of ten Turkish anti-drone devices July 23, 14:46 - (Agenzia No",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/116969414186858813",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Thu, 23 Jul 2026 13:00:17 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 21,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Fatal Accidents, Hidden Contracts: Chinese Building Projects In Serbia And Bosnia https:// fed.brid.gy/r/https://www.rfer l.org/a/china-balkans-loan-infrastructure/33812817.html",
+            "url": "https://fed.brid.gy/r/https://www.rferl.org/a/china-balkans-loan-infrastructure/33812817.html",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sat, 25 Jul 2026 11:11:55 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Szerbia": 1,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          }
+        ]
       }
     },
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 0,
+        "score": 16,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 0,
-        "negative_hits": 0,
-        "positive_hits": 0,
+        "mentions": 2,
+        "negative_hits": 1,
+        "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 0,
-        "geopolitical_total": 0,
+        "quality_total": 38,
+        "geopolitical_total": 32,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 0,
+          "mastodon": 2,
           "x": 0
         },
-        "category_counts": {},
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "category_counts": {
+          "ethnic_tension": 2
+        },
+        "tag_counts": {
+          "kosovo": 2
+        },
+        "main_topic": "ethnic_tension",
+        "top_posts": [
+          {
+            "title": "",
+            "text": "RT @AnouarEUspox: # Kosovo : Statement by the Spokesperson on the reintegration of Kosovo Serb judicial personnel https://www. eeas.europa.eu/eeas/kosovo-sta tement-spokesperson-reintegration-kosovo-serb-judicial-personnel_en RT @AnouarEUspox: # Kosovo : Statement by the Spokesperson on the reintegration of Kosovo Serb judicial personnel eeas.europa.eu/eeas/",
+            "url": "https://respublicae.eu/@eu_eeas/116963958743537352",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 22 Jul 2026 13:52:54 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 22,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "‘Nobody Mentions Us’: Silence Surrounds Wartime Rape of Kosovo’s Ethnic Minorities https:// fed.brid.gy/r/https://balkanin sight.com/2026/07/22/nobody-mentions-us-silence-surrounds-wartime-rape-of-kosovos-ethnic-minorities/btj/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/07/22/nobody-mentions-us-silence-surrounds-wartime-rape-of-kosovos-ethnic-minorities/btj/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 22 Jul 2026 06:12:42 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 16,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          }
+        ]
       }
     },
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 0,
+        "score": 6,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 0,
-        "negative_hits": 0,
-        "positive_hits": 0,
+        "mentions": 1,
+        "negative_hits": 1,
+        "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 0,
-        "geopolitical_total": 0,
+        "quality_total": 15,
+        "geopolitical_total": 12,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 0,
+          "mastodon": 1,
           "x": 0
         },
-        "category_counts": {},
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "category_counts": {
+          "foreign_influence": 1
+        },
+        "tag_counts": {
+          "montenegro": 1
+        },
+        "main_topic": "foreign_influence",
+        "top_posts": [
+          {
+            "title": "",
+            "text": "So \"Reform\" has ties to # Russia . Got it. https:// bylinetimes.com/2026/07/27/how -george-cottrells-reform-uk-network-in-montenegro-is-tied-to-sanctioned-russian-oligarchs/ # Montenegro # UK",
+            "url": "https://mastodon.social/@RealJournalism/116993238161381781",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Mon, 27 Jul 2026 17:59:02 +0000",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          }
+        ]
       }
     },
     {
@@ -143,26 +460,230 @@
     {
       "name": "Albánia",
       "social_signal": {
-        "score": 0,
-        "level": "low",
+        "score": 60,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 0,
-        "negative_hits": 0,
-        "positive_hits": 0,
-        "trusted_hits": 0,
+        "mentions": 16,
+        "negative_hits": 16,
+        "positive_hits": 1,
+        "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 0,
-        "geopolitical_total": 0,
+        "quality_total": 541,
+        "geopolitical_total": 489,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 0,
+          "mastodon": 16,
           "x": 0
         },
-        "category_counts": {},
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "category_counts": {
+          "government_crisis": 4,
+          "security": 5,
+          "corruption_rule_of_law": 3,
+          "protest": 4
+        },
+        "tag_counts": {
+          "balkans": 12,
+          "albania": 4
+        },
+        "main_topic": "security",
+        "top_posts": [
+          {
+            "title": "",
+            "text": "Day 58 of anti-corruption protest in Tirana, Albania (and second meeting of today - they protested outside a session of Parliament earlier today, then reassembled for the nightly march...it's understandable crowd sizes would vary and that people would be tired, but they keep on) https://www. youtube.com/watch?v=YRl9PvsjWFY # Albania # Corruption # Balkans # ",
+            "url": "https://mas.to/@meganL/116993213980940090",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Mon, 27 Jul 2026 17:52:53 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 44,
+            "quality_score": 47,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 58 of anti-corruption protest in Tirana, Albania It's raining, but protestors are expected out because Parliament met early to try to evade protest. Last night protestors announced they'd be out today so the MPs couldn't escape public account. The cops are out in riot gear. https://www. youtube.com/watch?v=b-4gr2v8E9g # Albania # Corruption # Balkans # E",
+            "url": "https://mas.to/@meganL/116990594288288783",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Mon, 27 Jul 2026 06:46:40 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 44,
+            "quality_score": 47,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Machine translated: \"Edi Rama's police have arrested, using violence, one of the biggest activists of the civic reaction that has been going on for 54 days. Edison Lika, one of the coordinators of the protest, has been arrested. Dozens of police in suits rushed at him and dragged the protester away. Even the reaction of those who were near him could not stop",
+            "url": "https://mas.to/@meganL/116970008397858168",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Thu, 23 Jul 2026 15:31:24 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 41,
+            "quality_score": 46,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Albania police use water cannons against protesters chanting for PM's resignation https://www. youtube.com/watch?v=wnnV0XOMY4Y # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Environment # Protest",
+            "url": "https://mas.to/@meganL/116979405816834115",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sat, 25 Jul 2026 07:21:18 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 37,
+            "quality_score": 40,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Albania: Rama respinge nuove richieste di dimissioni, \"mandato fino al 2029\" 26 lug 15:17 - (Agenzia Nova) - Il primo ministro albanese Edi Rama ha respinto le nuove richieste di dimissioni arrivate dopo le proteste... (Alt) Albania: Rama rejects new resignation requests, “mandate until 2029” July 26 15:17 – (Agenzia Nova) – Albanian Prime Mini",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/116986558175446422",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Sun, 26 Jul 2026 13:40:14 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 6
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 37,
+            "quality_score": 40,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          }
+        ]
       }
     }
   ]
