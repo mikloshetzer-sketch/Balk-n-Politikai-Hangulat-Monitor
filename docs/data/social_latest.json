@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-28 19:13 UTC",
+  "updated_at": "2026-07-28 19:48 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -598,31 +598,70 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 14,
+        "mentions": 15,
+        "negative_hits": 15,
         "positive_hits": 1,
-        "trusted_hits": 2,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 497,
-        "geopolitical_total": 451,
+        "quality_total": 520,
+        "geopolitical_total": 473,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 14,
+          "mastodon": 15,
           "x": 0
         },
         "category_counts": {
-          "government_crisis": 4,
-          "security": 5,
-          "corruption_rule_of_law": 3,
-          "protest": 2
+          "protest": 3,
+          "government_crisis": 5,
+          "security": 4,
+          "corruption_rule_of_law": 3
         },
         "tag_counts": {
-          "balkans": 12,
+          "balkans": 13,
           "albania": 2
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Day 59 of anti-corruption protest in Tirana, Albania Monday had lighter turn out at night because so many had protested in front of Parliament session during the day. Tonight it is back to a big crowd for the night march. 59 ditë revoltë! Shqiptarët nuk heqin dorë, kërkesa e panegociueshme: Rama jepe dorëheqjen! https://www. youtube.com/watch?v=hNGabh2ZJjI #",
+            "url": "https://mas.to/@meganL/116999278419920984",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Tue, 28 Jul 2026 19:35:09 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 44,
+            "quality_score": 47,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "Day 58 of anti-corruption protest in Tirana, Albania (and second meeting of today - they protested outside a session of Parliament earlier today, then reassembled for the nightly march...it's understandable crowd sizes would vary and that people would be tired, but they keep on) https://www. youtube.com/watch?v=YRl9PvsjWFY # Albania # Corruption # Balkans # ",
@@ -697,45 +736,6 @@
             "quality_score": 47,
             "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Machine translated: \"Edi Rama's police have arrested, using violence, one of the biggest activists of the civic reaction that has been going on for 54 days. Edison Lika, one of the coordinators of the protest, has been arrested. Dozens of police in suits rushed at him and dragged the protester away. Even the reaction of those who were near him could not stop",
-            "url": "https://mas.to/@meganL/116970008397858168",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Thu, 23 Jul 2026 15:31:24 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 41,
-            "quality_score": 46,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
