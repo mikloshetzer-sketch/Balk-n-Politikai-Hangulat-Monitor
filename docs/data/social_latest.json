@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-28 03:28 UTC",
+  "updated_at": "2026-07-28 08:20 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -18,34 +18,72 @@
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 23,
+        "score": 36,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 0,
+        "mentions": 5,
+        "negative_hits": 1,
         "positive_hits": 0,
-        "trusted_hits": 1,
+        "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 61,
-        "geopolitical_total": 47,
+        "quality_total": 86,
+        "geopolitical_total": 67,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
+          "mastodon": 5,
           "x": 0
         },
         "category_counts": {
-          "foreign_influence": 2,
+          "foreign_influence": 1,
+          "protest": 1,
           "government_crisis": 1,
+          "security": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 2,
-          "kosovo": 1
+          "kosovo": 2
         },
         "main_topic": "foreign_influence",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Schlein è molto più a destra di Prodi (e anche di Meloni) sull’Ucraina e non spende una sola parola sulla Nato che nel 1999 ha bombardato illegalmente la Serbia (storica alleata russa) per staccarle la regione del Kosovo, per farne uno Stato nuovo (con una nuova base Nato). https://www. ilfattoquotidiano.it/2026/07/2 8/schlein-prodi-guerra-ucraina-notizie/84",
+            "url": "https://mastodon.uno/@steek_hutzee/116996524253010329",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Tue, 28 Jul 2026 07:54:44 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 1,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "So why exactly are the Chinese building in Europe? And is the EU paying for it? https://www. rferl.org/a/china-balkans-loan -infrastructure/33812817.html 'fatal accidents, illegal labor practices, and zero transparency' # Europe # EU # China # Serbia # Balkans",
@@ -82,34 +120,27 @@
           },
           {
             "title": "",
-            "text": "Fatal Accidents, Hidden Contracts: Chinese Building Projects In Serbia And Bosnia https:// fed.brid.gy/r/https://www.rfer l.org/a/china-balkans-loan-infrastructure/33812817.html",
-            "url": "https://fed.brid.gy/r/https://www.rferl.org/a/china-balkans-loan-infrastructure/33812817.html",
+            "text": "Desde Belgrado, Ivana Nenadović habla sobre la importancia de Serbia en Europa, las lecciones aprendidas de las protestas estudiantiles y por qué el poder político debe construirse a nivel local. 🔗 https://www. youtube.com/watch?v=r4uUsDsSubU # DiEM25 # izquierda # Serbia",
+            "url": "https://mastodon.social/@DiEM25_ES/116996266560624784",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Sat, 25 Jul 2026 11:11:55 +0000",
+            "seen_date": "Tue, 28 Jul 2026 06:49:12 +0000",
             "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
+              "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 1,
-              "Bosznia-Hercegovina": 1
+              "Szerbia": 1
             },
-            "event_category": "foreign_influence",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "foreign_influence",
+                "category": "protest",
                 "hits": 1,
                 "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 15,
+            "geopolitical_score": 11,
+            "quality_score": 14,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -181,31 +212,29 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 9,
+        "score": 3,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 1,
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 36,
-        "geopolitical_total": 30,
+        "quality_total": 21,
+        "geopolitical_total": 18,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
+          "mastodon": 1,
           "x": 0
         },
         "category_counts": {
-          "foreign_influence": 1,
           "security": 1
         },
         "tag_counts": {
-          "serbia": 1,
           "bosnia": 1
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -240,42 +269,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Fatal Accidents, Hidden Contracts: Chinese Building Projects In Serbia And Bosnia https:// fed.brid.gy/r/https://www.rfer l.org/a/china-balkans-loan-infrastructure/33812817.html",
-            "url": "https://fed.brid.gy/r/https://www.rferl.org/a/china-balkans-loan-infrastructure/33812817.html",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sat, 25 Jul 2026 11:11:55 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Szerbia": 1,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 15,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -283,30 +276,67 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 16,
-        "level": "low",
+        "score": 23,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 3,
         "negative_hits": 1,
         "positive_hits": 1,
-        "trusted_hits": 0,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 38,
-        "geopolitical_total": 32,
+        "quality_total": 64,
+        "geopolitical_total": 53,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
+          "mastodon": 3,
           "x": 0
         },
         "category_counts": {
+          "security": 1,
           "ethnic_tension": 2
         },
         "tag_counts": {
-          "kosovo": 2
+          "kosovo": 3
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Schlein è molto più a destra di Prodi (e anche di Meloni) sull’Ucraina e non spende una sola parola sulla Nato che nel 1999 ha bombardato illegalmente la Serbia (storica alleata russa) per staccarle la regione del Kosovo, per farne uno Stato nuovo (con una nuova base Nato). https://www. ilfattoquotidiano.it/2026/07/2 8/schlein-prodi-guerra-ucraina-notizie/84",
+            "url": "https://mastodon.uno/@steek_hutzee/116996524253010329",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Tue, 28 Jul 2026 07:54:44 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 1,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "RT @AnouarEUspox: # Kosovo : Statement by the Spokesperson on the reintegration of Kosovo Serb judicial personnel https://www. eeas.europa.eu/eeas/kosovo-sta tement-spokesperson-reintegration-kosovo-serb-judicial-personnel_en RT @AnouarEUspox: # Kosovo : Statement by the Spokesperson on the reintegration of Kosovo Serb judicial personnel eeas.europa.eu/eeas/",
