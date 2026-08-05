@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05 13:48 UTC",
+  "updated_at": "2026-08-05 14:30 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -89,28 +89,30 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 13,
-        "level": "low",
+        "score": 23,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
-        "negative_hits": 0,
+        "mentions": 3,
+        "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 43,
-        "geopolitical_total": 37,
+        "quality_total": 53,
+        "geopolitical_total": 48,
         "source_counts": {
-          "reddit": 0,
+          "reddit": 1,
           "mastodon": 2,
           "x": 0
         },
         "category_counts": {
           "ethnic_tension": 1,
-          "government_crisis": 1
+          "government_crisis": 1,
+          "protest": 1
         },
         "tag_counts": {
-          "bosnia": 2
+          "bosnia": 2,
+          "serbia": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -179,6 +181,35 @@
             "geopolitical_score": 9,
             "quality_score": 12,
             "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Interesantni rezultati istraživanja IRI-a vezano za izlazak studentske liste i opozicionih stranaka na izbore",
+            "text": "Vidimo da oni koji podržavaju proteste u najvećoj meri žele da samo studentska lista izađe na izbore, što nije neko iznenađenje. Kao i da veći procenat onih koji su za proteste žele zajedničku listu sa opozicijom od onih koji su protiv protesta. I na sve to imamo značajan broj nezaintersovanih za to pitanje koji su protiv protesta. Međutim, veći procenat oni",
+            "url": "https://www.reddit.com/r/serbia/comments/1vg8hf0/interesantni_rezultati_istraživanja_iria_vezano/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-08-05T14:11:13+00:00",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 10,
+            "source_reliability": 1,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
@@ -290,90 +321,26 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 4,
+        "score": 0,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 0,
         "negative_hits": 0,
-        "positive_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 21,
-        "geopolitical_total": 15,
+        "quality_total": 0,
+        "geopolitical_total": 0,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
+          "mastodon": 0,
           "x": 0
         },
-        "category_counts": {
-          "eu_integration": 1,
-          "foreign_influence": 1
-        },
-        "tag_counts": {
-          "montenegro": 2
-        },
-        "main_topic": "eu_integration",
-        "top_posts": [
-          {
-            "title": "",
-            "text": "Media Changes in Montenegro Intensify Alarm About Foreign Influence https:// fed.brid.gy/r/https://balkanin sight.com/2026/07/30/media-changes-in-montenegro-intensify-alarm-about-foreign-influence/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/07/30/media-changes-in-montenegro-intensify-alarm-about-foreign-influence/bi/",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Thu, 30 Jul 2026 06:05:52 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 8,
-            "quality_score": 11,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Montenegro’s EU Accession is Critical Test of Europe’s Resolve https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/05/montenegros-eu-accession-is-critical-test-of-europes-resolve/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/05/montenegros-eu-accession-is-critical-test-of-europes-resolve/bi/",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Wed, 05 Aug 2026 05:43:38 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 1
-            },
-            "event_category": "eu_integration",
-            "event_categories": [
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 7,
-            "quality_score": 10,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          }
-        ]
+        "category_counts": {},
+        "tag_counts": {},
+        "main_topic": "nincs adat",
+        "top_posts": []
       }
     },
     {
@@ -407,29 +374,28 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 18,
+        "mentions": 17,
         "negative_hits": 14,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 459,
-        "geopolitical_total": 405,
+        "quality_total": 444,
+        "geopolitical_total": 393,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 18,
+          "mastodon": 17,
           "x": 0
         },
         "category_counts": {
           "corruption_rule_of_law": 7,
           "government_crisis": 2,
           "protest": 4,
-          "foreign_influence": 2,
-          "security": 3
+          "security": 3,
+          "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 10,
-          "montenegro": 1,
           "albania": 7
         },
         "main_topic": "corruption_rule_of_law",
