@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-07 07:39 UTC",
+  "updated_at": "2026-08-07 12:45 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -8,8 +8,33 @@
     "errors": [
       {
         "country": "Szerbia",
-        "status_code": 402,
-        "message": "{\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}"
+        "status_code": 401,
+        "message": "{\n  \"title\": \"Unauthorized\",\n  \"type\": \"about:blank\",\n  \"status\": 401,\n  \"detail\": \"Unauthorized\"\n}"
+      },
+      {
+        "country": "Bosznia-Hercegovina",
+        "status_code": 401,
+        "message": "{\n  \"title\": \"Unauthorized\",\n  \"type\": \"about:blank\",\n  \"status\": 401,\n  \"detail\": \"Unauthorized\"\n}"
+      },
+      {
+        "country": "Koszovó",
+        "status_code": 401,
+        "message": "{\n  \"title\": \"Unauthorized\",\n  \"type\": \"about:blank\",\n  \"status\": 401,\n  \"detail\": \"Unauthorized\"\n}"
+      },
+      {
+        "country": "Montenegró",
+        "status_code": 401,
+        "message": "{\n  \"title\": \"Unauthorized\",\n  \"type\": \"about:blank\",\n  \"status\": 401,\n  \"detail\": \"Unauthorized\"\n}"
+      },
+      {
+        "country": "Észak-Macedónia",
+        "status_code": 401,
+        "message": "{\n  \"title\": \"Unauthorized\",\n  \"type\": \"about:blank\",\n  \"status\": 401,\n  \"detail\": \"Unauthorized\"\n}"
+      },
+      {
+        "country": "Albánia",
+        "status_code": 401,
+        "message": "{\n  \"title\": \"Unauthorized\",\n  \"type\": \"about:blank\",\n  \"status\": 401,\n  \"detail\": \"Unauthorized\"\n}"
       }
     ],
     "collected": 0
@@ -18,30 +43,31 @@
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 28,
+        "score": 33,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 6,
         "negative_hits": 1,
-        "positive_hits": 0,
+        "positive_hits": 2,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 86,
-        "geopolitical_total": 74,
+        "quality_total": 109,
+        "geopolitical_total": 91,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
+          "mastodon": 6,
           "x": 0
         },
         "category_counts": {
-          "government_crisis": 1,
+          "eu_integration": 1,
+          "government_crisis": 2,
           "security": 1,
           "migration": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
-          "serbia": 3,
+          "serbia": 5,
           "bosnia": 1
         },
         "main_topic": "government_crisis",
@@ -115,6 +141,35 @@
             ],
             "geopolitical_score": 27,
             "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Serbia: \"Faz\" su visita Zelensky, possibile intesa su fabbrica congiunta di droni 07 ago 09:48 - (Agenzia Nova) - La visita del presidente ucraino Volodymyr Zelensky a Belgrado, prevista per domani, potrebbe aprire la strada... (Seb) Serbia: “Face-to-face” meeting with Zelensky planned, possible agreement on a joint drone factory. August 7, 9:4",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117053208806003200",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 07 Aug 2026 08:10:22 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 13,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -286,28 +341,27 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 25,
-        "level": "medium",
+        "score": 17,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 2,
         "negative_hits": 1,
         "positive_hits": 0,
-        "trusted_hits": 1,
+        "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 85,
-        "geopolitical_total": 74,
+        "quality_total": 58,
+        "geopolitical_total": 52,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 3,
+          "mastodon": 2,
           "x": 0
         },
         "category_counts": {
-          "government_crisis": 2,
-          "security": 1
+          "government_crisis": 2
         },
         "tag_counts": {
-          "kosovo": 3
+          "kosovo": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -347,35 +401,6 @@
             "quality_score": 37,
             "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Kosovo: contingente moldavo Kfor-25 subentra nella missione Nato 31 lug 13:22 - (Agenzia Nova) - Il contingente Kfor-25 dell'Esercito nazionale moldavo ha iniziato il proprio mandato semestrale in Kosovo,... (Rob) Kosovo: Moldavian contingent KFOR-25 takes over from the NATO mission July 31 13:22 – (Agenzia Nova) – The Moldovan National Army’s ",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117014437413707901",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Fri, 31 Jul 2026 11:50:17 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 27,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -502,29 +527,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
-        "negative_hits": 13,
+        "mentions": 15,
+        "negative_hits": 11,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 399,
-        "geopolitical_total": 351,
+        "quality_total": 361,
+        "geopolitical_total": 316,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 16,
+          "mastodon": 15,
           "x": 0
         },
         "category_counts": {
-          "corruption_rule_of_law": 7,
+          "corruption_rule_of_law": 6,
           "government_crisis": 1,
           "protest": 2,
-          "foreign_influence": 2,
-          "migration": 1,
-          "security": 3
+          "foreign_influence": 1,
+          "security": 4,
+          "migration": 1
         },
         "tag_counts": {
-          "balkans": 9,
+          "balkans": 8,
           "montenegro": 1,
           "albania": 6
         },
