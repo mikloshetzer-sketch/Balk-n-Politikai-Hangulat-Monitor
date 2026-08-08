@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-08 09:21 UTC",
+  "updated_at": "2026-08-08 12:31 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 19
   },
   "countries": [
     {
@@ -21,29 +21,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 2,
-        "positive_hits": 4,
-        "trusted_hits": 5,
-        "engagement_total": 60,
-        "raw_engagement_total": 60,
-        "quality_total": 276,
-        "geopolitical_total": 235,
+        "mentions": 16,
+        "negative_hits": 3,
+        "positive_hits": 3,
+        "trusted_hits": 3,
+        "engagement_total": 17,
+        "raw_engagement_total": 17,
+        "quality_total": 338,
+        "geopolitical_total": 300,
         "source_counts": {
           "reddit": 1,
-          "mastodon": 9,
-          "x": 3
+          "mastodon": 8,
+          "x": 7
         },
         "category_counts": {
-          "government_crisis": 7,
+          "government_crisis": 10,
           "security": 4,
-          "economic_infrastructure": 1,
-          "ethnic_tension": 1
+          "ethnic_tension": 2
         },
         "tag_counts": {
-          "serbia": 9,
+          "serbia": 8,
           "bosnia": 1,
-          "Szerbia": 3
+          "Szerbia": 6,
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -85,6 +85,56 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "President Volodymyr Zelensky said that due to Russian strikes, there is virtually no power plant in Ukraine that has remained undamaged. He made the statement during a briefing in ",
+            "text": "President Volodymyr Zelensky said that due to Russian strikes, there is virtually no power plant in Ukraine that has remained undamaged. He made the statement during a briefing in Belgrade. According to Zelensky, Russian attacks have also damaged railway stations, hospitals,",
+            "url": "https://x.com/i/web/status/2086065626775203928",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-08T12:22:57.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 37,
+            "quality_score": 38,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -129,40 +179,6 @@
           },
           {
             "title": "",
-            "text": "🇺🇦🇷🇸 Ukrainian President ​Volodymyr Zelenskiy arrived in # Serbia ‌on Friday for his first visit to the Balkan country expected to ​focus on economic cooperation and ​bids by both countries to ⁠secure European Union membership. https://www. reuters.com/world/ukraines-zel enskiy-arrives-serbia-first-visit-2026-08-07/ # ukraine",
-            "url": "https://mastodon.social/@rvps2001/117055288179853657",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Fri, 07 Aug 2026 16:59:10 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 26,
-            "quality_score": 31,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "Ukraine's Zelenskyy makes first visit to Russia-friendly Serbia Ukrainian President Zelenskyy is making his first visit to Serbia. His host, President Aleksandar Vucic, hopes to score points with the EU, while Zelenskyy seeks more arms from a country that remains Russia-friendly. https://www. dw.com/en/ukraine-s-zelenskyy- makes-first-visit-to-russia-friendl",
             "url": "https://mastodon.social/@publicnewsfeed/117058893696767164",
             "source": "mastodon",
@@ -197,16 +213,16 @@
           },
           {
             "title": "",
-            "text": "RaiNews: Il presidente ucraino Zelenskiy arriva in Serbia per la sua prima visita Si tratta della prima visita del presidente ucraino in Serbia dall'inizio della guerra contro la Russia. Al centro dei colloqui la cooperazione economica e l'ambizione di entrambe i paesi ad entrare a far parte dell'UE Ukrainian President Zelensky arrives in Serbia for his firs",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117055578165949719",
+            "text": "President # Zelenskyy 💬 \"During our meetings with Serbian President Aleksandar Vučić today and yesterday, we discussed specific measures that could strengthen our infrastructure – ports and railways in both countries – as well as economic development, reconstruction and job creation in # Ukraine and # Serbia . We are working to have everything ready by the e",
+            "url": "https://mastodon.ie/@EugeneMcParland/117059768199758819",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Fri, 07 Aug 2026 18:12:55 +0000",
+            "seen_date": "Sat, 08 Aug 2026 11:58:30 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 1
+              "Szerbia": 9
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -216,13 +232,13 @@
                 "weight": 9
               },
               {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
+                "category": "economic_infrastructure",
+                "hits": 3,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 21,
-            "quality_score": 24,
+            "geopolitical_score": 22,
+            "quality_score": 25,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -306,78 +322,38 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 36,
-        "level": "medium",
+        "score": 17,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 2,
         "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 106,
-        "geopolitical_total": 97,
+        "engagement_total": 43,
+        "raw_engagement_total": 43,
+        "quality_total": 43,
+        "geopolitical_total": 39,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
-          "x": 3
+          "mastodon": 1,
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 5
+          "government_crisis": 2
         },
         "tag_counts": {
-          "kosovo": 2,
-          "Koszovó": 3
+          "kosovo": 1,
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "",
-            "text": "Agenzia Nova: Kosovo: Kurti, Ue e Usa esortino Serbia a trasparenza su documenti relativi a crimini di guerra 01 ago 14:01 - (Agenzia Nova) - Il primo ministro ad interim del Kosovo, Albin Kurti, ha chiesto all'Unione europea e agli Stati Uniti di esercitare... (Alt) Kosovo: Kurti, EU and US urge Serbia to be transparent on war crimes documents August 1 14:0",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117020217551517913",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Sat, 01 Aug 2026 12:20:15 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5,
-              "Szerbia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 34,
-            "quality_score": 37,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "Last night in Pristina there were no flames. There was a locked door. Opposition MPs reached Kosovo’s Assembly minutes before the constitutional deadline, ready to constitute the p",
-            "text": "Last night in Pristina there were no flames. There was a locked door. Opposition MPs reached Kosovo’s Assembly minutes before the constitutional deadline, ready to constitute the parliament, and found the chamber sealed. Midnight passed. The parliament stands unconstituted,",
-            "url": "https://x.com/i/web/status/2085965649503748567",
+            "title": "🇽🇰 Tensions in Kosovo's Parliament. Acting PM Albin Kurti was hit with eggs by opposition MP Time Kadriaj.",
+            "text": "🇽🇰 Tensions in Kosovo's Parliament. Acting PM Albin Kurti was hit with eggs by opposition MP Time Kadriaj.",
+            "url": "https://x.com/i/web/status/2086057074547405214",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-08-08T05:45:40.000Z",
+            "seen_date": "2026-08-08T11:48:58.000Z",
             "matched_countries": [
               "Koszovó"
             ],
@@ -388,21 +364,21 @@
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 3,
+                "hits": 2,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
+            "geopolitical_score": 21,
+            "quality_score": 22,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 43,
+            "raw_engagement": 43,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
+              "likes": 31,
+              "reposts": 1,
+              "replies": 9,
+              "quotes": 2
             },
             "quality": "x_api_filtered"
           },
@@ -434,76 +410,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "The VETËVENDOSJE! Movement has published the full speech delivered by Acting Prime Minister Albin Kurti during the constitutive session of the Kosovo Assembly.",
-            "text": "The VETËVENDOSJE! Movement has published the full speech delivered by Acting Prime Minister Albin Kurti during the constitutive session of the Kosovo Assembly.",
-            "url": "https://x.com/i/web/status/2085963631351431408",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-08T05:37:39.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Albin Kurti, the acting prime minister, said that all institutional positions carry weight and value, even though their responsibilities are not the same.",
-            "text": "Albin Kurti, the acting prime minister, said that all institutional positions carry weight and value, even though their responsibilities are not the same.",
-            "url": "https://x.com/i/web/status/2085956052730741200",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-08T05:07:32.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -570,27 +476,27 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 5,
+        "score": 13,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 1,
+        "mentions": 2,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 28,
-        "raw_engagement_total": 28,
-        "quality_total": 22,
-        "geopolitical_total": 21,
+        "engagement_total": 48,
+        "raw_engagement_total": 48,
+        "quality_total": 32,
+        "geopolitical_total": 30,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
-          "security": 1
+          "security": 2
         },
         "tag_counts": {
-          "Koszovó": 1
+          "Észak-Macedónia": 2
         },
         "main_topic": "security",
         "top_posts": [
@@ -599,7 +505,7 @@
             "text": "On May 11, 2010, North Macedonian police 🇲🇰shot up a van near the village of Radusa used by albo NLA terrorists 🇦🇱🐐 to transport weapons from Kosovo into Macedonia. The shooting started as the police tried to stop the van. The group of terrorists were led by NLA commander Harun",
             "url": "https://x.com/i/web/status/2085953803719675905",
             "source": "x",
-            "tag": "Koszovó",
+            "tag": "Észak-Macedónia",
             "seen_date": "2026-08-08T04:58:36.000Z",
             "matched_countries": [
               "Észak-Macedónia"
@@ -630,11 +536,47 @@
             "quality_score": 22,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 28,
-            "raw_engagement": 28,
+            "engagement": 48,
+            "raw_engagement": 48,
             "metrics": {
-              "likes": 25,
+              "likes": 44,
               "reposts": 3,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "i will survive serbia-north macedonia border",
+            "text": "i will survive serbia-north macedonia border",
+            "url": "https://x.com/i/web/status/2086024830403457478",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-08-08T09:40:50.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
@@ -650,21 +592,21 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 19,
-        "negative_hits": 12,
+        "negative_hits": 11,
         "positive_hits": 3,
         "trusted_hits": 2,
-        "engagement_total": 102,
-        "raw_engagement_total": 102,
-        "quality_total": 507,
-        "geopolitical_total": 454,
+        "engagement_total": 96,
+        "raw_engagement_total": 96,
+        "quality_total": 489,
+        "geopolitical_total": 436,
         "source_counts": {
           "reddit": 0,
           "mastodon": 14,
           "x": 5
         },
         "category_counts": {
-          "protest": 4,
-          "government_crisis": 3,
+          "protest": 3,
+          "government_crisis": 4,
           "corruption_rule_of_law": 6,
           "foreign_influence": 1,
           "security": 4,
@@ -832,13 +774,13 @@
             "quality_score": 35,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 42,
-            "raw_engagement": 42,
+            "engagement": 96,
+            "raw_engagement": 96,
             "metrics": {
-              "likes": 33,
-              "reposts": 6,
-              "replies": 2,
-              "quotes": 1
+              "likes": 75,
+              "reposts": 12,
+              "replies": 7,
+              "quotes": 2
             },
             "quality": "x_api_filtered"
           },
