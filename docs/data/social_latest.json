@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09 18:29 UTC",
+  "updated_at": "2026-08-09 18:55 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 23
+    "collected": 20
   },
   "countries": [
     {
@@ -21,18 +21,18 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
-        "negative_hits": 6,
+        "mentions": 14,
+        "negative_hits": 5,
         "positive_hits": 6,
         "trusted_hits": 3,
-        "engagement_total": 10,
-        "raw_engagement_total": 10,
-        "quality_total": 308,
+        "engagement_total": 128,
+        "raw_engagement_total": 543,
+        "quality_total": 307,
         "geopolitical_total": 268,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
-          "x": 6
+          "x": 5
         },
         "category_counts": {
           "foreign_influence": 2,
@@ -40,12 +40,13 @@
           "security": 3,
           "protest": 1,
           "government_crisis": 6,
-          "ethnic_tension": 2
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "serbia": 8,
           "bosnia": 1,
-          "Szerbia": 6
+          "Szerbia": 2,
+          "Koszovó": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -163,7 +164,7 @@
             "text": "‼️🇷🇸🇷🇺 Serbia did not support Zelensky against Russia, — Vučić ▪️The Serbian president told the Alo! publication that Zelensky’s visit does not change Belgrade’s foreign policy course towards Russia. ▪️Vučić stressed that Serbia has not imposed sanctions against Russia and",
             "url": "https://x.com/i/web/status/2086518625129673035",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Koszovó",
             "seen_date": "2026-08-09T18:23:00.000Z",
             "matched_countries": [
               "Szerbia"
@@ -188,51 +189,60 @@
             "quality_score": 30,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 5,
-            "raw_engagement": 5,
+            "engagement": 7,
+            "raw_engagement": 7,
             "metrics": {
-              "likes": 3,
+              "likes": 4,
               "reposts": 2,
-              "replies": 0,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "Konjufca Responds to Zelenskyy: Regrets Ukraine’s Reaffirmation of Non-Recognition of Kosovo Kosovo Ukraine GlaukKonjufca VolodymyrZelenskyy Serbia AleksandarVucic Diplomacy Intern",
-            "text": "Konjufca Responds to Zelenskyy: Regrets Ukraine’s Reaffirmation of Non-Recognition of Kosovo Kosovo Ukraine GlaukKonjufca VolodymyrZelenskyy Serbia AleksandarVucic Diplomacy InternationalRelations KosovoUkraine NATO EuropeanUnion Geopolitics",
-            "url": "https://x.com/i/web/status/2086506298309255460",
+            "title": "EVENT: Serbian President Aleksandar Vučić and Ukrainian President Volodymyr Zelenskyy pursued a free-trade deal, highlighting Serbia’s balancing between EU integration and ties wit",
+            "text": "EVENT: Serbian President Aleksandar Vučić and Ukrainian President Volodymyr Zelenskyy pursued a free-trade deal, highlighting Serbia’s balancing between EU integration and ties with Russia, EU Today reported Aug. 9.",
+            "url": "https://x.com/i/web/status/2086523118076498293",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-08-09T17:34:01.000Z",
+            "seen_date": "2026-08-09T18:40:51.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5,
-              "Koszovó": 1
+              "Szerbia": 9
             },
-            "event_category": "ethnic_tension",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 23,
-            "quality_score": 27,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 1,
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -362,27 +372,28 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
+        "mentions": 12,
         "negative_hits": 6,
-        "positive_hits": 2,
+        "positive_hits": 3,
         "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 289,
-        "geopolitical_total": 256,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 260,
+        "geopolitical_total": 228,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
-          "x": 4
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 10,
+          "government_crisis": 8,
           "security": 2,
-          "foreign_influence": 1
+          "foreign_influence": 2
         },
         "tag_counts": {
           "kosovo": 9,
-          "Koszovó": 3,
+          "Szerbia": 1,
+          "Koszovó": 1,
           "Észak-Macedónia": 1
         },
         "main_topic": "government_crisis",
@@ -490,41 +501,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Kosovo's acting Prime Minister, Albin Kurti, was hit with eggs thrown by an opposition MP after telling parliament he required additional time to consult with other parties before ",
-            "text": "Kosovo's acting Prime Minister, Albin Kurti, was hit with eggs thrown by an opposition MP after telling parliament he required additional time to consult with other parties before putting forward a nominee for the speaker's role. The small Balkan country has been gripped by",
-            "url": "https://x.com/i/web/status/2086513185234805054",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-09T18:01:23.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 3,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 30,
-            "quality_score": 31,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "🥚😂Make in India’s newest export: “Egg in Politics\"🥚😂 Looks like India’s “political art of throwing eggs” has now reached the Balkans! (Near N Macedonia ) Kosovo Parliament, Opposit",
             "text": "🥚😂Make in India’s newest export: “Egg in Politics\"🥚😂 Looks like India’s “political art of throwing eggs” has now reached the Balkans! (Near N Macedonia ) Kosovo Parliament, Opposition MP Time Kadrijaj threw eggs at acting PM Albin Kurti amid a political deadlock. 53 seats",
             "url": "https://x.com/i/web/status/2086284022267957663",
@@ -559,6 +535,41 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "Yes, I fully support the removal of the large “Free Ukraine” flag from the center of Pristina. Volodymyr Zelenskyy has been admired and unequivocally supported by the people of Kos",
+            "text": "Yes, I fully support the removal of the large “Free Ukraine” flag from the center of Pristina. Volodymyr Zelenskyy has been admired and unequivocally supported by the people of Kosovo, who know all too well what oppression and occupation mean. Kosovo imposed sanctions on Russia",
+            "url": "https://x.com/i/web/status/2086526379760165038",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-09T18:53:49.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 21,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -566,29 +577,31 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 5,
+        "score": 11,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 3,
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 3,
         "raw_engagement_total": 3,
-        "quality_total": 20,
-        "geopolitical_total": 16,
+        "quality_total": 30,
+        "geopolitical_total": 25,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "eu_integration": 1,
-          "government_crisis": 1
+          "government_crisis": 1,
+          "security": 1
         },
         "tag_counts": {
           "montenegro": 1,
-          "Montenegró": 1
+          "Montenegró": 1,
+          "Albánia": 1
         },
         "main_topic": "eu_integration",
         "top_posts": [
@@ -621,6 +634,43 @@
             "raw_engagement": 3,
             "metrics": {
               "likes": 3,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Perfect business plan: Arab accountant Slovenian lawyer Turkish employees Bosnian marketing Montenegrin security Albanian supplier",
+            "text": "Perfect business plan: Arab accountant Slovenian lawyer Turkish employees Bosnian marketing Montenegrin security Albanian supplier",
+            "url": "https://x.com/i/web/status/2086524984147464566",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-08-09T18:48:16.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 3,
+              "Albánia": 2,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -670,7 +720,7 @@
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 125,
-        "raw_engagement_total": 173,
+        "raw_engagement_total": 203,
         "quality_total": 96,
         "geopolitical_total": 88,
         "source_counts": {
@@ -861,11 +911,11 @@
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 120,
-            "raw_engagement": 168,
+            "raw_engagement": 198,
             "metrics": {
-              "likes": 146,
-              "reposts": 17,
-              "replies": 3,
+              "likes": 169,
+              "reposts": 23,
+              "replies": 4,
               "quotes": 2
             },
             "quality": "x_api_filtered"
