@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09 02:23 UTC",
+  "updated_at": "2026-08-09 06:42 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 15
+    "collected": 18
   },
   "countries": [
     {
@@ -21,75 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
+        "mentions": 13,
         "negative_hits": 4,
-        "positive_hits": 5,
+        "positive_hits": 6,
         "trusted_hits": 4,
         "engagement_total": 1,
         "raw_engagement_total": 1,
-        "quality_total": 306,
-        "geopolitical_total": 272,
+        "quality_total": 285,
+        "geopolitical_total": 247,
         "source_counts": {
-          "reddit": 1,
-          "mastodon": 7,
-          "x": 4
+          "reddit": 0,
+          "mastodon": 8,
+          "x": 5
         },
         "category_counts": {
-          "security": 2,
+          "security": 3,
           "protest": 1,
           "government_crisis": 7,
           "ethnic_tension": 1,
-          "economic_infrastructure": 1
+          "foreign_influence": 1
         },
         "tag_counts": {
           "serbia": 7,
           "bosnia": 1,
-          "Szerbia": 3,
-          "Albánia": 1
+          "Szerbia": 5
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "Zašto me je dolazak Zelenskog u Beograd naveo da napišem nešto o Rusiji, Putinu i našem „bratstvu“",
-            "text": "Povod za ovaj tekst bio je dolazak Volodimira Zelenskog u Beograd 7. avgusta. Pročitao sam mnogo komentara da je „fašista“, „nacista“, neprijatelj Srbije i nepoželjna osoba. Ne tvrdim da svi Srbi tako misle. Ali neke formulacije su mi bile veoma poznate. Zato što ih godinama slušam u Rusiji. Ja sam Srbin. Moj otac je Srbin. Rođen sam u Rusiji i tamo sam prov",
-            "url": "https://www.reddit.com/r/serbia/comments/1vj6xqm/zašto_me_je_dolazak_zelenskog_u_beograd_naveo_da/",
-            "source": "reddit",
-            "tag": "serbia",
-            "seen_date": "2026-08-08T21:00:03+00:00",
-            "matched_countries": [
-              "Szerbia",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Szerbia": 12,
-              "Koszovó": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 40,
-            "quality_score": 43,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "🇷🇸 Belgrade will support # Ukraine 's independence and aims to improve economic cooperation ‌between the two countries, President Aleksandar Vucic said on Saturday, but he stopped short of any pledge to impose sanctions on # Serbia 's long-time ally # Russia https://www. reuters.com/business/leaders-s erbia-ukraine-pledge-closer-economic-ties-2026-08-08/",
@@ -232,6 +190,40 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "President # Zelenskyy 💬 \"During our meetings with Serbian President Aleksandar Vučić today and yesterday, we discussed specific measures that could strengthen our infrastructure – ports and railways in both countries – as well as economic development, reconstruction and job creation in # Ukraine and # Serbia . We are working to have everything ready by the e",
+            "url": "https://mastodon.ie/@EugeneMcParland/117059768199758819",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sat, 08 Aug 2026 11:58:30 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 3,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 25,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -356,71 +348,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 3,
-        "positive_hits": 3,
-        "trusted_hits": 2,
-        "engagement_total": 58,
-        "raw_engagement_total": 58,
-        "quality_total": 388,
-        "geopolitical_total": 361,
+        "mentions": 11,
+        "negative_hits": 5,
+        "positive_hits": 1,
+        "trusted_hits": 1,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 314,
+        "geopolitical_total": 289,
         "source_counts": {
-          "reddit": 1,
-          "mastodon": 5,
-          "x": 7
+          "reddit": 0,
+          "mastodon": 6,
+          "x": 5
         },
         "category_counts": {
-          "government_crisis": 11,
-          "security": 2
+          "government_crisis": 10,
+          "security": 1
         },
         "tag_counts": {
-          "kosovo": 5,
-          "serbia": 1,
-          "Koszovó": 7
+          "kosovo": 6,
+          "Koszovó": 4,
+          "Észak-Macedónia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "Zašto me je dolazak Zelenskog u Beograd naveo da napišem nešto o Rusiji, Putinu i našem „bratstvu“",
-            "text": "Povod za ovaj tekst bio je dolazak Volodimira Zelenskog u Beograd 7. avgusta. Pročitao sam mnogo komentara da je „fašista“, „nacista“, neprijatelj Srbije i nepoželjna osoba. Ne tvrdim da svi Srbi tako misle. Ali neke formulacije su mi bile veoma poznate. Zato što ih godinama slušam u Rusiji. Ja sam Srbin. Moj otac je Srbin. Rođen sam u Rusiji i tamo sam prov",
-            "url": "https://www.reddit.com/r/serbia/comments/1vj6xqm/zašto_me_je_dolazak_zelenskog_u_beograd_naveo_da/",
-            "source": "reddit",
-            "tag": "serbia",
-            "seen_date": "2026-08-08T21:00:03+00:00",
-            "matched_countries": [
-              "Szerbia",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Szerbia": 12,
-              "Koszovó": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 40,
-            "quality_score": 43,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "🟡 PoliticalProtest | 3/10 🇽🇰 Opposition MP throws eggs at Albin Kurti in Kosovo parliament Incident due to Kurti's failure to form a new government. Physical protest in parliament. # OSINT # NewsGroup # Kosovo # Parliament # Protest",
@@ -495,6 +446,41 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "WATCH: A Kosovo Parliament session reached a boiling point when an opposition lawmaker hurled eggs at acting Prime Minister Albin Kurti. The confrontation erupted as lawmakers disc",
+            "text": "WATCH: A Kosovo Parliament session reached a boiling point when an opposition lawmaker hurled eggs at acting Prime Minister Albin Kurti. The confrontation erupted as lawmakers discussed electing a new president. After Kurti requested more time for consultations.",
+            "url": "https://x.com/i/web/status/2086336382163710126",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-09T06:18:50.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 4,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 36,
+            "quality_score": 37,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Kosovan lawmaker hurls eggs at the prime minister – video An opposition lawmaker threw eggs at Kosovo's acting prime minister, Albin Kurti, after he told parliament he needed more time to hold talks with other parties before proposing a candidate for speaker following the country's snap election in June. https://www. theguardian.com/world/video/20 26/aug/08/",
             "url": "https://rssfeed.media/@guardianfeeds/117063038005588887",
@@ -524,12 +510,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🍳 🇽🇰 Kosovo’s parliament is suspended after an opposition lawmaker pelts caretaker Prime Minister Albin Kurti with eggs, as a year-long political deadlock threatens to trigger anot",
-            "text": "🍳 🇽🇰 Kosovo’s parliament is suspended after an opposition lawmaker pelts caretaker Prime Minister Albin Kurti with eggs, as a year-long political deadlock threatens to trigger another snap election.",
-            "url": "https://x.com/i/web/status/2086255569803858399",
+            "title": "📌 Kosovo PM Kurti egged in parliament amid political crisis An opposition lawmaker threw eggs at the leader of Kosovo’s ruling party during a parliamentary session. His fellow part",
+            "text": "📌 Kosovo PM Kurti egged in parliament amid political crisis An opposition lawmaker threw eggs at the leader of Kosovo’s ruling party during a parliamentary session. His fellow party members rushed to defend him, and the session was suspended. Kosovo",
+            "url": "https://x.com/i/web/status/2086335451359543738",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-08-09T00:57:43.000Z",
+            "seen_date": "2026-08-09T06:15:08.000Z",
             "matched_countries": [
               "Koszovó"
             ],
@@ -623,26 +609,66 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 0,
+        "score": 5,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 0,
+        "mentions": 1,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 0,
-        "geopolitical_total": 0,
+        "quality_total": 19,
+        "geopolitical_total": 18,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 0
+          "x": 1
         },
-        "category_counts": {},
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "category_counts": {
+          "government_crisis": 1
+        },
+        "tag_counts": {
+          "Észak-Macedónia": 1
+        },
+        "main_topic": "government_crisis",
+        "top_posts": [
+          {
+            "title": "Prime Minister Hristijan Mickoski responded today to opposition criticism regarding Eurostat’s latest report on the purchasing power of citizens in European countries.",
+            "text": "Prime Minister Hristijan Mickoski responded today to opposition criticism regarding Eurostat’s latest report on the purchasing power of citizens in European countries.",
+            "url": "https://x.com/i/web/status/2086341710594900430",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-08-09T06:40:00.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          }
+        ]
       }
     },
     {
@@ -651,18 +677,18 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 18,
-        "negative_hits": 10,
+        "mentions": 20,
+        "negative_hits": 11,
         "positive_hits": 0,
         "trusted_hits": 2,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 431,
-        "geopolitical_total": 377,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 454,
+        "geopolitical_total": 398,
         "source_counts": {
           "reddit": 0,
           "mastodon": 16,
-          "x": 2
+          "x": 4
         },
         "category_counts": {
           "protest": 3,
@@ -670,13 +696,13 @@
           "government_crisis": 4,
           "foreign_influence": 1,
           "migration": 2,
-          "security": 1
+          "security": 3
         },
         "tag_counts": {
           "balkans": 10,
           "montenegro": 1,
           "albania": 5,
-          "Albánia": 2
+          "Albánia": 4
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
