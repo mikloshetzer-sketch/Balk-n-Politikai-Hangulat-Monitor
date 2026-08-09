@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09 01:04 UTC",
+  "updated_at": "2026-08-09 02:23 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 18
+    "collected": 15
   },
   "countries": [
     {
@@ -21,32 +21,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
+        "mentions": 12,
         "negative_hits": 4,
-        "positive_hits": 7,
+        "positive_hits": 5,
         "trusted_hits": 4,
         "engagement_total": 1,
         "raw_engagement_total": 1,
-        "quality_total": 363,
-        "geopolitical_total": 326,
+        "quality_total": 306,
+        "geopolitical_total": 272,
         "source_counts": {
           "reddit": 1,
-          "mastodon": 6,
-          "x": 9
+          "mastodon": 7,
+          "x": 4
         },
         "category_counts": {
-          "protest": 2,
-          "government_crisis": 9,
-          "ethnic_tension": 1,
           "security": 2,
-          "economic_infrastructure": 1,
-          "foreign_influence": 1
+          "protest": 1,
+          "government_crisis": 7,
+          "ethnic_tension": 1,
+          "economic_infrastructure": 1
         },
         "tag_counts": {
-          "serbia": 6,
+          "serbia": 7,
           "bosnia": 1,
-          "Szerbia": 7,
-          "Koszovó": 1,
+          "Szerbia": 3,
           "Albánia": 1
         },
         "main_topic": "government_crisis",
@@ -128,6 +126,40 @@
           },
           {
             "title": "",
+            "text": "Ukraine war briefing: Turkey calls for ‘moratorium’ on Black Sea attacks by Russia and Ukraine By Guardian staff and agencies Commercial ships under attack as Russia-Ukraine conflict spreads across Black Sea, says Turkey’s foreign minister. What we know on day 1,626 https://www. theguardian.com/world/2026/aug /09/ukraine-war-briefing-turkey-calls-for-morator",
+            "url": "https://rssfeed.media/@guardianfeeds/117062998697097814",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sun, 09 Aug 2026 01:40:04 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 32,
+            "quality_score": 37,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "Agenzia Nova: Bosnia: presidente Srpska incontra ambasciatore russo Kalabuhov, con Mosca cooperazione strategica 03 ago 17:30 - (Agenzia Nova) - Il presidente della Repubblica Srpska (entita' serba della Bosnia Erzegovina), Sinisa Karan, ha incontrato... (Seb) Bosnia: President of Srpska meets Russian Ambassador Kalabukhov, with Moscow discussing strategic c",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117032407361298028",
             "source": "mastodon",
@@ -166,51 +198,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "President Volodymyr Zelensky warned Saturday during a visit to Belgrade that Ukraine was facing a winter with basically no working thermal power plants as overnight Russian strikes",
-            "text": "President Volodymyr Zelensky warned Saturday during a visit to Belgrade that Ukraine was facing a winter with basically no working thermal power plants as overnight Russian strikes left four dead, including a child, in the Kyiv region",
-            "url": "https://x.com/i/web/status/2086254298393092563",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-08-09T00:52:40.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -369,75 +356,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 4,
-        "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 358,
-        "geopolitical_total": 338,
+        "mentions": 13,
+        "negative_hits": 3,
+        "positive_hits": 3,
+        "trusted_hits": 2,
+        "engagement_total": 58,
+        "raw_engagement_total": 58,
+        "quality_total": 388,
+        "geopolitical_total": 361,
         "source_counts": {
           "reddit": 1,
-          "mastodon": 4,
-          "x": 5
+          "mastodon": 5,
+          "x": 7
         },
         "category_counts": {
-          "security": 2,
-          "government_crisis": 8
+          "government_crisis": 11,
+          "security": 2
         },
         "tag_counts": {
-          "kosovo": 4,
+          "kosovo": 5,
           "serbia": 1,
-          "Koszovó": 5
+          "Koszovó": 7
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "🚨 Kosovo's opposition MP hurls eggs at Prime Minister Albin Kurti. Kosovo's political tensions have been rising since its declaration of independence in 2008. The incident may esca",
-            "text": "🚨 Kosovo's opposition MP hurls eggs at Prime Minister Albin Kurti. Kosovo's political tensions have been rising since its declaration of independence in 2008. The incident may escalate protests and governmental instability.",
-            "url": "https://x.com/i/web/status/2086252252805656676",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-09T00:44:32.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 65,
-            "quality_score": 66,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "Zašto me je dolazak Zelenskog u Beograd naveo da napišem nešto o Rusiji, Putinu i našem „bratstvu“",
             "text": "Povod za ovaj tekst bio je dolazak Volodimira Zelenskog u Beograd 7. avgusta. Pročitao sam mnogo komentara da je „fašista“, „nacista“, neprijatelj Srbije i nepoželjna osoba. Ne tvrdim da svi Srbi tako misle. Ali neke formulacije su mi bile veoma poznate. Zato što ih godinama slušam u Rusiji. Ja sam Srbin. Moj otac je Srbin. Rođen sam u Rusiji i tamo sam prov",
@@ -553,12 +495,41 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🚨WATCH: A Kosovo Parliament session reached a boiling point when an opposition lawmaker hurled eggs at acting Prime Minister Albin Kurti. The confrontation erupted as lawmakers dis",
-            "text": "🚨WATCH: A Kosovo Parliament session reached a boiling point when an opposition lawmaker hurled eggs at acting Prime Minister Albin Kurti. The confrontation erupted as lawmakers discussed electing a new president. After Kurti requested more time for consultations.",
-            "url": "https://x.com/i/web/status/2086234464430997587",
+            "title": "",
+            "text": "Kosovan lawmaker hurls eggs at the prime minister – video An opposition lawmaker threw eggs at Kosovo's acting prime minister, Albin Kurti, after he told parliament he needed more time to hold talks with other parties before proposing a candidate for speaker following the country's snap election in June. https://www. theguardian.com/world/video/20 26/aug/08/",
+            "url": "https://rssfeed.media/@guardianfeeds/117063038005588887",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Sun, 09 Aug 2026 01:50:03 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 6
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 32,
+            "quality_score": 37,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "🍳 🇽🇰 Kosovo’s parliament is suspended after an opposition lawmaker pelts caretaker Prime Minister Albin Kurti with eggs, as a year-long political deadlock threatens to trigger anot",
+            "text": "🍳 🇽🇰 Kosovo’s parliament is suspended after an opposition lawmaker pelts caretaker Prime Minister Albin Kurti with eggs, as a year-long political deadlock threatens to trigger another snap election.",
+            "url": "https://x.com/i/web/status/2086255569803858399",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-08-08T23:33:51.000Z",
+            "seen_date": "2026-08-09T00:57:43.000Z",
             "matched_countries": [
               "Koszovó"
             ],
@@ -569,19 +540,19 @@
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 4,
+                "hits": 3,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 36,
-            "quality_score": 37,
+            "geopolitical_score": 30,
+            "quality_score": 31,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 1,
             "raw_engagement": 1,
             "metrics": {
-              "likes": 0,
-              "reposts": 1,
+              "likes": 1,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
