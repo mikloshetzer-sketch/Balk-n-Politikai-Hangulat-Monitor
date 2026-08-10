@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10 07:16 UTC",
+  "updated_at": "2026-08-10 07:59 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 19
+    "collected": 21
   },
   "countries": [
     {
@@ -21,30 +21,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 5,
+        "mentions": 12,
+        "negative_hits": 6,
         "positive_hits": 2,
         "trusted_hits": 2,
-        "engagement_total": 11,
-        "raw_engagement_total": 11,
-        "quality_total": 232,
-        "geopolitical_total": 206,
+        "engagement_total": 17,
+        "raw_engagement_total": 17,
+        "quality_total": 254,
+        "geopolitical_total": 227,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 6
+          "x": 7
         },
         "category_counts": {
-          "foreign_influence": 2,
+          "foreign_influence": 1,
           "economic_infrastructure": 1,
           "security": 3,
           "ethnic_tension": 1,
-          "government_crisis": 4
+          "government_crisis": 6
         },
         "tag_counts": {
           "serbia": 4,
           "bosnia": 1,
-          "Szerbia": 6
+          "Szerbia": 7
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -124,6 +124,51 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Serbian protesters gathered outside the presidential palace in Belgrade on Saturday to demonstrate against Ukrainian President Volodymyr Zelensky's high-level visit. Footage shows ",
+            "text": "Serbian protesters gathered outside the presidential palace in Belgrade on Saturday to demonstrate against Ukrainian President Volodymyr Zelensky's high-level visit. Footage shows demonstrators holding anti-Zelensky placards and a banner depicting Russian",
+            "url": "https://x.com/i/web/status/2086715970974785793",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-10T07:27:11.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "🇷🇸 Serbia has not sided with Zelensky against Russia, - Vucic ▪️ President of Serbia told Alo! that Zelensky's visit does not mean a change in Belgrade's foreign policy course towa",
             "text": "🇷🇸 Serbia has not sided with Zelensky against Russia, - Vucic ▪️ President of Serbia told Alo! that Zelensky's visit does not mean a change in Belgrade's foreign policy course towards Russia. ▪️ According to Vucic, Serbia has not imposed sanctions against Russia and does not",
             "url": "https://x.com/i/web/status/2086710641700594164",
@@ -198,42 +243,6 @@
             "metrics": {
               "likes": 0,
               "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "How Walked Into Moscow's Kosovo Trap Kosovo sanctioned Russia and supported Ukraine. Serbia resisted comprehensive sanctions. Zelenskyy rewarded Kremlin proxy with the diplomatic r",
-            "text": "How Walked Into Moscow's Kosovo Trap Kosovo sanctioned Russia and supported Ukraine. Serbia resisted comprehensive sanctions. Zelenskyy rewarded Kremlin proxy with the diplomatic reassurance Belgrade wanted most on Kosovo's independence.",
-            "url": "https://x.com/i/web/status/2086705124978643415",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-08-10T06:44:05.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5,
-              "Koszovó": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -319,29 +328,114 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
+        "mentions": 13,
         "negative_hits": 6,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 296,
-        "geopolitical_total": 264,
+        "trusted_hits": 2,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 375,
+        "geopolitical_total": 339,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
           "government_crisis": 10,
-          "security": 2
+          "security": 3
         },
         "tag_counts": {
           "kosovo": 9,
-          "Koszovó": 3
+          "Koszovó": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "EGGS FLY IN PARLIAMENT. A Kosovo opposition MP pulled eggs from her handbag and hurled them at Acting Prime Minister Albin Kurti during a heated session, sparking chaos in the cham",
+            "text": "EGGS FLY IN PARLIAMENT. A Kosovo opposition MP pulled eggs from her handbag and hurled them at Acting Prime Minister Albin Kurti during a heated session, sparking chaos in the chamber. Security rushed in as the lawmaker shouted in protest amid ongoing political deadlock. 📌",
+            "url": "https://x.com/i/web/status/2086714622527025570",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-10T07:21:49.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 47,
+            "quality_score": 48,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "A dramatic scene unfolded in Kosovo’s parliament when opposition lawmaker Time Kadriaj threw several eggs at acting Prime Minister Albin Kurti during a plenary session. The inciden",
+            "text": "A dramatic scene unfolded in Kosovo’s parliament when opposition lawmaker Time Kadriaj threw several eggs at acting Prime Minister Albin Kurti during a plenary session. The incident triggered chaos inside the chamber as lawmakers and police officers moved in to restore order. The",
+            "url": "https://x.com/i/web/status/2086721450803610080",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-10T07:48:57.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 45,
+            "quality_score": 46,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "🟡 PoliticalProtest | 3/10 🇽🇰 Opposition MP throws eggs at Albin Kurti in Kosovo parliament Incident due to Kurti's failure to form a new government. Physical protest in parliament. # OSINT # NewsGroup # Kosovo # Parliament # Protest",
@@ -380,46 +474,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "🚨Watch: Opposition lawmaker throws an egg at Kosovo’s prime minister An opposition lawmaker in Kosovo threw an egg at the country’s Prime Minister, Albin Kurti, as he was speaking ",
-            "text": "🚨Watch: Opposition lawmaker throws an egg at Kosovo’s prime minister An opposition lawmaker in Kosovo threw an egg at the country’s Prime Minister, Albin Kurti, as he was speaking during a parliamentary session. The incident came after a heated political dispute between the",
-            "url": "https://x.com/i/web/status/2086707641171030212",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-10T06:54:05.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 39,
-            "quality_score": 40,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "A Kosovo opposition lawmaker threw eggs at Prime Minister Albin Kurti inside parliament, protesting a delay of more than an hour and Kurti's request for additional time for consult",
@@ -494,35 +548,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Kosovan lawmaker hurls eggs at the prime minister – video An opposition lawmaker threw eggs at Kosovo's acting prime minister, Albin Kurti, after he told parliament he needed more time to hold talks with other parties before proposing a candidate for speaker following the country's snap election in June. https://www. theguardian.com/world/video/20 26/aug/08/",
-            "url": "https://rssfeed.media/@guardianfeeds/117063038005588887",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Sun, 09 Aug 2026 01:50:03 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 6
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 3,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 32,
-            "quality_score": 37,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -530,32 +555,73 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 5,
+        "score": 14,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 3,
         "negative_hits": 0,
         "positive_hits": 1,
-        "trusted_hits": 0,
+        "trusted_hits": 1,
         "engagement_total": 5,
         "raw_engagement_total": 5,
-        "quality_total": 20,
-        "geopolitical_total": 16,
+        "quality_total": 55,
+        "geopolitical_total": 47,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "eu_integration": 1,
+          "security": 1,
           "government_crisis": 1
         },
         "tag_counts": {
           "montenegro": 1,
+          "Koszovó": 1,
           "Montenegró": 1
         },
         "main_topic": "eu_integration",
         "top_posts": [
+          {
+            "title": "Montenegro Denies Plans to Join Zagreb-Tirana-Prishtina Defense Alliance Montenegro Kosovo Albania Croatia Prishtina Podgorica Defense WesternBalkans NATO Security",
+            "text": "Montenegro Denies Plans to Join Zagreb-Tirana-Prishtina Defense Alliance Montenegro Kosovo Albania Croatia Prishtina Podgorica Defense WesternBalkans NATO Security",
+            "url": "https://x.com/i/web/status/2086717236329263138",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-10T07:32:13.000Z",
+            "matched_countries": [
+              "Koszovó",
+              "Montenegró",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
+              "Montenegró": 5,
+              "Albánia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 31,
+            "quality_score": 35,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "Ending LIWC2026, president Jacek Spendel introduces next year's World Conference in Podgorica, Montenegro",
             "text": "Ending LIWC2026, president Jacek Spendel introduces next year's World Conference in Podgorica, Montenegro",
@@ -634,7 +700,7 @@
         "positive_hits": 0,
         "trusted_hits": 1,
         "engagement_total": 123,
-        "raw_engagement_total": 440,
+        "raw_engagement_total": 455,
         "quality_total": 59,
         "geopolitical_total": 53,
         "source_counts": {
@@ -748,11 +814,11 @@
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 120,
-            "raw_engagement": 437,
+            "raw_engagement": 452,
             "metrics": {
-              "likes": 372,
-              "reposts": 52,
-              "replies": 11,
+              "likes": 385,
+              "reposts": 53,
+              "replies": 12,
               "quotes": 2
             },
             "quality": "x_api_filtered"
@@ -769,11 +835,11 @@
         "mentions": 21,
         "negative_hits": 15,
         "positive_hits": 0,
-        "trusted_hits": 2,
+        "trusted_hits": 3,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 522,
-        "geopolitical_total": 461,
+        "quality_total": 546,
+        "geopolitical_total": 482,
         "source_counts": {
           "reddit": 0,
           "mastodon": 18,
@@ -784,16 +850,16 @@
           "protest": 4,
           "government_crisis": 4,
           "foreign_influence": 1,
-          "security": 2,
-          "migration": 1,
-          "ethnic_tension": 1
+          "security": 3,
+          "migration": 1
         },
         "tag_counts": {
           "balkans": 10,
           "montenegro": 1,
           "albania": 7,
+          "Koszovó": 1,
           "Montenegró": 1,
-          "Albánia": 2
+          "Albánia": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -915,6 +981,45 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Montenegro Denies Plans to Join Zagreb-Tirana-Prishtina Defense Alliance Montenegro Kosovo Albania Croatia Prishtina Podgorica Defense WesternBalkans NATO Security",
+            "text": "Montenegro Denies Plans to Join Zagreb-Tirana-Prishtina Defense Alliance Montenegro Kosovo Albania Croatia Prishtina Podgorica Defense WesternBalkans NATO Security",
+            "url": "https://x.com/i/web/status/2086717236329263138",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-10T07:32:13.000Z",
+            "matched_countries": [
+              "Koszovó",
+              "Montenegró",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
+              "Montenegró": 5,
+              "Albánia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 31,
+            "quality_score": 35,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "With the slogan “more tomorrow,” the curtain has fallen on the 71st protest by the civic movement. Participants are not backing down from their essential demand: the irrevocable re",
             "text": "With the slogan “more tomorrow,” the curtain has fallen on the 71st protest by the civic movement. Participants are not backing down from their essential demand: the irrevocable resignation of Prime Minister Edi Rama.",
             "url": "https://x.com/i/web/status/2086595358663024940",
@@ -953,40 +1058,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 71 of anti-corruption protest in Tirana, Albania Machine translation: \"Rama, resign\"! 71 days of national revolt against misgovernment 🔴LIVE | “Rama, jepe dorëheqjen”! 71 ditë revoltë kombëtare kundër keqqeverisjes https://www. youtube.com/watch?v=ZbcFnVg_zx8 # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Environment # Protest",
-            "url": "https://mas.to/@meganL/117066778609214414",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sun, 09 Aug 2026 17:41:21 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
