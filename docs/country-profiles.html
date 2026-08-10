@@ -9,128 +9,195 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <style>
+    :root {
+      --navy: #0b3551;
+      --navy-2: #174f70;
+      --blue: #2387bd;
+      --blue-soft: #eaf5fb;
+      --page: #edf5f9;
+      --card: #ffffff;
+      --ink: #082f49;
+      --text: #31556c;
+      --muted: #678398;
+      --line: #cddfe9;
+      --line-soft: #dce9f0;
+      --green: #16856f;
+      --red: #c94f5d;
+      --amber: #b77a25;
+      --shadow: 0 8px 24px rgba(22, 63, 86, 0.07);
+      --radius: 15px;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
-      background: #f3f4f6;
+      background: var(--page);
       font-family: Arial, Helvetica, sans-serif;
-      color: #111827;
+      color: var(--text);
+      line-height: 1.5;
     }
 
     header {
-      background: #111827;
+      background: linear-gradient(112deg, #123f5d 0%, #155a7c 58%, #2793c5 100%);
       color: white;
-      padding: 26px 20px;
-      text-align: center;
+      padding: 42px 20px 38px;
+      text-align: left;
+      box-shadow: inset 0 -1px 0 rgba(255,255,255,.12);
+    }
+
+    .header-inner {
+      max-width: 1450px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .brand {
+      margin-bottom: 12px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .18em;
+      color: #d9f1ff;
     }
 
     header h1 {
       margin: 0;
-      font-size: 30px;
+      max-width: 900px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(38px, 4vw, 60px);
+      line-height: .98;
+      letter-spacing: -.025em;
+      font-weight: 700;
+      color: #fff;
     }
 
     header p {
-      margin-top: 8px;
-      color: #d1d5db;
+      max-width: 980px;
+      margin: 17px 0 0;
+      color: #e5f3fa;
+      font-size: 16px;
+      line-height: 1.55;
     }
 
     main {
       max-width: 1450px;
-      margin: 22px auto;
+      margin: 28px auto;
       padding: 0 16px;
     }
 
     .top-box {
-      background: white;
-      border-radius: 14px;
-      padding: 18px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .top-box > strong {
+      display: block;
+      margin-bottom: 7px;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      font-size: 23px;
     }
 
     .button-row {
       display: flex;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
-      margin-top: 12px;
+      margin-top: 16px;
     }
 
     .button {
       display: inline-block;
-      padding: 11px 15px;
-      border-radius: 12px;
-      background: #111827;
-      color: white;
+      padding: 10px 15px;
+      border: 1px solid #27799f;
+      border-radius: 9px;
+      background: #fff;
+      color: #0c4a6e;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 700;
+      transition: .18s ease;
     }
 
     .button:hover {
-      background: #374151;
+      background: #eaf5fb;
+      border-color: #1784b7;
+      transform: translateY(-1px);
     }
 
     .small {
-      color: #6b7280;
+      color: var(--muted);
       font-size: 13px;
-      line-height: 1.45;
+      line-height: 1.5;
     }
 
     .dashboard-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
-      gap: 18px;
+      gap: 20px;
     }
 
     .country-card {
-      background: white;
-      border-radius: 14px;
-      border-left: 7px solid #2563eb;
-      box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      border-left: 5px solid #2387bd;
+      box-shadow: var(--shadow);
       overflow: hidden;
     }
 
     .card-inner {
-      padding: 16px;
+      padding: 19px;
     }
 
     .country-title {
-      font-size: 23px;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      font-size: 27px;
+      line-height: 1.15;
       font-weight: 700;
-      margin-bottom: 4px;
+      margin-bottom: 5px;
     }
 
     .subtitle {
       font-size: 13px;
-      color: #6b7280;
-      margin-bottom: 12px;
-      line-height: 1.45;
+      color: var(--muted);
+      margin-bottom: 14px;
+      line-height: 1.5;
     }
 
     .section-box {
-      border: 1px solid #e5e7eb;
+      border: 1px solid var(--line-soft);
       border-radius: 12px;
-      padding: 12px;
+      padding: 13px;
       margin-top: 12px;
-      background: #ffffff;
+      background: #fff;
     }
 
     .section-box h3 {
       margin: 0 0 9px 0;
-      font-size: 15px;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      font-size: 17px;
+      line-height: 1.25;
     }
 
     .live-box {
-      background: #eff6ff;
-      border-color: #93c5fd;
+      background: #edf7fc;
+      border-color: #badceb;
+      border-left: 4px solid #2387bd;
     }
 
     .source-box {
-      background: #f9fafb;
+      background: #f7fbfd;
     }
 
     .trade-structure-box {
-      background: #f8fafc;
-      border-color: #cbd5e1;
+      background: #f8fbfc;
+      border-color: #cbdfe9;
     }
 
     .metric-grid {
@@ -140,15 +207,19 @@
     }
 
     .metric {
-      background: #f3f4f6;
-      border-radius: 10px;
-      padding: 8px;
+      background: #f2f7fa;
+      border: 1px solid #e0ebf1;
+      border-radius: 9px;
+      padding: 9px;
       font-size: 12px;
+      color: var(--muted);
     }
 
     .metric strong {
       display: block;
-      font-size: 16px;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      font-size: 17px;
       margin-top: 3px;
     }
 
@@ -159,61 +230,50 @@
     }
 
     .leader-box {
-      background: #f9fafb;
-      border-radius: 10px;
-      padding: 9px;
+      background: #f2f7fa;
+      border: 1px solid #e0ebf1;
+      border-radius: 9px;
+      padding: 10px;
       font-size: 13px;
+      color: var(--muted);
     }
 
     .leader-box strong {
       display: block;
       margin-top: 4px;
-      font-size: 14px;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      font-size: 15px;
     }
 
-    .chart-wrap {
-      height: 210px;
-    }
-
-    .mini-chart-wrap {
-      height: 160px;
-    }
-
-    .trade-chart-wrap {
-      height: 210px;
-    }
+    .chart-wrap { height: 210px; }
+    .mini-chart-wrap { height: 160px; }
+    .trade-chart-wrap { height: 210px; }
 
     .source-list {
       margin: 0;
       padding-left: 18px;
       font-size: 13px;
-      color: #374151;
-      line-height: 1.45;
+      color: var(--text);
+      line-height: 1.5;
     }
 
-    .source-list li {
-      margin-bottom: 7px;
-    }
+    .source-list li { margin-bottom: 7px; }
 
     footer {
       text-align: center;
-      color: #6b7280;
+      color: var(--muted);
       font-size: 13px;
-      padding: 28px 10px;
+      padding: 30px 10px 36px;
     }
 
     @media (max-width: 600px) {
-      .dashboard-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .metric-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .leader-grid {
-        grid-template-columns: 1fr;
-      }
+      header { padding: 32px 18px; }
+      .header-inner { padding: 0; }
+      header h1 { font-size: 38px; }
+      .dashboard-grid { grid-template-columns: 1fr; }
+      .metric-grid { grid-template-columns: repeat(2, 1fr); }
+      .leader-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -221,8 +281,11 @@
 <body>
 
 <header>
-  <h1>Balkán Országprofil Dashboard</h1>
-  <p>Politikai vezetés, társadalmi szerkezet, parlamenti arányok, live árfolyamok és gazdasági mutatók</p>
+  <div class="header-inner">
+    <div class="brand">TÖRÉSVONALAK.BLOG</div>
+    <h1>Balkán Országprofil Dashboard</h1>
+    <p>Politikai vezetés, társadalmi szerkezet, parlamenti arányok, live árfolyamok és gazdasági mutatók</p>
+  </div>
 </header>
 
 <main>
@@ -673,7 +736,7 @@ function createPieChart(canvasId, rows, valueKey, labelKey, label) {
           }
         },
         tooltip: {
-          backgroundColor: '#111827',
+          backgroundColor: '#0b3551',
           padding: 9
         }
       }
@@ -710,12 +773,12 @@ function createTradeChart(canvasId, economy) {
       maintainAspectRatio: false,
       plugins: {
         legend: { display: false },
-        tooltip: { backgroundColor: '#111827', padding: 9 }
+        tooltip: { backgroundColor: '#0b3551', padding: 9 }
       },
       scales: {
         y: {
           ticks: { font: { size: 10 } },
-          grid: { color: 'rgba(0,0,0,0.06)' }
+          grid: { color: 'rgba(49,85,108,0.10)' }
         },
         x: {
           ticks: { font: { size: 10 } },
@@ -757,7 +820,7 @@ function createHorizontalTradeChart(canvasId, rows, label) {
       plugins: {
         legend: { display: false },
         tooltip: {
-          backgroundColor: '#111827',
+          backgroundColor: '#0b3551',
           padding: 9,
           callbacks: {
             label: function(context) {
@@ -771,7 +834,7 @@ function createHorizontalTradeChart(canvasId, rows, label) {
           beginAtZero: true,
           suggestedMax: 35,
           ticks: { font: { size: 10 } },
-          grid: { color: 'rgba(0,0,0,0.06)' }
+          grid: { color: 'rgba(49,85,108,0.10)' }
         },
         y: {
           ticks: { font: { size: 10 } },
@@ -811,13 +874,13 @@ function createEconomyChart(canvasId, economy, bank) {
       maintainAspectRatio: false,
       plugins: {
         legend: { display: false },
-        tooltip: { backgroundColor: '#111827', padding: 9 }
+        tooltip: { backgroundColor: '#0b3551', padding: 9 }
       },
       scales: {
         y: {
           beginAtZero: true,
           ticks: { font: { size: 10 } },
-          grid: { color: 'rgba(0,0,0,0.06)' }
+          grid: { color: 'rgba(49,85,108,0.10)' }
         },
         x: {
           ticks: { font: { size: 10 } },
@@ -873,8 +936,8 @@ function createFxTrendChart(canvasId, country, fxHistoryData, currentFx) {
         borderWidth: 2,
         pointRadius: 2,
         pointHoverRadius: 4,
-        borderColor: '#2563eb',
-        backgroundColor: '#2563eb'
+        borderColor: '#2387bd',
+        backgroundColor: '#2387bd'
       }]
     },
     options: {
@@ -889,14 +952,14 @@ function createFxTrendChart(canvasId, country, fxHistoryData, currentFx) {
           }
         },
         tooltip: {
-          backgroundColor: '#111827',
+          backgroundColor: '#0b3551',
           padding: 9
         }
       },
       scales: {
         y: {
           ticks: { font: { size: 10 } },
-          grid: { color: 'rgba(0,0,0,0.06)' }
+          grid: { color: 'rgba(49,85,108,0.10)' }
         },
         x: {
           ticks: { font: { size: 10 }, maxRotation: 0 },
@@ -951,8 +1014,8 @@ function createInterestTrendChart(canvasId, countryName, interestHistoryData, cu
         borderWidth: 2,
         pointRadius: 2,
         pointHoverRadius: 4,
-        borderColor: '#ea580c',
-        backgroundColor: '#ea580c'
+        borderColor: '#b77a25',
+        backgroundColor: '#b77a25'
       }]
     },
     options: {
@@ -967,7 +1030,7 @@ function createInterestTrendChart(canvasId, countryName, interestHistoryData, cu
           }
         },
         tooltip: {
-          backgroundColor: '#111827',
+          backgroundColor: '#0b3551',
           padding: 9,
           callbacks: {
             label: function(context) {
@@ -980,7 +1043,7 @@ function createInterestTrendChart(canvasId, countryName, interestHistoryData, cu
         y: {
           beginAtZero: true,
           ticks: { font: { size: 10 } },
-          grid: { color: 'rgba(0,0,0,0.06)' }
+          grid: { color: 'rgba(49,85,108,0.10)' }
         },
         x: {
           ticks: { font: { size: 10 }, maxRotation: 0 },
