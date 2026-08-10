@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10 01:06 UTC",
+  "updated_at": "2026-08-10 02:28 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 22
+    "collected": 20
   },
   "countries": [
     {
@@ -21,34 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 6,
-        "positive_hits": 4,
+        "mentions": 11,
+        "negative_hits": 5,
+        "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 21,
-        "raw_engagement_total": 21,
-        "quality_total": 281,
-        "geopolitical_total": 251,
+        "engagement_total": 11,
+        "raw_engagement_total": 11,
+        "quality_total": 214,
+        "geopolitical_total": 187,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 7
+          "x": 4
         },
         "category_counts": {
           "foreign_influence": 3,
           "economic_infrastructure": 1,
-          "security": 4,
+          "security": 3,
           "protest": 1,
           "ethnic_tension": 1,
-          "government_crisis": 4
+          "government_crisis": 2
         },
         "tag_counts": {
           "serbia": 6,
           "bosnia": 1,
-          "Szerbia": 6,
-          "Koszovó": 1
+          "Szerbia": 4
         },
-        "main_topic": "security",
+        "main_topic": "foreign_influence",
         "top_posts": [
           {
             "title": "",
@@ -126,33 +125,25 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Balkans 🔴 Russia state media have framed Ukraine Zelensky’s visit to Belgrade primarily through Serbia’s balancing act between UA and RU. 🟢TASS highlighted President Vučić statemen",
-            "text": "Balkans 🔴 Russia state media have framed Ukraine Zelensky’s visit to Belgrade primarily through Serbia’s balancing act between UA and RU. 🟢TASS highlighted President Vučić statement that Serbia and Ukraine did not discuss military cooperation \"under the current",
-            "url": "https://x.com/i/web/status/2086606072350175558",
+            "title": "Pristina took down the Ukrainian flag that flew since 2022, a day after Zelenskyy told Belgrade Kyiv still refuses to recognize Kosovo. The rebuke costs Ukraine a Balkan sanctions ",
+            "text": "Pristina took down the Ukrainian flag that flew since 2022, a day after Zelenskyy told Belgrade Kyiv still refuses to recognize Kosovo. The rebuke costs Ukraine a Balkan sanctions ally and aligns it with Russia, China and Serbia on the Kosovo question. Pristina",
+            "url": "https://x.com/i/web/status/2086620551590617142",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-08-10T00:10:29.000Z",
+            "seen_date": "2026-08-10T01:08:01.000Z",
             "matched_countries": [
-              "Szerbia"
+              "Szerbia",
+              "Koszovó"
             ],
             "country_confidence": {
-              "Szerbia": 9
+              "Szerbia": 5,
+              "Koszovó": 5
             },
-            "event_category": "security",
+            "event_category": "foreign_influence",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
                 "category": "foreign_influence",
-                "hits": 1,
+                "hits": 3,
                 "weight": 8
               }
             ],
@@ -166,46 +157,6 @@
               "likes": 0,
               "reposts": 0,
               "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Serbia has not changed its position on Russia after Zelensky's visit. Belgrade still does not impose sanctions against the Russian Federation, Vucic stated. He emphasized that Serb",
-            "text": "Serbia has not changed its position on Russia after Zelensky's visit. Belgrade still does not impose sanctions against the Russian Federation, Vucic stated. He emphasized that Serbia has not sided with Kyiv, even after negotiations with the Ukrainian leader. This vatnik cnut",
-            "url": "https://x.com/i/web/status/2086606766494585277",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-08-10T00:13:15.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 26,
-            "quality_score": 27,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 14,
-            "raw_engagement": 14,
-            "metrics": {
-              "likes": 10,
-              "reposts": 3,
-              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -241,15 +192,44 @@
             "quality_score": 22,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 7,
-            "raw_engagement": 7,
+            "engagement": 10,
+            "raw_engagement": 10,
             "metrics": {
               "likes": 0,
               "reposts": 0,
               "replies": 0,
-              "quotes": 7
+              "quotes": 10
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "RE: https:// journa.host/@ScottLucas/117064 335052174516 # Zelensky cites discussions on strengthening of infrastructure, including ports and railways; economic development; reconstruction; and job creation # Serbia humanitarian support in areas such as energy and health care and energy. Mutual support for accession to # EU # Ukraine # UkraineWar",
+            "url": "https://journa.host/@ScottLucas/117064341108281954",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sun, 09 Aug 2026 07:21:27 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "economic_infrastructure",
+            "event_categories": [
+              {
+                "category": "economic_infrastructure",
+                "hits": 3,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 19,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -331,26 +311,28 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
-        "negative_hits": 5,
-        "positive_hits": 2,
+        "mentions": 14,
+        "negative_hits": 7,
+        "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 1,
         "raw_engagement_total": 1,
-        "quality_total": 259,
-        "geopolitical_total": 227,
+        "quality_total": 308,
+        "geopolitical_total": 274,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
-          "x": 3
+          "x": 5
         },
         "category_counts": {
-          "government_crisis": 10,
-          "security": 2
+          "government_crisis": 11,
+          "security": 2,
+          "foreign_influence": 1
         },
         "tag_counts": {
           "kosovo": 9,
-          "Koszovó": 3
+          "Szerbia": 1,
+          "Koszovó": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -457,12 +439,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Eggs thrown at Kosovo's Prime Minister. Kosovo's Prime Minister Albin Kurti was pelted with eggs in parliament. The trigger was his decision to postpone the parliamentary session o",
-            "text": "Eggs thrown at Kosovo's Prime Minister. Kosovo's Prime Minister Albin Kurti was pelted with eggs in parliament. The trigger was his decision to postpone the parliamentary session once again. For months, efforts to form a government have been thwarted by a lack of majorities.",
-            "url": "https://x.com/i/web/status/2086606528203903402",
+            "title": "Kosovo’s Prime Minister Hit by Eggs in Parliament Amid Political Crisis Kosovo’s parliament was suspended on Saturday after an opposition lawmaker threw eggs at interim Prime Minis",
+            "text": "Kosovo’s Prime Minister Hit by Eggs in Parliament Amid Political Crisis Kosovo’s parliament was suspended on Saturday after an opposition lawmaker threw eggs at interim Prime Minister Albin Kurti in the middle of a parliamentary session. Time Kadrijaj, a member of the Alliance",
+            "url": "https://x.com/i/web/status/2086625394061697519",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-08-10T00:12:18.000Z",
+            "seen_date": "2026-08-10T01:27:16.000Z",
             "matched_countries": [
               "Koszovó"
             ],
@@ -473,12 +455,12 @@
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 2,
+                "hits": 3,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
+            "geopolitical_score": 30,
+            "quality_score": 31,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -492,33 +474,41 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "",
-            "text": "Agenzia Nova: Kosovo: sospesa sessione costitutiva Parlamento, Kurti chiede tempo per evitare nuove elezioni 06 ago 15:02 - (Agenzia Nova) - La sessione costitutiva del Parlamento del Kosovo e' stata sospesa dopo che il primo ministro ad interim Albin... (Alt) Kosovo: Constituent session of Parliament suspended, Kurti asks for time to avoid new elections. Au",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117048844079850876",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Thu, 06 Aug 2026 13:40:21 +0000",
+            "title": "Pristina took down the Ukrainian flag that flew since 2022, a day after Zelenskyy told Belgrade Kyiv still refuses to recognize Kosovo. The rebuke costs Ukraine a Balkan sanctions ",
+            "text": "Pristina took down the Ukrainian flag that flew since 2022, a day after Zelenskyy told Belgrade Kyiv still refuses to recognize Kosovo. The rebuke costs Ukraine a Balkan sanctions ally and aligns it with Russia, China and Serbia on the Kosovo question. Pristina",
+            "url": "https://x.com/i/web/status/2086620551590617142",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-10T01:08:01.000Z",
             "matched_countries": [
+              "Szerbia",
               "Koszovó"
             ],
             "country_confidence": {
+              "Szerbia": 5,
               "Koszovó": 5
             },
-            "event_category": "government_crisis",
+            "event_category": "foreign_influence",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
+                "category": "foreign_influence",
+                "hits": 3,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 21,
-            "source_reliability": 3,
+            "geopolitical_score": 27,
+            "quality_score": 28,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -630,7 +620,7 @@
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 125,
-        "raw_engagement_total": 377,
+        "raw_engagement_total": 386,
         "quality_total": 77,
         "geopolitical_total": 70,
         "source_counts": {
@@ -785,10 +775,10 @@
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 120,
-            "raw_engagement": 372,
+            "raw_engagement": 381,
             "metrics": {
-              "likes": 319,
-              "reposts": 43,
+              "likes": 326,
+              "reposts": 45,
               "replies": 8,
               "quotes": 2
             },
@@ -807,8 +797,8 @@
         "negative_hits": 17,
         "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 82,
-        "raw_engagement_total": 82,
+        "engagement_total": 104,
+        "raw_engagement_total": 104,
         "quality_total": 556,
         "geopolitical_total": 493,
         "source_counts": {
