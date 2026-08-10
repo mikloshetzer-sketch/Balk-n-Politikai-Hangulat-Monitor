@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09 18:55 UTC",
+  "updated_at": "2026-08-10 01:06 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 20
+    "collected": 22
   },
   "countries": [
     {
@@ -22,68 +22,34 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 14,
-        "negative_hits": 5,
-        "positive_hits": 6,
-        "trusted_hits": 3,
-        "engagement_total": 128,
-        "raw_engagement_total": 543,
-        "quality_total": 307,
-        "geopolitical_total": 268,
+        "negative_hits": 6,
+        "positive_hits": 4,
+        "trusted_hits": 1,
+        "engagement_total": 21,
+        "raw_engagement_total": 21,
+        "quality_total": 281,
+        "geopolitical_total": 251,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 9,
-          "x": 5
+          "mastodon": 7,
+          "x": 7
         },
         "category_counts": {
-          "foreign_influence": 2,
+          "foreign_influence": 3,
           "economic_infrastructure": 1,
-          "security": 3,
+          "security": 4,
           "protest": 1,
-          "government_crisis": 6,
-          "ethnic_tension": 1
+          "ethnic_tension": 1,
+          "government_crisis": 4
         },
         "tag_counts": {
-          "serbia": 8,
+          "serbia": 6,
           "bosnia": 1,
-          "Szerbia": 2,
-          "Koszovó": 3
+          "Szerbia": 6,
+          "Koszovó": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
-          {
-            "title": "",
-            "text": "🇷🇸 Belgrade will support # Ukraine 's independence and aims to improve economic cooperation ‌between the two countries, President Aleksandar Vucic said on Saturday, but he stopped short of any pledge to impose sanctions on # Serbia 's long-time ally # Russia https://www. reuters.com/business/leaders-s erbia-ukraine-pledge-closer-economic-ties-2026-08-08/",
-            "url": "https://mastodon.social/@rvps2001/117060956529621234",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sat, 08 Aug 2026 17:00:43 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 33,
-            "quality_score": 38,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Ukraine war briefing: Turkey calls for ‘moratorium’ on Black Sea attacks by Russia and Ukraine By Guardian staff and agencies Commercial ships under attack as Russia-Ukraine conflict spreads across Black Sea, says Turkey’s foreign minister. What we know on day 1,626 https://www. theguardian.com/world/2026/aug /09/ukraine-war-briefing-turkey-calls-for-morator",
@@ -160,60 +126,25 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "‼️🇷🇸🇷🇺 Serbia did not support Zelensky against Russia, — Vučić ▪️The Serbian president told the Alo! publication that Zelensky’s visit does not change Belgrade’s foreign policy cou",
-            "text": "‼️🇷🇸🇷🇺 Serbia did not support Zelensky against Russia, — Vučić ▪️The Serbian president told the Alo! publication that Zelensky’s visit does not change Belgrade’s foreign policy course towards Russia. ▪️Vučić stressed that Serbia has not imposed sanctions against Russia and",
-            "url": "https://x.com/i/web/status/2086518625129673035",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-09T18:23:00.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 13
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 7,
-            "raw_engagement": 7,
-            "metrics": {
-              "likes": 4,
-              "reposts": 2,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "EVENT: Serbian President Aleksandar Vučić and Ukrainian President Volodymyr Zelenskyy pursued a free-trade deal, highlighting Serbia’s balancing between EU integration and ties wit",
-            "text": "EVENT: Serbian President Aleksandar Vučić and Ukrainian President Volodymyr Zelenskyy pursued a free-trade deal, highlighting Serbia’s balancing between EU integration and ties with Russia, EU Today reported Aug. 9.",
-            "url": "https://x.com/i/web/status/2086523118076498293",
+            "title": "Balkans 🔴 Russia state media have framed Ukraine Zelensky’s visit to Belgrade primarily through Serbia’s balancing act between UA and RU. 🟢TASS highlighted President Vučić statemen",
+            "text": "Balkans 🔴 Russia state media have framed Ukraine Zelensky’s visit to Belgrade primarily through Serbia’s balancing act between UA and RU. 🟢TASS highlighted President Vučić statement that Serbia and Ukraine did not discuss military cooperation \"under the current",
+            "url": "https://x.com/i/web/status/2086606072350175558",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-08-09T18:40:51.000Z",
+            "seen_date": "2026-08-10T00:10:29.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
               "Szerbia": 9
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
               {
                 "category": "government_crisis",
                 "hits": 1,
@@ -223,20 +154,10 @@
                 "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
+            "geopolitical_score": 27,
+            "quality_score": 28,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -248,6 +169,87 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "Serbia has not changed its position on Russia after Zelensky's visit. Belgrade still does not impose sanctions against the Russian Federation, Vucic stated. He emphasized that Serb",
+            "text": "Serbia has not changed its position on Russia after Zelensky's visit. Belgrade still does not impose sanctions against the Russian Federation, Vucic stated. He emphasized that Serbia has not sided with Kyiv, even after negotiations with the Ukrainian leader. This vatnik cnut",
+            "url": "https://x.com/i/web/status/2086606766494585277",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-10T00:13:15.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 27,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 14,
+            "raw_engagement": 14,
+            "metrics": {
+              "likes": 10,
+              "reposts": 3,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Expecting for an Ukranian president to suddenly recognize Kosovo after years of firm stance against it, while Ukraine is in paralel situation as Serbia (a vast territory being atta",
+            "text": "Expecting for an Ukranian president to suddenly recognize Kosovo after years of firm stance against it, while Ukraine is in paralel situation as Serbia (a vast territory being attacked and occupied), in Belgrade from all the places in the world is straight up DELULU 🤡",
+            "url": "https://x.com/i/web/status/2086617989722333350",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-10T00:57:50.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 22,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 7,
+            "raw_engagement": 7,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 7
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -255,29 +257,27 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 18,
+        "score": 7,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
-        "negative_hits": 1,
+        "mentions": 1,
+        "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 52,
-        "geopolitical_total": 48,
+        "quality_total": 31,
+        "geopolitical_total": 28,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
-          "ethnic_tension": 1,
-          "security": 1
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "bosnia": 1,
-          "Montenegró": 1
+          "bosnia": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -321,47 +321,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Chabad Rabbi threat to national security in Russia, Montenegro very close to the Kushner terrorist. Timeline on Rabbi placement: Occupied Palestine (birth 1978) → Los Angeles – Yes",
-            "text": "Chabad Rabbi threat to national security in Russia, Montenegro very close to the Kushner terrorist. Timeline on Rabbi placement: Occupied Palestine (birth 1978) → Los Angeles – Yeshiva Ohr Elchonon Chabad (childhood/youth/studies, ~1980s–1990s) →",
-            "url": "https://x.com/i/web/status/2086237583177392606",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-08-08T23:46:14.000Z",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 3,
-              "Montenegró": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -373,28 +332,25 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 12,
-        "negative_hits": 6,
-        "positive_hits": 3,
+        "negative_hits": 5,
+        "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 260,
-        "geopolitical_total": 228,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 259,
+        "geopolitical_total": 227,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
           "x": 3
         },
         "category_counts": {
-          "government_crisis": 8,
-          "security": 2,
-          "foreign_influence": 2
+          "government_crisis": 10,
+          "security": 2
         },
         "tag_counts": {
           "kosovo": 9,
-          "Szerbia": 1,
-          "Koszovó": 1,
-          "Észak-Macedónia": 1
+          "Koszovó": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -501,18 +457,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🥚😂Make in India’s newest export: “Egg in Politics\"🥚😂 Looks like India’s “political art of throwing eggs” has now reached the Balkans! (Near N Macedonia ) Kosovo Parliament, Opposit",
-            "text": "🥚😂Make in India’s newest export: “Egg in Politics\"🥚😂 Looks like India’s “political art of throwing eggs” has now reached the Balkans! (Near N Macedonia ) Kosovo Parliament, Opposition MP Time Kadrijaj threw eggs at acting PM Albin Kurti amid a political deadlock. 53 seats",
-            "url": "https://x.com/i/web/status/2086284022267957663",
+            "title": "Eggs thrown at Kosovo's Prime Minister. Kosovo's Prime Minister Albin Kurti was pelted with eggs in parliament. The trigger was his decision to postpone the parliamentary session o",
+            "text": "Eggs thrown at Kosovo's Prime Minister. Kosovo's Prime Minister Albin Kurti was pelted with eggs in parliament. The trigger was his decision to postpone the parliamentary session once again. For months, efforts to form a government have been thwarted by a lack of majorities.",
+            "url": "https://x.com/i/web/status/2086606528203903402",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-09T02:50:46.000Z",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-10T00:12:18.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 5,
-              "Észak-Macedónia": 1
+              "Koszovó": 5
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -526,50 +481,44 @@
             "quality_score": 22,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 1,
+              "likes": 0,
               "reposts": 0,
-              "replies": 1,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "Yes, I fully support the removal of the large “Free Ukraine” flag from the center of Pristina. Volodymyr Zelenskyy has been admired and unequivocally supported by the people of Kos",
-            "text": "Yes, I fully support the removal of the large “Free Ukraine” flag from the center of Pristina. Volodymyr Zelenskyy has been admired and unequivocally supported by the people of Kosovo, who know all too well what oppression and occupation mean. Kosovo imposed sanctions on Russia",
-            "url": "https://x.com/i/web/status/2086526379760165038",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-08-09T18:53:49.000Z",
+            "title": "",
+            "text": "Agenzia Nova: Kosovo: sospesa sessione costitutiva Parlamento, Kurti chiede tempo per evitare nuove elezioni 06 ago 15:02 - (Agenzia Nova) - La sessione costitutiva del Parlamento del Kosovo e' stata sospesa dopo che il primo ministro ad interim Albin... (Alt) Kosovo: Constituent session of Parliament suspended, Kurti asks for time to avoid new elections. Au",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117048844079850876",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Thu, 06 Aug 2026 13:40:21 +0000",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
               "Koszovó": 5
             },
-            "event_category": "foreign_influence",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "foreign_influence",
+                "category": "government_crisis",
                 "hits": 2,
-                "weight": 8
+                "weight": 9
               }
             ],
-            "geopolitical_score": 20,
+            "geopolitical_score": 18,
             "quality_score": 21,
-            "source_reliability": 2,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -577,31 +526,29 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 11,
+        "score": 5,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 2,
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 30,
-        "geopolitical_total": 25,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 20,
+        "geopolitical_total": 16,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "eu_integration": 1,
-          "government_crisis": 1,
-          "security": 1
+          "government_crisis": 1
         },
         "tag_counts": {
           "montenegro": 1,
-          "Montenegró": 1,
-          "Albánia": 1
+          "Montenegró": 1
         },
         "main_topic": "eu_integration",
         "top_posts": [
@@ -630,47 +577,10 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
+            "engagement": 4,
+            "raw_engagement": 4,
             "metrics": {
-              "likes": 3,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Perfect business plan: Arab accountant Slovenian lawyer Turkish employees Bosnian marketing Montenegrin security Albanian supplier",
-            "text": "Perfect business plan: Arab accountant Slovenian lawyer Turkish employees Bosnian marketing Montenegrin security Albanian supplier",
-            "url": "https://x.com/i/web/status/2086524984147464566",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-08-09T18:48:16.000Z",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 3,
-              "Albánia": 2,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
+              "likes": 4,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -712,30 +622,29 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 36,
+        "score": 31,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 4,
         "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 125,
-        "raw_engagement_total": 203,
-        "quality_total": 96,
-        "geopolitical_total": 88,
+        "raw_engagement_total": 377,
+        "quality_total": 77,
+        "geopolitical_total": 70,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 5
+          "x": 4
         },
         "category_counts": {
           "security": 2,
           "ethnic_tension": 1,
-          "foreign_influence": 1,
-          "government_crisis": 1
+          "foreign_influence": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 5
+          "Észak-Macedónia": 4
         },
         "main_topic": "security",
         "top_posts": [
@@ -797,41 +706,6 @@
             ],
             "geopolitical_score": 21,
             "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Prime Minister Hristijan Mickoski responded today to opposition criticism regarding Eurostat’s latest report on the purchasing power of citizens in European countries.",
-            "text": "Prime Minister Hristijan Mickoski responded today to opposition criticism regarding Eurostat’s latest report on the purchasing power of citizens in European countries.",
-            "url": "https://x.com/i/web/status/2086341710594900430",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-09T06:40:00.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -911,11 +785,11 @@
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 120,
-            "raw_engagement": 198,
+            "raw_engagement": 372,
             "metrics": {
-              "likes": 169,
-              "reposts": 23,
-              "replies": 4,
+              "likes": 319,
+              "reposts": 43,
+              "replies": 8,
               "quotes": 2
             },
             "quality": "x_api_filtered"
@@ -929,33 +803,34 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 19,
-        "negative_hits": 13,
+        "mentions": 23,
+        "negative_hits": 17,
         "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 59,
-        "raw_engagement_total": 59,
-        "quality_total": 460,
-        "geopolitical_total": 405,
+        "engagement_total": 82,
+        "raw_engagement_total": 82,
+        "quality_total": 556,
+        "geopolitical_total": 493,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 16,
-          "x": 3
+          "mastodon": 18,
+          "x": 5
         },
         "category_counts": {
           "corruption_rule_of_law": 8,
-          "protest": 3,
-          "government_crisis": 4,
+          "protest": 5,
+          "government_crisis": 5,
           "foreign_influence": 1,
           "security": 2,
-          "migration": 1
+          "migration": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 10,
           "montenegro": 1,
-          "albania": 5,
-          "Észak-Macedónia": 1,
-          "Albánia": 2
+          "albania": 7,
+          "Montenegró": 1,
+          "Albánia": 4
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -1039,79 +914,90 @@
           },
           {
             "title": "",
+            "text": "🙂 ☕ Monday, August 10, 2026 🇪🇺 #Europe 🦩 #Flamingo 🔥 #USA - Let's go! - 🇪🇺 🫂 🇺🇸 🫂 🇲🇽 🫂 🇧🇷 🫂 🇨🇦 #Albania #Blues #Protests over #luxury project by #Kushner and Ivanka #Trump www.tagesschau.de/ausland/euro... ... We in 🇪🇺 #Europe 🇪🇺 are fighting back against #Neocapitalism & #Trump #Clan & #Corruption ! RE: https://bsky.app/profile/did:plc:geaoytzrcfxcdplqfonmu",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:3qwbuj4v4rln64olfdrw5py2/post/3msoqg22onk2o",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Sun, 09 Aug 2026 23:28:23 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 35,
+            "quality_score": 38,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "With the slogan “more tomorrow,” the curtain has fallen on the 71st protest by the civic movement. Participants are not backing down from their essential demand: the irrevocable re",
+            "text": "With the slogan “more tomorrow,” the curtain has fallen on the 71st protest by the civic movement. Participants are not backing down from their essential demand: the irrevocable resignation of Prime Minister Edi Rama.",
+            "url": "https://x.com/i/web/status/2086595358663024940",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-08-09T23:27:55.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
             "text": "Day 71 of anti-corruption protest in Tirana, Albania Machine translation: \"Rama, resign\"! 71 days of national revolt against misgovernment 🔴LIVE | “Rama, jepe dorëheqjen”! 71 ditë revoltë kombëtare kundër keqqeverisjes https://www. youtube.com/watch?v=ZbcFnVg_zx8 # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Environment # Protest",
             "url": "https://mas.to/@meganL/117066778609214414",
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Sun, 09 Aug 2026 17:41:21 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 70 of anti-corruption protest in Tirana, Albania 🔴LIVE | 70 ditë revoltë, qytetarët nuk tërhiqen nga kërkesa për dorëheqjen e Ramës https://www. youtube.com/watch?v=sXyTdbOV53Y # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
-            "url": "https://mas.to/@meganL/117061407536740347",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sat, 08 Aug 2026 18:55:24 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 68 of anti-corruption protest in Tirana, Albania https://www. youtube.com/watch?v=zr19AMPYUe0 # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Environment # Protest",
-            "url": "https://mas.to/@meganL/117049831836552693",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Thu, 06 Aug 2026 17:51:33 +0000",
             "matched_countries": [
               "Albánia"
             ],
