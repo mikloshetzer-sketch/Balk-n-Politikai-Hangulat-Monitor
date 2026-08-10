@@ -9,98 +9,162 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <style>
+    :root {
+      --page: #edf5f9;
+      --card: #ffffff;
+      --ink: #082f49;
+      --text: #31556c;
+      --muted: #678398;
+      --line: #cddfe9;
+      --line-soft: #dce9f0;
+      --blue: #2387bd;
+      --shadow: 0 8px 24px rgba(22, 63, 86, 0.07);
+      --radius: 15px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      background: #f3f4f6;
+      background: var(--page);
       font-family: Arial, Helvetica, sans-serif;
-      color: #111827;
+      color: var(--text);
+      line-height: 1.5;
     }
 
     header {
-      background: #111827;
+      background: linear-gradient(112deg, #123f5d 0%, #155a7c 58%, #2793c5 100%);
       color: white;
-      padding: 26px 20px;
-      text-align: center;
+      padding: 42px 20px 38px;
+      text-align: left;
+      box-shadow: inset 0 -1px 0 rgba(255,255,255,.12);
+    }
+
+    .header-inner {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .brand {
+      margin-bottom: 12px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .18em;
+      color: #d9f1ff;
     }
 
     header h1 {
       margin: 0;
-      font-size: 30px;
+      max-width: 980px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(38px, 4vw, 60px);
+      line-height: .98;
+      letter-spacing: -.025em;
+      font-weight: 700;
+      color: #ffffff;
     }
 
     header p {
-      margin-top: 8px;
-      color: #d1d5db;
+      max-width: 980px;
+      margin: 17px 0 0;
+      color: #e5f3fa;
+      font-size: 16px;
+      line-height: 1.55;
     }
 
     main {
       max-width: 1500px;
-      margin: 22px auto;
+      margin: 28px auto;
       padding: 0 16px;
     }
 
     .top-box {
-      background: white;
-      border-radius: 14px;
-      padding: 18px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      margin-bottom: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .top-box > strong {
+      display: block;
+      margin-bottom: 7px;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      font-size: 23px;
     }
 
     .button-row {
       display: flex;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
-      margin-top: 12px;
+      margin-top: 16px;
     }
 
     .button {
       display: inline-block;
-      padding: 11px 15px;
-      border-radius: 12px;
-      background: #111827;
-      color: white;
+      padding: 10px 15px;
+      border: 1px solid #27799f;
+      border-radius: 9px;
+      background: #ffffff;
+      color: #0c4a6e;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 700;
+      transition: .18s ease;
     }
 
     .button:hover {
-      background: #374151;
+      background: #eaf5fb;
+      border-color: #1784b7;
+      transform: translateY(-1px);
     }
 
     .small {
-      color: #6b7280;
+      color: var(--muted);
       font-size: 13px;
+      line-height: 1.5;
     }
 
     .dashboard-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
-      gap: 18px;
+      gap: 20px;
     }
 
     .chart-card {
-      background: white;
-      border-radius: 14px;
-      padding: 16px;
-      box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: var(--shadow);
     }
 
     .chart-card h2 {
-      margin-top: 0;
-      font-size: 20px;
+      margin: 0 0 6px;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      font-size: 22px;
+      line-height: 1.2;
     }
 
     .chart-desc {
       font-size: 13px;
-      color: #6b7280;
+      color: var(--muted);
       margin-bottom: 12px;
-      line-height: 1.4;
+      line-height: 1.45;
     }
 
     .chart-wrap {
       height: 320px;
+      background: #ffffff;
+      border: 1px solid var(--line-soft);
+      border-radius: 10px;
+      padding: 10px;
     }
 
     .ranking-grid {
@@ -111,26 +175,42 @@
     }
 
     .ranking-box {
-      background: #f9fafb;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
+      background: #f2f7fa;
+      border: 1px solid #dce9f0;
+      border-radius: 10px;
       padding: 12px;
+      color: var(--muted);
+      font-size: 13px;
     }
 
     .ranking-box strong {
       display: block;
-      font-size: 22px;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      font-size: 23px;
       margin-top: 6px;
     }
 
     footer {
       text-align: center;
-      color: #6b7280;
+      color: var(--muted);
       font-size: 13px;
-      padding: 28px 10px;
+      padding: 30px 10px 36px;
     }
 
     @media (max-width: 700px) {
+      header {
+        padding: 32px 18px;
+      }
+
+      .header-inner {
+        padding: 0;
+      }
+
+      header h1 {
+        font-size: 38px;
+      }
+
       .dashboard-grid {
         grid-template-columns: 1fr;
       }
@@ -145,14 +225,16 @@
 <body>
 
 <header>
-  <h1>Balkán Country Comparison Dashboard</h1>
-  <p>Makrogazdasági, politikai, social és security összehasonlító nézet</p>
+  <div class="header-inner">
+    <div class="brand">TÖRÉSVONALAK.BLOG</div>
+    <h1>Balkán Country Comparison Dashboard</h1>
+    <p>Makrogazdasági, politikai, social és security összehasonlító nézet</p>
+  </div>
 </header>
 
 <main>
 
   <section class="top-box">
-
     <strong>Regionális összehasonlító nézet</strong>
 
     <p class="small" id="updatedAt">
@@ -176,7 +258,6 @@
     </div>
 
     <div class="ranking-grid" id="rankingGrid"></div>
-
   </section>
 
   <section class="dashboard-grid">
@@ -386,7 +467,8 @@ function createBarChart(canvasId, countries, valueKey, label, suffix) {
         data: countries.map(c => c[valueKey] || 0),
         borderWidth: 0,
         borderRadius: 6,
-        barThickness: 28
+        barThickness: 28,
+        backgroundColor: 'rgba(35, 135, 189, 0.78)'
       }]
     },
 
@@ -400,7 +482,7 @@ function createBarChart(canvasId, countries, valueKey, label, suffix) {
         },
 
         tooltip: {
-          backgroundColor: '#111827',
+          backgroundColor: '#0b3551',
           padding: 9,
 
           callbacks: {
@@ -418,11 +500,12 @@ function createBarChart(canvasId, countries, valueKey, label, suffix) {
           ticks: {
             font: {
               size: 10
-            }
+            },
+            color: '#678398'
           },
 
           grid: {
-            color: 'rgba(0,0,0,0.06)'
+            color: 'rgba(49,85,108,0.10)'
           }
         },
 
@@ -430,7 +513,8 @@ function createBarChart(canvasId, countries, valueKey, label, suffix) {
           ticks: {
             font: {
               size: 10
-            }
+            },
+            color: '#678398'
           },
 
           grid: {
