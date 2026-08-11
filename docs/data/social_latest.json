@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11 13:26 UTC",
+  "updated_at": "2026-08-11 18:52 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 18
+    "collected": 20
   },
   "countries": [
     {
@@ -21,30 +21,66 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
+        "mentions": 9,
         "negative_hits": 3,
         "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 151,
-        "geopolitical_total": 135,
+        "trusted_hits": 1,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 189,
+        "geopolitical_total": 167,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
+          "mastodon": 5,
           "x": 4
         },
         "category_counts": {
-          "security": 4,
-          "government_crisis": 3,
-          "protest": 1
+          "security": 3,
+          "government_crisis": 4,
+          "protest": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "serbia": 4,
-          "Szerbia": 4
+          "serbia": 5,
+          "Szerbia": 3,
+          "Koszovó": 1
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Agenzia Nova: Serbia: studenti annunciano protesta venerdi' a Valjevo a un anno da violenze polizia 11 ago 17:58 - (Agenzia Nova) - Gli studenti serbi hanno annunciato una grande manifestazione a Valjevo venerdi' prossimo in occasione del... (Seb) Serbia: students announce protest on Friday in Valjevo, one year after police violence August 11, 5:58 PM – (Age",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117077862796241501",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Tue, 11 Aug 2026 16:40:12 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 31,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "# Serbia plans to open a manufacturing plant with Israeli defence giant # Elbit Systems in mid-September to jointly produce drones to modernize its defences and bolster exports of unmanned systems and military equipment. Speaking at a press conference populist President Aleksandar Vučić said over the weekend that Serbia will open a drone factory with Israeli",
@@ -80,12 +116,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "A statement by Serbian President Aleksandar Vučić has revived concerns about Kosovo’s water and energy security. He announced that Serbian authorities are considering the possibili",
-            "text": "A statement by Serbian President Aleksandar Vučić has revived concerns about Kosovo’s water and energy security. He announced that Serbian authorities are considering the possibility of changing the course of the Ibër River within Serbian territory.",
-            "url": "https://x.com/i/web/status/2087161297171349881",
+            "title": "Statements by Serbian President Aleksandar Vučić about a possible diversion of the Ibar River have prompted a reaction from the European Union. According to the EU, such rhetoric d",
+            "text": "Statements by Serbian President Aleksandar Vučić about a possible diversion of the Ibar River have prompted a reaction from the European Union. According to the EU, such rhetoric does not serve the normalization of relations between Kosovo and Serbia.",
+            "url": "https://x.com/i/web/status/2087247336720253405",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-08-11T12:56:45.000Z",
+            "seen_date": "2026-08-11T18:38:38.000Z",
             "matched_countries": [
               "Szerbia"
             ],
@@ -93,12 +129,12 @@
               "Szerbia": 9,
               "Koszovó": 1
             },
-            "event_category": "security",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "security",
+                "category": "ethnic_tension",
                 "hits": 1,
-                "weight": 9
+                "weight": 10
               },
               {
                 "category": "government_crisis",
@@ -106,13 +142,13 @@
                 "weight": 9
               },
               {
-                "category": "economic_infrastructure",
+                "category": "eu_integration",
                 "hits": 1,
-                "weight": 4
+                "weight": 6
               }
             ],
-            "geopolitical_score": 22,
-            "quality_score": 23,
+            "geopolitical_score": 25,
+            "quality_score": 26,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -189,41 +225,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "🇷🇸🇪🇺 Vučić recordó a la # OTAN que bombardeó # Serbia sin mandato de la # ONU y arrebató el 14% de su territorio El presidente serbio, Aleksandar Vučić, cuestionó a los países occidentales por la secesión de # Kosovo tras la agresión de 19 Estados de la OTAN contra Serbia, ejecutada sin autorización del Consejo de Seguridad de la ONU. \"¿Qué territorio atacó ",
-            "url": "https://masto.es/@nachogazpachof/117073104270795857",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Mon, 10 Aug 2026 20:30:02 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5,
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 20,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -251,7 +252,7 @@
           "foreign_influence": 1
         },
         "tag_counts": {
-          "serbia": 1
+          "kosovo": 1
         },
         "main_topic": "foreign_influence",
         "top_posts": [
@@ -260,7 +261,7 @@
             "text": "Monday, August 10, 2026 Ukrainian-made ballistic missiles could hit Russia in the fall . . . . . Russia destroys World Health Organisation warehouse in Dnipro . . . . . Foreign Minister Sybiha condemns UNICEF after agency fails to hold Russia accountable for Ukrainian civilian deaths . . . . . Inside Ukraine's 40-day drone campaign to weaken Russia . . . . .",
             "url": "https://activitypub.writeworks.uk/2026/08/monday-august-10-2026/",
             "source": "mastodon",
-            "tag": "serbia",
+            "tag": "kosovo",
             "seen_date": "Mon, 10 Aug 2026 10:22:34 +0000",
             "matched_countries": [
               "Bosznia-Hercegovina"
@@ -293,104 +294,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 6,
+        "mentions": 12,
+        "negative_hits": 4,
         "positive_hits": 2,
         "trusted_hits": 4,
-        "engagement_total": 8,
-        "raw_engagement_total": 8,
-        "quality_total": 295,
-        "geopolitical_total": 249,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 214,
+        "geopolitical_total": 172,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 12,
-          "x": 2
+          "mastodon": 11,
+          "x": 1
         },
         "category_counts": {
           "protest": 1,
           "security": 5,
-          "government_crisis": 8
+          "government_crisis": 6
         },
         "tag_counts": {
           "serbia": 1,
-          "kosovo": 11,
-          "Szerbia": 2
+          "kosovo": 10,
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "",
-            "text": "🟡 PoliticalProtest | 3/10 🇽🇰 Opposition MP throws eggs at Albin Kurti in Kosovo parliament Incident due to Kurti's failure to form a new government. Physical protest in parliament. # OSINT # NewsGroup # Kosovo # Parliament # Protest",
-            "url": "https://social.vir.group/@analytics/117060640174621679",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Sat, 08 Aug 2026 15:40:15 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 38,
-            "quality_score": 41,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Today: Deputata lancia uova contro il premier kosovaro: in parlamento succede di tutto Durante una seduta parlamentare in Kosovo, Time Kadrijaj, deputata dell'opposizione, ha lanciato delle uova contro il primo ministro ad interim Albin Kurti. La seduta era stata convocata per costituire il Parlamento in seguito alle elezioni anticipate del 7 giugno. L'incid",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117061626198216553",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Sat, 08 Aug 2026 19:51:01 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 6
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 36,
-            "quality_score": 39,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Kosovan lawmaker hurls eggs at the prime minister – video An opposition lawmaker threw eggs at Kosovo's acting prime minister, Albin Kurti, after he told parliament he needed more time to hold talks with other parties before proposing a candidate for speaker following the country's snap election in June. https://www. theguardian.com/world/video/20 26/aug/08/",
@@ -479,6 +407,64 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Kosovo: Kurti, ci impegneremo per accordo politico, cittadini vogliono soluzioni e non elezioni 10 ago 14:49 - (Agenzia Nova) - Il primo ministro ad interim del Kosovo, Albin Kurti, ha dichiarato che i colloqui per raggiungere un accordo... (Alt) Kosovo: Kurti, we will strive for a political agreement, citizens want solutions and not elections.",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117071414354490729",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Mon, 10 Aug 2026 13:20:16 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 14,
+            "quality_score": 19,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "NATO Peacekeepers’ ‘Transition’ at Flashpoint Bridge Alarms Kosovo Serb Party https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/10/nato-peacekeepers-transition-at-flashpoint-bridge-alarms-kosovo-serb-party/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/10/nato-peacekeepers-transition-at-flashpoint-bridge-alarms-kosovo-serb-party/bi/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Mon, 10 Aug 2026 15:06:31 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 18,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -486,30 +472,61 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 4,
-        "level": "low",
+        "score": 21,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 1,
+        "mentions": 4,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 11,
-        "geopolitical_total": 8,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 43,
+        "geopolitical_total": 35,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 1,
-          "x": 0
+          "mastodon": 2,
+          "x": 2
         },
         "category_counts": {
+          "security": 3,
           "foreign_influence": 1
         },
         "tag_counts": {
-          "montenegro": 1
+          "montenegro": 2,
+          "Montenegró": 2
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Montenegro Police Raid Nets 50 Foreigners, ‘Hundreds’ of Digital Devices, and Cash https:// web.brid.gy/r/https://balkanin sight.com/2026/08/11/montenegro-police-check-more-than-50-foreigners-after-podgorica-raid/bi/",
+            "url": "https://web.brid.gy/r/https://balkaninsight.com/2026/08/11/montenegro-police-check-more-than-50-foreigners-after-podgorica-raid/bi/",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Tue, 11 Aug 2026 14:40:26 +0000",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 12,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "Montenegro Faces Economic Test After Decision to Impose Visas for Russians, Turks https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/11/montenegro-braces-for-economic-test-after-visa-decision/bi/",
@@ -538,96 +555,19 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Észak-Macedónia",
-      "social_signal": {
-        "score": 18,
-        "level": "low",
-        "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 0,
-        "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 40,
-        "geopolitical_total": 37,
-        "source_counts": {
-          "reddit": 0,
-          "mastodon": 0,
-          "x": 3
-        },
-        "category_counts": {
-          "security": 2,
-          "ethnic_tension": 1
-        },
-        "tag_counts": {
-          "Montenegró": 1,
-          "Észak-Macedónia": 2
-        },
-        "main_topic": "security",
-        "top_posts": [
-          {
-            "title": "The end game of this is for sure history says us the partition of Kosovo, Bosnia and North Macedonia by ethnic borders and creating a federal Albania and Serbia, which after a peri",
-            "text": "The end game of this is for sure history says us the partition of Kosovo, Bosnia and North Macedonia by ethnic borders and creating a federal Albania and Serbia, which after a period will unite. How I know for sure? Because every other alternative is costly and will only",
-            "url": "https://x.com/i/web/status/2087089977079329039",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-11T08:13:21.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Szerbia": 1,
-              "Bosznia-Hercegovina": 1,
-              "Koszovó": 1,
-              "Albánia": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
-            "title": "Register to join our webinar with HERA on Kosovo-North Macedonia relations on August 19th from 14:00-15:30 CET. 👉 The Kosovar Centre for Security Studies (KCSS) and HERA invite you",
-            "text": "Register to join our webinar with HERA on Kosovo-North Macedonia relations on August 19th from 14:00-15:30 CET. 👉 The Kosovar Centre for Security Studies (KCSS) and HERA invite you to an online webinar on 19 August, bringing together perspectives from",
-            "url": "https://x.com/i/web/status/2087090143341445148",
+            "title": "Police seize \"sophisticated equipment\" and cash from more than 50 foreign nationals found in a house near Podgorica, checking possible links to high-tech crime.",
+            "text": "Police seize \"sophisticated equipment\" and cash from more than 50 foreign nationals found in a house near Podgorica, checking possible links to high-tech crime.",
+            "url": "https://x.com/i/web/status/2087187652332204106",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-11T08:14:01.000Z",
+            "tag": "Montenegró",
+            "seen_date": "2026-08-11T14:41:29.000Z",
             "matched_countries": [
-              "Észak-Macedónia"
+              "Montenegró"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Koszovó": 2
+              "Montenegró": 4
             },
             "event_category": "security",
             "event_categories": [
@@ -641,22 +581,87 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 2,
-              "reposts": 1,
+              "likes": 1,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
+            "title": "Montenegrin police said on Tuesday they were checking on more than 50 foreign nationals, most of them Ukrainian citizens, who they found when raiding a large house in the Mareza ar",
+            "text": "Montenegrin police said on Tuesday they were checking on more than 50 foreign nationals, most of them Ukrainian citizens, who they found when raiding a large house in the Mareza area of Podgorica.",
+            "url": "https://x.com/i/web/status/2087192549186257185",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-08-11T15:00:56.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 7
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Észak-Macedónia",
+      "social_signal": {
+        "score": 5,
+        "level": "low",
+        "scale": "0-60 risk index",
+        "mentions": 1,
+        "negative_hits": 0,
+        "positive_hits": 0,
+        "trusted_hits": 0,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 10,
+        "geopolitical_total": 9,
+        "source_counts": {
+          "reddit": 0,
+          "mastodon": 0,
+          "x": 1
+        },
+        "category_counts": {
+          "security": 1
+        },
+        "tag_counts": {
+          "Észak-Macedónia": 1
+        },
+        "main_topic": "security",
+        "top_posts": [
+          {
             "title": "Europe is investing heavily in cybersecurity. National Cyber Security Index (NCSI) 2026 rankings for the Western Balkans (global ranking compared to 2023): 1. Albania (+53) 30. Nor",
             "text": "Europe is investing heavily in cybersecurity. National Cyber Security Index (NCSI) 2026 rankings for the Western Balkans (global ranking compared to 2023): 1. Albania (+53) 30. North Macedonia (+29) 40. Serbia (-19) 48. Montenegro (+49) 88. Kosova (not listed in 2023) 100.",
             "url": "https://x.com/i/web/status/2087128332877914363",
             "source": "x",
-            "tag": "Montenegró",
+            "tag": "Észak-Macedónia",
             "seen_date": "2026-08-11T10:45:46.000Z",
             "matched_countries": [
               "Észak-Macedónia"
@@ -699,33 +704,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 19,
-        "negative_hits": 16,
+        "mentions": 21,
+        "negative_hits": 18,
         "positive_hits": 0,
-        "trusted_hits": 2,
-        "engagement_total": 115,
-        "raw_engagement_total": 115,
-        "quality_total": 481,
-        "geopolitical_total": 426,
+        "trusted_hits": 4,
+        "engagement_total": 47,
+        "raw_engagement_total": 47,
+        "quality_total": 529,
+        "geopolitical_total": 466,
         "source_counts": {
           "reddit": 0,
           "mastodon": 16,
-          "x": 3
+          "x": 5
         },
         "category_counts": {
-          "protest": 5,
           "corruption_rule_of_law": 7,
-          "government_crisis": 4,
-          "security": 1,
-          "migration": 1,
-          "ethnic_tension": 1
+          "protest": 5,
+          "government_crisis": 5,
+          "security": 3,
+          "migration": 1
         },
         "tag_counts": {
           "balkans": 10,
           "albania": 6,
-          "Szerbia": 1,
+          "Szerbia": 2,
           "Koszovó": 1,
-          "Albánia": 1
+          "Albánia": 2
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -848,16 +852,16 @@
           },
           {
             "title": "",
-            "text": "Day 71 of anti-corruption protest in Tirana, Albania Machine translation: \"Rama, resign\"! 71 days of national revolt against misgovernment 🔴LIVE | “Rama, jepe dorëheqjen”! 71 ditë revoltë kombëtare kundër keqqeverisjes https://www. youtube.com/watch?v=ZbcFnVg_zx8 # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Environment # Protest",
-            "url": "https://mas.to/@meganL/117066778609214414",
+            "text": "Day 73 of anti-corruption protest in Albania Machine translation: 73 days of resistance on the Boulevard, protesters determined until the government leaves 🔴73 ditë qëndresë në Bulevard, protestuesit të vendosur deri në largimin e qeverisë https://www. youtube.com/watch?v=2iTVi5ge58g # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Environmen",
+            "url": "https://mas.to/@meganL/117078098023580859",
             "source": "mastodon",
             "tag": "balkans",
-            "seen_date": "Sun, 09 Aug 2026 17:41:21 +0000",
+            "seen_date": "Tue, 11 Aug 2026 17:40:01 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 5
+              "Albánia": 1
             },
             "event_category": "corruption_rule_of_law",
             "event_categories": [
@@ -882,11 +886,11 @@
           },
           {
             "title": "",
-            "text": "Day 70 of anti-corruption protest in Tirana, Albania 🔴LIVE | 70 ditë revoltë, qytetarët nuk tërhiqen nga kërkesa për dorëheqjen e Ramës https://www. youtube.com/watch?v=sXyTdbOV53Y # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
-            "url": "https://mas.to/@meganL/117061407536740347",
+            "text": "Day 71 of anti-corruption protest in Tirana, Albania Machine translation: \"Rama, resign\"! 71 days of national revolt against misgovernment 🔴LIVE | “Rama, jepe dorëheqjen”! 71 ditë revoltë kombëtare kundër keqqeverisjes https://www. youtube.com/watch?v=ZbcFnVg_zx8 # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Environment # Protest",
+            "url": "https://mas.to/@meganL/117066778609214414",
             "source": "mastodon",
             "tag": "balkans",
-            "seen_date": "Sat, 08 Aug 2026 18:55:24 +0000",
+            "seen_date": "Sun, 09 Aug 2026 17:41:21 +0000",
             "matched_countries": [
               "Albánia"
             ],
