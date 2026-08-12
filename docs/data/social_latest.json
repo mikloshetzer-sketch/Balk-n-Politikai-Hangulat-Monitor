@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12 02:37 UTC",
+  "updated_at": "2026-08-12 07:14 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 21
+    "collected": 20
   },
   "countries": [
     {
@@ -21,29 +21,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
+        "mentions": 11,
         "negative_hits": 5,
         "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 247,
-        "geopolitical_total": 224,
+        "trusted_hits": 0,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
+        "quality_total": 237,
+        "geopolitical_total": 216,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 5
+          "x": 6
         },
         "category_counts": {
-          "security": 5,
-          "government_crisis": 4,
-          "protest": 1
+          "security": 7,
+          "government_crisis": 2,
+          "protest": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "serbia": 5,
+          "serbia": 4,
+          "kosovo": 1,
           "Szerbia": 3,
-          "Montenegró": 1,
-          "Albánia": 1
+          "Koszovó": 1,
+          "Montenegró": 2
         },
         "main_topic": "security",
         "top_posts": [
@@ -162,33 +164,40 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Has Serbia’s president fallen off? Vucic addresses concerns about sanctions on Russia and criticizes those undermining European unity",
-            "text": "Has Serbia’s president fallen off? Vucic addresses concerns about sanctions on Russia and criticizes those undermining European unity",
-            "url": "https://x.com/i/web/status/2087330357075116284",
+            "title": "Pristina is urging the European Union to put pressure on Belgrade to allow cross-border electricity transmission from Serbia to Kosovo, so cheaper imports can ease its energy crisi",
+            "text": "Pristina is urging the European Union to put pressure on Belgrade to allow cross-border electricity transmission from Serbia to Kosovo, so cheaper imports can ease its energy crisis.",
+            "url": "https://x.com/i/web/status/2087434304422867247",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-08-12T00:08:32.000Z",
+            "seen_date": "2026-08-12T07:01:35.000Z",
             "matched_countries": [
-              "Szerbia"
+              "Szerbia",
+              "Koszovó"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 5,
+              "Koszovó": 5
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
               },
               {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
+            "geopolitical_score": 22,
+            "quality_score": 23,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -202,40 +211,35 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "What happens when you mix America and an AK?.... serbian combloc america usa nato",
-            "text": "What happens when you mix America and an AK?.... serbian combloc america usa nato",
-            "url": "https://x.com/i/web/status/2087313113830023396",
+            "title": "in Vučić's Serbia it is ok for police to not do their job when citizens are attacked. They only protect Vučić, his party and his criminals. EU values 🤡",
+            "text": "in Vučić's Serbia it is ok for police to not do their job when citizens are attacked. They only protect Vučić, his party and his criminals. EU values 🤡",
+            "url": "https://x.com/i/web/status/2087434369862410675",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-08-11T23:00:01.000Z",
+            "seen_date": "2026-08-12T07:01:51.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2
+              "Szerbia": 5
             },
             "event_category": "security",
             "event_categories": [
               {
                 "category": "security",
-                "hits": 1,
+                "hits": 2,
                 "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
               }
             ],
             "geopolitical_score": 21,
-            "quality_score": 25,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "quality_score": 22,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 1,
-              "reposts": 1,
+              "likes": 0,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
@@ -309,28 +313,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
+        "mentions": 16,
         "negative_hits": 4,
         "positive_hits": 2,
         "trusted_hits": 4,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 224,
-        "geopolitical_total": 181,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 273,
+        "geopolitical_total": 227,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 2
+          "x": 5
         },
         "category_counts": {
+          "security": 8,
           "protest": 1,
-          "security": 7,
-          "government_crisis": 5
+          "government_crisis": 7
         },
         "tag_counts": {
           "serbia": 1,
           "kosovo": 10,
-          "Szerbia": 2
+          "Szerbia": 2,
+          "Koszovó": 2,
+          "Albánia": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -393,11 +399,58 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Pristina is urging the European Union to put pressure on Belgrade to allow cross-border electricity transmission from Serbia to Kosovo, so cheaper imports can ease its energy crisi",
+            "text": "Pristina is urging the European Union to put pressure on Belgrade to allow cross-border electricity transmission from Serbia to Kosovo, so cheaper imports can ease its energy crisis.",
+            "url": "https://x.com/i/web/status/2087434304422867247",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-12T07:01:35.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 5,
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 23,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Kosovo Protests as Serbia Mulls Changing River’s Course https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/10/kosovo-protests-as-serbia-mulls-changing-rivers-course/bi/",
             "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/10/kosovo-protests-as-serbia-mulls-changing-rivers-course/bi/",
             "source": "mastodon",
-            "tag": "serbia",
+            "tag": "kosovo",
             "seen_date": "Mon, 10 Aug 2026 14:42:10 +0000",
             "matched_countries": [
               "Szerbia",
@@ -424,62 +477,39 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Agenzia Nova: Kosovo: Kurti, ci impegneremo per accordo politico, cittadini vogliono soluzioni e non elezioni 10 ago 14:49 - (Agenzia Nova) - Il primo ministro ad interim del Kosovo, Albin Kurti, ha dichiarato che i colloqui per raggiungere un accordo... (Alt) Kosovo: Kurti, we will strive for a political agreement, citizens want solutions and not elections.",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117071414354490729",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Mon, 10 Aug 2026 13:20:16 +0000",
+            "title": "Kosovo Police Seize Nearly 3 Kilograms of Suspected Marijuana, Two Vehicles and Mobile Phones Kosovo Prishtina Mitrovica KosovoPolice DrugInvestigation Marijuana DrugSeizure Crime ",
+            "text": "Kosovo Police Seize Nearly 3 Kilograms of Suspected Marijuana, Two Vehicles and Mobile Phones Kosovo Prishtina Mitrovica KosovoPolice DrugInvestigation Marijuana DrugSeizure Crime Security Narcotics",
+            "url": "https://x.com/i/web/status/2087398278304342195",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-12T04:38:26.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 14,
-            "quality_score": 19,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "NATO Peacekeepers’ ‘Transition’ at Flashpoint Bridge Alarms Kosovo Serb Party https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/10/nato-peacekeepers-transition-at-flashpoint-bridge-alarms-kosovo-serb-party/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/10/nato-peacekeepers-transition-at-flashpoint-bridge-alarms-kosovo-serb-party/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Mon, 10 Aug 2026 15:06:31 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
+              "Koszovó": 9
             },
             "event_category": "security",
             "event_categories": [
               {
                 "category": "security",
-                "hits": 1,
+                "hits": 2,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 18,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -487,21 +517,21 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 28,
+        "score": 29,
         "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 4,
         "negative_hits": 1,
         "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 80,
-        "geopolitical_total": 72,
+        "trusted_hits": 1,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 97,
+        "geopolitical_total": 85,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
-          "x": 2
+          "mastodon": 3,
+          "x": 1
         },
         "category_counts": {
           "security": 2,
@@ -509,8 +539,9 @@
           "government_crisis": 1
         },
         "tag_counts": {
+          "serbia": 1,
           "montenegro": 2,
-          "Montenegró": 2
+          "Montenegró": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -559,6 +590,41 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Montenegro-Serbia: Spajic, buoni rapporti di vicinato si', doppi standard no 12 ago 08:44 - (Agenzia Nova) - Il primo ministro Milojko Spajic ha dichiarato che il Montenegro vuole mantenere buoni rapporti con la Serbia,... (Seb) Montenegro-Serbia: Spajić, good neighborly relations yes, but no double standards. August 12, 08:44 – (Agenzia Nova) ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117081244583492591",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 12 Aug 2026 07:00:14 +0000",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 4,
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 27,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -617,41 +683,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Montenegrin police said on Tuesday they were checking on more than 50 foreign nationals, most of them Ukrainian citizens, who they found when raiding a large house in the Mareza ar",
-            "text": "Montenegrin police said on Tuesday they were checking on more than 50 foreign nationals, most of them Ukrainian citizens, who they found when raiding a large house in the Mareza area of Podgorica.",
-            "url": "https://x.com/i/web/status/2087192549186257185",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-08-11T15:00:56.000Z",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 7
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -687,34 +718,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 21,
-        "negative_hits": 19,
+        "mentions": 22,
+        "negative_hits": 18,
         "positive_hits": 0,
         "trusted_hits": 3,
-        "engagement_total": 22,
-        "raw_engagement_total": 22,
-        "quality_total": 575,
-        "geopolitical_total": 515,
+        "engagement_total": 9,
+        "raw_engagement_total": 9,
+        "quality_total": 566,
+        "geopolitical_total": 505,
         "source_counts": {
           "reddit": 0,
           "mastodon": 16,
-          "x": 5
+          "x": 6
         },
         "category_counts": {
-          "corruption_rule_of_law": 6,
+          "corruption_rule_of_law": 7,
           "protest": 5,
-          "government_crisis": 5,
-          "security": 3,
+          "government_crisis": 4,
+          "security": 4,
           "migration": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 10,
           "albania": 6,
-          "Szerbia": 1,
           "Koszovó": 1,
           "Észak-Macedónia": 1,
-          "Albánia": 2
+          "Albánia": 4
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -723,7 +753,7 @@
             "text": "F*CK YOU, ZELENSKY 🇽🇰 WATCH - F*CK YOU, ZELENSKY!': Furious Protests Erupt in Tirana After Ukraine Rejects Kosovo Recognition Aug 11,2026 Protesters marched through Albania’s capital Tirana on Sunday, chanting against Ukrainian President Volodymyr Zelensky after Kyiv",
             "url": "https://x.com/i/web/status/2087346987809329436",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Albánia",
             "seen_date": "2026-08-12T01:14:37.000Z",
             "matched_countries": [
               "Albánia"
@@ -754,12 +784,12 @@
             "quality_score": 47,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
+            "engagement": 8,
+            "raw_engagement": 8,
             "metrics": {
-              "likes": 1,
+              "likes": 3,
               "reposts": 0,
-              "replies": 2,
+              "replies": 5,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -882,24 +912,24 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Day 73 of anti-corruption protest in Albania Machine translation: 73 days of resistance on the Boulevard, protesters determined until the government leaves 🔴73 ditë qëndresë në Bulevard, protestuesit të vendosur deri në largimin e qeverisë https://www. youtube.com/watch?v=2iTVi5ge58g # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Environmen",
-            "url": "https://mas.to/@meganL/117078098023580859",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Tue, 11 Aug 2026 17:40:01 +0000",
+            "title": "Today marks the 74th citizens’ protest, with participants once again taking to the streets to demand the resignation of Prime Minister Edi Rama and a change in the political class.",
+            "text": "Today marks the 74th citizens’ protest, with participants once again taking to the streets to demand the resignation of Prime Minister Edi Rama and a change in the political class.",
+            "url": "https://x.com/i/web/status/2087434636473360744",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-08-12T07:02:54.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 1
+              "Albánia": 4
             },
-            "event_category": "corruption_rule_of_law",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "corruption_rule_of_law",
+                "category": "government_crisis",
                 "hits": 2,
-                "weight": 8
+                "weight": 9
               },
               {
                 "category": "protest",
@@ -907,13 +937,19 @@
                 "weight": 8
               }
             ],
-            "geopolitical_score": 27,
+            "geopolitical_score": 29,
             "quality_score": 30,
-            "source_reliability": 3,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
