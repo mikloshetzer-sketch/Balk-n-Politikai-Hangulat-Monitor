@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12 07:47 UTC",
+  "updated_at": "2026-08-12 12:49 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 15
+    "collected": 24
   },
   "countries": [
     {
@@ -21,80 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 5,
-        "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 237,
-        "geopolitical_total": 216,
+        "mentions": 16,
+        "negative_hits": 6,
+        "positive_hits": 2,
+        "trusted_hits": 2,
+        "engagement_total": 42,
+        "raw_engagement_total": 42,
+        "quality_total": 328,
+        "geopolitical_total": 295,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 5,
-          "x": 6
+          "mastodon": 6,
+          "x": 10
         },
         "category_counts": {
-          "security": 7,
-          "government_crisis": 2,
-          "protest": 1,
-          "ethnic_tension": 1
+          "protest": 3,
+          "security": 9,
+          "government_crisis": 4
         },
         "tag_counts": {
           "serbia": 4,
-          "kosovo": 1,
-          "Szerbia": 3,
-          "Montenegró": 2,
-          "Albánia": 1
+          "kosovo": 2,
+          "Szerbia": 6,
+          "Koszovó": 2,
+          "Montenegró": 2
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "🔴VIDEO Serbia’s President attacks and mocks Montenegro for joining EU sanctions on Russia over aggression against Ukraine ( frame from Aleksandar Vucic's youtube video channel)",
-            "text": "🔴VIDEO Serbia’s President attacks and mocks Montenegro for joining EU sanctions on Russia over aggression against Ukraine ( frame from Aleksandar Vucic's youtube video channel)",
-            "url": "https://x.com/i/web/status/2087282815649882596",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-08-11T20:59:37.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5,
-              "Montenegró": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 37,
-            "quality_score": 38,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 0,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Agenzia Nova: Serbia: studenti annunciano protesta venerdi' a Valjevo a un anno da violenze polizia 11 ago 17:58 - (Agenzia Nova) - Gli studenti serbi hanno annunciato una grande manifestazione a Valjevo venerdi' prossimo in occasione del... (Seb) Serbia: students announce protest on Friday in Valjevo, one year after police violence August 11, 5:58 PM – (Age",
@@ -164,40 +117,34 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Pristina is urging the European Union to put pressure on Belgrade to allow cross-border electricity transmission from Serbia to Kosovo, so cheaper imports can ease its energy crisi",
-            "text": "Pristina is urging the European Union to put pressure on Belgrade to allow cross-border electricity transmission from Serbia to Kosovo, so cheaper imports can ease its energy crisis.",
-            "url": "https://x.com/i/web/status/2087434304422867247",
+            "title": "Is Vučić’s Political Era Coming to an End? From the Ibar River to Early Elections, Why Serbia’s President Is Escalating His Rhetoric AleksandarVucic Serbia Kosovo Ibar SerbianPolit",
+            "text": "Is Vučić’s Political Era Coming to an End? From the Ibar River to Early Elections, Why Serbia’s President Is Escalating His Rhetoric AleksandarVucic Serbia Kosovo Ibar SerbianPolitics EarlyElections StudentProtests SNS Balkans EU UnitedStates WesternBalkans",
+            "url": "https://x.com/i/web/status/2087507919008874754",
             "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-08-12T07:01:35.000Z",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-12T11:54:06.000Z",
             "matched_countries": [
-              "Szerbia",
-              "Koszovó"
+              "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5,
-              "Koszovó": 5
+              "Szerbia": 10,
+              "Koszovó": 1
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               },
               {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 22,
-            "quality_score": 23,
+            "geopolitical_score": 28,
+            "quality_score": 29,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -211,28 +158,33 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "in Vučić's Serbia it is ok for police to not do their job when citizens are attacked. They only protect Vučić, his party and his criminals. EU values 🤡",
-            "text": "in Vučić's Serbia it is ok for police to not do their job when citizens are attacked. They only protect Vučić, his party and his criminals. EU values 🤡",
-            "url": "https://x.com/i/web/status/2087434369862410675",
+            "title": "Vučić’s System Under Pressure: Broken Promises and Allegations of Vote Buying Raise New Questions Serbia AleksandarVucic Vucic SNS SerbianPolitics NovaVaros Corruption ElectionInte",
+            "text": "Vučić’s System Under Pressure: Broken Promises and Allegations of Vote Buying Raise New Questions Serbia AleksandarVucic Vucic SNS SerbianPolitics NovaVaros Corruption ElectionIntegrity PoliticalCrisis StudentProtests Balkans",
+            "url": "https://x.com/i/web/status/2087516848745021710",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-08-12T07:01:51.000Z",
+            "seen_date": "2026-08-12T12:29:35.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 10
             },
-            "event_category": "security",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "security",
+                "category": "protest",
                 "hits": 2,
-                "weight": 9
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
+            "geopolitical_score": 27,
+            "quality_score": 28,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -241,6 +193,53 @@
               "likes": 0,
               "reposts": 0,
               "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Serbian President accuses Montenegro of betraying Belgrade for sanctioning Russia. Montenegrin PM doesn’t mince words in his reply to Vucic, accusing him of double standards, both ",
+            "text": "Serbian President accuses Montenegro of betraying Belgrade for sanctioning Russia. Montenegrin PM doesn’t mince words in his reply to Vucic, accusing him of double standards, both selling weapons to Ukraine and telling Moscow and Brussels whatever they want to hear.",
+            "url": "https://x.com/i/web/status/2087449353258401901",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-08-12T08:01:23.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Szerbia": 13,
+              "Montenegró": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 27,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 12,
+            "raw_engagement": 12,
+            "metrics": {
+              "likes": 9,
+              "reposts": 1,
+              "replies": 2,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -313,61 +312,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
+        "mentions": 12,
         "negative_hits": 4,
-        "positive_hits": 2,
+        "positive_hits": 1,
         "trusted_hits": 4,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 234,
-        "geopolitical_total": 191,
+        "quality_total": 203,
+        "geopolitical_total": 161,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
-          "security": 6,
-          "protest": 1,
-          "government_crisis": 6
+          "protest": 2,
+          "security": 5,
+          "government_crisis": 5
         },
         "tag_counts": {
-          "serbia": 1,
-          "kosovo": 10,
-          "Szerbia": 1,
+          "serbia": 2,
+          "kosovo": 9,
           "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "",
-            "text": "Kosovan lawmaker hurls eggs at the prime minister – video An opposition lawmaker threw eggs at Kosovo's acting prime minister, Albin Kurti, after he told parliament he needed more time to hold talks with other parties before proposing a candidate for speaker following the country's snap election in June. https://www. theguardian.com/world/video/20 26/aug/08/",
-            "url": "https://rssfeed.media/@guardianfeeds/117063038005588887",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Sun, 09 Aug 2026 01:50:03 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 6
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 3,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 32,
-            "quality_score": 37,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Die #NATO fährt ihre KFOR-Präsenz im #Kosovo erstmals seit 1999 zurück. An zwei Schlüsselpositionen in Mitrovica und am Kloster Visoki Decani sollen Aufgaben schrittweise an lokale Kräfte übergehen. #KFOR umfasst derzeit insgesamt rund 4.600 Soldaten. www.n-tv.de/politik/Nato... Nato will Präsenz im Kosovo re...",
@@ -398,51 +367,33 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Pristina is urging the European Union to put pressure on Belgrade to allow cross-border electricity transmission from Serbia to Kosovo, so cheaper imports can ease its energy crisi",
-            "text": "Pristina is urging the European Union to put pressure on Belgrade to allow cross-border electricity transmission from Serbia to Kosovo, so cheaper imports can ease its energy crisis.",
-            "url": "https://x.com/i/web/status/2087434304422867247",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-08-12T07:01:35.000Z",
+            "title": "",
+            "text": "Agenzia Nova: Kosovo: tensioni in Parlamento tra opposizione e Vetevendosje 12 ago 12:48 - (Agenzia Nova) - Tensioni e scontri si sono verificati oggi nell'Assemblea del Kosovo tra deputati dell'opposizione e rappresentanti... (Alt) Kosovo: tensions in Parliament between opposition and Vetëvendosje August 12 12:48 – (Agenzia Nova) – Tensions and clashes occu",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117082188465417812",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 12 Aug 2026 11:00:16 +0000",
             "matched_countries": [
-              "Szerbia",
               "Koszovó"
             ],
             "country_confidence": {
-              "Szerbia": 5,
-              "Koszovó": 5
+              "Koszovó": 1
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 1,
+                "category": "government_crisis",
+                "hits": 2,
                 "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 22,
-            "quality_score": 23,
-            "source_reliability": 2,
+            "geopolitical_score": 21,
+            "quality_score": 24,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -471,6 +422,37 @@
             "quality_score": 22,
             "source_reliability": 3,
             "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Zelensky dice una frase sul # Kosovo e scoppia la protesta: la bandiera ucraina rimossa | Euronews https:// it.euronews.com/my-europe/2026 /08/11/zelensky-dice-una-frase-sul-kosovo-e-scoppia-la-protesta-la-bandiera-ucraina-rimossa @ attualita # Ucraina # Serbia",
+            "url": "https://mastodon.uno/@fucinafibonacci/117081444706707223",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 12 Aug 2026 07:51:07 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 1,
+              "Koszovó": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 15,
+            "quality_score": 20,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -510,31 +492,31 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 29,
-        "level": "medium",
+        "score": 40,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 1,
+        "mentions": 5,
+        "negative_hits": 2,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 97,
-        "geopolitical_total": 85,
+        "engagement_total": 14,
+        "raw_engagement_total": 14,
+        "quality_total": 124,
+        "geopolitical_total": 111,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "security": 2,
           "foreign_influence": 1,
-          "government_crisis": 1
+          "government_crisis": 2
         },
         "tag_counts": {
           "serbia": 1,
           "montenegro": 2,
-          "Montenegró": 1
+          "Montenegró": 2
         },
         "main_topic": "security",
         "top_posts": [
@@ -574,12 +556,59 @@
             "quality_score": 47,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 1,
+              "reposts": 1,
               "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Serbian President accuses Montenegro of betraying Belgrade for sanctioning Russia. Montenegrin PM doesn’t mince words in his reply to Vucic, accusing him of double standards, both ",
+            "text": "Serbian President accuses Montenegro of betraying Belgrade for sanctioning Russia. Montenegrin PM doesn’t mince words in his reply to Vucic, accusing him of double standards, both selling weapons to Ukraine and telling Moscow and Brussels whatever they want to hear.",
+            "url": "https://x.com/i/web/status/2087449353258401901",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-08-12T08:01:23.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Szerbia": 13,
+              "Montenegró": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 27,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 12,
+            "raw_engagement": 12,
+            "metrics": {
+              "likes": 9,
+              "reposts": 1,
+              "replies": 2,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -683,26 +712,66 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 0,
+        "score": 2,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 0,
+        "mentions": 1,
         "negative_hits": 0,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 0,
-        "geopolitical_total": 0,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 10,
+        "geopolitical_total": 9,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 0
+          "x": 1
         },
-        "category_counts": {},
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "category_counts": {
+          "foreign_influence": 1
+        },
+        "tag_counts": {
+          "Észak-Macedónia": 1
+        },
+        "main_topic": "foreign_influence",
+        "top_posts": [
+          {
+            "title": "At the 2026 Dialogue for Unity and Peace in Skopje, Li S. M. Eric, Chairman of our Advisory Committee, introduced the idea of a “new club”. He likened the EU to “an aging gentlemen",
+            "text": "At the 2026 Dialogue for Unity and Peace in Skopje, Li S. M. Eric, Chairman of our Advisory Committee, introduced the idea of a “new club”. He likened the EU to “an aging gentlemen’s club”, while China and the Global South are advancing “re-globalization” for the future.",
+            "url": "https://x.com/i/web/status/2087496105508601986",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-08-12T11:07:10.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 4
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 4,
+            "raw_engagement": 4,
+            "metrics": {
+              "likes": 3,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          }
+        ]
       }
     },
     {
@@ -713,71 +782,33 @@
         "scale": "0-60 risk index",
         "mentions": 21,
         "negative_hits": 17,
-        "positive_hits": 0,
-        "trusted_hits": 3,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 519,
-        "geopolitical_total": 459,
+        "positive_hits": 1,
+        "trusted_hits": 1,
+        "engagement_total": 29,
+        "raw_engagement_total": 29,
+        "quality_total": 473,
+        "geopolitical_total": 421,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 16,
-          "x": 5
+          "mastodon": 14,
+          "x": 7
         },
         "category_counts": {
-          "corruption_rule_of_law": 7,
-          "protest": 5,
-          "government_crisis": 4,
-          "security": 4,
-          "migration": 1
+          "corruption_rule_of_law": 6,
+          "protest": 8,
+          "government_crisis": 3,
+          "security": 3,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 10,
-          "albania": 6,
+          "albania": 4,
+          "Szerbia": 1,
           "Észak-Macedónia": 1,
-          "Albánia": 4
+          "Albánia": 5
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "protest",
         "top_posts": [
-          {
-            "title": "",
-            "text": "Day 70 of the Flamingo Revolution. What started in May as a local fight over a Kushner-backed resort on protected wetland has become Albania's largest protest movement since the fall of communism, sustained daily since May 31. Rama's latest move: legislation that would block courts from suspending ministers under criminal investigation, right as corruption p",
-            "url": "https://mastodon.social/@AutokratDaily/117060481259697521",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Sat, 08 Aug 2026 14:59:51 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 40,
-            "quality_score": 45,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Day 69 of anti-corruption protest in Tirana, Albania 🔴LIVE | 69 ditë revoltë. Kërkesë e panegociueshme e protestuesve, dorëheqja e Ramës \"69 days of revolt. Protesters' non-negotiable demand: Rama's resignation\" https://www. youtube.com/watch?v=lgnH2plwLd8 # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Environment # Protest",
@@ -857,46 +888,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Today marks the 74th citizens’ protest, with participants once again taking to the streets to demand the resignation of Prime Minister Edi Rama and a change in the political class.",
-            "text": "Today marks the 74th citizens’ protest, with participants once again taking to the streets to demand the resignation of Prime Minister Edi Rama and a change in the political class.",
-            "url": "https://x.com/i/web/status/2087434636473360744",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-08-12T07:02:54.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Day 73 of anti-corruption protest in Albania Machine translation: 73 days of resistance on the Boulevard, protesters determined until the government leaves 🔴73 ditë qëndresë në Bulevard, protestuesit të vendosur deri në largimin e qeverisë https://www. youtube.com/watch?v=2iTVi5ge58g # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Environmen",
             "url": "https://mas.to/@meganL/117078098023580859",
@@ -908,6 +899,74 @@
             ],
             "country_confidence": {
               "Albánia": 1
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 71 of anti-corruption protest in Tirana, Albania Machine translation: \"Rama, resign\"! 71 days of national revolt against misgovernment 🔴LIVE | “Rama, jepe dorëheqjen”! 71 ditë revoltë kombëtare kundër keqqeverisjes https://www. youtube.com/watch?v=ZbcFnVg_zx8 # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Environment # Protest",
+            "url": "https://mas.to/@meganL/117066778609214414",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sun, 09 Aug 2026 17:41:21 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 70 of anti-corruption protest in Tirana, Albania 🔴LIVE | 70 ditë revoltë, qytetarët nuk tërhiqen nga kërkesa për dorëheqjen e Ramës https://www. youtube.com/watch?v=sXyTdbOV53Y # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
+            "url": "https://mas.to/@meganL/117061407536740347",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sat, 08 Aug 2026 18:55:24 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
             },
             "event_category": "corruption_rule_of_law",
             "event_categories": [
