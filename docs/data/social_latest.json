@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12 01:12 UTC",
+  "updated_at": "2026-08-12 02:37 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 19
+    "collected": 21
   },
   "countries": [
     {
@@ -21,27 +21,27 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
+        "mentions": 10,
         "negative_hits": 5,
         "positive_hits": 0,
         "trusted_hits": 1,
         "engagement_total": 4,
         "raw_engagement_total": 4,
-        "quality_total": 257,
-        "geopolitical_total": 233,
+        "quality_total": 247,
+        "geopolitical_total": 224,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 6
+          "x": 5
         },
         "category_counts": {
           "security": 5,
-          "government_crisis": 5,
+          "government_crisis": 4,
           "protest": 1
         },
         "tag_counts": {
           "serbia": 5,
-          "Szerbia": 4,
+          "Szerbia": 3,
           "Montenegró": 1,
           "Albánia": 1
         },
@@ -687,35 +687,83 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 20,
-        "negative_hits": 18,
+        "mentions": 21,
+        "negative_hits": 19,
         "positive_hits": 0,
         "trusted_hits": 3,
-        "engagement_total": 16,
-        "raw_engagement_total": 16,
-        "quality_total": 528,
-        "geopolitical_total": 469,
+        "engagement_total": 22,
+        "raw_engagement_total": 22,
+        "quality_total": 575,
+        "geopolitical_total": 515,
         "source_counts": {
           "reddit": 0,
           "mastodon": 16,
-          "x": 4
+          "x": 5
         },
         "category_counts": {
           "corruption_rule_of_law": 6,
           "protest": 5,
           "government_crisis": 5,
           "security": 3,
-          "migration": 1
+          "migration": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 10,
           "albania": 6,
+          "Szerbia": 1,
           "Koszovó": 1,
           "Észak-Macedónia": 1,
           "Albánia": 2
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
+          {
+            "title": "F*CK YOU, ZELENSKY 🇽🇰 WATCH - F*CK YOU, ZELENSKY!': Furious Protests Erupt in Tirana After Ukraine Rejects Kosovo Recognition Aug 11,2026 Protesters marched through Albania’s capit",
+            "text": "F*CK YOU, ZELENSKY 🇽🇰 WATCH - F*CK YOU, ZELENSKY!': Furious Protests Erupt in Tirana After Ukraine Rejects Kosovo Recognition Aug 11,2026 Protesters marched through Albania’s capital Tirana on Sunday, chanting against Ukrainian President Volodymyr Zelensky after Kyiv",
+            "url": "https://x.com/i/web/status/2087346987809329436",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-12T01:14:37.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5,
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 3,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 46,
+            "quality_score": 47,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 2,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Day 70 of the Flamingo Revolution. What started in May as a local fight over a Kushner-backed resort on protected wetland has become Albania's largest protest movement since the fall of communism, sustained daily since May 31. Rama's latest move: legislation that would block courts from suspending ministers under criminal investigation, right as corruption p",
@@ -845,40 +893,6 @@
             ],
             "country_confidence": {
               "Albánia": 1
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 71 of anti-corruption protest in Tirana, Albania Machine translation: \"Rama, resign\"! 71 days of national revolt against misgovernment 🔴LIVE | “Rama, jepe dorëheqjen”! 71 ditë revoltë kombëtare kundër keqqeverisjes https://www. youtube.com/watch?v=ZbcFnVg_zx8 # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Environment # Protest",
-            "url": "https://mas.to/@meganL/117066778609214414",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sun, 09 Aug 2026 17:41:21 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
             },
             "event_category": "corruption_rule_of_law",
             "event_categories": [
