@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13 01:14 UTC",
+  "updated_at": "2026-08-13 02:39 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 10
+    "collected": 7
   },
   "countries": [
     {
@@ -21,30 +21,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 7,
+        "mentions": 9,
+        "negative_hits": 6,
         "positive_hits": 0,
         "trusted_hits": 1,
         "engagement_total": 85,
         "raw_engagement_total": 85,
-        "quality_total": 202,
-        "geopolitical_total": 176,
+        "quality_total": 188,
+        "geopolitical_total": 163,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
           "protest": 3,
           "security": 3,
           "government_crisis": 1,
-          "ethnic_tension": 2,
-          "corruption_rule_of_law": 1
+          "corruption_rule_of_law": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "serbia": 5,
           "kosovo": 2,
-          "Szerbia": 2,
+          "Szerbia": 1,
           "Montenegró": 1
         },
         "main_topic": "protest",
@@ -153,12 +153,12 @@
             "quality_score": 27,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 82,
-            "raw_engagement": 82,
+            "engagement": 85,
+            "raw_engagement": 85,
             "metrics": {
-              "likes": 64,
-              "reposts": 5,
-              "replies": 10,
+              "likes": 65,
+              "reposts": 6,
+              "replies": 11,
               "quotes": 3
             },
             "quality": "x_api_filtered"
@@ -297,33 +297,66 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 6,
+        "mentions": 12,
+        "negative_hits": 5,
         "positive_hits": 1,
         "trusted_hits": 4,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 228,
-        "geopolitical_total": 185,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 224,
+        "geopolitical_total": 182,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "security": 6,
           "protest": 2,
-          "government_crisis": 4,
-          "ethnic_tension": 1
+          "government_crisis": 4
         },
         "tag_counts": {
           "serbia": 3,
           "kosovo": 8,
-          "Szerbia": 1,
           "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
+          {
+            "title": "Opposition lawmaker time kadrijaj threw eggs at kosovo's acting prime minister, albin kurti, During parliamentary session.",
+            "text": "Opposition lawmaker time kadrijaj threw eggs at kosovo's acting prime minister, albin kurti, During parliamentary session.",
+            "url": "https://x.com/i/web/status/2087729429414076501",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-13T02:34:18.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 28,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Die #NATO fährt ihre KFOR-Präsenz im #Kosovo erstmals seit 1999 zurück. An zwei Schlüsselpositionen in Mitrovica und am Kloster Visoki Decani sollen Aufgaben schrittweise an lokale Kräfte übergehen. #KFOR umfasst derzeit insgesamt rund 4.600 Soldaten. www.n-tv.de/politik/Nato... Nato will Präsenz im Kosovo re...",
@@ -443,46 +476,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "The Kurti regime has now commenced the unilateral demolition of property belonging to ethnic Serbs — without court orders or due process.",
-            "text": "The Kurti regime has now commenced the unilateral demolition of property belonging to ethnic Serbs — without court orders or due process.",
-            "url": "https://x.com/i/web/status/2087681513857171532",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-12T23:23:54.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -755,23 +748,23 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 15,
-        "negative_hits": 14,
+        "negative_hits": 13,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 9,
-        "raw_engagement_total": 9,
-        "quality_total": 389,
-        "geopolitical_total": 346,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 387,
+        "geopolitical_total": 344,
         "source_counts": {
           "reddit": 0,
           "mastodon": 14,
           "x": 1
         },
         "category_counts": {
-          "corruption_rule_of_law": 7,
+          "corruption_rule_of_law": 6,
           "protest": 5,
           "government_crisis": 2,
-          "security": 1
+          "security": 2
         },
         "tag_counts": {
           "balkans": 10,
