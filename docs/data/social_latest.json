@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15 12:55 UTC",
+  "updated_at": "2026-08-15 18:19 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 10
   },
   "countries": [
     {
@@ -21,30 +21,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 5,
-        "positive_hits": 0,
+        "mentions": 10,
+        "negative_hits": 6,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 148,
-        "geopolitical_total": 124,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 178,
+        "geopolitical_total": 152,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 1
+          "x": 3
         },
         "category_counts": {
-          "security": 3,
+          "security": 2,
           "protest": 2,
-          "government_crisis": 1,
-          "ethnic_tension": 2
+          "government_crisis": 2,
+          "ethnic_tension": 2,
+          "foreign_influence": 2
         },
         "tag_counts": {
           "serbia": 1,
           "kosovo": 4,
           "bosnia": 2,
-          "Szerbia": 1
+          "Szerbia": 3
         },
         "main_topic": "security",
         "top_posts": [
@@ -187,35 +188,44 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Bosnian Serb Police Questioning Of Srebrenica Staff Triggers Bipartisan Warning From US Lawmakers https:// fed.brid.gy/r/https://www.rfer l.org/a/srebrenica-memorial-bipartisan-warning-us-congress-bosnia-serbia/33830309.html",
-            "url": "https://fed.brid.gy/r/https://www.rferl.org/a/srebrenica-memorial-bipartisan-warning-us-congress-bosnia-serbia/33830309.html",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Fri, 14 Aug 2026 10:31:35 +0000",
+            "title": "Red Star Belgrade president says that Jay Enem has Premier League offers. He would be perfect backup to DCL. Young and someone who can learn from him. Could Leeds be one of those c",
+            "text": "Red Star Belgrade president says that Jay Enem has Premier League offers. He would be perfect backup to DCL. Young and someone who can learn from him. Could Leeds be one of those clubs? We're looking for this type of striker lufc 🇳🇱",
+            "url": "https://x.com/i/web/status/2088679316770947302",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-15T17:28:49.000Z",
             "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
+              "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 1,
-              "Bosznia-Hercegovina": 1
+              "Szerbia": 4
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 15,
-            "source_reliability": 3,
+            "geopolitical_score": 17,
+            "quality_score": 18,
+            "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 2,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -223,32 +233,31 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 42,
-        "level": "high",
+        "score": 38,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 4,
         "negative_hits": 3,
-        "positive_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 91,
-        "geopolitical_total": 80,
+        "quality_total": 79,
+        "geopolitical_total": 69,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "security": 1,
-          "ethnic_tension": 3,
+          "ethnic_tension": 2,
           "foreign_influence": 1
         },
         "tag_counts": {
           "serbia": 1,
           "bosnia": 2,
-          "Szerbia": 1,
-          "Montenegró": 1
+          "Észak-Macedónia": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -298,7 +307,7 @@
             "text": "Nine European countries have aligned themselves with an EU decision imposing sanctions on six Iranians over serious human rights violations, the Council of the European Union said Friday. Albania, Bosnia and Herzegovina, Iceland, Liechtenstein, Moldova, Montenegro, North",
             "url": "https://x.com/i/web/status/2088346411184329045",
             "source": "x",
-            "tag": "Montenegró",
+            "tag": "Észak-Macedónia",
             "seen_date": "2026-08-14T19:25:58.000Z",
             "matched_countries": [
               "Bosznia-Hercegovina"
@@ -396,43 +405,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Sorensen Calls for Close EU-US Coordination on Normalization of Kosovo-Serbia Relations, Urges Both Sides to Act Kosovo Serbia KosovoSerbiaDialogue PeterSorensen EuropeanUnion Unit",
-            "text": "Sorensen Calls for Close EU-US Coordination on Normalization of Kosovo-Serbia Relations, Urges Both Sides to Act Kosovo Serbia KosovoSerbiaDialogue PeterSorensen EuropeanUnion UnitedStates EUUS Normalization AssociationOfSerbMajorityMunicipalities OhridAgreement",
-            "url": "https://x.com/i/web/status/2088595584819085573",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-08-15T11:56:06.000Z",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 3,
-              "Szerbia": 1,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 12,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -443,27 +415,26 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 7,
+        "mentions": 11,
+        "negative_hits": 6,
         "positive_hits": 1,
         "trusted_hits": 4,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 239,
-        "geopolitical_total": 196,
+        "quality_total": 199,
+        "geopolitical_total": 158,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 2
+          "x": 0
         },
         "category_counts": {
-          "government_crisis": 5,
-          "security": 6,
+          "government_crisis": 4,
+          "security": 5,
           "protest": 2
         },
         "tag_counts": {
-          "kosovo": 11,
-          "Koszovó": 2
+          "kosovo": 11
         },
         "main_topic": "security",
         "top_posts": [
@@ -557,46 +528,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "The Basic Court of Pristina has ordered one month of detention for Skender Llugiqi, who is suspected of calling for the execution by firing squad of former Prime Minister Ramush Ha",
-            "text": "The Basic Court of Pristina has ordered one month of detention for Skender Llugiqi, who is suspected of calling for the execution by firing squad of former Prime Minister Ramush Haradinaj.",
-            "url": "https://x.com/i/web/status/2088563021937303837",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-15T09:46:42.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Zelensky dice una frase sul # Kosovo e scoppia la protesta: la bandiera ucraina rimossa | Euronews https:// it.euronews.com/my-europe/2026 /08/11/zelensky-dice-una-frase-sul-kosovo-e-scoppia-la-protesta-la-bandiera-ucraina-rimossa @ attualita # Ucraina # Serbia",
             "url": "https://mastodon.uno/@fucinafibonacci/117081444706707223",
@@ -621,6 +552,35 @@
             ],
             "geopolitical_score": 15,
             "quality_score": 20,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Kosovo: Kurti, ci impegneremo per accordo politico, cittadini vogliono soluzioni e non elezioni 10 ago 14:49 - (Agenzia Nova) - Il primo ministro ad interim del Kosovo, Albin Kurti, ha dichiarato che i colloqui per raggiungere un accordo... (Alt) Kosovo: Kurti, we will strive for a political agreement, citizens want solutions and not elections.",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117071414354490729",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Mon, 10 Aug 2026 13:20:16 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 14,
+            "quality_score": 19,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -757,74 +717,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 18,
+        "score": 6,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
-        "negative_hits": 2,
+        "mentions": 1,
+        "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 120,
-        "raw_engagement_total": 590,
-        "quality_total": 31,
-        "geopolitical_total": 29,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 13,
+        "geopolitical_total": 12,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
-          "corruption_rule_of_law": 1,
-          "foreign_influence": 1
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 2
+          "Észak-Macedónia": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
-          {
-            "title": "🇪🇺‼️🇮🇷 The European Union announced that Albania, Bosnia and Herzegovina, Iceland, Liechtenstein, Moldova, Montenegro, North Macedonia, Norway, and Ukraine have joined the EU Counc",
-            "text": "🇪🇺‼️🇮🇷 The European Union announced that Albania, Bosnia and Herzegovina, Iceland, Liechtenstein, Moldova, Montenegro, North Macedonia, Norway, and Ukraine have joined the EU Council decision of July 24 to impose new sanctions against Iran.",
-            "url": "https://x.com/i/web/status/2088327513474740226",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-14T18:10:53.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Bosznia-Hercegovina": 2,
-              "Montenegró": 1,
-              "Albánia": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 18,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 120,
-            "raw_engagement": 590,
-            "metrics": {
-              "likes": 524,
-              "reposts": 64,
-              "replies": 2,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "The Democratic Union for Integration has reacted to what it describes as a new scandal in the Government of North Macedonia. According to the party, the minutes of government meeti",
             "text": "The Democratic Union for Integration has reacted to what it describes as a new scandal in the Government of North Macedonia. According to the party, the minutes of government meetings have not been published in Albanian for nearly a year.",
@@ -870,27 +786,27 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
-        "negative_hits": 7,
-        "positive_hits": 0,
+        "mentions": 11,
+        "negative_hits": 9,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 329,
-        "geopolitical_total": 295,
+        "engagement_total": 27,
+        "raw_engagement_total": 27,
+        "quality_total": 304,
+        "geopolitical_total": 273,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 10,
+          "mastodon": 9,
           "x": 2
         },
         "category_counts": {
           "protest": 3,
-          "corruption_rule_of_law": 4,
-          "government_crisis": 4,
+          "corruption_rule_of_law": 5,
+          "government_crisis": 2,
           "security": 1
         },
         "tag_counts": {
-          "balkans": 7,
+          "balkans": 6,
           "albania": 3,
           "Albánia": 2
         },
