@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15 01:46 UTC",
+  "updated_at": "2026-08-15 06:25 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 21
+    "collected": 15
   },
   "countries": [
     {
@@ -21,30 +21,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
+        "mentions": 12,
         "negative_hits": 5,
         "positive_hits": 1,
-        "trusted_hits": 5,
-        "engagement_total": 142,
-        "raw_engagement_total": 196,
-        "quality_total": 250,
-        "geopolitical_total": 210,
+        "trusted_hits": 4,
+        "engagement_total": 122,
+        "raw_engagement_total": 211,
+        "quality_total": 236,
+        "geopolitical_total": 198,
         "source_counts": {
           "reddit": 1,
-          "mastodon": 7,
-          "x": 5
+          "mastodon": 8,
+          "x": 3
         },
         "category_counts": {
-          "security": 6,
-          "government_crisis": 4,
+          "security": 5,
+          "government_crisis": 3,
           "protest": 2,
-          "ethnic_tension": 1
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "serbia": 3,
           "kosovo": 4,
-          "bosnia": 1,
-          "Szerbia": 2,
+          "bosnia": 2,
           "Koszovó": 2,
           "Montenegró": 1
         },
@@ -87,12 +86,12 @@
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 120,
-            "raw_engagement": 174,
+            "raw_engagement": 209,
             "metrics": {
-              "likes": 135,
-              "reposts": 35,
+              "likes": 162,
+              "reposts": 40,
               "replies": 0,
-              "quotes": 4
+              "quotes": 7
             },
             "quality": "x_api_filtered"
           },
@@ -240,30 +239,30 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 39,
-        "level": "medium",
+        "score": 46,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 5,
         "negative_hits": 3,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 16,
-        "raw_engagement_total": 16,
-        "quality_total": 100,
-        "geopolitical_total": 89,
+        "engagement_total": 27,
+        "raw_engagement_total": 27,
+        "quality_total": 113,
+        "geopolitical_total": 99,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
+          "mastodon": 3,
           "x": 2
         },
         "category_counts": {
           "security": 2,
-          "ethnic_tension": 1,
+          "ethnic_tension": 2,
           "foreign_influence": 1
         },
         "tag_counts": {
           "serbia": 1,
-          "bosnia": 1,
+          "bosnia": 2,
           "Koszovó": 1,
           "Montenegró": 1
         },
@@ -304,12 +303,12 @@
             "quality_score": 34,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 16,
-            "raw_engagement": 16,
+            "engagement": 27,
+            "raw_engagement": 27,
             "metrics": {
-              "likes": 10,
-              "reposts": 2,
-              "replies": 4,
+              "likes": 18,
+              "reposts": 4,
+              "replies": 5,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -422,6 +421,37 @@
             ],
             "geopolitical_score": 12,
             "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Business news: Bosnia, Standard and Poor's migliora l'outlook della Repubblica Srpska da negativo a stabile 15 ago 06:00 - (Agenzia Nova) - Il direttore dell'Agenzia bancaria della Repubblica Srpska, entita' a marggioranza serba della Bosnia Erzegovina,... (Seb) Business news: Bosnia, Standard & Poor’s upgrades the outlook for Republika Srpska ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117097641634017798",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Sat, 15 Aug 2026 04:30:13 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 6,
+              "Szerbia": 2
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 13,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -740,73 +770,32 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 24,
-        "level": "medium",
+        "score": 18,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 2,
         "negative_hits": 2,
-        "positive_hits": 2,
-        "trusted_hits": 1,
+        "positive_hits": 1,
+        "trusted_hits": 0,
         "engagement_total": 120,
-        "raw_engagement_total": 478,
-        "quality_total": 55,
-        "geopolitical_total": 49,
+        "raw_engagement_total": 511,
+        "quality_total": 31,
+        "geopolitical_total": 29,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
           "foreign_influence": 1,
-          "corruption_rule_of_law": 1,
-          "security": 1
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "Montenegró": 1,
-          "Észak-Macedónia": 2
+          "Észak-Macedónia": 1
         },
         "main_topic": "foreign_influence",
         "top_posts": [
-          {
-            "title": "North Macedonia changed its name in 2019 just to join NATO and the EU. Has any other country ever rebranded this hard for a membership card?",
-            "text": "North Macedonia changed its name in 2019 just to join NATO and the EU. Has any other country ever rebranded this hard for a membership card?",
-            "url": "https://x.com/i/web/status/2088293632881373319",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-14T15:56:15.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 24,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "🇪🇺‼️🇮🇷 The European Union announced that Albania, Bosnia and Herzegovina, Iceland, Liechtenstein, Moldova, Montenegro, North Macedonia, Norway, and Ukraine have joined the EU Counc",
             "text": "🇪🇺‼️🇮🇷 The European Union announced that Albania, Bosnia and Herzegovina, Iceland, Liechtenstein, Moldova, Montenegro, North Macedonia, Norway, and Ukraine have joined the EU Council decision of July 24 to impose new sanctions against Iran.",
@@ -841,10 +830,10 @@
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 120,
-            "raw_engagement": 478,
+            "raw_engagement": 511,
             "metrics": {
-              "likes": 422,
-              "reposts": 54,
+              "likes": 452,
+              "reposts": 57,
               "replies": 2,
               "quotes": 0
             },
@@ -895,32 +884,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
-        "negative_hits": 11,
+        "mentions": 15,
+        "negative_hits": 10,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 12,
-        "raw_engagement_total": 12,
-        "quality_total": 451,
-        "geopolitical_total": 408,
+        "engagement_total": 23,
+        "raw_engagement_total": 23,
+        "quality_total": 413,
+        "geopolitical_total": 374,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 12,
-          "x": 5
+          "mastodon": 11,
+          "x": 4
         },
         "category_counts": {
-          "protest": 4,
+          "protest": 3,
           "corruption_rule_of_law": 5,
-          "government_crisis": 2,
-          "security": 3,
-          "ethnic_tension": 3
+          "government_crisis": 3,
+          "security": 2,
+          "ethnic_tension": 2
         },
         "tag_counts": {
-          "balkans": 9,
+          "balkans": 8,
           "albania": 3,
           "Koszovó": 1,
           "Montenegró": 1,
-          "Albánia": 3
+          "Albánia": 2
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
