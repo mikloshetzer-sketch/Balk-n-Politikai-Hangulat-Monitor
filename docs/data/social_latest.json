@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17 13:01 UTC",
+  "updated_at": "2026-08-17 18:28 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 18
   },
   "countries": [
     {
@@ -21,34 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 5,
+        "mentions": 9,
+        "negative_hits": 3,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 11,
-        "raw_engagement_total": 11,
-        "quality_total": 214,
-        "geopolitical_total": 187,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 152,
+        "geopolitical_total": 127,
         "source_counts": {
-          "reddit": 1,
+          "reddit": 0,
           "mastodon": 7,
-          "x": 5
+          "x": 2
         },
         "category_counts": {
           "foreign_influence": 1,
-          "government_crisis": 4,
+          "government_crisis": 3,
           "protest": 1,
-          "security": 5,
+          "security": 2,
           "ethnic_tension": 2
         },
         "tag_counts": {
-          "serbia": 3,
+          "serbia": 2,
           "kosovo": 3,
           "bosnia": 2,
-          "Szerbia": 4,
-          "Koszovó": 1
+          "Szerbia": 2
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -90,42 +89,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Serbian hooligan involved in attacks on KFOR has been arrested by the Kosovo Police. 94 KFOR soldiers were injured in attacks by criminal groups linked to Serbia. Those responsible",
-            "text": "Serbian hooligan involved in attacks on KFOR has been arrested by the Kosovo Police. 94 KFOR soldiers were injured in attacks by criminal groups linked to Serbia. Those responsible must be held accountable. There can be no impunity for violence against international peacekeepers.",
-            "url": "https://x.com/i/web/status/2089289063769469278",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-17T09:51:44.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 3,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 30,
-            "quality_score": 31,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
-            "metrics": {
-              "likes": 3,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -194,12 +157,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🧵On Serbian \"media freedom\" & \"democracy\": Many lament that pre-Vučić rule of was free & democratic. It was neither, albeit media control was slightly less obvious. Then-president ",
-            "text": "🧵On Serbian \"media freedom\" & \"democracy\": Many lament that pre-Vučić rule of was free & democratic. It was neither, albeit media control was slightly less obvious. Then-president made sure there were NO \"free\" or \"independent\" media. His personal /2",
-            "url": "https://x.com/i/web/status/2089328608015700284",
+            "title": "Serbian Opposition Party Novi DSS Confirms Contacts With Germany’s AfD Serbia NoviDSS MilosJovanovic AfD AlternativeForGermany Germany Russia EuropeanUnion EU AleksandarVucic Serbi",
+            "text": "Serbian Opposition Party Novi DSS Confirms Contacts With Germany’s AfD Serbia NoviDSS MilosJovanovic AfD AlternativeForGermany Germany Russia EuropeanUnion EU AleksandarVucic SerbianPolitics WesternBalkans Politics",
+            "url": "https://x.com/i/web/status/2089402519650758833",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-08-17T12:28:52.000Z",
+            "seen_date": "2026-08-17T17:22:34.000Z",
             "matched_countries": [
               "Szerbia"
             ],
@@ -214,7 +177,7 @@
                 "weight": 9
               },
               {
-                "category": "corruption_rule_of_law",
+                "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
               }
@@ -223,12 +186,47 @@
             "quality_score": 18,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 5,
-            "raw_engagement": 5,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 3,
-              "reposts": 1,
-              "replies": 1,
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🚨🇭🇷🇷🇸 Four arrested for torching Croatia Police in Zadar County arrested four people for deliberately setting fires at 10 locations on 14–15 August. Four Serbian nationals, they pl",
+            "text": "🚨🇭🇷🇷🇸 Four arrested for torching Croatia Police in Zadar County arrested four people for deliberately setting fires at 10 locations on 14–15 August. Four Serbian nationals, they planned it, used lighters, destroyed a car and olive groves. Weapons found. USKOK is probing",
+            "url": "https://x.com/i/web/status/2089402036043342277",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-17T17:20:39.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 13,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -239,29 +237,32 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 33,
-        "level": "medium",
+        "score": 54,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 2,
-        "positive_hits": 1,
-        "trusted_hits": 0,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 95,
-        "geopolitical_total": 85,
+        "mentions": 7,
+        "negative_hits": 3,
+        "positive_hits": 2,
+        "trusted_hits": 1,
+        "engagement_total": 16,
+        "raw_engagement_total": 16,
+        "quality_total": 141,
+        "geopolitical_total": 122,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 3,
-          "x": 1
+          "mastodon": 5,
+          "x": 2
         },
         "category_counts": {
-          "security": 2,
-          "ethnic_tension": 2
+          "security": 3,
+          "protest": 1,
+          "ethnic_tension": 2,
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
-          "bosnia": 3,
-          "Montenegró": 1
+          "bosnia": 5,
+          "Montenegró": 1,
+          "Észak-Macedónia": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -341,13 +342,13 @@
             "quality_score": 28,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
+            "engagement": 16,
+            "raw_engagement": 16,
             "metrics": {
-              "likes": 1,
-              "reposts": 2,
-              "replies": 0,
-              "quotes": 0
+              "likes": 7,
+              "reposts": 5,
+              "replies": 3,
+              "quotes": 1
             },
             "quality": "x_api_filtered"
           },
@@ -382,29 +383,61 @@
           },
           {
             "title": "",
-            "text": "Agenzia Nova: Business news: Bosnia, Standard and Poor's migliora l'outlook della Repubblica Srpska da negativo a stabile 15 ago 06:00 - (Agenzia Nova) - Il direttore dell'Agenzia bancaria della Repubblica Srpska, entita' a marggioranza serba della Bosnia Erzegovina,... (Seb) Business news: Bosnia, Standard & Poor’s upgrades the outlook for Republika Srpska ",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117097641634017798",
+            "text": "Repubblica.it: Gattuso, il Mantova dopo la Bosnia: la retorica della sconfitta e una storia che si ripete La figuraccia della Lazio in Coppa Italia si aggiunge agli altri flop della sua carriera da allenatore Gattuso, Mantova after Bosnia: the rhetoric of defeat and a story that repeats itself. The Lazio debacle in the Coppa Italia adds to other failures of ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117112117330393247",
             "source": "mastodon",
             "tag": "bosnia",
-            "seen_date": "Sat, 15 Aug 2026 04:30:13 +0000",
+            "seen_date": "Mon, 17 Aug 2026 17:51:35 +0000",
             "matched_countries": [
-              "Bosznia-Hercegovina",
-              "Szerbia"
+              "Bosznia-Hercegovina"
             ],
             "country_confidence": {
-              "Bosznia-Hercegovina": 6,
-              "Szerbia": 2
+              "Bosznia-Hercegovina": 1
             },
-            "event_category": "ethnic_tension",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "ethnic_tension",
+                "category": "security",
                 "hits": 1,
-                "weight": 10
+                "weight": 9
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 13,
+            "geopolitical_score": 13,
+            "quality_score": 18,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Bosnia: a Energoinvest contratto da 4,3 milioni di euro per fornituradi trasformatori a Elektroprivreda 17 ago 16:47 - (Agenzia Nova) - La societa' energetica bosniaca Energoinvest si e' aggiudicata un contratto del valore di 8,42 milioni di marchi... (Seb) Bosnia: Energoinvest signs €4.3 million contract for transformer supply to Elektroprivre",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117111443868101787",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Mon, 17 Aug 2026 15:00:18 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -420,31 +453,70 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
+        "mentions": 9,
         "negative_hits": 6,
         "positive_hits": 0,
         "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 191,
-        "geopolitical_total": 160,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 179,
+        "geopolitical_total": 150,
         "source_counts": {
           "reddit": 0,
           "mastodon": 8,
-          "x": 3
+          "x": 1
         },
         "category_counts": {
           "government_crisis": 3,
           "security": 5,
-          "protest": 2,
-          "ethnic_tension": 1
+          "protest": 1
         },
         "tag_counts": {
           "kosovo": 8,
-          "Koszovó": 3
+          "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
+          {
+            "title": "The Special Prosecution Office has asked the Basic Court in Pristina to order pre-trial detention for Igor Marković, who was arrested in Zvečan on Sunday on suspicion of participat",
+            "text": "The Special Prosecution Office has asked the Basic Court in Pristina to order pre-trial detention for Igor Marković, who was arrested in Zvečan on Sunday on suspicion of participating in the violent attacks against KFOR personnel and Kosovo Police office…",
+            "url": "https://x.com/i/web/status/2089395456530932166",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-17T16:54:30.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 38,
+            "quality_score": 39,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Die #NATO fährt ihre KFOR-Präsenz im #Kosovo erstmals seit 1999 zurück. An zwei Schlüsselpositionen in Mitrovica und am Kloster Visoki Decani sollen Aufgaben schrittweise an lokale Kräfte übergehen. #KFOR umfasst derzeit insgesamt rund 4.600 Soldaten. www.n-tv.de/politik/Nato... Nato will Präsenz im Kosovo re...",
@@ -504,46 +576,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "A statement by Ukrainian President Volodymyr Zelenskyy that Ukraine’s position of non-recognition of Kosovo remained unchanged, together with the Municipality of Prishtina’s decisi",
-            "text": "A statement by Ukrainian President Volodymyr Zelenskyy that Ukraine’s position of non-recognition of Kosovo remained unchanged, together with the Municipality of Prishtina’s decision to remove the “Free Ukraine” banner, was distorted into claims that the Ukrainian president had",
-            "url": "https://x.com/i/web/status/2089292955672608867",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-17T10:07:12.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Zelensky dice una frase sul # Kosovo e scoppia la protesta: la bandiera ucraina rimossa | Euronews https:// it.euronews.com/my-europe/2026 /08/11/zelensky-dice-una-frase-sul-kosovo-e-scoppia-la-protesta-la-bandiera-ucraina-rimossa @ attualita # Ucraina # Serbia",
             "url": "https://mastodon.uno/@fucinafibonacci/117081444706707223",
@@ -575,44 +607,33 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Former President Vjosa Osmani welcomed the opening of the main bridge over the Ibar River in Mitrovica, as well as the transfer of responsibilities to the Kosovo Police.",
-            "text": "Former President Vjosa Osmani welcomed the opening of the main bridge over the Ibar River in Mitrovica, as well as the transfer of responsibilities to the Kosovo Police.",
-            "url": "https://x.com/i/web/status/2089294550128881944",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-17T10:13:32.000Z",
+            "title": "",
+            "text": "Kosovo’s LDK Drops Demand to Choose President in Bid to Resolve Crisis https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/14/kosovos-ldk-drops-demand-to-choose-president-in-bid-to-resolve-crisis/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/14/kosovos-ldk-drops-demand-to-choose-president-in-bid-to-resolve-crisis/bi/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Fri, 14 Aug 2026 10:36:53 +0000",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 5
+              "Koszovó": 1
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
               {
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -774,39 +795,158 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 10,
-        "level": "low",
+        "score": 39,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
-        "negative_hits": 0,
-        "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 24,
-        "geopolitical_total": 22,
+        "mentions": 6,
+        "negative_hits": 1,
+        "positive_hits": 1,
+        "trusted_hits": 1,
+        "engagement_total": 58,
+        "raw_engagement_total": 58,
+        "quality_total": 99,
+        "geopolitical_total": 90,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 2
+          "x": 6
         },
         "category_counts": {
-          "security": 1,
-          "government_crisis": 1
+          "security": 5,
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
-          "Koszovó": 1,
-          "Észak-Macedónia": 1
+          "Koszovó": 2,
+          "Montenegró": 1,
+          "Észak-Macedónia": 3
         },
         "main_topic": "security",
         "top_posts": [
           {
-            "title": "Greekpolice bust gang smuggling Albanian marijuana to Türkiye Greek police, working with authorities in North Macedonia and Kosovo, have dismantled a drug-smuggling network accused",
-            "text": "Greekpolice bust gang smuggling Albanian marijuana to Türkiye Greek police, working with authorities in North Macedonia and Kosovo, have dismantled a drug-smuggling network accused of transporting Albanian marijuana to Türkiye hidden inside truckloads of recyclablewaste.",
-            "url": "https://x.com/i/web/status/2089283244663480771",
+            "title": "THE USA 🇺🇸 only contributes 2€ per capita to NATO‼️ The only 2 countries to contribute as little is Albania 🇦🇱 and North Macedonia 🇲🇰 How long will we put up with the AMERICAN FREE",
+            "text": "THE USA 🇺🇸 only contributes 2€ per capita to NATO‼️ The only 2 countries to contribute as little is Albania 🇦🇱 and North Macedonia 🇲🇰 How long will we put up with the AMERICAN FREELOADERS⁉️🇺🇸 NATO 2026 CONTRIBUTIONS (PER CAPITA): 1. Norway 🇳🇴 15€ 2. Luxembourg 🇱🇺 13€ 3.",
+            "url": "https://x.com/i/web/status/2089405617223913850",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-08-17T17:34:53.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Albánia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 25,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 44,
+            "raw_engagement": 44,
+            "metrics": {
+              "likes": 31,
+              "reposts": 11,
+              "replies": 2,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Little known fact: croatia 🇭🇷 armed North Macedonia 🇲🇰 in 2001 against albo muslim 🇦🇱☪️ terrorists. croatia 🇭🇷 along with 🇺🇦🇷🇸🇧🇬🇬🇷 were the main weapons suppliers in 2001 against t",
+            "text": "Little known fact: croatia 🇭🇷 armed North Macedonia 🇲🇰 in 2001 against albo muslim 🇦🇱☪️ terrorists. croatia 🇭🇷 along with 🇺🇦🇷🇸🇧🇬🇬🇷 were the main weapons suppliers in 2001 against the albo plague. Then 🇭🇷 defense minister Jozo Rados supplied 🇲🇰 mainly with M-77 Oganj multiple",
+            "url": "https://x.com/i/web/status/2089383046407725252",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-08-17T16:05:11.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 13,
+            "raw_engagement": 13,
+            "metrics": {
+              "likes": 11,
+              "reposts": 1,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Greek police bust gang smuggling Albanian marijuana to Türkiye Greek police, working with authorities in North Macedonia and Kosovo, have dismantled a drug-smuggling network accuse",
+            "text": "Greek police bust gang smuggling Albanian marijuana to Türkiye Greek police, working with authorities in North Macedonia and Kosovo, have dismantled a drug-smuggling network accused of transporting Albanian marijuana to Türkiye hidden inside truckloads of recyclable waste.",
+            "url": "https://x.com/i/web/status/2089405687918964804",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-08-17T09:28:37.000Z",
+            "seen_date": "2026-08-17T17:35:09.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Albánia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 14,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Greek police, working with authorities in North Macedonia and Kosovo, have dismantled a drug-smuggling network accused of transporting Albanian marijuana to Türkiye hidden inside t",
+            "text": "Greek police, working with authorities in North Macedonia and Kosovo, have dismantled a drug-smuggling network accused of transporting Albanian marijuana to Türkiye hidden inside truckloads of recyclable waste.",
+            "url": "https://x.com/i/web/status/2089414356475748829",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-17T18:09:36.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -843,28 +983,35 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Prime Minister Hristijan Mickoski announced that annual inflation in North Macedonia was 2.3 percent in July, while retail prices rose by 1.8 percent.",
-            "text": "Prime Minister Hristijan Mickoski announced that annual inflation in North Macedonia was 2.3 percent in July, while retail prices rose by 1.8 percent.",
-            "url": "https://x.com/i/web/status/2088977903438430603",
+            "title": "Greekpolice bust gang smuggling Albanian marijuana to Türkiye Greek police, working with authorities in North Macedonia and Kosovo, have dismantled a drug-smuggling network accused",
+            "text": "Greekpolice bust gang smuggling Albanian marijuana to Türkiye Greek police, working with authorities in North Macedonia and Kosovo, have dismantled a drug-smuggling network accused of transporting Albanian marijuana to Türkiye hidden inside truckloads of recyclablewaste.",
+            "url": "https://x.com/i/web/status/2089283244663480771",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-16T13:15:18.000Z",
+            "seen_date": "2026-08-17T09:28:37.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 9
+              "Észak-Macedónia": 5,
+              "Albánia": 2,
+              "Koszovó": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
+            "geopolitical_score": 13,
+            "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -883,36 +1030,68 @@
     {
       "name": "Albánia",
       "social_signal": {
-        "score": 57,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 8,
-        "negative_hits": 4,
-        "positive_hits": 2,
+        "negative_hits": 6,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 178,
-        "geopolitical_total": 158,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 187,
+        "geopolitical_total": 165,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 6,
-          "x": 2
+          "mastodon": 7,
+          "x": 1
         },
         "category_counts": {
+          "corruption_rule_of_law": 6,
           "protest": 1,
-          "corruption_rule_of_law": 4,
-          "foreign_influence": 1,
-          "security": 2
+          "foreign_influence": 1
         },
         "tag_counts": {
-          "balkans": 4,
+          "balkans": 5,
           "albania": 2,
-          "Szerbia": 1,
           "Albánia": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Day 79 of anti-corruption protest in Tirana, Albania. https://www. youtube.com/watch?v=kwKm4jFaFT8 # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
+            "url": "https://mas.to/@meganL/117112069577014980",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Mon, 17 Aug 2026 17:39:26 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "Day 75 of anti-corruption protest in Tirana, Albania. https://www. youtube.com/watch?v=XHWPcw7k1IM # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
@@ -1014,51 +1193,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "For Albanian businesses, cheaper cross-border payments mean more money to invest in growth. Since joining SEPA, companies are saving thousands in transfer costs, hiring new staff a",
-            "text": "For Albanian businesses, cheaper cross-border payments mean more money to invest in growth. Since joining SEPA, companies are saving thousands in transfer costs, hiring new staff and creating more jobs. See how:",
-            "url": "https://x.com/i/web/status/2089336638023545230",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-08-17T13:00:47.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 23,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
