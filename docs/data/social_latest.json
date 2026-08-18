@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18 01:46 UTC",
+  "updated_at": "2026-08-18 06:30 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 19
+    "collected": 17
   },
   "countries": [
     {
@@ -21,16 +21,16 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 5,
-        "positive_hits": 1,
+        "mentions": 10,
+        "negative_hits": 4,
+        "positive_hits": 0,
         "trusted_hits": 2,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 198,
-        "geopolitical_total": 172,
+        "engagement_total": 9,
+        "raw_engagement_total": 9,
+        "quality_total": 182,
+        "geopolitical_total": 156,
         "source_counts": {
-          "reddit": 0,
+          "reddit": 1,
           "mastodon": 6,
           "x": 3
         },
@@ -38,62 +38,17 @@
           "foreign_influence": 1,
           "government_crisis": 1,
           "protest": 1,
-          "security": 4,
+          "security": 5,
           "ethnic_tension": 2
         },
         "tag_counts": {
-          "serbia": 2,
+          "serbia": 3,
           "kosovo": 2,
           "bosnia": 2,
           "Szerbia": 3
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "On August 16, 2026, Serbian patriots held a convoy through Belgrade with Serbian and Russian flags and a portrait of Vladimir Putin. The rally ended at the Russian Embassy after Ze",
-            "text": "On August 16, 2026, Serbian patriots held a convoy through Belgrade with Serbian and Russian flags and a portrait of Vladimir Putin. The rally ended at the Russian Embassy after Zelensky’s visit, expressing support for Serb-Russian ties and opposing EU and NATO influence.",
-            "url": "https://x.com/i/web/status/2089474432569901121",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-08-17T22:08:19.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 6
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 49,
-            "quality_score": 53,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Agenzia Nova: Bosnia: ex presidente Repubblica Srpska critica nuovo sistema di voto e avverte su rischio frodi 14 ago 16:36 - (Agenzia Nova) - L'ex presidente della Repubblica Srpska, l'entita' serba della Bosnia Erzegovina, Milorad Dodik, ha criticato... (Seb) Bosnia: former president of Republika Srpska criticizes new voting system and warns about fraud ri",
@@ -161,15 +116,49 @@
             "quality_score": 31,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 5,
-            "raw_engagement": 5,
+            "engagement": 9,
+            "raw_engagement": 9,
             "metrics": {
-              "likes": 4,
+              "likes": 8,
               "reposts": 0,
               "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "Ne ložite se, nema izbora do kraja godine",
+            "text": "SNS još uvek nema spremnog predsedničkog kandidata, spremali su Vučevića, ali su ankete pokazale da mu je rejting katastrofalan. Nemaju ni jedan razlog da raspišu parlamentarne kada imaju još godinu i po dana mandata. Zašto bi raspisali i rizikovali pre Expa. Druga stvar, ako SPS dobije makar 5%, da bi napravili koaliciju, moraće velike ustupke da im daju po",
+            "url": "https://www.reddit.com/r/serbia/comments/1vrgxxq/ne_ložite_se_nema_izbora_do_kraja_godine/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-08-18T06:14:46+00:00",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 24,
+            "quality_score": 27,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -253,8 +242,8 @@
         "negative_hits": 3,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 18,
-        "raw_engagement_total": 18,
+        "engagement_total": 20,
+        "raw_engagement_total": 20,
         "quality_total": 141,
         "geopolitical_total": 122,
         "source_counts": {
@@ -350,13 +339,13 @@
             "quality_score": 28,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 18,
-            "raw_engagement": 18,
+            "engagement": 20,
+            "raw_engagement": 20,
             "metrics": {
-              "likes": 8,
+              "likes": 9,
               "reposts": 5,
               "replies": 4,
-              "quotes": 1
+              "quotes": 2
             },
             "quality": "x_api_filtered"
           },
@@ -461,59 +450,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
+        "mentions": 7,
         "negative_hits": 5,
-        "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 161,
-        "geopolitical_total": 132,
+        "positive_hits": 0,
+        "trusted_hits": 1,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 113,
+        "geopolitical_total": 90,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 8,
-          "x": 1
+          "mastodon": 7,
+          "x": 0
         },
         "category_counts": {
           "government_crisis": 3,
-          "security": 5,
+          "security": 3,
           "protest": 1
         },
         "tag_counts": {
-          "kosovo": 8,
-          "Koszovó": 1
+          "kosovo": 7
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "",
-            "text": "Die #NATO fährt ihre KFOR-Präsenz im #Kosovo erstmals seit 1999 zurück. An zwei Schlüsselpositionen in Mitrovica und am Kloster Visoki Decani sollen Aufgaben schrittweise an lokale Kräfte übergehen. #KFOR umfasst derzeit insgesamt rund 4.600 Soldaten. www.n-tv.de/politik/Nato... Nato will Präsenz im Kosovo re...",
-            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:7qmsx5rabfj3teweex7bmc64/post/3msrtsd4ma222",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Tue, 11 Aug 2026 05:06:55 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 27,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Agenzia Nova: Kosovo: tensioni in Parlamento tra opposizione e Vetevendosje 12 ago 12:48 - (Agenzia Nova) - Tensioni e scontri si sono verificati oggi nell'Assemblea del Kosovo tra deputati dell'opposizione e rappresentanti... (Alt) Kosovo: tensions in Parliament between opposition and Vetëvendosje August 12 12:48 – (Agenzia Nova) – Tensions and clashes occu",
@@ -542,51 +501,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Security expert Nuredin Ibishi has described Brussels’ confirmation that the conditions have been met for opening the main bridge over the Ibar River in Mitrovica as an extraordina",
-            "text": "Security expert Nuredin Ibishi has described Brussels’ confirmation that the conditions have been met for opening the main bridge over the Ibar River in Mitrovica as an extraordinary development.",
-            "url": "https://x.com/i/web/status/2089449592605626768",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-17T20:29:37.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -647,6 +561,64 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "‘Absurd Blockade’: Fresh Parliamentary Deadlock Pushes Kosovo Back Into Crisis Mode https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/13/absurd-blockade-fresh-parliamentary-deadlock-pushes-kosovo-back-into-crisis-mode/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/13/absurd-blockade-fresh-parliamentary-deadlock-pushes-kosovo-back-into-crisis-mode/bi/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Thu, 13 Aug 2026 05:41:41 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Kosovo Probes Alleged Police Violence Against Serb During Raid https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/12/kosovo-probes-alleged-police-violence-against-serb-during-raid/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/12/kosovo-probes-alleged-police-violence-against-serb-during-raid/bi/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 12 Aug 2026 14:18:28 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -654,29 +626,28 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 18,
+        "score": 14,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 3,
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 66,
-        "geopolitical_total": 52,
+        "quality_total": 55,
+        "geopolitical_total": 44,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
+          "mastodon": 3,
           "x": 0
         },
         "category_counts": {
           "eu_integration": 1,
-          "security": 2,
-          "foreign_influence": 1
+          "security": 2
         },
         "tag_counts": {
-          "montenegro": 4
+          "montenegro": 3
         },
         "main_topic": "security",
         "top_posts": [
@@ -772,35 +743,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Montenegro Faces Economic Test After Decision to Impose Visas for Russians, Turks https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/11/montenegro-braces-for-economic-test-after-visa-decision/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/11/montenegro-braces-for-economic-test-after-visa-decision/bi/",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Tue, 11 Aug 2026 06:08:11 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 8,
-            "quality_score": 11,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -815,8 +757,8 @@
         "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 148,
-        "raw_engagement_total": 1098,
+        "engagement_total": 153,
+        "raw_engagement_total": 1606,
         "quality_total": 85,
         "geopolitical_total": 77,
         "source_counts": {
@@ -829,9 +771,8 @@
           "corruption_rule_of_law": 1
         },
         "tag_counts": {
-          "Koszovó": 1,
           "Montenegró": 1,
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 4
         },
         "main_topic": "security",
         "top_posts": [
@@ -867,12 +808,12 @@
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 120,
-            "raw_engagement": 1070,
+            "raw_engagement": 1573,
             "metrics": {
-              "likes": 725,
-              "reposts": 301,
-              "replies": 26,
-              "quotes": 18
+              "likes": 1090,
+              "reposts": 428,
+              "replies": 30,
+              "quotes": 25
             },
             "quality": "x_api_filtered"
           },
@@ -901,12 +842,12 @@
             "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 27,
-            "raw_engagement": 27,
+            "engagement": 32,
+            "raw_engagement": 32,
             "metrics": {
-              "likes": 21,
+              "likes": 24,
               "reposts": 3,
-              "replies": 3,
+              "replies": 5,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -958,7 +899,7 @@
             "text": "Greek police, working with authorities in North Macedonia and Kosovo, have dismantled a drug-smuggling network accused of transporting Albanian marijuana to Türkiye hidden inside truckloads of recyclable waste.",
             "url": "https://x.com/i/web/status/2089414356475748829",
             "source": "x",
-            "tag": "Koszovó",
+            "tag": "Észak-Macedónia",
             "seen_date": "2026-08-17T18:09:36.000Z",
             "matched_countries": [
               "Észak-Macedónia"
@@ -1041,29 +982,28 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 9,
-        "positive_hits": 3,
-        "trusted_hits": 0,
-        "engagement_total": 17,
-        "raw_engagement_total": 17,
-        "quality_total": 271,
-        "geopolitical_total": 242,
+        "mentions": 12,
+        "negative_hits": 8,
+        "positive_hits": 2,
+        "trusted_hits": 1,
+        "engagement_total": 120,
+        "raw_engagement_total": 339,
+        "quality_total": 260,
+        "geopolitical_total": 231,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 8,
+          "mastodon": 7,
           "x": 5
         },
         "category_counts": {
-          "corruption_rule_of_law": 6,
-          "protest": 1,
-          "security": 3,
+          "corruption_rule_of_law": 5,
+          "protest": 2,
+          "security": 2,
           "foreign_influence": 1,
-          "ethnic_tension": 1,
-          "government_crisis": 1
+          "ethnic_tension": 2
         },
         "tag_counts": {
-          "balkans": 5,
+          "balkans": 4,
           "albania": 3,
           "Szerbia": 1,
           "Koszovó": 1,
@@ -1174,40 +1114,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Day 73 of anti-corruption protest in Albania Machine translation: 73 days of resistance on the Boulevard, protesters determined until the government leaves 🔴73 ditë qëndresë në Bulevard, protestuesit të vendosur deri në largimin e qeverisë https://www. youtube.com/watch?v=2iTVi5ge58g # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Environmen",
-            "url": "https://mas.to/@meganL/117078098023580859",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Tue, 11 Aug 2026 17:40:01 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 1
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
             "title": "Yes. Irish Americans, Italian-Americans, Russian-Americans, German-Americans, Greek-Americans Albanian-Americans. These are all ethnic groups in the USA. There are plenty of white ",
             "text": "Yes. Irish Americans, Italian-Americans, Russian-Americans, German-Americans, Greek-Americans Albanian-Americans. These are all ethnic groups in the USA. There are plenty of white Americans who identity by ethnicity. We have entire parades lol.",
             "url": "https://x.com/i/web/status/2089518678853276156",
@@ -1237,12 +1143,53 @@
             "quality_score": 27,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 15,
-            "raw_engagement": 15,
+            "engagement": 120,
+            "raw_engagement": 339,
             "metrics": {
-              "likes": 14,
+              "likes": 318,
+              "reposts": 15,
+              "replies": 4,
+              "quotes": 2
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇺🇸🇺🇦An Albanian from Kosovo says that Ukraine would not exist without America and NATO It seems that self-knowledge is not easy for ethnic groups with a recorded average IQ of 80.",
+            "text": "🇺🇸🇺🇦An Albanian from Kosovo says that Ukraine would not exist without America and NATO It seems that self-knowledge is not easy for ethnic groups with a recorded average IQ of 80.",
+            "url": "https://x.com/i/web/status/2089578532846411987",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-18T05:01:59.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 23,
+            "quality_score": 27,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
               "reposts": 0,
-              "replies": 1,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
