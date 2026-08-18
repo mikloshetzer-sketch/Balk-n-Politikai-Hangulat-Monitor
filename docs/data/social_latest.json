@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18 12:29 UTC",
+  "updated_at": "2026-08-18 13:04 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 15
   },
   "countries": [
     {
@@ -21,35 +21,36 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
+        "mentions": 12,
         "negative_hits": 4,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 3,
-        "engagement_total": 53,
-        "raw_engagement_total": 53,
-        "quality_total": 228,
-        "geopolitical_total": 192,
+        "engagement_total": 54,
+        "raw_engagement_total": 54,
+        "quality_total": 206,
+        "geopolitical_total": 171,
         "source_counts": {
           "reddit": 1,
           "mastodon": 8,
-          "x": 4
+          "x": 3
         },
         "category_counts": {
           "corruption_rule_of_law": 2,
           "foreign_influence": 1,
-          "government_crisis": 4,
+          "government_crisis": 2,
           "protest": 1,
           "security": 3,
-          "ethnic_tension": 2
+          "ethnic_tension": 2,
+          "eu_integration": 1
         },
         "tag_counts": {
           "serbia": 5,
           "kosovo": 2,
           "bosnia": 2,
-          "Szerbia": 3,
-          "Koszovó": 1
+          "Szerbia": 1,
+          "Koszovó": 2
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -93,46 +94,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "BIRODI Calls on Serbian Parliament to Remove Anti-Corruption Agency Director Serbia BIRODI Corruption AntiCorruption DejanDamnjanovic RuleOfLaw Transparency Belgrade Politics Accou",
-            "text": "BIRODI Calls on Serbian Parliament to Remove Anti-Corruption Agency Director Serbia BIRODI Corruption AntiCorruption DejanDamnjanovic RuleOfLaw Transparency Belgrade Politics Accountability",
-            "url": "https://x.com/i/web/status/2089671228051116405",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-08-18T11:10:19.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 6
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "Ne ložite se, nema izbora do kraja godine",
             "text": "SNS još uvek nema spremnog predsedničkog kandidata, spremali su Vučevića, ali su ankete pokazale da mu je rejting katastrofalan. Nemaju ni jedan razlog da raspišu parlamentarne kada imaju još godinu i po dana mandata. Zašto bi raspisali i rizikovali pre Expa. Druga stvar, ako SPS dobije makar 5%, da bi napravili koaliciju, moraće velike ustupke da im daju po",
             "url": "https://www.reddit.com/r/serbia/comments/1vrgxxq/ne_ložite_se_nema_izbora_do_kraja_godine/",
@@ -171,7 +132,7 @@
             "text": "Vučić not Happy about Possible Opening of Main Ibar Bridge, Says He Will Appeal to NATO Chief Rutte Serbia AleksandarVucic Kosovo Mitrovica IbarBridge NATO MarkRutte KFOR KosovoSerbs WesternBalkans Balkans",
             "url": "https://x.com/i/web/status/2089667246998135182",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Koszovó",
             "seen_date": "2026-08-18T10:54:30.000Z",
             "matched_countries": [
               "Szerbia",
@@ -233,6 +194,41 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Serbia is being dragged toward EU membership without a referendum, while Brussels dictates rule-of-law benchmarks like a colonial administrator. The Serbian public didn't vote for ",
+            "text": "Serbia is being dragged toward EU membership without a referendum, while Brussels dictates rule-of-law benchmarks like a colonial administrator. The Serbian public didn't vote for this. When does sovereignty mean something?",
+            "url": "https://x.com/i/web/status/2089699856210100496",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-18T13:04:05.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "eu_integration",
+            "event_categories": [
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 17,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -448,21 +444,21 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 11,
-        "negative_hits": 8,
+        "negative_hits": 7,
         "positive_hits": 3,
-        "trusted_hits": 2,
+        "trusted_hits": 3,
         "engagement_total": 1,
         "raw_engagement_total": 1,
-        "quality_total": 184,
-        "geopolitical_total": 154,
+        "quality_total": 206,
+        "geopolitical_total": 173,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
           "x": 4
         },
         "category_counts": {
-          "government_crisis": 5,
-          "security": 4,
+          "government_crisis": 4,
+          "security": 5,
           "protest": 2
         },
         "tag_counts": {
@@ -470,14 +466,50 @@
           "Szerbia": 1,
           "Koszovó": 3
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "EU Calls for Coordination and Consultation Ahead of Main Ibar Bridge Opening Kosovo Mitrovica IbarBridge EuropeanUnion EuropeanCommission KFOR NATO Serbia KosovoSerbiaDialogue Nort",
+            "text": "EU Calls for Coordination and Consultation Ahead of Main Ibar Bridge Opening Kosovo Mitrovica IbarBridge EuropeanUnion EuropeanCommission KFOR NATO Serbia KosovoSerbiaDialogue NorthernKosovo Balkans Security",
+            "url": "https://x.com/i/web/status/2089691561420317012",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-18T12:31:07.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 32,
+            "quality_score": 36,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "Vučić not Happy about Possible Opening of Main Ibar Bridge, Says He Will Appeal to NATO Chief Rutte Serbia AleksandarVucic Kosovo Mitrovica IbarBridge NATO MarkRutte KFOR KosovoSer",
             "text": "Vučić not Happy about Possible Opening of Main Ibar Bridge, Says He Will Appeal to NATO Chief Rutte Serbia AleksandarVucic Kosovo Mitrovica IbarBridge NATO MarkRutte KFOR KosovoSerbs WesternBalkans Balkans",
             "url": "https://x.com/i/web/status/2089667246998135182",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Koszovó",
             "seen_date": "2026-08-18T10:54:30.000Z",
             "matched_countries": [
               "Szerbia",
@@ -608,35 +640,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Kosovo’s LDK Drops Demand to Choose President in Bid to Resolve Crisis https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/14/kosovos-ldk-drops-demand-to-choose-president-in-bid-to-resolve-crisis/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/14/kosovos-ldk-drops-demand-to-choose-president-in-bid-to-resolve-crisis/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Fri, 14 Aug 2026 10:36:53 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 15,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -651,8 +654,8 @@
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
         "quality_total": 68,
         "geopolitical_total": 56,
         "source_counts": {
@@ -759,11 +762,11 @@
             "quality_score": 13,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 4,
+            "raw_engagement": 4,
             "metrics": {
-              "likes": 1,
-              "reposts": 1,
+              "likes": 2,
+              "reposts": 2,
               "replies": 0,
               "quotes": 0
             },
@@ -804,30 +807,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 41,
-        "level": "high",
+        "score": 36,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 5,
         "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 121,
-        "raw_engagement_total": 2252,
-        "quality_total": 95,
-        "geopolitical_total": 86,
+        "engagement_total": 120,
+        "raw_engagement_total": 2293,
+        "quality_total": 81,
+        "geopolitical_total": 73,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 6
+          "x": 5
         },
         "category_counts": {
-          "security": 4,
+          "security": 3,
           "ethnic_tension": 1,
           "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "Montenegró": 1,
-          "Észak-Macedónia": 5
+          "Észak-Macedónia": 4
         },
         "main_topic": "security",
         "top_posts": [
@@ -863,10 +866,10 @@
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 120,
-            "raw_engagement": 2251,
+            "raw_engagement": 2293,
             "metrics": {
-              "likes": 1586,
-              "reposts": 589,
+              "likes": 1615,
+              "reposts": 602,
               "replies": 42,
               "quotes": 34
             },
@@ -906,48 +909,6 @@
             "raw_engagement": 0,
             "metrics": {
               "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Greek police bust gang smuggling Albanian marijuana to Türkiye Greek police, working with authorities in North Macedonia and Kosovo, have dismantled a drug-smuggling network accuse",
-            "text": "Greek police bust gang smuggling Albanian marijuana to Türkiye Greek police, working with authorities in North Macedonia and Kosovo, have dismantled a drug-smuggling network accused of transporting Albanian marijuana to Türkiye hidden inside truckloads of recyclable waste.",
-            "url": "https://x.com/i/web/status/2089405687918964804",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-17T17:35:09.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Albánia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -1032,6 +993,44 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "Operation World : Pray for North Macedonia : Ethnic divisions dominate politics and society. The large Albanian population feels more connected with Albania and Kosovo than with ot",
+            "text": "Operation World : Pray for North Macedonia : Ethnic divisions dominate politics and society. The large Albanian population feels more connected with Albania and Kosovo than with other groups in North Macedonia. Nearby Greece, Bulgaria, and Serbia each have plans for North",
+            "url": "https://x.com/i/web/status/2089608484413407581",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-08-18T07:01:00.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Albánia": 2,
+              "Szerbia": 1,
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -1046,8 +1045,8 @@
         "negative_hits": 6,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
         "quality_total": 164,
         "geopolitical_total": 144,
         "source_counts": {
