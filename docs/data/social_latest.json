@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19 06:59 UTC",
+  "updated_at": "2026-08-19 12:29 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 20
+    "collected": 24
   },
   "countries": [
     {
@@ -24,33 +24,29 @@
         "mentions": 10,
         "negative_hits": 3,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 153,
-        "geopolitical_total": 127,
+        "trusted_hits": 2,
+        "engagement_total": 43,
+        "raw_engagement_total": 43,
+        "quality_total": 190,
+        "geopolitical_total": 164,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 7,
-          "x": 3
+          "mastodon": 5,
+          "x": 5
         },
         "category_counts": {
-          "corruption_rule_of_law": 2,
-          "foreign_influence": 1,
           "government_crisis": 2,
-          "protest": 1,
+          "corruption_rule_of_law": 2,
           "ethnic_tension": 2,
-          "security": 2
+          "security": 4
         },
         "tag_counts": {
-          "serbia": 4,
-          "kosovo": 1,
+          "serbia": 3,
           "bosnia": 2,
-          "Szerbia": 1,
-          "Koszovó": 1,
+          "Szerbia": 4,
           "Észak-Macedónia": 1
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -94,35 +90,124 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Zelensky dice una frase sul # Kosovo e scoppia la protesta: la bandiera ucraina rimossa | Euronews https:// it.euronews.com/my-europe/2026 /08/11/zelensky-dice-una-frase-sul-kosovo-e-scoppia-la-protesta-la-bandiera-ucraina-rimossa @ attualita # Ucraina # Serbia",
-            "url": "https://mastodon.uno/@fucinafibonacci/117081444706707223",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 12 Aug 2026 07:51:07 +0000",
+            "title": "BREAKING Serbian President Aleksandar Vucic said he will write to NATO Secretary General Mark Rutte, asking him not to reopen the bridge over the Ibar River in Kosovska Mitrovica, ",
+            "text": "BREAKING Serbian President Aleksandar Vucic said he will write to NATO Secretary General Mark Rutte, asking him not to reopen the bridge over the Ibar River in Kosovska Mitrovica, Kosovo*. The bridge separates the city’s Serb-populated north from its Albanian-populated south.",
+            "url": "https://x.com/i/web/status/2090044813395558709",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-19T11:54:49.000Z",
             "matched_countries": [
               "Szerbia",
               "Koszovó"
             ],
             "country_confidence": {
-              "Szerbia": 1,
-              "Koszovó": 1
+              "Szerbia": 9,
+              "Koszovó": 5,
+              "Albánia": 2
             },
-            "event_category": "protest",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "protest",
+                "category": "security",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
               }
             ],
-            "geopolitical_score": 15,
-            "quality_score": 20,
+            "geopolitical_score": 22,
+            "quality_score": 26,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Vucic Says He Will Write to NATO Secretary General Tonight to Oppose the Opening of the Iber Bridge AleksandarVucic MarkRutte NATO KFOR Kosovo Mitrovica IberBridge",
+            "text": "Vucic Says He Will Write to NATO Secretary General Tonight to Oppose the Opening of the Iber Bridge AleksandarVucic MarkRutte NATO KFOR Kosovo Mitrovica IberBridge",
+            "url": "https://x.com/i/web/status/2090033157386981421",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-19T11:08:30.000Z",
+            "matched_countries": [
+              "Koszovó",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
+              "Szerbia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "✈ 🇷🇸 Serbia soon to have 40 fighter jets Serbian President visits Kuršumlija and announces that the Serbian Army will soon have 40 fighter jets, as well as new missile systems and ",
+            "text": "✈ 🇷🇸 Serbia soon to have 40 fighter jets Serbian President visits Kuršumlija and announces that the Serbian Army will soon have 40 fighter jets, as well as new missile systems and multiple rocket launchers, while 12-13 years ago Serbia had only one military aircraft",
+            "url": "https://x.com/i/web/status/2090028703132586182",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-19T10:50:48.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 41,
+            "raw_engagement": 41,
+            "metrics": {
+              "likes": 36,
+              "reposts": 0,
+              "replies": 4,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "Israel withdraws support for embattled Fifa president GianniInfantino Charleroi Lausanne Basel Bern Innsbruck Salzburg Linz Graz Krakow Gdansk Wroclaw Poznan Lodz Brno Sarajevo Bel",
@@ -168,75 +253,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "Tensions escalate in Kosovo as Albanian flags are placed on a Serbian Orthodox Church, with police initially allowing it. The destruction of church property and calls for assassina",
-            "text": "Tensions escalate in Kosovo as Albanian flags are placed on a Serbian Orthodox Church, with police initially allowing it. The destruction of church property and calls for assassination highlight a deep historical conflict. Kosovo Balkans Conflict",
-            "url": "https://x.com/i/web/status/2089922651879833613",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-19T03:49:23.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Business news: Bosnia, Standard and Poor's migliora l'outlook della Repubblica Srpska da negativo a stabile 15 ago 06:00 - (Agenzia Nova) - Il direttore dell'Agenzia bancaria della Repubblica Srpska, entita' a marggioranza serba della Bosnia Erzegovina,... (Seb) Business news: Bosnia, Standard & Poor’s upgrades the outlook for Republika Srpska ",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117097641634017798",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Sat, 15 Aug 2026 04:30:13 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina",
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 6,
-              "Szerbia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 13,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -459,70 +475,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 7,
+        "mentions": 9,
+        "negative_hits": 4,
         "positive_hits": 0,
-        "trusted_hits": 1,
+        "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 180,
-        "geopolitical_total": 158,
+        "quality_total": 163,
+        "geopolitical_total": 140,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 6,
-          "x": 2
+          "mastodon": 4,
+          "x": 5
         },
         "category_counts": {
-          "government_crisis": 5,
-          "security": 2,
-          "protest": 1
+          "government_crisis": 3,
+          "security": 3,
+          "ethnic_tension": 3
         },
         "tag_counts": {
-          "kosovo": 6,
-          "Koszovó": 2
+          "kosovo": 4,
+          "Szerbia": 2,
+          "Koszovó": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "The Basic Court in Pristina has ordered the pretrial detention of Igor Marković, who is suspected of being involved in attacks against KFOR members and Kosovo Police officers in Zv",
-            "text": "The Basic Court in Pristina has ordered the pretrial detention of Igor Marković, who is suspected of being involved in attacks against KFOR members and Kosovo Police officers in Zvečan in May 2023.",
-            "url": "https://x.com/i/web/status/2089890019720761567",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-19T01:39:43.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 38,
-            "quality_score": 39,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Kosovo Opposition Snubs Acting President’s Meeting Amid Parliamentary Crisis https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/18/kosovo-opposition-snubs-acting-presidents-meeting-amid-parliamentary-crisis/bi/",
@@ -553,90 +530,38 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Agenzia Nova: Kosovo: tensioni in Parlamento tra opposizione e Vetevendosje 12 ago 12:48 - (Agenzia Nova) - Tensioni e scontri si sono verificati oggi nell'Assemblea del Kosovo tra deputati dell'opposizione e rappresentanti... (Alt) Kosovo: tensions in Parliament between opposition and Vetëvendosje August 12 12:48 – (Agenzia Nova) – Tensions and clashes occu",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117082188465417812",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 12 Aug 2026 11:00:16 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 24,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Zelensky dice una frase sul # Kosovo e scoppia la protesta: la bandiera ucraina rimossa | Euronews https:// it.euronews.com/my-europe/2026 /08/11/zelensky-dice-una-frase-sul-kosovo-e-scoppia-la-protesta-la-bandiera-ucraina-rimossa @ attualita # Ucraina # Serbia",
-            "url": "https://mastodon.uno/@fucinafibonacci/117081444706707223",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 12 Aug 2026 07:51:07 +0000",
+            "title": "BREAKING Serbian President Aleksandar Vucic said he will write to NATO Secretary General Mark Rutte, asking him not to reopen the bridge over the Ibar River in Kosovska Mitrovica, ",
+            "text": "BREAKING Serbian President Aleksandar Vucic said he will write to NATO Secretary General Mark Rutte, asking him not to reopen the bridge over the Ibar River in Kosovska Mitrovica, Kosovo*. The bridge separates the city’s Serb-populated north from its Albanian-populated south.",
+            "url": "https://x.com/i/web/status/2090044813395558709",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-19T11:54:49.000Z",
             "matched_countries": [
               "Szerbia",
               "Koszovó"
             ],
             "country_confidence": {
-              "Szerbia": 1,
-              "Koszovó": 1
+              "Szerbia": 9,
+              "Koszovó": 5,
+              "Albánia": 2
             },
-            "event_category": "protest",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "protest",
+                "category": "security",
                 "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 15,
-            "quality_score": 20,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "For the fourth consecutive day, representatives of the Democratic Party of Kosovo have gathered outside the government building, insisting that acting Prime Minister Albin Kurti im",
-            "text": "For the fourth consecutive day, representatives of the Democratic Party of Kosovo have gathered outside the government building, insisting that acting Prime Minister Albin Kurti immediately call the constituent session of Parliament.",
-            "url": "https://x.com/i/web/status/2089966493450604815",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-19T06:43:36.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
+                "weight": 9
+              },
               {
                 "category": "government_crisis",
-                "hits": 2,
+                "hits": 1,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
+            "geopolitical_score": 22,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "metrics": {
@@ -646,6 +571,101 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "Vucic Says He Will Write to NATO Secretary General Tonight to Oppose the Opening of the Iber Bridge AleksandarVucic MarkRutte NATO KFOR Kosovo Mitrovica IberBridge",
+            "text": "Vucic Says He Will Write to NATO Secretary General Tonight to Oppose the Opening of the Iber Bridge AleksandarVucic MarkRutte NATO KFOR Kosovo Mitrovica IberBridge",
+            "url": "https://x.com/i/web/status/2090033157386981421",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-19T11:08:30.000Z",
+            "matched_countries": [
+              "Koszovó",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
+              "Szerbia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "Kosovo’s LDK Drops Demand to Choose President in Bid to Resolve Crisis https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/14/kosovos-ldk-drops-demand-to-choose-president-in-bid-to-resolve-crisis/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/14/kosovos-ldk-drops-demand-to-choose-president-in-bid-to-resolve-crisis/bi/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Fri, 14 Aug 2026 10:36:53 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "‘Absurd Blockade’: Fresh Parliamentary Deadlock Pushes Kosovo Back Into Crisis Mode https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/13/absurd-blockade-fresh-parliamentary-deadlock-pushes-kosovo-back-into-crisis-mode/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/13/absurd-blockade-fresh-parliamentary-deadlock-pushes-kosovo-back-into-crisis-mode/bi/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Thu, 13 Aug 2026 05:41:41 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -653,21 +673,21 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 20,
+        "score": 24,
         "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 3,
-        "negative_hits": 1,
+        "negative_hits": 2,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 60,
-        "raw_engagement_total": 60,
-        "quality_total": 71,
-        "geopolitical_total": 62,
+        "trusted_hits": 0,
+        "engagement_total": 108,
+        "raw_engagement_total": 108,
+        "quality_total": 66,
+        "geopolitical_total": 61,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
-          "x": 1
+          "mastodon": 1,
+          "x": 2
         },
         "category_counts": {
           "eu_integration": 1,
@@ -675,18 +695,19 @@
           "protest": 1
         },
         "tag_counts": {
-          "montenegro": 2,
+          "montenegro": 1,
+          "Szerbia": 1,
           "Montenegró": 1
         },
         "main_topic": "eu_integration",
         "top_posts": [
           {
-            "title": "This de-Serbianization of Montenegro is so ridiculous because Serbs and Montenegrins are more culturally and genetically similar than Greeks and Cypriots and also Russians and Ukra",
-            "text": "This de-Serbianization of Montenegro is so ridiculous because Serbs and Montenegrins are more culturally and genetically similar than Greeks and Cypriots and also Russians and Ukrainians. For whatever reason Montenegrin politicians think the 30 pieces of silver from the EU is",
-            "url": "https://x.com/i/web/status/2089939760118677809",
+            "title": "This de-Serbianization of Montenegro is so ridiculous. Montenegrins are Serbs. Serbs and Montenegrins are more culturally and genetically similar than Greeks and Cypriots and also ",
+            "text": "This de-Serbianization of Montenegro is so ridiculous. Montenegrins are Serbs. Serbs and Montenegrins are more culturally and genetically similar than Greeks and Cypriots and also Russians and Ukrainians. For whatever reason Montenegrin politicians think the 30 pieces of silver",
+            "url": "https://x.com/i/web/status/2089973601231368337",
             "source": "x",
             "tag": "Montenegró",
-            "seen_date": "2026-08-19T04:57:22.000Z",
+            "seen_date": "2026-08-19T07:11:51.000Z",
             "matched_countries": [
               "Montenegró"
             ],
@@ -711,50 +732,52 @@
             "quality_score": 28,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 60,
-            "raw_engagement": 60,
+            "engagement": 90,
+            "raw_engagement": 90,
             "metrics": {
-              "likes": 50,
-              "reposts": 5,
-              "replies": 5,
-              "quotes": 0
+              "likes": 77,
+              "reposts": 4,
+              "replies": 8,
+              "quotes": 1
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "",
-            "text": "Agenzia Nova: Montenegro-Serbia: Spajic, buoni rapporti di vicinato si', doppi standard no 12 ago 08:44 - (Agenzia Nova) - Il primo ministro Milojko Spajic ha dichiarato che il Montenegro vuole mantenere buoni rapporti con la Serbia,... (Seb) Montenegro-Serbia: Spajić, good neighborly relations yes, but no double standards. August 12, 08:44 – (Agenzia Nova) ",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117081244583492591",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Wed, 12 Aug 2026 07:00:14 +0000",
+            "title": "🚨MONTENEGRIN SERB POLITICIAN ATTACKS HIS GOVERNMENT: “YOU STAY SILENT WHILE SERBIA LOST KOSOVO, BUT SUDDENLY CARE ABOUT UKRAINE’S BORDERS” 🇲🇪🔥 Vladislav Dajković, a Serb politician",
+            "text": "🚨MONTENEGRIN SERB POLITICIAN ATTACKS HIS GOVERNMENT: “YOU STAY SILENT WHILE SERBIA LOST KOSOVO, BUT SUDDENLY CARE ABOUT UKRAINE’S BORDERS” 🇲🇪🔥 Vladislav Dajković, a Serb politician from Montenegro and leader of the Free Montenegro party, released a strong video calling out the",
+            "url": "https://x.com/i/web/status/2090032350985916656",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-19T11:05:18.000Z",
             "matched_countries": [
               "Montenegró"
             ],
             "country_confidence": {
               "Montenegró": 4,
-              "Szerbia": 1
+              "Szerbia": 1,
+              "Koszovó": 1
             },
             "event_category": "security",
             "event_categories": [
               {
                 "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
+                "hits": 2,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 22,
-            "quality_score": 27,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "geopolitical_score": 21,
+            "quality_score": 22,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 18,
+            "raw_engagement": 18,
+            "metrics": {
+              "likes": 13,
+              "reposts": 4,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -791,65 +814,67 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 40,
+        "score": 47,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 7,
         "negative_hits": 2,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 10,
-        "raw_engagement_total": 10,
-        "quality_total": 96,
-        "geopolitical_total": 87,
+        "trusted_hits": 0,
+        "engagement_total": 32,
+        "raw_engagement_total": 32,
+        "quality_total": 119,
+        "geopolitical_total": 112,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 6
+          "x": 7
         },
         "category_counts": {
-          "foreign_influence": 2,
-          "government_crisis": 4
+          "foreign_influence": 1,
+          "government_crisis": 6
         },
         "tag_counts": {
-          "Montenegró": 2,
-          "Észak-Macedónia": 4
+          "Montenegró": 1,
+          "Észak-Macedónia": 6
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "🚨🇪🇺🇧🇾 Euronews reports that eight non-EU countries—Albania, Bosnia and Herzegovina, Iceland, Liechtenstein, Montenegro, North Macedonia, Norway, and Ukraine—will align with the EU’",
-            "text": "🚨🇪🇺🇧🇾 Euronews reports that eight non-EU countries—Albania, Bosnia and Herzegovina, Iceland, Liechtenstein, Montenegro, North Macedonia, Norway, and Ukraine—will align with the EU’s latest sanctions on Belarus. The measures target Belarus over its role in Russia’s war against",
-            "url": "https://x.com/i/web/status/2089771922380697624",
+            "title": "🚨NORTH MACEDONIA’S PRIME MINISTER DECLARES THAT WARNING CITIZENS THE DRINKING WATER IS UNSAFE IS A “HYBRID ATTACK” — AND WANTS PEOPLE JAILED FOR IT 🇲🇰🔥 Prime Minister Hristijan Mic",
+            "text": "🚨NORTH MACEDONIA’S PRIME MINISTER DECLARES THAT WARNING CITIZENS THE DRINKING WATER IS UNSAFE IS A “HYBRID ATTACK” — AND WANTS PEOPLE JAILED FOR IT 🇲🇰🔥 Prime Minister Hristijan Mickoski of North Macedonia has accused the opposition of launching a hybrid attack on the capital",
+            "url": "https://x.com/i/web/status/2090005680824488211",
             "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-08-18T17:50:27.000Z",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-08-19T09:19:19.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Bosznia-Hercegovina": 2,
-              "Montenegró": 1,
-              "Albánia": 1
+              "Észak-Macedónia": 9
             },
-            "event_category": "foreign_influence",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "foreign_influence",
+                "category": "government_crisis",
                 "hits": 2,
-                "weight": 8
+                "weight": 9
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
               }
             ],
-            "geopolitical_score": 23,
-            "quality_score": 27,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "geopolitical_score": 30,
+            "quality_score": 31,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 19,
+            "raw_engagement": 19,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 13,
+              "reposts": 6,
               "replies": 0,
               "quotes": 0
             },
@@ -901,6 +926,41 @@
             "quality": "x_api_filtered"
           },
           {
+            "title": "Macedonia’s opposition SDSM has accused Prime Minister Hristijan Mickoski and his party, VMRO-DPMNE, of holding a celebration a day earlier in Gostivar, where more than 5,000 resid",
+            "text": "Macedonia’s opposition SDSM has accused Prime Minister Hristijan Mickoski and his party, VMRO-DPMNE, of holding a celebration a day earlier in Gostivar, where more than 5,000 residents were poisoned.",
+            "url": "https://x.com/i/web/status/2090014093675479547",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-08-19T09:52:45.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "[NOT IRL, SIM EVENT] ⚠️ VICE PRESIDENT KAINE RESIGNS FOLLOWING CONTROVERSIAL STATEMENTS REGARDING NORTH MACEDONIA. THE OFFICE OF VICE PRESIDENT OF THE UNITED STATES IS NOW VACANT.",
             "text": "[NOT IRL, SIM EVENT] ⚠️ VICE PRESIDENT KAINE RESIGNS FOLLOWING CONTROVERSIAL STATEMENTS REGARDING NORTH MACEDONIA. THE OFFICE OF VICE PRESIDENT OF THE UNITED STATES IS NOW VACANT.",
             "url": "https://x.com/i/web/status/2089854304567853493",
@@ -930,11 +990,11 @@
             "quality_score": 18,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 4,
+            "raw_engagement": 4,
             "metrics": {
-              "likes": 2,
-              "reposts": 0,
+              "likes": 3,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -968,48 +1028,13 @@
             "quality_score": 12,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 1,
+              "likes": 2,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "[NOT IRL, SIM EVENT] Vice President Kaine has again disrupted American and international politics with another statement, with a slur against lawmakers considering his impeachment,",
-            "text": "[NOT IRL, SIM EVENT] Vice President Kaine has again disrupted American and international politics with another statement, with a slur against lawmakers considering his impeachment, targeting again North Macedonia, following his other statements crashing the stock market. The..",
-            "url": "https://x.com/i/web/status/2089840557770121561",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-18T22:23:10.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 1
             },
             "quality": "x_api_filtered"
           }
@@ -1023,76 +1048,32 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 14,
-        "negative_hits": 8,
+        "negative_hits": 6,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 309,
-        "geopolitical_total": 274,
+        "trusted_hits": 0,
+        "engagement_total": 128,
+        "raw_engagement_total": 171,
+        "quality_total": 270,
+        "geopolitical_total": 236,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 9,
-          "x": 5
+          "mastodon": 10,
+          "x": 4
         },
         "category_counts": {
           "corruption_rule_of_law": 4,
           "protest": 2,
           "security": 3,
           "foreign_influence": 1,
-          "ethnic_tension": 1,
-          "government_crisis": 3
+          "government_crisis": 4
         },
         "tag_counts": {
           "balkans": 5,
-          "albania": 4,
-          "Koszovó": 2,
-          "Albánia": 3
+          "albania": 5,
+          "Albánia": 4
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
-          {
-            "title": "No my dear. It was America that first redrew borders when they helped the Albanians \"KLA,UCK\" In the Balkan war following the 1999 war agaisnt Serbia and Kosovo Serbs. Serbs were a",
-            "text": "No my dear. It was America that first redrew borders when they helped the Albanians \"KLA,UCK\" In the Balkan war following the 1999 war agaisnt Serbia and Kosovo Serbs. Serbs were a sizable minority in Kosovo during 1999. Americans with NATO/KFOR helped divide Kosovo into",
-            "url": "https://x.com/i/web/status/2089929601900253232",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-19T04:17:00.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 2,
-              "Szerbia": 1,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 3,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 44,
-            "quality_score": 48,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Day 80 of anti-corruption protest in Tirana, Albania EIGHTY CONSECUTIVE DAYS of peaceful protest against institutional and governmental corruption. https://www. youtube.com/watch?v=AwA7A3RiQCU # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
@@ -1223,6 +1204,35 @@
             ],
             "geopolitical_score": 27,
             "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Il Fatto Quotidiano: Donna uccisa a coltellate in casa a Colleferro, fermato il convivente. L’allarme lanciato dalla figlia Una donna è stata uccisa a coltellate nella sua abitazione a Colleferro (Roma). L’allarme è scattato nel primo pomeriggio di martedì, quando la figlia della vittima è rientrata a casa e si è trovata davanti alla scena. È stata lei a con",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117117578960329862",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Tue, 18 Aug 2026 17:00:32 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 24,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
