@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19 18:24 UTC",
+  "updated_at": "2026-08-19 18:49 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 22
+    "collected": 21
   },
   "countries": [
     {
@@ -35,10 +35,10 @@
           "x": 3
         },
         "category_counts": {
-          "government_crisis": 2,
+          "government_crisis": 3,
           "corruption_rule_of_law": 2,
           "ethnic_tension": 3,
-          "security": 2
+          "security": 1
         },
         "tag_counts": {
           "serbia": 4,
@@ -46,7 +46,7 @@
           "Szerbia": 1,
           "Koszovó": 2
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "EUalive: Belgrade Losing Battle Over Mitrovica Bridge as EU Backs Reopening and KFOR Hands Over Security Role Kosovo Serbia Mitrovica IberBridge EUalive EU KFOR NATO BelgradePrisht",
@@ -243,31 +243,29 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 48,
-        "level": "high",
+        "score": 38,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
-        "negative_hits": 2,
+        "mentions": 5,
+        "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 113,
-        "geopolitical_total": 95,
+        "quality_total": 100,
+        "geopolitical_total": 83,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "security": 2,
           "protest": 1,
-          "ethnic_tension": 2,
-          "government_crisis": 1
+          "ethnic_tension": 2
         },
         "tag_counts": {
-          "bosnia": 5,
-          "Szerbia": 1
+          "bosnia": 5
         },
         "main_topic": "security",
         "top_posts": [
@@ -405,40 +403,35 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Clinton’s foreign policy was as great as his domestic policies. He stopped the raging Serbian/Yugoslavian/ Sarajevo war, and ended conflicts In Caribbean and Central/South America.",
-            "text": "Clinton’s foreign policy was as great as his domestic policies. He stopped the raging Serbian/Yugoslavian/ Sarajevo war, and ended conflicts In Caribbean and Central/South America. Bill Clinton was a great President.",
-            "url": "https://x.com/i/web/status/2090117270303326321",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-08-19T16:42:44.000Z",
+            "title": "",
+            "text": "Agenzia Nova: Business news: Bosnia, Standard and Poor's migliora l'outlook della Repubblica Srpska da negativo a stabile 15 ago 06:00 - (Agenzia Nova) - Il direttore dell'Agenzia bancaria della Repubblica Srpska, entita' a marggioranza serba della Bosnia Erzegovina,... (Seb) Business news: Bosnia, Standard & Poor’s upgrades the outlook for Republika Srpska ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117097641634017798",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Sat, 15 Aug 2026 04:30:13 +0000",
             "matched_countries": [
-              "Bosznia-Hercegovina"
+              "Bosznia-Hercegovina",
+              "Szerbia"
             ],
             "country_confidence": {
-              "Bosznia-Hercegovina": 4,
+              "Bosznia-Hercegovina": 6,
               "Szerbia": 2
             },
-            "event_category": "government_crisis",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "ethnic_tension",
                 "hits": 1,
-                "weight": 9
+                "weight": 10
               }
             ],
-            "geopolitical_score": 12,
+            "geopolitical_score": 10,
             "quality_score": 13,
-            "source_reliability": 2,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -652,8 +645,8 @@
         "negative_hits": 3,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 204,
-        "raw_engagement_total": 267,
+        "engagement_total": 210,
+        "raw_engagement_total": 275,
         "quality_total": 91,
         "geopolitical_total": 85,
         "source_counts": {
@@ -706,9 +699,9 @@
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 120,
-            "raw_engagement": 183,
+            "raw_engagement": 185,
             "metrics": {
-              "likes": 152,
+              "likes": 154,
               "reposts": 13,
               "replies": 16,
               "quotes": 2
@@ -783,11 +776,11 @@
             "quality_score": 22,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 83,
-            "raw_engagement": 83,
+            "engagement": 89,
+            "raw_engagement": 89,
             "metrics": {
-              "likes": 66,
-              "reposts": 15,
+              "likes": 71,
+              "reposts": 16,
               "replies": 2,
               "quotes": 0
             },
@@ -835,8 +828,8 @@
         "negative_hits": 3,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 33,
-        "raw_engagement_total": 33,
+        "engagement_total": 35,
+        "raw_engagement_total": 35,
         "quality_total": 124,
         "geopolitical_total": 115,
         "source_counts": {
@@ -920,10 +913,10 @@
             "quality_score": 26,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 3,
-            "raw_engagement": 3,
+            "engagement": 4,
+            "raw_engagement": 4,
             "metrics": {
-              "likes": 2,
+              "likes": 3,
               "reposts": 1,
               "replies": 0,
               "quotes": 0
@@ -1038,10 +1031,10 @@
             "quality_score": 18,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 1,
+              "likes": 2,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
