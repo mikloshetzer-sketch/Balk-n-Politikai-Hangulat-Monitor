@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20 06:33 UTC",
+  "updated_at": "2026-08-20 07:01 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 12
+    "collected": 11
   },
   "countries": [
     {
@@ -36,8 +36,9 @@
         },
         "category_counts": {
           "security": 1,
+          "foreign_influence": 1,
           "government_crisis": 2,
-          "corruption_rule_of_law": 2,
+          "corruption_rule_of_law": 1,
           "ethnic_tension": 2
         },
         "tag_counts": {
@@ -686,8 +687,8 @@
         "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 68,
-        "raw_engagement_total": 68,
+        "engagement_total": 72,
+        "raw_engagement_total": 72,
         "quality_total": 105,
         "geopolitical_total": 97,
         "source_counts": {
@@ -736,10 +737,10 @@
             "quality_score": 31,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 26,
-            "raw_engagement": 26,
+            "engagement": 27,
+            "raw_engagement": 27,
             "metrics": {
-              "likes": 19,
+              "likes": 20,
               "reposts": 7,
               "replies": 0,
               "quotes": 0
@@ -849,13 +850,13 @@
             "quality_score": 18,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 36,
-            "raw_engagement": 36,
+            "engagement": 39,
+            "raw_engagement": 39,
             "metrics": {
-              "likes": 16,
+              "likes": 18,
               "reposts": 3,
-              "replies": 16,
-              "quotes": 1
+              "replies": 18,
+              "quotes": 0
             },
             "quality": "x_api_filtered"
           },
@@ -903,29 +904,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 8,
+        "mentions": 13,
+        "negative_hits": 7,
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 3,
         "raw_engagement_total": 3,
-        "quality_total": 307,
-        "geopolitical_total": 273,
+        "quality_total": 278,
+        "geopolitical_total": 245,
         "source_counts": {
           "reddit": 0,
           "mastodon": 10,
-          "x": 4
+          "x": 3
         },
         "category_counts": {
           "corruption_rule_of_law": 4,
           "protest": 2,
           "security": 5,
-          "government_crisis": 3
+          "government_crisis": 2
         },
         "tag_counts": {
           "balkans": 5,
           "albania": 5,
-          "Albánia": 4
+          "Albánia": 3
         },
         "main_topic": "security",
         "top_posts": [
@@ -1066,44 +1067,33 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Citizens have gathered in Skanderbeg Square for the 81st protest against Prime Minister Edi Rama. Following the gathering in the square, they are expected to continue their march t",
-            "text": "Citizens have gathered in Skanderbeg Square for the 81st protest against Prime Minister Edi Rama. Following the gathering in the square, they are expected to continue their march toward the Prime Minister’s Office.",
-            "url": "https://x.com/i/web/status/2090232489553842315",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-08-20T00:20:34.000Z",
+            "title": "",
+            "text": "Il Fatto Quotidiano: Donna uccisa a coltellate in casa a Colleferro, fermato il convivente. L’allarme lanciato dalla figlia Una donna è stata uccisa a coltellate nella sua abitazione a Colleferro (Roma). L’allarme è scattato nel primo pomeriggio di martedì, quando la figlia della vittima è rientrata a casa e si è trovata davanti alla scena. È stata lei a con",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117117578960329862",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Tue, 18 Aug 2026 17:00:32 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 4
+              "Albánia": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
+                "category": "security",
                 "hits": 2,
-                "weight": 8
+                "weight": 9
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
-            "source_reliability": 2,
+            "geopolitical_score": 21,
+            "quality_score": 24,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           }
         ]
       }
