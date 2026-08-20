@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20 18:28 UTC",
+  "updated_at": "2026-08-20 18:55 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 12
+    "collected": 14
   },
   "countries": [
     {
@@ -21,25 +21,25 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 4,
+        "mentions": 11,
+        "negative_hits": 5,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 9,
-        "raw_engagement_total": 9,
-        "quality_total": 195,
-        "geopolitical_total": 169,
+        "engagement_total": 18,
+        "raw_engagement_total": 18,
+        "quality_total": 207,
+        "geopolitical_total": 180,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
           "security": 1,
           "foreign_influence": 1,
           "government_crisis": 5,
           "ethnic_tension": 2,
-          "corruption_rule_of_law": 1
+          "corruption_rule_of_law": 2
         },
         "tag_counts": {
           "balkans": 1,
@@ -47,6 +47,7 @@
           "bosnia": 2,
           "montenegro": 1,
           "Szerbia": 2,
+          "Koszovó": 1,
           "Montenegró": 1
         },
         "main_topic": "government_crisis",
@@ -136,7 +137,7 @@
             "text": "Diplomatic scandal. Serbia is the only European country that participated in the celebration of the Taliban at the Afghanistan Embassy in India organized on the occasion of the fifth anniversary of the Taliban's return to power. Serbia Srbija EU Kosovo Hrvatska Croatia",
             "url": "https://x.com/i/web/status/2090491991041683906",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Koszovó",
             "seen_date": "2026-08-20T17:31:44.000Z",
             "matched_countries": [
               "Szerbia"
@@ -197,12 +198,12 @@
             "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 8,
-            "raw_engagement": 8,
+            "engagement": 17,
+            "raw_engagement": 17,
             "metrics": {
-              "likes": 6,
-              "reposts": 2,
-              "replies": 0,
+              "likes": 11,
+              "reposts": 5,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -451,30 +452,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 54,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 6,
-        "negative_hits": 4,
-        "positive_hits": 0,
+        "mentions": 8,
+        "negative_hits": 6,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 133,
-        "geopolitical_total": 117,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
+        "quality_total": 161,
+        "geopolitical_total": 141,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 5,
-          "x": 1
+          "mastodon": 6,
+          "x": 2
         },
         "category_counts": {
+          "protest": 1,
           "foreign_influence": 1,
-          "government_crisis": 3,
+          "government_crisis": 4,
           "security": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
-          "kosovo": 5,
+          "kosovo": 6,
+          "Szerbia": 1,
           "Koszovó": 1
         },
         "main_topic": "government_crisis",
@@ -573,6 +576,35 @@
           },
           {
             "title": "",
+            "text": "📰 75 Tage „Flamingo-Revolution“: Neue Fronten https://www. pressenza.com/de/2026/08/75-ta ge-flamingo-revolution-neue-fronten/ # Originalinhalt # Korruption # direkteDemokratie # FlamingoRevolution # Zivilgesellschaft # gewaltfreierWiderstand # News # Albanien # Proteste # Umweltschutz # Verwaltungsreform # Basisdemokratie # Schutzgebiete # Menschenrechte # ",
+            "url": "https://mastodon.trueten.de/@presenza_de/117129255551509034",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Thu, 20 Aug 2026 18:30:03 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "Kosovo’s LDK Drops Demand to Choose President in Bid to Resolve Crisis https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/14/kosovos-ldk-drops-demand-to-choose-president-in-bid-to-resolve-crisis/bi/",
             "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/14/kosovos-ldk-drops-demand-to-choose-president-in-bid-to-resolve-crisis/bi/",
             "source": "mastodon",
@@ -594,35 +626,6 @@
             ],
             "geopolitical_score": 12,
             "quality_score": 15,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Suspend Officers Suspected of Beating Serb, Kosovo Police Inspectorate Says https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/19/suspend-officers-suspected-of-beating-serb-kosovo-police-inspectorate-says/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/19/suspend-officers-suspected-of-beating-serb-kosovo-police-inspectorate-says/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 19 Aug 2026 09:31:51 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -942,8 +945,8 @@
         "negative_hits": 4,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
+        "engagement_total": 13,
+        "raw_engagement_total": 13,
         "quality_total": 235,
         "geopolitical_total": 206,
         "source_counts": {
