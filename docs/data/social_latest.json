@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20 18:55 UTC",
+  "updated_at": "2026-08-21 00:49 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 14
+    "collected": 18
   },
   "countries": [
     {
@@ -21,34 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 5,
+        "mentions": 16,
+        "negative_hits": 3,
         "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 18,
-        "raw_engagement_total": 18,
-        "quality_total": 207,
-        "geopolitical_total": 180,
+        "trusted_hits": 2,
+        "engagement_total": 19,
+        "raw_engagement_total": 19,
+        "quality_total": 296,
+        "geopolitical_total": 259,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 7,
-          "x": 4
+          "mastodon": 8,
+          "x": 8
         },
         "category_counts": {
-          "security": 1,
+          "security": 6,
           "foreign_influence": 1,
-          "government_crisis": 5,
-          "ethnic_tension": 2,
-          "corruption_rule_of_law": 2
+          "government_crisis": 7,
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 3,
           "bosnia": 2,
-          "montenegro": 1,
-          "Szerbia": 2,
-          "Koszovó": 1,
-          "Montenegró": 1
+          "montenegro": 2,
+          "Szerbia": 4,
+          "Koszovó": 2,
+          "Montenegró": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -92,6 +91,46 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Following Serbian President Aleksandar Vučić’s letter to NATO Secretary General Mark Rutte regarding the Ibër Bridge and KFOR troops, this is NATO’s response and comment to NATO’s ",
+            "text": "Following Serbian President Aleksandar Vučić’s letter to NATO Secretary General Mark Rutte regarding the Ibër Bridge and KFOR troops, this is NATO’s response and comment to NATO’s Secretary General, Mark Rutte, is in regular contact with President Vucic. KFOR has",
+            "url": "https://x.com/i/web/status/2090531752687161591",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-20T20:09:44.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 13
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 40,
+            "quality_score": 44,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 5,
+            "raw_engagement": 5,
+            "metrics": {
+              "likes": 3,
+              "reposts": 1,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Agenzia Nova: Bosnia: ex presidente Repubblica Srpska critica nuovo sistema di voto e avverte su rischio frodi 14 ago 16:36 - (Agenzia Nova) - L'ex presidente della Repubblica Srpska, l'entita' serba della Bosnia Erzegovina, Milorad Dodik, ha criticato... (Seb) Bosnia: former president of Republika Srpska criticizes new voting system and warns about fraud ri",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117094495829013190",
@@ -133,82 +172,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Diplomatic scandal. Serbia is the only European country that participated in the celebration of the Taliban at the Afghanistan Embassy in India organized on the occasion of the fif",
-            "text": "Diplomatic scandal. Serbia is the only European country that participated in the celebration of the Taliban at the Afghanistan Embassy in India organized on the occasion of the fifth anniversary of the Taliban's return to power. Serbia Srbija EU Kosovo Hrvatska Croatia",
-            "url": "https://x.com/i/web/status/2090491991041683906",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-20T17:31:44.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5,
-              "Koszovó": 1
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Serbian President Aleksandar Vucic announced that parliamentary elections in Serbia will be held on October 18 or 25, 2026.",
-            "text": "Serbian President Aleksandar Vucic announced that parliamentary elections in Serbia will be held on October 18 or 25, 2026.",
-            "url": "https://x.com/i/web/status/2090497323939860555",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-08-20T17:52:56.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 17,
-            "raw_engagement": 17,
-            "metrics": {
-              "likes": 11,
-              "reposts": 5,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Agenzia Nova: Speciale energia: Serbia-Ungheria, \"Forbes\", bloccata gara per supervisione lavori costruzione oleodotto 19 ago 14:15 - (Agenzia Nova) - Nuovo stop all'avvio della costruzione dell'oleodotto tra Serbia e Ungheria. La procedura di gara per l'affidamento... (Seb) Special energy: Serbia-Hungary, “Forbes”, race blocked for construction oversight. A",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117122139082391053",
@@ -241,6 +204,47 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "A second case is unfolding in Kosovo courts of paid agents of Serbian security services investing time and resources to map and advance Islamist extremist agenda. Combined with fai",
+            "text": "A second case is unfolding in Kosovo courts of paid agents of Serbian security services investing time and resources to map and advance Islamist extremist agenda. Combined with faith-focused lobbying by Belgrade in Washington DC, it’s clear Serbia is investing on a narrative.",
+            "url": "https://x.com/i/web/status/2090522487922532422",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-20T19:32:55.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 18,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 9,
+            "raw_engagement": 9,
+            "metrics": {
+              "likes": 7,
+              "reposts": 2,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -452,33 +456,30 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 60,
+        "score": 55,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 6,
+        "mentions": 6,
+        "negative_hits": 5,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 161,
-        "geopolitical_total": 141,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 137,
+        "geopolitical_total": 119,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
-          "x": 2
+          "x": 0
         },
         "category_counts": {
           "protest": 1,
           "foreign_influence": 1,
-          "government_crisis": 4,
-          "security": 1,
-          "ethnic_tension": 1
+          "government_crisis": 3,
+          "security": 1
         },
         "tag_counts": {
-          "kosovo": 6,
-          "Szerbia": 1,
-          "Koszovó": 1
+          "kosovo": 6
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -638,28 +639,28 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 6,
+        "score": 12,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 3,
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 28,
-        "geopolitical_total": 22,
+        "quality_total": 40,
+        "geopolitical_total": 31,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
+          "mastodon": 3,
           "x": 0
         },
         "category_counts": {
-          "government_crisis": 1,
+          "government_crisis": 2,
           "eu_integration": 1
         },
         "tag_counts": {
-          "montenegro": 2
+          "montenegro": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -686,6 +687,37 @@
             ],
             "geopolitical_score": 13,
             "quality_score": 16,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "⚡ # Montenegro 🇲🇪 Prime Minister Milojko Spajic was revealed to have served as a reserve officer in the # Serbian 🇷🇸 Army. [Eurointel+] Stay tuned as more details emerge",
+            "url": "https://mastodon.social/@thepathtopeace/117129792170483223",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Thu, 20 Aug 2026 20:46:31 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Montenegró": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 12,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -729,31 +761,31 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 44,
+        "score": 50,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 6,
         "negative_hits": 3,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 15,
-        "raw_engagement_total": 15,
-        "quality_total": 96,
-        "geopolitical_total": 91,
+        "engagement_total": 48,
+        "raw_engagement_total": 48,
+        "quality_total": 108,
+        "geopolitical_total": 102,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 5
+          "x": 6
         },
         "category_counts": {
-          "security": 2,
-          "ethnic_tension": 1,
-          "government_crisis": 2
+          "government_crisis": 2,
+          "ethnic_tension": 2,
+          "security": 2
         },
         "tag_counts": {
-          "Észak-Macedónia": 5
+          "Észak-Macedónia": 6
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "Prime Minister Hristijan Mickoski said that his government is ready to face early parliamentary elections if that is the opposition’s demand. He stressed that in such a case they w",
@@ -851,12 +883,47 @@
             "quality_score": 13,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 11,
-            "raw_engagement": 11,
+            "engagement": 45,
+            "raw_engagement": 45,
             "metrics": {
-              "likes": 10,
-              "reposts": 1,
-              "replies": 0,
+              "likes": 34,
+              "reposts": 4,
+              "replies": 7,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇨🇿 as a mediator between 🇧🇬 &🇲🇰 ? ✅ Advantages: No direct Balkan territorial, historical or minority interests Experience with peaceful national separation - Czechoslovakia 🇨🇿🇸🇰 Go",
+            "text": "🇨🇿 as a mediator between 🇧🇬 &🇲🇰 ? ✅ Advantages: No direct Balkan territorial, historical or minority interests Experience with peaceful national separation - Czechoslovakia 🇨🇿🇸🇰 Good relations with both Sofia and Skopje 🤝 1/N 🧵",
+            "url": "https://x.com/i/web/status/2090513750763687952",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-08-20T18:58:12.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -895,42 +962,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "Albanian opposition parties in North Macedonia call PM to keep his word for early elections",
-            "text": "Albanian opposition parties in North Macedonia call PM to keep his word for early elections",
-            "url": "https://x.com/i/web/status/2090404762143383984",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-20T11:45:07.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Albánia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 0,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -941,31 +972,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 4,
-        "positive_hits": 0,
+        "mentions": 14,
+        "negative_hits": 7,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 13,
-        "raw_engagement_total": 13,
-        "quality_total": 235,
-        "geopolitical_total": 206,
+        "engagement_total": 228,
+        "raw_engagement_total": 437,
+        "quality_total": 282,
+        "geopolitical_total": 248,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 9,
-          "x": 2
+          "mastodon": 10,
+          "x": 4
         },
         "category_counts": {
-          "corruption_rule_of_law": 4,
+          "corruption_rule_of_law": 5,
           "foreign_influence": 1,
-          "security": 4,
-          "protest": 1,
+          "security": 3,
+          "protest": 2,
+          "government_crisis": 2,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 4,
           "kosovo": 1,
-          "albania": 4,
-          "Albánia": 2
+          "albania": 5,
+          "Albánia": 4
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -1106,33 +1138,44 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Il Fatto Quotidiano: Donna uccisa a coltellate in casa a Colleferro, fermato il convivente. L’allarme lanciato dalla figlia Una donna è stata uccisa a coltellate nella sua abitazione a Colleferro (Roma). L’allarme è scattato nel primo pomeriggio di martedì, quando la figlia della vittima è rientrata a casa e si è trovata davanti alla scena. È stata lei a con",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117117578960329862",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Tue, 18 Aug 2026 17:00:32 +0000",
+            "title": "🚨📷BREAKING: Prime Minister of Albania, Edi Rama has directly accused Iran of inciting the massive protests in Tirana over the controversial Trump–Kushner resort project This guy is",
+            "text": "🚨📷BREAKING: Prime Minister of Albania, Edi Rama has directly accused Iran of inciting the massive protests in Tirana over the controversial Trump–Kushner resort project This guy is a joke📷 🤦",
+            "url": "https://x.com/i/web/status/2090575989017350542",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-08-20T23:05:31.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 1
+              "Albánia": 9
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 2,
+                "category": "government_crisis",
+                "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 21,
-            "quality_score": 24,
-            "source_reliability": 3,
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
