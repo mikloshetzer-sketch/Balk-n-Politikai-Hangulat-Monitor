@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21 13:06 UTC",
+  "updated_at": "2026-08-21 18:27 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 15
+    "collected": 9
   },
   "countries": [
     {
@@ -21,33 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 2,
+        "mentions": 9,
+        "negative_hits": 4,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
         "quality_total": 203,
-        "geopolitical_total": 176,
+        "geopolitical_total": 178,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 4
+          "x": 2
         },
         "category_counts": {
           "security": 2,
           "economic_infrastructure": 1,
-          "government_crisis": 6,
+          "government_crisis": 3,
+          "ethnic_tension": 1,
           "foreign_influence": 1,
-          "ethnic_tension": 1
+          "protest": 1
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 3,
           "bosnia": 1,
           "montenegro": 2,
-          "Szerbia": 2,
-          "Montenegró": 2
+          "Szerbia": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -125,164 +125,33 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Vucic tells Rutte in letter: KFOR withdrawal premature, assessment fails to recognize all risks to security of Serbs",
-            "text": "Vucic tells Rutte in letter: KFOR withdrawal premature, assessment fails to recognize all risks to security of Serbs",
-            "url": "https://x.com/i/web/status/2090769018835612006",
+            "title": "The Times: Vučić’s Political Model Faces Its Biggest Challenge as Serbian Students Overtake SNS in Polls Serbia AleksandarVucic Students StudentProtests VladanDjokic CRTA Belgrade ",
+            "text": "The Times: Vučić’s Political Model Faces Its Biggest Challenge as Serbian Students Overtake SNS in Polls Serbia AleksandarVucic Students StudentProtests VladanDjokic CRTA Belgrade EuropeanUnion Russia Balkans Democracy PoliticalCrisis",
+            "url": "https://x.com/i/web/status/2090859401263341772",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-08-21T11:52:33.000Z",
+            "seen_date": "2026-08-21T17:51:42.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 4
+              "Szerbia": 14
             },
-            "event_category": "security",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "security",
+                "category": "protest",
                 "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Business news: Bosnia, Standard and Poor's migliora l'outlook della Repubblica Srpska da negativo a stabile 15 ago 06:00 - (Agenzia Nova) - Il direttore dell'Agenzia bancaria della Repubblica Srpska, entita' a marggioranza serba della Bosnia Erzegovina,... (Seb) Business news: Bosnia, Standard & Poor’s upgrades the outlook for Republika Srpska ",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117097641634017798",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Sat, 15 Aug 2026 04:30:13 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina",
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 6,
-              "Szerbia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 13,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Serbia-Romania: ministra Trasporti, entro 7 giorni bozza di accordo su autostrada Pancevo-Timisoara 21 ago 13:32 - (Agenzia Nova) - La ministra delle Costruzioni, dei Trasporti e delle Infrastrutture serba, Aleksandra Sofronijevic, ha dichiarato... (Seb) Serbia-Romania: Transport ministers, within 7 days draft agreement on the Pancevo-Timisoara",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117133345888056626",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Fri, 21 Aug 2026 11:50:17 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "economic_infrastructure",
-            "event_categories": [
-              {
-                "category": "economic_infrastructure",
-                "hits": 2,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Bosznia-Hercegovina",
-      "social_signal": {
-        "score": 43,
-        "level": "high",
-        "scale": "0-60 risk index",
-        "mentions": 6,
-        "negative_hits": 1,
-        "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 114,
-        "geopolitical_total": 96,
-        "source_counts": {
-          "reddit": 0,
-          "mastodon": 5,
-          "x": 1
-        },
-        "category_counts": {
-          "foreign_influence": 1,
-          "security": 2,
-          "protest": 1,
-          "ethnic_tension": 2
-        },
-        "tag_counts": {
-          "kosovo": 1,
-          "bosnia": 4,
-          "Koszovó": 1
-        },
-        "main_topic": "security",
-        "top_posts": [
-          {
-            "title": "Trump said the same thing yesterday about Kosovo President Putin and President Trump, need to correct this historical injustice from post-Soviet collapse Kosova needs to be bifurca",
-            "text": "Trump said the same thing yesterday about Kosovo President Putin and President Trump, need to correct this historical injustice from post-Soviet collapse Kosova needs to be bifurcated and Republika Srpska is long overdue statehood",
-            "url": "https://x.com/i/web/status/2090755029720613314",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-21T10:56:58.000Z",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 4,
-              "Koszovó": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
+                "weight": 8
               },
               {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 31,
-            "quality_score": 32,
+            "geopolitical_score": 27,
+            "quality_score": 28,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -295,6 +164,104 @@
             },
             "quality": "x_api_filtered"
           },
+          {
+            "title": "Serbia's snap elections set for October, may reshape politics amid EU, Russia ties. Follow: Breaking News Politics InternationalRelations WorldNews GlobalNews Serbia Srbija Vucic e",
+            "text": "Serbia's snap elections set for October, may reshape politics amid EU, Russia ties. Follow: Breaking News Politics InternationalRelations WorldNews GlobalNews Serbia Srbija Vucic electionresults Elections SnapElections Europe Russia China",
+            "url": "https://x.com/i/web/status/2090859465373270511",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-21T17:51:57.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 17,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "🚨 WARNELY SAFETY ALERT Serbia · Natural disaster Green forest fire notification in Serbia On 05/08/2026, a forest fire started in Serbia, until 15/08/2026. https://www. warnely.com/news/green-forest- fire-notification-in-serbia-8d9363c6-89ff-44f4-88b6-ac35944befcf?utm_source=mastodon&utm_medium=social&utm_campaign=incident # WarnelyAlert # Serbia",
+            "url": "https://mastodon.social/@warnely/117134132818245366",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 21 Aug 2026 15:10:24 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bosznia-Hercegovina",
+      "social_signal": {
+        "score": 36,
+        "level": "medium",
+        "scale": "0-60 risk index",
+        "mentions": 6,
+        "negative_hits": 0,
+        "positive_hits": 0,
+        "trusted_hits": 1,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 94,
+        "geopolitical_total": 74,
+        "source_counts": {
+          "reddit": 0,
+          "mastodon": 6,
+          "x": 0
+        },
+        "category_counts": {
+          "foreign_influence": 1,
+          "security": 3,
+          "protest": 1,
+          "ethnic_tension": 1
+        },
+        "tag_counts": {
+          "kosovo": 1,
+          "bosnia": 5
+        },
+        "main_topic": "security",
+        "top_posts": [
           {
             "title": "",
             "text": "Today: Bus di pellegrini si ribalta in autostrada: 12 morti e 10 feriti, tornavano da Medjugorje Un gruppo di pellegrini polacchi, di ritorno dal santuario di Medjugorje in Bosnia ed Erzegovina, è rimasto coinvolto in un tragico incidente stradale in Ungheria, il cui bilancio è di 12 morti e 10 feriti gravi. Secondo la ricostruzione della polizia di Mezőkere",
@@ -423,6 +390,37 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Business news: Bosnia, Standard and Poor's migliora l'outlook della Repubblica Srpska da negativo a stabile 15 ago 06:00 - (Agenzia Nova) - Il direttore dell'Agenzia bancaria della Repubblica Srpska, entita' a marggioranza serba della Bosnia Erzegovina,... (Seb) Business news: Bosnia, Standard & Poor’s upgrades the outlook for Republika Srpska ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117097641634017798",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Sat, 15 Aug 2026 04:30:13 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 6,
+              "Szerbia": 2
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 13,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -430,34 +428,33 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 60,
+        "score": 52,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
+        "mentions": 6,
         "negative_hits": 4,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 14,
-        "raw_engagement_total": 14,
-        "quality_total": 166,
-        "geopolitical_total": 145,
+        "trusted_hits": 0,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 140,
+        "geopolitical_total": 124,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 3
+          "x": 1
         },
         "category_counts": {
           "protest": 1,
           "foreign_influence": 1,
           "government_crisis": 2,
-          "security": 3,
-          "ethnic_tension": 1
+          "security": 2
         },
         "tag_counts": {
           "kosovo": 5,
-          "Koszovó": 3
+          "Koszovó": 1
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -552,47 +549,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "BREAKING NATO said any decision to potentially reopen the bridge between the northern and southern parts of Kosovska Mitrovica, Kosovo*, to vehicle traffic should take into account",
-            "text": "BREAKING NATO said any decision to potentially reopen the bridge between the northern and southern parts of Kosovska Mitrovica, Kosovo*, to vehicle traffic should take into account the needs of all local communities.",
-            "url": "https://x.com/i/web/status/2090769144106877131",
+            "title": "Will Kurti's police be held criminally responsible for this crime? The EU is talking about the rule of law, and Serbs are having their houses demolished in Gazivode and being order",
+            "text": "Will Kurti's police be held criminally responsible for this crime? The EU is talking about the rule of law, and Serbs are having their houses demolished in Gazivode and being ordered to move out. Some remain without kidneys. What are the powers of crazy Kurti, I ask the EU?",
+            "url": "https://x.com/i/web/status/2090848355127550322",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-08-21T11:53:03.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 17,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 14,
-            "raw_engagement": 14,
-            "metrics": {
-              "likes": 9,
-              "reposts": 5,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "EU Says Mitrovica Bridge Must Serve All Communities and Ensure Security! An EU spokesperson said the European Union’s position on the Mitrovica Bridge remains clear: the bridge mus",
-            "text": "EU Says Mitrovica Bridge Must Serve All Communities and Ensure Security! An EU spokesperson said the European Union’s position on the Mitrovica Bridge remains clear: the bridge must serve all communities and act as a point of connection. The EU called for more effective",
-            "url": "https://x.com/i/web/status/2090779357211975785",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-21T12:33:38.000Z",
+            "seen_date": "2026-08-21T17:07:48.000Z",
             "matched_countries": [
               "Koszovó"
             ],
@@ -607,13 +569,13 @@
                 "weight": 9
               },
               {
-                "category": "eu_integration",
+                "category": "corruption_rule_of_law",
                 "hits": 1,
-                "weight": 6
+                "weight": 8
               }
             ],
-            "geopolitical_score": 15,
-            "quality_score": 16,
+            "geopolitical_score": 17,
+            "quality_score": 18,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -625,6 +587,35 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "📰 75 Tage „Flamingo-Revolution“: Neue Fronten https://www. pressenza.com/de/2026/08/75-ta ge-flamingo-revolution-neue-fronten/ # Originalinhalt # Korruption # direkteDemokratie # FlamingoRevolution # Zivilgesellschaft # gewaltfreierWiderstand # News # Albanien # Proteste # Umweltschutz # Verwaltungsreform # Basisdemokratie # Schutzgebiete # Menschenrechte # ",
+            "url": "https://mastodon.trueten.de/@presenza_de/117129255551509034",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Thu, 20 Aug 2026 18:30:03 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -754,73 +745,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 22,
-        "level": "medium",
+        "score": 9,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
-        "positive_hits": 0,
+        "mentions": 2,
+        "negative_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 11,
-        "raw_engagement_total": 11,
-        "quality_total": 57,
-        "geopolitical_total": 54,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 30,
+        "geopolitical_total": 28,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
-          "security": 1,
-          "government_crisis": 1,
-          "protest": 1
+          "security": 2
         },
         "tag_counts": {
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 2
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "🇲🇰🔥🇦🇱 ALBANIANS CALL IT A PROTOCOL SCANDAL: NORTH MACEDONIA’S PRIME MINISTER VISITS THE ONLY MACEDONIAN-MAJORITY TOWN IN ALBANIA AND ORGANIZERS PLAY ONLY THE MACEDONIAN ANTHEM — SK",
-            "text": "🇲🇰🔥🇦🇱 ALBANIANS CALL IT A PROTOCOL SCANDAL: NORTH MACEDONIA’S PRIME MINISTER VISITS THE ONLY MACEDONIAN-MAJORITY TOWN IN ALBANIA AND ORGANIZERS PLAY ONLY THE MACEDONIAN ANTHEM — SKIPPING THE ALBANIAN ONE FOR THE SECOND YEAR Hristijan Mickoski, Prime Minister of North Macedonia,",
-            "url": "https://x.com/i/web/status/2090715811279233488",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-21T08:21:07.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 9,
-              "Albánia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 7,
-            "raw_engagement": 7,
-            "metrics": {
-              "likes": 6,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "Prime Minister Edi Rama has reacted on social media following the incident in Pustec, where the Albanian national anthem was not played at a cultural event attended by North Macedo",
             "text": "Prime Minister Edi Rama has reacted on social media following the incident in Pustec, where the Albanian national anthem was not played at a cultural event attended by North Macedonia’s Prime Minister Hristijan Mickoski.",
@@ -853,10 +801,10 @@
             "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 0,
+              "likes": 1,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -864,40 +812,35 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Russia loves such moments. The problem is electorally inside North Macedonia, this will boost the pro Russian nationalists in Skopje, and is happening under the monitoring of the E",
-            "text": "Russia loves such moments. The problem is electorally inside North Macedonia, this will boost the pro Russian nationalists in Skopje, and is happening under the monitoring of the EU embassies. It is not wise to react publicly because it is a trap, this will the pro Russian",
-            "url": "https://x.com/i/web/status/2090672114609041444",
+            "title": "Perform Europe is supporting cross-border partnerships in presenting performing art across Europe. Artists & performing arts organisations from North Macedonia can apply with partn",
+            "text": "Perform Europe is supporting cross-border partnerships in presenting performing art across Europe. Artists & performing arts organisations from North Macedonia can apply with partners from across 41 Creative Europe countries. 📅Deadline: 22 October 🔗",
+            "url": "https://x.com/i/web/status/2090831560287146112",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-21T05:27:29.000Z",
+            "seen_date": "2026-08-21T16:01:04.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 9
+              "Észak-Macedónia": 5
             },
-            "event_category": "protest",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "protest",
+                "category": "security",
                 "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
+                "weight": 9
               }
             ],
-            "geopolitical_score": 16,
-            "quality_score": 17,
+            "geopolitical_score": 10,
+            "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 3,
-              "reposts": 0,
+              "likes": 0,
+              "reposts": 1,
               "replies": 1,
               "quotes": 0
             },
@@ -912,32 +855,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
-        "negative_hits": 10,
+        "mentions": 18,
+        "negative_hits": 11,
         "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 372,
-        "geopolitical_total": 330,
+        "trusted_hits": 3,
+        "engagement_total": 136,
+        "raw_engagement_total": 288,
+        "quality_total": 395,
+        "geopolitical_total": 344,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 11,
+          "mastodon": 13,
           "x": 5
         },
         "category_counts": {
-          "corruption_rule_of_law": 6,
+          "corruption_rule_of_law": 7,
           "foreign_influence": 1,
-          "government_crisis": 4,
+          "government_crisis": 2,
           "economic_infrastructure": 1,
-          "security": 4
+          "security": 4,
+          "protest": 2,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "balkans": 4,
+          "balkans": 5,
           "kosovo": 1,
-          "albania": 6,
-          "Koszovó": 1,
-          "Észak-Macedónia": 1,
+          "albania": 7,
+          "Észak-Macedónia": 2,
           "Albánia": 3
         },
         "main_topic": "corruption_rule_of_law",
@@ -1022,6 +966,40 @@
           },
           {
             "title": "",
+            "text": "Day 83 of anti-corruption protest in Tirana, Albania. https://www. youtube.com/watch?v=IhlSYo-UQcE # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
+            "url": "https://mas.to/@meganL/117134803229193024",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Fri, 21 Aug 2026 18:00:54 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "Day 82 of anti-corruption protest in Tirana, Albania https://www. youtube.com/watch?v=OaBvXkEMLzg # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
             "url": "https://mas.to/@meganL/117129064490704511",
             "source": "mastodon",
@@ -1061,40 +1039,6 @@
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Wed, 19 Aug 2026 17:40:00 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 80 of anti-corruption protest in Tirana, Albania EIGHTY CONSECUTIVE DAYS of peaceful protest against institutional and governmental corruption. https://www. youtube.com/watch?v=AwA7A3RiQCU # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
-            "url": "https://mas.to/@meganL/117117860161092928",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Tue, 18 Aug 2026 18:12:03 +0000",
             "matched_countries": [
               "Albánia"
             ],
