@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22 12:23 UTC",
+  "updated_at": "2026-08-22 12:56 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 11
   },
   "countries": [
     {
@@ -35,9 +35,10 @@
           "x": 3
         },
         "category_counts": {
-          "foreign_influence": 2,
+          "foreign_influence": 1,
           "security": 3,
           "government_crisis": 3,
+          "protest": 1,
           "eu_integration": 1
         },
         "tag_counts": {
@@ -45,7 +46,7 @@
           "serbia": 2,
           "montenegro": 2,
           "Szerbia": 2,
-          "Koszovó": 1
+          "Montenegró": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -147,22 +148,22 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "I've been thinking about that German reporter for days. The one who stood in Belgrade and asked Zelenskyy what Europe can do to kill more Russians. Not \"stop the war.\" Not \"bring p",
-            "text": "I've been thinking about that German reporter for days. The one who stood in Belgrade and asked Zelenskyy what Europe can do to kill more Russians. Not \"stop the war.\" Not \"bring peace.\" Kill more Russians. In Serbia. In our capital. That wasn't a question. That was a message.",
-            "url": "https://x.com/i/web/status/2091107916321349799",
+            "title": "After 🇷🇸 introduced its Safe City system with Huawei’s help, mostly Serbian citizens are now “victims” of the same-named system in neighboring 🇲🇰 on their way to 🇬🇷 - and they’re p",
+            "text": "After 🇷🇸 introduced its Safe City system with Huawei’s help, mostly Serbian citizens are now “victims” of the same-named system in neighboring 🇲🇰 on their way to 🇬🇷 - and they’re protesting loudly. Hard to protest under Vučić at home, apparently much easier abroad.",
+            "url": "https://x.com/i/web/status/2091144870790353069",
             "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-22T10:19:12.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-22T12:46:03.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 6
             },
-            "event_category": "foreign_influence",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "foreign_influence",
+                "category": "protest",
                 "hits": 1,
                 "weight": 8
               }
@@ -171,11 +172,11 @@
             "quality_score": 12,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
               "likes": 0,
-              "reposts": 2,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
@@ -418,13 +419,13 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 9,
-        "negative_hits": 5,
+        "negative_hits": 4,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 13,
-        "raw_engagement_total": 13,
-        "quality_total": 183,
-        "geopolitical_total": 164,
+        "engagement_total": 78,
+        "raw_engagement_total": 78,
+        "quality_total": 190,
+        "geopolitical_total": 171,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
@@ -433,14 +434,15 @@
         "category_counts": {
           "protest": 1,
           "foreign_influence": 1,
-          "government_crisis": 4,
-          "security": 3
+          "government_crisis": 2,
+          "security": 4,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "kosovo": 5,
           "Koszovó": 4
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -535,6 +537,41 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Kosovo PM Kurti: It is absurd to keep the main Ibër bridge closed after the construction of the new bridges. The fact that citizens have moved freely across the new bridges without",
+            "text": "Kosovo PM Kurti: It is absurd to keep the main Ibër bridge closed after the construction of the new bridges. The fact that citizens have moved freely across the new bridges without a single incident shows that freedom of movement is beneficial for the economy, peace & security.",
+            "url": "https://x.com/i/web/status/2091140151959261440",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-22T12:27:18.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 78,
+            "raw_engagement": 78,
+            "metrics": {
+              "likes": 68,
+              "reposts": 4,
+              "replies": 6,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "Kosovo’s caretaker Prime Minister, Albin Kurti, has provided details about plans to fully open the Ibar Bridge and place it entirely under the control of the Kosovo Police.",
             "text": "Kosovo’s caretaker Prime Minister, Albin Kurti, has provided details about plans to fully open the Ibar Bridge and place it entirely under the control of the Kosovo Police.",
             "url": "https://x.com/i/web/status/2091138985192001867",
@@ -557,41 +594,6 @@
               {
                 "category": "government_crisis",
                 "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Kurti on the Arsenal Seized in the North: “Illegal Weapons Are Meant for Trouble” Kosovo AlbinKurti KosovoPolice KIA NorthernKosovo ZubinPotok IllegalWeapons WeaponsSeized Security",
-            "text": "Kurti on the Arsenal Seized in the North: “Illegal Weapons Are Meant for Trouble” Kosovo AlbinKurti KosovoPolice KIA NorthernKosovo ZubinPotok IllegalWeapons WeaponsSeized Security BreakingNews",
-            "url": "https://x.com/i/web/status/2091124392457625888",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-22T11:24:41.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
                 "weight": 9
               }
             ],
@@ -810,7 +812,7 @@
         "positive_hits": 1,
         "trusted_hits": 4,
         "engagement_total": 124,
-        "raw_engagement_total": 496,
+        "raw_engagement_total": 498,
         "quality_total": 393,
         "geopolitical_total": 339,
         "source_counts": {
@@ -825,16 +827,16 @@
           "government_crisis": 4,
           "protest": 1,
           "economic_infrastructure": 1,
-          "ethnic_tension": 1,
-          "security": 1
+          "security": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 5,
           "kosovo": 1,
           "albania": 8,
           "Szerbia": 1,
-          "Koszovó": 1,
-          "Észak-Macedónia": 1
+          "Észak-Macedónia": 1,
+          "Albánia": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
