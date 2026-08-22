@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22 18:19 UTC",
+  "updated_at": "2026-08-22 18:44 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,38 +12,39 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 6
+    "collected": 7
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 56,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 4,
+        "mentions": 9,
+        "negative_hits": 5,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 130,
-        "geopolitical_total": 106,
+        "trusted_hits": 2,
+        "engagement_total": 29,
+        "raw_engagement_total": 29,
+        "quality_total": 164,
+        "geopolitical_total": 136,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "eu_integration": 2,
           "foreign_influence": 1,
-          "security": 3,
+          "security": 4,
           "government_crisis": 2
         },
         "tag_counts": {
           "balkans": 3,
           "serbia": 2,
           "montenegro": 2,
+          "Szerbia": 1,
           "Montenegró": 1
         },
         "main_topic": "security",
@@ -86,6 +87,51 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "🚨🇷🇸Young Serbian patriots taking part in a peaceful action tonight in Belgrade. \"Stop the migrants. We don't want our churches burned down and mosques built here.\" \"Fuck the EU & F",
+            "text": "🚨🇷🇸Young Serbian patriots taking part in a peaceful action tonight in Belgrade. \"Stop the migrants. We don't want our churches burned down and mosques built here.\" \"Fuck the EU & Fuck NATO.\"",
+            "url": "https://x.com/i/web/status/2091231258437112175",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-22T18:29:19.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "migration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 30,
+            "quality_score": 34,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 25,
+            "raw_engagement": 25,
+            "metrics": {
+              "likes": 20,
+              "reposts": 3,
+              "replies": 2,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -152,37 +198,6 @@
             "source": "mastodon",
             "tag": "montenegro",
             "seen_date": "Thu, 20 Aug 2026 20:46:31 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Montenegró": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Montenegro Opposition Leader Claims PM Spajic is Serbian Army Reservist https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/20/montenegro-opposition-leader-claims-pm-spajic-is-serbian-reservist/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/20/montenegro-opposition-leader-claims-pm-spajic-is-serbian-reservist/bi/",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Thu, 20 Aug 2026 15:36:05 +0000",
             "matched_countries": [
               "Szerbia",
               "Montenegró"
@@ -863,8 +878,8 @@
         "negative_hits": 11,
         "positive_hits": 0,
         "trusted_hits": 4,
-        "engagement_total": 140,
-        "raw_engagement_total": 531,
+        "engagement_total": 142,
+        "raw_engagement_total": 534,
         "quality_total": 390,
         "geopolitical_total": 337,
         "source_counts": {
