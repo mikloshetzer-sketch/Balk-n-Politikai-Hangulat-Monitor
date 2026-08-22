@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22 00:45 UTC",
+  "updated_at": "2026-08-22 01:44 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,78 +12,44 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 8
+    "collected": 7
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 60,
+        "score": 52,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 3,
+        "mentions": 8,
+        "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 188,
-        "geopolitical_total": 161,
+        "quality_total": 139,
+        "geopolitical_total": 115,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 8,
+          "mastodon": 7,
           "x": 1
         },
         "category_counts": {
           "foreign_influence": 1,
           "security": 3,
           "economic_infrastructure": 1,
-          "government_crisis": 3,
-          "ethnic_tension": 1
+          "ethnic_tension": 1,
+          "government_crisis": 2
         },
         "tag_counts": {
           "balkans": 2,
-          "serbia": 3,
+          "serbia": 2,
           "bosnia": 1,
           "montenegro": 2,
           "Szerbia": 1
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "",
-            "text": "⚡ # Serbian 🇷🇸 President Aleksandar Vučić announced that early parliamentary elections in # Serbia 🇷🇸 are scheduled for the end of October. Vučić is expected to seek the position of prime minister, which could lead to continued protests in the country. [Eurointel+] Stay tuned for more information",
-            "url": "https://mastodon.social/@thepathtopeace/117132202168037171",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Fri, 21 Aug 2026 06:59:25 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 6
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 46,
-            "quality_score": 49,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "It seems however long you live there is always some new, unhinged, stupid shit to be heard. I mean, listen to fucking this idea: (Corrupt) Minister of Culture in Serbia said that by us allowing # Trump to build his shit on a protected site in mid town Belgrade that was bombed by NATO (Clinton in '99 to distact from Lewinsky scandal) - it would be a form of a",
@@ -223,6 +189,35 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Serbia-Romania: ministra Trasporti, entro 7 giorni bozza di accordo su autostrada Pancevo-Timisoara 21 ago 13:32 - (Agenzia Nova) - La ministra delle Costruzioni, dei Trasporti e delle Infrastrutture serba, Aleksandra Sofronijevic, ha dichiarato... (Seb) Serbia-Romania: Transport ministers, within 7 days draft agreement on the Pancevo-Timisoara",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117133345888056626",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 21 Aug 2026 11:50:17 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "economic_infrastructure",
+            "event_categories": [
+              {
+                "category": "economic_infrastructure",
+                "hits": 2,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 12,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -230,31 +225,31 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 36,
-        "level": "medium",
+        "score": 42,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 7,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 94,
-        "geopolitical_total": 74,
+        "quality_total": 109,
+        "geopolitical_total": 86,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 6,
+          "mastodon": 7,
           "x": 0
         },
         "category_counts": {
           "foreign_influence": 1,
+          "protest": 2,
           "security": 3,
-          "protest": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "kosovo": 1,
-          "bosnia": 5
+          "bosnia": 6
         },
         "main_topic": "security",
         "top_posts": [
@@ -355,6 +350,40 @@
           },
           {
             "title": "",
+            "text": "Agenzia Nova: Business news: Bosnia, a Energoinvest contratto da 4,3 milioni di euro per fornitura trasformatori a Elektroprivreda 22 ago 03:00 - (Agenzia Nova) - La societa' energetica bosniaca Energoinvest si e' aggiudicata un contratto del valore di 8,42 milioni di marchi... (Seb) Business news: Bosnia and Herzegovina, Energoinvest has signed a €4.3 milli",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117136569982820510",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Sat, 22 Aug 2026 01:30:12 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 2
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "Agenzia Nova: Bosnia: a Energoinvest contratto da 4,3 milioni di euro per fornituradi trasformatori a Elektroprivreda 17 ago 16:47 - (Agenzia Nova) - La societa' energetica bosniaca Energoinvest si e' aggiudicata un contratto del valore di 8,42 milioni di marchi... (Seb) Bosnia: Energoinvest signs €4.3 million contract for transformer supply to Elektroprivre",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117111443868101787",
             "source": "mastodon",
@@ -386,37 +415,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Business news: Bosnia, Standard and Poor's migliora l'outlook della Repubblica Srpska da negativo a stabile 15 ago 06:00 - (Agenzia Nova) - Il direttore dell'Agenzia bancaria della Repubblica Srpska, entita' a marggioranza serba della Bosnia Erzegovina,... (Seb) Business news: Bosnia, Standard & Poor’s upgrades the outlook for Republika Srpska ",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117097641634017798",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Sat, 15 Aug 2026 04:30:13 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina",
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 6,
-              "Szerbia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 13,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -424,31 +422,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 60,
+        "score": 50,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 5,
+        "mentions": 6,
+        "negative_hits": 4,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 70,
-        "raw_engagement_total": 70,
-        "quality_total": 164,
-        "geopolitical_total": 147,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 142,
+        "geopolitical_total": 126,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "protest": 1,
           "foreign_influence": 1,
-          "government_crisis": 4,
+          "government_crisis": 3,
           "security": 1
         },
         "tag_counts": {
           "kosovo": 5,
-          "Koszovó": 2
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -516,41 +514,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Special Envoy of the U.S. President for Special Assignments, Richard Grenell, stated that the Prime Minister of fake country Kosovo, Albin Kurti, provoked a political crisis in Kos",
-            "text": "Special Envoy of the U.S. President for Special Assignments, Richard Grenell, stated that the Prime Minister of fake country Kosovo, Albin Kurti, provoked a political crisis in Kosovo, and that Western partners will no longer cooperate with him, because \"everything he does is",
-            "url": "https://x.com/i/web/status/2090885392970940792",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-21T19:34:59.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 70,
-            "raw_engagement": 70,
-            "metrics": {
-              "likes": 52,
-              "reposts": 14,
-              "replies": 3,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Agenzia Nova: Kosovo: Usa sollecitano leader politici a superare stallo e completare formazione istituzioni 20 ago 12:17 - (Agenzia Nova) - Gli Stati Uniti hanno rinnovato l'appello ai leader politici del Kosovo affinche' collaborino per superare... (Alt) Kosovo: US urges political leaders to overcome deadlock and complete institution training. August 20 12:",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117127447776485206",
@@ -614,6 +577,35 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "📰 75 Tage „Flamingo-Revolution“: Neue Fronten https://www. pressenza.com/de/2026/08/75-ta ge-flamingo-revolution-neue-fronten/ # Originalinhalt # Korruption # direkteDemokratie # FlamingoRevolution # Zivilgesellschaft # gewaltfreierWiderstand # News # Albanien # Proteste # Umweltschutz # Verwaltungsreform # Basisdemokratie # Schutzgebiete # Menschenrechte # ",
+            "url": "https://mastodon.trueten.de/@presenza_de/117129255551509034",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Thu, 20 Aug 2026 18:30:03 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -858,7 +850,7 @@
         "positive_hits": 1,
         "trusted_hits": 4,
         "engagement_total": 121,
-        "raw_engagement_total": 379,
+        "raw_engagement_total": 386,
         "quality_total": 395,
         "geopolitical_total": 344,
         "source_counts": {
