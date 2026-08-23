@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23 06:56 UTC",
+  "updated_at": "2026-08-23 12:24 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 19
   },
   "countries": [
     {
@@ -21,34 +21,35 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
-        "negative_hits": 4,
+        "mentions": 14,
+        "negative_hits": 3,
         "positive_hits": 2,
         "trusted_hits": 2,
-        "engagement_total": 116,
-        "raw_engagement_total": 116,
-        "quality_total": 192,
-        "geopolitical_total": 162,
+        "engagement_total": 126,
+        "raw_engagement_total": 160,
+        "quality_total": 220,
+        "geopolitical_total": 188,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 5
+          "x": 7
         },
         "category_counts": {
           "eu_integration": 3,
           "foreign_influence": 1,
-          "security": 5,
-          "government_crisis": 3
+          "security": 3,
+          "government_crisis": 4,
+          "ethnic_tension": 3
         },
         "tag_counts": {
           "balkans": 3,
           "serbia": 2,
           "montenegro": 2,
-          "Szerbia": 1,
-          "Koszovó": 3,
-          "Montenegró": 1
+          "Szerbia": 4,
+          "Koszovó": 1,
+          "Montenegró": 2
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -90,26 +91,24 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇷🇸📞🪖🇽🇰🇽🇰 — Serbian President Aleksandar Vucic sent a letter to MarkRutte urging KFOR, under UN Resolution 1244, to stop the persecution, arrests and demolition of Serb homes in Kos",
-            "text": "🇷🇸📞🪖🇽🇰🇽🇰 — Serbian President Aleksandar Vucic sent a letter to MarkRutte urging KFOR, under UN Resolution 1244, to stop the persecution, arrests and demolition of Serb homes in Kosovo 🇽🇰 and prevent the opening of the Ibar Bridge in Kosovska Mitrovica.",
-            "url": "https://x.com/i/web/status/2091288605461491731",
+            "title": "💔 THIS SHOULD SHOCK EVERYONE IN EUROPE It is deeply sad to watch a Serbian citizen from the Roma community tell his own president that he was bullied and discriminated against beca",
+            "text": "💔 THIS SHOULD SHOCK EVERYONE IN EUROPE It is deeply sad to watch a Serbian citizen from the Roma community tell his own president that he was bullied and discriminated against because of his ethnicity, and that his difficulties at school meant he struggled to learn Serbian",
+            "url": "https://x.com/i/web/status/2091496577877590130",
             "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-22T22:17:12.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-23T12:03:36.000Z",
             "matched_countries": [
-              "Szerbia",
-              "Koszovó"
+              "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 9,
-              "Koszovó": 5
+              "Szerbia": 2
             },
-            "event_category": "security",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "security",
+                "category": "ethnic_tension",
                 "hits": 1,
-                "weight": 9
+                "weight": 10
               },
               {
                 "category": "government_crisis",
@@ -117,14 +116,14 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
+            "geopolitical_score": 19,
+            "quality_score": 20,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 0,
+              "likes": 1,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -136,7 +135,7 @@
             "text": "An Albanian boy from Kosova, carrying his younger brother on his back at the border with Montenegro in April 1999, fleeing the crimes committed by Serbian military and paramilitary forces💔",
             "url": "https://x.com/i/web/status/2091266629040546029",
             "source": "x",
-            "tag": "Koszovó",
+            "tag": "Montenegró",
             "seen_date": "2026-08-22T20:49:52.000Z",
             "matched_countries": [
               "Szerbia",
@@ -160,13 +159,53 @@
             "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 103,
-            "raw_engagement": 103,
+            "engagement": 120,
+            "raw_engagement": 154,
             "metrics": {
-              "likes": 81,
-              "reposts": 8,
-              "replies": 11,
-              "quotes": 3
+              "likes": 123,
+              "reposts": 12,
+              "replies": 14,
+              "quotes": 5
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Slovenia’s left-wing parties are in full cover-up mode, with the media running interference as the country becomes an Alpine Moldova. The “Russian minority” has simply been replace",
+            "text": "Slovenia’s left-wing parties are in full cover-up mode, with the media running interference as the country becomes an Alpine Moldova. The “Russian minority” has simply been replaced by a “Serbian minority.” The Kremlin’s goal is unchanged: its own little satellite inside the EU.",
+            "url": "https://x.com/i/web/status/2091500457495605654",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-23T12:19:01.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
             },
             "quality": "x_api_filtered"
           },
@@ -198,35 +237,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Serbian fire crews battle major blaze at a nature reserve Serbian fire crews continued to battle a major wildfire in the Deliblato Sands nature reserve, as they awaited the arrival of European Union help. # News # Reuters # Newsfeed # world # environment # Europe # wildfire # Serbia # fire Read the story here: 👉 Subscribe: Keep up with the latest news from a",
-            "url": "https://mastodon.social/@fllics/117141407895719668",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sat, 22 Aug 2026 22:00:33 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "eu_integration",
-            "event_categories": [
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 15,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -234,68 +244,69 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 44,
+        "score": 50,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 0,
-        "positive_hits": 0,
-        "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 140,
-        "geopolitical_total": 116,
+        "mentions": 8,
+        "negative_hits": 1,
+        "positive_hits": 1,
+        "trusted_hits": 1,
+        "engagement_total": 24,
+        "raw_engagement_total": 24,
+        "quality_total": 127,
+        "geopolitical_total": 105,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "foreign_influence": 1,
-          "protest": 2,
-          "security": 4
+          "protest": 3,
+          "security": 3,
+          "government_crisis": 1
         },
         "tag_counts": {
           "kosovo": 1,
           "bosnia": 5,
-          "Koszovó": 1
+          "Szerbia": 1,
+          "Montenegró": 1
         },
-        "main_topic": "security",
+        "main_topic": "protest",
         "top_posts": [
           {
-            "title": "Meeting with Kurti Fails, Ulutaş Hosts NATO Commander from Sarajevo at KFOR Headquarters KFOR NATO Kosovo ÖzkanUlutaş JamesCFowler NATOHeadquarters Sarajevo KosovoSecurity Security",
-            "text": "Meeting with Kurti Fails, Ulutaş Hosts NATO Commander from Sarajevo at KFOR Headquarters KFOR NATO Kosovo ÖzkanUlutaş JamesCFowler NATOHeadquarters Sarajevo KosovoSecurity Security EULEX KosovoPolice WesternBalkans",
-            "url": "https://x.com/i/web/status/2091262451878666382",
+            "title": "This reminds me: there were few if any popular protests against the government’s support for the Serbian army, because there was very little to protest. I don’t recall any minister",
+            "text": "This reminds me: there were few if any popular protests against the government’s support for the Serbian army, because there was very little to protest. I don’t recall any ministers shouting abuse at the public for not backing the war, no newspapers arguing Sarajevo had it coming",
+            "url": "https://x.com/i/web/status/2091492465891045728",
             "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-22T20:33:16.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-23T11:47:16.000Z",
             "matched_countries": [
-              "Koszovó",
               "Bosznia-Hercegovina"
             ],
             "country_confidence": {
-              "Koszovó": 5,
-              "Bosznia-Hercegovina": 4
+              "Bosznia-Hercegovina": 4,
+              "Szerbia": 2
             },
-            "event_category": "security",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 4,
-                "weight": 9
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 40,
-            "quality_score": 44,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "geopolitical_score": 20,
+            "quality_score": 21,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 10,
+            "raw_engagement": 10,
             "metrics": {
-              "likes": 0,
+              "likes": 8,
               "reposts": 0,
-              "replies": 0,
-              "quotes": 0
+              "replies": 1,
+              "quotes": 1
             },
             "quality": "x_api_filtered"
           },
@@ -434,71 +445,34 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 60,
+        "score": 57,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 5,
+        "mentions": 7,
+        "negative_hits": 4,
         "positive_hits": 1,
-        "trusted_hits": 1,
+        "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 219,
-        "geopolitical_total": 195,
+        "quality_total": 153,
+        "geopolitical_total": 134,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
-          "x": 3
+          "x": 1
         },
         "category_counts": {
-          "security": 4,
+          "security": 3,
           "protest": 1,
           "foreign_influence": 1,
-          "government_crisis": 3
+          "government_crisis": 2
         },
         "tag_counts": {
           "kosovo": 6,
-          "Koszovó": 3
+          "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "Meeting with Kurti Fails, Ulutaş Hosts NATO Commander from Sarajevo at KFOR Headquarters KFOR NATO Kosovo ÖzkanUlutaş JamesCFowler NATOHeadquarters Sarajevo KosovoSecurity Security",
-            "text": "Meeting with Kurti Fails, Ulutaş Hosts NATO Commander from Sarajevo at KFOR Headquarters KFOR NATO Kosovo ÖzkanUlutaş JamesCFowler NATOHeadquarters Sarajevo KosovoSecurity Security EULEX KosovoPolice WesternBalkans",
-            "url": "https://x.com/i/web/status/2091262451878666382",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-22T20:33:16.000Z",
-            "matched_countries": [
-              "Koszovó",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Koszovó": 5,
-              "Bosznia-Hercegovina": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 4,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 40,
-            "quality_score": 44,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Agenzia Nova: Kosovo: opposizione, proteste di massa se non riprende sessione costitutiva Parlamento 20 ago 12:20 - (Agenzia Nova) - Il Partito democratico del Kosovo (Pdk) e l'Alleanza per il futuro del Kosovo (Aak) hanno avvertito che organizzeranno... (Alt) Kosovo: opposition, mass protests if constitutive session of parliament is not resumed August 20, 1",
@@ -563,48 +537,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇷🇸📞🪖🇽🇰🇽🇰 — Serbian President Aleksandar Vucic sent a letter to MarkRutte urging KFOR, under UN Resolution 1244, to stop the persecution, arrests and demolition of Serb homes in Kos",
-            "text": "🇷🇸📞🪖🇽🇰🇽🇰 — Serbian President Aleksandar Vucic sent a letter to MarkRutte urging KFOR, under UN Resolution 1244, to stop the persecution, arrests and demolition of Serb homes in Kosovo 🇽🇰 and prevent the opening of the Ibar Bridge in Kosovska Mitrovica.",
-            "url": "https://x.com/i/web/status/2091288605461491731",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-22T22:17:12.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Szerbia": 9,
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Agenzia Nova: Kosovo: Usa sollecitano leader politici a superare stallo e completare formazione istituzioni 20 ago 12:17 - (Agenzia Nova) - Gli Stati Uniti hanno rinnovato l'appello ai leader politici del Kosovo affinche' collaborino per superare... (Alt) Kosovo: US urges political leaders to overcome deadlock and complete institution training. August 20 12:",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117127447776485206",
@@ -632,6 +564,69 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Kosovo: salta incontro tra primo ministro Kurti e comandante Kfor per \"circostanze impreviste\" 22 ago 18:49 - (Agenzia Nova) - L'incontro annunciato tra il primo ministro ad interim del Kosovo, Albin Kurti, e il comandante della Kfor,... (Alt) Kosovo: Meeting between Prime Minister Kurti and KFOR commander over “unforeseen circumstances” August",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117140266592807565",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Sat, 22 Aug 2026 17:10:18 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 21,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "📰 75 Tage „Flamingo-Revolution“: Neue Fronten https://www. pressenza.com/de/2026/08/75-ta ge-flamingo-revolution-neue-fronten/ # Originalinhalt # Korruption # direkteDemokratie # FlamingoRevolution # Zivilgesellschaft # gewaltfreierWiderstand # News # Albanien # Proteste # Umweltschutz # Verwaltungsreform # Basisdemokratie # Schutzgebiete # Menschenrechte # ",
+            "url": "https://mastodon.trueten.de/@presenza_de/117129255551509034",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Thu, 20 Aug 2026 18:30:03 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -639,31 +634,31 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 17,
-        "level": "low",
+        "score": 21,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 5,
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 59,
-        "geopolitical_total": 47,
+        "quality_total": 70,
+        "geopolitical_total": 55,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
+          "mastodon": 5,
           "x": 0
         },
         "category_counts": {
-          "corruption_rule_of_law": 1,
+          "corruption_rule_of_law": 2,
           "government_crisis": 2,
           "eu_integration": 1
         },
         "tag_counts": {
-          "montenegro": 4
+          "montenegro": 5
         },
-        "main_topic": "government_crisis",
+        "main_topic": "corruption_rule_of_law",
         "top_posts": [
           {
             "title": "",
@@ -789,6 +784,35 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Today: Italia-Svezia oggi, Europei di pallavolo femminile: a che ora e dove vederla in diretta in chiaro Oggi, domenica 23 agosto, l'Italia di Julio Velasco torna in campo per affrontare la Svezia nel terzo incontro degli Europei di pallavolo. Le azzurre, campionesse olimpiche e mondiali, fanno parte del gruppo D e nei primi 2 incontri hanno sconfitto Croazi",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117144238265511178",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Sun, 23 Aug 2026 10:00:21 +0000",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 1
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 8,
+            "quality_score": 11,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -796,25 +820,24 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 8,
+        "score": 10,
         "level": "low",
         "scale": "0-60 risk index",
         "mentions": 2,
         "negative_hits": 0,
-        "positive_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 21,
-        "geopolitical_total": 19,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 20,
+        "geopolitical_total": 18,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
           "x": 2
         },
         "category_counts": {
-          "government_crisis": 1,
-          "security": 1
+          "government_crisis": 2
         },
         "tag_counts": {
           "Észak-Macedónia": 2
@@ -822,36 +845,36 @@
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "Perform Europe is supporting cross-border partnerships in presenting performing art across Europe. Artists & performing arts organisations from North Macedonia can apply with partn",
-            "text": "Perform Europe is supporting cross-border partnerships in presenting performing art across Europe. Artists & performing arts organisations from North Macedonia can apply with partners from across 41 Creative Europe countries. 📅Deadline: 22 October 🔗",
-            "url": "https://x.com/i/web/status/2090831560287146112",
+            "title": "The second section of the Skopje-Blace highway is expected to enter the construction phase at the end of this month, Prime Minister Hristijan Mickoski announced.",
+            "text": "The second section of the Skopje-Blace highway is expected to enter the construction phase at the end of this month, Prime Minister Hristijan Mickoski announced.",
+            "url": "https://x.com/i/web/status/2091484858077917394",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-21T16:01:04.000Z",
+            "seen_date": "2026-08-23T11:17:02.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5
+              "Észak-Macedónia": 8
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
+            "geopolitical_score": 9,
+            "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
               "likes": 0,
-              "reposts": 1,
-              "replies": 1,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -900,18 +923,18 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 18,
-        "negative_hits": 12,
+        "mentions": 17,
+        "negative_hits": 10,
         "positive_hits": 0,
-        "trusted_hits": 4,
-        "engagement_total": 243,
-        "raw_engagement_total": 655,
-        "quality_total": 438,
-        "geopolitical_total": 383,
+        "trusted_hits": 3,
+        "engagement_total": 120,
+        "raw_engagement_total": 154,
+        "quality_total": 400,
+        "geopolitical_total": 349,
         "source_counts": {
           "reddit": 0,
           "mastodon": 14,
-          "x": 4
+          "x": 3
         },
         "category_counts": {
           "corruption_rule_of_law": 7,
@@ -919,14 +942,13 @@
           "security": 3,
           "eu_integration": 1,
           "government_crisis": 4,
-          "protest": 2
+          "protest": 1
         },
         "tag_counts": {
           "balkans": 6,
           "kosovo": 1,
           "albania": 7,
-          "Koszovó": 1,
-          "Észak-Macedónia": 1,
+          "Montenegró": 1,
           "Albánia": 2
         },
         "main_topic": "corruption_rule_of_law",
