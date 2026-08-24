@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24 01:53 UTC",
+  "updated_at": "2026-08-24 06:41 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,43 +12,44 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 12
+    "collected": 21
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 59,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
+        "mentions": 16,
         "negative_hits": 1,
-        "positive_hits": 0,
-        "trusted_hits": 3,
-        "engagement_total": 99,
-        "raw_engagement_total": 99,
-        "quality_total": 167,
-        "geopolitical_total": 137,
+        "positive_hits": 1,
+        "trusted_hits": 5,
+        "engagement_total": 114,
+        "raw_engagement_total": 114,
+        "quality_total": 287,
+        "geopolitical_total": 245,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 3
+          "x": 9
         },
         "category_counts": {
           "eu_integration": 3,
           "foreign_influence": 1,
-          "security": 2,
-          "government_crisis": 3,
-          "ethnic_tension": 1
+          "security": 3,
+          "government_crisis": 7,
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "balkans": 3,
           "serbia": 2,
           "montenegro": 2,
-          "Szerbia": 2,
+          "Szerbia": 7,
+          "Koszovó": 1,
           "Észak-Macedónia": 1
         },
-        "main_topic": "eu_integration",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -90,6 +91,87 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Kosovo Police Reject Serbian Claims Over Border Fire: No Weapons Used From Kosovo Kosovo Serbia KosovoPolice Bërnjak Border KFOR Security Disinformation KosovoSerbia Balkans",
+            "text": "Kosovo Police Reject Serbian Claims Over Border Fire: No Weapons Used From Kosovo Kosovo Serbia KosovoPolice Bërnjak Border KFOR Security Disinformation KosovoSerbia Balkans",
+            "url": "https://x.com/i/web/status/2091751521851437308",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-24T04:56:40.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 4,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 36,
+            "quality_score": 37,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Its not shocking. Considering how the West/NATO allowed Croatians operation storm to ethnic cleanse and murder 200k fleeing Serbian Civilians. The old gang from the past WW2 wants ",
+            "text": "Its not shocking. Considering how the West/NATO allowed Croatians operation storm to ethnic cleanse and murder 200k fleeing Serbian Civilians. The old gang from the past WW2 wants another shot agaisnt Russia. We shall see how that's going to work.",
+            "url": "https://x.com/i/web/status/2091768708490240329",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-24T06:04:57.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 31,
+            "quality_score": 35,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "💔 THIS SHOULD SHOCK EVERYONE IN EUROPE It is deeply sad to watch a Serbian citizen from the Roma community tell his own president that he was bullied and discriminated against beca",
             "text": "💔 THIS SHOULD SHOCK EVERYONE IN EUROPE It is deeply sad to watch a Serbian citizen from the Roma community tell his own president that he was bullied and discriminated against because of his ethnicity, and that his difficulties at school meant he struggled to learn Serbian",
             "url": "https://x.com/i/web/status/2091496577877590130",
@@ -119,10 +201,10 @@
             "quality_score": 20,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 99,
-            "raw_engagement": 99,
+            "engagement": 100,
+            "raw_engagement": 100,
             "metrics": {
-              "likes": 65,
+              "likes": 66,
               "reposts": 1,
               "replies": 28,
               "quotes": 5
@@ -130,17 +212,17 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "🇷🇺🇷🇸🔥✈️RUSSIA/SERBIA: Russia has deployed an emergency Il-76 aircraft to Serbia to assist in combating severe wildfires. Serbian official Aleksandar Vulin noted the aid was provide",
-            "text": "🇷🇺🇷🇸🔥✈️RUSSIA/SERBIA: Russia has deployed an emergency Il-76 aircraft to Serbia to assist in combating severe wildfires. Serbian official Aleksandar Vulin noted the aid was provided unconditionally due to the \"brotherly relations\" between the two nations, while President",
-            "url": "https://x.com/i/web/status/2091698362206564728",
+            "title": "Fedorov cooperates with African oligarch Musk. Zelensky cooperates with Serbian despot Vucic. Both Musk and Vucic are Russia-loving Putinists. Ukraine needs someone third as its pr",
+            "text": "Fedorov cooperates with African oligarch Musk. Zelensky cooperates with Serbian despot Vucic. Both Musk and Vucic are Russia-loving Putinists. Ukraine needs someone third as its president - a non-nationalist Eurofederalist person who won't cooperate with Putinists.",
+            "url": "https://x.com/i/web/status/2091758143038456219",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-08-24T01:25:26.000Z",
+            "seen_date": "2026-08-24T05:22:58.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2
+              "Szerbia": 6
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -168,64 +250,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "EU crews help Serbia battle Deliblato Sands wildfire EU crews joined Serbia's efforts to fight wildfires in the Deliblato nature preserve after the country activated the European Union's Civil Protection mechanism. # News # Reuters # Newsfeed # serbia # wildfire # environment # europe 👉 Subscribe: Keep up with the latest news from around the world: Follow Re",
-            "url": "https://mastodon.social/@fllics/117145889858080198",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sun, 23 Aug 2026 17:00:22 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "eu_integration",
-            "event_categories": [
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 15,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Serbian fire crews battle major blaze at a nature reserve Serbian fire crews continued to battle a major wildfire in the Deliblato Sands nature reserve, as they awaited the arrival of European Union help. # News # Reuters # Newsfeed # world # environment # Europe # wildfire # Serbia # fire Read the story here: 👉 Subscribe: Keep up with the latest news from a",
-            "url": "https://mastodon.social/@fllics/117141407895719668",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sat, 22 Aug 2026 22:00:33 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "eu_integration",
-            "event_categories": [
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 15,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -617,28 +641,30 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 21,
+        "score": 26,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 5,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 54,
-        "geopolitical_total": 42,
+        "quality_total": 64,
+        "geopolitical_total": 51,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "corruption_rule_of_law": 2,
-          "government_crisis": 2
+          "government_crisis": 2,
+          "security": 1
         },
         "tag_counts": {
-          "montenegro": 4
+          "montenegro": 4,
+          "Montenegró": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -766,54 +792,24 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Észak-Macedónia",
-      "social_signal": {
-        "score": 5,
-        "level": "low",
-        "scale": "0-60 risk index",
-        "mentions": 1,
-        "negative_hits": 0,
-        "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 10,
-        "geopolitical_total": 9,
-        "source_counts": {
-          "reddit": 0,
-          "mastodon": 0,
-          "x": 1
-        },
-        "category_counts": {
-          "government_crisis": 1
-        },
-        "tag_counts": {
-          "Észak-Macedónia": 1
-        },
-        "main_topic": "government_crisis",
-        "top_posts": [
+          },
           {
-            "title": "The second section of the Skopje-Blace highway is expected to enter the construction phase at the end of this month, Prime Minister Hristijan Mickoski announced.",
-            "text": "The second section of the Skopje-Blace highway is expected to enter the construction phase at the end of this month, Prime Minister Hristijan Mickoski announced.",
-            "url": "https://x.com/i/web/status/2091484858077917394",
+            "title": "Mileta Ojdanić (Indicted Drug Trafficker) Former Montenegrin police officer. Indicted in 2024 for organising the “police cartel”. Accused of trafficking 4.3 tonnes of cocaine from ",
+            "text": "Mileta Ojdanić (Indicted Drug Trafficker) Former Montenegrin police officer. Indicted in 2024 for organising the “police cartel”. Accused of trafficking 4.3 tonnes of cocaine from South America into Europe. Accused of laundering €7 million. His companies used",
+            "url": "https://x.com/i/web/status/2091767921932701871",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-23T11:17:02.000Z",
+            "tag": "Montenegró",
+            "seen_date": "2026-08-24T06:01:50.000Z",
             "matched_countries": [
-              "Észak-Macedónia"
+              "Montenegró"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 8
+              "Montenegró": 3
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
               }
@@ -836,19 +832,127 @@
       }
     },
     {
+      "name": "Észak-Macedónia",
+      "social_signal": {
+        "score": 13,
+        "level": "low",
+        "scale": "0-60 risk index",
+        "mentions": 2,
+        "negative_hits": 1,
+        "positive_hits": 1,
+        "trusted_hits": 0,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 39,
+        "geopolitical_total": 37,
+        "source_counts": {
+          "reddit": 0,
+          "mastodon": 0,
+          "x": 2
+        },
+        "category_counts": {
+          "corruption_rule_of_law": 1,
+          "security": 1
+        },
+        "tag_counts": {
+          "Szerbia": 1,
+          "Észak-Macedónia": 1
+        },
+        "main_topic": "corruption_rule_of_law",
+        "top_posts": [
+          {
+            "title": "The investigation into the smuggling of marijuana from North Macedonia to Serbia has been expanded by the Basic Public Prosecutor’s Office for Prosecuting Organized Crime and Corru",
+            "text": "The investigation into the smuggling of marijuana from North Macedonia to Serbia has been expanded by the Basic Public Prosecutor’s Office for Prosecuting Organized Crime and Corruption to include seven new suspects.",
+            "url": "https://x.com/i/web/status/2091759858152362197",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-24T05:29:47.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Szerbia": 1
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "The Swiss Federal Administrative Court has upheld the deportation order against a 35-year-old citizen of North Macedonia. The Federal Office of Police (Fedpol) accused him of suppo",
+            "text": "The Swiss Federal Administrative Court has upheld the deportation order against a 35-year-old citizen of North Macedonia. The Federal Office of Police (Fedpol) accused him of supporting the terrorist organization Islamic State (ISIS).",
+            "url": "https://x.com/i/web/status/2091706825951347098",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-08-24T01:59:03.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          }
+        ]
+      }
+    },
+    {
       "name": "Albánia",
       "social_signal": {
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 19,
-        "negative_hits": 14,
+        "negative_hits": 13,
         "positive_hits": 0,
         "trusted_hits": 2,
         "engagement_total": 69,
         "raw_engagement_total": 69,
-        "quality_total": 415,
-        "geopolitical_total": 364,
+        "quality_total": 421,
+        "geopolitical_total": 370,
         "source_counts": {
           "reddit": 0,
           "mastodon": 14,
@@ -859,17 +963,17 @@
           "foreign_influence": 1,
           "security": 1,
           "eu_integration": 1,
-          "government_crisis": 3,
-          "protest": 3,
-          "ethnic_tension": 2
+          "government_crisis": 5,
+          "protest": 2,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 7,
           "kosovo": 1,
           "albania": 6,
-          "Koszovó": 2,
+          "Koszovó": 1,
           "Montenegró": 1,
-          "Albánia": 2
+          "Albánia": 3
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -952,6 +1056,46 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Today marks the 86th day of the revolt, with large numbers of citizens once again expected to protest tonight, as they call for the resignation of Prime Minister Edi Rama.",
+            "text": "Today marks the 86th day of the revolt, with large numbers of citizens once again expected to protest tonight, as they call for the resignation of Prime Minister Edi Rama.",
+            "url": "https://x.com/i/web/status/2091767579421311236",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-08-24T06:00:28.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Day 85 of anti-corruption protest in Tirana, Albania https://www. youtube.com/watch?v=YN7U40yZnyc # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
             "url": "https://mas.to/@meganL/117146071625566222",
@@ -992,40 +1136,6 @@
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Sat, 22 Aug 2026 18:08:58 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 83 of anti-corruption protest in Tirana, Albania. https://www. youtube.com/watch?v=IhlSYo-UQcE # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
-            "url": "https://mas.to/@meganL/117134803229193024",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Fri, 21 Aug 2026 18:00:54 +0000",
             "matched_countries": [
               "Albánia"
             ],
