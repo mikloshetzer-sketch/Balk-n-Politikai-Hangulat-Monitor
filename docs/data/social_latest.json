@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24 07:16 UTC",
+  "updated_at": "2026-08-24 12:33 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 19
+    "collected": 15
   },
   "countries": [
     {
@@ -22,31 +22,30 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 12,
-        "negative_hits": 1,
-        "positive_hits": 1,
-        "trusted_hits": 4,
-        "engagement_total": 17,
-        "raw_engagement_total": 17,
-        "quality_total": 222,
-        "geopolitical_total": 187,
+        "negative_hits": 2,
+        "positive_hits": 0,
+        "trusted_hits": 3,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 182,
+        "geopolitical_total": 148,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 7,
-          "x": 5
+          "mastodon": 8,
+          "x": 4
         },
         "category_counts": {
           "eu_integration": 3,
           "foreign_influence": 1,
-          "security": 2,
-          "government_crisis": 5,
-          "ethnic_tension": 1
+          "security": 1,
+          "government_crisis": 6,
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "balkans": 3,
-          "serbia": 2,
+          "serbia": 3,
           "montenegro": 2,
-          "Szerbia": 4,
-          "Koszovó": 1
+          "Szerbia": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -90,76 +89,30 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Kosovo Police Reject Serbian Claims Over Border Fire: No Weapons Used From Kosovo Kosovo Serbia KosovoPolice Bërnjak Border KFOR Security Disinformation KosovoSerbia Balkans",
-            "text": "Kosovo Police Reject Serbian Claims Over Border Fire: No Weapons Used From Kosovo Kosovo Serbia KosovoPolice Bërnjak Border KFOR Security Disinformation KosovoSerbia Balkans",
-            "url": "https://x.com/i/web/status/2091751521851437308",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-24T04:56:40.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 4,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 36,
-            "quality_score": 37,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Its not shocking. Considering how the West/NATO allowed Croatians operation storm to ethnic cleanse and murder 200k fleeing Serbian Civilians. The old gang from the past WW2 wants ",
-            "text": "Its not shocking. Considering how the West/NATO allowed Croatians operation storm to ethnic cleanse and murder 200k fleeing Serbian Civilians. The old gang from the past WW2 wants another shot agaisnt Russia. We shall see how that's going to work.",
-            "url": "https://x.com/i/web/status/2091768708490240329",
+            "title": "Serbian President Vučić announced in an interview with RTS on August 20, 2026, that extraordinary parliamentary elections would be held on October 18 or 25, 2026, and that the exac",
+            "text": "Serbian President Vučić announced in an interview with RTS on August 20, 2026, that extraordinary parliamentary elections would be held on October 18 or 25, 2026, and that the exact date would be announced in the coming days electionserbia izborisrbija",
+            "url": "https://x.com/i/web/status/2091863810038485394",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-08-24T06:04:57.000Z",
+            "seen_date": "2026-08-24T12:22:51.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2
+              "Szerbia": 13
             },
-            "event_category": "ethnic_tension",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 1,
+                "category": "government_crisis",
+                "hits": 2,
                 "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
               }
             ],
-            "geopolitical_score": 31,
-            "quality_score": 35,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "metrics": {
@@ -227,6 +180,41 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Acting PM said that extending the rule of law and 🇽🇰 sovereignty in the north has helped uncover the remains of people forcibly disappeared during the war. He said 🇽🇰 is doing its ",
+            "text": "Acting PM said that extending the rule of law and 🇽🇰 sovereignty in the north has helped uncover the remains of people forcibly disappeared during the war. He said 🇽🇰 is doing its part, but has no influence over Belgrade to open files related to the missing.",
+            "url": "https://x.com/i/web/status/2091861395696447962",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-24T12:13:16.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 12,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -234,32 +222,35 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 29,
-        "level": "medium",
+        "score": 43,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 7,
         "negative_hits": 0,
         "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 75,
-        "geopolitical_total": 58,
+        "trusted_hits": 2,
+        "engagement_total": 17,
+        "raw_engagement_total": 17,
+        "quality_total": 102,
+        "geopolitical_total": 81,
         "source_counts": {
-          "reddit": 0,
+          "reddit": 1,
           "mastodon": 5,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "foreign_influence": 1,
           "protest": 2,
-          "security": 2
+          "security": 3,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "kosovo": 1,
-          "bosnia": 4
+          "bosnia": 4,
+          "serbia": 1,
+          "Koszovó": 1
         },
-        "main_topic": "protest",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -284,6 +275,35 @@
             ],
             "geopolitical_score": 13,
             "quality_score": 18,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Milan Veruović",
+            "text": "Već par nedelja u seriji gledam dokumentarce o Zoranu Đinđiću, njegovom usponu, dešavanjima 90ih, svemu što se dešavalo pre i posle njegovog atentata. Pogledao sam i jedan intervju Milana Veruovića, njegovog telohranitelja koji je ranjen pored Zorana u trenutku atentata. Do knjige Treći metak nisam došao i nisam ni siguran da li da je čitam, ali ne bih voleo",
+            "url": "https://www.reddit.com/r/serbia/comments/1vx0gs7/milan_veruović/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-08-24T11:44:28+00:00",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 16,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -394,35 +414,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Bosnia: arrivate truppe italiane per esercitazione Eufor Quick Response 2026 21 ago 16:35 - (Agenzia Nova) - Le truppe delle Forze armate italiane sono arrivate via mare nel porto di Ploce, in Bosnia Erzegovina, da dove... (Seb) Bosnia: Italian troops have arrived for the Eufor Quick Response 2026 training exercise. August 21, 4:35 PM – (Agenzi",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117134053717434217",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Fri, 21 Aug 2026 14:50:17 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -430,31 +421,30 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 58,
+        "score": 52,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
+        "mentions": 6,
         "negative_hits": 4,
         "positive_hits": 1,
-        "trusted_hits": 1,
+        "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 169,
-        "geopolitical_total": 147,
+        "quality_total": 143,
+        "geopolitical_total": 125,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
-          "security": 3,
+          "security": 2,
           "protest": 1,
           "foreign_influence": 1,
           "government_crisis": 2
         },
         "tag_counts": {
-          "kosovo": 6,
-          "Koszovó": 1
+          "kosovo": 6
         },
         "main_topic": "security",
         "top_posts": [
@@ -522,41 +512,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "An unnamed NATO official said on Aug. 21 that the changes in KFOR's presence at the main bridge in Kosovska Mitrovica are being made with full transparency and the involvement of a",
-            "text": "An unnamed NATO official said on Aug. 21 that the changes in KFOR's presence at the main bridge in Kosovska Mitrovica are being made with full transparency and the involvement of all relevant parties.",
-            "url": "https://x.com/i/web/status/2091786301569638624",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-24T07:14:52.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 26,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Agenzia Nova: Kosovo: Usa sollecitano leader politici a superare stallo e completare formazione istituzioni 20 ago 12:17 - (Agenzia Nova) - Gli Stati Uniti hanno rinnovato l'appello ai leader politici del Kosovo affinche' collaborino per superare... (Alt) Kosovo: US urges political leaders to overcome deadlock and complete institution training. August 20 12:",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117127447776485206",
@@ -618,6 +573,35 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "📰 75 Tage „Flamingo-Revolution“: Neue Fronten https://www. pressenza.com/de/2026/08/75-ta ge-flamingo-revolution-neue-fronten/ # Originalinhalt # Korruption # direkteDemokratie # FlamingoRevolution # Zivilgesellschaft # gewaltfreierWiderstand # News # Albanien # Proteste # Umweltschutz # Verwaltungsreform # Basisdemokratie # Schutzgebiete # Menschenrechte # ",
+            "url": "https://mastodon.trueten.de/@presenza_de/117129255551509034",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Thu, 20 Aug 2026 18:30:03 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -625,33 +609,69 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 26,
+        "score": 33,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 0,
-        "positive_hits": 0,
-        "trusted_hits": 0,
+        "mentions": 6,
+        "negative_hits": 1,
+        "positive_hits": 1,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 64,
-        "geopolitical_total": 51,
+        "quality_total": 88,
+        "geopolitical_total": 71,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "corruption_rule_of_law": 2,
           "government_crisis": 2,
+          "eu_integration": 1,
           "security": 1
         },
         "tag_counts": {
           "montenegro": 4,
-          "Montenegró": 1
+          "Montenegró": 2
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
+          {
+            "title": "From Podgorica to Brussels, Montenegro’s EU journey continues. 🇲🇪🇪🇺 YEAs Jelena Bulajić and Luka Globarević met the people working on accession from Brussels and explored how negot",
+            "text": "From Podgorica to Brussels, Montenegro’s EU journey continues. 🇲🇪🇪🇺 YEAs Jelena Bulajić and Luka Globarević met the people working on accession from Brussels and explored how negotiations with the European Commission move the process forward. YEAdo EUwithYOU WeBalkans",
+            "url": "https://x.com/i/web/status/2091835721543811225",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-08-24T10:31:15.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 5
+            },
+            "event_category": "eu_integration",
+            "event_categories": [
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 24,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Il Fatto Quotidiano: Velasco pesca dalla panchina e l’Italia si diverte: battuta Montenegro, seconda vittoria agli Europei di volley femminile L’Italia di Velasco fa due su due agli Europei di volley femminile 2026. Dopo la vittoria contro la Croazia, arriva un altro 3 a 0 contro il Montenegro. Questa volta però le azzurre giocano in scioltezza e si diverton",
@@ -776,41 +796,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Mileta Ojdanić (Indicted Drug Trafficker) Former Montenegrin police officer. Indicted in 2024 for organising the “police cartel”. Accused of trafficking 4.3 tonnes of cocaine from ",
-            "text": "Mileta Ojdanić (Indicted Drug Trafficker) Former Montenegrin police officer. Indicted in 2024 for organising the “police cartel”. Accused of trafficking 4.3 tonnes of cocaine from South America into Europe. Accused of laundering €7 million. His companies used",
-            "url": "https://x.com/i/web/status/2091767921932701871",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-08-24T06:01:50.000Z",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 3
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -818,32 +803,31 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 24,
+        "score": 35,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 2,
+        "mentions": 4,
+        "negative_hits": 3,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 70,
-        "geopolitical_total": 67,
+        "engagement_total": 46,
+        "raw_engagement_total": 46,
+        "quality_total": 91,
+        "geopolitical_total": 87,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
+          "government_crisis": 2,
           "corruption_rule_of_law": 1,
-          "government_crisis": 1,
           "security": 1
         },
         "tag_counts": {
-          "Szerbia": 1,
-          "Észak-Macedónia": 2
+          "Észak-Macedónia": 4
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "Had the honour to present the Order of Princess Olga to , Member of the Parliament of North Macedonia 🇺🇦🇲🇰 Ms Petrovska was awarded the Order by President Volodymyr Zelenskyy in 20",
@@ -875,10 +859,50 @@
             "quality_score": 31,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 46,
+            "raw_engagement": 46,
             "metrics": {
-              "likes": 1,
+              "likes": 38,
+              "reposts": 7,
+              "replies": 0,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "The Basic Criminal Court in Skopje opened proceedings today against former Deputy Prime Minister Artan Grubi and seven other defendants, accused of abuses at the State Lottery JSC.",
+            "text": "The Basic Criminal Court in Skopje opened proceedings today against former Deputy Prime Minister Artan Grubi and seven other defendants, accused of abuses at the State Lottery JSC.",
+            "url": "https://x.com/i/web/status/2091798834451976691",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-08-24T08:04:40.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 21,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -890,7 +914,7 @@
             "text": "The investigation into the smuggling of marijuana from North Macedonia to Serbia has been expanded by the Basic Public Prosecutor’s Office for Prosecuting Organized Crime and Corruption to include seven new suspects.",
             "url": "https://x.com/i/web/status/2091759858152362197",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Észak-Macedónia",
             "seen_date": "2026-08-24T05:29:47.000Z",
             "matched_countries": [
               "Észak-Macedónia"
@@ -970,77 +994,38 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 19,
-        "negative_hits": 13,
-        "positive_hits": 0,
+        "mentions": 16,
+        "negative_hits": 11,
+        "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 78,
-        "raw_engagement_total": 78,
-        "quality_total": 421,
-        "geopolitical_total": 370,
+        "engagement_total": 162,
+        "raw_engagement_total": 162,
+        "quality_total": 361,
+        "geopolitical_total": 314,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 14,
-          "x": 5
+          "mastodon": 13,
+          "x": 3
         },
         "category_counts": {
           "corruption_rule_of_law": 8,
           "foreign_influence": 1,
-          "security": 1,
+          "security": 2,
           "eu_integration": 1,
-          "government_crisis": 5,
+          "government_crisis": 1,
           "protest": 2,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 7,
           "kosovo": 1,
-          "albania": 6,
-          "Koszovó": 1,
+          "albania": 5,
           "Montenegró": 1,
-          "Albánia": 3
+          "Észak-Macedónia": 1,
+          "Albánia": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
-          {
-            "title": "",
-            "text": "Home Office could be blocked from deporting trafficking victims to Albania By Diane Taylor Many males are returned even if they are trafficking victims but Home Office must now consider new legal guidance https://www. theguardian.com/uk-news/2026/a ug/21/home-office-albanian-trafficking-victims-deport # Immigrationandasylum # HomeOffice # Politics # Albania ",
-            "url": "https://rssfeed.media/@guardianfeeds/117133541594122725",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Fri, 21 Aug 2026 12:40:03 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "migration",
-                "hits": 2,
-                "weight": 6
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 32,
-            "quality_score": 37,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "https://www. theguardian.com/uk-news/2026/a ug/21/home-office-albanian-trafficking-victims-deport . \"The # HomeOffice could be blocked from deporting many young # male # trafficking # victims to # Albania after a major # court # ruling ... Data disclosed in the court case shows that while # Albanian # females were previously major victims of trafficking, in ",
@@ -1079,46 +1064,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Today marks the 86th day of the revolt, with large numbers of citizens once again expected to protest tonight, as they call for the resignation of Prime Minister Edi Rama.",
-            "text": "Today marks the 86th day of the revolt, with large numbers of citizens once again expected to protest tonight, as they call for the resignation of Prime Minister Edi Rama.",
-            "url": "https://x.com/i/web/status/2091767579421311236",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-08-24T06:00:28.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -1161,6 +1106,74 @@
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Sat, 22 Aug 2026 18:08:58 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 83 of anti-corruption protest in Tirana, Albania. https://www. youtube.com/watch?v=IhlSYo-UQcE # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
+            "url": "https://mas.to/@meganL/117134803229193024",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Fri, 21 Aug 2026 18:00:54 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 82 of anti-corruption protest in Tirana, Albania https://www. youtube.com/watch?v=OaBvXkEMLzg # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
+            "url": "https://mas.to/@meganL/117129064490704511",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Thu, 20 Aug 2026 17:41:28 +0000",
             "matched_countries": [
               "Albánia"
             ],
