@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25 18:31 UTC",
+  "updated_at": "2026-08-25 18:55 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 18
+    "collected": 20
   },
   "countries": [
     {
@@ -21,37 +21,36 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 3,
+        "mentions": 14,
+        "negative_hits": 4,
         "positive_hits": 1,
         "trusted_hits": 3,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 249,
-        "geopolitical_total": 211,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 280,
+        "geopolitical_total": 241,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
-          "x": 4
+          "x": 5
         },
         "category_counts": {
           "eu_integration": 1,
           "foreign_influence": 1,
           "security": 5,
           "corruption_rule_of_law": 1,
-          "government_crisis": 5
+          "government_crisis": 6
         },
         "tag_counts": {
           "balkans": 3,
           "serbia": 3,
           "kosovo": 1,
           "montenegro": 2,
-          "Szerbia": 1,
+          "Szerbia": 3,
           "Koszovó": 1,
-          "Montenegró": 1,
-          "Albánia": 1
+          "Montenegró": 1
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -119,6 +118,44 @@
             "quality_score": 35,
             "source_reliability": 5,
             "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Serbian President Aleksandar Vučić publicly thanks his”brother,”Edi Rama,and the official Albanian government after they blocked,for the fourth time,the Democratic Party’s initiati",
+            "text": "Serbian President Aleksandar Vučić publicly thanks his”brother,”Edi Rama,and the official Albanian government after they blocked,for the fourth time,the Democratic Party’s initiative in the Albanian Parliament for the adoption of a resolution condemning Serbian genocide in Kosovo",
+            "url": "https://x.com/i/web/status/2092324148643016878",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-25T18:52:05.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9,
+              "Albánia": 9,
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 30,
+            "quality_score": 31,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "metrics": {
@@ -201,48 +238,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "German President Frank-Walter Steinmeier describes the reality in Germany - plain and simple. Will there be active language lessons in Kurdish, Arabic, Turkish, Hebrew, Italian, Sp",
-            "text": "German President Frank-Walter Steinmeier describes the reality in Germany - plain and simple. Will there be active language lessons in Kurdish, Arabic, Turkish, Hebrew, Italian, Spanish, Albanian, Rumanian, Bulgarian, Aramaic, Serbian and Russian in schools in the near",
-            "url": "https://x.com/i/web/status/2092318381051445387",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-08-25T18:29:10.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 18,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -415,30 +410,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
+        "mentions": 10,
         "negative_hits": 5,
         "positive_hits": 1,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 228,
-        "geopolitical_total": 195,
+        "quality_total": 217,
+        "geopolitical_total": 185,
         "source_counts": {
           "reddit": 0,
           "mastodon": 8,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
           "economic_infrastructure": 1,
           "security": 5,
           "government_crisis": 2,
           "protest": 1,
-          "foreign_influence": 1,
-          "ethnic_tension": 1
+          "foreign_influence": 1
         },
         "tag_counts": {
           "kosovo": 8,
-          "Koszovó": 3
+          "Koszovó": 2
         },
         "main_topic": "security",
         "top_posts": [
@@ -818,8 +812,8 @@
         "negative_hits": 0,
         "positive_hits": 3,
         "trusted_hits": 0,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
         "quality_total": 77,
         "geopolitical_total": 73,
         "source_counts": {
@@ -866,10 +860,10 @@
             "quality_score": 28,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 0,
+              "likes": 1,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -997,13 +991,13 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 15,
-        "negative_hits": 8,
+        "negative_hits": 9,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 344,
-        "geopolitical_total": 305,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 365,
+        "geopolitical_total": 326,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
@@ -1020,12 +1014,49 @@
           "balkans": 8,
           "kosovo": 1,
           "albania": 2,
-          "Szerbia": 2,
-          "Észak-Macedónia": 1,
-          "Albánia": 1
+          "Szerbia": 3,
+          "Észak-Macedónia": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
+          {
+            "title": "Serbian President Aleksandar Vučić publicly thanks his”brother,”Edi Rama,and the official Albanian government after they blocked,for the fourth time,the Democratic Party’s initiati",
+            "text": "Serbian President Aleksandar Vučić publicly thanks his”brother,”Edi Rama,and the official Albanian government after they blocked,for the fourth time,the Democratic Party’s initiative in the Albanian Parliament for the adoption of a resolution condemning Serbian genocide in Kosovo",
+            "url": "https://x.com/i/web/status/2092324148643016878",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-25T18:52:05.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9,
+              "Albánia": 9,
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 30,
+            "quality_score": 31,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Because the coverage is live, sometimes people come up behind someone being interviewed and hold up a sign. This one says (machine translated): \"Labor pensions Stolen by state crime. State crime over the law (Article 79) and border fact in Lunder protected by SPAK\" SPAK is supposed to be the independent agency in Albania for investigating corruption. https:/",
@@ -1140,40 +1171,6 @@
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Sun, 23 Aug 2026 17:46:36 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 84 of anti-corruption protest in Tirana, Albania. https://www. youtube.com/watch?v=QnEWP9UbcqQ # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
-            "url": "https://mas.to/@meganL/117140497255906112",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sat, 22 Aug 2026 18:08:58 +0000",
             "matched_countries": [
               "Albánia"
             ],
