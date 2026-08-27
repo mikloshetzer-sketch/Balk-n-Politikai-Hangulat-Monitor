@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26 20:02 UTC",
+  "updated_at": "2026-08-27 06:00 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 20
+    "collected": 16
   },
   "countries": [
     {
@@ -21,32 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
-        "negative_hits": 3,
+        "mentions": 13,
+        "negative_hits": 6,
         "positive_hits": 2,
-        "trusted_hits": 1,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 190,
-        "geopolitical_total": 162,
+        "trusted_hits": 2,
+        "engagement_total": 10,
+        "raw_engagement_total": 10,
+        "quality_total": 208,
+        "geopolitical_total": 176,
         "source_counts": {
           "reddit": 1,
           "mastodon": 8,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
           "eu_integration": 1,
           "foreign_influence": 1,
           "corruption_rule_of_law": 1,
           "security": 5,
-          "government_crisis": 4
+          "government_crisis": 4,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 2,
           "serbia": 4,
           "kosovo": 1,
           "montenegro": 2,
-          "Szerbia": 2,
+          "Szerbia": 3,
           "Montenegró": 1
         },
         "main_topic": "security",
@@ -125,38 +126,38 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Croatia strongly supports the dialogue between Kosovo and Serbia. The two sovereign independent states must find a way to talk and to resolve the differences between the two states",
-            "text": "Croatia strongly supports the dialogue between Kosovo and Serbia. The two sovereign independent states must find a way to talk and to resolve the differences between the two states of the Western Balkans for the stability and security of the entire region. Hrvatska Srbija EU",
-            "url": "https://x.com/i/web/status/2092701309346414823",
+            "title": "Translation: albanians will lose the war again and beg NATO to bomb children in Belgrade again",
+            "text": "Translation: albanians will lose the war again and beg NATO to bomb children in Belgrade again",
+            "url": "https://x.com/i/web/status/2092818243819843928",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-08-26T19:50:47.000Z",
+            "seen_date": "2026-08-27T03:35:26.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5,
-              "Koszovó": 1
+              "Szerbia": 4,
+              "Albánia": 2
             },
             "event_category": "security",
             "event_categories": [
               {
                 "category": "security",
-                "hits": 2,
+                "hits": 1,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 19,
+            "geopolitical_score": 16,
             "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 6,
+            "raw_engagement": 6,
             "metrics": {
-              "likes": 0,
+              "likes": 4,
               "reposts": 0,
-              "replies": 0,
-              "quotes": 0
+              "replies": 1,
+              "quotes": 1
             },
             "quality": "x_api_filtered"
           },
@@ -195,38 +196,37 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Although Serbia has been burning for a month, Belgrade regime regularly refused EU help. The regime does not know how to wash itself from this disaster at the time of early electio",
-            "text": "Although Serbia has been burning for a month, Belgrade regime regularly refused EU help. The regime does not know how to wash itself from this disaster at the time of early elections. Verbal attacks on Kosovo, Montenegro, Croatia are expected in order to divert attention. Srbija",
-            "url": "https://x.com/i/web/status/2092592677959201096",
+            "title": "EU: Please take Kosovo seriously. A Serbian minister saying she would have “ethnically cleansed” Kosovo demands a clear response. Dialogue matters, but so do red lines. Act before ",
+            "text": "EU: Please take Kosovo seriously. A Serbian minister saying she would have “ethnically cleansed” Kosovo demands a clear response. Dialogue matters, but so do red lines. Act before escalation becomes crisis. DW:",
+            "url": "https://x.com/i/web/status/2092767432788127928",
             "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-08-26T12:39:07.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-27T00:13:32.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 9,
-              "Koszovó": 1,
-              "Montenegró": 1
+              "Szerbia": 2,
+              "Koszovó": 1
             },
-            "event_category": "security",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "security",
+                "category": "ethnic_tension",
                 "hits": 1,
-                "weight": 9
+                "weight": 10
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
+            "geopolitical_score": 14,
+            "quality_score": 15,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
               "likes": 0,
               "reposts": 0,
-              "replies": 0,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -402,30 +402,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
-        "negative_hits": 7,
+        "mentions": 11,
+        "negative_hits": 6,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 206,
-        "geopolitical_total": 178,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 191,
+        "geopolitical_total": 164,
         "source_counts": {
           "reddit": 0,
           "mastodon": 8,
-          "x": 4
+          "x": 3
         },
         "category_counts": {
           "government_crisis": 5,
           "economic_infrastructure": 1,
-          "security": 3,
+          "security": 2,
           "protest": 1,
-          "foreign_influence": 2
+          "foreign_influence": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "kosovo": 8,
           "Koszovó": 2,
-          "Észak-Macedónia": 2
+          "Észak-Macedónia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -556,46 +557,33 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Kosovo and North Macedonia Customs Officials Discuss Joint Border Crossing at Hani i Elezit Kosovo NorthMacedonia HaniIElezit Customs BorderCrossing Trade RegionalCooperation Smugg",
-            "text": "Kosovo and North Macedonia Customs Officials Discuss Joint Border Crossing at Hani i Elezit Kosovo NorthMacedonia HaniIElezit Customs BorderCrossing Trade RegionalCooperation Smuggling SEED WesternBalkans Prishtina",
-            "url": "https://x.com/i/web/status/2092597554454155728",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-26T12:58:30.000Z",
+            "title": "",
+            "text": "Agenzia Nova: Ucraina: presidente Kosovo, siamo stati a fianco di Kiev fin dai primi giorni di guerra 24 ago 14:44 - (Agenzia Nova) - Il Kosovo e' stato a fianco dell'Ucraina fin dai primi giorni di guerra. Lo ha detto la presidente ad interim... (Alt) Ukraine: Kosovo president, we have been by Kyiv’s side since the earliest days of the war. August 24, 2:44 ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117150568843716017",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Mon, 24 Aug 2026 12:50:18 +0000",
             "matched_countries": [
-              "Koszovó",
-              "Észak-Macedónia"
+              "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 5,
-              "Észak-Macedónia": 5
+              "Koszovó": 1
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 14,
+            "geopolitical_score": 12,
             "quality_score": 15,
-            "source_reliability": 2,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -788,32 +776,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 45,
-        "level": "high",
+        "score": 24,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 1,
-        "positive_hits": 2,
+        "mentions": 4,
+        "negative_hits": 0,
+        "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 121,
-        "raw_engagement_total": 1083,
-        "quality_total": 107,
-        "geopolitical_total": 100,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 68,
+        "geopolitical_total": 64,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 7
+          "x": 4
         },
         "category_counts": {
-          "security": 3,
-          "government_crisis": 4
+          "security": 2,
+          "government_crisis": 2
         },
         "tag_counts": {
-          "Szerbia": 1,
-          "Koszovó": 1,
-          "Észak-Macedónia": 5
+          "Észak-Macedónia": 4
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "Processing capacity is the real bottleneck for antimony. China controls most of it and already restricted exports. North Macedonia mine revival is a start, but processing infrastru",
@@ -861,47 +847,6 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Court papers show how marijuana flowed across the North Macedonia-Serbia border declared as pillows, cakes and duvets. Read more:",
-            "text": "Court papers show how marijuana flowed across the North Macedonia-Serbia border declared as pillows, cakes and duvets. Read more:",
-            "url": "https://x.com/i/web/status/2092677204287115497",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-08-26T18:15:00.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Szerbia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 18,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "The Skopje Court of Appeals has announced that it dismissed as unfounded an appeal filed by the Basic Public Prosecutor’s Office in Skopje and upheld the Skopje Basic Criminal Cour",
             "text": "The Skopje Court of Appeals has announced that it dismissed as unfounded an appeal filed by the Basic Public Prosecutor’s Office in Skopje and upheld the Skopje Basic Criminal Court’s decision acquitting former Prime Minister Nikolla Gruevski of the char…",
             "url": "https://x.com/i/web/status/2092679191208558945",
@@ -942,19 +887,18 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Kosovo and North Macedonia Customs Officials Discuss Joint Border Crossing at Hani i Elezit Kosovo NorthMacedonia HaniIElezit Customs BorderCrossing Trade RegionalCooperation Smugg",
-            "text": "Kosovo and North Macedonia Customs Officials Discuss Joint Border Crossing at Hani i Elezit Kosovo NorthMacedonia HaniIElezit Customs BorderCrossing Trade RegionalCooperation Smuggling SEED WesternBalkans Prishtina",
-            "url": "https://x.com/i/web/status/2092597554454155728",
+            "title": "Court papers show how marijuana flowed across the North Macedonia-Serbia border declared as pillows, cakes and duvets. Read more:",
+            "text": "Court papers show how marijuana flowed across the North Macedonia-Serbia border declared as pillows, cakes and duvets. Read more:",
+            "url": "https://x.com/i/web/status/2092677204287115497",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-26T12:58:30.000Z",
+            "seen_date": "2026-08-26T18:15:00.000Z",
             "matched_countries": [
-              "Koszovó",
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Koszovó": 5,
-              "Észak-Macedónia": 5
+              "Észak-Macedónia": 5,
+              "Szerbia": 1
             },
             "event_category": "security",
             "event_categories": [
@@ -964,13 +908,13 @@
                 "weight": 9
               },
               {
-                "category": "economic_infrastructure",
+                "category": "corruption_rule_of_law",
                 "hits": 1,
-                "weight": 4
+                "weight": 8
               }
             ],
-            "geopolitical_score": 14,
-            "quality_score": 15,
+            "geopolitical_score": 17,
+            "quality_score": 18,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -984,17 +928,19 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Grateful to the President of the Republic of North Macedonia, Gordana Siljanovska-Davkova , for your warm congratulations on the 35th Anniversary of the Restoration of Ukraine’s In",
-            "text": "Grateful to the President of the Republic of North Macedonia, Gordana Siljanovska-Davkova , for your warm congratulations on the 35th Anniversary of the Restoration of Ukraine’s Independence. I highly appreciate North Macedonia’s solidarity and steadfast support for",
-            "url": "https://x.com/i/web/status/2092580874583724227",
+            "title": "In the presence of Kosovo Prime Minister Albin Kurti, North Macedonian state officials, and representatives of the EU and the EBRD, the foundation stone was laid today for the fina",
+            "text": "In the presence of Kosovo Prime Minister Albin Kurti, North Macedonian state officials, and representatives of the EU and the EBRD, the foundation stone was laid today for the final ten kilometers of the Skopje–Blace highway.",
+            "url": "https://x.com/i/web/status/2092640266817548633",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-26T11:52:13.000Z",
+            "seen_date": "2026-08-26T15:48:13.000Z",
             "matched_countries": [
-              "Észak-Macedónia"
+              "Észak-Macedónia",
+              "Koszovó"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5
+              "Észak-Macedónia": 9,
+              "Koszovó": 5
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -1004,16 +950,16 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
+            "geopolitical_score": 9,
+            "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 120,
-            "raw_engagement": 1082,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 944,
-              "reposts": 117,
-              "replies": 21,
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -1027,31 +973,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
-        "negative_hits": 11,
-        "positive_hits": 1,
+        "mentions": 14,
+        "negative_hits": 12,
+        "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 342,
-        "geopolitical_total": 305,
+        "engagement_total": 12,
+        "raw_engagement_total": 12,
+        "quality_total": 325,
+        "geopolitical_total": 289,
         "source_counts": {
           "reddit": 0,
           "mastodon": 10,
-          "x": 5
+          "x": 4
         },
         "category_counts": {
-          "corruption_rule_of_law": 8,
-          "security": 4,
+          "corruption_rule_of_law": 7,
+          "security": 5,
           "foreign_influence": 1,
-          "government_crisis": 1,
-          "ethnic_tension": 1
+          "protest": 1
         },
         "tag_counts": {
           "balkans": 8,
           "kosovo": 1,
           "albania": 1,
-          "Albánia": 5
+          "Albánia": 4
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
