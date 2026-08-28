@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28 11:18 UTC",
+  "updated_at": "2026-08-28 18:03 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 11
+    "collected": 13
   },
   "countries": [
     {
@@ -21,28 +21,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 6,
-        "positive_hits": 0,
+        "mentions": 14,
+        "negative_hits": 3,
+        "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 19,
-        "raw_engagement_total": 19,
-        "quality_total": 135,
-        "geopolitical_total": 109,
+        "engagement_total": 134,
+        "raw_engagement_total": 169,
+        "quality_total": 239,
+        "geopolitical_total": 199,
         "source_counts": {
-          "reddit": 1,
-          "mastodon": 6,
+          "reddit": 0,
+          "mastodon": 11,
           "x": 3
         },
         "category_counts": {
-          "eu_integration": 1,
+          "eu_integration": 2,
           "foreign_influence": 2,
-          "security": 6,
+          "government_crisis": 1,
+          "security": 7,
+          "protest": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 2,
-          "serbia": 3,
+          "serbia": 7,
           "kosovo": 1,
           "bosnia": 1,
           "Szerbia": 1,
@@ -51,11 +53,174 @@
         "main_topic": "security",
         "top_posts": [
           {
+            "title": "The president of Serbia who actively participated in the creation of GreaterSerbia, through genocide and ethnic cleansing in Croatia, BIH, Kosovo, had a \"eureka\" moment when he rea",
+            "text": "The president of Serbia who actively participated in the creation of GreaterSerbia, through genocide and ethnic cleansing in Croatia, BIH, Kosovo, had a \"eureka\" moment when he realized that life imprisonment for genocide literally means... life imprisonment. 😐 Srbija Hrvatska",
+            "url": "https://x.com/i/web/status/2093380589982228606",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-28T16:50:00.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5,
+              "Bosznia-Hercegovina": 1,
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 28,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 7,
+            "raw_engagement": 7,
+            "metrics": {
+              "likes": 5,
+              "reposts": 1,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇺🇸✍🏻 I strongly support and welcome the introduction of the bipartisan SRBIJA Act by Congressman and Congressman . This is a necessary step by the United States Congress in defense",
+            "text": "🇺🇸✍🏻 I strongly support and welcome the introduction of the bipartisan SRBIJA Act by Congressman and Congressman . This is a necessary step by the United States Congress in defense of democracy, rule of law, accountability, and lasting peace in the",
+            "url": "https://x.com/i/web/status/2093369188937076807",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-28T16:04:42.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 27,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 7,
+            "raw_engagement": 7,
+            "metrics": {
+              "likes": 0,
+              "reposts": 1,
+              "replies": 6,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "This goes well beyond sympathetic coverage. Serbia's Justice Minister Nenad Vujic says Mladić \"will receive all the military and state honours to which he is entitled,\" and confirmed he personally coordinated with President Vučić to fly the body to Belgrade on a special aircraft. A government, not just state TV, is planning a state funeral for a convicted ge",
+            "url": "https://mastodon.social/@AutokratDaily/117173345682473716",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 28 Aug 2026 13:22:45 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 21,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Today: Ratko Mladić avrà funerali con gli onori di Stato: la Serbia chiede chiarezza sugli ultimi giorni del boia di Srebrenica Ratko Mladić riceverà gli onori militari e di Stato. Lo ha annunciato il ministro della Giustizia serbo, Nenad Vujić, precisando che spetterà alla famiglia dell’ex comandante serbo-bosniaco decidere il luogo e le modalità del funera",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117173141262528570",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 28 Aug 2026 12:30:46 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 21,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
             "title": "",
             "text": "Ratko Mladic, the former Bosnian Serb military chief convicted of war crimes for his role in the 1995 Srebrenica massacre, died in hospital on Thursday, according to a United Nations international tribunal. https://www. japantimes.co.jp/news/2026/08/ 28/world/ratko-mladic-bosnia-serbia-dead/?utm_medium=Social&utm_source=mastodon # worldnews # europe # bosnia",
             "url": "https://mastodon.social/@thejapantimes/117171373000245787",
             "source": "mastodon",
-            "tag": "serbia",
+            "tag": "bosnia",
             "seen_date": "Fri, 28 Aug 2026 05:01:04 +0000",
             "matched_countries": [
               "Szerbia",
@@ -80,43 +245,50 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Više detalja o kongresmenu koji se zalaže za sankcije Srbiji",
-            "text": "Juče je objavljen članak o kongresmenu koji se zalaže za uvođenje sankcija Srbiji. Pronašao sam dva članka (u The Hill i Semafor-u) koja pružaju dodatne detalje. https://thehill.com/homenews/house/5963006-wilson-wicker-feud-charleston/ https://www.semafor.com/article/07/07/2026/stop-embarrassing-yourself-congressional-republicans-clash-over-international-eve",
-            "url": "https://www.reddit.com/r/serbia/comments/1w0fm0y/više_detalja_o_kongresmenu_koji_se_zalaže_za/",
-            "source": "reddit",
-            "tag": "serbia",
-            "seen_date": "2026-08-28T03:40:43+00:00",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 8
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 16,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bosznia-Hercegovina",
+      "social_signal": {
+        "score": 46,
+        "level": "high",
+        "scale": "0-60 risk index",
+        "mentions": 6,
+        "negative_hits": 2,
+        "positive_hits": 0,
+        "trusted_hits": 4,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 111,
+        "geopolitical_total": 85,
+        "source_counts": {
+          "reddit": 0,
+          "mastodon": 6,
+          "x": 0
+        },
+        "category_counts": {
+          "foreign_influence": 1,
+          "security": 3,
+          "corruption_rule_of_law": 1,
+          "protest": 1
+        },
+        "tag_counts": {
+          "balkan": 1,
+          "serbia": 2,
+          "kosovo": 1,
+          "bosnia": 2
+        },
+        "main_topic": "security",
+        "top_posts": [
           {
             "title": "",
-            "text": "Ratko Mladic, ex-Bosnian Serb warlord who oversaw atrocities, has died at 84 Ratko Mladic was one of the most notorious figures of a war that killed over 100,000 people in the 1990s. He commanded his troops to \"scorch the brains\" of the Bosnian Muslims and boasted of being a \"Serbian God.\" https://www. npr.org/2026/08/27/nx-s1-59463 75/ratko-mladic-dead # To",
-            "url": "https://mastodon.social/@top_news/117168245705643639",
+            "text": "Today: Ratko Mladić avrà funerali con gli onori di Stato: la Serbia chiede chiarezza sugli ultimi giorni del boia di Srebrenica Ratko Mladić riceverà gli onori militari e di Stato. Lo ha annunciato il ministro della Giustizia serbo, Nenad Vujić, precisando che spetterà alla famiglia dell’ex comandante serbo-bosniaco decidere il luogo e le modalità del funera",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117173141262528570",
             "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Thu, 27 Aug 2026 15:45:46 +0000",
+            "tag": "serbia",
+            "seen_date": "Fri, 28 Aug 2026 12:30:46 +0000",
             "matched_countries": [
               "Szerbia",
               "Bosznia-Hercegovina"
@@ -131,141 +303,17 @@
                 "category": "security",
                 "hits": 1,
                 "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 15,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Recently deceased war criminal Ratko Mladić going to get a state funeral in Serbia. Serbia showing it belongs with Russia more than EU. Fuck nationalism! # Srebrenica # EU # Serbia # russia # Ukraine # RussiaIsATerroristState # WarCrimes # Yugoslavia # politics # democracy # freedom # Europe # EUpolitics # Mladic # MladicDeath",
-            "url": "https://mastodon.social/@PeterSoukup/117172635084229975",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Fri, 28 Aug 2026 10:22:02 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
+              },
               {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 14,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "An infamy. Mladić, a war criminal, guilt of crimes against humanity and of genocide, will receive a state funeral with military honors, according to the Serbian Minister of Justice",
-            "text": "An infamy. Mladić, a war criminal, guilt of crimes against humanity and of genocide, will receive a state funeral with military honors, according to the Serbian Minister of Justice. This desecrates the memory of the more than 8,000 victims of Srebrenica.",
-            "url": "https://x.com/i/web/status/2093294921121714231",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-08-28T11:09:35.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
+            "geopolitical_score": 18,
+            "quality_score": 21,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 19,
-            "raw_engagement": 19,
-            "metrics": {
-              "likes": 11,
-              "reposts": 5,
-              "replies": 3,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Bosznia-Hercegovina",
-      "social_signal": {
-        "score": 60,
-        "level": "high",
-        "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 6,
-        "positive_hits": 0,
-        "trusted_hits": 5,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 154,
-        "geopolitical_total": 119,
-        "source_counts": {
-          "reddit": 1,
-          "mastodon": 8,
-          "x": 0
-        },
-        "category_counts": {
-          "foreign_influence": 2,
-          "security": 4,
-          "corruption_rule_of_law": 1,
-          "protest": 1,
-          "ethnic_tension": 1
-        },
-        "tag_counts": {
-          "balkan": 1,
-          "serbia": 3,
-          "bosnia": 5
-        },
-        "main_topic": "security",
-        "top_posts": [
-          {
-            "title": "",
-            "text": "Ratko Mladić: The monstrous crimes of the 'Butcher of Bosnia' The Bosnian Serb commander led a campaign of ethnic cleansing during the Bosnian conflict. https://www. bbc.com/news/articles/c2q05wzl x5xo # TopNews # News # Mladić # Bosnia # Serbs",
-            "url": "https://mastodon.social/@top_news/117168336187452248",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Thu, 27 Aug 2026 16:08:46 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 22,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -275,7 +323,7 @@
             "text": "Ratko Mladic, the former Bosnian Serb military chief convicted of war crimes for his role in the 1995 Srebrenica massacre, died in hospital on Thursday, according to a United Nations international tribunal. https://www. japantimes.co.jp/news/2026/08/ 28/world/ratko-mladic-bosnia-serbia-dead/?utm_medium=Social&utm_source=mastodon # worldnews # europe # bosnia",
             "url": "https://mastodon.social/@thejapantimes/117171373000245787",
             "source": "mastodon",
-            "tag": "serbia",
+            "tag": "bosnia",
             "seen_date": "Fri, 28 Aug 2026 05:01:04 +0000",
             "matched_countries": [
               "Szerbia",
@@ -306,7 +354,7 @@
             "text": "Genocide never pays off, Mladic baby. https://www. theguardian.com/world/2026/aug /27/ratko-mladic-the-butcher-of-bosnia-dies-aged-84 # politics # politician # news # globalnews # conflict # internationalnews # mladic # MladicDies # dead # death # genocide # europe # eu # climate # climatechange # srebrenica # serbia # kosovo # sarajevo # humanrights # inequ",
             "url": "https://mastodon.social/@jhlyon/117168353836166137",
             "source": "mastodon",
-            "tag": "serbia",
+            "tag": "kosovo",
             "seen_date": "Thu, 27 Aug 2026 16:13:16 +0000",
             "matched_countries": [
               "Bosznia-Hercegovina"
@@ -326,6 +374,37 @@
             ],
             "geopolitical_score": 15,
             "quality_score": 20,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "RaiNews: \"L'eredità\" di Mladic fa discutere anche dopo la sua morte: la Serbia decreta funerali di Stato L'annuncia il ministro della Giustizia serbo. Mentre, l'associazione dei famigliari delle vittime del massacro di Srebrenica fa sapere che ciò che conta è che il boia dell'esercito bosniaco sia morto da condannato, in carcere “L’eredità” by Mladic continu",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117173377492313070",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 28 Aug 2026 13:30:50 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 18,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -360,35 +439,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Sumnjiva lica dolaze na adresu, upozorenje za sve",
-            "text": "Pre nekoliko minuta sam bio primoran da iz zgrade izbacim 3 lica (predstavnik sam kucnog saveta), koja idu od vrata do vrata sa spiskom gradjana i zapitkuju ko zivi na adresi. Na pitanje 'ko su i kojim je ovo povodom', daju neodredjen odgovor, kako je ovo povodom izbora, 'zbog slanja glasackih listica, jer znate, ne zive ljudi na adresi na kojoj su prijavlje",
-            "url": "https://www.reddit.com/r/serbia/comments/1vzr7m8/sumnjiva_lica_dolaze_na_adresu_upozorenje_za_sve/",
-            "source": "reddit",
-            "tag": "serbia",
-            "seen_date": "2026-08-27T11:24:35+00:00",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 16,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -396,73 +446,34 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 44,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 9,
         "negative_hits": 3,
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 108,
-        "geopolitical_total": 92,
+        "quality_total": 136,
+        "geopolitical_total": 115,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 5,
-          "x": 1
+          "mastodon": 6,
+          "x": 3
         },
         "category_counts": {
+          "security": 3,
           "government_crisis": 3,
           "economic_infrastructure": 1,
-          "security": 2
+          "ethnic_tension": 2
         },
         "tag_counts": {
-          "kosovo": 5,
-          "Koszovó": 1
+          "kosovo": 6,
+          "Koszovó": 3
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
-          {
-            "title": "🔴 Kosovo PM Kurti pelted with eggs by MP Kadriaj during parliamentary session Prime Minister Albin Kurti proposed postponing a parliamentary session to conduct negotiations with po",
-            "text": "🔴 Kosovo PM Kurti pelted with eggs by MP Kadriaj during parliamentary session Prime Minister Albin Kurti proposed postponing a parliamentary session to conduct negotiations with political forces. MP Time Kadriaj responded by throwing several eggs at him during the session.",
-            "url": "https://x.com/i/web/status/2093267601958883562",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-28T09:21:01.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 25,
-            "quality_score": 26,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Kosovo’s Ruling Party Optimistic About Resolving Deadlock Over New President https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/26/kosovos-ruling-party-optimistic-about-resolving-deadlock-over-new-president/bi/",
@@ -486,6 +497,40 @@
             ],
             "geopolitical_score": 21,
             "quality_score": 24,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Kosovo-Italia: presidente Haxhiu riceve ambasciatore Antonini, colloqui su formazione istituzioni e Kfor 28 ago 17:00 - (Agenzia Nova) - Oggi l'ambasciatore d'Italia in Kosovo, Maurizio Antonini, ha incontrato la presidente ad interim della Repubblica... (Alt) Kosovo-Italy: President Haxhiu receives Ambassador Antonini, talks on institutional t",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117173768518653030",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Fri, 28 Aug 2026 15:10:17 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 22,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -592,47 +637,75 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 25,
-        "level": "medium",
+        "score": 43,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 7,
         "negative_hits": 1,
-        "positive_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 74,
-        "geopolitical_total": 63,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 111,
+        "geopolitical_total": 92,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 3,
-          "x": 2
+          "mastodon": 6,
+          "x": 1
         },
         "category_counts": {
-          "corruption_rule_of_law": 3,
-          "eu_integration": 1,
-          "security": 1
+          "government_crisis": 3,
+          "security": 1,
+          "corruption_rule_of_law": 3
         },
         "tag_counts": {
-          "montenegro": 3,
-          "Montenegró": 2
+          "serbia": 1,
+          "montenegro": 5,
+          "Montenegró": 1
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "Montenegro is one sprint from closing every EU chapter and suddenly Serbia and Albania are allegedly in the same hybrid-warfare group chat. Only in the Balkans do two neighbors who",
-            "text": "Montenegro is one sprint from closing every EU chapter and suddenly Serbia and Albania are allegedly in the same hybrid-warfare group chat. Only in the Balkans do two neighbors who usually can’t share a border coffee decide to team up the moment Podgorica smells Brussels. Spajić:",
-            "url": "https://x.com/i/web/status/2093239056884724101",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-08-28T07:27:36.000Z",
+            "title": "",
+            "text": "Agenzia Nova: Montenegro: Croazia, cordoglio di Mandic per morte Mladic inaccettabile e contrario a valori Ue 28 ago 18:00 - (Agenzia Nova) - L'espressione di cordoglio per la morte del criminale di guerra Ratko Mladic da parte del presidente del Parlamento... (Seb) Montenegro: Croatia, Mandić expresses condolences for Mladic's death – unacceptable and contr",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117174004274256435",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Fri, 28 Aug 2026 16:10:14 +0000",
             "matched_countries": [
               "Montenegró"
             ],
             "country_confidence": {
-              "Montenegró": 5,
-              "Szerbia": 1,
-              "Albánia": 1
+              "Montenegró": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 24,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Speciale difesa: Montenegro, convocata riunione emergenza Consiglio difesa per possibili azioni contro il Paese 28 ago 13:30 - (Agenzia Nova) - Il presidente del Montenegro, Jakov Milatovic, convochera' per lunedi' 31 agosto una riunione d'emergenza del... (Seb) Special defense: Montenegro, emergency meeting of the Defense Council convened for ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117172942820722650",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Fri, 28 Aug 2026 11:40:18 +0000",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 1
             },
             "event_category": "security",
             "event_categories": [
@@ -642,24 +715,18 @@
                 "weight": 9
               },
               {
-                "category": "eu_integration",
+                "category": "government_crisis",
                 "hits": 1,
-                "weight": 6
+                "weight": 9
               }
             ],
             "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
+            "quality_score": 21,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -696,34 +763,34 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Montenegro is getting closer to achieving EU membership but the later stages of negotiations are often when member states more clearly raise objections. So, Podgorica is facing an ",
-            "text": "Montenegro is getting closer to achieving EU membership but the later stages of negotiations are often when member states more clearly raise objections. So, Podgorica is facing an uphill battle in closing all negotiating chapters by the end of the year.",
-            "url": "https://x.com/i/web/status/2093255002143785456",
+            "title": "A very good reminder for the Prime Minister of Montenegro... I hope Podgorica does not return to the memories of the Balkan Wars... Is this paranoia?!",
+            "text": "A very good reminder for the Prime Minister of Montenegro... I hope Podgorica does not return to the memories of the Balkan Wars... Is this paranoia?!",
+            "url": "https://x.com/i/web/status/2093363704364486948",
             "source": "x",
             "tag": "Montenegró",
-            "seen_date": "2026-08-28T08:30:57.000Z",
+            "seen_date": "2026-08-28T15:42:54.000Z",
             "matched_countries": [
               "Montenegró"
             ],
             "country_confidence": {
               "Montenegró": 5
             },
-            "event_category": "eu_integration",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
+            "geopolitical_score": 12,
+            "quality_score": 13,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 2,
+              "likes": 1,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -732,56 +799,29 @@
           },
           {
             "title": "",
-            "text": "Today: Italia-Slovacchia oggi, Europei di pallavolo femminile: a che ora e dove vederla in diretta in chiaro Oggi, martedì 25 agosto, l'Italia di Julio Velasco torna in campo per affrontare la Slovacchia nel quarto incontro degli Europei di pallavolo femminile. Le azzurre, campionesse olimpiche e mondiali, fanno parte del gruppo D e nei primi tre incontri ha",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117155682304972735",
+            "text": "Agenzia Nova: Serbia-Montenegro: Vucic, Belgrado non ostacola il percorso Ue di Podgorica 28 ago 17:54 - (Agenzia Nova) - Il presidente serbo Aleksandar Vucic ha dichiarato che Belgrado \"non pone alcuna condizione\" al Montenegro... (Seb) Serbia-Montenegro: Vucic, Belgrade does not hinder Podgorica's EU path August 28, 5:54 PM – (Agenzia Nova) – Serbian Presi",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117174082853398121",
             "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Tue, 25 Aug 2026 10:30:43 +0000",
+            "tag": "serbia",
+            "seen_date": "Fri, 28 Aug 2026 16:30:13 +0000",
             "matched_countries": [
+              "Szerbia",
               "Montenegró"
             ],
             "country_confidence": {
-              "Montenegró": 1
+              "Szerbia": 17,
+              "Montenegró": 5
             },
-            "event_category": "corruption_rule_of_law",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "corruption_rule_of_law",
+                "category": "government_crisis",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
               }
             ],
-            "geopolitical_score": 8,
-            "quality_score": 11,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Today: Italia-Svezia oggi, Europei di pallavolo femminile: a che ora e dove vederla in diretta in chiaro Oggi, domenica 23 agosto, l'Italia di Julio Velasco torna in campo per affrontare la Svezia nel terzo incontro degli Europei di pallavolo. Le azzurre, campionesse olimpiche e mondiali, fanno parte del gruppo D e nei primi 2 incontri hanno sconfitto Croazi",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117144238265511178",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Sun, 23 Aug 2026 10:00:21 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 1
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 8,
-            "quality_score": 11,
+            "geopolitical_score": 9,
+            "quality_score": 12,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -794,55 +834,92 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 6,
+        "score": 10,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 1,
+        "mentions": 2,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 11,
-        "geopolitical_total": 10,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 20,
+        "geopolitical_total": 18,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
-          "ethnic_tension": 1
+          "security": 2
         },
         "tag_counts": {
+          "Montenegró": 1,
           "Észak-Macedónia": 1
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "security",
         "top_posts": [
           {
-            "title": "1) Mother Teresa is not Vlach. She was born in Skopje, North Macedonia into a Kosovar Albanian family (she's ethnic Albanian) 2) I don't think Skanderbeg is Serb. He was possibly b",
-            "text": "1) Mother Teresa is not Vlach. She was born in Skopje, North Macedonia into a Kosovar Albanian family (she's ethnic Albanian) 2) I don't think Skanderbeg is Serb. He was possibly born in the village of Sinë (Dibër County)",
-            "url": "https://x.com/i/web/status/2093068364675444874",
+            "title": "Everyone should know about the degrading and unfair treatment we went through in North Macedonia We will also evaluate a lawsuit against their police They have broken numerous huma",
+            "text": "Everyone should know about the degrading and unfair treatment we went through in North Macedonia We will also evaluate a lawsuit against their police They have broken numerous human rights guaranteed by their law We made a website",
+            "url": "https://x.com/i/web/status/2093316083759325575",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-27T20:09:20.000Z",
+            "seen_date": "2026-08-28T12:33:40.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 9,
-              "Albánia": 2,
-              "Koszovó": 1
+              "Észak-Macedónia": 5
             },
-            "event_category": "ethnic_tension",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "ethnic_tension",
+                "category": "security",
                 "hits": 1,
-                "weight": 10
+                "weight": 9
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Truck drivers of Bosnia, Montenegro, North Macedonia, and Serbia to block border crossings to the EU next month",
+            "text": "Truck drivers of Bosnia, Montenegro, North Macedonia, and Serbia to block border crossings to the EU next month",
+            "url": "https://x.com/i/web/status/2093344892772610394",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-08-28T14:28:09.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Szerbia": 1,
+              "Bosznia-Hercegovina": 1,
+              "Montenegró": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -864,28 +941,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 12,
+        "mentions": 13,
+        "negative_hits": 10,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 22,
-        "raw_engagement_total": 22,
-        "quality_total": 338,
-        "geopolitical_total": 300,
+        "engagement_total": 9,
+        "raw_engagement_total": 9,
+        "quality_total": 316,
+        "geopolitical_total": 279,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
-          "protest": 3,
           "corruption_rule_of_law": 8,
-          "security": 3
+          "protest": 1,
+          "security": 2,
+          "government_crisis": 2
         },
         "tag_counts": {
           "balkans": 9,
           "albania": 2,
-          "Albánia": 3
+          "Észak-Macedónia": 1,
+          "Albánia": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -922,6 +1001,40 @@
             ],
             "geopolitical_score": 28,
             "quality_score": 31,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 90 of anti-corruption protest in Tirana, Albania The crowd that attends each night waxes and wanes depending on people's availability, but it has been 90 days solid. Gotta admire the Albanian people! https://www. youtube.com/watch?v=TYDrBXtkreY # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
+            "url": "https://mas.to/@meganL/117174413817156481",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Fri, 28 Aug 2026 17:54:23 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 6
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -1003,40 +1116,6 @@
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Tue, 25 Aug 2026 18:20:35 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 86 of anti-corruption protest in Tirana, Albania Dita e 86-të e revoltës – Qytetarët protestojnë sërish kundër Ramës dhe qeverisë \"86th day of the revolt – Citizens protest again against Rama and the government\" https://www. youtube.com/watch?v=jW6N-QJPLnM # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
-            "url": "https://mas.to/@meganL/117151701112257886",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Mon, 24 Aug 2026 17:38:15 +0000",
             "matched_countries": [
               "Albánia"
             ],
