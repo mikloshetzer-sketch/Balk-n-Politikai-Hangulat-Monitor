@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29 16:33 UTC",
+  "updated_at": "2026-08-29 20:19 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -21,45 +21,43 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 19,
-        "negative_hits": 8,
+        "mentions": 16,
+        "negative_hits": 7,
         "positive_hits": 1,
-        "trusted_hits": 3,
-        "engagement_total": 250,
-        "raw_engagement_total": 576,
-        "quality_total": 352,
-        "geopolitical_total": 302,
+        "trusted_hits": 1,
+        "engagement_total": 412,
+        "raw_engagement_total": 780,
+        "quality_total": 290,
+        "geopolitical_total": 252,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 12,
-          "x": 7
+          "mastodon": 10,
+          "x": 6
         },
         "category_counts": {
-          "eu_integration": 2,
-          "government_crisis": 6,
+          "government_crisis": 5,
           "foreign_influence": 3,
-          "security": 6,
-          "ethnic_tension": 2
+          "security": 7,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "balkans": 1,
-          "serbia": 7,
+          "serbia": 6,
           "kosovo": 1,
           "bosnia": 2,
           "montenegro": 1,
           "Szerbia": 3,
-          "Koszovó": 3,
+          "Koszovó": 2,
           "Albánia": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
-            "title": "",
-            "text": "Domani: Serbia, funerali di Stato e onori militari per il genocida Mladic La Serbia annuncia esequie solenni da grande statista per il “macellaio di Srebrenica”. Il revisionismo del presidente Vucic: «L'Occidente vuol far credere che siamo gli unici colpevoli». La morte del generale è il detonatore che fa riesplodere antichi rancori, conti mai saldati Serbia",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117174908866413336",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Fri, 28 Aug 2026 20:00:17 +0000",
+            "title": "🇷🇸🇨🇳 Serbia will begin incorporating Chinese-made AI-controlled armed “robot dogs” into its military starting in September, President Vucic announced. Serbia is increasingly turnin",
+            "text": "🇷🇸🇨🇳 Serbia will begin incorporating Chinese-made AI-controlled armed “robot dogs” into its military starting in September, President Vucic announced. Serbia is increasingly turning to Chinese military technology amid rising tensions with its neighbors.",
+            "url": "https://x.com/i/web/status/2093773344910782505",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-29T18:50:40.000Z",
             "matched_countries": [
               "Szerbia"
             ],
@@ -79,13 +77,19 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 31,
-            "quality_score": 36,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "geopolitical_score": 30,
+            "quality_score": 31,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 45,
+            "raw_engagement": 45,
+            "metrics": {
+              "likes": 28,
+              "reposts": 2,
+              "replies": 13,
+              "quotes": 2
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -156,17 +160,58 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🚨 BREAKING: Serbian President Vučić: \"Italy saw major pro-Palestinian protests last weekend. People chanted 'Gaza, Gaza,' but in Milan, some weren't even thinking about Gaza.",
-            "text": "🚨 BREAKING: Serbian President Vučić: \"Italy saw major pro-Palestinian protests last weekend. People chanted 'Gaza, Gaza,' but in Milan, some weren't even thinking about Gaza.",
-            "url": "https://x.com/i/web/status/2093731218240180291",
+            "title": "Serbian ruling party supporters wearing t-shirts with the face of war criminal Mladic mercilessly beat a man while the police stand by and watch. Will the EU react, or do they only",
+            "text": "Serbian ruling party supporters wearing t-shirts with the face of war criminal Mladic mercilessly beat a man while the police stand by and watch. Will the EU react, or do they only react against Kosovo defending its sovereignty?",
+            "url": "https://x.com/i/web/status/2093765963128635825",
             "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-08-29T16:03:16.000Z",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-29T18:21:20.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 9
+              "Szerbia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 23,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 120,
+            "raw_engagement": 317,
+            "metrics": {
+              "likes": 263,
+              "reposts": 33,
+              "replies": 19,
+              "quotes": 2
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇷🇸🇷🇺 Maybe Serbian president Vucic hugged Zelensky this month, still won't sanction Russia, though. He is trying to leave the presidency and keep the state by sliding into the prem",
+            "text": "🇷🇸🇷🇺 Maybe Serbian president Vucic hugged Zelensky this month, still won't sanction Russia, though. He is trying to leave the presidency and keep the state by sliding into the premiership. Same foreign policy, different chair. Belgrade wants EU money, Russian fuel, and Chinese",
+            "url": "https://x.com/i/web/status/2093785105030672772",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-29T19:37:24.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 13
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -176,64 +221,22 @@
                 "weight": 9
               },
               {
-                "category": "protest",
-                "hits": 2,
+                "category": "foreign_influence",
+                "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
+            "geopolitical_score": 20,
+            "quality_score": 21,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 4,
+            "raw_engagement": 4,
             "metrics": {
               "likes": 0,
               "reposts": 0,
               "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Today I hosted Albanian minority representatives from civil society, media, culture, sport and student groups in Presheva, Bujanoc, Medvegja and Novi Pazar. This year, Serbian inst",
-            "text": "Today I hosted Albanian minority representatives from civil society, media, culture, sport and student groups in Presheva, Bujanoc, Medvegja and Novi Pazar. This year, Serbian institutions blocked our Government's support for them. We discussed what is actually lost: 136",
-            "url": "https://x.com/i/web/status/2093721919681868262",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-08-29T15:26:19.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 23,
-            "quality_score": 24,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 120,
-            "raw_engagement": 121,
-            "metrics": {
-              "likes": 94,
-              "reposts": 20,
-              "replies": 6,
-              "quotes": 1
+              "quotes": 4
             },
             "quality": "x_api_filtered"
           }
@@ -436,24 +439,23 @@
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 116,
-        "geopolitical_total": 97,
+        "quality_total": 115,
+        "geopolitical_total": 98,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 6,
-          "x": 1
+          "mastodon": 5,
+          "x": 2
         },
         "category_counts": {
-          "security": 3,
-          "government_crisis": 2,
-          "economic_infrastructure": 1,
-          "protest": 1
+          "security": 2,
+          "government_crisis": 4,
+          "economic_infrastructure": 1
         },
         "tag_counts": {
-          "kosovo": 6,
-          "Koszovó": 1
+          "kosovo": 5,
+          "Koszovó": 2
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -483,6 +485,43 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Acting Prime Minister Albin Kurti has announced that Serbian institutions have blocked the transfer of more than €2.1 million allocated by the Government of Kosovo to Albanians in ",
+            "text": "Acting Prime Minister Albin Kurti has announced that Serbian institutions have blocked the transfer of more than €2.1 million allocated by the Government of Kosovo to Albanians in Presheva, Bujanoc, Medvegja and Sandžak.",
+            "url": "https://x.com/i/web/status/2093736763764203541",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-29T16:25:18.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
+              "Szerbia": 2,
+              "Albánia": 2
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 22,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -520,40 +559,6 @@
           },
           {
             "title": "",
-            "text": "Agenzia Nova: Kosovo: salta incontro tra primo ministro Kurti e comandante Kfor per \"circostanze impreviste\" 22 ago 18:49 - (Agenzia Nova) - L'incontro annunciato tra il primo ministro ad interim del Kosovo, Albin Kurti, e il comandante della Kfor,... (Alt) Kosovo: Meeting between Prime Minister Kurti and KFOR commander over “unforeseen circumstances” August",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117140266592807565",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Sat, 22 Aug 2026 17:10:18 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 21,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "Agenzia Nova: Ucraina: presidente Kosovo, siamo stati a fianco di Kiev fin dai primi giorni di guerra 24 ago 14:44 - (Agenzia Nova) - Il Kosovo e' stato a fianco dell'Ucraina fin dai primi giorni di guerra. Lo ha detto la presidente ad interim... (Alt) Ukraine: Kosovo president, we have been by Kyiv’s side since the earliest days of the war. August 24, 2:44 ",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117150568843716017",
             "source": "mastodon",
@@ -582,39 +587,35 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "The Association of Kosovo Municipalities has announced that it will organize a protest on September 1 at Skënderbej Square in Pristina.",
-            "text": "The Association of Kosovo Municipalities has announced that it will organize a protest on September 1 at Skënderbej Square in Pristina.",
-            "url": "https://x.com/i/web/status/2093720896309473475",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-29T15:22:15.000Z",
+            "title": "",
+            "text": "Agenzia Nova: Kosovo: Procura, su telefono Sheholli piano servizi serbi per compromettere Kurti 25 ago 15:58 - (Agenzia Nova) - Un piano operativo attribuito alle strutture di sicurezza serbe e finalizzato a compromettere e reclutare Albin... (Alt) Kosovo: Prosecution, via Sheholli phone to arrange Serbian service plan to compromise Kurti August 25 15:58 – (",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117156545599710110",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Tue, 25 Aug 2026 14:10:16 +0000",
             "matched_countries": [
-              "Koszovó"
+              "Koszovó",
+              "Szerbia"
             ],
             "country_confidence": {
-              "Koszovó": 5
+              "Koszovó": 5,
+              "Szerbia": 2
             },
-            "event_category": "protest",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "protest",
+                "category": "security",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
               }
             ],
-            "geopolitical_score": 11,
+            "geopolitical_score": 9,
             "quality_score": 12,
-            "source_reliability": 2,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -811,67 +812,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 24,
-        "level": "medium",
+        "score": 8,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 2,
+        "mentions": 1,
+        "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 35,
-        "geopolitical_total": 32,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 12,
+        "geopolitical_total": 11,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 3
+          "x": 1
         },
         "category_counts": {
-          "foreign_influence": 1,
-          "government_crisis": 2
+          "foreign_influence": 1
         },
         "tag_counts": {
-          "Montenegró": 1,
-          "Észak-Macedónia": 2
+          "Montenegró": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "foreign_influence",
         "top_posts": [
-          {
-            "title": "Ratko Mladić died in The Hague, but the arguments that defined the Yugoslav wars survived him. In North Macedonia, tributes by public officials have triggered demands for resignati",
-            "text": "Ratko Mladić died in The Hague, but the arguments that defined the Yugoslav wars survived him. In North Macedonia, tributes by public officials have triggered demands for resignations, legal scrutiny and a difficult question for an EU candidate: where does remembrance end and",
-            "url": "https://x.com/i/web/status/2093637112322990533",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-29T09:49:20.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "EU: THIRD COUNTRIES ALIGN WITH LATEST UKRAINE-RELATED SANCTIONS On 28 August, the EU advised that Albania, Bosnia & Herzegovina, Iceland, Liechtenstein, Moldova, Montenegro, North ",
             "text": "EU: THIRD COUNTRIES ALIGN WITH LATEST UKRAINE-RELATED SANCTIONS On 28 August, the EU advised that Albania, Bosnia & Herzegovina, Iceland, Liechtenstein, Moldova, Montenegro, North Macedonia, Norway and Ukraine have aligned with latest Council Decision",
@@ -909,42 +873,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "NorthMacedonia's Prime Minister Hristijan Mickoski declared that the government expects to complete the construction of the country's section of a gas interconnector with Serbia by",
-            "text": "NorthMacedonia's Prime Minister Hristijan Mickoski declared that the government expects to complete the construction of the country's section of a gas interconnector with Serbia by the end of 2028.",
-            "url": "https://x.com/i/web/status/2093589308225511515",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-29T06:39:22.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Szerbia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -955,31 +883,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
+        "mentions": 17,
         "negative_hits": 13,
-        "positive_hits": 2,
-        "trusted_hits": 1,
-        "engagement_total": 123,
-        "raw_engagement_total": 124,
-        "quality_total": 373,
-        "geopolitical_total": 332,
+        "positive_hits": 1,
+        "trusted_hits": 2,
+        "engagement_total": 156,
+        "raw_engagement_total": 229,
+        "quality_total": 389,
+        "geopolitical_total": 343,
         "source_counts": {
           "reddit": 0,
           "mastodon": 12,
-          "x": 3
+          "x": 5
         },
         "category_counts": {
           "corruption_rule_of_law": 8,
-          "protest": 1,
-          "security": 3,
-          "government_crisis": 2,
-          "ethnic_tension": 1
+          "protest": 2,
+          "security": 5,
+          "ethnic_tension": 1,
+          "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 9,
           "albania": 3,
           "Koszovó": 1,
-          "Albánia": 2
+          "Albánia": 4
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -1016,6 +944,40 @@
             ],
             "geopolitical_score": 28,
             "quality_score": 31,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 91 of anti-corruption protest in Tirana, Albania LIVE | Protesta e 91-të, qytetarët kërkojnë dorëheqjen e qeverisë Rama! https://www. youtube.com/watch?v=hMpjMElM4X4 # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
+            "url": "https://mas.to/@meganL/117180118726821388",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sat, 29 Aug 2026 18:05:13 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -1097,40 +1059,6 @@
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Wed, 26 Aug 2026 17:43:03 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 87 of anti-corruption protest in Tirana, Albania Dita e 87-të e revoltës – Qytetarët protestojnë sërish kundër Ramës dhe qeverisë https://www. youtube.com/watch?v=3vX3Xovno6s # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
-            "url": "https://mas.to/@meganL/117157529894092806",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Tue, 25 Aug 2026 18:20:35 +0000",
             "matched_countries": [
               "Albánia"
             ],
