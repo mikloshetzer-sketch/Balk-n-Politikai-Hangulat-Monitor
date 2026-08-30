@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30 15:53 UTC",
+  "updated_at": "2026-08-30 20:27 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 5
+    "collected": 4
   },
   "countries": [
     {
@@ -21,35 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
-        "negative_hits": 7,
+        "mentions": 13,
+        "negative_hits": 6,
         "positive_hits": 1,
         "trusted_hits": 3,
-        "engagement_total": 14,
-        "raw_engagement_total": 14,
-        "quality_total": 370,
-        "geopolitical_total": 325,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 326,
+        "geopolitical_total": 283,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 11,
-          "x": 4
+          "mastodon": 12,
+          "x": 1
         },
         "category_counts": {
-          "protest": 2,
-          "security": 8,
-          "government_crisis": 3,
+          "protest": 3,
           "foreign_influence": 1,
-          "ethnic_tension": 1
+          "security": 7,
+          "ethnic_tension": 1,
+          "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 6,
           "kosovo": 1,
-          "bosnia": 2,
+          "bosnia": 3,
           "montenegro": 1,
-          "Szerbia": 2,
-          "Koszovó": 1,
-          "Albánia": 1
+          "Szerbia": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -96,54 +94,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "NATO launched what it called Operation Allied Force on March 24, 1999, and bombed the country for 78 days on behalf of ethnic Albanian separatists in Kosovo. That province was then",
-            "text": "NATO launched what it called Operation Allied Force on March 24, 1999, and bombed the country for 78 days on behalf of ethnic Albanian separatists in Kosovo. That province was then placed under a UN provisional government, while Security Council Resolution 1244 guaranteed Serbian",
-            "url": "https://x.com/i/web/status/2094043837538656382",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-30T12:45:30.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 40,
-            "quality_score": 44,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -219,41 +169,64 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "As per CIA owned more than 300 Serbian conscripts/kids age 18-24 stood up to : NATO,Albanian army,UCK terrorists and defended line at border for almost 3 months .Line was not breac",
-            "text": "As per CIA owned more than 300 Serbian conscripts/kids age 18-24 stood up to : NATO,Albanian army,UCK terrorists and defended line at border for almost 3 months .Line was not breached till peace agreement was signed .",
-            "url": "https://x.com/i/web/status/2094063687019503855",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-08-30T14:04:23.000Z",
+            "title": "",
+            "text": "@ mousey @ kyle_pegasus @ jk You may not be aware, but that's what's happening in # Serbia for over a year now: People (mostly students) protesting day after day. And slowly, finally that seems to be successful... @ dejan is constantly reporting on these protests, maybe he has e wrap-up in English somewhere.",
+            "url": "https://23.social/@musevg/117183550611790464",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sun, 30 Aug 2026 08:38:00 +0000",
             "matched_countries": [
-              "Szerbia",
-              "Albánia"
+              "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2
+              "Szerbia": 1
             },
-            "event_category": "security",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "security",
+                "category": "protest",
                 "hits": 2,
-                "weight": 9
+                "weight": 8
               }
             ],
-            "geopolitical_score": 23,
-            "quality_score": 27,
+            "geopolitical_score": 19,
+            "quality_score": 22,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "# Bosnia # RatkoMladić # fascists \"Ratko Mladić, the ‘Butcher of Bosnia’, could not escape death. But his fascist ideas and ideology live on When I testified against Mladić at his trial in The Hague, I saw the unrepentant face of a mass murderer. That face and his legacy still haunt Serbia today Men age and die, but in the Balkans, time stands still and is s",
+            "url": "https://kolektiva.social/@LevZadov/117185913741910174",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Sun, 30 Aug 2026 18:38:58 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 5,
+              "Szerbia": 2
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 22,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -261,35 +234,100 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 43,
+        "score": 56,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 3,
+        "mentions": 6,
+        "negative_hits": 4,
         "positive_hits": 0,
         "trusted_hits": 3,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 87,
-        "geopolitical_total": 66,
+        "quality_total": 118,
+        "geopolitical_total": 94,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 5,
+          "mastodon": 6,
           "x": 0
         },
         "category_counts": {
           "foreign_influence": 1,
           "corruption_rule_of_law": 1,
-          "security": 2,
-          "protest": 1
+          "ethnic_tension": 2,
+          "security": 2
         },
         "tag_counts": {
           "balkan": 1,
           "kosovo": 1,
-          "bosnia": 3
+          "bosnia": 4
         },
-        "main_topic": "security",
+        "main_topic": "ethnic_tension",
         "top_posts": [
+          {
+            "title": "",
+            "text": "# Bosnia # RatkoMladić # fascists \"Ratko Mladic’s Death Offers No Closure As Fascist Ideologies Persist The recent death of former Bosnian Serb military leader Ratko Mladic, sentenced to life in prison for genocide and war crimes by the International Criminal Tribunal for the former Yugoslavia (ICTY), has prompted debate not about justice served, but about w",
+            "url": "https://kolektiva.social/@LevZadov/117185915771789341",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Sun, 30 Aug 2026 18:39:29 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 23,
+            "quality_score": 26,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "# Bosnia # RatkoMladić # fascists \"Ratko Mladić, the ‘Butcher of Bosnia’, could not escape death. But his fascist ideas and ideology live on When I testified against Mladić at his trial in The Hague, I saw the unrepentant face of a mass murderer. That face and his legacy still haunt Serbia today Men age and die, but in the Balkans, time stands still and is s",
+            "url": "https://kolektiva.social/@LevZadov/117185913741910174",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Sun, 30 Aug 2026 18:38:58 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 5,
+              "Szerbia": 2
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 22,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "Ratko Mladic, the former Bosnian Serb military chief convicted of war crimes for his role in the 1995 Srebrenica massacre, died in hospital on Thursday, according to a United Nations international tribunal. https://www. japantimes.co.jp/news/2026/08/ 28/world/ratko-mladic-bosnia-serbia-dead/?utm_medium=Social&utm_source=mastodon # worldnews # europe # bosnia",
@@ -354,35 +392,6 @@
           },
           {
             "title": "",
-            "text": "Mladic dies while serving life sentence for genocide! If this can be generally accepted as a genocide how can Israel's apologists deny that even worse atrocities in Gaza are a genocide. His bloodcurding words are not as extreme as those of many Israeli leaders. But I'm afraid we will never see any of those monsters facing justice. With money, blackmail and a",
-            "url": "https://todon.eu/@faab64/117169730168093101",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Thu, 27 Aug 2026 22:03:17 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 17,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "‘Butcher of Bosnia’ Ratko Mladic dies at 84 in&#8230; THE HAGUE: Ratko Mladic, the former Bosnian Serb military commander convicted of genocide, war crimes and crimes against humanity over some of the worst atrocities of the Bosnian war, has died at the age of 84 while serving a life sentence in The Hague. Mladic… https:// justpaste.in/news/butcher-of-b osni",
             "url": "https://mastodon.social/@justpaste/117175280108730112",
             "source": "mastodon",
@@ -409,35 +418,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "RaiNews: Il boia di Srebrenica, 8000 morti e un bambino biondo Il generale serbo-bosniaco Ratko Mladic, morto all'ergastolo all'Aja, fece uccidere migliaia di musulmani bosniaci nel 1995 durante le guerre balcaniche. Un gesto ripreso dalle telecamere ripropone la banalità del male The Srebrenica executioner, 8000 dead and a blond child Serbo-Bosnian General ",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117170347211664953",
-            "source": "mastodon",
-            "tag": "balkan",
-            "seen_date": "Fri, 28 Aug 2026 00:40:12 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 14,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -450,12 +430,12 @@
         "scale": "0-60 risk index",
         "mentions": 6,
         "negative_hits": 4,
-        "positive_hits": 2,
+        "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 107,
-        "geopolitical_total": 91,
+        "quality_total": 104,
+        "geopolitical_total": 88,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
@@ -463,56 +443,15 @@
         },
         "category_counts": {
           "security": 2,
-          "government_crisis": 2,
-          "economic_infrastructure": 1,
-          "ethnic_tension": 1
+          "government_crisis": 3,
+          "economic_infrastructure": 1
         },
         "tag_counts": {
           "kosovo": 5,
           "Koszovó": 1
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "Deal Price: ₹480.00 ✅ Regular Price: ₹2,599 ❌ ANNI Designer Kurta Set for Women Cotton Blend Embroidered | Kurti Set for Woman | Farshi Salwar Suit Kurta Palazzo Outfit | Round Nec",
-            "text": "Deal Price: ₹480.00 ✅ Regular Price: ₹2,599 ❌ ANNI Designer Kurta Set for Women Cotton Blend Embroidered | Kurti Set for Woman | Farshi Salwar Suit Kurta Palazzo Outfit | Round Neck V Slit Sleeveless Regular Fit Ethnic Dress Stylish Clothing",
-            "url": "https://x.com/i/web/status/2094071401082650831",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-30T14:35:02.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 23,
-            "quality_score": 24,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Kosovo’s Ruling Party Optimistic About Resolving Deadlock Over New President https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/26/kosovos-ruling-party-optimistic-about-resolving-deadlock-over-new-president/bi/",
@@ -575,6 +514,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "The Basic Court in Pristina, through its Special Department, has sentenced Kadri Xhemajli to six months in prison after he pleaded guilty to threatening Kosovo Prime Minister Albin",
+            "text": "The Basic Court in Pristina, through its Special Department, has sentenced Kadri Xhemajli to six months in prison after he pleaded guilty to threatening Kosovo Prime Minister Albin Kurti.",
+            "url": "https://x.com/i/web/status/2094129164710219981",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-30T18:24:34.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 21,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -860,13 +839,13 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 14,
-        "negative_hits": 11,
-        "positive_hits": 2,
-        "trusted_hits": 3,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 397,
-        "geopolitical_total": 351,
+        "negative_hits": 13,
+        "positive_hits": 1,
+        "trusted_hits": 1,
+        "engagement_total": 16,
+        "raw_engagement_total": 16,
+        "quality_total": 367,
+        "geopolitical_total": 327,
         "source_counts": {
           "reddit": 0,
           "mastodon": 12,
@@ -874,66 +853,17 @@
         },
         "category_counts": {
           "corruption_rule_of_law": 8,
-          "protest": 1,
-          "security": 4,
-          "ethnic_tension": 1
+          "protest": 2,
+          "security": 3,
+          "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 9,
           "albania": 3,
-          "Koszovó": 1,
-          "Albánia": 1
+          "Albánia": 2
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
-          {
-            "title": "NATO launched what it called Operation Allied Force on March 24, 1999, and bombed the country for 78 days on behalf of ethnic Albanian separatists in Kosovo. That province was then",
-            "text": "NATO launched what it called Operation Allied Force on March 24, 1999, and bombed the country for 78 days on behalf of ethnic Albanian separatists in Kosovo. That province was then placed under a UN provisional government, while Security Council Resolution 1244 guaranteed Serbian",
-            "url": "https://x.com/i/web/status/2094043837538656382",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-30T12:45:30.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 40,
-            "quality_score": 44,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Because the coverage is live, sometimes people come up behind someone being interviewed and hold up a sign. This one says (machine translated): \"Labor pensions Stolen by state crime. State crime over the law (Article 79) and border fact in Lunder protected by SPAK\" SPAK is supposed to be the independent agency in Albania for investigating corruption. https:/",
@@ -967,6 +897,40 @@
             ],
             "geopolitical_score": 28,
             "quality_score": 31,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 92 of anti-corruption protest in Tirana, Albania LIVE | Protesta e 92-të, qytetarët kërkojnë dorëheqjen e qeverisë Rama! https://www. youtube.com/watch?v=jvqPxrOo6Vo # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
+            "url": "https://mas.to/@meganL/117185874609679404",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sun, 30 Aug 2026 18:29:01 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
