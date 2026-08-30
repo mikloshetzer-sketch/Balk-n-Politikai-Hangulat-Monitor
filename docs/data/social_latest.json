@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30 11:53 UTC",
+  "updated_at": "2026-08-30 15:53 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 16
+    "collected": 5
   },
   "countries": [
     {
@@ -21,37 +21,130 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
-        "negative_hits": 10,
-        "positive_hits": 2,
-        "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 359,
-        "geopolitical_total": 314,
+        "mentions": 15,
+        "negative_hits": 7,
+        "positive_hits": 1,
+        "trusted_hits": 3,
+        "engagement_total": 14,
+        "raw_engagement_total": 14,
+        "quality_total": 370,
+        "geopolitical_total": 325,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 13,
+          "mastodon": 11,
           "x": 4
         },
         "category_counts": {
           "protest": 2,
-          "security": 5,
-          "government_crisis": 6,
-          "foreign_influence": 3,
+          "security": 8,
+          "government_crisis": 3,
+          "foreign_influence": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 8,
+          "serbia": 6,
           "kosovo": 1,
           "bosnia": 2,
           "montenegro": 1,
           "Szerbia": 2,
-          "Koszovó": 2
+          "Koszovó": 1,
+          "Albánia": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Yesterday in Užice, citizens gathered at Partizan Square at 3pm, exactly three hours before Vučić's own \"United Serbia\" rally was set to begin at the same location. Thousands of riot police were already deployed. They blocked the square, then tear-gassed the crowd to clear it for the president's event. Serbia heads to snap elections in October. This is what ",
+            "url": "https://mastodon.social/@AutokratDaily/117184939669275471",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sun, 30 Aug 2026 14:31:15 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 63,
+            "quality_score": 66,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "NATO launched what it called Operation Allied Force on March 24, 1999, and bombed the country for 78 days on behalf of ethnic Albanian separatists in Kosovo. That province was then",
+            "text": "NATO launched what it called Operation Allied Force on March 24, 1999, and bombed the country for 78 days on behalf of ethnic Albanian separatists in Kosovo. That province was then placed under a UN provisional government, while Security Council Resolution 1244 guaranteed Serbian",
+            "url": "https://x.com/i/web/status/2094043837538656382",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-30T12:45:30.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Albánia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 40,
+            "quality_score": 44,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Roman M🐦 𝕏🔁 @democrats_eu@twitter.com: Today in # Užice , Serbia, police cleared protesters from Partizan Square ahead of an # SNS rally attended by Aleksandar # Vučić , using tear gas while remaining passive in the face of unprecedented violence. Serbia is heading for snap parliamentary elections in October. Violence and clashes are the worst possible start",
@@ -93,96 +186,16 @@
           },
           {
             "title": "",
-            "text": "Serbia: Keeping the EU and Russia in play ahead of a key election. As Serbia heads towards an uncertain election, President Aleksandar Vučić is balancing ties with Russia and EU ambitions. But growing geopolitical tensions and pressure at home are narrowing his room to maneuver. https:// mediafaro.org/article/20260828 -serbia-keeping-the-eu-and-russia-in-pla",
-            "url": "https://mastodon.mediafaro.org/@mf_analysis/117177862490522553",
+            "text": "This is the same playbook Vučić has run for decades. He started as Milošević's information minister in the 1990s and clearing a square with tear gas before your own rally is straight out of that era. But this isn't a strength play anymore, it's a sign of weakness. Heading into an October election he didn't want to call, deploying riot police to silence citiz",
+            "url": "https://mastodon.social/@AutokratDaily/117184942626318724",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Sat, 29 Aug 2026 08:31:26 +0000",
+            "seen_date": "Sun, 30 Aug 2026 14:32:00 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
               "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 31,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "I strongly agree with you Madam President Osmani. We support if Americans and Europeans sanctions Serbia under Russian-Backed Vucic Regime. They even glorify Yugoslavian Commander ",
-            "text": "I strongly agree with you Madam President Osmani. We support if Americans and Europeans sanctions Serbia under Russian-Backed Vucic Regime. They even glorify Yugoslavian Commander General Mladic who committed genocide against Muslims in Kosovo, Albania and Bosnia.",
-            "url": "https://x.com/i/web/status/2094019587180486717",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-30T11:09:09.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5,
-              "Bosznia-Hercegovina": 1,
-              "Koszovó": 1,
-              "Albánia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Great Job Mr. ! Serbia under Russian-Backed Vucic Regime should be punished with sanctions. Because they have expansionist Agenda on Albania, Bosnia and Kosovo with Military and Po",
-            "text": "Great Job Mr. ! Serbia under Russian-Backed Vucic Regime should be punished with sanctions. Because they have expansionist Agenda on Albania, Bosnia and Kosovo with Military and Political support from Russians and Iranian Shia Terrorist Regime.",
-            "url": "https://x.com/i/web/status/2094001394177216740",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-30T09:56:51.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5,
-              "Bosznia-Hercegovina": 1,
-              "Koszovó": 1,
-              "Albánia": 1
             },
             "event_category": "security",
             "event_categories": [
@@ -192,58 +205,55 @@
                 "weight": 9
               },
               {
-                "category": "foreign_influence",
-                "hits": 2,
+                "category": "protest",
+                "hits": 3,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Bipartisan US Lawmakers Take Aim At Serbia's Vucic Over Democracy, Russia Ties https:// fed.brid.gy/r/https://www.rfer l.org/a/congress-serbia-russia-iran-china-corruption-eu/33842700.html",
-            "url": "https://fed.brid.gy/r/https://www.rferl.org/a/congress-serbia-russia-iran-china-corruption-eu/33842700.html",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sat, 29 Aug 2026 08:59:33 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
+            "geopolitical_score": 36,
+            "quality_score": 39,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "As per CIA owned more than 300 Serbian conscripts/kids age 18-24 stood up to : NATO,Albanian army,UCK terrorists and defended line at border for almost 3 months .Line was not breac",
+            "text": "As per CIA owned more than 300 Serbian conscripts/kids age 18-24 stood up to : NATO,Albanian army,UCK terrorists and defended line at border for almost 3 months .Line was not breached till peace agreement was signed .",
+            "url": "https://x.com/i/web/status/2094063687019503855",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-08-30T14:04:23.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Albánia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 23,
+            "quality_score": 27,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -435,34 +445,74 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 59,
+        "score": 47,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
+        "mentions": 6,
         "negative_hits": 4,
-        "positive_hits": 1,
+        "positive_hits": 2,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 134,
-        "geopolitical_total": 116,
+        "quality_total": 107,
+        "geopolitical_total": 91,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 3
+          "x": 1
         },
         "category_counts": {
-          "security": 3,
-          "government_crisis": 4,
-          "economic_infrastructure": 1
+          "security": 2,
+          "government_crisis": 2,
+          "economic_infrastructure": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "kosovo": 5,
-          "Szerbia": 1,
-          "Koszovó": 2
+          "Koszovó": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "Deal Price: ₹480.00 ✅ Regular Price: ₹2,599 ❌ ANNI Designer Kurta Set for Women Cotton Blend Embroidered | Kurti Set for Woman | Farshi Salwar Suit Kurta Palazzo Outfit | Round Nec",
+            "text": "Deal Price: ₹480.00 ✅ Regular Price: ₹2,599 ❌ ANNI Designer Kurta Set for Women Cotton Blend Embroidered | Kurti Set for Woman | Farshi Salwar Suit Kurta Palazzo Outfit | Round Neck V Slit Sleeveless Regular Fit Ethnic Dress Stylish Clothing",
+            "url": "https://x.com/i/web/status/2094071401082650831",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-30T14:35:02.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 23,
+            "quality_score": 24,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Kosovo’s Ruling Party Optimistic About Resolving Deadlock Over New President https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/26/kosovos-ruling-party-optimistic-about-resolving-deadlock-over-new-president/bi/",
@@ -527,76 +577,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Acting President of the Republic of Kosovo Albulena Haxhiu paid tribute at the Monument to Missing Persons, together with Acting Prime Minister Albin Kurti and Minister of Internal",
-            "text": "Acting President of the Republic of Kosovo Albulena Haxhiu paid tribute at the Monument to Missing Persons, together with Acting Prime Minister Albin Kurti and Minister of Internal Affairs Xhelal Sveçla.",
-            "url": "https://x.com/i/web/status/2094013521423913283",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-30T10:45:03.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Kurti: Justice for the Killing of Triumf Riza Must Be Complete Kosovo AlbinKurti TriumfRiza KosovoPolice Justice RuleOfLaw Security Pristina Dardania KosovoNews Balkans",
-            "text": "Kurti: Justice for the Killing of Triumf Riza Must Be Complete Kosovo AlbinKurti TriumfRiza KosovoPolice Justice RuleOfLaw Security Pristina Dardania KosovoNews Balkans",
-            "url": "https://x.com/i/web/status/2094000490434425058",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-30T09:53:16.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 9
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Agenzia Nova: Ucraina: presidente Kosovo, siamo stati a fianco di Kiev fin dai primi giorni di guerra 24 ago 14:44 - (Agenzia Nova) - Il Kosovo e' stato a fianco dell'Ucraina fin dai primi giorni di guerra. Lo ha detto la presidente ad interim... (Alt) Ukraine: Kosovo president, we have been by Kyiv’s side since the earliest days of the war. August 24, 2:44 ",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117150568843716017",
@@ -619,6 +599,37 @@
             ],
             "geopolitical_score": 12,
             "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Kosovo: Procura, su telefono Sheholli piano servizi serbi per compromettere Kurti 25 ago 15:58 - (Agenzia Nova) - Un piano operativo attribuito alle strutture di sicurezza serbe e finalizzato a compromettere e reclutare Albin... (Alt) Kosovo: Prosecution, via Sheholli phone to arrange Serbian service plan to compromise Kurti August 25 15:58 – (",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117156545599710110",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Tue, 25 Aug 2026 14:10:16 +0000",
+            "matched_countries": [
+              "Koszovó",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 12,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -820,183 +831,26 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 35,
-        "level": "medium",
+        "score": 0,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 2,
+        "mentions": 0,
+        "negative_hits": 0,
         "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 125,
-        "raw_engagement_total": 125,
-        "quality_total": 62,
-        "geopolitical_total": 55,
+        "trusted_hits": 0,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 0,
+        "geopolitical_total": 0,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 4
+          "x": 0
         },
-        "category_counts": {
-          "foreign_influence": 1,
-          "security": 2,
-          "ethnic_tension": 1
-        },
-        "tag_counts": {
-          "Montenegró": 1,
-          "Észak-Macedónia": 3
-        },
-        "main_topic": "security",
-        "top_posts": [
-          {
-            "title": "Former MP Ervin Salianji has strongly condemned an incident in Pustec during the official visit of the prime minister of North Macedonia, when the Albanian National Anthem was not ",
-            "text": "Former MP Ervin Salianji has strongly condemned an incident in Pustec during the official visit of the prime minister of North Macedonia, when the Albanian National Anthem was not played at the event.",
-            "url": "https://x.com/i/web/status/2093905255587086496",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-30T03:34:50.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Albánia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🇪🇺 NATO VICTORY HIGHWAY: BUILD THE BLACK SEA RING After Ukraine’s victory and after the fall of Putin, Europe must think bigger. We need a new strategic corridor from the Adriatic ",
-            "text": "🇪🇺 NATO VICTORY HIGHWAY: BUILD THE BLACK SEA RING After Ukraine’s victory and after the fall of Putin, Europe must think bigger. We need a new strategic corridor from the Adriatic to the Black Sea: Durrës – Skopje – Sofia – Bucharest – Constanța – Odesa – Kherson – Mariupol –",
-            "url": "https://x.com/i/web/status/2093827602066665659",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-29T22:26:16.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 17,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 15,
-            "raw_engagement": 15,
-            "metrics": {
-              "likes": 12,
-              "reposts": 0,
-              "replies": 3,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "“Mummy, why is the country you’re from called Yugoslavia, then Macedonia, then Former Yugoslav Republic of Macedonia, then North Macedonia?” Apparently it’s not as straight-forward",
-            "text": "“Mummy, why is the country you’re from called Yugoslavia, then Macedonia, then Former Yugoslav Republic of Macedonia, then North Macedonia?” Apparently it’s not as straight-forward describing war and centuries-long banal-yet-consequential ethnic tensions to a 7yo as you’d think",
-            "url": "https://x.com/i/web/status/2093814103794205177",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-08-29T21:32:38.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 110,
-            "raw_engagement": 110,
-            "metrics": {
-              "likes": 98,
-              "reposts": 1,
-              "replies": 11,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "EU: THIRD COUNTRIES ALIGN WITH LATEST UKRAINE-RELATED SANCTIONS On 28 August, the EU advised that Albania, Bosnia & Herzegovina, Iceland, Liechtenstein, Moldova, Montenegro, North ",
-            "text": "EU: THIRD COUNTRIES ALIGN WITH LATEST UKRAINE-RELATED SANCTIONS On 28 August, the EU advised that Albania, Bosnia & Herzegovina, Iceland, Liechtenstein, Moldova, Montenegro, North Macedonia, Norway and Ukraine have aligned with latest Council Decision",
-            "url": "https://x.com/i/web/status/2093696222418575735",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-08-29T13:44:13.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Bosznia-Hercegovina": 1,
-              "Montenegró": 1,
-              "Albánia": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 12,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          }
-        ]
+        "category_counts": {},
+        "tag_counts": {},
+        "main_topic": "nincs adat",
+        "top_posts": []
       }
     },
     {
@@ -1005,32 +859,81 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
-        "negative_hits": 12,
-        "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 11,
-        "raw_engagement_total": 11,
-        "quality_total": 383,
-        "geopolitical_total": 339,
+        "mentions": 14,
+        "negative_hits": 11,
+        "positive_hits": 2,
+        "trusted_hits": 3,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 397,
+        "geopolitical_total": 351,
         "source_counts": {
           "reddit": 0,
           "mastodon": 12,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
           "corruption_rule_of_law": 8,
           "protest": 1,
-          "security": 6
+          "security": 4,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 9,
           "albania": 3,
-          "Szerbia": 1,
-          "Albánia": 2
+          "Koszovó": 1,
+          "Albánia": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
+          {
+            "title": "NATO launched what it called Operation Allied Force on March 24, 1999, and bombed the country for 78 days on behalf of ethnic Albanian separatists in Kosovo. That province was then",
+            "text": "NATO launched what it called Operation Allied Force on March 24, 1999, and bombed the country for 78 days on behalf of ethnic Albanian separatists in Kosovo. That province was then placed under a UN provisional government, while Security Council Resolution 1244 guaranteed Serbian",
+            "url": "https://x.com/i/web/status/2094043837538656382",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-30T12:45:30.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Albánia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 40,
+            "quality_score": 44,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Because the coverage is live, sometimes people come up behind someone being interviewed and hold up a sign. This one says (machine translated): \"Labor pensions Stolen by state crime. State crime over the law (Article 79) and border fact in Lunder protected by SPAK\" SPAK is supposed to be the independent agency in Albania for investigating corruption. https:/",
@@ -1145,40 +1048,6 @@
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Thu, 27 Aug 2026 17:43:00 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 88 of anti-corruption protest in Tirana, Albania Dita e 88-të e revoltës – Qytetarët protestojnë sërish kundër Ramës dhe qeverisë https://www. youtube.com/watch?v=F_ANrT416nk # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
-            "url": "https://mas.to/@meganL/117163044586425214",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 26 Aug 2026 17:43:03 +0000",
             "matched_countries": [
               "Albánia"
             ],
