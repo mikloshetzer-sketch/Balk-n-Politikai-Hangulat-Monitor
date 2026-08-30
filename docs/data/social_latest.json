@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30 11:04 UTC",
+  "updated_at": "2026-08-30 11:53 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 14
+    "collected": 16
   },
   "countries": [
     {
@@ -21,36 +21,76 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
-        "negative_hits": 7,
-        "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 283,
-        "geopolitical_total": 239,
+        "mentions": 17,
+        "negative_hits": 10,
+        "positive_hits": 2,
+        "trusted_hits": 1,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 359,
+        "geopolitical_total": 314,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 12,
-          "x": 3
+          "mastodon": 13,
+          "x": 4
         },
         "category_counts": {
           "protest": 2,
-          "government_crisis": 4,
+          "security": 5,
+          "government_crisis": 6,
           "foreign_influence": 3,
-          "security": 6
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 7,
+          "serbia": 8,
           "kosovo": 1,
           "bosnia": 2,
           "montenegro": 1,
           "Szerbia": 2,
-          "Koszovó": 1
+          "Koszovó": 2
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Roman M🐦 𝕏🔁 @democrats_eu@twitter.com: Today in # Užice , Serbia, police cleared protesters from Partizan Square ahead of an # SNS rally attended by Aleksandar # Vučić , using tear gas while remaining passive in the face of unprecedented violence. Serbia is heading for snap parliamentary elections in October. Violence and clashes are the worst possible start",
+            "url": "https://zpravobot.news/@Fbeyeee/117184245967089638",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sun, 30 Aug 2026 11:34:50 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 37,
+            "quality_score": 40,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "Serbia: Keeping the EU and Russia in play ahead of a key election. As Serbia heads towards an uncertain election, President Aleksandar Vučić is balancing ties with Russia and EU ambitions. But growing geopolitical tensions and pressure at home are narrowing his room to maneuver. https:// mediafaro.org/article/20260828 -serbia-keeping-the-eu-and-russia-in-pla",
@@ -86,11 +126,54 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "I strongly agree with you Madam President Osmani. We support if Americans and Europeans sanctions Serbia under Russian-Backed Vucic Regime. They even glorify Yugoslavian Commander ",
+            "text": "I strongly agree with you Madam President Osmani. We support if Americans and Europeans sanctions Serbia under Russian-Backed Vucic Regime. They even glorify Yugoslavian Commander General Mladic who committed genocide against Muslims in Kosovo, Albania and Bosnia.",
+            "url": "https://x.com/i/web/status/2094019587180486717",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-30T11:09:09.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5,
+              "Bosznia-Hercegovina": 1,
+              "Koszovó": 1,
+              "Albánia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "Great Job Mr. ! Serbia under Russian-Backed Vucic Regime should be punished with sanctions. Because they have expansionist Agenda on Albania, Bosnia and Kosovo with Military and Po",
             "text": "Great Job Mr. ! Serbia under Russian-Backed Vucic Regime should be punished with sanctions. Because they have expansionist Agenda on Albania, Bosnia and Kosovo with Military and Political support from Russians and Iranian Shia Terrorist Regime.",
             "url": "https://x.com/i/web/status/2094001394177216740",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Koszovó",
             "seen_date": "2026-08-30T09:56:51.000Z",
             "matched_countries": [
               "Szerbia"
@@ -156,70 +239,6 @@
             ],
             "geopolitical_score": 27,
             "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "@ mousey @ kyle_pegasus @ jk You may not be aware, but that's what's happening in # Serbia for over a year now: People (mostly students) protesting day after day. And slowly, finally that seems to be successful... @ dejan is constantly reporting on these protests, maybe he has e wrap-up in English somewhere.",
-            "url": "https://23.social/@musevg/117183550611790464",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sun, 30 Aug 2026 08:38:00 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "This goes well beyond sympathetic coverage. Serbia's Justice Minister Nenad Vujic says Mladić \"will receive all the military and state honours to which he is entitled,\" and confirmed he personally coordinated with President Vučić to fly the body to Belgrade on a special aircraft. A government, not just state TV, is planning a state funeral for a convicted ge",
-            "url": "https://mastodon.social/@AutokratDaily/117173345682473716",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Fri, 28 Aug 2026 13:22:45 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 21,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -416,32 +435,33 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 49,
+        "score": 59,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 3,
+        "mentions": 8,
+        "negative_hits": 4,
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 121,
-        "geopolitical_total": 104,
+        "quality_total": 134,
+        "geopolitical_total": 116,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 2
+          "x": 3
         },
         "category_counts": {
           "security": 3,
-          "government_crisis": 3,
+          "government_crisis": 4,
           "economic_infrastructure": 1
         },
         "tag_counts": {
           "kosovo": 5,
+          "Szerbia": 1,
           "Koszovó": 2
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -807,8 +827,8 @@
         "negative_hits": 2,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 121,
-        "raw_engagement_total": 121,
+        "engagement_total": 125,
+        "raw_engagement_total": 125,
         "quality_total": 62,
         "geopolitical_total": 55,
         "source_counts": {
@@ -893,10 +913,10 @@
             "quality_score": 17,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 14,
-            "raw_engagement": 14,
+            "engagement": 15,
+            "raw_engagement": 15,
             "metrics": {
-              "likes": 11,
+              "likes": 12,
               "reposts": 0,
               "replies": 3,
               "quotes": 0
@@ -928,12 +948,12 @@
             "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 107,
-            "raw_engagement": 107,
+            "engagement": 110,
+            "raw_engagement": 110,
             "metrics": {
-              "likes": 96,
+              "likes": 98,
               "reposts": 1,
-              "replies": 10,
+              "replies": 11,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -988,11 +1008,11 @@
         "mentions": 15,
         "negative_hits": 12,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 13,
-        "raw_engagement_total": 13,
-        "quality_total": 393,
-        "geopolitical_total": 352,
+        "trusted_hits": 2,
+        "engagement_total": 11,
+        "raw_engagement_total": 11,
+        "quality_total": 383,
+        "geopolitical_total": 339,
         "source_counts": {
           "reddit": 0,
           "mastodon": 12,
@@ -1001,13 +1021,13 @@
         "category_counts": {
           "corruption_rule_of_law": 8,
           "protest": 1,
-          "security": 5,
-          "government_crisis": 1
+          "security": 6
         },
         "tag_counts": {
           "balkans": 9,
           "albania": 3,
-          "Albánia": 3
+          "Szerbia": 1,
+          "Albánia": 2
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -1049,46 +1069,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Today marks the 92nd day of the citizens’ protest against the government and Prime Minister Edi Rama, as people continue to gather in Tirana, demanding the prime minister’s resigna",
-            "text": "Today marks the 92nd day of the citizens’ protest against the government and Prime Minister Edi Rama, as people continue to gather in Tirana, demanding the prime minister’s resignation and a change to the political system.",
-            "url": "https://x.com/i/web/status/2093951200773177797",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-08-30T06:37:24.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 8
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 2,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -1165,6 +1145,40 @@
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Thu, 27 Aug 2026 17:43:00 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 88 of anti-corruption protest in Tirana, Albania Dita e 88-të e revoltës – Qytetarët protestojnë sërish kundër Ramës dhe qeverisë https://www. youtube.com/watch?v=F_ANrT416nk # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
+            "url": "https://mas.to/@meganL/117163044586425214",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Wed, 26 Aug 2026 17:43:03 +0000",
             "matched_countries": [
               "Albánia"
             ],
