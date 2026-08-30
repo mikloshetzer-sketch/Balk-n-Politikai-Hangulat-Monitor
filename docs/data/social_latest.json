@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30 02:43 UTC",
+  "updated_at": "2026-08-30 05:18 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 12
+    "collected": 15
   },
   "countries": [
     {
@@ -22,33 +22,31 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 15,
-        "negative_hits": 8,
-        "positive_hits": 1,
+        "negative_hits": 7,
+        "positive_hits": 3,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 284,
-        "geopolitical_total": 247,
+        "engagement_total": 132,
+        "raw_engagement_total": 132,
+        "quality_total": 285,
+        "geopolitical_total": 248,
         "source_counts": {
           "reddit": 0,
           "mastodon": 10,
           "x": 5
         },
         "category_counts": {
-          "government_crisis": 5,
+          "government_crisis": 6,
           "foreign_influence": 4,
           "security": 4,
-          "ethnic_tension": 1,
-          "protest": 1
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "serbia": 6,
           "kosovo": 1,
           "bosnia": 2,
           "montenegro": 1,
-          "Szerbia": 3,
-          "Koszovó": 1,
-          "Albánia": 1
+          "Szerbia": 4,
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -155,12 +153,57 @@
             "quality_score": 27,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 3,
+            "raw_engagement": 3,
             "metrics": {
-              "likes": 0,
+              "likes": 3,
               "reposts": 0,
               "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Ratko Mladic was a mass murderer who committee genocide. The worst of humanity. If Serbia gives him a state funeral, would be the same as if Germany today gave military honours to ",
+            "text": "Ratko Mladic was a mass murderer who committee genocide. The worst of humanity. If Serbia gives him a state funeral, would be the same as if Germany today gave military honours to Hitler. All EU funding to Serbian state should be stopped. This Russian colony deserves ro be",
+            "url": "https://x.com/i/web/status/2093913034330628403",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-08-30T04:05:45.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 23,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 105,
+            "raw_engagement": 105,
+            "metrics": {
+              "likes": 92,
+              "reposts": 10,
+              "replies": 3,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -189,48 +232,6 @@
                 "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Shaip Kamberi, an Albanian member of parliament in Serbia, condemned the decision to escort former Serbian commander Ratko Mladić, who was finally found guilty of genocide, crimes ",
-            "text": "Shaip Kamberi, an Albanian member of parliament in Serbia, condemned the decision to escort former Serbian commander Ratko Mladić, who was finally found guilty of genocide, crimes against humanity and war crimes, to his grave with state and military hono…",
-            "url": "https://x.com/i/web/status/2093806634849997258",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-08-29T21:02:57.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
               }
             ],
             "geopolitical_score": 21,
@@ -437,32 +438,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 46,
+        "score": 42,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 6,
-        "negative_hits": 4,
+        "negative_hits": 3,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 96,
-        "geopolitical_total": 80,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 93,
+        "geopolitical_total": 77,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
           "x": 1
         },
         "category_counts": {
-          "security": 3,
-          "government_crisis": 2,
+          "security": 2,
+          "government_crisis": 3,
           "economic_infrastructure": 1
         },
         "tag_counts": {
           "kosovo": 5,
           "Koszovó": 1
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -557,42 +558,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇽🇰⚡️🇷🇸 ⚠️ Geopolitics: Two years ago, the Republic of Kosovo was the target of a terrorist attack by Serbian nationalists led by the Serbian intelligence agency \"BIA.\" Not a day go",
-            "text": "🇽🇰⚡️🇷🇸 ⚠️ Geopolitics: Two years ago, the Republic of Kosovo was the target of a terrorist attack by Serbian nationalists led by the Serbian intelligence agency \"BIA.\" Not a day goes by without the political leadership in Pristina facing threats of annihilation from Serbia.",
-            "url": "https://x.com/i/web/status/2093815463532691686",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-08-29T21:38:02.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5,
-              "Szerbia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
-            "metrics": {
-              "likes": 1,
-              "reposts": 2,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Agenzia Nova: Kosovo: Procura, su telefono Sheholli piano servizi serbi per compromettere Kurti 25 ago 15:58 - (Agenzia Nova) - Un piano operativo attribuito alle strutture di sicurezza serbe e finalizzato a compromettere e reclutare Albin... (Alt) Kosovo: Prosecution, via Sheholli phone to arrange Serbian service plan to compromise Kurti August 25 15:58 – (",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117156545599710110",
@@ -622,6 +587,41 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Kosovo will have a new president soon! Learn more about the country's history. Find the book here: Bibliophile bookrecommendations flamurvehapibooks lovethybooksooks crescentbooks ",
+            "text": "Kosovo will have a new president soon! Learn more about the country's history. Find the book here: Bibliophile bookrecommendations flamurvehapibooks lovethybooksooks crescentbooks Kosovo kosova",
+            "url": "https://x.com/i/web/status/2093903340707168657",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-08-30T03:27:13.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 2
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -818,33 +818,74 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 28,
+        "score": 34,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 4,
         "negative_hits": 2,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 84,
-        "raw_engagement_total": 84,
-        "quality_total": 43,
-        "geopolitical_total": 37,
+        "engagement_total": 92,
+        "raw_engagement_total": 92,
+        "quality_total": 62,
+        "geopolitical_total": 55,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
           "foreign_influence": 1,
-          "security": 1,
+          "security": 2,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "Montenegró": 1,
-          "Észak-Macedónia": 2
+          "Észak-Macedónia": 3
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "Former MP Ervin Salianji has strongly condemned an incident in Pustec during the official visit of the prime minister of North Macedonia, when the Albanian National Anthem was not ",
+            "text": "Former MP Ervin Salianji has strongly condemned an incident in Pustec during the official visit of the prime minister of North Macedonia, when the Albanian National Anthem was not played at the event.",
+            "url": "https://x.com/i/web/status/2093905255587086496",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-08-30T03:34:50.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Albánia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "🇪🇺 NATO VICTORY HIGHWAY: BUILD THE BLACK SEA RING After Ukraine’s victory and after the fall of Putin, Europe must think bigger. We need a new strategic corridor from the Adriatic ",
             "text": "🇪🇺 NATO VICTORY HIGHWAY: BUILD THE BLACK SEA RING After Ukraine’s victory and after the fall of Putin, Europe must think bigger. We need a new strategic corridor from the Adriatic to the Black Sea: Durrës – Skopje – Sofia – Bucharest – Constanța – Odesa – Kherson – Mariupol –",
@@ -870,10 +911,10 @@
             "quality_score": 17,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 7,
-            "raw_engagement": 7,
+            "engagement": 8,
+            "raw_engagement": 8,
             "metrics": {
-              "likes": 7,
+              "likes": 8,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -905,10 +946,10 @@
             "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 77,
-            "raw_engagement": 77,
+            "engagement": 84,
+            "raw_engagement": 84,
             "metrics": {
-              "likes": 69,
+              "likes": 76,
               "reposts": 0,
               "replies": 8,
               "quotes": 0
@@ -963,13 +1004,13 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 15,
-        "negative_hits": 13,
+        "negative_hits": 12,
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 386,
-        "geopolitical_total": 345,
+        "quality_total": 374,
+        "geopolitical_total": 333,
         "source_counts": {
           "reddit": 0,
           "mastodon": 12,
@@ -983,7 +1024,8 @@
         "tag_counts": {
           "balkans": 9,
           "albania": 3,
-          "Albánia": 3
+          "Koszovó": 1,
+          "Albánia": 2
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
