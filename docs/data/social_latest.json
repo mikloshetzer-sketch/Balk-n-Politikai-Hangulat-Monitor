@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01 05:00 UTC",
+  "updated_at": "2026-09-01 10:57 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 12
+    "collected": 15
   },
   "countries": [
     {
@@ -21,43 +21,76 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 2,
-        "positive_hits": 3,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 237,
-        "geopolitical_total": 201,
+        "mentions": 18,
+        "negative_hits": 4,
+        "positive_hits": 4,
+        "trusted_hits": 4,
+        "engagement_total": 23,
+        "raw_engagement_total": 23,
+        "quality_total": 292,
+        "geopolitical_total": 241,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 10,
-          "x": 4
+          "mastodon": 12,
+          "x": 6
         },
         "category_counts": {
+          "foreign_influence": 3,
           "protest": 2,
-          "foreign_influence": 2,
-          "government_crisis": 5,
+          "government_crisis": 7,
+          "eu_integration": 2,
           "security": 3,
-          "ethnic_tension": 2
+          "ethnic_tension": 1
         },
         "tag_counts": {
+          "balkan": 1,
           "balkans": 1,
-          "serbia": 5,
+          "serbia": 6,
           "kosovo": 1,
           "bosnia": 2,
           "montenegro": 1,
-          "Szerbia": 4
+          "Szerbia": 4,
+          "Montenegró": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
-            "text": "Agenzia Nova: Serbia: cinque persone ferite a causa degli scontri dopo comizio Sns a Uzice 31 ago 10:09 - (Agenzia Nova) - Cinque persone sono rimaste lievemente ferite, tra cui due poliziotti e un cameraman della radiotelevisione... (Seb) Serbia: Five people injured due to clashes after SNS rally in Uzice August 31, 10:09 AM – (Agenzia Nova) – Five people w",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117189143070803942",
+            "text": "Montenegro is approaching EU membership. Serbia may try to stop it. Montenegro leads the EU accession race, but Serbia may try to spoil the process to protect Belgrade’s regional influence and avoid awkward questions about its own progress, officials tell Euronews. https:// mediafaro.org/article/20260901 -montenegro-is-approaching-eu-membership-serbia-may-tr",
+            "url": "https://mastodon.mediafaro.org/@mf_analysis/117194994894992660",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Mon, 31 Aug 2026 08:20:14 +0000",
+            "seen_date": "Tue, 01 Sep 2026 09:08:26 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5,
+              "Montenegró": 1
+            },
+            "event_category": "eu_integration",
+            "event_categories": [
+              {
+                "category": "eu_integration",
+                "hits": 3,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 31,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Domani: La Russia ha paura della mobilitazione, lo zar cerca nuova carne da cannone Si moltiplicano le norme sulla difesa civile e i regolamenti sulle coscrizioni, si pesca da un bacino di 12 milioni di persone. E cresce il numero dei russi che escono dal paese: verso la Georgia, l’Ossezia, il Kazakistan, la Serbia, persino l’America Latina Russia is afraid ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117194215646414713",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Tue, 01 Sep 2026 05:50:15 +0000",
             "matched_countries": [
               "Szerbia"
             ],
@@ -72,18 +105,13 @@
                 "weight": 9
               },
               {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
                 "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 31,
+            "geopolitical_score": 20,
+            "quality_score": 23,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -91,33 +119,35 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Kiren Rijiju, Minister of Parliamentary Affairs and Minister of Minority Affairs, on Monday, called on Duro Macut, Prime Minister of the Republic of Serbia, at the Palace of Serbia",
-            "text": "Kiren Rijiju, Minister of Parliamentary Affairs and Minister of Minority Affairs, on Monday, called on Duro Macut, Prime Minister of the Republic of Serbia, at the Palace of Serbia in Belgrade ..... OmmcomNews",
-            "url": "https://x.com/i/web/status/2094611985011036284",
+            "title": "Montenegro Nears EU Membership as Serbia Faces Accusations of Trying to Slow Podgorica’s Progress Montenegro Serbia EuropeanUnion EU EUEnlargement Podgorica Belgrade WesternBalkans",
+            "text": "Montenegro Nears EU Membership as Serbia Faces Accusations of Trying to Slow Podgorica’s Progress Montenegro Serbia EuropeanUnion EU EUEnlargement Podgorica Belgrade WesternBalkans AleksandarVucic JovanaMarovic ToninoPicula FlorianBieber ForeignInfluence",
+            "url": "https://x.com/i/web/status/2094703688237359253",
             "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-01T02:23:07.000Z",
+            "tag": "Montenegró",
+            "seen_date": "2026-09-01T08:27:31.000Z",
             "matched_countries": [
-              "Szerbia"
+              "Szerbia",
+              "Montenegró"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 9,
+              "Montenegró": 5
             },
-            "event_category": "ethnic_tension",
+            "event_category": "foreign_influence",
             "event_categories": [
               {
-                "category": "ethnic_tension",
+                "category": "foreign_influence",
                 "hits": 1,
-                "weight": 10
+                "weight": 8
               },
               {
-                "category": "government_crisis",
+                "category": "eu_integration",
                 "hits": 2,
-                "weight": 9
+                "weight": 6
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
+            "geopolitical_score": 21,
+            "quality_score": 22,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -190,40 +220,6 @@
             ],
             "geopolitical_score": 18,
             "quality_score": 21,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "How a tiny Serbian village took on the EU and won | Focus on Europe Many villagers worked in a Serbian town on the other side of the Danube and had to go through Croatia to get to it. The village doctor makes the reverse commute. ...but they were being held to the 90 days rule and kept out after that. So they created a barricade to protest. https://www. yout",
-            "url": "https://mas.to/@meganL/117183516168625186",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sun, 30 Aug 2026 08:29:14 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "migration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 20,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -426,33 +422,114 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 42,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 6,
-        "negative_hits": 3,
+        "mentions": 10,
+        "negative_hits": 5,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 94,
-        "geopolitical_total": 76,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 182,
+        "geopolitical_total": 160,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
-          "x": 0
+          "x": 4
         },
         "category_counts": {
-          "government_crisis": 2,
-          "protest": 1,
-          "security": 2,
+          "government_crisis": 4,
+          "protest": 2,
+          "security": 3,
           "economic_infrastructure": 1
         },
         "tag_counts": {
-          "kosovo": 6
+          "kosovo": 6,
+          "Koszovó": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "🆕 Post 🗞 A recent decision by the Constitutional Court of Kosovo to suspend a presidential decree dissolving Parliament may have reached the right result, yet its reasoning may com",
+            "text": "🆕 Post 🗞 A recent decision by the Constitutional Court of Kosovo to suspend a presidential decree dissolving Parliament may have reached the right result, yet its reasoning may compromise democratic values, argues Prof. Flamur Hyseni (University of Prishtina). ⬇️⬇️",
+            "url": "https://x.com/i/web/status/2094719433755201901",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-01T09:30:05.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 35,
+            "quality_score": 36,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Kosovan politicians agree on next president, ending months-long political deadlock: Acting PM Albin Kurti and LDK leader Lumir Abdixhiku agreed to appoint Constitutional Court judg",
+            "text": "Kosovan politicians agree on next president, ending months-long political deadlock: Acting PM Albin Kurti and LDK leader Lumir Abdixhiku agreed to appoint Constitutional Court judge Bekim Sejdiu as Kosovo's next president. Follow for news",
+            "url": "https://x.com/i/web/status/2094713249447198726",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-01T09:05:31.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 6
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Kosovo’s Ruling Party Optimistic About Resolving Deadlock Over New President https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/26/kosovos-ruling-party-optimistic-about-resolving-deadlock-over-new-president/bi/",
@@ -544,66 +621,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Kosovo’s Vetevendosje, LDK Agree on Ex-Judge as Joint Presidential Candidate https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/31/kosovos-vetevendosje-ldk-agree-on-ex-judge-as-joint-presidential-candidate/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/31/kosovos-vetevendosje-ldk-agree-on-ex-judge-as-joint-presidential-candidate/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Mon, 31 Aug 2026 12:55:18 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Kosovo: Procura, su telefono Sheholli piano servizi serbi per compromettere Kurti 25 ago 15:58 - (Agenzia Nova) - Un piano operativo attribuito alle strutture di sicurezza serbe e finalizzato a compromettere e reclutare Albin... (Alt) Kosovo: Prosecution, via Sheholli phone to arrange Serbian service plan to compromise Kurti August 25 15:58 – (",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117156545599710110",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Tue, 25 Aug 2026 14:10:16 +0000",
-            "matched_countries": [
-              "Koszovó",
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Koszovó": 5,
-              "Szerbia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -611,29 +628,30 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 54,
+        "score": 56,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
+        "mentions": 8,
         "negative_hits": 2,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 12,
-        "raw_engagement_total": 12,
-        "quality_total": 171,
-        "geopolitical_total": 150,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 184,
+        "geopolitical_total": 162,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "government_crisis": 4,
-          "security": 3
+          "security": 3,
+          "foreign_influence": 1
         },
         "tag_counts": {
           "montenegro": 6,
-          "Montenegró": 1
+          "Montenegró": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -670,46 +688,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "A Russian national shot and killed three Montenegrins at a shooting range in Danilovgrad, Montenegro. Police are still searching for the attacker who is located in Herceg Novi.",
-            "text": "A Russian national shot and killed three Montenegrins at a shooting range in Danilovgrad, Montenegro. Police are still searching for the attacker who is located in Herceg Novi.",
-            "url": "https://x.com/i/web/status/2094546921813844138",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-08-31T22:04:35.000Z",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 12,
-            "raw_engagement": 12,
-            "metrics": {
-              "likes": 11,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -775,33 +753,86 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Montenegro Opposition Seeks Parliament Speaker’s Dismissal Over Mladic Condolences https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/31/montenegro-opposition-seeks-parliament-speakers-dismissal-over-mladic-condolences/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/31/montenegro-opposition-seeks-parliament-speakers-dismissal-over-mladic-condolences/bi/",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Mon, 31 Aug 2026 15:12:22 +0000",
+            "title": "Montenegro Nears EU Membership as Serbia Faces Accusations of Trying to Slow Podgorica’s Progress Montenegro Serbia EuropeanUnion EU EUEnlargement Podgorica Belgrade WesternBalkans",
+            "text": "Montenegro Nears EU Membership as Serbia Faces Accusations of Trying to Slow Podgorica’s Progress Montenegro Serbia EuropeanUnion EU EUEnlargement Podgorica Belgrade WesternBalkans AleksandarVucic JovanaMarovic ToninoPicula FlorianBieber ForeignInfluence",
+            "url": "https://x.com/i/web/status/2094703688237359253",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-09-01T08:27:31.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Szerbia": 9,
+              "Montenegró": 5
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 22,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Lawyer Maxim Pashkov endorsed the possibility of Montenegrin police killing a Russian citizen during his arrest. He was already dead Yesterday, three employees of the Češka zbrojev",
+            "text": "Lawyer Maxim Pashkov endorsed the possibility of Montenegrin police killing a Russian citizen during his arrest. He was already dead Yesterday, three employees of the Češka zbrojevka shooting club, located near Danilovgrad, Montenegro, were found shot dead. Police suspect",
+            "url": "https://x.com/i/web/status/2094726517397893379",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-09-01T09:58:14.000Z",
             "matched_countries": [
               "Montenegró"
             ],
             "country_confidence": {
-              "Montenegró": 1
+              "Montenegró": 4
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 2,
+                "category": "security",
+                "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 18,
+            "geopolitical_score": 20,
             "quality_score": 21,
-            "source_reliability": 3,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -809,29 +840,28 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 27,
+        "score": 28,
         "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 3,
         "negative_hits": 2,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 50,
-        "geopolitical_total": 44,
+        "engagement_total": 65,
+        "raw_engagement_total": 65,
+        "quality_total": 54,
+        "geopolitical_total": 48,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
           "x": 3
         },
         "category_counts": {
-          "security": 2,
-          "protest": 1
+          "protest": 1,
+          "security": 2
         },
         "tag_counts": {
-          "Montenegró": 2,
-          "Észak-Macedónia": 1
+          "Észak-Macedónia": 3
         },
         "main_topic": "security",
         "top_posts": [
@@ -840,7 +870,7 @@
             "text": "🇪🇺🚛 BALKAN TRUCKERS PROTEST: Drivers across Serbia, North Macedonia, Bosnia & Montenegro are protesting EU Schengen limits restricting their time in the bloc. Organizers warn of EU border blockades starting Sept. 14. Trucking Europe Logistics",
             "url": "https://x.com/i/web/status/2094587496042549279",
             "source": "x",
-            "tag": "Montenegró",
+            "tag": "Észak-Macedónia",
             "seen_date": "2026-09-01T00:45:49.000Z",
             "matched_countries": [
               "Észak-Macedónia"
@@ -903,23 +933,23 @@
             "quality_score": 17,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 4,
-            "raw_engagement": 4,
+            "engagement": 65,
+            "raw_engagement": 65,
             "metrics": {
-              "likes": 2,
-              "reposts": 1,
-              "replies": 1,
-              "quotes": 0
+              "likes": 41,
+              "reposts": 8,
+              "replies": 14,
+              "quotes": 2
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "Truckers across Bosnia and Herzegovina, Serbia, Montenegro and North Macedonia protest the EU's 90-day Schengen stay limit for professional drivers",
-            "text": "Truckers across Bosnia and Herzegovina, Serbia, Montenegro and North Macedonia protest the EU's 90-day Schengen stay limit for professional drivers",
-            "url": "https://x.com/i/web/status/2094516149417312705",
+            "title": "Balkantruckers press EU over Schengen stay limits Truck and freight transporters from Bosnia and Herzegovina, Serbia, Montenegro and North Macedonia protested Monday against Scheng",
+            "text": "Balkantruckers press EU over Schengen stay limits Truck and freight transporters from Bosnia and Herzegovina, Serbia, Montenegro and North Macedonia protested Monday against Schengen stay restrictions affecting professional drivers, calling for a solution ahead of a Sept.",
+            "url": "https://x.com/i/web/status/2094666246981574944",
             "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-08-31T20:02:18.000Z",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-01T05:58:44.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -935,10 +965,15 @@
                 "category": "protest",
                 "hits": 1,
                 "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 11,
-            "quality_score": 12,
+            "geopolitical_score": 15,
+            "quality_score": 16,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -962,27 +997,27 @@
         "scale": "0-60 risk index",
         "mentions": 12,
         "negative_hits": 9,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 300,
-        "geopolitical_total": 266,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 303,
+        "geopolitical_total": 267,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 10,
-          "x": 2
+          "mastodon": 11,
+          "x": 1
         },
         "category_counts": {
           "corruption_rule_of_law": 7,
           "protest": 1,
-          "security": 2,
-          "government_crisis": 2
+          "security": 3,
+          "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 8,
-          "albania": 2,
-          "Albánia": 2
+          "albania": 3,
+          "Albánia": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
