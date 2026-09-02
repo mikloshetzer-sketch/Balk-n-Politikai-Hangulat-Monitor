@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01 20:27 UTC",
+  "updated_at": "2026-09-02 02:12 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 18
   },
   "countries": [
     {
@@ -21,26 +21,26 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
-        "negative_hits": 5,
-        "positive_hits": 3,
+        "mentions": 17,
+        "negative_hits": 8,
+        "positive_hits": 4,
         "trusted_hits": 3,
-        "engagement_total": 57,
-        "raw_engagement_total": 57,
-        "quality_total": 275,
-        "geopolitical_total": 229,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 318,
+        "geopolitical_total": 271,
         "source_counts": {
           "reddit": 0,
           "mastodon": 12,
-          "x": 4
+          "x": 5
         },
         "category_counts": {
           "foreign_influence": 3,
-          "protest": 2,
-          "ethnic_tension": 2,
+          "protest": 1,
+          "ethnic_tension": 3,
           "government_crisis": 6,
           "eu_integration": 1,
-          "security": 2
+          "security": 3
         },
         "tag_counts": {
           "balkan": 1,
@@ -48,7 +48,8 @@
           "serbia": 7,
           "bosnia": 2,
           "montenegro": 1,
-          "Szerbia": 4
+          "Szerbia": 4,
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -83,40 +84,88 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "A Serbian court has once again postponed the opening of the trial of 12 activists accused of plotting the overthrow of the authorities ahead of a mass protest in Belgrade in March ",
-            "text": "A Serbian court has once again postponed the opening of the trial of 12 activists accused of plotting the overthrow of the authorities ahead of a mass protest in Belgrade in March 2025.",
-            "url": "https://x.com/i/web/status/2094872299518226442",
+            "title": "🇷🇸 UPDATE: Police cleared evening protesters from Kneza Miloša Street and New Belgrade after demonstrators blocked roads and used pyrotechnics near SNS offices, Serbian media repor",
+            "text": "🇷🇸 UPDATE: Police cleared evening protesters from Kneza Miloša Street and New Belgrade after demonstrators blocked roads and used pyrotechnics near SNS offices, Serbian media reported.",
+            "url": "https://x.com/i/web/status/2094921328331522340",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-09-01T19:37:31.000Z",
+            "seen_date": "2026-09-01T22:52:21.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
               "Szerbia": 6
             },
-            "event_category": "protest",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
+                "category": "security",
+                "hits": 1,
+                "weight": 9
               },
               {
-                "category": "corruption_rule_of_law",
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
                 "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
+            "geopolitical_score": 29,
+            "quality_score": 30,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 3,
-              "reposts": 1,
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "The Brussels appeasement policy toward Serbia is collapsing. Montenegro is getting closer to EU membership while Serbia which celebrates war criminals responsible for genocide and ",
+            "text": "The Brussels appeasement policy toward Serbia is collapsing. Montenegro is getting closer to EU membership while Serbia which celebrates war criminals responsible for genocide and ethnic cleansing in Croatia, Bosnia, Kosovo could try to stop it. Srbija Hrvatska CrnaGora",
+            "url": "https://x.com/i/web/status/2094889818974986509",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-01T20:47:08.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5,
+              "Bosznia-Hercegovina": 1,
+              "Koszovó": 1,
+              "Montenegró": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 27,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
@@ -157,70 +206,46 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "# Bosnia # RatkoMladić # fascists \"Ratko Mladić, the ‘Butcher of Bosnia’, could not escape death. But his fascist ideas and ideology live on When I testified against Mladić at his trial in The Hague, I saw the unrepentant face of a mass murderer. That face and his legacy still haunt Serbia today Men age and die, but in the Balkans, time stands still and is s",
-            "url": "https://kolektiva.social/@LevZadov/117185913741910174",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Sun, 30 Aug 2026 18:38:58 +0000",
+            "title": "🌍 TRENDING IN THE WESTERN BALKANS: 🇽🇰 LDK split: 6 MPs reject Sejdiu after presidential deal 🇦🇱 Clashes at 94th anti-Rama protest in Tirana 🇲🇪 Push to oust speaker Mandić over Mlad",
+            "text": "🌍 TRENDING IN THE WESTERN BALKANS: 🇽🇰 LDK split: 6 MPs reject Sejdiu after presidential deal 🇦🇱 Clashes at 94th anti-Rama protest in Tirana 🇲🇪 Push to oust speaker Mandić over Mladic tribute 🇷🇸 Vučić hosts Non-Aligned Movement meeting in Belgrade",
+            "url": "https://x.com/i/web/status/2094924226025152969",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-01T23:03:51.000Z",
             "matched_countries": [
-              "Bosznia-Hercegovina",
-              "Szerbia"
+              "Szerbia",
+              "Albánia"
             ],
             "country_confidence": {
-              "Bosznia-Hercegovina": 5,
-              "Szerbia": 2
+              "Szerbia": 8,
+              "Albánia": 4
             },
-            "event_category": "ethnic_tension",
+            "event_category": "government_crisis",
             "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 22,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "This goes well beyond sympathetic coverage. Serbia's Justice Minister Nenad Vujic says Mladić \"will receive all the military and state honours to which he is entitled,\" and confirmed he personally coordinated with President Vučić to fly the body to Belgrade on a special aircraft. A government, not just state TV, is planning a state funeral for a convicted ge",
-            "url": "https://mastodon.social/@AutokratDaily/117173345682473716",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Fri, 28 Aug 2026 13:22:45 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
               {
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 21,
-            "source_reliability": 3,
+            "geopolitical_score": 21,
+            "quality_score": 22,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -419,29 +444,30 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 30,
-        "level": "medium",
+        "score": 45,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 2,
-        "positive_hits": 1,
+        "mentions": 6,
+        "negative_hits": 3,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 72,
-        "geopolitical_total": 60,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 105,
+        "geopolitical_total": 91,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 0
+          "x": 2
         },
         "category_counts": {
-          "government_crisis": 2,
+          "government_crisis": 4,
           "protest": 1,
           "security": 1
         },
         "tag_counts": {
-          "kosovo": 4
+          "kosovo": 4,
+          "Koszovó": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -509,6 +535,76 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Three elections in twenty months. Same winner every time. The opposition's stated reason for blocking a president: it would give Kurti four more years. Four more years is what the ",
+            "text": "Three elections in twenty months. Same winner every time. The opposition's stated reason for blocking a president: it would give Kurti four more years. Four more years is what the voters ordered on 7 June. The candidate came from LDK. PDK's own generation sent him to Ankara and",
+            "url": "https://x.com/i/web/status/2094888613012246600",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-01T20:42:21.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇽🇰 UPDATE: Six LDK lawmakers will not vote for Bekim Sejdiu as president, party leader Lumir Abdixhiku said, one day after backing him with Albin Kurti. Abdixhiku warned the split ",
+            "text": "🇽🇰 UPDATE: Six LDK lawmakers will not vote for Bekim Sejdiu as president, party leader Lumir Abdixhiku said, one day after backing him with Albin Kurti. Abdixhiku warned the split could force new elections. Kurti said the deal still stands.",
+            "url": "https://x.com/i/web/status/2094921688769056844",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-01T22:53:47.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 14,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Two Kosovo Serbs Plead Guilty to Participating in 2022 Unrest https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/31/two-kosovo-serbs-plead-guilty-to-participating-in-2022-unrest/bi/",
             "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/31/two-kosovo-serbs-plead-guilty-to-participating-in-2022-unrest/bi/",
@@ -531,35 +627,6 @@
             ],
             "geopolitical_score": 11,
             "quality_score": 14,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Kosovo’s Vetevendosje, LDK Agree on Ex-Judge as Joint Presidential Candidate https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/31/kosovos-vetevendosje-ldk-agree-on-ex-judge-as-joint-presidential-candidate/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/31/kosovos-vetevendosje-ldk-agree-on-ex-judge-as-joint-presidential-candidate/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Mon, 31 Aug 2026 12:55:18 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -764,15 +831,15 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 43,
+        "score": 44,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 5,
         "negative_hits": 2,
         "positive_hits": 0,
         "trusted_hits": 2,
-        "engagement_total": 33,
-        "raw_engagement_total": 33,
+        "engagement_total": 46,
+        "raw_engagement_total": 46,
         "quality_total": 123,
         "geopolitical_total": 112,
         "source_counts": {
@@ -786,8 +853,7 @@
           "protest": 1
         },
         "tag_counts": {
-          "Montenegró": 1,
-          "Észak-Macedónia": 4
+          "Észak-Macedónia": 5
         },
         "main_topic": "security",
         "top_posts": [
@@ -861,10 +927,10 @@
             "quality_score": 25,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 4,
-            "raw_engagement": 4,
+            "engagement": 6,
+            "raw_engagement": 6,
             "metrics": {
-              "likes": 1,
+              "likes": 3,
               "reposts": 0,
               "replies": 2,
               "quotes": 1
@@ -876,7 +942,7 @@
             "text": "Nedjo Mandic has announced blockades at all border crossings in Serbia, Montenegro, Bosnia and Herzegovina and North Macedonia with Schengen Area countries starting Sept. 14 if the European Union does not solve the problems professional drivers.",
             "url": "https://x.com/i/web/status/2094862271407120676",
             "source": "x",
-            "tag": "Montenegró",
+            "tag": "Észak-Macedónia",
             "seen_date": "2026-09-01T18:57:40.000Z",
             "matched_countries": [
               "Észak-Macedónia"
@@ -982,12 +1048,12 @@
             "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 28,
-            "raw_engagement": 28,
+            "engagement": 39,
+            "raw_engagement": 39,
             "metrics": {
-              "likes": 23,
-              "reposts": 0,
-              "replies": 5,
+              "likes": 32,
+              "reposts": 1,
+              "replies": 6,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -1001,29 +1067,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
-        "negative_hits": 14,
-        "positive_hits": 0,
+        "mentions": 17,
+        "negative_hits": 16,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 24,
-        "raw_engagement_total": 24,
-        "quality_total": 460,
-        "geopolitical_total": 421,
+        "engagement_total": 21,
+        "raw_engagement_total": 21,
+        "quality_total": 521,
+        "geopolitical_total": 480,
         "source_counts": {
           "reddit": 0,
           "mastodon": 12,
-          "x": 3
+          "x": 5
         },
         "category_counts": {
           "government_crisis": 3,
           "protest": 3,
           "corruption_rule_of_law": 6,
-          "security": 3
+          "security": 5
         },
         "tag_counts": {
           "balkans": 10,
           "albania": 2,
-          "Albánia": 3
+          "Szerbia": 1,
+          "Albánia": 4
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -1072,6 +1139,51 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "🇦🇱 Police clashed with protesters at Albania’s 94th consecutive anti-government rally in Tirana. More than 10 people were escorted away. Prime Minister Edi Rama left the government",
+            "text": "🇦🇱 Police clashed with protesters at Albania’s 94th consecutive anti-government rally in Tirana. More than 10 people were escorted away. Prime Minister Edi Rama left the government building under security.",
+            "url": "https://x.com/i/web/status/2094921087695884407",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-09-01T22:51:23.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 9
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 46,
+            "quality_score": 47,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "\"Blocked by protesters for about 2 hours at the Prime Minister's Office, Rama leaves the office\" Rreth 2 orë i bllokuar nga protestuesit në Kryeministri, Rama largohet nga zyra https://www. youtube.com/watch?v=I8D0w-nDeXc # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
             "url": "https://mas.to/@meganL/117197621995452221",
@@ -1111,12 +1223,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇦🇱 NOW - Police drag protesters off the ground outside the Prime Minister's Office on day 94 of the Flamingo Revolution. Riot line, water cannon, phones up. Number of people escort",
-            "text": "🇦🇱 NOW - Police drag protesters off the ground outside the Prime Minister's Office on day 94 of the Flamingo Revolution. Riot line, water cannon, phones up. Number of people escorted is rising. Sources say PM Edi Rama and high rank officials are inside.",
-            "url": "https://x.com/i/web/status/2094873243454750947",
+            "title": "Prime Minister Edi Rama has left the Prime Minister’s Office after the conclusion of the 94th protest and the start of the protesters’ march toward Police Station No. 1.",
+            "text": "Prime Minister Edi Rama has left the Prime Minister’s Office after the conclusion of the 94th protest and the start of the protesters’ march toward Police Station No. 1.",
+            "url": "https://x.com/i/web/status/2094922951703314773",
             "source": "x",
             "tag": "Albánia",
-            "seen_date": "2026-09-01T19:41:16.000Z",
+            "seen_date": "2026-09-01T22:58:48.000Z",
             "matched_countries": [
               "Albánia"
             ],
@@ -1145,11 +1257,11 @@
             "quality_score": 38,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 10,
-            "raw_engagement": 10,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 7,
-              "reposts": 3,
+              "likes": 0,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
@@ -1188,46 +1300,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Protesters in Tirana, Albania, chant “Arrest Rama (PM),” referring to Prime Minister Edi Rama, on the 96th day of their protest. They are demanding the resignation of the PM and hi",
-            "text": "Protesters in Tirana, Albania, chant “Arrest Rama (PM),” referring to Prime Minister Edi Rama, on the 96th day of their protest. They are demanding the resignation of the PM and his government in what has become the longest and largest protest movement in the country’s history.",
-            "url": "https://x.com/i/web/status/2094866838354055604",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-09-01T19:15:49.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 2,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
