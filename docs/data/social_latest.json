@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04 20:07 UTC",
+  "updated_at": "2026-09-04 20:44 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 12
+    "collected": 8
   },
   "countries": [
     {
@@ -21,25 +21,25 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 20,
+        "mentions": 18,
         "negative_hits": 8,
-        "positive_hits": 2,
+        "positive_hits": 3,
         "trusted_hits": 5,
         "engagement_total": 2,
         "raw_engagement_total": 2,
-        "quality_total": 426,
-        "geopolitical_total": 366,
+        "quality_total": 394,
+        "geopolitical_total": 336,
         "source_counts": {
           "reddit": 0,
           "mastodon": 15,
-          "x": 5
+          "x": 3
         },
         "category_counts": {
           "foreign_influence": 1,
-          "eu_integration": 3,
-          "security": 6,
+          "eu_integration": 4,
+          "security": 4,
           "protest": 2,
-          "government_crisis": 6,
+          "government_crisis": 5,
           "ethnic_tension": 2
         },
         "tag_counts": {
@@ -49,9 +49,9 @@
           "kosovo": 1,
           "bosnia": 3,
           "montenegro": 1,
-          "Szerbia": 5
+          "Szerbia": 3
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -159,6 +159,46 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Citizen Lab and Amnesty confirmed zero-click spyware on Serbian students — people organizing protests. When a government goes that far, opposition figures, legislators, and campaig",
+            "text": "Citizen Lab and Amnesty confirmed zero-click spyware on Serbian students — people organizing protests. When a government goes that far, opposition figures, legislators, and campaign teams aren't a hypothetical risk. They're the documented primary target.",
+            "url": "https://x.com/i/web/status/2095972766553911381",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-04T20:30:23.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "DPA: EU commissioner cancels Serbia visit over 'glorification' of Mladić - https:// app.ekkow.com/1468611724404064 628 Marta Kos, the commissioner for # EU enlargement, has cancelled a visit # Belgrade over honours # Serbia is providing to the convicted # WarCriminal and # genocidist . \"The glorification surrounding his death is incompatible with the values ",
             "url": "https://mamot.fr/@Amgine/117213752364372989",
@@ -186,41 +226,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "MEPs Urge EU to Freeze Aid to Serbia Over Alleged Spyware Surveillance of Students and Opposition Serbia EuropeanUnion EuropeanParliament Spyware Pegasus NoviSpy AleksandarVucic St",
-            "text": "MEPs Urge EU to Freeze Aid to Serbia Over Alleged Spyware Surveillance of Students and Opposition Serbia EuropeanUnion EuropeanParliament Spyware Pegasus NoviSpy AleksandarVucic Students Activists Surveillance HumanRights RuleOfLaw Democracy BIA WesternBalkans EU",
-            "url": "https://x.com/i/web/status/2095954729822232694",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-04T19:18:43.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -804,15 +809,15 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 5,
+        "score": 3,
         "level": "low",
         "scale": "0-60 risk index",
         "mentions": 1,
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 97,
-        "raw_engagement_total": 97,
+        "engagement_total": 11,
+        "raw_engagement_total": 11,
         "quality_total": 19,
         "geopolitical_total": 18,
         "source_counts": {
@@ -831,10 +836,10 @@
           {
             "title": "It was a pleasure to welcome my colleague and friend, North Macedonia’s Minister of Foreign Affairs and Foreign Trade , to Kyiv. We held substantive talks on our bilateral agenda, ",
             "text": "It was a pleasure to welcome my colleague and friend, North Macedonia’s Minister of Foreign Affairs and Foreign Trade , to Kyiv. We held substantive talks on our bilateral agenda, with a particular focus on strengthening Ukraine’s defence capabilities and energy",
-            "url": "https://x.com/i/web/status/2095860655559500223",
+            "url": "https://x.com/i/web/status/2095859151142285443",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-04T13:04:54.000Z",
+            "seen_date": "2026-09-04T12:58:55.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -858,12 +863,12 @@
             "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 97,
-            "raw_engagement": 97,
+            "engagement": 11,
+            "raw_engagement": 11,
             "metrics": {
-              "likes": 78,
-              "reposts": 18,
-              "replies": 1,
+              "likes": 8,
+              "reposts": 3,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -881,8 +886,8 @@
         "negative_hits": 14,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 30,
-        "raw_engagement_total": 30,
+        "engagement_total": 32,
+        "raw_engagement_total": 32,
         "quality_total": 493,
         "geopolitical_total": 441,
         "source_counts": {
