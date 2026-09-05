@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-05 02:10 UTC",
+  "updated_at": "2026-09-05 04:15 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 12
+    "collected": 14
   },
   "countries": [
     {
@@ -227,32 +227,33 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 55,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 2,
+        "mentions": 9,
+        "negative_hits": 3,
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 155,
-        "geopolitical_total": 131,
+        "quality_total": 178,
+        "geopolitical_total": 153,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "eu_integration": 1,
           "foreign_influence": 1,
           "security": 2,
-          "ethnic_tension": 3,
+          "ethnic_tension": 4,
           "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 1,
           "bosnia": 6,
+          "Szerbia": 1,
           "Koszovó": 1
         },
         "main_topic": "ethnic_tension",
@@ -363,6 +364,49 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Kosovo’s acting Prime Minister, Albin Kurti, said that the glorification in Serbia of former Republika Srpska Army commander Ratko Mladić demonstrates a lack of sincere reckoning w",
+            "text": "Kosovo’s acting Prime Minister, Albin Kurti, said that the glorification in Serbia of former Republika Srpska Army commander Ratko Mladić demonstrates a lack of sincere reckoning with the legacy of the wars in the former Yugoslavia.",
+            "url": "https://x.com/i/web/status/2096087651124125825",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-05T04:06:54.000Z",
+            "matched_countries": [
+              "Koszovó",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
+              "Bosznia-Hercegovina": 4,
+              "Szerbia": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 23,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "# Bosnia # RatkoMladić # fascists \"Ratko Mladić, the ‘Butcher of Bosnia’, could not escape death. But his fascist ideas and ideology live on When I testified against Mladić at his trial in The Hague, I saw the unrepentant face of a mass murderer. That face and his legacy still haunt Serbia today Men age and die, but in the Balkans, time stands still and is s",
             "url": "https://kolektiva.social/@LevZadov/117185913741910174",
@@ -392,37 +436,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "EU blasts Serbia over ‘Butcher of Bosnia’ funeral https://www.politico.eu/article/eu-blasts-serbia-over-ratko-mladic-funeral/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication #Foreignpolicy #Enlargement #Conflict #Genocide #Politics #Balkans #War",
-            "url": "https://social.espeweb.net/objects/4aada368-e6cc-46a8-b5a8-caa9a43a6493",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Fri, 04 Sep 2026 10:07:26 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Szerbia": 1,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "eu_integration",
-            "event_categories": [
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -430,34 +443,79 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 45,
+        "score": 57,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 2,
+        "mentions": 8,
+        "negative_hits": 3,
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 89,
-        "geopolitical_total": 68,
+        "quality_total": 112,
+        "geopolitical_total": 90,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "security": 3,
           "foreign_influence": 1,
           "government_crisis": 2,
-          "protest": 1
+          "protest": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "kosovo": 6
+          "kosovo": 6,
+          "Szerbia": 1
         },
         "main_topic": "security",
         "top_posts": [
+          {
+            "title": "Kosovo’s acting Prime Minister, Albin Kurti, said that the glorification in Serbia of former Republika Srpska Army commander Ratko Mladić demonstrates a lack of sincere reckoning w",
+            "text": "Kosovo’s acting Prime Minister, Albin Kurti, said that the glorification in Serbia of former Republika Srpska Army commander Ratko Mladić demonstrates a lack of sincere reckoning with the legacy of the wars in the former Yugoslavia.",
+            "url": "https://x.com/i/web/status/2096087651124125825",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-05T04:06:54.000Z",
+            "matched_countries": [
+              "Koszovó",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
+              "Bosznia-Hercegovina": 4,
+              "Szerbia": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 23,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Agenzia Nova: Kosovo: arrestato a Zubin Potok uomo sospettato di crimini di guerra 03 set 16:40 - (Agenzia Nova) - A Zubin-Potok, in Kosovo, e' stato arrestato un uomo con l'accusa di aver commesso crimini di guerra. Entro... (Alt) Kosovo: Man suspected of war crimes arrested in Zubin Potok September 3, 16:40 – (Agenzia Nova) – In Zubin-Potok, Kosovo, a man ",
@@ -579,35 +637,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "‘Not Mere Incidents’: Kosovo Questions Femicide Approach after New Killings https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/03/not-mere-incidents-kosovo-questions-femicide-approach-after-new-killings/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/03/not-mere-incidents-kosovo-questions-femicide-approach-after-new-killings/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Thu, 03 Sep 2026 05:54:01 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -622,8 +651,8 @@
         "negative_hits": 3,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
+        "engagement_total": 11,
+        "raw_engagement_total": 11,
         "quality_total": 177,
         "geopolitical_total": 150,
         "source_counts": {
@@ -803,15 +832,15 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 5,
+        "score": 6,
         "level": "low",
         "scale": "0-60 risk index",
         "mentions": 1,
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 113,
-        "raw_engagement_total": 113,
+        "engagement_total": 120,
+        "raw_engagement_total": 121,
         "quality_total": 19,
         "geopolitical_total": 18,
         "source_counts": {
@@ -857,11 +886,11 @@
             "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 113,
-            "raw_engagement": 113,
+            "engagement": 120,
+            "raw_engagement": 121,
             "metrics": {
-              "likes": 92,
-              "reposts": 19,
+              "likes": 97,
+              "reposts": 22,
               "replies": 2,
               "quotes": 0
             },
@@ -880,10 +909,10 @@
         "negative_hits": 17,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 38,
-        "raw_engagement_total": 38,
-        "quality_total": 573,
-        "geopolitical_total": 518,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 590,
+        "geopolitical_total": 535,
         "source_counts": {
           "reddit": 0,
           "mastodon": 16,
@@ -891,9 +920,9 @@
         },
         "category_counts": {
           "corruption_rule_of_law": 5,
-          "government_crisis": 7,
+          "government_crisis": 8,
           "security": 3,
-          "protest": 3,
+          "protest": 2,
           "foreign_influence": 3
         },
         "tag_counts": {
