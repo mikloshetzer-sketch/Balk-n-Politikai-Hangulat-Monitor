@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06 10:49 UTC",
+  "updated_at": "2026-09-06 14:43 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 10
+    "collected": 12
   },
   "countries": [
     {
@@ -21,25 +21,25 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
+        "mentions": 16,
         "negative_hits": 7,
         "positive_hits": 2,
-        "trusted_hits": 3,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 347,
-        "geopolitical_total": 296,
+        "trusted_hits": 4,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 328,
+        "geopolitical_total": 275,
         "source_counts": {
           "reddit": 0,
           "mastodon": 14,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
           "foreign_influence": 4,
           "eu_integration": 2,
-          "security": 4,
-          "protest": 3,
-          "government_crisis": 2,
+          "security": 5,
+          "protest": 2,
+          "government_crisis": 1,
           "ethnic_tension": 2
         },
         "tag_counts": {
@@ -49,10 +49,9 @@
           "kosovo": 1,
           "bosnia": 3,
           "montenegro": 1,
-          "Szerbia": 2,
-          "Koszovó": 1
+          "Szerbia": 2
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -92,46 +91,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "🚨 This is not a Christian march. The video shows a large protest in Belgrade on March 15, 2025. The protests were against corruption and were not connected to religion. The claim o",
-            "text": "🚨 This is not a Christian march. The video shows a large protest in Belgrade on March 15, 2025. The protests were against corruption and were not connected to religion. The claim of 1.5 million participants is also false. Serbia Belgrade 👇",
-            "url": "https://x.com/i/web/status/2096524493141271027",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-06T09:02:45.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 35,
-            "quality_score": 36,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -198,6 +157,51 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Serbian police heavily restricted and contained anti-Pride demonstrators in Belgrade as counter-protesters gathered along the Pride route carrying religious icons, crosses, and Ser",
+            "text": "Serbian police heavily restricted and contained anti-Pride demonstrators in Belgrade as counter-protesters gathered along the Pride route carrying religious icons, crosses, and Serbian and Russian flags.",
+            "url": "https://x.com/i/web/status/2096586046767071712",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-06T13:07:20.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -445,24 +449,24 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 52,
+        "score": 58,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
+        "mentions": 9,
         "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 100,
-        "geopolitical_total": 78,
+        "quality_total": 115,
+        "geopolitical_total": 90,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 7,
+          "mastodon": 8,
           "x": 1
         },
         "category_counts": {
-          "security": 3,
+          "security": 4,
           "foreign_influence": 1,
           "government_crisis": 2,
           "protest": 1,
@@ -470,11 +474,40 @@
         },
         "tag_counts": {
           "balkans": 1,
-          "kosovo": 6,
+          "kosovo": 7,
           "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Germany and Kosovo unite against ticks carrying a deadly virus. Germany has high-security labs while Kosovo has Hyalomma ticks and experience with the deadly Crimean-Congo haemorrhagic fever. Working together, German and Kosovar scientists are fighting the disease and its vectors. https:// mediafaro.org/article/20260906 -germany-and-kosovo-unite-against-tick",
+            "url": "https://mastodon.mediafaro.org/@mf_magazine/117224442714951216",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Sun, 06 Sep 2026 13:57:24 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "Agenzia Nova: Kosovo: arrestato a Zubin Potok uomo sospettato di crimini di guerra 03 set 16:40 - (Agenzia Nova) - A Zubin-Potok, in Kosovo, e' stato arrestato un uomo con l'accusa di aver commesso crimini di guerra. Entro... (Alt) Kosovo: Man suspected of war crimes arrested in Zubin Potok September 3, 16:40 – (Agenzia Nova) – In Zubin-Potok, Kosovo, a man ",
@@ -579,35 +612,6 @@
             ],
             "country_confidence": {
               "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "‘Not Mere Incidents’: Kosovo Questions Femicide Approach after New Killings https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/03/not-mere-incidents-kosovo-questions-femicide-approach-after-new-killings/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/03/not-mere-incidents-kosovo-questions-femicide-approach-after-new-killings/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Thu, 03 Sep 2026 05:54:01 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
               "Koszovó": 1
             },
             "event_category": "security",
@@ -819,31 +823,75 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 20,
+        "score": 32,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 0,
-        "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 149,
-        "raw_engagement_total": 149,
-        "quality_total": 34,
-        "geopolitical_total": 31,
+        "mentions": 5,
+        "negative_hits": 1,
+        "positive_hits": 1,
+        "trusted_hits": 1,
+        "engagement_total": 185,
+        "raw_engagement_total": 185,
+        "quality_total": 70,
+        "geopolitical_total": 62,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 3
+          "x": 5
         },
         "category_counts": {
-          "security": 1,
+          "security": 2,
+          "economic_infrastructure": 1,
           "government_crisis": 2
         },
         "tag_counts": {
-          "Észak-Macedónia": 3
+          "Koszovó": 1,
+          "Észak-Macedónia": 4
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "Albanians have royal loyalty. Hopefully westerns people will move accordingly and will strengthen the alliance. Albania in European Union. Kosovo in United Nations,European Union &",
+            "text": "Albanians have royal loyalty. Hopefully westerns people will move accordingly and will strengthen the alliance. Albania in European Union. Kosovo in United Nations,European Union & Nato. Albanian in North Macedonia important factor to save euro-atlantic way.",
+            "url": "https://x.com/i/web/status/2096595509829918882",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-06T13:44:57.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Albánia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 23,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "Greece Cements Its Role as an Energy Corridor, Expanding Gas Links to North Macedonia and Serbia Hellenic Gas Transmission System Operator (DESFA) signed a landmark MoU in Thessalo",
             "text": "Greece Cements Its Role as an Energy Corridor, Expanding Gas Links to North Macedonia and Serbia Hellenic Gas Transmission System Operator (DESFA) signed a landmark MoU in Thessaloniki, extending the Vertical Gas Corridor and boosting regional energy connectivity and security",
@@ -875,12 +923,48 @@
             "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 76,
-            "raw_engagement": 76,
+            "engagement": 98,
+            "raw_engagement": 98,
             "metrics": {
-              "likes": 60,
-              "reposts": 14,
+              "likes": 73,
+              "reposts": 21,
               "replies": 2,
+              "quotes": 2
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Europe’s energy architecture is changing — and this week marked another important step forward. The expansion of the Vertical Gas Corridor into the Western Balkans, with Serbia and",
+            "text": "Europe’s energy architecture is changing — and this week marked another important step forward. The expansion of the Vertical Gas Corridor into the Western Balkans, with Serbia and North Macedonia joining the initiative, is much more than another infrastructure agreement. It is",
+            "url": "https://x.com/i/web/status/2096576975515132121",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-06T12:31:18.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Szerbia": 1
+            },
+            "event_category": "economic_infrastructure",
+            "event_categories": [
+              {
+                "category": "economic_infrastructure",
+                "hits": 2,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 13,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -911,12 +995,12 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 73,
-            "raw_engagement": 73,
+            "engagement": 86,
+            "raw_engagement": 86,
             "metrics": {
-              "likes": 65,
-              "reposts": 6,
-              "replies": 1,
+              "likes": 75,
+              "reposts": 8,
+              "replies": 2,
               "quotes": 1
             },
             "quality": "x_api_filtered"
@@ -965,33 +1049,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 19,
-        "negative_hits": 15,
+        "mentions": 18,
+        "negative_hits": 13,
         "positive_hits": 2,
-        "trusted_hits": 1,
+        "trusted_hits": 3,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 515,
-        "geopolitical_total": 462,
+        "quality_total": 541,
+        "geopolitical_total": 483,
         "source_counts": {
           "reddit": 0,
           "mastodon": 16,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
           "corruption_rule_of_law": 5,
-          "government_crisis": 7,
+          "government_crisis": 4,
           "security": 2,
           "protest": 2,
-          "foreign_influence": 3
+          "foreign_influence": 3,
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "balkans": 10,
           "albania": 6,
-          "Koszovó": 1,
           "Albánia": 2
         },
-        "main_topic": "government_crisis",
+        "main_topic": "corruption_rule_of_law",
         "top_posts": [
           {
             "title": "",
