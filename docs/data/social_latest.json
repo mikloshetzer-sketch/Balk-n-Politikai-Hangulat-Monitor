@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 12:20 UTC",
+  "updated_at": "2026-09-07 16:56 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 18
+    "collected": 12
   },
   "countries": [
     {
@@ -21,35 +21,35 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 7,
-        "positive_hits": 3,
-        "trusted_hits": 3,
-        "engagement_total": 9,
-        "raw_engagement_total": 9,
-        "quality_total": 237,
-        "geopolitical_total": 200,
+        "mentions": 20,
+        "negative_hits": 10,
+        "positive_hits": 4,
+        "trusted_hits": 6,
+        "engagement_total": 144,
+        "raw_engagement_total": 398,
+        "quality_total": 344,
+        "geopolitical_total": 278,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 9,
-          "x": 4
+          "mastodon": 17,
+          "x": 3
         },
         "category_counts": {
-          "foreign_influence": 3,
-          "eu_integration": 3,
-          "security": 4,
-          "ethnic_tension": 1,
-          "government_crisis": 2
+          "foreign_influence": 6,
+          "eu_integration": 4,
+          "security": 7,
+          "ethnic_tension": 2,
+          "protest": 1
         },
         "tag_counts": {
           "balkan": 1,
           "balkans": 2,
-          "serbia": 2,
+          "serbia": 9,
           "kosovo": 1,
-          "bosnia": 2,
+          "bosnia": 3,
           "montenegro": 1,
-          "Szerbia": 3,
-          "Koszovó": 1
+          "Szerbia": 2,
+          "Montenegró": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -120,29 +120,25 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "A group of European Parliament representatives are seeking to delay Serbia’s entry into the European Union and send other messages to Belgrade over the government’s usage of spywar",
-            "text": "A group of European Parliament representatives are seeking to delay Serbia’s entry into the European Union and send other messages to Belgrade over the government’s usage of spyware. The 29 members of the European Parliament (MEPs) cited a report this week from the SHARE",
-            "url": "https://x.com/i/web/status/2096931614731219107",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-07T12:00:30.000Z",
+            "title": "",
+            "text": "Il Tempo: Belgrado, funerali solenni per il \"boia\" Mladic. Polemica internazionale La chiesa ortodossa di San Luca a Belgrado ha accolto oggi la bara dell'ex generale Ratko Mladic, meglio noto come \"il boia di Bosnia\", morto in lo scorso 27 agosto all'Aja dov'era detenuto all'ergastolo per la condanna a Genocidio e Crimini contro l'umanità compiuti a Srebern",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117230511741523388",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Mon, 07 Sep 2026 15:40:50 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 6,
+              "Bosznia-Hercegovina": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
               },
               {
                 "category": "eu_integration",
@@ -150,43 +146,8 @@
                 "weight": 6
               }
             ],
-            "geopolitical_score": 26,
-            "quality_score": 27,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "# Balkan Investigative Reporting Network has identified Andreas # Maul , a town councillor for # Germany ’s far-right # AfD party, as the man behind a # Serbian company # sanctioned by the # US for aiding a # russian alleged # cybercrime service provider. https:// balkaninsight.com/2026/08/28/g erman-afd-figure-behind-alleged-serbian-node-in-russian-cyber-me",
-            "url": "https://mastodon.social/@uatribune/117195287793315033",
-            "source": "mastodon",
-            "tag": "balkan",
-            "seen_date": "Tue, 01 Sep 2026 10:22:55 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 15,
-            "quality_score": 20,
+            "geopolitical_score": 23,
+            "quality_score": 28,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -195,28 +156,56 @@
           },
           {
             "title": "",
-            "text": "Ratko Mladić, the ‘Butcher of Bosnia’, given hero’s funeral in Serbia By Oliver Holmes Fanfare at Belgrade funeral of man convicted of genocide raises questions for Serbia’s EU membership plan https://www. theguardian.com/world/2026/sep /07/ratko-mladic-butcher-of-bosnia-funeral-belgrade-serbia # Serbia # RatkoMladi # Srebrenicamassacre # EuropeanUnion # War",
-            "url": "https://rssfeed.media/@guardianfeeds/117229525625839470",
+            "text": "Researchers confirmed a Pegasus spyware in Serbia attack on a student activist. Learn how Pegasus spyware infected devices without any user interaction. # Pegasus # PegasusSpyware # Serbia # CitizenLab # CyberSecurity # Malware https:// meterpreter.org/pegasus-spywar e-serbia-activist/?utm_source=mastodon&utm_medium=jetpack_social",
+            "url": "https://infosec.exchange/@DailyCyberSecurity/117230635605074860",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Mon, 07 Sep 2026 11:30:03 +0000",
+            "seen_date": "Mon, 07 Sep 2026 16:12:20 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5,
-              "Bosznia-Hercegovina": 1
+              "Szerbia": 1
             },
-            "event_category": "eu_integration",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
+                "category": "security",
+                "hits": 2,
+                "weight": 9
               }
             ],
-            "geopolitical_score": 14,
-            "quality_score": 19,
+            "geopolitical_score": 21,
+            "quality_score": 24,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "The Serbian national hero, the war criminal Ratko Mladić is finally gone! Burn in hell, and may your supporters all die a slowly cancer-like death! https:// bbc.com/news/articles/cn5dkk7y w74o # warcriminal # ethniccleansing # serbia # ratkomladic",
+            "url": "https://stranger.social/@KhunKai/117230740915839235",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Mon, 07 Sep 2026 16:39:07 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 23,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -229,33 +218,34 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 38,
-        "level": "medium",
+        "score": 57,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 6,
-        "negative_hits": 1,
-        "positive_hits": 1,
-        "trusted_hits": 0,
+        "mentions": 9,
+        "negative_hits": 3,
+        "positive_hits": 2,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 124,
-        "geopolitical_total": 106,
+        "quality_total": 168,
+        "geopolitical_total": 139,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 6,
+          "mastodon": 9,
           "x": 0
         },
         "category_counts": {
-          "eu_integration": 1,
+          "eu_integration": 2,
+          "foreign_influence": 3,
           "ethnic_tension": 3,
-          "foreign_influence": 1,
           "security": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "bosnia": 5
+          "serbia": 2,
+          "bosnia": 6
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "foreign_influence",
         "top_posts": [
           {
             "title": "",
@@ -339,6 +329,67 @@
           },
           {
             "title": "",
+            "text": "Thousands turn out in Serbia for funeral of 'Butcher of Bosnia' Ratko Mladić Mladić was jailed for genocide during the 1990s Bosnian war and the EU warned Serbia not to glorify the convicted war criminal. https://www. bbc.com/news/articles/cn5dkk7y w74o # TopNews # News # Mladić # Serbian # Serbia",
+            "url": "https://mastodon.social/@top_news/117230386790540669",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Mon, 07 Sep 2026 15:09:03 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 15,
+            "quality_score": 20,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Mladić's forces killed at least 8,000 Bosniak Muslims at Srebrenica in 1995 and more than 10,000 people during the 1,460 day siege of Sarajevo. The Bosnian war killed 100,000+ and displaced 2 million. Serbia has been negotiating EU accession since 2014. EU's Marta Kos canceled her Serbia visit over the scenes, says glorifying a war criminal has no place on t",
+            "url": "https://mastodon.social/@AutokratDaily/117230568434555068",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Mon, 07 Sep 2026 15:55:15 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 5,
+              "Szerbia": 1
+            },
+            "event_category": "eu_integration",
+            "event_categories": [
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 13,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "Agenzia Nova: Business news: Bosnia, da Bers 45 milioni di euro per sistema sanitario Repubblica Srpska 05 set 06:00 - (Agenzia Nova) - Il ministro delle Finanze della Bosnia Erzegovina, Srdjan Amidzic, e la ministra delle Finanze della Repubblica... (Seb) Business news: Bosnia allocates €45 million for Republika Srpska healthcare system September 5th 06:00 ",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117216510766187232",
             "source": "mastodon",
@@ -365,68 +416,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "EU blasts Serbia over ‘Butcher of Bosnia’ funeral https://www.politico.eu/article/eu-blasts-serbia-over-ratko-mladic-funeral/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication #Foreignpolicy #Enlargement #Conflict #Genocide #Politics #Balkans #War",
-            "url": "https://social.espeweb.net/objects/4aada368-e6cc-46a8-b5a8-caa9a43a6493",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Fri, 04 Sep 2026 10:07:26 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Szerbia": 1,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "eu_integration",
-            "event_categories": [
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "RE: https:// mas.to/@newz/117209065526436273 A good reminder that no matter how heinous the crimes, there will always be a crowd of ignorant assholes to cheer for them. It also takes many generations for murderous, genocidal intentions to be weeded out of a society. (Quoted tweet about Mladic returning to Serbia with military honours after his death in the H",
-            "url": "https://mstdn.chrisalemany.ca/@chris/117209167795701571",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Thu, 03 Sep 2026 21:12:47 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Szerbia": 1,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -434,31 +423,33 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 55,
+        "score": 51,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 9,
-        "negative_hits": 2,
+        "negative_hits": 1,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 114,
-        "geopolitical_total": 91,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 113,
+        "geopolitical_total": 92,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 7,
-          "x": 2
+          "mastodon": 6,
+          "x": 3
         },
         "category_counts": {
-          "security": 4,
+          "security": 5,
           "foreign_influence": 1,
-          "government_crisis": 4
+          "government_crisis": 1,
+          "corruption_rule_of_law": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "kosovo": 6,
-          "Koszovó": 2
+          "kosovo": 5,
+          "Koszovó": 3
         },
         "main_topic": "security",
         "top_posts": [
@@ -492,6 +483,46 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Glad to meet with Pristina Mayor, Përparim Rama, & to speak about Kosovo’s lively capital main challenges & developments to enhance everyone’s safety. We exchanged views on areas o",
+            "text": "Glad to meet with Pristina Mayor, Përparim Rama, & to speak about Kosovo’s lively capital main challenges & developments to enhance everyone’s safety. We exchanged views on areas of common interest, with an emphasis on EULEX ongoing rule of law mandate.",
+            "url": "https://x.com/i/web/status/2096982041837359193",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-07T15:20:53.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 14,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 2,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Agenzia Nova: Kosovo: arrestato a Zubin Potok uomo sospettato di crimini di guerra 03 set 16:40 - (Agenzia Nova) - A Zubin-Potok, in Kosovo, e' stato arrestato un uomo con l'accusa di aver commesso crimini di guerra. Entro... (Alt) Kosovo: Man suspected of war crimes arrested in Zubin Potok September 3, 16:40 – (Agenzia Nova) – In Zubin-Potok, Kosovo, a man ",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117207781463162866",
@@ -519,41 +550,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Kosovo has an election winner, but still no fully functioning institutions. Why Albin Kurti’s LVV cannot move forward alone — and why the opposition has no common alternative. Koso",
-            "text": "Kosovo has an election winner, but still no fully functioning institutions. Why Albin Kurti’s LVV cannot move forward alone — and why the opposition has no common alternative. Kosovo WesternBalkans IBNA",
-            "url": "https://x.com/i/web/status/2096916235493556349",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-07T10:59:24.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -632,14 +628,14 @@
         "negative_hits": 3,
         "positive_hits": 2,
         "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 216,
-        "geopolitical_total": 176,
+        "engagement_total": 9,
+        "raw_engagement_total": 9,
+        "quality_total": 205,
+        "geopolitical_total": 167,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 12,
-          "x": 0
+          "mastodon": 11,
+          "x": 1
         },
         "category_counts": {
           "eu_integration": 3,
@@ -647,7 +643,8 @@
           "government_crisis": 7
         },
         "tag_counts": {
-          "montenegro": 12
+          "montenegro": 11,
+          "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -750,35 +747,6 @@
           },
           {
             "title": "",
-            "text": "Montenegro Opposition Seeks Parliament Speaker’s Dismissal Over Mladic Condolences https:// fed.brid.gy/r/https://balkanin sight.com/2026/08/31/montenegro-opposition-seeks-parliament-speakers-dismissal-over-mladic-condolences/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/08/31/montenegro-opposition-seeks-parliament-speakers-dismissal-over-mladic-condolences/bi/",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Mon, 31 Aug 2026 15:12:22 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 21,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "EU tries to turn the page on enlargement after Iceland's referendum Senior EU officials are downplaying the negative effect of Iceland's referendum as ministers meet in Dublin to keep enlargement momentum going for candidate countries, while discussions on democratic safeguards are ongoing and national elections loom. # EuropeNews https://www. euronews.com/m",
             "url": "https://mastodon.social/@top_news/117226442515634037",
             "source": "mastodon",
@@ -805,6 +773,35 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Montecargo faces financial uncertainty as bauxite traffic collapses http:// dlvr.it/TVHY7M # Business # Montecargo # Montenegro # News",
+            "url": "https://mastodon.social/@railpage/117201245524635343",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Wed, 02 Sep 2026 11:38:03 +0000",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -812,163 +809,83 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 33,
-        "level": "medium",
+        "score": 16,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 2,
+        "mentions": 2,
+        "negative_hits": 1,
         "positive_hits": 1,
-        "trusted_hits": 0,
-        "engagement_total": 11,
-        "raw_engagement_total": 11,
-        "quality_total": 75,
-        "geopolitical_total": 71,
+        "trusted_hits": 1,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 58,
+        "geopolitical_total": 52,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 0,
-          "x": 4
+          "mastodon": 1,
+          "x": 1
         },
         "category_counts": {
           "security": 1,
-          "ethnic_tension": 2,
           "government_crisis": 1
         },
         "tag_counts": {
-          "Szerbia": 1,
-          "Észak-Macedónia": 3
+          "balkans": 1,
+          "Észak-Macedónia": 1
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "security",
         "top_posts": [
           {
-            "title": "🇲🇰 North Macedonia: The country experienced an armed ethnic conflict in 2001 between Macedonian security forces and ethnic Albanian insurgents.",
-            "text": "🇲🇰 North Macedonia: The country experienced an armed ethnic conflict in 2001 between Macedonian security forces and ethnic Albanian insurgents.",
-            "url": "https://x.com/i/web/status/2096696127466643782",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-06T20:24:46.000Z",
+            "title": "",
+            "text": "A conversation with deputy General Secretary Radmila Shekerinska in Ireland A quite informative discussion with the president of The Institute of International and European Affairs https://youtu.be/MdTJbG6HMb8 #RadmillaShekerinska #OrlaQueen #Ireland #NorthMacedonia #EU #NATO #warOnUkraine #Ukraine #EUpol #US #USpol #InstituteOfInternationalAndEurpeanAffairs",
+            "url": "https://fe.disroot.org/objects/13e0cbe3-2a9e-4d1c-bb60-0b09e90f65cb",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Mon, 07 Sep 2026 12:24:21 +0000",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Albánia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 31,
-            "quality_score": 32,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "He became European top scorer but UEFA voided the trophy over an unrelated scandal in Cyprus. He finally got it 15 years later, at a gala in Skopje. In between, he scored two goals",
-            "text": "He became European top scorer but UEFA voided the trophy over an unrelated scandal in Cyprus. He finally got it 15 years later, at a gala in Skopje. In between, he scored two goals in Greece after he had been detained at the border for writing his nationality on the entry form.",
-            "url": "https://x.com/i/web/status/2096931586608660739",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-07T12:00:24.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 4
+              "Észak-Macedónia": 1
             },
             "event_category": "security",
             "event_categories": [
               {
                 "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               },
               {
-                "category": "corruption_rule_of_law",
+                "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "geopolitical_score": 42,
+            "quality_score": 47,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           },
           {
-            "title": "1. Albanians despise Macedonians bc of their discrimination against the Albanian minority in North Macedonia. So… idgaf about them. As for the discrimination against the Roma and t",
-            "text": "1. Albanians despise Macedonians bc of their discrimination against the Albanian minority in North Macedonia. So… idgaf about them. As for the discrimination against the Roma and the Egyptian minority, I’m of course against that 100%.",
-            "url": "https://x.com/i/web/status/2096908694973759799",
+            "title": "His Excellency Dr Ali bin Samikh Al Marri, Minister of Labour, met with His Excellency Mr Afrim Gashi, Speaker of the Parliament of the Republic of North Macedonia. The meeting add",
+            "text": "His Excellency Dr Ali bin Samikh Al Marri, Minister of Labour, met with His Excellency Mr Afrim Gashi, Speaker of the Parliament of the Republic of North Macedonia. The meeting addressed a range of issues of mutual interest and reviewed cooperation in the labour sector, with a",
+            "url": "https://x.com/i/web/status/2096989778017190340",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-07T10:29:26.000Z",
+            "seen_date": "2026-09-07T15:51:37.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Albánia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 10,
-            "raw_engagement": 10,
-            "metrics": {
-              "likes": 7,
-              "reposts": 2,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "During the 90th Thessaloniki International Fair, Greek Prime Minister Kyriakos Mitsotakis spoke about Greece’s relations with North Macedonia and Albania, while reaffirming Athens’",
-            "text": "During the 90th Thessaloniki International Fair, Greek Prime Minister Kyriakos Mitsotakis spoke about Greece’s relations with North Macedonia and Albania, while reaffirming Athens’ strong support for the European integration of the Western Balkans.",
-            "url": "https://x.com/i/web/status/2096875311078003103",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-07T08:16:46.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Albánia": 1
+              "Észak-Macedónia": 5
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -982,10 +899,10 @@
             "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 0,
+              "likes": 2,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -1001,33 +918,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 21,
-        "negative_hits": 14,
+        "mentions": 17,
+        "negative_hits": 12,
         "positive_hits": 2,
-        "trusted_hits": 1,
-        "engagement_total": 18,
-        "raw_engagement_total": 18,
-        "quality_total": 523,
-        "geopolitical_total": 468,
+        "trusted_hits": 2,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 483,
+        "geopolitical_total": 431,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 16,
-          "x": 5
+          "mastodon": 15,
+          "x": 2
         },
         "category_counts": {
-          "corruption_rule_of_law": 6,
-          "government_crisis": 8,
-          "security": 2,
+          "corruption_rule_of_law": 5,
+          "government_crisis": 3,
+          "security": 4,
           "protest": 2,
           "foreign_influence": 3
         },
         "tag_counts": {
           "balkans": 10,
-          "albania": 6,
-          "Észak-Macedónia": 1,
-          "Albánia": 4
+          "albania": 5,
+          "Koszovó": 1,
+          "Albánia": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "corruption_rule_of_law",
         "top_posts": [
           {
             "title": "",
