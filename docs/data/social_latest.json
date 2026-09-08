@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08 11:09 UTC",
+  "updated_at": "2026-09-08 15:45 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 19
+    "collected": 18
   },
   "countries": [
     {
@@ -21,33 +21,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 18,
-        "negative_hits": 9,
+        "mentions": 17,
+        "negative_hits": 8,
         "positive_hits": 3,
-        "trusted_hits": 1,
-        "engagement_total": 20,
-        "raw_engagement_total": 20,
-        "quality_total": 298,
-        "geopolitical_total": 252,
+        "trusted_hits": 3,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 294,
+        "geopolitical_total": 247,
         "source_counts": {
-          "reddit": 1,
-          "mastodon": 14,
-          "x": 3
+          "reddit": 2,
+          "mastodon": 13,
+          "x": 2
         },
         "category_counts": {
-          "eu_integration": 3,
-          "security": 9,
-          "foreign_influence": 4,
+          "eu_integration": 2,
+          "security": 10,
+          "foreign_influence": 3,
           "ethnic_tension": 1,
-          "government_crisis": 1
+          "protest": 1
         },
         "tag_counts": {
-          "balkans": 3,
+          "balkans": 2,
           "serbia": 7,
-          "kosovo": 1,
+          "kosovo": 2,
           "bosnia": 4,
-          "Szerbia": 2,
-          "Montenegró": 1
+          "Szerbia": 2
         },
         "main_topic": "security",
         "top_posts": [
@@ -123,35 +122,75 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Thousands of mourners gather in Belgrade for war criminal Mladic's funeral Thousands of mourners on Monday gathered at a church in Belgrade to view the body of Ratko Mladic, who died in The Hague, Netherlands, on August 27 while serving a life sentence for genocide, war crimes and crimes against humanity. The European Union has heavily criticised the event, ",
-            "url": "https://mastodon.social/@publicnewsfeed/117231240172534875",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Mon, 07 Sep 2026 18:46:05 +0000",
+            "title": "U.S. Congressman Joe Wilson Accuses Vučić Government of Fueling Hatred Serbia AleksandarVucic JoeWilson UnitedStates USCongress RuleOfLaw Democracy Russia China Iran WesternBalkans",
+            "text": "U.S. Congressman Joe Wilson Accuses Vučić Government of Fueling Hatred Serbia AleksandarVucic JoeWilson UnitedStates USCongress RuleOfLaw Democracy Russia China Iran WesternBalkans ForeignPolicy HumanRights RegionalStability",
+            "url": "https://x.com/i/web/status/2097344532958400883",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-08T15:21:18.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 6
+              "Szerbia": 9
             },
-            "event_category": "foreign_influence",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "foreign_influence",
+                "category": "security",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
               },
               {
-                "category": "eu_integration",
+                "category": "foreign_influence",
                 "hits": 2,
-                "weight": 6
+                "weight": 8
               }
             ],
-            "geopolitical_score": 23,
-            "quality_score": 26,
-            "source_reliability": 3,
+            "geopolitical_score": 26,
+            "quality_score": 27,
+            "source_reliability": 2,
             "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Skupovi po celoj Srbiji, veliki protesti, štandovi…: Šta studenti planiraju do izbora",
+            "text": "On navodi da postoji mogućnost da po raspisivanju izbora veliki skup bude organizivan u Novom Sadu, “ranjenom gradu”, u kojem je sve počelo. “Još ništa ne znamo tačno, pregovaramo o svemu. Jedno je samo sigurno, a to je da se mesecima pripremamo i da imamo plan. Nakon što predsednik raspiše izbore, obavestićemo javnost o tačnim koracima i šta od nas mogu da ",
+            "url": "https://www.reddit.com/r/serbia/comments/1waqvcw/skupovi_po_celoj_srbiji_veliki_protesti_štandovi/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-09-08T15:01:57+00:00",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 24,
+            "quality_score": 27,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -189,40 +228,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "The European Union on Monday denounced any \"glorification\" of convicted war criminal Ratko Mladic in Serbia, as thousands gathered in Belgrade for his funeral. FRANCE 24's James Vasina reports. # RatkoMladic # Serbia # EU # genocide https://www. youtube.com/watch?v=kYCJ5lSmAVY",
-            "url": "https://mastodon.social/@Vittoria/117231928059764824",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Mon, 07 Sep 2026 21:41:01 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 20,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -230,33 +235,32 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 60,
+        "score": 50,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 3,
-        "positive_hits": 1,
+        "mentions": 8,
+        "negative_hits": 2,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 13,
-        "raw_engagement_total": 13,
-        "quality_total": 189,
-        "geopolitical_total": 163,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 150,
+        "geopolitical_total": 126,
         "source_counts": {
           "reddit": 0,
           "mastodon": 8,
-          "x": 2
+          "x": 0
         },
         "category_counts": {
-          "eu_integration": 2,
+          "eu_integration": 1,
           "foreign_influence": 3,
           "ethnic_tension": 3,
-          "security": 2
+          "security": 1
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 1,
-          "bosnia": 6,
-          "Montenegró": 2
+          "bosnia": 6
         },
         "main_topic": "foreign_influence",
         "top_posts": [
@@ -305,54 +309,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Freight transport operators from Bosnia and Herzegovina, Serbia, Montenegro and NorthMacedonia on September 14 will launch coordinated protests at border crossings leading into the",
-            "text": "Freight transport operators from Bosnia and Herzegovina, Serbia, Montenegro and NorthMacedonia on September 14 will launch coordinated protests at border crossings leading into the EU over restrictive Schengen stay rules for professional drivers.",
-            "url": "https://x.com/i/web/status/2097186967658111032",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-09-08T04:55:11.000Z",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 2,
-              "Szerbia": 1,
-              "Montenegró": 1,
-              "Észak-Macedónia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 32,
-            "quality_score": 33,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Agenzia Nova: Bosnia-Serbia: Brnabic a Banja Luka per seduta cerimoniale Forum parlamentare con Repubblica Srpska 03 set 11:41 - (Agenzia Nova) - La presidente del Parlamento serbo, Ana Brnabic, e' a Banja Luka, in Bosnia Erzegovina, per partecipare alla... (Seb) Bosnia-Serbia: Brnabić in Banja Luka for ceremonial session of the Parliamentary Forum with Repu",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117206562797334509",
@@ -382,6 +338,37 @@
             ],
             "geopolitical_score": 28,
             "quality_score": 31,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Primo piano ANSA - ANSA.it: L'Ue: il funerale di Mladic contraddice il percorso della Serbia verso l'Unione 'Deplorevoli gli elementi di sostegno ufficiale'. Bosnia ritira gran parte del personale dell'ambasciata in Serbia The EU: Mladic’s funeral contradicts Serbia’s path towards the Union. “Regrettable are the elements of official support. Bosnia withdraws",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117235308190845352",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Tue, 08 Sep 2026 12:00:38 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Szerbia": 1,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -454,34 +441,100 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 39,
-        "level": "medium",
+        "score": 60,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 1,
-        "positive_hits": 2,
-        "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 89,
-        "geopolitical_total": 70,
+        "mentions": 12,
+        "negative_hits": 3,
+        "positive_hits": 1,
+        "trusted_hits": 1,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 171,
+        "geopolitical_total": 142,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 6,
-          "x": 1
+          "mastodon": 7,
+          "x": 5
         },
         "category_counts": {
-          "security": 4,
+          "government_crisis": 4,
+          "security": 5,
           "foreign_influence": 1,
-          "government_crisis": 2
+          "protest": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "balkans": 1,
-          "kosovo": 5,
-          "Koszovó": 1
+          "kosovo": 7,
+          "Szerbia": 1,
+          "Koszovó": 4
         },
         "main_topic": "security",
         "top_posts": [
+          {
+            "title": "The Deputy Commander of the NATO-led KFOR, Brigadier General Federico Collina and the Chief of Staff of the Multinational Specialized Unit, Lieutenant Colonel Massimo Ienco, met wi",
+            "text": "The Deputy Commander of the NATO-led KFOR, Brigadier General Federico Collina and the Chief of Staff of the Multinational Specialized Unit, Lieutenant Colonel Massimo Ienco, met with the Mayor of South Mitrovica, Mr. Faton Peci, at the Municipality. TogetherStrongerForPeace",
+            "url": "https://x.com/i/web/status/2097349971410366894",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-08T15:42:54.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "Kosovo Parliament to Reconvene, ‘Chaos’ Looms over Election of President https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/08/kosovo-parliament-to-reconvene-chaos-looms-over-election-of-president/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/08/kosovo-parliament-to-reconvene-chaos-looms-over-election-of-president/bi/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Tue, 08 Sep 2026 12:43:41 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 21,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "Germany and Kosovo unite against ticks carrying a deadly virus. Germany has high-security labs while Kosovo has Hyalomma ticks and experience with the deadly Crimean-Congo haemorrhagic fever. Working together, German and Kosovar scientists are fighting the disease and its vectors. https:// mediafaro.org/article/20260906 -germany-and-kosovo-unite-against-tick",
@@ -541,97 +594,40 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Agenzia Nova: Albania: Hoxha vede rappresentante Ue Sorensen, dialogo Kosovo-Serbia per pace e stabilita' Balcani 02 set 10:59 - (Agenzia Nova) - Il ministro per l'Europa e gli Esteri dell'Albania, Ferit Hoxha, ha incontrato a Bled, in Slovenia, il Rappresentante... (Alt) Albania: Hoxha sees Sorensen representing the EU, dialogue Kosovo-Serbia for peace and ",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117200703773724728",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 02 Sep 2026 09:20:16 +0000",
+            "title": "Acting Prime Minister Albin Kurti has reacted to the funeral ceremony of former Serbian commander Ratko Mladić, who was convicted of war crimes, accusing Serbia of the institutiona",
+            "text": "Acting Prime Minister Albin Kurti has reacted to the funeral ceremony of former Serbian commander Ratko Mladić, who was convicted of war crimes, accusing Serbia of the institutional glorification of perpetrators of crimes.",
+            "url": "https://x.com/i/web/status/2097344584284004782",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-08T15:21:30.000Z",
             "matched_countries": [
-              "Albánia",
-              "Szerbia",
               "Koszovó"
             ],
             "country_confidence": {
-              "Albánia": 2,
-              "Szerbia": 1,
-              "Koszovó": 1
+              "Koszovó": 4,
+              "Szerbia": 2
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 10,
+            "geopolitical_score": 12,
             "quality_score": 13,
-            "source_reliability": 3,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Kosovo Charges Serbian Security Officers Over Jashari Compound Massacre https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/04/kosovo-charges-serbian-security-officers-over-jashari-compound-massacre/btj/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/04/kosovo-charges-serbian-security-officers-over-jashari-compound-massacre/btj/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Fri, 04 Sep 2026 14:38:37 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
             },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "‘Not Mere Incidents’: Kosovo Questions Femicide Approach after New Killings https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/03/not-mere-incidents-kosovo-questions-femicide-approach-after-new-killings/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/03/not-mere-incidents-kosovo-questions-femicide-approach-after-new-killings/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Thu, 03 Sep 2026 05:54:01 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -639,29 +635,29 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 57,
+        "score": 48,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 3,
+        "mentions": 9,
+        "negative_hits": 2,
         "positive_hits": 2,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 156,
-        "geopolitical_total": 124,
+        "quality_total": 142,
+        "geopolitical_total": 113,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 10,
+          "mastodon": 9,
           "x": 0
         },
         "category_counts": {
           "eu_integration": 3,
-          "foreign_influence": 2,
+          "foreign_influence": 1,
           "government_crisis": 5
         },
         "tag_counts": {
-          "montenegro": 10
+          "montenegro": 9
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -821,30 +817,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 58,
+        "score": 55,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 5,
-        "positive_hits": 5,
-        "trusted_hits": 3,
-        "engagement_total": 46,
-        "raw_engagement_total": 46,
-        "quality_total": 171,
-        "geopolitical_total": 153,
+        "mentions": 7,
+        "negative_hits": 4,
+        "positive_hits": 4,
+        "trusted_hits": 4,
+        "engagement_total": 108,
+        "raw_engagement_total": 108,
+        "quality_total": 157,
+        "geopolitical_total": 137,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 7
+          "x": 6
         },
         "category_counts": {
-          "security": 4,
-          "government_crisis": 2,
-          "eu_integration": 2
+          "security": 5,
+          "government_crisis": 1,
+          "eu_integration": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "Észak-Macedónia": 7
+          "Észak-Macedónia": 6
         },
         "main_topic": "security",
         "top_posts": [
@@ -888,12 +884,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇭🇷🤝🇲🇰 Congratulations to North Macedonia and its people on Independence Day. Croatia values our strong friendship and partnership, both bilaterally and as NATO Allies. We appreciat",
-            "text": "🇭🇷🤝🇲🇰 Congratulations to North Macedonia and its people on Independence Day. Croatia values our strong friendship and partnership, both bilaterally and as NATO Allies. We appreciate North Macedonia’s contribution to regional stability and cooperation in the Western Balkans and",
-            "url": "https://x.com/i/web/status/2097269575217823747",
+            "title": "Happy Independence Day to the Republic of North Macedonia! 🇲🇰 SOCEUR celebrates this important day and our enduring NATO Alliance. Together, our two nations remain committed to sha",
+            "text": "Happy Independence Day to the Republic of North Macedonia! 🇲🇰 SOCEUR celebrates this important day and our enduring NATO Alliance. Together, our two nations remain committed to shared values and collective security. StrongerTogether SOFinEurope",
+            "url": "https://x.com/i/web/status/2097318532371415279",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-08T10:23:26.000Z",
+            "seen_date": "2026-09-08T13:37:59.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -906,39 +902,35 @@
                 "category": "security",
                 "hits": 2,
                 "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
               }
             ],
-            "geopolitical_score": 31,
-            "quality_score": 35,
+            "geopolitical_score": 22,
+            "quality_score": 26,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 14,
-            "raw_engagement": 14,
+            "engagement": 12,
+            "raw_engagement": 12,
             "metrics": {
-              "likes": 12,
-              "reposts": 2,
-              "replies": 0,
+              "likes": 10,
+              "reposts": 1,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "Warm congratulations to the people of the Republic of North Macedonia on the occasion of Independence Day. Romania highly values the excellent relations between our countries and o",
-            "text": "Warm congratulations to the people of the Republic of North Macedonia on the occasion of Independence Day. Romania highly values the excellent relations between our countries and our close cooperation at regional level and as NATO Allies. We are confident that our partnership",
-            "url": "https://x.com/i/web/status/2097251525454102670",
+            "title": "Warm congratulations to the people of North Macedonia on the 35th anniversary of their country’s independence. As close neighbours, friends, partners, and NATO Allies, Albania and ",
+            "text": "Warm congratulations to the people of North Macedonia on the 35th anniversary of their country’s independence. As close neighbours, friends, partners, and NATO Allies, Albania and North Macedonia are bound by strong human ties, close cooperation, and a shared European future.",
+            "url": "https://x.com/i/web/status/2097301420806422805",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-08T09:11:43.000Z",
+            "seen_date": "2026-09-08T12:29:59.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5
+              "Észak-Macedónia": 5,
+              "Albánia": 1
             },
             "event_category": "security",
             "event_categories": [
@@ -952,58 +944,58 @@
             "quality_score": 21,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 30,
-            "raw_engagement": 30,
+            "engagement": 68,
+            "raw_engagement": 68,
             "metrics": {
-              "likes": 25,
-              "reposts": 2,
-              "replies": 2,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Warmest congratulations to the people of North Macedonia on Independence Day!Moldova values our friendship and shared European aspirations. We deeply appreciate North Macedonia’s r",
-            "text": "Warmest congratulations to the people of North Macedonia on Independence Day!Moldova values our friendship and shared European aspirations. We deeply appreciate North Macedonia’s readiness to share its EU integration experience as we work towards our common goal of EU membership",
-            "url": "https://x.com/i/web/status/2097251170825982068",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-08T09:10:18.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "eu_integration",
-            "event_categories": [
-              {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 16,
-            "quality_score": 17,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
+              "likes": 48,
+              "reposts": 19,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "Warmest congratulations to the people of North Macedonia on Independence Day! Moldova values our friendship and shared European aspirations.We deeply appreciateNorth Macedonia’s re",
-            "text": "Warmest congratulations to the people of North Macedonia on Independence Day! Moldova values our friendship and shared European aspirations.We deeply appreciateNorth Macedonia’s readiness to share its EU integration experience as we work towards our common goal of EU membership",
-            "url": "https://x.com/i/web/status/2097248688641097760",
+            "title": "On the occasion of Independence Day, we extend our warmest congratulations to the Government and people of the Republic of North Macedonia. As close neighbors, dedicated friends, a",
+            "text": "On the occasion of Independence Day, we extend our warmest congratulations to the Government and people of the Republic of North Macedonia. As close neighbors, dedicated friends, and NATO Allies, we take great pride in the strong bond between our nations. Built on mutual respect",
+            "url": "https://x.com/i/web/status/2097295394392666613",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-08T09:00:27.000Z",
+            "seen_date": "2026-09-08T12:06:02.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 20,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 11,
+            "raw_engagement": 11,
+            "metrics": {
+              "likes": 9,
+              "reposts": 1,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Warmest congratulations to the people of North Macedonia on Independence Day Moldova values our friendship and shared European aspirations. We deeply appreciate North Macedonia’s r",
+            "text": "Warmest congratulations to the people of North Macedonia on Independence Day Moldova values our friendship and shared European aspirations. We deeply appreciate North Macedonia’s readiness to share its EU integration experience as we work towards our common goal of EU membership",
+            "url": "https://x.com/i/web/status/2097322290861965336",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-08T13:52:55.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -1022,10 +1014,10 @@
             "quality_score": 17,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 0,
+              "likes": 1,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -1041,72 +1033,35 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
-        "negative_hits": 12,
-        "positive_hits": 3,
+        "mentions": 14,
+        "negative_hits": 10,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 21,
-        "raw_engagement_total": 21,
-        "quality_total": 392,
-        "geopolitical_total": 354,
+        "engagement_total": 8,
+        "raw_engagement_total": 8,
+        "quality_total": 339,
+        "geopolitical_total": 301,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 11,
-          "x": 5
+          "mastodon": 12,
+          "x": 2
         },
         "category_counts": {
-          "protest": 4,
-          "corruption_rule_of_law": 5,
           "government_crisis": 4,
-          "security": 2,
-          "ethnic_tension": 1
+          "protest": 3,
+          "corruption_rule_of_law": 5,
+          "security": 1,
+          "foreign_influence": 1
         },
         "tag_counts": {
-          "balkans": 9,
-          "albania": 2,
-          "Albánia": 5
+          "balkans": 8,
+          "kosovo": 1,
+          "albania": 3,
+          "Szerbia": 1,
+          "Albánia": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
-          {
-            "title": "",
-            "text": "\"Blocked by protesters for about 2 hours at the Prime Minister's Office, Rama leaves the office\" Rreth 2 orë i bllokuar nga protestuesit në Kryeministri, Rama largohet nga zyra https://www. youtube.com/watch?v=I8D0w-nDeXc # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
-            "url": "https://mas.to/@meganL/117197621995452221",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Tue, 01 Sep 2026 20:16:32 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 37,
-            "quality_score": 40,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Day 95 of anti-corruption protest in Tirana, Albania Dje “zunë në çark” Ramën për rreth dy orë në Kryeministri, qytetarët sot në ditën e 95 të revoltës \"Yesterday they \"trapped\" Rama for about two hours at the Prime Minister's Office, citizens today on the 95th day of the revolt\" https://www. youtube.com/watch?v=iG8T3Fvlq1E # Albania # Corruption # Balkans #",
@@ -1140,6 +1095,45 @@
             ],
             "geopolitical_score": 36,
             "quality_score": 39,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Parliament is back in session, which means protestors are back in action in front of Parliament Jashtë shqiptarët protestojnë! Nis seanca e parë plenare për këtë sesion të ri Albanians protest abroad! The first plenary session of this new session begins https://www. youtube.com/watch?v=0_DKqmZQAvI # Albania # Corruption # Balkans # Europe # FlamingoRevolutio",
+            "url": "https://mas.to/@meganL/117236097638195317",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Tue, 08 Sep 2026 15:21:24 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 2
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 31,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
