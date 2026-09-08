@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08 15:45 UTC",
+  "updated_at": "2026-09-08 16:35 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 18
+    "collected": 20
   },
   "countries": [
     {
@@ -21,32 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
+        "mentions": 18,
         "negative_hits": 8,
-        "positive_hits": 3,
-        "trusted_hits": 3,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 294,
-        "geopolitical_total": 247,
+        "positive_hits": 4,
+        "trusted_hits": 4,
+        "engagement_total": 8,
+        "raw_engagement_total": 8,
+        "quality_total": 295,
+        "geopolitical_total": 248,
         "source_counts": {
           "reddit": 2,
-          "mastodon": 13,
-          "x": 2
+          "mastodon": 11,
+          "x": 5
         },
         "category_counts": {
-          "eu_integration": 2,
+          "eu_integration": 3,
           "security": 10,
           "foreign_influence": 3,
           "ethnic_tension": 1,
-          "protest": 1
+          "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 2,
-          "serbia": 7,
+          "serbia": 5,
           "kosovo": 2,
           "bosnia": 4,
-          "Szerbia": 2
+          "Szerbia": 4,
+          "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -87,6 +88,46 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "EU Rebukes Belgrade Over Public Homage and Military Escort for Genocide Convict Mladić European Commission President Ursula von der Leyen labeled images from the Belgrade funeral \"",
+            "text": "EU Rebukes Belgrade Over Public Homage and Military Escort for Genocide Convict Mladić European Commission President Ursula von der Leyen labeled images from the Belgrade funeral \"shocking,\" criticizing government backing for the ceremony as a failure to confront wartime",
+            "url": "https://x.com/i/web/status/2097361823783952831",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-08T16:30:00.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 25,
+            "quality_score": 29,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Il Tempo: Belgrado, funerali solenni per il \"boia\" Mladic. Polemica internazionale La chiesa ortodossa di San Luca a Belgrado ha accolto oggi la bara dell'ex generale Ratko Mladic, meglio noto come \"il boia di Bosnia\", morto in lo scorso 27 agosto all'Aja dov'era detenuto all'ergastolo per la condanna a Genocidio e Crimini contro l'umanità compiuti a Srebern",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117230511741523388",
@@ -120,46 +161,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "U.S. Congressman Joe Wilson Accuses Vučić Government of Fueling Hatred Serbia AleksandarVucic JoeWilson UnitedStates USCongress RuleOfLaw Democracy Russia China Iran WesternBalkans",
-            "text": "U.S. Congressman Joe Wilson Accuses Vučić Government of Fueling Hatred Serbia AleksandarVucic JoeWilson UnitedStates USCongress RuleOfLaw Democracy Russia China Iran WesternBalkans ForeignPolicy HumanRights RegionalStability",
-            "url": "https://x.com/i/web/status/2097344532958400883",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-08T15:21:18.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 26,
-            "quality_score": 27,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "Skupovi po celoj Srbiji, veliki protesti, štandovi…: Šta studenti planiraju do izbora",
@@ -196,17 +197,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "A military funeral and burial is held for convicted war criminal Ratko Mladić in Belgrade, # Serbia despite objections from the European Union. https:// newsasfacts.com/news/161079",
-            "url": "https://mastodon.world/@unofficialnewsasfacts/117232004238173053",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Mon, 07 Sep 2026 22:00:24 +0000",
+            "title": "The Serbian government marked his death with a funeral that glorified him and buried him with full military honours. Demonstrations celebrating him also took place. The Kremlin sen",
+            "text": "The Serbian government marked his death with a funeral that glorified him and buried him with full military honours. Demonstrations celebrating him also took place. The Kremlin sent its condolences to his family.",
+            "url": "https://x.com/i/web/status/2097357489184317817",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-08T16:12:47.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 2
             },
             "event_category": "security",
             "event_categories": [
@@ -216,18 +217,24 @@
                 "weight": 9
               },
               {
-                "category": "eu_integration",
+                "category": "protest",
                 "hits": 1,
-                "weight": 6
+                "weight": 8
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 21,
-            "source_reliability": 3,
+            "geopolitical_score": 17,
+            "quality_score": 18,
+            "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 2,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -444,29 +451,27 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
+        "mentions": 11,
         "negative_hits": 3,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 171,
-        "geopolitical_total": 142,
+        "engagement_total": 8,
+        "raw_engagement_total": 8,
+        "quality_total": 160,
+        "geopolitical_total": 132,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 5
+          "x": 4
         },
         "category_counts": {
           "government_crisis": 4,
           "security": 5,
           "foreign_influence": 1,
-          "protest": 1,
-          "ethnic_tension": 1
+          "protest": 1
         },
         "tag_counts": {
           "kosovo": 7,
-          "Szerbia": 1,
           "Koszovó": 4
         },
         "main_topic": "security",
@@ -496,11 +501,11 @@
             "quality_score": 26,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 7,
+            "raw_engagement": 7,
             "metrics": {
-              "likes": 1,
-              "reposts": 1,
+              "likes": 5,
+              "reposts": 2,
               "replies": 0,
               "quotes": 0
             },
@@ -598,7 +603,7 @@
             "text": "Acting Prime Minister Albin Kurti has reacted to the funeral ceremony of former Serbian commander Ratko Mladić, who was convicted of war crimes, accusing Serbia of the institutional glorification of perpetrators of crimes.",
             "url": "https://x.com/i/web/status/2097344584284004782",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Koszovó",
             "seen_date": "2026-09-08T15:21:30.000Z",
             "matched_countries": [
               "Koszovó"
@@ -817,25 +822,25 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 55,
+        "score": 50,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 7,
-        "negative_hits": 4,
+        "negative_hits": 3,
         "positive_hits": 4,
-        "trusted_hits": 4,
-        "engagement_total": 108,
-        "raw_engagement_total": 108,
-        "quality_total": 157,
-        "geopolitical_total": 137,
+        "trusted_hits": 3,
+        "engagement_total": 110,
+        "raw_engagement_total": 110,
+        "quality_total": 147,
+        "geopolitical_total": 130,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
           "x": 6
         },
         "category_counts": {
-          "security": 5,
-          "government_crisis": 1,
+          "security": 4,
+          "government_crisis": 2,
           "eu_integration": 1
         },
         "tag_counts": {
@@ -944,47 +949,12 @@
             "quality_score": 21,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 68,
-            "raw_engagement": 68,
+            "engagement": 74,
+            "raw_engagement": 74,
             "metrics": {
-              "likes": 48,
-              "reposts": 19,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "On the occasion of Independence Day, we extend our warmest congratulations to the Government and people of the Republic of North Macedonia. As close neighbors, dedicated friends, a",
-            "text": "On the occasion of Independence Day, we extend our warmest congratulations to the Government and people of the Republic of North Macedonia. As close neighbors, dedicated friends, and NATO Allies, we take great pride in the strong bond between our nations. Built on mutual respect",
-            "url": "https://x.com/i/web/status/2097295394392666613",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-08T12:06:02.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 16,
-            "quality_score": 20,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 11,
-            "raw_engagement": 11,
-            "metrics": {
-              "likes": 9,
-              "reposts": 1,
-              "replies": 1,
+              "likes": 52,
+              "reposts": 20,
+              "replies": 2,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -1023,6 +993,47 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "Romania is part of the Vertical Corridor, and its expansion to Serbia and North Macedonia strengthens regional energy security, with U.S. LNG central to this partnership. 🇺🇸🇷🇴",
+            "text": "Romania is part of the Vertical Corridor, and its expansion to Serbia and North Macedonia strengthens regional energy security, with U.S. LNG central to this partnership. 🇺🇸🇷🇴",
+            "url": "https://x.com/i/web/status/2097329362315977054",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-08T14:21:01.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 14,
+            "quality_score": 15,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 19,
+            "raw_engagement": 19,
+            "metrics": {
+              "likes": 14,
+              "reposts": 3,
+              "replies": 2,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -1037,8 +1048,8 @@
         "negative_hits": 10,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 8,
-        "raw_engagement_total": 8,
+        "engagement_total": 11,
+        "raw_engagement_total": 11,
         "quality_total": 339,
         "geopolitical_total": 301,
         "source_counts": {
@@ -1057,7 +1068,7 @@
           "balkans": 8,
           "kosovo": 1,
           "albania": 3,
-          "Szerbia": 1,
+          "Montenegró": 1,
           "Albánia": 1
         },
         "main_topic": "corruption_rule_of_law",
