@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09 11:14 UTC",
+  "updated_at": "2026-09-09 15:39 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 18
   },
   "countries": [
     {
@@ -21,155 +21,77 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
-        "negative_hits": 9,
+        "mentions": 25,
+        "negative_hits": 7,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 35,
-        "raw_engagement_total": 35,
-        "quality_total": 398,
-        "geopolitical_total": 359,
+        "engagement_total": 118,
+        "raw_engagement_total": 118,
+        "quality_total": 528,
+        "geopolitical_total": 475,
         "source_counts": {
-          "reddit": 0,
-          "mastodon": 10,
-          "x": 7
+          "reddit": 1,
+          "mastodon": 14,
+          "x": 10
         },
         "category_counts": {
-          "eu_integration": 2,
-          "foreign_influence": 3,
-          "government_crisis": 6,
-          "security": 3,
+          "foreign_influence": 4,
+          "government_crisis": 10,
+          "eu_integration": 1,
+          "security": 6,
           "ethnic_tension": 2,
+          "protest": 1,
           "corruption_rule_of_law": 1
         },
         "tag_counts": {
-          "balkans": 2,
-          "serbia": 2,
+          "balkans": 4,
+          "serbia": 5,
           "kosovo": 1,
           "bosnia": 5,
           "Szerbia": 6,
+          "Koszovó": 3,
           "Észak-Macedónia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "Serbian President Aleksandar Vucic dissolved parliament on Wednesday and called snap elections for October 25. Vucic said the vote was necessary due to political tensions, as he fa",
-            "text": "Serbian President Aleksandar Vucic dissolved parliament on Wednesday and called snap elections for October 25. Vucic said the vote was necessary due to political tensions, as he faces nearly two years of anti-corruption protests triggered by a deadly railway station collapse.",
-            "url": "https://x.com/i/web/status/2097637481151660042",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-09T10:45:22.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 62,
-            "quality_score": 63,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 33,
-            "raw_engagement": 33,
-            "metrics": {
-              "likes": 26,
-              "reposts": 5,
-              "replies": 1,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Serbian President Aleksandar Vucic dissolved parliament on Wednesday and set October 25 as the date for snap elections, citing political tensions as he faces nearly two years of an",
-            "text": "Serbian President Aleksandar Vucic dissolved parliament on Wednesday and set October 25 as the date for snap elections, citing political tensions as he faces nearly two years of anti-corruption protests triggered by the deadly 2024 railway station collapse.",
-            "url": "https://x.com/i/web/status/2097639100774003098",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-09T10:51:48.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 62,
-            "quality_score": 63,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
-            "text": "🟢 Political Instability | 4/10 🇷🇸 Dissolution of Serbian parliament and announcement of elections President of Serbia Aleksandar Vučić announced the dissolution of the country's parliament on September 9th. Elections will be held on October 25th, with Vučić leading the ruling Serbian Progressive Party list. # OSINT # NewsGroup # Serbia # Politics # Elections",
-            "url": "https://social.vir.group/@analytics/117239445638063719",
+            "text": "RaiNews: Serbia, Vucic scioglie il Parlamento, indice nuove elezioni e sfida nelle urne gli studenti Il presidente - già primo ministro - cede alle richieste portate avanti da mesi dal movimento universitario. All'origine di tutto, l'incidente alla stazione di Novi Sad, frutto della corruzione endemica nel Paese, secondo le accuse degli studenti Serbia, Vuci",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117241796766441222",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Wed, 09 Sep 2026 05:32:50 +0000",
+            "seen_date": "Wed, 09 Sep 2026 15:30:46 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 6
+              "Szerbia": 5
             },
             "event_category": "government_crisis",
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 2,
+                "hits": 3,
                 "weight": 9
               },
               {
                 "category": "security",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 31,
-            "quality_score": 34,
+            "geopolitical_score": 55,
+            "quality_score": 58,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -177,17 +99,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "FOCUS ON THE BALKANS For the record, the current Speaker of the Serbian Parliament, Ana Brnabić, participated in the 2018 Bilderberg Meeting, in Turin, when she was Prime Minister ",
-            "text": "FOCUS ON THE BALKANS For the record, the current Speaker of the Serbian Parliament, Ana Brnabić, participated in the 2018 Bilderberg Meeting, in Turin, when she was Prime Minister (see below). SERBIA TURNS TOWARD THE WEST \"President Vučić is navigating a course between Putin",
-            "url": "https://x.com/i/web/status/2097639883355439414",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-09T10:54:55.000Z",
+            "title": "",
+            "text": "Vucic dissolved parliament today, calling snap elections for October 25, after nearly two years of protests over a railway canopy collapse that killed 16. He can't run for president again, so he's running for PM instead, a job he already held from 2014-2017. His political career actually goes back to 1993, including a stint as Milosevic's Minister of Informa",
+            "url": "https://mastodon.social/@AutokratDaily/117241624431295014",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Wed, 09 Sep 2026 14:46:56 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 6
+              "Szerbia": 5
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -195,16 +117,60 @@
                 "category": "government_crisis",
                 "hits": 3,
                 "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 3,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 30,
-            "quality_score": 31,
+            "geopolitical_score": 54,
+            "quality_score": 57,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "NEW: Serbian president dissolves parliament, sets October snap elections amid sustained anti-corruption protests Aleksandar Vučić scheduled parliamentary elections for Oct. 25 and ",
+            "text": "NEW: Serbian president dissolves parliament, sets October snap elections amid sustained anti-corruption protests Aleksandar Vučić scheduled parliamentary elections for Oct. 25 and intends to seek the premiership",
+            "url": "https://x.com/i/web/status/2097703937843368403",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-09T15:09:26.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 53,
+            "quality_score": 54,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 1,
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -246,6 +212,48 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "🚨BREAKING: BOSNIA’S DEFENCE MINISTER ZUKAN HELEZ WANTS THE WORLD TO UN-SIGN REPUBLIKA SRPSKA AFTER BELGRADE BURIED RATKO MLADIĆ WITH SOLDIERS AND MINISTERS. DODIK SAYS 55,000 PEOPL",
+            "text": "🚨BREAKING: BOSNIA’S DEFENCE MINISTER ZUKAN HELEZ WANTS THE WORLD TO UN-SIGN REPUBLIKA SRPSKA AFTER BELGRADE BURIED RATKO MLADIĆ WITH SOLDIERS AND MINISTERS. DODIK SAYS 55,000 PEOPLE IN THE SERB ENTITY WERE ALREADY FILED ON FOR PRAISING HIM. 🇧🇦🔥🇷🇸 Bosnia is one state, three",
+            "url": "https://x.com/i/web/status/2097708755865494002",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-09T15:28:35.000Z",
+            "matched_countries": [
+              "Bosznia-Hercegovina",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 9,
+              "Szerbia": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 2,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -257,29 +265,28 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 8,
-        "negative_hits": 2,
+        "negative_hits": 1,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 150,
-        "geopolitical_total": 126,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 168,
+        "geopolitical_total": 146,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 8,
-          "x": 0
+          "mastodon": 7,
+          "x": 1
         },
         "category_counts": {
-          "eu_integration": 1,
           "foreign_influence": 3,
-          "ethnic_tension": 3,
+          "ethnic_tension": 4,
           "security": 1
         },
         "tag_counts": {
-          "balkans": 1,
-          "bosnia": 7
+          "bosnia": 7,
+          "Szerbia": 1
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "ethnic_tension",
         "top_posts": [
           {
             "title": "",
@@ -362,6 +369,48 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "🚨BREAKING: BOSNIA’S DEFENCE MINISTER ZUKAN HELEZ WANTS THE WORLD TO UN-SIGN REPUBLIKA SRPSKA AFTER BELGRADE BURIED RATKO MLADIĆ WITH SOLDIERS AND MINISTERS. DODIK SAYS 55,000 PEOPL",
+            "text": "🚨BREAKING: BOSNIA’S DEFENCE MINISTER ZUKAN HELEZ WANTS THE WORLD TO UN-SIGN REPUBLIKA SRPSKA AFTER BELGRADE BURIED RATKO MLADIĆ WITH SOLDIERS AND MINISTERS. DODIK SAYS 55,000 PEOPLE IN THE SERB ENTITY WERE ALREADY FILED ON FOR PRAISING HIM. 🇧🇦🔥🇷🇸 Bosnia is one state, three",
+            "url": "https://x.com/i/web/status/2097708755865494002",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-09T15:28:35.000Z",
+            "matched_countries": [
+              "Bosznia-Hercegovina",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 9,
+              "Szerbia": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 2,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Primo piano ANSA - ANSA.it: L'Ue: il funerale di Mladic contraddice il percorso della Serbia verso l'Unione 'Deplorevoli gli elementi di sostegno ufficiale'. Bosnia ritira gran parte del personale dell'ambasciata in Serbia The EU: Mladic’s funeral contradicts Serbia’s path towards the Union. “Regrettable are the elements of official support. Bosnia withdraws",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117235308190845352",
@@ -420,37 +469,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "EU blasts Serbia over ‘Butcher of Bosnia’ funeral https://www.politico.eu/article/eu-blasts-serbia-over-ratko-mladic-funeral/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication #Foreignpolicy #Enlargement #Conflict #Genocide #Politics #Balkans #War",
-            "url": "https://social.espeweb.net/objects/4aada368-e6cc-46a8-b5a8-caa9a43a6493",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Fri, 04 Sep 2026 10:07:26 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Szerbia": 1,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "eu_integration",
-            "event_categories": [
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -458,34 +476,74 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 47,
+        "score": 49,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 1,
+        "mentions": 7,
+        "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 108,
-        "geopolitical_total": 90,
+        "engagement_total": 17,
+        "raw_engagement_total": 17,
+        "quality_total": 118,
+        "geopolitical_total": 101,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
-          "government_crisis": 3,
+          "government_crisis": 1,
           "security": 3,
           "foreign_influence": 1,
-          "corruption_rule_of_law": 1
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "kosovo": 5,
-          "Koszovó": 3
+          "Koszovó": 2
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "🇽🇰 Update: Albin Kurti's LVV has blocked the formation of institutions again. - Despite securing a parliamentary majority with ethnic minorities support, LVV voted their candidate ",
+            "text": "🇽🇰 Update: Albin Kurti's LVV has blocked the formation of institutions again. - Despite securing a parliamentary majority with ethnic minorities support, LVV voted their candidate Albulena Haxhiu as Parliament Speaker but blocked the election of deputy speakers from LDK, PDK,",
+            "url": "https://x.com/i/web/status/2097701881027936316",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-09T15:01:16.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 32,
+            "quality_score": 33,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 17,
+            "raw_engagement": 17,
+            "metrics": {
+              "likes": 11,
+              "reposts": 1,
+              "replies": 5,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Kosovo Parliament to Reconvene, ‘Chaos’ Looms over Election of President https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/08/kosovo-parliament-to-reconvene-chaos-looms-over-election-of-president/bi/",
@@ -574,47 +632,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "The Basic Court in Pristina has found former Infrastructure Minister Pal Lekaj, his former political adviser Eset Berisha, former Secretary-General Nebih Shatri and former Director",
-            "text": "The Basic Court in Pristina has found former Infrastructure Minister Pal Lekaj, his former political adviser Eset Berisha, former Secretary-General Nebih Shatri and former Director of Public Procurement Besim Tahiri guilty in the retrial of the case know…",
-            "url": "https://x.com/i/web/status/2097630266328023384",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-09T10:16:42.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Kosovo Charges Serbian Security Officers Over Jashari Compound Massacre https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/04/kosovo-charges-serbian-security-officers-over-jashari-compound-massacre/btj/",
             "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/04/kosovo-charges-serbian-security-officers-over-jashari-compound-massacre/btj/",
@@ -651,33 +668,33 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 48,
-        "level": "high",
+        "score": 34,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 1,
-        "positive_hits": 2,
+        "mentions": 9,
+        "negative_hits": 0,
+        "positive_hits": 3,
         "trusted_hits": 1,
         "engagement_total": 1,
         "raw_engagement_total": 1,
-        "quality_total": 139,
-        "geopolitical_total": 109,
+        "quality_total": 128,
+        "geopolitical_total": 101,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 9,
+          "mastodon": 8,
           "x": 1
         },
         "category_counts": {
-          "government_crisis": 5,
+          "government_crisis": 3,
           "foreign_influence": 2,
-          "eu_integration": 3
+          "eu_integration": 4
         },
         "tag_counts": {
           "serbia": 2,
-          "montenegro": 7,
+          "montenegro": 6,
           "Montenegró": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "eu_integration",
         "top_posts": [
           {
             "title": "",
@@ -743,33 +760,39 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Montecargo faces financial uncertainty as bauxite traffic collapses http:// dlvr.it/TVHY7M # Business # Montecargo # Montenegro # News",
-            "url": "https://mastodon.social/@railpage/117201245524635343",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Wed, 02 Sep 2026 11:38:03 +0000",
+            "title": "Malta backs Montenegro’s EU membership bid as Chris Fearne holds talks in Podgorica on accession progress, stronger bilateral ties and cooperation. Malta Montenegro EUAccession EUE",
+            "text": "Malta backs Montenegro’s EU membership bid as Chris Fearne holds talks in Podgorica on accession progress, stronger bilateral ties and cooperation. Malta Montenegro EUAccession EUEnlargement Podgorica",
+            "url": "https://x.com/i/web/status/2097676085475549589",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-09-09T13:18:46.000Z",
             "matched_countries": [
               "Montenegró"
             ],
             "country_confidence": {
-              "Montenegró": 1
+              "Montenegró": 5
             },
-            "event_category": "government_crisis",
+            "event_category": "eu_integration",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 15,
-            "source_reliability": 3,
+            "geopolitical_score": 13,
+            "quality_score": 14,
+            "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -842,8 +865,8 @@
         "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 23,
-        "raw_engagement_total": 23,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
         "quality_total": 87,
         "geopolitical_total": 79,
         "source_counts": {
@@ -853,9 +876,9 @@
         },
         "category_counts": {
           "security": 1,
+          "government_crisis": 1,
           "eu_integration": 1,
-          "corruption_rule_of_law": 1,
-          "government_crisis": 1
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "balkans": 1,
@@ -980,12 +1003,12 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "The Custodian of the Two Holy Mosques and HRH Crown Prince Mohammed bin Salman congratulate President of North Macedonia on Independence Day.",
-            "text": "The Custodian of the Two Holy Mosques and HRH Crown Prince Mohammed bin Salman congratulate President of North Macedonia on Independence Day.",
-            "url": "https://x.com/i/web/status/2097376185848115300",
+            "title": "Congratulations & best wishes to HE Madam President Ms Gordana Siljanovska-Davkova and to common folks of the republic of North Macedonia on the occasion of their independence day",
+            "text": "Congratulations & best wishes to HE Madam President Ms Gordana Siljanovska-Davkova and to common folks of the republic of North Macedonia on the occasion of their independence day",
+            "url": "https://x.com/i/web/status/2097669121395884346",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-08T17:27:04.000Z",
+            "seen_date": "2026-09-09T12:51:06.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -1004,12 +1027,12 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 23,
-            "raw_engagement": 23,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 19,
-              "reposts": 3,
-              "replies": 1,
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -1023,33 +1046,83 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
-        "negative_hits": 13,
-        "positive_hits": 2,
+        "mentions": 15,
+        "negative_hits": 12,
+        "positive_hits": 3,
         "trusted_hits": 0,
-        "engagement_total": 35,
-        "raw_engagement_total": 35,
-        "quality_total": 438,
-        "geopolitical_total": 396,
+        "engagement_total": 11,
+        "raw_engagement_total": 11,
+        "quality_total": 451,
+        "geopolitical_total": 410,
         "source_counts": {
           "reddit": 0,
           "mastodon": 13,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
-          "government_crisis": 5,
+          "security": 5,
+          "government_crisis": 2,
           "protest": 4,
-          "corruption_rule_of_law": 5,
-          "security": 1,
+          "corruption_rule_of_law": 3,
           "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 8,
           "albania": 5,
-          "Albánia": 3
+          "Koszovó": 1,
+          "Albánia": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Ah. The only good stuff in that France24 piece was just AFP footage they licensed. \"Police in Albania clashed with protesters and blocked them from reaching parliament during the latest rally against a luxury development linked to U.S. President Donald Trump’s son-in-law, Jared Kushner. The demonstrations on Tuesday came as parliament returned from its summe",
+            "url": "https://mas.to/@meganL/117241376168294220",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Wed, 09 Sep 2026 13:43:48 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 4,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 84,
+            "quality_score": 87,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "Protests against a luxury development linked to Jared Kushner, U.S. President Donald Trump’s son-in-law, turned into a violent clash with police as demonstrators mark their 100th day of marches. The “flamingo revolution” is aiming to stop the project that experts say would threaten the area’s environment, but the movement has grown into a broader referendum ",
@@ -1096,31 +1169,31 @@
           },
           {
             "title": "",
-            "text": "Day 95 of anti-corruption protest in Tirana, Albania Dje “zunë në çark” Ramën për rreth dy orë në Kryeministri, qytetarët sot në ditën e 95 të revoltës \"Yesterday they \"trapped\" Rama for about two hours at the Prime Minister's Office, citizens today on the 95th day of the revolt\" https://www. youtube.com/watch?v=iG8T3Fvlq1E # Albania # Corruption # Balkans #",
-            "url": "https://mas.to/@meganL/117202720009755082",
+            "text": "Albanian anger undiminished after 100 days of protests against Kushner project • FRANCE 24 English Unfortunate slipshod piece by France 24. The interviews with Albanians who speak English is good, but instead of 'flamingo', the narrator says 'flamenco' and the wording is not clear enough that Kusher, et al were just the catalyst for this. It's really &gt;30 ",
+            "url": "https://mas.to/@meganL/117241324098791738",
             "source": "mastodon",
             "tag": "balkans",
-            "seen_date": "Wed, 02 Sep 2026 17:53:02 +0000",
+            "seen_date": "Wed, 09 Sep 2026 13:30:33 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 5
+              "Albánia": 2
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
               },
               {
-                "category": "corruption_rule_of_law",
+                "category": "protest",
                 "hits": 2,
                 "weight": 8
               },
               {
-                "category": "protest",
+                "category": "corruption_rule_of_law",
                 "hits": 1,
                 "weight": 8
               }
@@ -1134,28 +1207,28 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "On their 100th consecutive day of protest, Albanian protestors surrounded and egged the car of a lawmaker who voted to sell the island to Kushner Protests wont stop until the luxur",
-            "text": "On their 100th consecutive day of protest, Albanian protestors surrounded and egged the car of a lawmaker who voted to sell the island to Kushner Protests wont stop until the luxury resort is canceled and the Prime Minister resigns Albanians stand up to corruption ✊",
-            "url": "https://x.com/i/web/status/2097634911255453935",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-09-09T10:35:09.000Z",
+            "title": "",
+            "text": "Machine translation: \"Citizens were taken by force, Osman Stafa tells what happened during the clash with the police\" Qytetarët u morën me forcë, Osman Stafa tregon çfarë ndodhi gjatë përplasjes me policinë https://www. youtube.com/watch?v=WsnskQpT4k0 # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
+            "url": "https://mas.to/@meganL/117241420402762865",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Wed, 09 Sep 2026 13:55:03 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 2
+              "Albánia": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
               },
               {
                 "category": "protest",
-                "hits": 2,
+                "hits": 1,
                 "weight": 8
               },
               {
@@ -1164,19 +1237,13 @@
                 "weight": 8
               }
             ],
-            "geopolitical_score": 36,
-            "quality_score": 37,
-            "source_reliability": 2,
+            "geopolitical_score": 28,
+            "quality_score": 31,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 3,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -1211,40 +1278,6 @@
             ],
             "geopolitical_score": 28,
             "quality_score": 31,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Machine translated: Flakadans 'ignite' Tirana/ Protesters march through the streets of the capital Flakadanët ‘ndezin’ Tiranën/ Protestuesit marshojnë rrugëve të kryeqytetit https://www. youtube.com/watch?v=uNNZrxypNOM # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
-            "url": "https://mas.to/@meganL/117233904980084278",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Tue, 08 Sep 2026 06:03:47 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
