@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09 15:39 UTC",
+  "updated_at": "2026-09-09 16:31 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 18
+    "collected": 14
   },
   "countries": [
     {
@@ -21,24 +21,24 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 25,
-        "negative_hits": 7,
-        "positive_hits": 2,
+        "mentions": 23,
+        "negative_hits": 4,
+        "positive_hits": 3,
         "trusted_hits": 1,
-        "engagement_total": 118,
-        "raw_engagement_total": 118,
-        "quality_total": 528,
-        "geopolitical_total": 475,
+        "engagement_total": 126,
+        "raw_engagement_total": 164,
+        "quality_total": 491,
+        "geopolitical_total": 440,
         "source_counts": {
           "reddit": 1,
           "mastodon": 14,
-          "x": 10
+          "x": 8
         },
         "category_counts": {
           "foreign_influence": 4,
           "government_crisis": 10,
           "eu_integration": 1,
-          "security": 6,
+          "security": 4,
           "ethnic_tension": 2,
           "protest": 1,
           "corruption_rule_of_law": 1
@@ -48,7 +48,7 @@
           "serbia": 5,
           "kosovo": 1,
           "bosnia": 5,
-          "Szerbia": 6,
+          "Szerbia": 4,
           "Koszovó": 3,
           "Észak-Macedónia": 1
         },
@@ -133,51 +133,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "NEW: Serbian president dissolves parliament, sets October snap elections amid sustained anti-corruption protests Aleksandar Vučić scheduled parliamentary elections for Oct. 25 and ",
-            "text": "NEW: Serbian president dissolves parliament, sets October snap elections amid sustained anti-corruption protests Aleksandar Vučić scheduled parliamentary elections for Oct. 25 and intends to seek the premiership",
-            "url": "https://x.com/i/web/status/2097703937843368403",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-09T15:09:26.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 53,
-            "quality_score": 54,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Agenzia Nova: Bosnia-Serbia: Brnabic a Banja Luka per seduta cerimoniale Forum parlamentare con Repubblica Srpska 03 set 11:41 - (Agenzia Nova) - La presidente del Parlamento serbo, Ana Brnabic, e' a Banja Luka, in Bosnia Erzegovina, per partecipare alla... (Seb) Bosnia-Serbia: Brnabić in Banja Luka for ceremonial session of the Parliamentary Forum with Repu",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117206562797334509",
@@ -218,7 +173,7 @@
             "text": "🚨BREAKING: BOSNIA’S DEFENCE MINISTER ZUKAN HELEZ WANTS THE WORLD TO UN-SIGN REPUBLIKA SRPSKA AFTER BELGRADE BURIED RATKO MLADIĆ WITH SOLDIERS AND MINISTERS. DODIK SAYS 55,000 PEOPLE IN THE SERB ENTITY WERE ALREADY FILED ON FOR PRAISING HIM. 🇧🇦🔥🇷🇸 Bosnia is one state, three",
             "url": "https://x.com/i/web/status/2097708755865494002",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Koszovó",
             "seen_date": "2026-09-09T15:28:35.000Z",
             "matched_countries": [
               "Bosznia-Hercegovina",
@@ -245,10 +200,45 @@
             "quality_score": 30,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 4,
+            "raw_engagement": 4,
             "metrics": {
-              "likes": 1,
+              "likes": 4,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Serbian President Aleksandar Vučić has announced the dissolution of the parliament—the National Assembly—and scheduled new parliamentary elections for October 25. He will be the ca",
+            "text": "Serbian President Aleksandar Vučić has announced the dissolution of the parliament—the National Assembly—and scheduled new parliamentary elections for October 25. He will be the candidate for prime minister representing the ruling Serbian Progressive Party.",
+            "url": "https://x.com/i/web/status/2097721494897877496",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-09T16:19:12.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -268,8 +258,8 @@
         "negative_hits": 1,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
         "quality_total": 168,
         "geopolitical_total": 146,
         "source_counts": {
@@ -284,7 +274,7 @@
         },
         "tag_counts": {
           "bosnia": 7,
-          "Szerbia": 1
+          "Koszovó": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -373,7 +363,7 @@
             "text": "🚨BREAKING: BOSNIA’S DEFENCE MINISTER ZUKAN HELEZ WANTS THE WORLD TO UN-SIGN REPUBLIKA SRPSKA AFTER BELGRADE BURIED RATKO MLADIĆ WITH SOLDIERS AND MINISTERS. DODIK SAYS 55,000 PEOPLE IN THE SERB ENTITY WERE ALREADY FILED ON FOR PRAISING HIM. 🇧🇦🔥🇷🇸 Bosnia is one state, three",
             "url": "https://x.com/i/web/status/2097708755865494002",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Koszovó",
             "seen_date": "2026-09-09T15:28:35.000Z",
             "matched_countries": [
               "Bosznia-Hercegovina",
@@ -400,10 +390,10 @@
             "quality_score": 30,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 4,
+            "raw_engagement": 4,
             "metrics": {
-              "likes": 1,
+              "likes": 4,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -476,31 +466,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 49,
+        "score": 43,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
+        "mentions": 6,
         "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 17,
-        "raw_engagement_total": 17,
-        "quality_total": 118,
-        "geopolitical_total": 101,
+        "engagement_total": 23,
+        "raw_engagement_total": 23,
+        "quality_total": 107,
+        "geopolitical_total": 91,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "government_crisis": 1,
           "security": 3,
           "foreign_influence": 1,
-          "ethnic_tension": 2
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "kosovo": 5,
-          "Koszovó": 2
+          "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -534,13 +524,13 @@
             "quality_score": 33,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 17,
-            "raw_engagement": 17,
+            "engagement": 23,
+            "raw_engagement": 23,
             "metrics": {
-              "likes": 11,
+              "likes": 15,
               "reposts": 1,
               "replies": 5,
-              "quotes": 0
+              "quotes": 2
             },
             "quality": "x_api_filtered"
           },
@@ -1046,21 +1036,21 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
+        "mentions": 14,
         "negative_hits": 12,
         "positive_hits": 3,
         "trusted_hits": 0,
-        "engagement_total": 11,
-        "raw_engagement_total": 11,
-        "quality_total": 451,
-        "geopolitical_total": 410,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 441,
+        "geopolitical_total": 401,
         "source_counts": {
           "reddit": 0,
           "mastodon": 13,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
-          "security": 5,
+          "security": 4,
           "government_crisis": 2,
           "protest": 4,
           "corruption_rule_of_law": 3,
@@ -1069,7 +1059,6 @@
         "tag_counts": {
           "balkans": 8,
           "albania": 5,
-          "Koszovó": 1,
           "Albánia": 1
         },
         "main_topic": "security",
