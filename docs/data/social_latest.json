@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09 10:29 UTC",
+  "updated_at": "2026-09-09 11:14 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 22
+    "collected": 17
   },
   "countries": [
     {
@@ -22,36 +22,126 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 17,
-        "negative_hits": 6,
-        "positive_hits": 3,
-        "trusted_hits": 2,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 313,
-        "geopolitical_total": 270,
+        "negative_hits": 9,
+        "positive_hits": 2,
+        "trusted_hits": 1,
+        "engagement_total": 35,
+        "raw_engagement_total": 35,
+        "quality_total": 398,
+        "geopolitical_total": 359,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 11,
-          "x": 6
+          "mastodon": 10,
+          "x": 7
         },
         "category_counts": {
           "eu_integration": 2,
           "foreign_influence": 3,
           "government_crisis": 6,
-          "security": 4,
-          "ethnic_tension": 1,
+          "security": 3,
+          "ethnic_tension": 2,
           "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "balkans": 2,
-          "serbia": 3,
+          "serbia": 2,
           "kosovo": 1,
           "bosnia": 5,
-          "Szerbia": 5,
+          "Szerbia": 6,
           "Észak-Macedónia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "Serbian President Aleksandar Vucic dissolved parliament on Wednesday and called snap elections for October 25. Vucic said the vote was necessary due to political tensions, as he fa",
+            "text": "Serbian President Aleksandar Vucic dissolved parliament on Wednesday and called snap elections for October 25. Vucic said the vote was necessary due to political tensions, as he faces nearly two years of anti-corruption protests triggered by a deadly railway station collapse.",
+            "url": "https://x.com/i/web/status/2097637481151660042",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-09T10:45:22.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 62,
+            "quality_score": 63,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 33,
+            "raw_engagement": 33,
+            "metrics": {
+              "likes": 26,
+              "reposts": 5,
+              "replies": 1,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Serbian President Aleksandar Vucic dissolved parliament on Wednesday and set October 25 as the date for snap elections, citing political tensions as he faces nearly two years of an",
+            "text": "Serbian President Aleksandar Vucic dissolved parliament on Wednesday and set October 25 as the date for snap elections, citing political tensions as he faces nearly two years of anti-corruption protests triggered by the deadly 2024 railway station collapse.",
+            "url": "https://x.com/i/web/status/2097639100774003098",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-09T10:51:48.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 62,
+            "quality_score": 63,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "🟢 Political Instability | 4/10 🇷🇸 Dissolution of Serbian parliament and announcement of elections President of Serbia Aleksandar Vučić announced the dissolution of the country's parliament on September 9th. Elections will be held on October 25th, with Vučić leading the ruling Serbian Progressive Party list. # OSINT # NewsGroup # Serbia # Politics # Elections",
@@ -85,6 +175,41 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "FOCUS ON THE BALKANS For the record, the current Speaker of the Serbian Parliament, Ana Brnabić, participated in the 2018 Bilderberg Meeting, in Turin, when she was Prime Minister ",
+            "text": "FOCUS ON THE BALKANS For the record, the current Speaker of the Serbian Parliament, Ana Brnabić, participated in the 2018 Bilderberg Meeting, in Turin, when she was Prime Minister (see below). SERBIA TURNS TOWARD THE WEST \"President Vučić is navigating a course between Putin",
+            "url": "https://x.com/i/web/status/2097639883355439414",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-09T10:54:55.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 30,
+            "quality_score": 31,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -121,116 +246,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "🇷🇸 Serbian President Aleksandar Vučić has dissolved parliament, with snap elections scheduled for October 25. Vučić previously said he expects the current policy course to continue",
-            "text": "🇷🇸 Serbian President Aleksandar Vučić has dissolved parliament, with snap elections scheduled for October 25. Vučić previously said he expects the current policy course to continue after the vote. In June he stated that Serbia remains on the path toward EU membership. Serbia",
-            "url": "https://x.com/i/web/status/2097633389855773044",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-09T10:29:06.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Il Tempo: Belgrado, funerali solenni per il \"boia\" Mladic. Polemica internazionale La chiesa ortodossa di San Luca a Belgrado ha accolto oggi la bara dell'ex generale Ratko Mladic, meglio noto come \"il boia di Bosnia\", morto in lo scorso 27 agosto all'Aja dov'era detenuto all'ergastolo per la condanna a Genocidio e Crimini contro l'umanità compiuti a Srebern",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117230511741523388",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Mon, 07 Sep 2026 15:40:50 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 6,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 23,
-            "quality_score": 28,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "BREAKING Serbian President Aleksandar Vucic has dissolved Parliament and called snap parliamentary elections for October 25.",
-            "text": "BREAKING Serbian President Aleksandar Vucic has dissolved Parliament and called snap parliamentary elections for October 25.",
-            "url": "https://x.com/i/web/status/2097632409067941960",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-09T10:25:13.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -443,32 +458,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 60,
+        "score": 47,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 2,
+        "mentions": 8,
+        "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 140,
-        "geopolitical_total": 120,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 108,
+        "geopolitical_total": 90,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 5
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 4,
-          "security": 4,
+          "government_crisis": 3,
+          "security": 3,
           "foreign_influence": 1,
           "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "kosovo": 5,
-          "Koszovó": 4,
-          "Albánia": 1
+          "Koszovó": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -500,41 +514,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Kurti: Constituting Parliament and Forming Government Will Not Prevent New Elections Without a President Kosovo AlbinKurti Vetëvendosje LVV KosovoAssembly BekimSejdiu LDK Elections",
-            "text": "Kurti: Constituting Parliament and Forming Government Will Not Prevent New Elections Without a President Kosovo AlbinKurti Vetëvendosje LVV KosovoAssembly BekimSejdiu LDK Elections President Prishtina KosovoPolitics WesternBalkans",
-            "url": "https://x.com/i/web/status/2097615708834136397",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-09T09:18:51.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -595,18 +574,60 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Albanian man, Mustafa Xaja, from the town of Mitrovica in Kosova shows pictures of his two children he fears to have been killed by Serbs during the war in Kosova in 1999. Kosovo-A",
-            "text": "Albanian man, Mustafa Xaja, from the town of Mitrovica in Kosova shows pictures of his two children he fears to have been killed by Serbs during the war in Kosova in 1999. Kosovo-Albanian border, Albania, 1999. He had just been released as a prisoner of the Serbs and forced to",
-            "url": "https://x.com/i/web/status/2097607420004487393",
+            "title": "The Basic Court in Pristina has found former Infrastructure Minister Pal Lekaj, his former political adviser Eset Berisha, former Secretary-General Nebih Shatri and former Director",
+            "text": "The Basic Court in Pristina has found former Infrastructure Minister Pal Lekaj, his former political adviser Eset Berisha, former Secretary-General Nebih Shatri and former Director of Public Procurement Besim Tahiri guilty in the retrial of the case know…",
+            "url": "https://x.com/i/web/status/2097630266328023384",
             "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-09-09T08:45:55.000Z",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-09T10:16:42.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 6,
-              "Albánia": 2
+              "Koszovó": 4,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 13,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "Kosovo Charges Serbian Security Officers Over Jashari Compound Massacre https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/04/kosovo-charges-serbian-security-officers-over-jashari-compound-massacre/btj/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/04/kosovo-charges-serbian-security-officers-over-jashari-compound-massacre/btj/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Fri, 04 Sep 2026 14:38:37 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Koszovó": 1
             },
             "event_category": "security",
             "event_categories": [
@@ -616,19 +637,13 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
+            "geopolitical_score": 9,
+            "quality_score": 12,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -636,29 +651,29 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 43,
+        "score": 48,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
+        "mentions": 10,
         "negative_hits": 1,
         "positive_hits": 2,
         "trusted_hits": 1,
         "engagement_total": 1,
         "raw_engagement_total": 1,
-        "quality_total": 127,
-        "geopolitical_total": 100,
+        "quality_total": 139,
+        "geopolitical_total": 109,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 8,
+          "mastodon": 9,
           "x": 1
         },
         "category_counts": {
+          "government_crisis": 5,
           "foreign_influence": 2,
-          "eu_integration": 3,
-          "government_crisis": 4
+          "eu_integration": 3
         },
         "tag_counts": {
-          "serbia": 1,
+          "serbia": 2,
           "montenegro": 7,
           "Montenegró": 1
         },
@@ -758,6 +773,35 @@
           },
           {
             "title": "",
+            "text": "Montenegro Opposition Moves to Oust Speaker for Mladic Condolences https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/09/montenegro-opposition-moves-to-oust-speaker-over-mladic-condolences/btj/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/09/montenegro-opposition-moves-to-oust-speaker-over-mladic-condolences/btj/",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 09 Sep 2026 10:19:55 +0000",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 12,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "¿Puede España bloquear la ampliación de la UE por el catalán oficial? # Catalan # UnionEuropea # UE # España # Bruselas # Cataluña # Gallego # Euskera # AmpliacionUE # Politica # Europa # Montenegro # PedroSanchez # FelizSabado # 5DeSeptiembre https:// donporque.com/espana-veto-ampl iacion-ue-por-el-catalan/",
             "url": "https://mastodon.social/@donporque/117217698262565244",
             "source": "mastodon",
@@ -784,37 +828,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "‘Disposable’ IP Firms in Serbia, Montenegro Obscure Origins of Russian Cyber Meddling https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/09/disposable-ip-firms-in-serbia-montenegro-obscure-origins-of-russian-cyber-meddling/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/09/disposable-ip-firms-in-serbia-montenegro-obscure-origins-of-russian-cyber-meddling/bi/",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Wed, 09 Sep 2026 05:55:36 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Szerbia": 1,
-              "Montenegró": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 8,
-            "quality_score": 11,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -822,33 +835,33 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 39,
+        "score": 28,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 4,
         "negative_hits": 2,
-        "positive_hits": 2,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 48,
-        "raw_engagement_total": 48,
-        "quality_total": 108,
-        "geopolitical_total": 98,
+        "engagement_total": 23,
+        "raw_engagement_total": 23,
+        "quality_total": 87,
+        "geopolitical_total": 79,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 5
+          "x": 3
         },
         "category_counts": {
           "security": 1,
           "eu_integration": 1,
           "corruption_rule_of_law": 1,
-          "government_crisis": 3
+          "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "Észak-Macedónia": 5
+          "Észak-Macedónia": 3
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -967,47 +980,12 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "🇦🇲🇲🇰 Armenian Prime Minister Nikol Pashinyan congratulated North Macedonian Prime Minister Hristijan Mickoski on Independence Day Pashinyan stressed the importance of deepening pol",
-            "text": "🇦🇲🇲🇰 Armenian Prime Minister Nikol Pashinyan congratulated North Macedonian Prime Minister Hristijan Mickoski on Independence Day Pashinyan stressed the importance of deepening political dialogue, expanding sectoral cooperation and strengthening people-to-people ties Armenia",
-            "url": "https://x.com/i/web/status/2097349779801911597",
+            "title": "The Custodian of the Two Holy Mosques and HRH Crown Prince Mohammed bin Salman congratulate President of North Macedonia on Independence Day.",
+            "text": "The Custodian of the Two Holy Mosques and HRH Crown Prince Mohammed bin Salman congratulate President of North Macedonia on Independence Day.",
+            "url": "https://x.com/i/web/status/2097376185848115300",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-08T15:42:09.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Happy Independence Day to the people and government of North Macedonia, from 🇸🇪 and all of us ! Honoured to join President , President of the Assembly , Government Ministers and Am",
-            "text": "Happy Independence Day to the people and government of North Macedonia, from 🇸🇪 and all of us ! Honoured to join President , President of the Assembly , Government Ministers and Ambassadors at today’s solemn ceremony at Butel Cemetery. 🇸🇪🤝🇲🇰",
-            "url": "https://x.com/i/web/status/2097354801650586097",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-08T16:02:06.000Z",
+            "seen_date": "2026-09-08T17:27:04.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -1026,12 +1004,12 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 25,
-            "raw_engagement": 25,
+            "engagement": 23,
+            "raw_engagement": 23,
             "metrics": {
-              "likes": 24,
-              "reposts": 1,
-              "replies": 0,
+              "likes": 19,
+              "reposts": 3,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -1045,30 +1023,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
+        "mentions": 16,
         "negative_hits": 13,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 64,
-        "raw_engagement_total": 64,
-        "quality_total": 440,
-        "geopolitical_total": 397,
+        "engagement_total": 35,
+        "raw_engagement_total": 35,
+        "quality_total": 438,
+        "geopolitical_total": 396,
         "source_counts": {
           "reddit": 0,
           "mastodon": 13,
-          "x": 4
+          "x": 3
         },
         "category_counts": {
           "government_crisis": 5,
           "protest": 4,
           "corruption_rule_of_law": 5,
-          "security": 2,
+          "security": 1,
           "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 8,
           "albania": 5,
-          "Albánia": 4
+          "Albánia": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -1156,6 +1134,51 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "On their 100th consecutive day of protest, Albanian protestors surrounded and egged the car of a lawmaker who voted to sell the island to Kushner Protests wont stop until the luxur",
+            "text": "On their 100th consecutive day of protest, Albanian protestors surrounded and egged the car of a lawmaker who voted to sell the island to Kushner Protests wont stop until the luxury resort is canceled and the Prime Minister resigns Albanians stand up to corruption ✊",
+            "url": "https://x.com/i/web/status/2097634911255453935",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-09-09T10:35:09.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 2
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 36,
+            "quality_score": 37,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 3,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Parliament is back in session, which means protestors are back in action in front of Parliament Jashtë shqiptarët protestojnë! Nis seanca e parë plenare për këtë sesion të ri Albanians protest abroad! The first plenary session of this new session begins https://www. youtube.com/watch?v=0_DKqmZQAvI # Albania # Corruption # Balkans # Europe # FlamingoRevolutio",
             "url": "https://mas.to/@meganL/117236097638195317",
@@ -1216,40 +1239,6 @@
               },
               {
                 "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 100 of anti-corruption protest in Tirana, Albania The international media has forgotten, but the people are still out there. https://www. youtube.com/watch?v=24bDV5uUZDM # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
-            "url": "https://mas.to/@meganL/117231133250427657",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Mon, 07 Sep 2026 18:18:53 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
                 "hits": 1,
                 "weight": 8
               }
