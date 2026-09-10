@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10 11:10 UTC",
+  "updated_at": "2026-09-10 15:35 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 15
   },
   "countries": [
     {
@@ -21,34 +21,35 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 20,
+        "mentions": 21,
         "negative_hits": 7,
         "positive_hits": 5,
-        "trusted_hits": 1,
-        "engagement_total": 47,
-        "raw_engagement_total": 47,
-        "quality_total": 369,
-        "geopolitical_total": 317,
+        "trusted_hits": 2,
+        "engagement_total": 84,
+        "raw_engagement_total": 84,
+        "quality_total": 396,
+        "geopolitical_total": 338,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 15,
+          "mastodon": 16,
           "x": 5
         },
         "category_counts": {
-          "foreign_influence": 4,
-          "government_crisis": 6,
           "eu_integration": 3,
+          "foreign_influence": 4,
+          "government_crisis": 8,
           "security": 4,
-          "corruption_rule_of_law": 2,
+          "ethnic_tension": 1,
           "protest": 1
         },
         "tag_counts": {
-          "balkans": 4,
+          "balkans": 5,
           "serbia": 4,
           "kosovo": 1,
           "bosnia": 5,
           "montenegro": 1,
-          "Szerbia": 3,
+          "Szerbia": 2,
+          "Koszovó": 1,
           "Montenegró": 1,
           "Észak-Macedónia": 1
         },
@@ -202,36 +203,36 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "The pomp - with which 🇷🇸Serbia honoured the convicted war criminal Ratk Mladic during a Belgrade funeral this week - invoked new questions about Serbia’s readiness to join the 🇪🇺Eu",
-            "text": "The pomp - with which 🇷🇸Serbia honoured the convicted war criminal Ratk Mladic during a Belgrade funeral this week - invoked new questions about Serbia’s readiness to join the 🇪🇺European Union. On paper, Belgrade has pursued the EU membership as a candidate for 14 years. But",
-            "url": "https://x.com/i/web/status/2097970789949530169",
+            "title": "Serbian president dissolves parliament and calls snap elections via",
+            "text": "Serbian president dissolves parliament and calls snap elections via",
+            "url": "https://x.com/i/web/status/2098070112506896741",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-10T08:49:49.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-10T15:24:29.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
               "Szerbia": 5
             },
-            "event_category": "eu_integration",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "eu_integration",
+                "category": "government_crisis",
                 "hits": 2,
-                "weight": 6
+                "weight": 9
               }
             ],
-            "geopolitical_score": 16,
-            "quality_score": 17,
+            "geopolitical_score": 18,
+            "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 32,
-            "raw_engagement": 32,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 24,
-              "reposts": 4,
-              "replies": 4,
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -249,8 +250,8 @@
         "negative_hits": 1,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
         "quality_total": 118,
         "geopolitical_total": 99,
         "source_counts": {
@@ -430,12 +431,12 @@
             "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 5,
+            "raw_engagement": 5,
             "metrics": {
-              "likes": 1,
+              "likes": 3,
               "reposts": 0,
-              "replies": 1,
+              "replies": 2,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -446,33 +447,72 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 43,
+        "score": 47,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 7,
         "negative_hits": 1,
         "positive_hits": 1,
-        "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 107,
-        "geopolitical_total": 92,
+        "trusted_hits": 2,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 116,
+        "geopolitical_total": 97,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
-          "x": 3
+          "mastodon": 3,
+          "x": 4
         },
         "category_counts": {
           "government_crisis": 3,
           "security": 3,
-          "foreign_influence": 1
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "kosovo": 4,
+          "kosovo": 3,
+          "Szerbia": 1,
           "Koszovó": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "NATO armed and trained the UCK and sent them back to Kosovo to fight Serbia. Kosovar Albanians are like the Kurds if they're functional and competent fighters. Up to this point, we",
+            "text": "NATO armed and trained the UCK and sent them back to Kosovo to fight Serbia. Kosovar Albanians are like the Kurds if they're functional and competent fighters. Up to this point, we can assume that NATO was waging a proxy war against Serbia using Albanians",
+            "url": "https://x.com/i/web/status/2098067215513948522",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-10T15:12:59.000Z",
+            "matched_countries": [
+              "Koszovó",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Koszovó": 2,
+              "Albánia": 2,
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 25,
+            "quality_score": 29,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Kosovo Parliament to Reconvene, ‘Chaos’ Looms over Election of President https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/08/kosovo-parliament-to-reconvene-chaos-looms-over-election-of-president/bi/",
@@ -503,75 +543,32 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "In my engagement with local authorities, I had a constructive courtesy call w/ South Mitrovica Mayor Faton Peci. We discussed at length about local governance priorities from a rul",
-            "text": "In my engagement with local authorities, I had a constructive courtesy call w/ South Mitrovica Mayor Faton Peci. We discussed at length about local governance priorities from a rule-of-law and security perspective.",
-            "url": "https://x.com/i/web/status/2097991647053127995",
+            "title": "Kostic: EU reform would give the European Commission a greater role in the Belgrade-Pristina dialogue",
+            "text": "Kostic: EU reform would give the European Commission a greater role in the Belgrade-Pristina dialogue",
+            "url": "https://x.com/i/web/status/2098046811512377710",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-09-10T10:12:42.000Z",
+            "seen_date": "2026-09-10T13:51:54.000Z",
             "matched_countries": [
-              "Koszovó"
+              "Koszovó",
+              "Szerbia"
             ],
             "country_confidence": {
-              "Koszovó": 4
+              "Koszovó": 7,
+              "Szerbia": 4
             },
-            "event_category": "security",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "security",
+                "category": "ethnic_tension",
                 "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 18,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "The acting head of the European Union Office in Kosovo, Eva Palatova, held a farewell meeting with Kosovo’s acting Prime Minister, Albin Kurti.",
-            "text": "The acting head of the European Union Office in Kosovo, Eva Palatova, held a farewell meeting with Kosovo’s acting Prime Minister, Albin Kurti.",
-            "url": "https://x.com/i/web/status/2097989308946723218",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-10T10:03:24.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
+                "weight": 10
               }
             ],
             "geopolitical_score": 15,
-            "quality_score": 16,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
+            "quality_score": 19,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "metrics": {
@@ -613,27 +610,29 @@
           },
           {
             "title": "",
-            "text": "Agenzia Nova: Kosovo: arrestato a Zubin Potok uomo sospettato di crimini di guerra 03 set 16:40 - (Agenzia Nova) - A Zubin-Potok, in Kosovo, e' stato arrestato un uomo con l'accusa di aver commesso crimini di guerra. Entro... (Alt) Kosovo: Man suspected of war crimes arrested in Zubin Potok September 3, 16:40 – (Agenzia Nova) – In Zubin-Potok, Kosovo, a man ",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117207781463162866",
+            "text": "Kosovo Charges Serbian Security Officers Over Jashari Compound Massacre https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/04/kosovo-charges-serbian-security-officers-over-jashari-compound-massacre/btj/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/04/kosovo-charges-serbian-security-officers-over-jashari-compound-massacre/btj/",
             "source": "mastodon",
             "tag": "kosovo",
-            "seen_date": "Thu, 03 Sep 2026 15:20:13 +0000",
+            "seen_date": "Fri, 04 Sep 2026 14:38:37 +0000",
             "matched_countries": [
+              "Szerbia",
               "Koszovó"
             ],
             "country_confidence": {
+              "Szerbia": 2,
               "Koszovó": 1
             },
-            "event_category": "foreign_influence",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "foreign_influence",
+                "category": "security",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
               }
             ],
-            "geopolitical_score": 11,
-            "quality_score": 14,
+            "geopolitical_score": 9,
+            "quality_score": 12,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -646,30 +645,32 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 42,
+        "score": 51,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 1,
-        "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 9,
-        "raw_engagement_total": 9,
-        "quality_total": 116,
-        "geopolitical_total": 92,
+        "mentions": 9,
+        "negative_hits": 2,
+        "positive_hits": 2,
+        "trusted_hits": 2,
+        "engagement_total": 31,
+        "raw_engagement_total": 31,
+        "quality_total": 137,
+        "geopolitical_total": 109,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "government_crisis": 3,
           "foreign_influence": 2,
           "eu_integration": 2,
+          "security": 1,
           "protest": 1
         },
         "tag_counts": {
           "montenegro": 7,
+          "Szerbia": 1,
           "Montenegró": 1
         },
         "main_topic": "government_crisis",
@@ -707,6 +708,42 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "The Balkan war between Serbia vs everyone else is so fascinating to me. If they don't have to fight on so many fronts with NATO support for their enemies, they might have won. The ",
+            "text": "The Balkan war between Serbia vs everyone else is so fascinating to me. If they don't have to fight on so many fronts with NATO support for their enemies, they might have won. The question is what Montenegrins contribute to the war effort of Yugoslavia, their role is forgotten",
+            "url": "https://x.com/i/web/status/2098071467942724088",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-10T15:29:52.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 3,
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 21,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -766,11 +803,11 @@
             "quality_score": 12,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 9,
-            "raw_engagement": 9,
+            "engagement": 31,
+            "raw_engagement": 31,
             "metrics": {
-              "likes": 9,
-              "reposts": 0,
+              "likes": 27,
+              "reposts": 4,
               "replies": 0,
               "quotes": 0
             },
@@ -804,35 +841,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "¿Puede España bloquear la ampliación de la UE por el catalán oficial? # Catalan # UnionEuropea # UE # España # Bruselas # Cataluña # Gallego # Euskera # AmpliacionUE # Politica # Europa # Montenegro # PedroSanchez # FelizSabado # 5DeSeptiembre https:// donporque.com/espana-veto-ampl iacion-ue-por-el-catalan/",
-            "url": "https://mastodon.social/@donporque/117217698262565244",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Sat, 05 Sep 2026 09:22:12 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -840,29 +848,27 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 18,
+        "score": 12,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 1,
         "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 57,
-        "geopolitical_total": 51,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 47,
+        "geopolitical_total": 42,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
-          "security": 1,
-          "government_crisis": 1
+          "security": 1
         },
         "tag_counts": {
-          "balkans": 1,
-          "Észak-Macedónia": 1
+          "balkans": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -904,41 +910,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Early elections in North Macedonia expected next year, according to opposition party",
-            "text": "Early elections in North Macedonia expected next year, according to opposition party",
-            "url": "https://x.com/i/web/status/2097810312909009108",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-09T22:12:08.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -949,32 +920,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
-        "negative_hits": 15,
-        "positive_hits": 4,
-        "trusted_hits": 1,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 538,
-        "geopolitical_total": 489,
+        "mentions": 19,
+        "negative_hits": 16,
+        "positive_hits": 3,
+        "trusted_hits": 3,
+        "engagement_total": 13,
+        "raw_engagement_total": 13,
+        "quality_total": 568,
+        "geopolitical_total": 512,
         "source_counts": {
           "reddit": 0,
           "mastodon": 15,
-          "x": 2
+          "x": 4
         },
         "category_counts": {
-          "corruption_rule_of_law": 5,
-          "security": 4,
-          "government_crisis": 3,
-          "protest": 4,
+          "protest": 5,
+          "corruption_rule_of_law": 4,
+          "security": 5,
+          "government_crisis": 4,
           "foreign_influence": 1
         },
         "tag_counts": {
-          "balkans": 9,
-          "albania": 6,
-          "Albánia": 2
+          "balkans": 10,
+          "albania": 5,
+          "Szerbia": 1,
+          "Albánia": 3
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "protest",
         "top_posts": [
           {
             "title": "",
