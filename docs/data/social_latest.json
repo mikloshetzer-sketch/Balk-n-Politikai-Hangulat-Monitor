@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-13 02:16 UTC",
+  "updated_at": "2026-09-13 04:37 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 15
+    "collected": 13
   },
   "countries": [
     {
@@ -21,18 +21,18 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 19,
-        "negative_hits": 8,
+        "mentions": 18,
+        "negative_hits": 7,
         "positive_hits": 4,
         "trusted_hits": 3,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 398,
-        "geopolitical_total": 343,
+        "engagement_total": 11,
+        "raw_engagement_total": 11,
+        "quality_total": 367,
+        "geopolitical_total": 313,
         "source_counts": {
           "reddit": 0,
           "mastodon": 14,
-          "x": 5
+          "x": 4
         },
         "category_counts": {
           "government_crisis": 7,
@@ -40,16 +40,14 @@
           "foreign_influence": 4,
           "corruption_rule_of_law": 1,
           "protest": 1,
-          "security": 4,
-          "ethnic_tension": 1
+          "security": 4
         },
         "tag_counts": {
           "balkans": 5,
           "serbia": 3,
           "bosnia": 5,
           "montenegro": 1,
-          "Szerbia": 4,
-          "Koszovó": 1
+          "Szerbia": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -157,54 +155,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "The Serbian state is so deeply criminalized and corrupt that it might attempt to use the Special Court's decision to attack the very Serb minority in northern Kosovo, aiming to pin",
-            "text": "The Serbian state is so deeply criminalized and corrupt that it might attempt to use the Special Court's decision to attack the very Serb minority in northern Kosovo, aiming to pin the blame on Kosovo's Albanian majority! Such scenarios have occurred before—such as the \"Panda",
-            "url": "https://x.com/i/web/status/2098834765252378884",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-12T18:02:57.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 30,
-            "quality_score": 31,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Bosnian Foreign Minister Elmedin Konakovic has called for European Union sanctions targeting Serbia's leadership, including President Aleksandar Vucic. Accordin... https:// news.osna.fm/?p=63501 | # news # against # bosnia # celebration # crimes",
             "url": "https://mastodon.social/@osnafm/117253328011847134",
@@ -240,6 +190,41 @@
             "quality_score": 29,
             "source_reliability": 3,
             "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Il Tempo: Belgrado, funerali solenni per il \"boia\" Mladic. Polemica internazionale La chiesa ortodossa di San Luca a Belgrado ha accolto oggi la bara dell'ex generale Ratko Mladic, meglio noto come \"il boia di Bosnia\", morto in lo scorso 27 agosto all'Aja dov'era detenuto all'ergastolo per la condanna a Genocidio e Crimini contro l'umanità compiuti a Srebern",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117230511741523388",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Mon, 07 Sep 2026 15:40:50 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 23,
+            "quality_score": 28,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -416,25 +401,26 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 41,
-        "level": "high",
+        "score": 38,
+        "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 6,
-        "negative_hits": 2,
-        "positive_hits": 2,
+        "negative_hits": 1,
+        "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 105,
-        "geopolitical_total": 91,
+        "quality_total": 94,
+        "geopolitical_total": 80,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
           "x": 2
         },
         "category_counts": {
-          "government_crisis": 4,
-          "security": 2
+          "government_crisis": 3,
+          "security": 2,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "kosovo": 4,
@@ -442,46 +428,6 @@
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "By ZANA CIMILI PRISTINA, Kosovo (AP) & 8212; Thousands of people rallied in Pristina on Saturday in support of Kosovo& 8217;s former President Hashim Thaci and three other ex-fight",
-            "text": "By ZANA CIMILI PRISTINA, Kosovo (AP) & 8212; Thousands of people rallied in Pristina on Saturday in support of Kosovo& 8217;s former President Hashim Thaci and three other ex-fighters ahead of their verdicts next week in a war crimes trial. Thaci and th...",
-            "url": "https://x.com/i/web/status/2098856927719469285",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-12T19:31:01.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Kosovo Ex-President Thaci’s Defence Seeks Acquittal in Obstruction of Justice Trial https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/11/kosovo-ex-president-thacis-defence-seeks-acquittal-in-obstruction-of-justice-trial/btj/",
@@ -602,6 +548,41 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Shop Now 👇 Women's Printed Cotton Sleeveless Kurti Top | Ethnic Casual Tunic with Shoulder Tie Straps | Regular Fit Summer Kurti",
+            "text": "Shop Now 👇 Women's Printed Cotton Sleeveless Kurti Top | Ethnic Casual Tunic with Shoulder Tie Straps | Regular Fit Summer Kurti",
+            "url": "https://x.com/i/web/status/2098964302057398598",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-13T02:37:41.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -911,32 +892,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
-        "negative_hits": 12,
-        "positive_hits": 2,
+        "mentions": 15,
+        "negative_hits": 11,
+        "positive_hits": 1,
         "trusted_hits": 3,
-        "engagement_total": 51,
-        "raw_engagement_total": 51,
-        "quality_total": 505,
-        "geopolitical_total": 459,
+        "engagement_total": 115,
+        "raw_engagement_total": 115,
+        "quality_total": 462,
+        "geopolitical_total": 418,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 6
+          "x": 4
         },
         "category_counts": {
-          "security": 5,
+          "security": 4,
           "corruption_rule_of_law": 3,
-          "protest": 4,
-          "government_crisis": 2,
-          "ethnic_tension": 3
+          "protest": 3,
+          "government_crisis": 4,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 8,
           "albania": 3,
           "Szerbia": 1,
-          "Koszovó": 1,
-          "Albánia": 4
+          "Albánia": 3
         },
         "main_topic": "security",
         "top_posts": [
@@ -1068,50 +1048,42 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "The Serbian state is so deeply criminalized and corrupt that it might attempt to use the Special Court's decision to attack the very Serb minority in northern Kosovo, aiming to pin",
-            "text": "The Serbian state is so deeply criminalized and corrupt that it might attempt to use the Special Court's decision to attack the very Serb minority in northern Kosovo, aiming to pin the blame on Kosovo's Albanian majority! Such scenarios have occurred before—such as the \"Panda",
-            "url": "https://x.com/i/web/status/2098834765252378884",
+            "title": "Protesters took to the streets of Tirana, Albania on Saturday in demonstrations that began in late May, opposing a luxury resort linked to Jared Kushner. The protests, which entere",
+            "text": "Protesters took to the streets of Tirana, Albania on Saturday in demonstrations that began in late May, opposing a luxury resort linked to Jared Kushner. The protests, which entered their 105th day, have grown into a broader anti-government movement calling for the resignation of",
+            "url": "https://x.com/i/web/status/2098966973745185271",
             "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-12T18:02:57.000Z",
+            "tag": "Albánia",
+            "seen_date": "2026-09-13T02:48:18.000Z",
             "matched_countries": [
-              "Szerbia",
               "Albánia"
             ],
             "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2,
-              "Koszovó": 1
+              "Albánia": 5
             },
-            "event_category": "ethnic_tension",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               },
               {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
+                "category": "protest",
+                "hits": 3,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 30,
-            "quality_score": 31,
+            "geopolitical_score": 36,
+            "quality_score": 37,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 67,
+            "raw_engagement": 67,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
+              "likes": 41,
+              "reposts": 16,
+              "replies": 9,
+              "quotes": 1
             },
             "quality": "x_api_filtered"
           },
