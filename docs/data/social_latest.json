@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14 17:20 UTC",
+  "updated_at": "2026-09-14 21:15 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 18
+    "collected": 20
   },
   "countries": [
     {
@@ -21,46 +21,91 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 20,
-        "negative_hits": 9,
+        "mentions": 22,
+        "negative_hits": 11,
         "positive_hits": 5,
-        "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 389,
-        "geopolitical_total": 334,
+        "trusted_hits": 2,
+        "engagement_total": 53,
+        "raw_engagement_total": 53,
+        "quality_total": 454,
+        "geopolitical_total": 400,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 16,
-          "x": 4
+          "mastodon": 13,
+          "x": 9
         },
         "category_counts": {
-          "government_crisis": 7,
+          "government_crisis": 8,
           "eu_integration": 1,
-          "foreign_influence": 4,
-          "security": 5,
+          "security": 7,
           "protest": 2,
+          "foreign_influence": 3,
           "corruption_rule_of_law": 1
         },
         "tag_counts": {
-          "balkans": 4,
-          "serbia": 7,
+          "balkans": 2,
+          "serbia": 6,
           "kosovo": 1,
           "bosnia": 3,
           "montenegro": 1,
-          "Szerbia": 2,
+          "Szerbia": 7,
           "Koszovó": 1,
-          "Albánia": 1
+          "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "",
-            "text": "Vucic dissolved parliament today, calling snap elections for October 25, after nearly two years of protests over a railway canopy collapse that killed 16. He can't run for president again, so he's running for PM instead, a job he already held from 2014-2017. His political career actually goes back to 1993, including a stint as Milosevic's Minister of Informa",
-            "url": "https://mastodon.social/@AutokratDaily/117241624431295014",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 09 Sep 2026 14:46:56 +0000",
+            "title": "Report from Global Banking & Finance Review Vivid shifts in leadership and policy unfold as Serbia's President Vucic positions to run PM amid student protests—impacting governance,",
+            "text": "Report from Global Banking & Finance Review Vivid shifts in leadership and policy unfold as Serbia's President Vucic positions to run PM amid student protests—impacting governance, economic strategy, and regional stability. Explore implications for policy, politics, and markets.",
+            "url": "https://x.com/i/web/status/2099589639048691999",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-14T20:02:33.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 38,
+            "quality_score": 39,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Serbia's President Vucic says he will run for prime minister amid student protests",
+            "text": "Serbia's President Vucic says he will run for prime minister amid student protests",
+            "url": "https://x.com/i/web/status/2099587854351388763",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-14T19:55:27.000Z",
             "matched_countries": [
               "Szerbia"
             ],
@@ -71,22 +116,28 @@
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 3,
+                "hits": 2,
                 "weight": 9
               },
               {
                 "category": "protest",
-                "hits": 3,
+                "hits": 2,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 54,
-            "quality_score": 57,
-            "source_reliability": 3,
+            "geopolitical_score": 37,
+            "quality_score": 38,
+            "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 2,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -123,57 +174,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Bosnian Foreign Minister Elmedin Konakovic has called for European Union sanctions targeting Serbia's leadership, including President Aleksandar Vucic. Accordin... https:// news.osna.fm/?p=63501 | # news # against # bosnia # celebration # crimes",
-            "url": "https://mastodon.social/@osnafm/117253328011847134",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Fri, 11 Sep 2026 16:23:19 +0000",
+            "title": "if carlos alcaraz or roger federer smashing rackets were Russian or Belarussian or Serbian THE CRIMINAL WEST MEDIA (PROPERTY OF EPSTEIN CLAN USA - UK - ISRAEL) would be harassing t",
+            "text": "if carlos alcaraz or roger federer smashing rackets were Russian or Belarussian or Serbian THE CRIMINAL WEST MEDIA (PROPERTY OF EPSTEIN CLAN USA - UK - ISRAEL) would be harassing them like the harass/ed the GOAT Novak Djokovic and Aryna Sabalenka (BOTH talked against NATO )👏👏",
+            "url": "https://x.com/i/web/status/2099597726358872407",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-14T20:34:41.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 26,
-            "quality_score": 29,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "📅 Upcoming # infosec events in the next 14 days: • LABScon # Labscon — Sep 16-19, 2026, Scottsdale (AZ) 🇺🇸 # USA • NOPcon # Nopcon — Sep 17, 2026, Istanbul 🇹🇷 # Turkey • 44CON @ 44CON — Sep 17-18, 2026, London 🇬🇧 # UK • \\[un\\]prompted.au # Unpromptedau — Sep 18-19, 2026, Sydney 🇦🇺 # Australia • Balkan Computer Congress @ BalCCon — Sep 18-20, 2026, Novi Sad 🇷",
-            "url": "https://infosec.exchange/@infosecevents/117269935343399890",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Mon, 14 Sep 2026 14:46:46 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
+              "Szerbia": 2
             },
             "event_category": "security",
             "event_categories": [
@@ -188,47 +199,59 @@
                 "weight": 8
               }
             ],
-            "geopolitical_score": 25,
-            "quality_score": 28,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "geopolitical_score": 29,
+            "quality_score": 33,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
-            "title": "",
-            "text": "While claiming Serbia is on a \"good European path,\" Vucic defied the EU to attend Putin's Moscow Victory Day parade in May 2025, and made a state visit to Beijing in May 2026, signing 23 cooperation agreements. China is now Serbia's largest foreign investor, building its metro, tunnels, and high-speed rail. An EU candidate country, balancing Brussels, Moscow",
-            "url": "https://mastodon.social/@AutokratDaily/117241626010334963",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 09 Sep 2026 14:47:20 +0000",
+            "title": "Vucic announces plans to run for prime minister amid ongoing student protests. What this means for Serbia's political trajectory and policy priorities. Stay informed on leadership ",
+            "text": "Vucic announces plans to run for prime minister amid ongoing student protests. What this means for Serbia's political trajectory and policy priorities. Stay informed on leadership decisions shaping the region. Serbia Vucic Politics Headlines",
+            "url": "https://x.com/i/web/status/2099590037499183475",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-14T20:04:08.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
               "Szerbia": 5
             },
-            "event_category": "foreign_influence",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "foreign_influence",
+                "category": "government_crisis",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
               },
               {
-                "category": "eu_integration",
+                "category": "protest",
                 "hits": 2,
-                "weight": 6
+                "weight": 8
               }
             ],
-            "geopolitical_score": 21,
-            "quality_score": 24,
-            "source_reliability": 3,
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -326,31 +349,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 35,
-        "level": "medium",
+        "score": 41,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 6,
         "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 49,
-        "raw_engagement_total": 49,
-        "quality_total": 88,
-        "geopolitical_total": 75,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 103,
+        "geopolitical_total": 89,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
-          "security": 2,
-          "government_crisis": 3
+          "security": 3,
+          "government_crisis": 2,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "kosovo": 4,
-          "Koszovó": 1
+          "Koszovó": 2
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -476,37 +500,41 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇽🇰 PM Albin Kurti has still not received any public congratulations on his re-election as prime minister. Not even from Albania.",
-            "text": "🇽🇰 PM Albin Kurti has still not received any public congratulations on his re-election as prime minister. Not even from Albania.",
-            "url": "https://x.com/i/web/status/2099524609330565525",
+            "title": "Kurti Meets British Ambassador Hargreaves After Formation of New Kosovo Government Kosovo AlbinKurti JonathanHargreaves UnitedKingdom UK KosovoGovernment Prishtina Diplomacy Bilate",
+            "text": "Kurti Meets British Ambassador Hargreaves After Formation of New Kosovo Government Kosovo AlbinKurti JonathanHargreaves UnitedKingdom UK KosovoGovernment Prishtina Diplomacy BilateralRelations Defense Energy Digitalization Disinformation WesternBalkans",
+            "url": "https://x.com/i/web/status/2099597729059983379",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-09-14T15:44:08.000Z",
+            "seen_date": "2026-09-14T20:34:41.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 4,
-              "Albánia": 1
+              "Koszovó": 9
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
+            "geopolitical_score": 13,
+            "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 49,
-            "raw_engagement": 49,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 35,
-              "reposts": 5,
-              "replies": 9,
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -608,30 +636,28 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 33,
+        "score": 20,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 2,
-        "positive_hits": 2,
+        "mentions": 3,
+        "negative_hits": 1,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 69,
-        "geopolitical_total": 61,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 46,
+        "geopolitical_total": 40,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 5
+          "x": 3
         },
         "category_counts": {
           "protest": 1,
-          "government_crisis": 2,
-          "foreign_influence": 1,
-          "security": 1
+          "government_crisis": 2
         },
         "tag_counts": {
-          "Észak-Macedónia": 5
+          "Észak-Macedónia": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -711,41 +737,6 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Minister of Public Administration Goran Mincev and the Chargé d’Affaires of the Embassy of Greece, Christina Vasilatou, opened the TAIEX Expert Mission today, aimed at supporting N",
-            "text": "Minister of Public Administration Goran Mincev and the Chargé d’Affaires of the Embassy of Greece, Christina Vasilatou, opened the TAIEX Expert Mission today, aimed at supporting North Macedonia in its transition towards a centralized & digitalized public-sector payroll system",
-            "url": "https://x.com/i/web/status/2099502267279757704",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-14T14:15:22.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "The DUI Youth Forum held a protest today outside the Ministry of Justice in North Macedonia.",
             "text": "The DUI Youth Forum held a protest today outside the Ministry of Justice in North Macedonia.",
             "url": "https://x.com/i/web/status/2099525551081865584",
@@ -779,42 +770,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "A call by North Macedonia’s justice minister for Kosovo to respect whatever verdict is delivered against former KLA leaders has triggered an unusually sharp cross-border political ",
-            "text": "A call by North Macedonia’s justice minister for Kosovo to respect whatever verdict is delivered against former KLA leaders has triggered an unusually sharp cross-border political storm, forcing his own VLEN coalition to distance itself and exposing how deeply the Hague case",
-            "url": "https://x.com/i/web/status/2099490275362017750",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-14T13:27:42.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -825,34 +780,72 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
-        "negative_hits": 8,
+        "mentions": 15,
+        "negative_hits": 13,
         "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 297,
-        "geopolitical_total": 264,
+        "trusted_hits": 1,
+        "engagement_total": 67,
+        "raw_engagement_total": 67,
+        "quality_total": 361,
+        "geopolitical_total": 326,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 8,
-          "x": 4
+          "mastodon": 9,
+          "x": 6
         },
         "category_counts": {
-          "protest": 4,
-          "security": 3,
-          "corruption_rule_of_law": 3,
-          "ethnic_tension": 1,
-          "government_crisis": 1
+          "corruption_rule_of_law": 5,
+          "protest": 8,
+          "security": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "balkans": 8,
-          "Szerbia": 1,
+          "balkans": 9,
           "Montenegró": 1,
-          "Albánia": 2
+          "Albánia": 5
         },
         "main_topic": "protest",
         "top_posts": [
+          {
+            "title": "🇦🇱 ALBANIA ERUPTS EU meets tomorrow on Albania… While Tirana burns with 107+ days of anti-corruption protests.",
+            "text": "🇦🇱 ALBANIA ERUPTS EU meets tomorrow on Albania… While Tirana burns with 107+ days of anti-corruption protests.",
+            "url": "https://x.com/i/web/status/2099591614549110902",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-09-14T20:10:24.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 35,
+            "quality_score": 36,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "\"Residents of Rrjoll protested again today against the construction of the “Baks Bay” resort, claiming that the project encroaches on their properties. They warned that, in the coming days, they would maintain a round-the-clock presence near the construction site in protest.\" This is the village where the footage of residents pushing over a fence and a secur",
@@ -886,6 +879,40 @@
             ],
             "geopolitical_score": 28,
             "quality_score": 31,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 107 of anti-corruption protest in Tirana, Albania (and other cities...) 🔴 LIVE | 107 ditë revoltë! Qytetarët nuk heqin dorë, paralajmërojnë mosbindje civile https://www. youtube.com/watch?v=3oJ4oGKFBm4 # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
+            "url": "https://mas.to/@meganL/117270680782900453",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Mon, 14 Sep 2026 17:56:21 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -933,74 +960,6 @@
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Fri, 11 Sep 2026 17:01:14 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 103 of anti-corruption protest in Tirana, Albania. Very feisty tonight. https://www. youtube.com/watch?v=ANnBAj_Rx7o # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
-            "url": "https://mas.to/@meganL/117248469928649462",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Thu, 10 Sep 2026 19:47:50 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 102 of anti-corruption protest in Tirana, Albania https://www. youtube.com/watch?v=kG5rEvlsWaQ # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
-            "url": "https://mas.to/@meganL/117243046926296722",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 09 Sep 2026 20:48:42 +0000",
             "matched_countries": [
               "Albánia"
             ],
