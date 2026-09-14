@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14 11:21 UTC",
+  "updated_at": "2026-09-14 12:35 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -21,18 +21,18 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 19,
+        "mentions": 20,
         "negative_hits": 10,
-        "positive_hits": 5,
+        "positive_hits": 6,
         "trusted_hits": 1,
-        "engagement_total": 16,
-        "raw_engagement_total": 16,
-        "quality_total": 372,
-        "geopolitical_total": 323,
+        "engagement_total": 9,
+        "raw_engagement_total": 9,
+        "quality_total": 384,
+        "geopolitical_total": 334,
         "source_counts": {
           "reddit": 1,
           "mastodon": 15,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
           "government_crisis": 7,
@@ -40,7 +40,8 @@
           "foreign_influence": 5,
           "protest": 2,
           "corruption_rule_of_law": 1,
-          "security": 3
+          "security": 3,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 4,
@@ -48,7 +49,7 @@
           "bosnia": 5,
           "montenegro": 1,
           "Szerbia": 2,
-          "Montenegró": 1
+          "Montenegró": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -196,38 +197,46 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "While claiming Serbia is on a \"good European path,\" Vucic defied the EU to attend Putin's Moscow Victory Day parade in May 2025, and made a state visit to Beijing in May 2026, signing 23 cooperation agreements. China is now Serbia's largest foreign investor, building its metro, tunnels, and high-speed rail. An EU candidate country, balancing Brussels, Moscow",
-            "url": "https://mastodon.social/@AutokratDaily/117241626010334963",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 09 Sep 2026 14:47:20 +0000",
+            "title": "The Dayton Agreement Is Under Attack, and Tensions Between Bosnia and Belgrade Signal a Worsening Diplomatic Climate Ahead of the Elections The Presidency of Bosnia and Herzegovina",
+            "text": "The Dayton Agreement Is Under Attack, and Tensions Between Bosnia and Belgrade Signal a Worsening Diplomatic Climate Ahead of the Elections The Presidency of Bosnia and Herzegovina is once again facing an entity-level confrontation, with Republika Srpska acting as a channel of",
+            "url": "https://x.com/i/web/status/2099458557875765758",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-09-14T11:21:40.000Z",
             "matched_countries": [
+              "Bosznia-Hercegovina",
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Bosznia-Hercegovina": 6,
+              "Szerbia": 4
             },
-            "event_category": "foreign_influence",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "foreign_influence",
+                "category": "ethnic_tension",
                 "hits": 1,
-                "weight": 8
+                "weight": 10
               },
               {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
+                "category": "security",
+                "hits": 1,
+                "weight": 9
               }
             ],
-            "geopolitical_score": 21,
+            "geopolitical_score": 23,
             "quality_score": 24,
-            "source_reliability": 3,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -235,30 +244,74 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 16,
-        "level": "low",
+        "score": 25,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
-        "positive_hits": 1,
+        "mentions": 4,
+        "negative_hits": 2,
+        "positive_hits": 2,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 40,
-        "geopolitical_total": 31,
+        "quality_total": 64,
+        "geopolitical_total": 54,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
-          "foreign_influence": 3
+          "foreign_influence": 3,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "bosnia": 3
+          "bosnia": 3,
+          "Montenegró": 1
         },
         "main_topic": "foreign_influence",
         "top_posts": [
+          {
+            "title": "The Dayton Agreement Is Under Attack, and Tensions Between Bosnia and Belgrade Signal a Worsening Diplomatic Climate Ahead of the Elections The Presidency of Bosnia and Herzegovina",
+            "text": "The Dayton Agreement Is Under Attack, and Tensions Between Bosnia and Belgrade Signal a Worsening Diplomatic Climate Ahead of the Elections The Presidency of Bosnia and Herzegovina is once again facing an entity-level confrontation, with Republika Srpska acting as a channel of",
+            "url": "https://x.com/i/web/status/2099458557875765758",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-09-14T11:21:40.000Z",
+            "matched_countries": [
+              "Bosznia-Hercegovina",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 6,
+              "Szerbia": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 23,
+            "quality_score": 24,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Primo piano ANSA - ANSA.it: L'Ue: il funerale di Mladic contraddice il percorso della Serbia verso l'Unione 'Deplorevoli gli elementi di sostegno ufficiale'. Bosnia ritira gran parte del personale dell'ambasciata in Serbia The EU: Mladic’s funeral contradicts Serbia’s path towards the Union. “Regrettable are the elements of official support. Bosnia withdraws",
@@ -356,118 +409,34 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 52,
-        "level": "high",
+        "score": 39,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 3,
-        "positive_hits": 2,
+        "mentions": 6,
+        "negative_hits": 1,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 8,
-        "raw_engagement_total": 8,
-        "quality_total": 145,
-        "geopolitical_total": 132,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
+        "quality_total": 90,
+        "geopolitical_total": 78,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 4
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 3,
-          "security": 4
+          "government_crisis": 2,
+          "security": 2,
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "kosovo": 3,
-          "Koszovó": 3,
+          "Koszovó": 2,
           "Montenegró": 1
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "The United States Embassy in Pristina has issued a security alert urging US citizens to exercise caution over large protests scheduled for Wednesday, September 16, in central Prist",
-            "text": "The United States Embassy in Pristina has issued a security alert urging US citizens to exercise caution over large protests scheduled for Wednesday, September 16, in central Pristina and other major cities across Kosovo.",
-            "url": "https://x.com/i/web/status/2099458036670615858",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-14T11:19:36.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 44,
-            "quality_score": 45,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Kurti’s government was elected with 62 votes, but Kosovo’s crisis has moved to the Constitutional Court. PDK is seeking an interim measure and challenging the process that led to t",
-            "text": "Kurti’s government was elected with 62 votes, but Kosovo’s crisis has moved to the Constitutional Court. PDK is seeking an interim measure and challenging the process that led to the government’s election. Kosovo IBNA",
-            "url": "https://x.com/i/web/status/2099456273611665892",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-14T11:12:36.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Kosovo Ex-President Thaci’s Defence Seeks Acquittal in Obstruction of Justice Trial https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/11/kosovo-ex-president-thacis-defence-seeks-acquittal-in-obstruction-of-justice-trial/btj/",
@@ -559,6 +528,78 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "A very important discussion took place on Friday in Prishtina on geopolitics and strengthening security and democratic resilience in the Western Balkans, with the support of Togeth",
+            "text": "A very important discussion took place on Friday in Prishtina on geopolitics and strengthening security and democratic resilience in the Western Balkans, with the support of Together with colleagues from the Belgrade Centre for Security Policy ,",
+            "url": "https://x.com/i/web/status/2099413654005285284",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-09-14T08:23:14.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 4,
+              "Koszovó": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 5,
+            "raw_engagement": 5,
+            "metrics": {
+              "likes": 2,
+              "reposts": 3,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Comment \"Kurti\" for timeless black elegance, delicate embroidery, and royal charm. Black Anarkali ethnic wear for festive, elegant looks.",
+            "text": "Comment \"Kurti\" for timeless black elegance, delicate embroidery, and royal charm. Black Anarkali ethnic wear for festive, elegant looks.",
+            "url": "https://x.com/i/web/status/2099470484916371609",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-14T12:09:04.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -763,83 +804,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
+        "mentions": 12,
         "negative_hits": 8,
-        "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 9,
-        "raw_engagement_total": 9,
-        "quality_total": 303,
-        "geopolitical_total": 271,
+        "positive_hits": 2,
+        "trusted_hits": 1,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 309,
+        "geopolitical_total": 279,
         "source_counts": {
           "reddit": 0,
           "mastodon": 8,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
           "protest": 4,
           "security": 3,
           "corruption_rule_of_law": 3,
-          "ethnic_tension": 1
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "balkans": 8,
-          "Albánia": 3
+          "Albánia": 4
         },
         "main_topic": "protest",
         "top_posts": [
-          {
-            "title": "September 16 in The Hague: a high-stakes verdict awaited across Kosovo, Albania, and Serbia. The International Court will rule on four army leaders, including former President Thaç",
-            "text": "September 16 in The Hague: a high-stakes verdict awaited across Kosovo, Albania, and Serbia. The International Court will rule on four army leaders, including former President Thaçi, who alongside NATO in 1999 halted Milošević’s ethnic cleansing of Albanians. 🇽🇰 UCK",
-            "url": "https://x.com/i/web/status/2099414619651469386",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-09-14T08:27:05.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 2,
-              "Szerbia": 1,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 40,
-            "quality_score": 44,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 9,
-            "raw_engagement": 9,
-            "metrics": {
-              "likes": 8,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "\"Residents of Rrjoll protested again today against the construction of the “Baks Bay” resort, claiming that the project encroaches on their properties. They warned that, in the coming days, they would maintain a round-the-clock presence near the construction site in protest.\" This is the village where the footage of residents pushing over a fence and a secur",
@@ -954,6 +943,40 @@
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Thu, 10 Sep 2026 19:47:50 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 102 of anti-corruption protest in Tirana, Albania https://www. youtube.com/watch?v=kG5rEvlsWaQ # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
+            "url": "https://mas.to/@meganL/117243046926296722",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Wed, 09 Sep 2026 20:48:42 +0000",
             "matched_countries": [
               "Albánia"
             ],
