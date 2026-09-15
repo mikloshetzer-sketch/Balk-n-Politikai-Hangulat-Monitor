@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15 16:52 UTC",
+  "updated_at": "2026-09-15 20:44 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 8
+    "collected": 16
   },
   "countries": [
     {
@@ -21,33 +21,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
-        "negative_hits": 7,
+        "mentions": 13,
+        "negative_hits": 6,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 261,
-        "geopolitical_total": 222,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 234,
+        "geopolitical_total": 195,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 12,
-          "x": 3
+          "mastodon": 13,
+          "x": 0
         },
         "category_counts": {
-          "government_crisis": 5,
+          "government_crisis": 4,
           "eu_integration": 1,
           "protest": 3,
-          "security": 4,
+          "security": 3,
           "foreign_influence": 2
         },
         "tag_counts": {
           "balkans": 2,
-          "serbia": 6,
+          "serbia": 7,
           "kosovo": 1,
           "bosnia": 2,
-          "montenegro": 1,
-          "Szerbia": 3
+          "montenegro": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -230,17 +229,17 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 17,
+        "score": 14,
         "level": "low",
         "scale": "0-60 risk index",
         "mentions": 3,
-        "negative_hits": 1,
+        "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 39,
-        "geopolitical_total": 32,
+        "quality_total": 37,
+        "geopolitical_total": 30,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
@@ -248,13 +247,14 @@
         },
         "category_counts": {
           "government_crisis": 1,
-          "foreign_influence": 2
+          "foreign_influence": 1,
+          "security": 1
         },
         "tag_counts": {
           "bosnia": 2,
-          "Szerbia": 1
+          "Észak-Macedónia": 1
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -315,29 +315,30 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "US lawmakers call for renewed sanctions on Dodik, criticize glorification of Ratko Mladić in Serbia",
-            "text": "US lawmakers call for renewed sanctions on Dodik, criticize glorification of Ratko Mladić in Serbia",
-            "url": "https://x.com/i/web/status/2099899747867807822",
+            "title": "Police, divers and mountain rescue teams have begun searching for a 32-year-old man from Skopje who was reported missing yesterday in the area of Lake Ohrid.",
+            "text": "Police, divers and mountain rescue teams have begun searching for a 32-year-old man from Skopje who was reported missing yesterday in the area of Lake Ohrid.",
+            "url": "https://x.com/i/web/status/2099932039516508558",
             "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-15T16:34:48.000Z",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-15T18:43:07.000Z",
             "matched_countries": [
+              "Észak-Macedónia",
               "Bosznia-Hercegovina"
             ],
             "country_confidence": {
-              "Bosznia-Hercegovina": 4,
-              "Szerbia": 1
+              "Észak-Macedónia": 4,
+              "Bosznia-Hercegovina": 3
             },
-            "event_category": "foreign_influence",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "foreign_influence",
+                "category": "security",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
               }
             ],
-            "geopolitical_score": 11,
-            "quality_score": 12,
+            "geopolitical_score": 9,
+            "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -356,7 +357,7 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 52,
+        "score": 51,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 8,
@@ -365,8 +366,8 @@
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 128,
-        "geopolitical_total": 104,
+        "quality_total": 127,
+        "geopolitical_total": 103,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
@@ -374,15 +375,14 @@
         },
         "category_counts": {
           "corruption_rule_of_law": 2,
-          "government_crisis": 2,
-          "security": 3,
-          "ethnic_tension": 1
+          "government_crisis": 3,
+          "security": 3
         },
         "tag_counts": {
           "kosovo": 7,
           "Koszovó": 1
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -638,37 +638,77 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 5,
-        "level": "low",
+        "score": 49,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 1,
-        "negative_hits": 0,
-        "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 27,
-        "geopolitical_total": 23,
+        "mentions": 8,
+        "negative_hits": 1,
+        "positive_hits": 2,
+        "trusted_hits": 0,
+        "engagement_total": 11,
+        "raw_engagement_total": 11,
+        "quality_total": 128,
+        "geopolitical_total": 120,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 1
+          "x": 8
         },
         "category_counts": {
-          "security": 1
+          "security": 8
         },
         "tag_counts": {
-          "Észak-Macedónia": 1
+          "Észak-Macedónia": 8
         },
         "main_topic": "security",
         "top_posts": [
           {
-            "title": "commemorated the National Day of the Republic of North Macedonia with a ceremony attended by diplomatic and military representatives, reflecting the strong partnership, mutual trus",
-            "text": "commemorated the National Day of the Republic of North Macedonia with a ceremony attended by diplomatic and military representatives, reflecting the strong partnership, mutual trust, and close cooperation among NATO Allies. NRDCGR NATO StrongerTogether",
-            "url": "https://x.com/i/web/status/2099825921817510152",
+            "title": "The U.S. State Department is shifting $52M in military aid from Eastern Europe & the Middle East (Slovakia, Iraq, Tunisia, North Macedonia) to Latin America (Panama, Peru, Ecuador,",
+            "text": "The U.S. State Department is shifting $52M in military aid from Eastern Europe & the Middle East (Slovakia, Iraq, Tunisia, North Macedonia) to Latin America (Panama, Peru, Ecuador, Colombia). The goal? Countering China's influence and boosting security near the Panama Canal.",
+            "url": "https://x.com/i/web/status/2099934212920905866",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-15T11:41:27.000Z",
+            "seen_date": "2026-09-15T18:51:45.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 27,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 4,
+            "raw_engagement": 4,
+            "metrics": {
+              "likes": 3,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Panama, Peru, Ecuador and Colombia will receive $52 million in U.S. military aid redirected from Slovakia, North Macedonia, Tunisia and Iraq under a Trump administration shift. The",
+            "text": "Panama, Peru, Ecuador and Colombia will receive $52 million in U.S. military aid redirected from Slovakia, North Macedonia, Tunisia and Iraq under a Trump administration shift. The State Department said the funds are for counter-narcotics work, Panama Canal security, and blocking",
+            "url": "https://x.com/i/web/status/2099923984930254977",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-15T18:11:07.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -683,14 +723,129 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 23,
-            "quality_score": 27,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 5,
-            "raw_engagement": 5,
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 4,
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🚨 BreakingNews: The Trump administration is reallocating $52 million in U.S. military aid, shifting funds away from Slovakia, North Macedonia, Tunisia, and Iraq to bolster security",
+            "text": "🚨 BreakingNews: The Trump administration is reallocating $52 million in U.S. military aid, shifting funds away from Slovakia, North Macedonia, Tunisia, and Iraq to bolster security in Panama, Peru, Ecuador, and Colombia. According to the State Department, the redirected package",
+            "url": "https://x.com/i/web/status/2099931310340923511",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-15T18:40:13.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇺🇸⚡️ — The Trump administration is redirecting $52 million in U.S. military aid from Slovakia, North Macedonia, Tunisia and Iraq to Panama, Peru, Ecuador and Colombia, reflecting a",
+            "text": "🇺🇸⚡️ — The Trump administration is redirecting $52 million in U.S. military aid from Slovakia, North Macedonia, Tunisia and Iraq to Panama, Peru, Ecuador and Colombia, reflecting a growing Western Hemisphere focus. The State Department says the funding will support",
+            "url": "https://x.com/i/web/status/2099916899857674731",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-15T17:42:58.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 14,
+            "quality_score": 15,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 2,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "The Trump administration is redirecting $52 million in U.S. military aid from Slovakia, North Macedonia, Tunisia and Iraq to Panama, Peru, Ecuador and Colombia, reflecting a growin",
+            "text": "The Trump administration is redirecting $52 million in U.S. military aid from Slovakia, North Macedonia, Tunisia and Iraq to Panama, Peru, Ecuador and Colombia, reflecting a growing Western Hemisphere focus. The State Department says the funding will support counter-narcotics",
+            "url": "https://x.com/i/web/status/2099917108729516481",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-15T17:43:47.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 14,
+            "quality_score": 15,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
               "reposts": 1,
               "replies": 0,
               "quotes": 0
@@ -706,31 +861,117 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
+        "mentions": 14,
         "negative_hits": 10,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 317,
-        "geopolitical_total": 286,
+        "engagement_total": 50,
+        "raw_engagement_total": 50,
+        "quality_total": 352,
+        "geopolitical_total": 318,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
-          "x": 2
+          "x": 5
         },
         "category_counts": {
-          "corruption_rule_of_law": 4,
-          "protest": 4,
-          "security": 1,
-          "government_crisis": 2
+          "government_crisis": 3,
+          "corruption_rule_of_law": 3,
+          "protest": 5,
+          "security": 2,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 9,
-          "Albánia": 2
+          "Koszovó": 2,
+          "Albánia": 3
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "protest",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Day 108 of anti-corruption protest in Tirana, Albania (Live at time I'm posting it. For \"normal\" days, it starts with people talking to the network reporter on the square as folks are massing up. Then they walk from there to Parliament/Prime Ministry, reaching there close to 8pm Tirana time.) # Albania # Corruption # Balkans # Europe # FlamingoRevolution # P",
+            "url": "https://mas.to/@meganL/117276162586118155",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Tue, 15 Sep 2026 17:10:26 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 36,
+            "quality_score": 39,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "PSD Senior Guard- Somalia Bomb SME/Ordnance Tech- New Mexico Advisor to the Albanian Police -Albanian Aviation Infrastructure and Security SME- United States",
+            "text": "PSD Senior Guard- Somalia Bomb SME/Ordnance Tech- New Mexico Advisor to the Albanian Police -Albanian Aviation Infrastructure and Security SME- United States",
+            "url": "https://x.com/i/web/status/2099936625413202399",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-09-15T19:01:21.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 30,
+            "quality_score": 31,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "\"Residents of Rrjoll protested again today against the construction of the “Baks Bay” resort, claiming that the project encroaches on their properties. They warned that, in the coming days, they would maintain a round-the-clock presence near the construction site in protest.\" This is the village where the footage of residents pushing over a fence and a secur",
@@ -769,46 +1010,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "In a democracy aspiring to join the EU you don't discredit citizens who protest peacefully, you listen to them. In Albania there is no democracy: everyone pays taxes, but only a go",
-            "text": "In a democracy aspiring to join the EU you don't discredit citizens who protest peacefully, you listen to them. In Albania there is no democracy: everyone pays taxes, but only a government-linked oligarchy benefits. Albanians demand the resignation of the Prime Minister, Berisha",
-            "url": "https://x.com/i/web/status/2099876329575301412",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-09-15T15:01:45.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -866,40 +1067,6 @@
               },
               {
                 "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 104 of anti-corruption protest in Tirana, Albania 104 ditë protestë/ Qytetarët mblidhen sërish sot para Kryeministrisë: Rama jep dorëheqjen https://www. youtube.com/watch?v=Nci0w7QYCuE # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
-            "url": "https://mas.to/@meganL/117253477108214099",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Fri, 11 Sep 2026 17:01:14 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
                 "hits": 1,
                 "weight": 8
               }
