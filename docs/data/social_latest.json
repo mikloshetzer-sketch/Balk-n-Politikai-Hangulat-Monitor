@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15 10:46 UTC",
+  "updated_at": "2026-09-15 11:38 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 10
+    "collected": 9
   },
   "countries": [
     {
@@ -21,24 +21,24 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 9,
-        "positive_hits": 3,
+        "mentions": 15,
+        "negative_hits": 8,
+        "positive_hits": 5,
         "trusted_hits": 0,
         "engagement_total": 1,
         "raw_engagement_total": 1,
-        "quality_total": 302,
-        "geopolitical_total": 264,
+        "quality_total": 305,
+        "geopolitical_total": 266,
         "source_counts": {
           "reddit": 0,
           "mastodon": 12,
-          "x": 2
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 4,
+          "government_crisis": 5,
           "eu_integration": 1,
-          "security": 3,
-          "protest": 3,
+          "security": 4,
+          "protest": 2,
           "foreign_influence": 3
         },
         "tag_counts": {
@@ -47,7 +47,7 @@
           "kosovo": 1,
           "bosnia": 3,
           "montenegro": 1,
-          "Szerbia": 2
+          "Szerbia": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -80,46 +80,6 @@
             "raw_engagement": 1,
             "metrics": {
               "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🔴 Serbian student movement files ballot list, backed by thousands after rail station protests Serbia's student movement submitted \"Student List – Students Win\" to the Republic Elec",
-            "text": "🔴 Serbian student movement files ballot list, backed by thousands after rail station protests Serbia's student movement submitted \"Student List – Students Win\" to the Republic Electoral Commission (RIK) after thousands marched to its headquarters carrying signature boxes. The",
-            "url": "https://x.com/i/web/status/2099790355168100539",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-15T09:20:07.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 35,
-            "quality_score": 36,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -201,6 +161,46 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Serbia and China deepen security cooperation, Serbian police begin patrols in Hainan",
+            "text": "Serbia and China deepen security cooperation, Serbian police begin patrols in Hainan",
+            "url": "https://x.com/i/web/status/2099820020427587672",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-15T11:18:00.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 28,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "📅 Upcoming # infosec events in the next 14 days: • LABScon # Labscon — Sep 16-19, 2026, Scottsdale (AZ) 🇺🇸 # USA • NOPcon # Nopcon — Sep 17, 2026, Istanbul 🇹🇷 # Turkey • 44CON @ 44CON — Sep 17-18, 2026, London 🇬🇧 # UK • \\[un\\]prompted.au # Unpromptedau — Sep 18-19, 2026, Sydney 🇦🇺 # Australia • Balkan Computer Congress @ BalCCon — Sep 18-20, 2026, Novi Sad 🇷",
             "url": "https://infosec.exchange/@infosecevents/117269935343399890",
@@ -240,75 +240,32 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 28,
+        "score": 20,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 4,
         "negative_hits": 1,
         "positive_hits": 2,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 77,
-        "geopolitical_total": 66,
+        "quality_total": 57,
+        "geopolitical_total": 47,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "government_crisis": 1,
-          "foreign_influence": 3,
-          "ethnic_tension": 1
+          "foreign_influence": 3
         },
         "tag_counts": {
           "bosnia": 3,
-          "Szerbia": 1,
           "Montenegró": 1
         },
         "main_topic": "foreign_influence",
         "top_posts": [
-          {
-            "title": "Minić sends message of Serbian unity on National Flag Day President of the Government of Republika Srpska Savo Minić wished for the Serbian tricolour to fly proudly today as a symb",
-            "text": "Minić sends message of Serbian unity on National Flag Day President of the Government of Republika Srpska Savo Minić wished for the Serbian tricolour to fly proudly today as a symbol of freedom that was dearly won.",
-            "url": "https://x.com/i/web/status/2099788383245443530",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-15T09:12:17.000Z",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 4,
-              "Szerbia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "Why would Scotland or Wales want to be unlike Iceland, but instead like the EU candidate countries of Albania, Bosnia and Herzegovina, Georgia, Moldova, Montenegro, NorthMacedonia,",
             "text": "Why would Scotland or Wales want to be unlike Iceland, but instead like the EU candidate countries of Albania, Bosnia and Herzegovina, Georgia, Moldova, Montenegro, NorthMacedonia, and Turkey? Why would Scotland or Wales want to be like the EU candidate country of",
