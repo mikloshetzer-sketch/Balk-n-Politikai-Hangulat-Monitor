@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15 21:14 UTC",
+  "updated_at": "2026-09-16 02:33 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 16
+    "collected": 15
   },
   "countries": [
     {
@@ -21,25 +21,25 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
+        "mentions": 14,
         "negative_hits": 7,
-        "positive_hits": 3,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 257,
-        "geopolitical_total": 216,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 274,
+        "geopolitical_total": 234,
         "source_counts": {
           "reddit": 0,
           "mastodon": 13,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "government_crisis": 5,
           "eu_integration": 1,
           "protest": 3,
           "security": 3,
-          "foreign_influence": 3
+          "foreign_influence": 2
         },
         "tag_counts": {
           "balkans": 2,
@@ -47,10 +47,45 @@
           "kosovo": 1,
           "bosnia": 2,
           "montenegro": 1,
-          "Szerbia": 2
+          "Szerbia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "Serbian President Aleksandar Vucic said he would submit his resignation on Sept 27 and then campaign as an ordinary citizen for prime minister during snap parliamentary elections s",
+            "text": "Serbian President Aleksandar Vucic said he would submit his resignation on Sept 27 and then campaign as an ordinary citizen for prime minister during snap parliamentary elections scheduled for Oct 25.",
+            "url": "https://x.com/i/web/status/2100047878320427369",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-16T02:23:25.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 4,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 39,
+            "quality_score": 40,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "🟢 Political Analysis | 5/10 🇷🇸 Political instability and elections in Serbia Aleksandar Vučić announced he will leave the presidency on September 24-25. Extraordinary parliamentary and presidential elections will be held in the country. # OSINT # NewsGroup # Serbia # Elections # Balkans",
@@ -192,37 +227,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Kosovo: Lista serba, Kfor ed Eulex garantiscano sicurezza prima della sentenza sull'Uck 14 set 15:24 - (Agenzia Nova) - La Lista serba, principale formazione politica serba in Kosovo, ha chiesto alle missioni Kfor ed Eulex di adottare... (Alt) Kosovo: Serbian list, KFOR and EULEX guarantee security before the ruling on the UCK September 14 15:2",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117269673868317642",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Mon, 14 Sep 2026 13:40:16 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 21,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -230,30 +234,28 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 14,
+        "score": 8,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 2,
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 37,
-        "geopolitical_total": 30,
+        "quality_total": 27,
+        "geopolitical_total": 21,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "government_crisis": 1,
-          "foreign_influence": 1,
-          "security": 1
+          "foreign_influence": 1
         },
         "tag_counts": {
-          "bosnia": 2,
-          "Észak-Macedónia": 1
+          "bosnia": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -314,43 +316,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Police, divers and mountain rescue teams have begun searching for a 32-year-old man from Skopje who was reported missing yesterday in the area of Lake Ohrid.",
-            "text": "Police, divers and mountain rescue teams have begun searching for a 32-year-old man from Skopje who was reported missing yesterday in the area of Lake Ohrid.",
-            "url": "https://x.com/i/web/status/2099932039516508558",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-15T18:43:07.000Z",
-            "matched_countries": [
-              "Észak-Macedónia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 4,
-              "Bosznia-Hercegovina": 3
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -358,32 +323,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 51,
+        "score": 45,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
+        "mentions": 7,
         "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 127,
-        "geopolitical_total": 103,
+        "quality_total": 117,
+        "geopolitical_total": 94,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "corruption_rule_of_law": 2,
-          "government_crisis": 3,
+          "government_crisis": 2,
           "security": 3
         },
         "tag_counts": {
-          "kosovo": 7,
-          "Koszovó": 1
+          "kosovo": 7
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -639,112 +603,37 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 40,
-        "level": "high",
+        "score": 16,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 2,
         "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 7,
-        "raw_engagement_total": 7,
-        "quality_total": 98,
-        "geopolitical_total": 92,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 32,
+        "geopolitical_total": 30,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 6
+          "x": 2
         },
         "category_counts": {
-          "security": 6
+          "security": 2
         },
         "tag_counts": {
-          "Észak-Macedónia": 6
+          "Észak-Macedónia": 2
         },
         "main_topic": "security",
         "top_posts": [
           {
-            "title": "The U.S. State Department is shifting $52M in military aid from Eastern Europe & the Middle East (Slovakia, Iraq, Tunisia, North Macedonia) to Latin America (Panama, Peru, Ecuador,",
-            "text": "The U.S. State Department is shifting $52M in military aid from Eastern Europe & the Middle East (Slovakia, Iraq, Tunisia, North Macedonia) to Latin America (Panama, Peru, Ecuador, Colombia). The goal? Countering China's influence and boosting security near the Panama Canal.",
-            "url": "https://x.com/i/web/status/2099934212920905866",
+            "title": "The Trump administration is redirecting $52 million in U.S. military assistance from Iraq, Tunisia, Slovakia and North Macedonia to Panama, Peru, Ecuador and Colombia as it places ",
+            "text": "The Trump administration is redirecting $52 million in U.S. military assistance from Iraq, Tunisia, Slovakia and North Macedonia to Panama, Peru, Ecuador and Colombia as it places greater emphasis on security in the Western Hemisphere, the AP reports. The State Department said",
+            "url": "https://x.com/i/web/status/2099999788443820163",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-15T18:51:45.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 26,
-            "quality_score": 27,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
-            "metrics": {
-              "likes": 3,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Panama, Peru, Ecuador and Colombia will receive $52 million in U.S. military aid redirected from Slovakia, North Macedonia, Tunisia and Iraq under a Trump administration shift. The",
-            "text": "Panama, Peru, Ecuador and Colombia will receive $52 million in U.S. military aid redirected from Slovakia, North Macedonia, Tunisia and Iraq under a Trump administration shift. The State Department said the funds are for counter-narcotics work, Panama Canal security, and blocking",
-            "url": "https://x.com/i/web/status/2099923984930254977",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-15T18:11:07.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🚨 BreakingNews: The Trump administration is reallocating $52 million in U.S. military aid, shifting funds away from Slovakia, North Macedonia, Tunisia, and Iraq to bolster security",
-            "text": "🚨 BreakingNews: The Trump administration is reallocating $52 million in U.S. military aid, shifting funds away from Slovakia, North Macedonia, Tunisia, and Iraq to bolster security in Panama, Peru, Ecuador, and Colombia. According to the State Department, the redirected package",
-            "url": "https://x.com/i/web/status/2099931310340923511",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-15T18:40:13.000Z",
+            "seen_date": "2026-09-15T23:12:20.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -774,12 +663,12 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "According to , the State Department is reprogramming $52M in foreign military financing away from Slovakia, North Macedonia, Tunisia & Iraq toward Panama, Peru, Ecuador & Colombia ",
-            "text": "According to , the State Department is reprogramming $52M in foreign military financing away from Slovakia, North Macedonia, Tunisia & Iraq toward Panama, Peru, Ecuador & Colombia to \"combat narcoterrorism in our backyard and help continue to secure the Panama Canal.\" (1)",
-            "url": "https://x.com/i/web/status/2099947835403952224",
+            "title": "BREAKING: RUBIO REDIRECTS $52 MILLION IN U.S. MILITARY AID TO LATIN AMERICA — AP Secretary of State Marco Rubio is redirecting $52 million in U.S. military assistance from Iraq, Tu",
+            "text": "BREAKING: RUBIO REDIRECTS $52 MILLION IN U.S. MILITARY AID TO LATIN AMERICA — AP Secretary of State Marco Rubio is redirecting $52 million in U.S. military assistance from Iraq, Tunisia, North Macedonia and Slovakia toward Colombia, Peru, Ecuador and Panama, according to the AP.",
+            "url": "https://x.com/i/web/status/2100023511066489065",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-15T19:45:53.000Z",
+            "seen_date": "2026-09-16T00:46:36.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -796,41 +685,6 @@
             ],
             "geopolitical_score": 12,
             "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "AP reports the U.S. is redirecting $52 million in military aid from Slovakia, North Macedonia, Tunisia, and Iraq to Panama, Peru, Ecuador, and Colombia. The State Department justif",
-            "text": "AP reports the U.S. is redirecting $52 million in military aid from Slovakia, North Macedonia, Tunisia, and Iraq to Panama, Peru, Ecuador, and Colombia. The State Department justifies the shift by citing the need to combat narcoterrorism, secure the Panama Canal, and counter",
-            "url": "https://x.com/i/web/status/2099945024641249549",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-15T19:34:43.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -853,13 +707,13 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 14,
-        "negative_hits": 10,
+        "negative_hits": 11,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 59,
-        "raw_engagement_total": 59,
-        "quality_total": 352,
-        "geopolitical_total": 318,
+        "trusted_hits": 2,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 383,
+        "geopolitical_total": 346,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
@@ -868,14 +722,13 @@
         "category_counts": {
           "government_crisis": 3,
           "corruption_rule_of_law": 3,
-          "protest": 5,
-          "security": 2,
-          "ethnic_tension": 1
+          "protest": 4,
+          "security": 4
         },
         "tag_counts": {
           "balkans": 9,
-          "Koszovó": 2,
-          "Albánia": 3
+          "Szerbia": 1,
+          "Albánia": 4
         },
         "main_topic": "protest",
         "top_posts": [
@@ -919,40 +772,33 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "PSD Senior Guard- Somalia Bomb SME/Ordnance Tech- New Mexico Advisor to the Albanian Police -Albanian Aviation Infrastructure and Security SME- United States",
-            "text": "PSD Senior Guard- Somalia Bomb SME/Ordnance Tech- New Mexico Advisor to the Albanian Police -Albanian Aviation Infrastructure and Security SME- United States",
-            "url": "https://x.com/i/web/status/2099936625413202399",
+            "title": "Kosovo security, KFOR/NATO as well as Serbia on high alert for how Albanians will react and what may happen to Serbs in Kosovo over Thaci verdict tomorrow in the Hague. There has b",
+            "text": "Kosovo security, KFOR/NATO as well as Serbia on high alert for how Albanians will react and what may happen to Serbs in Kosovo over Thaci verdict tomorrow in the Hague. There has been a lot going on militarily in the Balkans recently as well as in Macedonia.",
+            "url": "https://x.com/i/web/status/2100027228444913933",
             "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-09-15T19:01:21.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-16T01:01:22.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 2
+              "Albánia": 2,
+              "Szerbia": 1,
+              "Koszovó": 1,
+              "Észak-Macedónia": 1
             },
             "event_category": "security",
             "event_categories": [
               {
                 "category": "security",
-                "hits": 2,
+                "hits": 3,
                 "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 30,
-            "quality_score": 31,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
+            "geopolitical_score": 31,
+            "quality_score": 35,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "metrics": {
