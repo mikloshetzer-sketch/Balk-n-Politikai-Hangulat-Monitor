@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16 11:24 UTC",
+  "updated_at": "2026-09-16 15:52 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 20
+    "collected": 14
   },
   "countries": [
     {
@@ -21,27 +21,28 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 3,
+        "mentions": 14,
+        "negative_hits": 10,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 207,
-        "geopolitical_total": 178,
+        "trusted_hits": 4,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 273,
+        "geopolitical_total": 227,
         "source_counts": {
-          "reddit": 1,
-          "mastodon": 8,
+          "reddit": 0,
+          "mastodon": 12,
           "x": 2
         },
         "category_counts": {
-          "government_crisis": 6,
+          "government_crisis": 12,
           "protest": 1,
-          "security": 4
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 2,
-          "serbia": 5,
+          "serbia": 6,
+          "kosovo": 2,
           "bosnia": 2,
           "Szerbia": 2
         },
@@ -75,6 +76,47 @@
             ],
             "geopolitical_score": 31,
             "quality_score": 34,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Kosovo's ex-President Thaci convicted of war crimes, sentenced to 25 years in prison A European Union-backed court convicted former Kosovo President Hashim Thaci of war crimes committed during his country's war for independence from Serbia and sentenced him to 25 years in prison. https://www. npr.org/2026/09/16/g-s1-143560 /kosovo-former-president-war-crimes",
+            "url": "https://mastodon.social/@top_news/117281096989006945",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 16 Sep 2026 14:05:19 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 1,
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 29,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -123,105 +165,60 @@
           },
           {
             "title": "",
-            "text": "📅 Upcoming # infosec events in the next 14 days: • LABScon # Labscon — Sep 16-19, 2026, Scottsdale (AZ) 🇺🇸 # USA • NOPcon # Nopcon — Sep 17, 2026, Istanbul 🇹🇷 # Turkey • 44CON @ 44CON — Sep 17-18, 2026, London 🇬🇧 # UK • \\[un\\]prompted.au # Unpromptedau — Sep 18-19, 2026, Sydney 🇦🇺 # Australia • Balkan Computer Congress @ BalCCon — Sep 18-20, 2026, Novi Sad 🇷",
-            "url": "https://infosec.exchange/@infosecevents/117269935343399890",
+            "text": "Kosovo’s former president jailed for 25 years over war crimes https://www. theguardian.com/world/2026/sep /16/kosovo-former-president-hashim-thaci-jailed-war-crimes # WarCrimes # Kosovo # Serbia # Law # Europe # WorldNews",
+            "url": "https://halo.nu/@theguardian_world_news/117280938388594306",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Mon, 14 Sep 2026 14:46:46 +0000",
+            "seen_date": "Wed, 16 Sep 2026 13:24:59 +0000",
             "matched_countries": [
-              "Szerbia"
+              "Szerbia",
+              "Koszovó"
             ],
             "country_confidence": {
-              "Szerbia": 1
+              "Szerbia": 1,
+              "Koszovó": 1
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
               }
             ],
-            "geopolitical_score": 25,
-            "quality_score": 28,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "geopolitical_score": 16,
+            "quality_score": 21,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
           },
           {
-            "title": "more than 10 thousand people died, more than 850.000 Kosova Albanians fled or were deported by serbian security forces or paramilitary groups from kosova. 20 thousand Albanian wome",
-            "text": "more than 10 thousand people died, more than 850.000 Kosova Albanians fled or were deported by serbian security forces or paramilitary groups from kosova. 20 thousand Albanian women were barbarously raped by serbian soldiers while at least 250 Albanian villages were bombed.",
-            "url": "https://x.com/i/web/status/2100178079670841373",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-16T11:00:48.000Z",
+            "title": "",
+            "text": "Kosovo’s former president jailed for 25 years over war crimes By Peter Beaumont senior international correspondent Hashim Thaçi, 58, was convicted by The Hague for crimes committed while he was senior commander of the Kosovo Liberation Army https://www. theguardian.com/world/2026/sep /16/kosovo-former-president-hashim-thaci-jailed-war-crimes # Warcrimes # Ko",
+            "url": "https://rssfeed.media/@guardianfeeds/117280919136328798",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 16 Sep 2026 13:20:06 +0000",
             "matched_countries": [
               "Szerbia",
-              "Albánia"
+              "Koszovó"
             ],
             "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2,
+              "Szerbia": 1,
               "Koszovó": 1
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 26,
-            "quality_score": 27,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Iskustvo kao kontrolor-korisni saveti",
-            "text": "Pozdrav, Bio sam kontrolor u Beogradu 2 puta do sad(sto je mnogo drugacije nego biti kontrolor van grada) i preneo bih vam moje iskustvo, neke stvari koje bi vam možda bile korisne za dan izbora a možda vam ne kažu na obuci. \\1. Biće vam naporno Bićete tamo skoro 24h, biće gužva, ljudi će biti nervozni zbog čekanja. To je sve deo procesa. Ponesite hranu, pić",
-            "url": "https://www.reddit.com/r/serbia/comments/1whtjus/iskustvo_kao_kontrolorkorisni_saveti/",
-            "source": "reddit",
-            "tag": "serbia",
-            "seen_date": "2026-09-16T10:36:32+00:00",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 16,
+            "geopolitical_score": 16,
+            "quality_score": 21,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -234,31 +231,74 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 8,
-        "level": "low",
+        "score": 21,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 4,
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 27,
-        "geopolitical_total": 21,
+        "quality_total": 59,
+        "geopolitical_total": 49,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
-          "x": 0
+          "mastodon": 3,
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 1,
-          "foreign_influence": 1
+          "government_crisis": 2,
+          "foreign_influence": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "bosnia": 2
+          "bosnia": 3,
+          "Szerbia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "Nationalist Performance on the BiH – Serbia Border: ‘Youth’ Join the Serbian and Republika Srpska Flags via",
+            "text": "Nationalist Performance on the BiH – Serbia Border: ‘Youth’ Join the Serbian and Republika Srpska Flags via",
+            "url": "https://x.com/i/web/status/2100246445248958503",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-16T15:32:27.000Z",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 5,
+              "Szerbia": 2
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Agenzia Nova: Bosnia: incendio in casa di riposo a Tuzla, chiesta incriminazione per sette persone 11 set 17:50 - (Agenzia Nova) - La Procura cantonale di Tuzla, in Bosnia Erzegovina, ha presentato un atto d'accusa nei confronti di sette... (Seb) Bosnia: fire in nursing home in Tuzla, seven people indicted September 11 17:50 – (Agenzia Nova) – The Canton Pro",
@@ -316,6 +356,35 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Bosnia-Israele: presidente Snsd Dodik domani incontrera' Netanyahu a Tel Aviv 16 set 15:54 - (Agenzia Nova) - Il presidente dell'Alleanza dei socialdemocratici indipendenti di Bosnia Erzegovina (Snsd), Milorad Dodik,... (Seb) Bosnia-Israel: SNSD President Dodik will meet with Netanyahu in Tel Aviv tomorrow. September 16, 3:54 PM – (Agenzia Nova",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117281116451787134",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Wed, 16 Sep 2026 14:10:16 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 6
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 12,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -326,52 +395,57 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
-        "negative_hits": 12,
-        "positive_hits": 1,
-        "trusted_hits": 5,
+        "mentions": 23,
+        "negative_hits": 19,
+        "positive_hits": 4,
+        "trusted_hits": 10,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 341,
-        "geopolitical_total": 287,
+        "quality_total": 447,
+        "geopolitical_total": 368,
         "source_counts": {
-          "reddit": 0,
-          "mastodon": 14,
-          "x": 2
+          "reddit": 1,
+          "mastodon": 19,
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 9,
-          "security": 4,
-          "foreign_influence": 1,
-          "corruption_rule_of_law": 1,
-          "protest": 1
+          "government_crisis": 13,
+          "ethnic_tension": 1,
+          "security": 3,
+          "corruption_rule_of_law": 2,
+          "protest": 4
         },
         "tag_counts": {
           "balkans": 1,
-          "kosovo": 13,
-          "Koszovó": 2
+          "serbia": 5,
+          "kosovo": 14,
+          "Koszovó": 2,
+          "Albánia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "🇳🇱 Riots broke out, Dutch police were attacked, and pepper spray deployed after hundreds of Kosovars in the Netherlands protested today. They support former President Hashim Thaçi ",
-            "text": "🇳🇱 Riots broke out, Dutch police were attacked, and pepper spray deployed after hundreds of Kosovars in the Netherlands protested today. They support former President Hashim Thaçi and leaders of the Kosovo Liberation Army (KLA), who are standing trial.",
-            "url": "https://x.com/i/web/status/2100183496635338955",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-16T11:22:19.000Z",
+            "title": "",
+            "text": "LIVE: Supporters of Kosovo’s former President Thaci gather following guilty verdict Supporters of former Kosovo President Hashim Thaci gather outside a government building in Pristina after he was sentenced to 25 years in prison for war crimes committed as top commander of the ethnic Albanian Kosovo Liberation Army during the territory's violent break from S",
+            "url": "https://mastodon.social/@fllics/117281313996838788",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 16 Sep 2026 15:00:31 +0000",
             "matched_countries": [
-              "Koszovó"
+              "Koszovó",
+              "Albánia"
             ],
             "country_confidence": {
-              "Koszovó": 2
+              "Koszovó": 5,
+              "Albánia": 2,
+              "Szerbia": 1
             },
-            "event_category": "security",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
               },
               {
                 "category": "government_crisis",
@@ -380,86 +454,36 @@
               },
               {
                 "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 47,
-            "quality_score": 48,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Kosovo: tensione all'Aia dopo sentenza leader Uck, polizia usa i cannoni ad acqua sulla folla 16 set 12:50 - (Agenzia Nova) - La polizia dell'Aia ha utilizzato i cannoni ad acqua contro i cittadini per allontanarli dalla sede del Tribunale... (Alt) Kosovo: tension rises in The Hague after ruling by Uck leader, police use water cannons on crowds",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117280408625552410",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 16 Sep 2026 11:10:16 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 31,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "geopolitical_score": 35,
+            "quality_score": 40,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
           },
           {
             "title": "",
-            "text": "Adnkronos - ultimoratop: Kosovo, ex presidente Thaci condannato a 25 anni all'Aia per crimini di guerra (Adnkronos) - I giudici lo hanno giudicato colpevole di omicidio, tortura e detenzione arbitraria Kosovo, former president Thaci sentenced to 25 years in The Hague for war crimes. (Adnkronos) - The judges found him guilty of murder, torture, and arbitrary ",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117280290606665057",
+            "text": "Primo piano ANSA - ANSA.it: Thaci condannato a 25 anni per crimini di guerra in Kosovo. Tentato assalto alla sede Ue a Pristina L'Aja: 'Era a conoscenza delle azioni commesse dai miliziani dell'Uck contro gli oppositori' Thaci sentenced to 25 years for war crimes in Kosovo. Attempted attack on the EU headquarters in Pristina. The Hague: ‘He was aware of the ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117280726772411113",
             "source": "mastodon",
             "tag": "kosovo",
-            "seen_date": "Wed, 16 Sep 2026 10:40:15 +0000",
+            "seen_date": "Wed, 16 Sep 2026 12:31:10 +0000",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 1
+              "Koszovó": 5
             },
             "event_category": "security",
             "event_categories": [
               {
                 "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
+                "hits": 2,
                 "weight": 9
               }
             ],
@@ -473,15 +497,17 @@
           },
           {
             "title": "",
-            "text": "Kosovo’s ex-president Hashim Thaci gets 25 years for war crimes at The Hague A European Union-backed court convicted former Kosovo President Hashim Thaci of murder, torture, cruel treatment and arbitrary detention during the 1998 to 1999 war and sentenced him to 25 years, with three other Kosovo Liberation Army leaders also jailed. Here is what the verdict m",
-            "url": "https://mastodon.social/@astigdotph/117280305392209290",
+            "text": "Kosovo's ex-President Thaci convicted of war crimes, sentenced to 25 years in prison A European Union-backed court convicted former Kosovo President Hashim Thaci of war crimes committed during his country's war for independence from Serbia and sentenced him to 25 years in prison. https://www. npr.org/2026/09/16/g-s1-143560 /kosovo-former-president-war-crimes",
+            "url": "https://mastodon.social/@top_news/117281096989006945",
             "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 16 Sep 2026 10:44:01 +0000",
+            "tag": "serbia",
+            "seen_date": "Wed, 16 Sep 2026 14:05:19 +0000",
             "matched_countries": [
+              "Szerbia",
               "Koszovó"
             ],
             "country_confidence": {
+              "Szerbia": 1,
               "Koszovó": 1
             },
             "event_category": "government_crisis",
@@ -512,11 +538,11 @@
           },
           {
             "title": "",
-            "text": "Hague Court Finds Former Kosovo President Thaci Criminially Responsible For War Crimes https:// fed.brid.gy/r/https://www.rfer l.org/a/hague-court-former-kosovo-president-thaci-guilty-war-crimes/33857358.html",
-            "url": "https://fed.brid.gy/r/https://www.rferl.org/a/hague-court-former-kosovo-president-thaci-guilty-war-crimes/33857358.html",
+            "text": "Hague court sentences # Kosovo ex-president Thaçi to 25 years in prison for war crimes Alongside Thaçi, three other former KLA leaders were also sentenced to lengthy prison terms. 🖊️ Milena Wälde https://www. politico.eu/article/hashim-tac i-kosovo-hague-court-sentences-ex-president-25-years",
+            "url": "https://mastodon.ie/@EugeneMcParland/117280508620923504",
             "source": "mastodon",
             "tag": "kosovo",
-            "seen_date": "Wed, 16 Sep 2026 09:28:12 +0000",
+            "seen_date": "Wed, 16 Sep 2026 11:35:42 +0000",
             "matched_countries": [
               "Koszovó"
             ],
@@ -536,10 +562,44 @@
                 "weight": 8
               }
             ],
-            "geopolitical_score": 20,
-            "quality_score": 23,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "geopolitical_score": 24,
+            "quality_score": 29,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "🌍 ■ Expresidente de Kosovo Hashim Thaci, condenado a 25 años de prisión por crímenes de guerra ■ Por los crímenes de guerra de detención arbitraria, trato cruel, tortura y asesinato. https://www. huffingtonpost.es/global/el-ex presidente-kosovo-hashim-thaci-declarado-culpable-crimenes-guerra-f202609.html?int=MASTODON_WORLD # global # kosovo",
+            "url": "https://mastodon.world/@huffpost_es/117280517420218518",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 16 Sep 2026 11:37:56 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 27,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -575,37 +635,38 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 19,
-        "level": "low",
+        "score": 32,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
-        "positive_hits": 1,
+        "mentions": 4,
+        "negative_hits": 2,
+        "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 38,
-        "geopolitical_total": 35,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 64,
+        "geopolitical_total": 60,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
-          "security": 3
+          "security": 3,
+          "government_crisis": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 4
         },
         "main_topic": "security",
         "top_posts": [
           {
-            "title": "U.S. PULLS $52 MILLION IN MILITARY AID FROM EUROPE AND THE MIDDLE EAST TO REDIRECT IT TO LATIN AMERICA: The Trump administration has notified Congress that funding previously alloc",
-            "text": "U.S. PULLS $52 MILLION IN MILITARY AID FROM EUROPE AND THE MIDDLE EAST TO REDIRECT IT TO LATIN AMERICA: The Trump administration has notified Congress that funding previously allocated to Slovakia, North Macedonia, Tunisia and Iraq will instead go to Panama, Peru, Ecuador and",
-            "url": "https://x.com/i/web/status/2100125032378957969",
+            "title": "🚨🇺🇲👏The State Department, Mr. , has notified Congress of the transfer of $52 million in foreign military financing, withdrawn from Iraq, Tunisia, North Macedonia, and Slovakia, to ",
+            "text": "🚨🇺🇲👏The State Department, Mr. , has notified Congress of the transfer of $52 million in foreign military financing, withdrawn from Iraq, Tunisia, North Macedonia, and Slovakia, to redirect it toward President Abelardo de la Espriella’s Colombia (“El Tigre”), Peru,",
+            "url": "https://x.com/i/web/status/2100235960990441522",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-16T07:30:00.000Z",
+            "seen_date": "2026-09-16T14:50:48.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -620,19 +681,19 @@
                 "weight": 9
               },
               {
-                "category": "economic_infrastructure",
+                "category": "government_crisis",
                 "hits": 1,
-                "weight": 4
+                "weight": 9
               }
             ],
-            "geopolitical_score": 14,
-            "quality_score": 15,
+            "geopolitical_score": 21,
+            "quality_score": 22,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 1,
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -640,12 +701,47 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "BREAKING: RUBIO REDIRECTS $52 MILLION IN U.S. MILITARY AID TO LATIN AMERICA — AP Secretary of State Marco Rubio is redirecting $52 million in U.S. military assistance from Iraq, Tu",
-            "text": "BREAKING: RUBIO REDIRECTS $52 MILLION IN U.S. MILITARY AID TO LATIN AMERICA — AP Secretary of State Marco Rubio is redirecting $52 million in U.S. military assistance from Iraq, Tunisia, North Macedonia and Slovakia toward Colombia, Peru, Ecuador and Panama, according to the AP.",
-            "url": "https://x.com/i/web/status/2100172296690303078",
+            "title": "🇵🇦🇨🇴🇪🇨🇵🇪🇺🇸 | SECURITY | U.S. Pulls $52 Million In Military Aid From Europe & Middle East to Fund Four LATAM Allies U.S. pulls $52 million in military aid from Slovakia 🇸🇰, North Ma",
+            "text": "🇵🇦🇨🇴🇪🇨🇵🇪🇺🇸 | SECURITY | U.S. Pulls $52 Million In Military Aid From Europe & Middle East to Fund Four LATAM Allies U.S. pulls $52 million in military aid from Slovakia 🇸🇰, North Macedonia 🇲🇰, Tunisia 🇹🇳, and Iraq 🇮🇶 — redirecting it to Colombia 🇨🇴, Ecuador 🇪🇨, Peru 🇵🇪, and",
+            "url": "https://x.com/i/web/status/2100247283266666858",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-16T10:37:49.000Z",
+            "seen_date": "2026-09-16T15:35:47.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "BREAKING: RUBIO REDIRECTS $52 MILLION IN U.S. MILITARY AID TO LATIN AMERICA — AP Secretary of State Marco Rubio is redirecting $52 million in U.S. military assistance from Iraq, Tu",
+            "text": "BREAKING: RUBIO REDIRECTS $52 MILLION IN U.S. MILITARY AID TO LATIN AMERICA — AP Secretary of State Marco Rubio is redirecting $52 million in U.S. military assistance from Iraq, Tunisia, North Macedonia and Slovakia toward Colombia, Peru, Ecuador and Panama, according to the AP.",
+            "url": "https://x.com/i/web/status/2100208075936350639",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-16T12:59:59.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -675,22 +771,22 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "MAKE ALL OF AMERICA - INCLUDING SOUTH AND LATIN AMERICA- GREAT AGAIN! BREAKING: RUBIO REDIRECTS $52 MILLION IN U.S. MILITARY AID TO LATIN AMERICA — AP Secretary of State Marco Rubi",
-            "text": "MAKE ALL OF AMERICA - INCLUDING SOUTH AND LATIN AMERICA- GREAT AGAIN! BREAKING: RUBIO REDIRECTS $52 MILLION IN U.S. MILITARY AID TO LATIN AMERICA — AP Secretary of State Marco Rubio is redirecting $52 million in U.S. military assistance from Iraq, Tunisia, North Macedonia and",
-            "url": "https://x.com/i/web/status/2100167719228232130",
+            "title": "BulgarianNews 📣 President Iotova acquainted Council of Europe Secretary General with the case of Iva Mihaylova, a citizen of North Macedonia and Bulgaria, who has been denied acces",
+            "text": "BulgarianNews 📣 President Iotova acquainted Council of Europe Secretary General with the case of Iva Mihaylova, a citizen of North Macedonia and Bulgaria, who has been denied access to medical treatment in Bulgaria because she is facing legal proceedings. Read more. 👇",
+            "url": "https://x.com/i/web/status/2100241957683368353",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-16T10:19:38.000Z",
+            "seen_date": "2026-09-16T15:14:37.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
               "Észak-Macedónia": 5
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               }
@@ -699,12 +795,12 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
               "likes": 0,
               "reposts": 0,
-              "replies": 0,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -718,33 +814,75 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
+        "mentions": 13,
         "negative_hits": 11,
         "positive_hits": 2,
-        "trusted_hits": 1,
-        "engagement_total": 58,
-        "raw_engagement_total": 58,
-        "quality_total": 412,
-        "geopolitical_total": 376,
+        "trusted_hits": 3,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 377,
+        "geopolitical_total": 337,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 9,
-          "x": 7
+          "mastodon": 10,
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 4,
-          "corruption_rule_of_law": 4,
+          "government_crisis": 1,
+          "corruption_rule_of_law": 3,
           "protest": 4,
-          "security": 4
+          "security": 3,
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "balkans": 9,
-          "Szerbia": 1,
-          "Koszovó": 1,
-          "Albánia": 5
+          "kosovo": 1,
+          "Albánia": 3
         },
-        "main_topic": "government_crisis",
+        "main_topic": "protest",
         "top_posts": [
+          {
+            "title": "",
+            "text": "LIVE: Supporters of Kosovo’s former President Thaci gather following guilty verdict Supporters of former Kosovo President Hashim Thaci gather outside a government building in Pristina after he was sentenced to 25 years in prison for war crimes committed as top commander of the ethnic Albanian Kosovo Liberation Army during the territory's violent break from S",
+            "url": "https://mastodon.social/@fllics/117281313996838788",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 16 Sep 2026 15:00:31 +0000",
+            "matched_countries": [
+              "Koszovó",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
+              "Albánia": 2,
+              "Szerbia": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 35,
+            "quality_score": 40,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "Day 108 of anti-corruption protest in Tirana, Albania (Live at time I'm posting it. For \"normal\" days, it starts with people talking to the network reporter on the square as folks are massing up. Then they walk from there to Parliament/Prime Ministry, reaching there close to 8pm Tirana time.) # Albania # Corruption # Balkans # Europe # FlamingoRevolution # P",
@@ -824,12 +962,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🚨🇳🇱Chaos in The Hague, Netherlands, as Albanian invaders attack police and jump on police cars. Albanian extremists are hurling bricks and sticks at Dutch police outside the Intern",
-            "text": "🚨🇳🇱Chaos in The Hague, Netherlands, as Albanian invaders attack police and jump on police cars. Albanian extremists are hurling bricks and sticks at Dutch police outside the International Court in The Hague. These people bring hell wherever they go!",
-            "url": "https://x.com/i/web/status/2100178872398438586",
+            "title": "Chaos in The Hague, Netherlands, as Albanian invaders attack police and jump on police cars. Albanian extremists are hurling bricks and sticks at Dutch police outside the Internati",
+            "text": "Chaos in The Hague, Netherlands, as Albanian invaders attack police and jump on police cars. Albanian extremists are hurling bricks and sticks at Dutch police outside the International Court in The Hague.",
+            "url": "https://x.com/i/web/status/2100243795140923795",
             "source": "x",
             "tag": "Albánia",
-            "seen_date": "2026-09-16T11:03:57.000Z",
+            "seen_date": "2026-09-16T15:21:56.000Z",
             "matched_countries": [
               "Albánia"
             ],
@@ -853,13 +991,13 @@
             "quality_score": 30,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 37,
-            "raw_engagement": 37,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 22,
-              "reposts": 11,
-              "replies": 2,
-              "quotes": 2
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
             },
             "quality": "x_api_filtered"
           },
@@ -885,40 +1023,6 @@
               },
               {
                 "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Protests continue in Albania over Jared Kushner-linked resort on 105th day https://www. youtube.com/watch?v=mpd-CoGZ2pE # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
-            "url": "https://mas.to/@meganL/117268401336879701",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Mon, 14 Sep 2026 08:16:39 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
                 "hits": 1,
                 "weight": 8
               }
