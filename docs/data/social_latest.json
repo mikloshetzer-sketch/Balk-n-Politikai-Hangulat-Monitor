@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16 21:15 UTC",
+  "updated_at": "2026-09-17 02:36 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 22
   },
   "countries": [
     {
@@ -21,32 +21,74 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
+        "mentions": 16,
         "negative_hits": 12,
-        "positive_hits": 1,
+        "positive_hits": 2,
         "trusted_hits": 4,
-        "engagement_total": 31,
-        "raw_engagement_total": 31,
-        "quality_total": 330,
-        "geopolitical_total": 283,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 390,
+        "geopolitical_total": 344,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 12,
-          "x": 2
+          "mastodon": 10,
+          "x": 6
         },
         "category_counts": {
-          "government_crisis": 11,
-          "security": 3
+          "government_crisis": 10,
+          "security": 5,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 3,
-          "serbia": 7,
-          "kosovo": 1,
+          "serbia": 6,
           "bosnia": 1,
-          "Szerbia": 2
+          "Szerbia": 4,
+          "Albánia": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "It seems Kosovo and Metohia will see the return of a thousand Serbian police and security forces soon as outlined in UN resolution 1244 once NATO withdrawals from their engineered ",
+            "text": "It seems Kosovo and Metohia will see the return of a thousand Serbian police and security forces soon as outlined in UN resolution 1244 once NATO withdrawals from their engineered failed state.",
+            "url": "https://x.com/i/web/status/2100390373486948393",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-17T01:04:23.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 39,
+            "quality_score": 43,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 2,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "🟢 Political Analysis | 5/10 🇷🇸 Political instability and elections in Serbia Aleksandar Vučić announced he will leave the presidency on September 24-25. Extraordinary parliamentary and presidential elections will be held in the country. # OSINT # NewsGroup # Serbia # Elections # Balkans",
@@ -123,17 +165,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇷🇸🇽🇰 Serbian President Vucic expressed anger at the verdict against Thaçi et al. trial because it does not demage the credibility of the Kosovo Liberation Army (KLA). - Vucic said ",
-            "text": "🇷🇸🇽🇰 Serbian President Vucic expressed anger at the verdict against Thaçi et al. trial because it does not demage the credibility of the Kosovo Liberation Army (KLA). - Vucic said the court did not find systematic attacks against Serbian civilians by KLA. - He also said the",
-            "url": "https://x.com/i/web/status/2100325725643686061",
+            "title": "They had a real war criminal Hashim Tachi their military leader convicted for war crimes yesterday for killing thousands of Serbian women and children and old people in Serbian Kos",
+            "text": "They had a real war criminal Hashim Tachi their military leader convicted for war crimes yesterday for killing thousands of Serbian women and children and old people in Serbian Kosovo and Metohija We want to believe in lies so we protest! People often protest because outrage",
+            "url": "https://x.com/i/web/status/2100380759332638971",
             "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-16T20:47:29.000Z",
+            "tag": "Albánia",
+            "seen_date": "2026-09-17T00:26:10.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 9,
+              "Szerbia": 2,
               "Koszovó": 1
             },
             "event_category": "security",
@@ -144,49 +186,9 @@
                 "weight": 9
               },
               {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
+                "category": "protest",
                 "hits": 1,
                 "weight": 8
-              }
-            ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 30,
-            "raw_engagement": 30,
-            "metrics": {
-              "likes": 24,
-              "reposts": 0,
-              "replies": 5,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Serbia Reveals Armed Robot Dogs Days After Chinese Humanoid Factory Opening https:// fed.brid.gy/r/https://www.rfer l.org/a/serbia-china-military-dogs-quadraped-weapon/33857596.html",
-            "url": "https://fed.brid.gy/r/https://www.rferl.org/a/serbia-china-military-dogs-quadraped-weapon/33857596.html",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Wed, 16 Sep 2026 15:46:17 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
               },
               {
                 "category": "foreign_influence",
@@ -194,54 +196,65 @@
                 "weight": 8
               }
             ],
-            "geopolitical_score": 26,
+            "geopolitical_score": 28,
             "quality_score": 29,
-            "source_reliability": 3,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
-            "title": "",
-            "text": "Kosovo's ex-President Thaci convicted of war crimes, sentenced to 25 years in prison A European Union-backed court convicted former Kosovo President Hashim Thaci of war crimes committed during his country's war for independence from Serbia and sentenced him to 25 years in prison. https://www. npr.org/2026/09/16/g-s1-143560 /kosovo-former-president-war-crimes",
-            "url": "https://mastodon.social/@top_news/117281096989006945",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Wed, 16 Sep 2026 14:05:19 +0000",
+            "title": "They had a real war criminal Hashim Tachi their military leader convicted for war crimes today for killing thousands of Serbian women and children and old people in Serbian Kosovo ",
+            "text": "They had a real war criminal Hashim Tachi their military leader convicted for war crimes today for killing thousands of Serbian women and children and old people in Serbian Kosovo and Metohija We want to believe in lies so we protest! People often protest because outrage gives",
+            "url": "https://x.com/i/web/status/2100380110096642411",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-09-17T00:23:36.000Z",
             "matched_countries": [
-              "Szerbia",
-              "Koszovó"
+              "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 1,
+              "Szerbia": 2,
               "Koszovó": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
               },
               {
-                "category": "corruption_rule_of_law",
+                "category": "protest",
                 "hits": 1,
                 "weight": 8
               },
               {
-                "category": "eu_integration",
+                "category": "foreign_influence",
                 "hits": 1,
-                "weight": 6
+                "weight": 8
               }
             ],
-            "geopolitical_score": 26,
+            "geopolitical_score": 28,
             "quality_score": 29,
-            "source_reliability": 3,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -256,8 +269,8 @@
         "negative_hits": 0,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 9,
-        "raw_engagement_total": 9,
+        "engagement_total": 14,
+        "raw_engagement_total": 14,
         "quality_total": 56,
         "geopolitical_total": 46,
         "source_counts": {
@@ -307,11 +320,11 @@
             "quality_score": 17,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 9,
-            "raw_engagement": 9,
+            "engagement": 14,
+            "raw_engagement": 14,
             "metrics": {
-              "likes": 8,
-              "reposts": 1,
+              "likes": 12,
+              "reposts": 2,
               "replies": 0,
               "quotes": 0
             },
@@ -413,68 +426,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 20,
-        "negative_hits": 14,
+        "mentions": 18,
+        "negative_hits": 13,
         "positive_hits": 2,
-        "trusted_hits": 9,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 530,
-        "geopolitical_total": 453,
+        "trusted_hits": 7,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 438,
+        "geopolitical_total": 370,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 19,
-          "x": 1
+          "mastodon": 18,
+          "x": 0
         },
         "category_counts": {
-          "government_crisis": 15,
-          "security": 4,
+          "government_crisis": 14,
+          "security": 3,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 2,
           "serbia": 6,
-          "kosovo": 11,
-          "Albánia": 1
+          "kosovo": 10
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "Albania Approves Deployment of Helicopter and 17 Troops to KFOR in Kosovo Albania Kosovo KFOR NATO AlbanianArmedForces Military Security Peacekeeping WesternBalkans Prishtina Balka",
-            "text": "Albania Approves Deployment of Helicopter and 17 Troops to KFOR in Kosovo Albania Kosovo KFOR NATO AlbanianArmedForces Military Security Peacekeeping WesternBalkans Prishtina Balkans",
-            "url": "https://x.com/i/web/status/2100294722661089303",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-09-16T18:44:18.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5,
-              "Albánia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 7,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 67,
-            "quality_score": 71,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 6,
-            "raw_engagement": 6,
-            "metrics": {
-              "likes": 5,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "# WarCriminals # Kosovo \"Kosovo's former President Thaçi convicted of war crimes at Hague court Hashim Thaçi, who served as both president and prime minister, was found guilty of murder, torture, cruel treatment and arbitrary detention by the Kosovo Specialist Chambers, as tens of thousands who had gathered in Prishtina expecting his acquittal watched procee",
@@ -636,6 +612,47 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Kosovo's ex-President Thaci convicted of war crimes, sentenced to 25 years in prison A European Union-backed court convicted former Kosovo President Hashim Thaci of war crimes committed during his country's war for independence from Serbia and sentenced him to 25 years in prison. https://www. npr.org/2026/09/16/g-s1-143560 /kosovo-former-president-war-crimes",
+            "url": "https://mastodon.social/@top_news/117281096989006945",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 16 Sep 2026 14:05:19 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 1,
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 29,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -643,31 +660,31 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 15,
-        "level": "low",
+        "score": 25,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
-        "negative_hits": 1,
+        "mentions": 3,
+        "negative_hits": 2,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 33,
-        "geopolitical_total": 29,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 46,
+        "geopolitical_total": 41,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "government_crisis": 1,
-          "security": 1
+          "security": 2
         },
         "tag_counts": {
           "montenegro": 1,
-          "Montenegró": 1
+          "Montenegró": 2
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "81% see corruption as widespread: Security warning dominates Berlin Process meeting WesternBalkans BerlinProcess RCC AmerKapetanovic OrganisedCrime Corruption RegionalSecurity Podg",
@@ -712,6 +729,41 @@
             "quality": "x_api_filtered"
           },
           {
+            "title": "Productive days in Podgorica at the Western Balkans Biodiversity Media Workshop with Earth Journalism Network & ! 🇲🇪🇦🇱🇭🇷🇧🇦🇷🇸🇽🇰 From exploring Lake Skadar to tracking biodiversity l",
+            "text": "Productive days in Podgorica at the Western Balkans Biodiversity Media Workshop with Earth Journalism Network & ! 🇲🇪🇦🇱🇭🇷🇧🇦🇷🇸🇽🇰 From exploring Lake Skadar to tracking biodiversity loss, environmental threats don't stop at borders. Cross-border reporting is key! 🌿🔍",
+            "url": "https://x.com/i/web/status/2100360895977116091",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-09-16T23:07:15.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 13,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Agenzia Nova: Montenegro: Parlamento approva proposte legge per modifiche a Codice penale 16 set 17:50 - (Agenzia Nova) - Il Parlamento del Montenegro ha approvato sette proposte di legge, tra cui modifiche al Codice penale e alla... (Seb) Montenegro: Parliament approves draft laws for amendments to the Criminal Code September 16 17:50 – (Agenzia Nova) – The",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117281627934171713",
@@ -746,102 +798,60 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 35,
-        "level": "medium",
+        "score": 15,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 2,
         "negative_hits": 1,
-        "positive_hits": 2,
-        "trusted_hits": 1,
-        "engagement_total": 19,
-        "raw_engagement_total": 19,
-        "quality_total": 112,
-        "geopolitical_total": 103,
+        "positive_hits": 0,
+        "trusted_hits": 0,
+        "engagement_total": 8,
+        "raw_engagement_total": 8,
+        "quality_total": 39,
+        "geopolitical_total": 37,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 6
+          "x": 2
         },
         "category_counts": {
-          "security": 3,
-          "economic_infrastructure": 1,
-          "government_crisis": 2
+          "foreign_influence": 1,
+          "security": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 6
+          "Montenegró": 1,
+          "Észak-Macedónia": 1
         },
-        "main_topic": "security",
+        "main_topic": "foreign_influence",
         "top_posts": [
           {
-            "title": "🗓️ TOMORROW | 🕥 10:30 a.m. ET will host a conversation with Prime Minister of North Macedonia to discuss his country’s strategic partnership with the United States, its economic fu",
-            "text": "🗓️ TOMORROW | 🕥 10:30 a.m. ET will host a conversation with Prime Minister of North Macedonia to discuss his country’s strategic partnership with the United States, its economic future, and its path toward the European Union. Register to attend now ➡️",
-            "url": "https://x.com/i/web/status/2100254666940440815",
+            "title": "The EU has imposed 21 sancs pack on Russia. France is not “dN” on Israel,but its measures are far less extensive. Switzerland,Iceland,Liechtenstein,Albania,Montenegro,North Macedon",
+            "text": "The EU has imposed 21 sancs pack on Russia. France is not “dN” on Israel,but its measures are far less extensive. Switzerland,Iceland,Liechtenstein,Albania,Montenegro,North Macedonia,Bosnia & Herzegovina and Moldova align with Russia sancts without comparable sanctions on Israel.",
+            "url": "https://x.com/i/web/status/2100367142680199606",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-16T16:05:08.000Z",
+            "tag": "Montenegró",
+            "seen_date": "2026-09-16T23:32:04.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5
+              "Észak-Macedónia": 5,
+              "Bosznia-Hercegovina": 1,
+              "Montenegró": 1,
+              "Albánia": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "foreign_influence",
             "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
               {
                 "category": "foreign_influence",
-                "hits": 1,
+                "hits": 2,
                 "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
               }
             ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
+            "geopolitical_score": 19,
+            "quality_score": 20,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 2,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "$52 million moved out of Slovakia and North Macedonia, both NATO members with existing US equipped fleets, into Ecuador, Colombia, Peru, and Panama, none of which have comparable p",
-            "text": "$52 million moved out of Slovakia and North Macedonia, both NATO members with existing US equipped fleets, into Ecuador, Colombia, Peru, and Panama, none of which have comparable platforms or sustainment pipelines to absorb it. Foreign Military Financing is money recipient",
-            "url": "https://x.com/i/web/status/2100259667427397774",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-16T16:25:00.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 26,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "metrics": {
@@ -886,76 +896,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "🇵🇦🇨🇴🇪🇨🇵🇪🇺🇸 | SECURITY | U.S. Pulls $52 Million In Military Aid From Europe & Middle East to Fund Four LATAM Allies U.S. pulls $52 million in military aid from Slovakia 🇸🇰, North Ma",
-            "text": "🇵🇦🇨🇴🇪🇨🇵🇪🇺🇸 | SECURITY | U.S. Pulls $52 Million In Military Aid From Europe & Middle East to Fund Four LATAM Allies U.S. pulls $52 million in military aid from Slovakia 🇸🇰, North Macedonia 🇲🇰, Tunisia 🇹🇳, and Iraq 🇮🇶 — redirecting it to Colombia 🇨🇴, Ecuador 🇪🇨, Peru 🇵🇪, and",
-            "url": "https://x.com/i/web/status/2100247283266666858",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-16T15:35:47.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Pleased to visit 'Panajot Ginovski' school,which is modernised w EU support.Over 122,000 pupils now benefit from updated education facilities in North Macedonia, as part of reform ",
-            "text": "Pleased to visit 'Panajot Ginovski' school,which is modernised w EU support.Over 122,000 pupils now benefit from updated education facilities in North Macedonia, as part of reform stemming from 🇪🇺Growth Plan: no other investment yields as great a return as investment in education",
-            "url": "https://x.com/i/web/status/2100259103750726107",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-16T16:22:45.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "economic_infrastructure",
-            "event_categories": [
-              {
-                "category": "economic_infrastructure",
-                "hits": 2,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 5,
-            "raw_engagement": 5,
-            "metrics": {
-              "likes": 3,
-              "reposts": 2,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -967,30 +907,30 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 14,
-        "negative_hits": 13,
+        "negative_hits": 12,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 373,
-        "geopolitical_total": 339,
+        "engagement_total": 30,
+        "raw_engagement_total": 30,
+        "quality_total": 370,
+        "geopolitical_total": 336,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
           "x": 5
         },
         "category_counts": {
-          "corruption_rule_of_law": 5,
-          "government_crisis": 3,
-          "protest": 2,
-          "security": 3,
+          "corruption_rule_of_law": 4,
+          "government_crisis": 2,
+          "protest": 3,
+          "security": 4,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 8,
           "kosovo": 1,
-          "Montenegró": 1,
-          "Albánia": 4
+          "Montenegró": 2,
+          "Albánia": 3
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -1117,10 +1057,10 @@
           {
             "title": "🚨🇳🇱Chaos in The Hague, Netherlands, as Albanian invaders attack police and jump on police cars. Albanian extremists are hurling bricks and sticks at Dutch police outside the Intern",
             "text": "🚨🇳🇱Chaos in The Hague, Netherlands, as Albanian invaders attack police and jump on police cars. Albanian extremists are hurling bricks and sticks at Dutch police outside the International Court in The Hague. These people bring hell wherever they go!",
-            "url": "https://x.com/i/web/status/2100316895736103288",
+            "url": "https://x.com/i/web/status/2100385870457037183",
             "source": "x",
             "tag": "Albánia",
-            "seen_date": "2026-09-16T20:12:24.000Z",
+            "seen_date": "2026-09-17T00:46:29.000Z",
             "matched_countries": [
               "Albánia"
             ],
@@ -1144,13 +1084,13 @@
             "quality_score": 30,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 19,
+            "raw_engagement": 19,
             "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
+              "likes": 9,
+              "reposts": 7,
+              "replies": 2,
+              "quotes": 1
             },
             "quality": "x_api_filtered"
           },
