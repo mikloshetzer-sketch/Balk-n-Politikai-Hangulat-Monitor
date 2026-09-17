@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17 04:44 UTC",
+  "updated_at": "2026-09-17 10:44 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 20
+    "collected": 12
   },
   "countries": [
     {
@@ -21,78 +21,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 13,
+        "mentions": 15,
+        "negative_hits": 11,
         "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 349,
-        "geopolitical_total": 311,
+        "trusted_hits": 4,
+        "engagement_total": 12,
+        "raw_engagement_total": 12,
+        "quality_total": 368,
+        "geopolitical_total": 320,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 10,
-          "x": 4
+          "mastodon": 12,
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 10,
-          "security": 2,
-          "ethnic_tension": 2
+          "government_crisis": 13,
+          "security": 2
         },
         "tag_counts": {
           "balkans": 3,
           "serbia": 6,
+          "kosovo": 2,
           "bosnia": 1,
-          "Szerbia": 2,
-          "Albánia": 2
+          "Szerbia": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "Fact-checkers traced the footage to 15 March 2025, when Belgrade hosted a very large anti-government/anti-corruption protest following the Novi Sad railway-station canopy collapse.",
-            "text": "Fact-checkers traced the footage to 15 March 2025, when Belgrade hosted a very large anti-government/anti-corruption protest following the Novi Sad railway-station canopy collapse. It was not a Christian religious march. LYING IS A SIN…😏",
-            "url": "https://x.com/i/web/status/2100420899006496888",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-17T03:05:40.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 44,
-            "quality_score": 45,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "🟢 Political Analysis | 5/10 🇷🇸 Political instability and elections in Serbia Aleksandar Vučić announced he will leave the presidency on September 24-25. Extraordinary parliamentary and presidential elections will be held in the country. # OSINT # NewsGroup # Serbia # Elections # Balkans",
@@ -169,52 +123,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "They had a real war criminal Hashim Tachi their military leader convicted for war crimes yesterday for killing thousands of Serbian women and children and old people in Serbian Kos",
-            "text": "They had a real war criminal Hashim Tachi their military leader convicted for war crimes yesterday for killing thousands of Serbian women and children and old people in Serbian Kosovo and Metohija We want to believe in lies so we protest! People often protest because outrage",
-            "url": "https://x.com/i/web/status/2100380759332638971",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-09-17T00:26:10.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Serbia Reveals Armed Robot Dogs Days After Chinese Humanoid Factory Opening https:// fed.brid.gy/r/https://www.rfer l.org/a/serbia-china-military-dogs-quadraped-weapon/33857596.html",
             "url": "https://fed.brid.gy/r/https://www.rferl.org/a/serbia-china-military-dogs-quadraped-weapon/33857596.html",
@@ -247,60 +155,33 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Bosznia-Hercegovina",
-      "social_signal": {
-        "score": 18,
-        "level": "low",
-        "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 0,
-        "positive_hits": 2,
-        "trusted_hits": 0,
-        "engagement_total": 14,
-        "raw_engagement_total": 14,
-        "quality_total": 56,
-        "geopolitical_total": 46,
-        "source_counts": {
-          "reddit": 0,
-          "mastodon": 3,
-          "x": 1
-        },
-        "category_counts": {
-          "government_crisis": 2,
-          "foreign_influence": 1,
-          "security": 1
-        },
-        "tag_counts": {
-          "bosnia": 3,
-          "Montenegró": 1
-        },
-        "main_topic": "government_crisis",
-        "top_posts": [
+          },
           {
-            "title": "I just spoke with EU High Representative for Foreign Affairs and Security Policy, . Our strategic goal is clear: the reform agenda must remain our focus so that Montenegro can beco",
-            "text": "I just spoke with EU High Representative for Foreign Affairs and Security Policy, . Our strategic goal is clear: the reform agenda must remain our focus so that Montenegro can become the 28th member of the European Union by 2028. 🇲🇪🇪🇺 We also discussed the",
-            "url": "https://x.com/i/web/status/2100290001464377626",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-09-16T18:25:32.000Z",
+            "title": "",
+            "text": "Kosovo's ex-President Thaci convicted of war crimes, sentenced to 25 years in prison A European Union-backed court convicted former Kosovo President Hashim Thaci of war crimes committed during his country's war for independence from Serbia and sentenced him to 25 years in prison. https://www. npr.org/2026/09/16/g-s1-143560 /kosovo-former-president-war-crimes",
+            "url": "https://mastodon.social/@top_news/117281096989006945",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 16 Sep 2026 14:05:19 +0000",
             "matched_countries": [
-              "Bosznia-Hercegovina"
+              "Szerbia",
+              "Koszovó"
             ],
             "country_confidence": {
-              "Bosznia-Hercegovina": 3,
-              "Montenegró": 1
+              "Szerbia": 1,
+              "Koszovó": 1
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
               },
               {
                 "category": "eu_integration",
@@ -308,20 +189,86 @@
                 "weight": 6
               }
             ],
-            "geopolitical_score": 16,
-            "quality_score": 17,
-            "source_reliability": 2,
+            "geopolitical_score": 26,
+            "quality_score": 29,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 14,
-            "raw_engagement": 14,
-            "metrics": {
-              "likes": 12,
-              "reposts": 2,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           },
+          {
+            "title": "",
+            "text": "Kosovo's ex-President Thaci convicted of war crimes, sentenced to 25 years in prison https://www. npr.org/2026/09/16/g-s1-143560 /kosovo-former-president-war-crimes &gt; A European Union-backed court convicted former Kosovo President Hashim Thaci of war crimes committed during his country's war for independence from Serbia and sentenced him to 25 years in pr",
+            "url": "https://pouet.chapril.org/@dallo/117285459794749204",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Thu, 17 Sep 2026 08:34:51 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 1,
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 29,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bosznia-Hercegovina",
+      "social_signal": {
+        "score": 14,
+        "level": "low",
+        "scale": "0-60 risk index",
+        "mentions": 3,
+        "negative_hits": 0,
+        "positive_hits": 1,
+        "trusted_hits": 0,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 39,
+        "geopolitical_total": 30,
+        "source_counts": {
+          "reddit": 0,
+          "mastodon": 3,
+          "x": 0
+        },
+        "category_counts": {
+          "government_crisis": 2,
+          "foreign_influence": 1
+        },
+        "tag_counts": {
+          "bosnia": 3
+        },
+        "main_topic": "government_crisis",
+        "top_posts": [
           {
             "title": "",
             "text": "Agenzia Nova: Bosnia: incendio in casa di riposo a Tuzla, chiesta incriminazione per sette persone 11 set 17:50 - (Agenzia Nova) - La Procura cantonale di Tuzla, in Bosnia Erzegovina, ha presentato un atto d'accusa nei confronti di sette... (Seb) Bosnia: fire in nursing home in Tuzla, seven people indicted September 11 17:50 – (Agenzia Nova) – The Canton Pro",
@@ -419,28 +366,27 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 19,
-        "negative_hits": 14,
-        "positive_hits": 2,
+        "negative_hits": 15,
+        "positive_hits": 1,
         "trusted_hits": 7,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 451,
-        "geopolitical_total": 382,
+        "quality_total": 477,
+        "geopolitical_total": 406,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 18,
-          "x": 1
+          "mastodon": 19,
+          "x": 0
         },
         "category_counts": {
-          "government_crisis": 15,
-          "security": 3,
+          "government_crisis": 16,
+          "security": 2,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 2,
           "serbia": 6,
-          "kosovo": 10,
-          "Koszovó": 1
+          "kosovo": 11
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -662,37 +608,35 @@
         "trusted_hits": 0,
         "engagement_total": 1,
         "raw_engagement_total": 1,
-        "quality_total": 46,
-        "geopolitical_total": 41,
+        "quality_total": 40,
+        "geopolitical_total": 33,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 1,
-          "x": 2
+          "mastodon": 2,
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 1,
-          "security": 2
+          "security": 2,
+          "government_crisis": 1
         },
         "tag_counts": {
-          "montenegro": 1,
-          "Montenegró": 2
+          "montenegro": 2,
+          "Montenegró": 1
         },
         "main_topic": "security",
         "top_posts": [
           {
-            "title": "81% see corruption as widespread: Security warning dominates Berlin Process meeting WesternBalkans BerlinProcess RCC AmerKapetanovic OrganisedCrime Corruption RegionalSecurity Podg",
-            "text": "81% see corruption as widespread: Security warning dominates Berlin Process meeting WesternBalkans BerlinProcess RCC AmerKapetanovic OrganisedCrime Corruption RegionalSecurity Podgorica Montenegro EuropeanUnion SEESAC Security Tirana BalkanView",
-            "url": "https://x.com/i/web/status/2100270656961085449",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-09-16T17:08:40.000Z",
+            "title": "",
+            "text": "Agenzia Nova: Montenegro: polizia impedisce raduno per rendere omaggio a Mladic, diversi arresti 17 set 08:59 - (Agenzia Nova) - La polizia montenegrina ha impedito ieri sera a Podgorica un raduno organizzato per rendere omaggio all'ex... (Seb) Montenegro: police prevent gathering to pay homage to Mladic, several arrests September 17 08:59 – (Agenzia Nova) –",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117285166508106578",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Thu, 17 Sep 2026 07:20:15 +0000",
             "matched_countries": [
-              "Montenegró",
-              "Albánia"
+              "Montenegró"
             ],
             "country_confidence": {
-              "Montenegró": 5,
-              "Albánia": 4
+              "Montenegró": 8
             },
             "event_category": "security",
             "event_categories": [
@@ -700,26 +644,15 @@
                 "category": "security",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
               }
             ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           },
           {
             "title": "Productive days in Podgorica at the Western Balkans Biodiversity Media Workshop with Earth Journalism Network & ! 🇲🇪🇦🇱🇭🇷🇧🇦🇷🇸🇽🇰 From exploring Lake Skadar to tracking biodiversity l",
@@ -791,29 +724,31 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 15,
-        "level": "low",
+        "score": 32,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
-        "negative_hits": 1,
+        "mentions": 4,
+        "negative_hits": 2,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 8,
-        "raw_engagement_total": 8,
-        "quality_total": 39,
-        "geopolitical_total": 37,
+        "engagement_total": 17,
+        "raw_engagement_total": 17,
+        "quality_total": 69,
+        "geopolitical_total": 65,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 2
+          "x": 4
         },
         "category_counts": {
           "foreign_influence": 1,
-          "security": 1
+          "ethnic_tension": 1,
+          "security": 1,
+          "government_crisis": 1
         },
         "tag_counts": {
           "Montenegró": 1,
-          "Észak-Macedónia": 1
+          "Észak-Macedónia": 3
         },
         "main_topic": "foreign_influence",
         "top_posts": [
@@ -856,12 +791,52 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "🇺🇸‼️ | The Trump administration is redirecting $52 million in U.S. military financing from Slovakia, North Macedonia, Tunisia and Iraq to Panama, Peru, Ecuador and Colombia. The St",
-            "text": "🇺🇸‼️ | The Trump administration is redirecting $52 million in U.S. military financing from Slovakia, North Macedonia, Tunisia and Iraq to Panama, Peru, Ecuador and Colombia. The State Department notified Congress of the move as Washington places greater emphasis on security",
-            "url": "https://x.com/i/web/status/2100283632858333246",
+            "title": "🇪🇺🇲🇰🇧🇬 EU Enlargement Commissioner : North Macedonia Must Include Bulgarians to Move Forward",
+            "text": "🇪🇺🇲🇰🇧🇬 EU Enlargement Commissioner : North Macedonia Must Include Bulgarians to Move Forward",
+            "url": "https://x.com/i/web/status/2100510401955815628",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-16T18:00:14.000Z",
+            "seen_date": "2026-09-17T09:01:20.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "President Trump renamed the Monroe Doctrine the “Donroe Doctrine” after they grabbed Maduro. Now the State Department just showed what that means in dollars. $52 million in militar",
+            "text": "President Trump renamed the Monroe Doctrine the “Donroe Doctrine” after they grabbed Maduro. Now the State Department just showed what that means in dollars. $52 million in military aid is being pulled from Slovakia, North Macedonia, Tunisia, and Iraq. It’s going to Panama,",
+            "url": "https://x.com/i/web/status/2100480648565719093",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-17T07:03:06.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -872,7 +847,12 @@
             "event_categories": [
               {
                 "category": "security",
-                "hits": 2,
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
                 "weight": 9
               }
             ],
@@ -880,10 +860,45 @@
             "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 8,
-            "raw_engagement": 8,
+            "engagement": 15,
+            "raw_engagement": 15,
             "metrics": {
-              "likes": 7,
+              "likes": 10,
+              "reposts": 3,
+              "replies": 2,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "At the international conference “When AI Betrays Law and Justice” organized by Ss. Cyril and Methodius University, Skopje on 16 September 2026, Judit Varga, senior mentor of CEA, s",
+            "text": "At the international conference “When AI Betrays Law and Justice” organized by Ss. Cyril and Methodius University, Skopje on 16 September 2026, Judit Varga, senior mentor of CEA, spoke about AI, constitutional government and the importance of preserving human judgment.",
+            "url": "https://x.com/i/web/status/2100476924950708292",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-17T06:48:18.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
               "reposts": 1,
               "replies": 0,
               "quotes": 0
@@ -899,36 +914,77 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
-        "negative_hits": 15,
-        "positive_hits": 3,
-        "trusted_hits": 2,
-        "engagement_total": 47,
-        "raw_engagement_total": 47,
-        "quality_total": 418,
-        "geopolitical_total": 378,
+        "mentions": 13,
+        "negative_hits": 11,
+        "positive_hits": 2,
+        "trusted_hits": 1,
+        "engagement_total": 8,
+        "raw_engagement_total": 8,
+        "quality_total": 376,
+        "geopolitical_total": 343,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
-          "x": 8
+          "x": 4
         },
         "category_counts": {
-          "corruption_rule_of_law": 4,
+          "security": 4,
+          "corruption_rule_of_law": 3,
           "government_crisis": 3,
-          "protest": 3,
-          "security": 5,
-          "ethnic_tension": 2
+          "protest": 2,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 8,
           "kosovo": 1,
-          "Szerbia": 1,
-          "Koszovó": 2,
-          "Montenegró": 2,
-          "Albánia": 3
+          "Albánia": 4
         },
         "main_topic": "security",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Live morning coverage of protestors outside the court where protestors who were arrested on Monday are. There are also protestors massing outside the plenary session of the Albanian Parliament. Cops put up barriers at 8:30am before any protestors were even there, according to News24. Cops and \"eagle forces\" are armed and armored. 🔴 Nis dita e 110 e revoltës!",
+            "url": "https://mas.to/@meganL/117285325828663637",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Thu, 17 Sep 2026 08:00:46 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 45,
+            "quality_score": 48,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "LIVE: Supporters of Kosovo’s former President Thaci gather following guilty verdict Supporters of former Kosovo President Hashim Thaci gather outside a government building in Pristina after he was sentenced to 25 years in prison for war crimes committed as top commander of the ethnic Albanian Kosovo Liberation Army during the territory's violent break from S",
@@ -1050,12 +1106,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🚨🇳🇱Chaos in The Hague, Netherlands, as Albanian invaders attack police and jump on police cars. Albanian extremists are hurling bricks and sticks at Dutch police outside the Intern",
-            "text": "🚨🇳🇱Chaos in The Hague, Netherlands, as Albanian invaders attack police and jump on police cars. Albanian extremists are hurling bricks and sticks at Dutch police outside the International Court in The Hague. These people bring hell wherever they go!",
-            "url": "https://x.com/i/web/status/2100385870457037183",
+            "title": "Chaos in TheHague Netherlands as Albanian intruders attack the police and jump on police cars. Albanians throw bricks and sticks at Dutch police officers in front of the Internatio",
+            "text": "Chaos in TheHague Netherlands as Albanian intruders attack the police and jump on police cars. Albanians throw bricks and sticks at Dutch police officers in front of the International Court of Justice in The Hague.",
+            "url": "https://x.com/i/web/status/2100522190852464790",
             "source": "x",
             "tag": "Albánia",
-            "seen_date": "2026-09-17T00:46:29.000Z",
+            "seen_date": "2026-09-17T09:48:10.000Z",
             "matched_countries": [
               "Albánia"
             ],
@@ -1079,49 +1135,15 @@
             "quality_score": 30,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 20,
-            "raw_engagement": 20,
-            "metrics": {
-              "likes": 9,
-              "reposts": 8,
-              "replies": 2,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 109 of anti-corruption protest in Tirana, Albania. https://www. youtube.com/watch?v=xMn48bejtM8 # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest",
-            "url": "https://mas.to/@meganL/117282519747789140",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 16 Sep 2026 20:07:09 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
