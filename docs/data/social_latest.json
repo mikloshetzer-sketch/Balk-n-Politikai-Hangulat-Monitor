@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18 11:06 UTC",
+  "updated_at": "2026-09-18 15:33 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 10
+    "collected": 23
   },
   "countries": [
     {
@@ -21,35 +21,82 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 11,
+        "mentions": 17,
+        "negative_hits": 10,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 331,
-        "geopolitical_total": 293,
+        "trusted_hits": 2,
+        "engagement_total": 10,
+        "raw_engagement_total": 10,
+        "quality_total": 406,
+        "geopolitical_total": 360,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 11,
-          "x": 3
+          "mastodon": 12,
+          "x": 5
         },
         "category_counts": {
-          "government_crisis": 9,
+          "government_crisis": 11,
           "security": 3,
-          "corruption_rule_of_law": 1,
-          "ethnic_tension": 1
+          "ethnic_tension": 2,
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "balkans": 3,
-          "serbia": 4,
-          "kosovo": 3,
+          "serbia": 6,
+          "kosovo": 2,
           "bosnia": 1,
           "Szerbia": 1,
-          "Koszovó": 2
+          "Koszovó": 3,
+          "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "THE PEOPLE OF KOSOVO DEMAND JUSTICE, FAIRNESS AND ACCOUNTABILITY Today, thousands upon thousands of citizens protested against the decision of the Kosovo Specialist Chambers and it",
+            "text": "THE PEOPLE OF KOSOVO DEMAND JUSTICE, FAIRNESS AND ACCOUNTABILITY Today, thousands upon thousands of citizens protested against the decision of the Kosovo Specialist Chambers and its scandals surrounding the falsified witness, corruption and working with Serbian Secret Service",
+            "url": "https://x.com/i/web/status/2100960588314694128",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-18T14:50:12.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 35,
+            "quality_score": 36,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 6,
+            "raw_engagement": 6,
+            "metrics": {
+              "likes": 3,
+              "reposts": 2,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "🟢 Political Analysis | 5/10 🇷🇸 Political instability and elections in Serbia Aleksandar Vučić announced he will leave the presidency on September 24-25. Extraordinary parliamentary and presidential elections will be held in the country. # OSINT # NewsGroup # Serbia # Elections # Balkans",
@@ -117,47 +164,6 @@
             ],
             "geopolitical_score": 29,
             "quality_score": 32,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Former Kosovo President Hashim Thaci has been found guilty of war crimes including murder, torture and illegal detention. The judgment was for acts committed during the 1998-1999 war for independence from Serbia. But tens of thousands of citizens who see Thaci as a hero flooded the streets in protest of the tribunal’s ruling. Read more from @ dwenglish https",
-            "url": "https://flipboard.social/@NewsDesk/117282115704651654",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 16 Sep 2026 18:24:24 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Szerbia": 1,
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 31,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -247,31 +253,32 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 30,
-        "level": "medium",
+        "score": 41,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 0,
+        "mentions": 6,
+        "negative_hits": 1,
         "positive_hits": 1,
-        "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 108,
-        "geopolitical_total": 93,
+        "trusted_hits": 1,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 128,
+        "geopolitical_total": 109,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "security": 1,
           "ethnic_tension": 1,
-          "government_crisis": 2,
+          "government_crisis": 3,
           "foreign_influence": 1
         },
         "tag_counts": {
           "serbia": 2,
-          "bosnia": 3
+          "bosnia": 3,
+          "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -357,6 +364,48 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "The President of the European Commission, Ursula von der Leyen, will tour the Western Balkans (Albania, Kosovo, North Macedonia, Montenegro), skipping Belgrade & Sarajevo. The deci",
+            "text": "The President of the European Commission, Ursula von der Leyen, will tour the Western Balkans (Albania, Kosovo, North Macedonia, Montenegro), skipping Belgrade & Sarajevo. The decision follows outrage over the glorification and funeral of war criminal Ratko Mladić in Serbia. 🇪🇺",
+            "url": "https://x.com/i/web/status/2100959103103140354",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-09-18T14:44:18.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Észak-Macedónia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Szerbia": 5,
+              "Észak-Macedónia": 5,
+              "Bosznia-Hercegovina": 4,
+              "Koszovó": 1,
+              "Montenegró": 1,
+              "Albánia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 20,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 4,
+            "raw_engagement": 4,
+            "metrics": {
+              "likes": 3,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Agenzia Nova: Bosnia: incendio in casa di riposo a Tuzla, chiesta incriminazione per sette persone 11 set 17:50 - (Agenzia Nova) - La Procura cantonale di Tuzla, in Bosnia Erzegovina, ha presentato un atto d'accusa nei confronti di sette... (Seb) Bosnia: fire in nursing home in Tuzla, seven people indicted September 11 17:50 – (Agenzia Nova) – The Canton Pro",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117253277719139780",
@@ -413,35 +462,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Bosnia-Israele: presidente Snsd Dodik domani incontrera' Netanyahu a Tel Aviv 16 set 15:54 - (Agenzia Nova) - Il presidente dell'Alleanza dei socialdemocratici indipendenti di Bosnia Erzegovina (Snsd), Milorad Dodik,... (Seb) Bosnia-Israel: SNSD President Dodik will meet with Netanyahu in Tel Aviv tomorrow. September 16, 3:54 PM – (Agenzia Nova",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117281116451787134",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Wed, 16 Sep 2026 14:10:16 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 6
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -452,72 +472,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
-        "negative_hits": 13,
-        "positive_hits": 1,
+        "mentions": 12,
+        "negative_hits": 9,
+        "positive_hits": 0,
         "trusted_hits": 3,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 306,
-        "geopolitical_total": 263,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 259,
+        "geopolitical_total": 219,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 4
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 9,
+          "government_crisis": 7,
+          "protest": 2,
           "security": 2,
-          "protest": 4
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 2,
           "kosovo": 9,
-          "Koszovó": 4
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "",
-            "text": "Former Kosovo President Hashim Thaci has been found guilty of war crimes including murder, torture and illegal detention. The judgment was for acts committed during the 1998-1999 war for independence from Serbia. But tens of thousands of citizens who see Thaci as a hero flooded the streets in protest of the tribunal’s ruling. Read more from @ dwenglish https",
-            "url": "https://flipboard.social/@NewsDesk/117282115704651654",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 16 Sep 2026 18:24:24 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Szerbia": 1,
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 31,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Kosovo's ex-President Thaci convicted of war crimes, sentenced to 25 years in prison https://www. npr.org/2026/09/16/g-s1-143560 /kosovo-former-president-war-crimes &gt; A European Union-backed court convicted former Kosovo President Hashim Thaci of war crimes committed during his country's war for independence from Serbia and sentenced him to 25 years in pr",
@@ -662,6 +642,42 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "A special tribunal in The Hague sentenced Hashim Thaci, Kosovo's former president, to 25 years for war crimes: murder, illegal detention, torture. Three other KLA leaders were convicted alongside him, sentences from 13 to 25 years. Most victims were fellow Kosovar Albanians branded \"traitors,\" not enemy combatants. A rare case of a Western aligned former hea",
+            "url": "https://mastodon.social/@AutokratDaily/117291627441277197",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Fri, 18 Sep 2026 10:43:21 +0000",
+            "matched_countries": [
+              "Koszovó",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Koszovó": 2,
+              "Albánia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 24,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -787,62 +803,236 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 5,
-        "level": "low",
+        "score": 37,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 1,
-        "negative_hits": 0,
-        "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 9,
-        "raw_engagement_total": 9,
-        "quality_total": 19,
-        "geopolitical_total": 18,
+        "mentions": 6,
+        "negative_hits": 1,
+        "positive_hits": 4,
+        "trusted_hits": 3,
+        "engagement_total": 122,
+        "raw_engagement_total": 122,
+        "quality_total": 114,
+        "geopolitical_total": 99,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 1
+          "x": 6
         },
         "category_counts": {
-          "security": 1
+          "eu_integration": 1,
+          "government_crisis": 3,
+          "security": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 1
+          "Szerbia": 1,
+          "Montenegró": 3,
+          "Észak-Macedónia": 2
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "US redirects millions in security assistance away from Iraq Baghdad ( – The US State Department notified Congress on Tuesday that it is redirecting $52 million in foreign military ",
-            "text": "US redirects millions in security assistance away from Iraq Baghdad ( – The US State Department notified Congress on Tuesday that it is redirecting $52 million in foreign military financing away from Tunisia, Iraq, Slovakia, and North Macedonia. “Thank",
-            "url": "https://x.com/i/web/status/2100669887106408690",
+            "title": "🇲🇰🤝🇺🇸 Together with the delegation led by Prime Minister Hristijan Mickoski, we met with DFC Chief Development Officer Caroline Vik, to discuss opportunities to deepen our economic",
+            "text": "🇲🇰🤝🇺🇸 Together with the delegation led by Prime Minister Hristijan Mickoski, we met with DFC Chief Development Officer Caroline Vik, to discuss opportunities to deepen our economic partnership with the United States. 🔹 Focus on attracting new U.S. investments and advancing",
+            "url": "https://x.com/i/web/status/2100904478601797670",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-17T19:35:04.000Z",
+            "seen_date": "2026-09-18T11:07:15.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5
+              "Észak-Macedónia": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 2,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 27,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 17,
+            "raw_engagement": 17,
+            "metrics": {
+              "likes": 11,
+              "reposts": 2,
+              "replies": 3,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "The President of the European Commission, Ursula von der Leyen, will tour the Western Balkans (Albania, Kosovo, North Macedonia, Montenegro), skipping Belgrade & Sarajevo. The deci",
+            "text": "The President of the European Commission, Ursula von der Leyen, will tour the Western Balkans (Albania, Kosovo, North Macedonia, Montenegro), skipping Belgrade & Sarajevo. The decision follows outrage over the glorification and funeral of war criminal Ratko Mladić in Serbia. 🇪🇺",
+            "url": "https://x.com/i/web/status/2100959103103140354",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-09-18T14:44:18.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Észak-Macedónia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Szerbia": 5,
+              "Észak-Macedónia": 5,
+              "Bosznia-Hercegovina": 4,
+              "Koszovó": 1,
+              "Montenegró": 1,
+              "Albánia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 20,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 4,
+            "raw_engagement": 4,
+            "metrics": {
+              "likes": 3,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Dimitrovski: EU Integration Remains a Strategic Goal, Including Bulgarians in the Constitution Is Not a Problem ZoranDimitrovski NorthMacedonia Macedonia EU",
+            "text": "Dimitrovski: EU Integration Remains a Strategic Goal, Including Bulgarians in the Constitution Is Not a Problem ZoranDimitrovski NorthMacedonia Macedonia EU",
+            "url": "https://x.com/i/web/status/2100929395401572453",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-18T12:46:15.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 18,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "My position for the Balkans is clear: I support a common European and transatlantic future based on EU, NATO, Euro, Schengen and WTO integration. I support that path for Albania, B",
+            "text": "My position for the Balkans is clear: I support a common European and transatlantic future based on EU, NATO, Euro, Schengen and WTO integration. I support that path for Albania, Bosnia and Herzegovina, Kosovo, Montenegro and North Macedonia. I also support deeper integration of",
+            "url": "https://x.com/i/web/status/2100922677489729712",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-09-18T12:19:34.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Bosznia-Hercegovina": 2,
+              "Koszovó": 1,
+              "Montenegró": 1,
+              "Albánia": 1
             },
             "event_category": "security",
             "event_categories": [
               {
                 "category": "security",
-                "hits": 2,
+                "hits": 1,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 9,
-            "raw_engagement": 9,
+            "geopolitical_score": 14,
+            "quality_score": 18,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 12,
+            "raw_engagement": 12,
             "metrics": {
               "likes": 7,
-              "reposts": 2,
-              "replies": 0,
+              "reposts": 0,
+              "replies": 5,
               "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "European Commission President Ursula von der Leyen will visit Kosovo, Albania, Montenegro, and North Macedonia on her tour of the Western Balkans countries.",
+            "text": "European Commission President Ursula von der Leyen will visit Kosovo, Albania, Montenegro, and North Macedonia on her tour of the Western Balkans countries.",
+            "url": "https://x.com/i/web/status/2100931446651171224",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-09-18T12:54:24.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Koszovó": 1,
+              "Montenegró": 1,
+              "Albánia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 17,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 89,
+            "raw_engagement": 89,
+            "metrics": {
+              "likes": 76,
+              "reposts": 7,
+              "replies": 5,
+              "quotes": 1
             },
             "quality": "x_api_filtered"
           }
@@ -855,29 +1045,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
+        "mentions": 17,
         "negative_hits": 12,
-        "positive_hits": 1,
-        "trusted_hits": 0,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 363,
-        "geopolitical_total": 329,
+        "positive_hits": 2,
+        "trusted_hits": 1,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 444,
+        "geopolitical_total": 402,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 1
+          "x": 6
         },
         "category_counts": {
-          "protest": 3,
+          "protest": 4,
           "corruption_rule_of_law": 3,
-          "security": 4,
-          "government_crisis": 2
+          "security": 5,
+          "government_crisis": 1,
+          "eu_integration": 1,
+          "ethnic_tension": 3
         },
         "tag_counts": {
           "balkans": 10,
           "kosovo": 1,
-          "Koszovó": 1
+          "Szerbia": 1,
+          "Koszovó": 2,
+          "Albánia": 3
         },
         "main_topic": "security",
         "top_posts": [
