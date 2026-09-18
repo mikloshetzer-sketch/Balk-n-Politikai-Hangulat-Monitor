@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18 10:19 UTC",
+  "updated_at": "2026-09-18 11:06 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 7
+    "collected": 10
   },
   "countries": [
     {
@@ -21,73 +21,35 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
-        "negative_hits": 9,
-        "positive_hits": 3,
-        "trusted_hits": 2,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 377,
-        "geopolitical_total": 336,
+        "mentions": 14,
+        "negative_hits": 11,
+        "positive_hits": 1,
+        "trusted_hits": 1,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 331,
+        "geopolitical_total": 293,
         "source_counts": {
-          "reddit": 1,
+          "reddit": 0,
           "mastodon": 11,
           "x": 3
         },
         "category_counts": {
-          "government_crisis": 10,
-          "security": 5
+          "government_crisis": 9,
+          "security": 3,
+          "corruption_rule_of_law": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 3,
-          "serbia": 5,
+          "serbia": 4,
           "kosovo": 3,
           "bosnia": 1,
-          "Szerbia": 2,
-          "Albánia": 1
+          "Szerbia": 1,
+          "Koszovó": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "The candidate for U.S. Ambassador to Belgrade, Michael Young, has said that if the Senate greenlights his appointment, he will work on reducing Russia's and China's influence in Se",
-            "text": "The candidate for U.S. Ambassador to Belgrade, Michael Young, has said that if the Senate greenlights his appointment, he will work on reducing Russia's and China's influence in Serbia and on deepening cooperation in the area of defense and security.",
-            "url": "https://x.com/i/web/status/2100887994764820981",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-18T10:01:45.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 35,
-            "quality_score": 36,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "🟢 Political Analysis | 5/10 🇷🇸 Political instability and elections in Serbia Aleksandar Vučić announced he will leave the presidency on September 24-25. Extraordinary parliamentary and presidential elections will be held in the country. # OSINT # NewsGroup # Serbia # Elections # Balkans",
@@ -232,6 +194,47 @@
             ],
             "geopolitical_score": 27,
             "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Kosovo's ex-President Thaci convicted of war crimes, sentenced to 25 years in prison https://www. npr.org/2026/09/16/g-s1-143560 /kosovo-former-president-war-crimes &gt; A European Union-backed court convicted former Kosovo President Hashim Thaci of war crimes committed during his country's war for independence from Serbia and sentenced him to 25 years in pr",
+            "url": "https://pouet.chapril.org/@dallo/117285459794749204",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Thu, 17 Sep 2026 08:34:51 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 1,
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 29,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -449,71 +452,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 11,
-        "positive_hits": 0,
-        "trusted_hits": 4,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 319,
-        "geopolitical_total": 276,
+        "mentions": 15,
+        "negative_hits": 13,
+        "positive_hits": 1,
+        "trusted_hits": 3,
+        "engagement_total": 6,
+        "raw_engagement_total": 6,
+        "quality_total": 306,
+        "geopolitical_total": 263,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 2
+          "x": 4
         },
         "category_counts": {
           "government_crisis": 9,
-          "protest": 2,
-          "security": 2
+          "security": 2,
+          "protest": 4
         },
         "tag_counts": {
           "balkans": 2,
           "kosovo": 9,
-          "Koszovó": 2
+          "Koszovó": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "",
-            "text": "# WarCriminals # Kosovo \"Kosovo's former President Thaçi convicted of war crimes at Hague court Hashim Thaçi, who served as both president and prime minister, was found guilty of murder, torture, cruel treatment and arbitrary detention by the Kosovo Specialist Chambers, as tens of thousands who had gathered in Prishtina expecting his acquittal watched procee",
-            "url": "https://kolektiva.social/@LevZadov/117282009089427743",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 16 Sep 2026 17:57:17 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5,
-              "Szerbia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 49,
-            "quality_score": 54,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Former Kosovo President Hashim Thaci has been found guilty of war crimes including murder, torture and illegal detention. The judgment was for acts committed during the 1998-1999 war for independence from Serbia. But tens of thousands of citizens who see Thaci as a hero flooded the streets in protest of the tribunal’s ruling. Read more from @ dwenglish https",
@@ -660,6 +623,40 @@
             ],
             "geopolitical_score": 24,
             "quality_score": 29,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "E nel processo non è rientrato il traffico d'organi. L'ex presidente del # Kosovo # HashimThaçi condannato per crimini di guerra all'Aia, scontri tra manifestanti e polizia | Euronews https:// it.euronews.com/2026/09/16/lex -presidente-del-kosovo-thaci-condannato-per-crimini-di-guerra-allaia @ attualita",
+            "url": "https://mastodon.uno/@fucinafibonacci/117286272713035439",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Thu, 17 Sep 2026 12:01:35 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 27,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -858,30 +855,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 11,
+        "mentions": 12,
+        "negative_hits": 12,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 338,
-        "geopolitical_total": 307,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 363,
+        "geopolitical_total": 329,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 10,
+          "mastodon": 11,
           "x": 1
         },
         "category_counts": {
-          "protest": 4,
+          "protest": 3,
           "corruption_rule_of_law": 3,
-          "security": 3,
-          "government_crisis": 1
+          "security": 4,
+          "government_crisis": 2
         },
         "tag_counts": {
           "balkans": 10,
-          "Albánia": 1
+          "kosovo": 1,
+          "Koszovó": 1
         },
-        "main_topic": "protest",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
