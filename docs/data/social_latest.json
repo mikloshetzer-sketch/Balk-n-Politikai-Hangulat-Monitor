@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18 20:52 UTC",
+  "updated_at": "2026-09-19 02:24 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 25
+    "collected": 11
   },
   "countries": [
     {
@@ -21,33 +21,73 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
-        "negative_hits": 9,
-        "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 10,
-        "raw_engagement_total": 10,
-        "quality_total": 292,
-        "geopolitical_total": 254,
+        "mentions": 14,
+        "negative_hits": 7,
+        "positive_hits": 2,
+        "trusted_hits": 4,
+        "engagement_total": 22,
+        "raw_engagement_total": 22,
+        "quality_total": 324,
+        "geopolitical_total": 278,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 9,
-          "x": 6
+          "mastodon": 11,
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 10,
-          "security": 3,
-          "corruption_rule_of_law": 2
+          "government_crisis": 8,
+          "foreign_influence": 1,
+          "security": 5
         },
         "tag_counts": {
           "balkans": 2,
-          "serbia": 5,
+          "serbia": 7,
           "kosovo": 2,
-          "Szerbia": 5,
+          "Szerbia": 2,
           "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "The next Congress should make it a priority to advance this important legislation because it certifies the Vucic regime’s advanced security entanglements with China, Russia, and Ir",
+            "text": "The next Congress should make it a priority to advance this important legislation because it certifies the Vucic regime’s advanced security entanglements with China, Russia, and Iran, while also buttressing U.S. commitments to regional stability, including the Dayton Agreement.",
+            "url": "https://x.com/i/web/status/2101086137666429039",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-18T23:09:06.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 35,
+            "quality_score": 36,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 11,
+            "raw_engagement": 11,
+            "metrics": {
+              "likes": 11,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Agenzia Nova: Usa: candidati ambasciatori in Serbia e Bosnia, focus su sicurezza e integrita' territoriale 18 set 08:41 - (Agenzia Nova) - Rafforzare la cooperazione nella sicurezza e nella difesa con la Serbia e sostenere la sovranita' e l'integrita'... (Seb) Use: nominate ambassadors in Serbia and Bosnia, focusing on security and territorial integrity. Sep",
@@ -127,6 +167,40 @@
           },
           {
             "title": "",
+            "text": "⚠️🇷🇸Beijing spyware dogs? Serbia Reveals Armed Robot Dogs Days After Chinese Humanoid Factory Opening (more) http://www. rferl.org/a/33857596.html # Ukraine # Press # Media # News # Serbia # Headlines # russiaUkraineWar # 12yrInvasionOfUkraine # RussiansAreBabyKillers",
+            "url": "https://mastodon.online/@SocraticEthics/117294653497239027",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 18 Sep 2026 23:32:55 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 24,
+            "quality_score": 29,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "\"A # Hague court convicts # Kosovo ’s former President Thaci of war crimes and sentences him to 25 years.\" https:// apnews.com/article/thaci-kosov o-serbia-war-crimes-0b24b81d6e1ca8f01d8b8b54bb465ee9",
             "url": "https://theforkiverse.com/@Jazone/117285314273890161",
             "source": "mastodon",
@@ -160,75 +234,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "❗️🇺🇸 The exact wording of the bipartisan \"SRBIJA Act\" bill introduced in the U.S. Congress is now available: • Congress finds that Serbia is backsliding regarding the rule of law, ",
-            "text": "❗️🇺🇸 The exact wording of the bipartisan \"SRBIJA Act\" bill introduced in the U.S. Congress is now available: • Congress finds that Serbia is backsliding regarding the rule of law, judicial independence, media freedom, and the fight against corruption, and that the Serbian",
-            "url": "https://x.com/i/web/status/2101043428943647052",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-18T20:19:23.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 6
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 3,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Domani: La Serbia espelle Massimo Moratti, il corrispondente di Obct: «Una tendenza preoccupante» «Una forma di molestia amministrativa» che ha l’obiettivo di intimidire, come ritorsione per le attività e il lavoro che il ricercatore ha portato avanti nel paese a sostegno dei diritti umani e della libertà di stampa, affermano le organizzazioni. Secondo le au",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117292716568122015",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Fri, 18 Sep 2026 15:20:20 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 24,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -236,32 +241,31 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 57,
+        "score": 50,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
+        "mentions": 7,
         "negative_hits": 2,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 43,
-        "raw_engagement_total": 43,
-        "quality_total": 164,
-        "geopolitical_total": 143,
+        "engagement_total": 8,
+        "raw_engagement_total": 8,
+        "quality_total": 153,
+        "geopolitical_total": 133,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
           "government_crisis": 4,
           "security": 2,
-          "ethnic_tension": 2
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "serbia": 3,
           "bosnia": 2,
-          "Montenegró": 2,
-          "Albánia": 1
+          "Montenegró": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -468,122 +472,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 12,
+        "mentions": 11,
+        "negative_hits": 9,
         "positive_hits": 0,
         "trusted_hits": 3,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 317,
-        "geopolitical_total": 275,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 237,
+        "geopolitical_total": 200,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 11,
-          "x": 3
+          "mastodon": 10,
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 9,
-          "protest": 3,
+          "government_crisis": 7,
+          "protest": 2,
           "security": 2
         },
         "tag_counts": {
           "balkans": 2,
-          "kosovo": 9,
-          "Szerbia": 1,
-          "Koszovó": 2
+          "kosovo": 8,
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "Protests Erupt Again in Kosovo Following Conviction of Former President Thaci+++ KOSOVO/PRISTINA: Thousands of people in Kosovo have once again protested the conviction of former P",
-            "text": "Protests Erupt Again in Kosovo Following Conviction of Former President Thaci+++ KOSOVO/PRISTINA: Thousands of people in Kosovo have once again protested the conviction of former President Thaci on war crimes charges. Led by veterans of the Kosovo Liberation Army (UCK), the",
-            "url": "https://x.com/i/web/status/2101042992740221211",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-18T20:17:39.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 36,
-            "quality_score": 37,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Thousands rally in Pristina against the Hague war crimes verdict that sentenced former Kosovo president Hashim Thaci to 25 years in prison.",
-            "text": "Thousands rally in Pristina against the Hague war crimes verdict that sentenced former Kosovo president Hashim Thaci to 25 years in prison.",
-            "url": "https://x.com/i/web/status/2101049474722283855",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-18T20:43:25.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Kosovo's ex-President Thaci convicted of war crimes, sentenced to 25 years in prison https://www. npr.org/2026/09/16/g-s1-143560 /kosovo-former-president-war-crimes &gt; A European Union-backed court convicted former Kosovo President Hashim Thaci of war crimes committed during his country's war for independence from Serbia and sentenced him to 25 years in pr",
@@ -691,6 +604,76 @@
             "quality_score": 29,
             "source_reliability": 5,
             "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "E nel processo non è rientrato il traffico d'organi. L'ex presidente del # Kosovo # HashimThaçi condannato per crimini di guerra all'Aia, scontri tra manifestanti e polizia | Euronews https:// it.euronews.com/2026/09/16/lex -presidente-del-kosovo-thaci-condannato-per-crimini-di-guerra-allaia @ attualita",
+            "url": "https://mastodon.uno/@fucinafibonacci/117286272713035439",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Thu, 17 Sep 2026 12:01:35 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 27,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "A special tribunal in The Hague sentenced Hashim Thaci, Kosovo's former president, to 25 years for war crimes: murder, illegal detention, torture. Three other KLA leaders were convicted alongside him, sentences from 13 to 25 years. Most victims were fellow Kosovar Albanians branded \"traitors,\" not enemy combatants. A rare case of a Western aligned former hea",
+            "url": "https://mastodon.social/@AutokratDaily/117291627441277197",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Fri, 18 Sep 2026 10:43:21 +0000",
+            "matched_countries": [
+              "Koszovó",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Koszovó": 2,
+              "Albánia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 24,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -819,30 +802,29 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 37,
+        "score": 31,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 4,
         "negative_hits": 2,
-        "positive_hits": 3,
+        "positive_hits": 2,
         "trusted_hits": 2,
-        "engagement_total": 131,
-        "raw_engagement_total": 157,
-        "quality_total": 106,
-        "geopolitical_total": 95,
+        "engagement_total": 132,
+        "raw_engagement_total": 167,
+        "quality_total": 88,
+        "geopolitical_total": 78,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 5
+          "x": 4
         },
         "category_counts": {
           "eu_integration": 1,
-          "government_crisis": 3,
-          "ethnic_tension": 1
+          "government_crisis": 3
         },
         "tag_counts": {
           "Montenegró": 2,
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -881,10 +863,10 @@
             "quality_score": 37,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
+            "engagement": 4,
+            "raw_engagement": 4,
             "metrics": {
-              "likes": 2,
+              "likes": 3,
               "reposts": 1,
               "replies": 0,
               "quotes": 0
@@ -934,46 +916,6 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Dimitrovski: EU Integration Remains a Strategic Goal, Including Bulgarians in the Constitution Is Not a Problem ZoranDimitrovski NorthMacedonia Macedonia EU",
-            "text": "Dimitrovski: EU Integration Remains a Strategic Goal, Including Bulgarians in the Constitution Is Not a Problem ZoranDimitrovski NorthMacedonia Macedonia EU",
-            "url": "https://x.com/i/web/status/2100929395401572453",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-18T12:46:15.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 4
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 18,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "European Commission President Ursula von der Leyen will visit Kosovo, Albania, Montenegro, and North Macedonia on her tour of the Western Balkans countries.",
             "text": "European Commission President Ursula von der Leyen will visit Kosovo, Albania, Montenegro, and North Macedonia on her tour of the Western Balkans countries.",
             "url": "https://x.com/i/web/status/2100931446651171224",
@@ -1002,12 +944,12 @@
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 120,
-            "raw_engagement": 146,
+            "raw_engagement": 155,
             "metrics": {
-              "likes": 123,
-              "reposts": 11,
-              "replies": 8,
-              "quotes": 4
+              "likes": 129,
+              "reposts": 12,
+              "replies": 9,
+              "quotes": 5
             },
             "quality": "x_api_filtered"
           },
@@ -1060,32 +1002,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
+        "mentions": 14,
         "negative_hits": 12,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 461,
-        "geopolitical_total": 418,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 451,
+        "geopolitical_total": 409,
         "source_counts": {
           "reddit": 0,
           "mastodon": 13,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "corruption_rule_of_law": 4,
           "protest": 3,
           "security": 5,
-          "government_crisis": 2,
+          "government_crisis": 1,
           "eu_integration": 1
         },
         "tag_counts": {
           "balkans": 11,
           "kosovo": 1,
           "albania": 1,
-          "Montenegró": 1,
-          "Albánia": 1
+          "Montenegró": 1
         },
         "main_topic": "security",
         "top_posts": [
