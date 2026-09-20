@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20 15:59 UTC",
+  "updated_at": "2026-09-20 20:04 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 18
+    "collected": 23
   },
   "countries": [
     {
@@ -21,31 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
+        "mentions": 15,
         "negative_hits": 7,
-        "positive_hits": 3,
-        "trusted_hits": 4,
-        "engagement_total": 137,
-        "raw_engagement_total": 179,
-        "quality_total": 318,
-        "geopolitical_total": 268,
+        "positive_hits": 2,
+        "trusted_hits": 5,
+        "engagement_total": 121,
+        "raw_engagement_total": 129,
+        "quality_total": 311,
+        "geopolitical_total": 261,
         "source_counts": {
           "reddit": 0,
           "mastodon": 12,
-          "x": 5
+          "x": 3
         },
         "category_counts": {
-          "protest": 1,
-          "government_crisis": 10,
+          "protest": 2,
+          "government_crisis": 7,
           "foreign_influence": 1,
-          "security": 5
+          "security": 4,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 3,
           "serbia": 6,
           "kosovo": 2,
           "bosnia": 1,
-          "Szerbia": 4,
+          "Szerbia": 1,
+          "Koszovó": 1,
           "Montenegró": 1
         },
         "main_topic": "government_crisis",
@@ -199,39 +201,34 @@
           },
           {
             "title": "",
-            "text": "⚡️🇺🇦Carpathian Economic Forum unveils 95 investment projects worth EUR 40B (more) https://www. ukrinform.net/rubric-economy/4 165617-carpathian-economic-forum-unveils-95-investment-projects-worth-eur-40b.html # Ukraine # Press # Kyiv # Odesa # Lviv # Romania # Poland # Hungary # Slovakia # Austria # Czechia # Kharkiv # Kherson # Berlin # Brussels # Serbia # ",
-            "url": "https://mastodon.online/@SocraticEthics/117295271764185745",
+            "text": "Chiunque può avere un'opinione su # NovakDjokovic . E sono più quelle negative che le positive. Ma certo non si può accusarlo di essere un ruffiano. Quanti, ad esempio, avrebbero solidarizzato con le proteste degli studenti, consci di attirarsi l'odio di una gran parte del proprio Paese? Varrebbe la pena vederlo anche solo per conoscere un pezzo di cultura d",
+            "url": "https://mastodon.uno/@fucinafibonacci/117304760211011583",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Sat, 19 Sep 2026 02:10:09 +0000",
+            "seen_date": "Sun, 20 Sep 2026 18:23:12 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
               "Szerbia": 1
             },
-            "event_category": "foreign_influence",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "foreign_influence",
+                "category": "protest",
                 "hits": 1,
                 "weight": 8
               },
               {
-                "category": "eu_integration",
+                "category": "foreign_influence",
                 "hits": 1,
-                "weight": 6
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
+                "weight": 8
               }
             ],
-            "geopolitical_score": 22,
-            "quality_score": 25,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "geopolitical_score": 23,
+            "quality_score": 28,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -242,31 +239,29 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 38,
+        "score": 24,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 4,
         "negative_hits": 0,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 129,
-        "geopolitical_total": 110,
+        "trusted_hits": 0,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 94,
+        "geopolitical_total": 82,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 5,
-          "x": 1
+          "mastodon": 4,
+          "x": 0
         },
         "category_counts": {
-          "government_crisis": 3,
-          "security": 2,
-          "ethnic_tension": 1
+          "security": 1,
+          "ethnic_tension": 1,
+          "government_crisis": 2
         },
         "tag_counts": {
-          "serbia": 1,
-          "bosnia": 4,
-          "Szerbia": 1
+          "bosnia": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -352,47 +347,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "My interview with Ika Ferrer Gotić on Newsmax Balkans is now online! We had a heated and open debate on the future of the Balkans, Bosnia and Herzegovina, Serbia, NATO, EU enlargem",
-            "text": "My interview with Ika Ferrer Gotić on Newsmax Balkans is now online! We had a heated and open debate on the future of the Balkans, Bosnia and Herzegovina, Serbia, NATO, EU enlargement, Ukraine, Israel and Gaza. I defend my political proposals openly, including a federal future",
-            "url": "https://x.com/i/web/status/2101681142038454563",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-20T14:33:26.000Z",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 2,
-              "Szerbia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 23,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 2,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Agenzia Nova: Bosnia: Ue, iniziative unilaterali su assetto Paese sono contrarie ad accordi di Dayton 15 set 11:36 - (Agenzia Nova) - Gli appelli unilaterali a modificare l'assetto costituzionale della Bosnia Erzegovina sono contrari agli accordi... (Seb) Bosnia: EU, unilateral initiatives on country’s structure are contrary to Dayton agreements September 15",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117274510379732650",
@@ -423,18 +377,16 @@
           },
           {
             "title": "",
-            "text": "EU President to Skip Serbia and Bosnia on Balkan Tour https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/18/eu-president-to-skip-serbia-and-bosnia-on-balkan-tour/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/18/eu-president-to-skip-serbia-and-bosnia-on-balkan-tour/bi/",
+            "text": "Agenzia Nova: Bosnia-Israele: presidente Snsd Dodik domani incontrera' Netanyahu a Tel Aviv 16 set 15:54 - (Agenzia Nova) - Il presidente dell'Alleanza dei socialdemocratici indipendenti di Bosnia Erzegovina (Snsd), Milorad Dodik,... (Seb) Bosnia-Israel: SNSD President Dodik will meet with Netanyahu in Tel Aviv tomorrow. September 16, 3:54 PM – (Agenzia Nova",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117281116451787134",
             "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Fri, 18 Sep 2026 15:40:26 +0000",
+            "tag": "bosnia",
+            "seen_date": "Wed, 16 Sep 2026 14:10:16 +0000",
             "matched_countries": [
-              "Szerbia",
               "Bosznia-Hercegovina"
             ],
             "country_confidence": {
-              "Szerbia": 1,
-              "Bosznia-Hercegovina": 1
+              "Bosznia-Hercegovina": 6
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -465,10 +417,10 @@
         "negative_hits": 9,
         "positive_hits": 0,
         "trusted_hits": 2,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 220,
-        "geopolitical_total": 187,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 229,
+        "geopolitical_total": 196,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
@@ -476,13 +428,14 @@
         },
         "category_counts": {
           "government_crisis": 5,
-          "protest": 3,
-          "security": 3
+          "protest": 2,
+          "security": 4
         },
         "tag_counts": {
           "balkans": 2,
           "kosovo": 7,
-          "Montenegró": 2
+          "Koszovó": 1,
+          "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -675,29 +628,31 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 32,
+        "score": 33,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 6,
         "negative_hits": 1,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 60,
-        "geopolitical_total": 47,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 74,
+        "geopolitical_total": 60,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "protest": 1,
           "security": 3,
-          "government_crisis": 1
+          "government_crisis": 1,
+          "eu_integration": 1
         },
         "tag_counts": {
           "montenegro": 4,
+          "Montenegró": 1,
           "Albánia": 1
         },
         "main_topic": "security",
@@ -730,6 +685,41 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "“Postponed”: Montenegro’s EU Integration Process Faces Delay as Five States Call for a Pause Montenegro EuropeanUnion EUEnlargement EUIntegration Podgorica WesternBalkans Croatia N",
+            "text": "“Postponed”: Montenegro’s EU Integration Process Faces Delay as Five States Call for a Pause Montenegro EuropeanUnion EUEnlargement EUIntegration Podgorica WesternBalkans Croatia Netherlands EUAccession MilojkoSpajic",
+            "url": "https://x.com/i/web/status/2101721047267426399",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-09-20T17:12:00.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 5
+            },
+            "event_category": "eu_integration",
+            "event_categories": [
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 14,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 4,
+            "raw_engagement": 4,
+            "metrics": {
+              "likes": 1,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 2
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -817,42 +807,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "I built a web presence studio for Montenegro’s local businesses. It creates credible sites in Montenegrin, English, and Albanian, plus local SEO, hosting, security, and maintenance",
-            "text": "I built a web presence studio for Montenegro’s local businesses. It creates credible sites in Montenegrin, English, and Albanian, plus local SEO, hosting, security, and maintenance—so good work gets found, understood, and chosen before the season starts.",
-            "url": "https://x.com/i/web/status/2101694632228999537",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-09-20T15:27:02.000Z",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 4,
-              "Albánia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -860,27 +814,28 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 35,
-        "level": "medium",
+        "score": 43,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 5,
         "negative_hits": 2,
         "positive_hits": 2,
         "trusted_hits": 2,
-        "engagement_total": 101,
-        "raw_engagement_total": 101,
-        "quality_total": 96,
-        "geopolitical_total": 86,
+        "engagement_total": 134,
+        "raw_engagement_total": 134,
+        "quality_total": 115,
+        "geopolitical_total": 104,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 4
+          "x": 5
         },
         "category_counts": {
-          "security": 2,
+          "security": 3,
           "ethnic_tension": 2
         },
         "tag_counts": {
+          "Szerbia": 1,
           "Észak-Macedónia": 4
         },
         "main_topic": "security",
@@ -961,11 +916,47 @@
             "quality_score": 28,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 8,
-            "raw_engagement": 8,
+            "engagement": 20,
+            "raw_engagement": 20,
             "metrics": {
-              "likes": 6,
-              "reposts": 2,
+              "likes": 17,
+              "reposts": 3,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Between 15th and 30th of September 1918, Salonica front was breached by joint offensive of Serbian and Allied troops. Some of harshest combat happened on Kajmakčalan, the very bord",
+            "text": "Between 15th and 30th of September 1918, Salonica front was breached by joint offensive of Serbian and Allied troops. Some of harshest combat happened on Kajmakčalan, the very border of Greece and North Macedonia where old trench lines can be seen to this day.",
+            "url": "https://x.com/i/web/status/2101760089388392457",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-20T19:47:08.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 2,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
@@ -1033,11 +1024,11 @@
             "quality_score": 12,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 92,
-            "raw_engagement": 92,
+            "engagement": 111,
+            "raw_engagement": 111,
             "metrics": {
-              "likes": 70,
-              "reposts": 5,
+              "likes": 87,
+              "reposts": 7,
               "replies": 14,
               "quotes": 3
             },
@@ -1052,30 +1043,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 20,
-        "negative_hits": 16,
-        "positive_hits": 2,
-        "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 573,
-        "geopolitical_total": 515,
+        "mentions": 23,
+        "negative_hits": 20,
+        "positive_hits": 4,
+        "trusted_hits": 3,
+        "engagement_total": 15,
+        "raw_engagement_total": 15,
+        "quality_total": 698,
+        "geopolitical_total": 632,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 17,
-          "x": 3
+          "mastodon": 18,
+          "x": 5
         },
         "category_counts": {
-          "corruption_rule_of_law": 6,
-          "protest": 5,
-          "security": 6,
-          "government_crisis": 3
+          "corruption_rule_of_law": 8,
+          "protest": 6,
+          "security": 7,
+          "government_crisis": 2
         },
         "tag_counts": {
-          "balkans": 11,
+          "balkans": 12,
           "kosovo": 1,
           "albania": 5,
-          "Albánia": 3
+          "Szerbia": 3,
+          "Albánia": 2
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -1117,6 +1109,43 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Creating joint military units between the Albanian Armed Forces and the Kosovo Security Force (KSF) should be our ultimate goal. A shared defense strategy helps counter regional in",
+            "text": "Creating joint military units between the Albanian Armed Forces and the Kosovo Security Force (KSF) should be our ultimate goal. A shared defense strategy helps counter regional instability and security risks from Serbia",
+            "url": "https://x.com/i/web/status/2101759432187072603",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-20T19:44:32.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 2,
+              "Szerbia": 1,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 5,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 49,
+            "quality_score": 50,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -1239,46 +1268,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "The chairman of the Parliamentary Group of the Democratic Party, Gazment Bardhi, claims that Prime Minister Edi Rama met with Ergys Agasi before the latter was arrested, at a time ",
-            "text": "The chairman of the Parliamentary Group of the Democratic Party, Gazment Bardhi, claims that Prime Minister Edi Rama met with Ergys Agasi before the latter was arrested, at a time when he was wanted by the justice authorities and police.",
-            "url": "https://x.com/i/web/status/2101690554031518098",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-09-20T15:10:50.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 30,
-            "quality_score": 31,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
