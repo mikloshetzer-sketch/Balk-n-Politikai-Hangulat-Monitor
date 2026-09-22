@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22 10:40 UTC",
+  "updated_at": "2026-09-22 11:27 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 15
+    "collected": 16
   },
   "countries": [
     {
@@ -23,12 +23,12 @@
         "scale": "0-60 risk index",
         "mentions": 12,
         "negative_hits": 5,
-        "positive_hits": 2,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 28,
-        "raw_engagement_total": 28,
-        "quality_total": 211,
-        "geopolitical_total": 187,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 217,
+        "geopolitical_total": 193,
         "source_counts": {
           "reddit": 1,
           "mastodon": 7,
@@ -37,9 +37,8 @@
         "category_counts": {
           "protest": 2,
           "government_crisis": 7,
-          "security": 1,
-          "eu_integration": 1,
-          "ethnic_tension": 1
+          "security": 2,
+          "eu_integration": 1
         },
         "tag_counts": {
           "balkans": 3,
@@ -128,6 +127,46 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Members of the Serbian Armed Forces took first place in the overall team standings at a military shooting championship held at Camp Perry in the United States from September 17 to ",
+            "text": "Members of the Serbian Armed Forces took first place in the overall team standings at a military shooting championship held at Camp Perry in the United States from September 17 to 20. The competition was organised by the Ohio National Guard. 🇷🇸🇺🇸 Serbia and the Serbian Armed",
+            "url": "https://x.com/i/web/status/2102347379580059668",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-22T10:40:49.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 27,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Hashim Thaçi, former Kosovo president, is sentenced to 25 years for war crimes. Kosovo’s former president Hashim Thaçi was sentenced to 25 years by a tribunal in The Hague on Wednesday for war crimes, the court said in a long-awaited verdict likely to spark outrage in the Balkan country. https:// mediafaro.org/article/20260916 -hashim-thaci-former-kosovo-pre",
             "url": "https://mastodon.mediafaro.org/@mf_newsdigest/117281580817410194",
@@ -196,47 +235,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Reality check for those claiming Kosovo is “ independent country:” Kosovo remains Serbian territory under international law. UNSCR 1244 is still in force. Recognition by Washington",
-            "text": "Reality check for those claiming Kosovo is “ independent country:” Kosovo remains Serbian territory under international law. UNSCR 1244 is still in force. Recognition by Washington is not a substitute for a Security Council settlement. What actually happened on the ground:",
-            "url": "https://x.com/i/web/status/2102336039973179837",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-22T09:55:46.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 28,
-            "raw_engagement": 28,
-            "metrics": {
-              "likes": 23,
-              "reposts": 5,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -448,28 +446,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 7,
-        "positive_hits": 2,
+        "mentions": 12,
+        "negative_hits": 8,
+        "positive_hits": 3,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 200,
-        "geopolitical_total": 172,
+        "quality_total": 225,
+        "geopolitical_total": 195,
         "source_counts": {
           "reddit": 0,
           "mastodon": 8,
-          "x": 2
+          "x": 4
         },
         "category_counts": {
           "government_crisis": 6,
           "protest": 2,
-          "security": 2
+          "security": 3,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 2,
           "kosovo": 6,
-          "Koszovó": 2
+          "Koszovó": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -840,8 +839,8 @@
         "negative_hits": 0,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 42,
-        "raw_engagement_total": 42,
+        "engagement_total": 50,
+        "raw_engagement_total": 50,
         "quality_total": 61,
         "geopolitical_total": 57,
         "source_counts": {
@@ -965,10 +964,10 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 15,
-            "raw_engagement": 15,
+            "engagement": 23,
+            "raw_engagement": 23,
             "metrics": {
-              "likes": 13,
+              "likes": 21,
               "reposts": 1,
               "replies": 1,
               "quotes": 0
@@ -1019,23 +1018,23 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
-        "negative_hits": 15,
-        "positive_hits": 2,
+        "mentions": 18,
+        "negative_hits": 14,
+        "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 442,
-        "geopolitical_total": 391,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 458,
+        "geopolitical_total": 406,
         "source_counts": {
           "reddit": 0,
           "mastodon": 15,
-          "x": 2
+          "x": 3
         },
         "category_counts": {
-          "corruption_rule_of_law": 7,
+          "corruption_rule_of_law": 6,
           "protest": 4,
-          "security": 5,
+          "security": 7,
           "government_crisis": 1
         },
         "tag_counts": {
@@ -1043,9 +1042,9 @@
           "kosovo": 1,
           "albania": 5,
           "Szerbia": 1,
-          "Albánia": 1
+          "Albánia": 2
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
