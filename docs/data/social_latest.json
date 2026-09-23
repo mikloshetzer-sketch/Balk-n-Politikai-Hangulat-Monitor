@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23 16:48 UTC",
+  "updated_at": "2026-09-23 20:56 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,40 +12,41 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 9
+    "collected": 14
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 45,
+        "score": 42,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 6,
-        "negative_hits": 2,
-        "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 107,
-        "geopolitical_total": 89,
+        "negative_hits": 1,
+        "positive_hits": 1,
+        "trusted_hits": 2,
+        "engagement_total": 68,
+        "raw_engagement_total": 68,
+        "quality_total": 122,
+        "geopolitical_total": 103,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 5,
-          "x": 1
+          "mastodon": 4,
+          "x": 2
         },
         "category_counts": {
           "protest": 1,
-          "government_crisis": 4,
-          "security": 1
+          "government_crisis": 2,
+          "security": 3
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 3,
+          "serbia": 2,
           "bosnia": 1,
-          "Szerbia": 1
+          "Szerbia": 1,
+          "Koszovó": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -82,6 +83,52 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "🔥 U.S. SECRETARY OF STATE MARCO RUBIO: SERBIA IS A PARTNERSHIP “WE INTEND TO DEEPEN.” Serbia is not NATO. It does not recognise Kosovo. It still buys Russian energy. Today in New Y",
+            "text": "🔥 U.S. SECRETARY OF STATE MARCO RUBIO: SERBIA IS A PARTNERSHIP “WE INTEND TO DEEPEN.” Serbia is not NATO. It does not recognise Kosovo. It still buys Russian energy. Today in New York Rubio said Washington will go deeper anyway. He hopes to visit Belgrade. He called Serbia’s",
+            "url": "https://x.com/i/web/status/2102842773271687620",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-23T19:29:20.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 30,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 41,
+            "raw_engagement": 41,
+            "metrics": {
+              "likes": 25,
+              "reposts": 6,
+              "replies": 10,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -148,35 +195,6 @@
           },
           {
             "title": "",
-            "text": "Serbit järjestivät sotarikolliselle prameat hautajaiset – nationalismi on kasvussa vaalien alla Serbien kansallismielisyys on voimissaan, ja lokakuun vaalit kärjistävät tilannetta lisää. https:// yle.fi/a/74-20246613 # Politiikka # Serbia # Serbianpolitiikka # Serbianpresidentti # Serbianpoliittisetpuolueet # Ratkomladić # Ulkomaat",
-            "url": "https://social.ahlroos.me/@yle_fi_bot/117313088368844903",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Tue, 22 Sep 2026 05:43:23 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 15,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "Los serbios han organizado un criminal de guerra para recibir un funeral mimado - el nacionalismo está creciendo en el período previo a la elección. https:// yle.fi/a/74-20246613?origin=rss # PartidospolíticosenSerbia # PresidentedeSerbia # Elrestodelmundo # Políticaserbia # RatkoMladić # Política # Serbia",
             "url": "https://social.koti.site/@rss_bot/117313153796254352",
             "source": "mastodon",
@@ -210,29 +228,30 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 27,
+        "score": 34,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 5,
         "negative_hits": 0,
-        "positive_hits": 0,
-        "trusted_hits": 0,
+        "positive_hits": 1,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 93,
-        "geopolitical_total": 81,
+        "quality_total": 129,
+        "geopolitical_total": 113,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "ethnic_tension": 2,
           "protest": 1,
-          "security": 1
+          "security": 2
         },
         "tag_counts": {
-          "bosnia": 4
+          "bosnia": 4,
+          "Szerbia": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -280,6 +299,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "🇧🇦 Foreign Minister joined Western Balkans partners for an informal lunch hosted by EU High Representative for Foreign Affairs and Security Policy and Vice-President of the Europea",
+            "text": "🇧🇦 Foreign Minister joined Western Balkans partners for an informal lunch hosted by EU High Representative for Foreign Affairs and Security Policy and Vice-President of the European Commission . Regional stability was at the heart of the discussion.",
+            "url": "https://x.com/i/web/status/2102861747115725311",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-23T20:44:44.000Z",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 3
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 32,
+            "quality_score": 36,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -381,33 +440,69 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 55,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
+        "mentions": 8,
         "negative_hits": 3,
         "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 130,
-        "geopolitical_total": 111,
+        "trusted_hits": 1,
+        "engagement_total": 23,
+        "raw_engagement_total": 23,
+        "quality_total": 147,
+        "geopolitical_total": 126,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 6,
-          "x": 1
+          "mastodon": 5,
+          "x": 3
         },
         "category_counts": {
           "government_crisis": 4,
           "protest": 2,
-          "security": 1
+          "security": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "kosovo": 6,
-          "Koszovó": 1
+          "kosovo": 5,
+          "Koszovó": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "Turkish President Recep Tayyip Erdogan, who is in New York for the 81st session of the United Nations General Assembly, held a meeting with Kosovo’s Prime Minister Albin Kurti at t",
+            "text": "Turkish President Recep Tayyip Erdogan, who is in New York for the 81st session of the United Nations General Assembly, held a meeting with Kosovo’s Prime Minister Albin Kurti at the “Turkish House.”",
+            "url": "https://x.com/i/web/status/2102858748750410038",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-23T20:32:49.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "A special tribunal in The Hague sentenced Hashim Thaci, Kosovo's former president, to 25 years for war crimes: murder, illegal detention, torture. Three other KLA leaders were convicted alongside him, sentences from 13 to 25 years. Most victims were fellow Kosovar Albanians branded \"traitors,\" not enemy combatants. A rare case of a Western aligned former hea",
@@ -438,35 +533,6 @@
             ],
             "geopolitical_score": 21,
             "quality_score": 24,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Protests Continue in Pristina After Conviction of Kosovo Liberation Army Leaders https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/17/protests-continue-in-pristina-after-conviction-of-kosovo-liberation-army-leaders/btj/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/17/protests-continue-in-pristina-after-conviction-of-kosovo-liberation-army-leaders/btj/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Thu, 17 Sep 2026 14:59:36 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -759,65 +825,103 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 22,
-        "level": "medium",
+        "score": 19,
+        "level": "low",
         "scale": "0-60 risk index",
         "mentions": 3,
-        "negative_hits": 1,
-        "positive_hits": 0,
+        "negative_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 49,
-        "geopolitical_total": 43,
+        "engagement_total": 100,
+        "raw_engagement_total": 100,
+        "quality_total": 55,
+        "geopolitical_total": 49,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
           "x": 3
         },
         "category_counts": {
-          "security": 1,
-          "government_crisis": 2
+          "government_crisis": 3
         },
         "tag_counts": {
-          "Montenegró": 1,
+          "Koszovó": 1,
           "Észak-Macedónia": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "SERBIAN ARREST WARRANTS CONTINUE TO CREATE LEGAL AND SECURITY FRICTION ACROSS WESTERN BALKAN BORDERS Former KLA member Fadil Pushkolli was detained on 22 September at the Blace–Han",
-            "text": "SERBIAN ARREST WARRANTS CONTINUE TO CREATE LEGAL AND SECURITY FRICTION ACROSS WESTERN BALKAN BORDERS Former KLA member Fadil Pushkolli was detained on 22 September at the Blace–Hani i Elezit crossing by North Macedonian authorities on the basis of a Serbian arrest warrant.",
-            "url": "https://x.com/i/web/status/2102756368918982739",
+            "title": "During meetings with Chilean President , Prime Minister of North Macedonia , and Prime Minister of Bangladesh , we discussed this year’s General Assembly UNGA agenda, as well as bi",
+            "text": "During meetings with Chilean President , Prime Minister of North Macedonia , and Prime Minister of Bangladesh , we discussed this year’s General Assembly UNGA agenda, as well as bilateral relations. 🇨🇱 🇲🇰 🇧🇩",
+            "url": "https://x.com/i/web/status/2102837183862198543",
             "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-09-23T13:46:00.000Z",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-23T19:07:08.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Szerbia": 2
+              "Észak-Macedónia": 5
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 2,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
+            "geopolitical_score": 18,
+            "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 62,
+            "raw_engagement": 62,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 56,
+              "reposts": 6,
               "replies": 0,
               "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "During my stay for UNGA81, I met with Prime Minister Hristijan Mickoski of North Macedonia. Following our recent meeting in Skopje/Shkup, we continued our discussion on infrastruct",
+            "text": "During my stay for UNGA81, I met with Prime Minister Hristijan Mickoski of North Macedonia. Following our recent meeting in Skopje/Shkup, we continued our discussion on infrastructure and energy cooperation, including the Prizren–Tetova tunnel, regional",
+            "url": "https://x.com/i/web/status/2102856798588035312",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-23T20:25:04.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 13
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 2,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 38,
+            "raw_engagement": 38,
+            "metrics": {
+              "likes": 30,
+              "reposts": 5,
+              "replies": 2,
+              "quotes": 1
             },
             "quality": "x_api_filtered"
           },
@@ -855,41 +959,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "In a telegram received by His Excellency Minister Sheikh Dr. Abdullatif Al Alsheikh, Sheikh Hafiz Shakir Fetahu, President of the Islamic Union and Grand Mufti of North Macedonia, ",
-            "text": "In a telegram received by His Excellency Minister Sheikh Dr. Abdullatif Al Alsheikh, Sheikh Hafiz Shakir Fetahu, President of the Islamic Union and Grand Mufti of North Macedonia, condemned the Houthi violations and their targeting of the Kingdom and the sacred sites of Muslims.",
-            "url": "https://x.com/i/web/status/2102704114517839887",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-23T10:18:21.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 6,
-            "raw_engagement": 6,
-            "metrics": {
-              "likes": 5,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -901,13 +970,13 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 14,
-        "negative_hits": 11,
+        "negative_hits": 12,
         "positive_hits": 2,
         "trusted_hits": 2,
         "engagement_total": 17,
         "raw_engagement_total": 17,
-        "quality_total": 408,
-        "geopolitical_total": 367,
+        "quality_total": 394,
+        "geopolitical_total": 353,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
@@ -915,16 +984,16 @@
         },
         "category_counts": {
           "corruption_rule_of_law": 6,
-          "protest": 1,
-          "security": 4,
-          "government_crisis": 2,
+          "protest": 2,
+          "security": 5,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 9,
           "kosovo": 1,
           "albania": 1,
-          "Albánia": 3
+          "Szerbia": 1,
+          "Albánia": 2
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -1012,84 +1081,78 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🔴 EU Commission to formally back Albania's 2027 EU accession deadline The European Commission will include Albania's December 2027 target for completing accession negotiations in a",
-            "text": "🔴 EU Commission to formally back Albania's 2027 EU accession deadline The European Commission will include Albania's December 2027 target for completing accession negotiations in an upcoming enlargement roadmap, formalizing a timeline Prime Minister Edi Rama has long promoted",
-            "url": "https://x.com/i/web/status/2102774330098671879",
+            "title": "The European Commission is working towards closing the books on Albania's accession process by December 2027 — a timeline Tirana has long touted, and that is now set to receive for",
+            "text": "The European Commission is working towards closing the books on Albania's accession process by December 2027 — a timeline Tirana has long touted, and that is now set to receive formal recognition in the upcoming EU enlargement roadmaps BIĆEMO RUPA KAO ŠTO NAM JE GROBAR OBEĆAO‼️",
+            "url": "https://x.com/i/web/status/2102854943535243299",
             "source": "x",
             "tag": "Albánia",
-            "seen_date": "2026-09-23T14:57:22.000Z",
+            "seen_date": "2026-09-23T20:17:42.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
               "Albánia": 5
             },
-            "event_category": "government_crisis",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "ethnic_tension",
                 "hits": 1,
-                "weight": 9
+                "weight": 10
               },
               {
                 "category": "eu_integration",
-                "hits": 3,
+                "hits": 2,
                 "weight": 6
               }
             ],
-            "geopolitical_score": 32,
-            "quality_score": 36,
+            "geopolitical_score": 29,
+            "quality_score": 33,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 12,
+            "raw_engagement": 12,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
+              "likes": 10,
+              "reposts": 1,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "European Parliament MPs continue their support from Tirana for the ongoing protests by Albanian citizens. Together, they oppose the destruction of protected natural areas for luxur",
-            "text": "European Parliament MPs continue their support from Tirana for the ongoing protests by Albanian citizens. Together, they oppose the destruction of protected natural areas for luxury resorts, such as Jared Kushner’s project in the Narta Lagoon. 🇦🇱🇪🇺🦩",
-            "url": "https://x.com/i/web/status/2102792126752829479",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-09-23T16:08:05.000Z",
+            "title": "",
+            "text": "Day 116 of anti-corruption protest in Tirana, Albania # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest https://www. youtube.com/watch?v=jlsPMAaSajk",
+            "url": "https://mas.to/@meganL/117321475340367246",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Wed, 23 Sep 2026 17:14:04 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 6
+              "Albánia": 5
             },
-            "event_category": "government_crisis",
+            "event_category": "corruption_rule_of_law",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
               },
               {
                 "category": "protest",
-                "hits": 2,
+                "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 29,
+            "geopolitical_score": 27,
             "quality_score": 30,
-            "source_reliability": 2,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 9,
-            "raw_engagement": 9,
-            "metrics": {
-              "likes": 8,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
