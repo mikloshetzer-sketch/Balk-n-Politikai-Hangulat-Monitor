@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22 21:14 UTC",
+  "updated_at": "2026-09-23 02:35 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 16
   },
   "countries": [
     {
@@ -21,31 +21,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 6,
-        "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 14,
-        "raw_engagement_total": 14,
-        "quality_total": 188,
-        "geopolitical_total": 160,
+        "mentions": 14,
+        "negative_hits": 7,
+        "positive_hits": 2,
+        "trusted_hits": 2,
+        "engagement_total": 124,
+        "raw_engagement_total": 448,
+        "quality_total": 264,
+        "geopolitical_total": 229,
         "source_counts": {
           "reddit": 0,
           "mastodon": 8,
-          "x": 2
+          "x": 6
         },
         "category_counts": {
           "protest": 1,
-          "government_crisis": 8,
-          "security": 1
+          "government_crisis": 9,
+          "security": 3,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 3,
           "serbia": 3,
           "kosovo": 1,
           "bosnia": 1,
-          "Szerbia": 1,
-          "Észak-Macedónia": 1
+          "Szerbia": 4,
+          "Koszovó": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -127,6 +128,43 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Important meetings today for HRVP Kaja Kallas in the margins of UNGA with President Vucic and Prime Minister Kurti. The Dialogue is the only way forward.",
+            "text": "Important meetings today for HRVP Kaja Kallas in the margins of UNGA with President Vucic and Prime Minister Kurti. The Dialogue is the only way forward.",
+            "url": "https://x.com/i/web/status/2102531740371689807",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-22T22:53:24.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 4,
+              "Koszovó": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 23,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Hashim Thaçi, former Kosovo president, is sentenced to 25 years for war crimes. Kosovo’s former president Hashim Thaçi was sentenced to 25 years by a tribunal in The Hague on Wednesday for war crimes, the court said in a long-awaited verdict likely to spark outrage in the Balkan country. https:// mediafaro.org/article/20260916 -hashim-thaci-former-kosovo-pre",
             "url": "https://mastodon.mediafaro.org/@mf_newsdigest/117281580817410194",
@@ -195,35 +233,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Serbia: Vucic vede von der Leyen, restiamo su cammino Ue indipendentemente da esito voto 22 set 17:39 - (Agenzia Nova) - Il presidente della Serbia, Aleksandar Vucic, ha incontrato a New York la presidente della Commissione europea,... (Seb) Serbia: Vucic meets von der Leyen, sticking with EU path regardless of election outcome Sept 22 17:39 – ",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117315522751835329",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Tue, 22 Sep 2026 16:00:15 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 18,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -231,30 +240,31 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 34,
-        "level": "medium",
+        "score": 46,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 0,
+        "mentions": 6,
+        "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 105,
-        "geopolitical_total": 90,
+        "engagement_total": 66,
+        "raw_engagement_total": 66,
+        "quality_total": 128,
+        "geopolitical_total": 112,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
-          "ethnic_tension": 2,
+          "ethnic_tension": 3,
           "protest": 1,
           "security": 1,
           "government_crisis": 1
         },
         "tag_counts": {
-          "bosnia": 5
+          "bosnia": 5,
+          "Szerbia": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -340,6 +350,47 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "🇧🇦🇷🇸 \"Learn About the Serbian Suffering\" exhibition from Bosnia’s Republika Srpska entity, was displayed at the US Congress. It featured AI-processed images and disputed statistics",
+            "text": "🇧🇦🇷🇸 \"Learn About the Serbian Suffering\" exhibition from Bosnia’s Republika Srpska entity, was displayed at the US Congress. It featured AI-processed images and disputed statistics. The exhibition was opened by Bosnian Serb President, who recently glorified war criminal Ratko",
+            "url": "https://x.com/i/web/status/2102533394932384219",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-22T22:59:59.000Z",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 5,
+              "Szerbia": 2
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 23,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 66,
+            "raw_engagement": 66,
+            "metrics": {
+              "likes": 59,
+              "reposts": 3,
+              "replies": 4,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Agenzia Nova: Bosnia: nuovi rincari dei carburanti, diesel sopra i 2 euro in Repubblica Srpska 22 set 11:03 - (Agenzia Nova) - Nuovo rialzo dei prezzi dei carburanti in Bosnia Erzegovina. Il costo medio del diesel nella Federazione, entita'... (Seb) Bosnia: new fuel price increases, diesel over €2 in Republika Srpska September 22 11:03 – (Agenzia Nova) – New",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117313989263460209",
@@ -396,35 +447,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Bosnia: a luglio stipendio medio netto di circa 886 euro, +8,1 per cento su base annua 21 set 14:19 - (Agenzia Nova) - Lo stipendio netto medio mensile in Bosnia Erzegovina a luglio e' stato di 1.732 marchi convertibili (circa... (Seb) Bosnia: average net salary of around €886 in July, +8.1 percent year-on-year. September 21, 14:19 – (Agenzia N",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117309152872208329",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Mon, 21 Sep 2026 13:00:18 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 2
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 8,
-            "quality_score": 11,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -435,30 +457,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
-        "negative_hits": 9,
-        "positive_hits": 0,
+        "mentions": 10,
+        "negative_hits": 8,
+        "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 22,
-        "raw_engagement_total": 22,
-        "quality_total": 253,
-        "geopolitical_total": 223,
+        "engagement_total": 120,
+        "raw_engagement_total": 444,
+        "quality_total": 212,
+        "geopolitical_total": 184,
         "source_counts": {
           "reddit": 0,
           "mastodon": 8,
-          "x": 4
+          "x": 2
         },
         "category_counts": {
           "government_crisis": 6,
-          "protest": 3,
-          "security": 2,
-          "corruption_rule_of_law": 1
+          "protest": 2,
+          "security": 2
         },
         "tag_counts": {
           "balkans": 2,
           "kosovo": 6,
-          "Koszovó": 3,
-          "Albánia": 1
+          "Szerbia": 1,
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -502,42 +523,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Hours after Albania's Special Anti-Corruption and Organized Crime Structure announced that State Intelligence Service chief Vlora Hyseni had been placed under house arrest, she ret",
-            "text": "Hours after Albania's Special Anti-Corruption and Organized Crime Structure announced that State Intelligence Service chief Vlora Hyseni had been placed under house arrest, she returned from a conference in Baku and surrendered to authorities. Hyseni first arrived at Pristina",
-            "url": "https://x.com/i/web/status/2102475882594185430",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-09-22T19:11:27.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4,
-              "Albánia": 1
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 3,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -608,6 +593,43 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Important meetings today for HRVP Kaja Kallas in the margins of UNGA with President Vucic and Prime Minister Kurti. The Dialogue is the only way forward.",
+            "text": "Important meetings today for HRVP Kaja Kallas in the margins of UNGA with President Vucic and Prime Minister Kurti. The Dialogue is the only way forward.",
+            "url": "https://x.com/i/web/status/2102531740371689807",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-22T22:53:24.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 4,
+              "Koszovó": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 23,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -829,73 +851,32 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 40,
-        "level": "high",
+        "score": 21,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
-        "negative_hits": 1,
-        "positive_hits": 2,
-        "trusted_hits": 0,
-        "engagement_total": 192,
-        "raw_engagement_total": 192,
-        "quality_total": 85,
-        "geopolitical_total": 79,
+        "mentions": 3,
+        "negative_hits": 0,
+        "positive_hits": 0,
+        "trusted_hits": 1,
+        "engagement_total": 97,
+        "raw_engagement_total": 97,
+        "quality_total": 47,
+        "geopolitical_total": 41,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 6
+          "x": 3
         },
         "category_counts": {
           "security": 2,
-          "ethnic_tension": 2,
-          "government_crisis": 2
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "Montenegró": 2,
-          "Észak-Macedónia": 4
+          "Szerbia": 1,
+          "Észak-Macedónia": 2
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "North Macedonia’s Prime Minister Hristijan Mickoski said in Washington that including Bulgarians in the Constitution, as part of the European integration process, is not reasonable",
-            "text": "North Macedonia’s Prime Minister Hristijan Mickoski said in Washington that including Bulgarians in the Constitution, as part of the European integration process, is not reasonable in his view, InfoShqip reports.",
-            "url": "https://x.com/i/web/status/2102239789898469791",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-22T03:33:18.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 12
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "If so, the Mickoski Gov. should act as such 🇲🇰 is a multi-ethnic state defined constitutionally as belonging to its citizens, with Slavic-speaking forming the majority and ethnic A",
             "text": "If so, the Mickoski Gov. should act as such 🇲🇰 is a multi-ethnic state defined constitutionally as belonging to its citizens, with Slavic-speaking forming the majority and ethnic Albanians making up roughly 30% of the population",
@@ -927,10 +908,10 @@
             "quality_score": 20,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 1,
+              "likes": 2,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -938,47 +919,12 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Macedonian Prime Minister Hristijan Mickoski said that his country believes in European values and is ready to move forward and find a way out of the current deadlock.",
-            "text": "Macedonian Prime Minister Hristijan Mickoski said that his country believes in European values and is ready to move forward and find a way out of the current deadlock.",
-            "url": "https://x.com/i/web/status/2102388322089713882",
+            "title": "Albania's CPI score is 39/100. This is extremely low by European standards especially within European NATO or the EU. The only other NATO or EU members with comparably low scores a",
+            "text": "Albania's CPI score is 39/100. This is extremely low by European standards especially within European NATO or the EU. The only other NATO or EU members with comparably low scores are Hungary, Bulgaria and North Macedonia. (Belarus, Serbia, Bosnia & Ukraine, outside EU and NATO,",
+            "url": "https://x.com/i/web/status/2102578050881712421",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-22T13:23:31.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 15,
-            "raw_engagement": 15,
-            "metrics": {
-              "likes": 11,
-              "reposts": 2,
-              "replies": 1,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🇪🇺 🛡️ An expanded Central European Defence Cooperation ministerial session is underway in Slovenia today, bringing Western Balkan states into the second phase of talks. Today's ses",
-            "text": "🇪🇺 🛡️ An expanded Central European Defence Cooperation ministerial session is underway in Slovenia today, bringing Western Balkan states into the second phase of talks. Today's session includes Albania, Bosnia & Herzegovina, Kosovo, Montenegro, North Macedonia and Serbia",
-            "url": "https://x.com/i/web/status/2102372606703817110",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-09-22T12:21:04.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-23T01:57:25.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -986,8 +932,6 @@
               "Észak-Macedónia": 5,
               "Szerbia": 1,
               "Bosznia-Hercegovina": 1,
-              "Koszovó": 1,
-              "Montenegró": 1,
               "Albánia": 1
             },
             "event_category": "security",
@@ -998,10 +942,10 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
+            "geopolitical_score": 13,
+            "quality_score": 17,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 1,
             "raw_engagement": 1,
             "metrics": {
@@ -1013,23 +957,23 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "🇷🇸🇺🇳 President of Serbia has arrived in New York for the 81st session of the UN General Assembly. Ahead of the opening, he met with European Council President António Costa 🇪🇺, Spa",
-            "text": "🇷🇸🇺🇳 President of Serbia has arrived in New York for the 81st session of the UN General Assembly. Ahead of the opening, he met with European Council President António Costa 🇪🇺, Spanish PM Pedro Sánchez 🇪🇸, North Macedonian PM Hristijan Mickoski 🇲🇰, and Council of",
-            "url": "https://x.com/i/web/status/2102330262046515561",
+            "title": "I had productive catch-ups with my colleagues from Moldova, North Macedonia, Montenegro, and Andorra. With Moldova’s Foreign Minister , we focused on the security situation in the ",
+            "text": "I had productive catch-ups with my colleagues from Moldova, North Macedonia, Montenegro, and Andorra. With Moldova’s Foreign Minister , we focused on the security situation in the Black Sea and broader regional security. We agreed on the importance of staying closely",
+            "url": "https://x.com/i/web/status/2102470785214357649",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-22T09:32:48.000Z",
+            "seen_date": "2026-09-22T18:51:11.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 9,
-              "Szerbia": 1
+              "Észak-Macedónia": 5,
+              "Montenegró": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
               }
@@ -1038,13 +982,13 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 102,
-            "raw_engagement": 102,
+            "engagement": 94,
+            "raw_engagement": 94,
             "metrics": {
-              "likes": 77,
-              "reposts": 15,
-              "replies": 5,
-              "quotes": 5
+              "likes": 75,
+              "reposts": 18,
+              "replies": 0,
+              "quotes": 1
             },
             "quality": "x_api_filtered"
           }
@@ -1057,31 +1001,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
+        "mentions": 16,
         "negative_hits": 12,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 57,
-        "raw_engagement_total": 57,
-        "quality_total": 377,
-        "geopolitical_total": 337,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 393,
+        "geopolitical_total": 351,
         "source_counts": {
           "reddit": 0,
           "mastodon": 12,
-          "x": 2
+          "x": 4
         },
         "category_counts": {
           "corruption_rule_of_law": 6,
-          "protest": 2,
+          "protest": 3,
           "security": 5,
-          "government_crisis": 1
+          "government_crisis": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 9,
           "kosovo": 1,
           "albania": 2,
           "Koszovó": 1,
-          "Albánia": 1
+          "Albánia": 3
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
