@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23 15:53 UTC",
+  "updated_at": "2026-09-23 16:48 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,39 +12,38 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 9
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 60,
+        "score": 45,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 4,
+        "mentions": 6,
+        "negative_hits": 2,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 120,
-        "raw_engagement_total": 356,
-        "quality_total": 153,
-        "geopolitical_total": 130,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 107,
+        "geopolitical_total": 89,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 6,
-          "x": 3
+          "mastodon": 5,
+          "x": 1
         },
         "category_counts": {
-          "protest": 2,
-          "government_crisis": 5,
-          "security": 1,
-          "ethnic_tension": 1
+          "protest": 1,
+          "government_crisis": 4,
+          "security": 1
         },
         "tag_counts": {
-          "balkans": 2,
+          "balkans": 1,
           "serbia": 3,
           "bosnia": 1,
-          "Szerbia": 3
+          "Szerbia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -78,42 +77,6 @@
             ],
             "geopolitical_score": 27,
             "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Hashim Thaçi, former Kosovo president, is sentenced to 25 years for war crimes. Kosovo’s former president Hashim Thaçi was sentenced to 25 years by a tribunal in The Hague on Wednesday for war crimes, the court said in a long-awaited verdict likely to spark outrage in the Balkan country. https:// mediafaro.org/article/20260916 -hashim-thaci-former-kosovo-pre",
-            "url": "https://mastodon.mediafaro.org/@mf_newsdigest/117281580817410194",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 16 Sep 2026 16:08:22 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Szerbia": 1,
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 23,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -206,6 +169,35 @@
             ],
             "geopolitical_score": 12,
             "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Los serbios han organizado un criminal de guerra para recibir un funeral mimado - el nacionalismo está creciendo en el período previo a la elección. https:// yle.fi/a/74-20246613?origin=rss # PartidospolíticosenSerbia # PresidentedeSerbia # Elrestodelmundo # Políticaserbia # RatkoMladić # Política # Serbia",
+            "url": "https://social.koti.site/@rss_bot/117313153796254352",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Tue, 22 Sep 2026 05:57:48 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 12,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -389,17 +381,17 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 60,
+        "score": 55,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 7,
-        "negative_hits": 4,
+        "negative_hits": 3,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 159,
-        "geopolitical_total": 140,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 130,
+        "geopolitical_total": 111,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
@@ -411,52 +403,11 @@
           "security": 1
         },
         "tag_counts": {
-          "balkans": 1,
-          "kosovo": 5,
+          "kosovo": 6,
           "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "🇽🇰 Update: Kosovo’s Constitutional Court ruled that: - The Kurti 4 government was elected in accordance with the Constitution - Parliament has less than two weeks, until October 6,",
-            "text": "🇽🇰 Update: Kosovo’s Constitutional Court ruled that: - The Kurti 4 government was elected in accordance with the Constitution - Parliament has less than two weeks, until October 6, to elect a new President - If it fails to do so, Parliament and the government will be",
-            "url": "https://x.com/i/web/status/2102785815285842023",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-23T15:43:00.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 35,
-            "quality_score": 36,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 2,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "A special tribunal in The Hague sentenced Hashim Thaci, Kosovo's former president, to 25 years for war crimes: murder, illegal detention, torture. Three other KLA leaders were convicted alongside him, sentences from 13 to 25 years. Most victims were fellow Kosovar Albanians branded \"traitors,\" not enemy combatants. A rare case of a Western aligned former hea",
@@ -495,42 +446,6 @@
           },
           {
             "title": "",
-            "text": "Hashim Thaçi, former Kosovo president, is sentenced to 25 years for war crimes. Kosovo’s former president Hashim Thaçi was sentenced to 25 years by a tribunal in The Hague on Wednesday for war crimes, the court said in a long-awaited verdict likely to spark outrage in the Balkan country. https:// mediafaro.org/article/20260916 -hashim-thaci-former-kosovo-pre",
-            "url": "https://mastodon.mediafaro.org/@mf_newsdigest/117281580817410194",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 16 Sep 2026 16:08:22 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Szerbia": 1,
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 23,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "Protests Continue in Pristina After Conviction of Kosovo Liberation Army Leaders https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/17/protests-continue-in-pristina-after-conviction-of-kosovo-liberation-army-leaders/btj/",
             "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/17/protests-continue-in-pristina-after-conviction-of-kosovo-liberation-army-leaders/btj/",
             "source": "mastodon",
@@ -560,11 +475,79 @@
           },
           {
             "title": "",
+            "text": "Kosovo Court Orders MPs to Elect President by October 6 https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/23/kosovo-court-orders-mps-to-elect-president-by-october-6/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/23/kosovo-court-orders-mps-to-elect-president-by-october-6/bi/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 23 Sep 2026 15:03:07 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 20,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "Agenzia Nova: Kosovo: Corte costituzionale, Assemblea e formazione del governo non sono incostituzionali 23 set 15:49 - (Agenzia Nova) - La Corte Costituzionale del Kosovo ha stabilito che la costituzione dell'Assemblea e la formazione del governo... (Alt) Kosovo: The Constitutional Court, Assembly, and government formation are not unconstitutional. Septembe",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117320752623048538",
             "source": "mastodon",
             "tag": "kosovo",
             "seen_date": "Wed, 23 Sep 2026 14:10:16 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 20,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Kosovo: Corte costituzionale, Assemblea e formazione del governo non sono incostituzionali (2) 23 set 15:49 - (Agenzia Nova) - \"La Corte dichiara che la decisione del 13 settembre 2026 dell'Assemblea della Repubblica del Kosovo sull'elezione... (Alt) Kosovo: Constitutional Court, Assembly and government formation are not unconstitutional (2) Se",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117320713422073318",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 23 Sep 2026 14:00:18 +0000",
             "matched_countries": [
               "Koszovó"
             ],
@@ -917,32 +900,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
-        "negative_hits": 10,
-        "positive_hits": 1,
+        "mentions": 14,
+        "negative_hits": 11,
+        "positive_hits": 2,
         "trusted_hits": 2,
-        "engagement_total": 7,
-        "raw_engagement_total": 7,
-        "quality_total": 411,
-        "geopolitical_total": 368,
+        "engagement_total": 17,
+        "raw_engagement_total": 17,
+        "quality_total": 408,
+        "geopolitical_total": 367,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 5
+          "x": 3
         },
         "category_counts": {
           "corruption_rule_of_law": 6,
           "protest": 1,
           "security": 4,
-          "ethnic_tension": 4,
-          "government_crisis": 1
+          "government_crisis": 2,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 9,
           "kosovo": 1,
           "albania": 1,
-          "Szerbia": 1,
-          "Albánia": 4
+          "Albánia": 3
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -1070,46 +1052,52 @@
             "quality": "x_api_filtered"
           },
           {
+            "title": "European Parliament MPs continue their support from Tirana for the ongoing protests by Albanian citizens. Together, they oppose the destruction of protected natural areas for luxur",
+            "text": "European Parliament MPs continue their support from Tirana for the ongoing protests by Albanian citizens. Together, they oppose the destruction of protected natural areas for luxury resorts, such as Jared Kushner’s project in the Narta Lagoon. 🇦🇱🇪🇺🦩",
+            "url": "https://x.com/i/web/status/2102792126752829479",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-09-23T16:08:05.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 6
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 9,
+            "raw_engagement": 9,
+            "metrics": {
+              "likes": 8,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Day 115 of anti-corruption protest in Tirana, Albania # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest https://www. youtube.com/watch?v=R7pfbmQWTaY",
             "url": "https://mas.to/@meganL/117316608000710036",
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Tue, 22 Sep 2026 20:36:15 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 113 of anti-corruption protest in Tirana, Albania 🔴Qytetarët nuk e ndalin aksionin dhe kërkojnë dorëheqjen e Ramës, mbahet sot protesta e 113-të # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest https://www. youtube.com/watch?v=EIzYsKS4-Gw",
-            "url": "https://mas.to/@meganL/117304598279955850",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sun, 20 Sep 2026 17:42:01 +0000",
             "matched_countries": [
               "Albánia"
             ],
