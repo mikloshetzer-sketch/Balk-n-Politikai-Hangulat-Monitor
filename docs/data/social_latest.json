@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24 04:34 UTC",
+  "updated_at": "2026-09-24 10:50 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 18
   },
   "countries": [
     {
@@ -23,111 +23,32 @@
         "scale": "0-60 risk index",
         "mentions": 11,
         "negative_hits": 5,
-        "positive_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 4,
-        "engagement_total": 124,
-        "raw_engagement_total": 124,
-        "quality_total": 264,
-        "geopolitical_total": 234,
+        "engagement_total": 20,
+        "raw_engagement_total": 20,
+        "quality_total": 199,
+        "geopolitical_total": 171,
         "source_counts": {
-          "reddit": 0,
+          "reddit": 1,
           "mastodon": 4,
-          "x": 7
+          "x": 6
         },
         "category_counts": {
-          "protest": 1,
-          "government_crisis": 6,
-          "security": 4
+          "protest": 2,
+          "security": 7,
+          "government_crisis": 2
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 2,
+          "serbia": 3,
           "bosnia": 1,
-          "Szerbia": 5,
-          "Koszovó": 2
+          "Szerbia": 4,
+          "Koszovó": 1,
+          "Montenegró": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
-          {
-            "title": "President of Serbia Vučić — \"Do you know\" who CHOSE to \"bomb an independent and sovereign country that did not attack any other country?\" \"Not a single soldier and not a single pol",
-            "text": "President of Serbia Vučić — \"Do you know\" who CHOSE to \"bomb an independent and sovereign country that did not attack any other country?\" \"Not a single soldier and not a single police officer from Serbia set foot on the territory of any other country,\" yet NATO BOMBED Serbia.",
-            "url": "https://x.com/i/web/status/2102977041180369102",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-24T04:22:52.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 43,
-            "quality_score": 47,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "⚡️Serbia’s President Vučić Says Belgrade’s European Integration Will Not End Its Traditional Friendships, Maintaining Direct Connections With the United States, China, and Russia.",
-            "text": "⚡️Serbia’s President Vučić Says Belgrade’s European Integration Will Not End Its Traditional Friendships, Maintaining Direct Connections With the United States, China, and Russia.",
-            "url": "https://x.com/i/web/status/2102971081611207004",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-24T03:59:11.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 3,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 34,
-            "quality_score": 35,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Agenzia Nova: Usa: candidati ambasciatori in Serbia e Bosnia, focus su sicurezza e integrita' territoriale 18 set 08:41 - (Agenzia Nova) - Rafforzare la cooperazione nella sicurezza e nella difesa con la Serbia e sostenere la sovranita' e l'integrita'... (Seb) Use: nominate ambassadors in Serbia and Bosnia, focusing on security and territorial integrity. Sep",
@@ -165,17 +86,88 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Vučić, Serbia’s wartime Minister of Propaganda and now its President, insists that “nothing happened” in Kosovo and that NATO’s 1999 humanitarian intervention lacked any justificat",
-            "text": "Vučić, Serbia’s wartime Minister of Propaganda and now its President, insists that “nothing happened” in Kosovo and that NATO’s 1999 humanitarian intervention lacked any justification. Only weeks after he shamelessly glorified Srebrenica’s genocidaire.",
-            "url": "https://x.com/i/web/status/2102887628752163124",
+            "title": "Serbian President Vucic says that new global order is emerging, shaped around two main power centers and strong regional actors, adding that “the international system as we knew it",
+            "text": "Serbian President Vucic says that new global order is emerging, shaped around two main power centers and strong regional actors, adding that “the international system as we knew it has collapsed; it no longer exists\"",
+            "url": "https://x.com/i/web/status/2103070186815242451",
             "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-23T22:27:35.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-24T10:33:00.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5,
+              "Szerbia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 22,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "Serbia's protesting youth formally join race challenging Vucic before next month's election https://www. youtube.com/watch?v=qL6EgoRT2_8 # Serbia # Corruption # Resistance # Democracy # Balkans # Europe",
+            "url": "https://mas.to/@meganL/117303856271594706",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sun, 20 Sep 2026 14:33:19 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 22,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "No Serbian soldier crossed another country’s border. They were too busy killing Kosovo Albanians, burning their homes and forcing hundreds of thousands across those borders instead",
+            "text": "No Serbian soldier crossed another country’s border. They were too busy killing Kosovo Albanians, burning their homes and forcing hundreds of thousands across those borders instead. Important distinction, apparently.",
+            "url": "https://x.com/i/web/status/2103061325664358819",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-24T09:57:47.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Albánia": 2,
               "Koszovó": 1
             },
             "event_category": "security",
@@ -186,64 +178,53 @@
                 "weight": 9
               },
               {
-                "category": "government_crisis",
+                "category": "foreign_influence",
                 "hits": 1,
-                "weight": 9
+                "weight": 8
               }
             ],
-            "geopolitical_score": 25,
-            "quality_score": 29,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 65,
-            "raw_engagement": 65,
+            "geopolitical_score": 17,
+            "quality_score": 18,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 57,
-              "reposts": 7,
-              "replies": 1,
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "🇷🇸 Serbian President Aleksandar Vučić stated that NATO’s aggression against Yugoslavia, carried out under the pretext of a \"humanitarian catastrophe,\" was illegal and pursued a pri",
-            "text": "🇷🇸 Serbian President Aleksandar Vučić stated that NATO’s aggression against Yugoslavia, carried out under the pretext of a \"humanitarian catastrophe,\" was illegal and pursued a primary goal: to dismantle the post-war UN-based world order and establish US and Western hegemony.",
-            "url": "https://x.com/i/web/status/2102976510269194596",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-24T04:20:46.000Z",
+            "title": "",
+            "text": "Agenzia Nova: Serbia: Vucic vede von der Leyen, restiamo su cammino Ue indipendentemente da esito voto 22 set 17:39 - (Agenzia Nova) - Il presidente della Serbia, Aleksandar Vucic, ha incontrato a New York la presidente della Commissione europea,... (Seb) Serbia: Vucic meets von der Leyen, sticking with EU path regardless of election outcome Sept 22 17:39 – ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117315522751835329",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Tue, 22 Sep 2026 16:00:15 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
               "Szerbia": 9
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
               {
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 25,
-            "quality_score": 29,
+            "geopolitical_score": 13,
+            "quality_score": 18,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -251,29 +232,30 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 27,
+        "score": 37,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 5,
         "negative_hits": 0,
         "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 93,
-        "geopolitical_total": 81,
+        "trusted_hits": 1,
+        "engagement_total": 97,
+        "raw_engagement_total": 97,
+        "quality_total": 119,
+        "geopolitical_total": 103,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "ethnic_tension": 2,
           "protest": 1,
-          "security": 1
+          "security": 2
         },
         "tag_counts": {
-          "bosnia": 4
+          "bosnia": 4,
+          "Albánia": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -359,6 +341,46 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "📍New York -- A pleasure to meet with Kaja Kallas, Vice-President of the European Commission and High Representative of the EU for Foreign Affairs and Security Policy, for a timely ",
+            "text": "📍New York -- A pleasure to meet with Kaja Kallas, Vice-President of the European Commission and High Representative of the EU for Foreign Affairs and Security Policy, for a timely and substantive exchange. Our discussions focused on the situation and current dynamics in the",
+            "url": "https://x.com/i/web/status/2103042507734950217",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-09-24T08:43:01.000Z",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 3
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 97,
+            "raw_engagement": 97,
+            "metrics": {
+              "likes": 51,
+              "reposts": 46,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Agenzia Nova: Bosnia: nuovi rincari dei carburanti, diesel sopra i 2 euro in Repubblica Srpska 22 set 11:03 - (Agenzia Nova) - Nuovo rialzo dei prezzi dei carburanti in Bosnia Erzegovina. Il costo medio del diesel nella Federazione, entita'... (Seb) Bosnia: new fuel price increases, diesel over €2 in Republika Srpska September 22 11:03 – (Agenzia Nova) – New",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117313989263460209",
@@ -422,29 +444,30 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 38,
-        "level": "medium",
+        "score": 43,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 6,
         "negative_hits": 2,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 98,
-        "geopolitical_total": 83,
+        "quality_total": 121,
+        "geopolitical_total": 105,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 3,
+          "government_crisis": 4,
           "protest": 1,
           "security": 1
         },
         "tag_counts": {
-          "kosovo": 5
+          "kosovo": 5,
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -483,6 +506,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Kosovo Prime Minister Albin Kurti has called on the European Union to grant Kosovo candidate status for EU membership without further delay.",
+            "text": "Kosovo Prime Minister Albin Kurti has called on the European Union to grant Kosovo candidate status for EU membership without further delay.",
+            "url": "https://x.com/i/web/status/2103070215072575717",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-24T10:33:07.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 23,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -580,35 +643,6 @@
             ],
             "geopolitical_score": 17,
             "quality_score": 20,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Discontent Simmers in Kosovo as Protesters Denounce Hague War Crimes Verdict https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/18/discontent-simmers-in-kosovo-as-protesters-denounce-hague-war-crimes-verdict/btj/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/18/discontent-simmers-in-kosovo-as-protesters-denounce-hague-war-crimes-verdict/btj/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Fri, 18 Sep 2026 14:31:55 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 14,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -799,24 +833,25 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 18,
+        "score": 14,
         "level": "low",
         "scale": "0-60 risk index",
         "mentions": 3,
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 197,
-        "raw_engagement_total": 197,
-        "quality_total": 48,
-        "geopolitical_total": 45,
+        "engagement_total": 7,
+        "raw_engagement_total": 7,
+        "quality_total": 34,
+        "geopolitical_total": 31,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
           "x": 3
         },
         "category_counts": {
-          "government_crisis": 3
+          "government_crisis": 2,
+          "foreign_influence": 1
         },
         "tag_counts": {
           "Észak-Macedónia": 3
@@ -824,52 +859,54 @@
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "During my stay for UNGA81, I met with Prime Minister Hristijan Mickoski of North Macedonia. Following our recent meeting in Skopje/Shkup, we continued our discussion on infrastruct",
-            "text": "During my stay for UNGA81, I met with Prime Minister Hristijan Mickoski of North Macedonia. Following our recent meeting in Skopje/Shkup, we continued our discussion on infrastructure and energy cooperation, including the Prizren–Tetova tunnel, regional",
-            "url": "https://x.com/i/web/status/2102856798588035312",
+            "title": "Azerbaijani gas is taking on a growing role as the EU and its partner countries work to reduce reliance on Russian energy. Serbia, North Macedonia and Bosnia and Herzegovina are am",
+            "text": "Azerbaijani gas is taking on a growing role as the EU and its partner countries work to reduce reliance on Russian energy. Serbia, North Macedonia and Bosnia and Herzegovina are among those still buying Russian gas as the region seeks alternative supplies.",
+            "url": "https://x.com/i/web/status/2103009775407763775",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-23T20:25:04.000Z",
+            "seen_date": "2026-09-24T06:32:57.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 13
+              "Észak-Macedónia": 5,
+              "Bosznia-Hercegovina": 2,
+              "Szerbia": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "foreign_influence",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "foreign_influence",
                 "hits": 1,
-                "weight": 9
+                "weight": 8
               },
               {
                 "category": "economic_infrastructure",
-                "hits": 2,
+                "hits": 1,
                 "weight": 4
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
+            "geopolitical_score": 12,
+            "quality_score": 13,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 105,
-            "raw_engagement": 105,
+            "engagement": 6,
+            "raw_engagement": 6,
             "metrics": {
-              "likes": 86,
-              "reposts": 12,
-              "replies": 6,
-              "quotes": 1
+              "likes": 3,
+              "reposts": 3,
+              "replies": 0,
+              "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "During meetings with Chilean President , Prime Minister of North Macedonia , and Prime Minister of Bangladesh , we discussed this year’s General Assembly UNGA agenda, as well as bi",
-            "text": "During meetings with Chilean President , Prime Minister of North Macedonia , and Prime Minister of Bangladesh , we discussed this year’s General Assembly UNGA agenda, as well as bilateral relations. 🇨🇱 🇲🇰 🇧🇩",
-            "url": "https://x.com/i/web/status/2102837183862198543",
+            "title": "DUI rejects a return to “Republic of Macedonia”, with no specific government proposal currently on the table. Meanwhile, constitutional amendments linked to North Macedonia’s EU pa",
+            "text": "DUI rejects a return to “Republic of Macedonia”, with no specific government proposal currently on the table. Meanwhile, constitutional amendments linked to North Macedonia’s EU path remain pending. NorthMacedonia DUI PrespaAgreement",
+            "url": "https://x.com/i/web/status/2103035297542144324",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-23T19:07:08.000Z",
+            "seen_date": "2026-09-24T08:14:22.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -880,20 +917,20 @@
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 2,
+                "hits": 1,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
+            "geopolitical_score": 10,
+            "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 92,
-            "raw_engagement": 92,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 83,
-              "reposts": 9,
-              "replies": 0,
+              "likes": 0,
+              "reposts": 0,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -942,79 +979,35 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
+        "mentions": 15,
         "negative_hits": 11,
-        "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 28,
-        "raw_engagement_total": 28,
-        "quality_total": 443,
-        "geopolitical_total": 402,
+        "positive_hits": 0,
+        "trusted_hits": 3,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 371,
+        "geopolitical_total": 327,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 6
+          "x": 4
         },
         "category_counts": {
           "corruption_rule_of_law": 6,
-          "protest": 2,
-          "security": 6,
-          "ethnic_tension": 2,
+          "protest": 1,
+          "security": 7,
           "government_crisis": 1
         },
         "tag_counts": {
-          "balkans": 9,
+          "balkans": 8,
           "kosovo": 1,
-          "albania": 1,
+          "albania": 2,
+          "Szerbia": 1,
           "Koszovó": 1,
-          "Albánia": 5
+          "Albánia": 2
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "security",
         "top_posts": [
-          {
-            "title": "",
-            "text": "Live morning coverage of protestors outside the court where protestors who were arrested on Monday are. There are also protestors massing outside the plenary session of the Albanian Parliament. Cops put up barriers at 8:30am before any protestors were even there, according to News24. Cops and \"eagle forces\" are armed and armored. 🔴 Nis dita e 110 e revoltës!",
-            "url": "https://mas.to/@meganL/117285325828663637",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Thu, 17 Sep 2026 08:00:46 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 45,
-            "quality_score": 48,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "This is a re-upload, but they do not say when it was originally made and aired. I've only had time to watch 12 minutes of it so far, but it seems worthwhile for knowing some of the players and incidents that happened before the # FlamingoRevolution started. There's a lot of foreign attitude towards Albanian corruption, as if they do not have their own corrup",
@@ -1129,6 +1122,40 @@
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Sun, 20 Sep 2026 17:42:01 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 112 of anti-corruption protest in Tirana, Albania Qytetarët nuk e ndalin aksionin dhe kërkojnë dorëheqjen e Ramës, mbahet sot protesta e 112-të # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest https://www. youtube.com/watch?v=1DdOD-S6J-Q",
+            "url": "https://mas.to/@meganL/117299289903799961",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sat, 19 Sep 2026 19:12:01 +0000",
             "matched_countries": [
               "Albánia"
             ],
