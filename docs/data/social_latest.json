@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25 20:57 UTC",
+  "updated_at": "2026-09-25 21:30 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,37 +12,38 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 14
+    "collected": 17
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 39,
-        "level": "medium",
+        "score": 50,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 7,
         "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 101,
-        "geopolitical_total": 83,
+        "engagement_total": 9,
+        "raw_engagement_total": 9,
+        "quality_total": 121,
+        "geopolitical_total": 101,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 1
+          "x": 3
         },
         "category_counts": {
           "protest": 1,
-          "government_crisis": 2,
-          "security": 2
+          "government_crisis": 3,
+          "security": 3
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 3,
-          "Szerbia": 1
+          "Szerbia": 2,
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -51,7 +52,7 @@
             "text": "On March 27, 1999, during the Kosovo War, Serbian forces using an aging, 1960s-era Soviet S-125 Neva (NATO designation SA-3 Goa) missile system managed to shoot down an F-117.",
             "url": "https://x.com/i/web/status/2103576632560697687",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Koszovó",
             "seen_date": "2026-09-25T20:05:26.000Z",
             "matched_countries": [
               "Szerbia"
@@ -77,10 +78,10 @@
             "quality_score": 28,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 0,
+              "likes": 1,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -308,31 +309,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 56,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
+        "mentions": 9,
         "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 160,
-        "geopolitical_total": 139,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 179,
+        "geopolitical_total": 157,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
           "security": 1,
-          "government_crisis": 6,
+          "government_crisis": 7,
           "protest": 1
         },
         "tag_counts": {
           "kosovo": 4,
           "albania": 1,
-          "Koszovó": 3
+          "Koszovó": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -403,10 +404,10 @@
             "quality_score": 21,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 1,
+              "likes": 2,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -699,31 +700,31 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 13,
+        "score": 16,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 4,
         "negative_hits": 0,
-        "positive_hits": 2,
+        "positive_hits": 3,
         "trusted_hits": 2,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 51,
-        "geopolitical_total": 42,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 62,
+        "geopolitical_total": 52,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
+          "government_crisis": 2,
           "security": 1,
-          "government_crisis": 1,
           "economic_infrastructure": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 4
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "Mickoski in UN: NATO, US strategic partnership, EU full-fledged membership our strategic commitments",
@@ -790,10 +791,45 @@
             "quality_score": 17,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 3,
-            "raw_engagement": 3,
+            "engagement": 4,
+            "raw_engagement": 4,
             "metrics": {
-              "likes": 3,
+              "likes": 4,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "met with Hristijan Mickoski, President of the Government of the Republic of North Macedonia. They exchanged on European integration, regional cooperation and supporting multilatera",
+            "text": "met with Hristijan Mickoski, President of the Government of the Republic of North Macedonia. They exchanged on European integration, regional cooperation and supporting multilateralism. Read more:",
+            "url": "https://x.com/i/web/status/2103595898764775736",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-25T21:21:59.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -845,13 +881,13 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 14,
-        "negative_hits": 9,
+        "negative_hits": 10,
         "positive_hits": 0,
         "trusted_hits": 2,
-        "engagement_total": 12,
-        "raw_engagement_total": 12,
-        "quality_total": 346,
-        "geopolitical_total": 309,
+        "engagement_total": 8,
+        "raw_engagement_total": 8,
+        "quality_total": 372,
+        "geopolitical_total": 335,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
@@ -859,9 +895,10 @@
         },
         "category_counts": {
           "corruption_rule_of_law": 6,
-          "government_crisis": 5,
+          "government_crisis": 4,
           "security": 1,
-          "ethnic_tension": 2
+          "ethnic_tension": 2,
+          "protest": 1
         },
         "tag_counts": {
           "balkans": 7,
@@ -910,6 +947,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Albania's PM Edi Rama. A stark warning on AI-driven disinformation, revealing a fabricated Israeli invasion. The speech comes as Rama's government faces months of anti-corruption p",
+            "text": "Albania's PM Edi Rama. A stark warning on AI-driven disinformation, revealing a fabricated Israeli invasion. The speech comes as Rama's government faces months of anti-corruption protests tied to a Jared Kushner-linked resort project.",
+            "url": "https://x.com/i/web/status/2103594849643446607",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-09-25T21:17:49.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 35,
+            "quality_score": 36,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -986,40 +1063,6 @@
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Wed, 23 Sep 2026 17:14:04 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 115 of anti-corruption protest in Tirana, Albania # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest https://www. youtube.com/watch?v=R7pfbmQWTaY",
-            "url": "https://mas.to/@meganL/117316608000710036",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Tue, 22 Sep 2026 20:36:15 +0000",
             "matched_countries": [
               "Albánia"
             ],
