@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25 21:30 UTC",
+  "updated_at": "2026-09-26 02:43 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,76 +12,74 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 10
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 50,
-        "level": "high",
+        "score": 32,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 2,
+        "mentions": 5,
+        "negative_hits": 1,
         "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 9,
-        "raw_engagement_total": 9,
-        "quality_total": 121,
-        "geopolitical_total": 101,
+        "trusted_hits": 0,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 99,
+        "geopolitical_total": 88,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
-          "x": 3
+          "mastodon": 3,
+          "x": 2
         },
         "category_counts": {
           "protest": 1,
           "government_crisis": 3,
-          "security": 3
+          "security": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 3,
-          "Szerbia": 2,
-          "Koszovó": 1
+          "serbia": 2,
+          "Szerbia": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "On March 27, 1999, during the Kosovo War, Serbian forces using an aging, 1960s-era Soviet S-125 Neva (NATO designation SA-3 Goa) missile system managed to shoot down an F-117.",
-            "text": "On March 27, 1999, during the Kosovo War, Serbian forces using an aging, 1960s-era Soviet S-125 Neva (NATO designation SA-3 Goa) missile system managed to shoot down an F-117.",
-            "url": "https://x.com/i/web/status/2103576632560697687",
+            "title": "if i said just the first three sentences of this in public im almost positive the serbian police would have me put into a maximum security asylum",
+            "text": "if i said just the first three sentences of this in public im almost positive the serbian police would have me put into a maximum security asylum",
+            "url": "https://x.com/i/web/status/2103643581164687404",
             "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-25T20:05:26.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-26T00:31:28.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
+              "Szerbia": 2
             },
             "event_category": "security",
             "event_categories": [
               {
                 "category": "security",
-                "hits": 1,
+                "hits": 2,
                 "weight": 9
               },
               {
-                "category": "protest",
+                "category": "migration",
                 "hits": 1,
-                "weight": 8
+                "weight": 6
               }
             ],
             "geopolitical_score": 24,
-            "quality_score": 28,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "quality_score": 25,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 1,
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -157,33 +155,41 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "VUCIC DROPS BOMBSHELL: Serbia FIRES At NATO For Bombing Serbia With No UNSC Mandate At UNGA Now! https://www. youtube.com/watch?v=ImtliE5rZv4 # serbia # vucic # unsc # unga",
-            "url": "https://mastodon.social/@gentlemangangster/117327808516770025",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Thu, 24 Sep 2026 20:04:41 +0000",
+            "title": "The First Deputy Prime Minister of North Macedonia, Bekim Sali, did not take part in the bilateral meeting held in New York between Prime Minister Hristijan Mickoski and Serbian Pr",
+            "text": "The First Deputy Prime Minister of North Macedonia, Bekim Sali, did not take part in the bilateral meeting held in New York between Prime Minister Hristijan Mickoski and Serbian President Aleksandar Vucic.",
+            "url": "https://x.com/i/web/status/2103621723895517332",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-25T23:04:37.000Z",
             "matched_countries": [
-              "Szerbia"
+              "Szerbia",
+              "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 9,
+              "Észak-Macedónia": 9
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 1,
+                "category": "government_crisis",
+                "hits": 2,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 18,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -309,106 +315,73 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 60,
+        "score": 54,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 2,
+        "mentions": 7,
+        "negative_hits": 3,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 179,
-        "geopolitical_total": 157,
+        "trusted_hits": 0,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
+        "quality_total": 147,
+        "geopolitical_total": 130,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 4
+          "x": 2
         },
         "category_counts": {
-          "security": 1,
-          "government_crisis": 7,
-          "protest": 1
+          "security": 2,
+          "government_crisis": 5
         },
         "tag_counts": {
           "kosovo": 4,
           "albania": 1,
-          "Koszovó": 4
+          "Koszovó": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "In Pristina, it was expected that Albanian Prime Minister Edi Rama would speak at the United Nations General Assembly about the Hague Special Court’s decision concerning former KLA",
-            "text": "In Pristina, it was expected that Albanian Prime Minister Edi Rama would speak at the United Nations General Assembly about the Hague Special Court’s decision concerning former KLA leaders.",
-            "url": "https://x.com/i/web/status/2103583327936471324",
+            "title": "Kosovo main opposition ready to support PM Kurti for election of President in exchange of law changes on EU/USA-sponsored war crimes court amid sentencing of former President",
+            "text": "Kosovo main opposition ready to support PM Kurti for election of President in exchange of law changes on EU/USA-sponsored war crimes court amid sentencing of former President",
+            "url": "https://x.com/i/web/status/2103615087495741487",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-09-25T20:32:02.000Z",
-            "matched_countries": [
-              "Albánia",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Albánia": 6,
-              "Koszovó": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 25,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "“Not in My Name”: Day Ten of Protests Shows Broad Support for the KLA and Its Leaders in The Hague Kosovo Prishtina KLA Protest NotInMyName HagueVerdict",
-            "text": "“Not in My Name”: Day Ten of Protests Shows Broad Support for the KLA and Its Leaders in The Hague Kosovo Prishtina KLA Protest NotInMyName HagueVerdict",
-            "url": "https://x.com/i/web/status/2103574604170068358",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-25T19:57:22.000Z",
+            "seen_date": "2026-09-25T22:38:14.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
               "Koszovó": 5
             },
-            "event_category": "protest",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "protest",
+                "category": "government_crisis",
                 "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
+            "geopolitical_score": 38,
+            "quality_score": 39,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 2,
-              "reposts": 0,
+              "likes": 0,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -515,6 +488,42 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Albania: Rama, Stati Uniti e Biden hanno tradito ex presidente del Kosovo Hashim Thaci 25 set 18:38 - (Agenzia Nova) - Gli Stati Uniti d'America e Joe Biden \"hanno tradito Hashim Thaci\". Questa la forte dichiarazione rilasciata... (Alt) Albania: Rama, the United States and Biden betrayed former Kosovan president Hashim Thaci September 25 18:38 ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117332785716848991",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Fri, 25 Sep 2026 17:10:27 +0000",
+            "matched_countries": [
+              "Koszovó",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Koszovó": 2,
+              "Albánia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 20,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -544,8 +553,7 @@
           "eu_integration": 1
         },
         "tag_counts": {
-          "serbia": 1,
-          "montenegro": 5
+          "montenegro": 6
         },
         "main_topic": "protest",
         "top_posts": [
@@ -583,7 +591,7 @@
             "text": "Vote on Montenegrin Speaker’s Removal Over Mladic Condolences Blocked https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/24/vote-on-montenegrin-speakers-removal-over-mladic-condolences-blocked/bi/",
             "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/24/vote-on-montenegrin-speakers-removal-over-mladic-condolences-blocked/bi/",
             "source": "mastodon",
-            "tag": "serbia",
+            "tag": "montenegro",
             "seen_date": "Thu, 24 Sep 2026 13:35:33 +0000",
             "matched_countries": [
               "Montenegró"
@@ -700,101 +708,62 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 16,
+        "score": 9,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 2,
         "negative_hits": 0,
-        "positive_hits": 3,
-        "trusted_hits": 2,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 62,
-        "geopolitical_total": 52,
+        "positive_hits": 1,
+        "trusted_hits": 0,
+        "engagement_total": 9,
+        "raw_engagement_total": 9,
+        "quality_total": 30,
+        "geopolitical_total": 28,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 4
+          "x": 2
         },
         "category_counts": {
-          "government_crisis": 2,
-          "security": 1,
-          "economic_infrastructure": 1
+          "government_crisis": 2
         },
         "tag_counts": {
-          "Észak-Macedónia": 4
+          "Szerbia": 1,
+          "Észak-Macedónia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "Mickoski in UN: NATO, US strategic partnership, EU full-fledged membership our strategic commitments",
-            "text": "Mickoski in UN: NATO, US strategic partnership, EU full-fledged membership our strategic commitments",
-            "url": "https://x.com/i/web/status/2103588833996787730",
+            "title": "The First Deputy Prime Minister of North Macedonia, Bekim Sali, did not take part in the bilateral meeting held in New York between Prime Minister Hristijan Mickoski and Serbian Pr",
+            "text": "The First Deputy Prime Minister of North Macedonia, Bekim Sali, did not take part in the bilateral meeting held in New York between Prime Minister Hristijan Mickoski and Serbian President Aleksandar Vucic.",
+            "url": "https://x.com/i/web/status/2103621723895517332",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-25T20:53:55.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-25T23:04:37.000Z",
             "matched_countries": [
+              "Szerbia",
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 24,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Macedonia's Prime Minister Hristijan Mickoski speaks during the 81st session of the United Nations General Assembly at United Nations headquarters, Friday, Sept. 25, 2026. 📸Yuki Iw",
-            "text": "Macedonia's Prime Minister Hristijan Mickoski speaks during the 81st session of the United Nations General Assembly at United Nations headquarters, Friday, Sept. 25, 2026. 📸Yuki Iwamura - AP",
-            "url": "https://x.com/i/web/status/2103563023856136209",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-25T19:11:21.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
+              "Szerbia": 9,
+              "Észak-Macedónia": 9
             },
             "event_category": "government_crisis",
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 1,
+                "hits": 2,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 17,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 4,
-            "raw_engagement": 4,
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 4,
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -826,46 +795,11 @@
             "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 9,
+            "raw_engagement": 9,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Expansion of economic cooperation between Azerbaijan and North Macedonia discussed The expansion of trade and investment relations with North Macedonia was discussed, the Ministry ",
-            "text": "Expansion of economic cooperation between Azerbaijan and North Macedonia discussed The expansion of trade and investment relations with North Macedonia was discussed, the Ministry of Economy told APA-Economics. As part of the Second Azerbaijan International Investment Forum,",
-            "url": "https://x.com/i/web/status/2103544538761748811",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-25T17:57:54.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "economic_infrastructure",
-            "event_categories": [
-              {
-                "category": "economic_infrastructure",
-                "hits": 2,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 6,
+              "reposts": 3,
               "replies": 0,
               "quotes": 0
             },
@@ -880,32 +814,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 10,
+        "mentions": 13,
+        "negative_hits": 12,
         "positive_hits": 0,
         "trusted_hits": 2,
-        "engagement_total": 8,
-        "raw_engagement_total": 8,
-        "quality_total": 372,
-        "geopolitical_total": 335,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 353,
+        "geopolitical_total": 317,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
-          "x": 5
+          "x": 4
         },
         "category_counts": {
           "corruption_rule_of_law": 6,
           "government_crisis": 4,
-          "security": 1,
-          "ethnic_tension": 2,
-          "protest": 1
+          "security": 2,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 7,
           "albania": 2,
-          "Koszovó": 2,
-          "Montenegró": 1,
-          "Albánia": 2
+          "Albánia": 4
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -949,33 +880,43 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Albania's PM Edi Rama. A stark warning on AI-driven disinformation, revealing a fabricated Israeli invasion. The speech comes as Rama's government faces months of anti-corruption p",
-            "text": "Albania's PM Edi Rama. A stark warning on AI-driven disinformation, revealing a fabricated Israeli invasion. The speech comes as Rama's government faces months of anti-corruption protests tied to a Jared Kushner-linked resort project.",
-            "url": "https://x.com/i/web/status/2103594849643446607",
+            "title": "Prime Minister Edi Rama has reacted on the “X” platform following an incident in New York, where Albanian protesters threw eggs at him during his visit to the United States.",
+            "text": "Prime Minister Edi Rama has reacted on the “X” platform following an incident in New York, where Albanian protesters threw eggs at him during his visit to the United States.",
+            "url": "https://x.com/i/web/status/2103644431454773577",
             "source": "x",
             "tag": "Albánia",
-            "seen_date": "2026-09-25T21:17:49.000Z",
+            "seen_date": "2026-09-26T00:34:50.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 5
+              "Albánia": 6
             },
-            "event_category": "protest",
+            "event_category": "security",
             "event_categories": [
               {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
                 "category": "protest",
-                "hits": 2,
+                "hits": 1,
                 "weight": 8
               },
               {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
+                "category": "foreign_influence",
+                "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 35,
-            "quality_score": 36,
+            "geopolitical_score": 37,
+            "quality_score": 38,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
