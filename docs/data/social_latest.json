@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26 10:35 UTC",
+  "updated_at": "2026-09-26 11:17 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 14
+    "collected": 12
   },
   "countries": [
     {
@@ -21,29 +21,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 2,
-        "positive_hits": 1,
+        "mentions": 12,
+        "negative_hits": 3,
+        "positive_hits": 5,
         "trusted_hits": 0,
-        "engagement_total": 100,
-        "raw_engagement_total": 100,
-        "quality_total": 160,
-        "geopolitical_total": 147,
+        "engagement_total": 117,
+        "raw_engagement_total": 117,
+        "quality_total": 228,
+        "geopolitical_total": 210,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
-          "x": 7
+          "mastodon": 3,
+          "x": 9
         },
         "category_counts": {
           "protest": 1,
-          "government_crisis": 5,
-          "security": 2,
-          "ethnic_tension": 1
+          "government_crisis": 7,
+          "foreign_influence": 1,
+          "economic_infrastructure": 1,
+          "ethnic_tension": 1,
+          "security": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 1,
-          "Szerbia": 4,
+          "serbia": 2,
+          "Szerbia": 6,
           "Koszovó": 1,
           "Észak-Macedónia": 1,
           "Albánia": 1
@@ -51,17 +53,17 @@
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "Serbia Russia | Serbian 🇷🇸 President Vučić called Russian 🇷🇺 President Putin before his resignation: Serbian 🇷🇸 President Aleksandar Vučić has held a one-hour phone call with Russi",
-            "text": "Serbia Russia | Serbian 🇷🇸 President Vučić called Russian 🇷🇺 President Putin before his resignation: Serbian 🇷🇸 President Aleksandar Vučić has held a one-hour phone call with Russian 🇷🇺 President Vladimir Putin, covering bilateral relations, the situation in the region, the",
-            "url": "https://x.com/i/web/status/2103793394770210923",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-26T10:26:46.000Z",
+            "title": "",
+            "text": "📞 # Russian President Vladimir # Putin and Serbian President Aleksandar Vucic held a telephone conversation initiated by the Serbian side, discussing: ▪️ aspects of the expansion of relations between # Russia and # Serbia , including in the energy, oil and gas, transport, and healthcare sectors ▪️ pressing issues on the international agenda, including the co",
+            "url": "https://social.y-gallery.net/@LacyBurton/117337050988047922",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sat, 26 Sep 2026 11:15:10 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 6
+              "Szerbia": 9
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -74,34 +76,33 @@
                 "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 2,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
+            "geopolitical_score": 37,
+            "quality_score": 40,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 2,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           },
           {
-            "title": "Fraternal friendships have deep historical roots... this is where glory is made: Putin Spoke with President of Serbia Vučić They discussed the development of Russian-Serbian relati",
-            "text": "Fraternal friendships have deep historical roots... this is where glory is made: Putin Spoke with President of Serbia Vučić They discussed the development of Russian-Serbian relations, strategic partnership, including in energy and the oil and gas sector.",
-            "url": "https://x.com/i/web/status/2103791437943071198",
+            "title": "🚨 BREAKING NEWS: 🇷🇺🇷🇸 **Fraternal friendship with deep historical roots.** President Vladimir Putin spoke with Serbian President Aleksandar Vučić about the continued development of",
+            "text": "🚨 BREAKING NEWS: 🇷🇺🇷🇸 **Fraternal friendship with deep historical roots.** President Vladimir Putin spoke with Serbian President Aleksandar Vučić about the continued development of **Russian–Serbian relations and their strategic partnership**, including cooperation in the",
+            "url": "https://x.com/i/web/status/2103801224659083771",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-09-26T10:19:00.000Z",
+            "seen_date": "2026-09-26T10:57:53.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 6
+              "Szerbia": 9
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -117,20 +118,60 @@
               },
               {
                 "category": "economic_infrastructure",
-                "hits": 2,
+                "hits": 1,
                 "weight": 4
               }
             ],
-            "geopolitical_score": 26,
-            "quality_score": 27,
+            "geopolitical_score": 22,
+            "quality_score": 23,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 15,
-            "raw_engagement": 15,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 12,
+              "likes": 1,
               "reposts": 1,
-              "replies": 2,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Serbia hopes to secure another extension of its gas deal with Russia, President Aleksandar Vucic said Saturday after a call with Vladimir Putin",
+            "text": "Serbia hopes to secure another extension of its gas deal with Russia, President Aleksandar Vucic said Saturday after a call with Vladimir Putin",
+            "url": "https://x.com/i/web/status/2103801432399053274",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-26T10:58:42.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 22,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -170,75 +211,41 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "The First Deputy Prime Minister of North Macedonia, Bekim Sali, did not take part in the bilateral meeting held in New York between Prime Minister Hristijan Mickoski and Serbian Pr",
-            "text": "The First Deputy Prime Minister of North Macedonia, Bekim Sali, did not take part in the bilateral meeting held in New York between Prime Minister Hristijan Mickoski and Serbian President Aleksandar Vucic.",
-            "url": "https://x.com/i/web/status/2103621723895517332",
+            "title": "🇷🇸 NEWS: Serbian President Aleksandar Vucic hopes to extend Serbia's Russian gas deal again, he said Saturday following a call with Vladimir Putin",
+            "text": "🇷🇸 NEWS: Serbian President Aleksandar Vucic hopes to extend Serbia's Russian gas deal again, he said Saturday following a call with Vladimir Putin",
+            "url": "https://x.com/i/web/status/2103802121082622054",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-25T23:04:37.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-26T11:01:27.000Z",
             "matched_countries": [
-              "Szerbia",
-              "Észak-Macedónia"
+              "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 9,
-              "Észak-Macedónia": 9
+              "Szerbia": 9
             },
             "event_category": "government_crisis",
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 2,
+                "hits": 1,
                 "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Omer Nura, head of the Global Network of Albanian Businesses, has been detained by Serbian police authorities at the Dheu i Bardhë border crossing.",
-            "text": "Omer Nura, head of the Global Network of Albanian Businesses, has been detained by Serbian police authorities at the Dheu i Bardhë border crossing.",
-            "url": "https://x.com/i/web/status/2103775212735013137",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-09-26T09:14:31.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
+              },
               {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
               }
             ],
             "geopolitical_score": 18,
             "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
               "likes": 0,
               "reposts": 0,
-              "replies": 0,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -338,31 +345,29 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 57,
-        "level": "high",
+        "score": 34,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 3,
+        "mentions": 5,
+        "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 120,
-        "raw_engagement_total": 1037,
-        "quality_total": 120,
-        "geopolitical_total": 103,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 95,
+        "geopolitical_total": 80,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 2
+          "x": 0
         },
         "category_counts": {
-          "security": 2,
-          "government_crisis": 4,
-          "protest": 1
+          "security": 1,
+          "government_crisis": 4
         },
         "tag_counts": {
           "kosovo": 4,
-          "albania": 1,
-          "Koszovó": 2
+          "albania": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -821,22 +826,22 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
+        "mentions": 13,
         "negative_hits": 9,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 77,
-        "raw_engagement_total": 77,
-        "quality_total": 347,
-        "geopolitical_total": 313,
+        "engagement_total": 101,
+        "raw_engagement_total": 101,
+        "quality_total": 337,
+        "geopolitical_total": 304,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
-          "x": 5
+          "x": 4
         },
         "category_counts": {
           "corruption_rule_of_law": 6,
-          "government_crisis": 3,
+          "government_crisis": 2,
           "security": 3,
           "ethnic_tension": 1,
           "protest": 1
@@ -845,7 +850,7 @@
           "balkans": 7,
           "albania": 2,
           "Koszovó": 1,
-          "Albánia": 4
+          "Albánia": 3
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
