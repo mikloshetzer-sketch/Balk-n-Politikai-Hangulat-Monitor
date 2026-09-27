@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27 05:10 UTC",
+  "updated_at": "2026-09-27 11:07 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 19
   },
   "countries": [
     {
@@ -21,30 +21,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 3,
+        "mentions": 14,
+        "negative_hits": 8,
         "positive_hits": 0,
         "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 149,
-        "geopolitical_total": 126,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
+        "quality_total": 295,
+        "geopolitical_total": 267,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 3
+          "x": 9
         },
         "category_counts": {
+          "security": 3,
           "protest": 1,
-          "foreign_influence": 2,
-          "government_crisis": 4,
-          "security": 1
+          "foreign_influence": 3,
+          "government_crisis": 7
         },
         "tag_counts": {
-          "balkans": 1,
-          "serbia": 4,
-          "Szerbia": 2,
-          "Montenegró": 1
+          "balkans": 2,
+          "serbia": 3,
+          "Szerbia": 7,
+          "Montenegró": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -88,6 +88,119 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "🇷🇸 Serbian President Aleksandar Vucic announced his resignation. Vucic is SNS-led United Serbia coalition’s Prime Minister candidate He was ineligible to run for a third consecutiv",
+            "text": "🇷🇸 Serbian President Aleksandar Vucic announced his resignation. Vucic is SNS-led United Serbia coalition’s Prime Minister candidate He was ineligible to run for a third consecutive term",
+            "url": "https://x.com/i/web/status/2104160543669997878",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-27T10:45:41.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 30,
+            "quality_score": 31,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "From Kosovo and NATO connections to the extraordinary accusation involving “Serbian agents,” TLF follows the trail — while separating what is known from what remains suspicion. https://www. thelevantfiles.org/2026/09/sex -spies-and-state-secrets-did.html # Albania # SHISH # VloraHyseni # Intelligence # Espionage # StateSecrets # Balkans # NATO",
+            "url": "https://mastodon.social/@thelevantfiles/117342667655443704",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sun, 27 Sep 2026 11:03:33 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Koszovó": 1,
+              "Albánia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": ".....BURGLARING MYYYYY APARTMENT WITH VUCIC NAME LEFT ON PAPER.... CAUSING CYBER CRIME ON MY DEVICES..... ATTACKING OFFICIAL STAFF OF PENTAGONE WITH ILLLLEGALL TED IN MYYYY OFFICE ",
+            "text": ".....BURGLARING MYYYYY APARTMENT WITH VUCIC NAME LEFT ON PAPER.... CAUSING CYBER CRIME ON MY DEVICES..... ATTACKING OFFICIAL STAFF OF PENTAGONE WITH ILLLLEGALL TED IN MYYYY OFFICE MULTIPLE TIMES AND PRESIDENT MULTIPLE TIMES REASON WHY HE DIRCHED WHO . THAT HE CANT DO . BUT DID..",
+            "url": "https://x.com/i/web/status/2104153238366736428",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-27T10:16:39.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 22,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Serbia's protesting youth formally join race challenging Vucic before next month's election https://www. youtube.com/watch?v=qL6EgoRT2_8 # Serbia # Corruption # Resistance # Democracy # Balkans # Europe",
             "url": "https://mas.to/@meganL/117303856271594706",
@@ -120,19 +233,96 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bosznia-Hercegovina",
+      "social_signal": {
+        "score": 42,
+        "level": "high",
+        "scale": "0-60 risk index",
+        "mentions": 5,
+        "negative_hits": 3,
+        "positive_hits": 0,
+        "trusted_hits": 0,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 87,
+        "geopolitical_total": 76,
+        "source_counts": {
+          "reddit": 0,
+          "mastodon": 3,
+          "x": 2
+        },
+        "category_counts": {
+          "security": 2,
+          "ethnic_tension": 1,
+          "protest": 1,
+          "foreign_influence": 1
+        },
+        "tag_counts": {
+          "serbia": 1,
+          "bosnia": 2,
+          "Montenegró": 2
+        },
+        "main_topic": "security",
+        "top_posts": [
           {
-            "title": "The Serbian government granted Serbian citizenship on an expedited basis to oligarch VadimNovinsky—who is wanted by Ukraine on suspicion of treason and is also subject to sanctions",
-            "text": "The Serbian government granted Serbian citizenship on an expedited basis to oligarch VadimNovinsky—who is wanted by Ukraine on suspicion of treason and is also subject to sanctions—the BBC reported.",
-            "url": "https://x.com/i/web/status/2104053001635901779",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-27T03:38:21.000Z",
+            "title": "",
+            "text": "Sunday, September 27, 2026 Ex-defense minister Fedorov announces new 'Army of Robots' initiative in latest move since leaving office . . . . . Nothing left to eat: Sybiha urges partners to act on Oleshky humanitarian crisis . . . . . Germany links arson attack near Ukraine-supplying drone maker Helsing to Russia's GRU . . . . . and more https:// activitypub.",
+            "url": "https://activitypub.writeworks.uk/2026/09/sunday-september-27-2026/",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sun, 27 Sep 2026 10:45:23 +0000",
             "matched_countries": [
-              "Szerbia"
+              "Bosznia-Hercegovina"
             ],
             "country_confidence": {
-              "Szerbia": 2
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 32,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Brussels packs for a four-stop Western Balkans tour. Von der Leyen hits Tirana, Pristina, Podgorica and Skopje from 30 September. Belgrade and Sarajevo wait because elections come ",
+            "text": "Brussels packs for a four-stop Western Balkans tour. Von der Leyen hits Tirana, Pristina, Podgorica and Skopje from 30 September. Belgrade and Sarajevo wait because elections come first. Belgrade's other countdown is oil. NIS asked Washington for a fresh sanctions waiver before",
+            "url": "https://x.com/i/web/status/2104079614360391722",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-09-27T05:24:06.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina",
+              "Koszovó",
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Szerbia": 4,
+              "Bosznia-Hercegovina": 4,
+              "Koszovó": 4,
+              "Montenegró": 4,
+              "Észak-Macedónia": 4,
+              "Albánia": 4
             },
             "event_category": "foreign_influence",
             "event_categories": [
@@ -140,12 +330,17 @@
                 "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
               }
             ],
-            "geopolitical_score": 15,
-            "quality_score": 19,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "geopolitical_score": 17,
+            "quality_score": 18,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "metrics": {
@@ -157,102 +352,11 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "",
-            "text": "Serbia has granted citizenship to former Ukrainian lawmaker and businessman Vadym Novynskyi, who is wanted in Ukraine on suspicion of high treason, Radio Free Europe/Radio Liberty (RFE/RL) reported on Sept. 26. https:// kyivindependent.com/serbia-gra nts-citizenship-to-former-ukrainian-mp-novynskyi-wanted-on-treason-suspicion/ # Ukraine # Russia # Serbia",
-            "url": "https://mastodon.social/@hanse_mina/117340095232879527",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sun, 27 Sep 2026 00:09:21 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 17,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "This is what it looked like when concrete canopy collapsed in #NoviSad , #Serbia , on November 1st 2024. 16 people were killed - one mother with an unborn baby, granddad hugging his grandchildren, one young woman lost both legs.... Vučić's regime was to blame for this! They won't get away with this",
-            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:sjx3hptnopiz7mtzaexuhgpr/post/3mwhaughij222",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sat, 26 Sep 2026 21:42:14 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 15,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Bosznia-Hercegovina",
-      "social_signal": {
-        "score": 22,
-        "level": "medium",
-        "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
-        "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 37,
-        "geopolitical_total": 30,
-        "source_counts": {
-          "reddit": 0,
-          "mastodon": 2,
-          "x": 1
-        },
-        "category_counts": {
-          "ethnic_tension": 1,
-          "protest": 1,
-          "security": 1
-        },
-        "tag_counts": {
-          "bosnia": 2,
-          "Szerbia": 1
-        },
-        "main_topic": "ethnic_tension",
-        "top_posts": [
-          {
             "title": "Looks like any Interrail summer. The year is the caption. 1990. Yugoslavia is still one state: Slovenia, Croatia, Bosnia and Herzegovina, Serbia, Montenegro, Macedonia. Tension is ",
             "text": "Looks like any Interrail summer. The year is the caption. 1990. Yugoslavia is still one state: Slovenia, Croatia, Bosnia and Herzegovina, Serbia, Montenegro, Macedonia. Tension is up. The new borders are not on the ticket yet. 25 June 1991: Slovenia and Croatia declare",
             "url": "https://x.com/i/web/status/2104065242909266035",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Montenegró",
             "seen_date": "2026-09-27T04:27:00.000Z",
             "matched_countries": [
               "Bosznia-Hercegovina"
@@ -349,74 +453,74 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 52,
+        "score": 54,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
+        "mentions": 8,
         "negative_hits": 2,
         "positive_hits": 0,
-        "trusted_hits": 0,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 126,
-        "geopolitical_total": 109,
+        "quality_total": 152,
+        "geopolitical_total": 130,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 5,
+          "mastodon": 6,
           "x": 2
         },
         "category_counts": {
-          "security": 1,
+          "security": 2,
           "government_crisis": 4,
-          "ethnic_tension": 1,
-          "protest": 1
+          "economic_infrastructure": 1,
+          "foreign_influence": 1
         },
         "tag_counts": {
+          "balkans": 1,
           "kosovo": 4,
           "albania": 1,
-          "Koszovó": 2
+          "Koszovó": 1,
+          "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "For the 11th consecutive night, citizens gathered in Skanderbeg Square in Pristina to protest against the conviction handed down by the Special Court in The Hague against the KLA l",
-            "text": "For the 11th consecutive night, citizens gathered in Skanderbeg Square in Pristina to protest against the conviction handed down by the Special Court in The Hague against the KLA leaders.",
-            "url": "https://x.com/i/web/status/2103998146166600063",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-27T00:00:23.000Z",
+            "title": "",
+            "text": "From Kosovo and NATO connections to the extraordinary accusation involving “Serbian agents,” TLF follows the trail — while separating what is known from what remains suspicion. https://www. thelevantfiles.org/2026/09/sex -spies-and-state-secrets-did.html # Albania # SHISH # VloraHyseni # Intelligence # Espionage # StateSecrets # Balkans # NATO",
+            "url": "https://mastodon.social/@thelevantfiles/117342667655443704",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sun, 27 Sep 2026 11:03:33 +0000",
             "matched_countries": [
-              "Koszovó"
+              "Szerbia",
+              "Koszovó",
+              "Albánia"
             ],
             "country_confidence": {
-              "Koszovó": 4
+              "Szerbia": 2,
+              "Koszovó": 1,
+              "Albánia": 1
             },
-            "event_category": "protest",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "protest",
+                "category": "security",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
               },
               {
-                "category": "corruption_rule_of_law",
+                "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
+            "geopolitical_score": 21,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -562,32 +666,82 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 34,
+        "score": 38,
         "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 6,
-        "negative_hits": 1,
+        "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 76,
-        "geopolitical_total": 56,
+        "quality_total": 83,
+        "geopolitical_total": 65,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 6,
-          "x": 0
+          "mastodon": 5,
+          "x": 1
         },
         "category_counts": {
           "government_crisis": 2,
-          "protest": 3,
-          "eu_integration": 1
+          "protest": 2,
+          "eu_integration": 1,
+          "foreign_influence": 1
         },
         "tag_counts": {
-          "montenegro": 6
+          "montenegro": 5,
+          "Montenegró": 1
         },
-        "main_topic": "protest",
+        "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "Brussels packs for a four-stop Western Balkans tour. Von der Leyen hits Tirana, Pristina, Podgorica and Skopje from 30 September. Belgrade and Sarajevo wait because elections come ",
+            "text": "Brussels packs for a four-stop Western Balkans tour. Von der Leyen hits Tirana, Pristina, Podgorica and Skopje from 30 September. Belgrade and Sarajevo wait because elections come first. Belgrade's other countdown is oil. NIS asked Washington for a fresh sanctions waiver before",
+            "url": "https://x.com/i/web/status/2104079614360391722",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-09-27T05:24:06.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina",
+              "Koszovó",
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Szerbia": 4,
+              "Bosznia-Hercegovina": 4,
+              "Koszovó": 4,
+              "Montenegró": 4,
+              "Észak-Macedónia": 4,
+              "Albánia": 4
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 18,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Agenzia Nova: Montenegro: Milatovic all'Assemblea Onu, Podgorica celebra 20 anni di adesione alle Nazioni Unite (3) 21 set 15:48 - (Agenzia Nova) - Milatovic avra' inoltre numerosi incontri bilaterali con capi di Stato e di governo, nonche' con altri alti... (Seb) Montenegro: Milatovic at the UN Assembly, Podgorica celebrates 20 years of membership in the Un",
@@ -703,35 +857,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "ICYMI: Firms face up to 4% turnover fines under Montenegro's new data law: Obligations apply from 19 March 2027 to foreign companies monitoring Montenegrin users. EU standard clauses wait for accession. Which other rules are on hold? https:// ppc.land/firms-face-up-to-4-tu rnover-fines-under-montenegros-new-data-law/ # Montenegro # DataProtection # GDPR # Te",
-            "url": "https://mastodon.social/@ppcland/117308078520926389",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Mon, 21 Sep 2026 08:27:05 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 4
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 8,
-            "quality_score": 11,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -739,47 +864,89 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 6,
+        "score": 11,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 1,
+        "mentions": 2,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 74,
-        "raw_engagement_total": 74,
-        "quality_total": 10,
-        "geopolitical_total": 9,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 29,
+        "geopolitical_total": 27,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
-          "government_crisis": 1
+          "security": 2
         },
         "tag_counts": {
-          "Észak-Macedónia": 1
+          "Észak-Macedónia": 1,
+          "Albánia": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
-            "title": "🇨🇭 Jashari's performance v North Macedonia ⏱️ Minutes played: 90’ 📊 Expected goals (xG): 0.05 📈 Expected assists (xA): 0.2 🔑 Key passes: 1 📤 Crosses: 1 ✅ Accurate passes: 58/65 (89",
-            "text": "🇨🇭 Jashari's performance v North Macedonia ⏱️ Minutes played: 90’ 📊 Expected goals (xG): 0.05 📈 Expected assists (xA): 0.2 🔑 Key passes: 1 📤 Crosses: 1 ✅ Accurate passes: 58/65 (89%) ⚔️ Passes in opposition half: 32/37 (86%) 🏠 Passes in own half: 26/28 (93%) 🚀 Long balls:",
-            "url": "https://x.com/i/web/status/2103948705422348525",
+            "title": "North Macedonian authorities are holding Azgan Haklaj, a former member of the Albanian Parliament, at the Blata border crossing in Dibër.",
+            "text": "North Macedonian authorities are holding Azgan Haklaj, a former member of the Albanian Parliament, at the Blata border crossing in Dibër.",
+            "url": "https://x.com/i/web/status/2104162042227687914",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-09-27T10:51:38.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Albánia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "How are these States contributing to space security? 🇱🇸 Lesotho 🇲🇱 Mali 🇳🇮 Nicaragua 🇲🇰 North Macedonia 🇵🇬 Papua New Guinea 🇸🇨 Seychelles 🇹🇯 Tajikistan 🇿🇲 Zambia Find out more on t",
+            "text": "How are these States contributing to space security? 🇱🇸 Lesotho 🇲🇱 Mali 🇳🇮 Nicaragua 🇲🇰 North Macedonia 🇵🇬 Papua New Guinea 🇸🇨 Seychelles 🇹🇯 Tajikistan 🇿🇲 Zambia Find out more on the Space Security Portal:",
+            "url": "https://x.com/i/web/status/2104118930918805635",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-26T20:43:55.000Z",
+            "seen_date": "2026-09-27T08:00:20.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
               "Észak-Macedónia": 5
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
               }
@@ -788,11 +955,11 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 74,
-            "raw_engagement": 74,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 68,
-              "reposts": 6,
+              "likes": 0,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
@@ -807,30 +974,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
+        "mentions": 14,
         "negative_hits": 9,
         "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 8,
-        "raw_engagement_total": 8,
-        "quality_total": 369,
-        "geopolitical_total": 331,
+        "trusted_hits": 1,
+        "engagement_total": 13,
+        "raw_engagement_total": 13,
+        "quality_total": 365,
+        "geopolitical_total": 325,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 11,
-          "x": 5
+          "mastodon": 12,
+          "x": 2
         },
         "category_counts": {
-          "security": 2,
+          "security": 3,
           "corruption_rule_of_law": 7,
-          "government_crisis": 6,
+          "government_crisis": 3,
           "migration": 1
         },
         "tag_counts": {
-          "balkans": 8,
+          "balkans": 9,
           "albania": 3,
-          "Koszovó": 2,
-          "Albánia": 3
+          "Montenegró": 1,
+          "Albánia": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
