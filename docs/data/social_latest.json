@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27 02:43 UTC",
+  "updated_at": "2026-09-27 05:10 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 17
   },
   "countries": [
     {
@@ -21,31 +21,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 2,
+        "mentions": 8,
+        "negative_hits": 3,
         "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 16,
-        "raw_engagement_total": 16,
-        "quality_total": 183,
-        "geopolitical_total": 162,
+        "trusted_hits": 2,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 149,
+        "geopolitical_total": 126,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 4
+          "x": 3
         },
         "category_counts": {
           "protest": 1,
-          "foreign_influence": 1,
+          "foreign_influence": 2,
           "government_crisis": 4,
-          "ethnic_tension": 2,
           "security": 1
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 4,
           "Szerbia": 2,
-          "Montenegró": 2
+          "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -89,51 +88,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Serbia: 1. Students (bolsheviks) for EU — but they have no jobs from Brussels 2. Chetniks for Serbian Imperialism — but they are not in the military 3. Turks for Yugoslavia — but t",
-            "text": "Serbia: 1. Students (bolsheviks) for EU — but they have no jobs from Brussels 2. Chetniks for Serbian Imperialism — but they are not in the military 3. Turks for Yugoslavia — but they are a minority with maybe 100 monthly visitors from Serbia Did I miss anything? How about",
-            "url": "https://x.com/i/web/status/2104004815269319145",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-27T00:26:53.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 25,
-            "quality_score": 26,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Serbia's protesting youth formally join race challenging Vucic before next month's election https://www. youtube.com/watch?v=qL6EgoRT2_8 # Serbia # Corruption # Resistance # Democracy # Balkans # Europe",
             "url": "https://mas.to/@meganL/117303856271594706",
@@ -168,60 +122,81 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "The political rhetoric from Belgrade regarding the \"protection of ethnic Serbs\" in Kosovo, Bosnia and Herzegovina, and Montenegro mimics Moscow's \"Russian World\" doctrine used to j",
-            "text": "The political rhetoric from Belgrade regarding the \"protection of ethnic Serbs\" in Kosovo, Bosnia and Herzegovina, and Montenegro mimics Moscow's \"Russian World\" doctrine used to justify interference in neighboring states. Serbia has no intentions of becoming a 🇪🇺member",
-            "url": "https://x.com/i/web/status/2103850651927138451",
+            "title": "The Serbian government granted Serbian citizenship on an expedited basis to oligarch VadimNovinsky—who is wanted by Ukraine on suspicion of treason and is also subject to sanctions",
+            "text": "The Serbian government granted Serbian citizenship on an expedited basis to oligarch VadimNovinsky—who is wanted by Ukraine on suspicion of treason and is also subject to sanctions—the BBC reported.",
+            "url": "https://x.com/i/web/status/2104053001635901779",
             "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-09-26T14:14:17.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-27T03:38:21.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5,
-              "Bosznia-Hercegovina": 2,
-              "Koszovó": 1,
-              "Montenegró": 1
+              "Szerbia": 2
             },
-            "event_category": "ethnic_tension",
+            "event_category": "foreign_influence",
             "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
               {
                 "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 18,
+            "geopolitical_score": 15,
             "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 15,
-            "raw_engagement": 15,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 13,
-              "reposts": 1,
-              "replies": 1,
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "🇷🇺🇷🇸 The President held a telephone conversation with President of Serbia Aleksandar Vucic at the initiative of the Serbian side on September 26. The Serbian leader congratulated t",
-            "text": "🇷🇺🇷🇸 The President held a telephone conversation with President of Serbia Aleksandar Vucic at the initiative of the Serbian side on September 26. The Serbian leader congratulated the President of Russia on the successful elections to the State Duma of the Federal Assembly of the",
-            "url": "https://x.com/i/web/status/2103987646665994271",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-26T23:18:39.000Z",
+            "title": "",
+            "text": "Serbia has granted citizenship to former Ukrainian lawmaker and businessman Vadym Novynskyi, who is wanted in Ukraine on suspicion of high treason, Radio Free Europe/Radio Liberty (RFE/RL) reported on Sept. 26. https:// kyivindependent.com/serbia-gra nts-citizenship-to-former-ukrainian-mp-novynskyi-wanted-on-treason-suspicion/ # Ukraine # Russia # Serbia",
+            "url": "https://mastodon.social/@hanse_mina/117340095232879527",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sun, 27 Sep 2026 00:09:21 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 6
+              "Szerbia": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 17,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "This is what it looked like when concrete canopy collapsed in #NoviSad , #Serbia , on November 1st 2024. 16 people were killed - one mother with an unborn baby, granddad hugging his grandchildren, one young woman lost both legs.... Vučić's regime was to blame for this! They won't get away with this",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:sjx3hptnopiz7mtzaexuhgpr/post/3mwhaughij222",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sat, 26 Sep 2026 21:42:14 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -229,26 +204,15 @@
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
               }
             ],
-            "geopolitical_score": 17,
-            "quality_score": 18,
-            "source_reliability": 2,
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -256,31 +220,71 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 11,
-        "level": "low",
+        "score": 22,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
-        "negative_hits": 0,
+        "mentions": 3,
+        "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 24,
-        "geopolitical_total": 18,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 37,
+        "geopolitical_total": 30,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "ethnic_tension": 1,
-          "protest": 1
+          "protest": 1,
+          "security": 1
         },
         "tag_counts": {
-          "bosnia": 2
+          "bosnia": 2,
+          "Szerbia": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
+          {
+            "title": "Looks like any Interrail summer. The year is the caption. 1990. Yugoslavia is still one state: Slovenia, Croatia, Bosnia and Herzegovina, Serbia, Montenegro, Macedonia. Tension is ",
+            "text": "Looks like any Interrail summer. The year is the caption. 1990. Yugoslavia is still one state: Slovenia, Croatia, Bosnia and Herzegovina, Serbia, Montenegro, Macedonia. Tension is up. The new borders are not on the ticket yet. 25 June 1991: Slovenia and Croatia declare",
+            "url": "https://x.com/i/web/status/2104065242909266035",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-27T04:27:00.000Z",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 2,
+              "Szerbia": 1,
+              "Montenegró": 1,
+              "Észak-Macedónia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 13,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Agenzia Nova: Bosnia: nuovi rincari dei carburanti, diesel sopra i 2 euro in Repubblica Srpska 22 set 11:03 - (Agenzia Nova) - Nuovo rialzo dei prezzi dei carburanti in Bosnia Erzegovina. Il costo medio del diesel nella Federazione, entita'... (Seb) Bosnia: new fuel price increases, diesel over €2 in Republika Srpska September 22 11:03 – (Agenzia Nova) – New",
@@ -345,115 +349,35 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 60,
+        "score": 52,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 3,
+        "mentions": 7,
+        "negative_hits": 2,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 8,
-        "raw_engagement_total": 8,
-        "quality_total": 166,
-        "geopolitical_total": 147,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 126,
+        "geopolitical_total": 109,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 4
+          "x": 2
         },
         "category_counts": {
           "security": 1,
           "government_crisis": 4,
-          "protest": 2,
-          "ethnic_tension": 2
+          "ethnic_tension": 1,
+          "protest": 1
         },
         "tag_counts": {
           "kosovo": 4,
           "albania": 1,
-          "Szerbia": 1,
-          "Koszovó": 2,
-          "Albánia": 1
+          "Koszovó": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "An ethnic Albanian mother and her husband mourn their son, 11-year-old Shemsi Elshani, who was killed on 24 October 1998 by Serbian police near the village of Krajkova, west of Pri",
-            "text": "An ethnic Albanian mother and her husband mourn their son, 11-year-old Shemsi Elshani, who was killed on 24 October 1998 by Serbian police near the village of Krajkova, west of Prishtina. 𝘗𝘩𝘰𝘵𝘰 & 𝘊𝘢𝘱𝘵𝘪𝘰𝘯 𝘣𝘺 𝘑𝘰𝘦𝘭 𝘙𝘰𝘣𝘪𝘯𝘦/𝘈𝘍𝘗 kosovawillneverforget",
-            "url": "https://x.com/i/web/status/2103969781523071088",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-09-26T22:07:40.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5,
-              "Szerbia": 2,
-              "Albánia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 8,
-            "raw_engagement": 8,
-            "metrics": {
-              "likes": 7,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Kosovo Government Faces Mounting Pressure as War Crimes Verdict Sparks Nationwide Protests albinkurti balkans europeanunion hashimthaci kosovo protests serbia warcrimes",
-            "text": "Kosovo Government Faces Mounting Pressure as War Crimes Verdict Sparks Nationwide Protests albinkurti balkans europeanunion hashimthaci kosovo protests serbia warcrimes",
-            "url": "https://x.com/i/web/status/2103991351696121856",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-26T23:33:23.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5,
-              "Szerbia": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "For the 11th consecutive night, citizens gathered in Skanderbeg Square in Pristina to protest against the conviction handed down by the Special Court in The Hague against the KLA l",
             "text": "For the 11th consecutive night, citizens gathered in Skanderbeg Square in Pristina to protest against the conviction handed down by the Special Court in The Hague against the KLA leaders.",
@@ -550,6 +474,76 @@
               },
               {
                 "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 20,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Kosovo: Corte costituzionale, Assemblea e formazione del governo non sono incostituzionali (2) 23 set 15:49 - (Agenzia Nova) - \"La Corte dichiara che la decisione del 13 settembre 2026 dell'Assemblea della Repubblica del Kosovo sull'elezione... (Alt) Kosovo: Constitutional Court, Assembly and government formation are not unconstitutional (2) Se",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117320713422073318",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 23 Sep 2026 14:00:18 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 20,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Albania: Rama, Stati Uniti e Biden hanno tradito ex presidente del Kosovo Hashim Thaci 25 set 18:38 - (Agenzia Nova) - Gli Stati Uniti d'America e Joe Biden \"hanno tradito Hashim Thaci\". Questa la forte dichiarazione rilasciata... (Alt) Albania: Rama, the United States and Biden betrayed former Kosovan president Hashim Thaci September 25 18:38 ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117332785716848991",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Fri, 25 Sep 2026 17:10:27 +0000",
+            "matched_countries": [
+              "Koszovó",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Koszovó": 2,
+              "Albánia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
               }
@@ -752,8 +746,8 @@
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 63,
-        "raw_engagement_total": 63,
+        "engagement_total": 74,
+        "raw_engagement_total": 74,
         "quality_total": 10,
         "geopolitical_total": 9,
         "source_counts": {
@@ -794,11 +788,11 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 63,
-            "raw_engagement": 63,
+            "engagement": 74,
+            "raw_engagement": 74,
             "metrics": {
-              "likes": 58,
-              "reposts": 5,
+              "likes": 68,
+              "reposts": 6,
               "replies": 0,
               "quotes": 0
             },
@@ -813,30 +807,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
+        "mentions": 16,
         "negative_hits": 9,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 341,
-        "geopolitical_total": 305,
+        "engagement_total": 8,
+        "raw_engagement_total": 8,
+        "quality_total": 369,
+        "geopolitical_total": 331,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 3
+          "x": 5
         },
         "category_counts": {
-          "security": 1,
+          "security": 2,
           "corruption_rule_of_law": 7,
-          "government_crisis": 5,
+          "government_crisis": 6,
           "migration": 1
         },
         "tag_counts": {
           "balkans": 8,
           "albania": 3,
-          "Koszovó": 1,
-          "Albánia": 2
+          "Koszovó": 2,
+          "Albánia": 3
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
