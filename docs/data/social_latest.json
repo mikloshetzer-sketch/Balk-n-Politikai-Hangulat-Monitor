@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27 21:18 UTC",
+  "updated_at": "2026-09-28 02:45 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 14
+    "collected": 22
   },
   "countries": [
     {
@@ -21,29 +21,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 20,
-        "negative_hits": 6,
-        "positive_hits": 1,
-        "trusted_hits": 7,
-        "engagement_total": 17,
-        "raw_engagement_total": 17,
-        "quality_total": 570,
-        "geopolitical_total": 514,
+        "mentions": 26,
+        "negative_hits": 13,
+        "positive_hits": 2,
+        "trusted_hits": 10,
+        "engagement_total": 134,
+        "raw_engagement_total": 134,
+        "quality_total": 839,
+        "geopolitical_total": 764,
         "source_counts": {
           "reddit": 1,
-          "mastodon": 12,
-          "x": 7
+          "mastodon": 15,
+          "x": 10
         },
         "category_counts": {
           "security": 2,
-          "government_crisis": 16,
+          "government_crisis": 22,
           "foreign_influence": 1,
           "protest": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 12,
-          "Szerbia": 6,
+          "serbia": 15,
+          "Szerbia": 9,
           "Koszovó": 1
         },
         "main_topic": "government_crisis",
@@ -96,6 +96,86 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Vučić has just resigned as President of Serbia and is preparing to run for prime minister in the upcoming parliamentary election. Two days ago at the United Nations, he said NATO t",
+            "text": "Vučić has just resigned as President of Serbia and is preparing to run for prime minister in the upcoming parliamentary election. Two days ago at the United Nations, he said NATO told Serbs it had attacked a sovereign, free, and independent country in order to prevent a",
+            "url": "https://x.com/i/web/status/2104348752459051210",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-09-27T23:13:34.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 52,
+            "quality_score": 56,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 59,
+            "raw_engagement": 59,
+            "metrics": {
+              "likes": 50,
+              "reposts": 6,
+              "replies": 1,
+              "quotes": 2
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Serbia's populist President Aleksandar Vucic resigned Sunday to pursue a bid to become prime minister in an upcoming early parliamentary election that will test his firm rule in th",
+            "text": "Serbia's populist President Aleksandar Vucic resigned Sunday to pursue a bid to become prime minister in an upcoming early parliamentary election that will test his firm rule in the Balkan country, which was rattled by nearly two years of protests.",
+            "url": "https://x.com/i/web/status/2104390638586478882",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-09-28T02:00:00.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 46,
+            "quality_score": 47,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 23,
+            "raw_engagement": 23,
+            "metrics": {
+              "likes": 15,
+              "reposts": 5,
+              "replies": 3,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -164,80 +244,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Serbian President Aleksandar Vucic resigns amid prolonged protests Despite student-led protests and political unrest challenging his rule, Vucic intends to run in the snap election",
-            "text": "Serbian President Aleksandar Vucic resigns amid prolonged protests Despite student-led protests and political unrest challenging his rule, Vucic intends to run in the snap elections.",
-            "url": "https://x.com/i/web/status/2104318509052199065",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-09-27T21:13:23.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 36,
-            "quality_score": 37,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Serbia: Vucic si dimette da presidente in vista delle elezioni parlamentari del 25 ottobre 27 set 21:33 - (Agenzia Nova) - Aleksandar Vucic ha rassegnato le dimissioni da presidente della Serbia in vista delle elezioni parlamentari... (Seb) Serbia: Vucic resigns as president ahead of October 25 parliamentary elections. September 27 21:33 – (Age",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117344738610418736",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sun, 27 Sep 2026 19:50:14 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 31,
-            "quality_score": 36,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -245,110 +251,32 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 40,
-        "level": "high",
+        "score": 17,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 2,
+        "mentions": 3,
+        "negative_hits": 0,
         "positive_hits": 0,
-        "trusted_hits": 1,
+        "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 96,
-        "geopolitical_total": 80,
+        "quality_total": 36,
+        "geopolitical_total": 27,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
-          "x": 1
+          "mastodon": 3,
+          "x": 0
         },
         "category_counts": {
-          "security": 2,
           "government_crisis": 1,
           "ethnic_tension": 1,
           "protest": 1
         },
         "tag_counts": {
-          "serbia": 1,
-          "bosnia": 3,
-          "Koszovó": 1
+          "bosnia": 3
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "",
-            "text": "Sunday, September 27, 2026 Ex-defense minister Fedorov announces new 'Army of Robots' initiative in latest move since leaving office . . . . . Nothing left to eat: Sybiha urges partners to act on Oleshky humanitarian crisis . . . . . Germany links arson attack near Ukraine-supplying drone maker Helsing to Russia's GRU . . . . . and more https:// activitypub.",
-            "url": "https://activitypub.writeworks.uk/2026/09/sunday-september-27-2026/",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sun, 27 Sep 2026 10:45:23 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 29,
-            "quality_score": 32,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "The Kosovo War Wasn’t the End — It Changed NATO Forever | Col. Douglas Macgregor Bosnia lab rat turning Bosniak into some kind of victims Russia Kosovo Bosnia and Herzegovina Ukrai",
-            "text": "The Kosovo War Wasn’t the End — It Changed NATO Forever | Col. Douglas Macgregor Bosnia lab rat turning Bosniak into some kind of victims Russia Kosovo Bosnia and Herzegovina Ukraine catalyst for potential future war",
-            "url": "https://x.com/i/web/status/2104312264207561016",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-27T20:48:34.000Z",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 24,
-            "quality_score": 28,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Agenzia Nova: Bosnia: nuovi rincari dei carburanti, diesel sopra i 2 euro in Repubblica Srpska 22 set 11:03 - (Agenzia Nova) - Nuovo rialzo dei prezzi dei carburanti in Bosnia Erzegovina. Il costo medio del diesel nella Federazione, entita'... (Seb) Bosnia: new fuel price increases, diesel over €2 in Republika Srpska September 22 11:03 – (Agenzia Nova) – New",
@@ -442,32 +370,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 60,
+        "score": 53,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 3,
-        "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 181,
-        "geopolitical_total": 158,
+        "mentions": 8,
+        "negative_hits": 1,
+        "positive_hits": 1,
+        "trusted_hits": 2,
+        "engagement_total": 9,
+        "raw_engagement_total": 9,
+        "quality_total": 157,
+        "geopolitical_total": 132,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
-          "security": 3,
-          "government_crisis": 5,
-          "protest": 1
+          "security": 2,
+          "government_crisis": 6
         },
         "tag_counts": {
           "balkans": 1,
           "kosovo": 4,
           "albania": 1,
-          "Koszovó": 3
+          "Koszovó": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -510,65 +437,35 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Police Seize Weapons, Ammunition and Military Uniforms at Two Locations in Northern Kosovo; One Person Arrested Kosovo KosovoPolice Mitrovica Leposavic ZubinPotok Dren Shipove Weap",
-            "text": "Police Seize Weapons, Ammunition and Military Uniforms at Two Locations in Northern Kosovo; One Person Arrested Kosovo KosovoPolice Mitrovica Leposavic ZubinPotok Dren Shipove Weapons Ammunition PoliceOperation NorthernKosovo Investigation",
-            "url": "https://x.com/i/web/status/2104308208622096581",
+            "title": "Albin Kurti, the prime minister of Kosovo, announced that last week he participated in the United States of America during the High-Level Week of the United Nations General Assembl",
+            "text": "Albin Kurti, the prime minister of Kosovo, announced that last week he participated in the United States of America during the High-Level Week of the United Nations General Assembly, which held its 81st session.",
+            "url": "https://x.com/i/web/status/2104401359550234755",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-09-27T20:32:27.000Z",
+            "seen_date": "2026-09-28T02:42:36.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
               "Koszovó": 5
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 2,
+                "category": "government_crisis",
+                "hits": 1,
                 "weight": 9
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Protests Continue in Pristina Tonight, 12th Consecutive Night Kosovo Pristina Protest KLA UÇK KosovoSpecialistChambers TheHague Justice SkanderbegSquare",
-            "text": "Protests Continue in Pristina Tonight, 12th Consecutive Night Kosovo Pristina Protest KLA UÇK KosovoSpecialistChambers TheHague Justice SkanderbegSquare",
-            "url": "https://x.com/i/web/status/2104306067966394701",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-09-27T20:23:57.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
+              },
               {
-                "category": "protest",
-                "hits": 2,
+                "category": "foreign_influence",
+                "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
+            "geopolitical_score": 21,
+            "quality_score": 25,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "metrics": {
@@ -646,6 +543,40 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Kosovo: Corte costituzionale, Assemblea e formazione del governo non sono incostituzionali (2) 23 set 15:49 - (Agenzia Nova) - \"La Corte dichiara che la decisione del 13 settembre 2026 dell'Assemblea della Repubblica del Kosovo sull'elezione... (Alt) Kosovo: Constitutional Court, Assembly and government formation are not unconstitutional (2) Se",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117320713422073318",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 23 Sep 2026 14:00:18 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 20,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -653,75 +584,32 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 36,
+        "score": 28,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 5,
         "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 17,
-        "raw_engagement_total": 17,
-        "quality_total": 84,
-        "geopolitical_total": 66,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 65,
+        "geopolitical_total": 48,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "government_crisis": 2,
           "protest": 2,
-          "eu_integration": 1,
-          "ethnic_tension": 1
+          "eu_integration": 1
         },
         "tag_counts": {
-          "montenegro": 5,
-          "Észak-Macedónia": 1
+          "montenegro": 5
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "In the 1700s, the Russian word natsiya (нация) did not mean a modern nation-state with citizenship or a distinct ethnic group. The Russian imperial administration used it as a broa",
-            "text": "In the 1700s, the Russian word natsiya (нация) did not mean a modern nation-state with citizenship or a distinct ethnic group. The Russian imperial administration used it as a broad regional classifier. Anyone migrating from geographic region of Macedonia. You said \"Montenegrin\"",
-            "url": "https://x.com/i/web/status/2104215594728095882",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-09-27T14:24:26.000Z",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 3,
-              "Észak-Macedónia": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 17,
-            "raw_engagement": 17,
-            "metrics": {
-              "likes": 12,
-              "reposts": 2,
-              "replies": 2,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Agenzia Nova: Montenegro: Milatovic all'Assemblea Onu, Podgorica celebra 20 anni di adesione alle Nazioni Unite (3) 21 set 15:48 - (Agenzia Nova) - Milatovic avra' inoltre numerosi incontri bilaterali con capi di Stato e di governo, nonche' con altri alti... (Seb) Montenegro: Milatovic at the UN Assembly, Podgorica celebrates 20 years of membership in the Un",
@@ -837,6 +725,35 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "ICYMI: Firms face up to 4% turnover fines under Montenegro's new data law: Obligations apply from 19 March 2027 to foreign companies monitoring Montenegrin users. EU standard clauses wait for accession. Which other rules are on hold? https:// ppc.land/firms-face-up-to-4-tu rnover-fines-under-montenegros-new-data-law/ # Montenegro # DataProtection # GDPR # Te",
+            "url": "https://mastodon.social/@ppcland/117308078520926389",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Mon, 21 Sep 2026 08:27:05 +0000",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 4
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 8,
+            "quality_score": 11,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -844,96 +761,105 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 0,
-        "level": "low",
+        "score": 28,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 0,
-        "negative_hits": 0,
-        "positive_hits": 0,
+        "mentions": 3,
+        "negative_hits": 3,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 0,
-        "geopolitical_total": 0,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 81,
+        "geopolitical_total": 78,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 0
-        },
-        "category_counts": {},
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
-      }
-    },
-    {
-      "name": "Albánia",
-      "social_signal": {
-        "score": 60,
-        "level": "high",
-        "scale": "0-60 risk index",
-        "mentions": 17,
-        "negative_hits": 10,
-        "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 457,
-        "geopolitical_total": 408,
-        "source_counts": {
-          "reddit": 0,
-          "mastodon": 15,
-          "x": 2
+          "x": 3
         },
         "category_counts": {
-          "corruption_rule_of_law": 7,
-          "protest": 1,
-          "security": 3,
-          "government_crisis": 3,
-          "foreign_influence": 1,
-          "economic_infrastructure": 1,
-          "migration": 1
+          "protest": 2,
+          "government_crisis": 1
         },
         "tag_counts": {
-          "balkans": 10,
-          "albania": 5,
-          "Albánia": 2
+          "Észak-Macedónia": 3
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "protest",
         "top_posts": [
           {
-            "title": "Armed police heading towards peaceful popular protests. Only a criminal regime—such as the Albanian narco-state is today—carries out such actions. A caretaker government—narco-Prim",
-            "text": "Armed police heading towards peaceful popular protests. Only a criminal regime—such as the Albanian narco-state is today—carries out such actions. A caretaker government—narco-Prime Minister Rama must be removed by any means necessary.",
-            "url": "https://x.com/i/web/status/2104304761809822135",
+            "title": "Thousands rally in North Macedonia protesting EU/USA-sponsored special war crimes court for Kosovo",
+            "text": "Thousands rally in North Macedonia protesting EU/USA-sponsored special war crimes court for Kosovo",
+            "url": "https://x.com/i/web/status/2104336338124210264",
             "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-09-27T20:18:45.000Z",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-27T22:24:14.000Z",
             "matched_countries": [
-              "Albánia"
+              "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Albánia": 2
+              "Észak-Macedónia": 5,
+              "Koszovó": 1
             },
-            "event_category": "security",
+            "event_category": "protest",
             "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
               {
                 "category": "protest",
                 "hits": 2,
                 "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 46,
-            "quality_score": 47,
+            "geopolitical_score": 35,
+            "quality_score": 36,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Bulgarian MEP Kristian Vigenin has attacked North Macedonian Prime Minister Hristijan Mickoski, blaming him for obstructing constitutional amendments and causing delays on the coun",
+            "text": "Bulgarian MEP Kristian Vigenin has attacked North Macedonian Prime Minister Hristijan Mickoski, blaming him for obstructing constitutional amendments and causing delays on the country’s path toward European integration.",
+            "url": "https://x.com/i/web/status/2104348305656340684",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-27T23:11:47.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 31,
+            "quality_score": 32,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -946,6 +872,81 @@
             },
             "quality": "x_api_filtered"
           },
+          {
+            "title": "Ali Ahmeti, leader of the Democratic Union for Integration (BDI), declared during the protest held in Skopje in support of the liberators that the Albanian people cannot convict th",
+            "text": "Ali Ahmeti, leader of the Democratic Union for Integration (BDI), declared during the protest held in Skopje in support of the liberators that the Albanian people cannot convict those who fought for their liberation.",
+            "url": "https://x.com/i/web/status/2104363458753954138",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-09-28T00:12:00.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 4,
+              "Albánia": 2
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 13,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Albánia",
+      "social_signal": {
+        "score": 60,
+        "level": "high",
+        "scale": "0-60 risk index",
+        "mentions": 19,
+        "negative_hits": 11,
+        "positive_hits": 0,
+        "trusted_hits": 1,
+        "engagement_total": 157,
+        "raw_engagement_total": 157,
+        "quality_total": 487,
+        "geopolitical_total": 436,
+        "source_counts": {
+          "reddit": 0,
+          "mastodon": 15,
+          "x": 4
+        },
+        "category_counts": {
+          "corruption_rule_of_law": 7,
+          "protest": 1,
+          "security": 3,
+          "government_crisis": 4,
+          "foreign_influence": 1,
+          "economic_infrastructure": 1,
+          "migration": 1,
+          "ethnic_tension": 1
+        },
+        "tag_counts": {
+          "balkans": 10,
+          "albania": 5,
+          "Albánia": 4
+        },
+        "main_topic": "corruption_rule_of_law",
+        "top_posts": [
           {
             "title": "",
             "text": "Machine translation: Protesters break through the police cordon; after getting past the officers, they continue their march. Protestuesit çajnë kordonin e policisë, pas bllokimit të efektivëve kalojnë dhe vijojnë marshimin Day 119. # Albania # Corruption # Balkans # Europe # FlamingoRevolution # Protest https://www. youtube.com/watch?v=I8LYEBUw9WY",
@@ -1023,6 +1024,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "The protest continued today, on the 120th day of the anti-government revolt and protests against Edi Rama. Citizens continued marching from the gathering at Skanderbeg Square towar",
+            "text": "The protest continued today, on the 120th day of the anti-government revolt and protests against Edi Rama. Citizens continued marching from the gathering at Skanderbeg Square toward the Prime Minister’s Office.",
+            "url": "https://x.com/i/web/status/2104371042315633010",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-09-28T00:42:08.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 3,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 36,
+            "quality_score": 37,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
