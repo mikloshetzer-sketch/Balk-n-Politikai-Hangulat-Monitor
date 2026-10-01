@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01 12:10 UTC",
+  "updated_at": "2026-10-01 13:03 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 16
   },
   "countries": [
     {
@@ -21,32 +21,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
+        "mentions": 16,
         "negative_hits": 4,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 349,
-        "geopolitical_total": 315,
+        "quality_total": 429,
+        "geopolitical_total": 389,
         "source_counts": {
           "reddit": 1,
-          "mastodon": 10,
-          "x": 1
+          "mastodon": 11,
+          "x": 4
         },
         "category_counts": {
-          "government_crisis": 4,
+          "government_crisis": 5,
           "corruption_rule_of_law": 2,
           "protest": 1,
-          "security": 3,
+          "security": 4,
           "foreign_influence": 1,
-          "ethnic_tension": 1
+          "ethnic_tension": 3
         },
         "tag_counts": {
           "balkans": 5,
           "serbia": 5,
-          "bosnia": 1,
-          "Szerbia": 1
+          "bosnia": 2,
+          "Szerbia": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -175,6 +175,41 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "🇷🇸 DEVELOPING STORY: Serbia faces political uncertainty ahead of October 25 election Aleksandar Vučić has stepped down as Serbia’s president ahead of parliamentary elections schedu",
+            "text": "🇷🇸 DEVELOPING STORY: Serbia faces political uncertainty ahead of October 25 election Aleksandar Vučić has stepped down as Serbia’s president ahead of parliamentary elections scheduled for October 25. The move comes amid a growing student-led opposition movement that emerged",
+            "url": "https://x.com/i/web/status/2105632628066095527",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-01T12:15:13.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 28,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "From Kosovo and NATO connections to the extraordinary accusation involving “Serbian agents,” TLF follows the trail — while separating what is known from what remains suspicion. https://www. thelevantfiles.org/2026/09/sex -spies-and-state-secrets-did.html # Albania # SHISH # VloraHyseni # Intelligence # Espionage # StateSecrets # Balkans # NATO",
             "url": "https://mastodon.social/@thelevantfiles/117342667655443704",
@@ -211,40 +246,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Serbia Student Movement Takes Protest Campaign To Polls Ahead Of October Election | APT https://www. youtube.com/watch?v=npGmpofpRQE # Serbia # Elections # Balkans # AntiCorruption # Cycling # BikeTooter",
-            "url": "https://mas.to/@meganL/117348356478128114",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Mon, 28 Sep 2026 11:10:18 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -252,29 +253,30 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 19,
-        "level": "low",
+        "score": 33,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 0,
-        "positive_hits": 0,
+        "mentions": 5,
+        "negative_hits": 1,
+        "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 54,
-        "geopolitical_total": 45,
+        "quality_total": 94,
+        "geopolitical_total": 79,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 3,
+          "mastodon": 5,
           "x": 0
         },
         "category_counts": {
-          "ethnic_tension": 1,
+          "foreign_influence": 1,
+          "ethnic_tension": 2,
           "government_crisis": 1,
           "security": 1
         },
         "tag_counts": {
-          "bosnia": 2,
+          "bosnia": 4,
           "montenegro": 1
         },
         "main_topic": "ethnic_tension",
@@ -314,6 +316,71 @@
             ],
             "geopolitical_score": 27,
             "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Bosnia votes on Sunday with no international peace envoy in place. The last one resigned in May under US pressure, and the US and EU still can't agree on a replacement. The US also lifted sanctions on Milorad Dodik, the Serb separatist leader banned from office for defying that envoy. Russia defends him too. A $1.5B US gas pipeline deal, run by a company lin",
+            "url": "https://mastodon.social/@AutokratDaily/117365747387103970",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Thu, 01 Oct 2026 12:53:02 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 5
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 23,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Speciale energia: Bosnia, in Repubblica Srpska firmato contratto per centrale solare di Bileca 01 ott 14:00 - (Agenzia Nova) - Il ministero dell'Energia della Repubblica Srpska (entita' serba della Bosnia Erzegovina) e la societa' locale... (Seb) Special energy: Bosnia, contract signed in Republika Srpska for a solar plant in Bileća Oct 01 14:0",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117365579188263167",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Thu, 01 Oct 2026 12:10:16 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 6,
+              "Szerbia": 2
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 14,
+            "quality_score": 17,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -389,30 +456,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
+        "mentions": 9,
         "negative_hits": 4,
         "positive_hits": 2,
         "trusted_hits": 2,
-        "engagement_total": 21,
-        "raw_engagement_total": 21,
-        "quality_total": 149,
-        "geopolitical_total": 128,
+        "engagement_total": 29,
+        "raw_engagement_total": 29,
+        "quality_total": 159,
+        "geopolitical_total": 137,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 4
+          "x": 5
         },
         "category_counts": {
           "security": 3,
-          "government_crisis": 2,
+          "government_crisis": 3,
           "protest": 2,
           "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "balkans": 1,
           "kosovo": 3,
-          "Szerbia": 1,
-          "Koszovó": 3
+          "Koszovó": 5
         },
         "main_topic": "security",
         "top_posts": [
@@ -461,7 +527,7 @@
             "text": "KOSOVO’S WAR-CRIMES FILES ARE MOVING FROM HISTORY INTO ACTIVE SECURITY CASES Two developments within 24 hours show that Kosovo’s war-crimes investigations are entering a more active judicial phase. Pristina Basic Court ordered 30 days of pre-trial detention for nine people",
             "url": "https://x.com/i/web/status/2105623007821734193",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Koszovó",
             "seen_date": "2026-10-01T11:37:00.000Z",
             "matched_countries": [
               "Koszovó"
@@ -564,11 +630,11 @@
             "quality_score": 17,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 21,
-            "raw_engagement": 21,
+            "engagement": 28,
+            "raw_engagement": 28,
             "metrics": {
-              "likes": 20,
-              "reposts": 1,
+              "likes": 26,
+              "reposts": 2,
               "replies": 0,
               "quotes": 0
             },
@@ -789,30 +855,67 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 16,
-        "level": "low",
+        "score": 22,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 4,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 30,
-        "geopolitical_total": 27,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 40,
+        "geopolitical_total": 36,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
+          "security": 1,
           "government_crisis": 3
         },
         "tag_counts": {
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "🇦🇱🇲🇰 Albanian Alpinism Federation has condemned Maceodnian alpinists for removing the Albanian eagle symbol and replacing it with the flag of North Macedonia on Mount Korab, locate",
+            "text": "🇦🇱🇲🇰 Albanian Alpinism Federation has condemned Maceodnian alpinists for removing the Albanian eagle symbol and replacing it with the flag of North Macedonia on Mount Korab, located on the border between the two countries.",
+            "url": "https://x.com/i/web/status/2105641740237410328",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-01T12:51:26.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Albánia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "Greece seeks textbook changes in North Macedonia Greece is pressing for the removal of what it describes as revisionist and irredentist references from school textbooks in North Ma",
             "text": "Greece seeks textbook changes in North Macedonia Greece is pressing for the removal of what it describes as revisionist and irredentist references from school textbooks in North Macedonia, Deputy Foreign Minister Alexandra Papadopoulou told Parliament on Wednesday. Papadopoulou",
@@ -927,29 +1030,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
+        "mentions": 12,
         "negative_hits": 7,
-        "positive_hits": 2,
+        "positive_hits": 0,
         "trusted_hits": 3,
-        "engagement_total": 29,
-        "raw_engagement_total": 29,
-        "quality_total": 342,
-        "geopolitical_total": 299,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 314,
+        "geopolitical_total": 273,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 3
+          "x": 1
         },
         "category_counts": {
           "protest": 3,
           "corruption_rule_of_law": 4,
-          "security": 3,
-          "government_crisis": 4
+          "security": 2,
+          "government_crisis": 3
         },
         "tag_counts": {
           "balkans": 8,
           "albania": 3,
-          "Albánia": 3
+          "Albánia": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
