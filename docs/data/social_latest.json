@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01 05:38 UTC",
+  "updated_at": "2026-10-01 12:10 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 15
+    "collected": 13
   },
   "countries": [
     {
@@ -21,34 +21,34 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
-        "negative_hits": 6,
-        "positive_hits": 1,
-        "trusted_hits": 5,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 438,
-        "geopolitical_total": 388,
+        "mentions": 12,
+        "negative_hits": 4,
+        "positive_hits": 0,
+        "trusted_hits": 2,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 349,
+        "geopolitical_total": 315,
         "source_counts": {
           "reddit": 1,
-          "mastodon": 11,
-          "x": 5
+          "mastodon": 10,
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 5,
+          "government_crisis": 4,
           "corruption_rule_of_law": 2,
           "protest": 1,
-          "security": 6,
-          "foreign_influence": 2,
+          "security": 3,
+          "foreign_influence": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 5,
-          "serbia": 6,
+          "serbia": 5,
           "bosnia": 1,
-          "Szerbia": 5
+          "Szerbia": 1
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -135,40 +135,6 @@
           },
           {
             "title": "",
-            "text": "\"Diese Wahl wird als einmalige Chance gesehen, das Ruder herumzureißen.\" Das sagt IOS-Direktor Ulf Brunnbauer bei ORF.at. Mit dem Nachrichtenportal des Österreichischen Rundfunks hat er über die anstehenden Neuwahlen in Serbien und den Rücktritt von Präsident Aleksandar Vučić gesprochen und diskutiert, welche Chancen die oppositionelle Liste Students Win nun",
-            "url": "https://wisskomm.social/@LeibnizIOS/117353089585189335",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Tue, 29 Sep 2026 07:13:59 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 31,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "Agenzia Nova: Bosnia-Russia: delegazione Repubblica Srpska guidata da Dodik e Minic incontra Putin a Mosca 29 set 09:52 - (Agenzia Nova) - La delegazione della Repubblica Srpska, entita' serba della Bosnia Erzegovina, guidata dal presidente dell'Alleanza... (Seb) Bosnia-Russia: RS delegation led by Dodik and Minic meets Putin in Moscow September 29 09:52 – (",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117353389456268107",
             "source": "mastodon",
@@ -242,6 +208,40 @@
             "quality_score": 26,
             "source_reliability": 5,
             "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Serbia Student Movement Takes Protest Campaign To Polls Ahead Of October Election | APT https://www. youtube.com/watch?v=npGmpofpRQE # Serbia # Elections # Balkans # AntiCorruption # Cycling # BikeTooter",
+            "url": "https://mas.to/@meganL/117348356478128114",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Mon, 28 Sep 2026 11:10:18 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 22,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -386,35 +386,121 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 36,
-        "level": "medium",
+        "score": 60,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 2,
-        "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 84,
-        "geopolitical_total": 69,
+        "mentions": 8,
+        "negative_hits": 4,
+        "positive_hits": 2,
+        "trusted_hits": 2,
+        "engagement_total": 21,
+        "raw_engagement_total": 21,
+        "quality_total": 149,
+        "geopolitical_total": 128,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 1
+          "x": 4
         },
         "category_counts": {
-          "security": 1,
-          "government_crisis": 1,
+          "security": 3,
+          "government_crisis": 2,
           "protest": 2,
           "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "balkans": 1,
           "kosovo": 3,
-          "Koszovó": 1
+          "Szerbia": 1,
+          "Koszovó": 3
         },
-        "main_topic": "protest",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "Kosovo Police has taken security measures for today’s protest in Prishtina against the Specialist Chambers’ verdict on former KLA leaders. The protest starts at 4 p.m. Traffic rest",
+            "text": "Kosovo Police has taken security measures for today’s protest in Prishtina against the Specialist Chambers’ verdict on former KLA leaders. The protest starts at 4 p.m. Traffic restrictions begin at 3 p.m., with Luan Haradinaj and Enver Zymeri streets temporarily closed.",
+            "url": "https://x.com/i/web/status/2105626134461227268",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-01T11:49:25.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "KOSOVO’S WAR-CRIMES FILES ARE MOVING FROM HISTORY INTO ACTIVE SECURITY CASES Two developments within 24 hours show that Kosovo’s war-crimes investigations are entering a more activ",
+            "text": "KOSOVO’S WAR-CRIMES FILES ARE MOVING FROM HISTORY INTO ACTIVE SECURITY CASES Two developments within 24 hours show that Kosovo’s war-crimes investigations are entering a more active judicial phase. Pristina Basic Court ordered 30 days of pre-trial detention for nine people",
+            "url": "https://x.com/i/web/status/2105623007821734193",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-01T11:37:00.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 25,
+            "quality_score": 26,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "From Kosovo and NATO connections to the extraordinary accusation involving “Serbian agents,” TLF follows the trail — while separating what is known from what remains suspicion. https://www. thelevantfiles.org/2026/09/sex -spies-and-state-secrets-did.html # Albania # SHISH # VloraHyseni # Intelligence # Espionage # StateSecrets # Balkans # NATO",
@@ -454,35 +540,35 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "From October 1, 1997 to Today: The History Behind Kosovo’s Symbolic Protest Date Kosovo Prishtina October1 October11997 LiriaKaEmer NotInMyName KosovoProtests UniversityOfPrishtina",
-            "text": "From October 1, 1997 to Today: The History Behind Kosovo’s Symbolic Protest Date Kosovo Prishtina October1 October11997 LiriaKaEmer NotInMyName KosovoProtests UniversityOfPrishtina KLA UCK HashimThaci KadriVeseli JakupKrasniqi RexhepSelimi KosovoSpecialistChambers",
-            "url": "https://x.com/i/web/status/2105517231027159481",
+            "title": "🇪🇺🇽🇰 EU Commission President Ursula von der Leyen has been received by Kosovo’s acting President Albulena Haxhiu in Prishtina.",
+            "text": "🇪🇺🇽🇰 EU Commission President Ursula von der Leyen has been received by Kosovo’s acting President Albulena Haxhiu in Prishtina.",
+            "url": "https://x.com/i/web/status/2105621078458401110",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-10-01T04:36:41.000Z",
+            "seen_date": "2026-10-01T11:29:20.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
               "Koszovó": 5
             },
-            "event_category": "protest",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "geopolitical_score": 13,
+            "quality_score": 17,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 21,
+            "raw_engagement": 21,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 20,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -516,64 +602,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Kosovo’s Kurti Pushes for Deal on President to Avoid Elections https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/30/kosovos-kurti-pushes-for-deal-on-president-to-avoid-elections/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/30/kosovos-kurti-pushes-for-deal-on-president-to-avoid-elections/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 30 Sep 2026 12:57:48 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 13,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "⭕Un voyage sans frontières ! Un van arborant le drapeau palestinien parcourt les routes #d'Europe pour porter le message et les récits de #Gaza , jusqu'au #Kosovo .",
-            "url": "https://bsky.brid.gy/r/https://bsky.app/profile/did:plc:2cte4wipyk47qjujtxrskqcx/post/3mwp2sfgnls25",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 30 Sep 2026 00:15:01 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 8,
-            "quality_score": 11,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -581,73 +609,61 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 22,
+        "score": 36,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
-        "positive_hits": 0,
-        "trusted_hits": 0,
+        "mentions": 5,
+        "negative_hits": 3,
+        "positive_hits": 1,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 55,
-        "geopolitical_total": 48,
+        "quality_total": 80,
+        "geopolitical_total": 63,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
-          "x": 1
+          "mastodon": 5,
+          "x": 0
         },
         "category_counts": {
-          "security": 2,
+          "eu_integration": 1,
+          "foreign_influence": 2,
+          "security": 1,
           "government_crisis": 1
         },
         "tag_counts": {
-          "montenegro": 2,
-          "Montenegró": 1
+          "montenegro": 5
         },
-        "main_topic": "security",
+        "main_topic": "foreign_influence",
         "top_posts": [
           {
-            "title": "Podgorica gets the Commission president today. Spajić and Milatović host at Villa Gorica, then Friday they cut the ribbon on a new Border Police National Coordination Centre. Acces",
-            "text": "Podgorica gets the Commission president today. Spajić and Milatović host at Villa Gorica, then Friday they cut the ribbon on a new Border Police National Coordination Centre. Accession theatre with a control room. Tirana still has the overnight glow. Von der Leyen called Albania",
-            "url": "https://x.com/i/web/status/2105529986299940989",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-10-01T05:27:22.000Z",
+            "title": "",
+            "text": "Lost in translation: Montenegro’s EU accession faces a language barrier. Montenegro may not be able to accurately translate all EU laws in time for accession, so the European Commission is currently weighing options for a derogation, including allowing Podgorica to use an existing EU language to fill the gaps. Croatian would be the most obvious choice. https",
+            "url": "https://mastodon.mediafaro.org/@mf_analysis/117365351560392707",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Thu, 01 Oct 2026 11:12:22 +0000",
             "matched_countries": [
-              "Albánia",
               "Montenegró"
             ],
             "country_confidence": {
-              "Albánia": 5,
-              "Montenegró": 4
+              "Montenegró": 5
             },
-            "event_category": "security",
+            "event_category": "eu_integration",
             "event_categories": [
               {
-                "category": "security",
+                "category": "eu_integration",
                 "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
+                "weight": 6
               }
             ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
+            "geopolitical_score": 20,
+            "quality_score": 25,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -672,6 +688,64 @@
             ],
             "geopolitical_score": 12,
             "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Außenminister Wadephul sieht einen EU-Beitritt der westlichen Balkanstaaten als ein Kerninteresse Europas. Er verweist vor Gesprächen in Montenegro dabei auf eine Einflussnahme von Russland und Chinas. Von Georg Schwarte. # Montenegro # Wadephul # BalkanEU Wadephul für schnellen EU-Beitritt der Westbalkan-Länder",
+            "url": "https://friendicadev.sekretaerbaer.de/display/faccf368-72172c19-554ed40242a59b77",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Thu, 01 Oct 2026 06:48:36 +0000",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 14,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Wadephul für schnellen EU-Beitritt der Westbalkan-Länder Außenminister Wadephul sieht einen EU-Beitritt der westlichen Balkanstaaten als ein Kerninteresse Europas. Er verweist vor Gesprächen in Montenegro dabei auf eine Einflussnahme von Russland und Chinas. Von Georg Schwarte. ➡️ https://www. tagesschau.de/ausland/europa/w adephul-reise-balkan-100.html?at_m",
+            "url": "https://ard.social/@tagesschau/117364316098915259",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Thu, 01 Oct 2026 06:49:02 +0000",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 14,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -715,30 +789,100 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 5,
+        "score": 16,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 1,
+        "mentions": 3,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 10,
-        "geopolitical_total": 9,
+        "quality_total": 30,
+        "geopolitical_total": 27,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 1
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 1
+          "government_crisis": 3
         },
         "tag_counts": {
-          "Észak-Macedónia": 1
+          "Észak-Macedónia": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "Greece seeks textbook changes in North Macedonia Greece is pressing for the removal of what it describes as revisionist and irredentist references from school textbooks in North Ma",
+            "text": "Greece seeks textbook changes in North Macedonia Greece is pressing for the removal of what it describes as revisionist and irredentist references from school textbooks in North Macedonia, Deputy Foreign Minister Alexandra Papadopoulou told Parliament on Wednesday. Papadopoulou",
+            "url": "https://x.com/i/web/status/2105592478036369489",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-01T09:35:41.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Greece seeks textbook changes in NorthMacedonia Greece is pressing for the removal of what it describes as revisionist and irredentist references from schooltextbooks in North Mace",
+            "text": "Greece seeks textbook changes in NorthMacedonia Greece is pressing for the removal of what it describes as revisionist and irredentist references from schooltextbooks in North Macedonia, Deputy Foreign Minister AlexandraPapadopoulou told Parliament on Wednesday.",
+            "url": "https://x.com/i/web/status/2105573500169658521",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-01T08:20:16.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "Prime Minister Hristijan Mickoski said that a decline in revenue from excise duties and value-added tax could lead to a second budget rebalancing within this year.",
             "text": "Prime Minister Hristijan Mickoski said that a decline in revenue from excise duties and value-added tax could lead to a second budget rebalancing within this year.",
@@ -783,33 +927,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 18,
-        "negative_hits": 8,
+        "mentions": 14,
+        "negative_hits": 7,
         "positive_hits": 2,
         "trusted_hits": 3,
-        "engagement_total": 10,
-        "raw_engagement_total": 10,
-        "quality_total": 436,
-        "geopolitical_total": 385,
+        "engagement_total": 29,
+        "raw_engagement_total": 29,
+        "quality_total": 342,
+        "geopolitical_total": 299,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 13,
-          "x": 5
+          "mastodon": 11,
+          "x": 3
         },
         "category_counts": {
           "protest": 3,
-          "corruption_rule_of_law": 5,
-          "security": 4,
-          "government_crisis": 4,
-          "migration": 1,
-          "eu_integration": 1
+          "corruption_rule_of_law": 4,
+          "security": 3,
+          "government_crisis": 4
         },
         "tag_counts": {
-          "balkans": 9,
-          "albania": 4,
-          "Koszovó": 1,
-          "Montenegró": 2,
-          "Albánia": 2
+          "balkans": 8,
+          "albania": 3,
+          "Albánia": 3
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
