@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02 22:08 UTC",
+  "updated_at": "2026-10-03 03:05 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 15
+    "collected": 22
   },
   "countries": [
     {
@@ -21,22 +21,22 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 5,
-        "positive_hits": 1,
+        "mentions": 11,
+        "negative_hits": 6,
+        "positive_hits": 3,
         "trusted_hits": 0,
-        "engagement_total": 11,
-        "raw_engagement_total": 11,
-        "quality_total": 214,
-        "geopolitical_total": 189,
+        "engagement_total": 161,
+        "raw_engagement_total": 161,
+        "quality_total": 269,
+        "geopolitical_total": 242,
         "source_counts": {
           "reddit": 0,
           "mastodon": 8,
-          "x": 1
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 2,
-          "corruption_rule_of_law": 1,
+          "government_crisis": 3,
+          "corruption_rule_of_law": 2,
           "protest": 2,
           "foreign_influence": 1,
           "ethnic_tension": 2,
@@ -46,7 +46,7 @@
           "balkans": 4,
           "serbia": 2,
           "bosnia": 2,
-          "Szerbia": 1
+          "Szerbia": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -83,6 +83,51 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "It's alarming 2 see Serbian govt cozy up 2 Russia + China + Iran and crack down on civic protests I introd bipart legislation w Sen Blumenthal 2 strengthen democracy in Serbia + pr",
+            "text": "It's alarming 2 see Serbian govt cozy up 2 Russia + China + Iran and crack down on civic protests I introd bipart legislation w Sen Blumenthal 2 strengthen democracy in Serbia + promote peace / stability in the Western Balkans",
+            "url": "https://x.com/i/web/status/2106176152901746929",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-03T00:15:00.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 45,
+            "quality_score": 46,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 118,
+            "raw_engagement": 118,
+            "metrics": {
+              "likes": 58,
+              "reposts": 11,
+              "replies": 42,
+              "quotes": 7
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -126,43 +171,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "EU should be alarmed, as well as : Putin spreading Greater Serbia narratives backing secessionist Milorad Dodik & his buddy A. Vucic: Bosnia and Herzegovina under attack!",
-            "text": "EU should be alarmed, as well as : Putin spreading Greater Serbia narratives backing secessionist Milorad Dodik & his buddy A. Vucic: Bosnia and Herzegovina under attack!",
-            "url": "https://x.com/i/web/status/2106130811946934631",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-02T21:14:50.000Z",
-            "matched_countries": [
-              "Bosznia-Hercegovina",
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 6,
-              "Szerbia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 11,
-            "raw_engagement": 11,
-            "metrics": {
-              "likes": 6,
-              "reposts": 1,
-              "replies": 3,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Serbia Student Movement Takes Protest Campaign To Polls Ahead Of October Election | APT https://www. youtube.com/watch?v=npGmpofpRQE # Serbia # Elections # Balkans # AntiCorruption # Cycling # BikeTooter",
             "url": "https://mas.to/@meganL/117348356478128114",
@@ -197,33 +205,44 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Serbian President Aleksandar Vucic resigns to run for prime minister He's not giving up, he's reconnoitering. But good for the Serbian student movement! ✊ https://www. youtube.com/watch?v=fUCnRfOqI6o # Serbia # Balkans # Europe",
-            "url": "https://mas.to/@meganL/117348243331542697",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Mon, 28 Sep 2026 10:41:31 +0000",
+            "title": "Russia and Serbia have high levels of corruption and poverty rate than many european countries do yet russians and serbians don't talk about it and poverty but they'll give a lectu",
+            "text": "Russia and Serbia have high levels of corruption and poverty rate than many european countries do yet russians and serbians don't talk about it and poverty but they'll give a lecture about my country's poverty when I don't say anything supportive or positive about their country.",
+            "url": "https://x.com/i/web/status/2106168079747059879",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-02T23:42:55.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 9
+              "Szerbia": 2
             },
-            "event_category": "government_crisis",
+            "event_category": "corruption_rule_of_law",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 18,
+            "geopolitical_score": 20,
             "quality_score": 21,
-            "source_reliability": 3,
+            "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "engagement": 5,
+            "raw_engagement": 5,
+            "metrics": {
+              "likes": 4,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -231,32 +250,31 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 49,
-        "level": "high",
+        "score": 38,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 2,
+        "mentions": 6,
+        "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 11,
-        "raw_engagement_total": 11,
-        "quality_total": 127,
-        "geopolitical_total": 108,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 105,
+        "geopolitical_total": 87,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "foreign_influence": 2,
           "ethnic_tension": 2,
           "government_crisis": 1,
-          "security": 2
+          "security": 1
         },
         "tag_counts": {
           "bosnia": 5,
-          "montenegro": 1,
-          "Szerbia": 1
+          "montenegro": 1
         },
         "main_topic": "foreign_influence",
         "top_posts": [
@@ -331,43 +349,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "EU should be alarmed, as well as : Putin spreading Greater Serbia narratives backing secessionist Milorad Dodik & his buddy A. Vucic: Bosnia and Herzegovina under attack!",
-            "text": "EU should be alarmed, as well as : Putin spreading Greater Serbia narratives backing secessionist Milorad Dodik & his buddy A. Vucic: Bosnia and Herzegovina under attack!",
-            "url": "https://x.com/i/web/status/2106130811946934631",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-02T21:14:50.000Z",
-            "matched_countries": [
-              "Bosznia-Hercegovina",
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 6,
-              "Szerbia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 11,
-            "raw_engagement": 11,
-            "metrics": {
-              "likes": 6,
-              "reposts": 1,
-              "replies": 3,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Agenzia Nova: Speciale energia: Bosnia, in Repubblica Srpska firmato contratto per centrale solare di Bileca 01 ott 14:00 - (Agenzia Nova) - Il ministero dell'Energia della Repubblica Srpska (entita' serba della Bosnia Erzegovina) e la societa' locale... (Seb) Special energy: Bosnia, contract signed in Republika Srpska for a solar plant in Bileća Oct 01 14:0",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117365579188263167",
@@ -431,6 +412,37 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Tracing Illicit Cigarette Flows over Mountainous Bosnia-Montenegro Borderland https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/30/tracing-illicit-cigarette-flows-over-mountainous-bosnia-montenegro-borderland/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/30/tracing-illicit-cigarette-flows-over-mountainous-bosnia-montenegro-borderland/bi/",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Wed, 30 Sep 2026 08:06:52 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina",
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 1,
+              "Montenegró": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 12,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -441,32 +453,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 5,
+        "mentions": 9,
+        "negative_hits": 3,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 173,
-        "geopolitical_total": 153,
+        "engagement_total": 12,
+        "raw_engagement_total": 12,
+        "quality_total": 154,
+        "geopolitical_total": 133,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
-          "security": 4,
+          "security": 1,
           "protest": 2,
-          "government_crisis": 1,
-          "corruption_rule_of_law": 1
+          "government_crisis": 4,
+          "corruption_rule_of_law": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 1,
           "kosovo": 4,
-          "Koszovó": 2,
-          "Albánia": 1
+          "Koszovó": 4
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -513,46 +525,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "“We Will Not Stop Until the Law Is Submitted”: 17th Night of “Not in My Name” Protest Ends Without Incidents Kosovo Prishtina NotInMyName KLA UCK SpecialistChambers TheHague Protes",
-            "text": "“We Will Not Stop Until the Law Is Submitted”: 17th Night of “Not in My Name” Protest Ends Without Incidents Kosovo Prishtina NotInMyName KLA UCK SpecialistChambers TheHague Protests MinistryOfJustice KosovoPolitics ÇlirimHaziri DonikaGërvalla",
-            "url": "https://x.com/i/web/status/2106120104878457088",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-02T20:32:17.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Thousands in Kosovo Protest Again for ‘Fair Justice’ After Hague Convictions https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/01/thousands-in-kosovo-protest-again-for-fair-justice-after-hague-convictions/btj/",
             "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/01/thousands-in-kosovo-protest-again-for-fair-justice-after-hague-convictions/btj/",
@@ -587,46 +559,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Honoured to join the ceremony in Pristina and thank the officers of the 7th EULEX RFPU for their service. Proud of Lithuania’s contribution alongside our French, Dutch and Polish c",
-            "text": "Honoured to join the ceremony in Pristina and thank the officers of the 7th EULEX RFPU for their service. Proud of Lithuania’s contribution alongside our French, Dutch and Polish colleagues to peace, security and the rule of law in Kosovo. 🇱🇹🇪🇺",
-            "url": "https://x.com/i/web/status/2106125839284699181",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-02T20:55:04.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 18,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Three Kosovo Serbs Plead Not Guilty Over 2022 Unrest in North https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/30/three-kosovo-serbs-plead-not-guilty-over-2022-unrest-in-north/bi/",
             "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/30/three-kosovo-serbs-plead-not-guilty-over-2022-unrest-in-north/bi/",
@@ -654,6 +586,70 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Kosovo’s Kurti Pushes for Deal on President to Avoid Elections https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/30/kosovos-kurti-pushes-for-deal-on-president-to-avoid-elections/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/30/kosovos-kurti-pushes-for-deal-on-president-to-avoid-elections/bi/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 30 Sep 2026 12:57:48 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 13,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Black + Chikankari = always a classy combination. 🖤✨ Beautiful Black Rayon Chikankari Kurti with delicate embroidery for an elegant and comfortable ethnic look. Price, size & order",
+            "text": "Black + Chikankari = always a classy combination. 🖤✨ Beautiful Black Rayon Chikankari Kurti with delicate embroidery for an elegant and comfortable ethnic look. Price, size & order details ke liye DM karein. 📩 BlackChikankari ChikankariKurti LucknowiChikankari Rayon",
+            "url": "https://x.com/i/web/status/2106195026673811610",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-03T01:30:00.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -668,8 +664,8 @@
         "negative_hits": 2,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
         "quality_total": 97,
         "geopolitical_total": 79,
         "source_counts": {
@@ -841,17 +837,17 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 46,
+        "score": 51,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 6,
         "negative_hits": 2,
-        "positive_hits": 2,
-        "trusted_hits": 3,
-        "engagement_total": 49,
-        "raw_engagement_total": 49,
-        "quality_total": 143,
-        "geopolitical_total": 128,
+        "positive_hits": 1,
+        "trusted_hits": 4,
+        "engagement_total": 85,
+        "raw_engagement_total": 85,
+        "quality_total": 159,
+        "geopolitical_total": 141,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
@@ -859,12 +855,11 @@
         },
         "category_counts": {
           "security": 2,
-          "foreign_influence": 1,
-          "government_crisis": 3
+          "government_crisis": 4
         },
         "tag_counts": {
-          "Montenegró": 2,
-          "Észak-Macedónia": 4
+          "Montenegró": 1,
+          "Észak-Macedónia": 5
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -899,11 +894,11 @@
             "quality_score": 35,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
               "likes": 0,
-              "reposts": 0,
+              "reposts": 1,
               "replies": 0,
               "quotes": 1
             },
@@ -990,6 +985,41 @@
             "quality": "x_api_filtered"
           },
           {
+            "title": "SDSM reacted to the joint press conference held by European Commission President Ursula von der Leyen and Prime Minister Hristijan Mickoski, accusing the latter of misleading citiz",
+            "text": "SDSM reacted to the joint press conference held by European Commission President Ursula von der Leyen and Prime Minister Hristijan Mickoski, accusing the latter of misleading citizens with claims of betrayal.",
+            "url": "https://x.com/i/web/status/2106184578247315728",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-03T00:48:29.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "North Macedonia Needs Stronger Political Support from the European Union! North Macedonian Prime Minister said his country remains firmly committed to joining the European Union bu",
             "text": "North Macedonia Needs Stronger Political Support from the European Union! North Macedonian Prime Minister said his country remains firmly committed to joining the European Union but called for stronger political support and a clearer accession process. “Our commitment",
             "url": "https://x.com/i/web/status/2106114468304372116",
@@ -1028,41 +1058,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "🇺🇸 The Trump administration defied a hold placed by Sen. Jeanne Shaheen (D-N.H.) and Rep. Gregory Meeks (D-N.Y.), notifying Congress late Wednesday that it would move forward with ",
-            "text": "🇺🇸 The Trump administration defied a hold placed by Sen. Jeanne Shaheen (D-N.H.) and Rep. Gregory Meeks (D-N.Y.), notifying Congress late Wednesday that it would move forward with diverting $52 million in military assistance originally approved for Slovakia, North Macedonia,",
-            "url": "https://x.com/i/web/status/2106121290990190642",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-02T20:37:00.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 48,
-            "raw_engagement": 48,
-            "metrics": {
-              "likes": 35,
-              "reposts": 13,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -1073,28 +1068,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
-        "negative_hits": 11,
-        "positive_hits": 3,
+        "mentions": 14,
+        "negative_hits": 10,
+        "positive_hits": 4,
         "trusted_hits": 1,
-        "engagement_total": 155,
-        "raw_engagement_total": 205,
-        "quality_total": 339,
-        "geopolitical_total": 309,
+        "engagement_total": 10,
+        "raw_engagement_total": 10,
+        "quality_total": 328,
+        "geopolitical_total": 296,
         "source_counts": {
           "reddit": 0,
           "mastodon": 8,
-          "x": 4
+          "x": 6
         },
         "category_counts": {
-          "protest": 4,
+          "protest": 5,
           "corruption_rule_of_law": 3,
-          "government_crisis": 5
+          "government_crisis": 6
         },
         "tag_counts": {
           "balkans": 6,
           "albania": 2,
-          "Albánia": 4
+          "Szerbia": 1,
+          "Albánia": 5
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -1133,12 +1129,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🔴 Albanian Prime Minister Edi Rama stated that Russia poses a real threat to the Western Balkans but dismissed worries about Chinese and Turkish influence, asserting that China has",
-            "text": "🔴 Albanian Prime Minister Edi Rama stated that Russia poses a real threat to the Western Balkans but dismissed worries about Chinese and Turkish influence, asserting that China has no imperial agenda. Stay informed on geopolitical shifts with tracking",
-            "url": "https://x.com/i/web/status/2106117521262657887",
+            "title": "🇦🇱 Albanian Prime Minister Edi Rama said Russia posed a real threat to the Western Balkans but rejected concerns about Chinese and Turkish influence in the region, - Die Welt China",
+            "text": "🇦🇱 Albanian Prime Minister Edi Rama said Russia posed a real threat to the Western Balkans but rejected concerns about Chinese and Turkish influence in the region, - Die Welt China has no imperial agenda — it is simply a reality that everyone has to deal with. Türkiye poses no",
+            "url": "https://x.com/i/web/status/2106173672423563324",
             "source": "x",
             "tag": "Albánia",
-            "seen_date": "2026-10-02T20:22:01.000Z",
+            "seen_date": "2026-10-03T00:05:08.000Z",
             "matched_countries": [
               "Albánia"
             ],
@@ -1154,111 +1150,31 @@
               },
               {
                 "category": "foreign_influence",
-                "hits": 3,
+                "hits": 2,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 36,
-            "quality_score": 37,
+            "geopolitical_score": 29,
+            "quality_score": 30,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 0,
+              "likes": 1,
               "reposts": 0,
               "replies": 0,
-              "quotes": 0
+              "quotes": 1
             },
             "quality": "x_api_filtered"
           },
           {
             "title": "Albanian Prime Minister Edi Rama said Russia posed a real threat to the Western Balkans but rejected concerns about Chinese and Turkish influence in the region: China has no imperi",
             "text": "Albanian Prime Minister Edi Rama said Russia posed a real threat to the Western Balkans but rejected concerns about Chinese and Turkish influence in the region: China has no imperial agenda — it is simply a reality that everyone has to deal with. Türkiye poses no danger in the",
-            "url": "https://x.com/i/web/status/2106116301580120222",
+            "url": "https://x.com/i/web/status/2106212327016030264",
             "source": "x",
             "tag": "Albánia",
-            "seen_date": "2026-10-02T20:17:10.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 6
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 120,
-            "raw_engagement": 170,
-            "metrics": {
-              "likes": 148,
-              "reposts": 18,
-              "replies": 3,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🇦🇱 Albanian Prime Minister Edi Rama said Russia posed a real threat to the Western Balkans but rejected concerns about Chinese and Turkish influence in the region, - Die Welt China",
-            "text": "🇦🇱 Albanian Prime Minister Edi Rama said Russia posed a real threat to the Western Balkans but rejected concerns about Chinese and Turkish influence in the region, - Die Welt China has no imperial agenda — it is simply a reality that everyone has to deal with. Türkiye poses no",
-            "url": "https://x.com/i/web/status/2106118776517480619",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-02T20:27:00.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 6
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 34,
-            "raw_engagement": 34,
-            "metrics": {
-              "likes": 27,
-              "reposts": 7,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "&gt; ALBANIAN PRIME MINISTER EDI RAMA SAID RUSSIA POSED A REAL THREAT TO THE WESTERN BALKANS BUT REJECTED CONCERNS ABOUT CHINESE AND TURKISH INFLUENCE IN THE REGION: &gt; CHINA HAS",
-            "text": "&gt; ALBANIAN PRIME MINISTER EDI RAMA SAID RUSSIA POSED A REAL THREAT TO THE WESTERN BALKANS BUT REJECTED CONCERNS ABOUT CHINESE AND TURKISH INFLUENCE IN THE REGION: &gt; CHINA HAS NO IMPERIAL AGENDA IT IS SIMPLY A REALITY THAT EVERYONE HAS TO DEAL WITH.",
-            "url": "https://x.com/i/web/status/2106116323319198159",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-02T20:17:15.000Z",
+            "seen_date": "2026-10-03T02:38:44.000Z",
             "matched_countries": [
               "Albánia"
             ],
@@ -1287,10 +1203,78 @@
             "metrics": {
               "likes": 0,
               "reposts": 0,
-              "replies": 1,
-              "quotes": 0
+              "replies": 0,
+              "quotes": 1
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 122 of anti-corruption protest in Tirana, Albania # FlamingoRevolution # Albania # Corruption # Balkans # Europe # Protest https://www. youtube.com/watch?v=ZZTMRsOZbwU",
+            "url": "https://mas.to/@meganL/117355528499484979",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Tue, 29 Sep 2026 17:34:14 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 121 of anti-corruption protest in Tirana, Albania # FlamingoRevolution # Albania # Corruption # Balkans # Europe # Protest 🔴LIVE | Sot dita e 121 e revoltës kundër qeverisë, qytetarët sërish në shesh https://www. youtube.com/watch?v=ejyH0wlVYY0",
+            "url": "https://mas.to/@meganL/117349998484644967",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Mon, 28 Sep 2026 18:07:53 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
