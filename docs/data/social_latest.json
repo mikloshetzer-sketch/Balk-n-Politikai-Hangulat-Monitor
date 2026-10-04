@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04 11:36 UTC",
+  "updated_at": "2026-10-04 12:15 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 11
+    "collected": 16
   },
   "countries": [
     {
@@ -21,31 +21,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 4,
+        "mentions": 11,
+        "negative_hits": 6,
         "positive_hits": 1,
-        "trusted_hits": 0,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 195,
-        "geopolitical_total": 173,
+        "quality_total": 232,
+        "geopolitical_total": 206,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 7,
-          "x": 1
+          "mastodon": 6,
+          "x": 5
         },
         "category_counts": {
-          "government_crisis": 2,
-          "protest": 1,
+          "government_crisis": 3,
+          "protest": 3,
           "foreign_influence": 2,
-          "ethnic_tension": 2,
-          "security": 1
+          "ethnic_tension": 1,
+          "security": 2
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 4,
-          "bosnia": 2,
-          "Szerbia": 1
+          "bosnia": 1,
+          "Szerbia": 5
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -118,45 +118,74 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Agenzia Nova: Bosnia-Russia: delegazione Repubblica Srpska guidata da Dodik e Minic incontra Putin a Mosca 29 set 09:52 - (Agenzia Nova) - La delegazione della Repubblica Srpska, entita' serba della Bosnia Erzegovina, guidata dal presidente dell'Alleanza... (Seb) Bosnia-Russia: RS delegation led by Dodik and Minic meets Putin in Moscow September 29 09:52 – (",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117353389456268107",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Tue, 29 Sep 2026 08:30:15 +0000",
+            "title": "Novi Pazar yesterday! Serbian students organize protests against the (the biggest TRAITOR in the history of the Serbia) and his criminal government!",
+            "text": "Novi Pazar yesterday! Serbian students organize protests against the (the biggest TRAITOR in the history of the Serbia) and his criminal government!",
+            "url": "https://x.com/i/web/status/2106710698088952289",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-04T11:39:05.000Z",
             "matched_countries": [
-              "Bosznia-Hercegovina",
               "Szerbia"
             ],
             "country_confidence": {
-              "Bosznia-Hercegovina": 10,
               "Szerbia": 2
             },
-            "event_category": "ethnic_tension",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
+                "category": "protest",
+                "hits": 2,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Serbian students organize rally yesterday in the Novi Pazar.They protested against criminal government!",
+            "text": "Serbian students organize rally yesterday in the Novi Pazar.They protested against criminal government!",
+            "url": "https://x.com/i/web/status/2106710016002547817",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-04T11:36:23.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -186,42 +215,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Speciale energia: Bosnia, in Repubblica Srpska firmato contratto per centrale solare di Bileca 01 ott 14:00 - (Agenzia Nova) - Il ministero dell'Energia della Repubblica Srpska (entita' serba della Bosnia Erzegovina) e la societa' locale... (Seb) Special energy: Bosnia, contract signed in Republika Srpska for a solar plant in Bileća Oct 01 14:0",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117365579188263167",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Thu, 01 Oct 2026 12:10:16 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina",
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 6,
-              "Szerbia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 14,
-            "quality_score": 17,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -229,35 +222,35 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 57,
+        "score": 50,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
+        "mentions": 8,
         "negative_hits": 2,
         "positive_hits": 3,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 171,
-        "geopolitical_total": 146,
+        "quality_total": 141,
+        "geopolitical_total": 119,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 8,
+          "mastodon": 7,
           "x": 1
         },
         "category_counts": {
           "foreign_influence": 3,
-          "ethnic_tension": 4,
+          "ethnic_tension": 3,
           "security": 1,
           "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 2,
-          "bosnia": 5,
+          "bosnia": 4,
           "montenegro": 1,
           "Albánia": 1
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "foreign_influence",
         "top_posts": [
           {
             "title": "",
@@ -292,47 +285,6 @@
             ],
             "geopolitical_score": 30,
             "quality_score": 33,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Bosnia-Russia: delegazione Repubblica Srpska guidata da Dodik e Minic incontra Putin a Mosca 29 set 09:52 - (Agenzia Nova) - La delegazione della Repubblica Srpska, entita' serba della Bosnia Erzegovina, guidata dal presidente dell'Alleanza... (Seb) Bosnia-Russia: RS delegation led by Dodik and Minic meets Putin in Moscow September 29 09:52 – (",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117353389456268107",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Tue, 29 Sep 2026 08:30:15 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina",
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 10,
-              "Szerbia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -432,6 +384,35 @@
             ],
             "geopolitical_score": 14,
             "quality_score": 17,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Days before Bosnia votes, Milorad Dodik’s Kremlin audience with Vladimir Putin gives his party a potent campaign image and Russian backing as voters face fragmented ballots, stalled EU reforms, and untested voting technology: https://www. thelevantfiles.org/2026/10/bos nia-votes-putin-hosts-dodiks-kremlin.html # Bosnia # RepublikaSrpska # Dodik # Putin # Rus",
+            "url": "https://mastodon.social/@thelevantfiles/117382373998446981",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sun, 04 Oct 2026 11:21:24 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 5
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 12,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -823,29 +804,29 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 30,
+        "score": 37,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 5,
         "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 3,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 95,
-        "geopolitical_total": 82,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 105,
+        "geopolitical_total": 91,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 4
+          "x": 5
         },
         "category_counts": {
-          "government_crisis": 3,
+          "government_crisis": 4,
           "security": 1
         },
         "tag_counts": {
           "Montenegró": 1,
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -949,10 +930,10 @@
             "quality_score": 17,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 3,
+            "raw_engagement": 3,
             "metrics": {
-              "likes": 1,
+              "likes": 2,
               "reposts": 1,
               "replies": 0,
               "quotes": 0
@@ -998,6 +979,41 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "The prime minister of North Macedonia, Hristijan Mickoski, said the country is ready for the upcoming heating season and has sufficient fuel reserves, even in the event of increase",
+            "text": "The prime minister of North Macedonia, Hristijan Mickoski, said the country is ready for the upcoming heating season and has sufficient fuel reserves, even in the event of increased consumption.",
+            "url": "https://x.com/i/web/status/2106710805089595778",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-04T11:39:31.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -1010,12 +1026,12 @@
         "scale": "0-60 risk index",
         "mentions": 14,
         "negative_hits": 8,
-        "positive_hits": 2,
-        "trusted_hits": 1,
-        "engagement_total": 9,
-        "raw_engagement_total": 9,
-        "quality_total": 330,
-        "geopolitical_total": 292,
+        "positive_hits": 3,
+        "trusted_hits": 2,
+        "engagement_total": 12,
+        "raw_engagement_total": 12,
+        "quality_total": 336,
+        "geopolitical_total": 295,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
@@ -1025,8 +1041,8 @@
           "corruption_rule_of_law": 3,
           "protest": 4,
           "foreign_influence": 3,
-          "security": 1,
-          "government_crisis": 3
+          "security": 2,
+          "government_crisis": 2
         },
         "tag_counts": {
           "balkans": 6,
