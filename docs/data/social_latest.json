@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05 13:08 UTC",
+  "updated_at": "2026-10-05 14:26 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,87 +12,40 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 10
+    "collected": 11
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 52,
-        "level": "high",
+        "score": 39,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 7,
+        "mentions": 5,
         "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 148,
-        "geopolitical_total": 133,
+        "engagement_total": 23,
+        "raw_engagement_total": 23,
+        "quality_total": 112,
+        "geopolitical_total": 99,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 4
+          "x": 2
         },
         "category_counts": {
           "protest": 1,
-          "government_crisis": 2,
-          "ethnic_tension": 1,
-          "security": 3
+          "government_crisis": 3,
+          "security": 1
         },
         "tag_counts": {
           "serbia": 2,
           "bosnia": 1,
-          "Szerbia": 3,
-          "Koszovó": 1
+          "Szerbia": 2
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "ON THIS DAY — October 5, 2000 Slobodan Milosevic Overthrown Mass protests in Belgrade forced Yugoslav President Milosevic from power after he refused to accept election results. Th",
-            "text": "ON THIS DAY — October 5, 2000 Slobodan Milosevic Overthrown Mass protests in Belgrade forced Yugoslav President Milosevic from power after he refused to accept election results. The Bulldozer Revolution ended a decade of wars and ethnic cleansing… Serbia Balkans OnThis…",
-            "url": "https://x.com/i/web/status/2107093564119298470",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-05T13:00:28.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 38,
-            "quality_score": 39,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Putin endorsed Aleksandar Vučić President of Russia Vladimir Putin publicly expressed hope that Aleksandar Vučić will be the next prime minister of Serbia, and extended his appreciation for what he called a balanced policy of the Serbian government and a desire for cooperation with Russia. https:// serbianism.com/2026/10/04/puti n-endorsed-aleksandar-vucic/",
@@ -128,48 +81,47 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇽🇰👉Fact-Check: The Suspected Explosive Bottle Had a Ukrainian Cyrillic Label, Not a Serbian One Alarm Kosovo Police KosovoPolice Serbia Security Ukraine",
-            "text": "🇽🇰👉Fact-Check: The Suspected Explosive Bottle Had a Ukrainian Cyrillic Label, Not a Serbian One Alarm Kosovo Police KosovoPolice Serbia Security Ukraine",
-            "url": "https://x.com/i/web/status/2107043426021814550",
+            "title": "🇷🇸 Aleksandar Vučić has resigned as Serbia’s president and could return to an office with greater formal powers. Ahead of the October 25 snap parliamentary election, Polymarket giv",
+            "text": "🇷🇸 Aleksandar Vučić has resigned as Serbia’s president and could return to an office with greater formal powers. Ahead of the October 25 snap parliamentary election, Polymarket gives him a 67% chance of becoming the next prime minister, despite public criticism.",
+            "url": "https://x.com/i/web/status/2107105226905854020",
             "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-05T09:41:14.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-05T13:46:48.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
+              "Szerbia": 5
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 2,
+                "category": "government_crisis",
+                "hits": 3,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
+            "geopolitical_score": 27,
+            "quality_score": 28,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 3,
+            "raw_engagement": 3,
             "metrics": {
-              "likes": 0,
+              "likes": 2,
               "reposts": 0,
-              "replies": 0,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "Available evidence identifies a Serbian-language, cross-border media and social-media ecosystem through which pro-Russian, anti-Western, nationalist and revisionist narratives can ",
-            "text": "Available evidence identifies a Serbian-language, cross-border media and social-media ecosystem through which pro-Russian, anti-Western, nationalist and revisionist narratives can circulate into Croatia. Serbian-origin publishers and groups are prominent in several mapped",
-            "url": "https://x.com/i/web/status/2107083234026868778",
+            "title": "As revealed at today's press conference, members of Serbia's Student List (Student Movement) are being unlawfully and unconstitutionally followed, harassed and physically threatene",
+            "text": "As revealed at today's press conference, members of Serbia's Student List (Student Movement) are being unlawfully and unconstitutionally followed, harassed and physically threatened by high-ranking officials of the Serbian police. This is happening during the pre-election",
+            "url": "https://x.com/i/web/status/2107105974435684618",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-10-05T12:19:25.000Z",
+            "seen_date": "2026-10-05T13:49:47.000Z",
             "matched_countries": [
               "Szerbia"
             ],
@@ -184,20 +136,20 @@
                 "weight": 9
               },
               {
-                "category": "foreign_influence",
+                "category": "government_crisis",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
               }
             ],
-            "geopolitical_score": 17,
-            "quality_score": 18,
+            "geopolitical_score": 21,
+            "quality_score": 22,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 20,
+            "raw_engagement": 20,
             "metrics": {
-              "likes": 2,
-              "reposts": 0,
+              "likes": 15,
+              "reposts": 5,
               "replies": 0,
               "quotes": 0
             },
@@ -230,6 +182,36 @@
             "quality_score": 18,
             "source_reliability": 5,
             "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Bosniaks and Serbs singing together on an election rally! This is what we want - unity, peace and understanding for all people who live in #Serbia ! Unlike Vučić's fascist thugs who would rather start a new apartheid against them and then move to war when they build enough tensions.",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:sjx3hptnopiz7mtzaexuhgpr/post/3mwz6najao22t",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sun, 04 Oct 2026 00:50:21 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 14,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -664,8 +646,8 @@
         "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
+        "engagement_total": 29,
+        "raw_engagement_total": 29,
         "quality_total": 96,
         "geopolitical_total": 78,
         "source_counts": {
@@ -681,7 +663,7 @@
         },
         "tag_counts": {
           "montenegro": 5,
-          "Montenegró": 1
+          "Szerbia": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -838,108 +820,78 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 22,
-        "level": "medium",
+        "score": 13,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 2,
         "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 139,
-        "raw_engagement_total": 349,
-        "quality_total": 33,
-        "geopolitical_total": 30,
+        "engagement_total": 6,
+        "raw_engagement_total": 6,
+        "quality_total": 28,
+        "geopolitical_total": 26,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
-          "government_crisis": 2,
-          "protest": 1
+          "government_crisis": 1,
+          "security": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "While Trump is calling Americans the r-word, North Macedonia’s leader is showing the world how REAL men behave 💙 An 11-year-old girl named Embla Ademi experienced severe discrimina",
-            "text": "While Trump is calling Americans the r-word, North Macedonia’s leader is showing the world how REAL men behave 💙 An 11-year-old girl named Embla Ademi experienced severe discrimination when parents of her classmates signed a petition to boycott her presence, forcing her to",
-            "url": "https://x.com/i/web/status/2106924080863613014",
+            "title": "In 2026, Canada celebrates 30 years of bilateral relations with North Macedonia - an opportunity to reflect on our shared values and interests, such as trade diversification, regio",
+            "text": "In 2026, Canada celebrates 30 years of bilateral relations with North Macedonia - an opportunity to reflect on our shared values and interests, such as trade diversification, regional stability, and support for Ukraine. I had the chance last week to reconnect with Jovica",
+            "url": "https://x.com/i/web/status/2107100216402821624",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-05T01:47:00.000Z",
+            "seen_date": "2026-10-05T13:26:54.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
               "Észak-Macedónia": 5
             },
-            "event_category": "protest",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 12,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 120,
-            "raw_engagement": 330,
-            "metrics": {
-              "likes": 270,
-              "reposts": 57,
-              "replies": 1,
-              "quotes": 2
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "2027: MOTHER TERESA FOR MACEDONIA’S €2 COIN 🇲🇰🇪🇺 As President of Austria, I will support the euroization of North Macedonia and work with the Austrian National Bank and our Europea",
-            "text": "2027: MOTHER TERESA FOR MACEDONIA’S €2 COIN 🇲🇰🇪🇺 As President of Austria, I will support the euroization of North Macedonia and work with the Austrian National Bank and our European partners to help Macedonia prepare for its European monetary future. My proposal is clear: Mother",
-            "url": "https://x.com/i/web/status/2106993651523969187",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-05T06:23:27.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
+            "geopolitical_score": 14,
+            "quality_score": 15,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 19,
-            "raw_engagement": 19,
+            "engagement": 6,
+            "raw_engagement": 6,
             "metrics": {
-              "likes": 11,
-              "reposts": 3,
-              "replies": 5,
+              "likes": 6,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "Skopje asked Sofia for a ministers' meeting on the Corridor 8 sidelines. President Jotova replied by microphone: happy to talk, no ultimatums, as long as nobody calls it bilateral.",
-            "text": "Skopje asked Sofia for a ministers' meeting on the Corridor 8 sidelines. President Jotova replied by microphone: happy to talk, no ultimatums, as long as nobody calls it bilateral. So the plan is a bilateral meeting about a non-bilateral issue. NorthMacedonia Bulgaria",
-            "url": "https://x.com/i/web/status/2107061865348301073",
+            "title": "Venko Filipce said at a press conference today that, in his view, President von der Leyen’s visit had exposed the falsehoods told by Hristijan Mickoski regarding his claim that Mac",
+            "text": "Venko Filipce said at a press conference today that, in his view, President von der Leyen’s visit had exposed the falsehoods told by Hristijan Mickoski regarding his claim that Macedonian identity was under threat.",
+            "url": "https://x.com/i/web/status/2107104256121549137",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-05T10:54:30.000Z",
+            "seen_date": "2026-10-05T13:42:57.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -954,8 +906,8 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
+            "geopolitical_score": 12,
+            "quality_score": 13,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -977,29 +929,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 6,
-        "positive_hits": 2,
+        "mentions": 14,
+        "negative_hits": 7,
+        "positive_hits": 4,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 261,
-        "geopolitical_total": 231,
+        "engagement_total": 44,
+        "raw_engagement_total": 44,
+        "quality_total": 344,
+        "geopolitical_total": 310,
         "source_counts": {
           "reddit": 0,
           "mastodon": 10,
-          "x": 0
+          "x": 4
         },
         "category_counts": {
-          "corruption_rule_of_law": 3,
+          "corruption_rule_of_law": 4,
           "protest": 3,
           "foreign_influence": 3,
-          "security": 1
+          "security": 1,
+          "government_crisis": 3
         },
         "tag_counts": {
           "balkans": 6,
           "montenegro": 1,
-          "albania": 3
+          "albania": 3,
+          "Szerbia": 1,
+          "Albánia": 3
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
