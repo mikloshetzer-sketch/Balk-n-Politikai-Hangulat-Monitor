@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05 03:12 UTC",
+  "updated_at": "2026-10-05 05:25 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,38 +12,37 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 9
+    "collected": 8
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 54,
+        "score": 44,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 3,
+        "mentions": 6,
+        "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 150,
-        "geopolitical_total": 128,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 128,
+        "geopolitical_total": 107,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "protest": 1,
-          "government_crisis": 3,
+          "government_crisis": 2,
           "foreign_influence": 2,
           "security": 1
         },
         "tag_counts": {
           "serbia": 4,
           "bosnia": 1,
-          "Szerbia": 1,
           "Koszovó": 1
         },
         "main_topic": "government_crisis",
@@ -124,41 +123,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Ana Brnabić has become Serbia’s acting president following the resignation of President Aleksandar Vučić, marking another first for LGBTQIA+ representation in the Balkans. She took",
-            "text": "Ana Brnabić has become Serbia’s acting president following the resignation of President Aleksandar Vučić, marking another first for LGBTQIA+ representation in the Balkans. She took office on 28 September 2026, becoming the first openly gay person to serve as president of a Balkan",
-            "url": "https://x.com/i/web/status/2106905155618910480",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-05T00:31:48.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "US Lawmakers Target Serbia's Democratic Backsliding, Ties To Russia, China, Iran https:// fed.brid.gy/r/https://www.rfer l.org/a/us-lawmakers-target-serbia-s-democratic-backsliding-ties-to-russia-china-iran/33869695.html",
             "url": "https://fed.brid.gy/r/https://www.rferl.org/a/us-lawmakers-target-serbia-s-democratic-backsliding-ties-to-russia-china-iran/33869695.html",
@@ -217,6 +181,36 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Bosniaks and Serbs singing together on an election rally! This is what we want - unity, peace and understanding for all people who live in #Serbia ! Unlike Vučić's fascist thugs who would rather start a new apartheid against them and then move to war when they build enough tensions.",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:sjx3hptnopiz7mtzaexuhgpr/post/3mwz6najao22t",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sun, 04 Oct 2026 00:50:21 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 14,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -224,36 +218,75 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 56,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
+        "mentions": 10,
         "negative_hits": 2,
         "positive_hits": 4,
-        "trusted_hits": 2,
+        "trusted_hits": 4,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 169,
-        "geopolitical_total": 138,
+        "quality_total": 211,
+        "geopolitical_total": 173,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 9,
+          "mastodon": 10,
           "x": 0
         },
         "category_counts": {
           "foreign_influence": 2,
-          "ethnic_tension": 2,
+          "ethnic_tension": 3,
           "security": 2,
           "protest": 1,
           "government_crisis": 2
         },
         "tag_counts": {
           "balkans": 2,
-          "bosnia": 6,
+          "bosnia": 7,
           "montenegro": 1
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "ethnic_tension",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Bosnia awaits for final general election results Around 3.4 million eligible voters in Bosnia headed to the polls to choose the three members of the country’s multi-ethnic presidency, lawmakers for the national Parliament, and heads of institutions for the country’s two entities. https://www. euronews.com/2026/10/04/bosnia -votes-as-pro-russian-politician-lo",
+            "url": "https://mastodon.social/@top_news/117386399859642993",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Mon, 05 Oct 2026 04:25:14 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 5
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 31,
+            "quality_score": 36,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "Milorad Dodik’s party has won elections in Bosnia, shaped by economic pressures and EU accession prospects. The pro-Russia politician’s separatist rhetoric raises concerns regarding potential regional instability. https:// apnews.com/article/bosnia-elec tion-dodik-tensions-technology-8d8ce8f6a3c676ef8ba3422f68ea9d11 # Ukraine # Russia # Bosnia",
@@ -396,35 +429,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Days before Bosnia votes, Milorad Dodik’s Kremlin audience with Vladimir Putin gives his party a potent campaign image and Russian backing as voters face fragmented ballots, stalled EU reforms, and untested voting technology: https://www. thelevantfiles.org/2026/10/bos nia-votes-putin-hosts-dodiks-kremlin.html # Bosnia # RepublikaSrpska # Dodik # Putin # Rus",
-            "url": "https://mastodon.social/@thelevantfiles/117382373998446981",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sun, 04 Oct 2026 11:21:24 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 5
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -432,36 +436,35 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 55,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 4,
+        "mentions": 8,
+        "negative_hits": 3,
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 134,
-        "geopolitical_total": 115,
+        "quality_total": 146,
+        "geopolitical_total": 126,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 2
+          "x": 3
         },
         "category_counts": {
           "security": 1,
           "protest": 2,
           "government_crisis": 1,
           "corruption_rule_of_law": 1,
-          "ethnic_tension": 1,
-          "eu_integration": 1
+          "ethnic_tension": 3
         },
         "tag_counts": {
           "balkans": 1,
           "kosovo": 4,
-          "Koszovó": 2
+          "Koszovó": 3
         },
-        "main_topic": "protest",
+        "main_topic": "ethnic_tension",
         "top_posts": [
           {
             "title": "",
@@ -600,12 +603,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Black + Blue 💙🖤 Beautiful Black Rayon Chikankari Kurti with delicate blue embroidery. A classy combination with a simple yet elegant ethnic look. Price, size & order details ke liy",
-            "text": "Black + Blue 💙🖤 Beautiful Black Rayon Chikankari Kurti with delicate blue embroidery. A classy combination with a simple yet elegant ethnic look. Price, size & order details ke liye DM karein. 📩 BlackChikankari BlueEmbroidery ChikankariKurti LucknowiChikankari RayonKur",
-            "url": "https://x.com/i/web/status/2106919804242456806",
+            "title": "ANNI Designer Women Printed Anarkali Kurta Palazzo Dupatta Set | Viscose Blend Ethnic Outfit | Flared Kurti with Bottom Wear🎁🛍️🏪🛒",
+            "text": "ANNI Designer Women Printed Anarkali Kurta Palazzo Dupatta Set | Viscose Blend Ethnic Outfit | Flared Kurti with Bottom Wear🎁🛍️🏪🛒",
+            "url": "https://x.com/i/web/status/2106949529753006562",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-10-05T01:30:00.000Z",
+            "seen_date": "2026-10-05T03:28:07.000Z",
             "matched_countries": [
               "Koszovó"
             ],
@@ -819,15 +822,15 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 13,
+        "score": 15,
         "level": "low",
         "scale": "0-60 risk index",
         "mentions": 2,
         "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 70,
-        "raw_engagement_total": 70,
+        "engagement_total": 120,
+        "raw_engagement_total": 149,
         "quality_total": 23,
         "geopolitical_total": 21,
         "source_counts": {
@@ -869,11 +872,11 @@
             "quality_score": 12,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 70,
-            "raw_engagement": 70,
+            "engagement": 120,
+            "raw_engagement": 149,
             "metrics": {
-              "likes": 54,
-              "reposts": 14,
+              "likes": 120,
+              "reposts": 27,
               "replies": 1,
               "quotes": 1
             },
@@ -923,32 +926,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
-        "negative_hits": 10,
+        "mentions": 13,
+        "negative_hits": 9,
         "positive_hits": 2,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 352,
-        "geopolitical_total": 315,
+        "quality_total": 332,
+        "geopolitical_total": 297,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 4
+          "x": 2
         },
         "category_counts": {
           "corruption_rule_of_law": 4,
           "protest": 4,
           "foreign_influence": 3,
           "security": 1,
-          "eu_integration": 1,
-          "government_crisis": 2
+          "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 7,
           "montenegro": 1,
           "albania": 3,
-          "Koszovó": 2,
           "Albánia": 2
         },
         "main_topic": "corruption_rule_of_law",
