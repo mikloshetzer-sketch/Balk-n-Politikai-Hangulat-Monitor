@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06 18:20 UTC",
+  "updated_at": "2026-10-06 22:05 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,47 +12,122 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 15
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 35,
-        "level": "medium",
+        "score": 51,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 8,
         "negative_hits": 2,
-        "positive_hits": 1,
+        "positive_hits": 2,
         "trusted_hits": 2,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 83,
-        "geopolitical_total": 67,
+        "engagement_total": 8,
+        "raw_engagement_total": 8,
+        "quality_total": 141,
+        "geopolitical_total": 119,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 3,
-          "x": 2
+          "mastodon": 5,
+          "x": 3
         },
         "category_counts": {
-          "security": 2,
-          "economic_infrastructure": 1,
-          "government_crisis": 2
+          "government_crisis": 5,
+          "protest": 1,
+          "security": 1,
+          "economic_infrastructure": 1
         },
         "tag_counts": {
-          "serbia": 2,
+          "serbia": 4,
           "bosnia": 1,
-          "Szerbia": 2
+          "Szerbia": 3
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "BELGRADE, SERBIA — Serbia has become the first Balkan country to have an openly gay person serve as president after Ana Brnabić assumed the role of acting president on September 28",
-            "text": "BELGRADE, SERBIA — Serbia has become the first Balkan country to have an openly gay person serve as president after Ana Brnabić assumed the role of acting president on September 28 following the resignation of Aleksandar Vučić.",
-            "url": "https://x.com/i/web/status/2107531338165387705",
+            "title": "",
+            "text": "Serbia at a Crossroads - Global Eye, BBC World Service https://www. youtube.com/watch?v=7cAPoeR7hcs # Students # Protest # Serbia # Corruption",
+            "url": "https://eldritch.cafe/@ml/117395632622576100",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Tue, 06 Oct 2026 19:33:15 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 23,
+            "quality_score": 28,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "🇷🇸 The one and only Aleksandar Vulin announced that he intends to run for President in the upcoming election. 🥂 The announcement came Monday at the Pokret Socijalista “Srpski Svet”",
+            "text": "🇷🇸 The one and only Aleksandar Vulin announced that he intends to run for President in the upcoming election. 🥂 The announcement came Monday at the Pokret Socijalista “Srpski Svet” rally in Belgrade, where he also backed Aleksandar Vučić’s list for the October 25 parliamentary",
+            "url": "https://x.com/i/web/status/2107561332266381383",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-10-06T18:00:01.000Z",
+            "seen_date": "2026-10-06T19:59:12.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 8
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 27,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 8,
+            "raw_engagement": 8,
+            "metrics": {
+              "likes": 5,
+              "reposts": 3,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "📌 Stepping down to stay in charge: Vucic’s electoral strategy ❝Constitutional term limits explain why Serbian President Aleksandar Vucic is seeking another office, but not why he s",
+            "text": "📌 Stepping down to stay in charge: Vucic’s electoral strategy ❝Constitutional term limits explain why Serbian President Aleksandar Vucic is seeking another office, but not why he stepped down 7 months before his term expired❞ ✍️ OPINION - Marlind Laci is a political analyst",
+            "url": "https://x.com/i/web/status/2107584183032013175",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-06T21:30:00.000Z",
             "matched_countries": [
               "Szerbia"
             ],
@@ -67,16 +142,16 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
+            "geopolitical_score": 18,
+            "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
               "likes": 0,
               "reposts": 0,
-              "replies": 2,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -113,42 +188,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Serbian people stand for justice, they don’t change or act differently just because times get tough. Only Serbs stood against every evil empire in the world, Ottoman, Austria- Hung",
-            "text": "Serbian people stand for justice, they don’t change or act differently just because times get tough. Only Serbs stood against every evil empire in the world, Ottoman, Austria- Hungary, Nazi Germany and NATO. We don’t kneel to anyone. KOSOVO IS SERBIA, FUCK NATO",
-            "url": "https://x.com/i/web/status/2107528848132935914",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-06T17:50:08.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 17,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Serbian Student Targeted by Spyware Attack Sues Authorities https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/06/serbian-student-targeted-by-spyware-attack-sues-authorities/bi/",
             "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/06/serbian-student-targeted-by-spyware-attack-sues-authorities/bi/",
@@ -171,35 +210,6 @@
             ],
             "geopolitical_score": 12,
             "quality_score": 15,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Serbia: Banca mondiale alza al 3,1 per cento stima crescita Pil nel 2026 06 ott 11:55 - (Agenzia Nova) - La Banca mondiale ha rivisto al rialzo la previsione di crescita dell'economia serba per il 2026, portandola... (Seb) Serbia: World Bank raises GDP growth forecast to 3.1% for 2026 Oct 06 11:55 - (Agenzia Nova) – The World Bank has revised u",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117393418782894451",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Tue, 06 Oct 2026 10:10:14 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "economic_infrastructure",
-            "event_categories": [
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 8,
-            "quality_score": 11,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -446,29 +456,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 8,
-        "positive_hits": 1,
+        "mentions": 10,
+        "negative_hits": 5,
+        "positive_hits": 3,
         "trusted_hits": 1,
-        "engagement_total": 19,
-        "raw_engagement_total": 19,
-        "quality_total": 259,
-        "geopolitical_total": 230,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 191,
+        "geopolitical_total": 165,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 6
+          "x": 3
         },
         "category_counts": {
-          "security": 2,
-          "protest": 4,
-          "government_crisis": 6,
-          "corruption_rule_of_law": 1
+          "security": 1,
+          "protest": 3,
+          "government_crisis": 4,
+          "corruption_rule_of_law": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 1,
           "kosovo": 6,
-          "Koszovó": 6
+          "Koszovó": 2,
+          "Albánia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -515,46 +527,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Kosovo Police Increase Presence Behind Assembly Building Amid Protest Kosovo Prishtina KosovoPolice KosovoAssembly Protest Security SpecialistChambers",
-            "text": "Kosovo Police Increase Presence Behind Assembly Building Amid Protest Kosovo Prishtina KosovoPolice KosovoAssembly Protest Security SpecialistChambers",
-            "url": "https://x.com/i/web/status/2107520049225318752",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-06T17:15:10.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -652,6 +624,35 @@
             ],
             "geopolitical_score": 19,
             "quality_score": 22,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Three Kosovo Serbs Plead Not Guilty Over 2022 Unrest in North https:// fed.brid.gy/r/https://balkanin sight.com/2026/09/30/three-kosovo-serbs-plead-not-guilty-over-2022-unrest-in-north/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/09/30/three-kosovo-serbs-plead-not-guilty-over-2022-unrest-in-north/bi/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 30 Sep 2026 13:38:15 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 14,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -843,67 +844,34 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 27,
+        "score": 23,
         "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 4,
-        "negative_hits": 2,
+        "negative_hits": 1,
         "positive_hits": 2,
-        "trusted_hits": 3,
-        "engagement_total": 24,
-        "raw_engagement_total": 24,
-        "quality_total": 66,
-        "geopolitical_total": 53,
+        "trusted_hits": 2,
+        "engagement_total": 94,
+        "raw_engagement_total": 94,
+        "quality_total": 61,
+        "geopolitical_total": 51,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
           "x": 4
         },
         "category_counts": {
+          "foreign_influence": 1,
+          "government_crisis": 1,
           "eu_integration": 1,
-          "security": 2,
-          "government_crisis": 1
+          "security": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 4
+          "Montenegró": 1,
+          "Észak-Macedónia": 3
         },
-        "main_topic": "security",
+        "main_topic": "foreign_influence",
         "top_posts": [
-          {
-            "title": "War Room 🚨🇲🇰 's message to VMRO is simple: Choose Europe. Choose NATO. 🇪🇺 North Macedonia belongs in the West. 🛡️ FehlingerDoctrine",
-            "text": "War Room 🚨🇲🇰 's message to VMRO is simple: Choose Europe. Choose NATO. 🇪🇺 North Macedonia belongs in the West. 🛡️ FehlingerDoctrine",
-            "url": "https://x.com/i/web/status/2107393831767523670",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-06T08:53:37.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 16,
-            "quality_score": 20,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "🔴VIDEO EU Commissioner Marta Kos when asked if she would offer to North Macedonia, Kosovo, and Bosnia and Herzegovina, the Canada ‘Associate Member’ status model as Temporary Solut",
             "text": "🔴VIDEO EU Commissioner Marta Kos when asked if she would offer to North Macedonia, Kosovo, and Bosnia and Herzegovina, the Canada ‘Associate Member’ status model as Temporary Solution to their promised EU membership bcs of current deadlock with the 3 countries ; 👇",
@@ -931,12 +899,12 @@
             "quality_score": 18,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 9,
-            "raw_engagement": 9,
+            "engagement": 21,
+            "raw_engagement": 21,
             "metrics": {
-              "likes": 4,
-              "reposts": 2,
-              "replies": 2,
+              "likes": 14,
+              "reposts": 3,
+              "replies": 3,
               "quotes": 1
             },
             "quality": "x_api_filtered"
@@ -968,10 +936,10 @@
             "quality_score": 17,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 15,
-            "raw_engagement": 15,
+            "engagement": 17,
+            "raw_engagement": 17,
             "metrics": {
-              "likes": 12,
+              "likes": 14,
               "reposts": 2,
               "replies": 1,
               "quotes": 0
@@ -979,17 +947,61 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "A tentative attempt to restart dialogue between North Macedonia and Bulgaria is already exposing how far apart the two neighbours remain. Skopje wants guarantees against future bil",
-            "text": "A tentative attempt to restart dialogue between North Macedonia and Bulgaria is already exposing how far apart the two neighbours remain. Skopje wants guarantees against future bilateral conditions, Sofia says the commitments are already settled, while President Gordana",
-            "url": "https://x.com/i/web/status/2107433145733644739",
+            "title": "This would potentially affect Albania, Bosnia and Herzegovina, Georgia, Moldova, Montenegro, North Macedonia, Serbia, Turkey, and Ukraine. They're the current candidates for (full)",
+            "text": "This would potentially affect Albania, Bosnia and Herzegovina, Georgia, Moldova, Montenegro, North Macedonia, Serbia, Turkey, and Ukraine. They're the current candidates for (full) EU membership (i.e., comes with voting rights). I guess Serbia and Turkey might backslide.",
+            "url": "https://x.com/i/web/status/2107553469163090206",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-06T11:29:50.000Z",
+            "tag": "Montenegró",
+            "seen_date": "2026-10-06T19:27:58.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 9
+              "Észak-Macedónia": 5,
+              "Bosznia-Hercegovina": 2,
+              "Szerbia": 1,
+              "Montenegró": 1,
+              "Albánia": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 15,
+            "quality_score": 16,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 9,
+            "raw_engagement": 9,
+            "metrics": {
+              "likes": 7,
+              "reposts": 1,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇨🇭✨ 𝐉𝐎𝐇𝐀𝐍 𝐌𝐀𝐍𝐙𝐀𝐌𝐁𝐈 (𝟐𝟎) against North Macedonia: • 1 GOLAZO • CREATED THE MOST CHANCES (3) • 2 Big Chances Created • 45 Touches • 4 Touches In Opposition Box • 100% Accurate Crosse",
+            "text": "🇨🇭✨ 𝐉𝐎𝐇𝐀𝐍 𝐌𝐀𝐍𝐙𝐀𝐌𝐁𝐈 (𝟐𝟎) against North Macedonia: • 1 GOLAZO • CREATED THE MOST CHANCES (3) • 2 Big Chances Created • 45 Touches • 4 Touches In Opposition Box • 100% Accurate Crosses • 6 / 8 Ground Duels Won 𝐓𝐎𝐏 𝐏𝐄𝐑𝐅𝐎𝐑𝐌𝐀𝐍𝐂𝐄. 👏",
+            "url": "https://x.com/i/web/status/2107590706554638771",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-06T21:55:56.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -999,17 +1011,17 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
+            "geopolitical_score": 9,
+            "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 47,
+            "raw_engagement": 47,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
+              "likes": 40,
+              "reposts": 4,
+              "replies": 1,
+              "quotes": 2
             },
             "quality": "x_api_filtered"
           }
@@ -1022,36 +1034,75 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
-        "negative_hits": 11,
-        "positive_hits": 0,
+        "mentions": 18,
+        "negative_hits": 13,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 347,
-        "geopolitical_total": 302,
+        "engagement_total": 22,
+        "raw_engagement_total": 22,
+        "quality_total": 379,
+        "geopolitical_total": 333,
         "source_counts": {
           "reddit": 0,
           "mastodon": 14,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
-          "corruption_rule_of_law": 5,
-          "protest": 7,
+          "corruption_rule_of_law": 6,
+          "protest": 6,
           "security": 1,
           "foreign_influence": 1,
           "eu_integration": 1,
-          "ethnic_tension": 1,
-          "government_crisis": 1
+          "government_crisis": 3
         },
         "tag_counts": {
           "balkans": 8,
           "montenegro": 2,
           "albania": 4,
-          "Albánia": 3
+          "Albánia": 4
         },
-        "main_topic": "protest",
+        "main_topic": "corruption_rule_of_law",
         "top_posts": [
+          {
+            "title": "\"Rama to jail, Berisha to jail!\" Protests erupted inside the National Stadium in Albania during the match against San Marino. Activists unfurled a massive banner targeting both PM ",
+            "text": "\"Rama to jail, Berisha to jail!\" Protests erupted inside the National Stadium in Albania during the match against San Marino. Activists unfurled a massive banner targeting both PM Rama & opposition leader Berisha, while demonstrations continued in the streets of Tirana. Day129",
+            "url": "https://x.com/i/web/status/2107560381111484835",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-10-06T19:55:26.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 3,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 36,
+            "quality_score": 37,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 22,
+            "raw_engagement": 22,
+            "metrics": {
+              "likes": 16,
+              "reposts": 5,
+              "replies": 0,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Day 129 of anti-corruption protest in Tirana, Albania. 🔴“Rama autokrat! Dorëhiqu!”/Dita e 129 e protestës,qytetarët mblidhen sërish sot para Kryeministrisë # FlamingoRevolution # Albania # Corruption # Balkans # Europe # Protest https://www. youtube.com/watch?v=BCJ9rj9Pbiw",
@@ -1187,46 +1238,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Inadvertently come to Tirana what the year long protests against government corruption have had a second wave",
-            "text": "Inadvertently come to Tirana what the year long protests against government corruption have had a second wave",
-            "url": "https://x.com/i/web/status/2107521093720523176",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-06T17:19:19.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 4
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
