@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07 12:24 UTC",
+  "updated_at": "2026-10-07 13:12 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 16
+    "collected": 20
   },
   "countries": [
     {
@@ -21,31 +21,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
+        "mentions": 17,
         "negative_hits": 4,
-        "positive_hits": 2,
+        "positive_hits": 5,
         "trusted_hits": 2,
-        "engagement_total": 27,
-        "raw_engagement_total": 27,
-        "quality_total": 202,
-        "geopolitical_total": 176,
+        "engagement_total": 31,
+        "raw_engagement_total": 31,
+        "quality_total": 232,
+        "geopolitical_total": 201,
         "source_counts": {
           "reddit": 1,
           "mastodon": 6,
-          "x": 5
+          "x": 10
         },
         "category_counts": {
-          "government_crisis": 5,
+          "government_crisis": 9,
           "protest": 1,
           "security": 3,
-          "economic_infrastructure": 1,
-          "ethnic_tension": 2
+          "economic_infrastructure": 3,
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "serbia": 6,
           "bosnia": 1,
-          "Szerbia": 3,
-          "Montenegró": 1,
+          "Szerbia": 7,
+          "Montenegró": 2,
           "Észak-Macedónia": 1
         },
         "main_topic": "government_crisis",
@@ -131,86 +131,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🚨 SERBIAN PRESIDENT CLAIMS PATTERN OF EFFORTS TO UNDERMINE MODI AND SLOW INDIA’S RISE BELGRADE, SERBIA - India's expanding economic weight creates pressure in two directions at onc",
-            "text": "🚨 SERBIAN PRESIDENT CLAIMS PATTERN OF EFFORTS TO UNDERMINE MODI AND SLOW INDIA’S RISE BELGRADE, SERBIA - India's expanding economic weight creates pressure in two directions at once: greater international recognition brings new opportunities, while greater visibility attracts",
-            "url": "https://x.com/i/web/status/2107803278390296648",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-07T12:00:37.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 23,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🚨BIG 🔥 GLOBAL RECOGNITION Serbian President Aleksandar Vučić praised PM Modi, saying India’s voice is now heard and respected globally. Modi’s leadership and India’s growing global",
-            "text": "🚨BIG 🔥 GLOBAL RECOGNITION Serbian President Aleksandar Vučić praised PM Modi, saying India’s voice is now heard and respected globally. Modi’s leadership and India’s growing global role continue to receive international recognition. pmmodi india",
-            "url": "https://x.com/i/web/status/2107807415823749449",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-07T12:17:03.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Agenzia Nova: Bosnia: elezioni generali, ex presidente Dodik rivendica vittoria del suo partito 04 ott 22:27 - (Agenzia Nova) - Il politico nazionalista serbo-bosniaco Milorad Dodik ha dichiarato la vittoria del suo partito nelle elezioni... (Seb) Bosnia: general elections, former president Dodik claims victory for his party Oct 04 22:27 – (Agenzia Nova) – S",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117384610484315580",
@@ -240,6 +160,70 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Serbian Student Targeted by Spyware Attack Sues Authorities https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/06/serbian-student-targeted-by-spyware-attack-sues-authorities/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/06/serbian-student-targeted-by-spyware-attack-sues-authorities/bi/",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Tue, 06 Oct 2026 11:36:58 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Foreign powers are trying their best to topple Narendra Modi govt in India - Serbia President in an exclusive podcast. Serbian President knows it Unfortunately our friends in India",
+            "text": "Foreign powers are trying their best to topple Narendra Modi govt in India - Serbia President in an exclusive podcast. Serbian President knows it Unfortunately our friends in India are not aware of it.",
+            "url": "https://x.com/i/web/status/2107815909591224698",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-07T12:50:48.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 13,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -480,28 +464,28 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 8,
-        "positive_hits": 2,
+        "mentions": 10,
+        "negative_hits": 7,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 285,
-        "geopolitical_total": 252,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 237,
+        "geopolitical_total": 209,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 9,
-          "x": 4
+          "mastodon": 8,
+          "x": 2
         },
         "category_counts": {
-          "security": 1,
-          "government_crisis": 9,
+          "security": 3,
+          "government_crisis": 4,
           "protest": 3
         },
         "tag_counts": {
           "balkans": 1,
-          "kosovo": 8,
-          "Koszovó": 4
+          "kosovo": 7,
+          "Koszovó": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -550,39 +534,89 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇽🇰 Kosovo: Parliament voted early on Wednesday to curb the powers of the Hague-based Kosovo Specialist Chambers war crimes court, minutes before a deadline to elect a president. In",
-            "text": "🇽🇰 Kosovo: Parliament voted early on Wednesday to curb the powers of the Hague-based Kosovo Specialist Chambers war crimes court, minutes before a deadline to elect a president. In a deal with the main opposition party, Prime Minister Albin Kurti's government won the two-thirds",
-            "url": "https://x.com/i/web/status/2107799399888048160",
+            "title": "Police used tear gas and water cannon as protesters fired fireworks and threw objects during clashes outside Kosovo's parliament in Pristina on Monday. Riot officers moved forward ",
+            "text": "Police used tear gas and water cannon as protesters fired fireworks and threw objects during clashes outside Kosovo's parliament in Pristina on Monday. Riot officers moved forward behind shields as fires burned in the streets, and several people were detained.",
+            "url": "https://x.com/i/web/status/2107813720177197486",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-10-07T11:45:12.000Z",
+            "seen_date": "2026-10-07T12:42:06.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
               "Koszovó": 5
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 4,
+                "category": "security",
+                "hits": 1,
                 "weight": 9
               },
               {
-                "category": "corruption_rule_of_law",
+                "category": "government_crisis",
                 "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 48,
-            "quality_score": 49,
+            "geopolitical_score": 37,
+            "quality_score": 38,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 2,
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "EU Parliament Rapporteur for Kosovo: Stability and EU Integration Now Priorities After Elections Avoided Kosovo RihoTerras EuropeanParliament EU EUIntegration RuleOfLaw Institution",
+            "text": "EU Parliament Rapporteur for Kosovo: Stability and EU Integration Now Priorities After Elections Avoided Kosovo RihoTerras EuropeanParliament EU EUIntegration RuleOfLaw InstitutionalStability JustinaShirokaPula Prishtina WesternBalkans",
+            "url": "https://x.com/i/web/status/2107816320972845397",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-07T12:52:26.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 25,
+            "quality_score": 26,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -645,40 +679,6 @@
               },
               {
                 "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Thousands in Kosovo Protest Again for ‘Fair Justice’ After Hague Convictions https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/01/thousands-in-kosovo-protest-again-for-fair-justice-after-hague-convictions/btj/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/01/thousands-in-kosovo-protest-again-for-fair-justice-after-hague-convictions/btj/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Thu, 01 Oct 2026 16:14:11 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
               }
@@ -875,29 +875,29 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 31,
+        "score": 21,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 2,
+        "mentions": 4,
+        "negative_hits": 1,
         "positive_hits": 3,
         "trusted_hits": 0,
-        "engagement_total": 8,
-        "raw_engagement_total": 8,
-        "quality_total": 79,
-        "geopolitical_total": 74,
+        "engagement_total": 10,
+        "raw_engagement_total": 10,
+        "quality_total": 66,
+        "geopolitical_total": 62,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 5
+          "x": 4
         },
         "category_counts": {
           "government_crisis": 2,
-          "security": 2,
-          "corruption_rule_of_law": 1
+          "corruption_rule_of_law": 1,
+          "security": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 5
+          "Észak-Macedónia": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -1047,47 +1047,12 @@
             "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 6,
-            "raw_engagement": 6,
+            "engagement": 8,
+            "raw_engagement": 8,
             "metrics": {
-              "likes": 3,
+              "likes": 4,
               "reposts": 3,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Yday’s MZT Skopje–Iraklis outrageous incident exposed 🇲🇰's irredentist nationalism still promoted even in Volleyball. 🇲🇰 fans raised A “United Macedonia” map claiming Greece & Bulg",
-            "text": "Yday’s MZT Skopje–Iraklis outrageous incident exposed 🇲🇰's irredentist nationalism still promoted even in Volleyball. 🇲🇰 fans raised A “United Macedonia” map claiming Greece & Bulgaria territories. EU",
-            "url": "https://x.com/i/web/status/2107790306989273504",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-07T11:09:04.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -1101,18 +1066,18 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
+        "mentions": 17,
         "negative_hits": 11,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 8,
-        "raw_engagement_total": 8,
-        "quality_total": 320,
-        "geopolitical_total": 276,
+        "engagement_total": 15,
+        "raw_engagement_total": 15,
+        "quality_total": 330,
+        "geopolitical_total": 285,
         "source_counts": {
           "reddit": 0,
           "mastodon": 14,
-          "x": 2
+          "x": 3
         },
         "category_counts": {
           "corruption_rule_of_law": 6,
@@ -1120,14 +1085,15 @@
           "security": 1,
           "foreign_influence": 1,
           "eu_integration": 1,
-          "economic_infrastructure": 1
+          "economic_infrastructure": 1,
+          "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 8,
           "montenegro": 2,
           "albania": 4,
           "Észak-Macedónia": 1,
-          "Albánia": 1
+          "Albánia": 2
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
