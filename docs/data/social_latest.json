@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10 03:32 UTC",
+  "updated_at": "2026-10-10 05:39 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,38 +12,40 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 7
+    "collected": 8
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 51,
+        "score": 52,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 6,
-        "negative_hits": 4,
-        "positive_hits": 2,
+        "mentions": 8,
+        "negative_hits": 3,
+        "positive_hits": 3,
         "trusted_hits": 0,
-        "engagement_total": 17,
-        "raw_engagement_total": 17,
-        "quality_total": 154,
-        "geopolitical_total": 138,
+        "engagement_total": 8,
+        "raw_engagement_total": 8,
+        "quality_total": 164,
+        "geopolitical_total": 144,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 5,
-          "x": 1
+          "mastodon": 6,
+          "x": 2
         },
         "category_counts": {
           "protest": 2,
+          "economic_infrastructure": 1,
           "foreign_influence": 1,
           "ethnic_tension": 1,
-          "security": 2
+          "security": 2,
+          "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 4,
-          "Szerbia": 1
+          "serbia": 5,
+          "Szerbia": 2
         },
         "main_topic": "protest",
         "top_posts": [
@@ -191,44 +193,33 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Have you seen who is attending in SNS rallies in Serbia? A man wanted on an Interpol red notice over the armed conflict in Banjska was spotted in Kragujevac in the company of Danil",
-            "text": "Have you seen who is attending in SNS rallies in Serbia? A man wanted on an Interpol red notice over the armed conflict in Banjska was spotted in Kragujevac in the company of Danilo Vučić. What kind of message is this, and who are sanctions actually being imposed",
-            "url": "https://x.com/i/web/status/2108714398680232009",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-10T00:21:05.000Z",
+            "title": "",
+            "text": "Agenzia Nova: Business news: Serbia, Banca mondiale alza al 3,1 per cento stima crescita Pil nel 2026 10 ott 05:00 - (Agenzia Nova) - La Banca mondiale ha rivisto al rialzo la previsione di crescita dell'economia serba per il 2026, portandola... (Seb) Business news: Serbia, World Bank raises GDP growth forecast to 3.1% for 2026 Oct 10 05:00 - (Agenzia Nova) ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117414612955546525",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sat, 10 Oct 2026 04:00:11 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 1
             },
-            "event_category": "security",
+            "event_category": "economic_infrastructure",
             "event_categories": [
               {
-                "category": "security",
+                "category": "economic_infrastructure",
                 "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
+                "weight": 4
               }
             ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
+            "geopolitical_score": 8,
+            "quality_score": 11,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 17,
-            "raw_engagement": 17,
-            "metrics": {
-              "likes": 11,
-              "reposts": 6,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -239,17 +230,17 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
+        "mentions": 13,
         "negative_hits": 3,
-        "positive_hits": 5,
+        "positive_hits": 4,
         "trusted_hits": 4,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 311,
-        "geopolitical_total": 261,
+        "quality_total": 299,
+        "geopolitical_total": 252,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 14,
+          "mastodon": 13,
           "x": 0
         },
         "category_counts": {
@@ -257,12 +248,12 @@
           "ethnic_tension": 4,
           "government_crisis": 2,
           "security": 2,
-          "protest": 3
+          "protest": 2
         },
         "tag_counts": {
           "balkans": 2,
           "serbia": 1,
-          "bosnia": 11
+          "bosnia": 10
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -469,30 +460,29 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 58,
+        "score": 51,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
+        "mentions": 7,
         "negative_hits": 3,
         "positive_hits": 2,
-        "trusted_hits": 1,
+        "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 145,
-        "geopolitical_total": 120,
+        "quality_total": 128,
+        "geopolitical_total": 107,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "security": 2,
-          "government_crisis": 5,
+          "government_crisis": 4,
           "protest": 1
         },
         "tag_counts": {
-          "kosovo": 7,
-          "Koszovó": 1
+          "kosovo": 7
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -633,17 +623,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Prime Minister Albin Kurti held a meeting today with Christophe Kamp, the OSCE High Commissioner on National Minorities. The discussion focused on community rights, including the u",
-            "text": "Prime Minister Albin Kurti held a meeting today with Christophe Kamp, the OSCE High Commissioner on National Minorities. The discussion focused on community rights, including the use of languages, education and public services.",
-            "url": "https://x.com/i/web/status/2108748255571976393",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-10T02:35:37.000Z",
+            "title": "",
+            "text": "Kosovo Avoids New Deadlock With Last-Minute Presidential Election https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/07/kosovo-avoids-new-deadlock-with-last-minute-presidential-election/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/07/kosovo-avoids-new-deadlock-with-last-minute-presidential-election/bi/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 07 Oct 2026 08:48:52 +0000",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 4
+              "Koszovó": 1
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -653,19 +643,13 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 17,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -677,25 +661,26 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 14,
-        "negative_hits": 11,
+        "negative_hits": 10,
         "positive_hits": 1,
         "trusted_hits": 4,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 273,
-        "geopolitical_total": 223,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 296,
+        "geopolitical_total": 248,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 14,
-          "x": 0
+          "mastodon": 13,
+          "x": 1
         },
         "category_counts": {
           "economic_infrastructure": 1,
-          "foreign_influence": 9,
-          "security": 4
+          "foreign_influence": 8,
+          "security": 5
         },
         "tag_counts": {
-          "montenegro": 14
+          "montenegro": 13,
+          "Montenegró": 1
         },
         "main_topic": "foreign_influence",
         "top_posts": [
@@ -732,6 +717,41 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "9️⃣ 🇲🇪 **Montenegro** — ⛓️ 💻 **9/12 || Europe Morning Briefing || 10, Oct Saturday** Podgorica - Pro-Kremlin Military Blogger Mikhail Zvinchuk Apprehended by Border Police Yesterda",
+            "text": "9️⃣ 🇲🇪 **Montenegro** — ⛓️ 💻 **9/12 || Europe Morning Briefing || 10, Oct Saturday** Podgorica - Pro-Kremlin Military Blogger Mikhail Zvinchuk Apprehended by Border Police Yesterday in Podgorica, state security officers intercepted and detained prominent military blogger",
+            "url": "https://x.com/i/web/status/2108788873052791247",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-10-10T05:17:01.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 4,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 36,
+            "quality_score": 37,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -834,35 +854,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "\"He's wanted in several countries, is there any chance of him being extradited?\" 🤔 From https:// t.me/pravdaGerashchenko_en # Mikhail_Zvinchuk , founder of # Rybar_Russian Z-propaganda # Telegram channel, was detained in # Montenegro , local media report. There is no official information as of now. # Zvinchuk has been under the # EU sanctions since June 2023",
-            "url": "https://mastodon.online/@kardinal691/117410674166081741",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Fri, 09 Oct 2026 11:18:30 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -870,37 +861,73 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 5,
+        "score": 9,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 1,
+        "mentions": 2,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 14,
-        "geopolitical_total": 13,
+        "quality_total": 23,
+        "geopolitical_total": 23,
         "source_counts": {
-          "reddit": 0,
+          "reddit": 1,
           "mastodon": 0,
           "x": 1
         },
         "category_counts": {
-          "security": 1
+          "foreign_influence": 1,
+          "government_crisis": 1
         },
         "tag_counts": {
+          "mkd": 1,
           "Észak-Macedónia": 1
         },
-        "main_topic": "security",
+        "main_topic": "foreign_influence",
         "top_posts": [
           {
-            "title": "CORRIDOR VIII IS BEING REDEFINED AS MILITARY INFRASTRUCTURE Ministers and EU officials met in Sofia on 8 October to accelerate Corridor VIII, the strategic route connecting the Adr",
-            "text": "CORRIDOR VIII IS BEING REDEFINED AS MILITARY INFRASTRUCTURE Ministers and EU officials met in Sofia on 8 October to accelerate Corridor VIII, the strategic route connecting the Adriatic and Black seas through Albania, North Macedonia and Bulgaria. The conference explicitly",
-            "url": "https://x.com/i/web/status/2108632336908853727",
+            "title": "Looking for guidance/help with Strumica (Matična Služba) archives for citizenship documents",
+            "text": "Hi everyone, I am a Turkish citizen currently trying to track down the birth certificate of my great-grandfather for citizenship purposes. I have his official migration document from 1951, which has very specific and clear information, but I need to retrieve the document from the archives in Strumica . Here are the exact details I have from the official 1951",
+            "url": "https://www.reddit.com/r/mkd/comments/1x1ux86/looking_for_guidancehelp_with_strumica_matična/",
+            "source": "reddit",
+            "tag": "mkd",
+            "seen_date": "2026-10-09T19:42:05+00:00",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "migration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 14,
+            "quality_score": 13,
+            "source_reliability": 1,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Friday was trilateral day in Southeast Europe. On the shore of Lake Prespa, the culture ministers of Greece, Albania and North Macedonia signed a joint declaration to seek UNESCO W",
+            "text": "Friday was trilateral day in Southeast Europe. On the shore of Lake Prespa, the culture ministers of Greece, Albania and North Macedonia signed a joint declaration to seek UNESCO World Heritage status for the whole region, with €2m from the EU for the studies. Preliminary",
+            "url": "https://x.com/i/web/status/2108792613675635145",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-09T18:55:00.000Z",
+            "seen_date": "2026-10-10T05:31:53.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -908,21 +935,16 @@
               "Észak-Macedónia": 5,
               "Albánia": 1
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
+            "geopolitical_score": 9,
+            "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -944,33 +966,73 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
-        "negative_hits": 11,
-        "positive_hits": 5,
+        "mentions": 15,
+        "negative_hits": 12,
+        "positive_hits": 4,
         "trusted_hits": 2,
-        "engagement_total": 10,
-        "raw_engagement_total": 10,
-        "quality_total": 397,
-        "geopolitical_total": 352,
+        "engagement_total": 12,
+        "raw_engagement_total": 12,
+        "quality_total": 398,
+        "geopolitical_total": 354,
         "source_counts": {
           "reddit": 0,
           "mastodon": 12,
-          "x": 4
+          "x": 3
         },
         "category_counts": {
           "corruption_rule_of_law": 5,
           "protest": 4,
-          "government_crisis": 4,
+          "government_crisis": 3,
           "security": 2,
           "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 8,
           "albania": 4,
-          "Albánia": 4
+          "Albánia": 3
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
+          {
+            "title": "Chaos erupted in Albania’s parliament during a heated session over the controversial Administrative-Territorial Reform 2.0. Opposition lawmakers threw eggs, water bottles and other",
+            "text": "Chaos erupted in Albania’s parliament during a heated session over the controversial Administrative-Territorial Reform 2.0. Opposition lawmakers threw eggs, water bottles and other objects toward Prime Minister Edi Rama at the podium, prompting security personnel to form a",
+            "url": "https://x.com/i/web/status/2108774567129022780",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-10-10T04:20:10.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 40,
+            "quality_score": 41,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "🚨 FLORIAN COLDEA COULD FACE SCRUTINY IN ALBANIA Former Romanian intelligence official Florian Coldea could potentially face investigation by Albania’s anti-corruption prosecutors amid a probe involving former intelligence chief Vlora Hyseni. Euronews Albania reports that a security expert believes Coldea could become a suspect as the investigation progresses",
@@ -1080,40 +1142,6 @@
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Wed, 07 Oct 2026 17:14:55 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 129 of anti-corruption protest in Tirana, Albania. 🔴“Rama autokrat! Dorëhiqu!”/Dita e 129 e protestës,qytetarët mblidhen sërish sot para Kryeministrisë # FlamingoRevolution # Albania # Corruption # Balkans # Europe # Protest https://www. youtube.com/watch?v=BCJ9rj9Pbiw",
-            "url": "https://mas.to/@meganL/117395257761305443",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Tue, 06 Oct 2026 17:57:55 +0000",
             "matched_countries": [
               "Albánia"
             ],
