@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11 21:19 UTC",
+  "updated_at": "2026-10-11 21:49 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 19
+    "collected": 17
   },
   "countries": [
     {
@@ -21,33 +21,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 7,
+        "mentions": 9,
+        "negative_hits": 5,
         "positive_hits": 3,
         "trusted_hits": 0,
-        "engagement_total": 7,
-        "raw_engagement_total": 7,
-        "quality_total": 181,
-        "geopolitical_total": 167,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 150,
+        "geopolitical_total": 137,
         "source_counts": {
           "reddit": 1,
           "mastodon": 3,
-          "x": 6
+          "x": 5
         },
         "category_counts": {
           "protest": 1,
           "government_crisis": 4,
           "economic_infrastructure": 1,
           "foreign_influence": 1,
-          "ethnic_tension": 2,
-          "security": 1
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 3,
           "Szerbia": 4,
-          "Montenegró": 1,
-          "Albánia": 1
+          "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -127,48 +125,6 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "🇷🇸 SERBIA, BELGRADE | Serbia declared war on Kosovo Serbian President, Pobozni, today declared war on Kosovo following the failure of negotiations from Kosovo's side. Albania is ex",
-            "text": "🇷🇸 SERBIA, BELGRADE | Serbia declared war on Kosovo Serbian President, Pobozni, today declared war on Kosovo following the failure of negotiations from Kosovo's side. Albania is expected to join Serbia in it's declaration of war. Balkan has become very unstable place.",
-            "url": "https://x.com/i/web/status/2109333152925876601",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-11T17:19:47.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9,
-              "Koszovó": 1,
-              "Albánia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Why young voters in Serbia are rising up against the government | DW News The student slate of candidates has taken a cycle tour through Serbian cities to get their message out. https://www. youtube.com/watch?v=2FmomwRalSY # Serbia # Balkans # Corruption # Protest # Cycling # BikeTooter # Elections",
             "url": "https://eldritch.cafe/@ml/117411447087526553",
@@ -203,22 +159,23 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "serbian war criminals. So-called police officers, but in fact Serbo-Chetnik criminals who slaughtered and raped during the Homeland War, or at least participated on the side of tho",
-            "text": "serbian war criminals. So-called police officers, but in fact Serbo-Chetnik criminals who slaughtered and raped during the Homeland War, or at least participated on the side of those who committed crimes and destroyed Croatia.",
-            "url": "https://x.com/i/web/status/2109366996651421770",
+            "title": "Minister for Labour, Family and the Values of the Liberation War, Andin Hoti, reacted to a statement by Serbia’s acting deputy prime minister, Ivica Daçiq, who claimed that Serbia ",
+            "text": "Minister for Labour, Family and the Values of the Liberation War, Andin Hoti, reacted to a statement by Serbia’s acting deputy prime minister, Ivica Daçiq, who claimed that Serbia has territorial rights over Kosovo and declared that “the Serbian flag wil…",
+            "url": "https://x.com/i/web/status/2109387788068024628",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-10-11T19:34:16.000Z",
+            "seen_date": "2026-10-11T20:56:53.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2
+              "Szerbia": 2,
+              "Koszovó": 1
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               }
@@ -227,11 +184,46 @@
             "quality_score": 13,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 5,
-            "raw_engagement": 5,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 4,
-              "reposts": 1,
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Serbian president criticized artists who support student movement in Serbia in the coming elections, specifically saying that even was not important enough to defeat Trump - his po",
+            "text": "Serbian president criticized artists who support student movement in Serbia in the coming elections, specifically saying that even was not important enough to defeat Trump - his politica idol. Let’s do your magic swifties and teach him karma",
+            "url": "https://x.com/i/web/status/2109396837442662766",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-11T21:32:51.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
@@ -471,8 +463,8 @@
         "negative_hits": 4,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 49,
-        "raw_engagement_total": 49,
+        "engagement_total": 55,
+        "raw_engagement_total": 55,
         "quality_total": 161,
         "geopolitical_total": 137,
         "source_counts": {
@@ -879,7 +871,7 @@
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 124,
-        "raw_engagement_total": 170,
+        "raw_engagement_total": 179,
         "quality_total": 49,
         "geopolitical_total": 43,
         "source_counts": {
@@ -923,11 +915,11 @@
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 120,
-            "raw_engagement": 166,
+            "raw_engagement": 175,
             "metrics": {
-              "likes": 129,
-              "reposts": 18,
-              "replies": 16,
+              "likes": 136,
+              "reposts": 19,
+              "replies": 17,
               "quotes": 3
             },
             "quality": "x_api_filtered"
@@ -1017,8 +1009,8 @@
         "negative_hits": 11,
         "positive_hits": 4,
         "trusted_hits": 2,
-        "engagement_total": 13,
-        "raw_engagement_total": 13,
+        "engagement_total": 19,
+        "raw_engagement_total": 19,
         "quality_total": 397,
         "geopolitical_total": 356,
         "source_counts": {
@@ -1082,10 +1074,10 @@
             "quality_score": 53,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 4,
-            "raw_engagement": 4,
+            "engagement": 6,
+            "raw_engagement": 6,
             "metrics": {
-              "likes": 2,
+              "likes": 4,
               "reposts": 0,
               "replies": 2,
               "quotes": 0
