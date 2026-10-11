@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10 21:34 UTC",
+  "updated_at": "2026-10-11 03:05 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,90 +12,43 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 18
+    "collected": 25
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 60,
+        "score": 51,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 5,
-        "positive_hits": 5,
+        "mentions": 8,
+        "negative_hits": 3,
+        "positive_hits": 4,
         "trusted_hits": 0,
-        "engagement_total": 9,
-        "raw_engagement_total": 9,
-        "quality_total": 198,
-        "geopolitical_total": 179,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 142,
+        "geopolitical_total": 124,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 4
+          "x": 3
         },
         "category_counts": {
           "protest": 2,
           "economic_infrastructure": 1,
-          "foreign_influence": 2,
+          "foreign_influence": 1,
           "ethnic_tension": 2,
-          "security": 1,
-          "government_crisis": 1
+          "government_crisis": 2
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 4,
-          "Szerbia": 3,
+          "Szerbia": 2,
           "Koszovó": 1
         },
         "main_topic": "protest",
         "top_posts": [
-          {
-            "title": "Did Trump end the war between Kosovo & Serbia? No. In 2020, Trump hosted Serbian President and Kosovo PM at the White House, where they signed the Kosovo/Serbia economic normalizat",
-            "text": "Did Trump end the war between Kosovo & Serbia? No. In 2020, Trump hosted Serbian President and Kosovo PM at the White House, where they signed the Kosovo/Serbia economic normalization agreements—they were not engaged in an active military conflict or armed war at the time.",
-            "url": "https://x.com/i/web/status/2109000773879407052",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-10T19:19:02.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 41,
-            "quality_score": 42,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "This is Aleksandar Vučić threatening all of us that he will completely dissolve universities, judiciary branch of the government, that he will put a hard stop on all protests. He plans for a coup and civil war to establish total dictatorship after sham elections! #Serbia #dictatorship",
@@ -129,41 +82,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "🇷🇸 Today's training of Detachment of the Military Police for Special Operations \"Cobras\". Serbia Serbian Military Today Police MP Security LawEnforcement Video Tactical Camo Traini",
-            "text": "🇷🇸 Today's training of Detachment of the Military Police for Special Operations \"Cobras\". Serbia Serbian Military Today Police MP Security LawEnforcement Video Tactical Camo Training",
-            "url": "https://x.com/i/web/status/2109017097250492615",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-10T20:23:54.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 3,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 8,
-            "raw_engagement": 8,
-            "metrics": {
-              "likes": 7,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -234,6 +152,83 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Ulutas: KFOR will continue to support Belgrade-Pristina dialogue",
+            "text": "Ulutas: KFOR will continue to support Belgrade-Pristina dialogue",
+            "url": "https://x.com/i/web/status/2109046597279506882",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-10T22:21:07.000Z",
+            "matched_countries": [
+              "Koszovó",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Koszovó": 7,
+              "Szerbia": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 21,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "This is such a shame that Serbian opposition removes young men who support Ratko Mladic. Ukraine must do everything to support Aleksandar Vucic in the upcoming elections because Se",
+            "text": "This is such a shame that Serbian opposition removes young men who support Ratko Mladic. Ukraine must do everything to support Aleksandar Vucic in the upcoming elections because Serbian ammunition pipeline is essential for us. Situations like this just strengthen our resolve.",
+            "url": "https://x.com/i/web/status/2109064121341939888",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-10T23:30:45.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -248,8 +243,8 @@
         "negative_hits": 4,
         "positive_hits": 4,
         "trusted_hits": 4,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
         "quality_total": 279,
         "geopolitical_total": 237,
         "source_counts": {
@@ -457,12 +452,12 @@
             "quality_score": 25,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
+            "engagement": 5,
+            "raw_engagement": 5,
             "metrics": {
               "likes": 4,
               "reposts": 0,
-              "replies": 0,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -478,12 +473,12 @@
         "scale": "0-60 risk index",
         "mentions": 9,
         "negative_hits": 3,
-        "positive_hits": 2,
+        "positive_hits": 3,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 148,
-        "geopolitical_total": 125,
+        "quality_total": 160,
+        "geopolitical_total": 137,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
@@ -491,8 +486,9 @@
         },
         "category_counts": {
           "security": 2,
-          "government_crisis": 6,
-          "protest": 1
+          "government_crisis": 4,
+          "protest": 1,
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "kosovo": 7,
@@ -637,33 +633,46 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Kosovo Avoids New Deadlock With Last-Minute Presidential Election https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/07/kosovo-avoids-new-deadlock-with-last-minute-presidential-election/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/07/kosovo-avoids-new-deadlock-with-last-minute-presidential-election/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 07 Oct 2026 08:48:52 +0000",
+            "title": "Ulutas: KFOR will continue to support Belgrade-Pristina dialogue",
+            "text": "Ulutas: KFOR will continue to support Belgrade-Pristina dialogue",
+            "url": "https://x.com/i/web/status/2109046597279506882",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-10T22:21:07.000Z",
             "matched_countries": [
-              "Koszovó"
+              "Koszovó",
+              "Szerbia"
             ],
             "country_confidence": {
-              "Koszovó": 1
+              "Koszovó": 7,
+              "Szerbia": 4
             },
-            "event_category": "government_crisis",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "security",
                 "hits": 1,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 15,
-            "source_reliability": 3,
+            "geopolitical_score": 20,
+            "quality_score": 21,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -674,27 +683,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
+        "mentions": 15,
         "negative_hits": 10,
         "positive_hits": 1,
         "trusted_hits": 4,
-        "engagement_total": 16,
-        "raw_engagement_total": 16,
-        "quality_total": 266,
-        "geopolitical_total": 221,
+        "engagement_total": 22,
+        "raw_engagement_total": 22,
+        "quality_total": 286,
+        "geopolitical_total": 239,
         "source_counts": {
           "reddit": 0,
           "mastodon": 12,
-          "x": 1
+          "x": 3
         },
         "category_counts": {
           "security": 5,
           "economic_infrastructure": 1,
-          "foreign_influence": 7
+          "foreign_influence": 7,
+          "government_crisis": 2
         },
         "tag_counts": {
           "montenegro": 12,
-          "Montenegró": 1
+          "Szerbia": 1,
+          "Montenegró": 2
         },
         "main_topic": "foreign_influence",
         "top_posts": [
@@ -869,73 +880,31 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 32,
+        "score": 31,
         "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 4,
-        "negative_hits": 2,
-        "positive_hits": 2,
+        "negative_hits": 1,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 51,
-        "raw_engagement_total": 51,
-        "quality_total": 90,
-        "geopolitical_total": 86,
+        "engagement_total": 109,
+        "raw_engagement_total": 109,
+        "quality_total": 83,
+        "geopolitical_total": 79,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
           "x": 4
         },
         "category_counts": {
-          "security": 1,
-          "ethnic_tension": 2,
-          "government_crisis": 1
+          "security": 2,
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "Észak-Macedónia": 4
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "security",
         "top_posts": [
-          {
-            "title": "Albania advances towards EU membership while North Macedonia remains stalled. Talks in Sofia failed to break the deadlock over constitutional amendments. NorthMacedonia EUEnlargeme",
-            "text": "Albania advances towards EU membership while North Macedonia remains stalled. Talks in Sofia failed to break the deadlock over constitutional amendments. NorthMacedonia EUEnlargement",
-            "url": "https://x.com/i/web/status/2108877540895137950",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-10T11:09:21.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Albánia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 25,
-            "quality_score": 26,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 2,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "The 2001 conflict in North Macedonia ended with the signing of the Ohrid Agreement on August 13, 2001, which stopped the fighting and preserved the country's territorial integrity ",
             "text": "The 2001 conflict in North Macedonia ended with the signing of the Ohrid Agreement on August 13, 2001, which stopped the fighting and preserved the country's territorial integrity while granting significant political and civil rights to the ethnic Albanian minority",
@@ -964,12 +933,12 @@
             "quality_score": 25,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
+            "engagement": 5,
+            "raw_engagement": 5,
             "metrics": {
               "likes": 4,
               "reposts": 0,
-              "replies": 0,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -1000,12 +969,47 @@
             "quality_score": 21,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 43,
-            "raw_engagement": 43,
+            "engagement": 101,
+            "raw_engagement": 101,
             "metrics": {
-              "likes": 34,
-              "reposts": 5,
-              "replies": 4,
+              "likes": 82,
+              "reposts": 10,
+              "replies": 9,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Astrit Iseni, Deputy Minister of Internal Affairs, has issued a public statement following the incident in which two young men were assaulted in Skopje, insisting that police actio",
+            "text": "Astrit Iseni, Deputy Minister of Internal Affairs, has issued a public statement following the incident in which two young men were assaulted in Skopje, insisting that police actions must always be guided by the law and professional standards.",
+            "url": "https://x.com/i/web/status/2109064760717115844",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-10T23:33:18.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -1041,10 +1045,10 @@
             "quality_score": 18,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 3,
+            "raw_engagement": 3,
             "metrics": {
-              "likes": 1,
+              "likes": 2,
               "reposts": 0,
               "replies": 1,
               "quotes": 0
@@ -1060,29 +1064,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 11,
+        "mentions": 16,
+        "negative_hits": 12,
         "positive_hits": 3,
-        "trusted_hits": 1,
+        "trusted_hits": 2,
         "engagement_total": 14,
         "raw_engagement_total": 14,
-        "quality_total": 366,
-        "geopolitical_total": 328,
+        "quality_total": 379,
+        "geopolitical_total": 336,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 3
+          "x": 5
         },
         "category_counts": {
           "corruption_rule_of_law": 5,
-          "protest": 3,
+          "protest": 4,
           "government_crisis": 5,
-          "security": 1
+          "security": 2
         },
         "tag_counts": {
           "balkans": 8,
           "albania": 3,
-          "Koszovó": 1,
+          "Koszovó": 3,
           "Albánia": 2
         },
         "main_topic": "corruption_rule_of_law",
