@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11 12:39 UTC",
+  "updated_at": "2026-10-11 17:07 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 27
+    "collected": 17
   },
   "countries": [
     {
@@ -21,120 +21,70 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
+        "mentions": 11,
         "negative_hits": 5,
         "positive_hits": 4,
         "trusted_hits": 0,
-        "engagement_total": 27,
-        "raw_engagement_total": 27,
-        "quality_total": 176,
-        "geopolitical_total": 161,
+        "engagement_total": 31,
+        "raw_engagement_total": 31,
+        "quality_total": 187,
+        "geopolitical_total": 172,
         "source_counts": {
-          "reddit": 0,
+          "reddit": 1,
           "mastodon": 3,
-          "x": 6
+          "x": 7
         },
         "category_counts": {
           "protest": 1,
+          "government_crisis": 5,
           "economic_infrastructure": 1,
-          "foreign_influence": 2,
-          "government_crisis": 3,
-          "security": 2
+          "foreign_influence": 1,
+          "security": 2,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 2,
+          "serbia": 3,
           "Szerbia": 3,
-          "Montenegró": 2,
-          "Albánia": 1
+          "Koszovó": 2,
+          "Montenegró": 1,
+          "Észak-Macedónia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "Milan Radoicic, against whom Kosovo has issued five arrest warrants and who is under sanctions from the United States and Great Britain for ties to organized crime, appeared on Oct",
-            "text": "Milan Radoicic, against whom Kosovo has issued five arrest warrants and who is under sanctions from the United States and Great Britain for ties to organized crime, appeared on October 9 at a rally of the Serbian Progressive Party (SNS) in Kragujevac.",
-            "url": "https://x.com/i/web/status/2109252206205530221",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-11T11:58:08.000Z",
+            "title": "",
+            "text": "Agenzia Nova: Serbia: Vucic, accordo Trump-Putin sul gasolio rompe la catena delle sanzioni 11 ott 16:23 - (Agenzia Nova) - L'accordo tra il presidente statunitense Donald Trump e l'omologo russo Vladimir Putin per la fornitura di... (Seb) Serbia: Vucic, Trump-Putin oil deal breaks the sanctions chain Oct 11 16:23 - (Agenzia Nova) - The agreement between US ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117422831412790539",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sun, 11 Oct 2026 14:50:15 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 36,
-            "quality_score": 37,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "In an interview, Aleksandar Vulin, former defence minister and intelligence chief, now a vocal backer of Aleksandar Vučić's party ahead of the parliamentary elections in 🇷🇸, praise",
-            "text": "In an interview, Aleksandar Vulin, former defence minister and intelligence chief, now a vocal backer of Aleksandar Vučić's party ahead of the parliamentary elections in 🇷🇸, praised Putin for supporting Vučić as future prime minister and for saying that \"the Serbs are an",
-            "url": "https://x.com/i/web/status/2109249183404150820",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-11T11:46:07.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4
+              "Szerbia": 5
             },
             "event_category": "government_crisis",
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 2,
+                "hits": 1,
                 "weight": 9
               },
               {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
-            "source_reliability": 2,
+            "geopolitical_score": 29,
+            "quality_score": 32,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 7,
-            "raw_engagement": 7,
-            "metrics": {
-              "likes": 6,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "Rybar founder returns to Russia as Montenegro’s president demands answers over his entry despite EU sanctions. Mikhail Zvinchuk, founder of the Russian pro-war propaganda project R",
@@ -167,11 +117,11 @@
             "quality_score": 29,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 1,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -212,37 +162,77 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Serbian flags over Prizren? Belgrade should consider the map before the rhetoric. Ivica Dačić’s recent declaration that the Serbian flag will eventually fly over Prizren has reigni",
-            "text": "Serbian flags over Prizren? Belgrade should consider the map before the rhetoric. Ivica Dačić’s recent declaration that the Serbian flag will eventually fly over Prizren has reignited fears of another Balkan war. But there’s an important question missing from much of the",
-            "url": "https://x.com/i/web/status/2109250050387779740",
+            "title": "Serbian President Aleksandar Vučić has praised India’s growing international influence, with the poster quoting him as saying that Prime Minister Narendra Modi has helped take Indi",
+            "text": "Serbian President Aleksandar Vučić has praised India’s growing international influence, with the poster quoting him as saying that Prime Minister Narendra Modi has helped take India to new heights. At the same time, the statement suggests that India’s increasing stature has also",
+            "url": "https://x.com/i/web/status/2109309759350591975",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-10-11T11:49:34.000Z",
+            "seen_date": "2026-10-11T15:46:50.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 6
+              "Szerbia": 9
             },
             "event_category": "government_crisis",
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 1,
+                "hits": 2,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
+            "geopolitical_score": 18,
+            "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 5,
-            "raw_engagement": 5,
+            "engagement": 6,
+            "raw_engagement": 6,
             "metrics": {
-              "likes": 2,
+              "likes": 0,
+              "reposts": 1,
+              "replies": 5,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "1/2 Milorad Radojcic The public of Milan Radoičić at Serbian political events raises serious questions about accountability and the EU’s appearance commitment to the rule of law an",
+            "text": "1/2 Milorad Radojcic The public of Milan Radoičić at Serbian political events raises serious questions about accountability and the EU’s appearance commitment to the rule of law and regional stability.” I",
+            "url": "https://x.com/i/web/status/2109324459882778822",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-11T16:45:15.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 0,
               "reposts": 0,
-              "replies": 0,
-              "quotes": 3
+              "replies": 2,
+              "quotes": 0
             },
             "quality": "x_api_filtered"
           }
@@ -255,31 +245,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 1,
+        "mentions": 10,
+        "negative_hits": 2,
         "positive_hits": 1,
-        "trusted_hits": 3,
+        "trusted_hits": 2,
         "engagement_total": 3,
         "raw_engagement_total": 3,
-        "quality_total": 192,
-        "geopolitical_total": 160,
+        "quality_total": 198,
+        "geopolitical_total": 168,
         "source_counts": {
           "reddit": 0,
           "mastodon": 8,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
-          "foreign_influence": 1,
+          "foreign_influence": 2,
           "government_crisis": 2,
-          "security": 2,
-          "ethnic_tension": 2,
+          "security": 1,
+          "ethnic_tension": 3,
           "protest": 2
         },
         "tag_counts": {
           "bosnia": 8,
-          "Szerbia": 1
+          "Szerbia": 1,
+          "Észak-Macedónia": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "ethnic_tension",
         "top_posts": [
           {
             "title": "",
@@ -472,31 +463,29 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 60,
+        "score": 51,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 6,
+        "mentions": 7,
+        "negative_hits": 3,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 42,
-        "raw_engagement_total": 42,
-        "quality_total": 175,
-        "geopolitical_total": 150,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 128,
+        "geopolitical_total": 107,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 4
+          "x": 0
         },
         "category_counts": {
           "security": 2,
-          "government_crisis": 6,
-          "protest": 2,
-          "corruption_rule_of_law": 1
+          "government_crisis": 4,
+          "protest": 1
         },
         "tag_counts": {
-          "kosovo": 7,
-          "Koszovó": 4
+          "kosovo": 7
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -674,28 +663,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
+        "mentions": 13,
         "negative_hits": 9,
-        "positive_hits": 1,
-        "trusted_hits": 4,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 254,
-        "geopolitical_total": 210,
+        "positive_hits": 2,
+        "trusted_hits": 5,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 289,
+        "geopolitical_total": 241,
         "source_counts": {
           "reddit": 0,
           "mastodon": 12,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
-          "security": 5,
+          "security": 6,
           "economic_infrastructure": 1,
           "foreign_influence": 6
         },
         "tag_counts": {
-          "montenegro": 12
+          "montenegro": 12,
+          "Montenegró": 1
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -730,6 +720,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "This weekend, and visited Montenegro, meeting with senior Montenegrin officials to discuss 🇺🇸-🇲🇪ties, economic cooperation, the rule of law, and regional security. Congratulations ",
+            "text": "This weekend, and visited Montenegro, meeting with senior Montenegrin officials to discuss 🇺🇸-🇲🇪ties, economic cooperation, the rule of law, and regional security. Congratulations to Senator Shaheen on receiving Montenegro’s Order of the",
+            "url": "https://x.com/i/web/status/2109273121253458345",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-10-11T13:21:15.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 31,
+            "quality_score": 35,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -832,35 +862,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "\"He's wanted in several countries, is there any chance of him being extradited?\" 🤔 From https:// t.me/pravdaGerashchenko_en # Mikhail_Zvinchuk , founder of # Rybar_Russian Z-propaganda # Telegram channel, was detained in # Montenegro , local media report. There is no official information as of now. # Zvinchuk has been under the # EU sanctions since June 2023",
-            "url": "https://mastodon.online/@kardinal691/117410674166081741",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Fri, 09 Oct 2026 11:18:30 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -868,29 +869,28 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 49,
-        "level": "high",
+        "score": 32,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 4,
         "negative_hits": 2,
-        "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 125,
-        "raw_engagement_total": 142,
-        "quality_total": 119,
-        "geopolitical_total": 113,
+        "positive_hits": 1,
+        "trusted_hits": 1,
+        "engagement_total": 74,
+        "raw_engagement_total": 74,
+        "quality_total": 79,
+        "geopolitical_total": 72,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 6
+          "x": 4
         },
         "category_counts": {
-          "security": 4,
-          "government_crisis": 1,
-          "ethnic_tension": 1
+          "security": 3,
+          "foreign_influence": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 6
+          "Észak-Macedónia": 4
         },
         "main_topic": "security",
         "top_posts": [
@@ -935,94 +935,18 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Ante Pavelic🇭🇷 passionately defended Bulgarian-Macedonian🇧🇬 students from Skopje, against the Serbian🇷🇸 tyrants who were forcing these Bulgarians to stop identifying as what they r",
-            "text": "Ante Pavelic🇭🇷 passionately defended Bulgarian-Macedonian🇧🇬 students from Skopje, against the Serbian🇷🇸 tyrants who were forcing these Bulgarians to stop identifying as what they really are: ethnic Bulgarian. Bulgarians today must never forget this! 🇧🇬🙏🏻🇭🇷",
-            "url": "https://x.com/i/web/status/2108993905030992148",
+            "title": "The decision to suspend 6 police officers following the October 7 incident involving two young Albanians in North Macedonia clearly shows what we have been saying from day one: the",
+            "text": "The decision to suspend 6 police officers following the October 7 incident involving two young Albanians in North Macedonia clearly shows what we have been saying from day one: the truth cannot be hidden! Video recordings and irrefutable testimonies confirmed what actually",
+            "url": "https://x.com/i/web/status/2109309379887448431",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-10T18:51:44.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Szerbia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 2,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 120,
-            "raw_engagement": 137,
-            "metrics": {
-              "likes": 114,
-              "reposts": 12,
-              "replies": 11,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "How dare Macedonian policemen hit on these Albanian young men? Where is the state?? Albanians in North Macedonia should protest immediately. Nobody should touch our youth !!",
-            "text": "How dare Macedonian policemen hit on these Albanian young men? Where is the state?? Albanians in North Macedonia should protest immediately. Nobody should touch our youth !!",
-            "url": "https://x.com/i/web/status/2109133809556103489",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-11T04:07:40.000Z",
+            "seen_date": "2026-10-11T15:45:19.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
               "Észak-Macedónia": 5,
               "Albánia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Astrit Iseni, Deputy Minister of Internal Affairs, has issued a public statement following the incident in which two young men were assaulted in Skopje, insisting that police actio",
-            "text": "Astrit Iseni, Deputy Minister of Internal Affairs, has issued a public statement following the incident in which two young men were assaulted in Skopje, insisting that police actions must always be guided by the law and professional standards.",
-            "url": "https://x.com/i/web/status/2109064760717115844",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-10T23:33:18.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 4
             },
             "event_category": "security",
             "event_categories": [
@@ -1036,6 +960,41 @@
             "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
+            "engagement": 71,
+            "raw_engagement": 71,
+            "metrics": {
+              "likes": 54,
+              "reposts": 8,
+              "replies": 8,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "'NATO supports newspapers in Ukraine, fact checking organisations which seem to never truly stand up to their name, research institutions and communications projects in Moldova, Ge",
+            "text": "'NATO supports newspapers in Ukraine, fact checking organisations which seem to never truly stand up to their name, research institutions and communications projects in Moldova, Georgia, North Macedonia and Belgium. All well documented financial relationships...'",
+            "url": "https://x.com/i/web/status/2109298585334596091",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-11T15:02:26.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 14,
+            "quality_score": 18,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "metrics": {
@@ -1047,34 +1006,30 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "News - Where is the Albanian condemnation and outrage? The professional Victims association strikes again. macedonia skopje macedonian police albanian",
-            "text": "News - Where is the Albanian condemnation and outrage? The professional Victims association strikes again. macedonia skopje macedonian police albanian",
-            "url": "https://x.com/i/web/status/2109020638107283536",
+            "title": "The tiny and mostly unknown country of North Macedonia, that both Bulgaria and Greece consider to be a rebellious offshoot of their own countries (in a way that reminds me of the R",
+            "text": "The tiny and mostly unknown country of North Macedonia, that both Bulgaria and Greece consider to be a rebellious offshoot of their own countries (in a way that reminds me of the Russia-Ukraine conflict), is a very surprising and beautiful gem. We're in Ohrid, on the shore of a",
+            "url": "https://x.com/i/web/status/2109294773257326987",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-10T20:37:58.000Z",
+            "seen_date": "2026-10-11T14:47:17.000Z",
             "matched_countries": [
-              "Észak-Macedónia"
+              "Észak-Macedónia",
+              "Bosznia-Hercegovina"
             ],
             "country_confidence": {
               "Észak-Macedónia": 5,
-              "Albánia": 2
+              "Bosznia-Hercegovina": 3
             },
-            "event_category": "security",
+            "event_category": "foreign_influence",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
+                "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 17,
-            "quality_score": 18,
+            "geopolitical_score": 11,
+            "quality_score": 12,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 3,
@@ -1096,30 +1051,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 14,
-        "negative_hits": 11,
-        "positive_hits": 5,
+        "mentions": 13,
+        "negative_hits": 9,
+        "positive_hits": 3,
         "trusted_hits": 1,
-        "engagement_total": 38,
-        "raw_engagement_total": 38,
-        "quality_total": 371,
-        "geopolitical_total": 333,
+        "engagement_total": 121,
+        "raw_engagement_total": 578,
+        "quality_total": 336,
+        "geopolitical_total": 299,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
           "corruption_rule_of_law": 5,
           "protest": 3,
           "government_crisis": 2,
-          "security": 3,
-          "ethnic_tension": 1
+          "security": 1,
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "balkans": 8,
           "albania": 3,
-          "Albánia": 3
+          "Szerbia": 1,
+          "Koszovó": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
