@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12 03:28 UTC",
+  "updated_at": "2026-10-12 05:45 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,42 +12,40 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 13
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 60,
+        "score": 57,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 7,
-        "positive_hits": 2,
+        "mentions": 6,
+        "negative_hits": 6,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 142,
-        "geopolitical_total": 132,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 101,
+        "geopolitical_total": 93,
         "source_counts": {
           "reddit": 1,
           "mastodon": 2,
-          "x": 5
+          "x": 3
         },
         "category_counts": {
-          "protest": 1,
-          "government_crisis": 4,
-          "foreign_influence": 2,
-          "security": 1
+          "protest": 2,
+          "government_crisis": 2,
+          "foreign_influence": 2
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 2,
-          "Szerbia": 3,
-          "Koszovó": 1,
-          "Montenegró": 1
+          "Szerbia": 1,
+          "Koszovó": 2
         },
-        "main_topic": "government_crisis",
+        "main_topic": "protest",
         "top_posts": [
           {
             "title": "",
@@ -84,47 +82,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Rybar founder returns to Russia as Montenegro’s president demands answers over his entry despite EU sanctions. Mikhail Zvinchuk, founder of the Russian pro-war propaganda project R",
-            "text": "Rybar founder returns to Russia as Montenegro’s president demands answers over his entry despite EU sanctions. Mikhail Zvinchuk, founder of the Russian pro-war propaganda project Rybar, arrived in Moscow from Belgrade overnight on October 11, accompanied by his wife, Valeriya,",
-            "url": "https://x.com/i/web/status/2109238969997185331",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-10-11T11:05:32.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4,
-              "Montenegró": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Why young voters in Serbia are rising up against the government | DW News The student slate of candidates has taken a cycle tour through Serbian cities to get their message out. https://www. youtube.com/watch?v=2FmomwRalSY # Serbia # Balkans # Corruption # Protest # Cycling # BikeTooter # Elections",
             "url": "https://eldritch.cafe/@ml/117411447087526553",
@@ -157,41 +114,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Rarely does a day go by without some form of threat from Serbia toward its neighbors. Serbia’s former defense minister, Aleksandar Vulin, continues to advocate for the advancement ",
-            "text": "Rarely does a day go by without some form of threat from Serbia toward its neighbors. Serbia’s former defense minister, Aleksandar Vulin, continues to advocate for the advancement and implementation of the so-called “Serbian World.” This concept envisions the unification of all",
-            "url": "https://x.com/i/web/status/2109431943393673221",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-11T23:52:21.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "Minister for Labour, Family and the Values of the Liberation War, Andin Hoti, reacted to a statement by Serbia’s acting deputy prime minister, Ivica Daçiq, who claimed that Serbia ",
@@ -228,6 +150,77 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "A protest was held outside the Serbian Consulate in Chicago over U.S. polling locations and voting hours for the Oct. 25 election. Chicago na dlanu reports its interview with parti",
+            "text": "A protest was held outside the Serbian Consulate in Chicago over U.S. polling locations and voting hours for the Oct. 25 election. Chicago na dlanu reports its interview with participants was not completed. ChicagoNaDlanu Chicago Serbia Elections2026",
+            "url": "https://x.com/i/web/status/2109510780576055333",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-12T05:05:37.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 12,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "It's time for the US and the EU to put max pressure on Serbia in getting Belgrade to recognize Kosovo and admit to all war crimes it committed. For far too long Vucic has been allo",
+            "text": "It's time for the US and the EU to put max pressure on Serbia in getting Belgrade to recognize Kosovo and admit to all war crimes it committed. For far too long Vucic has been allowed to get away with misusing EU funds while siding with Russia. Leaders can't afford to look the",
+            "url": "https://x.com/i/web/status/2109448863606243731",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-12T00:59:35.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9,
+              "Koszovó": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 12,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -235,31 +228,31 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 60,
+        "score": 55,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
+        "mentions": 8,
         "negative_hits": 2,
         "positive_hits": 1,
-        "trusted_hits": 2,
+        "trusted_hits": 1,
         "engagement_total": 4,
         "raw_engagement_total": 4,
-        "quality_total": 187,
-        "geopolitical_total": 158,
+        "quality_total": 151,
+        "geopolitical_total": 127,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 8,
+          "mastodon": 7,
           "x": 1
         },
         "category_counts": {
           "foreign_influence": 2,
           "government_crisis": 2,
           "security": 1,
-          "ethnic_tension": 2,
+          "ethnic_tension": 1,
           "protest": 2
         },
         "tag_counts": {
-          "bosnia": 8,
+          "bosnia": 7,
           "Észak-Macedónia": 1
         },
         "main_topic": "foreign_influence",
@@ -304,45 +297,6 @@
             "quality_score": 39,
             "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Bosnia awaits for final general election results Around 3.4 million eligible voters in Bosnia headed to the polls to choose the three members of the country’s multi-ethnic presidency, lawmakers for the national Parliament, and heads of institutions for the country’s two entities. https://www. euronews.com/2026/10/04/bosnia -votes-as-pro-russian-politician-lo",
-            "url": "https://mastodon.social/@top_news/117386399859642993",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Mon, 05 Oct 2026 04:25:14 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 5
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 31,
-            "quality_score": 36,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -448,6 +402,35 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "# Putins win: # US # Trump supports # proRussian politician # Dodik in # Bosnia https://www. aljazeera.com/features/2026/10 /8/what-were-trump-operatives-doing-for-pro-russian-politician-dodik-in-bosnia",
+            "url": "https://chaos.social/@0xD/117409367402373732",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Fri, 09 Oct 2026 05:46:11 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 5
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 18,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -455,31 +438,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 60,
+        "score": 57,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
+        "mentions": 8,
         "negative_hits": 3,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 149,
-        "geopolitical_total": 126,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 139,
+        "geopolitical_total": 117,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "security": 2,
-          "government_crisis": 5,
+          "government_crisis": 4,
           "protest": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "kosovo": 7,
-          "Koszovó": 2
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -871,7 +854,7 @@
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 124,
-        "raw_engagement_total": 214,
+        "raw_engagement_total": 217,
         "quality_total": 49,
         "geopolitical_total": 43,
         "source_counts": {
@@ -915,12 +898,12 @@
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 120,
-            "raw_engagement": 210,
+            "raw_engagement": 213,
             "metrics": {
-              "likes": 168,
+              "likes": 171,
               "reposts": 19,
-              "replies": 20,
-              "quotes": 3
+              "replies": 21,
+              "quotes": 2
             },
             "quality": "x_api_filtered"
           },
@@ -1009,8 +992,8 @@
         "negative_hits": 11,
         "positive_hits": 3,
         "trusted_hits": 1,
-        "engagement_total": 36,
-        "raw_engagement_total": 36,
+        "engagement_total": 58,
+        "raw_engagement_total": 58,
         "quality_total": 383,
         "geopolitical_total": 345,
         "source_counts": {
