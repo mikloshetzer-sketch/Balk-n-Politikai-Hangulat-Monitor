@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12 13:59 UTC",
+  "updated_at": "2026-10-12 15:13 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,35 +12,37 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 8
+    "collected": 10
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 19,
-        "level": "low",
+        "score": 25,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 3,
         "negative_hits": 2,
-        "positive_hits": 1,
-        "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 54,
-        "geopolitical_total": 48,
+        "positive_hits": 2,
+        "trusted_hits": 1,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 80,
+        "geopolitical_total": 70,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "protest": 1,
-          "government_crisis": 1
+          "government_crisis": 1,
+          "security": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 1
+          "serbia": 1,
+          "Szerbia": 1
         },
         "main_topic": "protest",
         "top_posts": [
@@ -77,6 +79,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "EU Nearly Absent From Serbia’s Election Campaign as Parties Diverge on European Integration Serbia EuropeanUnion EUIntegration AleksandarVučić SerbianElections StudentsWin European",
+            "text": "EU Nearly Absent From Serbia’s Election Campaign as Parties Diverge on European Integration Serbia EuropeanUnion EUIntegration AleksandarVučić SerbianElections StudentsWin EuropeanSerbia SNS NATO Russia WesternBalkans",
+            "url": "https://x.com/i/web/status/2109661037733745146",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-12T15:02:41.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -118,30 +160,31 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 35,
-        "level": "medium",
+        "score": 46,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 1,
+        "mentions": 6,
+        "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 109,
-        "geopolitical_total": 92,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 138,
+        "geopolitical_total": 120,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "foreign_influence": 1,
           "government_crisis": 2,
-          "security": 1,
+          "security": 2,
           "ethnic_tension": 1
         },
         "tag_counts": {
-          "bosnia": 5
+          "bosnia": 5,
+          "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -188,6 +231,47 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Founder of pro-war propaganda project Rybar returns to Russia after being expelled from Montenegro Mikhail Zvinchuk, who is under EU sanctions, crossed the land border into Montene",
+            "text": "Founder of pro-war propaganda project Rybar returns to Russia after being expelled from Montenegro Mikhail Zvinchuk, who is under EU sanctions, crossed the land border into Montenegro from Bosnia and Herzegovina on Oct. 7 after arriving from Germany.",
+            "url": "https://x.com/i/web/status/2109656003830809066",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-10-12T14:42:41.000Z",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 2,
+              "Montenegró": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 1,
+              "reposts": 2,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -285,35 +369,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Bosnia-Croazia: otto valichi di frontiera cambiano status, via al traffico internazionale 07 ott 17:41 - (Agenzia Nova) - Otto valichi di frontiera tra Bosnia Erzegovina e Croazia hanno cambiato status, passando da punti di attraversamento... (Seb) Bosnia-Croatia: eight border crossings change status, international traffic begins Oct 07 17:41 –",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117400418129209625",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Wed, 07 Oct 2026 15:50:16 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -321,30 +376,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 49,
+        "score": 59,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
+        "mentions": 10,
         "negative_hits": 3,
-        "positive_hits": 2,
+        "positive_hits": 4,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 119,
-        "geopolitical_total": 98,
+        "quality_total": 161,
+        "geopolitical_total": 135,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 7,
-          "x": 0
+          "mastodon": 8,
+          "x": 2
         },
         "category_counts": {
+          "economic_infrastructure": 1,
           "corruption_rule_of_law": 1,
-          "security": 2,
-          "government_crisis": 3,
+          "security": 3,
+          "government_crisis": 4,
           "protest": 1
         },
         "tag_counts": {
-          "kosovo": 7
+          "kosovo": 8,
+          "Koszovó": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -451,17 +508,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Kosovo Avoids New Deadlock With Last-Minute Presidential Election https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/07/kosovo-avoids-new-deadlock-with-last-minute-presidential-election/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/07/kosovo-avoids-new-deadlock-with-last-minute-presidential-election/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 07 Oct 2026 08:48:52 +0000",
+            "title": "Kosovo’s Prime Minister Albin Kurti said that strengthening the country’s international engagement is of direct importance to its citizens, particularly through membership in the C",
+            "text": "Kosovo’s Prime Minister Albin Kurti said that strengthening the country’s international engagement is of direct importance to its citizens, particularly through membership in the Council of Europe and Interpol.",
+            "url": "https://x.com/i/web/status/2109647080612327511",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-12T14:07:14.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 1
+              "Koszovó": 5
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -469,44 +526,66 @@
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 15,
-            "source_reliability": 3,
+            "geopolitical_score": 16,
+            "quality_score": 17,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
-            "title": "",
-            "text": "Kosovo ‘Clarifies’ Hague War Crimes Court’s Jurisdiction, But to What End? https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/12/kosovo-clarifies-hague-war-crimes-courts-jurisdiction-but-to-what-end/btj/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/12/kosovo-clarifies-hague-war-crimes-courts-jurisdiction-but-to-what-end/btj/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Mon, 12 Oct 2026 05:45:40 +0000",
+            "title": "EU Urges Kosovo to Advance Employment Reforms and Secure Sustainable Funding for RTK Kosovo EuropeanUnion EUIntegration RTK EmploymentReform SocialProtection Education Cybersecurit",
+            "text": "EU Urges Kosovo to Advance Employment Reforms and Secure Sustainable Funding for RTK Kosovo EuropeanUnion EUIntegration RTK EmploymentReform SocialProtection Education Cybersecurity Digitalization CulturalHeritage ResearchAndInnovation Prishtina",
+            "url": "https://x.com/i/web/status/2109662402279092282",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-12T15:08:06.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 1
+              "Koszovó": 5
             },
-            "event_category": "corruption_rule_of_law",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "corruption_rule_of_law",
+                "category": "security",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 11,
-            "quality_score": 14,
-            "source_reliability": 3,
+            "geopolitical_score": 14,
+            "quality_score": 15,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -518,26 +597,27 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 11,
-        "negative_hits": 8,
+        "negative_hits": 7,
         "positive_hits": 1,
-        "trusted_hits": 4,
+        "trusted_hits": 3,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 230,
-        "geopolitical_total": 189,
+        "quality_total": 211,
+        "geopolitical_total": 172,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
           "x": 0
         },
         "category_counts": {
+          "economic_infrastructure": 2,
           "eu_integration": 1,
-          "security": 5,
-          "economic_infrastructure": 1,
+          "security": 4,
           "foreign_influence": 4
         },
         "tag_counts": {
-          "montenegro": 11
+          "kosovo": 1,
+          "montenegro": 10
         },
         "main_topic": "security",
         "top_posts": [
@@ -645,40 +725,6 @@
           },
           {
             "title": "",
-            "text": "Pro-Kremlin Russian military blogger Mikhail Zvinchuk arrested in Montenegro By Pjotr Sauer Founder of influential Rybar blog detained after warnings of attempts to destabilise Balkan country, officials say https://www. theguardian.com/world/2026/oct /09/russian-military-blogger-mikhail-zvinchuk-rybar-arrested-montenegro # Montenegro # Russia # Europe # Blog",
-            "url": "https://rssfeed.media/@guardianfeeds/117410837752515707",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Fri, 09 Oct 2026 12:00:06 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 24,
-            "quality_score": 29,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "# Montenegro expels Russian milblogger Mikhail Zvinchuk and four other Russian nationals on national security grounds after detaining them in Risan. https:// en-wp.org/wiki/Montenegro–Russ ia_relations https:// newsasfacts.com/news/162442",
             "url": "https://mastodon.world/@unofficialnewsasfacts/117415084831518669",
             "source": "mastodon",
@@ -707,6 +753,35 @@
             "quality_score": 20,
             "source_reliability": 3,
             "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "An influential Russian war blogger and four others were being expelled from Montenegro on Friday after being detained on suspicion of trying to destabilize the country, authorities said. https:// apnews.com/article/montenegro- russia-blogger-arrest-svicnhuk-7c0f099016789500803e7c73c73145f8 # Ukraine # Russia # Montenegro",
+            "url": "https://mastodon.social/@hanse_mina/117414395636929255",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Sat, 10 Oct 2026 03:04:55 +0000",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 15,
+            "quality_score": 20,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -862,32 +937,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
+        "mentions": 16,
         "negative_hits": 9,
         "positive_hits": 5,
         "trusted_hits": 1,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 363,
-        "geopolitical_total": 322,
+        "engagement_total": 56,
+        "raw_engagement_total": 56,
+        "quality_total": 390,
+        "geopolitical_total": 348,
         "source_counts": {
           "reddit": 0,
           "mastodon": 12,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
-          "security": 2,
+          "security": 3,
           "corruption_rule_of_law": 5,
           "protest": 3,
-          "government_crisis": 4,
-          "ethnic_tension": 1
+          "government_crisis": 5
         },
         "tag_counts": {
           "balkans": 9,
           "albania": 3,
-          "Szerbia": 1,
-          "Koszovó": 1,
-          "Észak-Macedónia": 1
+          "Észak-Macedónia": 1,
+          "Albánia": 3
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
