@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13 14:06 UTC",
+  "updated_at": "2026-10-13 22:09 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,38 +12,119 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 7
+    "collected": 15
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 21,
-        "level": "medium",
+        "score": 43,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 5,
         "negative_hits": 2,
         "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 53,
-        "geopolitical_total": 47,
+        "trusted_hits": 1,
+        "engagement_total": 11,
+        "raw_engagement_total": 11,
+        "quality_total": 150,
+        "geopolitical_total": 137,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
-          "x": 0
+          "mastodon": 3,
+          "x": 2
         },
         "category_counts": {
           "protest": 1,
-          "security": 1
+          "security": 4
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 1
+          "serbia": 2,
+          "Szerbia": 1,
+          "Koszovó": 1
         },
-        "main_topic": "protest",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "",
+            "text": "⚠️🇷🇸More evidence Serbs are sabotaging and undermining the EU and their candidacy by collaborating with Russian terrorists (more) https://www. pravda.com.ua/eng/news/2026/10 /13/8057739/ # Ukraine # Press # Kyiv # Odesa # Lviv # Kharkiv # Kherson # Berlin # Brussels # France # Germany # UK # US # PACE # CoE # Paris # London # Media # News # Headlines # NATO ",
+            "url": "https://mastodon.online/@SocraticEthics/117434316110923842",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Tue, 13 Oct 2026 15:30:58 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 47,
+            "quality_score": 52,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Serbia USA | The US 🇺🇸 Embassy in Belgrade has joined Serbia’s 🇷🇸 Unit for the Security of Persons and Facilities (JZO) for a five-day police security and training programme at the",
+            "text": "Serbia USA | The US 🇺🇸 Embassy in Belgrade has joined Serbia’s 🇷🇸 Unit for the Security of Persons and Facilities (JZO) for a five-day police security and training programme at the Makiš Police Training Centre. Approximately 40 Serbian police officers participated in the",
+            "url": "https://x.com/i/web/status/2110121472115028151",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-13T21:32:17.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 34,
+            "quality_score": 35,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 2,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "BIRN just published an article about a criminal who used to work for Vučić, primarily on beatings of students, participation in Ćaciland paramilitary camp in the center of #Belgrade , #Serbia , how they infiltrated all protests to make them violent, about the sound cannon. birn.rs/ispovest-cla... Ispovest: Kako SNS organizuje ...",
@@ -111,6 +192,42 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "This is the Serbian terrorist who planted a bomb near the health center in F.Kosovë. The moment of the Serbian terrorist's imprisonment by the Kosovo Special UnitThe police used an",
+            "text": "This is the Serbian terrorist who planted a bomb near the health center in F.Kosovë. The moment of the Serbian terrorist's imprisonment by the Kosovo Special UnitThe police used an angle grinder to open the door to the apartment where the terrorist was staying.",
+            "url": "https://x.com/i/web/status/2110107210428666173",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-13T20:35:37.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 9,
+            "raw_engagement": 9,
+            "metrics": {
+              "likes": 9,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -118,32 +235,31 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 37,
+        "score": 33,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 5,
         "negative_hits": 1,
-        "positive_hits": 3,
+        "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 127,
-        "geopolitical_total": 109,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 116,
+        "geopolitical_total": 99,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "ethnic_tension": 1,
           "foreign_influence": 1,
-          "government_crisis": 3,
+          "government_crisis": 2,
           "security": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "bosnia": 4,
-          "Észak-Macedónia": 1
+          "bosnia": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -323,34 +439,149 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 47,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
+        "mentions": 11,
         "negative_hits": 2,
-        "positive_hits": 2,
-        "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 117,
-        "geopolitical_total": 95,
+        "positive_hits": 3,
+        "trusted_hits": 3,
+        "engagement_total": 118,
+        "raw_engagement_total": 118,
+        "quality_total": 213,
+        "geopolitical_total": 179,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 1
+          "x": 4
         },
         "category_counts": {
           "economic_infrastructure": 1,
           "corruption_rule_of_law": 1,
-          "security": 3,
+          "security": 6,
           "government_crisis": 3
         },
         "tag_counts": {
           "kosovo": 7,
-          "Szerbia": 1
+          "Koszovó": 4
         },
         "main_topic": "security",
         "top_posts": [
+          {
+            "title": "US Senator Dick Durbin said that Kosovo Prime Minister Albin Kurti’s initiative to turn Camp Bondsteel into a permanent United States military base should be seriously considered.",
+            "text": "US Senator Dick Durbin said that Kosovo Prime Minister Albin Kurti’s initiative to turn Camp Bondsteel into a permanent United States military base should be seriously considered.",
+            "url": "https://x.com/i/web/status/2110125905389518861",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-13T21:49:54.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 39,
+            "quality_score": 43,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "US Senator: Kosovo Proposed Financial Deal to Make Bondsteel a Permanent US Military Base Kosovo UnitedStates CampBondsteel NATO DickDurbin JeanneShaheen AlbinKurti",
+            "text": "US Senator: Kosovo Proposed Financial Deal to Make Bondsteel a Permanent US Military Base Kosovo UnitedStates CampBondsteel NATO DickDurbin JeanneShaheen AlbinKurti",
+            "url": "https://x.com/i/web/status/2110085140718166517",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-13T19:07:55.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 23,
+            "quality_score": 27,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇺🇸🇽🇰 Kosovo government wants a permanent US military presence on its territory. US Senator Dick Durbin revealed Kosovo’s offer to establish a permanent US military base at Camp Bon",
+            "text": "🇺🇸🇽🇰 Kosovo government wants a permanent US military presence on its territory. US Senator Dick Durbin revealed Kosovo’s offer to establish a permanent US military base at Camp Bondsteel. He said that during his meeting in Prishtina, Kosovo PM Albin Kurti has proposed a",
+            "url": "https://x.com/i/web/status/2110103873595863254",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-13T20:22:21.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 9
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 118,
+            "raw_engagement": 118,
+            "metrics": {
+              "likes": 95,
+              "reposts": 9,
+              "replies": 13,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Agenzia Nova: Kosovo-Italia: ambasciatore Antonini incontra Kurti, focus su stabilita' istituzionale 09 ott 18:08 - (Agenzia Nova) - L'ambasciatore d'Italia a Pristina, Maurizio Antonini, ha incontrato il primo ministro del Kosovo, Albin Kurti,... (Alt) Kosovo-Italy: Ambassador Antonini meets with Kurti, focus on institutional stability Oct 09 18:08 - (Agenz",
@@ -413,93 +644,6 @@
             ],
             "geopolitical_score": 19,
             "quality_score": 22,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Kosovo Avoids New Deadlock With Last-Minute Presidential Election https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/07/kosovo-avoids-new-deadlock-with-last-minute-presidential-election/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/07/kosovo-avoids-new-deadlock-with-last-minute-presidential-election/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 07 Oct 2026 08:48:52 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 15,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Kosovo ‘Clarifies’ Hague War Crimes Court’s Jurisdiction, But to What End? https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/12/kosovo-clarifies-hague-war-crimes-courts-jurisdiction-but-to-what-end/btj/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/12/kosovo-clarifies-hague-war-crimes-courts-jurisdiction-but-to-what-end/btj/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Mon, 12 Oct 2026 05:45:40 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 14,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Kosovo: Justina Shiroka-Pula eletta presidente con 81 voti, evitato il ritorno alle urne 07 ott 06:28 - (Agenzia Nova) - Justina Shiroka-Pula e' stata eletta presidente del Kosovo dall'Assemblea nazionale con 81 voti a favore, uno... (Alt) Kosovo: Justina Shiroka-Pula elected president with 81 votes, avoiding a return to the polls. Oct 7 06:28 ",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117397862164184564",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 07 Oct 2026 05:00:15 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -711,43 +855,90 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 15,
-        "level": "low",
+        "score": 29,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 5,
         "negative_hits": 1,
-        "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 37,
-        "geopolitical_total": 32,
+        "positive_hits": 3,
+        "trusted_hits": 0,
+        "engagement_total": 22,
+        "raw_engagement_total": 22,
+        "quality_total": 99,
+        "geopolitical_total": 94,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 2
+          "x": 5
         },
         "category_counts": {
-          "government_crisis": 1,
-          "security": 1
+          "security": 2,
+          "government_crisis": 3
         },
         "tag_counts": {
-          "Észak-Macedónia": 2
+          "Észak-Macedónia": 5
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "SDSM today accused Prime Minister Hristijan Mickoski of obstructing the country’s progress toward the European Union. According to the party, North Macedonia has fallen behind its ",
-            "text": "SDSM today accused Prime Minister Hristijan Mickoski of obstructing the country’s progress toward the European Union. According to the party, North Macedonia has fallen behind its neighbors in the integration process.",
-            "url": "https://x.com/i/web/status/2109919172637433891",
+            "title": "Last week the Dutch ambassadors from 🇦🇱, 🇧🇦,🇧🇬, 🇭🇷, 🇬🇷, 🇽🇰, 🇲🇪, 🇲🇰, 🇷🇸, 🇸🇮 gathered in Skopje for the annual regional ambassadors’ conference to discuss EU integration, rule of law",
+            "text": "Last week the Dutch ambassadors from 🇦🇱, 🇧🇦,🇧🇬, 🇭🇷, 🇬🇷, 🇽🇰, 🇲🇪, 🇲🇰, 🇷🇸, 🇸🇮 gathered in Skopje for the annual regional ambassadors’ conference to discuss EU integration, rule of law, cooperation in the field of security and stability and economic cooperation.",
+            "url": "https://x.com/i/web/status/2110056496264344050",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-13T08:08:25.000Z",
+            "seen_date": "2026-10-13T17:14:06.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 9
+              "Észak-Macedónia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 33,
+            "quality_score": 34,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 10,
+            "raw_engagement": 10,
+            "metrics": {
+              "likes": 7,
+              "reposts": 2,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Albania has opened all 33 screened EU negotiating chapters and provisionally closed four, while Montenegro has completed three more. Brussels is moving forward with enlargement, bu",
+            "text": "Albania has opened all 33 screened EU negotiating chapters and provisionally closed four, while Montenegro has completed three more. Brussels is moving forward with enlargement, but North Macedonia remains held back by its unresolved constitutional dispute with Bulgaria.",
+            "url": "https://x.com/i/web/status/2110079421990461823",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-13T18:45:12.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Montenegró": 1,
+              "Albánia": 1
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -758,12 +949,12 @@
               },
               {
                 "category": "eu_integration",
-                "hits": 1,
+                "hits": 2,
                 "weight": 6
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
+            "geopolitical_score": 24,
+            "quality_score": 25,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -777,17 +968,58 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "🚨 [FLASH OSINT] | KYIV 🇷🇺🇺🇦 NATO helps North Macedonia and Ukraine strengthen their resilience during large-scale emergencies • Source: North Macedonia & Skopje What is your tactic",
-            "text": "🚨 [FLASH OSINT] | KYIV 🇷🇺🇺🇦 NATO helps North Macedonia and Ukraine strengthen their resilience during large-scale emergencies • Source: North Macedonia & Skopje What is your tactical assessment? 👇 OSINT Ukraine BlackSea AirAlert",
-            "url": "https://x.com/i/web/status/2109841774281957773",
+            "title": "In North Macedonia, VP Robert de Groot met Prime Minister and key partners to advance strategic investments. Discussions covered EIB-backed projects and new opportunities in sustai",
+            "text": "In North Macedonia, VP Robert de Groot met Prime Minister and key partners to advance strategic investments. Discussions covered EIB-backed projects and new opportunities in sustainable transport, healthcare, climate adaptation and SME support.",
+            "url": "https://x.com/i/web/status/2110022145367765458",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-13T03:00:52.000Z",
+            "seen_date": "2026-10-13T14:57:36.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 9
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 2,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 11,
+            "raw_engagement": 11,
+            "metrics": {
+              "likes": 7,
+              "reposts": 2,
+              "replies": 1,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Restoration of 1191 Byzantine-era church in Kurbinovo highlights cross-border cooperation, as Greece, Albania and North Macedonia pursue a joint UNESCO bid for the Prespa region",
+            "text": "Restoration of 1191 Byzantine-era church in Kurbinovo highlights cross-border cooperation, as Greece, Albania and North Macedonia pursue a joint UNESCO bid for the Prespa region",
+            "url": "https://x.com/i/web/status/2110107546857976027",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-13T20:36:57.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Albánia": 1
             },
             "event_category": "security",
             "event_categories": [
@@ -797,10 +1029,45 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 17,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "On the occasion of Croatian Parliament Day, the play \"DON'T WALK AROUND NAKED\" („NE MOTAJ SE OKOLO GOLA GOLCATA'') will be performed at the Culture Center in Bitola, North Macedoni",
+            "text": "On the occasion of Croatian Parliament Day, the play \"DON'T WALK AROUND NAKED\" („NE MOTAJ SE OKOLO GOLA GOLCATA'') will be performed at the Culture Center in Bitola, North Macedonia, on October 16 starting at 7:00 PM.",
+            "url": "https://x.com/i/web/status/2110025637054566514",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-13T15:11:28.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "metrics": {
@@ -820,32 +1087,66 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
-        "negative_hits": 13,
+        "mentions": 20,
+        "negative_hits": 15,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 373,
-        "geopolitical_total": 329,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 452,
+        "geopolitical_total": 398,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 14,
-          "x": 2
+          "mastodon": 17,
+          "x": 3
         },
         "category_counts": {
-          "protest": 9,
           "corruption_rule_of_law": 4,
-          "security": 2,
+          "protest": 10,
+          "security": 5,
           "foreign_influence": 1
         },
         "tag_counts": {
-          "balkans": 12,
-          "albania": 2,
-          "Albánia": 2
+          "balkans": 13,
+          "albania": 4,
+          "Albánia": 3
         },
         "main_topic": "protest",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Day 136 of anti-corruption protest in Tirana, Albania Today has been a big day, with a large protest of students outside the Ministry of Education starting around noon. The cops kept cool for a little while, but eventually used tear gas, water cannons, and night sticks and that is continuing hours later. It looks like some bonfires were set in the street. # ",
+            "url": "https://mas.to/@meganL/117434637506250857",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Tue, 13 Oct 2026 16:52:42 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "Some protestors scaled the fence and also threw some of the uprooted fences through the windows of the Ministry of Education. Some tear gas has been released and the cops are slowly going on the grounds between the perimeter fence and the Ministry looking to either arrest the people or to push them back onto the sidewalk and off Ministry property. The cops h",
@@ -955,40 +1256,6 @@
             "source": "mastodon",
             "tag": "balkans",
             "seen_date": "Sun, 11 Oct 2026 19:39:20 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 131 of anti-corruption protest in Tirana, Albania It's raining, but folks are still out protesting. # FlamingoRevolution # Albania # Corruption # Balkans # Europe # Protest https://www. youtube.com/watch?v=MrpsrUi-kQM",
-            "url": "https://mas.to/@meganL/117406603222876244",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Thu, 08 Oct 2026 18:03:13 +0000",
             "matched_countries": [
               "Albánia"
             ],
