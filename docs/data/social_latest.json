@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14 10:56 UTC",
+  "updated_at": "2026-10-14 11:42 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,37 +12,35 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 14
+    "collected": 10
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 39,
+        "score": 31,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 3,
         "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 2,
-        "engagement_total": 120,
-        "raw_engagement_total": 423,
-        "quality_total": 146,
-        "geopolitical_total": 132,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 136,
+        "geopolitical_total": 123,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "security": 2,
-          "ethnic_tension": 1,
-          "government_crisis": 1
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "serbia": 2,
-          "kosovo": 1,
-          "Szerbia": 1
+          "kosovo": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -165,41 +163,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "A giant glass chandelier dominates the upper hall of Tito's new Parliament building in Belgrade, 1963.",
-            "text": "A giant glass chandelier dominates the upper hall of Tito's new Parliament building in Belgrade, 1963.",
-            "url": "https://x.com/i/web/status/2110294946410307826",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-14T09:01:37.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 120,
-            "raw_engagement": 423,
-            "metrics": {
-              "likes": 381,
-              "reposts": 38,
-              "replies": 3,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -377,69 +340,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 38,
-        "level": "medium",
+        "score": 19,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 6,
-        "negative_hits": 2,
+        "mentions": 4,
+        "negative_hits": 1,
         "positive_hits": 2,
-        "trusted_hits": 1,
+        "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 107,
-        "geopolitical_total": 90,
+        "quality_total": 68,
+        "geopolitical_total": 56,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 2
+          "x": 0
         },
         "category_counts": {
           "economic_infrastructure": 1,
           "corruption_rule_of_law": 1,
-          "security": 3,
-          "government_crisis": 1
+          "security": 2
         },
         "tag_counts": {
-          "kosovo": 4,
-          "Koszovó": 2
+          "kosovo": 4
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "Kosovo’s Leaders Attend KFOR Command Handover Ceremony Kosovo KFOR NATO JustinaShirokaPula AlbinKurti RobertoVergori",
-            "text": "Kosovo’s Leaders Attend KFOR Command Handover Ceremony Kosovo KFOR NATO JustinaShirokaPula AlbinKurti RobertoVergori",
-            "url": "https://x.com/i/web/status/2110318467542917365",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-14T10:35:05.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 26,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Agenzia Nova: Kosovo-Italia: ambasciatore Antonini incontra Kurti, focus su stabilita' istituzionale 09 ott 18:08 - (Agenzia Nova) - L'ambasciatore d'Italia a Pristina, Maurizio Antonini, ha incontrato il primo ministro del Kosovo, Albin Kurti,... (Alt) Kosovo-Italy: Ambassador Antonini meets with Kurti, focus on institutional stability Oct 09 18:08 - (Agenz",
@@ -538,39 +464,35 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Kosovo’s Prime Minister, Albin Kurti, warned that an important decision will be made today regarding the former leaders of the Kosovo Liberation Army.",
-            "text": "Kosovo’s Prime Minister, Albin Kurti, warned that an important decision will be made today regarding the former leaders of the Kosovo Liberation Army.",
-            "url": "https://x.com/i/web/status/2110297044287889624",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-14T09:09:57.000Z",
+            "title": "",
+            "text": "Mon blogue expose des gestes écocitoyens et des technologies vertes, dans le domaine du logement, du jardinage, du transport et de l'énergie, du textile et de la mode, l'agriculture et l'alimentation, la santé et le bien-être, la finance responsable, ainsi que des références de livres, et de documentaires. Plus https://www. revolutionverte.fr # Maldives # Mo",
+            "url": "https://mastodon.social/@Rinaldo75/117428313641146879",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Mon, 12 Oct 2026 14:04:27 +0000",
             "matched_countries": [
-              "Koszovó"
+              "Koszovó",
+              "Montenegró"
             ],
             "country_confidence": {
-              "Koszovó": 5
+              "Koszovó": 1,
+              "Montenegró": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "economic_infrastructure",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "economic_infrastructure",
                 "hits": 1,
-                "weight": 9
+                "weight": 4
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
+            "geopolitical_score": 7,
+            "quality_score": 10,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -585,8 +507,8 @@
         "negative_hits": 1,
         "positive_hits": 4,
         "trusted_hits": 2,
-        "engagement_total": 53,
-        "raw_engagement_total": 53,
+        "engagement_total": 60,
+        "raw_engagement_total": 60,
         "quality_total": 212,
         "geopolitical_total": 174,
         "source_counts": {
@@ -891,87 +813,35 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 32,
-        "negative_hits": 26,
+        "negative_hits": 25,
         "positive_hits": 3,
-        "trusted_hits": 4,
-        "engagement_total": 85,
-        "raw_engagement_total": 85,
-        "quality_total": 851,
-        "geopolitical_total": 763,
+        "trusted_hits": 5,
+        "engagement_total": 31,
+        "raw_engagement_total": 31,
+        "quality_total": 827,
+        "geopolitical_total": 735,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 24,
-          "x": 8
+          "mastodon": 25,
+          "x": 7
         },
         "category_counts": {
-          "protest": 16,
-          "corruption_rule_of_law": 3,
-          "security": 9,
+          "corruption_rule_of_law": 4,
+          "protest": 15,
+          "security": 10,
           "ethnic_tension": 2,
-          "foreign_influence": 1,
-          "government_crisis": 1
+          "foreign_influence": 1
         },
         "tag_counts": {
-          "balkans": 13,
+          "balkans": 14,
           "kosovo": 1,
           "montenegro": 1,
           "albania": 9,
-          "Szerbia": 1,
           "Észak-Macedónia": 1,
           "Albánia": 6
         },
         "main_topic": "protest",
         "top_posts": [
-          {
-            "title": "Student protests in Albania turned violent on Tuesday, as demonstrators smashed shops and rioted while police used tear gas to disperse the crowd. Students joined anti-government m",
-            "text": "Student protests in Albania turned violent on Tuesday, as demonstrators smashed shops and rioted while police used tear gas to disperse the crowd. Students joined anti-government movement Flamingo which is demanding resignation of prime minister Edi Rama following corruption",
-            "url": "https://x.com/i/web/status/2110317833536114980",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-14T10:32:33.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 62,
-            "quality_score": 63,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 43,
-            "raw_engagement": 43,
-            "metrics": {
-              "likes": 21,
-              "reposts": 16,
-              "replies": 4,
-              "quotes": 2
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Domani: Meloni: «L’intesa di Trump sul gasolio russo è rischiosa e legittima Mosca». Sul bilancio Ue: «Accordo solo quando sarà giusto per l’Italia» La premier: «L’alternativa alle porte aperte è sempre esistita». Sul Golfo chiede più navi per la missione Aspides. E avverte Bruxelles: «Non firmeremo un accordo non vantaggioso per rispettare una data». Priori",
@@ -1059,6 +929,45 @@
             ],
             "geopolitical_score": 48,
             "quality_score": 53,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "\"LIVE: Albanian students protest over education costs \" Despite the Reuters headline, this is not completely separate from the # FlamingoRevolution . They're using the same chants that have been used since late May. Yes, it's a protest about schools, but it's an anti-corruption protest because it is corruption that makes the schools full of graft and low qua",
+            "url": "https://mas.to/@meganL/117438960478281942",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Wed, 14 Oct 2026 11:12:05 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 2
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 36,
+            "quality_score": 41,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
