@@ -1,11 +1,16 @@
 {
-  "updated_at": "2026-10-14 02:52 UTC",
+  "updated_at": "2026-10-14 04:42 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
     "enabled": true,
     "status": "partial_error",
     "errors": [
+      {
+        "country": "Szerbia",
+        "status_code": 503,
+        "message": "{\"detail\":\"Service Unavailable\",\"status\":503,\"title\":\"Service Unavailable\",\"type\":\"about:blank\"}"
+      },
       {
         "country": "Bosznia-Hercegovina",
         "status_code": 400,
@@ -18,31 +23,29 @@
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 44,
-        "level": "high",
+        "score": 31,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 3,
+        "mentions": 3,
+        "negative_hits": 2,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 120,
-        "raw_engagement_total": 257,
-        "quality_total": 126,
-        "geopolitical_total": 114,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 105,
+        "geopolitical_total": 94,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "protest": 1,
-          "security": 2,
-          "government_crisis": 1
+          "security": 2
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 2,
-          "Szerbia": 1
+          "serbia": 2
         },
         "main_topic": "security",
         "top_posts": [
@@ -152,46 +155,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Lights. Camera. J6. It's coming, and it shows how your \"patriots,\" knowingly or not, helped to try to frame President . Remember the Serbian \"overthrow\" they cheered? January 2000.",
-            "text": "Lights. Camera. J6. It's coming, and it shows how your \"patriots,\" knowingly or not, helped to try to frame President . Remember the Serbian \"overthrow\" they cheered? January 2000. That was me, deploying what was about to happen. You think I don't recognize MY",
-            "url": "https://x.com/i/web/status/2110173104592810294",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-14T00:57:27.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 120,
-            "raw_engagement": 257,
-            "metrics": {
-              "likes": 161,
-              "reposts": 84,
-              "replies": 7,
-              "quotes": 5
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -199,34 +162,33 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 39,
+        "score": 26,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 4,
         "negative_hits": 1,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 132,
-        "geopolitical_total": 114,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 96,
+        "geopolitical_total": 82,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 5,
-          "x": 1
+          "mastodon": 4,
+          "x": 0
         },
         "category_counts": {
           "ethnic_tension": 1,
           "foreign_influence": 1,
-          "government_crisis": 2,
-          "security": 2
+          "government_crisis": 1,
+          "security": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "bosnia": 4,
-          "Albánia": 1
+          "bosnia": 3
         },
-        "main_topic": "government_crisis",
+        "main_topic": "ethnic_tension",
         "top_posts": [
           {
             "title": "",
@@ -308,40 +270,6 @@
           },
           {
             "title": "",
-            "text": "As President Trump crisscrossed the country last week trying to help his party avoid a blowout in next month’s midterm elections, two of his top political advisers were in the Balkans helping a pro-Russian government looking to tighten its grip on power. https://www. nytimes.com/2026/10/06/us/poli tics/trump-advisers-republika-srpska.html # Ukraine # Russia ",
-            "url": "https://mastodon.social/@hanse_mina/117397420664922304",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Wed, 07 Oct 2026 03:07:58 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 20,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "# Putins win: # US # Trump supports # proRussian politician # Dodik in # Bosnia https://www. aljazeera.com/features/2026/10 /8/what-were-trump-operatives-doing-for-pro-russian-politician-dodik-in-bosnia",
             "url": "https://chaos.social/@0xD/117409367402373732",
             "source": "mastodon",
@@ -370,17 +298,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Ringing Bell 🔔 The statement on false flag is the clear sign of escelation: 35 Countries and the European Union Repeat Security Allegations Against Iran 🔹 The foreign ministers of ",
-            "text": "Ringing Bell 🔔 The statement on false flag is the clear sign of escelation: 35 Countries and the European Union Repeat Security Allegations Against Iran 🔹 The foreign ministers of 35 countries and the European Union’s High Representative for Foreign Affairs issued a joint",
-            "url": "https://x.com/i/web/status/2110170287736062452",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-14T00:46:16.000Z",
+            "title": "",
+            "text": "Agenzia Nova: Bosnia-Croazia: otto valichi di frontiera cambiano status, via al traffico internazionale 07 ott 17:41 - (Agenzia Nova) - Otto valichi di frontiera tra Bosnia Erzegovina e Croazia hanno cambiato status, passando da punti di attraversamento... (Seb) Bosnia-Croatia: eight border crossings change status, international traffic begins Oct 07 17:41 –",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117400418129209625",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Wed, 07 Oct 2026 15:50:16 +0000",
             "matched_countries": [
               "Bosznia-Hercegovina"
             ],
             "country_confidence": {
-              "Bosznia-Hercegovina": 3
+              "Bosznia-Hercegovina": 2
             },
             "event_category": "security",
             "event_categories": [
@@ -388,26 +316,15 @@
                 "category": "security",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
               }
             ],
-            "geopolitical_score": 15,
-            "quality_score": 16,
-            "source_reliability": 2,
+            "geopolitical_score": 9,
+            "quality_score": 12,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 5,
-            "raw_engagement": 5,
-            "metrics": {
-              "likes": 4,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -415,17 +332,17 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 47,
+        "score": 49,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 8,
         "negative_hits": 2,
         "positive_hits": 2,
-        "trusted_hits": 0,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 117,
-        "geopolitical_total": 95,
+        "quality_total": 133,
+        "geopolitical_total": 108,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
@@ -434,15 +351,50 @@
         "category_counts": {
           "economic_infrastructure": 1,
           "corruption_rule_of_law": 1,
-          "security": 2,
-          "government_crisis": 4
+          "security": 3,
+          "government_crisis": 3
         },
         "tag_counts": {
           "kosovo": 7,
           "Koszovó": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "🇺🇸🇽🇰 Kosovo government wants a permanent US military presence on its territory. US Senator Dick Durbin revealed Kosovo’s offer to establish a permanent US military base at Camp Bon",
+            "text": "🇺🇸🇽🇰 Kosovo government wants a permanent US military presence on its territory. US Senator Dick Durbin revealed Kosovo’s offer to establish a permanent US military base at Camp Bondsteel. He said that during his meeting in Prishtina, Kosovo PM Albin Kurti has proposed a",
+            "url": "https://x.com/i/web/status/2110209595805168116",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-14T03:22:28.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 9
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Agenzia Nova: Kosovo-Italia: ambasciatore Antonini incontra Kurti, focus su stabilita' istituzionale 09 ott 18:08 - (Agenzia Nova) - L'ambasciatore d'Italia a Pristina, Maurizio Antonini, ha incontrato il primo ministro del Kosovo, Albin Kurti,... (Alt) Kosovo-Italy: Ambassador Antonini meets with Kurti, focus on institutional stability Oct 09 18:08 - (Agenz",
@@ -568,35 +520,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Kosovo: Justina Shiroka-Pula eletta presidente con 81 voti, evitato il ritorno alle urne 07 ott 06:28 - (Agenzia Nova) - Justina Shiroka-Pula e' stata eletta presidente del Kosovo dall'Assemblea nazionale con 81 voti a favore, uno... (Alt) Kosovo: Justina Shiroka-Pula elected president with 81 votes, avoiding a return to the polls. Oct 7 06:28 ",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117397862164184564",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 07 Oct 2026 05:00:15 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -607,30 +530,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 5,
-        "positive_hits": 1,
+        "mentions": 12,
+        "negative_hits": 4,
+        "positive_hits": 2,
         "trusted_hits": 3,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 203,
-        "geopolitical_total": 164,
+        "engagement_total": 6,
+        "raw_engagement_total": 6,
+        "quality_total": 193,
+        "geopolitical_total": 153,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "economic_infrastructure": 3,
+          "foreign_influence": 3,
           "eu_integration": 2,
-          "security": 4,
-          "foreign_influence": 2
+          "security": 3,
+          "government_crisis": 1
         },
         "tag_counts": {
           "kosovo": 1,
-          "montenegro": 10
+          "montenegro": 10,
+          "Koszovó": 1
         },
-        "main_topic": "security",
+        "main_topic": "economic_infrastructure",
         "top_posts": [
           {
             "title": "",
@@ -662,40 +587,6 @@
             "quality_score": 38,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "🟡 Detention | 6/10 Detention of Russian nationals in Montenegro Rybar employees were detained by Montenegrin police for questioning. Security forces claim complex digital equipment and drones were found with the detainees. # OSINT # NewsGroup # Montenegro # Russia",
-            "url": "https://social.vir.group/@analytics/117411229929524430",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Fri, 09 Oct 2026 13:39:51 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 29,
-            "quality_score": 32,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -796,6 +687,35 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "🟡 Detention | 5/10 🇷🇺 🇲🇪 Detention of Mikhail Zvinchuk in Montenegro Project head Mikhail Zvinchuk was detained in Montenegro along with other Russian citizens. # OSINT # NewsGroup # Russia # Montenegro # Detention",
+            "url": "https://social.vir.group/@analytics/117411399755317331",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Fri, 09 Oct 2026 14:23:02 +0000",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 14,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -808,71 +728,27 @@
         "scale": "0-60 risk index",
         "mentions": 3,
         "negative_hits": 1,
-        "positive_hits": 2,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 12,
-        "raw_engagement_total": 12,
-        "quality_total": 70,
-        "geopolitical_total": 67,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 46,
+        "geopolitical_total": 43,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
           "x": 3
         },
         "category_counts": {
-          "security": 2,
-          "government_crisis": 1
+          "government_crisis": 2,
+          "security": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 3
+          "Koszovó": 1,
+          "Észak-Macedónia": 2
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "Last week the Dutch ambassadors from 🇦🇱, 🇧🇦,🇧🇬, 🇭🇷, 🇬🇷, 🇽🇰, 🇲🇪, 🇲🇰, 🇷🇸, 🇸🇮 gathered in Skopje for the annual regional ambassadors’ conference to discuss EU integration, rule of law",
-            "text": "Last week the Dutch ambassadors from 🇦🇱, 🇧🇦,🇧🇬, 🇭🇷, 🇬🇷, 🇽🇰, 🇲🇪, 🇲🇰, 🇷🇸, 🇸🇮 gathered in Skopje for the annual regional ambassadors’ conference to discuss EU integration, rule of law, cooperation in the field of security and stability and economic cooperation.",
-            "url": "https://x.com/i/web/status/2110056496264344050",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-13T17:14:06.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 33,
-            "quality_score": 34,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 11,
-            "raw_engagement": 11,
-            "metrics": {
-              "likes": 8,
-              "reposts": 2,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "Albania has opened all 33 screened EU negotiating chapters and provisionally closed four, while Montenegro has completed three more. Brussels is moving forward with enlargement, bu",
             "text": "Albania has opened all 33 screened EU negotiating chapters and provisionally closed four, while Montenegro has completed three more. Brussels is moving forward with enlargement, but North Macedonia remains held back by its unresolved constitutional dispute with Bulgaria.",
@@ -950,81 +826,32 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Albánia",
-      "social_signal": {
-        "score": 60,
-        "level": "high",
-        "scale": "0-60 risk index",
-        "mentions": 25,
-        "negative_hits": 20,
-        "positive_hits": 2,
-        "trusted_hits": 2,
-        "engagement_total": 61,
-        "raw_engagement_total": 61,
-        "quality_total": 635,
-        "geopolitical_total": 570,
-        "source_counts": {
-          "reddit": 0,
-          "mastodon": 17,
-          "x": 8
-        },
-        "category_counts": {
-          "corruption_rule_of_law": 4,
-          "protest": 9,
-          "security": 10,
-          "foreign_influence": 1,
-          "government_crisis": 1
-        },
-        "tag_counts": {
-          "balkans": 13,
-          "albania": 4,
-          "Albánia": 8
-        },
-        "main_topic": "security",
-        "top_posts": [
+          },
           {
-            "title": "VIOLENT CLASHES IN ALBANIA! Student protests in the capital turned violent as demonstrators smashed shops and clashed with police, who deployed tear gas. The “Flamingo Revolution” ",
-            "text": "VIOLENT CLASHES IN ALBANIA! Student protests in the capital turned violent as demonstrators smashed shops and clashed with police, who deployed tear gas. The “Flamingo Revolution” is demanding PM Edi Rama’s resignation over corruption allegations. 23 detained, 7 injured.",
-            "url": "https://x.com/i/web/status/2110195807957950741",
+            "title": "Just a reminder Ambassadors act on behalf of the President, under the President's instruction. Guilfoyle and Huckabee follow(ed( Trumps geographic bidding. Greece joins Germany Egy",
+            "text": "Just a reminder Ambassadors act on behalf of the President, under the President's instruction. Guilfoyle and Huckabee follow(ed( Trumps geographic bidding. Greece joins Germany Egypt, Kosovo, Libia, North Macedonian, Serbia and my beloved Bulgaria are without US Ambassador",
+            "url": "https://x.com/i/web/status/2110210863260922202",
             "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-14T02:27:40.000Z",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-14T03:27:30.000Z",
             "matched_countries": [
-              "Albánia"
+              "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Albánia": 5
+              "Észak-Macedónia": 5,
+              "Szerbia": 1,
+              "Koszovó": 1
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
               {
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
               }
             ],
-            "geopolitical_score": 45,
-            "quality_score": 46,
+            "geopolitical_score": 9,
+            "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -1036,87 +863,43 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "🇦🇱🇮🇷 Student protesters in Tirana turned a nationwide demonstration over education and social issues violent, hurling bricks and concrete blocks at Albania’s Education Ministry, Re",
-            "text": "🇦🇱🇮🇷 Student protesters in Tirana turned a nationwide demonstration over education and social issues violent, hurling bricks and concrete blocks at Albania’s Education Ministry, Reuters reports. Police responded with tear gas and water cannons after protesters attacked the",
-            "url": "https://x.com/i/web/status/2110167063842955578",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-14T00:33:27.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 41,
-            "quality_score": 45,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "The situation in Tirana is escalating far beyond simple student demonstrations. Protesters attacked the Education Ministry with bricks and concrete blocks, leading to a heavy polic",
-            "text": "The situation in Tirana is escalating far beyond simple student demonstrations. Protesters attacked the Education Ministry with bricks and concrete blocks, leading to a heavy police response involving tear gas and water cannons.",
-            "url": "https://x.com/i/web/status/2110188796771717514",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-14T01:59:49.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 37,
-            "quality_score": 38,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 56,
-            "raw_engagement": 56,
-            "metrics": {
-              "likes": 23,
-              "reposts": 14,
-              "replies": 9,
-              "quotes": 10
-            },
-            "quality": "x_api_filtered"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Albánia",
+      "social_signal": {
+        "score": 60,
+        "level": "high",
+        "scale": "0-60 risk index",
+        "mentions": 24,
+        "negative_hits": 20,
+        "positive_hits": 1,
+        "trusted_hits": 0,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 578,
+        "geopolitical_total": 520,
+        "source_counts": {
+          "reddit": 0,
+          "mastodon": 17,
+          "x": 7
+        },
+        "category_counts": {
+          "corruption_rule_of_law": 4,
+          "protest": 9,
+          "security": 8,
+          "foreign_influence": 2,
+          "government_crisis": 1
+        },
+        "tag_counts": {
+          "balkans": 13,
+          "albania": 4,
+          "Albánia": 7
+        },
+        "main_topic": "protest",
+        "top_posts": [
           {
             "title": "",
             "text": "Day 136 of anti-corruption protest in Tirana, Albania Today has been a big day, with a large protest of students outside the Ministry of Education starting around noon. The cops kept cool for a little while, but eventually used tear gas, water cannons, and night sticks and that is continuing hours later. It looks like some bonfires were set in the street. # ",
@@ -1173,6 +956,108 @@
               },
               {
                 "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Spray paint, eggs, water balloons, yes. But no violence from protestors. Cops are there, as are Special Forces. The graffiti says things that protestors have said throughout protests for months. \"Turp!\" = Shame! \"Ju Erdhi Fundi!\" = You are through/your time is up! \"Ministria e krimit\" = Ministry of Crime \"Jep dorëheqjen!\" = Resign! # FlamingoRevolution # Alb",
+            "url": "https://mas.to/@meganL/117433651987658848",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Tue, 13 Oct 2026 12:42:04 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 135 of anti-corruption protest in Tirana, Albania # FlamingoRevolution # Albania # Corruption # Balkans # Europe # Protest \"Citizen resistance continues; today marks the 135th day of the protest.\" 🔴 Vijon Rezistenca e qytetarëve, sot dita e 135 e protestës https://www. youtube.com/watch?v=XQ-Jih2i1FY",
+            "url": "https://mas.to/@meganL/117429116838787891",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Mon, 12 Oct 2026 17:28:43 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 134 of anti-corruption protest in Tirana, Albania 🔴Dita e 134-të e revoltës kundër qeverisë, nuk tërhiqen nga kërkesa për dorëheqjen e Ramës # FlamingoRevolution # Albania # Corruption # Balkans # Europe # Protest https://www. youtube.com/watch?v=Ktz5AWH2zIw",
+            "url": "https://mas.to/@meganL/117423968095256097",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sun, 11 Oct 2026 19:39:20 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
                 "hits": 1,
                 "weight": 8
               }
