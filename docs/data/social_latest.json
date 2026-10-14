@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14 16:16 UTC",
+  "updated_at": "2026-10-14 17:04 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,37 +12,39 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 19
+    "collected": 17
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 41,
+        "score": 54,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 1,
-        "positive_hits": 0,
+        "mentions": 7,
+        "negative_hits": 2,
+        "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 158,
-        "geopolitical_total": 141,
+        "engagement_total": 11,
+        "raw_engagement_total": 11,
+        "quality_total": 214,
+        "geopolitical_total": 195,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 1
+          "x": 3
         },
         "category_counts": {
           "government_crisis": 1,
           "security": 3,
-          "ethnic_tension": 1
+          "ethnic_tension": 1,
+          "protest": 1,
+          "foreign_influence": 1
         },
         "tag_counts": {
           "serbia": 3,
           "kosovo": 1,
-          "Szerbia": 1
+          "Szerbia": 3
         },
         "main_topic": "security",
         "top_posts": [
@@ -133,6 +135,53 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "🚨BREAKING: Major unrest in Tirana as students protest the court ruling concerning Hashim Thaçi. Will the European Union support the student protests in Tirana in the same way it su",
+            "text": "🚨BREAKING: Major unrest in Tirana as students protest the court ruling concerning Hashim Thaçi. Will the European Union support the student protests in Tirana in the same way it supported those in Belgrade? This chaos in the Balkans is undoubtedly the result of Jack Smith and",
+            "url": "https://x.com/i/web/status/2110412519487766831",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-14T16:48:48.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4,
+              "Albánia": 4
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 3,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 42,
+            "quality_score": 43,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 8,
+            "raw_engagement": 8,
+            "metrics": {
+              "likes": 4,
+              "reposts": 4,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "BIRN just published an article about a criminal who used to work for Vučić, primarily on beatings of students, participation in Ćaciland paramilitary camp in the center of #Belgrade , #Serbia , how they infiltrated all protests to make them violent, about the sound cannon. birn.rs/ispovest-cla... Ispovest: Kako SNS organizuje ...",
             "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:sjx3hptnopiz7mtzaexuhgpr/post/3mxqyrv6tws2r",
@@ -167,65 +216,41 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Insider Blows Lid on Serbian Ruling Party’s Use of Hired Thugs https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/14/insider-blows-lid-on-serbian-ruling-partys-use-of-hired-thugs/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/14/insider-blows-lid-on-serbian-ruling-partys-use-of-hired-thugs/bi/",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Wed, 14 Oct 2026 12:30:10 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "ADFD strengthens water security for Serbian agriculture Read more: AletihadNewsCenter UAE",
-            "text": "ADFD strengthens water security for Serbian agriculture Read more: AletihadNewsCenter UAE",
-            "url": "https://x.com/i/web/status/2110399263100588539",
+            "title": "🚨Serbia’s Aleksandar Vučić has opened the door to American ownership of NIS, Serbia’s Russian-controlled national oil company, complicating MOL’s bid for Gazprom Neft’s 56.15 per c",
+            "text": "🚨Serbia’s Aleksandar Vučić has opened the door to American ownership of NIS, Serbia’s Russian-controlled national oil company, complicating MOL’s bid for Gazprom Neft’s 56.15 per cent stake. Losing NIS would deny Hungary a major opportunity to deepen its energy foothold and",
+            "url": "https://x.com/i/web/status/2110408492615979163",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-10-14T15:56:08.000Z",
+            "seen_date": "2026-10-14T16:32:48.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2
+              "Szerbia": 5
             },
-            "event_category": "security",
+            "event_category": "foreign_influence",
             "event_categories": [
               {
-                "category": "security",
+                "category": "foreign_influence",
                 "hits": 1,
-                "weight": 9
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
+            "geopolitical_score": 12,
+            "quality_score": 13,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
+              "likes": 1,
+              "reposts": 1,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -376,76 +401,41 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 48,
-        "level": "high",
+        "score": 32,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 8,
+        "mentions": 6,
         "negative_hits": 1,
-        "positive_hits": 2,
-        "trusted_hits": 2,
-        "engagement_total": 7,
-        "raw_engagement_total": 7,
-        "quality_total": 175,
-        "geopolitical_total": 153,
+        "positive_hits": 4,
+        "trusted_hits": 1,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 143,
+        "geopolitical_total": 126,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 4
+          "x": 2
         },
         "category_counts": {
           "economic_infrastructure": 1,
           "corruption_rule_of_law": 1,
-          "security": 5,
+          "security": 3,
           "government_crisis": 1
         },
         "tag_counts": {
           "kosovo": 4,
-          "Koszovó": 4
+          "Koszovó": 2
         },
         "main_topic": "security",
         "top_posts": [
           {
-            "title": "Kurti Meets NATO and KFOR Commanders to Discuss Security in Kosovo Kosovo AlbinKurti NATO KFOR GeorgeWikoff RobertoVergori Security WesternBalkans Prishtina",
-            "text": "Kurti Meets NATO and KFOR Commanders to Discuss Security in Kosovo Kosovo AlbinKurti NATO KFOR GeorgeWikoff RobertoVergori Security WesternBalkans Prishtina",
-            "url": "https://x.com/i/web/status/2110392050583589184",
+            "title": "Kosovo President Highlights KFOR’s Key Role in National Security at Command Handover Ceremony Kosovo KFOR NATO JustinaShirokaPula ÖzkanUlutaş RobertoVergori Security PeaceAndStabil",
+            "text": "Kosovo President Highlights KFOR’s Key Role in National Security at Command Handover Ceremony Kosovo KFOR NATO JustinaShirokaPula ÖzkanUlutaş RobertoVergori Security PeaceAndStability NATOMembership Prishtina",
+            "url": "https://x.com/i/web/status/2110413700243095654",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-10-14T15:27:28.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 9
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 3,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 31,
-            "quality_score": 35,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🇮🇹 🇽🇰 Italian General Roberto Vergori has assumed command of NATO’s KFOR mission in Kosovo, taking over from Turkish General Özkan Ulutaş. The transfer took place at today’s ceremo",
-            "text": "🇮🇹 🇽🇰 Italian General Roberto Vergori has assumed command of NATO’s KFOR mission in Kosovo, taking over from Turkish General Özkan Ulutaş. The transfer took place at today’s ceremony in Pristina, attended by Italian Defence Minister Guido Crosetto. It completes the handover",
-            "url": "https://x.com/i/web/status/2110385076680733039",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-14T14:59:45.000Z",
+            "seen_date": "2026-10-14T16:53:30.000Z",
             "matched_countries": [
               "Koszovó"
             ],
@@ -456,20 +446,30 @@
             "event_categories": [
               {
                 "category": "security",
-                "hits": 3,
+                "hits": 4,
                 "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
               }
             ],
-            "geopolitical_score": 31,
-            "quality_score": 35,
+            "geopolitical_score": 56,
+            "quality_score": 60,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 1,
             "raw_engagement": 1,
             "metrics": {
-              "likes": 0,
+              "likes": 1,
               "reposts": 0,
-              "replies": 1,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -543,39 +543,73 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇮🇹 📡 Italy’s defence minister has raised the possibility of installing radar systems in Balkan partner countries to strengthen protection for those countries & Italy. Guido Crosett",
-            "text": "🇮🇹 📡 Italy’s defence minister has raised the possibility of installing radar systems in Balkan partner countries to strengthen protection for those countries & Italy. Guido Crosetto outlined the idea at today’s KFOR command handover in Pristina, ANSA reports. The proposal",
-            "url": "https://x.com/i/web/status/2110384483060895834",
+            "title": "Kosovo Assembly to Hold Plenary Session on Thursday Kosovo KosovoAssembly Prishtina Parliament CentralBankOfKosovo RTK MoneyLaundering PoliticalDevelopments",
+            "text": "Kosovo Assembly to Hold Plenary Session on Thursday Kosovo KosovoAssembly Prishtina Parliament CentralBankOfKosovo RTK MoneyLaundering PoliticalDevelopments",
+            "url": "https://x.com/i/web/status/2110404876249526684",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-10-14T14:57:24.000Z",
+            "seen_date": "2026-10-14T16:18:26.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 4
+              "Koszovó": 5
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 2,
+                "category": "government_crisis",
+                "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
+            "geopolitical_score": 14,
+            "quality_score": 15,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 1,
             "raw_engagement": 1,
             "metrics": {
-              "likes": 0,
+              "likes": 1,
               "reposts": 0,
-              "replies": 1,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "Kosovo ‘Clarifies’ Hague War Crimes Court’s Jurisdiction, But to What End? https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/12/kosovo-clarifies-hague-war-crimes-courts-jurisdiction-but-to-what-end/btj/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/12/kosovo-clarifies-hague-war-crimes-courts-jurisdiction-but-to-what-end/btj/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Mon, 12 Oct 2026 05:45:40 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 14,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -791,31 +825,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 25,
-        "level": "medium",
+        "score": 10,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 1,
+        "mentions": 2,
+        "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 50,
-        "geopolitical_total": 43,
+        "quality_total": 28,
+        "geopolitical_total": 23,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 4
+          "x": 2
         },
         "category_counts": {
           "government_crisis": 1,
-          "security": 2,
-          "corruption_rule_of_law": 1
+          "security": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 4
+          "Észak-Macedónia": 2
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "Safer communities take teamwork. 🤝 Berovo’s Local Prevention Council brings police, local institutions and residents together to address safety concerns, with support from the OSCE",
@@ -842,41 +875,6 @@
             "quality_score": 18,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "In fact, it takes 6 to 8 working days for mail from abroad to arrive. Who kept this envelope and read the open letter for 10 to 12 days? I wonder just how far North Macedonia will ",
-            "text": "In fact, it takes 6 to 8 working days for mail from abroad to arrive. Who kept this envelope and read the open letter for 10 to 12 days? I wonder just how far North Macedonia will go when it comes to corruption.",
-            "url": "https://x.com/i/web/status/2110282916328562792",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-14T08:13:49.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 12,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "metrics": {
@@ -921,41 +919,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "How North Macedonia Changed Its Name and Still Got Stuck at the Border",
-            "text": "How North Macedonia Changed Its Name and Still Got Stuck at the Border",
-            "url": "https://x.com/i/web/status/2110301674719900158",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-14T09:28:21.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -967,22 +930,22 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 38,
-        "negative_hits": 31,
-        "positive_hits": 3,
+        "negative_hits": 32,
+        "positive_hits": 5,
         "trusted_hits": 4,
-        "engagement_total": 9,
-        "raw_engagement_total": 9,
-        "quality_total": 1060,
-        "geopolitical_total": 956,
+        "engagement_total": 10,
+        "raw_engagement_total": 10,
+        "quality_total": 1109,
+        "geopolitical_total": 1005,
         "source_counts": {
           "reddit": 0,
           "mastodon": 29,
           "x": 9
         },
         "category_counts": {
-          "government_crisis": 5,
-          "protest": 18,
-          "corruption_rule_of_law": 3,
+          "government_crisis": 4,
+          "protest": 20,
+          "corruption_rule_of_law": 2,
           "ethnic_tension": 1,
           "security": 10,
           "foreign_influence": 1
@@ -992,7 +955,8 @@
           "kosovo": 1,
           "montenegro": 1,
           "albania": 10,
-          "Albánia": 9
+          "Szerbia": 1,
+          "Albánia": 8
         },
         "main_topic": "protest",
         "top_posts": [
@@ -1090,6 +1054,103 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Tens of thousands of students took to the streets of Albania’s capital, Tirana, on Wednesday, setting fire to a government building and two banks while throwing stones at police du",
+            "text": "Tens of thousands of students took to the streets of Albania’s capital, Tirana, on Wednesday, setting fire to a government building and two banks while throwing stones at police during protests against rising education costs and corruption.",
+            "url": "https://x.com/i/web/status/2110413008304513067",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-10-14T16:50:45.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 44,
+            "quality_score": 45,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🚨BREAKING: Major unrest in Tirana as students protest the court ruling concerning Hashim Thaçi. Will the European Union support the student protests in Tirana in the same way it su",
+            "text": "🚨BREAKING: Major unrest in Tirana as students protest the court ruling concerning Hashim Thaçi. Will the European Union support the student protests in Tirana in the same way it supported those in Belgrade? This chaos in the Balkans is undoubtedly the result of Jack Smith and",
+            "url": "https://x.com/i/web/status/2110412519487766831",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-14T16:48:48.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4,
+              "Albánia": 4
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 3,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 42,
+            "quality_score": 43,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 8,
+            "raw_engagement": 8,
+            "metrics": {
+              "likes": 4,
+              "reposts": 4,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "\"LIVE: Albanian students protest over education costs \" Despite the Reuters headline, this is not completely separate from the # FlamingoRevolution . They're using the same chants that have been used since late May. Yes, it's a protest about schools, but it's an anti-corruption protest because it is corruption that makes the schools full of graft and low qua",
             "url": "https://mas.to/@meganL/117438960478281942",
@@ -1127,90 +1188,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "They've broken into the Finance Ministry. Windows are being broken, tables and chairs brought out. And a fire is going along some pipe cladding on its side. It's in the neighborhood with Parliament and the Prime Minister's office. # FlamingoRevolution # Albania # Corruption # Balkans # Europe # Students # Protest https://www. youtube.com/watch?v=IX5-V9bI_MI",
-            "url": "https://mas.to/@meganL/117439853059176581",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 14 Oct 2026 14:59:05 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 37,
-            "quality_score": 40,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "Albanian President Begaj Urges Restraint Amid Escalating Protests in Tirana, Offers Dialogue Albania BajramBegaj Tirana Protests PeacefulProtest RuleOfLaw Police PoliticalDialogue ",
-            "text": "Albanian President Begaj Urges Restraint Amid Escalating Protests in Tirana, Offers Dialogue Albania BajramBegaj Tirana Protests PeacefulProtest RuleOfLaw Police PoliticalDialogue Democracy",
-            "url": "https://x.com/i/web/status/2110399857727000680",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-14T15:58:30.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 6
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 38,
-            "quality_score": 39,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
