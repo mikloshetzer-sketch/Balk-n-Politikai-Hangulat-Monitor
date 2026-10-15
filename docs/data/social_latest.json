@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15 02:31 UTC",
+  "updated_at": "2026-10-15 04:24 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,40 +12,40 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 14
+    "collected": 11
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 60,
+        "score": 45,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 3,
+        "mentions": 5,
+        "negative_hits": 2,
         "positive_hits": 0,
         "trusted_hits": 2,
-        "engagement_total": 10,
-        "raw_engagement_total": 10,
-        "quality_total": 193,
-        "geopolitical_total": 173,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 160,
+        "geopolitical_total": 143,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 4
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 3,
-          "security": 3,
+          "government_crisis": 1,
+          "security": 2,
           "ethnic_tension": 1,
           "protest": 1
         },
         "tag_counts": {
           "serbia": 3,
           "kosovo": 1,
-          "Szerbia": 4
+          "Szerbia": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -168,41 +168,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🟡 EU delegation warns that Serbia's campaign ahead of the 25 October snap parliamentary elections is taking place in a highly polarized environment that could undermine a level pla",
-            "text": "🟡 EU delegation warns that Serbia's campaign ahead of the 25 October snap parliamentary elections is taking place in a highly polarized environment that could undermine a level playing field. 😉 🔵 After a two-day visit to Belgrade, the delegation urged all actors, including",
-            "url": "https://x.com/i/web/status/2110486870715216189",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-14T21:44:15.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "Open Balkan worked after all. Vučić exported his protest management to Tirana: masks, no badges, no accountability. When those who are meant to uphold the laws and principles of th",
             "text": "Open Balkan worked after all. Vučić exported his protest management to Tirana: masks, no badges, no accountability. When those who are meant to uphold the laws and principles of the state are allowed to act with impunity, people are going to question the intent of the state.",
             "url": "https://x.com/i/web/status/2110518758838317527",
@@ -238,6 +203,35 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "Insider Blows Lid on Serbian Ruling Party’s Use of Hired Thugs https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/14/insider-blows-lid-on-serbian-ruling-partys-use-of-hired-thugs/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/14/insider-blows-lid-on-serbian-ruling-partys-use-of-hired-thugs/bi/",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 14 Oct 2026 12:30:10 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 12,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -384,26 +378,27 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 34,
+        "score": 35,
         "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 6,
         "negative_hits": 1,
-        "positive_hits": 3,
-        "trusted_hits": 2,
+        "positive_hits": 2,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 140,
-        "geopolitical_total": 119,
+        "quality_total": 115,
+        "geopolitical_total": 97,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
           "x": 1
         },
         "category_counts": {
-          "security": 4,
+          "security": 3,
           "economic_infrastructure": 1,
-          "corruption_rule_of_law": 1
+          "corruption_rule_of_law": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "kosovo": 5,
@@ -411,41 +406,6 @@
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "Kurti meets NATO and KFOR commanders to discuss security situation and cooperation",
-            "text": "Kurti meets NATO and KFOR commanders to discuss security situation and cooperation",
-            "url": "https://x.com/i/web/status/2110480805935956164",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-14T21:20:09.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 3,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 32,
-            "quality_score": 36,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "RaiNews: L'Italia torna al comando di KFor, la missione Nato in Kosovo Il ministro della Difesa Guido Crosetto alla cerimonia: \"Mettere in sicurezza i Balcani, pensiamo di installare qui dei radar\". Ma il Kosovo resta instabile e diviso Italy returns to command of KFOR, the NATO mission in Kosovo. Defense Minister Guido Crosetti at the ceremony: “Securing th",
@@ -571,6 +531,41 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "I just listed: AORBAN TRENS Women's Cotton Ethnic Printed Straight Kurti With Pant and Dupatta Set (Green, XL), for ₹1,499.00 via",
+            "text": "I just listed: AORBAN TRENS Women's Cotton Ethnic Printed Straight Kurti With Pant and Dupatta Set (Green, XL), for ₹1,499.00 via",
+            "url": "https://x.com/i/web/status/2110586925426045067",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-15T04:21:50.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -831,25 +826,25 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 36,
-        "negative_hits": 32,
+        "mentions": 37,
+        "negative_hits": 33,
         "positive_hits": 0,
-        "trusted_hits": 6,
-        "engagement_total": 67,
-        "raw_engagement_total": 67,
-        "quality_total": 1077,
-        "geopolitical_total": 969,
+        "trusted_hits": 7,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
+        "quality_total": 1181,
+        "geopolitical_total": 1069,
         "source_counts": {
           "reddit": 0,
           "mastodon": 30,
-          "x": 6
+          "x": 7
         },
         "category_counts": {
           "government_crisis": 5,
-          "protest": 23,
+          "protest": 20,
           "corruption_rule_of_law": 2,
           "ethnic_tension": 1,
-          "security": 5
+          "security": 9
         },
         "tag_counts": {
           "balkans": 18,
@@ -857,10 +852,60 @@
           "montenegro": 1,
           "albania": 10,
           "Szerbia": 1,
-          "Albánia": 5
+          "Albánia": 6
         },
         "main_topic": "protest",
         "top_posts": [
+          {
+            "title": "Police used water cannons against student protesters in Tirana, Albania, as demonstrations entered a second day. The protests have expanded into the broader Flamingo movement, whic",
+            "text": "Police used water cannons against student protesters in Tirana, Albania, as demonstrations entered a second day. The protests have expanded into the broader Flamingo movement, which is demanding Prime Minister Edi Rama’s resignation over alleged corruption. Demonstrators have",
+            "url": "https://x.com/i/web/status/2110585409625608450",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-10-15T04:15:49.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 3,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 62,
+            "quality_score": 63,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Domani: Meloni: «L’intesa di Trump sul gasolio russo è rischiosa e legittima Mosca». Sul bilancio Ue: «Accordo solo quando sarà giusto per l’Italia» La premier: «L’alternativa alle porte aperte è sempre esistita». Sul Golfo chiede più navi per la missione Aspides. E avverte Bruxelles: «Non firmeremo un accordo non vantaggioso per rispettare una data». Priori",
@@ -999,25 +1044,20 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Police used water cannons against student protesters in Albania's capital, Tirana, as clashes entered a second day. Demonstrators joined the broader anti-government Flamingo moveme",
-            "text": "Police used water cannons against student protesters in Albania's capital, Tirana, as clashes entered a second day. Demonstrators joined the broader anti-government Flamingo movement, which is demanding the resignation of Prime Minister Edi Rama over alleged corruption. The",
-            "url": "https://x.com/i/web/status/2110548739748516042",
+            "title": "Chaos in Tirana 🇦🇱 Student protests over education costs and corruption turned violent , a government building and two banks set ablaze, stones hurled at police, who answered with ",
+            "text": "Chaos in Tirana 🇦🇱 Student protests over education costs and corruption turned violent , a government building and two banks set ablaze, stones hurled at police, who answered with water cannons and tear gas. Tens of thousands on the streets. Albania TiranaProtests",
+            "url": "https://x.com/i/web/status/2110586455894679557",
             "source": "x",
             "tag": "Albánia",
-            "seen_date": "2026-10-15T01:50:06.000Z",
+            "seen_date": "2026-10-15T04:19:58.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 9
+              "Albánia": 5
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
               {
                 "category": "security",
                 "hits": 1,
@@ -1025,67 +1065,33 @@
               },
               {
                 "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 46,
-            "quality_score": 47,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "\"LIVE: Albanian students protest over education costs \" Despite the Reuters headline, this is not completely separate from the # FlamingoRevolution . They're using the same chants that have been used since late May. Yes, it's a protest about schools, but it's an anti-corruption protest because it is corruption that makes the schools full of graft and low qua",
-            "url": "https://mas.to/@meganL/117438960478281942",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 14 Oct 2026 11:12:05 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 2
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
                 "hits": 2,
                 "weight": 8
               },
               {
-                "category": "protest",
+                "category": "corruption_rule_of_law",
                 "hits": 1,
                 "weight": 8
               },
               {
-                "category": "economic_infrastructure",
+                "category": "foreign_influence",
                 "hits": 1,
-                "weight": 4
+                "weight": 8
               }
             ],
-            "geopolitical_score": 36,
-            "quality_score": 41,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "geopolitical_score": 44,
+            "quality_score": 45,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
