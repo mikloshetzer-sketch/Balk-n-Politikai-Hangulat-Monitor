@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15 21:17 UTC",
+  "updated_at": "2026-10-16 02:25 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 15
   },
   "countries": [
     {
@@ -21,32 +21,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 3,
-        "positive_hits": 1,
+        "mentions": 10,
+        "negative_hits": 6,
+        "positive_hits": 0,
         "trusted_hits": 4,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 200,
-        "geopolitical_total": 169,
+        "engagement_total": 18,
+        "raw_engagement_total": 18,
+        "quality_total": 225,
+        "geopolitical_total": 195,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 7,
-          "x": 2
+          "mastodon": 6,
+          "x": 4
         },
         "category_counts": {
           "foreign_influence": 3,
-          "corruption_rule_of_law": 1,
+          "corruption_rule_of_law": 2,
           "protest": 1,
-          "government_crisis": 1,
           "ethnic_tension": 2,
-          "security": 1
+          "government_crisis": 2
         },
         "tag_counts": {
-          "serbia": 5,
+          "serbia": 4,
           "kosovo": 1,
           "bosnia": 1,
-          "Szerbia": 2
+          "Szerbia": 3,
+          "Koszovó": 1
         },
         "main_topic": "foreign_influence",
         "top_posts": [
@@ -96,6 +96,48 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "This is NOT the Flamingo revolution. ’s and ’s client, Sali Berisha, along with foreign entities possibly connected to Dodik and Vučić, has taken the protests hostage. And yet, thi",
+            "text": "This is NOT the Flamingo revolution. ’s and ’s client, Sali Berisha, along with foreign entities possibly connected to Dodik and Vučić, has taken the protests hostage. And yet, this violence will be pinned once again on President Trump and his",
+            "url": "https://x.com/i/web/status/2110870600239509826",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-15T23:09:03.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Szerbia": 4,
+              "Bosznia-Hercegovina": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 13,
+            "raw_engagement": 13,
+            "metrics": {
+              "likes": 10,
+              "reposts": 1,
+              "replies": 1,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -195,35 +237,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "“ # Serbia ’s authoritarian ruler personally intervened to push an allegedly illegal scheme to hand over a protected historic site in # Belgrade for a # Trump tower. It is now a landmark indictment of senior figures from his regime on charges of abuse of public office. The criminal case is believed to be the first resulting from Trumps’ global moneymaking ca",
-            "url": "https://mastodon.social/@AnnaAnthro/117445153025477591",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Thu, 15 Oct 2026 13:26:56 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 16,
-            "quality_score": 21,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -231,28 +244,30 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 22,
+        "score": 33,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
+        "mentions": 4,
+        "negative_hits": 2,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 85,
-        "geopolitical_total": 74,
+        "engagement_total": 13,
+        "raw_engagement_total": 13,
+        "quality_total": 114,
+        "geopolitical_total": 102,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "ethnic_tension": 2,
-          "foreign_influence": 1
+          "foreign_influence": 1,
+          "government_crisis": 1
         },
         "tag_counts": {
-          "bosnia": 3
+          "bosnia": 3,
+          "Koszovó": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -299,6 +314,48 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "This is NOT the Flamingo revolution. ’s and ’s client, Sali Berisha, along with foreign entities possibly connected to Dodik and Vučić, has taken the protests hostage. And yet, thi",
+            "text": "This is NOT the Flamingo revolution. ’s and ’s client, Sali Berisha, along with foreign entities possibly connected to Dodik and Vučić, has taken the protests hostage. And yet, this violence will be pinned once again on President Trump and his",
+            "url": "https://x.com/i/web/status/2110870600239509826",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-15T23:09:03.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Szerbia": 4,
+              "Bosznia-Hercegovina": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 13,
+            "raw_engagement": 13,
+            "metrics": {
+              "likes": 10,
+              "reposts": 1,
+              "replies": 1,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -371,71 +428,34 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 56,
-        "level": "high",
+        "score": 27,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 9,
+        "mentions": 5,
         "negative_hits": 1,
-        "positive_hits": 1,
-        "trusted_hits": 2,
+        "positive_hits": 2,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 193,
-        "geopolitical_total": 171,
+        "quality_total": 93,
+        "geopolitical_total": 78,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 5
+          "x": 1
         },
         "category_counts": {
-          "security": 6,
+          "security": 2,
           "economic_infrastructure": 1,
           "corruption_rule_of_law": 1,
-          "ethnic_tension": 1
+          "government_crisis": 1
         },
         "tag_counts": {
           "kosovo": 4,
-          "Szerbia": 1,
-          "Koszovó": 4
+          "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "🚨 [FLASH OSINT] | PRISTINA 🇽🇰🇷🇸 Texas Military Department: KFOR 32 Transfer of Authority in Kosovo - Texas Border Business • Units: NATO KFOR Peacekeeping Force • Source: Balkan De",
-            "text": "🚨 [FLASH OSINT] | PRISTINA 🇽🇰🇷🇸 Texas Military Department: KFOR 32 Transfer of Authority in Kosovo - Texas Border Business • Units: NATO KFOR Peacekeeping Force • Source: Balkan Defense & Border What is your tactical assessment? 👇 OSINT Kosovo Serbia Balkans",
-            "url": "https://x.com/i/web/status/2110835114502701113",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-15T20:48:03.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5,
-              "Szerbia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 6,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 58,
-            "quality_score": 62,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "RaiNews: L'Italia torna al comando di KFor, la missione Nato in Kosovo Il ministro della Difesa Guido Crosetto alla cerimonia: \"Mettere in sicurezza i Balcani, pensiamo di installare qui dei radar\". Ma il Kosovo resta instabile e diviso Italy returns to command of KFOR, the NATO mission in Kosovo. Defense Minister Guido Crosetti at the ceremony: “Securing th",
@@ -500,33 +520,57 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "💧 Meet Sokol Xhafa, Water Infrastructure Expert at the World Bank-financed FLOWS Programme, at Balkan Summit 2026! Explore dams, water security & climate resilience. 📅 18–21 Oct | ",
-            "text": "💧 Meet Sokol Xhafa, Water Infrastructure Expert at the World Bank-financed FLOWS Programme, at Balkan Summit 2026! Explore dams, water security & climate resilience. 📅 18–21 Oct | Prishtina 🎟️ By invitation 🔗",
-            "url": "https://x.com/i/web/status/2110840055841604082",
+            "title": "",
+            "text": "Kosovo ‘Clarifies’ Hague War Crimes Court’s Jurisdiction, But to What End? https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/12/kosovo-clarifies-hague-war-crimes-courts-jurisdiction-but-to-what-end/btj/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/12/kosovo-clarifies-hague-war-crimes-courts-jurisdiction-but-to-what-end/btj/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Mon, 12 Oct 2026 05:45:40 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 14,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Deputies from the PDK, LDK, Alliance and Serb List were absent from the chamber during the votes, while Prime Minister Albin Kurti announced that the Civil Code would be resubmitte",
+            "text": "Deputies from the PDK, LDK, Alliance and Serb List were absent from the chamber during the votes, while Prime Minister Albin Kurti announced that the Civil Code would be resubmitted for review and that support for former KLA leaders would be included in …",
+            "url": "https://x.com/i/web/status/2110909418632077414",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-10-15T21:07:41.000Z",
+            "seen_date": "2026-10-16T01:43:18.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
               "Koszovó": 4
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
+            "geopolitical_score": 10,
+            "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -540,46 +584,35 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "🚆 Meet Kaltrina Zekolli Shaqiri, North Macedonia’s Deputy Minister of Transport, at Balkan Summit 2026! Discuss roads, railways & cross-border connectivity. 📅 18–21 Oct | Prishtina",
-            "text": "🚆 Meet Kaltrina Zekolli Shaqiri, North Macedonia’s Deputy Minister of Transport, at Balkan Summit 2026! Discuss roads, railways & cross-border connectivity. 📅 18–21 Oct | Prishtina 🎟️ By invitation 🔗",
-            "url": "https://x.com/i/web/status/2110838375771209945",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-15T21:01:00.000Z",
+            "title": "",
+            "text": "Mon blogue expose des gestes écocitoyens et des technologies vertes, dans le domaine du logement, du jardinage, du transport et de l'énergie, du textile et de la mode, l'agriculture et l'alimentation, la santé et le bien-être, la finance responsable, ainsi que des références de livres, et de documentaires. Plus https://www. revolutionverte.fr # Maldives # Mo",
+            "url": "https://mastodon.social/@Rinaldo75/117428313641146879",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Mon, 12 Oct 2026 14:04:27 +0000",
             "matched_countries": [
-              "Észak-Macedónia",
-              "Koszovó"
+              "Koszovó",
+              "Montenegró"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Koszovó": 4
+              "Koszovó": 1,
+              "Montenegró": 1
             },
-            "event_category": "security",
+            "event_category": "economic_infrastructure",
             "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
               {
                 "category": "economic_infrastructure",
                 "hits": 1,
                 "weight": 4
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
-            "source_reliability": 2,
+            "geopolitical_score": 7,
+            "quality_score": 10,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -590,21 +623,21 @@
         "score": 46,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
+        "mentions": 11,
         "negative_hits": 1,
-        "positive_hits": 5,
+        "positive_hits": 4,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 231,
-        "geopolitical_total": 193,
+        "quality_total": 220,
+        "geopolitical_total": 185,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 12,
+          "mastodon": 11,
           "x": 0
         },
         "category_counts": {
-          "economic_infrastructure": 3,
+          "economic_infrastructure": 2,
           "security": 3,
           "eu_integration": 3,
           "foreign_influence": 2,
@@ -612,9 +645,9 @@
         },
         "tag_counts": {
           "kosovo": 1,
-          "montenegro": 11
+          "montenegro": 10
         },
-        "main_topic": "economic_infrastructure",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -799,52 +832,48 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 20,
-        "level": "medium",
+        "score": 19,
+        "level": "low",
         "scale": "0-60 risk index",
         "mentions": 4,
         "negative_hits": 0,
-        "positive_hits": 1,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 49,
-        "geopolitical_total": 45,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 50,
+        "geopolitical_total": 46,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
           "x": 4
         },
         "category_counts": {
-          "security": 3,
-          "government_crisis": 1
+          "government_crisis": 2,
+          "security": 2
         },
         "tag_counts": {
-          "Szerbia": 1,
-          "Koszovó": 1,
-          "Észak-Macedónia": 2
+          "Észak-Macedónia": 4
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "🚆 Kosovo’s Railway Line 10: Planned rehabilitation from the Serbian border through Fushë Kosovë to North Macedonia! Explore rail engineering & infrastructure opportunities at Balka",
-            "text": "🚆 Kosovo’s Railway Line 10: Planned rehabilitation from the Serbian border through Fushë Kosovë to North Macedonia! Explore rail engineering & infrastructure opportunities at Balkan Summit 2026. 🌍 Register:",
-            "url": "https://x.com/i/web/status/2110841319471862163",
+            "title": "German company Kromberg & Schubert will launch a new project in Bitola to produce components for automotive giant Audi. Prime Minister Hristijan Mickoski said the investment is exp",
+            "text": "German company Kromberg & Schubert will launch a new project in Bitola to produce components for automotive giant Audi. Prime Minister Hristijan Mickoski said the investment is expected to create 2,000 new jobs over the next four years.",
+            "url": "https://x.com/i/web/status/2110848556001100263",
             "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-15T21:12:42.000Z",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-15T21:41:28.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Szerbia": 2,
-              "Koszovó": 1
+              "Észak-Macedónia": 4
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               },
@@ -854,8 +883,8 @@
                 "weight": 4
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
+            "geopolitical_score": 14,
+            "quality_score": 15,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -869,19 +898,19 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "🚆 Meet Kaltrina Zekolli Shaqiri, North Macedonia’s Deputy Minister of Transport, at Balkan Summit 2026! Discuss roads, railways & cross-border connectivity. 📅 18–21 Oct | Prishtina",
-            "text": "🚆 Meet Kaltrina Zekolli Shaqiri, North Macedonia’s Deputy Minister of Transport, at Balkan Summit 2026! Discuss roads, railways & cross-border connectivity. 📅 18–21 Oct | Prishtina 🎟️ By invitation 🔗",
-            "url": "https://x.com/i/web/status/2110838375771209945",
+            "title": "🚆 Kosovo’s Railway Line 10: Planned rehabilitation from the Serbian border through Fushë Kosovë to North Macedonia! Explore rail engineering & infrastructure opportunities at Balka",
+            "text": "🚆 Kosovo’s Railway Line 10: Planned rehabilitation from the Serbian border through Fushë Kosovë to North Macedonia! Explore rail engineering & infrastructure opportunities at Balkan Summit 2026. 🌍 Register:",
+            "url": "https://x.com/i/web/status/2110841319471862163",
             "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-15T21:01:00.000Z",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-15T21:12:42.000Z",
             "matched_countries": [
-              "Észak-Macedónia",
-              "Koszovó"
+              "Észak-Macedónia"
             ],
             "country_confidence": {
               "Észak-Macedónia": 5,
-              "Koszovó": 4
+              "Szerbia": 2,
+              "Koszovó": 1
             },
             "event_category": "security",
             "event_categories": [
@@ -935,10 +964,10 @@
             "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 0,
+              "likes": 1,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -990,74 +1019,37 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 34,
-        "negative_hits": 30,
+        "mentions": 33,
+        "negative_hits": 29,
         "positive_hits": 0,
-        "trusted_hits": 8,
-        "engagement_total": 7,
-        "raw_engagement_total": 7,
-        "quality_total": 1143,
-        "geopolitical_total": 1035,
+        "trusted_hits": 6,
+        "engagement_total": 11,
+        "raw_engagement_total": 11,
+        "quality_total": 1114,
+        "geopolitical_total": 1015,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 29,
-          "x": 5
+          "mastodon": 27,
+          "x": 6
         },
         "category_counts": {
-          "government_crisis": 8,
+          "government_crisis": 6,
           "protest": 16,
-          "security": 7,
-          "corruption_rule_of_law": 2,
-          "ethnic_tension": 1
+          "security": 8,
+          "corruption_rule_of_law": 1,
+          "ethnic_tension": 1,
+          "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 18,
           "kosovo": 1,
           "montenegro": 1,
-          "albania": 9,
+          "albania": 7,
+          "Szerbia": 1,
           "Albánia": 5
         },
         "main_topic": "protest",
         "top_posts": [
-          {
-            "title": "",
-            "text": "Albanian students protest over education, jobs, clash with police Demonstrators and riot police clashed in Albania's capital on Wednesday in a second straight day of violence triggered by student protests calling for better university conditions and Prime Minister Edi Rama's resignation. Protesters formed makeshift barricades in the capital, Tirana, while ri",
-            "url": "https://mastodon.social/@publicnewsfeed/117444756437009365",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Thu, 15 Oct 2026 11:46:04 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 10
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 54,
-            "quality_score": 57,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Police and protesters face off in Albania on third day of anti-govt demonstrations • FRANCE 24 NOTE: Anti-corruption demonstrations calling for gov't resignations have been going on for MUCH LONGER THAN THREE DAYS Today is Day 138 of consecutive days/nights of protest. It's just that it's taken a turn for different tactics as of 3 days ago. # FlamingoRevolut",
@@ -1235,6 +1227,45 @@
             "quality_score": 53,
             "source_reliability": 5,
             "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "According to reporters, the protestors got together around 8am this morning in Tirana (whereas yesterday the called-for assembly that escalated was started at noon). Students boycott classes in Tirana (not just universities but many high schools). I've heard reporters mention student protests in the main port city of Durrës as well as the northern border cit",
+            "url": "https://mas.to/@meganL/117444624432636401",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Thu, 15 Oct 2026 11:12:30 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 3,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 44,
+            "quality_score": 47,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
