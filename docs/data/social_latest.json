@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16 20:20 UTC",
+  "updated_at": "2026-10-16 20:56 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,42 +12,41 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 15
+    "collected": 19
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 47,
+        "score": 40,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
+        "mentions": 6,
         "negative_hits": 1,
         "positive_hits": 3,
-        "trusted_hits": 3,
-        "engagement_total": 72,
-        "raw_engagement_total": 72,
-        "quality_total": 179,
-        "geopolitical_total": 158,
+        "trusted_hits": 2,
+        "engagement_total": 18,
+        "raw_engagement_total": 18,
+        "quality_total": 162,
+        "geopolitical_total": 145,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 4
+          "x": 3
         },
         "category_counts": {
-          "foreign_influence": 2,
+          "foreign_influence": 1,
           "ethnic_tension": 2,
-          "security": 2,
-          "government_crisis": 1
+          "government_crisis": 2,
+          "security": 1
         },
         "tag_counts": {
           "serbia": 1,
           "kosovo": 1,
           "bosnia": 1,
-          "Szerbia": 3,
-          "Koszovó": 1
+          "Szerbia": 3
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "ethnic_tension",
         "top_posts": [
           {
             "title": "",
@@ -97,35 +96,40 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "The KFOR Commander, Major General Roberto Vergori, met with the Head of the NATO Military Liaison Office in Belgrade, Brigadier General Antonio Stasi. KFOR NATO ProudPurposeProgres",
-            "text": "The KFOR Commander, Major General Roberto Vergori, met with the Head of the NATO Military Liaison Office in Belgrade, Brigadier General Antonio Stasi. KFOR NATO ProudPurposeProgress AsOneTeam",
-            "url": "https://x.com/i/web/status/2111174866753716695",
+            "title": "🔴 Slovak Prime Minister Robert Fico publicly supports Serbian President Aleksandar Vučić, emphasizing the need for leaders who prioritize national interests over foreign demands. S",
+            "text": "🔴 Slovak Prime Minister Robert Fico publicly supports Serbian President Aleksandar Vučić, emphasizing the need for leaders who prioritize national interests over foreign demands. Stay updated on geopolitical shifts with tracking meaningful changes in",
+            "url": "https://x.com/i/web/status/2111194622391193647",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-10-16T19:18:06.000Z",
+            "seen_date": "2026-10-16T20:36:36.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 4
+              "Szerbia": 9
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 3,
+                "category": "government_crisis",
+                "hits": 2,
                 "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 32,
-            "quality_score": 36,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 8,
-            "raw_engagement": 8,
+            "geopolitical_score": 27,
+            "quality_score": 28,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 7,
-              "reposts": 1,
+              "likes": 0,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
@@ -156,10 +160,10 @@
             "quality_score": 27,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 3,
+            "raw_engagement": 3,
             "metrics": {
-              "likes": 0,
+              "likes": 3,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -347,33 +351,33 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 24,
+        "score": 29,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 5,
         "negative_hits": 1,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 70,
-        "geopolitical_total": 58,
+        "quality_total": 81,
+        "geopolitical_total": 68,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "security": 1,
           "economic_infrastructure": 1,
           "corruption_rule_of_law": 1,
-          "government_crisis": 1
+          "government_crisis": 2
         },
         "tag_counts": {
           "kosovo": 3,
-          "Koszovó": 1
+          "Koszovó": 2
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -432,6 +436,41 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "25 year old when he joined KLA 29 yeard old when he held talks about Kosovo's status in Ramboulliet 30 years old when Kosovo was liberated 39 when he became PM & Declared 🇽🇰 47 whe",
+            "text": "25 year old when he joined KLA 29 yeard old when he held talks about Kosovo's status in Ramboulliet 30 years old when Kosovo was liberated 39 when he became PM & Declared 🇽🇰 47 when he became President Kurti could NEVER... Hashim Thaçi 👑",
+            "url": "https://x.com/i/web/status/2111193684641218766",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-16T20:32:53.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "Kosovo Prime Minister Albin Kurti expressed his gratitude to the deputies who approved, at second reading, amendments and supplements to the Law on the Prevention of Money Launderi",
@@ -856,23 +895,23 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 36,
-        "negative_hits": 28,
-        "positive_hits": 2,
+        "mentions": 42,
+        "negative_hits": 32,
+        "positive_hits": 4,
         "trusted_hits": 7,
-        "engagement_total": 39,
-        "raw_engagement_total": 39,
-        "quality_total": 1146,
-        "geopolitical_total": 1036,
+        "engagement_total": 45,
+        "raw_engagement_total": 45,
+        "quality_total": 1306,
+        "geopolitical_total": 1190,
         "source_counts": {
           "reddit": 0,
           "mastodon": 30,
-          "x": 6
+          "x": 12
         },
         "category_counts": {
-          "protest": 16,
-          "security": 12,
-          "government_crisis": 6,
+          "protest": 15,
+          "security": 13,
+          "government_crisis": 12,
           "ethnic_tension": 2
         },
         "tag_counts": {
@@ -880,9 +919,8 @@
           "kosovo": 1,
           "montenegro": 1,
           "albania": 11,
-          "Szerbia": 1,
-          "Koszovó": 1,
-          "Albánia": 4
+          "Koszovó": 2,
+          "Albánia": 10
         },
         "main_topic": "protest",
         "top_posts": [
