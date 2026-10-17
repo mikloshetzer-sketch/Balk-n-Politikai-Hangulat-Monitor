@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17 04:11 UTC",
+  "updated_at": "2026-10-17 09:57 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,38 +12,40 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 12
+    "collected": 9
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 37,
-        "level": "medium",
+        "score": 49,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 2,
+        "mentions": 5,
+        "negative_hits": 3,
         "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 109,
-        "geopolitical_total": 97,
+        "trusted_hits": 2,
+        "engagement_total": 33,
+        "raw_engagement_total": 33,
+        "quality_total": 164,
+        "geopolitical_total": 148,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "foreign_influence": 1,
           "ethnic_tension": 2,
-          "government_crisis": 1
+          "government_crisis": 1,
+          "security": 1
         },
         "tag_counts": {
           "serbia": 1,
           "kosovo": 1,
           "bosnia": 1,
-          "Szerbia": 1
+          "Szerbia": 1,
+          "Koszovó": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -93,6 +95,87 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Serbian 🇷🇸 leader for past 12 years seeks to perpetuate his rule by running in parliamentary election as he is now ineligible to run again for President. Young people have mobilise",
+            "text": "Serbian 🇷🇸 leader for past 12 years seeks to perpetuate his rule by running in parliamentary election as he is now ineligible to run again for President. Young people have mobilised strong opposition against corruption in country.",
+            "url": "https://x.com/i/web/status/2111393943887987087",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-17T09:48:38.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 38,
+            "quality_score": 39,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 4,
+            "raw_engagement": 4,
+            "metrics": {
+              "likes": 2,
+              "reposts": 2,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🚨HUGE: SLOVAKIA’S PRIME MINISTER ROBERT FICO TELLS SERBIA WE WILL NEVER LET YOU DOWN ON KOSOVO — “WE WILL NOT BE INFLUENCED BY PRESSURE” Slovakia is a Slavic EU and NATO state. Ser",
+            "text": "🚨HUGE: SLOVAKIA’S PRIME MINISTER ROBERT FICO TELLS SERBIA WE WILL NEVER LET YOU DOWN ON KOSOVO — “WE WILL NOT BE INFLUENCED BY PRESSURE” Slovakia is a Slavic EU and NATO state. Serbia is a Slavic country in the Balkans that does not recognize Kosovo’s independence. In Belgrade,",
+            "url": "https://x.com/i/web/status/2111373149321183278",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-17T08:26:00.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 25,
+            "quality_score": 29,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 29,
+            "raw_engagement": 29,
+            "metrics": {
+              "likes": 20,
+              "reposts": 6,
+              "replies": 2,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -158,41 +241,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "🇷🇸🗳️ Serbia’s October 25 election faces scrutiny as international observers raise concerns over alleged voter intimidation and irregularities. Vučić’s camp faces mounting oppositio",
-            "text": "🇷🇸🗳️ Serbia’s October 25 election faces scrutiny as international observers raise concerns over alleged voter intimidation and irregularities. Vučić’s camp faces mounting opposition challenges. 🇷🇸 Serbia SerbiaElections Democracy BreakingNews",
-            "url": "https://x.com/i/web/status/2111281844217921974",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-17T02:23:12.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -310,31 +358,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 46,
-        "level": "high",
+        "score": 24,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
-        "negative_hits": 3,
+        "mentions": 4,
+        "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 37,
-        "raw_engagement_total": 37,
-        "quality_total": 111,
-        "geopolitical_total": 97,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 70,
+        "geopolitical_total": 58,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 3
+          "x": 1
         },
         "category_counts": {
-          "security": 3,
+          "security": 1,
           "economic_infrastructure": 1,
           "corruption_rule_of_law": 1,
-          "protest": 1
+          "government_crisis": 1
         },
         "tag_counts": {
           "kosovo": 3,
-          "Koszovó": 3
+          "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -368,48 +416,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇦🇱🇽🇰 Albanian police arrested two Kosovo citizens during the violent protests in Tirana. According to a police, they were activists of LVV who said they were protesting to overthro",
-            "text": "🇦🇱🇽🇰 Albanian police arrested two Kosovo citizens during the violent protests in Tirana. According to a police, they were activists of LVV who said they were protesting to overthrow Edi Rama’s government and replace it with a pro-Albin Kurti/LVV government. LVV officials,",
-            "url": "https://x.com/i/web/status/2111218702876098764",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-16T22:12:17.000Z",
-            "matched_countries": [
-              "Albánia",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Albánia": 10,
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 37,
-            "raw_engagement": 37,
-            "metrics": {
-              "likes": 23,
-              "reposts": 1,
-              "replies": 12,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Kosovo ‘Clarifies’ Hague War Crimes Court’s Jurisdiction, But to What End? https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/12/kosovo-clarifies-hague-war-crimes-courts-jurisdiction-but-to-what-end/btj/",
             "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/12/kosovo-clarifies-hague-war-crimes-courts-jurisdiction-but-to-what-end/btj/",
@@ -439,57 +445,22 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Statements by former AAK MP Daut Haradinaj that participants in the protest outside the Assembly of Kosovo had weapons and bombs have drawn a strong response from Faton Peci, mayor",
-            "text": "Statements by former AAK MP Daut Haradinaj that participants in the protest outside the Assembly of Kosovo had weapons and bombs have drawn a strong response from Faton Peci, mayor of Mitrovica and co-chair of the Guxo Party.",
-            "url": "https://x.com/i/web/status/2111226512514978076",
+            "title": "Leonora Kryeziu, Executive Director of the Prishtina Institute for Political Studies explains to Across The Balkans who the new Kosovo president is and how much power she has in th",
+            "text": "Leonora Kryeziu, Executive Director of the Prishtina Institute for Political Studies explains to Across The Balkans who the new Kosovo president is and how much power she has in the country. Full episode:",
+            "url": "https://x.com/i/web/status/2111354020493463984",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-10-16T22:43:19.000Z",
+            "seen_date": "2026-10-17T07:10:00.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
               "Koszovó": 5
             },
-            "event_category": "protest",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 12,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Three officials from the South Police Station in Pristina have been suspended after being suspected of sexual harassment and an unlawful search.",
-            "text": "Three officials from the South Police Station in Pristina have been suspended after being suspected of sexual harassment and an unlawful search.",
-            "url": "https://x.com/i/web/status/2111203566677319830",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-16T21:12:09.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               }
@@ -498,15 +469,46 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 1,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "Mon blogue expose des gestes écocitoyens et des technologies vertes, dans le domaine du logement, du jardinage, du transport et de l'énergie, du textile et de la mode, l'agriculture et l'alimentation, la santé et le bien-être, la finance responsable, ainsi que des références de livres, et de documentaires. Plus https://www. revolutionverte.fr # Maldives # Mo",
+            "url": "https://mastodon.social/@Rinaldo75/117428313641146879",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Mon, 12 Oct 2026 14:04:27 +0000",
+            "matched_countries": [
+              "Koszovó",
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Koszovó": 1,
+              "Montenegró": 1
+            },
+            "event_category": "economic_infrastructure",
+            "event_categories": [
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 7,
+            "quality_score": 10,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -514,7 +516,7 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 40,
+        "score": 42,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 10,
@@ -523,8 +525,8 @@
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 200,
-        "geopolitical_total": 168,
+        "quality_total": 202,
+        "geopolitical_total": 170,
         "source_counts": {
           "reddit": 0,
           "mastodon": 10,
@@ -532,16 +534,16 @@
         },
         "category_counts": {
           "economic_infrastructure": 2,
+          "foreign_influence": 3,
           "security": 2,
-          "eu_integration": 3,
-          "foreign_influence": 2,
+          "eu_integration": 2,
           "government_crisis": 1
         },
         "tag_counts": {
           "kosovo": 1,
           "montenegro": 9
         },
-        "main_topic": "eu_integration",
+        "main_topic": "foreign_influence",
         "top_posts": [
           {
             "title": "",
@@ -688,11 +690,11 @@
           },
           {
             "title": "",
-            "text": "Agenzia Nova: Cina: ministro Esteri Wang da oggi in Azerbaigian, Croazia, Montenegro e Bulgaria 14 ott 06:27 - (Agenzia Nova) - Il ministro degli Esteri della Cina, Wang Yi, partecipera' al settimo vertice della Conferenza sulle misure... (Cip) China: Foreign Minister Wang arrives in Azerbaijan, Croatia, Montenegro and Bulgaria today. Oct 14 06:27 - (Agenzia",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117437419495686036",
+            "text": "Heute # GRÜNE BAG # Europa Hybrid in Berlin und online - hier mit @ tonihofreiter Torben Wöckner, Antje Westhues und Kathrin Schmid von # punktEU https://www. ardsounds.de/sendung/punkteu-d er-europa-podcast-von-wdr-5/urn:ard:show:0f0ee49b2c1ed066/ - über # China # Ukraine # Montenegro # Merz und mehr",
+            "url": "https://mastodon.green/@wettach/117455486986120202",
             "source": "mastodon",
             "tag": "montenegro",
-            "seen_date": "Wed, 14 Oct 2026 04:40:12 +0000",
+            "seen_date": "Sat, 17 Oct 2026 09:15:00 +0000",
             "matched_countries": [
               "Montenegró"
             ],
@@ -728,8 +730,8 @@
         "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
         "quality_total": 48,
         "geopolitical_total": 41,
         "source_counts": {
@@ -811,11 +813,11 @@
             "quality_score": 17,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 4,
-            "raw_engagement": 4,
+            "engagement": 5,
+            "raw_engagement": 5,
             "metrics": {
               "likes": 2,
-              "reposts": 1,
+              "reposts": 2,
               "replies": 0,
               "quotes": 1
             },
@@ -830,32 +832,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 37,
-        "negative_hits": 30,
+        "mentions": 35,
+        "negative_hits": 28,
         "positive_hits": 2,
-        "trusted_hits": 6,
-        "engagement_total": 37,
-        "raw_engagement_total": 37,
-        "quality_total": 1175,
-        "geopolitical_total": 1068,
+        "trusted_hits": 7,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 1158,
+        "geopolitical_total": 1049,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 29,
-          "x": 8
+          "mastodon": 30,
+          "x": 5
         },
         "category_counts": {
           "protest": 16,
-          "security": 13,
-          "government_crisis": 7,
+          "security": 10,
+          "government_crisis": 8,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 17,
           "kosovo": 1,
           "montenegro": 1,
-          "albania": 10,
-          "Koszovó": 1,
-          "Albánia": 7
+          "albania": 11,
+          "Albánia": 5
         },
         "main_topic": "protest",
         "top_posts": [
