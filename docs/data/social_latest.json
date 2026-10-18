@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18 10:53 UTC",
+  "updated_at": "2026-10-18 15:10 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,42 +12,42 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 11
+    "collected": 13
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 55,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 2,
-        "positive_hits": 0,
+        "mentions": 8,
+        "negative_hits": 3,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 22,
-        "raw_engagement_total": 22,
-        "quality_total": 167,
-        "geopolitical_total": 148,
+        "engagement_total": 28,
+        "raw_engagement_total": 28,
+        "quality_total": 198,
+        "geopolitical_total": 178,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 2
+          "x": 3
         },
         "category_counts": {
-          "protest": 2,
+          "protest": 3,
           "foreign_influence": 1,
           "ethnic_tension": 3,
-          "government_crisis": 1
+          "security": 1
         },
         "tag_counts": {
           "serbia": 3,
           "kosovo": 1,
           "bosnia": 1,
-          "Szerbia": 1,
+          "Koszovó": 2,
           "Észak-Macedónia": 1
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "protest",
         "top_posts": [
           {
             "title": "",
@@ -95,6 +95,42 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Chief of the Serbian Armed Forces General Staff, General Milan Mojsilović, has held talks in Belgrade on October 16 with KFOR Commander, Major General Robert Vergori, who assumed t",
+            "text": "Chief of the Serbian Armed Forces General Staff, General Milan Mojsilović, has held talks in Belgrade on October 16 with KFOR Commander, Major General Robert Vergori, who assumed the position two days ago. The meeting addressed the current security situation in Kosovo and",
+            "url": "https://x.com/i/web/status/2111778254516371688",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-18T11:15:45.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -189,48 +225,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "🇲🇰🇷🇸 MICKOSKI & VUČIĆ — GANGING UP AGAINST THE MACEDONIAN MINORITY IN SERBIA? 🔥 ETERNAL SHAME ON VMRO-DPMNE! Instead of defending the Macedonian minority in Serbia, Prime Minister ",
-            "text": "🇲🇰🇷🇸 MICKOSKI & VUČIĆ — GANGING UP AGAINST THE MACEDONIAN MINORITY IN SERBIA? 🔥 ETERNAL SHAME ON VMRO-DPMNE! Instead of defending the Macedonian minority in Serbia, Prime Minister Hristijan Mickoski appears increasingly committed to his political alliance with Aleksandar",
-            "url": "https://x.com/i/web/status/2111566355145093513",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-17T21:13:44.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5,
-              "Észak-Macedónia": 5
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 22,
-            "raw_engagement": 22,
-            "metrics": {
-              "likes": 12,
-              "reposts": 2,
-              "replies": 8,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -348,33 +342,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 46,
-        "level": "high",
+        "score": 19,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 7,
+        "mentions": 3,
         "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 104,
-        "geopolitical_total": 89,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 60,
+        "geopolitical_total": 49,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 4
+          "x": 0
         },
         "category_counts": {
           "security": 1,
           "economic_infrastructure": 1,
-          "corruption_rule_of_law": 1,
-          "ethnic_tension": 4
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
-          "kosovo": 3,
-          "Koszovó": 4
+          "kosovo": 3
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -435,109 +427,35 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "I just listed: AORBAN TRENS Women's Cotton Ethnic Printed Straight Kurti With Pant and Dupatta Set (Brown, 2XL), for ₹1,499.00 via",
-            "text": "I just listed: AORBAN TRENS Women's Cotton Ethnic Printed Straight Kurti With Pant and Dupatta Set (Brown, 2XL), for ₹1,499.00 via",
-            "url": "https://x.com/i/web/status/2111654826434310278",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-18T03:05:17.000Z",
+            "title": "",
+            "text": "Mon blogue expose des gestes écocitoyens et des technologies vertes, dans le domaine du logement, du jardinage, du transport et de l'énergie, du textile et de la mode, l'agriculture et l'alimentation, la santé et le bien-être, la finance responsable, ainsi que des références de livres, et de documentaires. Plus https://www. revolutionverte.fr # Maldives # Mo",
+            "url": "https://mastodon.social/@Rinaldo75/117428313641146879",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Mon, 12 Oct 2026 14:04:27 +0000",
             "matched_countries": [
-              "Koszovó"
+              "Koszovó",
+              "Montenegró"
             ],
             "country_confidence": {
-              "Koszovó": 4
+              "Koszovó": 1,
+              "Montenegró": 1
             },
-            "event_category": "ethnic_tension",
+            "event_category": "economic_infrastructure",
             "event_categories": [
               {
-                "category": "ethnic_tension",
+                "category": "economic_infrastructure",
                 "hits": 1,
-                "weight": 10
+                "weight": 4
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
+            "geopolitical_score": 7,
+            "quality_score": 10,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "I just listed: AORBAN TRENS Women's Cotton Ethnic Printed Straight Kurti With Pant and Dupatta Set (Brown, L), for ₹1,499.00 via",
-            "text": "I just listed: AORBAN TRENS Women's Cotton Ethnic Printed Straight Kurti With Pant and Dupatta Set (Brown, L), for ₹1,499.00 via",
-            "url": "https://x.com/i/web/status/2111654571315732618",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-18T03:04:17.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "I just listed: AORBAN TRENS Women's Cotton Ethnic Printed Straight Kurti With Pant and Dupatta Set (Brown, M), for ₹1,499.00 via",
-            "text": "I just listed: AORBAN TRENS Women's Cotton Ethnic Printed Straight Kurti With Pant and Dupatta Set (Brown, M), for ₹1,499.00 via",
-            "url": "https://x.com/i/web/status/2111654380575609056",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-18T03:03:31.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -545,35 +463,35 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 47,
+        "score": 57,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
+        "mentions": 13,
         "negative_hits": 1,
-        "positive_hits": 5,
+        "positive_hits": 7,
         "trusted_hits": 1,
-        "engagement_total": 7,
-        "raw_engagement_total": 7,
-        "quality_total": 239,
-        "geopolitical_total": 206,
+        "engagement_total": 19,
+        "raw_engagement_total": 19,
+        "quality_total": 275,
+        "geopolitical_total": 240,
         "source_counts": {
           "reddit": 0,
           "mastodon": 10,
-          "x": 1
+          "x": 3
         },
         "category_counts": {
           "economic_infrastructure": 2,
           "security": 3,
           "eu_integration": 2,
           "foreign_influence": 2,
-          "government_crisis": 2
+          "government_crisis": 4
         },
         "tag_counts": {
           "kosovo": 1,
           "montenegro": 9,
-          "Montenegró": 1
+          "Montenegró": 3
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -690,6 +608,51 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Montenegrin President Jakov Milatović met with FM Wang Yi in Cetinje. President Milatović stressed that Montenegro’s current foreign policy priority is EU accession, while it also ",
+            "text": "Montenegrin President Jakov Milatović met with FM Wang Yi in Cetinje. President Milatović stressed that Montenegro’s current foreign policy priority is EU accession, while it also attaches great importance to its relations with China. Montenegro firmly adheres to the One-China",
+            "url": "https://x.com/i/web/status/2111810468947861941",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-10-18T13:23:45.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 24,
+            "quality_score": 25,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Agenzia Nova: Montenegro: Russia, adesione nell'Ue impone allineamento alla politica anti Mosca 14 ott 08:59 - (Agenzia Nova) - Anche la sola prospettiva di aderire all'Unione europea obbliga i Paesi candidati ad allinearsi alla politica... (Rum) Montenegro: Russia, EU membership imposes alignment with anti-Moscow policy Oct 14 08:59 - (Agenzia Nova) - Even ",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117438088098091724",
@@ -722,35 +685,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Montenegro: Parlamento respinge mozione per destituire Mandic, oggi voto su riforma costituzionale 14 ott 08:05 - (Agenzia Nova) - Il Parlamento del Montenegro ha respinto la mozione presentata dal Partito democratico dei socialisti (Dps)... (Seb) Montenegro: Parliament rejects motion to dismiss Mandic, today vote on constitutional reform Oct 1",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117437774353777947",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Wed, 14 Oct 2026 06:10:26 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -758,72 +692,31 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 22,
-        "level": "medium",
+        "score": 11,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
+        "mentions": 2,
+        "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 22,
-        "raw_engagement_total": 22,
-        "quality_total": 66,
-        "geopolitical_total": 61,
+        "engagement_total": 29,
+        "raw_engagement_total": 29,
+        "quality_total": 35,
+        "geopolitical_total": 33,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 1,
+          "mastodon": 0,
           "x": 2
         },
         "category_counts": {
-          "security": 2,
+          "security": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
-          "balkans": 1,
           "Észak-Macedónia": 2
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "",
-            "text": "What’s Happening in Albania? 🇦🇱 Why the Country Is Protesting The fellow runs a language-learning channel and is based in Pogradec, Albania's 11th largest city (in the southeast, near the North Macedonian border). He goes into the student aspect of this protest (which was catalyzed back in late May due to corruption in awarding developers permission and corr",
-            "url": "https://mas.to/@meganL/117451283790684105",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Fri, 16 Oct 2026 15:26:04 +0000",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Albánia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 31,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "🇲🇰🇷🇸 MICKOSKI & VUČIĆ — GANGING UP AGAINST THE MACEDONIAN MINORITY IN SERBIA? 🔥 ETERNAL SHAME ON VMRO-DPMNE! Instead of defending the Macedonian minority in Serbia, Prime Minister ",
             "text": "🇲🇰🇷🇸 MICKOSKI & VUČIĆ — GANGING UP AGAINST THE MACEDONIAN MINORITY IN SERBIA? 🔥 ETERNAL SHAME ON VMRO-DPMNE! Instead of defending the Macedonian minority in Serbia, Prime Minister Hristijan Mickoski appears increasingly committed to his political alliance with Aleksandar",
@@ -856,12 +749,12 @@
             "quality_score": 20,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 22,
-            "raw_engagement": 22,
+            "engagement": 26,
+            "raw_engagement": 26,
             "metrics": {
-              "likes": 12,
+              "likes": 14,
               "reposts": 2,
-              "replies": 8,
+              "replies": 10,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -897,11 +790,11 @@
             "quality_score": 15,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 3,
+            "raw_engagement": 3,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 1,
+              "reposts": 2,
               "replies": 0,
               "quotes": 0
             },
@@ -916,79 +809,35 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 33,
-        "negative_hits": 28,
-        "positive_hits": 1,
+        "mentions": 31,
+        "negative_hits": 27,
+        "positive_hits": 2,
         "trusted_hits": 3,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 1007,
-        "geopolitical_total": 908,
+        "quality_total": 996,
+        "geopolitical_total": 907,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 30,
-          "x": 3
+          "mastodon": 26,
+          "x": 5
         },
         "category_counts": {
-          "protest": 13,
+          "government_crisis": 4,
           "security": 12,
+          "protest": 12,
           "corruption_rule_of_law": 2,
-          "ethnic_tension": 1,
-          "government_crisis": 5
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "balkans": 17,
+          "balkans": 18,
           "kosovo": 1,
           "montenegro": 1,
-          "albania": 11,
-          "Albánia": 3
+          "albania": 6,
+          "Albánia": 5
         },
-        "main_topic": "protest",
+        "main_topic": "security",
         "top_posts": [
-          {
-            "title": "",
-            "text": "🇦🇱 ALBANIA | FIFTH DAY OF PROTESTS Violent clashes have intensified in Tirana as students join wider anti-government demonstrations. Protesters are demanding PM Edi Rama's resignation amid concerns over corruption, education and employment. Police report 167 arrests and 132 officers injured. Seven officers have been suspended pending investigations into alle",
-            "url": "https://mastodon.social/@openchronicle/117458396288376478",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Sat, 17 Oct 2026 21:34:52 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 9
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 53,
-            "quality_score": 56,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Domani: Meloni: «L’intesa di Trump sul gasolio russo è rischiosa e legittima Mosca». Sul bilancio Ue: «Accordo solo quando sarà giusto per l’Italia» La premier: «L’alternativa alle porte aperte è sempre esistita». Sul Golfo chiede più navi per la missione Aspides. E avverte Bruxelles: «Non firmeremo un accordo non vantaggioso per rispettare una data». Priori",
@@ -1083,17 +932,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🚨Protests in Albania become violent. The protests are part of an anti-government movement known as Flamingo, which is calling for the resignation of the prime minister, Edi Rama, o",
-            "text": "🚨Protests in Albania become violent. The protests are part of an anti-government movement known as Flamingo, which is calling for the resignation of the prime minister, Edi Rama, over allegations of widespread corruption.",
-            "url": "https://x.com/i/web/status/2111771905350857136",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-18T10:50:31.000Z",
+            "title": "",
+            "text": "In Albania, solidarity grows in response to police violence. Many Albanians said they were shocked by the way law enforcement has treated protesters, most of them students who are demanding the resignation of the Socialist prime minister, Edi Rama; better living conditions; and an end to corruption. At least 120 police officers and 32 protesters were injured",
+            "url": "https://mastodon.mediafaro.org/@mf_analysis/117461972572958466",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Sun, 18 Oct 2026 12:44:22 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 5
+              "Albánia": 6
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -1103,8 +952,13 @@
                 "weight": 9
               },
               {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
                 "category": "protest",
-                "hits": 2,
+                "hits": 1,
                 "weight": 8
               },
               {
@@ -1113,19 +967,13 @@
                 "weight": 8
               }
             ],
-            "geopolitical_score": 45,
-            "quality_score": 46,
-            "source_reliability": 2,
+            "geopolitical_score": 46,
+            "quality_score": 49,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -1155,6 +1003,50 @@
               {
                 "category": "protest",
                 "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 41,
+            "quality_score": 44,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "I often hear people say, before even trying, \"What can we do?\" What's going on in # Albania right now shows what one or a small group of people can do. By which I mean that there was a larger protest, and some % of the youth there decided they'd had it with months of peaceful protests being ignored by the government and media and started digging up sidewalk ",
+            "url": "https://eldritch.cafe/@ml/117461505108487122",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Sun, 18 Oct 2026 10:45:29 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
                 "weight": 8
               },
               {
