@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19 18:03 UTC",
+  "updated_at": "2026-10-19 22:09 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,41 +12,42 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 18
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 59,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 2,
-        "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 174,
-        "geopolitical_total": 154,
+        "mentions": 9,
+        "negative_hits": 1,
+        "positive_hits": 1,
+        "trusted_hits": 3,
+        "engagement_total": 21,
+        "raw_engagement_total": 21,
+        "quality_total": 206,
+        "geopolitical_total": 180,
         "source_counts": {
-          "reddit": 1,
-          "mastodon": 6,
-          "x": 1
+          "reddit": 0,
+          "mastodon": 5,
+          "x": 4
         },
         "category_counts": {
+          "security": 2,
           "foreign_influence": 2,
-          "protest": 3,
           "ethnic_tension": 2,
-          "security": 1
+          "government_crisis": 3
         },
         "tag_counts": {
-          "serbia": 5,
+          "balkans": 1,
+          "serbia": 2,
           "kosovo": 1,
           "bosnia": 1,
-          "Szerbia": 1
+          "Szerbia": 4
         },
-        "main_topic": "protest",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -97,32 +98,82 @@
           },
           {
             "title": "",
-            "text": "Just a reminder that our students wrote names of their parents and lawyers on their hands, before last 2025 March 15 protest, when sound cannon was used against the people. This hits hard even today, especially with the acknowledgement of their criminals that they were ready for a bloodbath #serbia",
-            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:sjx3hptnopiz7mtzaexuhgpr/post/3my45ux7guk27",
+            "text": "Six days before crucial Serbian parliamentary elections, digital rights investigators report with “high confidence” that two prominent figures connected to the anti-government protest movement were targeted by spyware. # Balkans # Serbia # Pegasus https:// balkaninsight.com/2026/10/19/s erbians-linked-to-protest-movement-allegedly-hit-by-spyware-attacks/bi/",
+            "url": "https://kafeneio.social/@foufoutos/117469307178546989",
             "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sat, 17 Oct 2026 22:39:56 +0000",
+            "tag": "balkans",
+            "seen_date": "Mon, 19 Oct 2026 19:49:39 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 1
+              "Szerbia": 2
             },
-            "event_category": "protest",
+            "event_category": "security",
             "event_categories": [
               {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
                 "category": "protest",
-                "hits": 2,
+                "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "geopolitical_score": 33,
+            "quality_score": 38,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Unironically he should because Vucic has done the most out of many Serbian politicians to bring Serbia closer to NATO and EU integration. Brussels, Washington accords, Gazivode, NS",
+            "text": "Unironically he should because Vucic has done the most out of many Serbian politicians to bring Serbia closer to NATO and EU integration. Brussels, Washington accords, Gazivode, NSE26, OpenBalkan, etc…",
+            "url": "https://x.com/i/web/status/2112300833962369243",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-19T21:52:18.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 30,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -161,41 +212,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "The Integrity Network of the Belgrade Center for Security Policy (BCBP) called on Police Minister Ivica Dacic and Police Director Dragan Vasiljevic to recuse themselves from comman",
-            "text": "The Integrity Network of the Belgrade Center for Security Policy (BCBP) called on Police Minister Ivica Dacic and Police Director Dragan Vasiljevic to recuse themselves from commanding police operations at public gatherings and other actions related to the elections.",
-            "url": "https://x.com/i/web/status/2112231474665578946",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-19T17:16:41.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "MOT descubrió: Dos ciudadanos finlandeses exportaron decenas de millones de electrónicos a Rusia - la máquina de guerra puede utilizar partes para matar civiles https:// yle.fi/a/74-20249082?origin=rss # Elrestodelmundo # Sancionesrusas # invasiónrusa # Finlandia # Sanciones # Economía # Interior # HongKong # Ucrania # Tallinn # Estonia # Serbia # Italia # R",
             "url": "https://social.koti.site/@rss_bot/117462559510454422",
@@ -230,27 +246,30 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 18,
-        "level": "low",
+        "score": 33,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
-        "negative_hits": 1,
+        "mentions": 4,
+        "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 67,
-        "geopolitical_total": 61,
+        "engagement_total": 26,
+        "raw_engagement_total": 26,
+        "quality_total": 90,
+        "geopolitical_total": 82,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 0
+          "x": 2
         },
         "category_counts": {
-          "ethnic_tension": 2
+          "ethnic_tension": 2,
+          "government_crisis": 2
         },
         "tag_counts": {
-          "bosnia": 2
+          "bosnia": 2,
+          "Szerbia": 1,
+          "Koszovó": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -333,6 +352,80 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Such an impressive woman. I’m proud to have served alongside her on the board of directors of the Balkan Youth Foundation, chaired by President Ahtisaari, in the aftermath of the K",
+            "text": "Such an impressive woman. I’m proud to have served alongside her on the board of directors of the Balkan Youth Foundation, chaired by President Ahtisaari, in the aftermath of the Kosovo war. We even shared a burek once at the legendary “Sarajevo” burek shop in downtown Prishtina.",
+            "url": "https://x.com/i/web/status/2112295371938414818",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-19T21:30:35.000Z",
+            "matched_countries": [
+              "Koszovó",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
+              "Bosznia-Hercegovina": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 13,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 5,
+            "raw_engagement": 5,
+            "metrics": {
+              "likes": 4,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "I know vucic and dodik are your strongest allies in the Balkans but I promise as president of austria I will do more for Israel than they have",
+            "text": "I know vucic and dodik are your strongest allies in the Balkans but I promise as president of austria I will do more for Israel than they have",
+            "url": "https://x.com/i/web/status/2112298875176493187",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-19T21:44:31.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Szerbia": 4,
+              "Bosznia-Hercegovina": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 21,
+            "raw_engagement": 21,
+            "metrics": {
+              "likes": 18,
+              "reposts": 1,
+              "replies": 2,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -340,29 +433,29 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 25,
+        "score": 31,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 5,
         "negative_hits": 1,
-        "positive_hits": 1,
+        "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 94,
-        "raw_engagement_total": 94,
-        "quality_total": 80,
-        "geopolitical_total": 73,
+        "engagement_total": 12,
+        "raw_engagement_total": 12,
+        "quality_total": 81,
+        "geopolitical_total": 72,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 2
+          "x": 4
         },
         "category_counts": {
           "security": 1,
-          "government_crisis": 2
+          "government_crisis": 4
         },
         "tag_counts": {
           "kosovo": 1,
-          "Koszovó": 2
+          "Koszovó": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -396,19 +489,19 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Kosovo 🇽🇰 calls on the Albanian Government to address the demands of the protesting youth. The Speaker of the Parliament in Pristina, Albulena Haxhiu, said that a serious approach ",
-            "text": "Kosovo 🇽🇰 calls on the Albanian Government to address the demands of the protesting youth. The Speaker of the Parliament in Pristina, Albulena Haxhiu, said that a serious approach to the protests is needed, not arrogance, as arrogance only fuels the protests. 🇽🇰❤️🇦🇱",
-            "url": "https://x.com/i/web/status/2112216596299096103",
+            "title": "Such an impressive woman. I’m proud to have served alongside her on the board of directors of the Balkan Youth Foundation, chaired by President Ahtisaari, in the aftermath of the K",
+            "text": "Such an impressive woman. I’m proud to have served alongside her on the board of directors of the Balkan Youth Foundation, chaired by President Ahtisaari, in the aftermath of the Kosovo war. We even shared a burek once at the legendary “Sarajevo” burek shop in downtown Prishtina.",
+            "url": "https://x.com/i/web/status/2112295371938414818",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-10-19T16:17:34.000Z",
+            "seen_date": "2026-10-19T21:30:35.000Z",
             "matched_countries": [
               "Koszovó",
-              "Albánia"
+              "Bosznia-Hercegovina"
             ],
             "country_confidence": {
               "Koszovó": 5,
-              "Albánia": 5
+              "Bosznia-Hercegovina": 4
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -416,34 +509,29 @@
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
+            "geopolitical_score": 12,
+            "quality_score": 13,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 92,
-            "raw_engagement": 92,
+            "engagement": 5,
+            "raw_engagement": 5,
             "metrics": {
-              "likes": 64,
-              "reposts": 20,
-              "replies": 5,
-              "quotes": 3
+              "likes": 4,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "🚀 2026 is held under the patronage of the Office of the Prime Minister of Kosovo! Following KosICT, continues OctoberTech, leading to Growth Tank and celebrating innovation & colla",
-            "text": "🚀 2026 is held under the patronage of the Office of the Prime Minister of Kosovo! Following KosICT, continues OctoberTech, leading to Growth Tank and celebrating innovation & collaboration. 📅 Nov 5–6 | Prishtina",
-            "url": "https://x.com/i/web/status/2112210152573001851",
+            "title": "🇽🇰🇧🇪| Belgium’s Prime Minister Bart De Wever has congratulated Kosova’s Prime Minister Albin Kurti on his re-election. In his congratulatory letter, he describes Belgian-Kosovar re",
+            "text": "🇽🇰🇧🇪| Belgium’s Prime Minister Bart De Wever has congratulated Kosova’s Prime Minister Albin Kurti on his re-election. In his congratulatory letter, he describes Belgian-Kosovar relations as \"excellent\" and speaks of \"outstanding\" cooperation with the Republic of Kosova.",
+            "url": "https://x.com/i/web/status/2112255351231844835",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-10-19T15:51:57.000Z",
+            "seen_date": "2026-10-19T18:51:34.000Z",
             "matched_countries": [
               "Koszovó"
             ],
@@ -456,22 +544,87 @@
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 14,
-            "quality_score": 15,
+            "geopolitical_score": 10,
+            "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 4,
+            "raw_engagement": 4,
             "metrics": {
-              "likes": 1,
-              "reposts": 1,
+              "likes": 4,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇽🇰🇸🇮| Slovenia’s Prime Minister Janez Janša has congratulated Kosova’s Prime Minister Albin Kurti on his re-election. In his congratulatory letter, PM Janša spoke of a friendly rel",
+            "text": "🇽🇰🇸🇮| Slovenia’s Prime Minister Janez Janša has congratulated Kosova’s Prime Minister Albin Kurti on his re-election. In his congratulatory letter, PM Janša spoke of a friendly relationship and partnership between Slovenia and the Republic of Kosova, and offered PM Kurti support",
+            "url": "https://x.com/i/web/status/2112256718738440499",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-19T18:57:00.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Belgian Prime Minister Sends Message to Kurti: “We Aim to Strengthen Economic Ties with Kosovo” Kosovo Belgium AlbinKurti BartDeWever KosovoBelgiumRelations",
+            "text": "Belgian Prime Minister Sends Message to Kurti: “We Aim to Strengthen Economic Ties with Kosovo” Kosovo Belgium AlbinKurti BartDeWever KosovoBelgiumRelations",
+            "url": "https://x.com/i/web/status/2112283639052394941",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-19T20:43:58.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 3,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
@@ -694,28 +847,28 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 35,
+        "score": 22,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 3,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 2,
-        "engagement_total": 104,
-        "raw_engagement_total": 104,
-        "quality_total": 83,
-        "geopolitical_total": 72,
+        "engagement_total": 75,
+        "raw_engagement_total": 75,
+        "quality_total": 70,
+        "geopolitical_total": 61,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 5
+          "x": 3
         },
         "category_counts": {
-          "security": 4,
-          "ethnic_tension": 1
+          "government_crisis": 1,
+          "security": 2
         },
         "tag_counts": {
-          "Észak-Macedónia": 5
+          "Észak-Macedónia": 3
         },
         "main_topic": "security",
         "top_posts": [
@@ -744,12 +897,52 @@
             "quality_score": 35,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 48,
-            "raw_engagement": 48,
+            "engagement": 61,
+            "raw_engagement": 61,
             "metrics": {
-              "likes": 34,
-              "reposts": 9,
-              "replies": 5,
+              "likes": 45,
+              "reposts": 10,
+              "replies": 6,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Lets have a referendum in North Macedonia to rename the country to New America so we will be a part of the United States of America. President Donald J. Trump will be happy with th",
+            "text": "Lets have a referendum in North Macedonia to rename the country to New America so we will be a part of the United States of America. President Donald J. Trump will be happy with the outcome and its a WIN WIN.",
+            "url": "https://x.com/i/web/status/2112269630190301481",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-19T19:48:18.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 18,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -779,117 +972,11 @@
             "quality_score": 17,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 10,
-            "raw_engagement": 10,
+            "engagement": 14,
+            "raw_engagement": 14,
             "metrics": {
-              "likes": 9,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Today in international relations history, 2003: Pope John Paul II beatified Mother Teresa. An ethnic Albanian born in Ottoman Skopje who became an Indian citizen, she is claimed by",
-            "text": "Today in international relations history, 2003: Pope John Paul II beatified Mother Teresa. An ethnic Albanian born in Ottoman Skopje who became an Indian citizen, she is claimed by Albania, North Macedonia and India. Created with AI",
-            "url": "https://x.com/i/web/status/2112135133943984208",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-19T10:53:52.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 9,
-              "Albánia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🇲🇰🇪🇺🇩🇪 OPEN ALL UDBA ARCHIVES IN NORTH MACEDONIA NOW! 30+ years after the end of Yugoslav communism, North Macedonia deserves the full truth! I call on the Government of North Mace",
-            "text": "🇲🇰🇪🇺🇩🇪 OPEN ALL UDBA ARCHIVES IN NORTH MACEDONIA NOW! 30+ years after the end of Yugoslav communism, North Macedonia deserves the full truth! I call on the Government of North Macedonia to open all surviving archives of the former Yugoslav secret police,",
-            "url": "https://x.com/i/web/status/2112122377022631986",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-19T10:03:10.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 46,
-            "raw_engagement": 46,
-            "metrics": {
-              "likes": 32,
-              "reposts": 5,
-              "replies": 7,
-              "quotes": 2
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "OPEN THE FILES. 🇲🇰📂 calls on North Macedonia to open all surviving UDBA archives of the Yugoslav secret police. His pick to supervise: Joachim Gauck, ex-head of Germany's Stasi Rec",
-            "text": "OPEN THE FILES. 🇲🇰📂 calls on North Macedonia to open all surviving UDBA archives of the Yugoslav secret police. His pick to supervise: Joachim Gauck, ex-head of Germany's Stasi Records Authority (if he agrees). Truth &gt; cover-ups. FehlingerDoctrine",
-            "url": "https://x.com/i/web/status/2112134975281885583",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-19T10:53:14.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 11,
+              "reposts": 3,
               "replies": 0,
               "quotes": 0
             },
@@ -904,51 +991,50 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 35,
-        "negative_hits": 27,
+        "mentions": 32,
+        "negative_hits": 26,
         "positive_hits": 3,
         "trusted_hits": 4,
-        "engagement_total": 97,
-        "raw_engagement_total": 97,
-        "quality_total": 1066,
-        "geopolitical_total": 965,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 1001,
+        "geopolitical_total": 907,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 29,
-          "x": 6
+          "mastodon": 27,
+          "x": 5
         },
         "category_counts": {
           "security": 11,
-          "protest": 14,
-          "government_crisis": 4,
+          "protest": 13,
+          "government_crisis": 3,
           "corruption_rule_of_law": 1,
           "ethnic_tension": 1,
-          "foreign_influence": 4
+          "foreign_influence": 3
         },
         "tag_counts": {
-          "balkans": 18,
+          "balkans": 17,
           "kosovo": 1,
           "montenegro": 1,
-          "albania": 9,
+          "albania": 8,
           "Koszovó": 1,
-          "Montenegró": 1,
           "Észak-Macedónia": 1,
           "Albánia": 3
         },
         "main_topic": "protest",
         "top_posts": [
           {
-            "title": "Why does Albania's prime minister say mass protests threaten the country's EU membership? Albanian Prime Minister Edi Rama has rejected calls for his resignation amid violent stude",
-            "text": "Why does Albania's prime minister say mass protests threaten the country's EU membership? Albanian Prime Minister Edi Rama has rejected calls for his resignation amid violent student-led protests, warning that the unrest threatens Albania's ambitions to join the European Union",
-            "url": "https://x.com/i/web/status/2112204629887103389",
+            "title": "🇦🇱🚨 ALBANIA ERUPTS — SUPREME COURT OFFICES SET ABLAZE AS ANTI-GOVERNMENT PROTESTS TURN VIOLENT Furious protesters are demanding Prime Minister Edi Rama’s resignation amid allegatio",
+            "text": "🇦🇱🚨 ALBANIA ERUPTS — SUPREME COURT OFFICES SET ABLAZE AS ANTI-GOVERNMENT PROTESTS TURN VIOLENT Furious protesters are demanding Prime Minister Edi Rama’s resignation amid allegations of corruption, economic frustration and anger over government policies",
+            "url": "https://x.com/i/web/status/2112304030886383777",
             "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-10-19T15:30:01.000Z",
+            "tag": "Albánia",
+            "seen_date": "2026-10-19T22:05:00.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 6
+              "Albánia": 5
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -959,17 +1045,17 @@
               },
               {
                 "category": "protest",
-                "hits": 3,
+                "hits": 2,
                 "weight": 8
               },
               {
-                "category": "eu_integration",
+                "category": "corruption_rule_of_law",
                 "hits": 2,
-                "weight": 6
+                "weight": 8
               }
             ],
-            "geopolitical_score": 58,
-            "quality_score": 59,
+            "geopolitical_score": 53,
+            "quality_score": 54,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
