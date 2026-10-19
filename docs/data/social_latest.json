@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19 12:56 UTC",
+  "updated_at": "2026-10-19 18:03 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -10,11 +10,6 @@
         "country": "Bosznia-Hercegovina",
         "status_code": 400,
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
-      },
-      {
-        "country": "Montenegró",
-        "status_code": 503,
-        "message": "{\"detail\":\"Service Unavailable\",\"status\":503,\"title\":\"Service Unavailable\",\"type\":\"about:blank\"}"
       }
     ],
     "collected": 13
@@ -23,21 +18,21 @@
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 60,
+        "score": 59,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 8,
         "negative_hits": 2,
         "positive_hits": 0,
-        "trusted_hits": 2,
-        "engagement_total": 18,
-        "raw_engagement_total": 18,
-        "quality_total": 207,
-        "geopolitical_total": 182,
+        "trusted_hits": 1,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 174,
+        "geopolitical_total": 154,
         "source_counts": {
-          "reddit": 0,
+          "reddit": 1,
           "mastodon": 6,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "foreign_influence": 2,
@@ -46,11 +41,10 @@
           "security": 1
         },
         "tag_counts": {
-          "serbia": 4,
+          "serbia": 5,
           "kosovo": 1,
           "bosnia": 1,
-          "Szerbia": 1,
-          "Koszovó": 1
+          "Szerbia": 1
         },
         "main_topic": "protest",
         "top_posts": [
@@ -100,84 +94,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "From protests to election, Serbia's students mount a challenge to populist strongman Vucic Serbia’s university students have led mass anti-corruption protests for nearly two years",
-            "text": "From protests to election, Serbia's students mount a challenge to populist strongman Vucic Serbia’s university students have led mass anti-corruption protests for nearly two years",
-            "url": "https://x.com/i/web/status/2112160809426047488",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-19T12:35:53.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 35,
-            "quality_score": 36,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "This is Nicole Malachowski, a NATO pilot who launched several missiles on Serbian Chetnik paramilitary targets in 1998-99 during the Serbian aggressions against the Albanian civili",
-            "text": "This is Nicole Malachowski, a NATO pilot who launched several missiles on Serbian Chetnik paramilitary targets in 1998-99 during the Serbian aggressions against the Albanian civilian population. For her service, she received the “Kosovo Campaign Medal (KCM)”.",
-            "url": "https://x.com/i/web/status/2112139963873575103",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-19T11:13:03.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 26,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 18,
-            "raw_engagement": 18,
-            "metrics": {
-              "likes": 16,
-              "reposts": 1,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -238,6 +154,70 @@
             ],
             "geopolitical_score": 18,
             "quality_score": 21,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "The Integrity Network of the Belgrade Center for Security Policy (BCBP) called on Police Minister Ivica Dacic and Police Director Dragan Vasiljevic to recuse themselves from comman",
+            "text": "The Integrity Network of the Belgrade Center for Security Policy (BCBP) called on Police Minister Ivica Dacic and Police Director Dragan Vasiljevic to recuse themselves from commanding police operations at public gatherings and other actions related to the elections.",
+            "url": "https://x.com/i/web/status/2112231474665578946",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-19T17:16:41.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "MOT descubrió: Dos ciudadanos finlandeses exportaron decenas de millones de electrónicos a Rusia - la máquina de guerra puede utilizar partes para matar civiles https:// yle.fi/a/74-20249082?origin=rss # Elrestodelmundo # Sancionesrusas # invasiónrusa # Finlandia # Sanciones # Economía # Interior # HongKong # Ucrania # Tallinn # Estonia # Serbia # Italia # R",
+            "url": "https://social.koti.site/@rss_bot/117462559510454422",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sun, 18 Oct 2026 15:13:38 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 19,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -360,72 +340,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 19,
-        "level": "low",
+        "score": 25,
+        "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 3,
-        "negative_hits": 0,
+        "negative_hits": 1,
         "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 106,
-        "geopolitical_total": 94,
+        "trusted_hits": 1,
+        "engagement_total": 94,
+        "raw_engagement_total": 94,
+        "quality_total": 80,
+        "geopolitical_total": 73,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
-          "x": 1
+          "mastodon": 1,
+          "x": 2
         },
         "category_counts": {
-          "security": 2,
-          "economic_infrastructure": 1
+          "security": 1,
+          "government_crisis": 2
         },
         "tag_counts": {
-          "kosovo": 2,
-          "Koszovó": 1
+          "kosovo": 1,
+          "Koszovó": 2
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "Kosovo Defence Minister Meets New KFOR Commander, Reaffirms NATO Membership Ambition Kosovo Prishtina EjupMaqedonci KFOR RobertoVergori NATO KosovoSecurity DefenceCooperation Peace",
-            "text": "Kosovo Defence Minister Meets New KFOR Commander, Reaffirms NATO Membership Ambition Kosovo Prishtina EjupMaqedonci KFOR RobertoVergori NATO KosovoSecurity DefenceCooperation PeaceAndStability WesternBalkans",
-            "url": "https://x.com/i/web/status/2112142938495168707",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-19T11:24:52.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 5,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 56,
-            "quality_score": 60,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "RaiNews: L'Italia torna al comando di KFor, la missione Nato in Kosovo Il ministro della Difesa Guido Crosetto alla cerimonia: \"Mettere in sicurezza i Balcani, pensiamo di installare qui dei radar\". Ma il Kosovo resta instabile e diviso Italy returns to command of KFOR, the NATO mission in Kosovo. Defense Minister Guido Crosetti at the ceremony: “Securing th",
@@ -456,35 +396,86 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Mon blogue expose des gestes écocitoyens et des technologies vertes, dans le domaine du logement, du jardinage, du transport et de l'énergie, du textile et de la mode, l'agriculture et l'alimentation, la santé et le bien-être, la finance responsable, ainsi que des références de livres, et de documentaires. Plus https://www. revolutionverte.fr # Maldives # Mo",
-            "url": "https://mastodon.social/@Rinaldo75/117428313641146879",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Mon, 12 Oct 2026 14:04:27 +0000",
+            "title": "Kosovo 🇽🇰 calls on the Albanian Government to address the demands of the protesting youth. The Speaker of the Parliament in Pristina, Albulena Haxhiu, said that a serious approach ",
+            "text": "Kosovo 🇽🇰 calls on the Albanian Government to address the demands of the protesting youth. The Speaker of the Parliament in Pristina, Albulena Haxhiu, said that a serious approach to the protests is needed, not arrogance, as arrogance only fuels the protests. 🇽🇰❤️🇦🇱",
+            "url": "https://x.com/i/web/status/2112216596299096103",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-19T16:17:34.000Z",
             "matched_countries": [
               "Koszovó",
-              "Montenegró"
+              "Albánia"
             ],
             "country_confidence": {
-              "Koszovó": 1,
-              "Montenegró": 1
+              "Koszovó": 5,
+              "Albánia": 5
             },
-            "event_category": "economic_infrastructure",
+            "event_category": "government_crisis",
             "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 92,
+            "raw_engagement": 92,
+            "metrics": {
+              "likes": 64,
+              "reposts": 20,
+              "replies": 5,
+              "quotes": 3
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🚀 2026 is held under the patronage of the Office of the Prime Minister of Kosovo! Following KosICT, continues OctoberTech, leading to Growth Tank and celebrating innovation & colla",
+            "text": "🚀 2026 is held under the patronage of the Office of the Prime Minister of Kosovo! Following KosICT, continues OctoberTech, leading to Growth Tank and celebrating innovation & collaboration. 📅 Nov 5–6 | Prishtina",
+            "url": "https://x.com/i/web/status/2112210152573001851",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-19T15:51:57.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
               {
                 "category": "economic_infrastructure",
                 "hits": 1,
                 "weight": 4
               }
             ],
-            "geopolitical_score": 7,
-            "quality_score": 10,
-            "source_reliability": 3,
+            "geopolitical_score": 14,
+            "quality_score": 15,
+            "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -492,33 +483,31 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 49,
+        "score": 42,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
+        "mentions": 9,
         "negative_hits": 1,
         "positive_hits": 5,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 235,
-        "geopolitical_total": 202,
+        "quality_total": 215,
+        "geopolitical_total": 186,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 10,
-          "x": 1
+          "mastodon": 9,
+          "x": 0
         },
         "category_counts": {
-          "economic_infrastructure": 2,
           "foreign_influence": 3,
           "security": 3,
           "eu_integration": 1,
-          "government_crisis": 2
+          "government_crisis": 1,
+          "economic_infrastructure": 1
         },
         "tag_counts": {
-          "kosovo": 1,
-          "montenegro": 9,
-          "Koszovó": 1
+          "montenegro": 9
         },
         "main_topic": "foreign_influence",
         "top_posts": [
@@ -705,28 +694,28 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 26,
+        "score": 35,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 5,
         "negative_hits": 0,
         "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 65,
-        "raw_engagement_total": 65,
-        "quality_total": 66,
-        "geopolitical_total": 59,
+        "trusted_hits": 2,
+        "engagement_total": 104,
+        "raw_engagement_total": 104,
+        "quality_total": 83,
+        "geopolitical_total": 72,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 4
+          "x": 5
         },
         "category_counts": {
-          "security": 3,
+          "security": 4,
           "ethnic_tension": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 4
+          "Észak-Macedónia": 5
         },
         "main_topic": "security",
         "top_posts": [
@@ -755,12 +744,47 @@
             "quality_score": 35,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 27,
-            "raw_engagement": 27,
+            "engagement": 48,
+            "raw_engagement": 48,
             "metrics": {
-              "likes": 20,
-              "reposts": 4,
-              "replies": 3,
+              "likes": 34,
+              "reposts": 9,
+              "replies": 5,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "The Head of the Mission, , had the pleasure to meet today with H.E. Ambassador , newly appointed Permanent Representative of the Republic of North Macedonia to . During the meeting",
+            "text": "The Head of the Mission, , had the pleasure to meet today with H.E. Ambassador , newly appointed Permanent Representative of the Republic of North Macedonia to . During the meeting, the two sides had a good exchange of views on NATO- Azerbaijan",
+            "url": "https://x.com/i/web/status/2112190202328346845",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-19T14:32:41.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 17,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 10,
+            "raw_engagement": 10,
+            "metrics": {
+              "likes": 9,
+              "reposts": 1,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -826,13 +850,13 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 38,
-            "raw_engagement": 38,
+            "engagement": 46,
+            "raw_engagement": 46,
             "metrics": {
-              "likes": 28,
+              "likes": 32,
               "reposts": 5,
-              "replies": 4,
-              "quotes": 1
+              "replies": 7,
+              "quotes": 2
             },
             "quality": "x_api_filtered"
           },
@@ -880,60 +904,57 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 38,
-        "negative_hits": 30,
-        "positive_hits": 2,
-        "trusted_hits": 6,
-        "engagement_total": 19,
-        "raw_engagement_total": 19,
-        "quality_total": 1163,
-        "geopolitical_total": 1046,
+        "mentions": 35,
+        "negative_hits": 27,
+        "positive_hits": 3,
+        "trusted_hits": 4,
+        "engagement_total": 97,
+        "raw_engagement_total": 97,
+        "quality_total": 1066,
+        "geopolitical_total": 965,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 33,
-          "x": 5
+          "mastodon": 29,
+          "x": 6
         },
         "category_counts": {
-          "protest": 18,
-          "government_crisis": 3,
-          "security": 14,
+          "security": 11,
+          "protest": 14,
+          "government_crisis": 4,
           "corruption_rule_of_law": 1,
           "ethnic_tension": 1,
-          "foreign_influence": 1
+          "foreign_influence": 4
         },
         "tag_counts": {
           "balkans": 18,
           "kosovo": 1,
           "montenegro": 1,
-          "albania": 13,
-          "Koszovó": 2,
+          "albania": 9,
+          "Koszovó": 1,
+          "Montenegró": 1,
+          "Észak-Macedónia": 1,
           "Albánia": 3
         },
         "main_topic": "protest",
         "top_posts": [
           {
-            "title": "",
-            "text": "#Europe | #European_Spring During the past few days until yesterday, the cities and capitals of European countries witnessed major #demonstrations due to living conditions, government policies, and the housing and education crisis. 🟡 #France (Paris and major cities): The return of the \"yellow vests\" movement along with students to protest the high cost of li",
-            "url": "https://devs.live/objects/d49f8c43-22af-44c0-87d0-93535a2cda35",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Mon, 19 Oct 2026 05:19:04 +0000",
+            "title": "Why does Albania's prime minister say mass protests threaten the country's EU membership? Albanian Prime Minister Edi Rama has rejected calls for his resignation amid violent stude",
+            "text": "Why does Albania's prime minister say mass protests threaten the country's EU membership? Albanian Prime Minister Edi Rama has rejected calls for his resignation amid violent student-led protests, warning that the unrest threatens Albania's ambitions to join the European Union",
+            "url": "https://x.com/i/web/status/2112204629887103389",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-10-19T15:30:01.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 5
+              "Albánia": 6
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
                 "category": "government_crisis",
-                "hits": 1,
+                "hits": 2,
                 "weight": 9
               },
               {
@@ -943,22 +964,23 @@
               },
               {
                 "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              },
-              {
-                "category": "economic_infrastructure",
                 "hits": 2,
-                "weight": 4
+                "weight": 6
               }
             ],
-            "geopolitical_score": 60,
-            "quality_score": 63,
-            "source_reliability": 3,
+            "geopolitical_score": 58,
+            "quality_score": 59,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -1054,49 +1076,43 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🚨 BREAKING 🇦🇱🔥: Albania deploys heavily equipped police and armored vehicles in central Tirana amid escalating anti-government protests demanding Prime Minister Edi Rama’s resignat",
-            "text": "🚨 BREAKING 🇦🇱🔥: Albania deploys heavily equipped police and armored vehicles in central Tirana amid escalating anti-government protests demanding Prime Minister Edi Rama’s resignation. Reports of U.S. helicopters near Berat remain unverified.",
-            "url": "https://x.com/i/web/status/2112163479000141969",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-19T12:46:30.000Z",
+            "title": "",
+            "text": "Student-led demonstrations continue in Tirana as protesters target government buildings over corruption, education and jobs: https://www. ibtimes.co.uk/albania-protests -edi-rama-supreme-court-fire-1826312 # Albania # JaredKushner # corruption # development # VjosaNarta # flamingos",
+            "url": "https://climatejustice.social/@breton/117467753732561315",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Mon, 19 Oct 2026 13:14:35 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 9
+              "Albánia": 5
             },
-            "event_category": "government_crisis",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
                 "category": "protest",
+                "hits": 3,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
                 "hits": 2,
                 "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 46,
-            "quality_score": 47,
-            "source_reliability": 2,
+            "geopolitical_score": 48,
+            "quality_score": 51,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           },
           {
             "title": "",
