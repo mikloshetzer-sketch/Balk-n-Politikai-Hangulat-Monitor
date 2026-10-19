@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19 02:34 UTC",
+  "updated_at": "2026-10-19 04:27 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,42 +12,39 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 22
+    "collected": 13
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 60,
+        "score": 44,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 4,
-        "positive_hits": 1,
-        "trusted_hits": 2,
+        "mentions": 6,
+        "negative_hits": 1,
+        "positive_hits": 0,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 216,
-        "geopolitical_total": 194,
+        "quality_total": 145,
+        "geopolitical_total": 125,
         "source_counts": {
-          "reddit": 3,
+          "reddit": 0,
           "mastodon": 6,
-          "x": 2
+          "x": 0
         },
         "category_counts": {
-          "foreign_influence": 3,
-          "protest": 4,
-          "ethnic_tension": 3,
-          "security": 1
+          "foreign_influence": 2,
+          "protest": 2,
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "serbia": 4,
-          "kosovo": 4,
-          "bosnia": 1,
-          "Szerbia": 1,
-          "Koszovó": 1
+          "kosovo": 1,
+          "bosnia": 1
         },
-        "main_topic": "protest",
+        "main_topic": "foreign_influence",
         "top_posts": [
           {
             "title": "",
@@ -95,53 +92,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Vučić can close your debate pointing three critical points: 1) NATO bombing USA never apologized for and Clinton campaign for funding terrorist organizations in Bosnia and Herzegov",
-            "text": "Vučić can close your debate pointing three critical points: 1) NATO bombing USA never apologized for and Clinton campaign for funding terrorist organizations in Bosnia and Herzegovina, framing our people, 2) Kosovo, 3) German reparations for WWII, The End.",
-            "url": "https://x.com/i/web/status/2111915420978680275",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-18T20:20:48.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4,
-              "Bosznia-Hercegovina": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 26,
-            "quality_score": 30,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -236,6 +186,40 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Leader of the Socialist Party of Serbia stuck in Russia due to drone strikes The Socialist Party of Serbia and Russia have a long history. It is no small wonder that their current leader, Ivica Dačić, got stuck in Moscow amidst an air raid. https:// serbianism.com/2026/10/18/lead er-of-socialist-party-of-serbia-stuck-in-russia-due-to-drone-strikes/",
+            "url": "https://serbianism.com/2026/10/18/leader-of-socialist-party-of-serbia-stuck-in-russia-due-to-drone-strikes/",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sun, 18 Oct 2026 00:15:23 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 19,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -243,28 +227,27 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 25,
-        "level": "medium",
+        "score": 18,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 2,
         "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 76,
-        "geopolitical_total": 71,
+        "quality_total": 67,
+        "geopolitical_total": 61,
         "source_counts": {
-          "reddit": 1,
+          "reddit": 0,
           "mastodon": 2,
           "x": 0
         },
         "category_counts": {
-          "ethnic_tension": 3
+          "ethnic_tension": 2
         },
         "tag_counts": {
-          "bosnia": 2,
-          "kosovo": 1
+          "bosnia": 2
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -347,38 +330,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Did you know “Memorial center of Republika Srpska” is doing a propaganda campaign in world’s capitals sharing manipulated and false information on Serbian agression on Kosovo, Croa",
-            "text": "Quite tragic that 3 of our countries just sit and watch while they’re engaging in every possible type of propaganda on all sides &#32; submitted by &#32; /u/Smrt0nosha [link] &#32; [comments]",
-            "url": "https://www.reddit.com/r/kosovo/comments/1x9f8gi/did_you_know_memorial_center_of_republika_srpska/",
-            "source": "reddit",
-            "tag": "kosovo",
-            "seen_date": "2026-10-18T21:41:05+00:00",
-            "matched_countries": [
-              "Bosznia-Hercegovina",
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 5,
-              "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 9,
-            "source_reliability": 1,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -386,31 +337,30 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 35,
+        "score": 24,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 2,
+        "mentions": 4,
+        "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 82,
-        "geopolitical_total": 69,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 70,
+        "geopolitical_total": 58,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "security": 2,
           "economic_infrastructure": 1,
-          "corruption_rule_of_law": 1,
-          "protest": 1
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "kosovo": 3,
-          "Koszovó": 2
+          "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -471,41 +421,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "sa p*dhropsha qe jane almost makes me wanna go and protest in Prishtina right now just to collect their salty tears😅",
-            "text": "sa p*dhropsha qe jane almost makes me wanna go and protest in Prishtina right now just to collect their salty tears😅",
-            "url": "https://x.com/i/web/status/2111912042110095526",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-18T20:07:22.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 12,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 3,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "MitroRun Crosses Into North Mitrovica Despite Municipal Objections: Mayor Peci Joins Race, Police Detain Resident, Local NGO Director Calls Event “Political Territory-Marking”",
@@ -586,8 +501,8 @@
         "negative_hits": 1,
         "positive_hits": 8,
         "trusted_hits": 1,
-        "engagement_total": 29,
-        "raw_engagement_total": 29,
+        "engagement_total": 30,
+        "raw_engagement_total": 30,
         "quality_total": 279,
         "geopolitical_total": 243,
         "source_counts": {
@@ -792,72 +707,26 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 3,
+        "score": 0,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 1,
+        "mentions": 0,
         "negative_hits": 0,
-        "positive_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 15,
-        "geopolitical_total": 14,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 0,
+        "geopolitical_total": 0,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 1
+          "x": 0
         },
-        "category_counts": {
-          "security": 1
-        },
-        "tag_counts": {
-          "Észak-Macedónia": 1
-        },
-        "main_topic": "security",
-        "top_posts": [
-          {
-            "title": "New funding opportunity! The 2nd Call for Proposals under the 🇪🇺 IPA III Cross-Border Cooperation Programme North Macedonia –Albania is now open! Turning shared challenges into opp",
-            "text": "New funding opportunity! The 2nd Call for Proposals under the 🇪🇺 IPA III Cross-Border Cooperation Programme North Macedonia –Albania is now open! Turning shared challenges into opportunities for cross-border cooperation. 📅 Deadline: 15 January 2027 🔗",
-            "url": "https://x.com/i/web/status/2111750333470765531",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-18T09:24:48.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Albánia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 14,
-            "quality_score": 15,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
-            "metrics": {
-              "likes": 2,
-              "reposts": 2,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          }
-        ]
+        "category_counts": {},
+        "tag_counts": {},
+        "main_topic": "nincs adat",
+        "top_posts": []
       }
     },
     {
@@ -866,35 +735,35 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 46,
-        "negative_hits": 39,
+        "mentions": 42,
+        "negative_hits": 36,
         "positive_hits": 3,
-        "trusted_hits": 6,
+        "trusted_hits": 5,
         "engagement_total": 90,
         "raw_engagement_total": 90,
-        "quality_total": 1356,
-        "geopolitical_total": 1233,
+        "quality_total": 1227,
+        "geopolitical_total": 1105,
         "source_counts": {
-          "reddit": 2,
-          "mastodon": 34,
-          "x": 10
+          "reddit": 0,
+          "mastodon": 35,
+          "x": 7
         },
         "category_counts": {
-          "government_crisis": 6,
-          "security": 14,
-          "protest": 22,
+          "government_crisis": 5,
+          "security": 10,
+          "protest": 23,
           "corruption_rule_of_law": 2,
           "ethnic_tension": 2
         },
         "tag_counts": {
           "balkans": 18,
-          "kosovo": 3,
+          "kosovo": 1,
           "montenegro": 1,
-          "albania": 14,
+          "albania": 15,
           "Szerbia": 1,
           "Koszovó": 2,
           "Észak-Macedónia": 1,
-          "Albánia": 6
+          "Albánia": 3
         },
         "main_topic": "protest",
         "top_posts": [
@@ -992,56 +861,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Albanian Prime Minister Edi Rama has rejected calls to resign as student-led protests over alleged government corruption, limited job opportunities and poor education standards spr",
-            "text": "Albanian Prime Minister Edi Rama has rejected calls to resign as student-led protests over alleged government corruption, limited job opportunities and poor education standards spread across the country. He argued that the unrest threatens Albania’s path to European Union",
-            "url": "https://x.com/i/web/status/2112008227864875222",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-19T02:29:35.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 6
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 50,
-            "quality_score": 51,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "In Albania, solidarity grows in response to police violence. Many Albanians said they were shocked by the way law enforcement has treated protesters, most of them students who are demanding the resignation of the Socialist prime minister, Edi Rama; better living conditions; and an end to corruption. At least 120 police officers and 32 protesters were injured",
             "url": "https://mastodon.mediafaro.org/@mf_analysis/117461972572958466",
@@ -1128,6 +947,45 @@
             ],
             "geopolitical_score": 41,
             "quality_score": 44,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Looking at auto-translate of the livestream (have to use phone since there are no captions on livestream), News24 reports that yesterday there were some incidents of protestors stopping ambulances because they suspected the cops were using ambulances as a means of supplying police forces with more tear gas. (There is *copious* use of tear gas...you can hear ",
+            "url": "https://mas.to/@meganL/117461028654623892",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sun, 18 Oct 2026 08:44:19 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 37,
+            "quality_score": 40,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
