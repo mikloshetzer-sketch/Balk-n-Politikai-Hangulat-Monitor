@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20 16:07 UTC",
+  "updated_at": "2026-10-20 16:50 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 25
+    "collected": 26
   },
   "countries": [
     {
@@ -21,35 +21,137 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 19,
-        "negative_hits": 14,
+        "mentions": 22,
+        "negative_hits": 15,
         "positive_hits": 0,
-        "trusted_hits": 6,
-        "engagement_total": 67,
-        "raw_engagement_total": 67,
-        "quality_total": 438,
-        "geopolitical_total": 389,
+        "trusted_hits": 7,
+        "engagement_total": 36,
+        "raw_engagement_total": 36,
+        "quality_total": 544,
+        "geopolitical_total": 485,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 8,
-          "x": 11
+          "mastodon": 10,
+          "x": 12
         },
         "category_counts": {
-          "security": 13,
-          "government_crisis": 4,
+          "protest": 2,
+          "security": 12,
+          "foreign_influence": 1,
+          "government_crisis": 5,
           "ethnic_tension": 2
         },
         "tag_counts": {
-          "balkans": 1,
-          "serbia": 5,
+          "balkans": 2,
+          "serbia": 6,
           "kosovo": 1,
           "bosnia": 1,
           "Szerbia": 9,
-          "Koszovó": 1,
+          "Koszovó": 2,
           "Montenegró": 1
         },
         "main_topic": "security",
         "top_posts": [
+          {
+            "title": "BIG | 🇷🇸🇷🇺‼️‼️ Serbian President Aleksandar Vučić has warned that Vladimir Putin is not bluffing about nuclear weapons and could order a nuclear strike in response to a direct mili",
+            "text": "BIG | 🇷🇸🇷🇺‼️‼️ Serbian President Aleksandar Vučić has warned that Vladimir Putin is not bluffing about nuclear weapons and could order a nuclear strike in response to a direct military attack on Russia by the United States or European powers. Vučić said he had repeatedly warned",
+            "url": "https://x.com/i/web/status/2112585888190673028",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-20T16:45:00.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 54,
+            "quality_score": 55,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 4,
+            "raw_engagement": 4,
+            "metrics": {
+              "likes": 2,
+              "reposts": 1,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Serbian President Aleksandar Vučić has warned that Vladimir Putin is not bluffing about nuclear weapons and could order a nuclear strike in response to a direct military attack on ",
+            "text": "Serbian President Aleksandar Vučić has warned that Vladimir Putin is not bluffing about nuclear weapons and could order a nuclear strike in response to a direct military attack on Russia by the United States or European powers.",
+            "url": "https://x.com/i/web/status/2112586595987575133",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-20T16:47:49.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 54,
+            "quality_score": 55,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "what on earth is this? I found it when looking for something else... # InventedPogroms Statistics, lies and confusion in # Kosovo # ESI background paper 19 February 2024 source https:// web.archive.org/web/2024022201 3922if_/https://www.esiweb.org/sites/default/files/reports/pdf/ESI_Invented%20pogroms%20-%20Statistics%20and%20the%20vanishing%20of%20Serbs%20-",
@@ -98,51 +200,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Serbia's President Aleksandar Vučić reportedly told the West that Vladimir Putin is not bluffing about nuclear weapons. He stated that if America, Europe, or Britain launch a direc",
-            "text": "Serbia's President Aleksandar Vučić reportedly told the West that Vladimir Putin is not bluffing about nuclear weapons. He stated that if America, Europe, or Britain launch a direct attack, Russia will respond with nuclear weapons immediately. Many believe NATO is stronger and",
-            "url": "https://x.com/i/web/status/2112574073297403929",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-20T15:58:03.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 42,
-            "quality_score": 46,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Six days before crucial Serbian parliamentary elections, digital rights investigators report with “high confidence” that two prominent figures connected to the anti-government protest movement were targeted by spyware. # Balkans # Serbia # Pegasus https:// balkaninsight.com/2026/10/19/s erbians-linked-to-protest-movement-allegedly-hit-by-spyware-attacks/bi/",
             "url": "https://kafeneio.social/@foufoutos/117469307178546989",
@@ -182,17 +239,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "BREAKING: Serbian President Aleksandar Vučić claims Vladimir Putin will use nuclear weapons immediately if Russia faces a direct attack from Western powers. Nuclear",
-            "text": "BREAKING: Serbian President Aleksandar Vučić claims Vladimir Putin will use nuclear weapons immediately if Russia faces a direct attack from Western powers. Nuclear",
-            "url": "https://x.com/i/web/status/2112573186931912900",
+            "title": "Vucic is correct here. He will use it. That's why NATO needs to do its essential mission and just defend countries around Russia and keep Russia inside its zone, locked and chained",
+            "text": "Vucic is correct here. He will use it. That's why NATO needs to do its essential mission and just defend countries around Russia and keep Russia inside its zone, locked and chained to economic sanctions. Let them rot inside their vast land.",
+            "url": "https://x.com/i/web/status/2112582997518295428",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-10-20T15:54:32.000Z",
+            "seen_date": "2026-10-20T16:33:31.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 9
+              "Szerbia": 4
             },
             "event_category": "security",
             "event_categories": [
@@ -202,65 +259,15 @@
                 "weight": 9
               },
               {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
                 "category": "foreign_influence",
-                "hits": 1,
+                "hits": 2,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🔴 Serbia's President Vučić cautions that Europe's military arming raises questions about its intentions, likening the situation to Chekhov's plays where a gun on the wall signifies",
-            "text": "🔴 Serbia's President Vučić cautions that Europe's military arming raises questions about its intentions, likening the situation to Chekhov's plays where a gun on the wall signifies impending action. Stay informed on geopolitical shifts with tracking",
-            "url": "https://x.com/i/web/status/2112574959339921480",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-20T16:01:34.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 26,
-            "quality_score": 27,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
+            "geopolitical_score": 32,
+            "quality_score": 36,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "metrics": {
@@ -913,32 +920,31 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 31,
-        "negative_hits": 26,
-        "positive_hits": 4,
+        "negative_hits": 25,
+        "positive_hits": 3,
         "trusted_hits": 5,
-        "engagement_total": 70,
-        "raw_engagement_total": 70,
-        "quality_total": 1000,
-        "geopolitical_total": 909,
+        "engagement_total": 23,
+        "raw_engagement_total": 23,
+        "quality_total": 987,
+        "geopolitical_total": 898,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 25,
-          "x": 6
+          "mastodon": 24,
+          "x": 7
         },
         "category_counts": {
-          "corruption_rule_of_law": 2,
-          "security": 9,
-          "protest": 14,
-          "government_crisis": 5,
+          "corruption_rule_of_law": 1,
+          "security": 11,
+          "protest": 12,
+          "government_crisis": 6,
           "ethnic_tension": 1
         },
         "tag_counts": {
-          "balkans": 15,
+          "balkans": 14,
           "kosovo": 1,
           "montenegro": 1,
           "albania": 8,
-          "Montenegró": 1,
-          "Albánia": 5
+          "Albánia": 7
         },
         "main_topic": "protest",
         "top_posts": [
@@ -985,56 +991,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Anti-government protests in Albania turned violent after a week of unrest, with demonstrators clashing with riot police in central Tirana. The protests reflect growing anger over c",
-            "text": "Anti-government protests in Albania turned violent after a week of unrest, with demonstrators clashing with riot police in central Tirana. The protests reflect growing anger over corruption, demands for better university conditions and calls for the prime minister’s resignation.",
-            "url": "https://x.com/i/web/status/2112574920416780370",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-20T16:01:25.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 4,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 70,
-            "quality_score": 71,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -1130,12 +1086,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Albania police use water cannon, tear gas against protesters outside education ministry: Student-led demonstrations against Prime Minister Edi Rama's government escalated and teach",
-            "text": "Albania police use water cannon, tear gas against protesters outside education ministry: Student-led demonstrations against Prime Minister Edi Rama's government escalated and teachers announced a nationwide university boycott. dlvr.​it/TW04m9 Follow for news",
-            "url": "https://x.com/i/web/status/2112573054404772324",
+            "title": "Albania's prime minister Edi Rama says he won't resign as protests over living costs and alleged corruption enter a sixth day. Le Monde counts 272 people injured, 169 of them polic",
+            "text": "Albania's prime minister Edi Rama says he won't resign as protests over living costs and alleged corruption enter a sixth day. Le Monde counts 272 people injured, 169 of them police. Rama blames a foreign hand. Go deeper, free:",
+            "url": "https://x.com/i/web/status/2112584636589101088",
             "source": "x",
             "tag": "Albánia",
-            "seen_date": "2026-10-20T15:54:00.000Z",
+            "seen_date": "2026-10-20T16:40:01.000Z",
             "matched_countries": [
               "Albánia"
             ],
@@ -1156,7 +1112,12 @@
               },
               {
                 "category": "protest",
-                "hits": 3,
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
                 "weight": 8
               }
             ],
@@ -1173,6 +1134,40 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "\"The angry protests that have convulsed Spain and France in recent weeks have spilled over to Italy and Portugal, with rioters clashing with police and setting property on fire in Milan, and a tent encampment springing up in Lisbon over the weekend.\" # protests # genz # france # italy # albania https://www. theguardian.com/world/2026/oct /18/lisbon-milan-pro",
+            "url": "https://mastodon.social/@MaikCiveira/117474031460993747",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Tue, 20 Oct 2026 15:51:06 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 3,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 40,
+            "quality_score": 45,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
