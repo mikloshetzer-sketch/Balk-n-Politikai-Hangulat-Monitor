@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20 04:37 UTC",
+  "updated_at": "2026-10-20 10:44 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -10,14 +10,9 @@
         "country": "Bosznia-Hercegovina",
         "status_code": 400,
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
-      },
-      {
-        "country": "Albánia",
-        "status_code": 503,
-        "message": "{\"detail\":\"Service Unavailable\",\"status\":503,\"title\":\"Service Unavailable\",\"type\":\"about:blank\"}"
       }
     ],
-    "collected": 9
+    "collected": 12
   },
   "countries": [
     {
@@ -26,31 +21,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 5,
+        "mentions": 7,
+        "negative_hits": 4,
         "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 243,
-        "geopolitical_total": 217,
+        "trusted_hits": 4,
+        "engagement_total": 23,
+        "raw_engagement_total": 23,
+        "quality_total": 213,
+        "geopolitical_total": 186,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
-          "x": 4
+          "x": 1
         },
         "category_counts": {
-          "security": 3,
-          "foreign_influence": 2,
+          "security": 4,
           "ethnic_tension": 2,
-          "government_crisis": 3
+          "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 3,
           "kosovo": 1,
           "bosnia": 1,
-          "Szerbia": 4
+          "Szerbia": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -141,12 +135,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Will the massive student protests in Serbia succeed in ending President Vucic's 14-year rule? 🇷🇸✊ 🟢 Yes 🔴 No Serbia Protests Democracy EuropeNews GlobalAffairs",
-            "text": "Will the massive student protests in Serbia succeed in ending President Vucic's 14-year rule? 🇷🇸✊ 🟢 Yes 🔴 No Serbia Protests Democracy EuropeNews GlobalAffairs",
-            "url": "https://x.com/i/web/status/2112385391521395149",
+            "title": "Serbia 🇷🇸: from all over the country students are marching on the capital Belgrade, where a massive rally is planned on thursday, in support of the opposition Student List, which s",
+            "text": "Serbia 🇷🇸: from all over the country students are marching on the capital Belgrade, where a massive rally is planned on thursday, in support of the opposition Student List, which seeks to beat the ruling party in Sunday's elections.",
+            "url": "https://x.com/i/web/status/2112490244230504551",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-10-20T03:28:18.000Z",
+            "seen_date": "2026-10-20T10:24:57.000Z",
             "matched_countries": [
               "Szerbia"
             ],
@@ -157,7 +151,7 @@
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 1,
+                "hits": 2,
                 "weight": 9
               },
               {
@@ -166,60 +160,15 @@
                 "weight": 8
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
+            "geopolitical_score": 35,
+            "quality_score": 36,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 23,
+            "raw_engagement": 23,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "A Serbian prosecutor investigating a high-profile corruption case involving a major development project was hit with digital threats and warnings. Rade Bajić believes his legal wor",
-            "text": "A Serbian prosecutor investigating a high-profile corruption case involving a major development project was hit with digital threats and warnings. Rade Bajić believes his legal work made him an immediate target for unlawful spyware attacks.",
-            "url": "https://x.com/i/web/status/2112379558813225038",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-20T03:05:07.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 25,
-            "quality_score": 26,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 20,
+              "reposts": 3,
               "replies": 0,
               "quotes": 0
             },
@@ -258,6 +207,42 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Bosnia: \"Klix\", Repubblica Srpska ha pagato 500 mila dollari per avere incontri con politici Usa 15 ott 11:16 - (Agenzia Nova) - La Repubblica Srpska, entita' serba della Bosnia Erzegovina, ha pagato piu' di 500 mila dollari alla societa'... (Seb) Bosnia: \"Klix\", Republika Srpska paid $500,000 to have meetings with US politicians. Oct 15 11:16 ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117444261756188584",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Thu, 15 Oct 2026 09:40:16 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 6,
+              "Szerbia": 2
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 21,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -265,29 +250,27 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 17,
+        "score": 6,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
-        "negative_hits": 1,
+        "mentions": 1,
+        "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 7,
-        "raw_engagement_total": 7,
-        "quality_total": 34,
-        "geopolitical_total": 30,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 21,
+        "geopolitical_total": 18,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
-          "ethnic_tension": 1,
-          "government_crisis": 1
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "bosnia": 1,
-          "Koszovó": 1
+          "bosnia": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -326,43 +309,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Such an impressive woman. I’m proud to have served alongside her on the board of directors of the Balkan Youth Foundation, chaired by President Ahtisaari, in the aftermath of the K",
-            "text": "Such an impressive woman. I’m proud to have served alongside her on the board of directors of the Balkan Youth Foundation, chaired by President Ahtisaari, in the aftermath of the Kosovo war. We even shared a burek once at the legendary “Sarajevo” burek shop in downtown Prishtina.",
-            "url": "https://x.com/i/web/status/2112295371938414818",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-19T21:30:35.000Z",
-            "matched_countries": [
-              "Koszovó",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Koszovó": 5,
-              "Bosznia-Hercegovina": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 7,
-            "raw_engagement": 7,
-            "metrics": {
-              "likes": 5,
-              "reposts": 1,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -370,17 +316,17 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 17,
+        "score": 12,
         "level": "low",
         "scale": "0-60 risk index",
         "mentions": 2,
-        "negative_hits": 1,
-        "positive_hits": 0,
+        "negative_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 7,
-        "raw_engagement_total": 7,
-        "quality_total": 49,
-        "geopolitical_total": 43,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 48,
+        "geopolitical_total": 42,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
@@ -388,7 +334,7 @@
         },
         "category_counts": {
           "security": 1,
-          "government_crisis": 1
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "kosovo": 1,
@@ -426,38 +372,36 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Such an impressive woman. I’m proud to have served alongside her on the board of directors of the Balkan Youth Foundation, chaired by President Ahtisaari, in the aftermath of the K",
-            "text": "Such an impressive woman. I’m proud to have served alongside her on the board of directors of the Balkan Youth Foundation, chaired by President Ahtisaari, in the aftermath of the Kosovo war. We even shared a burek once at the legendary “Sarajevo” burek shop in downtown Prishtina.",
-            "url": "https://x.com/i/web/status/2112295371938414818",
+            "title": "Deal Price : ₹179.00 ✅ Regular Price : ₹1,999 ❌ Pinkmint Women Short Kurti | Cotton Blend Printed Tunic Top | Trendy Casual Top | Casual & Office Wear Ethnic Top for Jeans",
+            "text": "Deal Price : ₹179.00 ✅ Regular Price : ₹1,999 ❌ Pinkmint Women Short Kurti | Cotton Blend Printed Tunic Top | Trendy Casual Top | Casual & Office Wear Ethnic Top for Jeans",
+            "url": "https://x.com/i/web/status/2112465100162363740",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-10-19T21:30:35.000Z",
+            "seen_date": "2026-10-20T08:45:02.000Z",
             "matched_countries": [
-              "Koszovó",
-              "Bosznia-Hercegovina"
+              "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 5,
-              "Bosznia-Hercegovina": 4
+              "Koszovó": 4
             },
-            "event_category": "government_crisis",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "ethnic_tension",
                 "hits": 1,
-                "weight": 9
+                "weight": 10
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
+            "geopolitical_score": 11,
+            "quality_score": 12,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 7,
-            "raw_engagement": 7,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 5,
-              "reposts": 1,
-              "replies": 1,
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -679,29 +623,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 5,
+        "score": 17,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 1,
+        "mentions": 3,
         "negative_hits": 0,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 18,
-        "geopolitical_total": 17,
+        "quality_total": 41,
+        "geopolitical_total": 38,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 1
+          "x": 3
         },
         "category_counts": {
+          "ethnic_tension": 2,
           "government_crisis": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 1
+          "Észak-Macedónia": 3
         },
-        "main_topic": "government_crisis",
+        "main_topic": "ethnic_tension",
         "top_posts": [
           {
             "title": "Lets have a referendum in North Macedonia to rename the country to New America so we will be a part of the United States of America. President Donald J. Trump will be happy with th",
@@ -742,6 +687,76 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "ABTTF joined 12th annual FUEN TAG meeting in Skopje, bringing together 13 Turkish organisations from nine European countries. Discussions focused on minority rights, language, cult",
+            "text": "ABTTF joined 12th annual FUEN TAG meeting in Skopje, bringing together 13 Turkish organisations from nine European countries. Discussions focused on minority rights, language, cultural identity and stronger cooperation among Turkish communities across Europe. ABTTF FUEN",
+            "url": "https://x.com/i/web/status/2112477761260458251",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-20T09:35:20.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 12,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "ABTTF attends 12th annual FUEN Turkish minorities working group meeting in Skopje ABTTF joined 12th annual FUEN TAG meeting in Skopje, bringing together 13 Turkish organisations fr",
+            "text": "ABTTF attends 12th annual FUEN Turkish minorities working group meeting in Skopje ABTTF joined 12th annual FUEN TAG meeting in Skopje, bringing together 13 Turkish organisations from nine European countries. Discussions focused on minority rights, language, cultural identity and",
+            "url": "https://x.com/i/web/status/2112488395935023169",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-20T10:17:36.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -752,33 +767,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 28,
-        "negative_hits": 22,
-        "positive_hits": 1,
-        "trusted_hits": 4,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 822,
-        "geopolitical_total": 732,
+        "mentions": 33,
+        "negative_hits": 29,
+        "positive_hits": 3,
+        "trusted_hits": 5,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 985,
+        "geopolitical_total": 890,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 27,
-          "x": 1
+          "mastodon": 26,
+          "x": 7
         },
         "category_counts": {
-          "security": 8,
-          "protest": 14,
-          "government_crisis": 2,
-          "corruption_rule_of_law": 1,
-          "ethnic_tension": 1,
-          "foreign_influence": 2
+          "security": 10,
+          "protest": 17,
+          "government_crisis": 5,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 17,
           "kosovo": 1,
           "montenegro": 1,
-          "albania": 8,
-          "Montenegró": 1
+          "albania": 7,
+          "Észak-Macedónia": 1,
+          "Albánia": 6
         },
         "main_topic": "protest",
         "top_posts": [
@@ -876,17 +890,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Among other effects of corruption is the poor quality infrastructure. People have been protesting corruption for months peacefully until this week. The government basically ignored their demands, so they escalated this week, including pulling up sidewalk pavers to use to throw at government buildings and at police using tear gas & water cannons (which were u",
-            "url": "https://mas.to/@meganL/117460920576948605",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sun, 18 Oct 2026 08:16:50 +0000",
+            "title": "Albania is in turmoil; Student-led protests over corruption and living costs have escalated into violent clashes with police, with demonstrators demanding PM Edi Rama's resignation",
+            "text": "Albania is in turmoil; Student-led protests over corruption and living costs have escalated into violent clashes with police, with demonstrators demanding PM Edi Rama's resignation. The peoples of the world have awakened & governments cannot conceal the truth. viral Albania",
+            "url": "https://x.com/i/web/status/2112492265872503234",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-10-20T10:32:59.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 1
+              "Albánia": 5
             },
             "event_category": "security",
             "event_categories": [
@@ -902,27 +916,28 @@
               },
               {
                 "category": "protest",
-                "hits": 1,
+                "hits": 2,
                 "weight": 8
               },
               {
                 "category": "corruption_rule_of_law",
                 "hits": 1,
                 "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 41,
-            "quality_score": 44,
-            "source_reliability": 3,
+            "geopolitical_score": 45,
+            "quality_score": 46,
+            "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 2,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -955,16 +970,16 @@
           },
           {
             "title": "",
-            "text": "LIVE | Të rinjtë “ndezin” Tiranën prej 7 ditësh, çfaë pritet të ndodhë? Machine translation of headline: \"Young people have been “energizing” Tirana for 7 days—what’s expected to happen next?\" Cops are just searching teens in public without any good reason - just their age and look. News24 is interviewing a teen right now who is very upset with the treatment",
-            "url": "https://mas.to/@meganL/117466477992515266",
+            "text": "Rama vendos karrige jashtë kryeministrisë për dialog, të rinjtë i përgjigjen: Shihe në ëndrra Machine translated headline: \"Rama places chairs outside the Prime Minister's Office for dialogue; young people respond: \"Keep dreaming.\"\" For 4 months protest remained peaceful, even when cops were beating protestors, using water cannons and tear gas. Rama didn't w",
+            "url": "https://mas.to/@meganL/117472217526795941",
             "source": "mastodon",
             "tag": "balkans",
-            "seen_date": "Mon, 19 Oct 2026 07:50:09 +0000",
+            "seen_date": "Tue, 20 Oct 2026 08:09:47 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 5
+              "Albánia": 1
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -984,8 +999,8 @@
                 "weight": 8
               }
             ],
-            "geopolitical_score": 37,
-            "quality_score": 40,
+            "geopolitical_score": 38,
+            "quality_score": 41,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
