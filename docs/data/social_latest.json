@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20 11:25 UTC",
+  "updated_at": "2026-10-20 16:07 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 16
+    "collected": 25
   },
   "countries": [
     {
@@ -21,30 +21,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 8,
-        "positive_hits": 1,
-        "trusted_hits": 4,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 310,
-        "geopolitical_total": 277,
+        "mentions": 19,
+        "negative_hits": 14,
+        "positive_hits": 0,
+        "trusted_hits": 6,
+        "engagement_total": 67,
+        "raw_engagement_total": 67,
+        "quality_total": 438,
+        "geopolitical_total": 389,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 7,
-          "x": 4
+          "mastodon": 8,
+          "x": 11
         },
         "category_counts": {
-          "security": 7,
-          "government_crisis": 2,
+          "security": 13,
+          "government_crisis": 4,
           "ethnic_tension": 2
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 4,
+          "serbia": 5,
           "kosovo": 1,
           "bosnia": 1,
-          "Szerbia": 4
+          "Szerbia": 9,
+          "Koszovó": 1,
+          "Montenegró": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -96,6 +98,51 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Serbia's President Aleksandar Vučić reportedly told the West that Vladimir Putin is not bluffing about nuclear weapons. He stated that if America, Europe, or Britain launch a direc",
+            "text": "Serbia's President Aleksandar Vučić reportedly told the West that Vladimir Putin is not bluffing about nuclear weapons. He stated that if America, Europe, or Britain launch a direct attack, Russia will respond with nuclear weapons immediately. Many believe NATO is stronger and",
+            "url": "https://x.com/i/web/status/2112574073297403929",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-20T15:58:03.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 42,
+            "quality_score": 46,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Six days before crucial Serbian parliamentary elections, digital rights investigators report with “high confidence” that two prominent figures connected to the anti-government protest movement were targeted by spyware. # Balkans # Serbia # Pegasus https:// balkaninsight.com/2026/10/19/s erbians-linked-to-protest-movement-allegedly-hit-by-spyware-attacks/bi/",
             "url": "https://kafeneio.social/@foufoutos/117469307178546989",
@@ -135,33 +182,38 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Serbia from all over the country students are marching on the capital Belgrade, where a massive rally is planned on thursday, in support of the opposition Student List, which seeks",
-            "text": "Serbia from all over the country students are marching on the capital Belgrade, where a massive rally is planned on thursday, in support of the opposition Student List, which seeks to beat the ruling party in Sunday's elections.",
-            "url": "https://x.com/i/web/status/2112503588677374078",
+            "title": "BREAKING: Serbian President Aleksandar Vučić claims Vladimir Putin will use nuclear weapons immediately if Russia faces a direct attack from Western powers. Nuclear",
+            "text": "BREAKING: Serbian President Aleksandar Vučić claims Vladimir Putin will use nuclear weapons immediately if Russia faces a direct attack from Western powers. Nuclear",
+            "url": "https://x.com/i/web/status/2112573186931912900",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-10-20T11:17:58.000Z",
+            "seen_date": "2026-10-20T15:54:32.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 9
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 2,
+                "category": "security",
+                "hits": 1,
                 "weight": 9
               },
               {
-                "category": "protest",
-                "hits": 2,
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 35,
-            "quality_score": 36,
+            "geopolitical_score": 29,
+            "quality_score": 30,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -175,17 +227,17 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Former Serbian President Aleksandar Vucic has told Russian journalist Ksenia Sobchak that a world war may be approaching as European countries dramatically increase military spendi",
-            "text": "Former Serbian President Aleksandar Vucic has told Russian journalist Ksenia Sobchak that a world war may be approaching as European countries dramatically increase military spending. “If you can’t see how Europe is rearming, then you’re simply pretending not to see it. And why",
-            "url": "https://x.com/i/web/status/2112502698461274459",
+            "title": "🔴 Serbia's President Vučić cautions that Europe's military arming raises questions about its intentions, likening the situation to Chekhov's plays where a gun on the wall signifies",
+            "text": "🔴 Serbia's President Vučić cautions that Europe's military arming raises questions about its intentions, likening the situation to Chekhov's plays where a gun on the wall signifies impending action. Stay informed on geopolitical shifts with tracking",
+            "url": "https://x.com/i/web/status/2112574959339921480",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-10-20T11:14:26.000Z",
+            "seen_date": "2026-10-20T16:01:34.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 9
+              "Szerbia": 5
             },
             "event_category": "security",
             "event_categories": [
@@ -205,53 +257,8 @@
                 "weight": 8
               }
             ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 6,
-            "raw_engagement": 6,
-            "metrics": {
-              "likes": 4,
-              "reposts": 2,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Former Serbian President Aleksandar Vucic has told Russian journalist Ksenia Sobchal that a world war may be approaching as European countries dramatically increase military spendi",
-            "text": "Former Serbian President Aleksandar Vucic has told Russian journalist Ksenia Sobchal that a world war may be approaching as European countries dramatically increase military spending. “If you can’t see how Europe is rearming, then you’re simply pretending not to see it. And why",
-            "url": "https://x.com/i/web/status/2112502337390731526",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-20T11:13:00.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
+            "geopolitical_score": 26,
+            "quality_score": 27,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -270,30 +277,66 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 6,
+        "score": 13,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 1,
+        "mentions": 2,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 21,
-        "geopolitical_total": 18,
+        "quality_total": 44,
+        "geopolitical_total": 38,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 1,
+          "mastodon": 2,
           "x": 0
         },
         "category_counts": {
+          "government_crisis": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
+          "balkans": 1,
           "bosnia": 1
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Il Fatto Quotidiano: Christiane Amanpour lascia la Cnn dopo 43 anni: “Abbiamo lottato insieme per cercare i fatti, le prove e l’umanità” La giornalista Christiane Amanpour a giugno 2027 lascerà definitivamente la CNN, dove lavora dal 1983. Al contempo, già a fine 2026, terminerà la sua esperienza lavorativa anche presso l’emittente PBS. Questa decisione, che",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117473556787334965",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Tue, 20 Oct 2026 13:50:23 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 23,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "Agenzia Nova: Bosnia: \"Klix\", Repubblica Srpska ha pagato 500 mila dollari per avere incontri con politici Usa 15 ott 11:16 - (Agenzia Nova) - La Repubblica Srpska, entita' serba della Bosnia Erzegovina, ha pagato piu' di 500 mila dollari alla societa'... (Seb) Bosnia: \"Klix\", Republika Srpska paid $500,000 to have meetings with US politicians. Oct 15 11:16 ",
@@ -336,29 +379,30 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 12,
-        "level": "low",
+        "score": 20,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 3,
         "negative_hits": 0,
-        "positive_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 48,
-        "geopolitical_total": 42,
+        "quality_total": 65,
+        "geopolitical_total": 58,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "security": 1,
-          "ethnic_tension": 1
+          "ethnic_tension": 1,
+          "government_crisis": 1
         },
         "tag_counts": {
           "kosovo": 1,
-          "Koszovó": 1
+          "Koszovó": 2
         },
         "main_topic": "security",
         "top_posts": [
@@ -392,12 +436,52 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Deal Price : ₹179.00 ✅ Regular Price : ₹1,999 ❌ Pinkmint Women Short Kurti | Cotton Blend Printed Tunic Top | Trendy Casual Top | Casual & Office Wear Ethnic Top for Jeans",
-            "text": "Deal Price : ₹179.00 ✅ Regular Price : ₹1,999 ❌ Pinkmint Women Short Kurti | Cotton Blend Printed Tunic Top | Trendy Casual Top | Casual & Office Wear Ethnic Top for Jeans",
-            "url": "https://x.com/i/web/status/2112465100162363740",
+            "title": "Kosovo Constitutional Court to Mark 17th Anniversary With International Conference on Democracy Kosovo Prishtina ConstitutionalCourt NexhmiRexhepi JustinaShirokaPula StephanHarbart",
+            "text": "Kosovo Constitutional Court to Mark 17th Anniversary With International Conference on Democracy Kosovo Prishtina ConstitutionalCourt NexhmiRexhepi JustinaShirokaPula StephanHarbarth Democracy RuleOfLaw VeniceCommission EuropeanCourts",
+            "url": "https://x.com/i/web/status/2112562761775395127",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-10-20T08:45:02.000Z",
+            "seen_date": "2026-10-20T15:13:06.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 18,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "I just listed: AORBAN TRENS Women's Cotton Ethnic Printed Straight Kurti With Pant and Dupatta Set (Brown, XL), for ₹1,499.00 via",
+            "text": "I just listed: AORBAN TRENS Women's Cotton Ethnic Printed Straight Kurti With Pant and Dupatta Set (Brown, XL), for ₹1,499.00 via",
+            "url": "https://x.com/i/web/status/2112574930902794345",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-20T16:01:27.000Z",
             "matched_countries": [
               "Koszovó"
             ],
@@ -412,8 +496,8 @@
                 "weight": 10
               }
             ],
-            "geopolitical_score": 11,
-            "quality_score": 12,
+            "geopolitical_score": 10,
+            "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -432,31 +516,31 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 42,
+        "score": 49,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 9,
-        "negative_hits": 1,
+        "negative_hits": 2,
         "positive_hits": 5,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 215,
-        "geopolitical_total": 186,
+        "quality_total": 235,
+        "geopolitical_total": 208,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 9,
-          "x": 0
+          "mastodon": 8,
+          "x": 1
         },
         "category_counts": {
           "foreign_influence": 3,
           "security": 3,
           "eu_integration": 1,
-          "government_crisis": 1,
-          "economic_infrastructure": 1
+          "government_crisis": 2
         },
         "tag_counts": {
-          "montenegro": 9
+          "montenegro": 8,
+          "Montenegró": 1
         },
         "main_topic": "foreign_influence",
         "top_posts": [
@@ -541,6 +625,46 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Montenegro Amends Constitution to Introduce Integrity Checks for Prime Minister and Cabinet Candidates Montenegro ConstitutionalAmendments MomoKoprivica RuleOfLaw AntiCorruption Go",
+            "text": "Montenegro Amends Constitution to Introduce Integrity Checks for Prime Minister and Cabinet Candidates Montenegro ConstitutionalAmendments MomoKoprivica RuleOfLaw AntiCorruption GovernmentFormation PoliticalIntegrity MontenegrinPolitics WesternBalkans Democracy",
+            "url": "https://x.com/i/web/status/2112561311938674711",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-10-20T15:07:20.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Heute # GRÜNE BAG # Europa Hybrid in Berlin und online - hier mit @ tonihofreiter Torben Wöckner, Antje Westhues und Kathrin Schmid von # punktEU https://www. ardsounds.de/sendung/punkteu-d er-europa-podcast-von-wdr-5/urn:ard:show:0f0ee49b2c1ed066/ - über # China # Ukraine # Montenegro # Merz und mehr Ich sprach vorhin über # DigitaleSouveränität und dass # ",
             "url": "https://mastodon.green/@wettach/117455486986120202",
@@ -607,35 +731,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Montenegro: Parlamento respinge mozione per destituire Mandic, oggi voto su riforma costituzionale 14 ott 08:05 - (Agenzia Nova) - Il Parlamento del Montenegro ha respinto la mozione presentata dal Partito democratico dei socialisti (Dps)... (Seb) Montenegro: Parliament rejects motion to dismiss Mandic, today vote on constitutional reform Oct 1",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117437774353777947",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Wed, 14 Oct 2026 06:10:26 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -643,71 +738,31 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 17,
-        "level": "low",
+        "score": 22,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 4,
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 41,
-        "geopolitical_total": 38,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 43,
+        "geopolitical_total": 39,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
-          "ethnic_tension": 2,
-          "government_crisis": 1
+          "government_crisis": 2,
+          "ethnic_tension": 2
         },
         "tag_counts": {
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 4
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "Lets have a referendum in North Macedonia to rename the country to New America so we will be a part of the United States of America. President Donald J. Trump will be happy with th",
-            "text": "Lets have a referendum in North Macedonia to rename the country to New America so we will be a part of the United States of America. President Donald J. Trump will be happy with the outcome and its a WIN WIN.",
-            "url": "https://x.com/i/web/status/2112269630190301481",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-19T19:48:18.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 18,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "ABTTF joined 12th annual FUEN TAG meeting in Skopje, bringing together 13 Turkish organisations from nine European countries. Discussions focused on minority rights, language, cult",
             "text": "ABTTF joined 12th annual FUEN TAG meeting in Skopje, bringing together 13 Turkish organisations from nine European countries. Discussions focused on minority rights, language, cultural identity and stronger cooperation among Turkish communities across Europe. ABTTF FUEN",
@@ -777,6 +832,76 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "Prime Minister of North Macedonia Hristijan Mickoski has instructed the competent authorities to consider the possibility of restarting production at the OKTA oil refinery.",
+            "text": "Prime Minister of North Macedonia Hristijan Mickoski has instructed the competent authorities to consider the possibility of restarting production at the OKTA oil refinery.",
+            "url": "https://x.com/i/web/status/2112545150748725265",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-20T14:03:07.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🪙🇲🇰 's pitch: Mother Teresa on North Macedonia's future €2 coin. Born in Skopje in 1910. As President, he'd back Macedonia's euroization, working with the Austrian National Bank. E",
+            "text": "🪙🇲🇰 's pitch: Mother Teresa on North Macedonia's future €2 coin. Born in Skopje in 1910. As President, he'd back Macedonia's euroization, working with the Austrian National Bank. Euroization now. EU 2029. 🇪🇺 FehlingerDoctrine",
+            "url": "https://x.com/i/web/status/2112558082404520169",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-20T14:54:30.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -787,32 +912,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 34,
-        "negative_hits": 28,
-        "positive_hits": 2,
+        "mentions": 31,
+        "negative_hits": 26,
+        "positive_hits": 4,
         "trusted_hits": 5,
-        "engagement_total": 7,
-        "raw_engagement_total": 7,
-        "quality_total": 1034,
-        "geopolitical_total": 938,
+        "engagement_total": 70,
+        "raw_engagement_total": 70,
+        "quality_total": 1000,
+        "geopolitical_total": 909,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 26,
-          "x": 8
+          "mastodon": 25,
+          "x": 6
         },
         "category_counts": {
-          "security": 12,
-          "protest": 15,
-          "government_crisis": 6,
+          "corruption_rule_of_law": 2,
+          "security": 9,
+          "protest": 14,
+          "government_crisis": 5,
           "ethnic_tension": 1
         },
         "tag_counts": {
-          "balkans": 17,
+          "balkans": 15,
           "kosovo": 1,
           "montenegro": 1,
-          "albania": 7,
-          "Észak-Macedónia": 1,
-          "Albánia": 7
+          "albania": 8,
+          "Montenegró": 1,
+          "Albánia": 5
         },
         "main_topic": "protest",
         "top_posts": [
@@ -859,6 +985,56 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Anti-government protests in Albania turned violent after a week of unrest, with demonstrators clashing with riot police in central Tirana. The protests reflect growing anger over c",
+            "text": "Anti-government protests in Albania turned violent after a week of unrest, with demonstrators clashing with riot police in central Tirana. The protests reflect growing anger over corruption, demands for better university conditions and calls for the prime minister’s resignation.",
+            "url": "https://x.com/i/web/status/2112574920416780370",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-10-20T16:01:25.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 4,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 70,
+            "quality_score": 71,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -954,72 +1130,49 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "- France announces curfews for parts of Paris, northern cities and Nice after unrest - French cities experienced rioting and looting over the weekend amid anti-government protests. - Italy's Meloni considering curfew after riot in Milan - Albania's PM says 'red line' must be drawn' after anti-government demos and clashes # France # Italy # Albania https://ww",
-            "url": "https://kafeneio.social/@foufoutos/117469239653282603",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Mon, 19 Oct 2026 19:32:29 +0000",
+            "title": "Albania police use water cannon, tear gas against protesters outside education ministry: Student-led demonstrations against Prime Minister Edi Rama's government escalated and teach",
+            "text": "Albania police use water cannon, tear gas against protesters outside education ministry: Student-led demonstrations against Prime Minister Edi Rama's government escalated and teachers announced a nationwide university boycott. dlvr.​it/TW04m9 Follow for news",
+            "url": "https://x.com/i/web/status/2112573054404772324",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-10-20T15:54:00.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 1
+              "Albánia": 5
             },
-            "event_category": "protest",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "protest",
-                "hits": 4,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 39,
-            "quality_score": 44,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Rama vendos karrige jashtë kryeministrisë për dialog, të rinjtë i përgjigjen: Shihe në ëndrra Machine translated headline: \"Rama places chairs outside the Prime Minister's Office for dialogue; young people respond: \"Keep dreaming.\"\" For 4 months protest remained peaceful, even when cops were beating protestors, using water cannons and tear gas. Rama didn't w",
-            "url": "https://mas.to/@meganL/117472217526795941",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Tue, 20 Oct 2026 08:09:47 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
               {
                 "category": "government_crisis",
-                "hits": 2,
+                "hits": 1,
                 "weight": 9
               },
               {
                 "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
+                "hits": 3,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 38,
-            "quality_score": 41,
-            "source_reliability": 3,
+            "geopolitical_score": 45,
+            "quality_score": 46,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
