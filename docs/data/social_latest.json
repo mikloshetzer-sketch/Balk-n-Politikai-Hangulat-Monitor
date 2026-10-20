@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19 22:18 UTC",
+  "updated_at": "2026-10-20 02:45 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 20
+    "collected": 10
   },
   "countries": [
     {
@@ -21,34 +21,79 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 1,
-        "positive_hits": 1,
+        "mentions": 8,
+        "negative_hits": 3,
+        "positive_hits": 0,
         "trusted_hits": 3,
-        "engagement_total": 26,
-        "raw_engagement_total": 26,
-        "quality_total": 206,
-        "geopolitical_total": 180,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 262,
+        "geopolitical_total": 235,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 5,
-          "x": 4
+          "mastodon": 6,
+          "x": 2
         },
         "category_counts": {
-          "security": 3,
+          "security": 2,
           "foreign_influence": 2,
-          "ethnic_tension": 2,
-          "government_crisis": 2
+          "ethnic_tension": 3,
+          "protest": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 2,
+          "serbia": 3,
           "kosovo": 1,
           "bosnia": 1,
-          "Szerbia": 4
+          "Szerbia": 2
         },
-        "main_topic": "security",
+        "main_topic": "ethnic_tension",
         "top_posts": [
+          {
+            "title": "Doing to Moscow what NATO did to Belgrade would be a restrained and proportionate response at this point. And even then, the strikes on Belgrade mostly killed Serbian military and ",
+            "text": "Doing to Moscow what NATO did to Belgrade would be a restrained and proportionate response at this point. And even then, the strikes on Belgrade mostly killed Serbian military and police anyway when they were still doing all they could to ethnically cleanse their neighbours. How",
+            "url": "https://x.com/i/web/status/2112327268894966009",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-19T23:37:20.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 49,
+            "quality_score": 53,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 2,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "what on earth is this? I found it when looking for something else... # InventedPogroms Statistics, lies and confusion in # Kosovo # ESI background paper 19 February 2024 source https:// web.archive.org/web/2024022201 3922if_/https://www.esiweb.org/sites/default/files/reports/pdf/ESI_Invented%20pogroms%20-%20Statistics%20and%20the%20vanishing%20of%20Serbs%20-",
@@ -97,6 +142,52 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Tensions are rising across Europe as protests spread from Serbia to France and Italy. In Albania, political unrest is intensifying over foreign influence and corruption allegations",
+            "text": "Tensions are rising across Europe as protests spread from Serbia to France and Italy. In Albania, political unrest is intensifying over foreign influence and corruption allegations. . Europe Geopolitics serbian balkan",
+            "url": "https://x.com/i/web/status/2112348781362483255",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-20T01:02:49.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Albánia": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 3,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 43,
+            "quality_score": 44,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Six days before crucial Serbian parliamentary elections, digital rights investigators report with “high confidence” that two prominent figures connected to the anti-government protest movement were targeted by spyware. # Balkans # Serbia # Pegasus https:// balkaninsight.com/2026/10/19/s erbians-linked-to-protest-movement-allegedly-hit-by-spyware-attacks/bi/",
             "url": "https://kafeneio.social/@foufoutos/117469307178546989",
@@ -136,17 +227,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Unironically he should because Vucic has done the most out of many Serbian politicians to bring Serbia closer to NATO and EU integration. Brussels, Washington accords, Gazivode, NS",
-            "text": "Unironically he should because Vucic has done the most out of many Serbian politicians to bring Serbia closer to NATO and EU integration. Brussels, Washington accords, Gazivode, NSE26, OpenBalkan, etc…",
-            "url": "https://x.com/i/web/status/2112300833962369243",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-19T21:52:18.000Z",
+            "title": "",
+            "text": "Serbians Linked to Protest Movement Allegedly Hit by Spyware Attacks https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/19/serbians-linked-to-protest-movement-allegedly-hit-by-spyware-attacks/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/19/serbians-linked-to-protest-movement-allegedly-hit-by-spyware-attacks/bi/",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Mon, 19 Oct 2026 16:03:57 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 6
+              "Szerbia": 2
             },
             "event_category": "security",
             "event_categories": [
@@ -156,84 +247,13 @@
                 "weight": 9
               },
               {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 26,
-            "quality_score": 30,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Bosnia: \"Klix\", Repubblica Srpska ha pagato 500 mila dollari per avere incontri con politici Usa 15 ott 11:16 - (Agenzia Nova) - La Repubblica Srpska, entita' serba della Bosnia Erzegovina, ha pagato piu' di 500 mila dollari alla societa'... (Seb) Bosnia: \"Klix\", Republika Srpska paid $500,000 to have meetings with US politicians. Oct 15 11:16 ",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117444261756188584",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Thu, 15 Oct 2026 09:40:16 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina",
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 6,
-              "Szerbia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "foreign_influence",
+                "category": "protest",
                 "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 21,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "MOT descubrió: Dos ciudadanos finlandeses exportaron decenas de millones de electrónicos a Rusia - la máquina de guerra puede utilizar partes para matar civiles https:// yle.fi/a/74-20249082?origin=rss # Elrestodelmundo # Sancionesrusas # invasiónrusa # Finlandia # Sanciones # Economía # Interior # HongKong # Ucrania # Tallinn # Estonia # Serbia # Italia # R",
-            "url": "https://social.koti.site/@rss_bot/117462559510454422",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sun, 18 Oct 2026 15:13:38 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 16,
-            "quality_score": 19,
+            "geopolitical_score": 20,
+            "quality_score": 23,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -246,77 +266,32 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 33,
-        "level": "medium",
+        "score": 17,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 2,
-        "positive_hits": 1,
+        "mentions": 2,
+        "negative_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 30,
-        "raw_engagement_total": 30,
-        "quality_total": 90,
-        "geopolitical_total": 82,
+        "engagement_total": 7,
+        "raw_engagement_total": 7,
+        "quality_total": 34,
+        "geopolitical_total": 30,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
-          "x": 2
+          "mastodon": 1,
+          "x": 1
         },
         "category_counts": {
-          "ethnic_tension": 2,
-          "government_crisis": 2
+          "ethnic_tension": 1,
+          "government_crisis": 1
         },
         "tag_counts": {
-          "bosnia": 2,
-          "Szerbia": 1,
+          "bosnia": 1,
           "Koszovó": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
-          {
-            "title": "",
-            "text": "New investigation: Inside Republika Srpska’s $31M tech overhaul with Chinese vendor ELINC, Russian doctrines, and AIKT Director Dražen Višnjić. Key findings: • $31M contract signed before civil oversight was established • Confirmed partnership with EU-sanctioned Rybar network • Infrastructure monitoring across 15 entity nodes Full reports: EN: https:// mediu",
-            "url": "https://mastodon.social/@DigitalPowerInvestigation/117430644836665203",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Mon, 12 Oct 2026 23:57:19 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 9
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 43,
-            "quality_score": 46,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Agenzia Nova: Bosnia: \"Klix\", Repubblica Srpska ha pagato 500 mila dollari per avere incontri con politici Usa 15 ott 11:16 - (Agenzia Nova) - La Repubblica Srpska, entita' serba della Bosnia Erzegovina, ha pagato piu' di 500 mila dollari alla societa'... (Seb) Bosnia: \"Klix\", Republika Srpska paid $500,000 to have meetings with US politicians. Oct 15 11:16 ",
@@ -380,49 +355,12 @@
             "quality_score": 13,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 5,
-            "raw_engagement": 5,
+            "engagement": 7,
+            "raw_engagement": 7,
             "metrics": {
-              "likes": 4,
-              "reposts": 0,
+              "likes": 5,
+              "reposts": 1,
               "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "I know vucic and dodik are your strongest allies in the Balkans but I promise as president of austria I will do more for Israel than they have",
-            "text": "I know vucic and dodik are your strongest allies in the Balkans but I promise as president of austria I will do more for Israel than they have",
-            "url": "https://x.com/i/web/status/2112298875176493187",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-19T21:44:31.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Szerbia": 4,
-              "Bosznia-Hercegovina": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 25,
-            "raw_engagement": 25,
-            "metrics": {
-              "likes": 21,
-              "reposts": 2,
-              "replies": 2,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -433,29 +371,29 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 31,
+        "score": 23,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 3,
         "negative_hits": 1,
-        "positive_hits": 2,
+        "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 12,
-        "raw_engagement_total": 12,
-        "quality_total": 81,
-        "geopolitical_total": 72,
+        "engagement_total": 11,
+        "raw_engagement_total": 11,
+        "quality_total": 59,
+        "geopolitical_total": 52,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 4
+          "x": 2
         },
         "category_counts": {
           "security": 1,
-          "government_crisis": 4
+          "government_crisis": 2
         },
         "tag_counts": {
           "kosovo": 1,
-          "Koszovó": 4
+          "Koszovó": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -515,82 +453,12 @@
             "quality_score": 13,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 5,
-            "raw_engagement": 5,
+            "engagement": 7,
+            "raw_engagement": 7,
             "metrics": {
-              "likes": 4,
-              "reposts": 0,
+              "likes": 5,
+              "reposts": 1,
               "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🇽🇰🇧🇪| Belgium’s Prime Minister Bart De Wever has congratulated Kosova’s Prime Minister Albin Kurti on his re-election. In his congratulatory letter, he describes Belgian-Kosovar re",
-            "text": "🇽🇰🇧🇪| Belgium’s Prime Minister Bart De Wever has congratulated Kosova’s Prime Minister Albin Kurti on his re-election. In his congratulatory letter, he describes Belgian-Kosovar relations as \"excellent\" and speaks of \"outstanding\" cooperation with the Republic of Kosova.",
-            "url": "https://x.com/i/web/status/2112255351231844835",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-19T18:51:34.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
-            "metrics": {
-              "likes": 4,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🇽🇰🇸🇮| Slovenia’s Prime Minister Janez Janša has congratulated Kosova’s Prime Minister Albin Kurti on his re-election. In his congratulatory letter, PM Janša spoke of a friendly rel",
-            "text": "🇽🇰🇸🇮| Slovenia’s Prime Minister Janez Janša has congratulated Kosova’s Prime Minister Albin Kurti on his re-election. In his congratulatory letter, PM Janša spoke of a friendly relationship and partnership between Slovenia and the Republic of Kosova, and offered PM Kurti support",
-            "url": "https://x.com/i/web/status/2112256718738440499",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-19T18:57:00.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -620,13 +488,13 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
+            "engagement": 4,
+            "raw_engagement": 4,
             "metrics": {
               "likes": 3,
               "reposts": 0,
               "replies": 0,
-              "quotes": 0
+              "quotes": 1
             },
             "quality": "x_api_filtered"
           }
@@ -847,66 +715,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 22,
-        "level": "medium",
+        "score": 5,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 1,
         "negative_hits": 0,
         "positive_hits": 0,
-        "trusted_hits": 2,
-        "engagement_total": 75,
-        "raw_engagement_total": 75,
-        "quality_total": 70,
-        "geopolitical_total": 61,
+        "trusted_hits": 0,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 18,
+        "geopolitical_total": 17,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 3
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 1,
-          "security": 2
+          "government_crisis": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 1
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "I spent six months with the NATO military police in Skopje in 2002, working alongside a British and American team. One of the Englishmen, who was from Newcastle, spoke Geordie; his",
-            "text": "I spent six months with the NATO military police in Skopje in 2002, working alongside a British and American team. One of the Englishmen, who was from Newcastle, spoke Geordie; his fellow Englishmen told me, \"Don't even try to understand him even we can't understand him!\" His",
-            "url": "https://x.com/i/web/status/2112136764584325571",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-19T11:00:20.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 3,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 31,
-            "quality_score": 35,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 61,
-            "raw_engagement": 61,
-            "metrics": {
-              "likes": 45,
-              "reposts": 10,
-              "replies": 6,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "Lets have a referendum in North Macedonia to rename the country to New America so we will be a part of the United States of America. President Donald J. Trump will be happy with th",
             "text": "Lets have a referendum in North Macedonia to rename the country to New America so we will be a part of the United States of America. President Donald J. Trump will be happy with the outcome and its a WIN WIN.",
@@ -946,41 +778,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "The Head of the Mission, , had the pleasure to meet today with H.E. Ambassador , newly appointed Permanent Representative of the Republic of North Macedonia to . During the meeting",
-            "text": "The Head of the Mission, , had the pleasure to meet today with H.E. Ambassador , newly appointed Permanent Representative of the Republic of North Macedonia to . During the meeting, the two sides had a good exchange of views on NATO- Azerbaijan",
-            "url": "https://x.com/i/web/status/2112190202328346845",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-19T14:32:41.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 17,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 14,
-            "raw_engagement": 14,
-            "metrics": {
-              "likes": 11,
-              "reposts": 3,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -991,37 +788,36 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 33,
-        "negative_hits": 26,
-        "positive_hits": 3,
+        "mentions": 31,
+        "negative_hits": 25,
+        "positive_hits": 1,
         "trusted_hits": 4,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 995,
-        "geopolitical_total": 900,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 935,
+        "geopolitical_total": 842,
         "source_counts": {
           "reddit": 0,
           "mastodon": 27,
-          "x": 6
+          "x": 4
         },
         "category_counts": {
-          "security": 13,
-          "protest": 13,
+          "security": 10,
+          "protest": 15,
           "government_crisis": 2,
           "corruption_rule_of_law": 1,
           "ethnic_tension": 1,
-          "foreign_influence": 3
+          "foreign_influence": 2
         },
         "tag_counts": {
           "balkans": 17,
           "kosovo": 1,
           "montenegro": 1,
           "albania": 8,
-          "Koszovó": 1,
-          "Észak-Macedónia": 1,
-          "Albánia": 4
+          "Montenegró": 1,
+          "Albánia": 3
         },
-        "main_topic": "security",
+        "main_topic": "protest",
         "top_posts": [
           {
             "title": "",
@@ -1117,43 +913,49 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Student-led demonstrations continue in Tirana as protesters target government buildings over corruption, education and jobs: https://www. ibtimes.co.uk/albania-protests -edi-rama-supreme-court-fire-1826312 # Albania # JaredKushner # corruption # development # VjosaNarta # flamingos",
-            "url": "https://climatejustice.social/@breton/117467753732561315",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Mon, 19 Oct 2026 13:14:35 +0000",
+            "title": "🇦🇱 Albania Riots — Tirana — 19th of October 2026 Protesters attacked the Court of Appeal near Elbasan Street (Rruga e Elbasanit), smashing windows and forcing entry through the bui",
+            "text": "🇦🇱 Albania Riots — Tirana — 19th of October 2026 Protesters attacked the Court of Appeal near Elbasan Street (Rruga e Elbasanit), smashing windows and forcing entry through the building's entrance. 🤦🏻 According to Tirana Police, five people were arrested and another 15 were",
+            "url": "https://x.com/i/web/status/2112372747921936459",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-10-20T02:38:03.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
               "Albánia": 5
             },
-            "event_category": "protest",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
+                "category": "security",
+                "hits": 2,
+                "weight": 9
               },
               {
-                "category": "corruption_rule_of_law",
+                "category": "protest",
                 "hits": 2,
                 "weight": 8
               },
               {
-                "category": "economic_infrastructure",
+                "category": "corruption_rule_of_law",
                 "hits": 1,
-                "weight": 4
+                "weight": 8
               }
             ],
-            "geopolitical_score": 48,
-            "quality_score": 51,
-            "source_reliability": 3,
+            "geopolitical_score": 45,
+            "quality_score": 46,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
