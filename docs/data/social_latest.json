@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20 02:45 UTC",
+  "updated_at": "2026-10-20 04:37 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -10,9 +10,14 @@
         "country": "Bosznia-Hercegovina",
         "status_code": 400,
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
+      },
+      {
+        "country": "Albánia",
+        "status_code": 503,
+        "message": "{\"detail\":\"Service Unavailable\",\"status\":503,\"title\":\"Service Unavailable\",\"type\":\"about:blank\"}"
       }
     ],
-    "collected": 10
+    "collected": 9
   },
   "countries": [
     {
@@ -21,79 +26,34 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 3,
-        "positive_hits": 0,
-        "trusted_hits": 3,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 262,
-        "geopolitical_total": 235,
+        "mentions": 10,
+        "negative_hits": 5,
+        "positive_hits": 1,
+        "trusted_hits": 2,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 243,
+        "geopolitical_total": 217,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
-          "x": 2
+          "x": 4
         },
         "category_counts": {
-          "security": 2,
+          "security": 3,
           "foreign_influence": 2,
-          "ethnic_tension": 3,
-          "protest": 1
+          "ethnic_tension": 2,
+          "government_crisis": 3
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 3,
           "kosovo": 1,
           "bosnia": 1,
-          "Szerbia": 2
+          "Szerbia": 4
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "security",
         "top_posts": [
-          {
-            "title": "Doing to Moscow what NATO did to Belgrade would be a restrained and proportionate response at this point. And even then, the strikes on Belgrade mostly killed Serbian military and ",
-            "text": "Doing to Moscow what NATO did to Belgrade would be a restrained and proportionate response at this point. And even then, the strikes on Belgrade mostly killed Serbian military and police anyway when they were still doing all they could to ethnically cleanse their neighbours. How",
-            "url": "https://x.com/i/web/status/2112327268894966009",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-19T23:37:20.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 6
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 49,
-            "quality_score": 53,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 2,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "what on earth is this? I found it when looking for something else... # InventedPogroms Statistics, lies and confusion in # Kosovo # ESI background paper 19 February 2024 source https:// web.archive.org/web/2024022201 3922if_/https://www.esiweb.org/sites/default/files/reports/pdf/ESI_Invented%20pogroms%20-%20Statistics%20and%20the%20vanishing%20of%20Serbs%20-",
@@ -142,52 +102,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Tensions are rising across Europe as protests spread from Serbia to France and Italy. In Albania, political unrest is intensifying over foreign influence and corruption allegations",
-            "text": "Tensions are rising across Europe as protests spread from Serbia to France and Italy. In Albania, political unrest is intensifying over foreign influence and corruption allegations. . Europe Geopolitics serbian balkan",
-            "url": "https://x.com/i/web/status/2112348781362483255",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-20T01:02:49.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 43,
-            "quality_score": 44,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Six days before crucial Serbian parliamentary elections, digital rights investigators report with “high confidence” that two prominent figures connected to the anti-government protest movement were targeted by spyware. # Balkans # Serbia # Pegasus https:// balkaninsight.com/2026/10/19/s erbians-linked-to-protest-movement-allegedly-hit-by-spyware-attacks/bi/",
             "url": "https://kafeneio.social/@foufoutos/117469307178546989",
@@ -225,6 +139,91 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Will the massive student protests in Serbia succeed in ending President Vucic's 14-year rule? 🇷🇸✊ 🟢 Yes 🔴 No Serbia Protests Democracy EuropeNews GlobalAffairs",
+            "text": "Will the massive student protests in Serbia succeed in ending President Vucic's 14-year rule? 🇷🇸✊ 🟢 Yes 🔴 No Serbia Protests Democracy EuropeNews GlobalAffairs",
+            "url": "https://x.com/i/web/status/2112385391521395149",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-20T03:28:18.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "A Serbian prosecutor investigating a high-profile corruption case involving a major development project was hit with digital threats and warnings. Rade Bajić believes his legal wor",
+            "text": "A Serbian prosecutor investigating a high-profile corruption case involving a major development project was hit with digital threats and warnings. Rade Bajić believes his legal work made him an immediate target for unlawful spyware attacks.",
+            "url": "https://x.com/i/web/status/2112379558813225038",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-20T03:05:07.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 25,
+            "quality_score": 26,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -371,31 +370,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 23,
-        "level": "medium",
+        "score": 17,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 2,
         "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 11,
-        "raw_engagement_total": 11,
-        "quality_total": 59,
-        "geopolitical_total": 52,
+        "engagement_total": 7,
+        "raw_engagement_total": 7,
+        "quality_total": 49,
+        "geopolitical_total": 43,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "security": 1,
-          "government_crisis": 2
+          "government_crisis": 1
         },
         "tag_counts": {
           "kosovo": 1,
-          "Koszovó": 2
+          "Koszovó": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -460,41 +459,6 @@
               "reposts": 1,
               "replies": 1,
               "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Belgian Prime Minister Sends Message to Kurti: “We Aim to Strengthen Economic Ties with Kosovo” Kosovo Belgium AlbinKurti BartDeWever KosovoBelgiumRelations",
-            "text": "Belgian Prime Minister Sends Message to Kurti: “We Aim to Strengthen Economic Ties with Kosovo” Kosovo Belgium AlbinKurti BartDeWever KosovoBelgiumRelations",
-            "url": "https://x.com/i/web/status/2112283639052394941",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-19T20:43:58.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
-            "metrics": {
-              "likes": 3,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 1
             },
             "quality": "x_api_filtered"
           }
@@ -788,22 +752,22 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 31,
-        "negative_hits": 25,
+        "mentions": 28,
+        "negative_hits": 22,
         "positive_hits": 1,
         "trusted_hits": 4,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 935,
-        "geopolitical_total": 842,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 822,
+        "geopolitical_total": 732,
         "source_counts": {
           "reddit": 0,
           "mastodon": 27,
-          "x": 4
+          "x": 1
         },
         "category_counts": {
-          "security": 10,
-          "protest": 15,
+          "security": 8,
+          "protest": 14,
           "government_crisis": 2,
           "corruption_rule_of_law": 1,
           "ethnic_tension": 1,
@@ -814,8 +778,7 @@
           "kosovo": 1,
           "montenegro": 1,
           "albania": 8,
-          "Montenegró": 1,
-          "Albánia": 3
+          "Montenegró": 1
         },
         "main_topic": "protest",
         "top_posts": [
@@ -913,51 +876,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇦🇱 Albania Riots — Tirana — 19th of October 2026 Protesters attacked the Court of Appeal near Elbasan Street (Rruga e Elbasanit), smashing windows and forcing entry through the bui",
-            "text": "🇦🇱 Albania Riots — Tirana — 19th of October 2026 Protesters attacked the Court of Appeal near Elbasan Street (Rruga e Elbasanit), smashing windows and forcing entry through the building's entrance. 🤦🏻 According to Tirana Police, five people were arrested and another 15 were",
-            "url": "https://x.com/i/web/status/2112372747921936459",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-20T02:38:03.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 45,
-            "quality_score": 46,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Among other effects of corruption is the poor quality infrastructure. People have been protesting corruption for months peacefully until this week. The government basically ignored their demands, so they escalated this week, including pulling up sidewalk pavers to use to throw at government buildings and at police using tear gas & water cannons (which were u",
             "url": "https://mas.to/@meganL/117460920576948605",
@@ -1031,6 +949,45 @@
             "quality_score": 44,
             "source_reliability": 5,
             "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "LIVE | Të rinjtë “ndezin” Tiranën prej 7 ditësh, çfaë pritet të ndodhë? Machine translation of headline: \"Young people have been “energizing” Tirana for 7 days—what’s expected to happen next?\" Cops are just searching teens in public without any good reason - just their age and look. News24 is interviewing a teen right now who is very upset with the treatment",
+            "url": "https://mas.to/@meganL/117466477992515266",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Mon, 19 Oct 2026 07:50:09 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 37,
+            "quality_score": 40,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
