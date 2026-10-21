@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21 21:06 UTC",
+  "updated_at": "2026-10-21 21:34 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 26
+    "collected": 22
   },
   "countries": [
     {
@@ -21,32 +21,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 21,
-        "negative_hits": 11,
+        "mentions": 22,
+        "negative_hits": 10,
         "positive_hits": 2,
         "trusted_hits": 9,
-        "engagement_total": 80,
-        "raw_engagement_total": 80,
+        "engagement_total": 136,
+        "raw_engagement_total": 337,
         "quality_total": 438,
-        "geopolitical_total": 367,
+        "geopolitical_total": 366,
         "source_counts": {
           "reddit": 0,
           "mastodon": 16,
-          "x": 5
+          "x": 6
         },
         "category_counts": {
           "protest": 7,
           "security": 6,
           "foreign_influence": 2,
-          "government_crisis": 5,
+          "government_crisis": 6,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 3,
           "serbia": 12,
           "bosnia": 1,
-          "Szerbia": 4,
-          "Észak-Macedónia": 1
+          "Szerbia": 6
         },
         "main_topic": "protest",
         "top_posts": [
@@ -124,50 +123,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "BALKAN BLOG: From Skopje to Belgrade, what Balkan protests reveal for Albania: Student demonstrators are demanding Prime Minister Edi Rama step down, but recent Balkan history show",
-            "text": "BALKAN BLOG: From Skopje to Belgrade, what Balkan protests reveal for Albania: Student demonstrators are demanding Prime Minister Edi Rama step down, but recent Balkan history shows street movements rarely topple entrenched leaders on their own. dlvr.​it/TW0cS3 Follow for news",
-            "url": "https://x.com/i/web/status/2112856738206732353",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-21T10:41:16.000Z",
-            "matched_countries": [
-              "Albánia",
-              "Szerbia",
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Albánia": 5,
-              "Szerbia": 4,
-              "Észak-Macedónia": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "A student protest movement has gripped Serbia for two years. This weekend it will try to take power By Julian Borger in Belgrade Unorthodox campaign is challenging the ruling party’s 12-year reign with a bold democratic experiment https://www. theguardian.com/world/2026/oct /21/protest-movement-serbia-student-list-try-to-take-power # Serbia # Europe # Worldn",
             "url": "https://rssfeed.media/@guardianfeeds/117476937144198590",
@@ -231,6 +186,35 @@
             "quality_score": 26,
             "source_reliability": 5,
             "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Citizen Lab confirmed on 19 October 2026 that Serbian rector Vladan Đokić’s phone was infected with Pegasus. The attack used a zero-click exploit, meaning no action from the user was needed. Pegasus can give access to a device’s messages, microphone and camera. The incident happened six days before Serbia’s 25 October election, but the person behind it has n",
+            "url": "https://mastodon.social/@hacksgr/117476009097617868",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 21 Oct 2026 00:14:02 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 24,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -415,33 +399,33 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 60,
+        "score": 53,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
+        "mentions": 8,
         "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 3,
         "raw_engagement_total": 3,
-        "quality_total": 127,
-        "geopolitical_total": 109,
+        "quality_total": 105,
+        "geopolitical_total": 89,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 7
+          "x": 5
         },
         "category_counts": {
           "security": 1,
           "corruption_rule_of_law": 1,
           "government_crisis": 1,
-          "ethnic_tension": 6,
+          "ethnic_tension": 4,
           "eu_integration": 1
         },
         "tag_counts": {
           "serbia": 1,
           "kosovo": 2,
-          "Koszovó": 6,
+          "Koszovó": 4,
           "Montenegró": 1
         },
         "main_topic": "ethnic_tension",
@@ -800,77 +784,33 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 26,
-        "level": "medium",
+        "score": 15,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 1,
+        "mentions": 4,
+        "negative_hits": 0,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 90,
-        "geopolitical_total": 85,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
+        "quality_total": 61,
+        "geopolitical_total": 57,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 5
+          "x": 4
         },
         "category_counts": {
           "foreign_influence": 1,
           "security": 1,
-          "government_crisis": 2,
+          "government_crisis": 1,
           "eu_integration": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 5
+          "Észak-Macedónia": 4
         },
-        "main_topic": "government_crisis",
+        "main_topic": "foreign_influence",
         "top_posts": [
-          {
-            "title": "BALKAN BLOG: From Skopje to Belgrade, what Balkan protests reveal for Albania: Student demonstrators are demanding Prime Minister Edi Rama step down, but recent Balkan history show",
-            "text": "BALKAN BLOG: From Skopje to Belgrade, what Balkan protests reveal for Albania: Student demonstrators are demanding Prime Minister Edi Rama step down, but recent Balkan history shows street movements rarely topple entrenched leaders on their own. dlvr.​it/TW0cS3 Follow for news",
-            "url": "https://x.com/i/web/status/2112856738206732353",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-21T10:41:16.000Z",
-            "matched_countries": [
-              "Albánia",
-              "Szerbia",
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Albánia": 5,
-              "Szerbia": 4,
-              "Észak-Macedónia": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 29,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "WB30 was recently in North Macedonia presenting our argument for Western Balkans EU accession through the lens of security and defence. 🇪🇺 Watch our COO, Reuben Johnston's intervie",
             "text": "WB30 was recently in North Macedonia presenting our argument for Western Balkans EU accession through the lens of security and defence. 🇪🇺 Watch our COO, Reuben Johnston's interview with below. 📺",
@@ -983,10 +923,10 @@
             "quality_score": 12,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
+            "engagement": 4,
+            "raw_engagement": 4,
             "metrics": {
-              "likes": 1,
+              "likes": 2,
               "reposts": 2,
               "replies": 0,
               "quotes": 0
@@ -1037,23 +977,23 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 33,
-        "negative_hits": 32,
-        "positive_hits": 5,
-        "trusted_hits": 4,
-        "engagement_total": 49,
-        "raw_engagement_total": 49,
-        "quality_total": 1066,
-        "geopolitical_total": 979,
+        "mentions": 29,
+        "negative_hits": 28,
+        "positive_hits": 6,
+        "trusted_hits": 5,
+        "engagement_total": 145,
+        "raw_engagement_total": 177,
+        "quality_total": 1016,
+        "geopolitical_total": 930,
         "source_counts": {
           "reddit": 0,
           "mastodon": 23,
-          "x": 10
+          "x": 6
         },
         "category_counts": {
-          "protest": 12,
-          "government_crisis": 4,
-          "security": 14,
+          "protest": 11,
+          "government_crisis": 2,
+          "security": 13,
           "corruption_rule_of_law": 2,
           "ethnic_tension": 1
         },
@@ -1061,8 +1001,7 @@
           "balkans": 13,
           "albania": 10,
           "Koszovó": 1,
-          "Észak-Macedónia": 1,
-          "Albánia": 8
+          "Albánia": 5
         },
         "main_topic": "security",
         "top_posts": [
@@ -1199,6 +1138,51 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "U.S. Senator Elissa Slotkin has commented on the protests in Albania, calling on the Albanian government to avoid excessive use of police force, address corruption and respond to c",
+            "text": "U.S. Senator Elissa Slotkin has commented on the protests in Albania, calling on the Albanian government to avoid excessive use of police force, address corruption and respond to citizens’ concerns.",
+            "url": "https://x.com/i/web/status/2113014544393977941",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-10-21T21:08:19.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 49,
+            "quality_score": 53,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Kushner land heist partner Rama attacking journalists in Albania 🇦🇱 🇦🇱 🇦🇱 # Albania # protest # Europe # eu # world # international # politics # corruption # oligarchy # freedom # democracy # news https:// rsf.org/en/albanian-journalist s-targeted-police-violence-rsf-calls-investigations-and-parliamentary-scrutiny",
             "url": "https://mastodon.social/@dockwalk/117478533461794958",
@@ -1236,45 +1220,6 @@
             ],
             "geopolitical_score": 46,
             "quality_score": 49,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Persona te maskuar dolen nga ministria e brendshme Machine translation of chyron at one point: \"Masked individuals emerged from the Ministry of the Interior.\" Looped video was shown of an unarmed and unmasked woman being hustled into a van by 3 police wearing riot gear, including helmets. The guests in the studio are discussing the state violence using vario",
-            "url": "https://mas.to/@meganL/117474948326225032",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Tue, 20 Oct 2026 19:44:16 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 45,
-            "quality_score": 48,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
