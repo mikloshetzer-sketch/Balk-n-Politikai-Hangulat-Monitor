@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21 11:40 UTC",
+  "updated_at": "2026-10-21 16:23 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 14
+    "collected": 18
   },
   "countries": [
     {
@@ -21,32 +21,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 20,
+        "mentions": 21,
         "negative_hits": 14,
-        "positive_hits": 1,
-        "trusted_hits": 10,
-        "engagement_total": 14,
-        "raw_engagement_total": 14,
-        "quality_total": 433,
-        "geopolitical_total": 363,
+        "positive_hits": 0,
+        "trusted_hits": 9,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 470,
+        "geopolitical_total": 401,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 14,
+          "mastodon": 15,
           "x": 6
         },
         "category_counts": {
           "protest": 6,
           "security": 7,
           "foreign_influence": 2,
-          "government_crisis": 4,
+          "government_crisis": 5,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 3,
-          "serbia": 10,
+          "serbia": 11,
           "bosnia": 1,
-          "Szerbia": 3,
-          "Koszovó": 2,
+          "Szerbia": 4,
+          "Koszovó": 1,
           "Észak-Macedónia": 1
         },
         "main_topic": "security",
@@ -125,6 +125,47 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "⚔️ Military alliance around Kosovo is aimed at Serbia — Vucic ⚡️ Serbia's President Aleksandar Vučić says a new military bloc has formed on his country's borders, warning of a brew",
+            "text": "⚔️ Military alliance around Kosovo is aimed at Serbia — Vucic ⚡️ Serbia's President Aleksandar Vučić says a new military bloc has formed on his country's borders, warning of a brewing conflict in the heart of Europe. 💬 \"Against whom did they create this military alliance? Not",
+            "url": "https://x.com/i/web/status/2112924338261311992",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-21T15:09:53.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 30,
+            "quality_score": 31,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "BALKAN BLOG: From Skopje to Belgrade, what Balkan protests reveal for Albania: Student demonstrators are demanding Prime Minister Edi Rama step down, but recent Balkan history show",
             "text": "BALKAN BLOG: From Skopje to Belgrade, what Balkan protests reveal for Albania: Student demonstrators are demanding Prime Minister Edi Rama step down, but recent Balkan history shows street movements rarely topple entrenched leaders on their own. dlvr.​it/TW0cS3 Follow for news",
             "url": "https://x.com/i/web/status/2112856738206732353",
@@ -196,40 +237,6 @@
             ],
             "geopolitical_score": 24,
             "quality_score": 29,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Minaccia russa, guerra ibrida e riarmo in Europa: quali risposte possibili? La Russia prosegue la sua campagna terroristica e di guerra ibrida in Europa, ponendo al movimento pacifista delle domande ineludibili che mostrano una situazione tutt’altro che semplice. https:// antiauth.space/it/2026/10/21/m inaccia-russa-guerra-ibrida-e-riarmo-in-europa-quali-ris",
-            "url": "https://puntarella.party/@antiauth/117478254306132032",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Wed, 21 Oct 2026 09:45:02 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 26,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -377,31 +384,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 14,
-        "level": "low",
+        "score": 35,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 0,
-        "positive_hits": 2,
-        "trusted_hits": 1,
+        "mentions": 5,
+        "negative_hits": 1,
+        "positive_hits": 0,
+        "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 63,
-        "geopolitical_total": 56,
+        "quality_total": 99,
+        "geopolitical_total": 82,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 1,
-          "x": 2
+          "mastodon": 4,
+          "x": 1
         },
         "category_counts": {
-          "security": 1,
-          "government_crisis": 1,
-          "foreign_influence": 1
+          "security": 2,
+          "corruption_rule_of_law": 1,
+          "government_crisis": 2
         },
         "tag_counts": {
-          "kosovo": 1,
-          "Koszovó": 1,
-          "Montenegró": 1
+          "serbia": 1,
+          "kosovo": 3,
+          "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -435,34 +442,28 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Berlin Process: Regional Cooperation Key to EU Integration, German Embassy Tells KosovaPress BerlinProcess Kosovo Germany EuropeanUnion WesternBalkans RegionalCooperation EUIntegra",
-            "text": "Berlin Process: Regional Cooperation Key to EU Integration, German Embassy Tells KosovaPress BerlinProcess Kosovo Germany EuropeanUnion WesternBalkans RegionalCooperation EUIntegration Montenegro AlbinKurti EuropeanIntegration",
-            "url": "https://x.com/i/web/status/2112833159851020787",
+            "title": "Really great news from the Republic of Kosova. The opposition in Kosovo from today will be led by a wonderful woman, Vlora Çitaku. Personally, I have been a fan of this politician ",
+            "text": "Really great news from the Republic of Kosova. The opposition in Kosovo from today will be led by a wonderful woman, Vlora Çitaku. Personally, I have been a fan of this politician for more than a decade. Kosovo deserves to have a woman as Prime Minister in the future.",
+            "url": "https://x.com/i/web/status/2112939737619267919",
             "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-10-21T09:07:34.000Z",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-21T16:11:04.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 6,
-              "Montenegró": 1
+              "Koszovó": 2
             },
-            "event_category": "foreign_influence",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
               }
             ],
-            "geopolitical_score": 15,
-            "quality_score": 16,
+            "geopolitical_score": 18,
+            "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -476,19 +477,77 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "🇺🇸🧵 Richard Grenell, the former U.S. Special Envoy for the Prishtina-Belgrade dialogue and a Serbia-lobbyist, is the subject of a White House investigation. Grenell, who is—or was—",
-            "text": "🇺🇸🧵 Richard Grenell, the former U.S. Special Envoy for the Prishtina-Belgrade dialogue and a Serbia-lobbyist, is the subject of a White House investigation. Grenell, who is—or was—considered a close confidant of President Trump, is accused of embezzling $5.6 million. White",
-            "url": "https://x.com/i/web/status/2112841210750468167",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-21T09:39:33.000Z",
+            "title": "",
+            "text": "Domenica si vota in # Serbia . Vedremo se vinceranno (ancora) coloro che hanno sotterrato quegli ordigni. In # Kosovo 27 anni dopo la fine della guerra non ci sono più mine: «Così abbiamo ricostruito il Paese» https://www. avvenire.it/mondo/27-anni-dopo -le-bombe-in-kosovo-e-terminato-lincubo-delle-mine_114584 @ cultura",
+            "url": "https://mastodon.uno/@fucinafibonacci/117478977428443086",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 21 Oct 2026 12:48:55 +0000",
             "matched_countries": [
               "Szerbia",
               "Koszovó"
             ],
             "country_confidence": {
-              "Szerbia": 5,
-              "Koszovó": 4
+              "Szerbia": 1,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 18,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Kosovo Court Sentences Serb for War Crimes https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/21/kosovo-court-sentences-serb-for-war-crimes/btj/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/21/kosovo-court-sentences-serb-for-war-crimes/btj/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 21 Oct 2026 14:32:51 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 14,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Leader of Kosovo Opposition Party PDK Steps Down https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/21/leader-of-kosovo-opposition-party-pdk-steps-down/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/21/leader-of-kosovo-opposition-party-pdk-steps-down/bi/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 21 Oct 2026 14:41:02 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -498,19 +557,13 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
+            "geopolitical_score": 9,
+            "quality_score": 12,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -709,26 +762,27 @@
         "score": 33,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 2,
-        "positive_hits": 1,
+        "mentions": 6,
+        "negative_hits": 1,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 87,
-        "geopolitical_total": 82,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 104,
+        "geopolitical_total": 98,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 5
+          "x": 6
         },
         "category_counts": {
-          "eu_integration": 1,
+          "foreign_influence": 1,
+          "security": 1,
           "government_crisis": 3,
-          "security": 1
+          "eu_integration": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 5
+          "Észak-Macedónia": 6
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -777,12 +831,12 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "LIVE WEBINAR THE ATTACK SURFACE OF AI: Understanding & Securing Modern AI Systems 🎙️ Ikechukwu John, Cybersecurity Researcher (Live from North Macedonia 🇲🇰) 🗓️ Fri, 23 Oct 2026 | 7",
-            "text": "LIVE WEBINAR THE ATTACK SURFACE OF AI: Understanding & Securing Modern AI Systems 🎙️ Ikechukwu John, Cybersecurity Researcher (Live from North Macedonia 🇲🇰) 🗓️ Fri, 23 Oct 2026 | 7PM WAT 📍 Google Meet AI Security | Threats & Risks | Emerging Tech",
-            "url": "https://x.com/i/web/status/2112626489233707208",
+            "title": "WB30 was recently in North Macedonia presenting our argument for Western Balkans EU accession through the lens of security and defence. 🇪🇺 Watch our COO, Reuben Johnston's intervie",
+            "text": "WB30 was recently in North Macedonia presenting our argument for Western Balkans EU accession through the lens of security and defence. 🇪🇺 Watch our COO, Reuben Johnston's interview with below. 📺",
+            "url": "https://x.com/i/web/status/2112918634016190787",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-20T19:26:20.000Z",
+            "seen_date": "2026-10-21T14:47:13.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -795,18 +849,23 @@
                 "category": "security",
                 "hits": 2,
                 "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
               }
             ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
+            "geopolitical_score": 25,
+            "quality_score": 26,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 3,
+              "likes": 0,
               "reposts": 0,
-              "replies": 1,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -852,6 +911,48 @@
             "quality": "x_api_filtered"
           },
           {
+            "title": "Serbia's top trade partners in Aug 2026 show a trade deficit with China (-500M USD) & Germany (-19M USD), but surplus with Bosnia Herzegovina (+120M USD) & North Macedonia (+52M US",
+            "text": "Serbia's top trade partners in Aug 2026 show a trade deficit with China (-500M USD) & Germany (-19M USD), but surplus with Bosnia Herzegovina (+120M USD) & North Macedonia (+52M USD). Total trade heavily favors exports to EU neighbors. Source: UN Comtrade, analysis by OpenAI.",
+            "url": "https://x.com/i/web/status/2112921989128089782",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-21T15:00:33.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Szerbia": 1,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 13,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "EU accession & economic convergence go hand in hand. North Macedonia made important progress, including on digitalization & private sector development, with over €140 mil paid for ",
             "text": "EU accession & economic convergence go hand in hand. North Macedonia made important progress, including on digitalization & private sector development, with over €140 mil paid for reforms achieved under the Reform Agenda. Further reforms progress will bring more benefit.",
             "url": "https://x.com/i/web/status/2112858472656339188",
@@ -881,46 +982,11 @@
             "quality_score": 12,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 3,
+            "raw_engagement": 3,
             "metrics": {
               "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "On October 21, President of the Republic of North Macedonia Gordana Siljanovska-Davkova made a phone call to President of the Republic of Azerbaijan Ilham Aliyev. This was reported",
-            "text": "On October 21, President of the Republic of North Macedonia Gordana Siljanovska-Davkova made a phone call to President of the Republic of Azerbaijan Ilham Aliyev. This was reported by the Press Service of the President of Azerbaijan. During the phone conversation, the heads of",
-            "url": "https://x.com/i/web/status/2112854808113668238",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-21T10:33:35.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "reposts": 2,
               "replies": 0,
               "quotes": 0
             },
@@ -935,78 +1001,79 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 27,
-        "negative_hits": 25,
-        "positive_hits": 8,
-        "trusted_hits": 5,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 962,
-        "geopolitical_total": 877,
+        "mentions": 30,
+        "negative_hits": 27,
+        "positive_hits": 7,
+        "trusted_hits": 4,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 992,
+        "geopolitical_total": 904,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 24,
-          "x": 3
+          "mastodon": 25,
+          "x": 5
         },
         "category_counts": {
-          "security": 10,
+          "government_crisis": 6,
+          "security": 12,
           "corruption_rule_of_law": 3,
-          "protest": 9,
-          "government_crisis": 5
+          "protest": 9
         },
         "tag_counts": {
-          "balkans": 13,
+          "balkans": 14,
           "albania": 11,
+          "Koszovó": 1,
           "Észak-Macedónia": 1,
-          "Albánia": 2
+          "Albánia": 3
         },
         "main_topic": "security",
         "top_posts": [
           {
             "title": "",
-            "text": "Why are people # protesting across # Europe ? A summary of why the protests started and how governments have responded to them by Harry Taylor Sun 18 Oct 2026 11.15 EDT \"Young people have been taking to the streets in countries across Europe, including # Spain , # France and # Portugal , to protest over their unhappiness at the state of schools and wider cos",
-            "url": "https://kolektiva.social/@DoomsdaysCW/117475920621558430",
+            "text": "Democracy Now! \"Massive Protests Continue to Roil Albania, Demand PM's Resignation\" Student-led anti-corruption and cost-of-living protests in Albania are calling for the resignation of Prime Minister Edi Rama, among other demands. Hundreds of injuries and arrests have been reported amid a violent police crackdown, along with widespread damage to public and ",
+            "url": "https://mas.to/@meganL/117479705150826392",
             "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Tue, 20 Oct 2026 23:51:32 +0000",
+            "tag": "balkans",
+            "seen_date": "Wed, 21 Oct 2026 15:54:00 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 1
+              "Albánia": 5
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 2,
+                "category": "government_crisis",
+                "hits": 4,
                 "weight": 9
               },
               {
-                "category": "government_crisis",
-                "hits": 2,
+                "category": "security",
+                "hits": 1,
                 "weight": 9
               },
               {
                 "category": "protest",
-                "hits": 5,
+                "hits": 2,
                 "weight": 8
               },
               {
                 "category": "corruption_rule_of_law",
-                "hits": 1,
+                "hits": 2,
                 "weight": 8
               },
               {
                 "category": "economic_infrastructure",
-                "hits": 2,
+                "hits": 1,
                 "weight": 4
               }
             ],
-            "geopolitical_score": 100,
-            "quality_score": 105,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "geopolitical_score": 85,
+            "quality_score": 88,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
