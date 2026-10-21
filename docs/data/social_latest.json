@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21 16:23 UTC",
+  "updated_at": "2026-10-21 17:06 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 18
+    "collected": 17
   },
   "countries": [
     {
@@ -21,31 +21,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 21,
-        "negative_hits": 14,
-        "positive_hits": 0,
-        "trusted_hits": 9,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 470,
-        "geopolitical_total": 401,
+        "mentions": 22,
+        "negative_hits": 15,
+        "positive_hits": 1,
+        "trusted_hits": 10,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 501,
+        "geopolitical_total": 428,
         "source_counts": {
           "reddit": 0,
           "mastodon": 15,
-          "x": 6
+          "x": 7
         },
         "category_counts": {
-          "protest": 6,
-          "security": 7,
-          "foreign_influence": 2,
-          "government_crisis": 5,
+          "protest": 7,
+          "security": 10,
+          "foreign_influence": 1,
+          "government_crisis": 3,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 3,
           "serbia": 11,
           "bosnia": 1,
-          "Szerbia": 4,
+          "Szerbia": 5,
           "Koszovó": 1,
           "Észak-Macedónia": 1
         },
@@ -210,38 +210,44 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "",
-            "text": "A student protest movement has gripped Serbia for two years. This weekend it will try to take power By Julian Borger in Belgrade Unorthodox campaign is challenging the ruling party’s 12-year reign with a bold democratic experiment https://www. theguardian.com/world/2026/oct /21/protest-movement-serbia-student-list-try-to-take-power # Serbia # Europe # Worldn",
-            "url": "https://rssfeed.media/@guardianfeeds/117476937144198590",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Wed, 21 Oct 2026 04:10:03 +0000",
+            "title": "Serbian police arrest six people suspected of plotting violence against police and political opponents on the day of Sunday’s parliamentary election. (Reuters / RTS / BBC News Serb",
+            "text": "Serbian police arrest six people suspected of plotting violence against police and political opponents on the day of Sunday’s parliamentary election. (Reuters / RTS / BBC News Serbian) EJPH",
+            "url": "https://x.com/i/web/status/2112949163700969510",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-21T16:48:31.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 2
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
               },
               {
-                "category": "protest",
+                "category": "government_crisis",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
               }
             ],
-            "geopolitical_score": 24,
+            "geopolitical_score": 25,
             "quality_score": 29,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -249,33 +255,36 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 18,
-        "level": "low",
+        "score": 40,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 0,
-        "positive_hits": 0,
+        "mentions": 6,
+        "negative_hits": 1,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 55,
-        "geopolitical_total": 46,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 106,
+        "geopolitical_total": 94,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 0
+          "x": 3
         },
         "category_counts": {
           "government_crisis": 1,
           "foreign_influence": 1,
-          "ethnic_tension": 1
+          "ethnic_tension": 2,
+          "protest": 1,
+          "security": 1
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 1,
-          "bosnia": 1
+          "bosnia": 1,
+          "Szerbia": 3
         },
-        "main_topic": "government_crisis",
+        "main_topic": "ethnic_tension",
         "top_posts": [
           {
             "title": "",
@@ -310,6 +319,43 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Two rival movements. One decisive election. Vučić's supporters gathered in Niš alongside Milorad Dodik, while young men wearing Ratko Mladić caps chanted nationalist slogans. Meanw",
+            "text": "Two rival movements. One decisive election. Vučić's supporters gathered in Niš alongside Milorad Dodik, while young men wearing Ratko Mladić caps chanted nationalist slogans. Meanwhile, students from across Serbia marched towards Belgrade, preparing a mass rally before Sunday's",
+            "url": "https://x.com/i/web/status/2112948190722826692",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-21T16:44:40.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Szerbia": 9,
+              "Bosznia-Hercegovina": 4
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 21,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 2,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -348,6 +394,47 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "With great pleasure and a spirit of brotherhood and collegiality, I welcomed a high-level delegation from Republika Srpska to the Consulate General of the Republic of Serbia in New",
+            "text": "With great pleasure and a spirit of brotherhood and collegiality, I welcomed a high-level delegation from Republika Srpska to the Consulate General of the Republic of Serbia in New York, led by Mr. Marko Romić, Secretary General to the President of Republika Srpska, and Mr.",
+            "url": "https://x.com/i/web/status/2112950427901911465",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-21T16:53:33.000Z",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 4,
+              "Szerbia": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Russian Despatch: Kremlin Clings to Balkan Buddies Dodik and Vucic https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/21/russian-despatch-kremlin-clings-to-balkan-buddies-dodik-and-vucic/bi/",
             "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/21/russian-despatch-kremlin-clings-to-balkan-buddies-dodik-and-vucic/bi/",
@@ -384,33 +471,33 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 35,
-        "level": "medium",
+        "score": 47,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 1,
+        "mentions": 6,
+        "negative_hits": 2,
         "positive_hits": 0,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 99,
-        "geopolitical_total": 82,
+        "quality_total": 130,
+        "geopolitical_total": 112,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "security": 2,
           "corruption_rule_of_law": 1,
-          "government_crisis": 2
+          "government_crisis": 3
         },
         "tag_counts": {
           "serbia": 1,
           "kosovo": 3,
-          "Koszovó": 1
+          "Koszovó": 2
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -440,6 +527,41 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "A meeting just hours before a political resignation. Kosovo opposition leader Bedri Hamza reportedly received assurances from Prime Minister Albin Kurti over amendments to the Spec",
+            "text": "A meeting just hours before a political resignation. Kosovo opposition leader Bedri Hamza reportedly received assurances from Prime Minister Albin Kurti over amendments to the Specialist Chambers law before stepping down as PDK chairman. Vlora Çitaku has now taken over as acting",
+            "url": "https://x.com/i/web/status/2112950940475019767",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-21T16:55:35.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 30,
+            "quality_score": 31,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "Really great news from the Republic of Kosova. The opposition in Kosovo from today will be led by a wonderful woman, Vlora Çitaku. Personally, I have been a fan of this politician ",
@@ -530,35 +652,6 @@
             ],
             "geopolitical_score": 11,
             "quality_score": 14,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Leader of Kosovo Opposition Party PDK Steps Down https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/21/leader-of-kosovo-opposition-party-pdk-steps-down/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/21/leader-of-kosovo-opposition-party-pdk-steps-down/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 21 Oct 2026 14:41:02 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -759,30 +852,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 33,
+        "score": 26,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 5,
         "negative_hits": 1,
         "positive_hits": 2,
         "trusted_hits": 0,
         "engagement_total": 4,
         "raw_engagement_total": 4,
-        "quality_total": 104,
-        "geopolitical_total": 98,
+        "quality_total": 90,
+        "geopolitical_total": 85,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 6
+          "x": 5
         },
         "category_counts": {
           "foreign_influence": 1,
           "security": 1,
-          "government_crisis": 3,
+          "government_crisis": 2,
           "eu_integration": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 6
+          "Észak-Macedónia": 5
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -858,46 +951,6 @@
             ],
             "geopolitical_score": 25,
             "quality_score": 26,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Presidents of Azerbaijan and North Macedonia discuss challenges facing global energy sector report reportaz reportnewsaz news breakingnews president ilhamaliyev northmacedonia glob",
-            "text": "Presidents of Azerbaijan and North Macedonia discuss challenges facing global energy sector report reportaz reportnewsaz news breakingnews president ilhamaliyev northmacedonia globalenergysector",
-            "url": "https://x.com/i/web/status/2112855608894631950",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-21T10:36:46.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -991,6 +1044,41 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "🏅 Outstanding Achievement for Kasra! 🏅 Congratulations to Kasra (Y10) on winning a bronze medal 🥉 at an international wrestling tournament in North Macedonia! Competing in the U15 ",
+            "text": "🏅 Outstanding Achievement for Kasra! 🏅 Congratulations to Kasra (Y10) on winning a bronze medal 🥉 at an international wrestling tournament in North Macedonia! Competing in the U15 57kg category, Kasra won 3 of his 4 matches against strong international opposition.",
+            "url": "https://x.com/i/web/status/2112895288684032478",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-21T13:14:27.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -1001,33 +1089,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 30,
-        "negative_hits": 27,
+        "mentions": 28,
+        "negative_hits": 25,
         "positive_hits": 7,
         "trusted_hits": 4,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 992,
-        "geopolitical_total": 904,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 947,
+        "geopolitical_total": 861,
         "source_counts": {
           "reddit": 0,
           "mastodon": 25,
-          "x": 5
+          "x": 3
         },
         "category_counts": {
           "government_crisis": 6,
-          "security": 12,
+          "security": 9,
           "corruption_rule_of_law": 3,
-          "protest": 9
+          "protest": 10
         },
         "tag_counts": {
           "balkans": 14,
           "albania": 11,
           "Koszovó": 1,
           "Észak-Macedónia": 1,
-          "Albánia": 3
+          "Albánia": 1
         },
-        "main_topic": "security",
+        "main_topic": "protest",
         "top_posts": [
           {
             "title": "",
