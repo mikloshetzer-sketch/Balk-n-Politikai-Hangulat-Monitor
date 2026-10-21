@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21 17:06 UTC",
+  "updated_at": "2026-10-21 21:06 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 26
   },
   "countries": [
     {
@@ -21,35 +21,34 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 22,
-        "negative_hits": 15,
-        "positive_hits": 1,
-        "trusted_hits": 10,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 501,
-        "geopolitical_total": 428,
+        "mentions": 21,
+        "negative_hits": 11,
+        "positive_hits": 2,
+        "trusted_hits": 9,
+        "engagement_total": 80,
+        "raw_engagement_total": 80,
+        "quality_total": 438,
+        "geopolitical_total": 367,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 15,
-          "x": 7
+          "mastodon": 16,
+          "x": 5
         },
         "category_counts": {
           "protest": 7,
-          "security": 10,
-          "foreign_influence": 1,
-          "government_crisis": 3,
+          "security": 6,
+          "foreign_influence": 2,
+          "government_crisis": 5,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 3,
-          "serbia": 11,
+          "serbia": 12,
           "bosnia": 1,
-          "Szerbia": 5,
-          "Koszovó": 1,
+          "Szerbia": 4,
           "Észak-Macedónia": 1
         },
-        "main_topic": "security",
+        "main_topic": "protest",
         "top_posts": [
           {
             "title": "",
@@ -125,47 +124,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "⚔️ Military alliance around Kosovo is aimed at Serbia — Vucic ⚡️ Serbia's President Aleksandar Vučić says a new military bloc has formed on his country's borders, warning of a brew",
-            "text": "⚔️ Military alliance around Kosovo is aimed at Serbia — Vucic ⚡️ Serbia's President Aleksandar Vučić says a new military bloc has formed on his country's borders, warning of a brewing conflict in the heart of Europe. 💬 \"Against whom did they create this military alliance? Not",
-            "url": "https://x.com/i/web/status/2112924338261311992",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-21T15:09:53.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 30,
-            "quality_score": 31,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "BALKAN BLOG: From Skopje to Belgrade, what Balkan protests reveal for Albania: Student demonstrators are demanding Prime Minister Edi Rama step down, but recent Balkan history show",
             "text": "BALKAN BLOG: From Skopje to Belgrade, what Balkan protests reveal for Albania: Student demonstrators are demanding Prime Minister Edi Rama step down, but recent Balkan history shows street movements rarely topple entrenched leaders on their own. dlvr.​it/TW0cS3 Follow for news",
             "url": "https://x.com/i/web/status/2112856738206732353",
@@ -210,17 +168,51 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Serbian police arrest six people suspected of plotting violence against police and political opponents on the day of Sunday’s parliamentary election. (Reuters / RTS / BBC News Serb",
-            "text": "Serbian police arrest six people suspected of plotting violence against police and political opponents on the day of Sunday’s parliamentary election. (Reuters / RTS / BBC News Serbian) EJPH",
-            "url": "https://x.com/i/web/status/2112949163700969510",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-21T16:48:31.000Z",
+            "title": "",
+            "text": "A student protest movement has gripped Serbia for two years. This weekend it will try to take power By Julian Borger in Belgrade Unorthodox campaign is challenging the ruling party’s 12-year reign with a bold democratic experiment https://www. theguardian.com/world/2026/oct /21/protest-movement-serbia-student-list-try-to-take-power # Serbia # Europe # Worldn",
+            "url": "https://rssfeed.media/@guardianfeeds/117476937144198590",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 21 Oct 2026 04:10:03 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 24,
+            "quality_score": 29,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Minaccia russa, guerra ibrida e riarmo in Europa: quali risposte possibili? La Russia prosegue la sua campagna terroristica e di guerra ibrida in Europa, ponendo al movimento pacifista delle domande ineludibili che mostrano una situazione tutt’altro che semplice. https:// antiauth.space/it/2026/10/21/m inaccia-russa-guerra-ibrida-e-riarmo-in-europa-quali-ris",
+            "url": "https://puntarella.party/@antiauth/117478254306132032",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 21 Oct 2026 09:45:02 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
             },
             "event_category": "security",
             "event_categories": [
@@ -230,24 +222,18 @@
                 "weight": 9
               },
               {
-                "category": "government_crisis",
+                "category": "foreign_influence",
                 "hits": 1,
-                "weight": 9
+                "weight": 8
               }
             ],
-            "geopolitical_score": 25,
-            "quality_score": 29,
+            "geopolitical_score": 21,
+            "quality_score": 26,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -255,37 +241,73 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 40,
-        "level": "high",
+        "score": 26,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
-        "negative_hits": 1,
-        "positive_hits": 1,
-        "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 106,
-        "geopolitical_total": 94,
+        "mentions": 4,
+        "negative_hits": 0,
+        "positive_hits": 0,
+        "trusted_hits": 1,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 89,
+        "geopolitical_total": 75,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 3,
-          "x": 3
+          "mastodon": 4,
+          "x": 0
         },
         "category_counts": {
-          "government_crisis": 1,
+          "government_crisis": 2,
           "foreign_influence": 1,
-          "ethnic_tension": 2,
-          "protest": 1,
-          "security": 1
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "balkans": 1,
+          "balkans": 2,
           "serbia": 1,
-          "bosnia": 1,
-          "Szerbia": 3
+          "bosnia": 1
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "",
+            "text": "BIRN has confirmed that at least three associates of US President Donald Trump attended a campaign rally for Milorad Dodik’s Serb nationalist SNSD party, raising questions of possible violations of electoral law. # Balkans # Bosnia # USA https:// balkaninsight.com/2026/10/21/t rump-associates-attended-rally-for-bosnian-serb-nationalist-party/bi/",
+            "url": "https://kafeneio.social/@foufoutos/117480638840781488",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Wed, 21 Oct 2026 19:51:27 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 34,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "Il Fatto Quotidiano: Christiane Amanpour lascia la Cnn dopo 43 anni: “Abbiamo lottato insieme per cercare i fatti, le prove e l’umanità” La giornalista Christiane Amanpour a giugno 2027 lascerà definitivamente la CNN, dove lavora dal 1983. Al contempo, già a fine 2026, terminerà la sua esperienza lavorativa anche presso l’emittente PBS. Questa decisione, che",
@@ -319,43 +341,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Two rival movements. One decisive election. Vučić's supporters gathered in Niš alongside Milorad Dodik, while young men wearing Ratko Mladić caps chanted nationalist slogans. Meanw",
-            "text": "Two rival movements. One decisive election. Vučić's supporters gathered in Niš alongside Milorad Dodik, while young men wearing Ratko Mladić caps chanted nationalist slogans. Meanwhile, students from across Serbia marched towards Belgrade, preparing a mass rally before Sunday's",
-            "url": "https://x.com/i/web/status/2112948190722826692",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-21T16:44:40.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Szerbia": 9,
-              "Bosznia-Hercegovina": 4
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 2,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -394,47 +379,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "With great pleasure and a spirit of brotherhood and collegiality, I welcomed a high-level delegation from Republika Srpska to the Consulate General of the Republic of Serbia in New",
-            "text": "With great pleasure and a spirit of brotherhood and collegiality, I welcomed a high-level delegation from Republika Srpska to the Consulate General of the Republic of Serbia in New York, led by Mr. Marko Romić, Secretary General to the President of Republika Srpska, and Mr.",
-            "url": "https://x.com/i/web/status/2112950427901911465",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-21T16:53:33.000Z",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 4,
-              "Szerbia": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Russian Despatch: Kremlin Clings to Balkan Buddies Dodik and Vucic https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/21/russian-despatch-kremlin-clings-to-balkan-buddies-dodik-and-vucic/bi/",
             "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/21/russian-despatch-kremlin-clings-to-balkan-buddies-dodik-and-vucic/bi/",
@@ -471,133 +415,37 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 47,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 10,
         "negative_hits": 2,
-        "positive_hits": 0,
-        "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 130,
-        "geopolitical_total": 112,
+        "positive_hits": 1,
+        "trusted_hits": 1,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 127,
+        "geopolitical_total": 109,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
-          "x": 2
+          "mastodon": 3,
+          "x": 7
         },
         "category_counts": {
-          "security": 2,
+          "security": 1,
           "corruption_rule_of_law": 1,
-          "government_crisis": 3
+          "government_crisis": 1,
+          "ethnic_tension": 6,
+          "eu_integration": 1
         },
         "tag_counts": {
           "serbia": 1,
-          "kosovo": 3,
-          "Koszovó": 2
+          "kosovo": 2,
+          "Koszovó": 6,
+          "Montenegró": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "ethnic_tension",
         "top_posts": [
-          {
-            "title": "",
-            "text": "RaiNews: L'Italia torna al comando di KFor, la missione Nato in Kosovo Il ministro della Difesa Guido Crosetto alla cerimonia: \"Mettere in sicurezza i Balcani, pensiamo di installare qui dei radar\". Ma il Kosovo resta instabile e diviso Italy returns to command of KFOR, the NATO mission in Kosovo. Defense Minister Guido Crosetti at the ceremony: “Securing th",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117440882197157730",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 14 Oct 2026 19:20:48 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 3,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 31,
-            "quality_score": 36,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "A meeting just hours before a political resignation. Kosovo opposition leader Bedri Hamza reportedly received assurances from Prime Minister Albin Kurti over amendments to the Spec",
-            "text": "A meeting just hours before a political resignation. Kosovo opposition leader Bedri Hamza reportedly received assurances from Prime Minister Albin Kurti over amendments to the Specialist Chambers law before stepping down as PDK chairman. Vlora Çitaku has now taken over as acting",
-            "url": "https://x.com/i/web/status/2112950940475019767",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-21T16:55:35.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 3,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 30,
-            "quality_score": 31,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Really great news from the Republic of Kosova. The opposition in Kosovo from today will be led by a wonderful woman, Vlora Çitaku. Personally, I have been a fan of this politician ",
-            "text": "Really great news from the Republic of Kosova. The opposition in Kosovo from today will be led by a wonderful woman, Vlora Çitaku. Personally, I have been a fan of this politician for more than a decade. Kosovo deserves to have a woman as Prime Minister in the future.",
-            "url": "https://x.com/i/web/status/2112939737619267919",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-21T16:11:04.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Domenica si vota in # Serbia . Vedremo se vinceranno (ancora) coloro che hanno sotterrato quegli ordigni. In # Kosovo 27 anni dopo la fine della guerra non ci sono più mine: «Così abbiamo ricostruito il Paese» https://www. avvenire.it/mondo/27-anni-dopo -le-bombe-in-kosovo-e-terminato-lincubo-delle-mine_114584 @ cultura",
@@ -630,6 +478,42 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Kurti Meets EU Enlargement Commissioner Marta Kos in Montenegro, Calls for Concrete Steps Toward Kosovo’s EU Integration AlbinKurti MartaKos EU Montenegro",
+            "text": "Kurti Meets EU Enlargement Commissioner Marta Kos in Montenegro, Calls for Concrete Steps Toward Kosovo’s EU Integration AlbinKurti MartaKos EU Montenegro",
+            "url": "https://x.com/i/web/status/2112975785002729868",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-10-21T18:34:18.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5,
+              "Montenegró": 1
+            },
+            "event_category": "eu_integration",
+            "event_categories": [
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 17,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 3,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Kosovo Court Sentences Serb for War Crimes https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/21/kosovo-court-sentences-serb-for-war-crimes/btj/",
             "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/21/kosovo-court-sentences-serb-for-war-crimes/btj/",
@@ -657,6 +541,70 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Leader of Kosovo Opposition Party PDK Steps Down https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/21/leader-of-kosovo-opposition-party-pdk-steps-down/bi/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/21/leader-of-kosovo-opposition-party-pdk-steps-down/bi/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 21 Oct 2026 14:41:02 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 12,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Pink Floral Printed Short Kurti for Women, Sleeveless Peplum Tunic Top, Square Neck Tie Back Blouse, Boho Indian Ethnic Wear via",
+            "text": "Pink Floral Printed Short Kurti for Women, Sleeveless Peplum Tunic Top, Square Neck Tie Back Blouse, Boho Indian Ethnic Wear via",
+            "url": "https://x.com/i/web/status/2112995748711452923",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-21T19:53:38.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -1089,33 +1037,34 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 28,
-        "negative_hits": 25,
-        "positive_hits": 7,
+        "mentions": 33,
+        "negative_hits": 32,
+        "positive_hits": 5,
         "trusted_hits": 4,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 947,
-        "geopolitical_total": 861,
+        "engagement_total": 49,
+        "raw_engagement_total": 49,
+        "quality_total": 1066,
+        "geopolitical_total": 979,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 25,
-          "x": 3
+          "mastodon": 23,
+          "x": 10
         },
         "category_counts": {
-          "government_crisis": 6,
-          "security": 9,
-          "corruption_rule_of_law": 3,
-          "protest": 10
+          "protest": 12,
+          "government_crisis": 4,
+          "security": 14,
+          "corruption_rule_of_law": 2,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "balkans": 14,
-          "albania": 11,
+          "balkans": 13,
+          "albania": 10,
           "Koszovó": 1,
           "Észak-Macedónia": 1,
-          "Albánia": 1
+          "Albánia": 8
         },
-        "main_topic": "protest",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -1217,6 +1166,40 @@
           },
           {
             "title": "",
+            "text": "While today marks 144 consecutive days of anti-corruption protest in Tirana, Albania, many cities in Albania have had their own protests that spark up and down. \"On Oct 16, 2026, student protesters took to the streets of Shkodër, Albania, joining demonstrations taking place across the country. We spent 3.5 hours walking alongside the protesters as they march",
+            "url": "https://mas.to/@meganL/117480126516724871",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Wed, 21 Oct 2026 17:41:09 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 4,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 51,
+            "quality_score": 54,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "Kushner land heist partner Rama attacking journalists in Albania 🇦🇱 🇦🇱 🇦🇱 # Albania # protest # Europe # eu # world # international # politics # corruption # oligarchy # freedom # democracy # news https:// rsf.org/en/albanian-journalist s-targeted-police-violence-rsf-calls-investigations-and-parliamentary-scrutiny",
             "url": "https://mastodon.social/@dockwalk/117478533461794958",
             "source": "mastodon",
@@ -1292,45 +1275,6 @@
             ],
             "geopolitical_score": 45,
             "quality_score": 48,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Rama vendos karrige jashtë kryeministrisë për dialog, të rinjtë i përgjigjen: Shihe në ëndrra Machine translated headline: \"Rama places chairs outside the Prime Minister's Office for dialogue; young people respond: \"Keep dreaming.\"\" For 4 months protest remained peaceful, even when cops were beating protestors, using water cannons and tear gas. Rama didn't w",
-            "url": "https://mas.to/@meganL/117472217526795941",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Tue, 20 Oct 2026 08:09:47 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 38,
-            "quality_score": 41,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
