@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21 02:39 UTC",
+  "updated_at": "2026-10-21 04:29 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 14
   },
   "countries": [
     {
@@ -21,33 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
-        "negative_hits": 11,
-        "positive_hits": 2,
-        "trusted_hits": 5,
-        "engagement_total": 22,
-        "raw_engagement_total": 22,
-        "quality_total": 374,
-        "geopolitical_total": 322,
+        "mentions": 22,
+        "negative_hits": 15,
+        "positive_hits": 0,
+        "trusted_hits": 7,
+        "engagement_total": 145,
+        "raw_engagement_total": 145,
+        "quality_total": 473,
+        "geopolitical_total": 408,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 12,
-          "x": 5
+          "mastodon": 14,
+          "x": 8
         },
         "category_counts": {
-          "protest": 2,
-          "security": 9,
-          "foreign_influence": 1,
-          "government_crisis": 3,
+          "protest": 4,
+          "security": 8,
+          "government_crisis": 6,
+          "foreign_influence": 2,
           "ethnic_tension": 2
         },
         "tag_counts": {
           "balkans": 3,
-          "serbia": 7,
+          "serbia": 9,
           "kosovo": 1,
           "bosnia": 1,
-          "Szerbia": 4,
-          "Koszovó": 1
+          "Szerbia": 6,
+          "Koszovó": 2
         },
         "main_topic": "security",
         "top_posts": [
@@ -172,15 +172,49 @@
             "quality_score": 30,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 16,
-            "raw_engagement": 16,
+            "engagement": 39,
+            "raw_engagement": 39,
             "metrics": {
-              "likes": 9,
-              "reposts": 0,
+              "likes": 25,
+              "reposts": 5,
               "replies": 6,
-              "quotes": 1
+              "quotes": 3
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "A student protest movement has gripped Serbia for two years. This weekend it will try to take power By Julian Borger in Belgrade Unorthodox campaign is challenging the ruling party’s 12-year reign with a bold democratic experiment https://www. theguardian.com/world/2026/oct /21/protest-movement-serbia-student-list-try-to-take-power # Serbia # Europe # Worldn",
+            "url": "https://rssfeed.media/@guardianfeeds/117476937144198590",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 21 Oct 2026 04:10:03 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 24,
+            "quality_score": 29,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -205,40 +239,6 @@
             ],
             "geopolitical_score": 21,
             "quality_score": 24,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Serbians Linked to Protest Movement Allegedly Hit by Spyware Attacks https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/19/serbians-linked-to-protest-movement-allegedly-hit-by-spyware-attacks/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/19/serbians-linked-to-protest-movement-allegedly-hit-by-spyware-attacks/bi/",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Mon, 19 Oct 2026 16:03:57 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 23,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -778,24 +778,24 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 32,
-        "negative_hits": 27,
+        "mentions": 27,
+        "negative_hits": 21,
         "positive_hits": 2,
         "trusted_hits": 5,
-        "engagement_total": 122,
-        "raw_engagement_total": 122,
-        "quality_total": 1065,
-        "geopolitical_total": 973,
+        "engagement_total": 120,
+        "raw_engagement_total": 159,
+        "quality_total": 873,
+        "geopolitical_total": 786,
         "source_counts": {
           "reddit": 0,
           "mastodon": 25,
-          "x": 7
+          "x": 2
         },
         "category_counts": {
           "protest": 9,
-          "security": 14,
+          "security": 12,
           "corruption_rule_of_law": 1,
-          "government_crisis": 7,
+          "government_crisis": 4,
           "ethnic_tension": 1
         },
         "tag_counts": {
@@ -804,7 +804,7 @@
           "montenegro": 1,
           "albania": 10,
           "Koszovó": 1,
-          "Albánia": 6
+          "Albánia": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -990,25 +990,20 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇦🇱 ALBANIA: Student-led protests demanding Prime Minister Edi Rama's resignation reached an eighth straight day in Tirana, with police using water cannons and tear gas against prot",
-            "text": "🇦🇱 ALBANIA: Student-led protests demanding Prime Minister Edi Rama's resignation reached an eighth straight day in Tirana, with police using water cannons and tear gas against protesters throwing Molotov cocktails. Police fired tear gas and water cannons on Tuesday as protesters",
-            "url": "https://x.com/i/web/status/2112729086900506923",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-21T02:14:01.000Z",
+            "title": "",
+            "text": "\"The angry protests that have convulsed Spain and France in recent weeks have spilled over to Italy and Portugal, with rioters clashing with police and setting property on fire in Milan, and a tent encampment springing up in Lisbon over the weekend.\" # protests # genz # france # italy # albania https://www. theguardian.com/world/2026/oct /18/lisbon-milan-pro",
+            "url": "https://mastodon.social/@MaikCiveira/117474031460993747",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Tue, 20 Oct 2026 15:51:06 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 9
+              "Albánia": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
               {
                 "category": "security",
                 "hits": 1,
@@ -1016,23 +1011,17 @@
               },
               {
                 "category": "protest",
-                "hits": 2,
+                "hits": 3,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 46,
-            "quality_score": 47,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "geopolitical_score": 40,
+            "quality_score": 45,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
