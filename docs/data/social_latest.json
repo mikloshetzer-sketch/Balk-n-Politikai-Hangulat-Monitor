@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23 11:29 UTC",
+  "updated_at": "2026-10-23 16:13 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 16
+    "collected": 19
   },
   "countries": [
     {
@@ -21,167 +21,74 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 20,
-        "negative_hits": 10,
-        "positive_hits": 4,
-        "trusted_hits": 7,
-        "engagement_total": 115,
-        "raw_engagement_total": 115,
-        "quality_total": 496,
-        "geopolitical_total": 436,
+        "mentions": 21,
+        "negative_hits": 14,
+        "positive_hits": 0,
+        "trusted_hits": 6,
+        "engagement_total": 33,
+        "raw_engagement_total": 33,
+        "quality_total": 424,
+        "geopolitical_total": 364,
         "source_counts": {
-          "reddit": 0,
-          "mastodon": 13,
-          "x": 7
+          "reddit": 1,
+          "mastodon": 14,
+          "x": 6
         },
         "category_counts": {
           "protest": 8,
+          "government_crisis": 7,
           "corruption_rule_of_law": 1,
-          "government_crisis": 5,
           "security": 3,
-          "foreign_influence": 2,
-          "ethnic_tension": 1
+          "foreign_influence": 2
         },
         "tag_counts": {
           "balkans": 2,
-          "serbia": 8,
+          "serbia": 9,
           "kosovo": 2,
           "montenegro": 1,
-          "Szerbia": 6,
-          "Albánia": 1
+          "albania": 1,
+          "Szerbia": 6
         },
         "main_topic": "protest",
         "top_posts": [
           {
-            "title": "Tens of thousands gather in Belgrade, Serbia for the ‘Students Win’ rally ahead of Sunday’s parliamentary election. The party was formed during anti-corruption protests in 2024, an",
-            "text": "Tens of thousands gather in Belgrade, Serbia for the ‘Students Win’ rally ahead of Sunday’s parliamentary election. The party was formed during anti-corruption protests in 2024, and now poses a major challenge to the ruling party of former President Aleksandar Vucic.",
-            "url": "https://x.com/i/web/status/2113592385422680157",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-23T11:24:27.000Z",
+            "title": "",
+            "text": "Interesting article 👇 of why Serbian elections are so important. After two years of student protests, Serbians vote on Sunday in elections that could bring down the ruling party and its strongman, Aleksandar Vučić, who has been in control of Serbia for 14 years. Vučić keeps close ties with Russia & China and through him Russia can keep a foothold in the West",
+            "url": "https://mastodon.social/@Climatehistories/117490409840777560",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 23 Oct 2026 13:16:20 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 9
+              "Szerbia": 10
             },
             "event_category": "government_crisis",
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 3,
+                "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
               },
               {
                 "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 78,
-            "quality_score": 79,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Around 150,000 supporters of Serbia's opposition student movement rallied in central Belgrade seeking to oust the party of former President Aleksandar Vucic in parliamentary elections this weekend. https://www. japantimes.co.jp/news/2026/10/ 23/world/politics/serbia-poll-rally/?utm_medium=Social&utm_source=mastodon # worldnews # politics # serbia # aleksanda",
-            "url": "https://mastodon.social/@thejapantimes/117487553891930367",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Fri, 23 Oct 2026 01:10:02 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
                 "hits": 3,
-                "weight": 9
+                "weight": 8
               },
               {
                 "category": "protest",
-                "hits": 3,
+                "hits": 2,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 55,
-            "quality_score": 58,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "geopolitical_score": 56,
+            "quality_score": 61,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "The Two Balkan Gangsters: Vučić and Rama! Hostility toward Albanians and Kosovo, repression of students, alleged crime links, rigged elections, and opposition to sanctions against ",
-            "text": "The Two Balkan Gangsters: Vučić and Rama! Hostility toward Albanians and Kosovo, repression of students, alleged crime links, rigged elections, and opposition to sanctions against Russia. The patron and his henchman back each other, threatening peace and stability in the Balkans!",
-            "url": "https://x.com/i/web/status/2113593589590605975",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-23T11:29:15.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4,
-              "Albánia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 38,
-            "quality_score": 39,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -250,6 +157,80 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "🇷🇸 This is Belgrade, not Paris, and this is how REAL students protest... A sea of lights, thousands filling the streets, and NO smashed storefronts or burning cars. Serbia's studen",
+            "text": "🇷🇸 This is Belgrade, not Paris, and this is how REAL students protest... A sea of lights, thousands filling the streets, and NO smashed storefronts or burning cars. Serbia's student-led protest movement has repeatedly brought huge crowds into the streets, turning demonstrations",
+            "url": "https://x.com/i/web/status/2113664243513872485",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-23T16:10:00.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 28,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 26,
+            "raw_engagement": 26,
+            "metrics": {
+              "likes": 15,
+              "reposts": 4,
+              "replies": 7,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "\"Efforts to discredit the Student List are a prominent feature of Serbia’s election campaign, according to the election monitoring organization CRTA. Narratives targeting candidates and political programs are among the most common forms of disinformation ahead of the vote.\" https://www. youtube.com/shorts/U6IGOUswbEo # Serbia # Balkans # Corruption # Disinfo",
+            "url": "https://eldritch.cafe/@ml/117474317277340218",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Tue, 20 Oct 2026 17:03:47 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 22,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -257,32 +238,30 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 32,
+        "score": 24,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 4,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 105,
-        "raw_engagement_total": 105,
-        "quality_total": 90,
-        "geopolitical_total": 75,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 79,
+        "geopolitical_total": 65,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "government_crisis": 2,
-          "foreign_influence": 2,
-          "ethnic_tension": 1
+          "foreign_influence": 2
         },
         "tag_counts": {
           "balkans": 1,
           "bosnia": 2,
-          "montenegro": 1,
-          "Szerbia": 1
+          "montenegro": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -360,43 +339,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "A MAGA consulting firm was in Republika Srpska last week and now the Vucic government has apparently been convinced to pay for some sort of conservatard influencer campaign. It mus",
-            "text": "A MAGA consulting firm was in Republika Srpska last week and now the Vucic government has apparently been convinced to pay for some sort of conservatard influencer campaign. It must be the worst value for money ever because all they got is Valentina Gomez and some Polish foid",
-            "url": "https://x.com/i/web/status/2113590047186268294",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-23T11:15:10.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Szerbia": 4,
-              "Bosznia-Hercegovina": 4
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 105,
-            "raw_engagement": 105,
-            "metrics": {
-              "likes": 90,
-              "reposts": 6,
-              "replies": 8,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Agenzia Nova: Bosnia: cresce importazione auto usate, in Federazione nuovi fondi per veicoli elettrici 23 ott 11:28 - (Agenzia Nova) - In Bosnia Erzegovina sono state importate 86.129 auto usate nel 2025, il 37 per cento in piu' rispetto al 2023.... (Seb) Bosnia: Used car imports are growing, new funds for electric vehicles in Federation Oct 23 11:28 – (Agen",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117489599573466553",
@@ -462,32 +404,74 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 28,
-        "level": "medium",
+        "score": 46,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 8,
         "negative_hits": 1,
-        "positive_hits": 0,
-        "trusted_hits": 2,
+        "positive_hits": 2,
+        "trusted_hits": 3,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 62,
-        "geopolitical_total": 46,
+        "quality_total": 137,
+        "geopolitical_total": 112,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
-          "x": 0
+          "mastodon": 5,
+          "x": 3
         },
         "category_counts": {
-          "security": 2,
-          "corruption_rule_of_law": 1,
-          "government_crisis": 1
+          "corruption_rule_of_law": 2,
+          "security": 4,
+          "government_crisis": 1,
+          "eu_integration": 1
         },
         "tag_counts": {
-          "kosovo": 4
+          "kosovo": 5,
+          "Koszovó": 3
         },
         "main_topic": "security",
         "top_posts": [
+          {
+            "title": "Kurti Pledges More Than €1 Billion in Military Investments During Current Term Kosovo KSF AlbinKurti NATO Defence MilitaryInvestment",
+            "text": "Kurti Pledges More Than €1 Billion in Military Investments During Current Term Kosovo KSF AlbinKurti NATO Defence MilitaryInvestment",
+            "url": "https://x.com/i/web/status/2113650684885193056",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-23T15:16:07.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 36,
+            "quality_score": 40,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Domani: Il voto in Serbia visto dal Kosovo, il ministro Sveçla: «Chiunque vinca, non c’è da sognare» Il ministro dell’Interno kosovaro Xhelal Sveçla ha iniziato la lotta politica proprio da studente, con Kurti. E critica apertamente Vučić, che «ha ingannato l’Occidente». Ma il movimento degli studenti serbi «contiene di tutto, anche l’estrema destra», e cons",
@@ -551,6 +535,41 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "🇽🇰 EU integration must bring visible change to people’s lives. Today in South Mitrovica, & joined the Working Group on Kosovo to discuss better public services, local opportunities",
+            "text": "🇽🇰 EU integration must bring visible change to people’s lives. Today in South Mitrovica, & joined the Working Group on Kosovo to discuss better public services, local opportunities and strong local self-government. © European Union / Artika Azemi",
+            "url": "https://x.com/i/web/status/2113646554661953597",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-23T14:59:42.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "eu_integration",
+            "event_categories": [
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 14,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Kosovo Court Sentences Serb for War Crimes https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/21/kosovo-court-sentences-serb-for-war-crimes/btj/",
             "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/21/kosovo-court-sentences-serb-for-war-crimes/btj/",
@@ -578,35 +597,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Leader of Kosovo Opposition Party PDK Steps Down https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/21/leader-of-kosovo-opposition-party-pdk-steps-down/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/21/leader-of-kosovo-opposition-party-pdk-steps-down/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 21 Oct 2026 14:41:02 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -614,33 +604,74 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 18,
-        "level": "low",
+        "score": 21,
+        "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 4,
         "negative_hits": 0,
-        "positive_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 58,
-        "geopolitical_total": 44,
+        "quality_total": 62,
+        "geopolitical_total": 50,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
-          "x": 0
+          "mastodon": 3,
+          "x": 1
         },
         "category_counts": {
           "eu_integration": 1,
           "government_crisis": 2,
-          "foreign_influence": 1
+          "security": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "montenegro": 3
+          "montenegro": 2,
+          "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "MONTENEGRO IS TREATING CYBER RESILIENCE AS STATE SECURITY — NOT AN IT PROBLEM Montenegrin President Jakov Milatović visited Lithuania’s National Cyber Security Centre on 22 October",
+            "text": "MONTENEGRO IS TREATING CYBER RESILIENCE AS STATE SECURITY — NOT AN IT PROBLEM Montenegrin President Jakov Milatović visited Lithuania’s National Cyber Security Centre on 22 October and called for stronger institutions, technology and expertise to defend Montenegro against",
+            "url": "https://x.com/i/web/status/2113649395694809552",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-10-23T15:11:00.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "🇪🇺 ¡Cita clave en Bruselas! Nikol Pashinyan intervendrá el 3 de noviembre en la Cumbre de la UE junto al presidente del Consejo Antonio Costa 🇦🇲 # albania # AndrejPlenković # AntonioCosta # armenia # bruselas # ConsejoEuropeo # croacia # EdiRama # ereván # euronews # georgia # GordanaSiljanovskaDavkova # IrakliKobakhidze # MacedoniaDelNorte # MilojkoSpajić #",
@@ -670,35 +701,6 @@
             "quality_score": 18,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Cina-Montenegro: ministro Esteri Wang, cooperazione bilaterale non e' in contrasto con adesione di Podgorica all'Ue (3) 19 ott 06:10 - (Agenzia Nova) - \"Pechino confida che, una volta avvenuta l'adesione, il Montenegro diventera' un ulteriore buon amico della... (Cip) China-Montenegro: Foreign Minister Wang, bilateral cooperation is not in conf",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117465966998062163",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Mon, 19 Oct 2026 05:40:12 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 5
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 15,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -772,31 +774,72 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 16,
-        "level": "low",
+        "score": 33,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 0,
+        "mentions": 5,
+        "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 43,
-        "geopolitical_total": 36,
+        "quality_total": 79,
+        "geopolitical_total": 68,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 1,
-          "x": 2
+          "mastodon": 2,
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 3
+          "government_crisis": 5
         },
         "tag_counts": {
+          "kosovo": 1,
           "montenegro": 1,
-          "Észak-Macedónia": 2
+          "Észak-Macedónia": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "During the ceremonial academy for October 23, the Day of the Macedonian Revolutionary Struggle, Prime Minister Hristijan Mickoski expressed concern that unrest in Europe and the Ba",
+            "text": "During the ceremonial academy for October 23, the Day of the Macedonian Revolutionary Struggle, Prime Minister Hristijan Mickoski expressed concern that unrest in Europe and the Balkans could have consequences for Macedonia as well.",
+            "url": "https://x.com/i/web/status/2113631943719866381",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-23T14:01:39.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 21,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "🇪🇺 ¡Cita clave en Bruselas! Nikol Pashinyan intervendrá el 3 de noviembre en la Cumbre de la UE junto al presidente del Consejo Antonio Costa 🇦🇲 # albania # AndrejPlenković # AntonioCosta # armenia # bruselas # ConsejoEuropeo # croacia # EdiRama # ereván # euronews # georgia # GordanaSiljanovskaDavkova # IrakliKobakhidze # MacedoniaDelNorte # MilojkoSpajić #",
@@ -876,6 +919,36 @@
             "quality": "x_api_filtered"
           },
           {
+            "title": "",
+            "text": "Agenzia Nova: Nord Macedonia: Kos vede ministro Sali, momento giusto affinche' Paese compia passo avanti verso Ue 23 ott 16:33 - (Agenzia Nova) - Gli emendamenti costituzionali sono il passo che la Macedonia del Nord deve compiere per proseguire il processo... (Seb) North Macedonia: Kosovo sees Minister Sali, the right moment for the country to take a step f",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117490739940449881",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Fri, 23 Oct 2026 14:40:17 +0000",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 15,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
             "title": "Albanian Olympic Committee President Fidel Ylli has been named ACES Europe's Honorary President for the Balkans, recognizing his work promoting European Cities of Sport in Albania ",
             "text": "Albanian Olympic Committee President Fidel Ylli has been named ACES Europe's Honorary President for the Balkans, recognizing his work promoting European Cities of Sport in Albania 🇦🇱, Kosovo 🇽🇰, North Macedonia 🇲🇰 and Bulgaria 🇧🇬. Albania Sport",
             "url": "https://x.com/i/web/status/2113544497166446605",
@@ -921,34 +994,34 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 27,
-        "negative_hits": 24,
-        "positive_hits": 5,
-        "trusted_hits": 2,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 946,
-        "geopolitical_total": 869,
+        "mentions": 29,
+        "negative_hits": 26,
+        "positive_hits": 6,
+        "trusted_hits": 1,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 990,
+        "geopolitical_total": 911,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 23,
-          "x": 4
+          "mastodon": 24,
+          "x": 5
         },
         "category_counts": {
-          "government_crisis": 8,
+          "government_crisis": 10,
           "security": 8,
           "protest": 9,
           "corruption_rule_of_law": 1,
-          "migration": 1
+          "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 12,
-          "serbia": 1,
           "montenegro": 1,
-          "albania": 9,
+          "albania": 11,
+          "Szerbia": 1,
           "Albánia": 4
         },
-        "main_topic": "protest",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
