@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23 02:41 UTC",
+  "updated_at": "2026-10-23 04:34 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 16
+    "collected": 15
   },
   "countries": [
     {
@@ -21,33 +21,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 23,
+        "mentions": 21,
         "negative_hits": 11,
         "positive_hits": 1,
         "trusted_hits": 7,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 471,
-        "geopolitical_total": 397,
+        "quality_total": 429,
+        "geopolitical_total": 356,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 18,
-          "x": 5
+          "mastodon": 19,
+          "x": 2
         },
         "category_counts": {
-          "protest": 13,
-          "government_crisis": 6,
+          "protest": 12,
+          "government_crisis": 5,
           "security": 3,
           "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 3,
-          "serbia": 11,
+          "serbia": 12,
           "kosovo": 1,
           "montenegro": 1,
           "albania": 2,
-          "Szerbia": 4,
-          "Koszovó": 1
+          "Szerbia": 2
         },
         "main_topic": "protest",
         "top_posts": [
@@ -86,28 +85,38 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇷🇸 STUDENT PROTESTS IN SERBIA Days before the elections, university students marched across the country. There were also massive demonstrations against the government in the capita",
-            "text": "🇷🇸 STUDENT PROTESTS IN SERBIA Days before the elections, university students marched across the country. There were also massive demonstrations against the government in the capital Belgrade .",
-            "url": "https://x.com/i/web/status/2113449496315081185",
+            "title": "Serbia’s Vučić Says It Would Be a ‘Miracle’ if World War III Does Not Begin Former Serbian President Aleksandar Vučić has warned that a world war may be approaching, pointing to Eu",
+            "text": "Serbia’s Vučić Says It Would Be a ‘Miracle’ if World War III Does Not Begin Former Serbian President Aleksandar Vučić has warned that a world war may be approaching, pointing to Europe’s rising military spending and rearmament. In an interview with Russian journalist Ksenia",
+            "url": "https://x.com/i/web/status/2113480539101344045",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-10-23T01:56:40.000Z",
+            "seen_date": "2026-10-23T04:00:01.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 9
             },
-            "event_category": "protest",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "protest",
-                "hits": 4,
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 35,
-            "quality_score": 36,
+            "geopolitical_score": 29,
+            "quality_score": 30,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -121,12 +130,12 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Around 150,000 people gathered in central Belgrade on Thursday, October 22, for a massive rally organised by Serbia’s student-led opposition movement ahead of the October 25 parlia",
-            "text": "Around 150,000 people gathered in central Belgrade on Thursday, October 22, for a massive rally organised by Serbia’s student-led opposition movement ahead of the October 25 parliamentary election",
-            "url": "https://x.com/i/web/status/2113450218582622674",
+            "title": "🚨 🇷🇸 PROTESTS IN SERBIA Large crowds have gathered in Belgrade as the student-led protest movement continues ahead of the October 25 parliamentary election. Serbia Belgrade Breakin",
+            "text": "🚨 🇷🇸 PROTESTS IN SERBIA Large crowds have gathered in Belgrade as the student-led protest movement continues ahead of the October 25 parliamentary election. Serbia Belgrade BreakingNews",
+            "url": "https://x.com/i/web/status/2113488083207213278",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-10-23T01:59:32.000Z",
+            "seen_date": "2026-10-23T04:30:00.000Z",
             "matched_countries": [
               "Szerbia"
             ],
@@ -137,17 +146,17 @@
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 2,
+                "hits": 1,
                 "weight": 9
               },
               {
                 "category": "protest",
-                "hits": 1,
+                "hits": 2,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 26,
-            "quality_score": 27,
+            "geopolitical_score": 28,
+            "quality_score": 29,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -361,17 +370,17 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 50,
+        "score": 49,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 7,
-        "negative_hits": 3,
-        "positive_hits": 2,
+        "negative_hits": 2,
+        "positive_hits": 1,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 123,
-        "geopolitical_total": 104,
+        "quality_total": 116,
+        "geopolitical_total": 97,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
@@ -379,8 +388,8 @@
         },
         "category_counts": {
           "security": 2,
-          "corruption_rule_of_law": 2,
-          "government_crisis": 3
+          "corruption_rule_of_law": 1,
+          "government_crisis": 4
         },
         "tag_counts": {
           "serbia": 1,
@@ -534,17 +543,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "The Court of Appeals of Kosovo has overturned a decision by the Basic Court in Pristina that had dismissed the indictment against former Minister of Regional Development Fikrim Dam",
-            "text": "The Court of Appeals of Kosovo has overturned a decision by the Basic Court in Pristina that had dismissed the indictment against former Minister of Regional Development Fikrim Damka and former acting secretary of the ministry, Besim Kamberaj.",
-            "url": "https://x.com/i/web/status/2113397381160980936",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-22T22:29:35.000Z",
+            "title": "",
+            "text": "Kosovo Court Sentences Serb for War Crimes https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/21/kosovo-court-sentences-serb-for-war-crimes/btj/",
+            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/21/kosovo-court-sentences-serb-for-war-crimes/btj/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Wed, 21 Oct 2026 14:32:51 +0000",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 5
+              "Koszovó": 1
             },
             "event_category": "corruption_rule_of_law",
             "event_categories": [
@@ -552,26 +561,15 @@
                 "category": "corruption_rule_of_law",
                 "hits": 1,
                 "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 16,
-            "quality_score": 17,
-            "source_reliability": 2,
+            "geopolitical_score": 11,
+            "quality_score": 14,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -957,23 +955,23 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 26,
+        "mentions": 27,
         "negative_hits": 24,
         "positive_hits": 5,
         "trusted_hits": 4,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 896,
-        "geopolitical_total": 816,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 893,
+        "geopolitical_total": 812,
         "source_counts": {
           "reddit": 0,
           "mastodon": 23,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
-          "security": 7,
-          "protest": 10,
-          "government_crisis": 7,
+          "security": 10,
+          "protest": 9,
+          "government_crisis": 6,
           "corruption_rule_of_law": 1,
           "migration": 1
         },
@@ -982,59 +980,10 @@
           "serbia": 1,
           "montenegro": 1,
           "albania": 10,
-          "Albánia": 3
+          "Albánia": 4
         },
-        "main_topic": "protest",
+        "main_topic": "security",
         "top_posts": [
-          {
-            "title": "",
-            "text": "# Albania # protests \"Flamingo Revolution: Albania Protests Escalate over Corruption & Kushner/Trump Luxury Resort Student-led anti-corruption and cost-of-living protests in Albania are calling for the resignation of Prime Minister Edi Rama, among other demands. Hundreds of injuries and arrests have been reported amid a violent police crackdown, along with w",
-            "url": "https://kolektiva.social/@LevZadov/117481189208383996",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Wed, 21 Oct 2026 22:11:24 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 2,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 89,
-            "quality_score": 92,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Democracy Now! \"Massive Protests Continue to Roil Albania, Demand PM's Resignation\" Student-led anti-corruption and cost-of-living protests in Albania are calling for the resignation of Prime Minister Edi Rama, among other demands. Hundreds of injuries and arrests have been reported amid a violent police crackdown, along with widespread damage to public and ",
@@ -1078,6 +1027,50 @@
             ],
             "geopolitical_score": 85,
             "quality_score": 88,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "🇦🇱 As #Albania 's anti-corruption protests grow, the prime minister blames 'antifa' for dissent https://www.dw.com/en/albanias-student-protests-are-only-getting-bigger/a-79735213 As police try to suppress anti-corruption protests by young Albanians, Prime Minister Edi Rama is claiming that \" #antifa \" is behind the unrest. Few are buying that explanation.",
+            "url": "https://social.dromografos.report/notes/asnybfwl5bi405ru",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Fri, 23 Oct 2026 03:05:09 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 6
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 3,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 61,
+            "quality_score": 64,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
