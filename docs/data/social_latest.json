@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24 02:40 UTC",
+  "updated_at": "2026-10-24 04:24 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 9
   },
   "countries": [
     {
@@ -21,24 +21,24 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 22,
-        "negative_hits": 11,
-        "positive_hits": 1,
+        "mentions": 20,
+        "negative_hits": 10,
+        "positive_hits": 0,
         "trusted_hits": 7,
         "engagement_total": 1,
         "raw_engagement_total": 1,
-        "quality_total": 419,
-        "geopolitical_total": 355,
+        "quality_total": 385,
+        "geopolitical_total": 323,
         "source_counts": {
           "reddit": 1,
           "mastodon": 15,
-          "x": 6
+          "x": 4
         },
         "category_counts": {
-          "protest": 8,
+          "protest": 7,
           "security": 4,
           "government_crisis": 7,
-          "corruption_rule_of_law": 2,
+          "corruption_rule_of_law": 1,
           "foreign_influence": 1
         },
         "tag_counts": {
@@ -47,7 +47,7 @@
           "kosovo": 2,
           "montenegro": 1,
           "albania": 1,
-          "Szerbia": 6
+          "Szerbia": 4
         },
         "main_topic": "protest",
         "top_posts": [
@@ -91,6 +91,46 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "FOR IMMEDIATE RELEASE LEGAL SCANDAL IN BELGRADE: Public Bailiff Caught on Video Falsifying Official Record to Illegally Raid the Residence of Political Opposition Leader Nikola San",
+            "text": "FOR IMMEDIATE RELEASE LEGAL SCANDAL IN BELGRADE: Public Bailiff Caught on Video Falsifying Official Record to Illegally Raid the Residence of Political Opposition Leader Nikola Sandulovic BELGRADE, October 26, 2026 – The President of the Republican Party of Serbia, Nikola",
+            "url": "https://x.com/i/web/status/2113837402271728034",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-24T03:38:04.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Will the anti-corruption movement in #Serbia manage to wrest democratic power back from the current pro-Russian leader, Vučić? Will the population succeed in replicating the pro-democratic shift seen in #Hungary when they ousted Orbán? We will find out on Sunday. RE: https://bsky.app/profile/did:plc:eclio37ymobqex2ncko63h4r/post/3myjvntrd332s",
             "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:qciejmtc5bvv4p6bbs4evqct/post/3myjwl2inyk2v",
@@ -123,46 +163,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "🇷🇸 This is Belgrade, not Paris, and this is how REAL students protest... A sea of lights, thousands filling the streets, and NO smashed storefronts or burning cars. Serbia's studen",
-            "text": "🇷🇸 This is Belgrade, not Paris, and this is how REAL students protest... A sea of lights, thousands filling the streets, and NO smashed storefronts or burning cars. Serbia's student-led protest movement has repeatedly brought huge crowds into the streets, turning demonstrations",
-            "url": "https://x.com/i/web/status/2113816475983073469",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-24T02:14:55.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -199,39 +199,33 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Students and supporters arriving in Belgrade on October 21 ahead of Sunday’s parliamentary election, carrying a large cross through the streets. The movement began after the collap",
-            "text": "Students and supporters arriving in Belgrade on October 21 ahead of Sunday’s parliamentary election, carrying a large cross through the streets. The movement began after the collapse of a railway station canopy in Novi Sad on November 1, 2024, that killed 16 people. The station",
-            "url": "https://x.com/i/web/status/2113817276218806754",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-24T02:18:06.000Z",
+            "title": "",
+            "text": "# Serbia 🇷🇸: 150 000 # protest https://www. democracynow.org/2026/10/23/he adlines/serbia_150_000_rally_in_student_led_protest_ahead_of_sundays_election",
+            "url": "https://masto.ai/@MusiqueNow/117491055930631338",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 23 Oct 2026 16:00:39 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 4
+              "Szerbia": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "protest",
                 "hits": 2,
-                "weight": 9
+                "weight": 8
               }
             ],
-            "geopolitical_score": 22,
-            "quality_score": 23,
-            "source_reliability": 2,
+            "geopolitical_score": 19,
+            "quality_score": 22,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -902,22 +896,22 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 26,
-        "negative_hits": 24,
-        "positive_hits": 5,
+        "mentions": 25,
+        "negative_hits": 23,
+        "positive_hits": 6,
         "trusted_hits": 3,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 893,
-        "geopolitical_total": 813,
+        "quality_total": 850,
+        "geopolitical_total": 771,
         "source_counts": {
           "reddit": 0,
           "mastodon": 24,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
-          "protest": 11,
-          "government_crisis": 8,
+          "protest": 12,
+          "government_crisis": 6,
           "security": 5,
           "corruption_rule_of_law": 1,
           "foreign_influence": 1
@@ -926,7 +920,7 @@
           "balkans": 12,
           "montenegro": 1,
           "albania": 11,
-          "Albánia": 2
+          "Albánia": 1
         },
         "main_topic": "protest",
         "top_posts": [
