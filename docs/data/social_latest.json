@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24 15:08 UTC",
+  "updated_at": "2026-10-24 15:51 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 16
+    "collected": 14
   },
   "countries": [
     {
@@ -21,22 +21,22 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 19,
-        "negative_hits": 8,
+        "mentions": 21,
+        "negative_hits": 11,
         "positive_hits": 2,
-        "trusted_hits": 7,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 360,
-        "geopolitical_total": 301,
+        "trusted_hits": 8,
+        "engagement_total": 6,
+        "raw_engagement_total": 6,
+        "quality_total": 490,
+        "geopolitical_total": 427,
         "source_counts": {
           "reddit": 1,
           "mastodon": 13,
-          "x": 5
+          "x": 7
         },
         "category_counts": {
           "protest": 5,
-          "security": 7,
+          "security": 9,
           "government_crisis": 6,
           "foreign_influence": 1
         },
@@ -45,11 +45,175 @@
           "serbia": 10,
           "kosovo": 2,
           "montenegro": 1,
-          "Szerbia": 2,
+          "Szerbia": 4,
           "Koszovó": 3
         },
         "main_topic": "security",
         "top_posts": [
+          {
+            "title": "Serbia votes as Student List challenges Vučić in tight parliamentary election 16 people died in the Novi Sad station collapse. The Student List emerged from almost 2 years of anti-",
+            "text": "Serbia votes as Student List challenges Vučić in tight parliamentary election 16 people died in the Novi Sad station collapse. The Student List emerged from almost 2 years of anti-corruption protests after the tragedy. Analysts predict an extremely tight vote. Serbia Elections",
+            "url": "https://x.com/i/web/status/2114014302873206983",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-24T15:21:00.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 53,
+            "quality_score": 54,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "RaiNews: Gli studenti sfidano Vucic, la Serbia e le elezioni dall'esito più incerto degli ultimi 14 anni La sfida tra due blocchi contrapposti: da un lato l'ex presidente, che domina a Belgrado dal 2014; dall'altra, un movimento senza un vero leader, nato dall'incidente della stazione di Novi Sad e che punta sulla lotta alla corruzione Students challenge Vuc",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117496560120764012",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sat, 24 Oct 2026 15:20:26 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 42,
+            "quality_score": 47,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Parliamentary elections will be held in Serbia tomorrow, for the first time in many years, the ruling SNS party, associated with former president Vučić, faces the risk of losing po",
+            "text": "Parliamentary elections will be held in Serbia tomorrow, for the first time in many years, the ruling SNS party, associated with former president Vučić, faces the risk of losing power to an anti-corruption, pro reform \"student list,\" though the polls remain very close. 🔀 🗳️",
+            "url": "https://x.com/i/web/status/2114018423843831971",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-24T15:37:23.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 38,
+            "quality_score": 39,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Serbia dinar quasi-peg EUR, election + car-copper export. FX reserve &lt; 30 billion peak, ex-Prez/PM Vucic decade politics dominate ruling party v Student List 2 yr protest moveme",
+            "text": "Serbia dinar quasi-peg EUR, election + car-copper export. FX reserve &lt; 30 billion peak, ex-Prez/PM Vucic decade politics dominate ruling party v Student List 2 yr protest movement anti-corrupt legacy. Green opposition lithium mine shut, Vucic identity align deceased war criminal",
+            "url": "https://x.com/i/web/status/2114014386436337788",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-24T15:21:20.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "Since Moscow’s full-scale invasion of Ukraine in 2022, Belgrade has refused to join Western sanctions, citing Russia’s support over Kosovo at the UN Security Council and its relian",
             "text": "Since Moscow’s full-scale invasion of Ukraine in 2022, Belgrade has refused to join Western sanctions, citing Russia’s support over Kosovo at the UN Security Council and its reliance on Russian gas",
@@ -90,137 +254,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Tomorrow is the season finale in Serbia. After two years of protests and some of the biggest demonstrations in the region, I hope the people of Serbia will kick out Vučić as clearly as the people of Hungary kicked out Orban. Srbija ili mafija! Studenti pobjeđuju! # Serbia # srbija # democracy # vučić # StudentiPobeđuju",
-            "url": "https://mas.to/@vrandecic/117496007569749641",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sat, 24 Oct 2026 12:59:55 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "«Proprio come il movimento di protesta da cui è nata, la Lista Studentesca è priva di una gerarchia o di un leader designato. Una proposta inedita nel panorama della storia democratica serba – peraltro relativamente breve». - di Guy Delauney da Belgrado https://www. bbc.com/news/articles/cm1dwz31 1476o # Serbia # elezioni",
-            "url": "https://mastodon.bida.im/@strelnik/117495507896168366",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sat, 24 Oct 2026 10:52:50 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 24,
-            "quality_score": 29,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "«Gli studenti hanno condotto una campagna elettorale capillare, recandosi in ogni villaggio e parlando con persone che, per molti anni, erano state ignorate dai partiti di opposizione». - Sonja Biserko, attivista e presidente dell’organizzazione \"Helsinki committee for human rights in Serbia\". https:// altreconomia.it/le-elezioni-de l-25-ottobre-hanno-gia-se",
-            "url": "https://mastodon.bida.im/@strelnik/117492108815252838",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Fri, 23 Oct 2026 20:28:24 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 27,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "What’s it like to be young in Belgrade? | Young & European https://www. youtube.com/watch?v=-ziNBnmNrEM # Serbia # Europe # Students # Protest # Corruption",
-            "url": "https://eldritch.cafe/@ml/117494808194115579",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sat, 24 Oct 2026 07:54:54 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -401,8 +434,8 @@
         "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 2,
-        "engagement_total": 15,
-        "raw_engagement_total": 15,
+        "engagement_total": 25,
+        "raw_engagement_total": 25,
         "quality_total": 83,
         "geopolitical_total": 63,
         "source_counts": {
@@ -745,30 +778,29 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 43,
-        "level": "high",
+        "score": 21,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 3,
+        "mentions": 3,
+        "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 101,
-        "geopolitical_total": 90,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 59,
+        "geopolitical_total": 50,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 3
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 4,
-          "security": 1
+          "government_crisis": 3
         },
         "tag_counts": {
           "kosovo": 1,
           "montenegro": 1,
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -808,87 +840,6 @@
               "likes": 0,
               "reposts": 0,
               "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Strict checks have begun at Albania's 🇦🇱 Qafë Thanë border crossing amid warnings of violent protesters coming from North Macedonia 🇲🇰, a citizen told Joq Albania. Every vehicle is",
-            "text": "Strict checks have begun at Albania's 🇦🇱 Qafë Thanë border crossing amid warnings of violent protesters coming from North Macedonia 🇲🇰, a citizen told Joq Albania. Every vehicle is being checked and people deemed suspicious are not allowed to cross. Albania",
-            "url": "https://x.com/i/web/status/2113677264831602749",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-23T17:01:44.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Albánia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "During the ceremonial academy for October 23, the Day of the Macedonian Revolutionary Struggle, Prime Minister Hristijan Mickoski expressed concern that unrest in Europe and the Ba",
-            "text": "During the ceremonial academy for October 23, the Day of the Macedonian Revolutionary Struggle, Prime Minister Hristijan Mickoski expressed concern that unrest in Europe and the Balkans could have consequences for Macedonia as well.",
-            "url": "https://x.com/i/web/status/2113631943719866381",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-23T14:01:39.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -965,33 +916,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 23,
-        "negative_hits": 20,
+        "mentions": 21,
+        "negative_hits": 19,
         "positive_hits": 3,
         "trusted_hits": 3,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 816,
-        "geopolitical_total": 753,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
+        "quality_total": 763,
+        "geopolitical_total": 702,
         "source_counts": {
           "reddit": 0,
           "mastodon": 17,
-          "x": 6
+          "x": 4
         },
         "category_counts": {
           "corruption_rule_of_law": 2,
-          "government_crisis": 6,
+          "government_crisis": 5,
           "protest": 7,
-          "security": 8
+          "security": 7
         },
         "tag_counts": {
           "balkans": 12,
           "montenegro": 1,
           "albania": 4,
           "Koszovó": 1,
-          "Albánia": 5
+          "Albánia": 3
         },
-        "main_topic": "security",
+        "main_topic": "protest",
         "top_posts": [
           {
             "title": "",
