@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24 10:48 UTC",
+  "updated_at": "2026-10-24 15:08 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 9
+    "collected": 16
   },
   "countries": [
     {
@@ -21,97 +21,94 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 21,
-        "negative_hits": 12,
-        "positive_hits": 0,
+        "mentions": 19,
+        "negative_hits": 8,
+        "positive_hits": 2,
         "trusted_hits": 7,
         "engagement_total": 3,
         "raw_engagement_total": 3,
-        "quality_total": 407,
-        "geopolitical_total": 348,
+        "quality_total": 360,
+        "geopolitical_total": 301,
         "source_counts": {
-          "reddit": 3,
-          "mastodon": 14,
-          "x": 4
+          "reddit": 1,
+          "mastodon": 13,
+          "x": 5
         },
         "category_counts": {
-          "protest": 8,
-          "security": 5,
+          "protest": 5,
+          "security": 7,
           "government_crisis": 6,
-          "corruption_rule_of_law": 1,
           "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 13,
+          "serbia": 10,
           "kosovo": 2,
           "montenegro": 1,
-          "Szerbia": 4
+          "Szerbia": 2,
+          "Koszovó": 3
         },
-        "main_topic": "protest",
+        "main_topic": "security",
         "top_posts": [
           {
-            "title": "",
-            "text": "Interesting article 👇 of why Serbian elections are so important. After two years of student protests, Serbians vote on Sunday in elections that could bring down the ruling party and its strongman, Aleksandar Vučić, who has been in control of Serbia for 14 years. Vučić keeps close ties with Russia & China and through him Russia can keep a foothold in the West",
-            "url": "https://mastodon.social/@Climatehistories/117490409840777560",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Fri, 23 Oct 2026 13:16:20 +0000",
+            "title": "Since Moscow’s full-scale invasion of Ukraine in 2022, Belgrade has refused to join Western sanctions, citing Russia’s support over Kosovo at the UN Security Council and its relian",
+            "text": "Since Moscow’s full-scale invasion of Ukraine in 2022, Belgrade has refused to join Western sanctions, citing Russia’s support over Kosovo at the UN Security Council and its reliance on Russian gas",
+            "url": "https://x.com/i/web/status/2113955750942834717",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-24T11:28:21.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 10
+              "Szerbia": 4,
+              "Koszovó": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
               },
               {
                 "category": "foreign_influence",
-                "hits": 3,
-                "weight": 8
-              },
-              {
-                "category": "protest",
                 "hits": 2,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 56,
-            "quality_score": 61,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
-            "text": "Will the anti-corruption movement in #Serbia manage to wrest democratic power back from the current pro-Russian leader, Vučić? Will the population succeed in replicating the pro-democratic shift seen in #Hungary when they ousted Orbán? We will find out on Sunday. RE: https://bsky.app/profile/did:plc:eclio37ymobqex2ncko63h4r/post/3myjvntrd332s",
-            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:qciejmtc5bvv4p6bbs4evqct/post/3myjwl2inyk2v",
+            "text": "Tomorrow is the season finale in Serbia. After two years of protests and some of the biggest demonstrations in the region, I hope the people of Serbia will kick out Vučić as clearly as the people of Hungary kicked out Orban. Srbija ili mafija! Studenti pobjeđuju! # Serbia # srbija # democracy # vučić # StudentiPobeđuju",
+            "url": "https://mas.to/@vrandecic/117496007569749641",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Fri, 23 Oct 2026 10:06:25 +0000",
+            "seen_date": "Sat, 24 Oct 2026 12:59:55 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 9
             },
-            "event_category": "corruption_rule_of_law",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
+                "category": "protest",
+                "hits": 3,
                 "weight": 8
               }
             ],
@@ -124,44 +121,38 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Serbia: Early Parliamentary Elections Amid a Challenge Led by an Anti-Corruption Student Movement Serbia is set to hold early parliamentary elections on Sunday, October 25, 2026, w",
-            "text": "Serbia: Early Parliamentary Elections Amid a Challenge Led by an Anti-Corruption Student Movement Serbia is set to hold early parliamentary elections on Sunday, October 25, 2026, with competition centered on political forces aligned with Aleksandar Vučić and an anti-corruption",
-            "url": "https://x.com/i/web/status/2113936994636087700",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-24T10:13:49.000Z",
+            "title": "",
+            "text": "«Proprio come il movimento di protesta da cui è nata, la Lista Studentesca è priva di una gerarchia o di un leader designato. Una proposta inedita nel panorama della storia democratica serba – peraltro relativamente breve». - di Guy Delauney da Belgrado https://www. bbc.com/news/articles/cm1dwz31 1476o # Serbia # elezioni",
+            "url": "https://mastodon.bida.im/@strelnik/117495507896168366",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sat, 24 Oct 2026 10:52:50 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
               },
               {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
+                "category": "protest",
+                "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 28,
+            "geopolitical_score": 24,
             "quality_score": 29,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -403,31 +394,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 32,
+        "score": 39,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 6,
         "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 73,
-        "geopolitical_total": 54,
+        "engagement_total": 15,
+        "raw_engagement_total": 15,
+        "quality_total": 83,
+        "geopolitical_total": 63,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "corruption_rule_of_law": 2,
-          "security": 2,
+          "security": 3,
           "government_crisis": 1
         },
         "tag_counts": {
-          "kosovo": 5
+          "kosovo": 5,
+          "Koszovó": 1
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -584,29 +576,30 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 15,
+        "score": 19,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 4,
         "negative_hits": 0,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 43,
-        "geopolitical_total": 32,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 60,
+        "geopolitical_total": 48,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "eu_integration": 1,
-          "government_crisis": 2
+          "government_crisis": 3
         },
         "tag_counts": {
           "balkans": 1,
-          "montenegro": 2
+          "montenegro": 2,
+          "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -642,6 +635,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Hungary 🇭🇺 will be a \"reliable partner\" to Montenegro 🇲🇪 in the final phase of EU accession talks, PM Péter Magyar told President Jakov Milatović in Budapest. Podgorica wants to si",
+            "text": "Hungary 🇭🇺 will be a \"reliable partner\" to Montenegro 🇲🇪 in the final phase of EU accession talks, PM Péter Magyar told President Jakov Milatović in Budapest. Podgorica wants to sign its accession treaty in early 2027. Montenegro 🇲🇪 Hungary 🇭🇺 Yugoslavia",
+            "url": "https://x.com/i/web/status/2113950032147657046",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-10-24T11:05:37.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 17,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -932,33 +965,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 21,
-        "negative_hits": 19,
-        "positive_hits": 4,
+        "mentions": 23,
+        "negative_hits": 20,
+        "positive_hits": 3,
         "trusted_hits": 3,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 757,
-        "geopolitical_total": 692,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 816,
+        "geopolitical_total": 753,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 19,
-          "x": 2
+          "mastodon": 17,
+          "x": 6
         },
         "category_counts": {
-          "corruption_rule_of_law": 1,
-          "government_crisis": 5,
-          "protest": 9,
-          "security": 5,
-          "foreign_influence": 1
+          "corruption_rule_of_law": 2,
+          "government_crisis": 6,
+          "protest": 7,
+          "security": 8
         },
         "tag_counts": {
           "balkans": 12,
           "montenegro": 1,
-          "albania": 6,
-          "Albánia": 2
+          "albania": 4,
+          "Koszovó": 1,
+          "Albánia": 5
         },
-        "main_topic": "protest",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
