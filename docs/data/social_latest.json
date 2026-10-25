@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25 11:14 UTC",
+  "updated_at": "2026-10-25 15:21 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 15
+    "collected": 9
   },
   "countries": [
     {
@@ -21,44 +21,116 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
+        "mentions": 17,
         "negative_hits": 6,
-        "positive_hits": 3,
-        "trusted_hits": 6,
-        "engagement_total": 148,
-        "raw_engagement_total": 672,
-        "quality_total": 284,
-        "geopolitical_total": 232,
+        "positive_hits": 0,
+        "trusted_hits": 3,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 272,
+        "geopolitical_total": 221,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 11,
-          "x": 5
+          "mastodon": 14,
+          "x": 3
         },
         "category_counts": {
-          "protest": 2,
-          "government_crisis": 6,
-          "corruption_rule_of_law": 1,
-          "security": 5,
-          "foreign_influence": 2
+          "protest": 3,
+          "government_crisis": 7,
+          "security": 6,
+          "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 7,
+          "serbia": 10,
           "kosovo": 2,
           "montenegro": 1,
           "Szerbia": 2,
-          "Koszovó": 2,
           "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
-            "text": "Serbia holds a parliamentary election as populist Vucic faces protesting students # serbia # Serbiaelections2026 # vucic # serbiaprotests https:// apnews.com/article/serbia-elec tion-students-vucic-fdf5def8a20aebc8ae139fd719478775",
-            "url": "https://mastodon.social/@999_anonymus/117500895165960811",
+            "text": "Serbia is voting right now, and for the first time in 14 years nobody knows how it ends. One side: Vučić, who has run the country since 2012. The other: a student movement that never ran for anything before. Polls disagree. One has his party ahead 47% to 40%, others put the students in front. Vučić says he’d concede if he loses, and that any fraud protests w",
+            "url": "https://epsilon.social/@AutokratDaily/117501819231706473",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Sun, 25 Oct 2026 09:42:53 +0000",
+            "seen_date": "Sun, 25 Oct 2026 13:37:54 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 30,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Vucic’s mother attacked in Serbia on election day – ruling party",
+            "text": "Vucic’s mother attacked in Serbia on election day – ruling party",
+            "url": "https://x.com/i/web/status/2114375472540971178",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-25T15:16:10.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 22,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Serbia holds a parliamentary election as strongman Vucic faces protesting students",
+            "text": "Serbia holds a parliamentary election as strongman Vucic faces protesting students",
+            "url": "https://x.com/i/web/status/2114375219804594680",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-25T15:15:10.000Z",
             "matched_countries": [
               "Szerbia"
             ],
@@ -74,48 +146,14 @@
               },
               {
                 "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 32,
-            "quality_score": 37,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "Brazil's Lula faces a tight run-off against Flavio Bolsonaro as Serbia's Vučić faces his strongest test in a decade. Lula, the left-wing incumbent, meets the right-wing senator in ",
-            "text": "Brazil's Lula faces a tight run-off against Flavio Bolsonaro as Serbia's Vučić faces his strongest test in a decade. Lula, the left-wing incumbent, meets the right-wing senator in a Sunday vote dpa calls decisive. In Serbia's snap election, a student-led anti-corruption list",
-            "url": "https://x.com/i/web/status/2114313086190412256",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-25T11:08:16.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
                 "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 32,
-            "quality_score": 36,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "geopolitical_score": 20,
+            "quality_score": 21,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
             "engagement": 1,
             "raw_engagement": 1,
             "metrics": {
@@ -128,66 +166,32 @@
           },
           {
             "title": "",
-            "text": "Serbia votes in election pitting longtime leader against student movement Polls show populist leader Aleksandar Vucic in a tight race against the anticorruption and antirepression movement. https://www. aljazeera.com/news/2026/10/25/ serbia-votes-in-election-pitting-longtime-leader-against-student-movement # TopNews # News # Serbia # Vucic # Russia",
-            "url": "https://mastodon.social/@top_news/117500731373081133",
+            "text": "Primo piano ANSA - ANSA.it: In Serbia affluenza in forte aumento alle urne, 'irregolarità e incidenti a seggi'. Presidenziali in Bulgaria Lo segnalano i media indipendenti. Alle 12 affluenza supera il 32%, in forte crescita rispetto al 2023 In Serbia, strong increase in voter turnout, ‘irregularities and incidents at polling stations’. Presidential elections",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117501830009726403",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Sun, 25 Oct 2026 09:01:14 +0000",
+            "seen_date": "Sun, 25 Oct 2026 13:40:38 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 1
             },
-            "event_category": "corruption_rule_of_law",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "corruption_rule_of_law",
+                "category": "security",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
               },
               {
-                "category": "foreign_influence",
+                "category": "government_crisis",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
               }
             ],
-            "geopolitical_score": 23,
-            "quality_score": 28,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "█ Els estudiants de Sèrbia, pioners a Europa: de protestar al carrer a competir a les eleccions ▓▒░ Els estudiants arriben als comicis d'aquest diumenge amb opcions de fer caure Aleksandar Vucic, que porta 12 anys en el poder enmig d'acusacions de corrupció i d'autoritarisme https://www. 3cat.cat/3catinfo/els-estudian ts-de-serbia-pioners-a-europa-de-protest",
-            "url": "https://mastodon.social/@3CatInfo/117500850949977803",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sun, 25 Oct 2026 09:31:39 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
+            "geopolitical_score": 18,
+            "quality_score": 21,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -196,23 +200,21 @@
           },
           {
             "title": "",
-            "text": "Domani: Il voto in Serbia visto dal Kosovo, il ministro Sveçla: «Chiunque vinca, non c’è da sognare» Il ministro dell’Interno kosovaro Xhelal Sveçla ha iniziato la lotta politica proprio da studente, con Kurti. E critica apertamente Vučić, che «ha ingannato l’Occidente». Ma il movimento degli studenti serbi «contiene di tutto, anche l’estrema destra», e cons",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117486296471259583",
+            "text": "In fila, come un elettore qualunque. Proprio come i nostri politici 😉😅 Vucic pazientemente in fila insieme alla moglie ha atteso di votare per oltre un’ora. Solo questo a parere mio gli fa acquisire parecchi punti. Non è un giudizio politico, su cui mi astengo, ma etico e di rispetto nei confronti dei cittadini elettori. Primus civis inter pares? Che ne pens",
+            "url": "https://poliversity.it/@emama/117501822681518110",
             "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Thu, 22 Oct 2026 19:50:15 +0000",
+            "tag": "serbia",
+            "seen_date": "Sun, 25 Oct 2026 13:38:46 +0000",
             "matched_countries": [
-              "Szerbia",
-              "Koszovó"
+              "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 10,
-              "Koszovó": 6
+              "Szerbia": 5
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               }
@@ -396,33 +398,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 60,
-        "level": "high",
+        "score": 39,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 10,
+        "mentions": 6,
         "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 2,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 143,
-        "geopolitical_total": 117,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 99,
+        "geopolitical_total": 77,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
-          "x": 4
+          "x": 0
         },
         "category_counts": {
           "security": 3,
           "corruption_rule_of_law": 2,
-          "government_crisis": 1,
-          "ethnic_tension": 4
+          "government_crisis": 1
         },
         "tag_counts": {
-          "kosovo": 6,
-          "Koszovó": 4
+          "kosovo": 6
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -584,29 +584,27 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 18,
+        "score": 12,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 2,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 40,
-        "geopolitical_total": 31,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 30,
+        "geopolitical_total": 22,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
-          "government_crisis": 2,
-          "security": 1
+          "government_crisis": 2
         },
         "tag_counts": {
-          "montenegro": 2,
-          "Montenegró": 1
+          "montenegro": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -671,42 +669,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "First border crossing by bike. 79 km into Albania. 45°C on the other side. The only shade for miles was a dead gas station. Episode 6 of the Athens to Podgorica series is live: bik",
-            "text": "First border crossing by bike. 79 km into Albania. 45°C on the other side. The only shade for miles was a dead gas station. Episode 6 of the Athens to Podgorica series is live: bikepacking biketouring albania",
-            "url": "https://x.com/i/web/status/2114023250959454381",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-10-24T15:56:34.000Z",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 4,
-              "Albánia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -714,17 +676,17 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 19,
+        "score": 13,
         "level": "low",
         "scale": "0-60 risk index",
         "mentions": 3,
         "negative_hits": 0,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 12,
-        "raw_engagement_total": 12,
-        "quality_total": 44,
-        "geopolitical_total": 35,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 47,
+        "geopolitical_total": 38,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
@@ -732,7 +694,7 @@
         },
         "category_counts": {
           "government_crisis": 2,
-          "ethnic_tension": 1
+          "eu_integration": 1
         },
         "tag_counts": {
           "kosovo": 1,
@@ -805,37 +767,36 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "All 30% of the ethnic Albanian population of North Macedonia should be automatically given the Albanian citizenship. They deserve a dual citizenship",
-            "text": "All 30% of the ethnic Albanian population of North Macedonia should be automatically given the Albanian citizenship. They deserve a dual citizenship",
-            "url": "https://x.com/i/web/status/2114078791374926001",
+            "title": "Mickoski on October 23: Bulgaria uses its EU membership to obstruct, but negotiations should not be abandoned",
+            "text": "Mickoski on October 23: Bulgaria uses its EU membership to obstruct, but negotiations should not be abandoned",
+            "url": "https://x.com/i/web/status/2114315333326819742",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-24T19:37:16.000Z",
+            "seen_date": "2026-10-25T11:17:12.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Albánia": 2
+              "Észak-Macedónia": 4
             },
-            "event_category": "ethnic_tension",
+            "event_category": "eu_integration",
             "event_categories": [
               {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
+            "geopolitical_score": 13,
+            "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 12,
-            "raw_engagement": 12,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 9,
-              "reposts": 2,
-              "replies": 1,
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -849,31 +810,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 28,
-        "negative_hits": 24,
-        "positive_hits": 1,
-        "trusted_hits": 4,
-        "engagement_total": 49,
-        "raw_engagement_total": 49,
-        "quality_total": 879,
-        "geopolitical_total": 796,
+        "mentions": 29,
+        "negative_hits": 25,
+        "positive_hits": 2,
+        "trusted_hits": 3,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 941,
+        "geopolitical_total": 858,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 23,
+          "mastodon": 24,
           "x": 5
         },
         "category_counts": {
-          "security": 10,
+          "security": 12,
           "corruption_rule_of_law": 5,
-          "protest": 10,
-          "government_crisis": 3
+          "protest": 8,
+          "government_crisis": 3,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "balkans": 16,
+          "balkans": 17,
           "montenegro": 1,
           "albania": 6,
-          "Koszovó": 1,
-          "Albánia": 4
+          "Albánia": 5
         },
         "main_topic": "security",
         "top_posts": [
@@ -1001,6 +962,45 @@
           },
           {
             "title": "",
+            "text": "Day 148 of anti-corruption protest, Day 13 of escalated tactics If you scrub to about 2.5 hrs into today's livestream, News24 reporter Osman Stafa, who probably saved someone's life last night who the police had cornered, and beat to the point the person couldn't even move or answer if they were ok, talks about what is going on and the things Albanians have ",
+            "url": "https://mas.to/@meganL/117501544434535742",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sun, 25 Oct 2026 12:28:01 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 6
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 45,
+            "quality_score": 48,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "The video showing the cops beating this man on the ground might have been taken by Osman himself on his phone as the News24 camera was too big to quickly get into the hidden space the cops were ganging up on this guy. There were 4 cops immediately around the man, with more nearby. Even as the reporter was rushing in, you see the brutal cop take one last rese",
             "url": "https://mas.to/@meganL/117497317450448912",
             "source": "mastodon",
@@ -1034,40 +1034,6 @@
             "quality_score": 48,
             "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Albania: 13 feriti nelle proteste violente a Tirana, scontri e bombe molotov contro polizia 25 ott 07:58 - (Agenzia Nova) - E' di almeno 13 feriti il bilancio delle violenze che hanno accompagnato ieri la dodicesima giornata consecutiva... (Alt) Albania: 13 injured in violent protests in Tirana, clashes and Molotov cocktails against police. Oct",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117500452191445693",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Sun, 25 Oct 2026 07:50:14 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 41,
-            "quality_score": 46,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
