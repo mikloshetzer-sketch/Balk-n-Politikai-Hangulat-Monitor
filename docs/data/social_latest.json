@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25 02:28 UTC",
+  "updated_at": "2026-10-25 04:28 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 12
+    "collected": 15
   },
   "countries": [
     {
@@ -22,22 +22,23 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 14,
-        "negative_hits": 8,
+        "negative_hits": 6,
         "positive_hits": 0,
         "trusted_hits": 4,
-        "engagement_total": 19,
-        "raw_engagement_total": 19,
-        "quality_total": 286,
-        "geopolitical_total": 246,
+        "engagement_total": 16,
+        "raw_engagement_total": 16,
+        "quality_total": 326,
+        "geopolitical_total": 286,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
           "x": 5
         },
         "category_counts": {
-          "protest": 7,
+          "protest": 4,
           "security": 5,
-          "foreign_influence": 2
+          "foreign_influence": 2,
+          "government_crisis": 3
         },
         "tag_counts": {
           "balkans": 1,
@@ -48,8 +49,48 @@
           "Koszovó": 1,
           "Montenegró": 1
         },
-        "main_topic": "protest",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "Serbia votes Sunday in a snap election for all 250 seats in parliament. Ex-President 's SNS-led list faces the Student List, born of protests after 16 died in the 2024 Novi Sad can",
+            "text": "Serbia votes Sunday in a snap election for all 250 seats in parliament. Ex-President 's SNS-led list faces the Student List, born of protests after 16 died in the 2024 Novi Sad canopy collapse. Ipsos has Vučić's list up 47-40; NSPM has students up 44.5-42.7.",
+            "url": "https://x.com/i/web/status/2114195997685342403",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-25T03:23:00.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 46,
+            "quality_score": 47,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "RaiNews: Gli studenti sfidano Vucic, la Serbia e le elezioni dall'esito più incerto degli ultimi 14 anni La sfida tra due blocchi contrapposti: da un lato l'ex presidente, che domina a Belgrado dal 2014; dall'altra, un movimento senza un vero leader, nato dall'incidente della stazione di Novi Sad e che punta sulla lotta alla corruzione Students challenge Vuc",
@@ -153,79 +194,40 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "“The main challenger to the ruling coalition is the Student List, which emerged from the two-year protest movement led by ‘Students in Blockade’. The list’s candidates were unveiled only on 15 September, and the list itself has been coordinated by the students through a model of participatory democracy. It is based on the ‘Student Plan’, a platform focused o",
-            "url": "https://kolektiva.social/@OldSquida2/117498067938353692",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sat, 24 Oct 2026 21:43:53 +0000",
+            "title": "A massive crowd has taken over Belgrade as nearly 150,000 students flooded the capital for the final campaign rally of the student-led opposition movement, \"Student List\". The move",
+            "text": "A massive crowd has taken over Belgrade as nearly 150,000 students flooded the capital for the final campaign rally of the student-led opposition movement, \"Student List\". The movement represents the most serious challenge to President Aleksandar Vučić in over 14 years.",
+            "url": "https://x.com/i/web/status/2114199017160687928",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-25T03:35:00.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 1
+              "Szerbia": 8
             },
-            "event_category": "protest",
+            "event_category": "government_crisis",
             "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
               {
                 "category": "protest",
                 "hits": 1,
                 "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 23,
-            "quality_score": 26,
-            "source_reliability": 3,
+            "geopolitical_score": 26,
+            "quality_score": 27,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "👀 🇷🇸 This is Belgrade, not Paris, and this is how REAL students protest... A sea of lights, thousands filling the streets, and NO smashed storefronts or burning cars.",
-            "text": "👀 🇷🇸 This is Belgrade, not Paris, and this is how REAL students protest... A sea of lights, thousands filling the streets, and NO smashed storefronts or burning cars.",
-            "url": "https://x.com/i/web/status/2114158362396926163",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-25T00:53:27.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 8,
-            "raw_engagement": 8,
             "metrics": {
-              "likes": 7,
-              "reposts": 1,
+              "likes": 0,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
@@ -402,29 +404,30 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 39,
-        "level": "medium",
+        "score": 43,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 7,
         "negative_hits": 1,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 99,
-        "geopolitical_total": 77,
+        "quality_total": 110,
+        "geopolitical_total": 87,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "security": 3,
           "corruption_rule_of_law": 2,
-          "government_crisis": 1
+          "government_crisis": 2
         },
         "tag_counts": {
-          "kosovo": 6
+          "kosovo": 6,
+          "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -588,29 +591,29 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 22,
-        "level": "medium",
+        "score": 18,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 3,
         "negative_hits": 0,
-        "positive_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 57,
-        "geopolitical_total": 47,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 40,
+        "geopolitical_total": 31,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 3,
+          "government_crisis": 2,
           "security": 1
         },
         "tag_counts": {
           "montenegro": 2,
-          "Montenegró": 2
+          "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -646,46 +649,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Hungary 🇭🇺 will be a \"reliable partner\" to Montenegro 🇲🇪 in the final phase of EU accession talks, PM Péter Magyar told President Jakov Milatović in Budapest. Podgorica wants to si",
-            "text": "Hungary 🇭🇺 will be a \"reliable partner\" to Montenegro 🇲🇪 in the final phase of EU accession talks, PM Péter Magyar told President Jakov Milatović in Budapest. Podgorica wants to sign its accession treaty in early 2027. Montenegro 🇲🇪 Hungary 🇭🇺 Yugoslavia",
-            "url": "https://x.com/i/web/status/2113950032147657046",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-10-24T11:05:37.000Z",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 16,
-            "quality_score": 17,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -758,73 +721,33 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 28,
-        "level": "medium",
+        "score": 19,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 1,
-        "positive_hits": 1,
+        "mentions": 3,
+        "negative_hits": 0,
+        "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 70,
-        "geopolitical_total": 60,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 44,
+        "geopolitical_total": 35,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 3,
+          "government_crisis": 2,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "kosovo": 1,
           "montenegro": 1,
-          "Észak-Macedónia": 2
+          "Észak-Macedónia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "Marta Kos urges North Macedonia to adopt constitutional amendments, but VMRO-DPMNE wants guarantees while SDSM calls for action. The EU accession deadlock continues. NorthMacedonia",
-            "text": "Marta Kos urges North Macedonia to adopt constitutional amendments, but VMRO-DPMNE wants guarantees while SDSM calls for action. The EU accession deadlock continues. NorthMacedonia EUEnlargement",
-            "url": "https://x.com/i/web/status/2113908737631043890",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-24T08:21:32.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 25,
-            "quality_score": 26,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "🇪🇺 ¡Cita clave en Bruselas! Nikol Pashinyan intervendrá el 3 de noviembre en la Cumbre de la UE junto al presidente del Consejo Antonio Costa 🇦🇲 # albania # AndrejPlenković # AntonioCosta # armenia # bruselas # ConsejoEuropeo # croacia # EdiRama # ereván # euronews # georgia # GordanaSiljanovskaDavkova # IrakliKobakhidze # MacedoniaDelNorte # MilojkoSpajić #",
@@ -933,30 +856,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 25,
-        "negative_hits": 22,
+        "mentions": 28,
+        "negative_hits": 25,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 857,
-        "geopolitical_total": 786,
+        "engagement_total": 11,
+        "raw_engagement_total": 11,
+        "quality_total": 923,
+        "geopolitical_total": 851,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 22,
-          "x": 3
+          "mastodon": 21,
+          "x": 7
         },
         "category_counts": {
-          "security": 8,
-          "corruption_rule_of_law": 5,
+          "security": 10,
+          "corruption_rule_of_law": 6,
           "protest": 8,
           "government_crisis": 4
         },
         "tag_counts": {
           "balkans": 16,
           "montenegro": 1,
-          "albania": 5,
-          "Albánia": 3
+          "albania": 4,
+          "Albánia": 7
         },
         "main_topic": "security",
         "top_posts": [
@@ -1122,12 +1045,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Protesters in Albania have fought running battles with police, on a 12th day of anti-government protests. Police in the capital, Tirana, used water cannon, tear gas and rubber bull",
-            "text": "Protesters in Albania have fought running battles with police, on a 12th day of anti-government protests. Police in the capital, Tirana, used water cannon, tear gas and rubber bullets after Prime Minister Edi Rama warned he would take strong action to quell unrest",
-            "url": "https://x.com/i/web/status/2114181813660942425",
+            "title": "Protesters fired streams of fireworks at riot police in Tirana. Albania's anti-government protests want PM Edi Rama out over corruption and a Kushner-linked resort project. Rama sa",
+            "text": "Protesters fired streams of fireworks at riot police in Tirana. Albania's anti-government protests want PM Edi Rama out over corruption and a Kushner-linked resort project. Rama says he won't resign. How long can he hold on?",
+            "url": "https://x.com/i/web/status/2114211784689344924",
             "source": "x",
             "tag": "Albánia",
-            "seen_date": "2026-10-25T02:26:38.000Z",
+            "seen_date": "2026-10-25T04:25:44.000Z",
             "matched_countries": [
               "Albánia"
             ],
@@ -1142,18 +1065,18 @@
                 "weight": 9
               },
               {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
                 "category": "protest",
                 "hits": 3,
                 "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 45,
-            "quality_score": 46,
+            "geopolitical_score": 44,
+            "quality_score": 45,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
