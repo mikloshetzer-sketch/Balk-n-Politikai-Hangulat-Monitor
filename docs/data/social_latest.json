@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28 03:13 UTC",
+  "updated_at": "2026-10-28 05:24 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 10
+    "collected": 12
   },
   "countries": [
     {
@@ -21,35 +21,35 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 18,
-        "negative_hits": 8,
-        "positive_hits": 2,
+        "mentions": 22,
+        "negative_hits": 11,
+        "positive_hits": 3,
         "trusted_hits": 5,
-        "engagement_total": 18,
-        "raw_engagement_total": 18,
-        "quality_total": 373,
-        "geopolitical_total": 316,
+        "engagement_total": 72,
+        "raw_engagement_total": 72,
+        "quality_total": 454,
+        "geopolitical_total": 391,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 14,
-          "x": 4
+          "mastodon": 15,
+          "x": 7
         },
         "category_counts": {
-          "government_crisis": 5,
+          "government_crisis": 8,
           "corruption_rule_of_law": 2,
           "foreign_influence": 5,
-          "protest": 3,
+          "protest": 4,
           "security": 2,
           "eu_integration": 1
         },
         "tag_counts": {
-          "balkans": 4,
+          "balkans": 5,
           "serbia": 6,
           "kosovo": 1,
           "bosnia": 1,
           "albania": 2,
-          "Szerbia": 1,
-          "Koszovó": 2,
+          "Szerbia": 3,
+          "Koszovó": 3,
           "Montenegró": 1
         },
         "main_topic": "government_crisis",
@@ -87,6 +87,50 @@
             ],
             "geopolitical_score": 45,
             "quality_score": 48,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Serbian opposition landslide exposes cost of EU’s bet on ousted Vučić https://www.politico.eu/article/serbian-opposition-landslide-exposes-eu-bet-cost-aleksandar-vucic-outsted-belgrade/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication #Foreignpolicy #construction #Negotiations #Cooperation #Corruption #Investment #Parliament #Democracy #Electi",
+            "url": "https://social.espeweb.net/objects/da9b98b5-a1dc-4a84-b785-bc0b3a794ee2",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Wed, 28 Oct 2026 03:20:34 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 2,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 44,
+            "quality_score": 47,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -165,46 +209,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Thousands of people poured into the streets of Belgrade to celebrate a historic election victory for Serbia’s student-led opposition movement, after longtime political leader Aleks",
-            "text": "Thousands of people poured into the streets of Belgrade to celebrate a historic election victory for Serbia’s student-led opposition movement, after longtime political leader Aleksandar Vucic conceded defeat in the parliamentary election. But how did the student-led movement",
-            "url": "https://x.com/i/web/status/2115280163986653505",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-28T03:11:05.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 9
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 26,
-            "quality_score": 27,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -619,29 +623,29 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 30,
+        "score": 24,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 4,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 49,
-        "raw_engagement_total": 49,
-        "quality_total": 67,
-        "geopolitical_total": 56,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 53,
+        "geopolitical_total": 43,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
-          "government_crisis": 5
+          "government_crisis": 4
         },
         "tag_counts": {
           "kosovo": 1,
           "montenegro": 1,
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -707,47 +711,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Great discussion on practical priorities with Prime Minister : the Prizren–Tetovo road and tunnel, the Skopje–Blace motorway, energy links and issues affecting Kosova citizens in t",
-            "text": "Great discussion on practical priorities with Prime Minister : the Prizren–Tetovo road and tunnel, the Skopje–Blace motorway, energy links and issues affecting Kosova citizens in their daily lives. 🇽🇰🤝🇲🇰",
-            "url": "https://x.com/i/web/status/2115104459474768269",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-27T15:32:54.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 4,
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 48,
-            "raw_engagement": 48,
-            "metrics": {
-              "likes": 41,
-              "reposts": 4,
-              "replies": 3,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "Our Rector, Prof. Dr. Mehmet Bulut ( ), visited Bekim Sali ( ), First Deputy Prime Minister and Minister of European Affairs of the Republic of North Macedonia. During the meeting,",
@@ -832,8 +795,8 @@
         "negative_hits": 14,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 30,
-        "raw_engagement_total": 30,
+        "engagement_total": 38,
+        "raw_engagement_total": 38,
         "quality_total": 457,
         "geopolitical_total": 414,
         "source_counts": {
@@ -843,17 +806,15 @@
         },
         "category_counts": {
           "corruption_rule_of_law": 2,
-          "security": 6,
+          "security": 7,
           "government_crisis": 1,
-          "protest": 5,
-          "ethnic_tension": 1
+          "protest": 5
         },
         "tag_counts": {
           "balkans": 7,
           "montenegro": 1,
           "albania": 5,
-          "Koszovó": 1,
-          "Albánia": 1
+          "Albánia": 2
         },
         "main_topic": "security",
         "top_posts": [
