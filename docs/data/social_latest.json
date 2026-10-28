@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28 11:54 UTC",
+  "updated_at": "2026-10-28 12:42 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 14
+    "collected": 7
   },
   "countries": [
     {
@@ -21,34 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 26,
-        "negative_hits": 14,
-        "positive_hits": 7,
-        "trusted_hits": 3,
-        "engagement_total": 15,
-        "raw_engagement_total": 15,
-        "quality_total": 697,
-        "geopolitical_total": 635,
+        "mentions": 22,
+        "negative_hits": 11,
+        "positive_hits": 4,
+        "trusted_hits": 4,
+        "engagement_total": 16,
+        "raw_engagement_total": 16,
+        "quality_total": 564,
+        "geopolitical_total": 506,
         "source_counts": {
-          "reddit": 0,
+          "reddit": 2,
           "mastodon": 15,
-          "x": 11
+          "x": 5
         },
         "category_counts": {
-          "government_crisis": 5,
+          "government_crisis": 6,
           "corruption_rule_of_law": 1,
-          "foreign_influence": 5,
-          "security": 12,
-          "eu_integration": 2,
-          "ethnic_tension": 1
+          "security": 10,
+          "foreign_influence": 4,
+          "eu_integration": 1
         },
         "tag_counts": {
           "balkans": 5,
-          "serbia": 7,
+          "serbia": 9,
           "kosovo": 2,
           "bosnia": 1,
-          "Szerbia": 7,
-          "Koszovó": 3,
+          "Szerbia": 3,
+          "Koszovó": 1,
           "Montenegró": 1
         },
         "main_topic": "security",
@@ -86,46 +85,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "🌍 JUST IN: DEADLY ATTACK OUTSIDE ISRAELI EMBASSY IN SERBIA 🇷🇸 Serbian police say an attacker was killed after assaulting an officer outside the Israeli Embassy in Belgrade. The inc",
-            "text": "🌍 JUST IN: DEADLY ATTACK OUTSIDE ISRAELI EMBASSY IN SERBIA 🇷🇸 Serbian police say an attacker was killed after assaulting an officer outside the Israeli Embassy in Belgrade. The incident has raised fresh security concerns, while authorities work to establish the full",
-            "url": "https://x.com/i/web/status/2115410016433795415",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-28T11:47:04.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 6
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 4,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 47,
-            "quality_score": 48,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -246,15 +205,49 @@
             "quality_score": 42,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
               "likes": 0,
-              "reposts": 0,
+              "reposts": 1,
               "replies": 0,
-              "quotes": 0
+              "quotes": 1
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "RaiNews: Le immagini dell'ambasciata israeliana in Serbia, ucciso un attentatore Agenti di sicurezza armati pattugliano dopo che un uomo armato di coltello è stato ucciso fuori dall'ambasciata Images of the Israeli embassy in Serbia, where an attacker was killed. Armed security guards are patrolling after a man armed with a knife was killed outside the embas",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117517716123346902",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 28 Oct 2026 09:00:41 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 38,
+            "quality_score": 41,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -262,32 +255,30 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 27,
+        "score": 21,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 4,
         "negative_hits": 0,
-        "positive_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 90,
-        "geopolitical_total": 73,
+        "quality_total": 72,
+        "geopolitical_total": 56,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "security": 1,
           "eu_integration": 1,
           "foreign_influence": 1,
-          "government_crisis": 1,
-          "ethnic_tension": 1
+          "government_crisis": 1
         },
         "tag_counts": {
-          "bosnia": 4,
-          "Koszovó": 1
+          "bosnia": 4
         },
         "main_topic": "security",
         "top_posts": [
@@ -329,50 +320,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "The EU says Serbia’s election results do not change Belgrade’s obligations under the 2023 Ohrid Agreement. Brussels expects the new government to honour existing commitments and ma",
-            "text": "The EU says Serbia’s election results do not change Belgrade’s obligations under the 2023 Ohrid Agreement. Brussels expects the new government to honour existing commitments and maintain progress in the Belgrade-Pristina Dialogue.",
-            "url": "https://x.com/i/web/status/2115396544077730098",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-28T10:53:32.000Z",
-            "matched_countries": [
-              "Koszovó",
-              "Szerbia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Koszovó": 7,
-              "Szerbia": 5,
-              "Bosznia-Hercegovina": 3
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 18,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -472,28 +419,26 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
+        "mentions": 8,
         "negative_hits": 3,
-        "positive_hits": 2,
+        "positive_hits": 1,
         "trusted_hits": 3,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 173,
-        "geopolitical_total": 144,
+        "engagement_total": 6,
+        "raw_engagement_total": 6,
+        "quality_total": 167,
+        "geopolitical_total": 139,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
-          "security": 5,
-          "corruption_rule_of_law": 2,
-          "ethnic_tension": 1,
-          "eu_integration": 1
+          "security": 6,
+          "corruption_rule_of_law": 2
         },
         "tag_counts": {
           "kosovo": 7,
-          "Koszovó": 2
+          "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -525,6 +470,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Our Deputy Director-General Olivier Onidi is in Pristina today. With the Kosovo authorities and EU agencies, he is reviewing cooperation on migration, borders and internal security",
+            "text": "Our Deputy Director-General Olivier Onidi is in Pristina today. With the Kosovo authorities and EU agencies, he is reviewing cooperation on migration, borders and internal security, and agreeing on concrete next steps 🇪🇺",
+            "url": "https://x.com/i/web/status/2115412113057591499",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-28T11:55:24.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "migration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 25,
+            "quality_score": 26,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 6,
+            "raw_engagement": 6,
+            "metrics": {
+              "likes": 5,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -588,50 +573,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "The EU says Serbia’s election results do not change Belgrade’s obligations under the 2023 Ohrid Agreement. Brussels expects the new government to honour existing commitments and ma",
-            "text": "The EU says Serbia’s election results do not change Belgrade’s obligations under the 2023 Ohrid Agreement. Brussels expects the new government to honour existing commitments and maintain progress in the Belgrade-Pristina Dialogue.",
-            "url": "https://x.com/i/web/status/2115396544077730098",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-28T10:53:32.000Z",
-            "matched_countries": [
-              "Koszovó",
-              "Szerbia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Koszovó": 7,
-              "Szerbia": 5,
-              "Bosznia-Hercegovina": 3
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 18,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -830,32 +771,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
-        "negative_hits": 13,
+        "mentions": 13,
+        "negative_hits": 12,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 8,
-        "raw_engagement_total": 8,
-        "quality_total": 437,
-        "geopolitical_total": 396,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 388,
+        "geopolitical_total": 349,
         "source_counts": {
           "reddit": 0,
           "mastodon": 12,
-          "x": 3
+          "x": 1
         },
         "category_counts": {
+          "protest": 4,
+          "government_crisis": 2,
           "corruption_rule_of_law": 3,
-          "security": 7,
-          "government_crisis": 1,
-          "protest": 4
+          "security": 4
         },
         "tag_counts": {
-          "balkans": 7,
+          "balkans": 8,
           "montenegro": 1,
-          "albania": 4,
-          "Albánia": 3
+          "albania": 3,
+          "Albánia": 1
         },
-        "main_topic": "security",
+        "main_topic": "protest",
         "top_posts": [
           {
             "title": "",
@@ -895,45 +836,6 @@
             ],
             "geopolitical_score": 62,
             "quality_score": 65,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 148 of anti-corruption protest, Day 13 of escalated tactics. Channel 4, like so many other outside media, say \"violence\" and then only talk about protestors. Since you mentioned what protestors have, as if that's where the violence started from, let's mention what the various police have, some of which they've been using for months already: rifles shooti",
-            "url": "https://eldritch.cafe/@ml/117504114788180756",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sun, 25 Oct 2026 23:21:41 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 44,
-            "quality_score": 47,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -985,29 +887,29 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Tirana, Albania 🇦🇱 Two people arrested after allegedly clashing with police, throwing hard objects at the Ministry of Education and setting rubbish bins on fire during the October ",
-            "text": "Tirana, Albania 🇦🇱 Two people arrested after allegedly clashing with police, throwing hard objects at the Ministry of Education and setting rubbish bins on fire during the October 27 protest. The incident damaged public property and blocked traffic on Durrës Street. Police",
-            "url": "https://x.com/i/web/status/2115408777356652613",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-28T11:42:09.000Z",
+            "title": "",
+            "text": "Day 151 of anti-corruption protest; Day 16 of escalated tactics As I post, students are on the move through Air Albania Stadium neighborhood. Could have started at Polytechnic University of Tirana and be on its way to the Prime Minister's office. # FlamingoRevolution # Albania # Balkans # Corruption # Europe # Protest https://www. youtube.com/watch?v=PNMnYVO",
+            "url": "https://eldritch.cafe/@ml/117518495145427837",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Wed, 28 Oct 2026 12:18:48 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
               "Albánia": 5
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
               {
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
               },
               {
                 "category": "protest",
@@ -1015,19 +917,13 @@
                 "weight": 8
               }
             ],
-            "geopolitical_score": 38,
+            "geopolitical_score": 36,
             "quality_score": 39,
-            "source_reliability": 2,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 8,
-            "raw_engagement": 8,
-            "metrics": {
-              "likes": 6,
-              "reposts": 2,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -1062,6 +958,45 @@
             ],
             "geopolitical_score": 36,
             "quality_score": 39,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "“Policët thoshin në radio MOS I KURSENI”, ish-efektivi: Secili ka emër mbiemër, të japin llogari... Machine translated: \"“Police officers were saying over the radio, ‘DON’T HOLD BACK’”—former officer: “Each one has a name and a surname; let them be held accountable...”\" # FlamingoRevolution # Albania # Balkans # Corruption # Europe # Protest # PoliceViolence",
+            "url": "https://eldritch.cafe/@ml/117509032587836307",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Mon, 26 Oct 2026 20:12:21 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 31,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
