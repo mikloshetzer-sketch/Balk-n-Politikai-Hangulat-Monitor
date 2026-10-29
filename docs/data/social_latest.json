@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29 12:51 UTC",
+  "updated_at": "2026-10-29 18:12 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 15
+    "collected": 17
   },
   "countries": [
     {
@@ -21,73 +21,99 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 18,
+        "mentions": 21,
         "negative_hits": 8,
-        "positive_hits": 3,
-        "trusted_hits": 4,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 480,
-        "geopolitical_total": 426,
+        "positive_hits": 4,
+        "trusted_hits": 7,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 544,
+        "geopolitical_total": 472,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 14,
-          "x": 4
+          "mastodon": 18,
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 8,
+          "security": 7,
+          "government_crisis": 7,
           "corruption_rule_of_law": 1,
+          "foreign_influence": 3,
           "protest": 2,
-          "security": 4,
-          "foreign_influence": 2,
           "eu_integration": 1
         },
         "tag_counts": {
           "balkans": 6,
-          "serbia": 3,
+          "serbia": 8,
           "kosovo": 3,
           "bosnia": 1,
-          "albania": 1,
-          "Szerbia": 3,
-          "Koszovó": 1
+          "Szerbia": 3
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
-            "text": "From street protests to the halls of power: Serbia’s student-led opposition just secured a 52.7% majority, forcing Aleksandar Vučić to concede his bid for prime minister. What does this historic shift mean for Russia, the EU, and the Balkans? Read the full breakdown at The Levant Files https://www. thelevantfiles.org/2026/10/the -students-beat-vucic-what-hap",
-            "url": "https://mastodon.social/@thelevantfiles/117506960521366669",
+            "text": "Il Fatto Quotidiano: Un elicottero militare italiano è precipitato in Bosnia. La Difesa: “Verifiche sulle condizioni di salute del personale a bordo” Un elicottero militare italiano è precipitato nel pomeriggio di oggi, per cause ancora in corso di accertamento, in Bosnia-Erzegovina. Si tratta di un CH-47, impegnato nell’ambito dell’operazione Eufor Althea. ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117525382445907579",
             "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Mon, 26 Oct 2026 11:25:24 +0000",
+            "tag": "serbia",
+            "seen_date": "Thu, 29 Oct 2026 17:30:20 +0000",
             "matched_countries": [
+              "Bosznia-Hercegovina",
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 9
+              "Bosznia-Hercegovina": 2,
+              "Szerbia": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 2,
+                "category": "security",
+                "hits": 6,
                 "weight": 9
               },
               {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
+                "category": "eu_integration",
                 "hits": 1,
-                "weight": 8
+                "weight": 6
               }
             ],
-            "geopolitical_score": 45,
-            "quality_score": 48,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "geopolitical_score": 64,
+            "quality_score": 69,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "LA NOTIZIA: Bosnia, precipita un elicottero militare italiano: era impegnato in una missione Ue Un elicottero italiano impegnato nell’operazione Eufor Althea è precipitato in Bosnia. A renderlo noto è un comunicato del ministero della Difesa, che spiega che l’elicottero, un CH 47, era impegnato nell’ambito dell’operazione interforze europea in Bosnia-Erzegov",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117525382701723737",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Thu, 29 Oct 2026 17:30:24 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 2,
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 5,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 49,
+            "quality_score": 54,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -137,23 +163,24 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Serbia’s students just defeated Aleksandar Vučić after years of protests. They have no traditional party leader and don’t fit the usual pro-EU opposition mold. They oppose sanction",
-            "text": "Serbia’s students just defeated Aleksandar Vučić after years of protests. They have no traditional party leader and don’t fit the usual pro-EU opposition mold. They oppose sanctions on Russia, claim Kosovo as Serbian, and could halt arms exports to war zones. Now a",
-            "url": "https://x.com/i/web/status/2115786793207337035",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-29T12:44:15.000Z",
+            "title": "",
+            "text": "Protesta studentore dhe zhvillimet në vend Machine translated: \"Student protests and developments in the country\" The escalated police violence, PM Rama offering the cops bounties to pick off more protestors, the \"temporary\" laws with crushing fines for being near a protest EVEN IF YOU'RE NOT PARTICIPATING are definitely having an effect. The protest has not",
+            "url": "https://eldritch.cafe/@ml/117525410500054147",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Thu, 29 Oct 2026 17:37:28 +0000",
             "matched_countries": [
-              "Szerbia"
+              "Szerbia",
+              "Albánia"
             ],
             "country_confidence": {
-              "Szerbia": 6,
-              "Koszovó": 1
+              "Szerbia": 2,
+              "Albánia": 2
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
               },
@@ -163,24 +190,23 @@
                 "weight": 8
               },
               {
-                "category": "foreign_influence",
-                "hits": 2,
+                "category": "corruption_rule_of_law",
+                "hits": 1,
                 "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 44,
-            "quality_score": 45,
-            "source_reliability": 2,
+            "geopolitical_score": 41,
+            "quality_score": 44,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 5,
-            "raw_engagement": 5,
-            "metrics": {
-              "likes": 4,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -215,40 +241,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "OSCE Observers Reveal Serious Election Irregularities After Vucic's Defeat in Serbia \"International election observers from the OSCE, ODIHR, PACE and European Parliament presented their preliminary findings on Serbia's parliamentary elections at a press conference in Belgrade. Observers reported high voter turnout but raised serious concerns about voter inti",
-            "url": "https://eldritch.cafe/@ml/117509008586349716",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Mon, 26 Oct 2026 20:06:14 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 13
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 33,
-            "quality_score": 38,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -256,112 +248,109 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 30,
-        "level": "medium",
+        "score": 60,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 1,
-        "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 78,
-        "geopolitical_total": 63,
+        "mentions": 16,
+        "negative_hits": 0,
+        "positive_hits": 1,
+        "trusted_hits": 8,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 417,
+        "geopolitical_total": 356,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
-          "x": 1
+          "mastodon": 14,
+          "x": 2
         },
         "category_counts": {
+          "security": 14,
           "government_crisis": 1,
-          "security": 1,
-          "eu_integration": 1,
-          "foreign_influence": 1,
-          "corruption_rule_of_law": 1
+          "eu_integration": 1
         },
         "tag_counts": {
-          "bosnia": 4,
-          "Szerbia": 1
+          "serbia": 2,
+          "bosnia": 12,
+          "Szerbia": 1,
+          "Észak-Macedónia": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
-            "title": "A real democratic change in Serbia must be measured by its respect for Bosnia and Herzegovina's sovereignty, territorial integrity and rule of law. No political change is meaningfu",
-            "text": "A real democratic change in Serbia must be measured by its respect for Bosnia and Herzegovina's sovereignty, territorial integrity and rule of law. No political change is meaningful if interference, corruption and protection of powerful allies continue.",
-            "url": "https://x.com/i/web/status/2115786703323664584",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-10-29T12:43:54.000Z",
+            "title": "",
+            "text": "Il Fatto Quotidiano: Un elicottero militare italiano è precipitato in Bosnia. La Difesa: “Verifiche sulle condizioni di salute del personale a bordo” Un elicottero militare italiano è precipitato nel pomeriggio di oggi, per cause ancora in corso di accertamento, in Bosnia-Erzegovina. Si tratta di un CH-47, impegnato nell’ambito dell’operazione Eufor Althea. ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117525382445907579",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Thu, 29 Oct 2026 17:30:20 +0000",
             "matched_countries": [
-              "Bosznia-Hercegovina"
+              "Bosznia-Hercegovina",
+              "Szerbia"
             ],
             "country_confidence": {
               "Bosznia-Hercegovina": 2,
               "Szerbia": 1
             },
-            "event_category": "corruption_rule_of_law",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Bosnia: Minka Kreho nominata presidente Corte statale per un mandato di sei anni 29 ott 10:43 - (Agenzia Nova) - Minka Kreho e' stata nominata presidente della Corte di Bosnia-Erzegovina per un mandato di sei anni. Lo ha... (Seb) Bosnia: Minka Kreho appointed president of the State Court for a six-year term Oct 29 10:43 – (Agenzia Nova) – Minka",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117523612884320137",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Thu, 29 Oct 2026 10:00:18 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
+                "category": "security",
+                "hits": 6,
                 "weight": 9
               },
               {
-                "category": "corruption_rule_of_law",
+                "category": "eu_integration",
                 "hits": 1,
-                "weight": 8
+                "weight": 6
               }
             ],
-            "geopolitical_score": 17,
-            "quality_score": 20,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "geopolitical_score": 64,
+            "quality_score": 69,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
           },
           {
             "title": "",
-            "text": "Il Fatto Quotidiano: “È irresistibile e affettuosa, ma è una grande responsabilità”: la storia di Petar, l’elettricista che ha trovato un’orsa nel bosco e non l’ha più lasciata Pesava due chili quando Petar Tubić l’ha trovata, sola in un bosco, senza più la madre. Oggi Masa ne pesa circa 150, ma non se n’è accorta: ogni volta che può prova a salire sulle gin",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117517912948482277",
+            "text": "LA NOTIZIA: Bosnia, precipita un elicottero militare italiano: era impegnato in una missione Ue Un elicottero italiano impegnato nell’operazione Eufor Althea è precipitato in Bosnia. A renderlo noto è un comunicato del ministero della Difesa, che spiega che l’elicottero, un CH 47, era impegnato nell’ambito dell’operazione interforze europea in Bosnia-Erzegov",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117525382701723737",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Thu, 29 Oct 2026 17:30:24 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 2,
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 5,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 49,
+            "quality_score": 54,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Today: Un elicottero militare italiano precipita in Bosnia: \"Tre morti e dodici feriti nello schianto\" Un elicottero militare italiano CH-47, impegnato nell’operazione Eufor Althea in Bosnia-Erzegovina, è precipitato nel pomeriggio di oggi, giovedì 29 ottobre, nella zona di Brčko. Il sindaco Siniša Milić ha riferito all’ANSA un bilancio di tre morti e dodici",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117525541297973818",
             "source": "mastodon",
             "tag": "bosnia",
-            "seen_date": "Wed, 28 Oct 2026 09:50:44 +0000",
+            "seen_date": "Thu, 29 Oct 2026 18:10:44 +0000",
             "matched_countries": [
               "Bosznia-Hercegovina"
             ],
@@ -372,12 +361,12 @@
             "event_categories": [
               {
                 "category": "security",
-                "hits": 1,
+                "hits": 3,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 18,
+            "geopolitical_score": 31,
+            "quality_score": 36,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -386,63 +375,74 @@
           },
           {
             "title": "",
-            "text": "Agenzia Nova: Bosnia: cresce importazione auto usate, in Federazione nuovi fondi per veicoli elettrici 23 ott 11:28 - (Agenzia Nova) - In Bosnia Erzegovina sono state importate 86.129 auto usate nel 2025, il 37 per cento in piu' rispetto al 2023.... (Seb) Bosnia: Used car imports are growing, new funds for electric vehicles in Federation Oct 23 11:28 – (Agen",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117489599573466553",
+            "text": "Domani: Un elicottero militare italiano precipita in Bosnia: 3 morti e 12 feriti Il ministero della Difesa italiano ha fatto sapere che il velivolo era impegnato nell’ambito dell’operazione Eufor Althea ed è precipitato per cause ancora in corso di accertamento An Italian military helicopter crashes in Bosnia: 3 dead and 12 injured. The Italian Ministry of D",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117525421595739393",
             "source": "mastodon",
             "tag": "bosnia",
-            "seen_date": "Fri, 23 Oct 2026 09:50:16 +0000",
+            "seen_date": "Thu, 29 Oct 2026 17:40:17 +0000",
             "matched_countries": [
               "Bosznia-Hercegovina"
             ],
             "country_confidence": {
-              "Bosznia-Hercegovina": 2
+              "Bosznia-Hercegovina": 1
             },
-            "event_category": "foreign_influence",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
+                "category": "security",
+                "hits": 3,
+                "weight": 9
               }
             ],
-            "geopolitical_score": 8,
-            "quality_score": 11,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "geopolitical_score": 31,
+            "quality_score": 36,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "I hope our European Union proves to be the friend that the people of # Serbia deserve… and have really earned themselves. And while we are at it: wer should try to remember that there is a wrong to set right and a debt to pay in neighboring # Bosnia .",
-            "url": "https://mastodon.social/@AwetTesfaiesus/117507127601138386",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Mon, 26 Oct 2026 12:07:53 +0000",
+            "title": "Productive meeting at the French Senate with Senator Arnaud Bazin, Chair of the France–North Macedonia Friendship Group. Discussed North Macedonia’s EU path, the need for a credibl",
+            "text": "Productive meeting at the French Senate with Senator Arnaud Bazin, Chair of the France–North Macedonia Friendship Group. Discussed North Macedonia’s EU path, the need for a credible and predictable accession process, and the Ohrid Peace Agreement as a cornerstone of stability.",
+            "url": "https://x.com/i/web/status/2115829559643738285",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-29T15:34:11.000Z",
             "matched_countries": [
-              "Szerbia",
+              "Észak-Macedónia",
               "Bosznia-Hercegovina"
             ],
             "country_confidence": {
-              "Szerbia": 1,
-              "Bosznia-Hercegovina": 1
+              "Észak-Macedónia": 5,
+              "Bosznia-Hercegovina": 3
             },
-            "event_category": "eu_integration",
+            "event_category": "security",
             "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
               {
                 "category": "eu_integration",
                 "hits": 1,
                 "weight": 6
               }
             ],
-            "geopolitical_score": 6,
-            "quality_score": 9,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "geopolitical_score": 29,
+            "quality_score": 33,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 4,
+            "raw_engagement": 4,
+            "metrics": {
+              "likes": 3,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -453,27 +453,26 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 4,
+        "mentions": 10,
+        "negative_hits": 3,
         "positive_hits": 0,
         "trusted_hits": 3,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 192,
-        "geopolitical_total": 161,
+        "quality_total": 220,
+        "geopolitical_total": 186,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 8,
+          "mastodon": 9,
           "x": 1
         },
         "category_counts": {
-          "security": 6,
+          "security": 8,
           "government_crisis": 1,
-          "corruption_rule_of_law": 1,
-          "protest": 1
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
-          "kosovo": 8,
+          "kosovo": 9,
           "Koszovó": 1
         },
         "main_topic": "security",
@@ -535,6 +534,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "🇽🇰🇩🇪| Today, the Republic of Kosova took delivery of 12 Mercedes-Benz 5T UNIMOG military trucks, with Prime Minister Albin Kurti, Minister of Defence Ejup Maqedonci, and German Amb",
+            "text": "🇽🇰🇩🇪| Today, the Republic of Kosova took delivery of 12 Mercedes-Benz 5T UNIMOG military trucks, with Prime Minister Albin Kurti, Minister of Defence Ejup Maqedonci, and German Ambassador Rainer Rudolph in attendance. On this occasion, Prime Minister Kurti reaffirmed Kosova’s",
+            "url": "https://x.com/i/web/status/2115856934981017626",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-10-29T17:22:58.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 27,
+            "quality_score": 28,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -603,35 +642,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "In # Kosovo there is a life-sized bronze statue of Tony Blair located in the town of Ferizaj. It was unveiled on Tony Blair Square in June 2024 to honor his role in NATO's intervention during the 1999 Kosovo War. Fantastic",
-            "url": "https://veganism.social/@Geri/117503440570245681",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Sun, 25 Oct 2026 20:30:13 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 16,
-            "quality_score": 21,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -639,96 +649,99 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 6,
+        "score": 0,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 1,
+        "mentions": 0,
         "negative_hits": 0,
         "positive_hits": 0,
-        "trusted_hits": 1,
+        "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 18,
-        "geopolitical_total": 13,
+        "quality_total": 0,
+        "geopolitical_total": 0,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 1,
+          "mastodon": 0,
           "x": 0
         },
-        "category_counts": {
-          "government_crisis": 1
-        },
-        "tag_counts": {
-          "montenegro": 1
-        },
-        "main_topic": "government_crisis",
-        "top_posts": [
-          {
-            "title": "",
-            "text": "🇪🇺 ¡Cita clave en Bruselas! Nikol Pashinyan intervendrá el 3 de noviembre en la Cumbre de la UE junto al presidente del Consejo Antonio Costa 🇦🇲 # albania # AndrejPlenković # AntonioCosta # armenia # bruselas # ConsejoEuropeo # croacia # EdiRama # ereván # euronews # georgia # GordanaSiljanovskaDavkova # IrakliKobakhidze # MacedoniaDelNorte # MilojkoSpajić #",
-            "url": "https://mastodon.social/@soyarmernio/117485276597005547",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Thu, 22 Oct 2026 15:30:53 +0000",
-            "matched_countries": [
-              "Montenegró",
-              "Észak-Macedónia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Montenegró": 1,
-              "Észak-Macedónia": 1,
-              "Albánia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 18,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          }
-        ]
+        "category_counts": {},
+        "tag_counts": {},
+        "main_topic": "nincs adat",
+        "top_posts": []
       }
     },
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 28,
+        "score": 33,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 7,
         "negative_hits": 0,
-        "positive_hits": 2,
-        "trusted_hits": 2,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 81,
-        "geopolitical_total": 67,
+        "positive_hits": 5,
+        "trusted_hits": 1,
+        "engagement_total": 30,
+        "raw_engagement_total": 30,
+        "quality_total": 124,
+        "geopolitical_total": 112,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
-          "x": 3
+          "mastodon": 1,
+          "x": 6
         },
         "category_counts": {
-          "government_crisis": 4,
-          "security": 1
+          "government_crisis": 3,
+          "security": 4
         },
         "tag_counts": {
           "kosovo": 1,
-          "montenegro": 1,
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 6
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "Productive meeting at the French Senate with Senator Arnaud Bazin, Chair of the France–North Macedonia Friendship Group. Discussed North Macedonia’s EU path, the need for a credibl",
+            "text": "Productive meeting at the French Senate with Senator Arnaud Bazin, Chair of the France–North Macedonia Friendship Group. Discussed North Macedonia’s EU path, the need for a credible and predictable accession process, and the Ohrid Peace Agreement as a cornerstone of stability.",
+            "url": "https://x.com/i/web/status/2115829559643738285",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-29T15:34:11.000Z",
+            "matched_countries": [
+              "Észak-Macedónia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Bosznia-Hercegovina": 3
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 33,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 4,
+            "raw_engagement": 4,
+            "metrics": {
+              "likes": 3,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "🇲🇰🤝🏻🇸🇰 Minister J. Blanár has arrived in NorthMacedonia to support its integration into the EU and strengthen economic cooperation between the two states. In Skopje, he will hold t",
             "text": "🇲🇰🤝🏻🇸🇰 Minister J. Blanár has arrived in NorthMacedonia to support its integration into the EU and strengthen economic cooperation between the two states. In Skopje, he will hold talks with Foreign Minister , President and Speaker of Parliament Afrim",
@@ -754,6 +767,41 @@
             "quality_score": 20,
             "source_reliability": 2,
             "trusted_source_hint": false,
+            "engagement": 23,
+            "raw_engagement": 23,
+            "metrics": {
+              "likes": 12,
+              "reposts": 10,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "During today’s parliamentary question session, SDSM leader Venko Filipçe reminded Prime Minister Hristijan Mickoski of his pledges to restore the country’s name, repeal the Prespa ",
+            "text": "During today’s parliamentary question session, SDSM leader Venko Filipçe reminded Prime Minister Hristijan Mickoski of his pledges to restore the country’s name, repeal the Prespa Agreement, review the agreement with Bulgaria and improve the negotiating …",
+            "url": "https://x.com/i/web/status/2115810966541635886",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-10-29T14:20:18.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "metrics": {
@@ -765,18 +813,18 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "The second call for proposals is now open under the IPA III Cross-Border Cooperation Programme North Macedonia – Albania 2021–2027! Through this call, the European Commission 🇪🇺 of",
-            "text": "The second call for proposals is now open under the IPA III Cross-Border Cooperation Programme North Macedonia – Albania 2021–2027! Through this call, the European Commission 🇪🇺 offers organisations new opportunities to develop projects that strengthen cross-border cooperation",
-            "url": "https://x.com/i/web/status/2115730654453199316",
+            "title": "NORTH MACEDONIA IS BUILDING A NORTH–SOUTH GAS BRIDGE — ENERGY SECURITY IS REDRAWING THE BALKAN MAP North Macedonia says construction of its 68-kilometre gas interconnector with Gre",
+            "text": "NORTH MACEDONIA IS BUILDING A NORTH–SOUTH GAS BRIDGE — ENERGY SECURITY IS REDRAWING THE BALKAN MAP North Macedonia says construction of its 68-kilometre gas interconnector with Greece is progressing while preparations are underway for a second connection with Serbia. On the",
+            "url": "https://x.com/i/web/status/2115813657091146009",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-29T09:01:11.000Z",
+            "seen_date": "2026-10-29T14:31:00.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
               "Észak-Macedónia": 5,
-              "Albánia": 1
+              "Szerbia": 1
             },
             "event_category": "security",
             "event_categories": [
@@ -784,54 +832,26 @@
                 "category": "security",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
             "geopolitical_score": 14,
-            "quality_score": 18,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "quality_score": 15,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 1,
+              "likes": 0,
               "reposts": 0,
-              "replies": 1,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "🇪🇺 ¡Cita clave en Bruselas! Nikol Pashinyan intervendrá el 3 de noviembre en la Cumbre de la UE junto al presidente del Consejo Antonio Costa 🇦🇲 # albania # AndrejPlenković # AntonioCosta # armenia # bruselas # ConsejoEuropeo # croacia # EdiRama # ereván # euronews # georgia # GordanaSiljanovskaDavkova # IrakliKobakhidze # MacedoniaDelNorte # MilojkoSpajić #",
-            "url": "https://mastodon.social/@soyarmernio/117485276597005547",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Thu, 22 Oct 2026 15:30:53 +0000",
-            "matched_countries": [
-              "Montenegró",
-              "Észak-Macedónia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Montenegró": 1,
-              "Észak-Macedónia": 1,
-              "Albánia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 18,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -862,30 +882,73 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Albánia",
+      "social_signal": {
+        "score": 60,
+        "level": "high",
+        "scale": "0-60 risk index",
+        "mentions": 26,
+        "negative_hits": 23,
+        "positive_hits": 1,
+        "trusted_hits": 6,
+        "engagement_total": 27,
+        "raw_engagement_total": 27,
+        "quality_total": 723,
+        "geopolitical_total": 645,
+        "source_counts": {
+          "reddit": 0,
+          "mastodon": 20,
+          "x": 6
+        },
+        "category_counts": {
+          "security": 4,
+          "protest": 11,
+          "corruption_rule_of_law": 2,
+          "government_crisis": 8,
+          "ethnic_tension": 1
+        },
+        "tag_counts": {
+          "balkans": 9,
+          "serbia": 1,
+          "albania": 10,
+          "Koszovó": 1,
+          "Albánia": 5
+        },
+        "main_topic": "protest",
+        "top_posts": [
           {
-            "title": "Representatives of the student assemblies said their meeting with Prime Minister Mickoski and Minister of Education and Science Janevska did not provide an answer to their request ",
-            "text": "Representatives of the student assemblies said their meeting with Prime Minister Mickoski and Minister of Education and Science Janevska did not provide an answer to their request to increase the value of the subsidized meal from 140 to 200 denars.",
-            "url": "https://x.com/i/web/status/2115626595348001270",
+            "title": "Unrest · Tirana, Albania Opposition politicians in Albania have set off flares in the country's parliament following weeks of violent anti-government protests. Reported by 2 indepe",
+            "text": "Unrest · Tirana, Albania Opposition politicians in Albania have set off flares in the country's parliament following weeks of violent anti-government protests. Reported by 2 independent outlets. Sources: OSINT Albania",
+            "url": "https://x.com/i/web/status/2115868978941980780",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-29T02:07:41.000Z",
+            "tag": "Albánia",
+            "seen_date": "2026-10-29T18:10:50.000Z",
             "matched_countries": [
-              "Észak-Macedónia"
+              "Albánia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 4
+              "Albánia": 5
             },
             "event_category": "government_crisis",
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 1,
+                "hits": 2,
                 "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 3,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
+            "geopolitical_score": 45,
+            "quality_score": 46,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -897,112 +960,32 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Albánia",
-      "social_signal": {
-        "score": 60,
-        "level": "high",
-        "scale": "0-60 risk index",
-        "mentions": 28,
-        "negative_hits": 23,
-        "positive_hits": 0,
-        "trusted_hits": 6,
-        "engagement_total": 26,
-        "raw_engagement_total": 26,
-        "quality_total": 785,
-        "geopolitical_total": 697,
-        "source_counts": {
-          "reddit": 0,
-          "mastodon": 24,
-          "x": 4
-        },
-        "category_counts": {
-          "protest": 11,
-          "corruption_rule_of_law": 3,
-          "government_crisis": 7,
-          "security": 6,
-          "foreign_influence": 1
-        },
-        "tag_counts": {
-          "balkans": 11,
-          "serbia": 1,
-          "montenegro": 1,
-          "albania": 11,
-          "Albánia": 4
-        },
-        "main_topic": "protest",
-        "top_posts": [
-          {
-            "title": "",
-            "text": "Student uprising/ Civil society files complaint with SPAK over police violence against protesters: We have documented 180 cases Struktura e Posaçme Kundër Korrupsionit dhe Krimit të Organizuar (SPAK) aka \"Special Structure against Corruption and Organized Crime\" \"In a statement to the media, intellectuals and civil society representatives condemned police vi",
-            "url": "https://eldritch.cafe/@ml/117507586515700834",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Mon, 26 Oct 2026 14:04:35 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 62,
-            "quality_score": 65,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           },
           {
             "title": "",
-            "text": "Erjon Vishkulli risks losing his sight after being hit by a rubber bullet; doctor questions his transport: Who ordered him out of the ambulance? \"Dr. Ermal Pasha has denounced the way 28-year-old Erjon Vishkulli was treated after being injured during the October 24 protest in Tirana. The young man was struck in the eye by a rubber bullet and, as a result, ri",
-            "url": "https://eldritch.cafe/@ml/117507558811192258",
+            "text": "Protesta studentore dhe zhvillimet në vend Machine translated: \"Student protests and developments in the country\" The escalated police violence, PM Rama offering the cops bounties to pick off more protestors, the \"temporary\" laws with crushing fines for being near a protest EVEN IF YOU'RE NOT PARTICIPATING are definitely having an effect. The protest has not",
+            "url": "https://eldritch.cafe/@ml/117525410500054147",
             "source": "mastodon",
             "tag": "balkans",
-            "seen_date": "Mon, 26 Oct 2026 13:57:33 +0000",
+            "seen_date": "Thu, 29 Oct 2026 17:37:28 +0000",
             "matched_countries": [
+              "Szerbia",
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 5
+              "Szerbia": 2,
+              "Albánia": 2
             },
             "event_category": "security",
             "event_categories": [
               {
                 "category": "security",
-                "hits": 2,
+                "hits": 1,
                 "weight": 9
               },
               {
                 "category": "protest",
-                "hits": 1,
+                "hits": 2,
                 "weight": 8
               },
               {
@@ -1064,17 +1047,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Day 149 anti-corruption protest in Tirana, Albania; Day 14 of escalated tactics Today online fliers called for protestors to gather outside the Ministry of Education at 14:00 and they started there. At the moment I'm posting, they have a split screen between the protest livecam and an interview with an online guest talking about how \"less lethal\" ammunition ",
-            "url": "https://eldritch.cafe/@ml/117507542636340404",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Mon, 26 Oct 2026 13:53:26 +0000",
+            "title": "Protest in Tirana, Albania, have drawn attention amid growing public frustration over alleged corruption, economic pressures, and concern about education. demonstrators have called",
+            "text": "Protest in Tirana, Albania, have drawn attention amid growing public frustration over alleged corruption, economic pressures, and concern about education. demonstrators have called for political accountability and the resignation of PM Edi Rama clash between police and protestors",
+            "url": "https://x.com/i/web/status/2115863948339925271",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-10-29T17:50:50.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 5
+              "Albánia": 9
             },
             "event_category": "security",
             "event_categories": [
@@ -1084,23 +1067,34 @@
                 "weight": 9
               },
               {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
               },
               {
                 "category": "protest",
                 "hits": 1,
                 "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 36,
-            "quality_score": 39,
-            "source_reliability": 3,
+            "geopolitical_score": 37,
+            "quality_score": 38,
+            "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
