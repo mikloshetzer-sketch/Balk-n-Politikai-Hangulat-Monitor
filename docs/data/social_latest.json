@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31 16:36 UTC",
+  "updated_at": "2026-10-31 20:52 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 9
   },
   "countries": [
     {
@@ -21,32 +21,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 5,
-        "positive_hits": 3,
+        "mentions": 14,
+        "negative_hits": 4,
+        "positive_hits": 4,
         "trusted_hits": 3,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 301,
-        "geopolitical_total": 260,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 284,
+        "geopolitical_total": 242,
         "source_counts": {
           "reddit": 0,
           "mastodon": 11,
-          "x": 2
+          "x": 3
         },
         "category_counts": {
-          "security": 2,
-          "government_crisis": 9,
+          "security": 3,
+          "government_crisis": 8,
           "corruption_rule_of_law": 1,
-          "foreign_influence": 1
+          "foreign_influence": 1,
+          "eu_integration": 1
         },
         "tag_counts": {
-          "balkans": 2,
-          "serbia": 6,
+          "balkans": 1,
+          "serbia": 7,
           "kosovo": 2,
           "montenegro": 1,
-          "Szerbia": 1,
-          "Koszovó": 1
+          "Szerbia": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -98,40 +98,6 @@
           },
           {
             "title": "",
-            "text": "Hounded by Vučić, Stevan Dojčinović on What Serbia Needs Now - Organized Crime and Corruption Reporting Project Things he thinks the Student Movement did that brought them this success: - Being students, without a (bad) history in politics that people would distrust. (Note from me: this refers to organizing...as for the Student List for elections, students d",
-            "url": "https://eldritch.cafe/@ml/117518894122607353",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 28 Oct 2026 14:00:16 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 3,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 37,
-            "quality_score": 40,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "I don't know how much you follow the news from or about # Serbia , my current country of residence, but things have been getting more and more interesting. After last Sunday's elections and the landslide victory of the opposition Student List, we're witnessing a thorough dismantling of the old regime: from the public media to the banking sector, there are ho",
             "url": "https://nerdculture.de/@grammaticus/117534267199022833",
             "source": "mastodon",
@@ -163,6 +129,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Vučić and Orbán, standing in front of an Orthodox icon, declared: \"We will return!\" The two politicians, who are rightly considered pro-Russian in the West, made a short statement ",
+            "text": "Vučić and Orbán, standing in front of an Orthodox icon, declared: \"We will return!\" The two politicians, who are rightly considered pro-Russian in the West, made a short statement at a meeting in Belgrade. The former Serbian president and the former Hungarian prime minister",
+            "url": "https://x.com/i/web/status/2116629071454998967",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-10-31T20:31:10.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 13
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 27,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 2,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -248,16 +254,15 @@
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 478,
-        "geopolitical_total": 425,
+        "quality_total": 500,
+        "geopolitical_total": 447,
         "source_counts": {
           "reddit": 0,
           "mastodon": 17,
           "x": 0
         },
         "category_counts": {
-          "security": 16,
-          "protest": 1
+          "security": 17
         },
         "tag_counts": {
           "balkan": 1,
@@ -440,27 +445,25 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 5,
-        "positive_hits": 1,
+        "mentions": 7,
+        "negative_hits": 3,
+        "positive_hits": 0,
         "trusted_hits": 3,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 249,
-        "geopolitical_total": 218,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 184,
+        "geopolitical_total": 157,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 4
+          "x": 0
         },
         "category_counts": {
           "security": 6,
-          "government_crisis": 4,
-          "ethnic_tension": 1
+          "government_crisis": 1
         },
         "tag_counts": {
-          "kosovo": 7,
-          "Koszovó": 4
+          "kosovo": 7
         },
         "main_topic": "security",
         "top_posts": [
@@ -596,41 +599,33 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Following the historic victory of the student-backed Student List in Serbia’s parliamentary elections, Kosovo's Prime Minister Albin Kurti expressed hope that the outcome would lea",
-            "text": "Following the historic victory of the student-backed Student List in Serbia’s parliamentary elections, Kosovo's Prime Minister Albin Kurti expressed hope that the outcome would lead to a shift in Belgrade's approach toward recognizing Kosovo as an independent state",
-            "url": "https://x.com/i/web/status/2116565211033350467",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-10-31T16:17:24.000Z",
+            "title": "",
+            "text": "In # Kosovo there is a life-sized bronze statue of Tony Blair located in the town of Ferizaj. It was unveiled on Tony Blair Square in June 2024 to honor his role in NATO's intervention during the 1999 Kosovo War. Fantastic",
+            "url": "https://veganism.social/@Geri/117503440570245681",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Sun, 25 Oct 2026 20:30:13 +0000",
             "matched_countries": [
-              "Szerbia",
               "Koszovó"
             ],
             "country_confidence": {
-              "Szerbia": 5,
-              "Koszovó": 5
+              "Koszovó": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 2,
+                "category": "security",
+                "hits": 1,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "geopolitical_score": 16,
+            "quality_score": 21,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -801,66 +796,26 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 7,
+        "score": 0,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 1,
+        "mentions": 0,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 118,
-        "raw_engagement_total": 118,
-        "quality_total": 10,
-        "geopolitical_total": 9,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 0,
+        "geopolitical_total": 0,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 1
+          "x": 0
         },
-        "category_counts": {
-          "government_crisis": 1
-        },
-        "tag_counts": {
-          "Észak-Macedónia": 1
-        },
-        "main_topic": "government_crisis",
-        "top_posts": [
-          {
-            "title": "Excellent idea!!!! North Macedonia population 1.8M, Greek Macedonia population 2.5M. Guess who is going to win the elections. Greek becomes the first official language; the parliam",
-            "text": "Excellent idea!!!! North Macedonia population 1.8M, Greek Macedonia population 2.5M. Guess who is going to win the elections. Greek becomes the first official language; the parliament votes unification with Greece🇬🇷...you get it right?",
-            "url": "https://x.com/i/web/status/2116437951475294467",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-10-31T07:51:43.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 118,
-            "raw_engagement": 118,
-            "metrics": {
-              "likes": 108,
-              "reposts": 3,
-              "replies": 7,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          }
-        ]
+        "category_counts": {},
+        "tag_counts": {},
+        "main_topic": "nincs adat",
+        "top_posts": []
       }
     },
     {
@@ -869,30 +824,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 21,
-        "negative_hits": 21,
-        "positive_hits": 4,
-        "trusted_hits": 2,
-        "engagement_total": 18,
-        "raw_engagement_total": 18,
-        "quality_total": 725,
-        "geopolitical_total": 668,
+        "mentions": 23,
+        "negative_hits": 23,
+        "positive_hits": 2,
+        "trusted_hits": 1,
+        "engagement_total": 7,
+        "raw_engagement_total": 7,
+        "quality_total": 881,
+        "geopolitical_total": 818,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 16,
-          "x": 5
+          "mastodon": 19,
+          "x": 4
         },
         "category_counts": {
-          "government_crisis": 6,
-          "corruption_rule_of_law": 2,
-          "protest": 10,
-          "security": 3
+          "government_crisis": 8,
+          "security": 5,
+          "protest": 9,
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "balkan": 1,
-          "balkans": 10,
-          "albania": 5,
-          "Albánia": 5
+          "balkans": 11,
+          "albania": 7,
+          "Koszovó": 1,
+          "Albánia": 3
         },
         "main_topic": "protest",
         "top_posts": [
@@ -986,6 +942,99 @@
           },
           {
             "title": "",
+            "text": "RaiNews: Albania, scontri a Tirana: i manifestanti chiedono le dimissioni del premier Edi Rama Nuova ondata di proteste antigovernative nella capitale albanese. La polizia usa gli idranti per disperdere la folla mentre i giovani denunciano corruzione, caro vita e l'assenza di una vera opposizione politica Albania, clashes in Tirana: protesters demand the res",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117537060863987034",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Sat, 31 Oct 2026 19:00:18 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 10
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 71,
+            "quality_score": 74,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Albania: Joint Statement on allegations of torture, ill-treatment and arbitrary detention in the context of civic mobilization \"30 Oct 2026 Geneva / Tirana, 30 October 2026 The United Against Torture Consortium (UATC) and the Albanian Rehabilitation Centre for Trauma and Torture (ARCT), a member centre of IRCT and OMCT network member, express grave concern a",
+            "url": "https://eldritch.cafe/@ml/117536831175727697",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Sat, 31 Oct 2026 18:01:54 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 6
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 58,
+            "quality_score": 61,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "RaiNews: Albania, nuove proteste contro il governo Rama: molotov e scontri con la polizia Ancora violenze durante le manifestazioni degli studenti che chiedono le dimissioni del premier. Gli agenti rispondono con gli idranti. Multe fino a 6.200 dollari per chi partecipa a proteste violente Albania, new protests against Prime Minister Rama: Molotov cocktails ",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117536314497141225",
             "source": "mastodon",
@@ -1019,80 +1068,6 @@
             "quality_score": 57,
             "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "Protesters light flares and set trash cans on fire in Tirana as anti-government demonstrations continue in the Albanian capital. The protests began in mid-October, with students de",
-            "text": "Protesters light flares and set trash cans on fire in Tirana as anti-government demonstrations continue in the Albanian capital. The protests began in mid-October, with students demanding better support for education and calling for the prime minister's resignation.",
-            "url": "https://x.com/i/web/status/2116560576822350003",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-10-31T15:58:59.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 6
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 46,
-            "quality_score": 47,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Albanian opposition storms parliament, sets off flares and smoke bombs | Protests News | Al Jazeera https://www. aljazeera.com/news/2026/10/29/ albanian-opposition-storms-parliament-sets-off-flares-and-smoke-bombs # Albania # AlbaniaProtests",
-            "url": "https://masto.ai/@Miro_Collas/117525696427028355",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Thu, 29 Oct 2026 18:50:11 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 41,
-            "quality_score": 46,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
