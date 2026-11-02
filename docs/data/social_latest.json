@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02 05:48 UTC",
+  "updated_at": "2026-11-02 14:20 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 7
+    "collected": 13
   },
   "countries": [
     {
@@ -21,32 +21,34 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
-        "negative_hits": 7,
-        "positive_hits": 4,
+        "mentions": 20,
+        "negative_hits": 9,
+        "positive_hits": 6,
         "trusted_hits": 3,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 401,
-        "geopolitical_total": 346,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 454,
+        "geopolitical_total": 398,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 16,
-          "x": 1
+          "mastodon": 15,
+          "x": 5
         },
         "category_counts": {
-          "government_crisis": 7,
+          "government_crisis": 9,
           "security": 4,
-          "protest": 2,
-          "corruption_rule_of_law": 3,
-          "foreign_influence": 1
+          "protest": 3,
+          "corruption_rule_of_law": 2,
+          "foreign_influence": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "balkans": 2,
+          "balkans": 1,
           "serbia": 11,
           "kosovo": 2,
           "montenegro": 1,
-          "Szerbia": 1
+          "Szerbia": 4,
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -91,52 +93,6 @@
           },
           {
             "title": "",
-            "text": "Protesta studentore dhe zhvillimet në vend Machine translated: \"Student protests and developments in the country\" The escalated police violence, PM Rama offering the cops bounties to pick off more protestors, the \"temporary\" laws with crushing fines for being near a protest EVEN IF YOU'RE NOT PARTICIPATING are definitely having an effect. The protest has not",
-            "url": "https://eldritch.cafe/@ml/117525410500054147",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Thu, 29 Oct 2026 17:37:28 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 41,
-            "quality_score": 44,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "Novi Sad Marks Second Anniversary Of Railway Station Tragedy That Sparked Protests | APT Not a report. Just live footage (at the time posted). Wow, that was really affecting. The choir was singing a beautiful piece at the memorial for those who died in the Novi Sad railway canopy collapse and the choir simply suddenly stopped singing on a dime, cut short. ht",
             "url": "https://eldritch.cafe/@ml/117540876583664048",
             "source": "mastodon",
@@ -175,38 +131,72 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Tens of thousands of people ‌gathered at a Serbian railway station in Novi Sad to mark the anniversary of a deadly roof collapse that gave rise to the protest movement that toppled",
-            "text": "Tens of thousands of people ‌gathered at a Serbian railway station in Novi Sad to mark the anniversary of a deadly roof collapse that gave rise to the protest movement that toppled longtime President Aleksandar Vucic in an election a week ago",
-            "url": "https://x.com/i/web/status/2117121869249933356",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-02T05:09:22.000Z",
+            "title": "",
+            "text": "Students take over Serbia! After years of protests against corruption, the # students party in # Serbia won the # elections . Former Serbian President Aleksandar Vučić admitted his defeat. # vucic @ cartoonmovement",
+            "url": "https://mastodon.social/@mwcartoons/117546182962800716",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Mon, 02 Nov 2026 09:40:10 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 6
+              "Szerbia": 13
             },
             "event_category": "government_crisis",
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 2,
+                "hits": 1,
                 "weight": 9
               },
               {
                 "category": "protest",
-                "hits": 1,
+                "hits": 2,
                 "weight": 8
               },
               {
-                "category": "foreign_influence",
+                "category": "corruption_rule_of_law",
                 "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 37,
-            "quality_score": 38,
+            "geopolitical_score": 36,
+            "quality_score": 39,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "SERBIA ARRESTS TWO TOP POLICE OFFICIALS — THE SECURITY APPARATUS FACES AN ACCOUNTABILITY TEST The arrest of two senior Serbian police officials places accountability within the cou",
+            "text": "SERBIA ARRESTS TWO TOP POLICE OFFICIALS — THE SECURITY APPARATUS FACES AN ACCOUNTABILITY TEST The arrest of two senior Serbian police officials places accountability within the country's security institutions under renewed scrutiny. Coming one week after the parliamentary",
+            "url": "https://x.com/i/web/status/2117247862006268203",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-02T13:30:01.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 30,
+            "quality_score": 31,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -259,39 +249,40 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 60,
+        "score": 57,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
+        "mentions": 9,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 309,
-        "geopolitical_total": 274,
+        "quality_total": 220,
+        "geopolitical_total": 191,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 11,
+          "mastodon": 9,
           "x": 0
         },
         "category_counts": {
-          "security": 11
+          "security": 8,
+          "government_crisis": 1
         },
         "tag_counts": {
           "balkan": 1,
           "balkans": 1,
-          "bosnia": 9
+          "bosnia": 7
         },
         "main_topic": "security",
         "top_posts": [
           {
             "title": "",
-            "text": "Agi: Meloni e Crosetto al Villaggio della Difesa per rendere omaggio ai militari caduti in Bosnia AGI/Vista - La presidente del Consiglio, Giorgia Meloni, accompagnata dal ministro della Difesa, Guido Crosetto, si è recata al Villaggio della Difesa allestito al Circo Massimo di Roma per deporre un fascio di rose in omaggio alla memoria dei quattro militari i",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117530926775324450",
+            "text": "RaiNews: Schianto dell'elicottero in Bosnia, le salme dei quattro militari morti atterrate a Ciampino Silenziosa attesa e un folto schieramento di militari e Carabinieri. Presenti il presidente Mattarella, la premier Meloni, il ministro della Difesa Crosetto e il vicepremier Tajani Helicopter crash in Bosnia, bodies of the four dead soldiers landed in Ciampi",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117546616440535870",
             "source": "mastodon",
             "tag": "bosnia",
-            "seen_date": "Fri, 30 Oct 2026 17:00:19 +0000",
+            "seen_date": "Mon, 02 Nov 2026 11:30:25 +0000",
             "matched_countries": [
               "Bosznia-Hercegovina"
             ],
@@ -302,7 +293,7 @@
             "event_categories": [
               {
                 "category": "security",
-                "hits": 4,
+                "hits": 2,
                 "weight": 9
               },
               {
@@ -311,8 +302,47 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 54,
-            "quality_score": 57,
+            "geopolitical_score": 36,
+            "quality_score": 39,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Adnkronos - ultimoratop: Elicottero caduto in Bosnia, atterrato a Ciampino il C130 con a bordo le salme dei militari morti (Adnkronos) - Ad accogliere i feretri, con i familiari di Simone Ruggia, Claudio Marchesi, Franco Adriano Zecchillo e Laura Procacci, il presidente della Repubblica Sergio Mattarella, la premier Giorgia Meloni e i ministri degli Esteri e",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117546694420457290",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Mon, 02 Nov 2026 11:50:15 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 35,
+            "quality_score": 38,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -344,35 +374,6 @@
             "quality_score": 36,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Difesa-Sicurezza: Tajani, per FI e' imperativo morale ottenere previdenza per comparto 31 ott 18:52 - (Agenzia Nova) - \"La tragedia che ha colpito i nostri militari in Bosnia, le violente aggressioni alle Forze dell'ordine durante... (Rin) Defense-Security: Tajani, for FI it is a moral imperative to obtain pension schemes by sector. Oct 31 18:5",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117537060603339986",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Sat, 31 Oct 2026 19:00:14 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 3,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 30,
-            "quality_score": 33,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -413,11 +414,11 @@
           },
           {
             "title": "",
-            "text": "RaiNews: Elicottero caduto in Bosnia, si indaga sulle cause dello schianto: forse guasto tecnico a un rotore Si sarebbe trattato di un incidente autonomo, probabilmente causato da un’anomalia del sistema di rotazione durante la fase di decollo. Nell'incidente hanno perso la vita quattro militari italiani Helicopter crashes in Bosnia, investigating the causes",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117535881908079641",
+            "text": "RaiNews: L'arrivo dei feretri di quattro militari italiani morti in Bosnia, l'omaggio di Mattarella e Meloni In una fredda e ventosa Ciampino, il triste arrivo in Italia delle bare di Simone Ruggia, Claudio Marchesi, Laura Procacci e Franco Zecchillo, morti nell'incidente dell'elicottero militare. Il dolore dei famigliari e delle massime autorità The arrival",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117546852769789626",
             "source": "mastodon",
             "tag": "bosnia",
-            "seen_date": "Sat, 31 Oct 2026 14:00:29 +0000",
+            "seen_date": "Mon, 02 Nov 2026 12:30:31 +0000",
             "matched_countries": [
               "Bosznia-Hercegovina"
             ],
@@ -432,7 +433,7 @@
                 "weight": 9
               },
               {
-                "category": "foreign_influence",
+                "category": "protest",
                 "hits": 1,
                 "weight": 8
               }
@@ -451,30 +452,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 60,
+        "score": 56,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 3,
-        "positive_hits": 1,
+        "mentions": 9,
+        "negative_hits": 2,
+        "positive_hits": 2,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 210,
-        "geopolitical_total": 184,
+        "quality_total": 206,
+        "geopolitical_total": 181,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
-          "x": 4
+          "x": 3
         },
         "category_counts": {
-          "security": 6,
-          "government_crisis": 1,
-          "ethnic_tension": 3
+          "eu_integration": 1,
+          "security": 4,
+          "government_crisis": 2,
+          "protest": 1,
+          "economic_infrastructure": 1
         },
         "tag_counts": {
           "kosovo": 6,
-          "Koszovó": 4
+          "Koszovó": 3
         },
         "main_topic": "security",
         "top_posts": [
@@ -610,33 +613,39 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Kosovo Woman Murdered Hours After Reporting Domestic Violence to Police https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/26/kosovo-woman-murdered-hours-after-reporting-domestic-violence-to-police/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/26/kosovo-woman-murdered-hours-after-reporting-domestic-violence-to-police/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Mon, 26 Oct 2026 12:13:49 +0000",
+            "title": "Pristina will again be the site of a protest today demanding justice for Arlinda Zekaj and an end to the killing of women. The gathering, announced as a national protest against fe",
+            "text": "Pristina will again be the site of a protest today demanding justice for Arlinda Zekaj and an end to the killing of women. The gathering, announced as a national protest against femicide, follows five consecutive days of demonstrations.",
+            "url": "https://x.com/i/web/status/2117218517166522525",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-02T11:33:25.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 1
+              "Koszovó": 4
             },
-            "event_category": "security",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 15,
-            "source_reliability": 3,
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -765,26 +774,66 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 0,
+        "score": 5,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 0,
+        "mentions": 1,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 0,
-        "geopolitical_total": 0,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 10,
+        "geopolitical_total": 9,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 0
+          "x": 1
         },
-        "category_counts": {},
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "category_counts": {
+          "security": 1
+        },
+        "tag_counts": {
+          "Észak-Macedónia": 1
+        },
+        "main_topic": "security",
+        "top_posts": [
+          {
+            "title": "Can You Name The 5 Countries That Border North Macedonia? The answer:",
+            "text": "Can You Name The 5 Countries That Border North Macedonia? The answer:",
+            "url": "https://x.com/i/web/status/2117150005563678826",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-02T07:01:10.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 4,
+            "raw_engagement": 4,
+            "metrics": {
+              "likes": 4,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          }
+        ]
       }
     },
     {
@@ -793,30 +842,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 20,
-        "negative_hits": 20,
-        "positive_hits": 1,
+        "mentions": 23,
+        "negative_hits": 21,
+        "positive_hits": 3,
         "trusted_hits": 2,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 880,
-        "geopolitical_total": 820,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 823,
+        "geopolitical_total": 758,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 18,
-          "x": 2
+          "mastodon": 19,
+          "x": 4
         },
         "category_counts": {
           "government_crisis": 6,
-          "protest": 7,
+          "protest": 8,
           "security": 6,
-          "corruption_rule_of_law": 1
+          "corruption_rule_of_law": 1,
+          "eu_integration": 2
         },
         "tag_counts": {
           "balkan": 1,
           "balkans": 9,
-          "albania": 8,
-          "Albánia": 2
+          "albania": 9,
+          "Albánia": 4
         },
         "main_topic": "protest",
         "top_posts": [
@@ -958,56 +1008,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "7️⃣ 🇦🇱 Albania — 🔥 7/8 || World Breaking News || 02, Nov Monday Tirana - Anti-Corruption Riots Escalate As Student Protesters Torch Municipal Precinct Special police deployed water",
-            "text": "7️⃣ 🇦🇱 Albania — 🔥 7/8 || World Breaking News || 02, Nov Monday Tirana - Anti-Corruption Riots Escalate As Student Protesters Torch Municipal Precinct Special police deployed water cannons and tear gas after demonstrations demanding executive resignations turned into violent",
-            "url": "https://x.com/i/web/status/2117055099185029143",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-11-02T00:44:03.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 61,
-            "quality_score": 62,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 6,
-            "raw_engagement": 6,
-            "metrics": {
-              "likes": 3,
-              "reposts": 2,
-              "replies": 0,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Albania: Joint Statement on allegations of torture, ill-treatment and arbitrary detention in the context of civic mobilization \"30 Oct 2026 Geneva / Tirana, 30 October 2026 The United Against Torture Consortium (UATC) and the Albanian Rehabilitation Centre for Trauma and Torture (ARCT), a member centre of IRCT and OMCT network member, express grave concern a",
             "url": "https://eldritch.cafe/@ml/117536831175727697",
@@ -1045,6 +1045,45 @@
             ],
             "geopolitical_score": 58,
             "quality_score": 61,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "🇦🇱 Fresh anti-government protest flares in #Albania 's capital https://www.france24.com/en/live-news/20261031-fresh-anti-government-protest-flares-in-albania-s-capital Masked protesters hurled stones and firebombs at police in Albania's capital on Saturday on the margins of a fresh anti-government demonstration demanding the resignation of Prime Minister Edi",
+            "url": "https://social.dromografos.report/notes/at0b6ljajezn00ht",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Sat, 31 Oct 2026 18:38:32 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 46,
+            "quality_score": 49,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
