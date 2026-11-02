@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02 14:20 UTC",
+  "updated_at": "2026-11-02 15:35 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 10
   },
   "countries": [
     {
@@ -21,34 +21,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 20,
-        "negative_hits": 9,
-        "positive_hits": 6,
+        "mentions": 18,
+        "negative_hits": 8,
+        "positive_hits": 4,
         "trusted_hits": 3,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 454,
-        "geopolitical_total": 398,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 414,
+        "geopolitical_total": 360,
         "source_counts": {
           "reddit": 0,
           "mastodon": 15,
-          "x": 5
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 9,
-          "security": 4,
+          "government_crisis": 8,
+          "security": 3,
           "protest": 3,
           "corruption_rule_of_law": 2,
-          "foreign_influence": 1,
-          "ethnic_tension": 1
+          "foreign_influence": 2
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 11,
           "kosovo": 2,
           "montenegro": 1,
-          "Szerbia": 4,
-          "Koszovó": 1
+          "Szerbia": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -170,46 +168,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "SERBIA ARRESTS TWO TOP POLICE OFFICIALS — THE SECURITY APPARATUS FACES AN ACCOUNTABILITY TEST The arrest of two senior Serbian police officials places accountability within the cou",
-            "text": "SERBIA ARRESTS TWO TOP POLICE OFFICIALS — THE SECURITY APPARATUS FACES AN ACCOUNTABILITY TEST The arrest of two senior Serbian police officials places accountability within the country's security institutions under renewed scrutiny. Coming one week after the parliamentary",
-            "url": "https://x.com/i/web/status/2117247862006268203",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-02T13:30:01.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 30,
-            "quality_score": 31,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Serbia’s student movement toppled a political giant. Can it now govern the country? Tens of thousands of people take to the streets across the country to celebrate after Aleksandar Vucic conceded defeat late on October 25 in a historic poll that capped two years of peaceful anti-government protests https:// justpaste.in/news/serbia-stude nt-movement-election",
             "url": "https://mastodon.social/@justpaste/117542857619471176",
@@ -242,6 +200,47 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "🚨Kremlin state media, FIMI channels, and FIMI-affiliated nationalist actors increasingly focused on the incoming leadership’s positions on sanctions against Russia, EU integration,",
+            "text": "🚨Kremlin state media, FIMI channels, and FIMI-affiliated nationalist actors increasingly focused on the incoming leadership’s positions on sanctions against Russia, EU integration, and Kosovo, seeking to define which future policy decisions would constitute a betrayal of Serbian",
+            "url": "https://x.com/i/web/status/2117272642277249405",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-02T15:08:29.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 27,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -452,32 +451,30 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 56,
+        "score": 46,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 2,
-        "positive_hits": 2,
+        "mentions": 7,
+        "negative_hits": 1,
+        "positive_hits": 1,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 206,
-        "geopolitical_total": 181,
+        "quality_total": 181,
+        "geopolitical_total": 158,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
-          "x": 3
+          "x": 1
         },
         "category_counts": {
           "eu_integration": 1,
-          "security": 4,
-          "government_crisis": 2,
-          "protest": 1,
-          "economic_infrastructure": 1
+          "security": 5,
+          "government_crisis": 1
         },
         "tag_counts": {
           "kosovo": 6,
-          "Koszovó": 3
+          "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -613,28 +610,28 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Pristina will again be the site of a protest today demanding justice for Arlinda Zekaj and an end to the killing of women. The gathering, announced as a national protest against fe",
-            "text": "Pristina will again be the site of a protest today demanding justice for Arlinda Zekaj and an end to the killing of women. The gathering, announced as a national protest against femicide, follows five consecutive days of demonstrations.",
-            "url": "https://x.com/i/web/status/2117218517166522525",
+            "title": "A pleasure hosting a delegation led by Head of Peacekeeping Missions & Liaison Officers Dep, Int. Bureau, Lt. Col. Rafał Zamrzycki. During the visit, they were first welcomed by in",
+            "text": "A pleasure hosting a delegation led by Head of Peacekeeping Missions & Liaison Officers Dep, Int. Bureau, Lt. Col. Rafał Zamrzycki. During the visit, they were first welcomed by in Pristina & later met w/ 🇵🇱Formed Police Unit at EULEX Centre Mitrovica.",
+            "url": "https://x.com/i/web/status/2117278343724716193",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-11-02T11:33:25.000Z",
+            "seen_date": "2026-11-02T15:31:08.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 4
+              "Koszovó": 8
             },
-            "event_category": "protest",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "protest",
+                "category": "security",
                 "hits": 2,
-                "weight": 8
+                "weight": 9
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
+            "geopolitical_score": 18,
+            "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -781,8 +778,8 @@
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
         "quality_total": 10,
         "geopolitical_total": 9,
         "source_counts": {
@@ -823,12 +820,12 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
+            "engagement": 5,
+            "raw_engagement": 5,
             "metrics": {
               "likes": 4,
               "reposts": 0,
-              "replies": 0,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -842,31 +839,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 23,
-        "negative_hits": 21,
+        "mentions": 20,
+        "negative_hits": 17,
         "positive_hits": 3,
         "trusted_hits": 2,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 823,
-        "geopolitical_total": 758,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 760,
+        "geopolitical_total": 700,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 19,
-          "x": 4
+          "mastodon": 18,
+          "x": 2
         },
         "category_counts": {
-          "government_crisis": 6,
-          "protest": 8,
-          "security": 6,
+          "government_crisis": 5,
+          "protest": 7,
+          "security": 5,
           "corruption_rule_of_law": 1,
           "eu_integration": 2
         },
         "tag_counts": {
           "balkan": 1,
           "balkans": 9,
-          "albania": 9,
-          "Albánia": 4
+          "albania": 8,
+          "Albánia": 2
         },
         "main_topic": "protest",
         "top_posts": [
