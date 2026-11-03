@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03 00:16 UTC",
+  "updated_at": "2026-11-03 00:54 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 12
   },
   "countries": [
     {
@@ -21,30 +21,28 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
-        "negative_hits": 6,
-        "positive_hits": 3,
+        "mentions": 11,
+        "negative_hits": 5,
+        "positive_hits": 2,
         "trusted_hits": 2,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 266,
-        "geopolitical_total": 234,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 226,
+        "geopolitical_total": 197,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 8,
+          "mastodon": 7,
           "x": 4
         },
         "category_counts": {
-          "government_crisis": 7,
+          "government_crisis": 8,
           "protest": 1,
-          "security": 1,
           "foreign_influence": 1,
-          "ethnic_tension": 1,
-          "corruption_rule_of_law": 1
+          "security": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 4,
+          "serbia": 3,
           "kosovo": 2,
           "montenegro": 1,
           "Szerbia": 3,
@@ -131,51 +129,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "China’s deep strategic bet on Vučić’s Serbia now faces a political reckoning as a student-led electoral revolt threatens to drag Chinese investments, infrastructure deals and Beiji",
-            "text": "China’s deep strategic bet on Vučić’s Serbia now faces a political reckoning as a student-led electoral revolt threatens to drag Chinese investments, infrastructure deals and Beijing’s influence into Serbia’s anti-corruption fight.",
-            "url": "https://x.com/i/web/status/2117391474069258566",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-02T23:00:41.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 2,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 36,
-            "quality_score": 37,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Elsewhere a social movement of young people is mobilising... \"A global youthquake is happening. Promises we made young people have been broken – and they know it. Anger and protest have put liberal democracy on trial. It’s vital to understand the rage that now unites a generation.\" \"Student List has been compared by the Croatian philosopher Srećko Horvat, wh",
             "url": "https://mastodon.au/@Bellingen/117548842900078633",
@@ -243,6 +196,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "In Serbia, Davor Maturu, the owner of the popular ALTA bank among Russians, was arrested. Prior to this, Serbian police conducted a search of the bank for over 30 hours. At the end",
+            "text": "In Serbia, Davor Maturu, the owner of the popular ALTA bank among Russians, was arrested. Prior to this, Serbian police conducted a search of the bank for over 30 hours. At the end of October, the National Bank of Serbia revoked ALTA bank's license due to its deteriorating",
+            "url": "https://x.com/i/web/status/2117416467537011076",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-03T00:40:00.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 21,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -465,8 +458,8 @@
         "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 33,
-        "raw_engagement_total": 33,
+        "engagement_total": 34,
+        "raw_engagement_total": 34,
         "quality_total": 200,
         "geopolitical_total": 177,
         "source_counts": {
@@ -554,10 +547,10 @@
             "quality_score": 38,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 33,
-            "raw_engagement": 33,
+            "engagement": 34,
+            "raw_engagement": 34,
             "metrics": {
-              "likes": 24,
+              "likes": 25,
               "reposts": 1,
               "replies": 6,
               "quotes": 2
@@ -790,8 +783,8 @@
         "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 172,
-        "raw_engagement_total": 344,
+        "engagement_total": 185,
+        "raw_engagement_total": 368,
         "quality_total": 52,
         "geopolitical_total": 48,
         "source_counts": {
@@ -841,12 +834,47 @@
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 120,
-            "raw_engagement": 292,
+            "raw_engagement": 303,
             "metrics": {
-              "likes": 238,
+              "likes": 248,
               "reposts": 19,
               "replies": 27,
-              "quotes": 8
+              "quotes": 9
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Ethnic Composition of baby births by municipality in North Macedonia",
+            "text": "Ethnic Composition of baby births by municipality in North Macedonia",
+            "url": "https://x.com/i/web/status/2117385501674180634",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-02T22:36:57.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 33,
+            "raw_engagement": 33,
+            "metrics": {
+              "likes": 25,
+              "reposts": 2,
+              "replies": 3,
+              "quotes": 3
             },
             "quality": "x_api_filtered"
           },
@@ -882,41 +910,6 @@
               "reposts": 5,
               "replies": 1,
               "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Ethnic Composition of baby births by municipality in North Macedonia",
-            "text": "Ethnic Composition of baby births by municipality in North Macedonia",
-            "url": "https://x.com/i/web/status/2117385501674180634",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-02T22:36:57.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 20,
-            "raw_engagement": 20,
-            "metrics": {
-              "likes": 16,
-              "reposts": 1,
-              "replies": 2,
-              "quotes": 1
             },
             "quality": "x_api_filtered"
           },
@@ -964,33 +957,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 23,
-        "negative_hits": 20,
+        "mentions": 19,
+        "negative_hits": 16,
         "positive_hits": 2,
         "trusted_hits": 2,
-        "engagement_total": 91,
-        "raw_engagement_total": 91,
-        "quality_total": 805,
-        "geopolitical_total": 740,
+        "engagement_total": 42,
+        "raw_engagement_total": 42,
+        "quality_total": 583,
+        "geopolitical_total": 528,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 19,
-          "x": 4
+          "mastodon": 16,
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 5,
+          "government_crisis": 2,
           "protest": 8,
           "corruption_rule_of_law": 3,
-          "security": 4,
+          "security": 3,
           "eu_integration": 2,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkan": 1,
           "balkans": 10,
-          "albania": 8,
+          "albania": 5,
           "Észak-Macedónia": 1,
-          "Albánia": 3
+          "Albánia": 2
         },
         "main_topic": "protest",
         "top_posts": [
@@ -1040,99 +1033,6 @@
           },
           {
             "title": "",
-            "text": "RaiNews: Albania, scontri a Tirana: i manifestanti chiedono le dimissioni del premier Edi Rama Nuova ondata di proteste antigovernative nella capitale albanese. La polizia usa gli idranti per disperdere la folla mentre i giovani denunciano corruzione, caro vita e l'assenza di una vera opposizione politica Albania, clashes in Tirana: protesters demand the res",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117537060863987034",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Sat, 31 Oct 2026 19:00:18 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 10
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 71,
-            "quality_score": 74,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Albania: Joint Statement on allegations of torture, ill-treatment and arbitrary detention in the context of civic mobilization \"30 Oct 2026 Geneva / Tirana, 30 October 2026 The United Against Torture Consortium (UATC) and the Albanian Rehabilitation Centre for Trauma and Torture (ARCT), a member centre of IRCT and OMCT network member, express grave concern a",
-            "url": "https://eldritch.cafe/@ml/117536831175727697",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Sat, 31 Oct 2026 18:01:54 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 6
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 3,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 58,
-            "quality_score": 61,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "Day 156 of anti-corruption protest in Tirana ;Day 21 of escalated tactics Protesta e studentëve,të rinjtë futen në Universitetin e Arteve, kërkojnë bojkot: Bashkohuni me ne! Machine translated: Student protest: young people enter the University of Arts and call for a boycott—\"Join us!\"\" While things aren't such that there's still an all-day livestream, there",
             "url": "https://eldritch.cafe/@ml/117548318935291050",
             "source": "mastodon",
@@ -1167,24 +1067,19 @@
           },
           {
             "title": "",
-            "text": "🇦🇱 Fresh anti-government protest flares in #Albania 's capital https://www.france24.com/en/live-news/20261031-fresh-anti-government-protest-flares-in-albania-s-capital Masked protesters hurled stones and firebombs at police in Albania's capital on Saturday on the margins of a fresh anti-government demonstration demanding the resignation of Prime Minister Edi",
-            "url": "https://social.dromografos.report/notes/at0b6ljajezn00ht",
+            "text": "Attempted murder probe after petrol bomb thrown at French riot police By Jon Henley in Paris Youth-led protests end with street violence in cities across France, Germany, Switzerland, Portugal and Albania https://www. theguardian.com/world/2026/nov /01/petrol-bomb-thrown-at-french-riot-police # France # Portugal # Albania # Germany # Switzerland # Protest # ",
+            "url": "https://rssfeed.media/@guardianfeeds/117542133601582387",
             "source": "mastodon",
             "tag": "albania",
-            "seen_date": "Sat, 31 Oct 2026 18:38:32 +0000",
+            "seen_date": "Sun, 01 Nov 2026 16:30:22 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 5
+              "Albánia": 1
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
               {
                 "category": "security",
                 "hits": 1,
@@ -1192,12 +1087,80 @@
               },
               {
                 "category": "protest",
+                "hits": 3,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 40,
+            "quality_score": 45,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 154 of anti-corruption protest in Tirana, Albania; Day 20 of escalated tactics 🔴LIVE | Studentët protestë kombëtare në Tiranë National student protest in Tirana Marching in the rain. Drivers are honking with approval. https://www. youtube.com/watch?v=AUyA3yKE-fU # Albania # Balkans # Corruption # Europe # Protest # FlamingoRevolution",
+            "url": "https://eldritch.cafe/@ml/117541978062162585",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sun, 01 Nov 2026 15:50:49 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
                 "hits": 2,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 46,
-            "quality_score": 49,
+            "geopolitical_score": 35,
+            "quality_score": 38,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 153 of anti-corruption protest in Tirana, Albania Despite the PM's bounties offered to cops to nail protestors, despite the \"temporary\" law changes to go after protestors, folks are still gathering even if it's scaring some off. There are many issues...mostly about corruption, but the reason changes in tactics came from young students and again they have",
+            "url": "https://eldritch.cafe/@ml/117535322081386974",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sat, 31 Oct 2026 11:38:07 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 35,
+            "quality_score": 38,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
