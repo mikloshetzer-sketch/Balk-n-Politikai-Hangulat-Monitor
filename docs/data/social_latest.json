@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04 06:02 UTC",
+  "updated_at": "2026-11-04 13:34 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 7
+    "collected": 18
   },
   "countries": [
     {
@@ -21,74 +21,35 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
-        "negative_hits": 9,
+        "mentions": 15,
+        "negative_hits": 6,
         "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 296,
-        "geopolitical_total": 246,
+        "trusted_hits": 1,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 248,
+        "geopolitical_total": 205,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 15,
-          "x": 1
+          "mastodon": 13,
+          "x": 2
         },
         "category_counts": {
-          "government_crisis": 6,
-          "foreign_influence": 4,
-          "protest": 2,
+          "government_crisis": 5,
           "corruption_rule_of_law": 2,
-          "security": 2
+          "protest": 2,
+          "foreign_influence": 5,
+          "security": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 12,
+          "serbia": 10,
           "kosovo": 1,
           "montenegro": 1,
-          "Koszovó": 1
+          "Szerbia": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "",
-            "text": "“the most momentous set of protests has been in Serbia, where the Student List of candidates for national parliamentary elections has succeeded not just in dislodging a long-established, corruption-tainted government alleged to have links with organised crime, but in securing an electoral mandate. It is now poised to form a new administration. Nothing of thi",
-            "url": "https://kolektiva.social/@OldSquida2/117553684333405912",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Tue, 03 Nov 2026 17:27:52 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 41,
-            "quality_score": 46,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Novi Sad Marks Second Anniversary Of Railway Station Tragedy That Sparked Protests | APT Not a report. Just live footage (at the time posted). Wow, that was really affecting. The choir was singing a beautiful piece at the memorial for those who died in the Novi Sad railway canopy collapse and the choir simply suddenly stopped singing on a dime, cut short. ht",
@@ -164,46 +125,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "💢 🇷🇸 Hundreds of Serbs just braved the rain in an unfunded, impromptu Belgrade protest after citizen VuksaDragovic ( ) called out the incoming EU regime's attacks on Orthodox churc",
-            "text": "💢 🇷🇸 Hundreds of Serbs just braved the rain in an unfunded, impromptu Belgrade protest after citizen VuksaDragovic ( ) called out the incoming EU regime's attacks on Orthodox churches and state institutions. ⚡️ The liberals used the nationalists, got what they",
-            "url": "https://x.com/i/web/status/2117740095688368569",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-11-03T22:05:59.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
-            "metrics": {
-              "likes": 3,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "More than a week after unexpectedly defeating Serbia's longtime leader Aleksandar Vucic at the polls, the incoming student-led bloc still hasn't taken its seats in parliament or named its prime minister. https://www. japantimes.co.jp/news/2026/11/ 04/world/politics/serbia-leaderless-vucic-regime/?utm_medium=Social&utm_source=mastodon # worldnews # politics #",
             "url": "https://mastodon.social/@thejapantimes/117555501702307869",
@@ -231,6 +152,74 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "#Serbia , #Brazil , #USA ... Fascist projects are finally being reversed. However, #Trump remains in office, the Supreme Court he stacked remains active. His appointees remain in charge. His family remains at large. Lots of real work to be done with those majorities, US Democrats. Will you do it?",
+            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:l24sag45iwwsi3ngeb7y2zon/post/3mzi6orx3qc2c",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 04 Nov 2026 10:51:32 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 19,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Domani: Trump travolto, è iniziato il tramonto dell’era del sovranismo Gli Stati Uniti passano da “Maga” a “Maca”, Make America civil again. Il vento nuovo che soffia sull’intero pianeta lo avevamo già registrato in Ungheria, in Serbia, in Brasile, nei ragazzi che invadono le strade d'Europa. La conferma più clamorosa arriva dagli Stati Uniti, di solito una ",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117557075801960707",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 04 Nov 2026 07:50:22 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 15,
+            "quality_score": 18,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -241,29 +230,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
+        "mentions": 18,
         "negative_hits": 0,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 4,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 353,
-        "geopolitical_total": 300,
+        "engagement_total": 8,
+        "raw_engagement_total": 8,
+        "quality_total": 394,
+        "geopolitical_total": 334,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 15,
-          "x": 0
+          "mastodon": 17,
+          "x": 1
         },
         "category_counts": {
-          "security": 10,
+          "security": 11,
+          "government_crisis": 3,
           "foreign_influence": 1,
           "ethnic_tension": 1,
-          "government_crisis": 1,
           "protest": 2
         },
         "tag_counts": {
           "balkan": 1,
-          "bosnia": 14
+          "bosnia": 16,
+          "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -453,29 +443,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 33,
-        "level": "medium",
+        "score": 59,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 1,
-        "positive_hits": 1,
+        "mentions": 9,
+        "negative_hits": 2,
+        "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 126,
-        "geopolitical_total": 109,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 172,
+        "geopolitical_total": 151,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 0
+          "x": 4
         },
         "category_counts": {
           "eu_integration": 1,
-          "security": 3,
-          "government_crisis": 1
+          "security": 4,
+          "government_crisis": 2,
+          "ethnic_tension": 2
         },
         "tag_counts": {
-          "kosovo": 5
+          "kosovo": 5,
+          "Koszovó": 4
         },
         "main_topic": "security",
         "top_posts": [
@@ -582,6 +574,41 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "❤️ YOUR STYLE. YOUR CONFIDENCE. YOUR YESOMI! ❤️ Ladies, it's time to refresh your ethnic wardrobe! ✨ Discover beautiful kurti styles perfect for everyday elegance, casual outings a",
+            "text": "❤️ YOUR STYLE. YOUR CONFIDENCE. YOUR YESOMI! ❤️ Ladies, it's time to refresh your ethnic wardrobe! ✨ Discover beautiful kurti styles perfect for everyday elegance, casual outings and special occasions.",
+            "url": "https://x.com/i/web/status/2117967715529060698",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-04T13:10:27.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 13,
+            "quality_score": 14,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Agenzia Nova: Kosovo: capo negoziatore con Ue, persi 43,8 milioni di euro del Piano di crescita 02 nov 14:28 - (Agenzia Nova) - Il Kosovo ha perso 43,8 milioni di euro dei fondi previsti dal Piano di crescita dell'Unione europea per non... (Alt) Kosovo: chief negotiator with EU, €43.8 million of Growth Plan lost Nov 2, 14:28 – (Agenzia Nova) – The Kosovo has",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117547127012264497",
@@ -614,35 +641,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Prosecutors and Police Officers Suspended in Kosovo After Latest Femicide https:// fed.brid.gy/r/https://balkanin sight.com/2026/10/29/prosecutors-and-police-officers-suspended-in-kosovo-after-latest-femicide/bi/",
-            "url": "https://fed.brid.gy/r/https://balkaninsight.com/2026/10/29/prosecutors-and-police-officers-suspended-in-kosovo-after-latest-femicide/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Thu, 29 Oct 2026 15:39:29 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 12,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -650,32 +648,74 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 25,
+        "score": 39,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 5,
         "negative_hits": 2,
         "positive_hits": 0,
-        "trusted_hits": 0,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 49,
-        "geopolitical_total": 40,
+        "quality_total": 95,
+        "geopolitical_total": 79,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 3,
-          "x": 0
+          "mastodon": 4,
+          "x": 1
         },
         "category_counts": {
+          "government_crisis": 2,
           "protest": 1,
-          "security": 1,
-          "government_crisis": 1
+          "security": 2
         },
         "tag_counts": {
-          "montenegro": 3
+          "montenegro": 4,
+          "Montenegró": 1
         },
-        "main_topic": "protest",
+        "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "95% of Albanians back staying in NATO, against 52% of Montenegrins, the lowest of any member, per an alliance poll seen by POLITICO. Both defence ministers want a NATO hybrid team ",
+            "text": "95% of Albanians back staying in NATO, against 52% of Montenegrins, the lowest of any member, per an alliance poll seen by POLITICO. Both defence ministers want a NATO hybrid team against Russian disinformation. In Podgorica the experts might start with the home crowd. NATO",
+            "url": "https://x.com/i/web/status/2117930170200023547",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-11-04T10:41:16.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 7,
+              "Albánia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 30,
+            "quality_score": 34,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Demos gegen Wohnungsnot in Portugal - Protestcamps geräumt In vielen europäischen Ländern gehen momentan junge Menschen auf die Straße - auch in Portugal. Dort richten sich die Demonstrationen vor allem gegen die Wohnungsnot. Die Polizei ging hart gegen ein Protestcamp in Lissabon vor. Zum Artikel auf tagesschau.de # portugal # wohnungsnot # protest # lissab",
@@ -736,6 +776,35 @@
           },
           {
             "title": "",
+            "text": "Agenzia Nova: Montenegro: governo presentera' bilancio entro 15 novembre, incognita su costi programma \"Euro model\" 04 nov 10:51 - (Agenzia Nova) - Il governo montenegrino presentera' al Parlamento il progetto di bilancio per il 2027 entro il termine del... (Seb) Montenegro: government will present budget by November 15th, uncertainty regarding costs of “Eur",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117557665174193779",
+            "source": "mastodon",
+            "tag": "montenegro",
+            "seen_date": "Wed, 04 Nov 2026 10:20:15 +0000",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 12,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "Agenzia Nova: Montenegro: metropolita Joanikije, Djukanovic propose separazione da Chiesa ortodossa serba di Belgrado 30 ott 09:20 - (Agenzia Nova) - L'ex presidente montenegrino Milo Djukanovic propose alla Chiesa ortodossa serba (Spc) in Montenegro di separarsi... (Seb) Montenegro: Metropolitan Joanikije, Djukanovic propose separation from the Serbian Orth",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117528999692937129",
             "source": "mastodon",
@@ -771,38 +840,80 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 14,
+        "score": 12,
         "level": "low",
         "scale": "0-60 risk index",
         "mentions": 2,
         "negative_hits": 1,
-        "positive_hits": 1,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 49,
-        "geopolitical_total": 47,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 37,
+        "geopolitical_total": 35,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
           "x": 2
         },
         "category_counts": {
-          "government_crisis": 1,
-          "security": 1
+          "government_crisis": 2
         },
         "tag_counts": {
-          "Észak-Macedónia": 2
+          "Koszovó": 1,
+          "Észak-Macedónia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "North Macedonia lacks the votes for constitutional amendments. Its president seeks an alternative path towards EU accession, while Sofia insists on the 2022 commitments. EUEnlargem",
-            "text": "North Macedonia lacks the votes for constitutional amendments. Its president seeks an alternative path towards EU accession, while Sofia insists on the 2022 commitments. EUEnlargement IBNA",
-            "url": "https://x.com/i/web/status/2117690921953153081",
+            "title": "António Costa, president of the European Council, said Kosovo, North Macedonia and Bosnia and Herzegovina could make further progress toward joining the European Union if they acce",
+            "text": "António Costa, president of the European Council, said Kosovo, North Macedonia and Bosnia and Herzegovina could make further progress toward joining the European Union if they accelerate the required reforms.",
+            "url": "https://x.com/i/web/status/2117959568353329581",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-04T12:38:05.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Bosznia-Hercegovina": 2,
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇲🇰 President of North Macedonia Willing to Seek Dialogue with Iotova over EU Integration. Read more in the comments. 👇",
+            "text": "🇲🇰 President of North Macedonia Willing to Seek Dialogue with Iotova over EU Integration. Read more in the comments. 👇",
+            "url": "https://x.com/i/web/status/2117900953244307788",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-03T18:50:35.000Z",
+            "seen_date": "2026-11-04T08:45:10.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -813,17 +924,17 @@
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 2,
+                "hits": 1,
                 "weight": 9
               },
               {
                 "category": "eu_integration",
-                "hits": 2,
+                "hits": 1,
                 "weight": 6
               }
             ],
-            "geopolitical_score": 34,
-            "quality_score": 35,
+            "geopolitical_score": 16,
+            "quality_score": 17,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 1,
@@ -832,46 +943,6 @@
               "likes": 0,
               "reposts": 0,
               "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "NORTH MACEDONIA PUTS ELECTRICITY-GRID CYBERSECURITY ON THE NATIONAL SECURITY AGENDA North Macedonia is treating cyber resilience in the energy sector as a matter of national securi",
-            "text": "NORTH MACEDONIA PUTS ELECTRICITY-GRID CYBERSECURITY ON THE NATIONAL SECURITY AGENDA North Macedonia is treating cyber resilience in the energy sector as a matter of national security rather than merely IT administration. The key vulnerability is regional interdependence: a cyber",
-            "url": "https://x.com/i/web/status/2117656550013845934",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-03T16:34:00.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -886,29 +957,31 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 23,
-        "negative_hits": 18,
-        "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 9,
-        "raw_engagement_total": 9,
-        "quality_total": 671,
-        "geopolitical_total": 604,
+        "negative_hits": 21,
+        "positive_hits": 0,
+        "trusted_hits": 1,
+        "engagement_total": 51,
+        "raw_engagement_total": 51,
+        "quality_total": 635,
+        "geopolitical_total": 573,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 19,
-          "x": 4
+          "mastodon": 18,
+          "x": 5
         },
         "category_counts": {
-          "government_crisis": 3,
+          "government_crisis": 2,
           "protest": 10,
-          "corruption_rule_of_law": 5,
+          "corruption_rule_of_law": 6,
           "security": 4,
           "foreign_influence": 1
         },
         "tag_counts": {
           "balkan": 1,
-          "balkans": 11,
-          "albania": 7,
+          "balkans": 10,
+          "serbia": 1,
+          "albania": 6,
+          "Koszovó": 1,
           "Albánia": 4
         },
         "main_topic": "protest",
@@ -1066,32 +1139,32 @@
           },
           {
             "title": "",
-            "text": "Day 153 of anti-corruption protest in Tirana, Albania Despite the PM's bounties offered to cops to nail protestors, despite the \"temporary\" law changes to go after protestors, folks are still gathering even if it's scaring some off. There are many issues...mostly about corruption, but the reason changes in tactics came from young students and again they have",
-            "url": "https://eldritch.cafe/@ml/117535322081386974",
+            "text": "Day 156 of anti-corruption protest in Tirana ;Day 21 of escalated tactics I ‘vunë flakën’ Ramës e Berishës,protestuesi:Kanë mbajtur peng Shqipërinë, nuk ka më hapësirë për ta Machine translated: They \"set fire\" to Rama and Berisha, the protester: They held Albania hostage, there is no more space for them PM Edi Rama did some theater for the benefit of the in",
+            "url": "https://eldritch.cafe/@ml/117548351650933219",
             "source": "mastodon",
             "tag": "balkans",
-            "seen_date": "Sat, 31 Oct 2026 11:38:07 +0000",
+            "seen_date": "Mon, 02 Nov 2026 18:51:42 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 5
+              "Albánia": 9
             },
-            "event_category": "protest",
+            "event_category": "corruption_rule_of_law",
             "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
               {
                 "category": "corruption_rule_of_law",
                 "hits": 2,
                 "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 35,
-            "quality_score": 38,
+            "geopolitical_score": 28,
+            "quality_score": 31,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
