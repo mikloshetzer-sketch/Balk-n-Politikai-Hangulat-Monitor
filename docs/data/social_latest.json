@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05 06:27 UTC",
+  "updated_at": "2026-11-05 13:48 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 6
+    "collected": 11
   },
   "countries": [
     {
@@ -21,31 +21,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
-        "negative_hits": 5,
+        "mentions": 10,
+        "negative_hits": 6,
         "positive_hits": 0,
-        "trusted_hits": 2,
+        "trusted_hits": 3,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 218,
-        "geopolitical_total": 178,
+        "quality_total": 215,
+        "geopolitical_total": 180,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 12,
-          "x": 0
+          "mastodon": 9,
+          "x": 1
         },
         "category_counts": {
           "government_crisis": 2,
-          "security": 2,
-          "foreign_influence": 6,
-          "corruption_rule_of_law": 1,
+          "security": 4,
+          "foreign_influence": 3,
           "protest": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 11
+          "serbia": 7,
+          "albania": 1,
+          "Szerbia": 1
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -74,6 +75,45 @@
               },
               {
                 "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 36,
+            "quality_score": 39,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Agenzia Nova: Serbia: fermati 9 agenti polizia per torture e maltrattamenti durante proteste agosto 2025 05 nov 08:03 - (Agenzia Nova) - Nove agenti di polizia sono stati fermati in Serbia con l'accusa di aver torturato e maltrattato alcuni cittadini... (Seb) Serbia: 9 police officers arrested for torture and mistreatment during August 2023 protests Nov 5 08",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117562698307858997",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Thu, 05 Nov 2026 07:40:15 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
               }
@@ -155,72 +195,40 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "#Serbia , #Brazil , #USA ... Fascist projects are finally being reversed. However, #Trump remains in office, the Supreme Court he stacked remains active. His appointees remain in charge. His family remains at large. Lots of real work to be done with those majorities, US Democrats. Will you do it?",
-            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:l24sag45iwwsi3ngeb7y2zon/post/3mzi6orx3qc2c",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Wed, 04 Nov 2026 10:51:32 +0000",
+            "title": "Oh Nick, Serbian nationalists despise America, the EU, and NATO, claiming they were wrongfully bombed in the 90s ,conveniently ignoring that Milosevic's Serbia had started its four",
+            "text": "Oh Nick, Serbian nationalists despise America, the EU, and NATO, claiming they were wrongfully bombed in the 90s ,conveniently ignoring that Milosevic's Serbia had started its fourth war in nine years and that Bosnian Serb forces committed genocide in Bosnia!",
+            "url": "https://x.com/i/web/status/2118339368637379011",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-05T13:47:16.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 1
+              "Szerbia": 2,
+              "Bosznia-Hercegovina": 1
             },
-            "event_category": "corruption_rule_of_law",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "corruption_rule_of_law",
+                "category": "security",
                 "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
+                "weight": 9
               }
             ],
             "geopolitical_score": 16,
-            "quality_score": 19,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
+            "quality_score": 20,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Domani: Trump travolto, è iniziato il tramonto dell’era del sovranismo Gli Stati Uniti passano da “Maga” a “Maca”, Make America civil again. Il vento nuovo che soffia sull’intero pianeta lo avevamo già registrato in Ungheria, in Serbia, in Brasile, nei ragazzi che invadono le strade d'Europa. La conferma più clamorosa arriva dagli Stati Uniti, di solito una ",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117557075801960707",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Wed, 04 Nov 2026 07:50:22 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
             },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 15,
-            "quality_score": 18,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -234,22 +242,22 @@
         "mentions": 16,
         "negative_hits": 0,
         "positive_hits": 0,
-        "trusted_hits": 4,
+        "trusted_hits": 5,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 365,
-        "geopolitical_total": 309,
+        "quality_total": 395,
+        "geopolitical_total": 337,
         "source_counts": {
           "reddit": 0,
           "mastodon": 16,
           "x": 0
         },
         "category_counts": {
-          "security": 10,
+          "security": 11,
           "government_crisis": 2,
           "foreign_influence": 1,
           "ethnic_tension": 1,
-          "protest": 2
+          "protest": 1
         },
         "tag_counts": {
           "balkan": 1,
@@ -290,6 +298,40 @@
             ],
             "geopolitical_score": 75,
             "quality_score": 80,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "La Stampa - News, inchieste e approfondimenti La Stampa: Il vecchio video del padre della sergente morta in Bosnia: “Noi ci salutavamo così, ciao Lauretta” Laura Procacci, 32 anni, sergente del Corpo militare volontario della Croce Rossa italiana e laureanda in Medicina, è una delle quattro vittime dello schianto di un elicottero militare CH-47 avvenuto in B",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117562819484887889",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Thu, 05 Nov 2026 08:11:04 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 37,
+            "quality_score": 42,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -397,45 +439,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agi: Mattarella saluta familiari dei 4 militari caduti in Bosnia alla Basilica Santa Maria degli Angeli AGI/Vista - Il Presidente della Repubblica Sergio Mattarella ha incontrato nella Basilica di Santa Maria degli Angeli, a Roma, i familiari dei quattro militari morti nell’incidente dell’elicottero in Bosnia, in occasione dei funerali solenni. Courtesy: Qui",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117553772693655766",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Tue, 03 Nov 2026 17:50:21 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 26,
-            "quality_score": 29,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -443,30 +446,30 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 36,
+        "score": 22,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 4,
         "negative_hits": 0,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 125,
-        "geopolitical_total": 109,
+        "trusted_hits": 2,
+        "engagement_total": 23,
+        "raw_engagement_total": 23,
+        "quality_total": 99,
+        "geopolitical_total": 84,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
-          "x": 2
+          "mastodon": 3,
+          "x": 1
         },
         "category_counts": {
           "eu_integration": 1,
-          "security": 3,
-          "ethnic_tension": 2
+          "security": 2,
+          "government_crisis": 1
         },
         "tag_counts": {
-          "kosovo": 4,
-          "Koszovó": 2
+          "kosovo": 3,
+          "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
@@ -510,33 +513,39 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Agenzia Nova: Speciale difesa: Kosovo, forze di sicurezza ricevono 12 veicoli militari dalla Germania, altre consegne nel 2027 29 ott 13:45 - (Agenzia Nova) - Le Forze di sicurezza del Kosovo (Fsk) hanno ricevuto dalla Germania 12 veicoli militari Mercedes-Benz Unimog... (Alt) Special defense: Kosovo, security forces receive 12 military vehicles from Germany",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117524281206982090",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Thu, 29 Oct 2026 12:50:16 +0000",
+            "title": "OSCE26CH | Just arrived in Pristina and delighted to be welcomed by President Justina Shiroka Pula and to meet Prime Minister . We talked about our close ties, the regional challen",
+            "text": "OSCE26CH | Just arrived in Pristina and delighted to be welcomed by President Justina Shiroka Pula and to meet Prime Minister . We talked about our close ties, the regional challenges and the Swiss OSCE Chairpersonship. We attach great importance to OSCE field",
+            "url": "https://x.com/i/web/status/2118318945815896217",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-05T12:26:07.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 2
+              "Koszovó": 4
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 3,
+                "category": "government_crisis",
+                "hits": 2,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "geopolitical_score": 22,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 23,
+            "raw_engagement": 23,
+            "metrics": {
+              "likes": 16,
+              "reposts": 6,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -600,41 +609,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Women's Wear Maroon Cotton Beautiful Blouse | Button Down Stylish Designer Kurti For Woman | Traditional Ethnic Wear Versatile Tunic via PrintedRayonBlouse FlowerPrintTunic Handmad",
-            "text": "Women's Wear Maroon Cotton Beautiful Blouse | Button Down Stylish Designer Kurti For Woman | Traditional Ethnic Wear Versatile Tunic via PrintedRayonBlouse FlowerPrintTunic HandmadeTunics WomenFormalShirt WomenOfficeWear PartyWearKurta",
-            "url": "https://x.com/i/web/status/2118158961904156933",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-11-05T01:50:24.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -761,37 +735,38 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 22,
+        "score": 24,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
+        "mentions": 4,
         "negative_hits": 1,
         "positive_hits": 2,
-        "trusted_hits": 2,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 84,
-        "geopolitical_total": 75,
+        "trusted_hits": 1,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 60,
+        "geopolitical_total": 53,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
-          "government_crisis": 3
+          "government_crisis": 2,
+          "security": 2
         },
         "tag_counts": {
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "North Macedonia has made no progress in fighting corruption, which remains widespread and a serious cause for concern. Nor has there been any progress on the constitutional amendme",
-            "text": "North Macedonia has made no progress in fighting corruption, which remains widespread and a serious cause for concern. Nor has there been any progress on the constitutional amendments needed to continue accession negotiations with the European Union.",
-            "url": "https://x.com/i/web/status/2118084140331344225",
+            "title": "The Macedonian opposition party SDSM accuses Koçoska and Mickoski of falsifying public debt figures amid the criminal scandal surrounding Alta Bank, to conceal what it calls the cr",
+            "text": "The Macedonian opposition party SDSM accuses Koçoska and Mickoski of falsifying public debt figures amid the criminal scandal surrounding Alta Bank, to conceal what it calls the criminal gang’s historic debt.",
+            "url": "https://x.com/i/web/status/2118338263203102866",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-04T20:53:05.000Z",
+            "seen_date": "2026-11-05T13:42:53.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -809,15 +784,10 @@
                 "category": "corruption_rule_of_law",
                 "hits": 1,
                 "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
               }
             ],
-            "geopolitical_score": 33,
-            "quality_score": 34,
+            "geopolitical_score": 20,
+            "quality_score": 21,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -831,57 +801,17 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "🇪🇺🇲🇰 Today, I welcomed Ms. Gordana Siljanovska-Davkova , President of the Republic of North Macedonia, on the occasion of her visit to the European Parliament in the context of the",
-            "text": "🇪🇺🇲🇰 Today, I welcomed Ms. Gordana Siljanovska-Davkova , President of the Republic of North Macedonia, on the occasion of her visit to the European Parliament in the context of the European Commission presenting the 2026 Enlargement Package. We had an open, constructive,",
-            "url": "https://x.com/i/web/status/2118047578734424330",
+            "title": "EU Commission Delivers a Blow to Skopje! – EU Condemns Violations of the Prespa Agreement – Prime Minister Mickoski in the Spotlight!",
+            "text": "EU Commission Delivers a Blow to Skopje! – EU Condemns Violations of the Prespa Agreement – Prime Minister Mickoski in the Spotlight!",
+            "url": "https://x.com/i/web/status/2118316685514129864",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-04T18:27:48.000Z",
+            "seen_date": "2026-11-05T12:17:08.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 32,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 2,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "EU’s North Macedonia Report Faults Officials for Dropping ‘North’ The European Commission's North Macedonia report says government members disregard the Prespa Agreement by not usi",
-            "text": "EU’s North Macedonia Report Faults Officials for Dropping ‘North’ The European Commission's North Macedonia report says government members disregard the Prespa Agreement by not using the country's constitutional name.",
-            "url": "https://x.com/i/web/status/2118099160239145344",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-04T21:52:46.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
+              "Észak-Macedónia": 8
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -904,6 +834,77 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "EMERGE: a web-based platform combining near-real-time hazard data, exposure and vulnerability models to support cross-border civil protection in Albania, North Macedonia and Greece",
+            "text": "EMERGE: a web-based platform combining near-real-time hazard data, exposure and vulnerability models to support cross-border civil protection in Albania, North Macedonia and Greece. Watch the video:",
+            "url": "https://x.com/i/web/status/2118287664461795800",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-05T10:21:49.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Albánia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "INTERPA 1st Workshop hosted by the Police Academy of North Macedonia with the participation of 5 representatives from members and 37 representatives from North Macedonia in North M",
+            "text": "INTERPA 1st Workshop hosted by the Police Academy of North Macedonia with the participation of 5 representatives from members and 37 representatives from North Macedonia in North Macedonia on 27-28 October 2026.",
+            "url": "https://x.com/i/web/status/2118287958973522430",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-05T10:22:59.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 2,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -914,31 +915,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 19,
-        "negative_hits": 18,
-        "positive_hits": 1,
+        "mentions": 22,
+        "negative_hits": 21,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 595,
-        "geopolitical_total": 540,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
+        "quality_total": 708,
+        "geopolitical_total": 650,
         "source_counts": {
           "reddit": 0,
           "mastodon": 18,
-          "x": 1
+          "x": 4
         },
         "category_counts": {
-          "government_crisis": 2,
+          "government_crisis": 5,
           "protest": 11,
-          "corruption_rule_of_law": 5,
-          "security": 1
+          "corruption_rule_of_law": 4,
+          "security": 2
         },
         "tag_counts": {
           "balkan": 1,
-          "balkans": 11,
-          "serbia": 1,
-          "albania": 5,
-          "Albánia": 1
+          "balkans": 10,
+          "albania": 7,
+          "Albánia": 4
         },
         "main_topic": "protest",
         "top_posts": [
@@ -1021,6 +1021,46 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "🚨 DEVELOPING: Albanian PM Edi Rama rejects opposition demands, firmly defending executive legitimacy. Addressing ongoing unrest, Rama affirmed that a democratically elected leaders",
+            "text": "🚨 DEVELOPING: Albanian PM Edi Rama rejects opposition demands, firmly defending executive legitimacy. Addressing ongoing unrest, Rama affirmed that a democratically elected leadership's mandate cannot be dissolved by street protests outside constitutional mechanisms. This",
+            "url": "https://x.com/i/web/status/2118337924324638890",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-11-05T13:41:32.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 6
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 3,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 45,
+            "quality_score": 46,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "https:// youtu.be/MM7QGccszUU ⛔️🇺🇸Trump emboldening his compromised peace broker and son-in-law’s empire of fraud & corruption (Channel 5 Media VIDEO) # Ukraine # Press # Media # VOTE # VOTE2026 # Florida # Durres # Miami # Tirana # America # USA # US # News # Elbasan # Fier # Shkoder # Brussels # CoE # PACE # Albania # Italy # France # UK # London # Germany",
             "url": "https://mastodon.online/@SocraticEthics/117554614417986888",
@@ -1060,77 +1100,54 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Aktualiteti politik ne zhvillimet në vend Machine translated: Current political developments in the country Day 157 of anti-corruption protest in Tirana, Albania Day 23 of escalation in tactics. My count is completely messed up because media made a differentiation between the Flamingo Revolution and the escalation in tactics by younger students on Oct 13. Ev",
-            "url": "https://eldritch.cafe/@ml/117559296952662719",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 04 Nov 2026 17:15:14 +0000",
+            "title": "The mass protests in Albania were also discussed during a joint press conference held by Prime Minister Edi Rama and the European Union Ambassador to Albania, Sofia Moreira de Sous",
+            "text": "The mass protests in Albania were also discussed during a joint press conference held by Prime Minister Edi Rama and the European Union Ambassador to Albania, Sofia Moreira de Sousa.",
+            "url": "https://x.com/i/web/status/2118332274823626812",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-11-05T13:19:05.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
               "Albánia": 5
             },
-            "event_category": "protest",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
+                "category": "government_crisis",
                 "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 40,
-            "quality_score": 43,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 154 of anti-corruption protest in Tirana, Albania; Day 20 of escalated tactics 🔴LIVE | Studentët protestë kombëtare në Tiranë National student protest in Tirana Marching in the rain. Drivers are honking with approval. https://www. youtube.com/watch?v=AUyA3yKE-fU # Albania # Balkans # Corruption # Europe # Protest # FlamingoRevolution",
-            "url": "https://eldritch.cafe/@ml/117541978062162585",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sun, 01 Nov 2026 15:50:49 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
+                "weight": 9
+              },
               {
                 "category": "protest",
                 "hits": 2,
                 "weight": 8
               },
               {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
+                "category": "foreign_influence",
+                "hits": 1,
                 "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
               }
             ],
-            "geopolitical_score": 35,
-            "quality_score": 38,
-            "source_reliability": 3,
+            "geopolitical_score": 42,
+            "quality_score": 43,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
