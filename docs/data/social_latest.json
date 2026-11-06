@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05 23:06 UTC",
+  "updated_at": "2026-11-06 04:23 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 8
+    "collected": 12
   },
   "countries": [
     {
@@ -22,23 +22,24 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 12,
-        "negative_hits": 8,
+        "negative_hits": 7,
         "positive_hits": 0,
-        "trusted_hits": 3,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 286,
-        "geopolitical_total": 249,
+        "trusted_hits": 2,
+        "engagement_total": 6,
+        "raw_engagement_total": 6,
+        "quality_total": 255,
+        "geopolitical_total": 221,
         "source_counts": {
           "reddit": 0,
           "mastodon": 9,
           "x": 3
         },
         "category_counts": {
-          "government_crisis": 3,
-          "protest": 2,
+          "government_crisis": 1,
+          "protest": 3,
           "security": 4,
-          "foreign_influence": 3
+          "foreign_influence": 3,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 1,
@@ -127,51 +128,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Serbian people are the only people in the world who keeps the truth. We were the best warriors for freedom since the big bang. And the Reptilians knows that. Fuck the EU, NATO, USA",
-            "text": "Serbian people are the only people in the world who keeps the truth. We were the best warriors for freedom since the big bang. And the Reptilians knows that. Fuck the EU, NATO, USA. Reptilians stop fucking eat human beings and feed with our energy. We are bringing bells back432.",
-            "url": "https://x.com/i/web/status/2118467539642826902",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-05T22:16:35.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 32,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Domani: Dall’America a Israele alla Serbia. L’onda dell’antipolitica si sta spegnendo Dalla protesta studentesca in Serbia, al conflitto polarizzato in Brasile e Ungheria, al referendum pro o contro Netanyahu, agli “scarafaggi” dell’India. Ovviamente gli Usa. La politica torna ad accendere le passioni. E lo fa nelle sue chiavi più “radicali”, si legga alla v",
             "url": "https://mastodon.ozioso.online/@ItalianNews/117565922747250142",
@@ -217,6 +173,40 @@
             ],
             "country_confidence": {
               "Szerbia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 24,
+            "quality_score": 29,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Serbia detains police officers over alleged use of force against protesters By Reuters in Belgrade Interior ministry claims suspects tortured and intimidated protesters detained in garage of government compound https://www. theguardian.com/world/2026/nov /04/serbia-officers-protesters # Serbia # Worldnews # Europe # TheGuardian # ReutersinBelgrade",
+            "url": "https://rssfeed.media/@guardianfeeds/117560143057626511",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Wed, 04 Nov 2026 20:50:25 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
             },
             "event_category": "security",
             "event_categories": [
@@ -455,32 +445,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 25,
+        "score": 29,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 1,
+        "mentions": 5,
+        "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 84,
-        "geopolitical_total": 74,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 94,
+        "geopolitical_total": 83,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 2
+          "x": 3
         },
         "category_counts": {
           "eu_integration": 1,
-          "security": 2,
-          "government_crisis": 1
+          "security": 1,
+          "ethnic_tension": 3
         },
         "tag_counts": {
           "kosovo": 2,
-          "Koszovó": 2
+          "Koszovó": 3
         },
-        "main_topic": "security",
+        "main_topic": "ethnic_tension",
         "top_posts": [
           {
             "title": "",
@@ -556,63 +546,98 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Today Hashim Thaçi, Kadri Veseli, Rexhep Selimi, and Jakup Krasniqi marked 6 years in detention in the Hague. They had been sent there after surrendering at EULEX offices in Prisht",
-            "text": "Today Hashim Thaçi, Kadri Veseli, Rexhep Selimi, and Jakup Krasniqi marked 6 years in detention in the Hague. They had been sent there after surrendering at EULEX offices in Prishtina to face war crime charges. Thaçi had resigned as President on Nov 5, 2026.",
-            "url": "https://x.com/i/web/status/2118439051615162613",
+            "title": "Women's Wear Maroon Cotton Beautiful Blouse | Button Down Stylish Designer Kurti For Woman | Traditional Ethnic Wear Versatile Tunic via TopsForWomen ClassicBlouse LongSleeveShirt ",
+            "text": "Women's Wear Maroon Cotton Beautiful Blouse | Button Down Stylish Designer Kurti For Woman | Traditional Ethnic Wear Versatile Tunic via TopsForWomen ClassicBlouse LongSleeveShirt ShirtsForWomen SummerCottonTops WomenCustomShirts WomenBlouses",
+            "url": "https://x.com/i/web/status/2118540377653493883",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-11-05T20:23:23.000Z",
+            "seen_date": "2026-11-06T03:06:01.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
               "Koszovó": 4
             },
-            "event_category": "government_crisis",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "ethnic_tension",
                 "hits": 1,
-                "weight": 9
+                "weight": 10
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
+            "geopolitical_score": 10,
+            "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
               "likes": 0,
               "reposts": 0,
-              "replies": 1,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
           },
           {
-            "title": "Wearing a plain kurti? Let one piece lead: jhumkas with a bare neck, or studs with a short pendant. Match the metal to your dupatta border.",
-            "text": "Wearing a plain kurti? Let one piece lead: jhumkas with a bare neck, or studs with a short pendant. Match the metal to your dupatta border.",
-            "url": "https://x.com/i/web/status/2118474666776174676",
+            "title": "Indian Beautiful Women Wear Button Down Shirt | Traditional Cotton Short Kurti Tops Tunic | Ethnic Party & Formal Wear Long Blouse via StylishKurta EthnicKurtis KurtisForWomen Wome",
+            "text": "Indian Beautiful Women Wear Button Down Shirt | Traditional Cotton Short Kurti Tops Tunic | Ethnic Party & Formal Wear Long Blouse via StylishKurta EthnicKurtis KurtisForWomen WomenKurta CottonShirts WomenTankTops HandmadeTops WomensTops",
+            "url": "https://x.com/i/web/status/2118539825636946155",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-11-05T22:44:54.000Z",
+            "seen_date": "2026-11-06T03:03:49.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
               "Koszovó": 4
             },
-            "event_category": "security",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "security",
+                "category": "ethnic_tension",
                 "hits": 1,
-                "weight": 9
+                "weight": 10
               }
             ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "In breakfast there was sprouts upma and burger. I took upma only. In the lib. I didn’t wear visible ethnic. A kurti under my sweater. I used to follow every celebration dress code ",
+            "text": "In breakfast there was sprouts upma and burger. I took upma only. In the lib. I didn’t wear visible ethnic. A kurti under my sweater. I used to follow every celebration dress code in previous.",
+            "url": "https://x.com/i/web/status/2118538429558669459",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-06T02:58:16.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -631,17 +656,17 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 17,
+        "score": 14,
         "level": "low",
         "scale": "0-60 risk index",
         "mentions": 4,
         "negative_hits": 0,
         "positive_hits": 2,
-        "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 79,
-        "geopolitical_total": 64,
+        "trusted_hits": 1,
+        "engagement_total": 7,
+        "raw_engagement_total": 7,
+        "quality_total": 60,
+        "geopolitical_total": 48,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
@@ -649,8 +674,7 @@
         },
         "category_counts": {
           "eu_integration": 2,
-          "government_crisis": 1,
-          "security": 1
+          "government_crisis": 2
         },
         "tag_counts": {
           "montenegro": 3,
@@ -658,46 +682,6 @@
         },
         "main_topic": "eu_integration",
         "top_posts": [
-          {
-            "title": "Montenegro isn't being admitted, it's being scheduled. A 620k-person, euro-using NATO member is the cheapest enlargement win on the board, so 2028 dates Brussels' credibility, not ",
-            "text": "Montenegro isn't being admitted, it's being scheduled. A 620k-person, euro-using NATO member is the cheapest enlargement win on the board, so 2028 dates Brussels' credibility, not Podgorica's readiness. Watch chapters 23 and 24 actually move—or watch the calendar do the work inst",
-            "url": "https://x.com/i/web/status/2118451836298662284",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-11-05T21:14:11.000Z",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 25,
-            "quality_score": 29,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "🇲🇪🇪🇺 Impatient to count Montenegro as the new 28th European Union member. # montenegro # europeanunion # eu https://www. euronews.com/2026/11/03/monten egro-rejects-second-class-eu-membership-as-it-eyes-2028-accession",
@@ -784,6 +768,41 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "It took nearly 5 months to form a new government in Montenegro following its elections on June 11, 2023, which followed the fall of the mafia don Milo Đukanović's long-standing gri",
+            "text": "It took nearly 5 months to form a new government in Montenegro following its elections on June 11, 2023, which followed the fall of the mafia don Milo Đukanović's long-standing grip on power and his defeat in the April 2023 presidential election. Patience is a virtue KP.",
+            "url": "https://x.com/i/web/status/2118546983551971669",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-11-06T03:32:16.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 4
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 7,
+            "raw_engagement": 7,
+            "metrics": {
+              "likes": 6,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -791,17 +810,17 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 14,
+        "score": 12,
         "level": "low",
         "scale": "0-60 risk index",
         "mentions": 2,
-        "negative_hits": 1,
+        "negative_hits": 0,
         "positive_hits": 1,
-        "trusted_hits": 0,
+        "trusted_hits": 1,
         "engagement_total": 3,
         "raw_engagement_total": 3,
-        "quality_total": 34,
-        "geopolitical_total": 32,
+        "quality_total": 50,
+        "geopolitical_total": 45,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
@@ -815,6 +834,46 @@
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "At a joint press conference with EU Ambassador Michalis Rokas, held on the occasion of the publication of the European Commission’s report on North Macedonia, Prime Minister Hristi",
+            "text": "At a joint press conference with EU Ambassador Michalis Rokas, held on the occasion of the publication of the European Commission’s report on North Macedonia, Prime Minister Hristijan Mickoski said that membership in the European Union remains a strategi…",
+            "url": "https://x.com/i/web/status/2118485122672463998",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-05T23:26:27.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 30,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "The 🇪🇺 Ambassador of the European Union to North Macedonia, Michalis Rokas, handed over the 2026 Country Report for North Macedonia to 🇲🇰 Prime Minister Hristijan Mickoski, Deputy ",
             "text": "The 🇪🇺 Ambassador of the European Union to North Macedonia, Michalis Rokas, handed over the 2026 Country Report for North Macedonia to 🇲🇰 Prime Minister Hristijan Mickoski, Deputy Prime Minister Bekim Sali, and Minister of Foreign Affairs and Foreign Trade Timco Mucunski.",
@@ -859,41 +918,6 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "North Macedonia has made progress in implementing the Reform Agenda, but a key requirement for advancing toward the EU remains unmet: constitutional amendments.",
-            "text": "North Macedonia has made progress in implementing the Reform Agenda, but a key requirement for advancing toward the EU remains unmet: constitutional amendments.",
-            "url": "https://x.com/i/web/status/2118361465610494294",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-05T15:15:05.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -904,29 +928,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 18,
+        "mentions": 19,
         "negative_hits": 17,
-        "positive_hits": 1,
-        "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 581,
-        "geopolitical_total": 527,
+        "positive_hits": 2,
+        "trusted_hits": 1,
+        "engagement_total": 15,
+        "raw_engagement_total": 15,
+        "quality_total": 600,
+        "geopolitical_total": 546,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 18,
-          "x": 0
+          "mastodon": 16,
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 2,
-          "protest": 10,
+          "government_crisis": 3,
+          "protest": 9,
           "corruption_rule_of_law": 4,
-          "security": 2
+          "security": 3
         },
         "tag_counts": {
           "balkan": 1,
           "balkans": 10,
-          "albania": 7
+          "albania": 5,
+          "Albánia": 3
         },
         "main_topic": "protest",
         "top_posts": [
