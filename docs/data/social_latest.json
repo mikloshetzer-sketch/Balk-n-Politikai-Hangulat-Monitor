@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07 05:47 UTC",
+  "updated_at": "2026-11-07 12:11 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 10
+    "collected": 11
   },
   "countries": [
     {
@@ -22,13 +22,13 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 14,
-        "negative_hits": 9,
+        "negative_hits": 8,
         "positive_hits": 2,
         "trusted_hits": 4,
-        "engagement_total": 52,
-        "raw_engagement_total": 52,
-        "quality_total": 289,
-        "geopolitical_total": 243,
+        "engagement_total": 74,
+        "raw_engagement_total": 74,
+        "quality_total": 271,
+        "geopolitical_total": 225,
         "source_counts": {
           "reddit": 0,
           "mastodon": 12,
@@ -36,9 +36,10 @@
         },
         "category_counts": {
           "government_crisis": 3,
-          "protest": 6,
+          "foreign_influence": 1,
+          "protest": 4,
           "eu_integration": 1,
-          "security": 2,
+          "security": 3,
           "corruption_rule_of_law": 1,
           "ethnic_tension": 1
         },
@@ -131,40 +132,6 @@
           },
           {
             "title": "",
-            "text": "Domani: Dall’America a Israele alla Serbia. L’onda dell’antipolitica si sta spegnendo Dalla protesta studentesca in Serbia, al conflitto polarizzato in Brasile e Ungheria, al referendum pro o contro Netanyahu, agli “scarafaggi” dell’India. Ovviamente gli Usa. La politica torna ad accendere le passioni. E lo fa nelle sue chiavi più “radicali”, si legga alla v",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117565922747250142",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Thu, 05 Nov 2026 21:20:16 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 30,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "‘A global political awakening’: how gen Z protests are sweeping the world https://www. theguardian.com/world/2026/nov /06/gen-z-protests-sweeping-the-world # Protest # YoungPeople # WorldNews # Europe # France # Germany # Serbia # Bangladesh # India # Belgium # Mexico # Spain # Italy # Morocco # Society",
             "url": "https://halo.nu/@theguardian_world_news/117570100075524226",
             "source": "mastodon",
@@ -220,6 +187,46 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "SAJ commander Igor Žmirić held for up to 30 days over torture claims The Belgrade court ordered detention of the police unit chief, who faces suspicion of abuse and torture. Lawyer",
+            "text": "SAJ commander Igor Žmirić held for up to 30 days over torture claims The Belgrade court ordered detention of the police unit chief, who faces suspicion of abuse and torture. Lawyers say the arrests before the elections look political; the chief prosecutor denies it.",
+            "url": "https://x.com/i/web/status/2119007417392332872",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-07T10:01:52.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 21,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -446,17 +453,17 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 6,
+        "score": 11,
         "level": "low",
         "scale": "0-60 risk index",
         "mentions": 2,
-        "negative_hits": 0,
+        "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 33,
-        "geopolitical_total": 29,
+        "quality_total": 28,
+        "geopolitical_total": 24,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
@@ -464,7 +471,7 @@
         },
         "category_counts": {
           "eu_integration": 1,
-          "government_crisis": 1
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "kosovo": 1,
@@ -473,28 +480,28 @@
         "main_topic": "eu_integration",
         "top_posts": [
           {
-            "title": "Including Prime Minister Albin Kurti on the list of institutions from which documents and testimony would be requested did not win the approval of members of the Vetëvendosje Movem",
-            "text": "Including Prime Minister Albin Kurti on the list of institutions from which documents and testimony would be requested did not win the approval of members of the Vetëvendosje Movement on the Parliamentary Inquiry Committee today.",
-            "url": "https://x.com/i/web/status/2118868894500659409",
+            "title": "🔥Ajio - Kurta & Kurti Sets By Avaasa & Fusion & more @ Under ₹599 👗 🛍️ Perfect for adding an ethnic touch to your wardrobe. 👉 Shop Now!",
+            "text": "🔥Ajio - Kurta & Kurti Sets By Avaasa & Fusion & more @ Under ₹599 👗 🛍️ Perfect for adding an ethnic touch to your wardrobe. 👉 Shop Now!",
+            "url": "https://x.com/i/web/status/2118974467842138269",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-11-07T00:51:25.000Z",
+            "seen_date": "2026-11-07T07:50:56.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
               "Koszovó": 4
             },
-            "event_category": "government_crisis",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
+            "geopolitical_score": 13,
+            "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -665,27 +672,27 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 33,
+        "score": 28,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 4,
         "negative_hits": 0,
-        "positive_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 3,
-        "engagement_total": 8,
-        "raw_engagement_total": 8,
-        "quality_total": 107,
-        "geopolitical_total": 93,
+        "engagement_total": 9,
+        "raw_engagement_total": 9,
+        "quality_total": 96,
+        "geopolitical_total": 83,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 5
+          "x": 4
         },
         "category_counts": {
-          "government_crisis": 5
+          "government_crisis": 4
         },
         "tag_counts": {
-          "Észak-Macedónia": 5
+          "Észak-Macedónia": 4
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -794,48 +801,13 @@
             "quality_score": 25,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 8,
-            "raw_engagement": 8,
+            "engagement": 9,
+            "raw_engagement": 9,
             "metrics": {
-              "likes": 4,
+              "likes": 5,
               "reposts": 1,
               "replies": 2,
               "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "No Constitutional Changes, Yet Skopje Expects EU Progress Next Year",
-            "text": "No Constitutional Changes, Yet Skopje Expects EU Progress Next Year",
-            "url": "https://x.com/i/web/status/2118731306616172747",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-06T15:44:42.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
             },
             "quality": "x_api_filtered"
           },
@@ -883,23 +855,23 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
-        "negative_hits": 13,
+        "mentions": 18,
+        "negative_hits": 15,
         "positive_hits": 2,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 536,
-        "geopolitical_total": 487,
+        "quality_total": 542,
+        "geopolitical_total": 492,
         "source_counts": {
           "reddit": 0,
           "mastodon": 15,
-          "x": 2
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 4,
-          "protest": 8,
-          "corruption_rule_of_law": 2,
+          "government_crisis": 3,
+          "protest": 9,
+          "corruption_rule_of_law": 3,
           "foreign_influence": 1,
           "security": 2
         },
@@ -907,7 +879,7 @@
           "balkan": 1,
           "balkans": 9,
           "albania": 5,
-          "Albánia": 2
+          "Albánia": 3
         },
         "main_topic": "protest",
         "top_posts": [
