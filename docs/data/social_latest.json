@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08 03:34 UTC",
+  "updated_at": "2026-11-08 05:50 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 12
+    "collected": 11
   },
   "countries": [
     {
@@ -21,22 +21,22 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 12,
-        "negative_hits": 4,
+        "mentions": 13,
+        "negative_hits": 5,
         "positive_hits": 2,
         "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 192,
-        "geopolitical_total": 156,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 212,
+        "geopolitical_total": 175,
         "source_counts": {
           "reddit": 0,
           "mastodon": 10,
-          "x": 2
+          "x": 3
         },
         "category_counts": {
           "foreign_influence": 2,
-          "protest": 2,
+          "protest": 3,
           "eu_integration": 1,
           "security": 1,
           "government_crisis": 4,
@@ -46,7 +46,7 @@
         "tag_counts": {
           "serbia": 9,
           "bosnia": 1,
-          "Szerbia": 2
+          "Szerbia": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -148,6 +148,41 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Sixteen died in Novi Sad. Two years of protests. Then a student-led government took power in Belgrade. Abdelraheem Kehirawi on why it's a counter-revolution, not a colour revolutio",
+            "text": "Sixteen died in Novi Sad. Two years of protests. Then a student-led government took power in Belgrade. Abdelraheem Kehirawi on why it's a counter-revolution, not a colour revolution. New on Pambazuka 🎧",
+            "url": "https://x.com/i/web/status/2119288663863603301",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-08T04:39:26.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 4
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Arrests and investigations as Serbia begins the post-election clean-up. The landslide victory of the Students’ List in Serbia’s general election seems to have removed a blockage in the justice system: Cases that were long stalled are now suddenly moving forward. https:// mediafaro.org/article/20261105 -arrests-and-investigations-as-serbia-begins-the-post-ele",
             "url": "https://mastodon.mediafaro.org/@mf_analysis/117569120113176262",
@@ -170,35 +205,6 @@
             ],
             "geopolitical_score": 11,
             "quality_score": 14,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Serbian anarchists: Student List “perfectly in line” with neoliberalism – 🏴 Anarchist Federation https://www. anarchistfederation.net/serbia n-anarchists-student-list-perfectly-in-line-with-neoliberalism/#/ 'The appointment of non-politicians to parliament is one of the main talking points of the Student List. There were over 160 candidates with PhDs on the ",
-            "url": "https://kolektiva.social/@pivic/117569216759832165",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Fri, 06 Nov 2026 11:17:58 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 13,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -678,102 +684,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 24,
-        "level": "medium",
+        "score": 5,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
-        "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 121,
-        "raw_engagement_total": 999,
-        "quality_total": 50,
-        "geopolitical_total": 44,
+        "mentions": 1,
+        "negative_hits": 0,
+        "positive_hits": 0,
+        "trusted_hits": 0,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 10,
+        "geopolitical_total": 9,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 3
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 2,
-          "security": 1
+          "government_crisis": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "BREAKING: Several NATO countries are also showing interest in joining the US-led military campaign against Iran, including: - Albania - North Macedonia - Lithuania - Latvia - Czech",
-            "text": "BREAKING: Several NATO countries are also showing interest in joining the US-led military campaign against Iran, including: - Albania - North Macedonia - Lithuania - Latvia - Czech Republic - Canada - UK - France - Germany If war breaks out, the conflict could escalate",
-            "url": "https://x.com/i/web/status/2119077610831651024",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-07T14:40:47.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Albánia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 25,
-            "quality_score": 29,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 120,
-            "raw_engagement": 998,
-            "metrics": {
-              "likes": 674,
-              "reposts": 191,
-              "replies": 108,
-              "quotes": 25
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Bulgarian Foreign Minister Velislava Petrova-Chamova said, in response to a question from lawmakers in the Bulgarian Parliament, that Sofia does not consider mediation necessary in",
-            "text": "Bulgarian Foreign Minister Velislava Petrova-Chamova said, in response to a question from lawmakers in the Bulgarian Parliament, that Sofia does not consider mediation necessary in talks with North Macedonia.",
-            "url": "https://x.com/i/web/status/2119075633061908804",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-07T14:32:56.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "The Social Democratic Union of Macedonia (SDSM) is calling on the prosecutor’s office to launch an investigation into Alta Bank’s entry into the Macedonian market. The party claims",
             "text": "The Social Democratic Union of Macedonia (SDSM) is calling on the prosecutor’s office to launch an investigation into Alta Bank’s entry into the Macedonian market. The party claims that Prime Minister Hristijan Mickoski made the decision.",
@@ -818,30 +752,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 24,
-        "negative_hits": 21,
+        "mentions": 23,
+        "negative_hits": 20,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 12,
-        "raw_engagement_total": 12,
-        "quality_total": 693,
-        "geopolitical_total": 631,
+        "engagement_total": 6,
+        "raw_engagement_total": 6,
+        "quality_total": 613,
+        "geopolitical_total": 552,
         "source_counts": {
           "reddit": 0,
           "mastodon": 18,
-          "x": 6
+          "x": 5
         },
         "category_counts": {
-          "protest": 10,
+          "protest": 12,
           "government_crisis": 2,
           "corruption_rule_of_law": 4,
-          "security": 7,
+          "security": 4,
           "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 14,
           "albania": 4,
-          "Albánia": 6
+          "Albánia": 5
         },
         "main_topic": "protest",
         "top_posts": [
@@ -917,51 +851,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Police used water cannons to disperse masked protesters in Albania’s capital, Tirana, as anti-government demonstrations entered their third week. Anger over alleged government corr",
-            "text": "Police used water cannons to disperse masked protesters in Albania’s capital, Tirana, as anti-government demonstrations entered their third week. Anger over alleged government corruption and poor education has fuelled unrest, challenging PM Edi Rama.",
-            "url": "https://x.com/i/web/status/2119228819123106006",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-11-08T00:41:38.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 9
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 44,
-            "quality_score": 45,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 5,
-            "raw_engagement": 5,
-            "metrics": {
-              "likes": 5,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -1040,6 +929,45 @@
             ],
             "geopolitical_score": 40,
             "quality_score": 43,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "🔴LIVE | Përshkallëzohet protesta para Ministrisë së Arsimit Machind translated: Protest escalates in front of the Ministry of Education Cops are using tear gas, water cannons, and more again on the protestors outside the Ministry of Education. Protestors are hitting back by throwing pieces of sidewalk pavers. There's a larger group of protestors on the boule",
+            "url": "https://eldritch.cafe/@ml/117575724780214650",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sat, 07 Nov 2026 14:53:03 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 31,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
