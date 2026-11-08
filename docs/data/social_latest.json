@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07 21:45 UTC",
+  "updated_at": "2026-11-08 03:34 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 9
+    "collected": 12
   },
   "countries": [
     {
@@ -22,24 +22,24 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 12,
-        "negative_hits": 5,
+        "negative_hits": 4,
         "positive_hits": 2,
-        "trusted_hits": 3,
+        "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 218,
-        "geopolitical_total": 182,
+        "quality_total": 192,
+        "geopolitical_total": 156,
         "source_counts": {
-          "reddit": 1,
-          "mastodon": 9,
+          "reddit": 0,
+          "mastodon": 10,
           "x": 2
         },
         "category_counts": {
-          "foreign_influence": 1,
-          "protest": 3,
+          "foreign_influence": 2,
+          "protest": 2,
           "eu_integration": 1,
-          "security": 3,
-          "government_crisis": 2,
+          "security": 1,
+          "government_crisis": 4,
           "corruption_rule_of_law": 1,
           "ethnic_tension": 1
         },
@@ -48,7 +48,7 @@
           "bosnia": 1,
           "Szerbia": 2
         },
-        "main_topic": "protest",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -119,40 +119,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Smenjeni načelnik PU Valjevo, Vladimir Jerinić",
-            "text": "\"Vladimir Jerinić više nije načelnik Policijske uprave Valjevo. Prema informacijama do kojih je došla Nova.rs, Jerinić je napustio rukovodeće mesto u Valjevu i premešten je u Sektor za informaciono-komunikacione tehnologije (SKIT) Ministarstva unutrašnjih poslova, gde će nastaviti rad. Njegov odlazak usledio je nakon ponovljenih zahteva studenata i građana d",
-            "url": "https://www.reddit.com/r/serbia/comments/1xq8hwo/smenjeni_načelnik_pu_valjevo_vladimir_jerinić/",
-            "source": "reddit",
-            "tag": "serbia",
-            "seen_date": "2026-11-07T15:06:03+00:00",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 24,
-            "quality_score": 27,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
             "title": "",
             "text": "\"As the political environment in Serbia evolves, one thing remains certain, it has seen mass # protest transform itself into a potential government. That will be watched uncomfortably by quite a few Western states, not least France, with its continuing country-wide street protests, and the UK, where over 4,000 pro-Palestine supporters have been arrested in r",
             "url": "https://mastodon.me.uk/@PoliceStateUK/117570582145154206",
@@ -182,44 +148,62 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "The Novi Sad station whose canopy killed 16 people was rebuilt by two Chinese state-owned firms. The corruption the students protested and the economic model Vučić defended were th",
-            "text": "The Novi Sad station whose canopy killed 16 people was rebuilt by two Chinese state-owned firms. The corruption the students protested and the economic model Vučić defended were the same building.",
-            "url": "https://x.com/i/web/status/2119163227301163493",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-07T20:21:00.000Z",
+            "title": "",
+            "text": "Arrests and investigations as Serbia begins the post-election clean-up. The landslide victory of the Students’ List in Serbia’s general election seems to have removed a blockage in the justice system: Cases that were long stalled are now suddenly moving forward. https:// mediafaro.org/article/20261105 -arrests-and-investigations-as-serbia-begins-the-post-ele",
+            "url": "https://mastodon.mediafaro.org/@mf_analysis/117569120113176262",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 06 Nov 2026 10:53:24 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 4
+              "Szerbia": 5
             },
-            "event_category": "protest",
+            "event_category": "corruption_rule_of_law",
             "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
               {
                 "category": "corruption_rule_of_law",
                 "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
+            "geopolitical_score": 11,
+            "quality_score": 14,
+            "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Serbian anarchists: Student List “perfectly in line” with neoliberalism – 🏴 Anarchist Federation https://www. anarchistfederation.net/serbia n-anarchists-student-list-perfectly-in-line-with-neoliberalism/#/ 'The appointment of non-politicians to parliament is one of the main talking points of the Student List. There were over 160 candidates with PhDs on the ",
+            "url": "https://kolektiva.social/@pivic/117569216759832165",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 06 Nov 2026 11:17:58 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
             },
-            "quality": "x_api_filtered"
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 13,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -694,30 +678,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 18,
-        "level": "low",
+        "score": 24,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 3,
         "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 121,
-        "raw_engagement_total": 708,
-        "quality_total": 40,
-        "geopolitical_total": 35,
+        "raw_engagement_total": 999,
+        "quality_total": 50,
+        "geopolitical_total": 44,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 2
+          "x": 3
         },
         "category_counts": {
-          "security": 1,
-          "government_crisis": 1
+          "government_crisis": 2,
+          "security": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 2
+          "Észak-Macedónia": 3
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "BREAKING: Several NATO countries are also showing interest in joining the US-led military campaign against Iran, including: - Albania - North Macedonia - Lithuania - Latvia - Czech",
@@ -746,12 +730,12 @@
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 120,
-            "raw_engagement": 707,
+            "raw_engagement": 998,
             "metrics": {
-              "likes": 480,
-              "reposts": 132,
-              "replies": 80,
-              "quotes": 15
+              "likes": 674,
+              "reposts": 191,
+              "replies": 108,
+              "quotes": 25
             },
             "quality": "x_api_filtered"
           },
@@ -789,6 +773,41 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
+          },
+          {
+            "title": "The Social Democratic Union of Macedonia (SDSM) is calling on the prosecutor’s office to launch an investigation into Alta Bank’s entry into the Macedonian market. The party claims",
+            "text": "The Social Democratic Union of Macedonia (SDSM) is calling on the prosecutor’s office to launch an investigation into Alta Bank’s entry into the Macedonian market. The party claims that Prime Minister Hristijan Mickoski made the decision.",
+            "url": "https://x.com/i/web/status/2119213557136883729",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-07T23:40:59.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -799,83 +818,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 21,
-        "negative_hits": 17,
+        "mentions": 24,
+        "negative_hits": 21,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 79,
-        "raw_engagement_total": 79,
-        "quality_total": 616,
-        "geopolitical_total": 559,
+        "engagement_total": 12,
+        "raw_engagement_total": 12,
+        "quality_total": 693,
+        "geopolitical_total": 631,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 17,
-          "x": 4
+          "mastodon": 18,
+          "x": 6
         },
         "category_counts": {
-          "protest": 11,
+          "protest": 10,
           "government_crisis": 2,
-          "corruption_rule_of_law": 3,
-          "foreign_influence": 1,
-          "security": 4
+          "corruption_rule_of_law": 4,
+          "security": 7,
+          "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 14,
-          "albania": 3,
-          "Albánia": 4
+          "albania": 4,
+          "Albánia": 6
         },
         "main_topic": "protest",
         "top_posts": [
-          {
-            "title": "🇦🇱🇮🇷 Police in Albania used water cannons to disperse protesters in Tirana as anti-government demonstrations continued into a third week. The unrest has been fueled by anger over a",
-            "text": "🇦🇱🇮🇷 Police in Albania used water cannons to disperse protesters in Tirana as anti-government demonstrations continued into a third week. The unrest has been fueled by anger over alleged government corruption and poor education, putting Prime Minister Edi Rama under growing",
-            "url": "https://x.com/i/web/status/2119173228782342468",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-11-07T21:00:44.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 9
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 53,
-            "quality_score": 54,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Day 156 of anti-corruption protest in Tirana ;Day 21 of escalated tactics Protesta e studentëve,të rinjtë futen në Universitetin e Arteve, kërkojnë bojkot: Bashkohuni me ne! Machine translated: Student protest: young people enter the University of Arts and call for a boycott—\"Join us!\"\" While things aren't such that there's still an all-day livestream, there",
@@ -911,12 +880,51 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "",
+            "text": "🟡 CivilUnrest | 5/10 🇦🇱 Clashes between protesters and police in Tirana (Albania) Clashes broke out between protesters and police near the residence of Prime Minister Edi Rama in downtown Tirana (Albania). # OSINT # NewsGroup # Albania # Protests # Tirana",
+            "url": "https://social.vir.group/@analytics/117578083562189270",
+            "source": "mastodon",
+            "tag": "albania",
+            "seen_date": "Sun, 08 Nov 2026 00:52:55 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 9
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 3,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 45,
+            "quality_score": 48,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
             "title": "Police used water cannons to disperse masked protesters in Albania’s capital, Tirana, as anti-government demonstrations entered their third week. Anger over alleged government corr",
-            "text": "Police used water cannons to disperse masked protesters in Albania’s capital, Tirana, as anti-government demonstrations entered their third week. Anger over alleged government corruption and poor education has fuelled unrest, posing a major challenge to PM Edi Rama.",
-            "url": "https://x.com/i/web/status/2119168008853782660",
+            "text": "Police used water cannons to disperse masked protesters in Albania’s capital, Tirana, as anti-government demonstrations entered their third week. Anger over alleged government corruption and poor education has fuelled unrest, challenging PM Edi Rama.",
+            "url": "https://x.com/i/web/status/2119228819123106006",
             "source": "x",
             "tag": "Albánia",
-            "seen_date": "2026-11-07T20:40:00.000Z",
+            "seen_date": "2026-11-08T00:41:38.000Z",
             "matched_countries": [
               "Albánia"
             ],
@@ -945,13 +953,13 @@
             "quality_score": 45,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 63,
-            "raw_engagement": 63,
+            "engagement": 5,
+            "raw_engagement": 5,
             "metrics": {
-              "likes": 33,
-              "reposts": 24,
-              "replies": 2,
-              "quotes": 4
+              "likes": 5,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
             },
             "quality": "x_api_filtered"
           },
