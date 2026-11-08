@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08 05:50 UTC",
+  "updated_at": "2026-11-08 12:32 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,43 +12,42 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 11
+    "collected": 9
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 60,
+        "score": 54,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 5,
+        "mentions": 8,
+        "negative_hits": 3,
         "positive_hits": 2,
         "trusted_hits": 2,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 212,
-        "geopolitical_total": 175,
+        "engagement_total": 12,
+        "raw_engagement_total": 12,
+        "quality_total": 143,
+        "geopolitical_total": 117,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 10,
-          "x": 3
+          "mastodon": 7,
+          "x": 1
         },
         "category_counts": {
           "foreign_influence": 2,
-          "protest": 3,
+          "protest": 2,
           "eu_integration": 1,
           "security": 1,
-          "government_crisis": 4,
-          "corruption_rule_of_law": 1,
-          "ethnic_tension": 1
+          "ethnic_tension": 1,
+          "government_crisis": 1
         },
         "tag_counts": {
-          "serbia": 9,
+          "serbia": 6,
           "bosnia": 1,
-          "Szerbia": 3
+          "Montenegró": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "foreign_influence",
         "top_posts": [
           {
             "title": "",
@@ -148,63 +147,59 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Sixteen died in Novi Sad. Two years of protests. Then a student-led government took power in Belgrade. Abdelraheem Kehirawi on why it's a counter-revolution, not a colour revolutio",
-            "text": "Sixteen died in Novi Sad. Two years of protests. Then a student-led government took power in Belgrade. Abdelraheem Kehirawi on why it's a counter-revolution, not a colour revolution. New on Pambazuka 🎧",
-            "url": "https://x.com/i/web/status/2119288663863603301",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-08T04:39:26.000Z",
+            "title": "",
+            "text": "Agenzia Nova: Bosnia: governo Repubblica Srpska autorizza credito da 25,6 milioni di euro per societa' elettrica 06 nov 09:12 - (Agenzia Nova) - Il governo della Repubblica Srpska, entita' a maggioranza serba della Bosnia Erzegovina, ha autorizzato la... (Seb) Bosnia: The government of Republika Srpska authorizes a €25.6 million credit for an electricity com",
+            "url": "https://mastodon.ozioso.online/@ItalianNews/117568557244093401",
+            "source": "mastodon",
+            "tag": "bosnia",
+            "seen_date": "Fri, 06 Nov 2026 08:30:15 +0000",
             "matched_countries": [
+              "Bosznia-Hercegovina",
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 4
+              "Bosznia-Hercegovina": 6,
+              "Szerbia": 2
             },
-            "event_category": "protest",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
+            "geopolitical_score": 10,
+            "quality_score": 13,
+            "source_reliability": 3,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           },
           {
             "title": "",
-            "text": "Arrests and investigations as Serbia begins the post-election clean-up. The landslide victory of the Students’ List in Serbia’s general election seems to have removed a blockage in the justice system: Cases that were long stalled are now suddenly moving forward. https:// mediafaro.org/article/20261105 -arrests-and-investigations-as-serbia-begins-the-post-ele",
-            "url": "https://mastodon.mediafaro.org/@mf_analysis/117569120113176262",
+            "text": "Modern-day slavery: Exploitation in Serbia | Focus on Europe https://www. youtube.com/watch?v=hQp-P3DTd4M # Serbia # China # HumanTrafficking # Europe",
+            "url": "https://eldritch.cafe/@ml/117577401516080828",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Fri, 06 Nov 2026 10:53:24 +0000",
+            "seen_date": "Sat, 07 Nov 2026 21:59:28 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5
+              "Szerbia": 1
             },
-            "event_category": "corruption_rule_of_law",
+            "event_category": "foreign_influence",
             "event_categories": [
               {
-                "category": "corruption_rule_of_law",
+                "category": "foreign_influence",
                 "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 11,
-            "quality_score": 14,
+            "geopolitical_score": 8,
+            "quality_score": 11,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -436,17 +431,17 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 10,
+        "score": 12,
         "level": "low",
         "scale": "0-60 risk index",
         "mentions": 2,
         "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 26,
-        "geopolitical_total": 22,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 51,
+        "geopolitical_total": 47,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
@@ -454,7 +449,7 @@
         },
         "category_counts": {
           "eu_integration": 1,
-          "protest": 1
+          "security": 1
         },
         "tag_counts": {
           "kosovo": 1,
@@ -462,6 +457,51 @@
         },
         "main_topic": "eu_integration",
         "top_posts": [
+          {
+            "title": "\"She begged for her life but police sent her home. Now Kosovo is in revolt Arlinda Zekaj’s death prompts mass protests in Pristina demanding state action over femicide Thousands pr",
+            "text": "\"She begged for her life but police sent her home. Now Kosovo is in revolt Arlinda Zekaj’s death prompts mass protests in Pristina demanding state action over femicide Thousands protest the killing of Arlinda Zekaj, whose death prompted public outrage and renewed calls for",
+            "url": "https://x.com/i/web/status/2119386920643891332",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-08T11:09:52.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 36,
+            "quality_score": 37,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 2,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Agenzia Nova: Kosovo: capo negoziatore con Ue, persi 43,8 milioni di euro del Piano di crescita 02 nov 14:28 - (Agenzia Nova) - Il Kosovo ha perso 43,8 milioni di euro dei fondi previsti dal Piano di crescita dell'Unione europea per non... (Alt) Kosovo: chief negotiator with EU, €43.8 million of Growth Plan lost Nov 2, 14:28 – (Agenzia Nova) – The Kosovo has",
@@ -495,41 +535,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Drilon Cakoli, Erona Cakoli’s brother, spoke at a protest in Pristina calling for justice for women who have been killed and accountability from institutions. He said the family is",
-            "text": "Drilon Cakoli, Erona Cakoli’s brother, spoke at a protest in Pristina calling for justice for women who have been killed and accountability from institutions. He said the family is not satisfied with the 24-year prison sentence for his sister’s murder.",
-            "url": "https://x.com/i/web/status/2119175472844026332",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-11-07T21:09:39.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 12,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -691,53 +696,53 @@
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 10,
-        "geopolitical_total": 9,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 19,
+        "geopolitical_total": 18,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
           "x": 1
         },
         "category_counts": {
-          "government_crisis": 1
+          "security": 1
         },
         "tag_counts": {
           "Észak-Macedónia": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
-            "title": "The Social Democratic Union of Macedonia (SDSM) is calling on the prosecutor’s office to launch an investigation into Alta Bank’s entry into the Macedonian market. The party claims",
-            "text": "The Social Democratic Union of Macedonia (SDSM) is calling on the prosecutor’s office to launch an investigation into Alta Bank’s entry into the Macedonian market. The party claims that Prime Minister Hristijan Mickoski made the decision.",
-            "url": "https://x.com/i/web/status/2119213557136883729",
+            "title": "Remembrance Sunday is an opportunity to honour those who serve to defend our freedoms, values, and way of life. Ambassador Maya Sivagnanam and Defence Attaché Lt Col Denise McMahon",
+            "text": "Remembrance Sunday is an opportunity to honour those who serve to defend our freedoms, values, and way of life. Ambassador Maya Sivagnanam and Defence Attaché Lt Col Denise McMahon took part in a Service of Remembrance at the British Military Cemetery in Skopje to pay tribute",
+            "url": "https://x.com/i/web/status/2119396301439635476",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-07T23:40:59.000Z",
+            "seen_date": "2026-11-08T11:47:09.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5
+              "Észak-Macedónia": 4
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 1,
+                "category": "security",
+                "hits": 2,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
+            "geopolitical_score": 18,
+            "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 1,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -752,30 +757,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 23,
-        "negative_hits": 20,
-        "positive_hits": 1,
+        "mentions": 21,
+        "negative_hits": 15,
+        "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 613,
-        "geopolitical_total": 552,
+        "engagement_total": 86,
+        "raw_engagement_total": 86,
+        "quality_total": 581,
+        "geopolitical_total": 524,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 18,
-          "x": 5
+          "mastodon": 17,
+          "x": 4
         },
         "category_counts": {
-          "protest": 12,
-          "government_crisis": 2,
-          "corruption_rule_of_law": 4,
-          "security": 4,
+          "protest": 9,
+          "government_crisis": 3,
+          "corruption_rule_of_law": 3,
+          "security": 5,
           "foreign_influence": 1
         },
         "tag_counts": {
-          "balkans": 14,
+          "balkans": 13,
           "albania": 4,
-          "Albánia": 5
+          "Koszovó": 1,
+          "Észak-Macedónia": 1,
+          "Albánia": 2
         },
         "main_topic": "protest",
         "top_posts": [
@@ -936,43 +943,44 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "🔴LIVE | Përshkallëzohet protesta para Ministrisë së Arsimit Machind translated: Protest escalates in front of the Ministry of Education Cops are using tear gas, water cannons, and more again on the protestors outside the Ministry of Education. Protestors are hitting back by throwing pieces of sidewalk pavers. There's a larger group of protestors on the boule",
-            "url": "https://eldritch.cafe/@ml/117575724780214650",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sat, 07 Nov 2026 14:53:03 +0000",
+            "title": "🇦🇱 Police use water cannons as student protests continue in Tirana Student demonstrations continued in Albania’s capital, Tirana, as police used water cannons against protesters. T",
+            "text": "🇦🇱 Police use water cannons as student protests continue in Tirana Student demonstrations continued in Albania’s capital, Tirana, as police used water cannons against protesters. The protests come amid ongoing student mobilisation, with tensions reported between demonstrators",
+            "url": "https://x.com/i/web/status/2119391985815462039",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-11-08T11:30:00.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 1
+              "Albánia": 5
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
               },
               {
                 "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
+                "hits": 3,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 31,
-            "source_reliability": 3,
+            "geopolitical_score": 36,
+            "quality_score": 37,
+            "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
