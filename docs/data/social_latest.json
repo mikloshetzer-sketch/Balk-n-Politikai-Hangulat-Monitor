@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10 14:03 UTC",
+  "updated_at": "2026-11-10 14:47 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 11
+    "collected": 10
   },
   "countries": [
     {
@@ -21,29 +21,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 2,
-        "positive_hits": 3,
+        "mentions": 11,
+        "negative_hits": 4,
+        "positive_hits": 2,
         "trusted_hits": 0,
         "engagement_total": 1,
         "raw_engagement_total": 1,
-        "quality_total": 219,
-        "geopolitical_total": 193,
+        "quality_total": 233,
+        "geopolitical_total": 206,
         "source_counts": {
           "reddit": 0,
           "mastodon": 8,
-          "x": 2
+          "x": 3
         },
         "category_counts": {
           "security": 4,
           "foreign_influence": 2,
           "government_crisis": 3,
-          "ethnic_tension": 1
+          "ethnic_tension": 1,
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "serbia": 7,
           "bosnia": 1,
-          "Szerbia": 2
+          "Szerbia": 3
         },
         "main_topic": "security",
         "top_posts": [
@@ -92,12 +93,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Partizan's Man City deal under the microscope 🔎 Belgrade prosecutors order an anti-corruption probe into Filip Stevanović's 2021 transfer — a complaint filed back then was never ac",
-            "text": "Partizan's Man City deal under the microscope 🔎 Belgrade prosecutors order an anti-corruption probe into Filip Stevanović's 2021 transfer — a complaint filed back then was never acted on by police. Serbia 🇷🇸 Partizan ManCity Yugoslavia",
-            "url": "https://x.com/i/web/status/2120149194266775888",
+            "title": "India will need to the same after Autocrat Modi is removed! Now Serbia is entering an uncertain political transition. Authorities are investigating alleged election fraud, corrupti",
+            "text": "India will need to the same after Autocrat Modi is removed! Now Serbia is entering an uncertain political transition. Authorities are investigating alleged election fraud, corruption and violence against protesters. Officials and police officers have been detained, while Vučić",
+            "url": "https://x.com/i/web/status/2120163904382796192",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-11-10T13:38:53.000Z",
+            "seen_date": "2026-11-10T14:37:20.000Z",
             "matched_countries": [
               "Szerbia"
             ],
@@ -115,18 +116,23 @@
                 "category": "corruption_rule_of_law",
                 "hits": 2,
                 "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 29,
-            "quality_score": 30,
+            "geopolitical_score": 36,
+            "quality_score": 37,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
               "likes": 0,
               "reposts": 0,
-              "replies": 1,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -434,28 +440,28 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 24,
-        "level": "medium",
+        "score": 9,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 2,
+        "mentions": 2,
+        "negative_hits": 1,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 55,
-        "geopolitical_total": 51,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 32,
+        "geopolitical_total": 30,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 4
+          "x": 2
         },
         "category_counts": {
-          "government_crisis": 3,
+          "government_crisis": 1,
           "eu_integration": 1
         },
         "tag_counts": {
-          "Koszovó": 4
+          "Koszovó": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -524,80 +530,10 @@
             "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 3,
+            "raw_engagement": 3,
             "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Punishing war criminals is not enough unless victims of sexual violence also receive treatment and rehabilitation, Prime Minister Albin Kurti has said.",
-            "text": "Punishing war criminals is not enough unless victims of sexual violence also receive treatment and rehabilitation, Prime Minister Albin Kurti has said.",
-            "url": "https://x.com/i/web/status/2120131608946598178",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-11-10T12:29:00.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Kurti Meets Armenian Prime Minister Pashinyan in Paris, Armenian Public Radio Reports Details Kosovo Armenia AlbinKurti NikolPashinyan",
-            "text": "Kurti Meets Armenian Prime Minister Pashinyan in Paris, Armenian Public Radio Reports Details Kosovo Armenia AlbinKurti NikolPashinyan",
-            "url": "https://x.com/i/web/status/2120138406256902543",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-11-10T12:56:00.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
+              "likes": 3,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -617,8 +553,8 @@
         "negative_hits": 0,
         "positive_hits": 3,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
         "quality_total": 58,
         "geopolitical_total": 46,
         "source_counts": {
@@ -719,10 +655,10 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 0,
+              "likes": 1,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -794,21 +730,21 @@
         "scale": "0-60 risk index",
         "mentions": 27,
         "negative_hits": 22,
-        "positive_hits": 1,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 740,
-        "geopolitical_total": 667,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 749,
+        "geopolitical_total": 676,
         "source_counts": {
           "reddit": 0,
           "mastodon": 23,
           "x": 4
         },
         "category_counts": {
-          "protest": 15,
+          "protest": 14,
           "government_crisis": 6,
-          "corruption_rule_of_law": 1,
+          "corruption_rule_of_law": 2,
           "security": 4,
           "foreign_influence": 1
         },
