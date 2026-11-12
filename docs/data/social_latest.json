@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12 14:22 UTC",
+  "updated_at": "2026-11-12 15:04 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 15
+    "collected": 18
   },
   "countries": [
     {
@@ -21,42 +21,88 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
+        "mentions": 9,
         "negative_hits": 4,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 150,
-        "geopolitical_total": 130,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 186,
+        "geopolitical_total": 165,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
           "corruption_rule_of_law": 1,
-          "protest": 3,
-          "government_crisis": 1,
+          "protest": 2,
+          "government_crisis": 2,
           "ethnic_tension": 1,
-          "foreign_influence": 1,
-          "security": 1
+          "security": 2,
+          "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 3,
           "bosnia": 1,
           "Szerbia": 2,
+          "Koszovó": 1,
           "Montenegró": 1
         },
         "main_topic": "protest",
         "top_posts": [
           {
+            "title": "Vladimir Vasic Subotica born 1983.Attacked a student when leaving Pionirski Park the courtyard of the Serbian Parliament! Of course the did not arrested him because the was withdra",
+            "text": "Vladimir Vasic Subotica born 1983.Attacked a student when leaving Pionirski Park the courtyard of the Serbian Parliament! Of course the did not arrested him because the was withdrawing together with hooligans and criminals after was defeated",
+            "url": "https://x.com/i/web/status/2120890106970354116",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-12T14:43:00.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "Russia Will Seek to Preserve Its Influence in Serbia, Analyst Says as Brussels Watches Student-Led Political Transition Serbia EuropeanUnion StudentsList StrahinjaSubotic EUIntegra",
             "text": "Russia Will Seek to Preserve Its Influence in Serbia, Analyst Says as Brussels Watches Student-Led Political Transition Serbia EuropeanUnion StudentsList StrahinjaSubotic EUIntegration Russia China Kosovo BelgradePrishtinaDialogue WesternBalkans Enlargement",
             "url": "https://x.com/i/web/status/2120876407270101081",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Koszovó",
             "seen_date": "2026-11-12T13:48:34.000Z",
             "matched_countries": [
               "Szerbia",
@@ -185,48 +231,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Đukanović: The Question Is Whether Serbia Will Have a Serbian Government or a Government Representing Serbs Across the Region MiloDukanovic Serbia Montenegro AleksandarVucic Studen",
-            "text": "Đukanović: The Question Is Whether Serbia Will Have a Serbian Government or a Government Representing Serbs Across the Region MiloDukanovic Serbia Montenegro AleksandarVucic StudentskaLista WesternBalkans EuropeanUnion Russia RegionalStability BalkanPolitics",
-            "url": "https://x.com/i/web/status/2120837715197362185",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-11-12T11:14:49.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Szerbia": 6,
-              "Montenegró": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -318,8 +322,7 @@
         },
         "tag_counts": {
           "kosovo": 1,
-          "Szerbia": 1,
-          "Koszovó": 1
+          "Koszovó": 2
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -362,7 +365,7 @@
             "text": "Russia Will Seek to Preserve Its Influence in Serbia, Analyst Says as Brussels Watches Student-Led Political Transition Serbia EuropeanUnion StudentsList StrahinjaSubotic EUIntegration Russia China Kosovo BelgradePrishtinaDialogue WesternBalkans Enlargement",
             "url": "https://x.com/i/web/status/2120876407270101081",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Koszovó",
             "seen_date": "2026-11-12T13:48:34.000Z",
             "matched_countries": [
               "Szerbia",
@@ -783,29 +786,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 25,
-        "negative_hits": 16,
+        "mentions": 26,
+        "negative_hits": 17,
         "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 659,
-        "geopolitical_total": 596,
+        "trusted_hits": 1,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 681,
+        "geopolitical_total": 615,
         "source_counts": {
           "reddit": 0,
           "mastodon": 19,
-          "x": 6
+          "x": 7
         },
         "category_counts": {
           "corruption_rule_of_law": 3,
           "protest": 8,
-          "government_crisis": 11,
-          "security": 2,
+          "government_crisis": 10,
+          "security": 4,
           "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 15,
           "albania": 4,
+          "Szerbia": 1,
           "Albánia": 6
         },
         "main_topic": "government_crisis",
