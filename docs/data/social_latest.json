@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12 23:31 UTC",
+  "updated_at": "2026-11-13 04:17 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 14
+    "collected": 16
   },
   "countries": [
     {
@@ -21,32 +21,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
+        "mentions": 9,
         "negative_hits": 3,
-        "positive_hits": 2,
+        "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 139,
-        "geopolitical_total": 119,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
+        "quality_total": 137,
+        "geopolitical_total": 118,
         "source_counts": {
           "reddit": 1,
           "mastodon": 5,
-          "x": 4
+          "x": 3
         },
         "category_counts": {
           "corruption_rule_of_law": 1,
-          "government_crisis": 4,
+          "government_crisis": 2,
           "protest": 2,
           "ethnic_tension": 1,
-          "security": 1,
-          "eu_integration": 1
+          "foreign_influence": 1,
+          "security": 2
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 4,
           "bosnia": 1,
-          "Szerbia": 4
+          "Szerbia": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -79,6 +79,41 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "🇷🇸🇷🇺 Serbia’s Student List representatives (professors) held their first meeting with Russia’s ambassador (middle). According to the Student List’s program, relations with Russia w",
+            "text": "🇷🇸🇷🇺 Serbia’s Student List representatives (professors) held their first meeting with Russia’s ambassador (middle). According to the Student List’s program, relations with Russia will continue as under Vucic, including no sanctions on Russia despite EU conditions.",
+            "url": "https://x.com/i/web/status/2121082849927553030",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-13T03:28:53.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 5,
+            "raw_engagement": 5,
+            "metrics": {
+              "likes": 5,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -173,37 +208,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Bosnia: governo Repubblica Srpska autorizza credito da 25,6 milioni di euro per societa' elettrica 06 nov 09:12 - (Agenzia Nova) - Il governo della Repubblica Srpska, entita' a maggioranza serba della Bosnia Erzegovina, ha autorizzato la... (Seb) Bosnia: The government of Republika Srpska authorizes a €25.6 million credit for an electricity com",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117568557244093401",
-            "source": "mastodon",
-            "tag": "bosnia",
-            "seen_date": "Fri, 06 Nov 2026 08:30:15 +0000",
-            "matched_countries": [
-              "Bosznia-Hercegovina",
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 6,
-              "Szerbia": 2
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 13,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -211,17 +215,17 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 10,
+        "score": 15,
         "level": "low",
         "scale": "0-60 risk index",
         "mentions": 2,
         "negative_hits": 1,
-        "positive_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 24,
-        "geopolitical_total": 20,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 25,
+        "geopolitical_total": 21,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
@@ -229,11 +233,11 @@
         },
         "category_counts": {
           "ethnic_tension": 1,
-          "eu_integration": 1
+          "corruption_rule_of_law": 1
         },
         "tag_counts": {
           "bosnia": 1,
-          "Szerbia": 1
+          "Észak-Macedónia": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -269,38 +273,36 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "🇧🇦 Bosnia’s elections changed little: 42% turnout, Dodik’s continued influence and a persistent Dayton deadlock. Belgrade remains influential as EU accession stalls. IBNA WesternBa",
-            "text": "🇧🇦 Bosnia’s elections changed little: 42% turnout, Dodik’s continued influence and a persistent Dayton deadlock. Belgrade remains influential as EU accession stalls. IBNA WesternBalkans",
-            "url": "https://x.com/i/web/status/2121005842610978939",
+            "title": "War on jihad An Egyptian court has added the Bosnian organization AKOS to its terrorist list — for five years. The Sarajevo Association of Culture, Education and Sport turned out t",
+            "text": "War on jihad An Egyptian court has added the Bosnian organization AKOS to its terrorist list — for five years. The Sarajevo Association of Culture, Education and Sport turned out to be among 35 European structures that Cairo links to the Muslim Brotherhood. The list includes as",
+            "url": "https://x.com/i/web/status/2120939662692749764",
             "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-12T22:22:53.000Z",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-12T17:59:55.000Z",
             "matched_countries": [
-              "Bosznia-Hercegovina",
-              "Szerbia"
+              "Bosznia-Hercegovina"
             ],
             "country_confidence": {
-              "Bosznia-Hercegovina": 5,
-              "Szerbia": 4
+              "Bosznia-Hercegovina": 5
             },
-            "event_category": "eu_integration",
+            "event_category": "corruption_rule_of_law",
             "event_categories": [
               {
-                "category": "eu_integration",
+                "category": "corruption_rule_of_law",
                 "hits": 1,
-                "weight": 6
+                "weight": 8
               }
             ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
+            "geopolitical_score": 11,
+            "quality_score": 12,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
               "likes": 0,
               "reposts": 0,
-              "replies": 1,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -311,29 +313,30 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 17,
-        "level": "low",
+        "score": 33,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 4,
         "negative_hits": 1,
-        "positive_hits": 2,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 85,
-        "geopolitical_total": 79,
+        "positive_hits": 1,
+        "trusted_hits": 2,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 115,
+        "geopolitical_total": 104,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 1
+          "x": 3
         },
         "category_counts": {
-          "ethnic_tension": 1,
-          "government_crisis": 1
+          "ethnic_tension": 2,
+          "government_crisis": 1,
+          "security": 1
         },
         "tag_counts": {
           "kosovo": 1,
-          "Koszovó": 1
+          "Koszovó": 3
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
@@ -372,12 +375,87 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Kosovo’s acting prime minister, Albin Kurti, met with the Secretary General of the Council of Europe, Alain Berset, during the European Political Community (EPC) summit. Kosovo’s m",
-            "text": "Kosovo’s acting prime minister, Albin Kurti, met with the Secretary General of the Council of Europe, Alain Berset, during the European Political Community (EPC) summit. Kosovo’s membership in the Council of Europe was the focus of their meeting.",
-            "url": "https://x.com/i/web/status/2120980604120342814",
+            "title": "On the sidelines of the ninth European Political Community summit in Dublin, Prime Minister Albin Kurti met with NATO Secretary General Mark Rutte.",
+            "text": "On the sidelines of the ninth European Political Community summit in Dublin, Prime Minister Albin Kurti met with NATO Secretary General Mark Rutte.",
+            "url": "https://x.com/i/web/status/2121037020210290940",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-11-12T20:42:36.000Z",
+            "seen_date": "2026-11-13T00:26:47.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 2,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Aniltho Global brings you an exquisite Hand Painted Pattachitra Kurti that turns classic ethnic wear into living art. Delicate strokes, richcolors and breathable fabric come togeth",
+            "text": "Aniltho Global brings you an exquisite Hand Painted Pattachitra Kurti that turns classic ethnic wear into living art. Delicate strokes, richcolors and breathable fabric come together for unmatched grace. Wear a timeless tradition painted with pure passion.",
+            "url": "https://x.com/i/web/status/2121073415511773191",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-13T02:51:24.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Armenian Prime Minister Nikol Pashinyan met Kosovo Prime Minister Albin Kurti in Paris. The flags of both countries were displayed on the meeting table, while in a social media pos",
+            "text": "Armenian Prime Minister Nikol Pashinyan met Kosovo Prime Minister Albin Kurti in Paris. The flags of both countries were displayed on the meeting table, while in a social media post Pashinyan described Kurti as the “prime minister of Kosovo.”",
+            "url": "https://x.com/i/web/status/2121085310851297408",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-13T03:38:40.000Z",
             "matched_countries": [
               "Koszovó"
             ],
@@ -390,15 +468,10 @@
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
               }
             ],
-            "geopolitical_score": 16,
-            "quality_score": 17,
+            "geopolitical_score": 9,
+            "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -417,73 +490,33 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 18,
+        "score": 10,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 1,
-        "positive_hits": 2,
+        "mentions": 3,
+        "negative_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 15,
-        "raw_engagement_total": 15,
-        "quality_total": 62,
-        "geopolitical_total": 51,
+        "engagement_total": 17,
+        "raw_engagement_total": 17,
+        "quality_total": 42,
+        "geopolitical_total": 32,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "eu_integration": 2,
-          "security": 2
+          "security": 1
         },
         "tag_counts": {
           "balkans": 1,
           "montenegro": 1,
-          "Montenegró": 2
+          "Montenegró": 1
         },
         "main_topic": "eu_integration",
         "top_posts": [
-          {
-            "title": "Croatia warns Montenegro it cannot complete EU accession talks as planned unless Podgorica accepts Zagreb’s land-border proposal, escalating pressure over unresolved bilateral disp",
-            "text": "Croatia warns Montenegro it cannot complete EU accession talks as planned unless Podgorica accepts Zagreb’s land-border proposal, escalating pressure over unresolved bilateral disputes",
-            "url": "https://x.com/i/web/status/2120901937818177782",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-11-12T15:30:01.000Z",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "🇲🇪 Montenegro, the Adriatic pearl, belongs in the 🇪🇺 EU! ⛰️🌊 You're NATO-strong and negotiating at full speed: make 2028 the year you sign. 🖊️🚀 Welcome home, Podgorica! 🤝 EU50",
             "text": "🇲🇪 Montenegro, the Adriatic pearl, belongs in the 🇪🇺 EU! ⛰️🌊 You're NATO-strong and negotiating at full speed: make 2028 the year you sign. 🖊️🚀 Welcome home, Podgorica! 🤝 EU50",
@@ -509,10 +542,10 @@
             "quality_score": 17,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 14,
-            "raw_engagement": 14,
+            "engagement": 17,
+            "raw_engagement": 17,
             "metrics": {
-              "likes": 13,
+              "likes": 16,
               "reposts": 0,
               "replies": 1,
               "quotes": 0
@@ -583,32 +616,32 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 28,
+        "score": 20,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 2,
-        "positive_hits": 2,
+        "mentions": 3,
+        "negative_hits": 1,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 55,
-        "geopolitical_total": 47,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 41,
+        "geopolitical_total": 34,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
           "government_crisis": 1,
           "protest": 1,
-          "security": 2
+          "security": 1
         },
         "tag_counts": {
           "serbia": 1,
-          "Észak-Macedónia": 3
+          "Észak-Macedónia": 2
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -640,41 +673,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "When someone faces violence, every hour matters. In Skopje,🇲🇰 police, prosecutors, judges and social workers joined 🇬🇷 experts to practice spotting risks earlier and acting faster.",
-            "text": "When someone faces violence, every hour matters. In Skopje,🇲🇰 police, prosecutors, judges and social workers joined 🇬🇷 experts to practice spotting risks earlier and acting faster. The goal: better teamwork, stronger protection. Organized by with 🇬🇷 support.",
-            "url": "https://x.com/i/web/status/2120899406798971072",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-12T15:19:57.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 1,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "North Macedonia literally changed its name for Europe. 🇲🇰✍️ Fehlinger's call: that courage deserves a reward. Open the accession talks and welcome Skopje into the EU family. 🇪🇺🤝🚀 F",
@@ -755,29 +753,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 21,
-        "negative_hits": 16,
+        "mentions": 23,
+        "negative_hits": 15,
         "positive_hits": 1,
-        "trusted_hits": 4,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 639,
-        "geopolitical_total": 573,
+        "trusted_hits": 7,
+        "engagement_total": 8,
+        "raw_engagement_total": 8,
+        "quality_total": 687,
+        "geopolitical_total": 610,
         "source_counts": {
           "reddit": 0,
           "mastodon": 17,
-          "x": 4
+          "x": 6
         },
         "category_counts": {
           "corruption_rule_of_law": 4,
-          "security": 7,
+          "security": 9,
           "protest": 6,
           "government_crisis": 4
         },
         "tag_counts": {
           "balkans": 15,
           "albania": 2,
-          "Albánia": 4
+          "Albánia": 6
         },
         "main_topic": "security",
         "top_posts": [
