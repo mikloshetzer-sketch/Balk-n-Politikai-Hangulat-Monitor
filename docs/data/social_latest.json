@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14 06:05 UTC",
+  "updated_at": "2026-11-14 12:47 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,42 +12,41 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 6
+    "collected": 14
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 47,
+        "score": 44,
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 5,
         "negative_hits": 3,
         "positive_hits": 1,
-        "trusted_hits": 3,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 143,
-        "geopolitical_total": 123,
+        "trusted_hits": 2,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 133,
+        "geopolitical_total": 117,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
-          "x": 1
+          "mastodon": 3,
+          "x": 2
         },
         "category_counts": {
           "corruption_rule_of_law": 1,
-          "security": 1,
-          "government_crisis": 1,
+          "security": 2,
           "protest": 1,
-          "ethnic_tension": 1
+          "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 2,
+          "serbia": 1,
           "kosovo": 1,
-          "Koszovó": 1
+          "Szerbia": 2
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -89,40 +88,39 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Kosovo* ethnically cleansed 100,000+ Serbs, Roma and Jews from the NATO occupied Serbian province in the immediate aftermath of the war in 1999. Both Kosovo and Israel have a lot m",
-            "text": "Kosovo* ethnically cleansed 100,000+ Serbs, Roma and Jews from the NATO occupied Serbian province in the immediate aftermath of the war in 1999. Both Kosovo and Israel have a lot more in common than they think in that both are the end product of Anglo-American imperialism.",
-            "url": "https://x.com/i/web/status/2121397836226949247",
+            "title": "Wanda Maximoff a Serbian, protesting NATO in her first appearance. Seems about right.",
+            "text": "Wanda Maximoff a Serbian, protesting NATO in her first appearance. Seems about right.",
+            "url": "https://x.com/i/web/status/2121567220211798362",
             "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-11-14T00:20:32.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-14T11:33:36.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
+              "Szerbia": 2
             },
-            "event_category": "ethnic_tension",
+            "event_category": "security",
             "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
               {
                 "category": "security",
                 "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 26,
-            "quality_score": 30,
+            "geopolitical_score": 24,
+            "quality_score": 28,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 3,
-            "raw_engagement": 3,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 3,
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -161,37 +159,6 @@
           },
           {
             "title": "",
-            "text": "North Macedonia Opposition Accuses Govt Over Subsidiary of Failed Serbian Bank https:// balkaninsight.com/2026/11/12/n orth-macedonia-opposition-accuses-govt-over-subsidiary-of-failed-serbian-bank/bi/",
-            "url": "https://balkaninsight.com/2026/11/12/north-macedonia-opposition-accuses-govt-over-subsidiary-of-failed-serbian-bank/bi/",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Thu, 12 Nov 2026 11:53:24 +0000",
-            "matched_countries": [
-              "Észak-Macedónia",
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Szerbia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 18,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "Serbia’s New Government Explained https://www. youtube.com/watch?v=imIOSBdwSwo # Serbia # Corruption # Balkans # Europe # Elections",
             "url": "https://eldritch.cafe/@ml/117597331940751841",
             "source": "mastodon",
@@ -218,6 +185,41 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "From university blockades to a historic parliamentary majority, Serbia's students have ended Aleksandar Vučić's nearly 15-year grip on power. The Student List won 140 of 250 seats ",
+            "text": "From university blockades to a historic parliamentary majority, Serbia's students have ended Aleksandar Vučić's nearly 15-year grip on power. The Student List won 140 of 250 seats with 53.01% of the vote. Igor Besermenji reports from the movement that changed Serbia for NWS.",
+            "url": "https://x.com/i/web/status/2121561391874330636",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-14T11:10:27.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -225,57 +227,92 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 0,
+        "score": 9,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 0,
-        "negative_hits": 0,
+        "mentions": 1,
+        "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 0,
-        "geopolitical_total": 0,
+        "quality_total": 10,
+        "geopolitical_total": 11,
         "source_counts": {
-          "reddit": 0,
+          "reddit": 1,
           "mastodon": 0,
           "x": 0
         },
-        "category_counts": {},
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "category_counts": {
+          "protest": 1
+        },
+        "tag_counts": {
+          "serbia": 1
+        },
+        "main_topic": "protest",
+        "top_posts": [
+          {
+            "title": "Samo mali podsetnik da se ne zaborave ni oni koji su obustavljali javni prevoz u danima protesta",
+            "text": "Sigurno se sećate, pred svaki protest, magično se pojave kvarovi na vozovima, autobusima, stignu prijave o postavljenim bombama itd...smejali su nam se u facu kao da smo glupi i retardirani. Sećam se jednom da se železnica Srbije nije ni udostojila da odgovori zašto su otkazani vozovi, valjda nisu više mogli ni da smišljaju razloge. U isto vreme, za okupljan",
+            "url": "https://www.reddit.com/r/serbia/comments/1xw0h9u/samo_mali_podsetnik_da_se_ne_zaborave_ni_oni_koji/",
+            "source": "reddit",
+            "tag": "serbia",
+            "seen_date": "2026-11-14T11:45:54+00:00",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 10,
+            "source_reliability": 1,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          }
+        ]
       }
     },
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 26,
-        "level": "medium",
+        "score": 43,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
-        "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 101,
-        "geopolitical_total": 90,
+        "mentions": 5,
+        "negative_hits": 2,
+        "positive_hits": 2,
+        "trusted_hits": 4,
+        "engagement_total": 63,
+        "raw_engagement_total": 63,
+        "quality_total": 163,
+        "geopolitical_total": 144,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 1
+          "x": 3
         },
         "category_counts": {
           "corruption_rule_of_law": 1,
           "ethnic_tension": 1,
-          "government_crisis": 1
+          "protest": 1,
+          "security": 2
         },
         "tag_counts": {
           "kosovo": 2,
-          "Koszovó": 1
+          "Koszovó": 3
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -312,6 +349,76 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "🇽🇰 Kosovo, 4,000 KFOR troops guard your streets, but a seat at the table is still missing. 🪑 Pristina has built a democracy and an army; now it deserves Article 5. 🛡️ Time for Koso",
+            "text": "🇽🇰 Kosovo, 4,000 KFOR troops guard your streets, but a seat at the table is still missing. 🪑 Pristina has built a democracy and an army; now it deserves Article 5. 🛡️ Time for Kosovo to join NATO! 🤝 Should Kosovo join NATO? 🇪🇺 NATO",
+            "url": "https://x.com/i/web/status/2121534783683543122",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-14T09:24:43.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 31,
+            "quality_score": 35,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 45,
+            "raw_engagement": 45,
+            "metrics": {
+              "likes": 35,
+              "reposts": 0,
+              "replies": 10,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "The Commander of the MSU, Colonel Gianfranco Di Fiore, together with Carabinieri personnel from the CIMIC team of the NATO-led KFOR mission, visited the Pediatric Oncology Departme",
+            "text": "The Commander of the MSU, Colonel Gianfranco Di Fiore, together with Carabinieri personnel from the CIMIC team of the NATO-led KFOR mission, visited the Pediatric Oncology Department of the University Clinical Center of Kosovo in Pristina. KFOR NATO ProudPurposeProgress",
+            "url": "https://x.com/i/web/status/2121537181533470944",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-14T09:34:14.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 23,
+            "quality_score": 27,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 18,
+            "raw_engagement": 18,
+            "metrics": {
+              "likes": 15,
+              "reposts": 3,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "EU, UK ‘Concerned’ as Kosovo Moves Against Hague Court’s Powers Again https:// balkaninsight.com/2026/11/13/e u-uk-concerned-as-kosovo-moves-against-hague-courts-powers-again/btj/",
             "url": "https://balkaninsight.com/2026/11/13/eu-uk-concerned-as-kosovo-moves-against-hague-courts-powers-again/btj/",
@@ -341,29 +448,29 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Kosovo’s Prime Minister Albin Kurti said in an interview with French broadcaster FRANCE 24 that his country has met the requirements for candidate status in the European Union.",
-            "text": "Kosovo’s Prime Minister Albin Kurti said in an interview with French broadcaster FRANCE 24 that his country has met the requirements for candidate status in the European Union.",
-            "url": "https://x.com/i/web/status/2121385338211901466",
+            "title": "KEK Workers Announce New Protest for November 19, Demand Fair Wages KEK Kosovo Pristina KEKWorkers WorkersRights FairWages TradeUnion Protest LabourRights KosovoNews BreakingNews",
+            "text": "KEK Workers Announce New Protest for November 19, Demand Fair Wages KEK Kosovo Pristina KEKWorkers WorkersRights FairWages TradeUnion Protest LabourRights KosovoNews BreakingNews",
+            "url": "https://x.com/i/web/status/2121582527810801912",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-11-13T23:30:52.000Z",
+            "seen_date": "2026-11-14T12:34:26.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
               "Koszovó": 5
             },
-            "event_category": "government_crisis",
+            "event_category": "protest",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "protest",
                 "hits": 1,
-                "weight": 9
+                "weight": 8
               },
               {
-                "category": "eu_integration",
+                "category": "economic_infrastructure",
                 "hits": 1,
-                "weight": 6
+                "weight": 4
               }
             ],
             "geopolitical_score": 15,
@@ -386,69 +493,31 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 17,
+        "score": 3,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 1,
-        "positive_hits": 2,
-        "trusted_hits": 1,
-        "engagement_total": 10,
-        "raw_engagement_total": 10,
-        "quality_total": 55,
-        "geopolitical_total": 44,
+        "mentions": 2,
+        "negative_hits": 0,
+        "positive_hits": 1,
+        "trusted_hits": 0,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 25,
+        "geopolitical_total": 19,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 2
+          "x": 0
         },
         "category_counts": {
-          "eu_integration": 2,
-          "foreign_influence": 1,
-          "security": 1
+          "eu_integration": 2
         },
         "tag_counts": {
           "balkans": 1,
-          "montenegro": 1,
-          "Montenegró": 2
+          "montenegro": 1
         },
         "main_topic": "eu_integration",
         "top_posts": [
-          {
-            "title": "🇲🇪 Montenegro, Black Mountain, big European heart! 🏔️💙 Front-runner in the talks, NATO ally, true Adriatic gem. Podgorica, finish the chapters and take your seat as the next member",
-            "text": "🇲🇪 Montenegro, Black Mountain, big European heart! 🏔️💙 Front-runner in the talks, NATO ally, true Adriatic gem. Podgorica, finish the chapters and take your seat as the next member of the 🇪🇺 EU! 🌊🚀🤝 EU50",
-            "url": "https://x.com/i/web/status/2121359582140203310",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-11-13T21:48:31.000Z",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 14,
-            "quality_score": 18,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 10,
-            "raw_engagement": 10,
-            "metrics": {
-              "likes": 9,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Ευρώπη των λαών 🤡 The European Union is preparing stricter safeguards for future members, including the possible temporary suspension of their voting rights, with Montenegro set to become the first candidate country required to accept the new rules without negotiating their terms # EU # Democracy # Balkans # Montenegro https://www. novinite.com/view_news.php",
@@ -477,41 +546,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "British intelligence ordered the detention of five Russians in Montenegro, including Mikhail Zvinchuk, head of the Rybar Telegram channel. Local MP Milan Knežević stated that the O",
-            "text": "British intelligence ordered the detention of five Russians in Montenegro, including Mikhail Zvinchuk, head of the Rybar Telegram channel. Local MP Milan Knežević stated that the October operation by Montenegrin special services was conducted on direct orders from UK intelligence",
-            "url": "https://x.com/i/web/status/2121392873794887726",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-11-14T00:00:49.000Z",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 4
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 12,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -548,39 +582,37 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 18,
+        "score": 8,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
-        "negative_hits": 1,
+        "mentions": 1,
+        "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 1,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 38,
-        "geopolitical_total": 32,
+        "engagement_total": 48,
+        "raw_engagement_total": 48,
+        "quality_total": 25,
+        "geopolitical_total": 21,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 1,
+          "mastodon": 0,
           "x": 1
         },
         "category_counts": {
-          "government_crisis": 1,
-          "ethnic_tension": 1
+          "security": 1
         },
         "tag_counts": {
-          "serbia": 1,
           "Montenegró": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
-            "title": "Croatia presses Montenegro, Bulgaria’s demands hold up North Macedonia, and Greece raises minority rights concerns over Albania. How do bilateral disputes shape EU enlargement? IBN",
-            "text": "Croatia presses Montenegro, Bulgaria’s demands hold up North Macedonia, and Greece raises minority rights concerns over Albania. How do bilateral disputes shape EU enlargement? IBNA WesternBalkans",
-            "url": "https://x.com/i/web/status/2121306431442084341",
+            "title": "Russia reportedly wants NATO pulled back to its 1997 lines (The Telegraph, citing diplomats). That means abandoning: Poland. Czech Republic. Hungary. Estonia. Latvia. Lithuania. Sl",
+            "text": "Russia reportedly wants NATO pulled back to its 1997 lines (The Telegraph, citing diplomats). That means abandoning: Poland. Czech Republic. Hungary. Estonia. Latvia. Lithuania. Slovakia. Slovenia. Romania. Bulgaria. Albania. Croatia. Montenegro. North Macedonia. Finland.",
+            "url": "https://x.com/i/web/status/2121538629528936958",
             "source": "x",
             "tag": "Montenegró",
-            "seen_date": "2026-11-13T18:17:19.000Z",
+            "seen_date": "2026-11-14T09:40:00.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -589,63 +621,32 @@
               "Montenegró": 1,
               "Albánia": 1
             },
-            "event_category": "ethnic_tension",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "ethnic_tension",
+                "category": "security",
                 "hits": 1,
-                "weight": 10
+                "weight": 9
               },
               {
-                "category": "eu_integration",
+                "category": "foreign_influence",
                 "hits": 1,
-                "weight": 6
+                "weight": 8
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "geopolitical_score": 21,
+            "quality_score": 25,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 48,
+            "raw_engagement": 48,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
+              "likes": 36,
+              "reposts": 7,
+              "replies": 5,
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "North Macedonia Opposition Accuses Govt Over Subsidiary of Failed Serbian Bank https:// balkaninsight.com/2026/11/12/n orth-macedonia-opposition-accuses-govt-over-subsidiary-of-failed-serbian-bank/bi/",
-            "url": "https://balkaninsight.com/2026/11/12/north-macedonia-opposition-accuses-govt-over-subsidiary-of-failed-serbian-bank/bi/",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Thu, 12 Nov 2026 11:53:24 +0000",
-            "matched_countries": [
-              "Észak-Macedónia",
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Szerbia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 13,
-            "quality_score": 18,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -656,32 +657,78 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
-        "negative_hits": 14,
+        "mentions": 24,
+        "negative_hits": 19,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 502,
-        "geopolitical_total": 449,
+        "engagement_total": 61,
+        "raw_engagement_total": 61,
+        "quality_total": 677,
+        "geopolitical_total": 615,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 17,
-          "x": 0
+          "mastodon": 18,
+          "x": 6
         },
         "category_counts": {
-          "corruption_rule_of_law": 6,
+          "corruption_rule_of_law": 7,
           "protest": 5,
-          "security": 2,
-          "government_crisis": 3,
+          "security": 5,
+          "government_crisis": 6,
           "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 15,
-          "albania": 2
+          "albania": 3,
+          "Albánia": 6
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
+          {
+            "title": "NEWS: Protesters rally outside Albania's Prime Minister's Office over alleged government corruption, scarce jobs and poor education standards Students have staged weeks of protests",
+            "text": "NEWS: Protesters rally outside Albania's Prime Minister's Office over alleged government corruption, scarce jobs and poor education standards Students have staged weeks of protests in the capital Tirana, some marked by violent clashes",
+            "url": "https://x.com/i/web/status/2121572128965206347",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-11-14T11:53:07.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 3,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 44,
+            "quality_score": 45,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 10,
+            "raw_engagement": 10,
+            "metrics": {
+              "likes": 8,
+              "reposts": 1,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "EPC Summit: Albanian PM Edi Rama speaks about egg-throwing incident in Dublin Albanian PM replies that \"it's part of a democracy\" but he doesn't believe that about his own country. Before protestors ever got \"violent\", some few had started throwing eggs at the cars of MPs driving into Parliament. For this, the cops were 6-to-1 beating protestors with nightst",
@@ -811,40 +858,6 @@
             ],
             "country_confidence": {
               "Albánia": 6
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 35,
-            "quality_score": 38,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 163 of anti-corruption protest in Tirana. 🔴Protesta dhe aktualiteti politik ne vend. I ftuar Saimir Korreshi Machine translated: Protests and the current political situation in the country. Guest: Saimir Korreshi # Albania # Balkans # Corruption # Europe # Protest # FlamingoRevolution https://www. youtube.com/watch?v=ECXwJg5Xkz4",
-            "url": "https://eldritch.cafe/@ml/117587720067639514",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Mon, 09 Nov 2026 17:43:36 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
             },
             "event_category": "protest",
             "event_categories": [
