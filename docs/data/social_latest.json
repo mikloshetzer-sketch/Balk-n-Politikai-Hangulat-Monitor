@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14 04:13 UTC",
+  "updated_at": "2026-11-14 06:05 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,43 +12,42 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 8
+    "collected": 6
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 54,
+        "score": 47,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 5,
         "negative_hits": 3,
         "positive_hits": 1,
         "trusted_hits": 3,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 171,
-        "geopolitical_total": 150,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 143,
+        "geopolitical_total": 123,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "corruption_rule_of_law": 1,
           "security": 1,
           "government_crisis": 1,
           "protest": 1,
-          "ethnic_tension": 2
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 2,
           "kosovo": 1,
-          "Szerbia": 1,
           "Koszovó": 1
         },
-        "main_topic": "ethnic_tension",
+        "main_topic": "corruption_rule_of_law",
         "top_posts": [
           {
             "title": "",
@@ -131,52 +130,6 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Arkan's Tigers were an infamous Serb paramilitary group known for its widespread atrocities and ethnic cleansing campaigns in Croatia and Bosnia in the 1990s. Its leader, Arkan, wa",
-            "text": "Arkan's Tigers were an infamous Serb paramilitary group known for its widespread atrocities and ethnic cleansing campaigns in Croatia and Bosnia in the 1990s. Its leader, Arkan, was the most powerful organized crime figure in the Balkans and was married to the famous Serbian pop",
-            "url": "https://x.com/i/web/status/2121399554641707425",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-14T00:27:22.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 3,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "# OutNow in # OpenAccess : Our journal # COMPSEES 74/3 with a thematic section on social protests & the hybrid media system in # Serbia : - Digital technologies & political influence - Anti-vaccination & anti-migrant mobilization - Vučić’s rhetoric vs. student protests - Traditional vs. online media Additional articles on: - Innovation & job creation in # Ko",
             "url": "https://wisskomm.social/@LeibnizIOS/117602956720580321",
@@ -236,6 +189,35 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Serbia’s New Government Explained https://www. youtube.com/watch?v=imIOSBdwSwo # Serbia # Corruption # Balkans # Europe # Elections",
+            "url": "https://eldritch.cafe/@ml/117597331940751841",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Wed, 11 Nov 2026 10:28:02 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 14,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -268,32 +250,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 31,
+        "score": 26,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 3,
         "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 111,
-        "geopolitical_total": 99,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 101,
+        "geopolitical_total": 90,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "corruption_rule_of_law": 1,
           "ethnic_tension": 1,
-          "government_crisis": 2
+          "government_crisis": 1
         },
         "tag_counts": {
           "kosovo": 2,
-          "Koszovó": 2
+          "Koszovó": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "corruption_rule_of_law",
         "top_posts": [
           {
             "title": "",
@@ -395,41 +377,6 @@
               "reposts": 0,
               "replies": 0,
               "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "The Official Opening Ceremony of the Global Entrepreneurship Week 2026 in Kosova, with prime minister Albin Kurti. Monday, November 16, from 10:00am 📍 Innovation Centre Kosovo. Reg",
-            "text": "The Official Opening Ceremony of the Global Entrepreneurship Week 2026 in Kosova, with prime minister Albin Kurti. Monday, November 16, from 10:00am 📍 Innovation Centre Kosovo. Register here: GEW2026",
-            "url": "https://x.com/i/web/status/2121347001673830850",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-11-13T20:58:32.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 6
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
-            "metrics": {
-              "likes": 2,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 1
             },
             "quality": "x_api_filtered"
           }
@@ -709,28 +656,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
+        "mentions": 17,
         "negative_hits": 14,
         "positive_hits": 2,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 491,
-        "geopolitical_total": 441,
+        "quality_total": 502,
+        "geopolitical_total": 449,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 16,
+          "mastodon": 17,
           "x": 0
         },
         "category_counts": {
           "corruption_rule_of_law": 6,
           "protest": 5,
           "security": 2,
-          "government_crisis": 3
+          "government_crisis": 3,
+          "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 15,
-          "albania": 1
+          "albania": 2
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
