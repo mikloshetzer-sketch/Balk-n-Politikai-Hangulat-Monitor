@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14 17:57 UTC",
+  "updated_at": "2026-11-14 21:52 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,41 +12,39 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 6
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 56,
-        "level": "high",
+        "score": 26,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 4,
-        "positive_hits": 4,
+        "mentions": 3,
+        "negative_hits": 2,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 20,
-        "raw_engagement_total": 20,
-        "quality_total": 165,
-        "geopolitical_total": 149,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 95,
+        "geopolitical_total": 84,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 5
+          "x": 0
         },
         "category_counts": {
-          "corruption_rule_of_law": 2,
+          "corruption_rule_of_law": 1,
           "security": 1,
-          "protest": 1,
-          "government_crisis": 4
+          "protest": 1
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 1,
-          "kosovo": 1,
-          "Szerbia": 5
+          "kosovo": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "corruption_rule_of_law",
         "top_posts": [
           {
             "title": "",
@@ -118,88 +116,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Former President Vučić now booked for first 'CPAC Balkans' in January 2027 to talk sovereignty. In Tirana students protest again to remove Rama AND Berisha, both in politics since ",
-            "text": "Former President Vučić now booked for first 'CPAC Balkans' in January 2027 to talk sovereignty. In Tirana students protest again to remove Rama AND Berisha, both in politics since the 90s. Balkan politician never retire, he only go on tour 🎤 Respek",
-            "url": "https://x.com/i/web/status/2121640640597684682",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-14T16:25:21.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4,
-              "Albánia": 4
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🔴 Serbia terminates Jared Kushner property deal for Belgrade General Staff complex Serbia's new government has officially ended its agreement with a company owned by Jared Kushner,",
-            "text": "🔴 Serbia terminates Jared Kushner property deal for Belgrade General Staff complex Serbia's new government has officially ended its agreement with a company owned by Jared Kushner, son-in-law of U.S. President Donald Trump, for redevelopment of the General Staff complex in",
-            "url": "https://x.com/i/web/status/2121637476045365318",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-14T16:12:47.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 14,
-            "quality_score": 15,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Serbia’s New Government Explained https://www. youtube.com/watch?v=imIOSBdwSwo # Serbia # Corruption # Balkans # Europe # Elections",
             "url": "https://eldritch.cafe/@ml/117597331940751841",
@@ -234,30 +150,61 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 9,
+        "score": 13,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 1,
+        "mentions": 2,
         "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 10,
-        "geopolitical_total": 11,
+        "quality_total": 28,
+        "geopolitical_total": 26,
         "source_counts": {
           "reddit": 1,
-          "mastodon": 0,
+          "mastodon": 1,
           "x": 0
         },
         "category_counts": {
+          "migration": 1,
           "protest": 1
         },
         "tag_counts": {
+          "balkan": 1,
           "serbia": 1
         },
-        "main_topic": "protest",
+        "main_topic": "migration",
         "top_posts": [
+          {
+            "title": "",
+            "text": "Wenn ihr könnt dann bitte unterstützt die ehrenwerte Arbeit von SOS Balkanroute! Für Leben und Würde von allen Menschen! https://www. sos-balkanroute.at/ ‚SOS Balkanroute entstand im Jahr 2019 auf der Müllhalde von Vučjak, in den Bergen oberhalb der Grenzstadt Bihać im Nordwesten Bosnien-Herzegowinas. Bihać liegt an der Grenze zu Kroatien und ist seit Jahren",
+            "url": "https://todon.eu/@autonomysolidarity/117616471036135689",
+            "source": "mastodon",
+            "tag": "balkan",
+            "seen_date": "Sat, 14 Nov 2026 19:35:21 +0000",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "migration",
+            "event_categories": [
+              {
+                "category": "migration",
+                "hits": 2,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 15,
+            "quality_score": 18,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "Samo mali podsetnik da se ne zaborave ni oni koji su obustavljali javni prevoz u danima protesta",
             "text": "Sigurno se sećate, pred svaki protest, magično se pojave kvarovi na vozovima, autobusima, stignu prijave o postavljenim bombama itd...smejali su nam se u facu kao da smo glupi i retardirani. Sećam se jednom da se železnica Srbije nije ni udostojila da odgovori zašto su otkazani vozovi, valjda nisu više mogli ni da smišljaju razloge. U isto vreme, za okupljan",
@@ -300,8 +247,8 @@
         "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
+        "engagement_total": 30,
+        "raw_engagement_total": 30,
         "quality_total": 95,
         "geopolitical_total": 84,
         "source_counts": {
@@ -384,17 +331,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Today, I was not elected President of Kosovo Friends Austria (KFAT). I congratulate Lukas Mandl on his election and wish him every success in his new mandate. Our shared commitment",
-            "text": "Today, I was not elected President of Kosovo Friends Austria (KFAT). I congratulate Lukas Mandl on his election and wish him every success in his new mandate. Our shared commitment to Kosovo and Austrian–Kosovan friendship remains strong. I will continue working for",
-            "url": "https://x.com/i/web/status/2121618901419131004",
+            "title": "🗣️ Kosovo Prime Minister Albin Kurti “If we hadn’t been punished with a red card in the 66th minute, we would have easily scored and won. On to victory in the next matches.”",
+            "text": "🗣️ Kosovo Prime Minister Albin Kurti “If we hadn’t been punished with a red card in the 66th minute, we would have easily scored and won. On to victory in the next matches.”",
+            "url": "https://x.com/i/web/status/2121683709103309072",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-11-14T14:58:58.000Z",
+            "seen_date": "2026-11-14T19:16:29.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 2
+              "Koszovó": 5
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -408,13 +355,13 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 5,
-            "raw_engagement": 5,
+            "engagement": 30,
+            "raw_engagement": 30,
             "metrics": {
-              "likes": 5,
+              "likes": 26,
               "reposts": 0,
-              "replies": 0,
-              "quotes": 0
+              "replies": 3,
+              "quotes": 1
             },
             "quality": "x_api_filtered"
           }
@@ -424,28 +371,27 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 3,
+        "score": 2,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 1,
         "negative_hits": 0,
-        "positive_hits": 1,
+        "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 25,
-        "geopolitical_total": 19,
+        "quality_total": 15,
+        "geopolitical_total": 12,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
+          "mastodon": 1,
           "x": 0
         },
         "category_counts": {
-          "eu_integration": 2
+          "eu_integration": 1
         },
         "tag_counts": {
-          "balkans": 1,
-          "montenegro": 1
+          "balkans": 1
         },
         "main_topic": "eu_integration",
         "top_posts": [
@@ -477,35 +423,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "How people in # Montenegro are making their country cleaner And helping to make the goals for # EU accession plausible https:// globalvoices.org/2026/11/07/ho w-people-in-montenegro-are-making-their-country-cleaner/",
-            "url": "https://mastodon.social/@WINGS_radio/117577000472471744",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Sat, 07 Nov 2026 20:17:28 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 1
-            },
-            "event_category": "eu_integration",
-            "event_categories": [
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 7,
-            "quality_score": 10,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -513,80 +430,36 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 15,
+        "score": 6,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 1,
         "negative_hits": 0,
         "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 69,
-        "raw_engagement_total": 69,
-        "quality_total": 36,
-        "geopolitical_total": 31,
+        "trusted_hits": 0,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 11,
+        "geopolitical_total": 10,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
-          "ethnic_tension": 1,
-          "security": 1
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "Koszovó": 1,
           "Észak-Macedónia": 1
         },
         "main_topic": "ethnic_tension",
         "top_posts": [
           {
-            "title": "Russia reportedly wants NATO pulled back to its 1997 lines (The Telegraph, citing diplomats). That means abandoning: Poland. Czech Republic. Hungary. Estonia. Latvia. Lithuania. Sl",
-            "text": "Russia reportedly wants NATO pulled back to its 1997 lines (The Telegraph, citing diplomats). That means abandoning: Poland. Czech Republic. Hungary. Estonia. Latvia. Lithuania. Slovakia. Slovenia. Romania. Bulgaria. Albania. Croatia. Montenegro. North Macedonia. Finland.",
-            "url": "https://x.com/i/web/status/2121538629528936958",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-14T09:40:00.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Montenegró": 1,
-              "Albánia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 25,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 69,
-            "raw_engagement": 69,
-            "metrics": {
-              "likes": 51,
-              "reposts": 11,
-              "replies": 7,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "Knowing that the Romani language is co-official in Šuto Orizari in North Macedonia 🇲🇰, being also co-official language in Prizren and Gračanica in Kosovo 🇽🇰 is so shocking... I thi",
             "text": "Knowing that the Romani language is co-official in Šuto Orizari in North Macedonia 🇲🇰, being also co-official language in Prizren and Gračanica in Kosovo 🇽🇰 is so shocking... I think that it is co-official only in Šuto Orizari, in rest of places Romani is a minority language",
             "url": "https://x.com/i/web/status/2121607370258383257",
             "source": "x",
-            "tag": "Koszovó",
+            "tag": "Észak-Macedónia",
             "seen_date": "2026-11-14T14:13:09.000Z",
             "matched_countries": [
               "Észak-Macedónia"
@@ -627,13 +500,13 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 19,
-        "negative_hits": 14,
-        "positive_hits": 3,
+        "negative_hits": 15,
+        "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 10,
-        "raw_engagement_total": 10,
-        "quality_total": 542,
-        "geopolitical_total": 491,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 590,
+        "geopolitical_total": 539,
         "source_counts": {
           "reddit": 0,
           "mastodon": 15,
@@ -643,16 +516,13 @@
           "protest": 3,
           "corruption_rule_of_law": 6,
           "security": 3,
-          "government_crisis": 5,
-          "foreign_influence": 1,
-          "ethnic_tension": 1
+          "government_crisis": 6,
+          "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 12,
           "albania": 3,
-          "Szerbia": 1,
-          "Koszovó": 1,
-          "Albánia": 2
+          "Albánia": 4
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -701,6 +571,51 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Tirana, Albania — 14 November. Protesters gathered again in the capital, calling for the removal of both Prime Minister Edi Rama and opposition leader Sali Berisha. Students and ot",
+            "text": "Tirana, Albania — 14 November. Protesters gathered again in the capital, calling for the removal of both Prime Minister Edi Rama and opposition leader Sali Berisha. Students and other citizens also assembled in front of the Ministry of Education. Police have so far avoided a",
+            "url": "https://x.com/i/web/status/2121701201901498605",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-11-14T20:26:00.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 38,
+            "quality_score": 39,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Day 164 of anti-corruption protest in Tirana, Albania. Graffiti and then cover-up on the \"I ❤️ t\" sculpture in Tirana's Skanderbeg Square. \"RnB, BnB\" is an abbreviation for \"Rama n'Burg, Berisha n'Burg\", which has been a protest chant ever since late May. It means \"Rama in jail, Berisha in jail\" Edi Rama, Socialist Party, is the current Prime Minister of Alb",
             "url": "https://eldritch.cafe/@ml/117592784161420488",
@@ -740,6 +655,46 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "🇦🇱 Protests are ongoing in Tirana, Albania's capital, demanding the resignation of Prime Minister Edi Rama Albania Tirana",
+            "text": "🇦🇱 Protests are ongoing in Tirana, Albania's capital, demanding the resignation of Prime Minister Edi Rama Albania Tirana",
+            "url": "https://x.com/i/web/status/2121710602121015687",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-11-14T21:03:21.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 37,
+            "quality_score": 38,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Day 168 of anti-corruption protest in Tirana, Albania # Albania # Balkans # Corruption # Europe # Protest # FlamingoRevolution 🔴LIVE | Studentët në protestë, dita e 168-të e revoltës. Të rinjtë para Ministrisë së Arsimit Machine translated: \"LIVE | Students in protest, the 168th day of the revolt. Young people before the Ministry of Education\" News24 returne",
             "url": "https://eldritch.cafe/@ml/117615101239078235",
@@ -751,74 +706,6 @@
             ],
             "country_confidence": {
               "Albánia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 35,
-            "quality_score": 38,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 167 of anti-corruption protest in Tirana, Albania Aktualiteti politik, protesta dhe ngjarjet ne vend Machine translated: Political current affairs, protests and events in the country News 24 probably has the van where the protestors are, but so far they are focusing on in-studio conversation. Even News24 has started to show less of the protest because of",
-            "url": "https://eldritch.cafe/@ml/117610168227733309",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Fri, 13 Nov 2026 16:52:28 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 35,
-            "quality_score": 38,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 165 of anti-corruption protest in Tirana, Albania Citizens.al interviews protestors outside the Albanian Ministry of Education Using a translation app, the first interviewee speaks about how bad the corruption is and how they'll be on the streets at least until primaries next year. The second interviewee also mentions the corruption but also the cost of ",
-            "url": "https://eldritch.cafe/@ml/117598904068092497",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 11 Nov 2026 17:07:51 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 6
             },
             "event_category": "protest",
             "event_categories": [
