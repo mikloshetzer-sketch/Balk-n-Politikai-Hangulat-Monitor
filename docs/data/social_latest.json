@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15 06:11 UTC",
+  "updated_at": "2026-11-15 13:14 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,37 +12,38 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 3
+    "collected": 8
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 31,
+        "score": 38,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 5,
         "negative_hits": 2,
-        "positive_hits": 2,
+        "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 110,
-        "geopolitical_total": 98,
+        "quality_total": 125,
+        "geopolitical_total": 110,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 3,
+          "mastodon": 4,
           "x": 1
         },
         "category_counts": {
           "corruption_rule_of_law": 1,
+          "foreign_influence": 1,
           "security": 1,
           "protest": 1,
           "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 1,
+          "serbia": 2,
           "kosovo": 1,
           "Szerbia": 1
         },
@@ -118,12 +119,12 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Aleksandar Vučić, leader of the United Serbia electoral list, has been elected head of the parliamentary group in Serbia's parliament. According to Report's Balkans bureau, Vučić a",
-            "text": "Aleksandar Vučić, leader of the United Serbia electoral list, has been elected head of the parliamentary group in Serbia's parliament. According to Report's Balkans bureau, Vučić announced the development in an interview with Pink TV. He said a decision on whether the",
-            "url": "https://x.com/i/web/status/2121840906051695084",
+            "title": "Serbia: ex-President Vučić today elected boss of his group in parliament, promise it behave 'decent, civilized and combative'. Yesterday he say the Student List program look like C",
+            "text": "Serbia: ex-President Vučić today elected boss of his group in parliament, promise it behave 'decent, civilized and combative'. Yesterday he say the Student List program look like ChatGPT write it. Bro, in Balkans when opponent program look ok, it must be the machine 🤖 Next week",
+            "url": "https://x.com/i/web/status/2121937849939284266",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-11-15T05:41:08.000Z",
+            "seen_date": "2026-11-15T12:06:21.000Z",
             "matched_countries": [
               "Szerbia"
             ],
@@ -134,17 +135,12 @@
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 1,
+                "hits": 2,
                 "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
               }
             ],
-            "geopolitical_score": 14,
-            "quality_score": 15,
+            "geopolitical_score": 18,
+            "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -185,6 +181,37 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "📰 La Serbia al bivio dopo la vittoria degli studenti. L’apertura Ue, le incognite su Russia e Kosovo: cosa può succedere #️⃣ # ESTERI # AllargamentoUe # Giovani # Kosovo # Russia # Serbia # Unioneeuropea # OpenOnline 🔗 https://www. open.online/2026/11/15/allarga mento-ue-serbia-negoziati-russia-kosovo/ Belgrado è in trattativa per entrare in Ue dal 2009, ora",
+            "url": "https://social.thelab.uno/@openonline/117619776491382870",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sun, 15 Nov 2026 09:35:59 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 1,
+              "Koszovó": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 8,
+            "quality_score": 11,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -192,29 +219,27 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 13,
+        "score": 3,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
-        "negative_hits": 1,
+        "mentions": 1,
+        "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 28,
-        "geopolitical_total": 26,
+        "quality_total": 18,
+        "geopolitical_total": 15,
         "source_counts": {
-          "reddit": 1,
+          "reddit": 0,
           "mastodon": 1,
           "x": 0
         },
         "category_counts": {
-          "migration": 1,
-          "protest": 1
+          "migration": 1
         },
         "tag_counts": {
-          "balkan": 1,
-          "serbia": 1
+          "balkan": 1
         },
         "main_topic": "migration",
         "top_posts": [
@@ -246,35 +271,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Samo mali podsetnik da se ne zaborave ni oni koji su obustavljali javni prevoz u danima protesta",
-            "text": "Sigurno se sećate, pred svaki protest, magično se pojave kvarovi na vozovima, autobusima, stignu prijave o postavljenim bombama itd...smejali su nam se u facu kao da smo glupi i retardirani. Sećam se jednom da se železnica Srbije nije ni udostojila da odgovori zašto su otkazani vozovi, valjda nisu više mogli ni da smišljaju razloge. U isto vreme, za okupljan",
-            "url": "https://www.reddit.com/r/serbia/comments/1xw0h9u/samo_mali_podsetnik_da_se_ne_zaborave_ni_oni_koji/",
-            "source": "reddit",
-            "tag": "serbia",
-            "seen_date": "2026-11-14T11:45:54+00:00",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 10,
-            "source_reliability": 1,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -282,30 +278,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 19,
-        "level": "low",
+        "score": 23,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 3,
         "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 85,
-        "geopolitical_total": 75,
+        "quality_total": 96,
+        "geopolitical_total": 83,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
+          "mastodon": 3,
           "x": 0
         },
         "category_counts": {
+          "foreign_influence": 1,
           "corruption_rule_of_law": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
+          "serbia": 1,
           "kosovo": 2
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "foreign_influence",
         "top_posts": [
           {
             "title": "",
@@ -366,6 +364,37 @@
             "quality_score": 17,
             "source_reliability": 5,
             "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "📰 La Serbia al bivio dopo la vittoria degli studenti. L’apertura Ue, le incognite su Russia e Kosovo: cosa può succedere #️⃣ # ESTERI # AllargamentoUe # Giovani # Kosovo # Russia # Serbia # Unioneeuropea # OpenOnline 🔗 https://www. open.online/2026/11/15/allarga mento-ue-serbia-negoziati-russia-kosovo/ Belgrado è in trattativa per entrare in Ue dal 2009, ora",
+            "url": "https://social.thelab.uno/@openonline/117619776491382870",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sun, 15 Nov 2026 09:35:59 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 1,
+              "Koszovó": 1
+            },
+            "event_category": "foreign_influence",
+            "event_categories": [
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 8,
+            "quality_score": 11,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -435,26 +464,107 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 0,
+        "score": 15,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 0,
-        "negative_hits": 0,
+        "mentions": 2,
+        "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 0,
-        "geopolitical_total": 0,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 27,
+        "geopolitical_total": 25,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 0
+          "x": 2
         },
-        "category_counts": {},
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "category_counts": {
+          "government_crisis": 1,
+          "security": 1
+        },
+        "tag_counts": {
+          "Észak-Macedónia": 2
+        },
+        "main_topic": "government_crisis",
+        "top_posts": [
+          {
+            "title": "Condemnations | The Grand Mufti of the Republic of North Macedonia, Sheikh Hafiz Shaqir Fetahu, has condemned the terrorist attacks carried out by the Houthi militia against the Ki",
+            "text": "Condemnations | The Grand Mufti of the Republic of North Macedonia, Sheikh Hafiz Shaqir Fetahu, has condemned the terrorist attacks carried out by the Houthi militia against the Kingdom of Saudi Arabia, Islamic holy sites, and civilian infrastructure. He affirmed the full",
+            "url": "https://x.com/i/web/status/2121903534471799100",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-15T09:50:00.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 17,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇲🇰 A statement from the center-left political party in North Macedonia (SDSM) asserts that Prime Minister Hristijan Mickoski’s contradictory claims regarding the economy have been ",
+            "text": "🇲🇰 A statement from the center-left political party in North Macedonia (SDSM) asserts that Prime Minister Hristijan Mickoski’s contradictory claims regarding the economy have been debunked by an IMF report.",
+            "url": "https://x.com/i/web/status/2121953797148672395",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-15T13:09:43.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 3,
+            "raw_engagement": 3,
+            "metrics": {
+              "likes": 1,
+              "reposts": 1,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          }
+        ]
       }
     },
     {
@@ -463,32 +573,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
-        "negative_hits": 14,
-        "positive_hits": 2,
-        "trusted_hits": 2,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 516,
-        "geopolitical_total": 464,
+        "mentions": 20,
+        "negative_hits": 13,
+        "positive_hits": 3,
+        "trusted_hits": 3,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 577,
+        "geopolitical_total": 519,
         "source_counts": {
           "reddit": 0,
           "mastodon": 15,
-          "x": 2
+          "x": 5
         },
         "category_counts": {
-          "protest": 4,
+          "protest": 3,
           "corruption_rule_of_law": 6,
-          "security": 3,
-          "government_crisis": 2,
-          "foreign_influence": 1,
-          "ethnic_tension": 1
+          "security": 6,
+          "government_crisis": 4,
+          "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 12,
           "albania": 3,
-          "Koszovó": 1,
-          "Albánia": 1
+          "Albánia": 5
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -535,6 +643,51 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "🎥 WATCH | Anti-government protesters pelted Albanian Prime Minister Edi Rama's car with eggs in Manez on November 14 as his motorcade passed through the area. Police reportedly det",
+            "text": "🎥 WATCH | Anti-government protesters pelted Albanian Prime Minister Edi Rama's car with eggs in Manez on November 14 as his motorcade passed through the area. Police reportedly detained 12 activists following the incident. More shorts and videos 👇",
+            "url": "https://x.com/i/web/status/2121942973281874057",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-11-15T12:26:43.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 6
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 38,
+            "quality_score": 39,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -621,40 +774,6 @@
             ],
             "country_confidence": {
               "Albánia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 35,
-            "quality_score": 38,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 165 of anti-corruption protest in Tirana, Albania Citizens.al interviews protestors outside the Albanian Ministry of Education Using a translation app, the first interviewee speaks about how bad the corruption is and how they'll be on the streets at least until primaries next year. The second interviewee also mentions the corruption but also the cost of ",
-            "url": "https://eldritch.cafe/@ml/117598904068092497",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 11 Nov 2026 17:07:51 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 6
             },
             "event_category": "protest",
             "event_categories": [
