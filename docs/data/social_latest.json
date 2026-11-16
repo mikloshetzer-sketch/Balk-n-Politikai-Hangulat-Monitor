@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15 22:21 UTC",
+  "updated_at": "2026-11-16 03:59 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,23 +12,23 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 8
+    "collected": 10
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 35,
-        "level": "medium",
+        "score": 40,
+        "level": "high",
         "scale": "0-60 risk index",
         "mentions": 5,
-        "negative_hits": 2,
-        "positive_hits": 2,
+        "negative_hits": 3,
+        "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 117,
-        "geopolitical_total": 102,
+        "engagement_total": 80,
+        "raw_engagement_total": 80,
+        "quality_total": 116,
+        "geopolitical_total": 101,
         "source_counts": {
           "reddit": 0,
           "mastodon": 4,
@@ -37,16 +37,17 @@
         "category_counts": {
           "corruption_rule_of_law": 1,
           "foreign_influence": 1,
-          "security": 2,
-          "protest": 1
+          "security": 1,
+          "protest": 1,
+          "eu_integration": 1
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 2,
           "kosovo": 1,
-          "Szerbia": 1
+          "Koszovó": 1
         },
-        "main_topic": "security",
+        "main_topic": "corruption_rule_of_law",
         "top_posts": [
           {
             "title": "",
@@ -147,41 +148,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Now that the Serbian government is slowly forming. I do want to say and advise this. One of the key reforms that should happen is regarding the police. 3 months training does nothi",
-            "text": "Now that the Serbian government is slowly forming. I do want to say and advise this. One of the key reforms that should happen is regarding the police. 3 months training does nothing. They have to bump it up to 6 months minimum, hell give it a full year.",
-            "url": "https://x.com/i/web/status/2122090147441172927",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-15T22:11:32.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 4,
-            "raw_engagement": 4,
-            "metrics": {
-              "likes": 2,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "📰 La Serbia al bivio dopo la vittoria degli studenti. L’apertura Ue, le incognite su Russia e Kosovo: cosa può succedere #️⃣ # ESTERI # AllargamentoUe # Giovani # Kosovo # Russia # Serbia # Unioneeuropea # OpenOnline 🔗 https://www. open.online/2026/11/15/allarga mento-ue-serbia-negoziati-russia-kosovo/ Belgrado è in trattativa per entrare in Ue dal 2009, ora",
             "url": "https://social.thelab.uno/@openonline/117619776491382870",
@@ -211,6 +177,42 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "This is what appeasement of Serbian nationalism leads to. What has become normalized in Serbia is now reaching Brussels. “Oj, Kosovo, Kosovo,” popularized by Danica Crnogorčević, a",
+            "text": "This is what appeasement of Serbian nationalism leads to. What has become normalized in Serbia is now reaching Brussels. “Oj, Kosovo, Kosovo,” popularized by Danica Crnogorčević, a Serbian nationalist singer who performed in Moscow during the first Victory Day celebrations",
+            "url": "https://x.com/i/web/status/2122110146025345205",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-15T23:31:00.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "eu_integration",
+            "event_categories": [
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 80,
+            "raw_engagement": 80,
+            "metrics": {
+              "likes": 45,
+              "reposts": 7,
+              "replies": 27,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -321,15 +323,15 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 31,
+        "score": 30,
         "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 4,
-        "negative_hits": 2,
+        "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
         "quality_total": 106,
         "geopolitical_total": 92,
         "source_counts": {
@@ -341,7 +343,7 @@
           "foreign_influence": 1,
           "corruption_rule_of_law": 1,
           "ethnic_tension": 1,
-          "eu_integration": 1
+          "security": 1
         },
         "tag_counts": {
           "serbia": 1,
@@ -445,35 +447,35 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Sharing this concern. The performance of “Oj Kosovo, Kosovo” at an official EU event warrants clarification. Respect for Kosova’s sovereignty, territorial integrity and good-neighb",
-            "text": "Sharing this concern. The performance of “Oj Kosovo, Kosovo” at an official EU event warrants clarification. Respect for Kosova’s sovereignty, territorial integrity and good-neighbourly relations must remain at the heart of the EU enlargement process.",
-            "url": "https://x.com/i/web/status/2122083135211164126",
+            "title": "Former Kosovo minister AstritHaraqija is among those detained during a police operation against drug trafficking, codenamed \"Silence,\" which took place on November 14, 2026, in the",
+            "text": "Former Kosovo minister AstritHaraqija is among those detained during a police operation against drug trafficking, codenamed \"Silence,\" which took place on November 14, 2026, in the area of ​​the capital, Pristina, reports GazetaExpress.",
+            "url": "https://x.com/i/web/status/2122147607736877331",
             "source": "x",
             "tag": "Koszovó",
-            "seen_date": "2026-11-15T21:43:40.000Z",
+            "seen_date": "2026-11-16T01:59:51.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 2
+              "Koszovó": 5
             },
-            "event_category": "eu_integration",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "eu_integration",
+                "category": "security",
                 "hits": 1,
-                "weight": 6
+                "weight": 9
               }
             ],
             "geopolitical_score": 9,
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 6,
-            "raw_engagement": 6,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 5,
-              "reposts": 1,
+              "likes": 1,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
@@ -485,27 +487,29 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 2,
+        "score": 7,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 1,
+        "mentions": 2,
         "negative_hits": 0,
-        "positive_hits": 0,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 15,
-        "geopolitical_total": 12,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
+        "quality_total": 27,
+        "geopolitical_total": 23,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
-          "eu_integration": 1
+          "eu_integration": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "balkans": 1
+          "balkans": 1,
+          "Montenegró": 1
         },
         "main_topic": "eu_integration",
         "top_posts": [
@@ -537,6 +541,42 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "This Montenegrin ethno-nationalist forgot to say that the Serbian language is the majority language in Montenegro according to the census, but its status is subordinate to the mino",
+            "text": "This Montenegrin ethno-nationalist forgot to say that the Serbian language is the majority language in Montenegro according to the census, but its status is subordinate to the minority Montenegrin language, and he does not mind this discrimination, on the contrary, he supports it",
+            "url": "https://x.com/i/web/status/2122110081915654635",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-11-15T23:30:45.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 4,
+              "Szerbia": 2
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 12,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 5,
+            "raw_engagement": 5,
+            "metrics": {
+              "likes": 5,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -544,44 +584,50 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 18,
-        "level": "low",
+        "score": 20,
+        "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 3,
         "negative_hits": 1,
         "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 40,
-        "geopolitical_total": 37,
+        "trusted_hits": 1,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
+        "quality_total": 51,
+        "geopolitical_total": 45,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
           "x": 3
         },
         "category_counts": {
+          "security": 1,
           "eu_integration": 1,
-          "government_crisis": 1,
-          "security": 1
+          "government_crisis": 1
         },
         "tag_counts": {
-          "Észak-Macedónia": 3
+          "Koszovó": 1,
+          "Észak-Macedónia": 2
         },
-        "main_topic": "eu_integration",
+        "main_topic": "security",
         "top_posts": [
           {
-            "title": "Condemnations | The Grand Mufti of the Republic of North Macedonia, Sheikh Hafiz Shaqir Fetahu, has condemned the terrorist attacks carried out by the Houthi militia against the Ki",
-            "text": "Condemnations | The Grand Mufti of the Republic of North Macedonia, Sheikh Hafiz Shaqir Fetahu, has condemned the terrorist attacks carried out by the Houthi militia against the Kingdom of Saudi Arabia, Islamic holy sites, and civilian infrastructure. He affirmed the full",
-            "url": "https://x.com/i/web/status/2121903534471799100",
+            "title": "Never forget the victims of NATO(ZOG) aggression against the people of- Afganistan Albania Syria Lebanon Palestine Yemen Ukraine Russia Iran Iraq *Kosovo Bosnia Serbia Albanians in",
+            "text": "Never forget the victims of NATO(ZOG) aggression against the people of- Afganistan Albania Syria Lebanon Palestine Yemen Ukraine Russia Iran Iraq *Kosovo Bosnia Serbia Albanians in North macedonia Montenegro Libya Millions dead, and no one has been called a War Criminal.",
+            "url": "https://x.com/i/web/status/2122112066395775322",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-15T09:50:00.000Z",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-15T23:38:38.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5
+              "Észak-Macedónia": 5,
+              "Albánia": 2,
+              "Szerbia": 1,
+              "Bosznia-Hercegovina": 1,
+              "Koszovó": 1,
+              "Montenegró": 1
             },
             "event_category": "security",
             "event_categories": [
@@ -591,19 +637,19 @@
                 "weight": 9
               },
               {
-                "category": "economic_infrastructure",
+                "category": "foreign_influence",
                 "hits": 1,
-                "weight": 4
+                "weight": 8
               }
             ],
-            "geopolitical_score": 16,
-            "quality_score": 17,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "geopolitical_score": 24,
+            "quality_score": 28,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 1,
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -694,30 +740,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
-        "negative_hits": 12,
+        "mentions": 15,
+        "negative_hits": 13,
         "positive_hits": 2,
-        "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 483,
-        "geopolitical_total": 433,
+        "trusted_hits": 1,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 460,
+        "geopolitical_total": 414,
         "source_counts": {
           "reddit": 0,
           "mastodon": 14,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
           "protest": 4,
           "corruption_rule_of_law": 6,
-          "security": 4,
+          "security": 3,
           "government_crisis": 1,
           "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 12,
           "albania": 2,
-          "Albánia": 2
+          "Albánia": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -868,17 +914,17 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "NATO cancels 2027 leaders’ summit The US-led military bloc will not hold a top-level meeting in Tirana in 2027, Albanian Prime Minister Edi Rama has said -",
-            "text": "NATO cancels 2027 leaders’ summit The US-led military bloc will not hold a top-level meeting in Tirana in 2027, Albanian Prime Minister Edi Rama has said -",
-            "url": "https://x.com/i/web/status/2122092271114014890",
+            "title": "The Associated Press: NATO is scaling back its high-level meetings and will not hold a leaders’ summit in Albania next year as previously planned amid tension within the alliance o",
+            "text": "The Associated Press: NATO is scaling back its high-level meetings and will not hold a leaders’ summit in Albania next year as previously planned amid tension within the alliance over defense spending, Iran and the war in Ukraine. Albanian Prime Minister Edi Rama said Thursday",
+            "url": "https://x.com/i/web/status/2122177247272390660",
             "source": "x",
             "tag": "Albánia",
-            "seen_date": "2026-11-15T22:19:58.000Z",
+            "seen_date": "2026-11-16T03:57:38.000Z",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 10
+              "Albánia": 6
             },
             "event_category": "security",
             "event_categories": [
@@ -893,14 +939,14 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 31,
-            "quality_score": 35,
+            "geopolitical_score": 34,
+            "quality_score": 38,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
-              "likes": 0,
+              "likes": 1,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
