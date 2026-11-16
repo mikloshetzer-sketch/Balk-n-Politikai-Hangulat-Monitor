@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16 14:23 UTC",
+  "updated_at": "2026-11-16 21:58 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,33 +12,34 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 4
+    "collected": 11
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 42,
-        "level": "high",
+        "score": 37,
+        "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 6,
         "negative_hits": 2,
         "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 133,
-        "geopolitical_total": 112,
+        "trusted_hits": 1,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 105,
+        "geopolitical_total": 87,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
           "x": 1
         },
         "category_counts": {
-          "corruption_rule_of_law": 2,
+          "corruption_rule_of_law": 1,
+          "government_crisis": 1,
           "foreign_influence": 2,
-          "security": 1,
-          "protest": 1
+          "protest": 1,
+          "eu_integration": 1
         },
         "tag_counts": {
           "balkans": 1,
@@ -46,41 +47,31 @@
           "kosovo": 1,
           "Szerbia": 1
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "foreign_influence",
         "top_posts": [
           {
             "title": "",
-            "text": "⛔️🇪🇺Absolutely Stupid! Do Europeans really agree to let France’s Le Pen lead European negotiations with Russia next year? (More) https:// english.nv.ua/nation/eu-leader s-agree-on-representation-at-ukraine-peace-talks-50659089.html # Ukraine # Press # Kyiv # Odesa # Lviv # Kharkiv # Kherson # Berlin # Brussels # Serbia # Slovakia # Bulgaria # Switzerland # F",
-            "url": "https://mastodon.online/@SocraticEthics/117611735351728751",
+            "text": "Serbia's Parliament To Meet For First Time Since Opposition's Landslide Election Victory https://www. rferl.org/a/serbia-parliament- student-list-opposition-vucic/33899684.html",
+            "url": "https://www.rferl.org/a/serbia-parliament-student-list-opposition-vucic/33899684.html",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Fri, 13 Nov 2026 23:31:01 +0000",
+            "seen_date": "Mon, 16 Nov 2026 15:21:57 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 1
+              "Szerbia": 5
             },
-            "event_category": "security",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "security",
+                "category": "government_crisis",
                 "hits": 2,
                 "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
               }
             ],
-            "geopolitical_score": 54,
-            "quality_score": 59,
+            "geopolitical_score": 22,
+            "quality_score": 27,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -118,36 +109,37 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Foreign interference in a sovereign country's elections and internal affairs is cool,if it's done by the EU?!😂🤣The EU was Serbian people Guardian Angel in 1999.Serbia is the EU col",
-            "text": "Foreign interference in a sovereign country's elections and internal affairs is cool,if it's done by the EU?!😂🤣The EU was Serbian people Guardian Angel in 1999.Serbia is the EU colony since 2000!FF:PL PM Tusk forcibly took over Poland's top court with the EU backing on 10.31.26",
-            "url": "https://x.com/i/web/status/2122334535614439862",
+            "title": "Three Kosovo Serb groups file a criminal complaint over decisions made under Vučić as the Student List engages with Brussels. What lies ahead for Serbia's EU accession? Serbia Koso",
+            "text": "Three Kosovo Serb groups file a criminal complaint over decisions made under Vučić as the Student List engages with Brussels. What lies ahead for Serbia's EU accession? Serbia Kosovo EUEnlargement",
+            "url": "https://x.com/i/web/status/2122447073446707205",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-11-16T14:22:39.000Z",
+            "seen_date": "2026-11-16T21:49:50.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2
+              "Szerbia": 5,
+              "Koszovó": 1
             },
-            "event_category": "corruption_rule_of_law",
+            "event_category": "eu_integration",
             "event_categories": [
               {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
+                "category": "eu_integration",
+                "hits": 3,
+                "weight": 6
               }
             ],
-            "geopolitical_score": 12,
-            "quality_score": 16,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
             "metrics": {
               "likes": 0,
               "reposts": 0,
-              "replies": 0,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -306,32 +298,33 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 23,
+        "score": 33,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
+        "mentions": 4,
+        "negative_hits": 2,
         "positive_hits": 1,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 96,
-        "geopolitical_total": 83,
+        "quality_total": 108,
+        "geopolitical_total": 94,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "foreign_influence": 1,
-          "corruption_rule_of_law": 1,
+          "corruption_rule_of_law": 2,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "serbia": 1,
-          "kosovo": 2
+          "kosovo": 2,
+          "Koszovó": 1
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "corruption_rule_of_law",
         "top_posts": [
           {
             "title": "",
@@ -397,6 +390,41 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "The Basic Prosecution in Pristina has asked the Basic Court in Pristina to order the pretrial detention of former Culture Minister Astrit Haraqija and five others arrested during a",
+            "text": "The Basic Prosecution in Pristina has asked the Basic Court in Pristina to order the pretrial detention of former Culture Minister Astrit Haraqija and five others arrested during an operation against cocaine trafficking: Jeton Stanovci, Gëzim Feka, Arjan…",
+            "url": "https://x.com/i/web/status/2122448245456519491",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-16T21:54:29.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 4
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 12,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "📰 La Serbia al bivio dopo la vittoria degli studenti. L’apertura Ue, le incognite su Russia e Kosovo: cosa può succedere #️⃣ # ESTERI # AllargamentoUe # Giovani # Kosovo # Russia # Serbia # Unioneeuropea # OpenOnline 🔗 https://www. open.online/2026/11/15/allarga mento-ue-serbia-negoziati-russia-kosovo/ Belgrado è in trattativa per entrare in Ue dal 2009, ora",
             "url": "https://social.thelab.uno/@openonline/117619776491382870",
@@ -433,31 +461,32 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 8,
+        "score": 14,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 3,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 27,
-        "geopolitical_total": 21,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 37,
+        "geopolitical_total": 30,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
           "eu_integration": 1,
-          "government_crisis": 1
+          "government_crisis": 2
         },
         "tag_counts": {
           "balkans": 1,
-          "montenegro": 1
+          "montenegro": 1,
+          "Montenegró": 1
         },
-        "main_topic": "eu_integration",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -516,49 +545,20 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Észak-Macedónia",
-      "social_signal": {
-        "score": 7,
-        "level": "low",
-        "scale": "0-60 risk index",
-        "mentions": 1,
-        "negative_hits": 0,
-        "positive_hits": 0,
-        "trusted_hits": 1,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 29,
-        "geopolitical_total": 25,
-        "source_counts": {
-          "reddit": 0,
-          "mastodon": 0,
-          "x": 1
-        },
-        "category_counts": {
-          "government_crisis": 1
-        },
-        "tag_counts": {
-          "Észak-Macedónia": 1
-        },
-        "main_topic": "government_crisis",
-        "top_posts": [
+          },
           {
-            "title": "Today in Brussels, I joined Prime Minister Hristijan Mickoski for a meeting with Gert Jan Koopman, Director-General of the European Commission’s Directorate-General for Enlargement",
-            "text": "Today in Brussels, I joined Prime Minister Hristijan Mickoski for a meeting with Gert Jan Koopman, Director-General of the European Commission’s Directorate-General for Enlargement and Eastern Neighbourhood.",
-            "url": "https://x.com/i/web/status/2122276710653804682",
+            "title": "A petition in Montenegro 🇲🇪 asks parliament to make Serbian equal to Montenegrin. Serbian is spoken by 43% of people, the most of any language, but Montenegrin is the sole official",
+            "text": "A petition in Montenegro 🇲🇪 asks parliament to make Serbian equal to Montenegrin. Serbian is spoken by 43% of people, the most of any language, but Montenegrin is the sole official one. Goal: 6,000 signatures by Jan 15. Yugoslavia Montenegro 🇲🇪 Serbia 🇷🇸 Language",
+            "url": "https://x.com/i/web/status/2122390075224756283",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-16T10:32:52.000Z",
+            "tag": "Montenegró",
+            "seen_date": "2026-11-16T18:03:20.000Z",
             "matched_countries": [
-              "Észak-Macedónia"
+              "Montenegró"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 4
+              "Montenegró": 4,
+              "Szerbia": 2
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -566,22 +566,129 @@
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Észak-Macedónia",
+      "social_signal": {
+        "score": 13,
+        "level": "low",
+        "scale": "0-60 risk index",
+        "mentions": 2,
+        "negative_hits": 1,
+        "positive_hits": 2,
+        "trusted_hits": 1,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 44,
+        "geopolitical_total": 39,
+        "source_counts": {
+          "reddit": 0,
+          "mastodon": 0,
+          "x": 2
+        },
+        "category_counts": {
+          "security": 2
+        },
+        "tag_counts": {
+          "Észak-Macedónia": 2
+        },
+        "main_topic": "security",
+        "top_posts": [
+          {
+            "title": "The 2026 OSCE Presidency Troika (North Macedonia, Malta, and Finland) issues a statement emphasizing that continued Russian aggression against Ukraine threatens European security. ",
+            "text": "The 2026 OSCE Presidency Troika (North Macedonia, Malta, and Finland) issues a statement emphasizing that continued Russian aggression against Ukraine threatens European security. The statement also reiterates support for Georgia's sovereignty and territorial integrity.",
+            "url": "https://x.com/i/web/status/2122396961332478286",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-16T18:30:42.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
               },
               {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
               }
             ],
             "geopolitical_score": 25,
             "quality_score": 29,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 3,
-            "raw_engagement": 3,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 3,
+              "likes": 0,
               "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Through the Pandemic Fund’s US$34.98M grant, Albania, Kosovo & North Macedonia have leveraged US$44M in partner co-financing and US$55.8M in government co-investment for the MAKE-R",
+            "text": "Through the Pandemic Fund’s US$34.98M grant, Albania, Kosovo & North Macedonia have leveraged US$44M in partner co-financing and US$55.8M in government co-investment for the MAKE-READY project. The expected impact? • Integrated cross-border One Health surveillance • Stronger",
+            "url": "https://x.com/i/web/status/2122347179146727787",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-16T15:12:53.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Koszovó": 1,
+              "Albánia": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 14,
+            "quality_score": 15,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -596,30 +703,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
-        "negative_hits": 14,
-        "positive_hits": 4,
-        "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 479,
-        "geopolitical_total": 427,
+        "mentions": 19,
+        "negative_hits": 15,
+        "positive_hits": 3,
+        "trusted_hits": 1,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 530,
+        "geopolitical_total": 479,
         "source_counts": {
           "reddit": 0,
           "mastodon": 15,
-          "x": 2
+          "x": 4
         },
         "category_counts": {
-          "protest": 4,
-          "corruption_rule_of_law": 8,
-          "security": 2,
           "government_crisis": 2,
-          "foreign_influence": 1
+          "protest": 5,
+          "corruption_rule_of_law": 7,
+          "security": 2,
+          "foreign_influence": 1,
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "balkans": 12,
           "albania": 3,
-          "Albánia": 2
+          "Albánia": 4
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
@@ -666,6 +774,90 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 170 of anti-corruption protest in Tirana, Albania. Tensione ne proteste, qytetaret thirrje para kryeministrise Machine translated: Tensions at the protest; citizens gather in front of the Prime Minister's Office It rained pretty hard earlier, but they're out there. # Albania # Balkans # Corruption # Europe # Protest # FlamingoRevolution https://www. yout",
+            "url": "https://eldritch.cafe/@ml/117627745150562461",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Mon, 16 Nov 2026 19:22:31 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 36,
+            "quality_score": 39,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "Posts by Russian journalist Chay Bowes in support of protests in Albania have prompted a response from Prime Minister Edi Rama, who reshared them on social media platform X.",
+            "text": "Posts by Russian journalist Chay Bowes in support of protests in Albania have prompted a response from Prime Minister Edi Rama, who reshared them on social media platform X.",
+            "url": "https://x.com/i/web/status/2122437423992820219",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-11-16T21:11:29.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 37,
+            "quality_score": 38,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -729,74 +921,6 @@
             ],
             "geopolitical_score": 35,
             "quality_score": 38,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 165 of anti-corruption protest in Tirana, Albania Citizens.al interviews protestors outside the Albanian Ministry of Education Using a translation app, the first interviewee speaks about how bad the corruption is and how they'll be on the streets at least until primaries next year. The second interviewee also mentions the corruption but also the cost of ",
-            "url": "https://eldritch.cafe/@ml/117598904068092497",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 11 Nov 2026 17:07:51 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 6
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 35,
-            "quality_score": 38,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 167 of anti-corruption protest in Tirana, Albania “Çdo qytetarë kundër kastës se vjetër politike, i mirëpritur në shesh”, Leçini: Dialogun, i pamundur Machine translated: “Every citizen opposed to the old political caste is welcome in the square,” Leçini: Dialogue is impossible # Albania # Balkans # Corruption # Europe # Protest # FlamingoRevolution http",
-            "url": "https://eldritch.cafe/@ml/117610415258039251",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Fri, 13 Nov 2026 17:55:17 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 28,
-            "quality_score": 31,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
