@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17 07:44 UTC",
+  "updated_at": "2026-11-17 15:16 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 7
+    "collected": 16
   },
   "countries": [
     {
@@ -21,33 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 3,
+        "mentions": 11,
+        "negative_hits": 7,
         "positive_hits": 1,
         "trusted_hits": 2,
-        "engagement_total": 6,
-        "raw_engagement_total": 6,
-        "quality_total": 160,
-        "geopolitical_total": 135,
+        "engagement_total": 20,
+        "raw_engagement_total": 20,
+        "quality_total": 269,
+        "geopolitical_total": 242,
         "source_counts": {
           "reddit": 0,
           "mastodon": 6,
-          "x": 3
+          "x": 5
         },
         "category_counts": {
-          "corruption_rule_of_law": 1,
+          "security": 4,
           "government_crisis": 4,
-          "foreign_influence": 3,
+          "foreign_influence": 2,
           "protest": 1
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 3,
           "kosovo": 2,
-          "Szerbia": 2,
-          "Albánia": 1
+          "Szerbia": 4,
+          "Koszovó": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -85,127 +85,168 @@
           },
           {
             "title": "",
-            "text": "Serbia's Parliament To Meet For First Time Since Opposition's Landslide Election Victory https://www. rferl.org/a/serbia-parliament- student-list-opposition-vucic/33899684.html",
-            "url": "https://www.rferl.org/a/serbia-parliament-student-list-opposition-vucic/33899684.html",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Mon, 16 Nov 2026 15:21:57 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 27,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "# OutNow in # OpenAccess : Our journal # COMPSEES 74/3 with a thematic section on social protests & the hybrid media system in # Serbia : - Digital technologies & political influence - Anti-vaccination & anti-migrant mobilization - Vučić’s rhetoric vs. student protests - Traditional vs. online media Additional articles on: - Innovation & job creation in # Ko",
-            "url": "https://wisskomm.social/@LeibnizIOS/117602956720580321",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Thu, 12 Nov 2026 10:18:29 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5,
-              "Koszovó": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "Serbian Minister in Moscow: We Will Not Give Up Kosovo; Partnership with Russia and China Remains Strategic Serbia Kosovo NenadPopovic Russia China",
-            "text": "Serbian Minister in Moscow: We Will Not Give Up Kosovo; Partnership with Russia and China Remains Strategic Serbia Kosovo NenadPopovic Russia China",
-            "url": "https://x.com/i/web/status/2122590115843473473",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-17T07:18:14.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 17,
-            "quality_score": 18,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Serbia’s New Government Explained https://www. youtube.com/watch?v=imIOSBdwSwo # Serbia # Corruption # Balkans # Europe # Elections",
-            "url": "https://eldritch.cafe/@ml/117597331940751841",
+            "text": "How students defeated an authoritarian leader | DW News \"What can protest movements learn from Serbia's students? They turned grief and anger after the 2024 Novi Sad station tragedy into a nationwide movement — and then into political power. They faced police pressure, pro-government media, intimidation and violence. But instead of relying on a single leader",
+            "url": "https://eldritch.cafe/@ml/117631707936735064",
             "source": "mastodon",
             "tag": "balkans",
-            "seen_date": "Wed, 11 Nov 2026 10:28:02 +0000",
+            "seen_date": "Tue, 17 Nov 2026 12:10:18 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
               "Szerbia": 1
             },
-            "event_category": "corruption_rule_of_law",
+            "event_category": "security",
             "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
               {
                 "category": "corruption_rule_of_law",
                 "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 11,
-            "quality_score": 14,
+            "geopolitical_score": 28,
+            "quality_score": 31,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Vucic’s party MP and actress gets DRENCHED IN YOGURT outside Serbian parliament Lidija Vukićević says protesters also PULLED HER HAIR, while ‘NONE of the 50 police officers REACTED",
+            "text": "Vucic’s party MP and actress gets DRENCHED IN YOGURT outside Serbian parliament Lidija Vukićević says protesters also PULLED HER HAIR, while ‘NONE of the 50 police officers REACTED’",
+            "url": "https://x.com/i/web/status/2122704972492230673",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-17T14:54:38.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 8,
+            "raw_engagement": 8,
+            "metrics": {
+              "likes": 4,
+              "reposts": 3,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Belgrade Court Issues Arrest Warrant for Milan Radoičić Over Failure to Report to Police MilanRadoicic BanjskaAttack Kosovo Serbia AfrimBunjaku SerbianList KosovoSerbia RuleOfLaw B",
+            "text": "Belgrade Court Issues Arrest Warrant for Milan Radoičić Over Failure to Report to Police MilanRadoicic BanjskaAttack Kosovo Serbia AfrimBunjaku SerbianList KosovoSerbia RuleOfLaw BIRN",
+            "url": "https://x.com/i/web/status/2122693567655378965",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-17T14:09:18.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6,
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 5,
+            "raw_engagement": 5,
+            "metrics": {
+              "likes": 3,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "BREAKING: Serbia 🇷🇸 issues an arrest warrant for Milan Radoičić. A Belgrade court ordered the Banjska attack suspect detained after he missed his Nov 15 police check-in, saying he ",
+            "text": "BREAKING: Serbia 🇷🇸 issues an arrest warrant for Milan Radoičić. A Belgrade court ordered the Banjska attack suspect detained after he missed his Nov 15 police check-in, saying he is hiding or has fled. An ex-BIA officer claims he's in Moscow. Yugoslavia Serbia 🇷🇸",
+            "url": "https://x.com/i/web/status/2122706136939876641",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-17T14:59:15.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -303,31 +344,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 23,
+        "score": 35,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
+        "mentions": 4,
+        "negative_hits": 2,
         "positive_hits": 1,
-        "trusted_hits": 2,
+        "trusted_hits": 3,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 96,
-        "geopolitical_total": 83,
+        "quality_total": 117,
+        "geopolitical_total": 99,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 3,
+          "mastodon": 4,
           "x": 0
         },
         "category_counts": {
+          "government_crisis": 1,
           "foreign_influence": 1,
           "corruption_rule_of_law": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
-          "kosovo": 3
+          "kosovo": 4
         },
-        "main_topic": "foreign_influence",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -357,6 +399,35 @@
             ],
             "geopolitical_score": 63,
             "quality_score": 68,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Kosovo's Former President Thaci Found Guilty Of Obstructing Justice In War Crimes Trial https://www. rferl.org/a/kosovo-thaci-sente nced-prison-guilty/33900279.html",
+            "url": "https://www.rferl.org/a/kosovo-thaci-sentenced-prison-guilty/33900279.html",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Tue, 17 Nov 2026 10:59:49 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 21,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -429,32 +500,31 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 19,
+        "score": 8,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 2,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 47,
-        "geopolitical_total": 39,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 27,
+        "geopolitical_total": 21,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 2
+          "x": 0
         },
         "category_counts": {
           "eu_integration": 1,
-          "government_crisis": 3
+          "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "montenegro": 1,
-          "Montenegró": 2
+          "montenegro": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "eu_integration",
         "top_posts": [
           {
             "title": "",
@@ -513,78 +583,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Petition filed to Montenegro parliament to make Serbian language official same as Montenegrin",
-            "text": "Petition filed to Montenegro parliament to make Serbian language official same as Montenegrin",
-            "url": "https://x.com/i/web/status/2122480561146982468",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-11-17T00:02:54.000Z",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 4,
-              "Szerbia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "A petition in Montenegro 🇲🇪 asks parliament to make Serbian equal to Montenegrin. Serbian is spoken by 43% of people, the most of any language, but Montenegrin is the sole official",
-            "text": "A petition in Montenegro 🇲🇪 asks parliament to make Serbian equal to Montenegrin. Serbian is spoken by 43% of people, the most of any language, but Montenegrin is the sole official one. Goal: 6,000 signatures by Jan 15. Yugoslavia Montenegro 🇲🇪 Serbia 🇷🇸 Language",
-            "url": "https://x.com/i/web/status/2122390075224756283",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-11-16T18:03:20.000Z",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 4,
-              "Szerbia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 9,
-            "quality_score": 10,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -592,37 +590,107 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 9,
-        "level": "low",
+        "score": 53,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 1,
-        "negative_hits": 1,
-        "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 29,
-        "geopolitical_total": 25,
+        "mentions": 5,
+        "negative_hits": 5,
+        "positive_hits": 0,
+        "trusted_hits": 0,
+        "engagement_total": 121,
+        "raw_engagement_total": 138,
+        "quality_total": 83,
+        "geopolitical_total": 78,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 1
+          "x": 5
         },
         "category_counts": {
-          "security": 1
+          "security": 5
         },
         "tag_counts": {
-          "Észak-Macedónia": 1
+          "Észak-Macedónia": 5
         },
         "main_topic": "security",
         "top_posts": [
           {
-            "title": "The 2026 OSCE Presidency Troika (North Macedonia, Malta, and Finland) issues a statement emphasizing that continued Russian aggression against Ukraine threatens European security. ",
-            "text": "The 2026 OSCE Presidency Troika (North Macedonia, Malta, and Finland) issues a statement emphasizing that continued Russian aggression against Ukraine threatens European security. The statement also reiterates support for Georgia's sovereignty and territorial integrity.",
-            "url": "https://x.com/i/web/status/2122396961332478286",
+            "title": "🚨 GREECE, NORTH MACEDONIA FOIL IRAN-LINKED TERROR PLOT 5 arrested over a planned attack or assassination in Greece allegedly directed by Iranian national Edris Jahangiri Mavaneh, N",
+            "text": "🚨 GREECE, NORTH MACEDONIA FOIL IRAN-LINKED TERROR PLOT 5 arrested over a planned attack or assassination in Greece allegedly directed by Iranian national Edris Jahangiri Mavaneh, North Macedonia's security agency says, Kathimerini reports. Iran Greece",
+            "url": "https://x.com/i/web/status/2122678905228157019",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-16T18:30:42.000Z",
+            "seen_date": "2026-11-17T13:11:03.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 22,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🚨 Iranian-backed terror plot foiled: 5 North Macedonian nationals arrested over alleged plan to attack or assassinate in Greece. 4 held in N. Macedonia, 5th extradited Nov 12. Susp",
+            "text": "🚨 Iranian-backed terror plot foiled: 5 North Macedonian nationals arrested over alleged plan to attack or assassinate in Greece. 4 held in N. Macedonia, 5th extradited Nov 12. Suspect: Iranian national Edris Jahangiri. Balkans security tensions escalate.…",
+            "url": "https://x.com/i/web/status/2122677801119826397",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-17T13:06:39.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 21,
+            "quality_score": 22,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "MORE DETAILS: 5 North Macedonian nationals were arrested over an alleged Iranian plot to carry out a terror attack or assassination in Greece. 4 were detained in North Macedonia. T",
+            "text": "MORE DETAILS: 5 North Macedonian nationals were arrested over an alleged Iranian plot to carry out a terror attack or assassination in Greece. 4 were detained in North Macedonia. The fifth was held in Greece and extradited on November 12. Iranian national Edris Jahangiri",
+            "url": "https://x.com/i/web/status/2122677537746678237",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-17T13:05:37.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
@@ -635,17 +703,82 @@
                 "category": "security",
                 "hits": 1,
                 "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
               }
             ],
-            "geopolitical_score": 25,
-            "quality_score": 29,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "geopolitical_score": 12,
+            "quality_score": 13,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 120,
+            "raw_engagement": 137,
+            "metrics": {
+              "likes": 111,
+              "reposts": 24,
+              "replies": 1,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🔍 North Macedonia Security Services Uncover Iranian Proxy Network Linked to Planned Terrorist Act in Greece. Read more in the comments. 👇",
+            "text": "🔍 North Macedonia Security Services Uncover Iranian Proxy Network Linked to Planned Terrorist Act in Greece. Read more in the comments. 👇",
+            "url": "https://x.com/i/web/status/2122687147555930553",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-17T13:43:48.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 13,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "An Iran-linked network suspected of plotting to assassinate a person in Greece has been uncovered, with five North Macedonian nationals arrested, the country's National Security Ag",
+            "text": "An Iran-linked network suspected of plotting to assassinate a person in Greece has been uncovered, with five North Macedonian nationals arrested, the country's National Security Agency said Tuesday. Four suspects were arrested in North Macedonia and one in Greece. The agency",
+            "url": "https://x.com/i/web/status/2122695868293763287",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-17T14:18:27.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 12,
+            "quality_score": 13,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "metrics": {
@@ -665,30 +798,31 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 16,
-        "negative_hits": 13,
+        "mentions": 20,
+        "negative_hits": 16,
         "positive_hits": 2,
-        "trusted_hits": 1,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 460,
-        "geopolitical_total": 412,
+        "trusted_hits": 3,
+        "engagement_total": 13,
+        "raw_engagement_total": 13,
+        "quality_total": 531,
+        "geopolitical_total": 472,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 15,
-          "x": 1
+          "mastodon": 16,
+          "x": 4
         },
         "category_counts": {
-          "government_crisis": 2,
-          "protest": 4,
+          "government_crisis": 3,
+          "protest": 5,
           "corruption_rule_of_law": 7,
-          "security": 2,
+          "security": 4,
           "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 12,
-          "albania": 3,
-          "Albánia": 1
+          "albania": 4,
+          "Koszovó": 2,
+          "Albánia": 2
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
