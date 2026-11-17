@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17 01:21 UTC",
+  "updated_at": "2026-11-17 07:44 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 10
+    "collected": 7
   },
   "countries": [
     {
@@ -21,42 +21,41 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 2,
+        "mentions": 9,
+        "negative_hits": 3,
         "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 163,
-        "geopolitical_total": 141,
+        "trusted_hits": 2,
+        "engagement_total": 6,
+        "raw_engagement_total": 6,
+        "quality_total": 160,
+        "geopolitical_total": 135,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 5,
-          "x": 5
+          "mastodon": 6,
+          "x": 3
         },
         "category_counts": {
           "corruption_rule_of_law": 1,
-          "government_crisis": 5,
-          "foreign_influence": 2,
-          "protest": 1,
-          "eu_integration": 1
+          "government_crisis": 4,
+          "foreign_influence": 3,
+          "protest": 1
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 3,
-          "kosovo": 1,
-          "Szerbia": 4,
-          "Koszovó": 1
+          "kosovo": 2,
+          "Szerbia": 2,
+          "Albánia": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
           {
-            "title": "Former Serbian President Aleksandar Vucic says he has been elected to lead the SNS-opposition parliamentary group following his bloc defeat",
-            "text": "Former Serbian President Aleksandar Vucic says he has been elected to lead the SNS-opposition parliamentary group following his bloc defeat",
-            "url": "https://x.com/i/web/status/2122463797575320003",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-16T22:56:17.000Z",
+            "title": "",
+            "text": "Serbia’s Student List candidates to be sworn in as MPs after election triumph By Guy de Launey in Belgrade Inaugural parliamentary session comes as ousted populist Aleksandar Vučić threatens mass protests of his own https://www. theguardian.com/world/2026/nov /17/serbia-student-list-mps-sworn-in-election-triumph # Serbia # Europe # Worldnews # TheGuardian # ",
+            "url": "https://rssfeed.media/@guardianfeeds/117630056073672087",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Tue, 17 Nov 2026 05:10:13 +0000",
             "matched_countries": [
               "Szerbia"
             ],
@@ -67,23 +66,22 @@
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 3,
+                "hits": 1,
                 "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
+            "geopolitical_score": 32,
+            "quality_score": 37,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           },
           {
             "title": "",
@@ -145,37 +143,37 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Three Kosovo Serb groups file a criminal complaint over decisions made under Vučić as the Student List engages with Brussels. What lies ahead for Serbia's EU accession? Serbia Koso",
-            "text": "Three Kosovo Serb groups file a criminal complaint over decisions made under Vučić as the Student List engages with Brussels. What lies ahead for Serbia's EU accession? Serbia Kosovo EUEnlargement",
-            "url": "https://x.com/i/web/status/2122447073446707205",
+            "title": "Serbian Minister in Moscow: We Will Not Give Up Kosovo; Partnership with Russia and China Remains Strategic Serbia Kosovo NenadPopovic Russia China",
+            "text": "Serbian Minister in Moscow: We Will Not Give Up Kosovo; Partnership with Russia and China Remains Strategic Serbia Kosovo NenadPopovic Russia China",
+            "url": "https://x.com/i/web/status/2122590115843473473",
             "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-11-16T21:49:50.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-17T07:18:14.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5,
+              "Szerbia": 2,
               "Koszovó": 1
             },
-            "event_category": "eu_integration",
+            "event_category": "foreign_influence",
             "event_categories": [
               {
-                "category": "eu_integration",
-                "hits": 3,
-                "weight": 6
+                "category": "foreign_influence",
+                "hits": 2,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
+            "geopolitical_score": 17,
+            "quality_score": 18,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 1,
+              "likes": 0,
               "reposts": 0,
-              "replies": 1,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -305,33 +303,31 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 33,
+        "score": 23,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 2,
+        "mentions": 3,
+        "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 108,
-        "geopolitical_total": 94,
+        "quality_total": 96,
+        "geopolitical_total": 83,
         "source_counts": {
           "reddit": 0,
           "mastodon": 3,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "foreign_influence": 1,
-          "corruption_rule_of_law": 2,
+          "corruption_rule_of_law": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
-          "serbia": 1,
-          "kosovo": 2,
-          "Koszovó": 1
+          "kosovo": 3
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "foreign_influence",
         "top_posts": [
           {
             "title": "",
@@ -397,46 +393,11 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "The Basic Prosecution in Pristina has asked the Basic Court in Pristina to order the pretrial detention of former Culture Minister Astrit Haraqija and five others arrested during a",
-            "text": "The Basic Prosecution in Pristina has asked the Basic Court in Pristina to order the pretrial detention of former Culture Minister Astrit Haraqija and five others arrested during an operation against cocaine trafficking: Jeton Stanovci, Gëzim Feka, Arjan…",
-            "url": "https://x.com/i/web/status/2122448245456519491",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-11-16T21:54:29.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 4
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 11,
-            "quality_score": 12,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "📰 La Serbia al bivio dopo la vittoria degli studenti. L’apertura Ue, le incognite su Russia e Kosovo: cosa può succedere #️⃣ # ESTERI # AllargamentoUe # Giovani # Kosovo # Russia # Serbia # Unioneeuropea # OpenOnline 🔗 https://www. open.online/2026/11/15/allarga mento-ue-serbia-negoziati-russia-kosovo/ Belgrado è in trattativa per entrare in Ue dal 2009, ora",
             "url": "https://social.thelab.uno/@openonline/117619776491382870",
             "source": "mastodon",
-            "tag": "serbia",
+            "tag": "kosovo",
             "seen_date": "Sun, 15 Nov 2026 09:35:59 +0000",
             "matched_countries": [
               "Szerbia",
@@ -491,8 +452,7 @@
         "tag_counts": {
           "balkans": 1,
           "montenegro": 1,
-          "Szerbia": 1,
-          "Montenegró": 1
+          "Montenegró": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -559,7 +519,7 @@
             "text": "Petition filed to Montenegro parliament to make Serbian language official same as Montenegrin",
             "url": "https://x.com/i/web/status/2122480561146982468",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Montenegró",
             "seen_date": "2026-11-17T00:02:54.000Z",
             "matched_countries": [
               "Montenegró"
@@ -705,21 +665,21 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
+        "mentions": 16,
         "negative_hits": 13,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 450,
-        "geopolitical_total": 403,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
+        "quality_total": 460,
+        "geopolitical_total": 412,
         "source_counts": {
           "reddit": 0,
           "mastodon": 15,
-          "x": 0
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 1,
+          "government_crisis": 2,
           "protest": 4,
           "corruption_rule_of_law": 7,
           "security": 2,
@@ -727,7 +687,8 @@
         },
         "tag_counts": {
           "balkans": 12,
-          "albania": 3
+          "albania": 3,
+          "Albánia": 1
         },
         "main_topic": "corruption_rule_of_law",
         "top_posts": [
