@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19 20:29 UTC",
+  "updated_at": "2026-11-20 00:06 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 13
+    "collected": 12
   },
   "countries": [
     {
@@ -21,33 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 10,
-        "negative_hits": 6,
-        "positive_hits": 0,
-        "trusted_hits": 3,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 199,
-        "geopolitical_total": 168,
+        "mentions": 11,
+        "negative_hits": 5,
+        "positive_hits": 2,
+        "trusted_hits": 2,
+        "engagement_total": 7,
+        "raw_engagement_total": 7,
+        "quality_total": 192,
+        "geopolitical_total": 163,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
-          "security": 3,
+          "security": 1,
           "protest": 1,
           "corruption_rule_of_law": 3,
-          "government_crisis": 2,
+          "government_crisis": 5,
           "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 1,
           "serbia": 4,
           "kosovo": 2,
-          "Szerbia": 3
+          "Szerbia": 4
         },
-        "main_topic": "security",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -87,41 +87,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "The bombing of embassies was begun by NATO in Belgrade in 1999. Apart from that your government was warned of the dangers of keeping your citizens in Kyiv a city that is a target i",
-            "text": "The bombing of embassies was begun by NATO in Belgrade in 1999. Apart from that your government was warned of the dangers of keeping your citizens in Kyiv a city that is a target in a war instigated and escalated by NATO. So if your people are harmed the responsibility is yours.",
-            "url": "https://x.com/i/web/status/2123506118450192882",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-19T19:58:06.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 25,
-            "quality_score": 29,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -209,6 +174,37 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Serbian Court Seeks Arrest of Kosovo Serb Kingpin Radoicic https:// balkaninsight.com/2026/11/17/s erbian-court-seeks-arrest-of-kosovo-serb-kingpin-radoicic/bi/",
+            "url": "https://balkaninsight.com/2026/11/17/serbian-court-seeks-arrest-of-kosovo-serb-kingpin-radoicic/bi/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Tue, 17 Nov 2026 17:18:31 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 15,
+            "quality_score": 20,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -216,69 +212,32 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 19,
+        "score": 8,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
+        "mentions": 2,
+        "negative_hits": 0,
         "positive_hits": 1,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 59,
-        "geopolitical_total": 50,
+        "quality_total": 37,
+        "geopolitical_total": 29,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
           "migration": 1,
-          "security": 2
+          "security": 1
         },
         "tag_counts": {
           "balkan": 1,
-          "bosnia": 1,
-          "Koszovó": 1
+          "bosnia": 1
         },
-        "main_topic": "security",
+        "main_topic": "migration",
         "top_posts": [
-          {
-            "title": "The authorities of Bosnia and Herzegovina have banned Millan Radoiçiq, the person suspected of organizing the attack in Banjska, in northern Kosovo, from entering the country, afte",
-            "text": "The authorities of Bosnia and Herzegovina have banned Millan Radoiçiq, the person suspected of organizing the attack in Banjska, in northern Kosovo, from entering the country, after assessing him as a risk to national security.",
-            "url": "https://x.com/i/web/status/2123479481285304797",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-11-19T18:12:15.000Z",
-            "matched_countries": [
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Bosznia-Hercegovina": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Agenzia Nova: Bosnia: viceministro Esteri, attuato 70 per cento del programma di partenariato con la Nato 16 nov 14:49 - (Agenzia Nova) - La Bosnia Erzegovina ha completato circa il 70 per cento degli impegni previsti dal Programma individuale di... (Seb) Bosnia: Deputy Minister of Foreign Affairs, 70 percent of the NATO partnership program implemented Nov 1",
@@ -635,26 +594,66 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 0,
+        "score": 6,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 0,
+        "mentions": 1,
         "negative_hits": 0,
         "positive_hits": 0,
         "trusted_hits": 0,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 0,
-        "geopolitical_total": 0,
+        "quality_total": 11,
+        "geopolitical_total": 10,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 0
+          "x": 1
         },
-        "category_counts": {},
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "category_counts": {
+          "ethnic_tension": 1
+        },
+        "tag_counts": {
+          "Észak-Macedónia": 1
+        },
+        "main_topic": "ethnic_tension",
+        "top_posts": [
+          {
+            "title": "During the preparation of a scientific paper, Fati Iseni has analyzed statistical data for the 2010–2024 period on births, deaths and natural balance by ethnic affiliation in North",
+            "text": "During the preparation of a scientific paper, Fati Iseni has analyzed statistical data for the 2010–2024 period on births, deaths and natural balance by ethnic affiliation in North Macedonia.",
+            "url": "https://x.com/i/web/status/2123548366315352264",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-19T22:45:58.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 10,
+            "quality_score": 11,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          }
+        ]
       }
     },
     {
@@ -664,13 +663,13 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 21,
-        "negative_hits": 14,
-        "positive_hits": 2,
-        "trusted_hits": 2,
-        "engagement_total": 136,
-        "raw_engagement_total": 136,
-        "quality_total": 540,
-        "geopolitical_total": 486,
+        "negative_hits": 15,
+        "positive_hits": 1,
+        "trusted_hits": 1,
+        "engagement_total": 117,
+        "raw_engagement_total": 117,
+        "quality_total": 508,
+        "geopolitical_total": 457,
         "source_counts": {
           "reddit": 0,
           "mastodon": 14,
@@ -681,16 +680,17 @@
           "corruption_rule_of_law": 1,
           "ethnic_tension": 1,
           "security": 4,
-          "government_crisis": 8
+          "government_crisis": 7,
+          "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 12,
           "albania": 2,
-          "Koszovó": 1,
+          "Szerbia": 1,
           "Észak-Macedónia": 1,
           "Albánia": 5
         },
-        "main_topic": "government_crisis",
+        "main_topic": "protest",
         "top_posts": [
           {
             "title": "",
@@ -766,42 +766,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Kosovo and Albanian Land Forces Commanders Meet to Strengthen Military Cooperation Kosovo Albania KSF AlbanianArmedForces MilitaryCooperation RegionalSecurity NATO",
-            "text": "Kosovo and Albanian Land Forces Commanders Meet to Strengthen Military Cooperation Kosovo Albania KSF AlbanianArmedForces MilitaryCooperation RegionalSecurity NATO",
-            "url": "https://x.com/i/web/status/2123495858524307790",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-11-19T19:17:19.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 4,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 41,
-            "quality_score": 45,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 2,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "Day 170 of anti-corruption protest in Tirana, Albania. Tensione ne proteste, qytetaret thirrje para kryeministrise Machine translated: Tensions at the protest; citizens gather in front of the Prime Minister's Office It rained pretty hard earlier, but they're out there. # Albania # Balkans # Corruption # Europe # Protest # FlamingoRevolution https://www. yout",
             "url": "https://eldritch.cafe/@ml/117627745150562461",
@@ -857,6 +821,45 @@
             "event_categories": [
               {
                 "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 31,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Cops are penning protestors in across the street from the Prime Minister's office, but are letting car traffic through as well as people walking dogs and such on the near side of the street. Meanwhile, how they are keeping protestors penned in is by a tight line of cops standing in the cycle lane. One of the charges made against some arrestees has been for \"",
+            "url": "https://eldritch.cafe/@ml/117638599578332308",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Wed, 18 Nov 2026 17:22:56 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               },
