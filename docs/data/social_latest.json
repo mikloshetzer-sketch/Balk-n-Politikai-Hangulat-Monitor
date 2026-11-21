@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21 06:55 UTC",
+  "updated_at": "2026-11-21 13:58 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 12
+    "collected": 11
   },
   "countries": [
     {
@@ -21,92 +21,117 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 13,
-        "negative_hits": 5,
+        "mentions": 9,
+        "negative_hits": 4,
         "positive_hits": 0,
         "trusted_hits": 4,
-        "engagement_total": 25,
-        "raw_engagement_total": 25,
-        "quality_total": 233,
-        "geopolitical_total": 196,
+        "engagement_total": 4,
+        "raw_engagement_total": 4,
+        "quality_total": 181,
+        "geopolitical_total": 149,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 8,
-          "x": 5
+          "mastodon": 7,
+          "x": 2
         },
         "category_counts": {
+          "government_crisis": 1,
           "protest": 3,
           "foreign_influence": 2,
-          "corruption_rule_of_law": 3,
-          "government_crisis": 3,
-          "security": 1,
-          "ethnic_tension": 1
+          "corruption_rule_of_law": 1,
+          "ethnic_tension": 1,
+          "security": 1
         },
         "tag_counts": {
-          "serbia": 6,
+          "balkans": 1,
+          "serbia": 4,
           "kosovo": 2,
-          "Szerbia": 4,
+          "Szerbia": 1,
           "Koszovó": 1
         },
         "main_topic": "protest",
         "top_posts": [
           {
             "title": "",
-            "text": "Serbian Anti-Corruption Agency Files Criminal Complaint Against Belgrade Mayor https:// balkaninsight.com/2026/11/19/s erbian-anti-corruption-agency-files-criminal-complaint-against-belgrade-mayor/bi/",
-            "url": "https://balkaninsight.com/2026/11/19/serbian-anti-corruption-agency-files-criminal-complaint-against-belgrade-mayor/bi/",
+            "text": "The Student List nominee won for president of the new Serbian Parliament. \"Aleksandar Čupić (Serbian: Александар Чупић; born 1978) is a Serbian academic and politician who has been president of the National Assembly and, in that capacity, acting president of Serbia since 19 November 2026. A docent at the University of Belgrade Faculty of Transport and Traffi",
+            "url": "https://eldritch.cafe/@ml/117654250415927406",
             "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Thu, 19 Nov 2026 09:52:21 +0000",
+            "tag": "balkans",
+            "seen_date": "Sat, 21 Nov 2026 11:43:09 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
               "Szerbia": 6
             },
-            "event_category": "corruption_rule_of_law",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "corruption_rule_of_law",
+                "category": "government_crisis",
                 "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 23,
-            "quality_score": 28,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Serbia: Agenzia anticorruzione presenta denuncia penale contro sindaco di Belgrado Aleksandar Sapic 19 nov 11:58 - (Agenzia Nova) - L'Agenzia per la prevenzione della corruzione della Serbia ha presentato una denuncia penale alla Procura superiore... (Seb) Serbia: Anti-corruption agency files criminal complaint against Belgrade Mayor Aleksandar",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117642796587801566",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Thu, 19 Nov 2026 11:10:17 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 6
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
+                "weight": 9
+              },
               {
-                "category": "corruption_rule_of_law",
+                "category": "protest",
                 "hits": 2,
                 "weight": 8
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 22,
+            "geopolitical_score": 42,
+            "quality_score": 45,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Shameful ethnic cleansing in the Serbian Kosovo and Metohija by the Albanian illegal regime sponsored by the EU , UK and NATO terrorists.",
+            "text": "Shameful ethnic cleansing in the Serbian Kosovo and Metohija by the Albanian illegal regime sponsored by the EU , UK and NATO terrorists.",
+            "url": "https://x.com/i/web/status/2124126117774918054",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-21T13:01:45.000Z",
+            "matched_countries": [
+              "Szerbia",
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Albánia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 23,
+            "quality_score": 27,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -169,39 +194,33 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Another parliamentary democracy dies to thunderous aplause. Serbian select committees appointed with ruling party only. They will be overseeing work of the majority goverment, apar",
-            "text": "Another parliamentary democracy dies to thunderous aplause. Serbian select committees appointed with ruling party only. They will be overseeing work of the majority goverment, aparently… Meanwhile, the public are turning the new leader into new Tito and admiring his good looks.",
-            "url": "https://x.com/i/web/status/2124024641908048242",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-21T06:18:31.000Z",
+            "title": "",
+            "text": "Russian Despatch: Without Vucic, Moscow Faces a Very Different Balkans https:// balkaninsight.com/2026/11/20/r ussian-despatch-without-vucic-moscow-faces-a-very-different-balkans/bi/",
+            "url": "https://balkaninsight.com/2026/11/20/russian-despatch-without-vucic-moscow-faces-a-very-different-balkans/bi/",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Fri, 20 Nov 2026 07:04:29 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2
+              "Szerbia": 4
             },
-            "event_category": "government_crisis",
+            "event_category": "foreign_influence",
             "event_categories": [
               {
-                "category": "government_crisis",
-                "hits": 2,
-                "weight": 9
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 19,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
+            "geopolitical_score": 12,
+            "quality_score": 17,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -302,74 +321,34 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
+        "mentions": 9,
         "negative_hits": 5,
-        "positive_hits": 1,
-        "trusted_hits": 5,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 219,
-        "geopolitical_total": 182,
+        "positive_hits": 2,
+        "trusted_hits": 4,
+        "engagement_total": 7,
+        "raw_engagement_total": 7,
+        "quality_total": 174,
+        "geopolitical_total": 143,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 8,
-          "x": 3
+          "mastodon": 7,
+          "x": 2
         },
         "category_counts": {
           "government_crisis": 4,
-          "security": 3,
           "protest": 1,
           "economic_infrastructure": 1,
           "corruption_rule_of_law": 1,
-          "foreign_influence": 1
+          "foreign_influence": 1,
+          "security": 1
         },
         "tag_counts": {
-          "balkans": 2,
+          "balkans": 1,
           "kosovo": 6,
-          "Koszovó": 3
+          "Koszovó": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
-          {
-            "title": "",
-            "text": "Durrës–Pristina railway project, Rama: Albania and Kosovo would welcome Japan’s involvement “Together with the Prime Minister of Kosovo, we have discussed more than once how beneficial it would be to involve Japan in the new railway project from Durrës to Pristina, which would then pass through Niš and connect to Central Europe. This railway is also of very,",
-            "url": "https://eldritch.cafe/@ml/117636414386812959",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 18 Nov 2026 08:07:13 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5,
-              "Albánia": 1
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 36,
-            "quality_score": 41,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "Kosovo Ex-President’s Second Sentence Revives Controversy over Hague Court https:// balkaninsight.com/2026/11/19/k osovo-ex-presidents-second-sentence-revives-controversy-over-hague-court/btj/",
@@ -495,6 +474,37 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Serbian Court Seeks Arrest of Kosovo Serb Kingpin Radoicic https:// balkaninsight.com/2026/11/17/s erbian-court-seeks-arrest-of-kosovo-serb-kingpin-radoicic/bi/",
+            "url": "https://balkaninsight.com/2026/11/17/serbian-court-seeks-arrest-of-kosovo-serb-kingpin-radoicic/bi/",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Tue, 17 Nov 2026 17:18:31 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Szerbia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 15,
+            "quality_score": 20,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -502,17 +512,17 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 11,
+        "score": 16,
         "level": "low",
         "scale": "0-60 risk index",
         "mentions": 3,
-        "negative_hits": 0,
+        "negative_hits": 1,
         "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 16,
-        "raw_engagement_total": 16,
-        "quality_total": 37,
-        "geopolitical_total": 30,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 41,
+        "geopolitical_total": 34,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
@@ -521,7 +531,7 @@
         "category_counts": {
           "eu_integration": 1,
           "government_crisis": 1,
-          "foreign_influence": 1
+          "security": 1
         },
         "tag_counts": {
           "montenegro": 2,
@@ -530,25 +540,24 @@
         "main_topic": "eu_integration",
         "top_posts": [
           {
-            "title": "Is Montenegro the EU's next member state? On a new I speak with Prof. Nemanja Batrićević about Podgorica's prospects for EU accession, the role of the Orthodox Church in the countr",
-            "text": "Is Montenegro the EU's next member state? On a new I speak with Prof. Nemanja Batrićević about Podgorica's prospects for EU accession, the role of the Orthodox Church in the country's politics, and its evolving ties to Serbia and Russia.",
-            "url": "https://x.com/i/web/status/2123858850042536053",
+            "title": "Montenegro rejects territorialconcessions in EU dispute with Croatia Podgorica seeks renewed border negotiations as Zagreb links support for accession progress to unresolved bilate",
+            "text": "Montenegro rejects territorialconcessions in EU dispute with Croatia Podgorica seeks renewed border negotiations as Zagreb links support for accession progress to unresolved bilateralissues. Montenegro aims to conclude EUnegotiations by 2026 and join the bloc in 2028.",
+            "url": "https://x.com/i/web/status/2124041946821689829",
             "source": "x",
             "tag": "Montenegró",
-            "seen_date": "2026-11-20T19:19:43.000Z",
+            "seen_date": "2026-11-21T07:27:17.000Z",
             "matched_countries": [
               "Montenegró"
             ],
             "country_confidence": {
-              "Montenegró": 5,
-              "Szerbia": 1
+              "Montenegró": 5
             },
-            "event_category": "foreign_influence",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "foreign_influence",
+                "category": "security",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
               },
               {
                 "category": "eu_integration",
@@ -556,17 +565,17 @@
                 "weight": 6
               }
             ],
-            "geopolitical_score": 15,
-            "quality_score": 16,
+            "geopolitical_score": 19,
+            "quality_score": 20,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 16,
-            "raw_engagement": 16,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 12,
-              "reposts": 2,
-              "replies": 1,
-              "quotes": 1
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
             },
             "quality": "x_api_filtered"
           },
@@ -662,32 +671,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 15,
-        "negative_hits": 12,
+        "mentions": 19,
+        "negative_hits": 15,
         "positive_hits": 1,
-        "trusted_hits": 0,
-        "engagement_total": 25,
-        "raw_engagement_total": 25,
-        "quality_total": 445,
-        "geopolitical_total": 406,
+        "trusted_hits": 1,
+        "engagement_total": 7,
+        "raw_engagement_total": 7,
+        "quality_total": 556,
+        "geopolitical_total": 506,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 12,
-          "x": 3
+          "mastodon": 14,
+          "x": 5
         },
         "category_counts": {
-          "government_crisis": 4,
-          "security": 3,
+          "security": 5,
+          "government_crisis": 6,
           "protest": 5,
           "corruption_rule_of_law": 1,
           "ethnic_tension": 2
         },
         "tag_counts": {
-          "balkans": 12,
+          "balkans": 14,
+          "Szerbia": 1,
           "Koszovó": 1,
-          "Albánia": 2
+          "Albánia": 3
         },
-        "main_topic": "protest",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -722,6 +732,50 @@
             ],
             "geopolitical_score": 52,
             "quality_score": 55,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "PM Edi Rama was speaking to Socialist Party members not too many meters away from where the above statement was going on ^^^ Rama didn't speak with protestors in 135 days of unquestionably peaceful protest. Now that tactics have escalated at times, he's no more interested in it. When he claims this, it's entirely theater for those who are not actually in Tir",
+            "url": "https://eldritch.cafe/@ml/117654456528835976",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sat, 21 Nov 2026 12:35:34 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 9
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 46,
+            "quality_score": 49,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -807,83 +861,38 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "GRETA THUNBERG JOINS STUDENT PROTESTERS IN ALBANIA ​Swedish activist GretaThunberg joined student demonstrators in Tirana,amplifying local calls for education funding,climate actio",
-            "text": "GRETA THUNBERG JOINS STUDENT PROTESTERS IN ALBANIA ​Swedish activist GretaThunberg joined student demonstrators in Tirana,amplifying local calls for education funding,climate action,and anti-corruption reforms to an international audience. Albania StudentProtests",
-            "url": "https://x.com/i/web/status/2124020203466133725",
-            "source": "x",
-            "tag": "Albánia",
-            "seen_date": "2026-11-21T06:00:53.000Z",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 40,
-            "quality_score": 41,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
-            "text": "Alizoti: Protesta e 28 Nëntorit do jetë madhështore! Avokati: Akti normativ i Kryeministrit... Machine translated: Alizoti: The November 28 protest will be magnificent! Lawyer: Normative Act of the Prime Minister..... Lawyer guest in-studio, livecam of protest in split screen. # Albania # Balkans # Corruption # Europe # Protest # FlamingoRevolution https://w",
-            "url": "https://eldritch.cafe/@ml/117650037064348530",
+            "text": "Day 175 of anti-corruption protest Të rinjtë me deklaratë te “Politekniku”: Lëvizja studentore kombëtare, vijimësi e revoltës qytetare! Machine translated: Young people issue a statement at the “Polytechnic”: The national student movement is a continuation of the civic revolt! Paraphrase of machine translation: Several students read out statements clarifying",
+            "url": "https://eldritch.cafe/@ml/117654351337451713",
             "source": "mastodon",
             "tag": "balkans",
-            "seen_date": "Fri, 20 Nov 2026 17:51:38 +0000",
+            "seen_date": "Sat, 21 Nov 2026 12:08:49 +0000",
             "matched_countries": [
               "Albánia"
             ],
             "country_confidence": {
-              "Albánia": 1
+              "Albánia": 2
             },
-            "event_category": "government_crisis",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "government_crisis",
+                "category": "security",
                 "hits": 1,
                 "weight": 9
               },
               {
-                "category": "protest",
-                "hits": 1,
+                "category": "corruption_rule_of_law",
+                "hits": 2,
                 "weight": 8
               },
               {
-                "category": "corruption_rule_of_law",
+                "category": "protest",
                 "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 31,
+            "geopolitical_score": 36,
+            "quality_score": 39,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
