@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21 13:58 UTC",
+  "updated_at": "2026-11-21 19:05 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 11
+    "collected": 13
   },
   "countries": [
     {
@@ -21,33 +21,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 4,
-        "positive_hits": 0,
+        "mentions": 10,
+        "negative_hits": 5,
+        "positive_hits": 2,
         "trusted_hits": 4,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 181,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 186,
         "geopolitical_total": 149,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 7,
-          "x": 2
+          "mastodon": 9,
+          "x": 1
         },
         "category_counts": {
           "government_crisis": 1,
+          "economic_infrastructure": 1,
+          "ethnic_tension": 1,
           "protest": 3,
           "foreign_influence": 2,
           "corruption_rule_of_law": 1,
-          "ethnic_tension": 1,
           "security": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 4,
+          "serbia": 6,
           "kosovo": 2,
-          "Szerbia": 1,
-          "Koszovó": 1
+          "Szerbia": 1
         },
         "main_topic": "protest",
         "top_posts": [
@@ -89,49 +89,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Shameful ethnic cleansing in the Serbian Kosovo and Metohija by the Albanian illegal regime sponsored by the EU , UK and NATO terrorists.",
-            "text": "Shameful ethnic cleansing in the Serbian Kosovo and Metohija by the Albanian illegal regime sponsored by the EU , UK and NATO terrorists.",
-            "url": "https://x.com/i/web/status/2124126117774918054",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-21T13:01:45.000Z",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Albánia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 23,
-            "quality_score": 27,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -195,32 +152,69 @@
           },
           {
             "title": "",
-            "text": "Russian Despatch: Without Vucic, Moscow Faces a Very Different Balkans https:// balkaninsight.com/2026/11/20/r ussian-despatch-without-vucic-moscow-faces-a-very-different-balkans/bi/",
-            "url": "https://balkaninsight.com/2026/11/20/russian-despatch-without-vucic-moscow-faces-a-very-different-balkans/bi/",
+            "text": "The # DaytonAgreement was signed in 1995 on # ThisDayInHistory , ending the # BosnianWar . While it preserved integrity of the country # BosniaAndHerzegovina , stymieing expansionist aims of # Serbia and # Croatia , it entrenched the # EthnicCleansing and did not facilitate reconciliation.",
+            "url": "https://mastodon.social/@LiamOMaraIV/117655026529098929",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Fri, 20 Nov 2026 07:04:29 +0000",
+            "seen_date": "Sat, 21 Nov 2026 15:00:31 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Szerbia": 1,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 14,
+            "quality_score": 17,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "The US/NATO bombed Serbian Christians and killed numerous civilians to give these people a second state btw.",
+            "text": "The US/NATO bombed Serbian Christians and killed numerous civilians to give these people a second state btw.",
+            "url": "https://x.com/i/web/status/2124198136709283974",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-21T17:47:56.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 4
+              "Szerbia": 2
             },
-            "event_category": "foreign_influence",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "foreign_influence",
+                "category": "security",
                 "hits": 1,
-                "weight": 8
+                "weight": 9
               }
             ],
-            "geopolitical_score": 12,
+            "geopolitical_score": 13,
             "quality_score": 17,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -228,28 +222,30 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 8,
+        "score": 18,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
-        "negative_hits": 0,
-        "positive_hits": 1,
+        "mentions": 3,
+        "negative_hits": 1,
+        "positive_hits": 2,
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 37,
-        "geopolitical_total": 29,
+        "quality_total": 54,
+        "geopolitical_total": 43,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 2,
+          "mastodon": 3,
           "x": 0
         },
         "category_counts": {
           "migration": 1,
+          "ethnic_tension": 1,
           "security": 1
         },
         "tag_counts": {
           "balkan": 1,
+          "serbia": 1,
           "bosnia": 1
         },
         "main_topic": "migration",
@@ -311,6 +307,37 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "The # DaytonAgreement was signed in 1995 on # ThisDayInHistory , ending the # BosnianWar . While it preserved integrity of the country # BosniaAndHerzegovina , stymieing expansionist aims of # Serbia and # Croatia , it entrenched the # EthnicCleansing and did not facilitate reconciliation.",
+            "url": "https://mastodon.social/@LiamOMaraIV/117655026529098929",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Sat, 21 Nov 2026 15:00:31 +0000",
+            "matched_countries": [
+              "Szerbia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Szerbia": 1,
+              "Bosznia-Hercegovina": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              }
+            ],
+            "geopolitical_score": 14,
+            "quality_score": 17,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -321,34 +348,73 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 5,
-        "positive_hits": 2,
-        "trusted_hits": 4,
-        "engagement_total": 7,
-        "raw_engagement_total": 7,
-        "quality_total": 174,
-        "geopolitical_total": 143,
+        "mentions": 8,
+        "negative_hits": 4,
+        "positive_hits": 1,
+        "trusted_hits": 5,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 163,
+        "geopolitical_total": 130,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
-          "government_crisis": 4,
           "protest": 1,
+          "government_crisis": 3,
           "economic_infrastructure": 1,
           "corruption_rule_of_law": 1,
           "foreign_influence": 1,
           "security": 1
         },
         "tag_counts": {
-          "balkans": 1,
-          "kosovo": 6,
-          "Koszovó": 2
+          "kosovo": 7,
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
+          {
+            "title": "From his recent article, link next, Albin Kurti, the Prime Minister of Kosova certainly has a way with words... \"In the spring of 1999, all 19 NATO members were united in the decis",
+            "text": "From his recent article, link next, Albin Kurti, the Prime Minister of Kosova certainly has a way with words... \"In the spring of 1999, all 19 NATO members were united in the decision to bomb a European country: Milosevic’s Yugoslavia. That speaks to how grave the situation was,",
+            "url": "https://x.com/i/web/status/2124199503511093262",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-21T17:53:22.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 26,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Kosovo Ex-President’s Second Sentence Revives Controversy over Hague Court https:// balkaninsight.com/2026/11/19/k osovo-ex-presidents-second-sentence-revives-controversy-over-hague-court/btj/",
@@ -385,10 +451,39 @@
           },
           {
             "title": "",
+            "text": "Workers' protests, KEK announces that it has reached an agreement with the Unions: We will give them bonuses - Gazeta Express https://www. gazetaexpress.com/en/KEK-worke rs%27-protests-announce-that-an-agreement-has-been-reached-with-the-unions--we-will-give-them-bonuses/ # Kosovo # 1u",
+            "url": "https://mastodon.social/@RealJournalism/117650196964281967",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Fri, 20 Nov 2026 18:32:18 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 23,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "Hashim Thaçi’s second conviction reignites debate in Kosovo about the Kosovo Specialist Chambers. Kosovo’s former President Hashim Thaçi has been convicted of trying to influence witnesses in his war crimes trial. The conviction has reignited debate in Kosovo about the Kosovo Specialist Chambers, the court that convicted him. https:// mediafaro.org/article/2",
             "url": "https://mastodon.mediafaro.org/@mf_analysis/117637209333843033",
             "source": "mastodon",
-            "tag": "balkans",
+            "tag": "kosovo",
             "seen_date": "Wed, 18 Nov 2026 11:29:23 +0000",
             "matched_countries": [
               "Koszovó"
@@ -406,35 +501,6 @@
               {
                 "category": "corruption_rule_of_law",
                 "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 23,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Workers' protests, KEK announces that it has reached an agreement with the Unions: We will give them bonuses - Gazeta Express https://www. gazetaexpress.com/en/KEK-worke rs%27-protests-announce-that-an-agreement-has-been-reached-with-the-unions--we-will-give-them-bonuses/ # Kosovo # 1u",
-            "url": "https://mastodon.social/@RealJournalism/117650196964281967",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Fri, 20 Nov 2026 18:32:18 +0000",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 2,
                 "weight": 8
               }
             ],
@@ -474,37 +540,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Serbian Court Seeks Arrest of Kosovo Serb Kingpin Radoicic https:// balkaninsight.com/2026/11/17/s erbian-court-seeks-arrest-of-kosovo-serb-kingpin-radoicic/bi/",
-            "url": "https://balkaninsight.com/2026/11/17/serbian-court-seeks-arrest-of-kosovo-serb-kingpin-radoicic/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Tue, 17 Nov 2026 17:18:31 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 15,
-            "quality_score": 20,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -512,33 +547,73 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 16,
-        "level": "low",
+        "score": 24,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
-        "positive_hits": 1,
+        "mentions": 4,
+        "negative_hits": 2,
+        "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 41,
-        "geopolitical_total": 34,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 61,
+        "geopolitical_total": 53,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "eu_integration": 1,
           "government_crisis": 1,
-          "security": 1
+          "security": 2
         },
         "tag_counts": {
           "montenegro": 2,
-          "Montenegró": 1
+          "Montenegró": 2
         },
-        "main_topic": "eu_integration",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "Montenegro rejects territorial concessions in EU dispute with Croatia Podgorica seeks renewed border negotiations as Zagreb links support for accession progress to unresolved bilat",
+            "text": "Montenegro rejects territorial concessions in EU dispute with Croatia Podgorica seeks renewed border negotiations as Zagreb links support for accession progress to unresolved bilateral issues. Montenegro aims to conclude EU negotiations by 2026 and join the bloc in 2028.",
+            "url": "https://x.com/i/web/status/2124203264631599598",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-11-21T18:08:18.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "Montenegro rejects territorialconcessions in EU dispute with Croatia Podgorica seeks renewed border negotiations as Zagreb links support for accession progress to unresolved bilate",
             "text": "Montenegro rejects territorialconcessions in EU dispute with Croatia Podgorica seeks renewed border negotiations as Zagreb links support for accession progress to unresolved bilateralissues. Montenegro aims to conclude EUnegotiations by 2026 and join the bloc in 2028.",
@@ -643,26 +718,112 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 0,
+        "score": 17,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 0,
-        "negative_hits": 0,
+        "mentions": 2,
+        "negative_hits": 1,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 0,
-        "geopolitical_total": 0,
+        "engagement_total": 45,
+        "raw_engagement_total": 45,
+        "quality_total": 48,
+        "geopolitical_total": 46,
         "source_counts": {
           "reddit": 0,
           "mastodon": 0,
-          "x": 0
+          "x": 2
         },
-        "category_counts": {},
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
+        "category_counts": {
+          "security": 1,
+          "government_crisis": 1
+        },
+        "tag_counts": {
+          "Észak-Macedónia": 2
+        },
+        "main_topic": "security",
+        "top_posts": [
+          {
+            "title": "1,000 COWS, A BLOCKED HIGHWAY AND SCUFFLES WITH POLICE! A bizarre livestock crisis has triggered protests in North Macedonia. Residents of Kriva Palanka blocked a major road on Sat",
+            "text": "1,000 COWS, A BLOCKED HIGHWAY AND SCUFFLES WITH POLICE! A bizarre livestock crisis has triggered protests in North Macedonia. Residents of Kriva Palanka blocked a major road on Saturday, demanding action against an estimated 1,000 cattle roaming through their town, damaging",
+            "url": "https://x.com/i/web/status/2124171845591077129",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-21T16:03:27.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 37,
+            "quality_score": 38,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "🇲🇰 Prime Minister of North Macedonia",
+            "text": "🇲🇰 Prime Minister of North Macedonia",
+            "url": "https://x.com/i/web/status/2124164193305989268",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-21T15:33:03.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 45,
+            "raw_engagement": 45,
+            "metrics": {
+              "likes": 36,
+              "reposts": 0,
+              "replies": 8,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          }
+        ]
       }
     },
     {
@@ -671,73 +832,37 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 19,
-        "negative_hits": 15,
-        "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 7,
-        "raw_engagement_total": 7,
-        "quality_total": 556,
-        "geopolitical_total": 506,
+        "mentions": 23,
+        "negative_hits": 19,
+        "positive_hits": 2,
+        "trusted_hits": 0,
+        "engagement_total": 51,
+        "raw_engagement_total": 51,
+        "quality_total": 586,
+        "geopolitical_total": 529,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 14,
-          "x": 5
+          "mastodon": 17,
+          "x": 6
         },
         "category_counts": {
+          "corruption_rule_of_law": 2,
+          "protest": 8,
           "security": 5,
           "government_crisis": 6,
-          "protest": 5,
-          "corruption_rule_of_law": 1,
-          "ethnic_tension": 2
+          "ethnic_tension": 1,
+          "economic_infrastructure": 1
         },
         "tag_counts": {
-          "balkans": 14,
+          "balkans": 15,
+          "serbia": 1,
+          "albania": 1,
           "Szerbia": 1,
           "Koszovó": 1,
-          "Albánia": 3
+          "Albánia": 4
         },
-        "main_topic": "government_crisis",
+        "main_topic": "protest",
         "top_posts": [
-          {
-            "title": "",
-            "text": "Day 172 of anti-corruption protest in Tirana, Albania 🔴LIVE | Protesta në ditën e 172-të kundër qeverisë, qytetarët marshojnë drejt Parlamentit Machine translated: 🔴LIVE | 172nd day of protests against the government; citizens march toward the Parliament # Albania # Balkans # Corruption # Europe # Protest # FlamingoRevolution https://www. youtube.com/watch?v",
-            "url": "https://eldritch.cafe/@ml/117638557589960138",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Wed, 18 Nov 2026 17:12:15 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 3,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 52,
-            "quality_score": 55,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
           {
             "title": "",
             "text": "PM Edi Rama was speaking to Socialist Party members not too many meters away from where the above statement was going on ^^^ Rama didn't speak with protestors in 135 days of unquestionably peaceful protest. Now that tactics have escalated at times, he's no more interested in it. When he claims this, it's entirely theater for those who are not actually in Tir",
@@ -893,6 +1018,40 @@
             ],
             "geopolitical_score": 36,
             "quality_score": 39,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Day 175 of anti-corruption protest in Tirana, Albania Livecam shows that at some point the protestors managed to get out into the street anyway. The cop tactics since October have included trying to fragment protestors so that they cannot get overwhelming numbers in one place. Signs are starting to make a reappearance. They were a regular feature of the dail",
+            "url": "https://eldritch.cafe/@ml/117655001917594585",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Sat, 21 Nov 2026 14:54:16 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "protest",
+            "event_categories": [
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 35,
+            "quality_score": 38,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
