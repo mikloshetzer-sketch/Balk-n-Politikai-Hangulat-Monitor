@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23 23:48 UTC",
+  "updated_at": "2026-11-24 03:42 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,30 +12,30 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 8
+    "collected": 11
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 44,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 6,
-        "negative_hits": 3,
+        "mentions": 8,
+        "negative_hits": 5,
         "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 125,
-        "geopolitical_total": 107,
+        "engagement_total": 38,
+        "raw_engagement_total": 38,
+        "quality_total": 183,
+        "geopolitical_total": 163,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 1
+          "x": 3
         },
         "category_counts": {
-          "government_crisis": 1,
+          "government_crisis": 3,
           "protest": 1,
           "economic_infrastructure": 1,
           "ethnic_tension": 1,
@@ -46,7 +46,7 @@
           "balkans": 1,
           "serbia": 3,
           "kosovo": 1,
-          "Szerbia": 1
+          "Szerbia": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -90,6 +90,46 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "🇷🇸 Vučić warns his arrest could bring ‘a million people’ onto Serbia’s streets Former Serbian President Aleksandar Vučić said he would go on hunger strike if authorities attempted ",
+            "text": "🇷🇸 Vučić warns his arrest could bring ‘a million people’ onto Serbia’s streets Former Serbian President Aleksandar Vučić said he would go on hunger strike if authorities attempted to arrest him, warning that such a move could trigger mass protests. 💬 “What are you going to do",
+            "url": "https://x.com/i/web/status/2125043402345718134",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-24T01:46:43.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 3,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 36,
+            "quality_score": 37,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "\"Capitalism [...] celebrates youth rhetorically as the future but denies youth the resources to have a future.\" \"[G]overnments fear [...] students are moving beyond demands to make capitalism more humane.\" ———————————————————— Title: Global Youth Rising Up Know There's No Democracy Without Economic Justice Author(s): Henry A. Giroux Publication(s): Truthout ",
             "url": "https://archive.harmscommitted.com/@admin/117663086078560989",
@@ -124,6 +164,46 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "🇷🇸 Vučić warns his arrest could bring ‘a million people’ onto Serbia’s streets Former Serbian President Aleksandar Vučić said he would go on hunger strike if authorities tried to a",
+            "text": "🇷🇸 Vučić warns his arrest could bring ‘a million people’ onto Serbia’s streets Former Serbian President Aleksandar Vučić said he would go on hunger strike if authorities tried to arrest him. 💬 “What are you going to do then with a million people in the streets the moment that",
+            "url": "https://x.com/i/web/status/2125036129242038493",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-24T01:17:49.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 21,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 33,
+            "raw_engagement": 33,
+            "metrics": {
+              "likes": 23,
+              "reposts": 4,
+              "replies": 5,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Serbian Court Seeks Arrest of Kosovo Serb Kingpin Radoicic https:// balkaninsight.com/2026/11/17/s erbian-court-seeks-arrest-of-kosovo-serb-kingpin-radoicic/bi/",
             "url": "https://balkaninsight.com/2026/11/17/serbian-court-seeks-arrest-of-kosovo-serb-kingpin-radoicic/bi/",
@@ -150,68 +230,6 @@
             "quality_score": 20,
             "source_reliability": 5,
             "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "The # DaytonAgreement was signed in 1995 on # ThisDayInHistory , ending the # BosnianWar . While it preserved integrity of the country # BosniaAndHerzegovina , stymieing expansionist aims of # Serbia and # Croatia , it entrenched the # EthnicCleansing and did not facilitate reconciliation.",
-            "url": "https://mastodon.social/@LiamOMaraIV/117655026529098929",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sat, 21 Nov 2026 15:00:31 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Bosznia-Hercegovina"
-            ],
-            "country_confidence": {
-              "Szerbia": 1,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 14,
-            "quality_score": 17,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Jared Kushner is supposed to help END the war in Gaza. His firm is CASHING IN on investments tied to the companies arming it. #traitors #thieves #IsraelFirst #Kushner #grifters #failsons #natsec #tre45on #Albania #Serbia #BoardOfPeace #LockHimUp youtube.com/watch?v=UdWY... HOLY SH!T Kushner Firm PROFITE...",
-            "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:3c5jgoau5nb42r6ecka4pmpw/post/3n2tibgbo3c2o",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Sat, 21 Nov 2026 16:07:30 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1,
-              "Albánia": 1
-            },
-            "event_category": "economic_infrastructure",
-            "event_categories": [
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 8,
-            "quality_score": 11,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
@@ -605,8 +623,8 @@
         "negative_hits": 2,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
+        "engagement_total": 3,
+        "raw_engagement_total": 3,
         "quality_total": 56,
         "geopolitical_total": 50,
         "source_counts": {
@@ -620,8 +638,8 @@
         },
         "tag_counts": {
           "balkans": 1,
-          "Montenegró": 2,
-          "Észak-Macedónia": 1
+          "Montenegró": 1,
+          "Észak-Macedónia": 2
         },
         "main_topic": "eu_integration",
         "top_posts": [
@@ -698,7 +716,7 @@
             "text": "🇪🇺 I call on Kosovo, Ukraine, Bosnia and Herzegovina, Albania, North Macedonia, Montenegro and Moldova to hold European elections in June 2029 on the same days as the European Parliament elections. Under my proposal, all seven countries would send directly elected observer MEPs",
             "url": "https://x.com/i/web/status/2124919650228023545",
             "source": "x",
-            "tag": "Montenegró",
+            "tag": "Észak-Macedónia",
             "seen_date": "2026-11-23T17:34:58.000Z",
             "matched_countries": [
               "Észak-Macedónia"
@@ -722,10 +740,10 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
+            "engagement": 3,
+            "raw_engagement": 3,
             "metrics": {
-              "likes": 2,
+              "likes": 3,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -778,31 +796,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 18,
-        "negative_hits": 18,
+        "mentions": 20,
+        "negative_hits": 19,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 4,
-        "raw_engagement_total": 4,
-        "quality_total": 554,
-        "geopolitical_total": 504,
+        "engagement_total": 76,
+        "raw_engagement_total": 76,
+        "quality_total": 611,
+        "geopolitical_total": 559,
         "source_counts": {
           "reddit": 0,
           "mastodon": 16,
-          "x": 2
+          "x": 4
         },
         "category_counts": {
           "protest": 7,
-          "security": 5,
-          "government_crisis": 4,
+          "security": 4,
+          "government_crisis": 6,
           "corruption_rule_of_law": 1,
-          "economic_infrastructure": 1
+          "economic_infrastructure": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 13,
           "serbia": 1,
           "albania": 2,
-          "Albánia": 2
+          "Montenegró": 1,
+          "Albánia": 3
         },
         "main_topic": "protest",
         "top_posts": [
@@ -895,6 +915,51 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Nona Revolucionit placing “Rama out” stickers on the shields of officers as protests against Prime Minister Edi Rama and his government continue in Albania, with people taking to t",
+            "text": "Nona Revolucionit placing “Rama out” stickers on the shields of officers as protests against Prime Minister Edi Rama and his government continue in Albania, with people taking to the streets over corruption, rising living costs and demands for his resignation",
+            "url": "https://x.com/i/web/status/2125029211069181994",
+            "source": "x",
+            "tag": "Albánia",
+            "seen_date": "2026-11-24T00:50:19.000Z",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 45,
+            "quality_score": 46,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 1,
+              "reposts": 1,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
             "text": "Day 176 of anti-corruption protest in Tirana, Albania Policia ndërhyn dhe u kërkon qytetarëve te lirojnë rrugën Machine translated: The police intervene and ask citizens to clear the road. The cops are continuing with the excuse that protestors can't \"block the road\". This is risible because drivers block the road for cyclists and pedestrians ALL THE TIME wi",
             "url": "https://eldritch.cafe/@ml/117661476267099768",
@@ -960,45 +1025,6 @@
               },
               {
                 "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 36,
-            "quality_score": 39,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Day 175 of anti-corruption protest Të rinjtë me deklaratë te “Politekniku”: Lëvizja studentore kombëtare, vijimësi e revoltës qytetare! Machine translated: Young people issue a statement at the “Polytechnic”: The national student movement is a continuation of the civic revolt! Paraphrase of machine translation: Several students read out statements clarifying",
-            "url": "https://eldritch.cafe/@ml/117654351337451713",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sat, 21 Nov 2026 12:08:49 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "protest",
                 "hits": 1,
                 "weight": 8
               }
