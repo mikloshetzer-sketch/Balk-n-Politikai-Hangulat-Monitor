@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24 16:47 UTC",
+  "updated_at": "2026-11-24 22:20 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 15
+    "collected": 12
   },
   "countries": [
     {
@@ -21,36 +21,35 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 11,
-        "negative_hits": 5,
-        "positive_hits": 1,
+        "mentions": 9,
+        "negative_hits": 4,
+        "positive_hits": 2,
         "trusted_hits": 2,
-        "engagement_total": 10,
-        "raw_engagement_total": 10,
-        "quality_total": 240,
-        "geopolitical_total": 215,
+        "engagement_total": 48,
+        "raw_engagement_total": 48,
+        "quality_total": 207,
+        "geopolitical_total": 184,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 6
+          "x": 4
         },
         "category_counts": {
-          "government_crisis": 4,
-          "security": 2,
-          "protest": 1,
+          "government_crisis": 1,
           "corruption_rule_of_law": 1,
+          "security": 4,
+          "protest": 1,
           "economic_infrastructure": 1,
-          "foreign_influence": 2
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 2,
-          "kosovo": 1,
+          "serbia": 3,
           "albania": 1,
-          "Szerbia": 4,
-          "Koszovó": 2
+          "Szerbia": 3,
+          "Koszovó": 1
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -165,60 +164,18 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Serbia Set to Reject EU Summit Declaration Again, Refusing to Endorse References to War Crimes, Russia and Kosovo Serbia EUSummit Vucic AleksandarCupic StudentList",
-            "text": "Serbia Set to Reject EU Summit Declaration Again, Refusing to Endorse References to War Crimes, Russia and Kosovo Serbia EUSummit Vucic AleksandarCupic StudentList",
-            "url": "https://x.com/i/web/status/2125247786098831676",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-11-24T15:18:52.000Z",
+            "title": "",
+            "text": "Belgrade Court Convicts Bosnian Serb Woman of Wartime Killings https:// balkaninsight.com/2026/11/24/b elgrade-court-convicts-bosnian-serb-woman-of-wartime-killings/btj/",
+            "url": "https://balkaninsight.com/2026/11/24/belgrade-court-convicts-bosnian-serb-woman-of-wartime-killings/btj/",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Tue, 24 Nov 2026 16:52:20 +0000",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 5,
-              "Koszovó": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 20,
-            "quality_score": 21,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 1,
-              "reposts": 0,
-              "replies": 2,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "",
-            "text": "Serbian Court Seeks Arrest of Kosovo Serb Kingpin Radoicic https:// balkaninsight.com/2026/11/17/s erbian-court-seeks-arrest-of-kosovo-serb-kingpin-radoicic/bi/",
-            "url": "https://balkaninsight.com/2026/11/17/serbian-court-seeks-arrest-of-kosovo-serb-kingpin-radoicic/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Tue, 17 Nov 2026 17:18:31 +0000",
-            "matched_countries": [
-              "Szerbia",
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
+              "Szerbia": 4,
+              "Bosznia-Hercegovina": 1
             },
             "event_category": "corruption_rule_of_law",
             "event_categories": [
@@ -235,6 +192,48 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "Brussels welcomes “positive momentum” and support for Belgrade-Pristina dialogue",
+            "text": "Brussels welcomes “positive momentum” and support for Belgrade-Pristina dialogue",
+            "url": "https://x.com/i/web/status/2125325333612101654",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-24T20:27:00.000Z",
+            "matched_countries": [
+              "Koszovó",
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Koszovó": 7,
+              "Szerbia": 4
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 18,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -267,32 +266,33 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 40,
+        "score": 45,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 6,
         "negative_hits": 3,
-        "positive_hits": 1,
-        "trusted_hits": 3,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 105,
-        "geopolitical_total": 84,
+        "positive_hits": 2,
+        "trusted_hits": 2,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 115,
+        "geopolitical_total": 97,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 5,
-          "x": 0
+          "mastodon": 4,
+          "x": 2
         },
         "category_counts": {
-          "protest": 1,
+          "protest": 2,
           "government_crisis": 2,
           "economic_infrastructure": 1,
-          "corruption_rule_of_law": 1
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "kosovo": 5
+          "kosovo": 4,
+          "Koszovó": 2
         },
-        "main_topic": "government_crisis",
+        "main_topic": "protest",
         "top_posts": [
           {
             "title": "",
@@ -392,35 +392,46 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Serbian Court Seeks Arrest of Kosovo Serb Kingpin Radoicic https:// balkaninsight.com/2026/11/17/s erbian-court-seeks-arrest-of-kosovo-serb-kingpin-radoicic/bi/",
-            "url": "https://balkaninsight.com/2026/11/17/serbian-court-seeks-arrest-of-kosovo-serb-kingpin-radoicic/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Tue, 17 Nov 2026 17:18:31 +0000",
+            "title": "Brussels welcomes “positive momentum” and support for Belgrade-Pristina dialogue",
+            "text": "Brussels welcomes “positive momentum” and support for Belgrade-Pristina dialogue",
+            "url": "https://x.com/i/web/status/2125325333612101654",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-24T20:27:00.000Z",
             "matched_countries": [
-              "Szerbia",
-              "Koszovó"
+              "Koszovó",
+              "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2,
-              "Koszovó": 1
+              "Koszovó": 7,
+              "Szerbia": 4
             },
-            "event_category": "corruption_rule_of_law",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "corruption_rule_of_law",
+                "category": "ethnic_tension",
                 "hits": 1,
-                "weight": 8
+                "weight": 10
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
               }
             ],
-            "geopolitical_score": 15,
-            "quality_score": 20,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "geopolitical_score": 17,
+            "quality_score": 18,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           },
           {
             "title": "",
@@ -581,33 +592,33 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 28,
+        "score": 21,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
-        "negative_hits": 1,
+        "mentions": 4,
+        "negative_hits": 2,
         "positive_hits": 4,
-        "trusted_hits": 2,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 126,
-        "geopolitical_total": 113,
+        "trusted_hits": 1,
+        "engagement_total": 5,
+        "raw_engagement_total": 5,
+        "quality_total": 95,
+        "geopolitical_total": 86,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 4
+          "x": 3
         },
         "category_counts": {
           "eu_integration": 1,
-          "security": 3,
+          "economic_infrastructure": 1,
+          "ethnic_tension": 1,
           "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "Montenegró": 1,
           "Észak-Macedónia": 3
         },
-        "main_topic": "security",
+        "main_topic": "eu_integration",
         "top_posts": [
           {
             "title": "European Commissioner for Enlargement Marta Kos called on the Government of North Macedonia to adopt and implement the constitutional changes, describing them as the main condition",
@@ -650,84 +661,46 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "Serbian forces did not expel refugees directly into EU or NATO countries. Over 90% of those fleeing crossed borders into Albania, North Macedonia, and Montenegro (part of Yugoslavi",
-            "text": "Serbian forces did not expel refugees directly into EU or NATO countries. Over 90% of those fleeing crossed borders into Albania, North Macedonia, and Montenegro (part of Yugoslavia at the time) - none of which were members of the EU or NATO in 1999. Such idiocy!",
-            "url": "https://x.com/i/web/status/2125234564167811473",
+            "title": "🇲🇰🇪🇺 My offer to North Macedonia: Change the Constitution. Get the euro now. I call on Parliament in Skopje to name Bulgarians alongside the other communities recognised in the Con",
+            "text": "🇲🇰🇪🇺 My offer to North Macedonia: Change the Constitution. Get the euro now. I call on Parliament in Skopje to name Bulgarians alongside the other communities recognised in the Constitution. In return, I call on Brussels to open talks immediately on an agreement for North",
+            "url": "https://x.com/i/web/status/2125297309231825157",
             "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-11-24T14:26:19.000Z",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-24T18:35:39.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Szerbia": 2,
-              "Montenegró": 1,
-              "Albánia": 1
+              "Észak-Macedónia": 9
             },
-            "event_category": "security",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 2,
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
                 "weight": 9
               },
               {
-                "category": "migration",
+                "category": "eu_integration",
                 "hits": 1,
                 "weight": 6
               }
             ],
-            "geopolitical_score": 28,
-            "quality_score": 32,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "Security is about much more than just a military question. On Thursday, day two of AspenWB in Skopje: cybersecurity, information integrity, and energy and resource security in the ",
-            "text": "Security is about much more than just a military question. On Thursday, day two of AspenWB in Skopje: cybersecurity, information integrity, and energy and resource security in the WesternBalkans. Thank you for your support.",
-            "url": "https://x.com/i/web/status/2125200347148832993",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-24T12:10:21.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 4
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 23,
-            "quality_score": 24,
+            "geopolitical_score": 26,
+            "quality_score": 27,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 3,
+            "raw_engagement": 3,
             "metrics": {
-              "likes": 1,
+              "likes": 2,
               "reposts": 0,
-              "replies": 0,
+              "replies": 1,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -764,40 +737,35 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Critical infrastructure is where security becomes tangible. Our AspenWB conference in Skopje closed today with this topic. Three days, five sessions, many new connections: thank yo",
-            "text": "Critical infrastructure is where security becomes tangible. Our AspenWB conference in Skopje closed today with this topic. Three days, five sessions, many new connections: thank you to all speakers and participants, and to for the support! 📸: Kristian Hristov",
-            "url": "https://x.com/i/web/status/2125173549279465566",
+            "title": "Good meeting with Minister of Energy, Mining and Mineral Resources, Sanja Bozhinovska. Focus on enhanced cooperation on strategic infrastructure projects, energy grid modernisation",
+            "text": "Good meeting with Minister of Energy, Mining and Mineral Resources, Sanja Bozhinovska. Focus on enhanced cooperation on strategic infrastructure projects, energy grid modernisation, and renewable energy. Looking forward to Wednesday’s Energy Diplomacy Forum in Skopje! 🇸🇪🤝🇲🇰",
+            "url": "https://x.com/i/web/status/2125299467750683072",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-24T10:23:52.000Z",
+            "seen_date": "2026-11-24T18:44:13.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
               "Észak-Macedónia": 4
             },
-            "event_category": "security",
+            "event_category": "economic_infrastructure",
             "event_categories": [
               {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              },
-              {
                 "category": "economic_infrastructure",
-                "hits": 1,
+                "hits": 2,
                 "weight": 4
               }
             ],
-            "geopolitical_score": 14,
-            "quality_score": 15,
+            "geopolitical_score": 12,
+            "quality_score": 13,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 2,
+            "raw_engagement": 2,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 1,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -813,13 +781,13 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 19,
-        "negative_hits": 18,
-        "positive_hits": 3,
-        "trusted_hits": 0,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 560,
-        "geopolitical_total": 509,
+        "negative_hits": 17,
+        "positive_hits": 2,
+        "trusted_hits": 1,
+        "engagement_total": 15,
+        "raw_engagement_total": 15,
+        "quality_total": 585,
+        "geopolitical_total": 531,
         "source_counts": {
           "reddit": 0,
           "mastodon": 16,
@@ -828,14 +796,16 @@
         "category_counts": {
           "protest": 8,
           "security": 5,
-          "government_crisis": 4,
+          "government_crisis": 3,
           "corruption_rule_of_law": 1,
-          "economic_infrastructure": 1
+          "economic_infrastructure": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 13,
           "albania": 3,
-          "Albánia": 3
+          "Koszovó": 1,
+          "Albánia": 2
         },
         "main_topic": "protest",
         "top_posts": [
