@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25 01:49 UTC",
+  "updated_at": "2026-11-25 08:15 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,43 +12,43 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 6
+    "collected": 13
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 47,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 7,
-        "negative_hits": 3,
+        "mentions": 10,
+        "negative_hits": 4,
         "positive_hits": 2,
-        "trusted_hits": 2,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 195,
-        "geopolitical_total": 174,
+        "trusted_hits": 3,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 266,
+        "geopolitical_total": 238,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 5,
-          "x": 2
+          "mastodon": 6,
+          "x": 4
         },
         "category_counts": {
-          "government_crisis": 1,
-          "corruption_rule_of_law": 2,
-          "security": 1,
+          "government_crisis": 4,
+          "foreign_influence": 1,
+          "corruption_rule_of_law": 1,
+          "security": 2,
           "protest": 1,
-          "economic_infrastructure": 1,
-          "eu_integration": 1
+          "economic_infrastructure": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "serbia": 3,
+          "serbia": 4,
           "albania": 1,
-          "Szerbia": 2
+          "Szerbia": 4
         },
-        "main_topic": "corruption_rule_of_law",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -129,33 +129,78 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Ramzan Kadyrov’s son reportedly obtained Serbian citizenship under the surname Musayev, giving him visa-free access to Europe. According to an investigation by Alexei Navalny’s Ant",
-            "text": "Ramzan Kadyrov’s son reportedly obtained Serbian citizenship under the surname Musayev, giving him visa-free access to Europe. According to an investigation by Alexei Navalny’s Anti-Corruption Foundation, Ali Kadyrov formally changed his surname in early 2025. On 10 July, Serbia",
-            "url": "https://x.com/i/web/status/2125370192754561114",
+            "title": "6 Western Balkan partners invited to Brussels today, 1 chair empty. Serbia's acting president Čupić stayed home for parliament work, and Belgrade isn't expected to back the declara",
+            "text": "6 Western Balkan partners invited to Brussels today, 1 chair empty. Serbia's acting president Čupić stayed home for parliament work, and Belgrade isn't expected to back the declaration. Agenda includes €6bn of Growth Plan money and cyber threats. Expect a gap in the family",
+            "url": "https://x.com/i/web/status/2125503570245988667",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-11-24T23:25:16.000Z",
+            "seen_date": "2026-11-25T08:15:15.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 2
+              "Szerbia": 5
             },
-            "event_category": "corruption_rule_of_law",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "corruption_rule_of_law",
-                "hits": 2,
-                "weight": 8
+                "category": "government_crisis",
+                "hits": 3,
+                "weight": 9
               },
               {
-                "category": "foreign_influence",
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 41,
+            "quality_score": 42,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Former Serbian leader and current opposition chief Aleksandar Vučić has threatened a hunger strike if arrested. In an interview on Pink TV, Vučić suggested the Student List—which w",
+            "text": "Former Serbian leader and current opposition chief Aleksandar Vučić has threatened a hunger strike if arrested. In an interview on Pink TV, Vučić suggested the Student List—which won October's parliamentary elections—seeks his arrest. He stated he will not flee or hide,",
+            "url": "https://x.com/i/web/status/2125499732328096139",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-25T08:00:00.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 6
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "protest",
                 "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 27,
-            "quality_score": 28,
+            "geopolitical_score": 29,
+            "quality_score": 30,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -201,36 +246,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Belgrade Court Convicts Bosnian Serb Woman of Wartime Killings https:// balkaninsight.com/2026/11/24/b elgrade-court-convicts-bosnian-serb-woman-of-wartime-killings/btj/",
-            "url": "https://balkaninsight.com/2026/11/24/belgrade-court-convicts-bosnian-serb-woman-of-wartime-killings/btj/",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Tue, 24 Nov 2026 16:52:20 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 4,
-              "Bosznia-Hercegovina": 1
-            },
-            "event_category": "corruption_rule_of_law",
-            "event_categories": [
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 15,
-            "quality_score": 20,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -263,29 +278,30 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 30,
+        "score": 37,
         "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 4,
-        "negative_hits": 2,
+        "negative_hits": 3,
         "positive_hits": 1,
-        "trusted_hits": 2,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 85,
-        "geopolitical_total": 69,
+        "quality_total": 86,
+        "geopolitical_total": 74,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 4,
-          "x": 0
+          "mastodon": 3,
+          "x": 1
         },
         "category_counts": {
           "protest": 1,
           "government_crisis": 2,
-          "economic_infrastructure": 1
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "kosovo": 4
+          "kosovo": 3,
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -387,33 +403,39 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Handouts or Highways? Critics Question Kosovo’s Infrastructure Strategy https:// balkaninsight.com/2026/11/18/h andouts-or-highways-critics-question-kosovos-infrastructure-strategy/bi/",
-            "url": "https://balkaninsight.com/2026/11/18/handouts-or-highways-critics-question-kosovos-infrastructure-strategy/bi/",
-            "source": "mastodon",
-            "tag": "kosovo",
-            "seen_date": "Wed, 18 Nov 2026 07:03:56 +0000",
+            "title": "Woolen kurti 🧶 Warm fabric, desi style, winter-ready. Your cozy ethnic look is sorted.",
+            "text": "Woolen kurti 🧶 Warm fabric, desi style, winter-ready. Your cozy ethnic look is sorted.",
+            "url": "https://x.com/i/web/status/2125469958943723852",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-25T06:01:42.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 1
+              "Koszovó": 4
             },
-            "event_category": "economic_infrastructure",
+            "event_category": "ethnic_tension",
             "event_categories": [
               {
-                "category": "economic_infrastructure",
+                "category": "ethnic_tension",
                 "hits": 1,
-                "weight": 4
+                "weight": 10
               }
             ],
-            "geopolitical_score": 8,
-            "quality_score": 13,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "geopolitical_score": 13,
+            "quality_score": 14,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -421,32 +443,73 @@
     {
       "name": "Montenegró",
       "social_signal": {
-        "score": 14,
-        "level": "low",
+        "score": 22,
+        "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 3,
-        "negative_hits": 1,
+        "negative_hits": 2,
         "positive_hits": 2,
         "trusted_hits": 2,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 51,
-        "geopolitical_total": 38,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 71,
+        "geopolitical_total": 60,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 3,
-          "x": 0
+          "mastodon": 2,
+          "x": 1
         },
         "category_counts": {
           "economic_infrastructure": 1,
           "security": 1,
-          "eu_integration": 1
+          "government_crisis": 1
         },
         "tag_counts": {
-          "montenegro": 3
+          "montenegro": 2,
+          "Montenegró": 1
         },
         "main_topic": "economic_infrastructure",
         "top_posts": [
+          {
+            "title": "141 public officials in Montenegro 🇲🇪 broke the law since January 2025, the anti-corruption agency found — including holders of the country's top offices. Ruling-party officials ou",
+            "text": "141 public officials in Montenegro 🇲🇪 broke the law since January 2025, the anti-corruption agency found — including holders of the country's top offices. Ruling-party officials outnumber the opposition almost 4 to 1. Montenegro 🇲🇪 Corruption Podgorica Yugoslavia",
+            "url": "https://x.com/i/web/status/2125502183286214696",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-11-25T08:09:45.000Z",
+            "matched_countries": [
+              "Montenegró"
+            ],
+            "country_confidence": {
+              "Montenegró": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Croatia steps up pressure on Montenegro over border dispute as EU accession deadline looms https://www. euronews.com/2026/11/23/croati a-steps-up-pressure-on-montenegro-over-border-dispute-as-eu-accession-deadline-looms # Euronews # news # europa # Montenegro # EU",
@@ -509,35 +572,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Agenzia Nova: Montenegro-Ue: Koopman, capitoli negoziali pronti, ora tocca a Stati membri decidere 18 nov 08:34 - (Agenzia Nova) - Il Montenegro puo' chiudere tutti i capitoli negoziali con l'Unione europea entro la fine dell'anno. Lo ha... (Seb) Montenegro-EU: Koopman, negotiation chapters ready, now it’s up to member states to decide. Nov 18 08:34 – (Agenz",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117636387077008014",
-            "source": "mastodon",
-            "tag": "montenegro",
-            "seen_date": "Wed, 18 Nov 2026 08:00:16 +0000",
-            "matched_countries": [
-              "Montenegró"
-            ],
-            "country_confidence": {
-              "Montenegró": 1
-            },
-            "event_category": "eu_integration",
-            "event_categories": [
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 6,
-            "quality_score": 9,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
           }
         ]
       }
@@ -545,29 +579,27 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 9,
+        "score": 4,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 2,
-        "negative_hits": 2,
-        "positive_hits": 2,
+        "mentions": 1,
+        "negative_hits": 1,
+        "positive_hits": 1,
         "trusted_hits": 0,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 32,
-        "geopolitical_total": 28,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 19,
+        "geopolitical_total": 16,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 1
+          "x": 0
         },
         "category_counts": {
-          "eu_integration": 1,
-          "economic_infrastructure": 1
+          "eu_integration": 1
         },
         "tag_counts": {
-          "balkans": 1,
-          "Észak-Macedónia": 1
+          "balkans": 1
         },
         "main_topic": "eu_integration",
         "top_posts": [
@@ -601,41 +633,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Good meeting with Minister of Energy, Mining and Mineral Resources, Sanja Bozhinovska. Focus on enhanced cooperation on strategic infrastructure projects, energy grid modernisation",
-            "text": "Good meeting with Minister of Energy, Mining and Mineral Resources, Sanja Bozhinovska. Focus on enhanced cooperation on strategic infrastructure projects, energy grid modernisation, and renewable energy. Looking forward to Wednesday’s Energy Diplomacy Forum in Skopje! 🇸🇪🤝🇲🇰",
-            "url": "https://x.com/i/web/status/2125299467750683072",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-24T18:44:13.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 4
-            },
-            "event_category": "economic_infrastructure",
-            "event_categories": [
-              {
-                "category": "economic_infrastructure",
-                "hits": 2,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 13,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 2,
-              "reposts": 1,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -646,32 +643,32 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 19,
-        "negative_hits": 18,
+        "mentions": 22,
+        "negative_hits": 19,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 588,
-        "geopolitical_total": 537,
+        "engagement_total": 16,
+        "raw_engagement_total": 16,
+        "quality_total": 641,
+        "geopolitical_total": 589,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 16,
-          "x": 3
+          "mastodon": 15,
+          "x": 7
         },
         "category_counts": {
-          "protest": 7,
-          "security": 4,
-          "government_crisis": 6,
-          "corruption_rule_of_law": 1,
+          "protest": 6,
+          "security": 9,
+          "government_crisis": 4,
+          "corruption_rule_of_law": 2,
           "economic_infrastructure": 1
         },
         "tag_counts": {
-          "balkans": 13,
+          "balkans": 12,
           "albania": 3,
-          "Albánia": 3
+          "Albánia": 7
         },
-        "main_topic": "protest",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
