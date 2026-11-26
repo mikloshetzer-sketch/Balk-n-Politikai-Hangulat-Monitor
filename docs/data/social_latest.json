@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26 16:06 UTC",
+  "updated_at": "2026-11-26 21:24 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,36 +12,38 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 10
+    "collected": 15
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 41,
+        "score": 54,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 6,
         "negative_hits": 3,
         "positive_hits": 1,
-        "trusted_hits": 2,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 163,
-        "geopolitical_total": 149,
+        "trusted_hits": 3,
+        "engagement_total": 23,
+        "raw_engagement_total": 23,
+        "quality_total": 189,
+        "geopolitical_total": 169,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 3,
-          "x": 1
+          "mastodon": 4,
+          "x": 2
         },
         "category_counts": {
-          "government_crisis": 3,
-          "security": 1
+          "government_crisis": 4,
+          "security": 1,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 2,
-          "serbia": 1,
-          "Szerbia": 1
+          "serbia": 2,
+          "Szerbia": 1,
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -173,36 +175,139 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "The victory for the opposition Student List in parliamentary elections ended the 14-year rule of the Serbian Progressive Party and the political dominance of Aleksandar Vucic.",
-            "text": "The victory for the opposition Student List in parliamentary elections ended the 14-year rule of the Serbian Progressive Party and the political dominance of Aleksandar Vucic.",
-            "url": "https://x.com/i/web/status/2125983838715154450",
+            "title": "More Than 60% of Serbians Oppose EU Membership if Recognition of Kosovo Is Required Serbia Kosovo EuropeanUnion",
+            "text": "More Than 60% of Serbians Oppose EU Membership if Recognition of Kosovo Is Required Serbia Kosovo EuropeanUnion",
+            "url": "https://x.com/i/web/status/2126018011006194056",
             "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-26T16:03:40.000Z",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-26T18:19:27.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
-              "Szerbia": 6
+              "Szerbia": 2,
+              "Koszovó": 1
+            },
+            "event_category": "ethnic_tension",
+            "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 17,
+            "quality_score": 18,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 5,
+            "raw_engagement": 5,
+            "metrics": {
+              "likes": 3,
+              "reposts": 1,
+              "replies": 1,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "European Parliament Backs Vukovar Anniversary Resolution Criticising Serbia https:// balkaninsight.com/2026/11/26/e uropean-parliament-backs-vukovar-anniversary-resolution-criticising-serbia/btj/",
+            "url": "https://balkaninsight.com/2026/11/26/european-parliament-backs-vukovar-anniversary-resolution-criticising-serbia/btj/",
+            "source": "mastodon",
+            "tag": "serbia",
+            "seen_date": "Thu, 26 Nov 2026 16:38:48 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 1
             },
             "event_category": "government_crisis",
             "event_categories": [
               {
                 "category": "government_crisis",
-                "hits": 2,
+                "hits": 1,
                 "weight": 9
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
+            "geopolitical_score": 13,
+            "quality_score": 18,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bosznia-Hercegovina",
+      "social_signal": {
+        "score": 5,
+        "level": "low",
+        "scale": "0-60 risk index",
+        "mentions": 1,
+        "negative_hits": 0,
+        "positive_hits": 0,
+        "trusted_hits": 0,
+        "engagement_total": 11,
+        "raw_engagement_total": 11,
+        "quality_total": 10,
+        "geopolitical_total": 9,
+        "source_counts": {
+          "reddit": 0,
+          "mastodon": 0,
+          "x": 1
+        },
+        "category_counts": {
+          "government_crisis": 1
+        },
+        "tag_counts": {
+          "Észak-Macedónia": 1
+        },
+        "main_topic": "government_crisis",
+        "top_posts": [
+          {
+            "title": "Kosovo President, Justina Shiroka Pula will represent the country at the Brdo-Brijuni leaders’ summit in Ohrid, North Macedonia, hosted by the presidents of Slovenia, Croatia and N",
+            "text": "Kosovo President, Justina Shiroka Pula will represent the country at the Brdo-Brijuni leaders’ summit in Ohrid, North Macedonia, hosted by the presidents of Slovenia, Croatia and North Macedonia.",
+            "url": "https://x.com/i/web/status/2125996873383309738",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-26T16:55:28.000Z",
+            "matched_countries": [
+              "Észak-Macedónia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Bosznia-Hercegovina": 3,
+              "Koszovó": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 9,
+            "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 11,
+            "raw_engagement": 11,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 1,
+              "likes": 10,
+              "reposts": 1,
+              "replies": 0,
               "quotes": 0
             },
             "quality": "x_api_filtered"
@@ -211,59 +316,98 @@
       }
     },
     {
-      "name": "Bosznia-Hercegovina",
-      "social_signal": {
-        "score": 0,
-        "level": "low",
-        "scale": "0-60 risk index",
-        "mentions": 0,
-        "negative_hits": 0,
-        "positive_hits": 0,
-        "trusted_hits": 0,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 0,
-        "geopolitical_total": 0,
-        "source_counts": {
-          "reddit": 0,
-          "mastodon": 0,
-          "x": 0
-        },
-        "category_counts": {},
-        "tag_counts": {},
-        "main_topic": "nincs adat",
-        "top_posts": []
-      }
-    },
-    {
       "name": "Koszovó",
       "social_signal": {
-        "score": 9,
-        "level": "low",
+        "score": 24,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 2,
+        "mentions": 3,
         "negative_hits": 1,
-        "positive_hits": 2,
-        "trusted_hits": 0,
+        "positive_hits": 1,
+        "trusted_hits": 2,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 37,
-        "geopolitical_total": 33,
+        "quality_total": 85,
+        "geopolitical_total": 73,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 1,
+          "mastodon": 2,
           "x": 1
         },
         "category_counts": {
-          "protest": 1,
-          "eu_integration": 1
+          "security": 2,
+          "protest": 1
         },
         "tag_counts": {
-          "kosovo": 1,
+          "kosovo": 2,
           "Koszovó": 1
         },
-        "main_topic": "protest",
+        "main_topic": "security",
         "top_posts": [
+          {
+            "title": "KFOR Commander Meets Senior Slovak Official in Prishtina, Kosovo’s Security Situation in Focus KFOR NATO Kosovo RobertoVergori IgorMelicher",
+            "text": "KFOR Commander Meets Senior Slovak Official in Prishtina, Kosovo’s Security Situation in Focus KFOR NATO Kosovo RobertoVergori IgorMelicher",
+            "url": "https://x.com/i/web/status/2126056465891016920",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-26T20:52:16.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 3,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 31,
+            "quality_score": 35,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "",
+            "text": "Hrvatski sabor raspravlja o slanju vojnika u Poljsku, Litvu i Mađarsku Objavljeno: 20:06, 26. studenoga 2026. https:// novine.eu/vijesti/hrvatska/hrv atski-sabor-raspravlja-o-slanju-vojnika-u-poljsku-litvu-i-madarsku # vijesti # hrvatska # hrvatskavojska # hrvatskisabor # kfor # kosovo # nato # poljska",
+            "url": "https://mastodon.social/@novine/117684443574813880",
+            "source": "mastodon",
+            "tag": "kosovo",
+            "seen_date": "Thu, 26 Nov 2026 19:41:40 +0000",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 1
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 22,
+            "quality_score": 27,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
           {
             "title": "",
             "text": "Workers' protests, KEK announces that it has reached an agreement with the Unions: We will give them bonuses - Gazeta Express https://www. gazetaexpress.com/en/KEK-worke rs%27-protests-announce-that-an-agreement-has-been-reached-with-the-unions--we-will-give-them-bonuses/ # Kosovo # 1u",
@@ -292,30 +436,72 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Montenegró",
+      "social_signal": {
+        "score": 26,
+        "level": "medium",
+        "scale": "0-60 risk index",
+        "mentions": 4,
+        "negative_hits": 2,
+        "positive_hits": 3,
+        "trusted_hits": 2,
+        "engagement_total": 13,
+        "raw_engagement_total": 13,
+        "quality_total": 95,
+        "geopolitical_total": 83,
+        "source_counts": {
+          "reddit": 0,
+          "mastodon": 2,
+          "x": 2
+        },
+        "category_counts": {
+          "economic_infrastructure": 1,
+          "security": 3
+        },
+        "tag_counts": {
+          "montenegro": 2,
+          "Montenegró": 2
+        },
+        "main_topic": "security",
+        "top_posts": [
           {
-            "title": "Nearly four years after submitting its EU membership application, Kosovo has not yet received a response, with the stumbling blocks in both Brussels and Prishtina.",
-            "text": "Nearly four years after submitting its EU membership application, Kosovo has not yet received a response, with the stumbling blocks in both Brussels and Prishtina.",
-            "url": "https://x.com/i/web/status/2125970905008361829",
+            "title": "Balkans 🇲🇪 The border dispute between Montenegro CrnaGora and Croatia is taking on a new political dimension. MN's President, Milatović, has accused Zagreb of putting pressure on P",
+            "text": "Balkans 🇲🇪 The border dispute between Montenegro CrnaGora and Croatia is taking on a new political dimension. MN's President, Milatović, has accused Zagreb of putting pressure on Podgorica amid the country's EU accession negotiations. 🟥According to Milatović, Croatia",
+            "url": "https://x.com/i/web/status/2125985107617943957",
             "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-11-26T15:12:17.000Z",
+            "tag": "Montenegró",
+            "seen_date": "2026-11-26T16:08:43.000Z",
             "matched_countries": [
-              "Koszovó"
+              "Montenegró"
             ],
             "country_confidence": {
-              "Koszovó": 5
+              "Montenegró": 5
             },
-            "event_category": "eu_integration",
+            "event_category": "security",
             "event_categories": [
+              {
+                "category": "security",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
               {
                 "category": "eu_integration",
                 "hits": 2,
                 "weight": 6
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
+            "geopolitical_score": 34,
+            "quality_score": 35,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -327,39 +513,7 @@
               "quotes": 0
             },
             "quality": "x_api_filtered"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Montenegró",
-      "social_signal": {
-        "score": 17,
-        "level": "low",
-        "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
-        "positive_hits": 2,
-        "trusted_hits": 2,
-        "engagement_total": 7,
-        "raw_engagement_total": 7,
-        "quality_total": 60,
-        "geopolitical_total": 49,
-        "source_counts": {
-          "reddit": 0,
-          "mastodon": 2,
-          "x": 1
-        },
-        "category_counts": {
-          "economic_infrastructure": 1,
-          "security": 2
-        },
-        "tag_counts": {
-          "montenegro": 2,
-          "Montenegró": 1
-        },
-        "main_topic": "security",
-        "top_posts": [
+          },
           {
             "title": "",
             "text": "Croatia steps up pressure on Montenegro over border dispute as EU accession deadline looms https://www. euronews.com/2026/11/23/croati a-steps-up-pressure-on-montenegro-over-border-dispute-as-eu-accession-deadline-looms # Euronews # news # europa # Montenegro # EU",
@@ -424,11 +578,11 @@
             "quality_score": 18,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 7,
-            "raw_engagement": 7,
+            "engagement": 13,
+            "raw_engagement": 13,
             "metrics": {
-              "likes": 7,
-              "reposts": 0,
+              "likes": 12,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -472,106 +626,65 @@
         "score": 16,
         "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 3,
         "negative_hits": 1,
-        "positive_hits": 4,
-        "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 82,
-        "geopolitical_total": 73,
+        "positive_hits": 2,
+        "trusted_hits": 0,
+        "engagement_total": 11,
+        "raw_engagement_total": 11,
+        "quality_total": 58,
+        "geopolitical_total": 53,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 3
+          "x": 2
         },
         "category_counts": {
-          "eu_integration": 2,
-          "government_crisis": 2
+          "eu_integration": 1,
+          "ethnic_tension": 1,
+          "government_crisis": 1
         },
         "tag_counts": {
           "balkans": 1,
-          "Koszovó": 1,
           "Észak-Macedónia": 2
         },
         "main_topic": "eu_integration",
         "top_posts": [
           {
-            "title": "EU MEMBERSHIP IS POSSIBLE — BUT BRUSSELS HAS SET ITS RED LINES. The Brussels Declaration sends several powerful messages to the Western Balkans: 🇲🇰 North Macedonia must honour its ",
-            "text": "EU MEMBERSHIP IS POSSIBLE — BUT BRUSSELS HAS SET ITS RED LINES. The Brussels Declaration sends several powerful messages to the Western Balkans: 🇲🇰 North Macedonia must honour its agreements with Greece and Bulgaria. 🇷🇸 Serbia did not endorse the declaration. 🇽🇰🇷🇸 EU funding",
-            "url": "https://x.com/i/web/status/2125961292309488013",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-11-26T14:34:05.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Szerbia": 1
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 26,
-            "quality_score": 27,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 2,
-            "raw_engagement": 2,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 2,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "The Prime Minister of North Macedonia, Hristijan Mickoski, expressed his expectation that the European Commission will assess the country’s progress in implementing the Reform Agen",
-            "text": "The Prime Minister of North Macedonia, Hristijan Mickoski, expressed his expectation that the European Commission will assess the country’s progress in implementing the Reform Agenda and approve another 75 million euros under the Growth Plan for the West…",
-            "url": "https://x.com/i/web/status/2125917239257764266",
+            "title": "What happens after a minority community wins in court? At the UN Minority Forum, IARF President Robert Ince asked North Macedonia to open a dialogue with the Bektashi Community, ou",
+            "text": "What happens after a minority community wins in court? At the UN Minority Forum, IARF President Robert Ince asked North Macedonia to open a dialogue with the Bektashi Community, our member, on its historic seat in Tetovo. IARF FoRB MinorityRights",
+            "url": "https://x.com/i/web/status/2126008017753870379",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-26T11:39:02.000Z",
+            "seen_date": "2026-11-26T17:39:45.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 9
+              "Észak-Macedónia": 5
             },
-            "event_category": "government_crisis",
+            "event_category": "ethnic_tension",
             "event_categories": [
+              {
+                "category": "ethnic_tension",
+                "hits": 1,
+                "weight": 10
+              },
               {
                 "category": "government_crisis",
                 "hits": 1,
                 "weight": 9
               },
               {
-                "category": "economic_infrastructure",
+                "category": "corruption_rule_of_law",
                 "hits": 1,
-                "weight": 4
+                "weight": 8
               }
             ],
-            "geopolitical_score": 18,
-            "quality_score": 22,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
+            "geopolitical_score": 28,
+            "quality_score": 29,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
             "engagement": 0,
             "raw_engagement": 0,
             "metrics": {
@@ -614,40 +727,38 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Peer exchange between 🇲🇰 and 🇲🇹 today in Skopje, advancing migration governance and worker protection in line with the EU acquis. Together with national partners and with support f",
-            "text": "Peer exchange between 🇲🇰 and 🇲🇹 today in Skopje, advancing migration governance and worker protection in line with the EU acquis. Together with national partners and with support from , IOM supports EU accession efforts of North Macedonia",
-            "url": "https://x.com/i/web/status/2125965020958011426",
+            "title": "Kosovo President, Justina Shiroka Pula will represent the country at the Brdo-Brijuni leaders’ summit in Ohrid, North Macedonia, hosted by the presidents of Slovenia, Croatia and N",
+            "text": "Kosovo President, Justina Shiroka Pula will represent the country at the Brdo-Brijuni leaders’ summit in Ohrid, North Macedonia, hosted by the presidents of Slovenia, Croatia and North Macedonia.",
+            "url": "https://x.com/i/web/status/2125996873383309738",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-26T14:48:54.000Z",
+            "seen_date": "2026-11-26T16:55:28.000Z",
             "matched_countries": [
-              "Észak-Macedónia"
+              "Észak-Macedónia",
+              "Bosznia-Hercegovina"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 9
+              "Észak-Macedónia": 5,
+              "Bosznia-Hercegovina": 3,
+              "Koszovó": 1
             },
-            "event_category": "eu_integration",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "eu_integration",
+                "category": "government_crisis",
                 "hits": 1,
-                "weight": 6
-              },
-              {
-                "category": "migration",
-                "hits": 1,
-                "weight": 6
+                "weight": 9
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
+            "geopolitical_score": 9,
+            "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 11,
+            "raw_engagement": 11,
             "metrics": {
-              "likes": 0,
-              "reposts": 0,
+              "likes": 10,
+              "reposts": 1,
               "replies": 0,
               "quotes": 0
             },
@@ -662,31 +773,33 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
+        "mentions": 20,
         "negative_hits": 12,
-        "positive_hits": 2,
-        "trusted_hits": 1,
-        "engagement_total": 11,
-        "raw_engagement_total": 11,
-        "quality_total": 515,
-        "geopolitical_total": 468,
+        "positive_hits": 3,
+        "trusted_hits": 2,
+        "engagement_total": 18,
+        "raw_engagement_total": 18,
+        "quality_total": 591,
+        "geopolitical_total": 540,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 14,
-          "x": 3
+          "mastodon": 13,
+          "x": 7
         },
         "category_counts": {
-          "protest": 7,
-          "government_crisis": 5,
-          "corruption_rule_of_law": 2,
-          "security": 3
+          "government_crisis": 7,
+          "protest": 5,
+          "corruption_rule_of_law": 1,
+          "security": 6,
+          "ethnic_tension": 1
         },
         "tag_counts": {
-          "balkans": 11,
+          "balkans": 10,
           "albania": 3,
-          "Albánia": 3
+          "Szerbia": 1,
+          "Albánia": 6
         },
-        "main_topic": "protest",
+        "main_topic": "government_crisis",
         "top_posts": [
           {
             "title": "",
@@ -802,6 +915,45 @@
           },
           {
             "title": "",
+            "text": "Kush është pjesë e lëvizjes studentore ‘Partia e Bashkuar për Shqipërinë’? Machine translated: Who is part of the student movement 'United Party for Albania'? Being asked questions by the press after having read their declaration that they're forming a new political party for transparency and anti-corruption. # Albania # Balkans # Corruption # Europe # Prote",
+            "url": "https://eldritch.cafe/@ml/117683642662011915",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Thu, 26 Nov 2026 16:17:59 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 2,
+                "weight": 8
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 36,
+            "quality_score": 39,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
             "text": "Day 176 of anti-corruption protest in Tirana, Albania Policia ndërhyn dhe u kërkon qytetarëve te lirojnë rrugën Machine translated: The police intervene and ask citizens to clear the road. The cops are continuing with the excuse that protestors can't \"block the road\". This is risible because drivers block the road for cyclists and pedestrians ALL THE TIME wi",
             "url": "https://eldritch.cafe/@ml/117661476267099768",
             "source": "mastodon",
@@ -827,45 +979,6 @@
               },
               {
                 "category": "protest",
-                "hits": 1,
-                "weight": 8
-              }
-            ],
-            "geopolitical_score": 36,
-            "quality_score": 39,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "Thunberg joins protest as students march in Tirana demanding Rama's resignation What someone is spray-painting on the bus is \"November 28\", which is Albanian Independence Day, and also a day they are trying to encourage a huge protest turnout. # Albania # Balkans # Corruption # Europe # Protest # FlamingoRevolution https://www. youtube.com/watch?v=2POmwOJOq4",
-            "url": "https://eldritch.cafe/@ml/117656472730997298",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Sat, 21 Nov 2026 21:08:19 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 6
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "protest",
-                "hits": 2,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
                 "hits": 1,
                 "weight": 8
               }
