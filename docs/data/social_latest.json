@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25 21:37 UTC",
+  "updated_at": "2026-11-26 01:23 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,40 +12,40 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 18
+    "collected": 12
   },
   "countries": [
     {
       "name": "Szerbia",
       "social_signal": {
-        "score": 58,
+        "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 6,
-        "negative_hits": 4,
+        "mentions": 8,
+        "negative_hits": 5,
         "positive_hits": 0,
-        "trusted_hits": 5,
-        "engagement_total": 1,
-        "raw_engagement_total": 1,
-        "quality_total": 227,
-        "geopolitical_total": 201,
+        "trusted_hits": 6,
+        "engagement_total": 2,
+        "raw_engagement_total": 2,
+        "quality_total": 284,
+        "geopolitical_total": 253,
         "source_counts": {
           "reddit": 0,
           "mastodon": 5,
-          "x": 1
+          "x": 3
         },
         "category_counts": {
           "government_crisis": 2,
-          "foreign_influence": 2,
+          "foreign_influence": 1,
           "corruption_rule_of_law": 1,
-          "security": 1
+          "security": 4
         },
         "tag_counts": {
           "balkans": 2,
           "serbia": 3,
-          "Szerbia": 1
+          "Szerbia": 3
         },
-        "main_topic": "government_crisis",
+        "main_topic": "security",
         "top_posts": [
           {
             "title": "",
@@ -175,68 +175,79 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "From China to the EU, Serbia is a Hub for Black Market Trade in Refrigerants https:// balkaninsight.com/2026/11/25/f rom-china-to-the-eu-serbia-is-a-hub-for-black-market-trade-in-refrigerants/bi/",
-            "url": "https://balkaninsight.com/2026/11/25/from-china-to-the-eu-serbia-is-a-hub-for-black-market-trade-in-refrigerants/bi/",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Wed, 25 Nov 2026 06:52:19 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 1
-            },
-            "event_category": "foreign_influence",
-            "event_categories": [
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 16,
-            "quality_score": 21,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "This is the part where EU leader should step in, show leadership, and tell Belgrade it either extradites Radoicic or it will face sanctions like Russia. That's how it should be.",
-            "text": "This is the part where EU leader should step in, show leadership, and tell Belgrade it either extradites Radoicic or it will face sanctions like Russia. That's how it should be.",
-            "url": "https://x.com/i/web/status/2125699704872923275",
+            "title": "Polyanskiy says he reminded OSCE colleagues calling NATO a \"defensive alliance\" of 1999, \"when they directly targeted Chinese embassy in Belgrade by five missiles, when three diplo",
+            "text": "Polyanskiy says he reminded OSCE colleagues calling NATO a \"defensive alliance\" of 1999, \"when they directly targeted Chinese embassy in Belgrade by five missiles, when three diplomats were killed in this attack.\"",
+            "url": "https://x.com/i/web/status/2125751732219326969",
             "source": "x",
             "tag": "Szerbia",
-            "seen_date": "2026-11-25T21:14:37.000Z",
+            "seen_date": "2026-11-26T00:41:22.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
               "Szerbia": 4
             },
-            "event_category": "foreign_influence",
+            "event_category": "security",
             "event_categories": [
               {
-                "category": "foreign_influence",
+                "category": "security",
                 "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 19,
-            "quality_score": 20,
+            "geopolitical_score": 33,
+            "quality_score": 37,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 2,
+            "raw_engagement": 2,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 1,
+              "quotes": 1
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Remember Informer, the pro-Vučić tabloid that said Ukraine attacked Russia the day Russia invaded Ukraine? Quite the scoop. Its owner and editor-in-chief is now in police custody o",
+            "text": "Remember Informer, the pro-Vučić tabloid that said Ukraine attacked Russia the day Russia invaded Ukraine? Quite the scoop. Its owner and editor-in-chief is now in police custody on suspicion of causing panic and disorder and obstructing justice. srbija Serbia Balkans media",
+            "url": "https://x.com/i/web/status/2125750784415658384",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-26T00:37:36.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 9
+            },
+            "event_category": "security",
+            "event_categories": [
+              {
+                "category": "security",
+                "hits": 2,
+                "weight": 9
+              },
+              {
+                "category": "foreign_influence",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 29,
+            "quality_score": 30,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 1,
-            "raw_engagement": 1,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 1,
+              "likes": 0,
               "reposts": 0,
               "replies": 0,
               "quotes": 0
@@ -274,32 +285,29 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 27,
+        "score": 20,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 5,
+        "mentions": 3,
         "negative_hits": 1,
-        "positive_hits": 4,
+        "positive_hits": 2,
         "trusted_hits": 1,
-        "engagement_total": 15,
-        "raw_engagement_total": 15,
-        "quality_total": 110,
-        "geopolitical_total": 99,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 72,
+        "geopolitical_total": 63,
         "source_counts": {
           "reddit": 0,
           "mastodon": 2,
-          "x": 3
+          "x": 1
         },
         "category_counts": {
           "protest": 1,
-          "government_crisis": 2,
-          "ethnic_tension": 1,
-          "eu_integration": 1
+          "government_crisis": 2
         },
         "tag_counts": {
           "kosovo": 2,
-          "Szerbia": 1,
-          "Koszovó": 2
+          "Koszovó": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -405,87 +413,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "EU–Western Balkans Summit Focuses on Dialogue, Enlargement and Growth Plan Funding EU WesternBalkans Kosovo Serbia AlbinKurti EUGrowthPlan EUEnlargement KosovoSerbiaDialogue Europe",
-            "text": "EU–Western Balkans Summit Focuses on Dialogue, Enlargement and Growth Plan Funding EU WesternBalkans Kosovo Serbia AlbinKurti EUGrowthPlan EUEnlargement KosovoSerbiaDialogue EuropeanIntegration Brussels",
-            "url": "https://x.com/i/web/status/2125696729257541895",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-11-25T21:02:48.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5,
-              "Szerbia": 1
-            },
-            "event_category": "eu_integration",
-            "event_categories": [
-              {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 2,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 21,
-            "quality_score": 22,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "🇽🇰🇪🇺 PM Albin Kurti called on EU to grant Kosovo candidate status, calling it \"urgent\": - Kosovo is the only WB6 country without candidate status, 4 years after applying - He said ",
-            "text": "🇽🇰🇪🇺 PM Albin Kurti called on EU to grant Kosovo candidate status, calling it \"urgent\": - Kosovo is the only WB6 country without candidate status, 4 years after applying - He said Kosovo is seeking recognition of its progress, not favors, citing democratic development, economic",
-            "url": "https://x.com/i/web/status/2125701394917130721",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-25T21:21:20.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "economic_infrastructure",
-                "hits": 1,
-                "weight": 4
-              }
-            ],
-            "geopolitical_score": 15,
-            "quality_score": 16,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 15,
-            "raw_engagement": 15,
-            "metrics": {
-              "likes": 12,
-              "reposts": 0,
-              "replies": 3,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -587,83 +514,39 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 19,
-        "level": "low",
+        "score": 21,
+        "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 4,
+        "mentions": 5,
         "negative_hits": 2,
-        "positive_hits": 4,
+        "positive_hits": 5,
         "trusted_hits": 2,
-        "engagement_total": 3,
-        "raw_engagement_total": 3,
-        "quality_total": 87,
-        "geopolitical_total": 75,
+        "engagement_total": 1,
+        "raw_engagement_total": 1,
+        "quality_total": 98,
+        "geopolitical_total": 85,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
           "eu_integration": 3,
-          "ethnic_tension": 1
+          "government_crisis": 2
         },
         "tag_counts": {
           "balkans": 1,
-          "Szerbia": 1,
           "Montenegró": 1,
-          "Észak-Macedónia": 1
+          "Észak-Macedónia": 3
         },
         "main_topic": "eu_integration",
         "top_posts": [
-          {
-            "title": "🇪🇺 INTERNATIONAL MEDIA COVERAGE – 11 MEDIA OUTLETS IN 4 COUNTRIES! My proposals for Kosovo recognition, Euro adoption and NATO integration have generated extensive media coverage a",
-            "text": "🇪🇺 INTERNATIONAL MEDIA COVERAGE – 11 MEDIA OUTLETS IN 4 COUNTRIES! My proposals for Kosovo recognition, Euro adoption and NATO integration have generated extensive media coverage across Serbia, Bosnia and Herzegovina, Austria and North Macedonia. 🇷🇸 In Serbia, ALO! featured my",
-            "url": "https://x.com/i/web/status/2125688021605572945",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-25T20:28:12.000Z",
-            "matched_countries": [
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Észak-Macedónia": 5,
-              "Bosznia-Hercegovina": 2,
-              "Szerbia": 1,
-              "Koszovó": 1
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              },
-              {
-                "category": "security",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 24,
-            "quality_score": 28,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 3,
-            "raw_engagement": 3,
-            "metrics": {
-              "likes": 2,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 1
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "At the EU–Western Balkans summit in Brussels, the European Union is expected to announce further payments under the Growth Plan for Albania, Montenegro and North Macedonia, Euronew",
             "text": "At the EU–Western Balkans summit in Brussels, the European Union is expected to announce further payments under the Growth Plan for Albania, Montenegro and North Macedonia, Euronews reported.",
             "url": "https://x.com/i/web/status/2125693954737795307",
             "source": "x",
-            "tag": "Montenegró",
+            "tag": "Észak-Macedónia",
             "seen_date": "2026-11-25T20:51:46.000Z",
             "matched_countries": [
               "Észak-Macedónia"
@@ -688,6 +571,46 @@
             ],
             "geopolitical_score": 21,
             "quality_score": 25,
+            "source_reliability": 5,
+            "trusted_source_hint": true,
+            "engagement": 1,
+            "raw_engagement": 1,
+            "metrics": {
+              "likes": 1,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "Prime Minister Hristijan Mickoski expects the European Commission to assess North Macedonia’s progress in meeting its obligations under the Reform Agenda and make the full 75 milli",
+            "text": "Prime Minister Hristijan Mickoski expects the European Commission to assess North Macedonia’s progress in meeting its obligations under the Reform Agenda and make the full 75 million euros available to the country through the Western Balkans Growth Plan.",
+            "url": "https://x.com/i/web/status/2125732127803142441",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-25T23:23:28.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 22,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -732,11 +655,51 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "North Macedonia’s Prime Minister, Hristijan Mickoski, called on the European Union to review the way it treats the Western Balkans. According to him, the countries of the region ha",
+            "text": "North Macedonia’s Prime Minister, Hristijan Mickoski, called on the European Union to review the way it treats the Western Balkans. According to him, the countries of the region have waited a long time for progress on the path to European integration.",
+            "url": "https://x.com/i/web/status/2125709223417843959",
+            "source": "x",
+            "tag": "Észak-Macedónia",
+            "seen_date": "2026-11-25T21:52:27.000Z",
+            "matched_countries": [
+              "Észak-Macedónia"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 9
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 16,
+            "quality_score": 17,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "BRUSSELS TO REWARD REFORMERS: THREE BALKAN COUNTRIES EXPECTED TO RECEIVE EXTRA EU FUNDS Montenegro, Albania and North Macedonia are expected to benefit from the redistribution of E",
             "text": "BRUSSELS TO REWARD REFORMERS: THREE BALKAN COUNTRIES EXPECTED TO RECEIVE EXTRA EU FUNDS Montenegro, Albania and North Macedonia are expected to benefit from the redistribution of EU Growth Plan funds reportedly forfeited by Serbia, Kosovo and Bosnia and Herzegovina over missed",
             "url": "https://x.com/i/web/status/2125697384566956284",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Montenegró",
             "seen_date": "2026-11-25T21:05:24.000Z",
             "matched_countries": [
               "Észak-Macedónia"
@@ -785,30 +748,29 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 17,
+        "mentions": 18,
         "negative_hits": 13,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 2,
-        "raw_engagement_total": 2,
-        "quality_total": 547,
-        "geopolitical_total": 498,
+        "engagement_total": 98,
+        "raw_engagement_total": 98,
+        "quality_total": 559,
+        "geopolitical_total": 507,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 15,
+          "mastodon": 16,
           "x": 2
         },
         "category_counts": {
-          "government_crisis": 5,
+          "government_crisis": 7,
           "corruption_rule_of_law": 2,
           "protest": 5,
-          "security": 5
+          "security": 4
         },
         "tag_counts": {
           "balkans": 12,
-          "albania": 3,
-          "Koszovó": 1,
-          "Albánia": 1
+          "albania": 4,
+          "Montenegró": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
