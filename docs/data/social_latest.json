@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27 21:05 UTC",
+  "updated_at": "2026-11-28 00:54 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 18
+    "collected": 17
   },
   "countries": [
     {
@@ -21,29 +21,28 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 8,
-        "negative_hits": 3,
+        "mentions": 9,
+        "negative_hits": 4,
         "positive_hits": 0,
         "trusted_hits": 3,
         "engagement_total": 0,
         "raw_engagement_total": 0,
         "quality_total": 204,
-        "geopolitical_total": 176,
+        "geopolitical_total": 175,
         "source_counts": {
           "reddit": 0,
           "mastodon": 7,
-          "x": 1
+          "x": 2
         },
         "category_counts": {
           "corruption_rule_of_law": 1,
-          "government_crisis": 5,
-          "foreign_influence": 1,
-          "protest": 1
+          "government_crisis": 7,
+          "foreign_influence": 1
         },
         "tag_counts": {
           "balkans": 3,
           "serbia": 4,
-          "Montenegró": 1
+          "Szerbia": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -136,52 +135,6 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "Montenegro 2027 bond ~par, 4.5% yield, flat past yr. EU join W Balkans pace, 25 chapter close H2 '27 timetable. Independent cenbank/judiciary law pass. Ukraine lag, Brussels next 5",
-            "text": "Montenegro 2027 bond ~par, 4.5% yield, flat past yr. EU join W Balkans pace, 25 chapter close H2 '27 timetable. Independent cenbank/judiciary law pass. Ukraine lag, Brussels next 5 yr budget-75 billion loan impasse. Serbia Prez candidate student list, ex Vucic hunger strike.",
-            "url": "https://x.com/i/web/status/2126352874330313182",
-            "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-11-27T16:30:05.000Z",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 5,
-              "Montenegró": 1
-            },
-            "event_category": "protest",
-            "event_categories": [
-              {
-                "category": "protest",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 23,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
             "title": "",
             "text": "European Parliament Backs Vukovar Anniversary Resolution Criticising Serbia https:// balkaninsight.com/2026/11/26/e uropean-parliament-backs-vukovar-anniversary-resolution-criticising-serbia/btj/",
             "url": "https://balkaninsight.com/2026/11/26/european-parliament-backs-vukovar-anniversary-resolution-criticising-serbia/btj/",
@@ -238,6 +191,35 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "How Serbia’s students devised a winning strategy to bring down strongman Vucic \"It may sound corny, but human warmth can beat state propaganda and brainwashing.\" https://www. youtube.com/watch?v=ZYGv7f_UIh8 # Serbia # Corruption # Balkans # Resistance # Elections",
+            "url": "https://eldritch.cafe/@ml/117687607168400467",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Fri, 27 Nov 2026 09:06:13 +0000",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "corruption_rule_of_law",
+            "event_categories": [
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 11,
+            "quality_score": 14,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
           }
         ]
       }
@@ -245,30 +227,32 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 33,
-        "level": "medium",
+        "score": 40,
+        "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 4,
-        "negative_hits": 2,
+        "mentions": 5,
+        "negative_hits": 3,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 14,
-        "raw_engagement_total": 14,
-        "quality_total": 74,
-        "geopolitical_total": 68,
+        "engagement_total": 15,
+        "raw_engagement_total": 15,
+        "quality_total": 90,
+        "geopolitical_total": 83,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 3
+          "x": 4
         },
         "category_counts": {
           "security": 1,
-          "ethnic_tension": 1,
-          "government_crisis": 2
+          "eu_integration": 1,
+          "government_crisis": 2,
+          "ethnic_tension": 1
         },
         "tag_counts": {
           "bosnia": 1,
-          "Montenegró": 2,
+          "Szerbia": 2,
+          "Montenegró": 1,
           "Észak-Macedónia": 1
         },
         "main_topic": "government_crisis",
@@ -308,16 +292,18 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "First Outing On November 27, Ohrid hosts the annual meeting of the leaders of the \"Brdo–Brijuni process.\" For the first time, Serbia is represented by Aleksandar Čupić — speaker of",
-            "text": "First Outing On November 27, Ohrid hosts the annual meeting of the leaders of the \"Brdo–Brijuni process.\" For the first time, Serbia is represented by Aleksandar Čupić — speaker of the new parliament and acting president. The line-up at the table is almost a full atlas of the",
-            "url": "https://x.com/i/web/status/2126355635369398620",
+            "title": "TWO SUMMITS IN THREE DAYS — AND TWO DECLARATIONS WITHOUT SERBIA'S ENDORSEMENT. Serbia’s acting President Aleksandar Čupić attended the Ohrid summit but declined to sign its declara",
+            "text": "TWO SUMMITS IN THREE DAYS — AND TWO DECLARATIONS WITHOUT SERBIA'S ENDORSEMENT. Serbia’s acting President Aleksandar Čupić attended the Ohrid summit but declined to sign its declaration, citing the limitations of his temporary mandate. Meanwhile, North Macedonia demanded that",
+            "url": "https://x.com/i/web/status/2126455199573397632",
             "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-11-27T16:41:03.000Z",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-27T23:16:41.000Z",
             "matched_countries": [
+              "Észak-Macedónia",
               "Bosznia-Hercegovina"
             ],
             "country_confidence": {
+              "Észak-Macedónia": 5,
               "Bosznia-Hercegovina": 3,
               "Szerbia": 1
             },
@@ -386,6 +372,42 @@
             "quality": "x_api_filtered"
           },
           {
+            "title": "Western Balkan leaders gathered in Ohrid with a common message: Europe must deliver on enlargement. But behind the diplomatic unity, fresh disputes are emerging. Brussels says €338",
+            "text": "Western Balkan leaders gathered in Ohrid with a common message: Europe must deliver on enlargement. But behind the diplomatic unity, fresh disputes are emerging. Brussels says €338 million could soon be unlocked for three regional economies, Kosovo faces the loss of €43.8",
+            "url": "https://x.com/i/web/status/2126463303278788669",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-27T23:48:53.000Z",
+            "matched_countries": [
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Bosznia-Hercegovina": 3,
+              "Koszovó": 1
+            },
+            "event_category": "eu_integration",
+            "event_categories": [
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 15,
+            "quality_score": 16,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "“The new government’s mission is not to create divisions, but to unite the Serbian people. The previous government did nothing but create artificial and unnecessary divisions in Mo",
             "text": "“The new government’s mission is not to create divisions, but to unite the Serbian people. The previous government did nothing but create artificial and unnecessary divisions in Montenegro, Republika Srpska and elsewhere. We must work towards unity.” — Radomir Saičić 🇷🇸",
             "url": "https://x.com/i/web/status/2126369214684594577",
@@ -412,10 +434,10 @@
             "quality_score": 14,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 14,
-            "raw_engagement": 14,
+            "engagement": 15,
+            "raw_engagement": 15,
             "metrics": {
-              "likes": 12,
+              "likes": 13,
               "reposts": 2,
               "replies": 0,
               "quotes": 0
@@ -428,68 +450,32 @@
     {
       "name": "Koszovó",
       "social_signal": {
-        "score": 27,
-        "level": "medium",
+        "score": 12,
+        "level": "low",
         "scale": "0-60 risk index",
-        "mentions": 3,
-        "negative_hits": 1,
-        "positive_hits": 0,
-        "trusted_hits": 2,
+        "mentions": 2,
+        "negative_hits": 0,
+        "positive_hits": 1,
+        "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 85,
-        "geopolitical_total": 75,
+        "quality_total": 50,
+        "geopolitical_total": 44,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 2
+          "x": 1
         },
         "category_counts": {
-          "security": 2,
-          "ethnic_tension": 1
+          "security": 1,
+          "government_crisis": 1
         },
         "tag_counts": {
           "kosovo": 1,
-          "Szerbia": 2
+          "Koszovó": 1
         },
         "main_topic": "security",
         "top_posts": [
-          {
-            "title": "KFOR Says Meeting with Serbian Military Officials in Prishtina Was Routine and Aimed at Maintaining Security KFOR Kosovo Serbia NATO Security Prishtina",
-            "text": "KFOR Says Meeting with Serbian Military Officials in Prishtina Was Routine and Aimed at Maintaining Security KFOR Kosovo Serbia NATO Security Prishtina",
-            "url": "https://x.com/i/web/status/2126418680758092090",
-            "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-27T20:51:35.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5,
-              "Szerbia": 2
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 4,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 40,
-            "quality_score": 44,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
           {
             "title": "",
             "text": "Hrvatski sabor raspravlja o slanju vojnika u Poljsku, Litvu i Mađarsku Objavljeno: 20:06, 26. studenoga 2026. https:// novine.eu/vijesti/hrvatska/hrv atski-sabor-raspravlja-o-slanju-vojnika-u-poljsku-litvu-i-madarsku # vijesti # hrvatska # hrvatskavojska # hrvatskisabor # kfor # kosovo # nato # poljska",
@@ -520,29 +506,33 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "brought Serbian Army officers to Pristina, the capital of the Republic of Kosova. The state that denies our independence, committed war crimes and ethnic cleansing in ’99, and stil",
-            "text": "brought Serbian Army officers to Pristina, the capital of the Republic of Kosova. The state that denies our independence, committed war crimes and ethnic cleansing in ’99, and still claims our territory. Before anything like this is allowed, Serbia must apologize for",
-            "url": "https://x.com/i/web/status/2126421594067337613",
+            "title": "Prime Minister Albin Kurti reiterated his call for the European Union to grant Kosovo candidate status and open accession negotiations.",
+            "text": "Prime Minister Albin Kurti reiterated his call for the European Union to grant Kosovo candidate status and open accession negotiations.",
+            "url": "https://x.com/i/web/status/2126426019745656910",
             "source": "x",
-            "tag": "Szerbia",
-            "seen_date": "2026-11-27T21:03:09.000Z",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-27T21:20:44.000Z",
             "matched_countries": [
               "Koszovó"
             ],
             "country_confidence": {
-              "Koszovó": 5,
-              "Szerbia": 2
+              "Koszovó": 5
             },
-            "event_category": "ethnic_tension",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "ethnic_tension",
+                "category": "government_crisis",
                 "hits": 1,
-                "weight": 10
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
+            "geopolitical_score": 22,
+            "quality_score": 23,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -655,32 +645,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 37,
+        "score": 33,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 7,
+        "mentions": 6,
         "negative_hits": 1,
-        "positive_hits": 3,
-        "trusted_hits": 1,
-        "engagement_total": 40,
-        "raw_engagement_total": 40,
-        "quality_total": 103,
-        "geopolitical_total": 91,
+        "positive_hits": 2,
+        "trusted_hits": 0,
+        "engagement_total": 50,
+        "raw_engagement_total": 50,
+        "quality_total": 96,
+        "geopolitical_total": 88,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 6
+          "x": 5
         },
         "category_counts": {
-          "eu_integration": 2,
-          "government_crisis": 3,
-          "security": 1,
-          "ethnic_tension": 1
+          "eu_integration": 1,
+          "government_crisis": 4,
+          "security": 1
         },
         "tag_counts": {
           "balkans": 1,
           "Szerbia": 1,
-          "Koszovó": 1,
           "Észak-Macedónia": 4
         },
         "main_topic": "government_crisis",
@@ -690,7 +678,7 @@
             "text": "North Macedonia President Says Serbia’s Acting President Was Only Regional Leader Not to Sign Brdo-Brijuni Declaration Serbia NorthMacedonia Kosovo BrdoBrijuni RegionalCooperation EuropeanIntegration",
             "url": "https://x.com/i/web/status/2126421345533567295",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Észak-Macedónia",
             "seen_date": "2026-11-27T21:02:10.000Z",
             "matched_countries": [
               "Észak-Macedónia"
@@ -710,6 +698,44 @@
             ],
             "geopolitical_score": 19,
             "quality_score": 20,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
+            "title": "TWO SUMMITS IN THREE DAYS — AND TWO DECLARATIONS WITHOUT SERBIA'S ENDORSEMENT. Serbia’s acting President Aleksandar Čupić attended the Ohrid summit but declined to sign its declara",
+            "text": "TWO SUMMITS IN THREE DAYS — AND TWO DECLARATIONS WITHOUT SERBIA'S ENDORSEMENT. Serbia’s acting President Aleksandar Čupić attended the Ohrid summit but declined to sign its declaration, citing the limitations of his temporary mandate. Meanwhile, North Macedonia demanded that",
+            "url": "https://x.com/i/web/status/2126455199573397632",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-27T23:16:41.000Z",
+            "matched_countries": [
+              "Észak-Macedónia",
+              "Bosznia-Hercegovina"
+            ],
+            "country_confidence": {
+              "Észak-Macedónia": 5,
+              "Bosznia-Hercegovina": 3,
+              "Szerbia": 1
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 2,
+                "weight": 9
+              }
+            ],
+            "geopolitical_score": 18,
+            "quality_score": 19,
             "source_reliability": 2,
             "trusted_source_hint": false,
             "engagement": 0,
@@ -796,74 +822,38 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "European Commissioner for Enlargement Marta Kos announced that North Macedonia has so far fulfilled 56 percent of the planned reforms and will receive 71 million euros.",
-            "text": "European Commissioner for Enlargement Marta Kos announced that North Macedonia has so far fulfilled 56 percent of the planned reforms and will receive 71 million euros.",
-            "url": "https://x.com/i/web/status/2126371956035383468",
+            "title": "🇽🇰🇲🇰 Kosovo and North Macedonia presidents met. \"Macedonian-Kosovan relations are friendly\" said President of N.Macedonia.",
+            "text": "🇽🇰🇲🇰 Kosovo and North Macedonia presidents met. \"Macedonian-Kosovan relations are friendly\" said President of N.Macedonia.",
+            "url": "https://x.com/i/web/status/2126390228021924064",
             "source": "x",
             "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-27T17:45:55.000Z",
+            "seen_date": "2026-11-27T18:58:31.000Z",
             "matched_countries": [
               "Észak-Macedónia"
             ],
             "country_confidence": {
-              "Észak-Macedónia": 5
+              "Észak-Macedónia": 5,
+              "Koszovó": 2
             },
-            "event_category": "eu_integration",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "eu_integration",
+                "category": "government_crisis",
                 "hits": 1,
-                "weight": 6
+                "weight": 9
               }
             ],
-            "geopolitical_score": 11,
-            "quality_score": 15,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
-          },
-          {
-            "title": "That is Gostivar and decorated with Albanian flags by the Ethnic Albanians to celebrate “flag day”. Now tell me when was the last time Skopje dressed up in Albanian flags by the st",
-            "text": "That is Gostivar and decorated with Albanian flags by the Ethnic Albanians to celebrate “flag day”. Now tell me when was the last time Skopje dressed up in Albanian flags by the state ? This is Tirana btw 👇🏻",
-            "url": "https://x.com/i/web/status/2126371499728621582",
-            "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-27T17:44:06.000Z",
-            "matched_countries": [
-              "Albánia",
-              "Észak-Macedónia"
-            ],
-            "country_confidence": {
-              "Albánia": 6,
-              "Észak-Macedónia": 4
-            },
-            "event_category": "ethnic_tension",
-            "event_categories": [
-              {
-                "category": "ethnic_tension",
-                "hits": 1,
-                "weight": 10
-              }
-            ],
-            "geopolitical_score": 10,
-            "quality_score": 11,
+            "geopolitical_score": 9,
+            "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
+            "engagement": 34,
+            "raw_engagement": 34,
             "metrics": {
-              "likes": 0,
+              "likes": 27,
               "reposts": 0,
-              "replies": 0,
-              "quotes": 0
+              "replies": 5,
+              "quotes": 2
             },
             "quality": "x_api_filtered"
           }
@@ -877,13 +867,13 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 16,
-        "negative_hits": 10,
+        "negative_hits": 9,
         "positive_hits": 1,
         "trusted_hits": 1,
-        "engagement_total": 5,
-        "raw_engagement_total": 5,
-        "quality_total": 487,
-        "geopolitical_total": 443,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 485,
+        "geopolitical_total": 441,
         "source_counts": {
           "reddit": 0,
           "mastodon": 13,
@@ -891,16 +881,15 @@
         },
         "category_counts": {
           "security": 3,
-          "government_crisis": 6,
+          "government_crisis": 7,
           "protest": 4,
-          "corruption_rule_of_law": 2,
+          "corruption_rule_of_law": 1,
           "ethnic_tension": 1
         },
         "tag_counts": {
           "balkans": 10,
           "albania": 3,
-          "Észak-Macedónia": 1,
-          "Albánia": 2
+          "Albánia": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
