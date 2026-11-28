@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-28 00:54 UTC",
+  "updated_at": "2026-11-28 07:33 UTC",
   "source": "Reddit RSS + Mastodon hashtag RSS + optional X API",
   "method_note": "A social signal külön geopolitikai kockázati jelző. A rendszer 7 napon belüli, ország szerint illesztett, kategorizált és zajszűrt posztokat számol. Nem közvélemény-kutatás, és nem része közvetlenül a fő hírindexnek. Az új social score 0-60 skálájú risk index. A negatív, biztonsági, etnikai feszültségi, kormányzati válság, tiltakozási, korrupciós és külső befolyási jeleket erősebben súlyozza. A pozitív integrációs vagy együttműködési jelek csökkentik a kockázati pontszámot.",
   "x_status": {
@@ -12,7 +12,7 @@
         "message": "{\"detail\":\"One or more parameters to your request was invalid.\",\"errors\":[{\"message\":\"The `query` query parameter length must be <= 512\",\"parameters\":{\"query\":[\"(Bosnia OR BiH OR Sarajevo OR Dodik OR \\\"Republika Srpska\\\" OR \\\"Bosnia and Herzegovina\\\") (government OR protest OR election OR corruption"
       }
     ],
-    "collected": 17
+    "collected": 15
   },
   "countries": [
     {
@@ -21,28 +21,30 @@
         "score": 60,
         "level": "high",
         "scale": "0-60 risk index",
-        "mentions": 9,
-        "negative_hits": 4,
-        "positive_hits": 0,
-        "trusted_hits": 3,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 204,
-        "geopolitical_total": 175,
+        "mentions": 12,
+        "negative_hits": 7,
+        "positive_hits": 1,
+        "trusted_hits": 4,
+        "engagement_total": 24,
+        "raw_engagement_total": 24,
+        "quality_total": 266,
+        "geopolitical_total": 230,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 7,
-          "x": 2
+          "mastodon": 8,
+          "x": 4
         },
         "category_counts": {
-          "corruption_rule_of_law": 1,
-          "government_crisis": 7,
-          "foreign_influence": 1
+          "corruption_rule_of_law": 2,
+          "government_crisis": 8,
+          "foreign_influence": 2
         },
         "tag_counts": {
           "balkans": 3,
-          "serbia": 4,
-          "Szerbia": 2
+          "serbia": 5,
+          "Szerbia": 2,
+          "Koszovó": 1,
+          "Montenegró": 1
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -135,12 +137,52 @@
             "quality": "rss_filtered"
           },
           {
+            "title": "Serbia’s New Speaker Sets December Presidential Election, Vucic Signals Boycott New Speaker Aleksandar Cupic calls presidential election for December 27 – as former President Aleks",
+            "text": "Serbia’s New Speaker Sets December Presidential Election, Vucic Signals Boycott New Speaker Aleksandar Cupic calls presidential election for December 27 – as former President Aleksandar Vucic urges boycott, accusing new authorities of using 'terror' tactics.",
+            "url": "https://x.com/i/web/status/2126567082544226720",
+            "source": "x",
+            "tag": "Szerbia",
+            "seen_date": "2026-11-28T06:41:16.000Z",
+            "matched_countries": [
+              "Szerbia"
+            ],
+            "country_confidence": {
+              "Szerbia": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              }
+            ],
+            "geopolitical_score": 20,
+            "quality_score": 21,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
+          {
             "title": "",
-            "text": "European Parliament Backs Vukovar Anniversary Resolution Criticising Serbia https:// balkaninsight.com/2026/11/26/e uropean-parliament-backs-vukovar-anniversary-resolution-criticising-serbia/btj/",
-            "url": "https://balkaninsight.com/2026/11/26/european-parliament-backs-vukovar-anniversary-resolution-criticising-serbia/btj/",
+            "text": "Serbia: a new way forward for democracies? Via Euronews: Serbia’s student movement puts forward Professor Saičić as its presidential candidate https://www. euronews.com/2026/11/27/serbia s-student-movement-puts-forward-professor-saicic-as-its-presidential-candidate # Serbia # studentMovement # elections # ProfessorSaicic",
+            "url": "https://mas.to/@philcolbourn/117692214580629911",
             "source": "mastodon",
             "tag": "serbia",
-            "seen_date": "Thu, 26 Nov 2026 16:38:48 +0000",
+            "seen_date": "Sat, 28 Nov 2026 04:37:56 +0000",
             "matched_countries": [
               "Szerbia"
             ],
@@ -155,8 +197,8 @@
                 "weight": 9
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 18,
+            "geopolitical_score": 16,
+            "quality_score": 21,
             "source_reliability": 5,
             "trusted_source_hint": true,
             "engagement": 0,
@@ -164,62 +206,39 @@
             "quality": "rss_filtered"
           },
           {
-            "title": "",
-            "text": "Agenzia Nova: Serbia: chi e' Radomir Saicic, il candidato della Lista studentesca alle elezioni presidenziali (4) 27 nov 14:53 - (Agenzia Nova) - In ambito economico, l'accademico sostiene la necessita' di orientare il sistema produttivo serbo verso un... (Seb) Serbia: Who is Radomir Sajić, the candidate of the Student List for the presidential elections? 27",
-            "url": "https://mastodon.ozioso.online/@ItalianNews/117688881321279552",
-            "source": "mastodon",
-            "tag": "serbia",
-            "seen_date": "Fri, 27 Nov 2026 14:30:15 +0000",
-            "matched_countries": [
-              "Szerbia"
-            ],
-            "country_confidence": {
-              "Szerbia": 2
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              }
-            ],
-            "geopolitical_score": 12,
-            "quality_score": 15,
-            "source_reliability": 3,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
-            "text": "How Serbia’s students devised a winning strategy to bring down strongman Vucic \"It may sound corny, but human warmth can beat state propaganda and brainwashing.\" https://www. youtube.com/watch?v=ZYGv7f_UIh8 # Serbia # Corruption # Balkans # Resistance # Elections",
-            "url": "https://eldritch.cafe/@ml/117687607168400467",
-            "source": "mastodon",
-            "tag": "balkans",
-            "seen_date": "Fri, 27 Nov 2026 09:06:13 +0000",
+            "title": "VUČIĆ'S WARNING: SANCTIONS AGAINST RUSSIA WIL BECOME THE NEXT POLITICAL THEATRE IN SERBIA Aleksandar Vučić has offered a revealing assessment of what will happen when Serbia's next",
+            "text": "VUČIĆ'S WARNING: SANCTIONS AGAINST RUSSIA WIL BECOME THE NEXT POLITICAL THEATRE IN SERBIA Aleksandar Vučić has offered a revealing assessment of what will happen when Serbia's next government is formed: sanctions against Russia will become the issue used to manufacture a",
+            "url": "https://x.com/i/web/status/2126495542687469796",
+            "source": "x",
+            "tag": "Montenegró",
+            "seen_date": "2026-11-28T01:57:00.000Z",
             "matched_countries": [
               "Szerbia"
             ],
             "country_confidence": {
               "Szerbia": 5
             },
-            "event_category": "corruption_rule_of_law",
+            "event_category": "foreign_influence",
             "event_categories": [
               {
-                "category": "corruption_rule_of_law",
-                "hits": 1,
+                "category": "foreign_influence",
+                "hits": 2,
                 "weight": 8
               }
             ],
-            "geopolitical_score": 11,
-            "quality_score": 14,
-            "source_reliability": 3,
+            "geopolitical_score": 19,
+            "quality_score": 20,
+            "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
+            "engagement": 17,
+            "raw_engagement": 17,
+            "metrics": {
+              "likes": 13,
+              "reposts": 4,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
           }
         ]
       }
@@ -227,17 +246,17 @@
     {
       "name": "Bosznia-Hercegovina",
       "social_signal": {
-        "score": 40,
-        "level": "high",
+        "score": 35,
+        "level": "medium",
         "scale": "0-60 risk index",
         "mentions": 5,
-        "negative_hits": 3,
+        "negative_hits": 2,
         "positive_hits": 0,
         "trusted_hits": 0,
-        "engagement_total": 15,
-        "raw_engagement_total": 15,
-        "quality_total": 90,
-        "geopolitical_total": 83,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 86,
+        "geopolitical_total": 79,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
@@ -245,15 +264,14 @@
         },
         "category_counts": {
           "security": 1,
-          "eu_integration": 1,
-          "government_crisis": 2,
-          "ethnic_tension": 1
+          "government_crisis": 3,
+          "eu_integration": 1
         },
         "tag_counts": {
           "bosnia": 1,
-          "Szerbia": 2,
+          "Koszovó": 1,
           "Montenegró": 1,
-          "Észak-Macedónia": 1
+          "Észak-Macedónia": 2
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -296,7 +314,7 @@
             "text": "TWO SUMMITS IN THREE DAYS — AND TWO DECLARATIONS WITHOUT SERBIA'S ENDORSEMENT. Serbia’s acting President Aleksandar Čupić attended the Ohrid summit but declined to sign its declaration, citing the limitations of his temporary mandate. Meanwhile, North Macedonia demanded that",
             "url": "https://x.com/i/web/status/2126455199573397632",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Észak-Macedónia",
             "seen_date": "2026-11-27T23:16:41.000Z",
             "matched_countries": [
               "Észak-Macedónia",
@@ -376,7 +394,7 @@
             "text": "Western Balkan leaders gathered in Ohrid with a common message: Europe must deliver on enlargement. But behind the diplomatic unity, fresh disputes are emerging. Brussels says €338 million could soon be unlocked for three regional economies, Kosovo faces the loss of €43.8",
             "url": "https://x.com/i/web/status/2126463303278788669",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Montenegró",
             "seen_date": "2026-11-27T23:48:53.000Z",
             "matched_countries": [
               "Bosznia-Hercegovina"
@@ -408,37 +426,38 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "“The new government’s mission is not to create divisions, but to unite the Serbian people. The previous government did nothing but create artificial and unnecessary divisions in Mo",
-            "text": "“The new government’s mission is not to create divisions, but to unite the Serbian people. The previous government did nothing but create artificial and unnecessary divisions in Montenegro, Republika Srpska and elsewhere. We must work towards unity.” — Radomir Saičić 🇷🇸",
-            "url": "https://x.com/i/web/status/2126369214684594577",
+            "title": "The president of North Macedonia, Gordana Siljanovska-Davkova, held a meeting with the president of the Republic of Kosovo, Justina Shiroka-Pula, as part of their participation in ",
+            "text": "The president of North Macedonia, Gordana Siljanovska-Davkova, held a meeting with the president of the Republic of Kosovo, Justina Shiroka-Pula, as part of their participation in the Brdo-Brijuni Process Leaders’ Meeting, which was held in Ohrid.",
+            "url": "https://x.com/i/web/status/2126558433998454952",
             "source": "x",
-            "tag": "Montenegró",
-            "seen_date": "2026-11-27T17:35:01.000Z",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-28T06:06:54.000Z",
             "matched_countries": [
+              "Észak-Macedónia",
               "Bosznia-Hercegovina"
             ],
             "country_confidence": {
-              "Bosznia-Hercegovina": 4,
-              "Szerbia": 2,
-              "Montenegró": 1
+              "Észak-Macedónia": 5,
+              "Bosznia-Hercegovina": 3,
+              "Koszovó": 1
             },
-            "event_category": "ethnic_tension",
+            "event_category": "government_crisis",
             "event_categories": [
               {
-                "category": "ethnic_tension",
+                "category": "government_crisis",
                 "hits": 1,
-                "weight": 10
+                "weight": 9
               }
             ],
-            "geopolitical_score": 13,
-            "quality_score": 14,
+            "geopolitical_score": 9,
+            "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 15,
-            "raw_engagement": 15,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 13,
-              "reposts": 2,
+              "likes": 0,
+              "reposts": 0,
               "replies": 0,
               "quotes": 0
             },
@@ -459,8 +478,8 @@
         "trusted_hits": 1,
         "engagement_total": 0,
         "raw_engagement_total": 0,
-        "quality_total": 50,
-        "geopolitical_total": 44,
+        "quality_total": 54,
+        "geopolitical_total": 48,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
@@ -476,6 +495,51 @@
         },
         "main_topic": "security",
         "top_posts": [
+          {
+            "title": "Kosovo’s Prime Minister Albin Kurti called on the European Union to grant the country candidate status and open accession negotiations, arguing that Kosovo has demonstrated through",
+            "text": "Kosovo’s Prime Minister Albin Kurti called on the European Union to grant the country candidate status and open accession negotiations, arguing that Kosovo has demonstrated through economic development and democratic progress that it deserves to move for…",
+            "url": "https://x.com/i/web/status/2126512863594360951",
+            "source": "x",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-28T03:05:50.000Z",
+            "matched_countries": [
+              "Koszovó"
+            ],
+            "country_confidence": {
+              "Koszovó": 5
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "eu_integration",
+                "hits": 2,
+                "weight": 6
+              },
+              {
+                "category": "economic_infrastructure",
+                "hits": 1,
+                "weight": 4
+              }
+            ],
+            "geopolitical_score": 26,
+            "quality_score": 27,
+            "source_reliability": 2,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "metrics": {
+              "likes": 0,
+              "reposts": 0,
+              "replies": 0,
+              "quotes": 0
+            },
+            "quality": "x_api_filtered"
+          },
           {
             "title": "",
             "text": "Hrvatski sabor raspravlja o slanju vojnika u Poljsku, Litvu i Mađarsku Objavljeno: 20:06, 26. studenoga 2026. https:// novine.eu/vijesti/hrvatska/hrv atski-sabor-raspravlja-o-slanju-vojnika-u-poljsku-litvu-i-madarsku # vijesti # hrvatska # hrvatskavojska # hrvatskisabor # kfor # kosovo # nato # poljska",
@@ -504,46 +568,6 @@
             "engagement": 0,
             "raw_engagement": 0,
             "quality": "rss_filtered"
-          },
-          {
-            "title": "Prime Minister Albin Kurti reiterated his call for the European Union to grant Kosovo candidate status and open accession negotiations.",
-            "text": "Prime Minister Albin Kurti reiterated his call for the European Union to grant Kosovo candidate status and open accession negotiations.",
-            "url": "https://x.com/i/web/status/2126426019745656910",
-            "source": "x",
-            "tag": "Koszovó",
-            "seen_date": "2026-11-27T21:20:44.000Z",
-            "matched_countries": [
-              "Koszovó"
-            ],
-            "country_confidence": {
-              "Koszovó": 5
-            },
-            "event_category": "government_crisis",
-            "event_categories": [
-              {
-                "category": "government_crisis",
-                "hits": 1,
-                "weight": 9
-              },
-              {
-                "category": "eu_integration",
-                "hits": 2,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 22,
-            "quality_score": 23,
-            "source_reliability": 2,
-            "trusted_source_hint": false,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "metrics": {
-              "likes": 0,
-              "reposts": 0,
-              "replies": 0,
-              "quotes": 0
-            },
-            "quality": "x_api_filtered"
           }
         ]
       }
@@ -645,31 +669,30 @@
     {
       "name": "Észak-Macedónia",
       "social_signal": {
-        "score": 33,
+        "score": 27,
         "level": "medium",
         "scale": "0-60 risk index",
-        "mentions": 6,
+        "mentions": 5,
         "negative_hits": 1,
         "positive_hits": 2,
         "trusted_hits": 0,
-        "engagement_total": 50,
-        "raw_engagement_total": 50,
-        "quality_total": 96,
-        "geopolitical_total": 88,
+        "engagement_total": 0,
+        "raw_engagement_total": 0,
+        "quality_total": 86,
+        "geopolitical_total": 79,
         "source_counts": {
           "reddit": 0,
           "mastodon": 1,
-          "x": 5
+          "x": 4
         },
         "category_counts": {
           "eu_integration": 1,
-          "government_crisis": 4,
-          "security": 1
+          "government_crisis": 4
         },
         "tag_counts": {
           "balkans": 1,
-          "Szerbia": 1,
-          "Észak-Macedónia": 4
+          "Koszovó": 1,
+          "Észak-Macedónia": 3
         },
         "main_topic": "government_crisis",
         "top_posts": [
@@ -715,7 +738,7 @@
             "text": "TWO SUMMITS IN THREE DAYS — AND TWO DECLARATIONS WITHOUT SERBIA'S ENDORSEMENT. Serbia’s acting President Aleksandar Čupić attended the Ohrid summit but declined to sign its declaration, citing the limitations of his temporary mandate. Meanwhile, North Macedonia demanded that",
             "url": "https://x.com/i/web/status/2126455199573397632",
             "source": "x",
-            "tag": "Szerbia",
+            "tag": "Észak-Macedónia",
             "seen_date": "2026-11-27T23:16:41.000Z",
             "matched_countries": [
               "Észak-Macedónia",
@@ -822,18 +845,20 @@
             "quality": "x_api_filtered"
           },
           {
-            "title": "🇽🇰🇲🇰 Kosovo and North Macedonia presidents met. \"Macedonian-Kosovan relations are friendly\" said President of N.Macedonia.",
-            "text": "🇽🇰🇲🇰 Kosovo and North Macedonia presidents met. \"Macedonian-Kosovan relations are friendly\" said President of N.Macedonia.",
-            "url": "https://x.com/i/web/status/2126390228021924064",
+            "title": "The president of North Macedonia, Gordana Siljanovska-Davkova, held a meeting with the president of the Republic of Kosovo, Justina Shiroka-Pula, as part of their participation in ",
+            "text": "The president of North Macedonia, Gordana Siljanovska-Davkova, held a meeting with the president of the Republic of Kosovo, Justina Shiroka-Pula, as part of their participation in the Brdo-Brijuni Process Leaders’ Meeting, which was held in Ohrid.",
+            "url": "https://x.com/i/web/status/2126558433998454952",
             "source": "x",
-            "tag": "Észak-Macedónia",
-            "seen_date": "2026-11-27T18:58:31.000Z",
+            "tag": "Koszovó",
+            "seen_date": "2026-11-28T06:06:54.000Z",
             "matched_countries": [
-              "Észak-Macedónia"
+              "Észak-Macedónia",
+              "Bosznia-Hercegovina"
             ],
             "country_confidence": {
               "Észak-Macedónia": 5,
-              "Koszovó": 2
+              "Bosznia-Hercegovina": 3,
+              "Koszovó": 1
             },
             "event_category": "government_crisis",
             "event_categories": [
@@ -847,13 +872,13 @@
             "quality_score": 10,
             "source_reliability": 2,
             "trusted_source_hint": false,
-            "engagement": 34,
-            "raw_engagement": 34,
+            "engagement": 0,
+            "raw_engagement": 0,
             "metrics": {
-              "likes": 27,
+              "likes": 0,
               "reposts": 0,
-              "replies": 5,
-              "quotes": 2
+              "replies": 0,
+              "quotes": 0
             },
             "quality": "x_api_filtered"
           }
@@ -867,28 +892,30 @@
         "level": "high",
         "scale": "0-60 risk index",
         "mentions": 16,
-        "negative_hits": 9,
-        "positive_hits": 1,
-        "trusted_hits": 1,
-        "engagement_total": 0,
-        "raw_engagement_total": 0,
-        "quality_total": 485,
-        "geopolitical_total": 441,
+        "negative_hits": 10,
+        "positive_hits": 2,
+        "trusted_hits": 0,
+        "engagement_total": 8,
+        "raw_engagement_total": 8,
+        "quality_total": 443,
+        "geopolitical_total": 403,
         "source_counts": {
           "reddit": 0,
-          "mastodon": 13,
-          "x": 3
+          "mastodon": 12,
+          "x": 4
         },
         "category_counts": {
-          "security": 3,
+          "security": 1,
           "government_crisis": 7,
           "protest": 4,
           "corruption_rule_of_law": 1,
-          "ethnic_tension": 1
+          "foreign_influence": 1,
+          "ethnic_tension": 2
         },
         "tag_counts": {
           "balkans": 10,
-          "albania": 3,
+          "albania": 2,
+          "Koszovó": 1,
           "Albánia": 3
         },
         "main_topic": "government_crisis",
@@ -978,45 +1005,6 @@
           },
           {
             "title": "",
-            "text": "https:// youtu.be/Ulp-gb3HFnQ ⚠️🇦🇱How Trump’s Son-In-Law Triggered A ‘Nationwide Movement’ In Albania (Times Radio VIDEO) # Ukraine # Press # Kyiv # Odesa # Lviv # Kharkiv # FlamingoRevolution # Albania # Tirana # Durres # Elbasan # Fier # Shkoder # Kherson # Berlin # Brussels # USA # America # France # Germany # UK # US # PACE # CoE # Paris # London # Media",
-            "url": "https://mastodon.online/@SocraticEthics/117678265492693202",
-            "source": "mastodon",
-            "tag": "albania",
-            "seen_date": "Wed, 25 Nov 2026 17:30:30 +0000",
-            "matched_countries": [
-              "Albánia"
-            ],
-            "country_confidence": {
-              "Albánia": 5
-            },
-            "event_category": "security",
-            "event_categories": [
-              {
-                "category": "security",
-                "hits": 2,
-                "weight": 9
-              },
-              {
-                "category": "foreign_influence",
-                "hits": 1,
-                "weight": 8
-              },
-              {
-                "category": "eu_integration",
-                "hits": 1,
-                "weight": 6
-              }
-            ],
-            "geopolitical_score": 39,
-            "quality_score": 44,
-            "source_reliability": 5,
-            "trusted_source_hint": true,
-            "engagement": 0,
-            "raw_engagement": 0,
-            "quality": "rss_filtered"
-          },
-          {
-            "title": "",
             "text": "\"In recent meetings in Brussels and Athens, Marta Kos has praised Albania's progress, ranking it among the countries that are advancing at a rapid pace in the European Union enlargement process. However, she has emphasized that political support must be accompanied by concrete implementation of reforms and fulfillment of European standards. Marta Kos's visit",
             "url": "https://eldritch.cafe/@ml/117683292654029210",
             "source": "mastodon",
@@ -1082,6 +1070,50 @@
             ],
             "geopolitical_score": 36,
             "quality_score": 39,
+            "source_reliability": 3,
+            "trusted_source_hint": false,
+            "engagement": 0,
+            "raw_engagement": 0,
+            "quality": "rss_filtered"
+          },
+          {
+            "title": "",
+            "text": "Tabaku përpara komisioneres Marta Kos: Shqiptarët kërkojnë më shumë Europë në protestën e tyre Machine translated: Tabaku in front of commissioner Marta Kos: Albanians demand more Europe in their protest In Albanian, but if you use a live translation app, you can get the gist of it. Tabaku is saying that in the 15 months of The National Council of European I",
+            "url": "https://eldritch.cafe/@ml/117683340371343763",
+            "source": "mastodon",
+            "tag": "balkans",
+            "seen_date": "Thu, 26 Nov 2026 15:01:06 +0000",
+            "matched_countries": [
+              "Albánia"
+            ],
+            "country_confidence": {
+              "Albánia": 2
+            },
+            "event_category": "government_crisis",
+            "event_categories": [
+              {
+                "category": "government_crisis",
+                "hits": 1,
+                "weight": 9
+              },
+              {
+                "category": "protest",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "corruption_rule_of_law",
+                "hits": 1,
+                "weight": 8
+              },
+              {
+                "category": "eu_integration",
+                "hits": 1,
+                "weight": 6
+              }
+            ],
+            "geopolitical_score": 35,
+            "quality_score": 38,
             "source_reliability": 3,
             "trusted_source_hint": false,
             "engagement": 0,
